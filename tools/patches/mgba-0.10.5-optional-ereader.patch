@@ -1,0 +1,56 @@
+diff --git a/include/mgba/gba/interface.h b/include/mgba/gba/interface.h
+index bf10c59..f949798 100644
+--- a/include/mgba/gba/interface.h
++++ b/include/mgba/gba/interface.h
+@@ -100,6 +100,7 @@ void GBASIOBattlechipGateCreate(struct GBASIOBattlechipGate*);
+ 
+ void GBACartEReaderQueueCard(struct GBA* gba, const void* data, size_t size);
+ 
++#ifdef USE_FFMPEG
+ struct EReaderScan;
+ #ifdef USE_PNG
+ MGBA_EXPORT struct EReaderScan* EReaderScanLoadImagePNG(const char* filename);
+@@ -112,6 +113,7 @@ MGBA_EXPORT void EReaderScanDestroy(struct EReaderScan*);
+ MGBA_EXPORT bool EReaderScanCard(struct EReaderScan*);
+ MGBA_EXPORT void EReaderScanOutputBitmap(const struct EReaderScan*, void* output, size_t stride);
+ MGBA_EXPORT bool EReaderScanSaveRaw(const struct EReaderScan*, const char* filename, bool strict);
++#endif
+ 
+ CXX_GUARD_END
+ 
+diff --git a/include/mgba/internal/gba/cart/ereader.h b/include/mgba/internal/gba/cart/ereader.h
+index b869246..5e421af 100644
+--- a/include/mgba/internal/gba/cart/ereader.h
++++ b/include/mgba/internal/gba/cart/ereader.h
+@@ -79,6 +79,7 @@ struct GBACartEReader {
+ 	struct EReaderCard cards[EREADER_CARDS_MAX];
+ };
+ 
++#ifdef USE_FFMPEG
+ struct EReaderAnchor;
+ struct EReaderBlock;
+ DECLARE_VECTOR(EReaderAnchorList, struct EReaderAnchor);
+@@ -103,6 +104,7 @@ struct EReaderScan {
+ 	struct EReaderAnchorList anchors;
+ 	struct EReaderBlockList blocks;
+ };
++#endif
+ 
+ void GBACartEReaderInit(struct GBACartEReader* ereader);
+ void GBACartEReaderDeinit(struct GBACartEReader* ereader);
+@@ -112,6 +114,7 @@ uint16_t GBACartEReaderRead(struct GBACartEReader* ereader, uint32_t address);
+ uint8_t GBACartEReaderReadFlash(struct GBACartEReader* ereader, uint32_t address);
+ void GBACartEReaderScan(struct GBACartEReader* ereader, const void* data, size_t size);
+ 
++#ifdef USE_FFMPEG
+ struct EReaderScan* EReaderScanCreate(unsigned width, unsigned height);
+ void EReaderScanDetectParams(struct EReaderScan*);
+ void EReaderScanDetectAnchors(struct EReaderScan*);
+@@ -121,6 +124,7 @@ void EReaderScanCreateBlocks(struct EReaderScan*);
+ void EReaderScanDetectBlockThreshold(struct EReaderScan*, int block);
+ bool EReaderScanRecalibrateBlock(struct EReaderScan*, int block);
+ bool EReaderScanScanBlock(struct EReaderScan*, int block, bool strict);
++#endif
+ 
+ CXX_GUARD_END
+ 

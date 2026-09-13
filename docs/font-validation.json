@@ -1,0 +1,150 @@
+{
+  "checked_at": "2026-09-13T21:20:19.675494+00:00",
+  "passed": true,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "source_save_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+  "original_files_unchanged": true,
+  "scope": "Original Latin glyph extraction and native menu specimens; only a checked 12-byte label changes in temporary cartridges. Compact uppercase sample uses a documented register override.",
+  "native_samples": 18,
+  "distinct_serif_letters_and_digits": 62,
+  "prepared_glyph_comparisons": 77,
+  "width_ranges": {
+    "narrow": [
+      6,
+      6
+    ],
+    "upper": [
+      9,
+      12
+    ],
+    "lower": [
+      7,
+      13
+    ],
+    "digits": [
+      7,
+      7
+    ]
+  },
+  "ascii_upper_uses_serif": true,
+  "two_byte_lowercase_renders": true,
+  "ascii_lowercase_ignored_in_test": true,
+  "source_ranges": {
+    "lookup_table": [
+      1226152,
+      1226348
+    ],
+    "compact": [
+      1572864,
+      1574912
+    ],
+    "larger_digits": [
+      1581408,
+      1581728
+    ],
+    "serif_upper": [
+      1581952,
+      1582784
+    ],
+    "serif_lower": [
+      1582976,
+      1583808
+    ],
+    "temporary_label": [
+      400644,
+      400656
+    ]
+  },
+  "reproduce": ".venv/bin/python -m tools.review_fonts",
+  "script_sha256": "cb835a8f4ec6f95492c405c79b5de2aa5ce0039223536114acbd81a38cfa4974",
+  "artifacts": [
+    {
+      "path": "build/font-research/review/report.json",
+      "sha256": "c726e18edce9b61db1ecfa4a11612cd08b41f2d223a116be70e54adfc3bcbfc5"
+    },
+    {
+      "path": "build/font-research/review/latin-glyphs.png",
+      "sha256": "27d365c76daf4f8acf7a381c52f832c30334ef4301bf8f856a6142167eb38825"
+    },
+    {
+      "path": "build/font-research/review/native-comparison.png",
+      "sha256": "f812b6679c7a447ae1cdf8ab61180e0c2d0a434528a87906873030e02fb3cec4"
+    },
+    {
+      "path": "build/font-research/review/index.html",
+      "sha256": "7ef5e834d69efb4a8ece9ea7d8873d5bb21b98bba08d0752ddb82137f946bde3"
+    },
+    {
+      "path": "build/font-research/review/ascii-lower/report.json",
+      "sha256": "fa5e80e1b37b393f9e670f452f6e6222d119702c3683a4e71d5ee7b66ed3e698"
+    },
+    {
+      "path": "build/font-research/review/ascii-upper/report.json",
+      "sha256": "74b3f24053141559fdcf547c156a39708758557cad1f6f4dc3b86e0fe61120ad"
+    },
+    {
+      "path": "build/font-research/review/compact-upper/report.json",
+      "sha256": "0389f050bb23c6f70b8bb675cdbdff3dbc7179bee88797bf798b4e71ce7b1190"
+    },
+    {
+      "path": "build/font-research/review/digits-1/report.json",
+      "sha256": "4edc9913873d2fd5ce2675cb2ea9b53a6dd3fc286ce04a54c659e7dfddd9cb2b"
+    },
+    {
+      "path": "build/font-research/review/digits-2/report.json",
+      "sha256": "f01d9d02ccdfe5be1a7eac98d0bf54156e26e7d9d2653e1f87c83f698eed3a6b"
+    },
+    {
+      "path": "build/font-research/review/lower-1/report.json",
+      "sha256": "909bff3645a7bc31e5d8a7352334a6507df0d1dbe84d7d545122e51ffed31eac"
+    },
+    {
+      "path": "build/font-research/review/lower-2/report.json",
+      "sha256": "e17d464bd743b50833e2ee1dbd8ffd0fa5ed87addda3e1e84a7471cc7d51c8ec"
+    },
+    {
+      "path": "build/font-research/review/lower-3/report.json",
+      "sha256": "934249839a62856dd63f511b071714a2ad07eaa73dc2aa9f6507170c060bd2b3"
+    },
+    {
+      "path": "build/font-research/review/lower-4/report.json",
+      "sha256": "84c0a4c90365daaf31e12a1002df750d332a15b7df0374cd958d4e6d2e4366e0"
+    },
+    {
+      "path": "build/font-research/review/lower-5/report.json",
+      "sha256": "d59e77bec93708cee791a4d3817e1194f4e3335809e948dcfc58d33440442e14"
+    },
+    {
+      "path": "build/font-research/review/lower-6/report.json",
+      "sha256": "e156fe9bcd6bf70068b504015fb877b0c76cbddb00f5a59c5ffc2217fc0a2a4a"
+    },
+    {
+      "path": "build/font-research/review/mixed-start/report.json",
+      "sha256": "efef3ac51048a22647f19e89fb6accaaa54dc4426cef23ca425bc24e8c1da31c"
+    },
+    {
+      "path": "build/font-research/review/upper-1/report.json",
+      "sha256": "670967b096131d470af1744073ca3e39586f009e5e707faf9ee240eb0b13eca9"
+    },
+    {
+      "path": "build/font-research/review/upper-2/report.json",
+      "sha256": "863990f84cc00b0c280f2a103883cb923061f841cb718de4d2dd4719e9d66e10"
+    },
+    {
+      "path": "build/font-research/review/upper-3/report.json",
+      "sha256": "95d5a9d9e2bb37af28d0dd07b6783a8caf767ff65d933ed0e7fe2e3b469ee470"
+    },
+    {
+      "path": "build/font-research/review/upper-4/report.json",
+      "sha256": "7bae8797a52fb35f7d417ee50a942c7e9f3fedb010953c3df315aa403a63b202"
+    },
+    {
+      "path": "build/font-research/review/upper-5/report.json",
+      "sha256": "ca8f0dc119c1184df0ee355f70aace48f608c633529142610396ee55cf6416f9"
+    },
+    {
+      "path": "build/font-research/review/upper-6/report.json",
+      "sha256": "c93631ab21392850d90ccd932b5f84b627a1bdd6c57be3b1d50b78fa37ebb72e"
+    }
+  ]
+}

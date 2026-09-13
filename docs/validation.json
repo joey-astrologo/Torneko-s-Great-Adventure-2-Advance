@@ -1,0 +1,274 @@
+{
+  "checked_at": "2026-09-13T20:36:04.235587+00:00",
+  "scope": "Toolchain and initial Japanese-ROM research acceptance; no translation, insertion or ROM expansion claim.",
+  "passed": true,
+  "original_files": {
+    "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).gba": {
+      "size": 8388608,
+      "sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa"
+    },
+    "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).sav": {
+      "size": 65536,
+      "sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063"
+    }
+  },
+  "original_files_unchanged": true,
+  "toolchain": {
+    "passed": true,
+    "checked_at": "2026-09-13T20:34:21.574412+00:00",
+    "platform": "macOS-15.7.9-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "packages": {
+      "cached-property": "2.0.1",
+      "cffi": "1.17.1",
+      "cmake": "3.31.10",
+      "packaging": "26.3",
+      "pillow": "12.3.0",
+      "pip": "26.1.2",
+      "pycparser": "3.0",
+      "pytest-runner": "6.0.1",
+      "setuptools": "68.2.2",
+      "wheel": "0.48.0"
+    },
+    "mgba": {
+      "python": "0.10.5",
+      "desktop": "0.10.5",
+      "binding_path": "/Users/joey/Documents/Workplace/torneko-2-gba/.tools/build/mgba/python/lib.macosx-15.0-arm64-cpython-311/mgba/core.py"
+    },
+    "ghidra": {
+      "version": "12.1.3",
+      "loader_version": "12.1.3"
+    },
+    "sources": {
+      "mgba": {
+        "commit": "26b7884bc25a5933960f3cdcd98bac1ae14d42e2",
+        "repository": "https://github.com/mgba-emu/mgba.git",
+        "tracked_diff_sha256": "76b51652ec860d026e98c35e6e22abfebeb78b80124505ae7e878fe8ef79763a"
+      },
+      "armips": {
+        "commit": "156f78f6bccfc07498578ac491ce7fe2a1e807a6",
+        "repository": "https://github.com/Kingcom/armips.git",
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "gba-ghidra-loader": {
+        "commit": "9bfb2d1fe891aa78bab7093a328feb3a52318ab7",
+        "repository": "https://github.com/pudii/gba-ghidra-loader.git",
+        "tracked_diff_sha256": "d2690aa6dc887f80af89ed8a0dabb7edff367d4bd9abdf8e6e939f6bf5a2313c"
+      },
+      "flips-local": {
+        "commit": "ff216a75df0987047a67d7923567dc4482ce07ac",
+        "repository": "https://github.com/Sir-Walrus/Flips.git",
+        "verified_source_files": 106
+      }
+    },
+    "rom": {
+      "sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+      "size": 8388608,
+      "title": "TORUNEKO2",
+      "game_code": "AT2J",
+      "maker_code": "B4",
+      "revision": 0,
+      "header_checksum": "0x21",
+      "entry": "0x080000C0",
+      "header_valid": true
+    },
+    "armips_expected_bytes": "0100a0e31eff2fe102207047",
+    "bps_roundtrip": true,
+    "bps_probes": {
+      "append_only": {
+        "encoder": "--bps-delta",
+        "source_sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+        "target_sha256": "fec56889b50f3d314f235b813234be83d8ba675f8887a31ecbdd9cc1b400f62a",
+        "patch_sha256": "10dc83ee0c84a7542883284a8c3fa3b77547dbed94d3cb6d4d4746278752a280",
+        "apply_matches_target": true,
+        "fallback_from": [
+          "--bps-linear"
+        ]
+      },
+      "changed_and_expanded": {
+        "encoder": "--bps-delta",
+        "source_sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+        "target_sha256": "fbfe7cd2892d2d599dd5b4c5266d0ee6c3632d2e90c957aa570a1bd8933bffb8",
+        "patch_sha256": "e25591ac35d5144c15f14ef685b001f6209f7361dec626bfcde6f08c9356f0b8",
+        "apply_matches_target": true,
+        "fallback_from": [
+          "--bps-linear"
+        ]
+      }
+    },
+    "bps_wrong_source_rejected": true,
+    "executables": {
+      "armips": "7af3c4b3601daeba53c30a5d2404fb56b6c40808e9cd03217969cbddf761c81c",
+      "flips": "89da9a9c52bbecb4a241513be987f3b5861344f223e5cce543bba722826814e1"
+    },
+    "patches": {
+      "mgba-0.10.5-optional-ereader.patch": "fe9f94d721ab88a99fb6589d9d53f094e20832cb04aac508099e406c8286e1cc",
+      "gba-loader-remove-unused-jython-import.patch": "0d0de40a8f2eab1db7b52a9ce117f9ecf252ca109be0514add002ec57dc33bf4"
+    }
+  },
+  "mgba_checks": {
+    "mgba": {
+      "passed": true,
+      "initial_save_sha256": null,
+      "boot_frames": 600,
+      "replay_frames": 183,
+      "raw_state_bytes": 397312,
+      "battery_save_bytes": 65536,
+      "save_type": 2,
+      "raw_replay_identical": true,
+      "native_state_replay_identical": true,
+      "native_save_persisted": true,
+      "cold_reload_battery_identical": true,
+      "source_rom_unchanged": true,
+      "supplied_save_unchanged": null
+    },
+    "mgba-supplied-save": {
+      "passed": true,
+      "initial_save_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "boot_frames": 600,
+      "replay_frames": 183,
+      "raw_state_bytes": 397312,
+      "battery_save_bytes": 65536,
+      "save_type": 2,
+      "raw_replay_identical": true,
+      "native_state_replay_identical": true,
+      "native_save_persisted": true,
+      "cold_reload_battery_identical": true,
+      "source_rom_unchanged": true,
+      "supplied_save_unchanged": true
+    }
+  },
+  "workflow_checks": {
+    "raw_and_gui_capture_resume_identical": true,
+    "input_overwrite_rejected": true,
+    "input_fixtures_unchanged": true,
+    "existing_ghidra_project_preserved": true
+  },
+  "unit_tests_passed": 8,
+  "ghidra_import_disassembly": true,
+  "thumb_entry_verified": "0x08000354",
+  "artifacts": [
+    {
+      "path": "build/toolchain-validation/validation.log",
+      "sha256": "9d5215e50a503f16e9568d05e095da9291b6a70c890e721ed0bb21e322664f0c"
+    },
+    {
+      "path": "build/toolchain-validation/setup.log",
+      "sha256": "e9631daa0bce75af664998cd6a7de0897db3286b6d3298cda4837e14085fe8da"
+    },
+    {
+      "path": "build/toolchain-validation/toolchain.json",
+      "sha256": "09050809df6a531dfa6af7f0e02d8650ee2b30869c798acf572b28d212747a24"
+    },
+    {
+      "path": "build/toolchain-validation/mgba/report.json",
+      "sha256": "cac6de5e42a1b6d7fb5f196a885bc72424c6664507564e2e37cf0be366bb08d4"
+    },
+    {
+      "path": "build/toolchain-validation/mgba-supplied-save/report.json",
+      "sha256": "a327987ef9606a7797eca0a712406fd3b18791b4fc07d4a2dc3d92fcf38e84f7"
+    },
+    {
+      "path": "build/toolchain-validation/ghidra-verify.log",
+      "sha256": "8fecf5602738d45a2cd6546f48bcde2077c43a128a058003573552864b720a1e"
+    },
+    {
+      "path": "build/toolchain-validation/ghidra-import.log",
+      "sha256": "6a2e9c80c978fcadd377b2bff51cb0ea10c93c549ec0e17ee5fec9179c1a55da"
+    },
+    {
+      "path": "build/toolchain-validation/ghidra-functions.log",
+      "sha256": "a9c47d4ae02c337572afd272d6c07f7cf6f888b76f19c215d2cf6a38fac598f3"
+    },
+    {
+      "path": "build/toolchain-validation/ghidra-range.log",
+      "sha256": "b154086308af8a63b130b85aa97cfa5f0c1e540020797ed4887326e9ea62c965"
+    },
+    {
+      "path": "build/toolchain-validation/workflow.json",
+      "sha256": "f7afd6c8802ed76aebf45f1bcef878f02342f49dc6a189522e8d835beecbcce7"
+    },
+    {
+      "path": "build/disassembly/startup-thumb.txt",
+      "sha256": "4aea350323c9593541ff5e1593c9c739627775106013a7a392b1abfeae3e6fec"
+    },
+    {
+      "path": "build/disassembly/startup-range.txt",
+      "sha256": "5e16b207bd8660a3cd180eb26837c5e964e84a2434f064a7dc9689e53bf8da7d"
+    },
+    {
+      "path": "build/captures/title/report.json",
+      "sha256": "de287a7a592f38c4ea7f2e2a1eac76f37af503091d122933e18a6f4d6f282f67"
+    },
+    {
+      "path": "build/captures/startup-thumb/report.json",
+      "sha256": "2301910f0c64b9abadd8d66d35cac55916a11975fa288bf737c0b4e715337e25"
+    }
+  ],
+  "python_and_shell_tools": [
+    {
+      "path": "tools/__init__.py",
+      "sha256": "669fa1a5bd4e28ce0439777f9669349c3f6f8c6b9587dbcfd3428633ca924056"
+    },
+    {
+      "path": "tools/bps.py",
+      "sha256": "f12bc253c66d5aa0f39b2bce912de97794da98dbb49e1f2f0111e05f8701a13e"
+    },
+    {
+      "path": "tools/build_armips.sh",
+      "sha256": "ac3931299a6dd6676b648fddebb5afb447cad533c05cfa27295f564a1b4ba229"
+    },
+    {
+      "path": "tools/build_flips.sh",
+      "sha256": "94d6e195022c172f962b781eb1737ae7a94c1d71cec97e30c7dadd4e0714927f"
+    },
+    {
+      "path": "tools/build_gba_loader.sh",
+      "sha256": "6ac18b3fa744508c9c3c91f08d139345d6feabd28fd8c9ddc8c9c7b30545a66f"
+    },
+    {
+      "path": "tools/build_mgba.sh",
+      "sha256": "2d665458638b4ab52ed0ec4fbb048a5a664930e82be43a26f57b5a998e438ccb"
+    },
+    {
+      "path": "tools/capture.py",
+      "sha256": "1fc7f29c158c0c323706ffc002197f610be8b8b51efa4f8dff3802de08950710"
+    },
+    {
+      "path": "tools/emulator.py",
+      "sha256": "7fc6089f0a89b75d1158845c034c1f5427aa44a380e3076be84b8c534e50e241"
+    },
+    {
+      "path": "tools/ghidra.sh",
+      "sha256": "9e51477581ad18cfd7992a0a49221cf5da768a5eeaef15c1b99ee8b4a33dc2e9"
+    },
+    {
+      "path": "tools/prepare_playtest.py",
+      "sha256": "404da31e788161dd4059ad7b06db5ca6e2142778c8ee5e474bc2a24b41065343"
+    },
+    {
+      "path": "tools/prepare_sources.py",
+      "sha256": "6d2a00c62d52d69470e332b00196a534eb87ac3c07181207b34523195ad457ab"
+    },
+    {
+      "path": "tools/repack_installed_wheels.py",
+      "sha256": "5acd0a96156d26aefcd6c309f6622981ac53bcc73659397a8d1170dca13e3044"
+    },
+    {
+      "path": "tools/rom.py",
+      "sha256": "6d3874ba705ac1a165d5b909575d6317b97cadf09a92d5467b51c8e0e01e8c4f"
+    },
+    {
+      "path": "tools/verify_ghidra.sh",
+      "sha256": "fb1923b02e36a3124b06deda83b52e48c6a3c4584f813163652978e55ba61d31"
+    },
+    {
+      "path": "tools/verify_mgba.py",
+      "sha256": "62877c6b09882c404617a1c355eac71c0de1f3abdbe5abdf32f16045e94edfad"
+    },
+    {
+      "path": "tools/verify_toolchain.py",
+      "sha256": "f5b26ece240bc3c188f6d1d75859ddce74c0a9037f52a119822468398131a635"
+    }
+  ]
+}

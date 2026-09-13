@@ -1,0 +1,65 @@
+{
+  "reference_project": "../torneko-3-gba",
+  "reference_git_head": "564a1d72def6b003bc8d79052f047b51d6025332",
+  "copied_files": [
+    {
+      "path": "tools/build_mgba.sh",
+      "sha256": "2d665458638b4ab52ed0ec4fbb048a5a664930e82be43a26f57b5a998e438ccb"
+    },
+    {
+      "path": "tools/build_gba_loader.sh",
+      "sha256": "6ac18b3fa744508c9c3c91f08d139345d6feabd28fd8c9ddc8c9c7b30545a66f"
+    },
+    {
+      "path": "tools/patches/mgba-0.10.5-optional-ereader.patch",
+      "sha256": "fe9f94d721ab88a99fb6589d9d53f094e20832cb04aac508099e406c8286e1cc"
+    },
+    {
+      "path": "tools/patches/gba-loader-remove-unused-jython-import.patch",
+      "sha256": "0d0de40a8f2eab1db7b52a9ce117f9ecf252ca109be0514add002ec57dc33bf4"
+    },
+    {
+      "path": "tools/patches/README.md",
+      "sha256": "ab447c825dc59daf42f48b0ead32f9b4fc958ecc9d21755efe0dd333caf8f3db"
+    },
+    {
+      "path": "tools/ghidra_scripts/VerifyGbaImport.java",
+      "sha256": "9658128061ab0420c722a16623627a22f39d2964ab112d43df357a3c653ab847"
+    },
+    {
+      "path": "tools/ghidra_scripts/InspectThumbRange.java",
+      "sha256": "851badef6fb78a840fcabc5e9e8c190e5c1f3e12499bbc172d832d1c27656646"
+    },
+    {
+      "path": "tools/ghidra_scripts/InspectThumbFunctions.java",
+      "sha256": "55cc73980f721822a82b6da0ba6c2112cdec59ddfe4c402c589197392277cb04"
+    },
+    {
+      "path": "docs/python-toolchain.lock.txt",
+      "sha256": "260fb5c7446c0eefc55b4f3aad58100793f44bdd7267aa907b33637b52bae0d7"
+    },
+    {
+      "path": "tools/flips-toolchain.json",
+      "sha256": "952ff3a3af414a97d5444281ab39b544bd0d49610daa561206f2fead1923cb44"
+    }
+  ],
+  "adapted_from": [
+    {
+      "path": "tools/verify_expansion.py",
+      "sha256": "6829ab48c8a3175e894fb70077aa33a7915de997a8834053d0d3835623f87655"
+    },
+    {
+      "path": "tools/trace_text_systems.py",
+      "sha256": "45ac105180152d25d4c167c45f7fd9f82785d6fb2349533e25000c4256c55190"
+    },
+    {
+      "path": "tools/verify_mgba.py",
+      "sha256": "000fd63f2cc3384a75044255e2bf970637ff73fa98511737d9befdc17ac05cc5"
+    },
+    {
+      "path": "tools/verify_rendering_fixes.py",
+      "sha256": "f6f05d73178f33d9fd662ef9a5ba6d5c10c370fe3f6c8f5ec9b460b6ae82af7f"
+    }
+  ],
+  "scope": "Copied toolchain recipes/patches and generic Ghidra scripts; adapted Session/debugger/state concepts. No game-specific catalogs, addresses or translation assets copied."
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Fresh boot to the Japanese title screen and initial menu; observed on the pinned Torneko 2 ROM.",
+  "steps": [
+    {"frames": 600},
+    {"capture": "title"},
+    {"press": "START", "hold": 3, "wait": 180},
+    {"capture": "initial-menu"}
+  ]
+}

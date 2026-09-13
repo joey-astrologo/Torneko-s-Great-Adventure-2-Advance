@@ -1,0 +1,12 @@
+.tools/
+.venv/
+build/
+__pycache__/
+*.py[cod]
+*.gba
+*.sav
+*.ss[0-9]
+*.state
+*.gpr
+*.rep/
+.DS_Store

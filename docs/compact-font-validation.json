@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-13",
+  "passed": true,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "source_save_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+  "original_files_unchanged": true,
+  "font_asset_sha256": "1626ebf7945e485757b5f869095b543f4c0bb54581e08b9bb93edb491caf1ae2",
+  "output_rom_sha256": "b934fa8d69430546ba1bb0a02e38cb6aee0e3628e1d4f4e662ffb669d821a91a",
+  "glyphs": 95,
+  "original_records_preserved": 63,
+  "new_lowercase": 26,
+  "new_symbols": 6,
+  "native_samples": 8,
+  "native_glyph_code_overrides": 0,
+  "prepared_and_final_screen_pixels_match": true,
+  "native_cursor_and_string_width_match": true,
+  "lookup_boundary_fallback_abi_probes": 17,
+  "japanese_fallback_fingerprints_identical": true,
+  "emulator": "0.10.5",
+  "bios": "mGBA built-in BIOS; no external BIOS loaded",
+  "bps": {
+    "encoder": "--bps-linear",
+    "source_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+    "target_sha256": "b934fa8d69430546ba1bb0a02e38cb6aee0e3628e1d4f4e662ffb669d821a91a",
+    "patch_sha256": "18ae1ffa1775c1c19f654011b8d0c88a78bcdf44bc63c6047e0e7e94fc491156",
+    "apply_matches_target": true,
+    "fallback_from": []
+  },
+  "full_toolchain_validation": {
+    "command": "./validate.sh",
+    "passed": true,
+    "unit_tests": 15
+  },
+  "preview_checks": {
+    "all_local_links_exist": true,
+    "javascript_core_render_logic": "Preview JavaScript passed: width, overflow, unsupported input, literal punctuation and line breaks.",
+    "browser_visual_test": false
+  },
+  "scope": "Initial-menu draws and controlled lookup/string-width calls; other text paths remain unverified.",
+  "artifacts": {
+    "validation.json": "c7714c77ee2de5a1c2f7c35827e2dfc36ca6a56264573168657751b91ca30c1d",
+    "build.json": "390dbaad3e1134e751287ba8736ceb5d25af36627db5e0dafa93ddc6a983b4aa",
+    "compact-english.png": "364afed048e9790b40d389865b3ac1c67db8dd61687612bc7580c41d2e4dc346",
+    "mixed-case/menu.png": "386f5003a6ea63fa5711fd069eb561b261fa573e48aa04355c22c6587d6c8de2",
+    "index.html": "5b39ab88b270c63c535163e25f4e1683ad157df5462a00de43016d75ae429a69"
+  }
+}

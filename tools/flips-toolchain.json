@@ -1,0 +1,543 @@
+{
+  "repository": "https://github.com/Sir-Walrus/Flips",
+  "commit": "ff216a75df0987047a67d7923567dc4482ce07ac",
+  "tree": "c0c3569ed6c8170ebf1fc13cac0ab0b2c1a62613",
+  "source_directory": ".tools/src/flips-local",
+  "source_files": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha1": "2efbd207624d1d54912ad920c95b69207988252c",
+      "sha256": "eb23cc7fcd2ff1d226b87aed346a75eb0f22e35ff01e7019ab667bd048a61fa4"
+    },
+    {
+      "path": ".github/workflows/build-optimized.yml",
+      "git_blob_sha1": "22d46e534ce5f391ad47b8d7a78a4d81e34f4376",
+      "sha256": "f7208dd3e608c489caa6eeadd4231456399b4bd0feec231f2c268d882c2dfbb4"
+    },
+    {
+      "path": ".github/workflows/build-unoptimized.yml",
+      "git_blob_sha1": "289477912c28928f61a0f063f6d0a4943c83ed45",
+      "sha256": "ebbe4678964469258279c0c3cd5927677f43bd0b8df871fb8ac65aed17f6b673"
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha1": "552e6f4598e36f4dcd8cfe33f7099d3aa19ddbf6",
+      "sha256": "c390d131a7144358586f7e6b251b188cd553d510e149409faaca009d279b927b"
+    },
+    {
+      "path": ".vscode/c_cpp_properties.json",
+      "git_blob_sha1": "84a88d32358de935605014a7323c87adff2b8a7c",
+      "sha256": "13a510fd732fd9ee2a50cc8c82a1aa71b431759f96340500e87e43505704bad1"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "git_blob_sha1": "fa1bb9f1ca37c8b9fca7ca4f197798b7dae5ff2c",
+      "sha256": "6d6aeb35644fdd40e6eb05146934a44fb6463bf3a2d2099168533d1c003df8ed"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "git_blob_sha1": "dd556b45063f5c5d7fd54dbe3607e130457b311d",
+      "sha256": "1e1a7197cf2dc2ba1e78ecaf9293b6af249ab6a9046c8bd3e26b4017e427f955"
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "git_blob_sha1": "aa174750f7920a46c216837087a84a9f630ba829",
+      "sha256": "e464f6a62d57f3e9a18067ad8169e07c85950b994c57ab602342f02bf6f40fb4"
+    },
+    {
+      "path": "COPYING",
+      "git_blob_sha1": "cad8523c46cda085893e39e00ab8c890a435e56f",
+      "sha256": "759de06c3329988ac8cbc16b7991426659a893e8b36b5ebb0aafb9009ebf5af9"
+    },
+    {
+      "path": "COPYING.gpl3",
+      "git_blob_sha1": "818433ecc0e094a4db1023c68b33f24344643ad8",
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    {
+      "path": "Makefile",
+      "git_blob_sha1": "b3880f3cd16462a9161b4bf6409e6f6186c83ddb",
+      "sha256": "67de323e0582751cf341a44e37fb0c04a23826eb5096682dc8f6296c602f5064"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "06871c53e2a4ffe9c302db0efa7f68dbb4390762",
+      "sha256": "3fcca350658e6a4d968671faef1753febde4becc271f63cbf2f0957f44125ee8"
+    },
+    {
+      "path": "bps.ico",
+      "git_blob_sha1": "9beb98ba52b1c425c8f7baa622729a719d86bb22",
+      "sha256": "e7c5058015748930ec5de9021fa74efcbc52a31e72818da34f20bfba1e9619e4"
+    },
+    {
+      "path": "bps_spec.md",
+      "git_blob_sha1": "caf300a6e205c0d42ae98112b2d8afdc28e8c7d9",
+      "sha256": "6a84fc7c59425e3938d0e7ccab59fbaee37037b2135374a81fce5fb88905d303"
+    },
+    {
+      "path": "configure",
+      "git_blob_sha1": "c6c9dc92ed246a57a62ea24405459177ef56a1cd",
+      "sha256": "df521ae8d3f6d130837c8ed77b183ce4d78107b8c90566537c4e721914b2af73"
+    },
+    {
+      "path": "crc32.cpp",
+      "git_blob_sha1": "14bc4f09245dab288dfb77567bbc6fdf182d3352",
+      "sha256": "442ccc8862ff1ea37e96eee3b28d2b8a95bfce433cfc0b19e69ab478e1468aed"
+    },
+    {
+      "path": "crc32.h",
+      "git_blob_sha1": "9a2854249fbc95bb7271da786f43bb7bc2a5d349",
+      "sha256": "0bb5c7d793fe6908ae18342a45fc8d51fb8d8c315a2e127803938adb75263964"
+    },
+    {
+      "path": "data/com.github.Alcaro.Flips-symbolic.svg",
+      "git_blob_sha1": "7e9ab2374a9d5393374be31f6fbafef0c63c2c2c",
+      "sha256": "fea6d887f958e04599baffee70b979c2753709ce580cf553b85b849d26ba54f0"
+    },
+    {
+      "path": "data/com.github.Alcaro.Flips.desktop",
+      "git_blob_sha1": "923a5bb68890ea588836410385f75793e46a9e76",
+      "sha256": "ab90b26d96d19e8ceb981109f068e32188b69ae66eb3a2683a61dd96f3dc4b86"
+    },
+    {
+      "path": "data/com.github.Alcaro.Flips.metainfo.xml",
+      "git_blob_sha1": "873eb1571ef654c9752039d46996f6ad6d278a88",
+      "sha256": "058e8ae61fa1e003596708c095ef8a7083f990e71375425010e8c4bb5cec229f"
+    },
+    {
+      "path": "data/com.github.Alcaro.Flips.svg",
+      "git_blob_sha1": "c3d6229bd0dce421240ebdded44cf3fd413f750b",
+      "sha256": "756ea278a716be66fc85ae866b027fb19072d29800fdd9c9d4e68c28e99cc7d4"
+    },
+    {
+      "path": "data/flips-main-window.png",
+      "git_blob_sha1": "f3d5414863f9f9c0cba46995d60b8b138ef90d34",
+      "sha256": "d0e485329a0b5f1282c24d85f7cdaf1f5e05fc5129e1680183afdcbab82cdb01"
+    },
+    {
+      "path": "data/flips-preferences-window.png",
+      "git_blob_sha1": "6470c6eb2d15e914f359b4dbceb43590e3790c04",
+      "sha256": "243e393d45802245923401cbe4e59f09fc65cd8a83d4ee41de754d919c195c85"
+    },
+    {
+      "path": "divsufsort.c",
+      "git_blob_sha1": "9bbac4532fe220f4fe50a60d790afbf545ca97f7",
+      "sha256": "92054805fefb822bbaefbd8241f90bfc495b0b872d570daeaf9cd1d6f3267ff0"
+    },
+    {
+      "path": "divsufsort.h",
+      "git_blob_sha1": "8d8952e9b07a396a5709fe86de8faa0efc1e7d18",
+      "sha256": "9df884fb6211866c05815a31d4fafae0415c65f4fc6e677d9d7a5fc921a42381"
+    },
+    {
+      "path": "flatpak/com.github.Alcaro.Flips.json",
+      "git_blob_sha1": "d83d7f78c3771bbd4de5efb49abfcf45dae753d0",
+      "sha256": "bd490f13a2560942ffc9c13d6de819d75a309155142e3e49467cb06a2ccdc14b"
+    },
+    {
+      "path": "flips-cli.cpp",
+      "git_blob_sha1": "16b4b933c148be5cda6973dde4cbf9585cf1e532",
+      "sha256": "9d0c6fb35d55825c7e2b97ced2e9914ca9ffb886c6ced5f65555335fe66a38b8"
+    },
+    {
+      "path": "flips-gtk.cpp",
+      "git_blob_sha1": "2fe895c307fae52ef27371d9c0d0deb14e67d235",
+      "sha256": "be75c0439b2794bf8446f45b1b2c67b141849ebed59f4e0871434e80ed4ea4db"
+    },
+    {
+      "path": "flips-w32.cpp",
+      "git_blob_sha1": "771984e864cee0213ce25500b4a3b3b4afe2c2b7",
+      "sha256": "bfd7f3a3910347374fb0b8629108a10af98ab656e887f349f5ab5d4697787cb8"
+    },
+    {
+      "path": "flips.Manifest",
+      "git_blob_sha1": "44c44506a26a247fe38905656e5bb92dc9eb6e42",
+      "sha256": "a58bc1b0c748f75cb33ae4ae609ac99c1cd403b0dd80b3b0d5c45acdc49f0047"
+    },
+    {
+      "path": "flips.cpp",
+      "git_blob_sha1": "99e360bcb943adc4b1570dad79dbd7fccfb1b0b7",
+      "sha256": "404642f9a44f6d96d19d6c9e948caa92dbc8b7256b8297d988df3acb0c7de754"
+    },
+    {
+      "path": "flips.h",
+      "git_blob_sha1": "2017af07a17bbf495b4e726b0f6defb04cd3f4ef",
+      "sha256": "4720717c6c6fe0601a28850fa99f14a16376084dcc28014908d443cab1145091"
+    },
+    {
+      "path": "flips.ico",
+      "git_blob_sha1": "a38c89e571a8adac1780c51ff90a014972bb902c",
+      "sha256": "b0fc13442f2ddeb1378475ae09eef78a64f1ec57d8534270b92b351e3654a43c"
+    },
+    {
+      "path": "flips.rc",
+      "git_blob_sha1": "8c9f0b48c3157e85beaf749aeb180589d2b435f6",
+      "sha256": "871e0b0fe37e138abce1f7bedca9c36d926298e970d04089330af53ab8c4568c"
+    },
+    {
+      "path": "global.h",
+      "git_blob_sha1": "d4940e65a5cb8a0f85abde59b4b8eae9e715702f",
+      "sha256": "beb60d93e29e647bc47ece51d5037f5fd1210b84dff7218e07a2eda6ad294c3e"
+    },
+    {
+      "path": "ips.ico",
+      "git_blob_sha1": "2c69ef00eab91a023e7263eef65e2561cf5560ab",
+      "sha256": "8c90f1eb68e5521122239d1280e325881737b2de73e2805008e6759f38f9a354"
+    },
+    {
+      "path": "libbps-suf.cpp",
+      "git_blob_sha1": "d0dd33d37ceb09be9400811ca69223ee0b8e9754",
+      "sha256": "563b248b6a71501c27317a6b75fd41bec3f64cfad68d03ea317e1ed0d34d2711"
+    },
+    {
+      "path": "libbps.cpp",
+      "git_blob_sha1": "28a6db5f505a7dc2e01ba3b528a022b081b735da",
+      "sha256": "484c62a528548cc958f4637921761c2ee48d6a22dfd04119237460e5f0f0cd30"
+    },
+    {
+      "path": "libbps.h",
+      "git_blob_sha1": "db386b34163756986276596415aa5d3c7e766d30",
+      "sha256": "7cbd8ec60e2f8d4e72bd972529aa315b55effb75eacadf22aa142620175dc785"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/AUTHORS",
+      "git_blob_sha1": "1154fe9fa7e78fc195442a330c61a097a50e71ea",
+      "sha256": "ec16ad01af6bd797bb134dd8de99f95b06135dc7f828d135fe0eb99a298da6f9"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeLists.txt",
+      "git_blob_sha1": "7ceace34b06a48cb134211dbf216f5aaa1d05353",
+      "sha256": "4132558e6a60c3f5296e1ef93c773ea3aa9ddc0b7172985c0f6141f322583cf5"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeModules/AppendCompilerFlags.cmake",
+      "git_blob_sha1": "58d3f99ec2bbcefc1d2f6a01bf3831324ea462f2",
+      "sha256": "b62781f8321a1ec772985ca93e94efcf941ff363a8cef25beb67c8ac0468df45"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeModules/CheckFunctionKeywords.cmake",
+      "git_blob_sha1": "44601fd4e9fa15f0d9a26481d84ebf0662316131",
+      "sha256": "4685280e78c3d46a555442d0fd2c202c91d5c252cb1f433da3a11218268e3940"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeModules/CheckLFS.cmake",
+      "git_blob_sha1": "e2b00991438771d3564392f58c60b639985866ad",
+      "sha256": "a7ca1c0a6429ced850ec20cfe4e2948c8e4cbe8b4315268871d8f3d99c9f817f"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeModules/ProjectCPack.cmake",
+      "git_blob_sha1": "35694b1de76cf150e34d9678d659704544864f59",
+      "sha256": "502df115afa0bdeb0d8cafad0c341df085ba3f119d9c26c6adc1509e38fa68b6"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/CMakeModules/cmake_uninstall.cmake.in",
+      "git_blob_sha1": "8366a83533d33c32dfb55008fc4bee7137fe09bf",
+      "sha256": "23f659ade124665d40e26435aae92149ff06806c037e58f0312c189c19124055"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/COPYING",
+      "git_blob_sha1": "a0a64324d2f781293e9f82e1d9a74451898368ad",
+      "sha256": "a025003cb0d491d21288f797e07fe21ee1ddde50bb48d2a63a76b03307e94437"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/ChangeLog",
+      "git_blob_sha1": "17044e018895e6cbca2fd8d828268b2418fd7529",
+      "sha256": "a9553a1ff421a2e09316691cd2563231a74e3a94d54ccd9de391859606344871"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/ChangeLog.old",
+      "git_blob_sha1": "df8de8eae08c6514ad63730a0ff8e14854a0af1c",
+      "sha256": "b258ce3af09b79eb809cc025db398d5ef5cebe1a3c87d0e762467e3f22ba8f4b"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/INSTALL",
+      "git_blob_sha1": "ba7ee0912f17dfdf6e77910c5410db202ead744c",
+      "sha256": "311d8a3f769ba9d70d5d8b435c357382af6900c1159550960919630ebe1a1b70"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/Makefile.am",
+      "git_blob_sha1": "493bd8a4bfcc6f4d65d1b5266f30d29c417e5965",
+      "sha256": "13cca6694f28093e258333450a2ad2dcbf4fc6f499c9b65128a2516dba5b95cf"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/Makefile.in",
+      "git_blob_sha1": "0696da77faa67c1577a333a6d20ef8338ea3bdd5",
+      "sha256": "8f0670d47f939c920cfdb539300de9cd51614e8577c2c9708f66c0e103136ad4"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/NEWS",
+      "git_blob_sha1": "f240fd1ef29ca469df3e5bff1fa1393de5efbe9d",
+      "sha256": "fd42ef1e6a19d0a30705ca444827bba442394cb068b950b27c9acd5b448589a5"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/README",
+      "git_blob_sha1": "8bb4ef0b2de6918777e41bb5bec68b0e1a67a388",
+      "sha256": "359429fc7abca416f20e95746ba8e12f23cb7dead6dbd88d87f4c618d903e2e0"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/VERSION",
+      "git_blob_sha1": "38f77a65b3015cb4dc42eebe91514e49b47b8597",
+      "sha256": "fe840f52fb5578d3f77eb497115eb02c6036601c3a53e60df7995c7276baa77a"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/aclocal.m4",
+      "git_blob_sha1": "a9096d26bbe0db68aa528be85962ac9a38348e31",
+      "sha256": "6a36c675ead9d34c6e7d330f08acc07872c4df395350b173759f51ca87133f41"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/config.guess",
+      "git_blob_sha1": "c2246a4f7f4c78281ccfc4238a54cf7d83c4f421",
+      "sha256": "90063746c9099b104af2fb1161e2c4d136298f1ada234a45400dfca87d1180bf"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/config.sub",
+      "git_blob_sha1": "c2d125724c0ed2d2c6da5308c54567649554e5f3",
+      "sha256": "71dc03be273b5d3b3c6294f21a44623499f96824ebb70fbc3141f8579242f8d4"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/depcomp",
+      "git_blob_sha1": "df8eea7e4ce8862105fcd7929b20bdb45488048b",
+      "sha256": "20efdbd4f295e6b759a024fe045671de5db6066e2a210be3296eeb9c38a1b238"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/install-sh",
+      "git_blob_sha1": "6781b987bdbcbc23efe6bbe1654a1e3637b9af07",
+      "sha256": "a42cce53f5b376a4b1251e8d06e96dead9e858396d07333ed0cc83aa4b510023"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/ltmain.sh",
+      "git_blob_sha1": "7ed280bc9525daa93de726e1100f11de4b113de2",
+      "sha256": "f7052e821939841d77966ce993b8f0969abb1c37f3c4ead2667c3ff89b577699"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/config/missing",
+      "git_blob_sha1": "28055d2ae6f2a2c584afcd769d7881e11f62ecd9",
+      "sha256": "fd08cdce99a06aeb2308dd3b78499edc15c29ebc2da23b059a931b38cc5b90f3"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/configure",
+      "git_blob_sha1": "055a0fc730cdcccc7fd3276afbcea8a30d28b861",
+      "sha256": "3e83b3f8d86e9d579beae3291a99f74ca9ae54382cc9d8e121fb38df72fa7e43"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/configure.ac",
+      "git_blob_sha1": "497f914cee337a6ae6170ac53f24c3b72b24e361",
+      "sha256": "06ecc98af4a2ce0e264ac19fc8c882d08f4d3f39b204cd2ebf58cc6373492580"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/CMakeLists.txt",
+      "git_blob_sha1": "e801c81a4ea9854a1f2e1fdcdd0312f747d33b3d",
+      "sha256": "75d820ce09217b803917f7c768aa81b8b0f6b819e014e536fffc9aed887e0850"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/Makefile.am",
+      "git_blob_sha1": "ba81b7d6295073b9952a0d802da79ecd90da6287",
+      "sha256": "2302c0ba2a7c518fb17ac1774e986e02407a9dcc8d4d8e9b0bd6ec33a4769a1d"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/Makefile.in",
+      "git_blob_sha1": "6c6bb6c7d8e947d8ba12d285ab586eaf37f3fe93",
+      "sha256": "f5f1607856d66917c3682175e96073b55f8d24cbf5b58a1170dafe117dfd2f22"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/bwt.c",
+      "git_blob_sha1": "5a362d0179a0af7fd0d7bbdf16208932c8a9795c",
+      "sha256": "094346385a946a279d3f75a567bf3283932cfa2549e710caf54b6d59e7892d16"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/mksary.c",
+      "git_blob_sha1": "b48177cf8e9544e90ecbde2ede67016e09a12906",
+      "sha256": "2b2c4bb9f6621df0e7848311683f66022f599cf5450e5ecf8149bc823b15d450"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/sasearch.c",
+      "git_blob_sha1": "7e5ca4fe04ed2a173e31e0a4a31dc986021cb276",
+      "sha256": "53227afe095abcae31b75192b564d92494d28b2813942901ec27d137e5fbfb6a"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/suftest.c",
+      "git_blob_sha1": "71892ac172b95e0609247597e0105dd087e946c4",
+      "sha256": "293a60c5d0a22c0e4a40f520e42bbd092d0fe37ac229d132325113cffa62a2c9"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/examples/unbwt.c",
+      "git_blob_sha1": "c0f19e97ad0f01f0880e36011d78933ea411b5d0",
+      "sha256": "85fef2337580ecaca0141907901770111e5c2a444750594bea3f30c75f7fc6dd"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/CMakeLists.txt",
+      "git_blob_sha1": "2532e569aaad6f8ae0454a2b19e3d3cda22c7416",
+      "sha256": "ef8790895e346a63e6052aee1191422aa9554c5356ed2f9692b1bb73f7202238"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/Makefile.am",
+      "git_blob_sha1": "9bef60234c2e77a50e83c9c804150793f838e3cc",
+      "sha256": "1507981c6079f898a4e0b980eb4f5b5d684ab580c47f2c04bdbc7adcc9088434"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/Makefile.in",
+      "git_blob_sha1": "e43a1e33fad8c2b801eae2d00cabc2c7e61e599d",
+      "sha256": "d39df7ea5e0256c0d4eab46bd0201d0aec12eccafd40b7910d0a0f0f9044250e"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/config.h",
+      "git_blob_sha1": "45f5184c64384ad40b639f56592d4732be7f896d",
+      "sha256": "0479d281627aeb44a3ca0c2a8117c8793f2e17a49721ecdd3b0f34555baadfce"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/config.h.cmake",
+      "git_blob_sha1": "6a1cf47d8a83089c810981b7188fe145acc535cb",
+      "sha256": "e9e6e74e5eceacddcc13880e54f577ff686abcd7e932c970f88ddda159937a89"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/config.h.in",
+      "git_blob_sha1": "703b07959510043c8c7ffaf07e2115642195267a",
+      "sha256": "2d496f3424d76508575c3a666deda78594f8c1c6be25b948b4e2ab3c165fd0a1"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/divsufsort.h",
+      "git_blob_sha1": "6d3e648701ce277087f1d493e832971fb52dbeac",
+      "sha256": "0b6b3a20b3c1009ca97312d53aca228d4a7c28fd8e59bcce533a71ad50016b64"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/divsufsort.h.cmake",
+      "git_blob_sha1": "bcaba7c644c152e4bc7392c72637c173c3b1c95c",
+      "sha256": "437f8fab366989ad23db798f62eb63c6662e725055eabf3e4922cd5dc722c866"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/divsufsort64.h.in",
+      "git_blob_sha1": "ccb47d2a568319ee8cd55cbbb7a26aed40428318",
+      "sha256": "d3e980fec8d31376da18c6319182c4e6a6c653d55b023ff57a19b09f0bf50be7"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/divsufsort_private.h",
+      "git_blob_sha1": "7e261c19d49e54e90b70c91bd96dd5a81545129b",
+      "sha256": "bf8aa7e54d7ba7e3d7eab5fd4d5c032dbac8a6c4dce223d09c699c0e3a2c1392"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/include/lfs.h.cmake",
+      "git_blob_sha1": "d5b84a84246a9c9eb32e20c6290403f9cdf6682c",
+      "sha256": "fd5d085ff2a5eb225b06ac397afaab9070ff507689709391d7358b57a16012d1"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/CMakeLists.txt",
+      "git_blob_sha1": "56e794271ec34df88c526381a3fd284a0a3f01e7",
+      "sha256": "f0b8c69eb1dc65e6f51669d0a492e4ce0888f4403a7420aae3799e81f51cc560"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/Makefile.am",
+      "git_blob_sha1": "7815b964cd1c88ce7bd1f3ed153b70a1ca9d5192",
+      "sha256": "084a2b15e6c2539582be2460a4c98818cde763ab36d484e1c96c88e9f6515886"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/Makefile.in",
+      "git_blob_sha1": "929b64a709850027d883e4b4012afbe3654c8d9c",
+      "sha256": "4b8253c27a160ac0b90f9383018c9f9d53590f64ad79710de5e50407053001e1"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/divsufsort.c",
+      "git_blob_sha1": "9f64b4f48adbdf2baf570a1d7549f3610fb844cf",
+      "sha256": "d25839d4efe43c8aa60139fab833138471bfa296244bc5601d5c6127fcac6aaa"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/libdivsufsort.sym",
+      "git_blob_sha1": "2dcda953ad13f392df92c8dbfdf29f3e29847a78",
+      "sha256": "d7a3df427eb52480d93608a65ccab3252122de3e2a9bf4d0bd8a1421a1aa4d48"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/libdivsufsort64.sym",
+      "git_blob_sha1": "e04c45196ab63a954584d0644e5afdc479f5d034",
+      "sha256": "8a823769c781114f31b5548be94c0eab5e850f6f0f1465daa860bd4dc842463a"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/sssort.c",
+      "git_blob_sha1": "4a18fd2ab49586579e2b75669e833d14d1f6513f",
+      "sha256": "4f37772021a9c5286c51f0494412e6f2d0b52caf1e22a059edcb2833178f9eb5"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/trsort.c",
+      "git_blob_sha1": "6fe3e67baa4c99ef65b6c40b9be5fae3efda4aa4",
+      "sha256": "96d37fa16f07544ab23f2629adaa490decbccef3a1dd221e204f19fcb15d20c9"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/lib/utils.c",
+      "git_blob_sha1": "90fb23efa89a2cf5a26091f1541743d9eb331dda",
+      "sha256": "70d0814b04794934534d5b0cce63c35eaedf74f3f90f92fbe24186ca8fcf2ca0"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/m4/libtool.m4",
+      "git_blob_sha1": "a3fee5360f644854cc9497a7b3b1ed2ba6d46f08",
+      "sha256": "bcc8a8305e600b073933cbdfbf894647fd5fc588b03b17d34e23c0c927ef7363"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/m4/ltoptions.m4",
+      "git_blob_sha1": "34151a3ba625f326e6645d6afc79586f10746a3e",
+      "sha256": "49b95e8e94fe3831e79daa88d88528ee4ca6021239a839b50ec9a6dc2064e377"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/m4/ltsugar.m4",
+      "git_blob_sha1": "9000a057d31ddf75cb85ccda8757de4493bcdbe7",
+      "sha256": "e8bfa437be7af72bf41b86e7e714bc8b8545046c339f80cfb5e69681bc97f90d"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/m4/ltversion.m4",
+      "git_blob_sha1": "f3c5309802447a3b341b1a2c5e4d74ec138b311a",
+      "sha256": "788002f9a76b85c1790396635a13900355b942f8d7e93488d2dee01086ec797a"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/m4/lt~obsolete.m4",
+      "git_blob_sha1": "637bb2066c425f79faecd6cc9e4e6b5074c6b55c",
+      "sha256": "c6c668594337aafef7d59f585bce7010436153815fe341461d81301a2235b959"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/pkgconfig/CMakeLists.txt",
+      "git_blob_sha1": "1f2f8bc7a62aa0eb80cbbafd53bff53d1eab8538",
+      "sha256": "3eace4ee34b648b6e39bc83b8476c2da705f8b2110c08d010001c247541aacf3"
+    },
+    {
+      "path": "libdivsufsort-2.0.1/pkgconfig/libdivsufsort.pc.cmake",
+      "git_blob_sha1": "84f2272a49b31818c3ea3105649fa93fd9c7f287",
+      "sha256": "308c2ec819358d7f0b3045507b022375a48c3fc4681f76e750d79f148453b7db"
+    },
+    {
+      "path": "libips.cpp",
+      "git_blob_sha1": "56e7e9067715a6e6018d7e42da6734e3ba2d4e65",
+      "sha256": "cc9648e10964d7f67a7d3968162fad40d0914441ff4acb9f743ecd0d2a1de3dd"
+    },
+    {
+      "path": "libips.h",
+      "git_blob_sha1": "d6720d59db4e98c8950c9aa6527af23ea83a7176",
+      "sha256": "28ec1fd2221afc03c40ef924c6f2cb6f759b1405ec847e43f81eb13b5446d4ac"
+    },
+    {
+      "path": "libups.cpp",
+      "git_blob_sha1": "d63a908df65b381e15eb2d140076cfb5131cee57",
+      "sha256": "6b3b28f969f57cffff51c40728290630cffe3ff138b607793f3eaa3638140a32"
+    },
+    {
+      "path": "libups.h",
+      "git_blob_sha1": "0f749ef601daed7671ce3429cdde4ea3666cb7ec",
+      "sha256": "ce794e3fd70ee42a5c6e2c21df1207c19709b43a272583cf278b95d7f2ff3af0"
+    },
+    {
+      "path": "make-linux.sh",
+      "git_blob_sha1": "87d6ed746aafbf11ac52272628c0e62e2094e4bb",
+      "sha256": "749456f77e0d193f5ef4e528442f1a9ad8f74f64bffb4bf1b9e587ade24f1b74"
+    },
+    {
+      "path": "make-macos.sh",
+      "git_blob_sha1": "408fc606a435e5d2d8656979bcfab2c04d31ce92",
+      "sha256": "230b83cafd8b7fbf80820bfd51d3e8ab9963cebcb2c2d64f89a55b7b99791bcd"
+    },
+    {
+      "path": "make-windows.sh",
+      "git_blob_sha1": "c313ed2001186c63d7cc14eac71d4cb18303a034",
+      "sha256": "4e42f3659592a6d1032567f7b84f761f9c9e80a3955451e20642eda95b4c352e"
+    }
+  ],
+  "source_files_match_upstream_git_tree": true,
+  "excluded": "Optional profile archives; no files required by the CLI build are missing.",
+  "build_command": "make -C .tools/src/flips-local TARGET=cli CFLAGS=-O2 CXX=clang++ COMMIT_COUNT=",
+  "binary": ".tools/bin/flips",
+  "binary_sha256": "89da9a9c52bbecb4a241513be987f3b5861344f223e5cce543bba722826814e1"
+}
