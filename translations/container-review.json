@@ -1,0 +1,218 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned pot transfer messages including single/bulk insertion and withdrawal, refusals, floor-item prefix and two generic kind labels. Other shared consumers, custom names and special container mechanics remain separate.",
+  "entries": [
+    {
+      "id": "container.a24",
+      "table_offset": 2596,
+      "source": {
+        "offset": 392940,
+        "end_exclusive": 392971,
+        "raw_hex": "25648cc282cc834183438365838082f0257382c993fc82ea82dc82b582bd00",
+        "sha256": "ff59fef773841be4a611f0f2b2bf53a5e21f3d89cd47f001c0a5202a313f0894",
+        "japanese": "%{unclassified-control:64}個のアイテムを%{unclassified-control:73}に入れました"
+      },
+      "english": "Put {count} items in the {kind}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.a28",
+      "table_offset": 2600,
+      "source": {
+        "offset": 392884,
+        "end_exclusive": 392937,
+        "raw_hex": "25648cc282cc834183438365838082cc82a482bf2025648cc282cc834183438365838082f00a257382c993fc82ea82dc82b582bd00",
+        "sha256": "83d4051843709594689ce6d4b3c1cef9b8b13024a9228f6f466c5540829aee40",
+        "japanese": "%{unclassified-control:64}個のアイテムのうち %{unclassified-control:64}個のアイテムを{unclassified-control:0a}%{unclassified-control:73}に入れました"
+      },
+      "english": "Of {total} items, {count} went into the {kind}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.0b0",
+      "table_offset": 176,
+      "source": {
+        "offset": 410392,
+        "end_exclusive": 410422,
+        "raw_hex": "257382c982cd0d834183438365838082f093fc82ea82e782ea82c882a200",
+        "sha256": "fa256c325209a1547fab296757e98a2e6126d13ac5ddbdc53f44c742e74d69b0",
+        "japanese": "%{unclassified-control:73}には\nアイテムを入れられない"
+      },
+      "english": "Can't put items{fit} in {pot}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.0b8",
+      "table_offset": 184,
+      "source": {
+        "offset": 410344,
+        "end_exclusive": 410366,
+        "raw_hex": "257382cd0d257382c993fc82ea82e782ea82c882a200",
+        "sha256": "6fb5687aa66424b6a6ce31af5d2da3c905f142ef2789daec7f5eaf143b8dd125",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に入れられない"
+      },
+      "english": "Can't put {item}{fit} in {pot}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.150",
+      "table_offset": 336,
+      "source": {
+        "offset": 409304,
+        "end_exclusive": 409320,
+        "raw_hex": "257382cd2082d082eb82a682c882a200",
+        "sha256": "38e9fc4e005c0fddfd1c6148ad24356817bbb4d890c3c8a654b8eff28d150f7c",
+        "japanese": "%{unclassified-control:73}は ひろえない"
+      },
+      "english": "{item}{fit} cannot be picked up.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.1ec",
+      "table_offset": 492,
+      "source": {
+        "offset": 408256,
+        "end_exclusive": 408292,
+        "raw_hex": "257382cd0d926e96ca82c983738362835e838a82c682cd82e882c282a282c482a282e900",
+        "sha256": "7484e8df55c78cfeafcac3bcfe9ef963bee8b60254112f678115694a07903d46",
+        "japanese": "%{unclassified-control:73}は\n地面にピッタリとはりついている"
+      },
+      "english": "{item}{fit} is stuck fast to the ground.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.080",
+      "table_offset": 128,
+      "source": {
+        "offset": 410700,
+        "end_exclusive": 410734,
+        "raw_hex": "257382cd0d8ef482ed82ea82c482a282e982cc82c5814082cd82b882b982c882a200",
+        "sha256": "cc2c7a6900d5ee2d198adb0b0d36e369127068eaab00443bfe2aeb1ca420ca0c",
+        "japanese": "%{unclassified-control:73}は\n呪われているので　はずせない"
+      },
+      "english": "{item}{fit} is cursed and cannot be removed.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.a2c",
+      "table_offset": 2604,
+      "source": {
+        "offset": 392848,
+        "end_exclusive": 392881,
+        "raw_hex": "25648cc282cc834183438365838082f0257382a982e78f6f82b582dc82b582bd00",
+        "sha256": "50e325832b7c5e1a68e6ba1e177309ebfb47e478273db962703f23182e711abe",
+        "japanese": "%{unclassified-control:64}個のアイテムを%{unclassified-control:73}から出しました"
+      },
+      "english": "Took {count} items from the {kind}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.a30",
+      "table_offset": 2608,
+      "source": {
+        "offset": 392792,
+        "end_exclusive": 392847,
+        "raw_hex": "25648cc282cc834183438365838082cc82a482bf2025648cc282cc834183438365838082f00a257382a982e78f6f82b582dc82b582bd00",
+        "sha256": "fef525eec727b6ba5725a29eca7df44c65fbfacf22c18905a7af10a309e7eefe",
+        "japanese": "%{unclassified-control:64}個のアイテムのうち %{unclassified-control:64}個のアイテムを{unclassified-control:0a}%{unclassified-control:73}から出しました"
+      },
+      "english": "Of {total} items, {count} came out of the {kind}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.0bc",
+      "table_offset": 188,
+      "source": {
+        "offset": 410308,
+        "end_exclusive": 410342,
+        "raw_hex": "8e9d82bf82e082cc82aa82a282c182cf82a282c5208ee682e882be82b982c882a200",
+        "sha256": "4794b564edec0e58fc5462ee0859a0f402bc0ae125d8a2af79a50aac8bda4e1f",
+        "japanese": "持ちものがいっぱいで 取りだせない"
+      },
+      "english": "Inventory full! Can't take it out.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.0c0",
+      "table_offset": 192,
+      "source": {
+        "offset": 410284,
+        "end_exclusive": 410306,
+        "raw_hex": "257382a982e70d257382f08ee682e882be82b582bd00",
+        "sha256": "0388859fcb3b5b18fd795b442acd847320a33fdc89dd150b918579cba6219834",
+        "japanese": "%{unclassified-control:73}から\n%{unclassified-control:73}を取りだした"
+      },
+      "english": "From {pot}{fit}: took {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps insertion/removal, total-versus-successful counts, container/item roles, full inventory and refusal reasons distinct. Bulk partial-result argument order remains total first, succeeded second. Native selector bounds are reserved through20. Single Put announcement and its optional floor prefix remain separate."
+    },
+    {
+      "id": "container.038",
+      "table_offset": 56,
+      "source": {
+        "offset": 411640,
+        "end_exclusive": 411647,
+        "raw_hex": "91ab8cb382cc00",
+        "sha256": "9c73b834e1d822be9934bf91b5708e85af4f2eb2f7a1ed1d472af6d2ecb8ec84",
+        "japanese": "足元の"
+      },
+      "english": "Floor: ",
+      "status": "reviewed",
+      "review": "Preserves native prefix, item, pot argument order. Floor: identifies the item at your feet; passive message retains the completed insertion. Full item fields fit at most two lines with native conditional break."
+    },
+    {
+      "id": "container.0b4",
+      "table_offset": 180,
+      "source": {
+        "offset": 410368,
+        "end_exclusive": 410390,
+        "raw_hex": "2573257382f00d257382cc928682c993fc82ea82bd00",
+        "sha256": "5db70dbdfea6792712f35574f700464d7869d7d2ecd0dd8407eb151e31d80e80",
+        "japanese": "%{unclassified-control:73}%{unclassified-control:73}を\n%{unclassified-control:73}の中に入れた"
+      },
+      "english": "{floor}{item}{fit} put into {pot}.",
+      "status": "reviewed",
+      "review": "Preserves native prefix, item, pot argument order. Floor: identifies the item at your feet; passive message retains the completed insertion. Full item fields fit at most two lines with native conditional break."
+    }
+  ],
+  "labels": [
+    {
+      "id": "container-kind.0",
+      "index": 0,
+      "source": {
+        "offset": 440740,
+        "end_exclusive": 440747,
+        "raw_hex": "95f390ce94a000",
+        "sha256": "e53c00bf920fec7ca3bd98818f8bf42fc64103ebbffa6f81fe3f1fa9b692c2e3",
+        "japanese": "宝石箱"
+      },
+      "english": "jewel box",
+      "status": "reviewed",
+      "review": "Generic Japanese container noun; consistent with the established Magic jewel box / pot item terminology. Private helper table only."
+    },
+    {
+      "id": "container-kind.1",
+      "index": 1,
+      "source": {
+        "offset": 440736,
+        "end_exclusive": 440739,
+        "raw_hex": "9ae200",
+        "sha256": "4768ef3b8f3a3d57709576ebe65c462e4506ab49725d0e2ba7160088ed072137",
+        "japanese": "壺"
+      },
+      "english": "pot",
+      "status": "reviewed",
+      "review": "Generic Japanese container noun; consistent with the established Magic jewel box / pot item terminology. Private helper table only."
+    }
+  ]
+}

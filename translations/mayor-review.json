@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Six text slots read by village-renaming consumer08020564. Separate prototype; ordinary unlocking and save persistence require native proof.",
+  "entries": [
+    {
+      "id": "mayor-099",
+      "index": 99,
+      "source_id": "town-common.0cb3",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582a082f182bd82aa974c96bc82be82a982e70d8140838f835682cd837a8393836782c98140834a835182aa82a482b782a282f182b682e181420d834a835182cc82a482b782a291ba92b7817582bb82f182c8838f835682c90d814082c582ab82e982cc82cd814082b182ea82ae82e782a282cc82b182c682b682e181458145814581420d834a835182cc82a482b782a291ba92b7817591ba82cc96bc914f82f00d814095cf82a682c482dd82c882a282a982a2814800",
+      "source_sha256": "84fbd4ddeb02f32156e3fb73d48686e50702dc0dd795cc19200f919db6d7869b",
+      "japanese": "カゲのうすい村長「あんたが有名だから\n　ワシはホントに　カゲがうすいんじゃ。\nカゲのうすい村長「そんなワシに\n　できるのは　これぐらいのことじゃ・・・。\nカゲのうすい村長「村の名前を\n　変えてみないかい？",
+      "english": "Overlooked mayor: You're so famous, nobody ever notices me.\n\nOverlooked mayor: About the only thing I can do is...\n\nOverlooked mayor: Would you like to rename the village?",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": "town-prose-review.json:town-common.0cb3"
+      }
+    },
+    {
+      "id": "mayor-206",
+      "index": 206,
+      "source_id": "town-common.0e7a",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582a482de814082ed82a982c182bd81420d814091ba82cc82a082bd82e782b582a296bc914f82cd0d834a835182cc82a482b782a291ba92b7817525730d814082c682a282a482ed82af82b682e182c8814200",
+      "source_sha256": "09105c53efc7bcb90f2574ca98065ed80a0dededbae9c065de88bdcf71eda6cc",
+      "japanese": "カゲのうすい村長「うむ　わかった。\n　村のあたらしい名前は\nカゲのうすい村長「%s\n　というわけじゃな。",
+      "english": "Overlooked mayor: Right, I see. The village's new name will be {village}. Is that right?",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": null
+      }
+    },
+    {
+      "id": "mayor-207",
+      "index": 207,
+      "source_id": "town-common.0d7b",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817581458145814582cd829f829f81420d0d834a835182cc82a482b782a291ba92b7817582bd82dc82c982cd814091ba92b782e782b582a20d814082b182c682aa814082b582c482dd82bd82a282e082cc82b682e182c8829f814200",
+      "source_sha256": "06093f232057a2cbaffb24b30d28095c5fdd2c1f989d8cb721d651582561a7bb",
+      "japanese": "カゲのうすい村長「・・・はぁぁ。\n\nカゲのうすい村長「たまには　村長らしい\n　ことが　してみたいものじゃなぁ。",
+      "english": "Overlooked mayor: ...Sigh.\n\nOverlooked mayor: I'd like to do something mayorly once in a while.",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": "town-prose-review.json:town-common.0d7b"
+      }
+    },
+    {
+      "id": "mayor-209",
+      "index": 209,
+      "source_id": "town-common.0ede",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582c882c981480d814082b682e182a0814082c782a482a282a482cc82aa82a282a282f182b682e1814800",
+      "source_sha256": "7c4e82788b6c7b00be321cff1809a61d94db62df0384f81c350a27b5208b6405",
+      "japanese": "カゲのうすい村長「なに？\n　じゃあ　どういうのがいいんじゃ？",
+      "english": "Overlooked mayor: What? Well, what would you prefer?",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": "town-prose-review.json:town-common.0ede"
+      }
+    },
+    {
+      "id": "mayor-210",
+      "index": 210,
+      "source_id": "town-common.0f1a",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582c282dc82e88140838f835682cd0d8140257391ba82cc91ba92b7814082c682a282a482ed82af82be81420d0d0d834a835182cc82a482b782a291ba92b78175838f835682c682a082f182bd82c50d814096bc82c382af82bd82be82af82a082c182c40d834a835182cc82a482b782a291ba92b7817582c882a982c882a982e682a20d814083718372834c82b682e182cc82a4814200",
+      "source_sha256": "b76eeef8366b96f5f40d7886be58347ab625271e5a4970f9dc739b51b2e1bfa3",
+      "japanese": "カゲのうすい村長「つまり　ワシは\n　%s村の村長　というわけだ。\n\n\nカゲのうすい村長「ワシとあんたで\n　名づけただけあって\nカゲのうすい村長「なかなかよい\n　ヒビキじゃのう。",
+      "english": "Overlooked mayor: I'm mayor of {village} Village, then.\n\nOverlooked mayor: We chose it together. Has a nice ring to it!",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": null
+      }
+    },
+    {
+      "id": "mayor-211",
+      "index": 211,
+      "source_id": "town-common.0de7",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582a482de81490d0d834a835182cc82a482b782a291ba92b7817582a082f182bd82cc82bd82cc82dd82c882e782ce0d814082b182c682ed82e982b182c682cd82c582ab82ca82c881420d0d834a835182cc82a482b782a291ba92b7817582c882e782ce0d814082c782a482a282a496bc914f82c982b782e982cc82b682e1814800",
+      "source_sha256": "0b83a60ca937c059bc103e55303722f4c8e3c105ef096eeff522490e6cd4065e",
+      "japanese": "カゲのうすい村長「うむ！\n\nカゲのうすい村長「あんたのたのみならば\n　ことわることはできぬな。\n\nカゲのうすい村長「ならば\n　どういう名前にするのじゃ？",
+      "english": "Overlooked mayor: Of course! I could hardly refuse you.\n\nOverlooked mayor: What shall we call it?",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Bilingual review retains the overlooked mayor voice, proposed-name confirmation and joint naming. The single native %s is the newly entered village name, not the player or saved-header name. Four plain passages reuse the prior independent review; the two formats are newly authored. Native buffer and editor behavior are separate validation requirements.",
+        "prior_review": "town-prose-review.json:town-common.0de7"
+      }
+    }
+  ]
+}

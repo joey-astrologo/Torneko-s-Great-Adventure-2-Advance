@@ -1,0 +1,188 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "player-effect.0e0",
+      "table_offset": 224,
+      "source": {
+        "offset": 410096,
+        "end_exclusive": 410110,
+        "raw_hex": "257382cd208dac979082b582bd00",
+        "sha256": "4d6a0bf81ba562c7b83f776c50a5bf145fd70197e9886a91b9e570482d5ae89a",
+        "japanese": "%{unclassified-control:73}は 混乱した"
+      },
+      "english": "{player} is confused.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.110",
+      "table_offset": 272,
+      "source": {
+        "offset": 409628,
+        "end_exclusive": 409650,
+        "raw_hex": "257382cd0e0a4e8dac979082b582c882a982c182bd00",
+        "sha256": "ec9e237a7005e67cbb9407a5f0277ed6d8ab40cd3d7f63f87b0998fb2a7274b0",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}混乱しなかった"
+      },
+      "english": "{player} isn't confused.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.118",
+      "table_offset": 280,
+      "source": {
+        "offset": 409628,
+        "end_exclusive": 409650,
+        "raw_hex": "257382cd0e0a4e8dac979082b582c882a982c182bd00",
+        "sha256": "ec9e237a7005e67cbb9407a5f0277ed6d8ab40cd3d7f63f87b0998fb2a7274b0",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}混乱しなかった"
+      },
+      "english": "{player} isn't confused.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.200",
+      "table_offset": 512,
+      "source": {
+        "offset": 408128,
+        "end_exclusive": 408155,
+        "raw_hex": "257382cd200e0a4e93ae82ab82aa82a882bb82ad82c882c182bd00",
+        "sha256": "dda4def77935550ae50db3a7499509dba9c9d08651e765c5cb909d9694a9fcf0",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0a4e}動きがおそくなった"
+      },
+      "english": "{player} slows down.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.3dc",
+      "table_offset": 988,
+      "source": {
+        "offset": 405276,
+        "end_exclusive": 405296,
+        "raw_hex": "257382cd2082a882d182a682cd82b682df82bd00",
+        "sha256": "f52d73cd686d92e4901b5194c888c75b0d43c39ba296c9f0d2626a578fe6ed0c",
+        "japanese": "%{unclassified-control:73}は おびえはじめた"
+      },
+      "english": "{player} is frightened.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.490",
+      "table_offset": 1168,
+      "source": {
+        "offset": 404032,
+        "end_exclusive": 404061,
+        "raw_hex": "257382cd0d834183588367838d83938ff391d482c982c882c182bd2100",
+        "sha256": "637f8e4aa7c92b769d4c1869ee33053a7423c0e8ca11de05e64ddd3e872d07c4",
+        "japanese": "%{unclassified-control:73}は\nアストロン状態になった!"
+      },
+      "english": "{player} turns to iron!",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.498",
+      "table_offset": 1176,
+      "source": {
+        "offset": 403948,
+        "end_exclusive": 403982,
+        "raw_hex": "257382cd20977882e782b882c982cd0d82a282e782ea82c882ad82c882c182bd2100",
+        "sha256": "31b8ef0560f9ea1093e5437fefb9eaa57168bd14743339be1b7c680687e3649f",
+        "japanese": "%{unclassified-control:73}は 踊らずには\nいられなくなった!"
+      },
+      "english": "{player} cannot stop dancing!",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.7a0",
+      "table_offset": 1952,
+      "source": {
+        "offset": 397088,
+        "end_exclusive": 397114,
+        "raw_hex": "82b582a982b520977882e782c882a282c582b182e782a682bd00",
+        "sha256": "2f2680e82f173737e9a5292631ee1cdedccd9af39db30371f855f293412e247a",
+        "japanese": "しかし 踊らないでこらえた"
+      },
+      "english": "But you resisted the urge to dance.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.7a8",
+      "table_offset": 1960,
+      "source": {
+        "offset": 397032,
+        "end_exclusive": 397060,
+        "raw_hex": "82b582a982b52082a882bb82ad82c882e782b882c982b782f182be00",
+        "sha256": "b509152e3ad3a0f354ef0a8d19a40300f0c2cf54f148167db14731f72ad16964",
+        "japanese": "しかし おそくならずにすんだ"
+      },
+      "english": "But you avoided slowing down.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.7ac",
+      "table_offset": 1964,
+      "source": {
+        "offset": 397012,
+        "end_exclusive": 397030,
+        "raw_hex": "82b582a982b52082d482b682be82c182bd00",
+        "sha256": "0de01072d17f4412cc57dba7c0d0cfc33bce1f4d08a6353095beb11e4c9e0408",
+        "japanese": "しかし ぶじだった"
+      },
+      "english": "But you were unharmed.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.7dc",
+      "table_offset": 2012,
+      "source": {
+        "offset": 396812,
+        "end_exclusive": 396832,
+        "raw_hex": "257382cd935389bb82b582c882a982c182bd2100",
+        "sha256": "8dd344ac374f78f855169a94028edb9d032b62cce48a00ade1b4e9f82b8e17b8",
+        "japanese": "%{unclassified-control:73}は鉄化しなかった!"
+      },
+      "english": "{player} didn't turn to iron!",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.918",
+      "table_offset": 2328,
+      "source": {
+        "offset": 394616,
+        "end_exclusive": 394633,
+        "raw_hex": "257382cd83778343834c82be82c182bd00",
+        "sha256": "8c6c4588f252ca6befef57f8e0a8222ea2bf4964afa32a9299ae5d5297e4bcc6",
+        "japanese": "%{unclassified-control:73}はヘイキだった"
+      },
+      "english": "{player} was unharmed.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    },
+    {
+      "id": "player-effect.8f4",
+      "table_offset": 2292,
+      "source": {
+        "offset": 394848,
+        "end_exclusive": 394882,
+        "raw_hex": "257382cd834183438365838082aa0e0a4e82ed82a982e782c882ad82c882c182bd00",
+        "sha256": "ec32575540fb899e55946f4c81884f506c95874168d7c27fb6db9c483a00ee6f",
+        "japanese": "%{unclassified-control:73}はアイテムが{fit-next:0e0a4e}わからなくなった"
+      },
+      "english": "{player} can't recognize items.",
+      "status": "reviewed",
+      "review": "Independently translated from the recorded T2 Japanese. Player-only consumers proven by disassembly: direct 08009ACC(0), or wrapper 08015848 which obtains that same player. No invented intentional avoidance in negative confusion/iron outcomes. Astoron is expressed as its native iron transformation; inability to stop dancing and recognize items is explicit. Japanese newline/fit-next presentation controls become a verified single line at maximum player width; no gameplay/event controls are removed. Controlled consumer/branch and pixel proof required before cumulative insertion."
+    }
+  ],
+  "scope": "Reviewed wording for thirteen audited player-only reads. Separate prototype passes 39 controlled native cases: maximum names, exact output bounds, queue/glyph/ABI checks. Not cumulative insertion or ordinary gameplay acceptance."
+}

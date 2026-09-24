@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Three table literals in poison-arrow080276F0 and falling-rock080277E8 handlers. Original effects and formatted damage/strength consumers are separately checked; ordinary discovery/death/resistance remain separate.",
+  "entries": [
+    {
+      "id": "damage-trap.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch, failed activation and the poison-arrow/falling-rock notices without adding damage or avoidance before the native effect runs. All notices fit one line. Native strength and damage acknowledgements retain their separately owned translations."
+    },
+    {
+      "id": "damage-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch, failed activation and the poison-arrow/falling-rock notices without adding damage or avoidance before the native effect runs. All notices fit one line. Native strength and damage acknowledgements retain their separately owned translations."
+    },
+    {
+      "id": "damage-trap.2f8",
+      "table_offset": 760,
+      "source": {
+        "offset": 406684,
+        "end_exclusive": 406702,
+        "raw_hex": "93c596ee82aa94f282f182c582ab82bd2100",
+        "sha256": "40070b6501149baf6402b502bc88674fd27592f7a84755bb3bb204cb3887ce8f",
+        "japanese": "毒矢が飛んできた!"
+      },
+      "english": "A poison arrow flew at you!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch, failed activation and the poison-arrow/falling-rock notices without adding damage or avoidance before the native effect runs. All notices fit one line. Native strength and damage acknowledgements retain their separately owned translations."
+    },
+    {
+      "id": "damage-trap.30c",
+      "table_offset": 780,
+      "source": {
+        "offset": 406608,
+        "end_exclusive": 406624,
+        "raw_hex": "90ce82aa82a882bf82c482ab82bd2100",
+        "sha256": "01181c1e1fe7b05f3cf351ccbf59da130f791001ab795a55f2c10a94c7c5aeac",
+        "japanese": "石がおちてきた!"
+      },
+      "english": "A rock fell!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch, failed activation and the poison-arrow/falling-rock notices without adding damage or avoidance before the native effect runs. All notices fit one line. Native strength and damage acknowledgements retain their separately owned translations."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "town-common.2a76",
+      "index": 59,
+      "source_hex": "834183438365838082f089bd82e08e9d82c182c482a282dc82b982f1814200",
+      "source_sha256": "647757c7a70719d5c8724ff31ec3511a2cdff3ca462f2c9e6704304a312a295f",
+      "japanese": "アイテムを何も持っていません。",
+      "english": "You are not carrying any items.",
+      "status": "reviewed",
+      "review": "Reuse the approved home-book empty-inventory wording for this shared source. Private town consumer only; full control flow and other source uses are separately verified."
+    },
+    {
+      "id": "town-common.2a95",
+      "index": 108,
+      "source_hex": "82b182cc834183438365838082f0814082b782c482dc82b7814200",
+      "source_sha256": "1cfba4e57f206a16471a8014d0b8fbf6c631bd19928615c2da149218f48d3f6a",
+      "japanese": "このアイテムを　すてます。",
+      "english": "Throw this item away?",
+      "status": "reviewed",
+      "review": "Preserves empty inventory / discard confirmation and explicit loss of all pot contents. Native confirmation choice remains separate."
+    },
+    {
+      "id": "town-common.2ab0",
+      "index": 109,
+      "source_hex": "82b182cc9ae282f08140928682c993fc82c182c482a282e90d834183438365838082b282c6814082b782c482dc82b7814200",
+      "source_sha256": "6ebfc7ec9d3716eee9569dc5a342cf2deab9366515133dade2c92fc1a0d85bb3",
+      "japanese": "この壺を　中に入っている\nアイテムごと　すてます。",
+      "english": "Throw away this pot and its contents?",
+      "status": "reviewed",
+      "review": "Preserves empty inventory / discard confirmation and explicit loss of all pot contents. Native confirmation choice remains separate."
+    }
+  ],
+  "labels": [
+    {
+      "id": "town-action.40",
+      "index": 40,
+      "source": {
+        "offset": 395152,
+        "end_exclusive": 395157,
+        "raw_hex": "90e096be00",
+        "sha256": "f16540b4d13dfd755892f196a59e1c105dd1791d471f9f6b824af5b5e61bbf55",
+        "japanese": "説明"
+      },
+      "english": "Info",
+      "status": "reviewed",
+      "review": "View/Info retain approved menu wording. Trash is the destructive discard command, fits34px; Discard is38px and would exceed original cursor region."
+    },
+    {
+      "id": "town-action.42",
+      "index": 42,
+      "source": {
+        "offset": 411904,
+        "end_exclusive": 411909,
+        "raw_hex": "8ca982e900",
+        "sha256": "86d59b64b58099cba5a310b6546f4121888664a32095466f47ab72964f59c250",
+        "japanese": "見る"
+      },
+      "english": "View",
+      "status": "reviewed",
+      "review": "View/Info retain approved menu wording. Trash is the destructive discard command, fits34px; Discard is38px and would exceed original cursor region."
+    },
+    {
+      "id": "town-action.44",
+      "index": 44,
+      "source": {
+        "offset": 411896,
+        "end_exclusive": 411903,
+        "raw_hex": "82b782c482e900",
+        "sha256": "a1bd346dc90c2d55760101ff6067990c37360b7174a214a5064abd6718de97e6",
+        "japanese": "すてる"
+      },
+      "english": "Trash",
+      "status": "reviewed",
+      "review": "View/Info retain approved menu wording. Trash is the destructive discard command, fits34px; Discard is38px and would exceed original cursor region."
+    }
+  ],
+  "scope": "Owned town inventory consumer0801E490 only: empty inventory, normal/filled-pot discard confirmation, and View/Trash/Info labels. Other action-table and town-table consumers remain untouched."
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned native summoning trap only; no blanket shared-table replacement. Ordinary trap discovery and other summoning consumers remain separate.",
+  "entries": [
+    {
+      "id": "summon-trap.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves switch activation, summoning and the separate no-monsters outcome. These complete static warnings fit one line without dropping meaning. Controlled native handler/spawner checks remain distinct from ordinary trap discovery."
+    },
+    {
+      "id": "summon-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves switch activation, summoning and the separate no-monsters outcome. These complete static warnings fit one line without dropping meaning. Controlled native handler/spawner checks remain distinct from ordinary trap discovery."
+    },
+    {
+      "id": "summon-trap.31c",
+      "table_offset": 796,
+      "source": {
+        "offset": 406524,
+        "end_exclusive": 406548,
+        "raw_hex": "838283938358835e815b82f08cc482d182e682b982bd2100",
+        "sha256": "5392158190b06915446e57484464a06220242dce3067d8789e02ce6418d84984",
+        "japanese": "モンスターを呼びよせた!"
+      },
+      "english": "Monsters were summoned!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves switch activation, summoning and the separate no-monsters outcome. These complete static warnings fit one line without dropping meaning. Controlled native handler/spawner checks remain distinct from ordinary trap discovery."
+    },
+    {
+      "id": "summon-trap.3d4",
+      "table_offset": 980,
+      "source": {
+        "offset": 405316,
+        "end_exclusive": 405358,
+        "raw_hex": "81458145814582b582a982b50d838283938358835e815b82cd82a082e782ed82ea82c882a982c182bd00",
+        "sha256": "d7204924c7dd05fe469a6d1e5a1736281dc14097a48658bbadc593c7ff947a87",
+        "japanese": "・・・しかし\nモンスターはあらわれなかった"
+      },
+      "english": "But no monsters appeared.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves switch activation, summoning and the separate no-monsters outcome. These complete static warnings fit one line without dropping meaning. Controlled native handler/spawner checks remain distinct from ordinary trap discovery."
+    }
+  ]
+}

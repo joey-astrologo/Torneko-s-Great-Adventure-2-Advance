@@ -1,0 +1,525 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "34 source slots read by synthesis consumer0801D544, in a private town table. Original table and unowned fragments/instruction variants remain separate. Native menu geometry measured from Japanese source; English native acceptance pending.",
+  "entries": [
+    {
+      "id": "gaibara.30",
+      "source_id": "town-common.1f50",
+      "index": 30,
+      "source_hex": "834b8343836f815b8389817582a882ca82b5814082c882c982aa965d82dd82be814800",
+      "source_sha256": "ab4053d95e30f8ac2690fa925f117d0cda76ceb944ec4fec06fd3db2dd4d8363",
+      "japanese": "ガイバーラ「おぬし　なにが望みだ？",
+      "english": "Gaibara: What do you want?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: What do you want?",
+        "revision": "Gaibara: What do you want?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.31",
+      "source_id": "town-common.1f73",
+      "index": 31,
+      "source_hex": "834b8343836f815b8389817582a482de814082bb82a482a981420d814082dc82bd82ad82e982aa82e682a2814900",
+      "source_sha256": "e711dcaf3a336dfa15f76b18377bb05616a1fbf2dfe9c30c77ae4a5cd490b409",
+      "japanese": "ガイバーラ「うむ　そうか。\n　またくるがよい！",
+      "english": "Gaibara: Very well. Come again!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Very well. Come again!",
+        "revision": "Gaibara: Very well. Come again!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.32",
+      "source_id": "town-common.1fa1",
+      "index": 32,
+      "source_hex": "834b8343836f815b838981758d8790ac82b582bd82a282e082cc82f0914982d482cc82be81490d814081400d8140835a838c834e8367837b835e8393814581458145834183438365838082cc90e096be0d81408260837b835e83938145814581458c8892e881408261837b835e83938145814581458f4997b900",
+      "source_sha256": "cc1abdfe4bc58cd792b94875647597ef6dd6861ab108eb5b0bc7e4529f57e7a6",
+      "japanese": "ガイバーラ「合成したいものを選ぶのだ！\n　　\n　セレクトボタン・・・アイテムの説明\n　Ａボタン・・・決定　Ｂボタン・・・終了",
+      "english": "Gaibara: Choose the base item.\n\nSELECT: Info\nA: Confirm / B: Cancel",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Choose an item to synthesise!\nSELECT: Info\nA: Confirm  B: Finish",
+        "revision": "Gaibara: Choose the base item.\n\nSELECT: Info\nA: Confirm / B: Cancel",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.33",
+      "source_id": "town-common.201b",
+      "index": 33,
+      "source_hex": "834b8343836f815b83898175836f834a8382839381490d81408d8790ac82cc81408cb382c982c882e982e082cc82aa82c882a282ed814900",
+      "source_sha256": "2614af114d135b6d02674aead2e8c046b4bc56b4ce750708863831354e2c3356",
+      "japanese": "ガイバーラ「バカモン！\n　合成の　元になるものがないわ！",
+      "english": "Gaibara: Fool! You have nothing to use as a base!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Fool! You have nothing to use as a base!",
+        "revision": "Gaibara: Fool! You have nothing to use as a base!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.34",
+      "source_id": "town-common.2053",
+      "index": 34,
+      "source_hex": "834b8343836f815b8389817582a482de81420d814082e282df82c482a882ad814082c682a282a482ed82af82b682e182c881420d834b8343836f815b8389817582bb82ea82e0906c90b682b682e181490d0d834b8343836f815b8389817582c582cd814082b382e782ce82b682e181490d81408d8790ac82b582bd82ad82c882c182bd82e7814082ad82e982aa82e682a2814900",
+      "source_sha256": "584bbb937f4ecaafdcc926a15cfa4ba1ea95146c33f3a70d2a2ded8991c2ce8f",
+      "japanese": "ガイバーラ「うむ。\n　やめておく　というわけじゃな。\nガイバーラ「それも人生じゃ！\n\nガイバーラ「では　さらばじゃ！\n　合成したくなったら　くるがよい！",
+      "english": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+        "revision": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.36",
+      "source_id": "town-common.20ee",
+      "index": 36,
+      "source_hex": "834b8343836f815b838981758349838d834a8382836d82df81490d814082bb82ea82c681408d8790ac82c582ab82e982e082cc82c882c782c882a282ed814900",
+      "source_sha256": "69feb327a1ac51c26846fc053603a93a0ec8de66e2575e1b4f55a48047254143",
+      "japanese": "ガイバーラ「オロカモノめ！\n　それと　合成できるものなどないわ！",
+      "english": "Gaibara: You fool! Nothing you have can be combined with that!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: You fool! Nothing you have can be combined with that!",
+        "revision": "Gaibara: You fool! Nothing you have can be combined with that!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.39",
+      "source_id": "town-common.21e7",
+      "index": 39,
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d8140836c836c82b382f182c68366815b836782b382b982c482ad82ea82f182a9814800",
+      "source_sha256": "cad85212b049915b294c52254c6e8b2a7f05c4d045589c876e9fb57ada077567",
+      "japanese": "ガイバーラ「代金の代わりに\n　ネネさんとデートさせてくれんか？",
+      "english": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+        "revision": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.40",
+      "source_id": "town-common.2225",
+      "index": 40,
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d8140837c837c838d82bf82e182f182f08140838f835682c982ad82ea82ca82a9814800",
+      "source_sha256": "3d396cf10b1e3eaa0f598e504a0175daf6be5208d93103097c124e62aa8e736b",
+      "japanese": "ガイバーラ「代金の代わりに\n　ポポロちゃんを　ワシにくれぬか？",
+      "english": "Gaibara: Instead of paying me, will you give me little Tipper?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you give me little Tipper?",
+        "revision": "Gaibara: Instead of paying me, will you give me little Tipper?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.41",
+      "source_id": "town-common.2263",
+      "index": 41,
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d814082b582a082ed82b982cc94a082f08140838f835682c982ad82ea82f182a9814800",
+      "source_sha256": "683f30b6fcec2dd54e407b77bb3035c02716ac9125a3d6d17a665560459d3f19",
+      "japanese": "ガイバーラ「代金の代わりに\n　しあわせの箱を　ワシにくれんか？",
+      "english": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+        "revision": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.42",
+      "source_id": "town-common.22a1",
+      "index": 42,
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d814082a882ca82b582cc935882f082e482b882c182c482ad82ea82ca82a9814800",
+      "source_sha256": "ad5dbfb6be400dba194bc18a75d70c3ed0c84c0e33e4c53fb0c18eda48ee626b",
+      "japanese": "ガイバーラ「代金の代わりに\n　おぬしの店をゆずってくれぬか？",
+      "english": "Gaibara: Instead of paying me, will you hand over your shop?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you hand over your shop?",
+        "revision": "Gaibara: Instead of paying me, will you hand over your shop?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.43",
+      "source_id": "town-common.22dd",
+      "index": 43,
+      "source_hex": "834b8343836f815b83898175838f835682c682a882ca82b582cc928782b682e10d81408da189f182cd8140835e835f82c982b582c482a882a282c482e282eb82a482a9814800",
+      "source_sha256": "3e7a1cf84c54144709302f7720f4910ed58fec67b0f5061b89706395e72db87a",
+      "japanese": "ガイバーラ「ワシとおぬしの仲じゃ\n　今回は　タダにしておいてやろうか？",
+      "english": "Gaibara: For an old friend like you, shall I make this one free?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: For an old friend like you, shall I make this one free?",
+        "revision": "Gaibara: For an old friend like you, shall I make this one free?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.44",
+      "source_id": "town-common.2323",
+      "index": 44,
+      "source_hex": "834b8343836f815b83898175838f835682e082c882a982c882a98bea82b582ad82c482c80d814082c282ac82a982e782cd8140926c8fe382b082b582c482e082e682a282a9814800",
+      "source_sha256": "c72cce3fd212927409102c89a9dbc09a8643edd9b47011414dd7dc970196d058",
+      "japanese": "ガイバーラ「ワシもなかなか苦しくてな\n　つぎからは　値上げしてもよいか？",
+      "english": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+        "revision": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.45",
+      "source_id": "town-common.236b",
+      "index": 45,
+      "source_hex": "834b8343836f815b8389817582b682c282cd81408eb8947382b582bd81420d814082e482e982b9814900",
+      "source_sha256": "eaee945b0a4a91b8c43c78767cfdd0ff768ac3429d2e71c36d55c2870660a1af",
+      "japanese": "ガイバーラ「じつは　失敗した。\n　ゆるせ！",
+      "english": "Gaibara: Actually, I botched it. Forgive me!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Actually, I botched it. Forgive me!",
+        "revision": "Gaibara: Actually, I botched it. Forgive me!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.46",
+      "source_id": "town-common.2395",
+      "index": 46,
+      "source_hex": "834b8343836f815b83898175935882f082e282df82e682a482c60d81408e7682c182c482a282e982cc82be82aa814082a282a282a9814800",
+      "source_sha256": "a4e253b6655807f0da2d8105f1923e88ac8e7f935629a8964928fc2c516a6e2d",
+      "japanese": "ガイバーラ「店をやめようと\n　思っているのだが　いいか？",
+      "english": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+        "revision": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.47",
+      "source_id": "town-common.23cd",
+      "index": 47,
+      "source_hex": "834b8343836f815b8389817582c282a282c282a2814082bf82aa82a482e082cc82f00d81408d8790ac82b582c482b582dc82c182bd81490d834b8343836f815b8389817582a282a282a9814800",
+      "source_sha256": "16d8379df6541d3a33c919b9e1c4b1a329325bb489f8b1228cb3f808fc23aaca",
+      "japanese": "ガイバーラ「ついつい　ちがうものを\n　合成してしまった！\nガイバーラ「いいか？",
+      "english": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+        "revision": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.48",
+      "source_id": "town-common.241a",
+      "index": 48,
+      "source_hex": "834b8343836f815b8389817591e38be082cd8145814581450d81408250824f824f824f824f824f824f824f824f969c8353815b838b836882be81420d834b8343836f815b8389817582a282a282a9814800",
+      "source_sha256": "34b1f7806ad11b5eb018a7569272d25f8534fad7be8ee3e12750f5ce2fafc0f9",
+      "japanese": "ガイバーラ「代金は・・・\n　１００００００００万ゴールドだ。\nガイバーラ「いいか？",
+      "english": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+        "revision": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.49",
+      "source_id": "town-common.246b",
+      "index": 49,
+      "source_hex": "834b8343836f815b8389817589a4976c82f082e482a482a982a282b582bd82cc82cd0d814082b682c282cd8140838f835682b682e181490d834b8343836f815b8389817582a882c782eb82a282bd82a9814800",
+      "source_sha256": "5018c3fcd779f93c3f466841283a21700797ae5c0845d79440477033aac6b30f",
+      "japanese": "ガイバーラ「王様をゆうかいしたのは\n　じつは　ワシじゃ！\nガイバーラ「おどろいたか？",
+      "english": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+        "revision": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.50",
+      "source_id": "town-common.24be",
+      "index": 50,
+      "source_hex": "834b8343836f815b8389817582b682c282cd82c88145814581450d814089ce8e9682cc8cb488f682cd814082b182cc838f835682c882f182b682e181420d834b8343836f815b83898175837783778393814900",
+      "source_sha256": "2695763b5645689999b505bfc261130cd5740ede527b80802738ad1df5f7fd86",
+      "japanese": "ガイバーラ「じつはな・・・\n　火事の原因は　このワシなんじゃ。\nガイバーラ「ヘヘン！",
+      "english": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+        "revision": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.51",
+      "source_id": "town-common.2511",
+      "index": 51,
+      "source_hex": "834b8343836f815b8389817582aa82cd82cd82cd82cd82c10d814083458145835c814582b682e1829f816082c181490d834b8343836f815b8389817582bb82f182c882b182c682e682e882e081458145814500",
+      "source_sha256": "d702bf1351b5242c14ae62dcb99b1b5054f44890ea0355afeac8def2f266df7a",
+      "japanese": "ガイバーラ「がははははっ\n　ウ・ソ・じゃぁ～っ！\nガイバーラ「そんなことよりも・・・",
+      "english": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+        "revision": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.52",
+      "source_id": "town-common.2564",
+      "index": 52,
+      "source_hex": "834b8343836f815b838981758d8790ac82cc91e38be082cd81400d814003052564054782c982c882e982bc81420d834b8343836f815b8389817582bb82ea82c582e682a282a9814800",
+      "source_sha256": "f7d635202765d436683690ea693ce625745e88674cae69697835f814313fa538",
+      "japanese": "ガイバーラ「合成の代金は　\n　{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gになるぞ。\nガイバーラ「それでよいか？",
+      "english": "Gaibara: Synthesis will cost {cost}G.\n\nGaibara: Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Synthesis will cost {arg1}G. Is that all right?",
+        "revision": "Gaibara: Synthesis will cost {cost}G.\n\nGaibara: Is that all right?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.53",
+      "source_id": "town-common.25ad",
+      "index": 53,
+      "source_hex": "834b8343836f815b838981758341837a835e838c82aa81490d81408353815b838b836882aa82bd82e782f181490d834b8343836f815b838981758f6f82c882a882b582c482ad82e982aa82e682a2814900",
+      "source_sha256": "6c47801cfd4740ff9e4ebb3d335d6b70e6db46b6c323f63d19937adc3cb28856",
+      "japanese": "ガイバーラ「アホタレが！\n　ゴールドがたらん！\nガイバーラ「出なおしてくるがよい！",
+      "english": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+        "revision": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.54",
+      "source_id": "town-common.25fe",
+      "index": 54,
+      "source_hex": "834b8343836f815b8389817582d982a982c9814082c882c982a98d8790ac82b782e982a9814800",
+      "source_sha256": "fd057bcb3550ea6c650c0d51e307b69699e2f7e2085a9575c896c59a262301d1",
+      "japanese": "ガイバーラ「ほかに　なにか合成するか？",
+      "english": "Gaibara: Anything else you want to synthesise?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Anything else you want to synthesise?",
+        "revision": "Gaibara: Anything else you want to synthesise?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.110",
+      "source_id": "town-common.263e",
+      "index": 110,
+      "source_hex": "834b8343836f815b8389817582c882c981488140838f835682cc8cb682cc8c868dec0d814081758d8790ac82cc9ae2817682f081408e6782ed82b982c482d982b582a282be82c681480d0d0d834b8343836f815b8389817581458145814582e682a982eb82a481420d0d0d0d834b8343836f815b8389817582bd82be816082b582c181490d814082dc82b882cd81408d8790ac82cc90e096be82f095b782af82a2814900",
+      "source_sha256": "f497456a447ac57a1128954a2b7efd12abf899ad6358a6fc8837355771c4be7f",
+      "japanese": "ガイバーラ「なに？　ワシの幻の傑作\n　「合成の壺」を　使わせてほしいだと？\n\n\nガイバーラ「・・・よかろう。\n\n\n\nガイバーラ「ただ～しっ！\n　まずは　合成の説明を聞けい！",
+      "english": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+        "revision": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.111",
+      "source_id": "town-common.27d1",
+      "index": 111,
+      "source_hex": "834b8343836f815b8389817582be82a982e7208d8790ac82b782e982c682ab82cd0d0d834b8343836f815b838981758d558c8297cd82cc8aee967b926c82aa8d8282a282e082cc82f00d81408cb382c982b782e982cc82aa93be82b682e1814200",
+      "source_sha256": "b89f0a977267410ba10968512099b81fc48830a10c232a5f3bdff4bdcbc5c6a2",
+      "japanese": "ガイバーラ「だから 合成するときは\n\nガイバーラ「攻撃力の基本値が高いものを\n　元にするのが得じゃ。",
+      "english": "Gaibara: So when you synthesise, choose an item with high base attack power as your base!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: So when you synthesise, choose a base with high base attack power!",
+        "revision": "Gaibara: So when you synthesise, choose an item with high base attack power as your base!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.112",
+      "source_id": "town-common.2832",
+      "index": 112,
+      "source_hex": "20208d8790ac82b782e90d202090e096be82f082ab82ad0d202082e282df82e900",
+      "source_sha256": "25d2d3c863b475edb71ea44ead590b4e1ce594e3fbb0cd1ad420d348ca5025b2",
+      "japanese": "  合成する\n  説明をきく\n  やめる",
+      "english": [
+        "Synthesise",
+        "Explain",
+        "Leave"
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Synthesise\nExplain\nLeave",
+        "revision": [
+          "Synthesise",
+          "Explain",
+          "Leave"
+        ],
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.113",
+      "source_id": "town-common.2853",
+      "index": 113,
+      "source_hex": "834b8343836f815b83898175257382c60d814082c782ea82f08d8790ac82b582bd82a282c682a282a482cc82be81480d8140835a838c834e8367837b835e8393814581458145834183438365838082cc90e096be0d81408260837b835e83938145814581458c8892e881408261837b835e83938145814581458f4997b900",
+      "source_sha256": "d27eb2a46597e065b22e7637f466445cb657ae126c16f89017f9a4c68e146456",
+      "japanese": "ガイバーラ「%{unclassified-control:73}と\n　どれを合成したいというのだ？\n　セレクトボタン・・・アイテムの説明\n　Ａボタン・・・決定　Ｂボタン・・・終了",
+      "english": "Gaibara: What should I combine with {item}?\n\nSELECT: Info\nA: Confirm / B: Cancel",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: What will you combine with {arg1}?\nSELECT: Info\nA: Confirm  B: Finish",
+        "revision": "Gaibara: What should I combine with {item}?\n\nSELECT: Info\nA: Confirm / B: Cancel",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.114",
+      "source_id": "town-common.28d1",
+      "index": 114,
+      "source_hex": "834b8343836f815b838981758cb382c682c882e982cc82cd0d8140257381420d834b8343836f815b8389817581458145814582b182ea82c582a282a282cc82a9814800",
+      "source_sha256": "628d0aebb1b1ead45567305b0b8e7d3c5b005b22554c1b5ff3a7ebe37c3f3ab1",
+      "japanese": "ガイバーラ「元となるのは\n　%{unclassified-control:73}。\nガイバーラ「・・・これでいいのか？",
+      "english": "Gaibara: Make {item} the base?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: The base will be {arg1}. Is that right?",
+        "revision": "Gaibara: Make {item} the base?",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.115",
+      "source_id": "town-common.2914",
+      "index": 115,
+      "source_hex": "834b8343836f815b8389817581458145814582c882f182b682e1814082bf82aa82a482cc82a9814200",
+      "source_sha256": "0bbafae2f2c39bf098174ec818484a8e36125ce39a03400e90fe02d8188d552c",
+      "japanese": "ガイバーラ「・・・なんじゃ　ちがうのか。",
+      "english": "Gaibara: ...Hmph. So that wasn't it.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Hmph. So that wasn't it.",
+        "revision": "Gaibara: ...Hmph. So that wasn't it.",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.116",
+      "source_id": "town-common.293d",
+      "index": 116,
+      "source_hex": "834b8343836f815b8389817581458145814582c882f182b682e181420d814082d982a982cc82e082cc82c982b582bd82a282ed82af82a981420d834b8343836f815b8389817582c882e782ce8140914982d182c882a882b782aa82e682a2814900",
+      "source_sha256": "3a459fc50ab3d73469c638877f5f826984f19ddefca54657a5acbbc7d6ba2c0e",
+      "japanese": "ガイバーラ「・・・なんじゃ。\n　ほかのものにしたいわけか。\nガイバーラ「ならば　選びなおすがよい！",
+      "english": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+        "revision": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.117",
+      "source_id": "town-common.299e",
+      "index": 117,
+      "source_hex": "834b8343836f815b8389817582d382de814082c582cd814082e282df82e982bc81420d81408d8790ac82ce82a982e882aa8140906c90b682c582cd82c882a282a982e782c881420d0d0d834b8343836f815b8389817582c582cd814082b382e782ce82b682e1814900",
+      "source_sha256": "27cd1d866ff8e01ecd37f8341406f46b2d8b9be5c8bfb2399ed7bd6b6693ac23",
+      "japanese": "ガイバーラ「ふむ　では　やめるぞ。\n　合成ばかりが　人生ではないからな。\n\n\nガイバーラ「では　さらばじゃ！",
+      "english": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+        "revision": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.118",
+      "source_id": "town-common.2a07",
+      "index": 118,
+      "source_hex": "834b8343836f815b8389817581458145814582a482de81490d0d834b8343836f815b8389817582c582cd0d81408d8790ac82b582bd834183438365838082f08ef382af82c682e982aa82e682a2814200",
+      "source_sha256": "254752ed8b97f413e7db2e2dd405a7712c826fe668f2ffafa2eacb55d32f15eb",
+      "japanese": "ガイバーラ「・・・うむ！\n\nガイバーラ「では\n　合成したアイテムを受けとるがよい。",
+      "english": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+        "revision": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.119",
+      "source_id": "town-common.2a57",
+      "index": 119,
+      "source_hex": "834b8343836f815b8389817582c582cd814082b382e782ce82b682e1814900",
+      "source_sha256": "81150a60d5ea6bbd048d475fac48e3f46c8795fff9d7ac00b12ceab589abc162",
+      "japanese": "ガイバーラ「では　さらばじゃ！",
+      "english": "Gaibara: Farewell!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Farewell!",
+        "revision": "Gaibara: Farewell!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.198",
+      "source_id": "town-common.21cc",
+      "index": 198,
+      "source_hex": "834b8343836f815b8389817582c682b182eb82c581458145814500",
+      "source_sha256": "eb58431fd2112a4d079b9613762e89f48baa793c8f84549053259dc7affa086d",
+      "japanese": "ガイバーラ「ところで・・・",
+      "english": "Gaibara: By the way...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: By the way...",
+        "revision": "Gaibara: By the way...",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    },
+    {
+      "id": "gaibara.199",
+      "source_id": "town-common.26e2",
+      "index": 199,
+      "source_hex": "834b8343836f815b8389817582bd82c682a682ce81408c9581490d81408eed97de82cc82bf82aa82a48c9582f08140825182c293fc82ea82ea82ce0d834b8343836f815b8389817582bb82ea82bc82ea82cc93c190ab82f00d81408d8782ed82b98e9d82c182bd8c9582aa814082c582ab82a082aa82e981490d834b8343836f815b8389817582e082b582e08c9582c981402b825282c882c70d814090d882ea96a182f082b582df82b790948e9a82aa82c282a282c482a282ea82ce0d834b8343836f815b8389817582bb82cc8d878c7682e00d81408ef382af82c282aa82ea82e982b182c682c982c882e9814900",
+      "source_sha256": "5e0f43528ee9bd63b3b72300ff9501cea60fdfa733573803c55a45b49e067d16",
+      "japanese": "ガイバーラ「たとえば　剣！\n　種類のちがう剣を　２つ入れれば\nガイバーラ「それぞれの特性を\n　合わせ持った剣が　できあがる！\nガイバーラ「もしも剣に　+３など\n　切れ味をしめす数字がついていれば\nガイバーラ「その合計も\n　受けつがれることになる！",
+      "english": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+        "revision": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+        "reason": "Independent bilingual reading retains Gaibara's voice, synthesis properties/bonus addition, item roles, price and question polarity. SELECT/A/B instructions retain their native actions; Cancel describes leaving the current selection. Menu labels keep the three original choices in order. Earlier plain-prose review is retained."
+      }
+    }
+  ]
+}

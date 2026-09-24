@@ -1,0 +1,150 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Isolated medal formatter/award-message consumer; selector and inventory probes required.",
+  "entries": [
+    {
+      "id": "event-bank-6.465b",
+      "source_hex": "89a4976c817581458145814582c7b382b682e18148814088abb2986282c5cab1d9cfb281420d0d89a4976c8175bfda82c5ca81407ed681420d8140b7c0b2bcc391d282c1c3b5d982bc814200",
+      "source_sha256": "6360fffa7ab65155eea5838076a76bfff1e32cf92af42068e25b5e56690bb530",
+      "japanese": "王様「・・・どｳじゃ？　悪ｲ話でﾊｱﾙﾏｲ。\n\n王様「ｿﾚでﾊ　{unclassified-control:7e}ﾖ。\n　ｷﾀｲｼﾃ待っﾃｵﾙぞ。",
+      "english": "King: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+      "prose_review": {
+        "previous_draft": "King: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+        "revised": "King: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.46a7",
+      "source_hex": "89a4976c8175d3bcd38140bfda82f08ca9c2b9c0d70d8140838f8356c9c4badbcd8e9d82c1c39788c3b8dac7b681420d89a4976c8175d3c1dbdd8140bfdac5d8c997e7cabdd982bc81420d0d89a4976c8175bfc5c0c98ca9c2b9c08facbbc58381835f838b82aa0d8140252d3464cfb2c6c582c1c0d78145814581450d89a4976c817581758381835e838b834c8393834fc98f82817682f0d4dbb381420d0d89a4976c817581458145814582c7b382b682e181480d814088abb2986282c5cab1d9cfb281420d89a4976c8175bfda82c5ca81407ed681420d8140b7c0b2bcc391d282c1c3b5d982bc814200",
+      "source_sha256": "9f867eab592bf98e29e3cb496a7020fd81ff5486d311f0e987379f4fbb0f9a14",
+      "japanese": "王様「ﾓｼﾓ　ｿﾚを見ﾂｹﾀﾗ\n　ワシﾉﾄｺﾛﾍ持っﾃ来ﾃｸﾚﾇｶ。\n王様「ﾓﾁﾛﾝ　ｿﾚﾅﾘﾉ礼ﾊｽﾙぞ。\n\n王様「ｿﾅﾀﾉ見ﾂｹﾀ小ｻﾅメダルが\n　%-4{unclassified-control:64}ﾏｲﾆﾅっﾀﾗ・・・\n王様「「メタルキングﾉ盾」をﾔﾛｳ。\n\n王様「・・・どｳじゃ？\n　悪ｲ話でﾊｱﾙﾏｲ。\n王様「ｿﾚでﾊ　{unclassified-control:7e}ﾖ。\n　ｷﾀｲｼﾃ待っﾃｵﾙぞ。",
+      "english": "King: If you find any, would you bring them to me? Of course, I shall reward you.\n\nKing: Once you've found {medals} Mini medals...\n\nKing: I'll give you a Metal king shield!\n\nKing: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+      "prose_review": {
+        "previous_draft": "King: If you find any, would you bring them to me? Of course, I shall reward you.\n\nKing: Once you've found {medals} Mini medals...\n\nKing: I'll give you a Metal king shield!\n\nKing: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+        "revised": "King: If you find any, would you bring them to me? Of course, I shall reward you.\n\nKing: Once you've found {medals} Mini medals...\n\nKing: I'll give you a Metal king shield!\n\nKing: Well? Not a bad offer, eh?\n\nKing: I look forward to your return, {player}.",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.47f6",
+      "source_hex": "89a4976c8175814581458145b5b5b582c181490d8140bfdaca8facbbc58381835f838b82c5cac5b2b682c181490d89a4976c8175b1d882aac0b8b2c082beb2c3b5b882bc81420d0d89a4976c8175bada82c58140bfc5c0b6d7d3d782c1c00d81408facbbc58381835f838bca252d6c64cfb2c6c582c1c0814200",
+      "source_sha256": "70e3a088ed303ed530f2734313b049e4b67ee472cbf55ecd385e22aa6682f97f",
+      "japanese": "王様「・・・ｵｵｵっ！\n　ｿﾚﾊ小ｻﾅメダルでﾊﾅｲｶっ！\n王様「ｱﾘがﾀｸｲﾀだｲﾃｵｸぞ。\n\n王様「ｺﾚで　ｿﾅﾀｶﾗﾓﾗっﾀ\n　小ｻﾅメダルﾊ%-{unclassified-control:6c}{unclassified-control:64}ﾏｲﾆﾅっﾀ。",
+      "english": "King: ...Oh! Aren't those Mini medals?!\n\nKing: I gratefully accept them.\n\nKing: That brings the total you've given me to {medals} Mini medals.",
+      "prose_review": {
+        "previous_draft": "King: ...Oh! Aren't those Mini medals?!\n\nKing: I gratefully accept them.\n\nKing: That brings the total you've given me to {medals} Mini medals.",
+        "revised": "King: ...Oh! Aren't those Mini medals?!\n\nKing: I gratefully accept them.\n\nKing: That brings the total you've given me to {medals} Mini medals.",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.4870",
+      "source_hex": "89a4976c8175d4b8bfb882c7b5d80d814081758381835e838b834c8393834fc98c95817682f0d4dbb381420d144041407e82cd0d148381835e838b834c8393834f82cc8c9582f08ee882c993fc82ea82bd814900",
+      "source_sha256": "0df1148e4a63c0ee147c39483a420c9c1d349f54e5e6537f882bc21a24335536",
+      "japanese": "王様「ﾔｸｿｸどｵﾘ\n　「メタルキングﾉ剣」をﾔﾛｳ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}メタルキングの剣を手に入れた！",
+      "english": "King: As promised, here is your Metal king sword.\n\n{center}@A@{player}\n{center}received a Metal king sword!",
+      "prose_review": {
+        "previous_draft": "King: As promised, here is your Metal king sword.\n\n{center}@A@{player}\n{center}received a Metal king sword!",
+        "revised": "King: As promised, here is your Metal king sword.\n\n{center}@A@{player}\n{center}received a Metal king sword!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.48c4",
+      "source_hex": "89a4976c817582c5ca8140d4b8bfb882c7b5d80d814081758381835e838b834c8393834fc98f82817682f0d4dbb381420d144041407e82cd0d148381835e838b834c8393834f82cc8f8282f08ee882c993fc82ea82bd814900",
+      "source_sha256": "568c320b60291f1a519d7aa4740193b673a484b813d689a5f7da9bbe3d03678b",
+      "japanese": "王様「でﾊ　ﾔｸｿｸどｵﾘ\n　「メタルキングﾉ盾」をﾔﾛｳ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}メタルキングの盾を手に入れた！",
+      "english": "King: As promised, here is your Metal king shield.\n\n{center}@A@{player}\n{center}received a Metal king shield!",
+      "prose_review": {
+        "previous_draft": "King: As promised, here is your Metal king shield.\n\n{center}@A@{player}\n{center}received a Metal king shield!",
+        "revised": "King: As promised, here is your Metal king shield.\n\n{center}@A@{player}\n{center}received a Metal king shield!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.491d",
+      "source_hex": "89a4976c8175b1c4252d6c64cfb282c50d814081758381835e838b834c8393834fc98c95817682f08140bfc5c0c6d4dbb381420d89a4976c8175814581458145d6dbbcb8c0c9d182bc814900",
+      "source_sha256": "57243b671dd946cf109686cd372e87c6a586bc581708104838af4dda04b72f9c",
+      "japanese": "王様「ｱﾄ%-{unclassified-control:6c}{unclassified-control:64}ﾏｲで\n　「メタルキングﾉ剣」を　ｿﾅﾀﾆﾔﾛｳ。\n王様「・・・ﾖﾛｼｸﾀﾉﾑぞ！",
+      "english": "King: Bring me {medals} more medals, and I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+      "prose_review": {
+        "previous_draft": "King: Bring me {medals} more medals, and I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+        "revised": "King: Bring me {medals} more medals, and I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.4969",
+      "source_hex": "89a4976c8175b1c4252d6c64cfb282c50d814081758381835e838b834c8393834fc98f82817682f08140bfc5c0c6d4dbb381420d89a4976c8175814581458145d6dbbcb8c0c9d182bc814900",
+      "source_sha256": "732a209a380557fd22e6e0d941a2802a67cec011af400142fde1bc6b12a0b619",
+      "japanese": "王様「ｱﾄ%-{unclassified-control:6c}{unclassified-control:64}ﾏｲで\n　「メタルキングﾉ盾」を　ｿﾅﾀﾆﾔﾛｳ。\n王様「・・・ﾖﾛｼｸﾀﾉﾑぞ！",
+      "english": "King: Bring me {medals} more medals, and I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+      "prose_review": {
+        "previous_draft": "King: Bring me {medals} more medals, and I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+        "revised": "King: Bring me {medals} more medals, and I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.49b5",
+      "source_hex": "89a4976c8175c282acca81408facbbc58381835f838b82aa0d8140252d6c64cfb2c68140c582c1c0c4b7c60d89a4976c817581758381835e838b834c8393834fc98c95817682f0d4dbb381420d0d89a4976c8175814581458145d6dbbcb8c0c9d182bc814900",
+      "source_sha256": "cd3725ec4a8c55044bf3754bbc3d6c79083aa8ce3946f94528c6d1ffc4e5dfa3",
+      "japanese": "王様「ﾂぎﾊ　小ｻﾅメダルが\n　%-{unclassified-control:6c}{unclassified-control:64}ﾏｲﾆ　ﾅっﾀﾄｷﾆ\n王様「「メタルキングﾉ剣」をﾔﾛｳ。\n\n王様「・・・ﾖﾛｼｸﾀﾉﾑぞ！",
+      "english": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+      "prose_review": {
+        "previous_draft": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+        "revised": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king sword.\n\nKing: I'm counting on you!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.4a1b",
+      "source_hex": "89a4976c8175c282acca81408facbbc58381835f838b82aa0d8140252d6c64cfb2c68140c582c1c0c4b7c60d89a4976c817581758381835e838b834c8393834fc98f82817682f0d4dbb381420d0d89a4976c8175814581458145d6dbbcb8c0c9d182bc814900",
+      "source_sha256": "8f5876576d09285af357d32597e5ec51c4a217045e5595f29e44158cc1cebfa6",
+      "japanese": "王様「ﾂぎﾊ　小ｻﾅメダルが\n　%-{unclassified-control:6c}{unclassified-control:64}ﾏｲﾆ　ﾅっﾀﾄｷﾆ\n王様「「メタルキングﾉ盾」をﾔﾛｳ。\n\n王様「・・・ﾖﾛｼｸﾀﾉﾑぞ！",
+      "english": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+      "prose_review": {
+        "previous_draft": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+        "revised": "King: Next, when your total reaches {medals} Mini medals, I'll give you a Metal king shield.\n\nKing: I'm counting on you!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "status": "reviewed"
+    }
+  ]
+}

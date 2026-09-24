@@ -1,0 +1,2079 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "108 independently reviewed plain town prose sources. No printf templates, selection lists, save composition or special control sources. Rendering preflight is separate from owned consumer insertion, branch outcomes and ordinary service progression. Current town table bindings remain unchanged.",
+  "entries": [
+    {
+      "id": "town-common.0bad",
+      "source_hex": "8370839389ae817582a082e882aa82c682a482b282b482a282dc82b781490d814082c782cc8370839382c9814082a282bd82b582dc82b582e582a482a9814800",
+      "source_sha256": "c1c484908c9778cbc74c53a8a0895f2a43c590892a1cb2ac8f9ea178a1723cc0",
+      "japanese": "パン屋「ありがとうございます！\n　どのパンに　いたしましょうか？",
+      "references": [
+        {
+          "slot": 420,
+          "index": 105
+        }
+      ],
+      "english": "Baker: Thank you! Which bread would you like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Baker: Thank you! Which bread would you like?",
+        "revision": "Baker: Thank you! Which bread would you like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. This repeat-greeting source was not observed in the previously audited bakery consumer; no reachability claim."
+      }
+    },
+    {
+      "id": "town-common.0c87",
+      "source_hex": "82a082bd82b5836c836c81420d82e082a482b782ae82c582ab82e982a982e782dc82c182bf82e582ea82e200",
+      "source_sha256": "813d9a9b0a24840f9cf3eb8178ce1d89e8990336d30302ddc14ae57f2a866c82",
+      "japanese": "あたしネネ。\nもうすぐできるからまっちょれや",
+      "references": [
+        {
+          "slot": 224,
+          "index": 56
+        },
+        {
+          "slot": 228,
+          "index": 57
+        }
+      ],
+      "english": "I'm Tessie. It'll be ready soon, so hold your horses!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "I'm Tessie. It'll be ready soon, so hold your horses!",
+        "revision": "I'm Tessie. It'll be ready soon, so hold your horses!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Colloquial Tessie source retained; its gameplay reachability and possible placeholder role remain unresolved."
+      }
+    },
+    {
+      "id": "town-common.0cb3",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582a082f182bd82aa974c96bc82be82a982e70d8140838f835682cd837a8393836782c98140834a835182aa82a482b782a282f182b682e181420d834a835182cc82a482b782a291ba92b7817582bb82f182c8838f835682c90d814082c582ab82e982cc82cd814082b182ea82ae82e782a282cc82b182c682b682e181458145814581420d834a835182cc82a482b782a291ba92b7817591ba82cc96bc914f82f00d814095cf82a682c482dd82c882a282a982a2814800",
+      "source_sha256": "84fbd4ddeb02f32156e3fb73d48686e50702dc0dd795cc19200f919db6d7869b",
+      "japanese": "カゲのうすい村長「あんたが有名だから\n　ワシはホントに　カゲがうすいんじゃ。\nカゲのうすい村長「そんなワシに\n　できるのは　これぐらいのことじゃ・・・。\nカゲのうすい村長「村の名前を\n　変えてみないかい？",
+      "references": [
+        {
+          "slot": 396,
+          "index": 99
+        }
+      ],
+      "english": "Overlooked mayor: You're so famous, nobody ever notices me.\n\nOverlooked mayor: About the only thing I can do is...\n\nOverlooked mayor: Would you like to rename the village?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Overlooked mayor: You're so famous, nobody ever notices me.\n\nOverlooked mayor: About the only thing I can do is...\n\nOverlooked mayor: Would you like to rename the village?",
+        "revision": "Overlooked mayor: You're so famous, nobody ever notices me.\n\nOverlooked mayor: About the only thing I can do is...\n\nOverlooked mayor: Would you like to rename the village?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.0d7b",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817581458145814582cd829f829f81420d0d834a835182cc82a482b782a291ba92b7817582bd82dc82c982cd814091ba92b782e782b582a20d814082b182c682aa814082b582c482dd82bd82a282e082cc82b682e182c8829f814200",
+      "source_sha256": "06093f232057a2cbaffb24b30d28095c5fdd2c1f989d8cb721d651582561a7bb",
+      "japanese": "カゲのうすい村長「・・・はぁぁ。\n\nカゲのうすい村長「たまには　村長らしい\n　ことが　してみたいものじゃなぁ。",
+      "references": [
+        {
+          "slot": 828,
+          "index": 207
+        }
+      ],
+      "english": "Overlooked mayor: ...Sigh.\n\nOverlooked mayor: I'd like to do something mayorly once in a while.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Overlooked mayor: ...Sigh.\n\nOverlooked mayor: I'd like to do something mayorly once in a while.",
+        "revision": "Overlooked mayor: ...Sigh.\n\nOverlooked mayor: I'd like to do something mayorly once in a while.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.0de7",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582a482de81490d0d834a835182cc82a482b782a291ba92b7817582a082f182bd82cc82bd82cc82dd82c882e782ce0d814082b182c682ed82e982b182c682cd82c582ab82ca82c881420d0d834a835182cc82a482b782a291ba92b7817582c882e782ce0d814082c782a482a282a496bc914f82c982b782e982cc82b682e1814800",
+      "source_sha256": "0b83a60ca937c059bc103e55303722f4c8e3c105ef096eeff522490e6cd4065e",
+      "japanese": "カゲのうすい村長「うむ！\n\nカゲのうすい村長「あんたのたのみならば\n　ことわることはできぬな。\n\nカゲのうすい村長「ならば\n　どういう名前にするのじゃ？",
+      "references": [
+        {
+          "slot": 844,
+          "index": 211
+        }
+      ],
+      "english": "Overlooked mayor: Of course! I could hardly refuse you.\n\nOverlooked mayor: What shall we call it?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Overlooked mayor: Of course! I could hardly refuse you.\n\nOverlooked mayor: What shall we call it?",
+        "revision": "Overlooked mayor: Of course! I could hardly refuse you.\n\nOverlooked mayor: What shall we call it?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.0ede",
+      "source_hex": "834a835182cc82a482b782a291ba92b7817582c882c981480d814082b682e182a0814082c782a482a282a482cc82aa82a282a282f182b682e1814800",
+      "source_sha256": "7c4e82788b6c7b00be321cff1809a61d94db62df0384f81c350a27b5208b6405",
+      "japanese": "カゲのうすい村長「なに？\n　じゃあ　どういうのがいいんじゃ？",
+      "references": [
+        {
+          "slot": 836,
+          "index": 209
+        }
+      ],
+      "english": "Overlooked mayor: What? Well, what would you prefer?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Overlooked mayor: What? Well, what would you prefer?",
+        "revision": "Overlooked mayor: What? Well, what would you prefer?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.0fc2",
+      "source_hex": "926296e889ae817582a0814981408349838c82cc82a882f182b682f182be81490d814082b182cc914f82cd82a082e882aa82c682e6814082bd82b782a982c182bd82ba81490d926296e889ae817582c682b182eb82c581408da193fa82cd82c882f182cc977082be82a281480d0d926296e889ae817582e082b582a982b582c481408c9582e28f8282f00d814082ab82bd82a682bd82a282c182c482ed82af82a9814800",
+      "source_sha256": "76e14156c2364b81daf019d04e005b4afff97fd3313b76ca943cc143a9474463",
+      "japanese": "鍛冶屋「あ！　オレのおんじんだ！\n　この前はありがとよ　たすかったぜ！\n鍛冶屋「ところで　今日はなんの用だい？\n\n鍛冶屋「もしかして　剣や盾を\n　きたえたいってわけか？",
+      "references": [
+        {
+          "slot": 0,
+          "index": 0
+        }
+      ],
+      "english": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+        "revision": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1066",
+      "source_hex": "926296e889ae817582bb82a482a9814082b482f182cb82f182be82c8814200",
+      "source_sha256": "348edf7c75a5a1d1f5f51f12ecca7e9b905f281ac43b33d09b173eea44ddd0c7",
+      "japanese": "鍛冶屋「そうか　ざんねんだな。",
+      "references": [
+        {
+          "slot": 240,
+          "index": 60
+        }
+      ],
+      "english": "Blacksmith: Ah, that's a shame.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ah, that's a shame.",
+        "revision": "Blacksmith: Ah, that's a shame.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.10e3",
+      "source_hex": "926296e889ae817582bb82ea82b682e182a0814082dc82bd82c8814900",
+      "source_sha256": "4d50fd11dc2f3f16eba3746bb8a331d6b410c12976199c3b72f161d1d220ba60",
+      "japanese": "鍛冶屋「それじゃあ　またな！",
+      "references": [
+        {
+          "slot": 12,
+          "index": 3
+        }
+      ],
+      "english": "Blacksmith: See you around!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: See you around!",
+        "revision": "Blacksmith: See you around!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.11d3",
+      "source_hex": "926296e889ae817582a882c1814082a082e982cc82a982a2814800",
+      "source_sha256": "d44612390c0f772e6b916cefc0796090884551b76c84e95d18cbdd4c987eea07",
+      "japanese": "鍛冶屋「おっ　あるのかい？",
+      "references": [
+        {
+          "slot": 252,
+          "index": 63
+        }
+      ],
+      "english": "Blacksmith: Oh, you've got them?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Oh, you've got them?",
+        "revision": "Blacksmith: Oh, you've got them?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1238",
+      "source_hex": "926296e889ae817582a082c182bd814082a082c182bd81490d814082b382c482c681458145814582bb82ea82b682e182a000",
+      "source_sha256": "a4ffa6e91272e93b4f6bec817b05e51728a7a2a4672cb00d2140d1c984a5931f",
+      "japanese": "鍛冶屋「あった　あった！\n　さてと・・・それじゃあ",
+      "references": [
+        {
+          "slot": 264,
+          "index": 66
+        }
+      ],
+      "english": "Blacksmith: There they are! Right, then...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: There they are! Right, then...",
+        "revision": "Blacksmith: There they are! Right, then...",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.126a",
+      "source_hex": "926296e889ae817581458145814582c182c481490d814082a882a282a882a2814981408e9d82c182c482cb82a582b682e182cb82a682a981490d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d814082a982e782a982ed82c882a282c582ad82ea82e6814200",
+      "source_sha256": "e79b3e026b852b10783b6369b2688d84dcd1d48a1205c441cb8fa9610a587bfd",
+      "japanese": "鍛冶屋「・・・って！\n　おいおい！　持ってねぇじゃねえか！\n\n\n鍛冶屋「いくら　おんじんでも\n　からかわないでくれよ。",
+      "references": [
+        {
+          "slot": 16,
+          "index": 4
+        }
+      ],
+      "english": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+        "revision": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.12dc",
+      "source_hex": "926296e889ae817582dc82a02082a282a282e281420d814082dc82bd814082bb82cc82a482bf978882c482ad82ea82e6814200",
+      "source_sha256": "e2a5ecc7175d0794c2e481095f2a3bb9f808598bca78d01531034876fb1bc245",
+      "japanese": "鍛冶屋「まあ いいや。\n　また　そのうち来てくれよ。",
+      "references": [
+        {
+          "slot": 20,
+          "index": 5
+        }
+      ],
+      "english": "Blacksmith: Never mind. Come back some other time.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Never mind. Come back some other time.",
+        "revision": "Blacksmith: Never mind. Come back some other time.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.130f",
+      "source_hex": "926296e889ae817581458145814582c182c481490d814082a882a282a882a2814981408c9582e08f8282e082c882a282ba81420d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d814082c882a282e082cc82cd814082c582ab82cb82a682e6814200",
+      "source_sha256": "f34ae0bee6ec58494b7d6096d01ea0d64359f5824f289bffc66e5cccf3474944",
+      "japanese": "鍛冶屋「・・・って！\n　おいおい！　剣も盾もないぜ。\n\n\n鍛冶屋「いくら　おんじんでも\n　ないものは　できねえよ。",
+      "references": [
+        {
+          "slot": 24,
+          "index": 6
+        }
+      ],
+      "english": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+        "revision": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.137d",
+      "source_hex": "926296e889ae817582c782ea82f00d814082ab82bd82a682bd82a282f182be82a2814800",
+      "source_sha256": "02b542e31dd2fd685ef5907810266fd76b2c994781e5ef47cf3b8a2d0861304f",
+      "japanese": "鍛冶屋「どれを\n　きたえたいんだい？",
+      "references": [
+        {
+          "slot": 268,
+          "index": 67
+        }
+      ],
+      "english": "Blacksmith: Which one do you want me to strengthen?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Which one do you want me to strengthen?",
+        "revision": "Blacksmith: Which one do you want me to strengthen?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.13a1",
+      "source_hex": "926296e889ae817582d681480d814082c882f182be82a281408da193fa82cd82e282df82c482a882ad82cc82a9814200",
+      "source_sha256": "7e249950245602d035e30490b815ed021ff5dd0f7d5a3c14674cebe9ba9c081d",
+      "japanese": "鍛冶屋「へ？\n　なんだい　今日はやめておくのか。",
+      "references": [
+        {
+          "slot": 28,
+          "index": 7
+        }
+      ],
+      "english": "Blacksmith: Huh? Leaving it for another day, are you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Huh? Leaving it for another day, are you?",
+        "revision": "Blacksmith: Huh? Leaving it for another day, are you?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.13d1",
+      "source_hex": "926296e889ae817582bb82ea82c5814082a282a282cc82a982a2814800",
+      "source_sha256": "9c7e71a353b3df3559158ae5eec79028e7b9b05a10f33afcb94b9e4d134b1c4c",
+      "japanese": "鍛冶屋「それで　いいのかい？",
+      "references": [
+        {
+          "slot": 32,
+          "index": 8
+        }
+      ],
+      "english": "Blacksmith: Is that the one you want?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Is that the one you want?",
+        "revision": "Blacksmith: Is that the one you want?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.13ee",
+      "source_hex": "926296e889ae817581458145814582c182c48149814082a882a282a882a281490d814082bb82e882e182e082a4814082ab82bd82a682e682a482aa82c882a282ba81420d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d81408380838a82c882e082f182cd81408380838a82be82e6814200",
+      "source_sha256": "02e87e0b9fe95c336d2b29a212de341adf1648e7d2f5be8ebcf0981ca0d35d13",
+      "japanese": "鍛冶屋「・・・って！　おいおい！\n　そりゃもう　きたえようがないぜ。\n\n\n鍛冶屋「いくら　おんじんでも\n　ムリなもんは　ムリだよ。",
+      "references": [
+        {
+          "slot": 36,
+          "index": 9
+        }
+      ],
+      "english": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+        "revision": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.146c",
+      "source_hex": "926296e889ae817582e682b5814082ed82a982c182bd81420d0d0d0d926296e889ae817582a482a782e882e182c181490d0d0d0d926296e889ae817582a482a782e882e182c181490d0d0d0d926296e889ae817582a482e882e182a482e882e182a482e882e182c181490d0d0d0d926296e889ae817582d982e7814082a882ed82c182bd82ba814200",
+      "source_sha256": "bef5065b87327e659f9608ec060a3acd2d84cce3d497ae9e613e1c1cfb2008e7",
+      "japanese": "鍛冶屋「よし　わかった。\n\n\n\n鍛冶屋「うぉりゃっ！\n\n\n\n鍛冶屋「うぉりゃっ！\n\n\n\n鍛冶屋「うりゃうりゃうりゃっ！\n\n\n\n鍛冶屋「ほら　おわったぜ。",
+      "references": [
+        {
+          "slot": 272,
+          "index": 68
+        }
+      ],
+      "english": "Blacksmith: Right, got it!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hya-hya-hyaaah!\n\nBlacksmith: There! All done.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Right, got it!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hya-hya-hyaaah!\n\nBlacksmith: There! All done.",
+        "revision": "Blacksmith: Right, got it!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hyaaah!\n\nBlacksmith: Hya-hya-hyaaah!\n\nBlacksmith: There! All done.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.14f5",
+      "source_hex": "926296e889ae817582dc82a082dc82a082cc82b582a082aa82e882be82c8814200",
+      "source_sha256": "add755b21da456d5e6609aac5d421614d6c0c8aae0fc0f0f2161c9022449d409",
+      "japanese": "鍛冶屋「まあまあのしあがりだな。",
+      "references": [
+        {
+          "slot": 40,
+          "index": 10
+        }
+      ],
+      "english": "Blacksmith: Not a bad bit of work.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Not a bad bit of work.",
+        "revision": "Blacksmith: Not a bad bit of work.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1516",
+      "source_hex": "926296e889ae817582c882f182be82a981408da193fa82cd8b4395aa82aa82a282a282f182c50d814082a282c282e082e682e8814082a282a283568353836782aa82c582ab82bd82ba814900",
+      "source_sha256": "ae9ef85dfac4879517a7536827f9a9133b6eafc7e354b8ea77fb2d764c941fe7",
+      "japanese": "鍛冶屋「なんだか　今日は気分がいいんで\n　いつもより　いいシゴトができたぜ！",
+      "references": [
+        {
+          "slot": 44,
+          "index": 11
+        }
+      ],
+      "english": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+        "revision": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1735",
+      "source_hex": "926296e889ae817582ed82a982c182bd82a982a2814800",
+      "source_sha256": "9c22c0977ce17f3251e87010b95e5d98b4ac2f5afb8efab3b00b830561e4a865",
+      "japanese": "鍛冶屋「わかったかい？",
+      "references": [
+        {
+          "slot": 48,
+          "index": 12
+        }
+      ],
+      "english": "Blacksmith: Got that?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Got that?",
+        "revision": "Blacksmith: Got that?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.174c",
+      "source_hex": "926296e889ae81758343838482be82c182c48cbe82c182c482e082e60d814082bb82a282c282cd8380838a82c8986282be82ba81420d0d0d926296e889ae817583438357838f838b82b582c482e982f182b682e182c882ad82c40d814082b182a282c282cd814088ea937882b582a981408cbe82a682cb82a682f182be82e681420d926296e889ae817582bb82ea82be82af814082b782b082a68fee95f182c182c482ed82af82be814200",
+      "source_sha256": "75936893c58e87c409faf47b5771fbaff58bc22b3fc1bfecb9e80bc74d75c4d1",
+      "japanese": "鍛冶屋「イヤだって言ってもよ\n　そいつはムリな話だぜ。\n\n\n鍛冶屋「イジワルしてるんじゃなくて\n　こいつは　一度しか　言えねえんだよ。\n鍛冶屋「それだけ　すげえ情報ってわけだ。",
+      "references": [
+        {
+          "slot": 284,
+          "index": 71
+        }
+      ],
+      "english": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+        "revision": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.17f7",
+      "source_hex": "926296e889ae817582ed82a982c182c482ad82ea82bd82e682a482be82c881420d0d0d0d926296e889ae817582bb82ea82b682e182a0814082a282a282a982a281480d0d926296e889ae8175837a8393836782c9814088ea937882b582a981408cbe82ed82cb82a682a982e70d814082ba82c182bd82a282c9814095b782ab82cc82aa82b382cb82a682c582ad82ea82e6814800",
+      "source_sha256": "ad65948a268dd2c76088f85710588cd139ca9791cd92ad8ce68b86116f81ce7a",
+      "japanese": "鍛冶屋「わかってくれたようだな。\n\n\n\n鍛冶屋「それじゃあ　いいかい？\n\n鍛冶屋「ホントに　一度しか　言わねえから\n　ぜったいに　聞きのがさねえでくれよ？",
+      "references": [
+        {
+          "slot": 288,
+          "index": 72
+        }
+      ],
+      "english": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+        "revision": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.188b",
+      "source_hex": "926296e889ae817582bd82cc82de82ba814082be82f182c8816081420d814082b182ea82f08140986282b782cc82c182c482cc82cd82b3829f81600d926296e889ae81758349838c82be82c182c4814082bb82a482c682a4834c8350839382c8836e835682f00d814082ed82bd82e982c182c482b182c682c882f182be82ba81480d926296e889ae817582bb82b182f182c682b10d814082e682a7816082ad8d6c82a682c482ad82ea82e6814200",
+      "source_sha256": "c5f789cefefa61656e6faaa004c4a37a92cb07b76de6be725bd14e800fa39158",
+      "japanese": "鍛冶屋「たのむぜ　だんな～。\n　これを　話すのってのはさぁ～\n鍛冶屋「オレだって　そうとうキケンなハシを\n　わたるってことなんだぜ？\n鍛冶屋「そこんとこ\n　よぉ～く考えてくれよ。",
+      "references": [
+        {
+          "slot": 292,
+          "index": 73
+        }
+      ],
+      "english": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+        "revision": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1939",
+      "source_hex": "926296e889ae817582b382b782aa81407e82cc82be82f182c881420d0d926296e889ae817582b182cc8fee95f182cc82b782b282b382c182c482e082cc82f00d814082bf82e182f182c682ed82a982c182c482e982dd82bd82a282be82c881420d0d926296e889ae817582d382a4816081420d814082bb82ea82b682e182a0814082a282ad82ba81480d0d0d926296e889ae8175837a8393836782cc837a8393836782c90d814088ea89f182b582a98cbe82ed82cb82a682a982e782b30d0d0d926296e889ae8175905382cc82b682e382f182d182aa814082a282e982c882e70d81408da182cc82a482bf82be82ba81480d926296e889ae817582bf82e582c182c682be82af82c882e7814091d282c182c482c482e282e982af82c70d814082c782a482b782e982e6814800",
+      "source_sha256": "38313ebf3f81db093aca12aefa1cd7759a3f6d1a60af1bb7ffb09b2b46561b84",
+      "japanese": "鍛冶屋「さすが　{unclassified-control:7e}のだんな。\n\n鍛冶屋「この情報のすごさってものを\n　ちゃんとわかってるみたいだな。\n\n鍛冶屋「ふう～。\n　それじゃあ　いくぜ？\n\n\n鍛冶屋「ホントのホントに\n　一回しか言わねえからさ\n\n\n鍛冶屋「心のじゅんびが　いるなら\n　今のうちだぜ？\n鍛冶屋「ちょっとだけなら　待っててやるけど\n　どうするよ？",
+      "references": [
+        {
+          "slot": 296,
+          "index": 74
+        }
+      ],
+      "english": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+        "revision": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1a65",
+      "source_hex": "926296e889ae817591d282c182c482c482d982b582a282a982a2814800",
+      "source_sha256": "8d12fd4fc72d407bdb74f121e9d690dde908609f701dce014cd7493b4906a28e",
+      "japanese": "鍛冶屋「待っててほしいかい？",
+      "references": [
+        {
+          "slot": 300,
+          "index": 75
+        }
+      ],
+      "english": "Blacksmith: Want me to wait?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Want me to wait?",
+        "revision": "Blacksmith: Want me to wait?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1a82",
+      "source_hex": "926296e889ae817581458145814582ed82a982c182bd82e681420d0d0d0d926296e889ae817581458145814581458145814581420d0d0d0d926296e889ae817581458145814581458145814581420d0d0d0d926296e889ae8175814581458145814581458145814200",
+      "source_sha256": "998fbaf03541fd012337b355635da6193bf577bb908221bf0ca7dfc7e405be62",
+      "japanese": "鍛冶屋「・・・わかったよ。\n\n\n\n鍛冶屋「・・・・・・。\n\n\n\n鍛冶屋「・・・・・・。\n\n\n\n鍛冶屋「・・・・・・。",
+      "references": [
+        {
+          "slot": 304,
+          "index": 76
+        }
+      ],
+      "english": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+        "revision": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1aeb",
+      "source_hex": "926296e889ae817582bb82eb82bb82eb814082a282a282a982a2814800",
+      "source_sha256": "7cfd12f0ef9f355f39b34daf7cd10bc5121520b2bdf872369194be70c04d4aa4",
+      "japanese": "鍛冶屋「そろそろ　いいかい？",
+      "references": [
+        {
+          "slot": 308,
+          "index": 77
+        }
+      ],
+      "english": "Blacksmith: Ready now?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ready now?",
+        "revision": "Blacksmith: Ready now?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1b08",
+      "source_hex": "926296e889ae817582bb82ea82b682e182a00d8140837a8393836782c98cbe82a482ba81480d926296e889ae817582b682c282cd82c881458145814500",
+      "source_sha256": "50369a181c2176384038895779f1200f7923ef8734430b4b273e91004d6d1d85",
+      "japanese": "鍛冶屋「それじゃあ\n　ホントに言うぜ？\n鍛冶屋「じつはな・・・",
+      "references": [
+        {
+          "slot": 312,
+          "index": 78
+        }
+      ],
+      "english": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+        "revision": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1b45",
+      "source_hex": "926296e889ae817589a4976c82cd81409085928e82c882f182be82a0814900",
+      "source_sha256": "6fc7ddbc7ba0ff2506e1bdc17d12348d1c6e906daa568993b1e7503b62e50f9d",
+      "japanese": "鍛冶屋「王様は　水虫なんだあ！",
+      "references": [
+        {
+          "slot": 52,
+          "index": 13
+        }
+      ],
+      "english": "Blacksmith: The King has athlete's foot!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: The King has athlete's foot!",
+        "revision": "Blacksmith: The King has athlete's foot!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1b64",
+      "source_hex": "926296e889ae8175836c836c82b382f182cd814082b782c582c90d81408c8b8da582b582c482e982f182be82c182c482e6814900",
+      "source_sha256": "ae830ad0e341f4eeac2565e2cbad9c31c54add27b2bccc55b0a5aee71f86ee93",
+      "japanese": "鍛冶屋「ネネさんは　すでに\n　結婚してるんだってよ！",
+      "references": [
+        {
+          "slot": 56,
+          "index": 14
+        }
+      ],
+      "english": "Blacksmith: Tessie's already married!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Tessie's already married!",
+        "revision": "Blacksmith: Tessie's already married!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1b98",
+      "source_hex": "926296e889ae81758375834c837e82c890c2944e82cd0d814083418354834b834982f0814082bb82be82c482c482e982f182be814900",
+      "source_sha256": "51ff31d40bad5552e31a31be637773a6b5c9c925a9d88f6f72a1d7da1617b527",
+      "japanese": "鍛冶屋「ブキミな青年は\n　アサガオを　そだててるんだ！",
+      "references": [
+        {
+          "slot": 60,
+          "index": 15
+        }
+      ],
+      "english": "Blacksmith: That creepy young man grows morning glories!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: That creepy young man grows morning glories!",
+        "revision": "Blacksmith: That creepy young man grows morning glories!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1bce",
+      "source_hex": "926296e889ae817582e082e082f182b682e182c182c4838283938358835e815b82cd0d814091cc928682aa8140835082be82e782af82c882f182be82a0814900",
+      "source_sha256": "388884d7e226143a55fd19de86f12f5fb1b6beb32cc093a22c6336ae2f32baa6",
+      "japanese": "鍛冶屋「ももんじゃってモンスターは\n　体中が　ケだらけなんだあ！",
+      "references": [
+        {
+          "slot": 64,
+          "index": 16
+        }
+      ],
+      "english": "Blacksmith: Platypunks are covered in hair!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Platypunks are covered in hair!",
+        "revision": "Blacksmith: Platypunks are covered in hair!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1c0e",
+      "source_hex": "926296e889ae817582ad82b382c182bd8e8091cc82c182c48384836382cd0d814082b682c282cd82e082a481408e8082f182c582e982f182be814900",
+      "source_sha256": "ba2ea1d0ddf6cb162e8f84d191f22b41fd3d44f3e1969de44a3e5344d5b4a1dc",
+      "japanese": "鍛冶屋「くさった死体ってヤツは\n　じつはもう　死んでるんだ！",
+      "references": [
+        {
+          "slot": 68,
+          "index": 17
+        }
+      ],
+      "english": "Blacksmith: Walking corpses are actually dead already!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Walking corpses are actually dead already!",
+        "revision": "Blacksmith: Walking corpses are actually dead already!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1c4a",
+      "source_hex": "926296e889ae81759682964089ae82cc838c837e834282cd0d814082c882f182c6814096828f9782c882f182be82a0814900",
+      "source_sha256": "641a98779ab920427bbc60ab7a8dddbdb94cf84a521ea5b992546aac053eb4cd",
+      "japanese": "鍛冶屋「魔法屋のレミィは\n　なんと　魔女なんだあ！",
+      "references": [
+        {
+          "slot": 72,
+          "index": 18
+        }
+      ],
+      "english": "Blacksmith: Remi at the magic shop is... a witch!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Remi at the magic shop is... a witch!",
+        "revision": "Blacksmith: Remi at the magic shop is... a witch!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1c7c",
+      "source_hex": "926296e889ae8175837c837c838d82c182c4814082dc82be0d814083528368838282e782b582a282ba814900",
+      "source_sha256": "dcecce48a27457c3ad2cce5858b79d47188790066cfcffd4bb52915cb2345e9f",
+      "japanese": "鍛冶屋「ポポロって　まだ\n　コドモらしいぜ！",
+      "references": [
+        {
+          "slot": 76,
+          "index": 19
+        }
+      ],
+      "english": "Blacksmith: Apparently, Tipper's still a child!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Apparently, Tipper's still a child!",
+        "revision": "Blacksmith: Apparently, Tipper's still a child!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1ca8",
+      "source_hex": "926296e889ae817582c282ac82cc8fee95f182cd81409798977089f1909482aa0d81408258824f89f182c982c882c182bd82c682ab82be814900",
+      "source_sha256": "385d6f86613fc9f0078e7b94524a863d2368d640dbaefc4681760ae48c0dd202",
+      "japanese": "鍛冶屋「つぎの情報は　利用回数が\n　９０回になったときだ！",
+      "references": [
+        {
+          "slot": 80,
+          "index": 20
+        }
+      ],
+      "english": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+        "revision": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1ce2",
+      "source_hex": "926296e889ae81758349838c82cc8fee95f182c182c482a282a482cc82cd0d814082dc82c182bd82ad814082dc82c182bd82ad814082dc82c182bd82ad0d926296e889ae817582dc82c182bd82ad814088d396a182c882f182c482c882a282f182be82a0814900",
+      "source_sha256": "2d2da45cb3a2f7ef291c7efc0fe19006e66d1f81aa70aab39bbe9a0ecc252a73",
+      "japanese": "鍛冶屋「オレの情報っていうのは\n　まったく　まったく　まったく\n鍛冶屋「まったく　意味なんてないんだあ！",
+      "references": [
+        {
+          "slot": 84,
+          "index": 21
+        }
+      ],
+      "english": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+        "revision": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1d49",
+      "source_hex": "926296e889ae817595738e768b6382cc835f839383578387839382cc0d8140825882574682c982cd8175838d836782cc8c95817682aa82a082c182c40d926296e889ae81758175838283938358835e815b82cc8aaa95a8817682aa82a082ea82ce0d81408ee882c993fc82ea82e782ea82e982c182c4986282be82ba814200",
+      "source_sha256": "7ec1cbd7ce919a320ffc173cd543d24ffd296443ad06437d7e8e099ec9cad3b9",
+      "japanese": "鍛冶屋「不思議のダンジョンの\n　９８Fには「ロトの剣」があって\n鍛冶屋「「モンスターの巻物」があれば\n　手に入れられるって話だぜ。",
+      "references": [
+        {
+          "slot": 88,
+          "index": 22
+        }
+      ],
+      "english": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+        "revision": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Preserves Magic Dungeon 98F and the Monster scroll requirement; Erdrick's sword uses the full canonical item name in prose."
+      }
+    },
+    {
+      "id": "town-common.1dc8",
+      "source_hex": "926296e889ae817582d382a482a482a482a481458145814581458145814581420d814082c282a282c98cbe82c182bf82dc82c182bd81420d0d0d926296e889ae817582dc2082bb82a482a282a482b182c682be814200",
+      "source_sha256": "4b94e6dd66e3f7d9971c8581767808d95349ff778d38aa1d54126cab2adde22e",
+      "japanese": "鍛冶屋「ふうううう・・・・・・。\n　ついに言っちまった。\n\n\n鍛冶屋「ま そういうことだ。",
+      "references": [
+        {
+          "slot": 92,
+          "index": 23
+        }
+      ],
+      "english": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+        "revision": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1f28",
+      "source_hex": "926296e889ae817582b182ea82a982e782e00d814082e682eb82b582ad82bd82cc82de82ba814900",
+      "source_sha256": "e365653e97e934b77f26fe566e0d19bbccdf8e4ceb643f8742a374aa6e5eedc3",
+      "japanese": "鍛冶屋「これからも\n　よろしくたのむぜ！",
+      "references": [
+        {
+          "slot": 104,
+          "index": 26
+        }
+      ],
+      "english": "Blacksmith: Keep coming back!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Keep coming back!",
+        "revision": "Blacksmith: Keep coming back!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1f50",
+      "source_hex": "834b8343836f815b8389817582a882ca82b5814082c882c982aa965d82dd82be814800",
+      "source_sha256": "ab4053d95e30f8ac2690fa925f117d0cda76ceb944ec4fec06fd3db2dd4d8363",
+      "japanese": "ガイバーラ「おぬし　なにが望みだ？",
+      "references": [
+        {
+          "slot": 108,
+          "index": 27
+        },
+        {
+          "slot": 112,
+          "index": 28
+        },
+        {
+          "slot": 116,
+          "index": 29
+        },
+        {
+          "slot": 120,
+          "index": 30
+        },
+        {
+          "slot": 316,
+          "index": 79
+        }
+      ],
+      "english": "Gaibara: What do you want?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: What do you want?",
+        "revision": "Gaibara: What do you want?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.1f73",
+      "source_hex": "834b8343836f815b8389817582a482de814082bb82a482a981420d814082dc82bd82ad82e982aa82e682a2814900",
+      "source_sha256": "e711dcaf3a336dfa15f76b18377bb05616a1fbf2dfe9c30c77ae4a5cd490b409",
+      "japanese": "ガイバーラ「うむ　そうか。\n　またくるがよい！",
+      "references": [
+        {
+          "slot": 124,
+          "index": 31
+        }
+      ],
+      "english": "Gaibara: Very well. Come again!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Very well. Come again!",
+        "revision": "Gaibara: Very well. Come again!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.201b",
+      "source_hex": "834b8343836f815b83898175836f834a8382839381490d81408d8790ac82cc81408cb382c982c882e982e082cc82aa82c882a282ed814900",
+      "source_sha256": "2614af114d135b6d02674aead2e8c046b4bc56b4ce750708863831354e2c3356",
+      "japanese": "ガイバーラ「バカモン！\n　合成の　元になるものがないわ！",
+      "references": [
+        {
+          "slot": 132,
+          "index": 33
+        }
+      ],
+      "english": "Gaibara: Fool! You have nothing to use as a base!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Fool! You have nothing to use as a base!",
+        "revision": "Gaibara: Fool! You have nothing to use as a base!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2053",
+      "source_hex": "834b8343836f815b8389817582a482de81420d814082e282df82c482a882ad814082c682a282a482ed82af82b682e182c881420d834b8343836f815b8389817582bb82ea82e0906c90b682b682e181490d0d834b8343836f815b8389817582c582cd814082b382e782ce82b682e181490d81408d8790ac82b582bd82ad82c882c182bd82e7814082ad82e982aa82e682a2814900",
+      "source_sha256": "584bbb937f4ecaafdcc926a15cfa4ba1ea95146c33f3a70d2a2ded8991c2ce8f",
+      "japanese": "ガイバーラ「うむ。\n　やめておく　というわけじゃな。\nガイバーラ「それも人生じゃ！\n\nガイバーラ「では　さらばじゃ！\n　合成したくなったら　くるがよい！",
+      "references": [
+        {
+          "slot": 136,
+          "index": 34
+        }
+      ],
+      "english": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+        "revision": "Gaibara: Hmph. So you've changed your mind.\n\nGaibara: Such is life!\n\nGaibara: Farewell, then! Come back when you want to synthesise something!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.20ee",
+      "source_hex": "834b8343836f815b838981758349838d834a8382836d82df81490d814082bb82ea82c681408d8790ac82c582ab82e982e082cc82c882c782c882a282ed814900",
+      "source_sha256": "69feb327a1ac51c26846fc053603a93a0ec8de66e2575e1b4f55a48047254143",
+      "japanese": "ガイバーラ「オロカモノめ！\n　それと　合成できるものなどないわ！",
+      "references": [
+        {
+          "slot": 144,
+          "index": 36
+        }
+      ],
+      "english": "Gaibara: You fool! Nothing you have can be combined with that!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: You fool! Nothing you have can be combined with that!",
+        "revision": "Gaibara: You fool! Nothing you have can be combined with that!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.21a9",
+      "source_hex": "834b8343836f815b838981758d8790ac82b782e982c6814082b182a482c882e9814900",
+      "source_sha256": "0587c443d9c0d69424b75b72e391e520d77eea17570c22d0331b3d443e06a392",
+      "japanese": "ガイバーラ「合成すると　こうなる！",
+      "references": [
+        {
+          "slot": 152,
+          "index": 38
+        }
+      ],
+      "english": "Gaibara: This will be the result!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: This will be the result!",
+        "revision": "Gaibara: This will be the result!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.21cc",
+      "source_hex": "834b8343836f815b8389817582c682b182eb82c581458145814500",
+      "source_sha256": "eb58431fd2112a4d079b9613762e89f48baa793c8f84549053259dc7affa086d",
+      "japanese": "ガイバーラ「ところで・・・",
+      "references": [
+        {
+          "slot": 792,
+          "index": 198
+        }
+      ],
+      "english": "Gaibara: By the way...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: By the way...",
+        "revision": "Gaibara: By the way...",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.21e7",
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d8140836c836c82b382f182c68366815b836782b382b982c482ad82ea82f182a9814800",
+      "source_sha256": "cad85212b049915b294c52254c6e8b2a7f05c4d045589c876e9fb57ada077567",
+      "japanese": "ガイバーラ「代金の代わりに\n　ネネさんとデートさせてくれんか？",
+      "references": [
+        {
+          "slot": 156,
+          "index": 39
+        }
+      ],
+      "english": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+        "revision": "Gaibara: Instead of paying me, will you let me take Tessie on a date?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.2225",
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d8140837c837c838d82bf82e182f182f08140838f835682c982ad82ea82ca82a9814800",
+      "source_sha256": "3d396cf10b1e3eaa0f598e504a0175daf6be5208d93103097c124e62aa8e736b",
+      "japanese": "ガイバーラ「代金の代わりに\n　ポポロちゃんを　ワシにくれぬか？",
+      "references": [
+        {
+          "slot": 160,
+          "index": 40
+        }
+      ],
+      "english": "Gaibara: Instead of paying me, will you give me little Tipper?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you give me little Tipper?",
+        "revision": "Gaibara: Instead of paying me, will you give me little Tipper?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.2263",
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d814082b582a082ed82b982cc94a082f08140838f835682c982ad82ea82f182a9814800",
+      "source_sha256": "683f30b6fcec2dd54e407b77bb3035c02716ac9125a3d6d17a665560459d3f19",
+      "japanese": "ガイバーラ「代金の代わりに\n　しあわせの箱を　ワシにくれんか？",
+      "references": [
+        {
+          "slot": 164,
+          "index": 41
+        }
+      ],
+      "english": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+        "revision": "Gaibara: Instead of paying me, will you give me the Joy Chest?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.22a1",
+      "source_hex": "834b8343836f815b8389817591e38be082cc91e382ed82e882c90d814082a882ca82b582cc935882f082e482b882c182c482ad82ea82ca82a9814800",
+      "source_sha256": "ad5dbfb6be400dba194bc18a75d70c3ed0c84c0e33e4c53fb0c18eda48ee626b",
+      "japanese": "ガイバーラ「代金の代わりに\n　おぬしの店をゆずってくれぬか？",
+      "references": [
+        {
+          "slot": 168,
+          "index": 42
+        }
+      ],
+      "english": "Gaibara: Instead of paying me, will you hand over your shop?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Instead of paying me, will you hand over your shop?",
+        "revision": "Gaibara: Instead of paying me, will you hand over your shop?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.22dd",
+      "source_hex": "834b8343836f815b83898175838f835682c682a882ca82b582cc928782b682e10d81408da189f182cd8140835e835f82c982b582c482a882a282c482e282eb82a482a9814800",
+      "source_sha256": "3e7a1cf84c54144709302f7720f4910ed58fec67b0f5061b89706395e72db87a",
+      "japanese": "ガイバーラ「ワシとおぬしの仲じゃ\n　今回は　タダにしておいてやろうか？",
+      "references": [
+        {
+          "slot": 172,
+          "index": 43
+        }
+      ],
+      "english": "Gaibara: For an old friend like you, shall I make this one free?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: For an old friend like you, shall I make this one free?",
+        "revision": "Gaibara: For an old friend like you, shall I make this one free?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.2323",
+      "source_hex": "834b8343836f815b83898175838f835682e082c882a982c882a98bea82b582ad82c482c80d814082c282ac82a982e782cd8140926c8fe382b082b582c482e082e682a282a9814800",
+      "source_sha256": "c72cce3fd212927409102c89a9dbc09a8643edd9b47011414dd7dc970196d058",
+      "japanese": "ガイバーラ「ワシもなかなか苦しくてな\n　つぎからは　値上げしてもよいか？",
+      "references": [
+        {
+          "slot": 176,
+          "index": 44
+        }
+      ],
+      "english": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+        "revision": "Gaibara: Times are hard for me, too. May I raise my prices next time?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.236b",
+      "source_hex": "834b8343836f815b8389817582b682c282cd81408eb8947382b582bd81420d814082e482e982b9814900",
+      "source_sha256": "eaee945b0a4a91b8c43c78767cfdd0ff768ac3429d2e71c36d55c2870660a1af",
+      "japanese": "ガイバーラ「じつは　失敗した。\n　ゆるせ！",
+      "references": [
+        {
+          "slot": 180,
+          "index": 45
+        }
+      ],
+      "english": "Gaibara: Actually, I botched it. Forgive me!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Actually, I botched it. Forgive me!",
+        "revision": "Gaibara: Actually, I botched it. Forgive me!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.2395",
+      "source_hex": "834b8343836f815b83898175935882f082e282df82e682a482c60d81408e7682c182c482a282e982cc82be82aa814082a282a282a9814800",
+      "source_sha256": "a4e253b6655807f0da2d8105f1923e88ac8e7f935629a8964928fc2c516a6e2d",
+      "japanese": "ガイバーラ「店をやめようと\n　思っているのだが　いいか？",
+      "references": [
+        {
+          "slot": 184,
+          "index": 46
+        }
+      ],
+      "english": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+        "revision": "Gaibara: I'm thinking of closing the shop. Is that all right?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.23cd",
+      "source_hex": "834b8343836f815b8389817582c282a282c282a2814082bf82aa82a482e082cc82f00d81408d8790ac82b582c482b582dc82c182bd81490d834b8343836f815b8389817582a282a282a9814800",
+      "source_sha256": "16d8379df6541d3a33c919b9e1c4b1a329325bb489f8b1228cb3f808fc23aaca",
+      "japanese": "ガイバーラ「ついつい　ちがうものを\n　合成してしまった！\nガイバーラ「いいか？",
+      "references": [
+        {
+          "slot": 188,
+          "index": 47
+        }
+      ],
+      "english": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+        "revision": "Gaibara: I accidentally combined the wrong items!\n\nGaibara: Is that all right?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.241a",
+      "source_hex": "834b8343836f815b8389817591e38be082cd8145814581450d81408250824f824f824f824f824f824f824f824f969c8353815b838b836882be81420d834b8343836f815b8389817582a282a282a9814800",
+      "source_sha256": "34b1f7806ad11b5eb018a7569272d25f8534fad7be8ee3e12750f5ce2fafc0f9",
+      "japanese": "ガイバーラ「代金は・・・\n　１００００００００万ゴールドだ。\nガイバーラ「いいか？",
+      "references": [
+        {
+          "slot": 192,
+          "index": 48
+        }
+      ],
+      "english": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+        "revision": "Gaibara: That will be... One trillion gold!\n\nGaibara: Is that all right?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Japanese 100000000 multiplied by man (10000) is one trillion, preserving the deliberately absurd price."
+      }
+    },
+    {
+      "id": "town-common.246b",
+      "source_hex": "834b8343836f815b8389817589a4976c82f082e482a482a982a282b582bd82cc82cd0d814082b682c282cd8140838f835682b682e181490d834b8343836f815b8389817582a882c782eb82a282bd82a9814800",
+      "source_sha256": "5018c3fcd779f93c3f466841283a21700797ae5c0845d79440477033aac6b30f",
+      "japanese": "ガイバーラ「王様をゆうかいしたのは\n　じつは　ワシじゃ！\nガイバーラ「おどろいたか？",
+      "references": [
+        {
+          "slot": 196,
+          "index": 49
+        }
+      ],
+      "english": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+        "revision": "Gaibara: I was the one who kidnapped the King!\n\nGaibara: Surprised?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.24be",
+      "source_hex": "834b8343836f815b8389817582b682c282cd82c88145814581450d814089ce8e9682cc8cb488f682cd814082b182cc838f835682c882f182b682e181420d834b8343836f815b83898175837783778393814900",
+      "source_sha256": "2695763b5645689999b505bfc261130cd5740ede527b80802738ad1df5f7fd86",
+      "japanese": "ガイバーラ「じつはな・・・\n　火事の原因は　このワシなんじゃ。\nガイバーラ「ヘヘン！",
+      "references": [
+        {
+          "slot": 200,
+          "index": 50
+        }
+      ],
+      "english": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+        "revision": "Gaibara: Actually... I caused the fire!\n\nGaibara: Heh heh!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.2511",
+      "source_hex": "834b8343836f815b8389817582aa82cd82cd82cd82cd82c10d814083458145835c814582b682e1829f816082c181490d834b8343836f815b8389817582bb82f182c882b182c682e682e882e081458145814500",
+      "source_sha256": "d702bf1351b5242c14ae62dcb99b1b5054f44890ea0355afeac8def2f266df7a",
+      "japanese": "ガイバーラ「がははははっ\n　ウ・ソ・じゃぁ～っ！\nガイバーラ「そんなことよりも・・・",
+      "references": [
+        {
+          "slot": 204,
+          "index": 51
+        }
+      ],
+      "english": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+        "revision": "Gaibara: Gahahaha! Only joking!\n\nGaibara: Anyway...",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Retains Gaibara's outrageous claim/request and its yes/no sense; source51 explicitly reveals the joke."
+      }
+    },
+    {
+      "id": "town-common.25ad",
+      "source_hex": "834b8343836f815b838981758341837a835e838c82aa81490d81408353815b838b836882aa82bd82e782f181490d834b8343836f815b838981758f6f82c882a882b582c482ad82e982aa82e682a2814900",
+      "source_sha256": "6c47801cfd4740ff9e4ebb3d335d6b70e6db46b6c323f63d19937adc3cb28856",
+      "japanese": "ガイバーラ「アホタレが！\n　ゴールドがたらん！\nガイバーラ「出なおしてくるがよい！",
+      "references": [
+        {
+          "slot": 212,
+          "index": 53
+        }
+      ],
+      "english": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+        "revision": "Gaibara: You idiot! You don't have enough gold!\n\nGaibara: Come back when you do!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.25fe",
+      "source_hex": "834b8343836f815b8389817582d982a982c9814082c882c982a98d8790ac82b782e982a9814800",
+      "source_sha256": "fd057bcb3550ea6c650c0d51e307b69699e2f7e2085a9575c896c59a262301d1",
+      "japanese": "ガイバーラ「ほかに　なにか合成するか？",
+      "references": [
+        {
+          "slot": 216,
+          "index": 54
+        }
+      ],
+      "english": "Gaibara: Anything else you want to synthesise?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Anything else you want to synthesise?",
+        "revision": "Gaibara: Anything else you want to synthesise?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2625",
+      "source_hex": "834b8343836f815b838981758ff182aa82bf82aa82a4814900",
+      "source_sha256": "01840911dcc5749152b522cc91bbd971319549dcab5701c74b4ebc5e05e013cf",
+      "japanese": "ガイバーラ「杖がちがう！",
+      "references": [
+        {
+          "slot": 220,
+          "index": 55
+        }
+      ],
+      "english": "Gaibara: Those staves don't match!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Those staves don't match!",
+        "revision": "Gaibara: Those staves don't match!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.263e",
+      "source_hex": "834b8343836f815b8389817582c882c981488140838f835682cc8cb682cc8c868dec0d814081758d8790ac82cc9ae2817682f081408e6782ed82b982c482d982b582a282be82c681480d0d0d834b8343836f815b8389817581458145814582e682a982eb82a481420d0d0d0d834b8343836f815b8389817582bd82be816082b582c181490d814082dc82b882cd81408d8790ac82cc90e096be82f095b782af82a2814900",
+      "source_sha256": "f497456a447ac57a1128954a2b7efd12abf899ad6358a6fc8837355771c4be7f",
+      "japanese": "ガイバーラ「なに？　ワシの幻の傑作\n　「合成の壺」を　使わせてほしいだと？\n\n\nガイバーラ「・・・よかろう。\n\n\n\nガイバーラ「ただ～しっ！\n　まずは　合成の説明を聞けい！",
+      "references": [
+        {
+          "slot": 440,
+          "index": 110
+        }
+      ],
+      "english": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+        "revision": "Gaibara: What? You want to use my legendary masterpiece, the Synthesis pot?\n\nGaibara: ...Very well.\n\nGaibara: But first, listen while I explain synthesis!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.26e2",
+      "source_hex": "834b8343836f815b8389817582bd82c682a682ce81408c9581490d81408eed97de82cc82bf82aa82a48c9582f08140825182c293fc82ea82ea82ce0d834b8343836f815b8389817582bb82ea82bc82ea82cc93c190ab82f00d81408d8782ed82b98e9d82c182bd8c9582aa814082c582ab82a082aa82e981490d834b8343836f815b8389817582e082b582e08c9582c981402b825282c882c70d814090d882ea96a182f082b582df82b790948e9a82aa82c282a282c482a282ea82ce0d834b8343836f815b8389817582bb82cc8d878c7682e00d81408ef382af82c282aa82ea82e982b182c682c982c882e9814900",
+      "source_sha256": "5e0f43528ee9bd63b3b72300ff9501cea60fdfa733573803c55a45b49e067d16",
+      "japanese": "ガイバーラ「たとえば　剣！\n　種類のちがう剣を　２つ入れれば\nガイバーラ「それぞれの特性を\n　合わせ持った剣が　できあがる！\nガイバーラ「もしも剣に　+３など\n　切れ味をしめす数字がついていれば\nガイバーラ「その合計も\n　受けつがれることになる！",
+      "references": [
+        {
+          "slot": 796,
+          "index": 199
+        }
+      ],
+      "english": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+        "revision": "Gaibara: Take swords, for example! Put two different swords in the pot...\n\nGaibara: And you'll get a sword with the properties of both!\n\nGaibara: If they have numbers such as +3 to show their extra sharpness...\n\nGaibara: Those bonuses will be added together, too!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Swords are the explicit example in the Japanese synthesis tutorial; the general status UI remains Weapon. Both inherited properties and the summed +3-style bonuses are retained."
+      }
+    },
+    {
+      "id": "town-common.27d1",
+      "source_hex": "834b8343836f815b8389817582be82a982e7208d8790ac82b782e982c682ab82cd0d0d834b8343836f815b838981758d558c8297cd82cc8aee967b926c82aa8d8282a282e082cc82f00d81408cb382c982b782e982cc82aa93be82b682e1814200",
+      "source_sha256": "b89f0a977267410ba10968512099b81fc48830a10c232a5f3bdff4bdcbc5c6a2",
+      "japanese": "ガイバーラ「だから 合成するときは\n\nガイバーラ「攻撃力の基本値が高いものを\n　元にするのが得じゃ。",
+      "references": [
+        {
+          "slot": 444,
+          "index": 111
+        }
+      ],
+      "english": "Gaibara: So when you synthesise, choose an item with high base attack power as your base!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: So when you synthesise, choose a base with high base attack power!",
+        "revision": "Gaibara: So when you synthesise, choose an item with high base attack power as your base!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation. Removes the awkward repeated phrase \"base with high base\" without changing the mechanical advice."
+      }
+    },
+    {
+      "id": "town-common.2914",
+      "source_hex": "834b8343836f815b8389817581458145814582c882f182b682e1814082bf82aa82a482cc82a9814200",
+      "source_sha256": "0bbafae2f2c39bf098174ec818484a8e36125ce39a03400e90fe02d8188d552c",
+      "japanese": "ガイバーラ「・・・なんじゃ　ちがうのか。",
+      "references": [
+        {
+          "slot": 460,
+          "index": 115
+        }
+      ],
+      "english": "Gaibara: ...Hmph. So that wasn't it.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Hmph. So that wasn't it.",
+        "revision": "Gaibara: ...Hmph. So that wasn't it.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.293d",
+      "source_hex": "834b8343836f815b8389817581458145814582c882f182b682e181420d814082d982a982cc82e082cc82c982b582bd82a282ed82af82a981420d834b8343836f815b8389817582c882e782ce8140914982d182c882a882b782aa82e682a2814900",
+      "source_sha256": "3a459fc50ab3d73469c638877f5f826984f19ddefca54657a5acbbc7d6ba2c0e",
+      "japanese": "ガイバーラ「・・・なんじゃ。\n　ほかのものにしたいわけか。\nガイバーラ「ならば　選びなおすがよい！",
+      "references": [
+        {
+          "slot": 464,
+          "index": 116
+        }
+      ],
+      "english": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+        "revision": "Gaibara: ...Oh? You want something else?\n\nGaibara: Choose again, then!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.299e",
+      "source_hex": "834b8343836f815b8389817582d382de814082c582cd814082e282df82e982bc81420d81408d8790ac82ce82a982e882aa8140906c90b682c582cd82c882a282a982e782c881420d0d0d834b8343836f815b8389817582c582cd814082b382e782ce82b682e1814900",
+      "source_sha256": "27cd1d866ff8e01ecd37f8341406f46b2d8b9be5c8bfb2399ed7bd6b6693ac23",
+      "japanese": "ガイバーラ「ふむ　では　やめるぞ。\n　合成ばかりが　人生ではないからな。\n\n\nガイバーラ「では　さらばじゃ！",
+      "references": [
+        {
+          "slot": 468,
+          "index": 117
+        }
+      ],
+      "english": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+        "revision": "Gaibara: Hmph. We'll stop, then. There's more to life than synthesis.\n\nGaibara: Farewell!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2a07",
+      "source_hex": "834b8343836f815b8389817581458145814582a482de81490d0d834b8343836f815b8389817582c582cd0d81408d8790ac82b582bd834183438365838082f08ef382af82c682e982aa82e682a2814200",
+      "source_sha256": "254752ed8b97f413e7db2e2dd405a7712c826fe668f2ffafa2eacb55d32f15eb",
+      "japanese": "ガイバーラ「・・・うむ！\n\nガイバーラ「では\n　合成したアイテムを受けとるがよい。",
+      "references": [
+        {
+          "slot": 472,
+          "index": 118
+        }
+      ],
+      "english": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+        "revision": "Gaibara: ...Yes!\n\nGaibara: Here! Take your newly combined item.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2a57",
+      "source_hex": "834b8343836f815b8389817582c582cd814082b382e782ce82b682e1814900",
+      "source_sha256": "81150a60d5ea6bbd048d475fac48e3f46c8795fff9d7ac00b12ceab589abc162",
+      "japanese": "ガイバーラ「では　さらばじゃ！",
+      "references": [
+        {
+          "slot": 476,
+          "index": 119
+        }
+      ],
+      "english": "Gaibara: Farewell!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Gaibara: Farewell!",
+        "revision": "Gaibara: Farewell!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2af3",
+      "source_hex": "838c837e83428175838c837e834282cc82a8935882d682e682a482b182bb81490d814082b297708c8f814082a482a982aa82c182bf82e182a282dc82b782ed814900",
+      "source_sha256": "6038b66e9f5e7dd438fb7f0cf1bf3976252103dadeb8a130bb98cd02e1f7b408",
+      "japanese": "レミィ「レミィのお店へようこそ！\n　ご用件　うかがっちゃいますわ！",
+      "references": [
+        {
+          "slot": 232,
+          "index": 58
+        }
+      ],
+      "english": "Remi: Welcome to Remi's shop! What can I do for you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Welcome to Remi's shop! What can I do for you?",
+        "revision": "Remi: Welcome to Remi's shop! What can I do for you?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2b80",
+      "source_hex": "838c837e8342817582a6814082e082a48b4182c182bf82e182a482cc81480d814082a882cb82aa82a282be82a982e7814082dc82bd978882c482cb81420d838c837e8342817582e282ad82bb82ad814082be82e6814900",
+      "source_sha256": "c5450afee380f208c33784e323e0a2f2e7c29360c79cc063325961e29569ef82",
+      "japanese": "レミィ「え　もう帰っちゃうの？\n　おねがいだから　また来てね。\nレミィ「やくそく　だよ！",
+      "references": [
+        {
+          "slot": 496,
+          "index": 124
+        }
+      ],
+      "english": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+        "revision": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2bd7",
+      "source_hex": "838c837e8342817582a482f1814082ed82a982c182bd81420d0d838c837e83428175838c837e834282cc9682964082c57e82b382f182f00d814082bd82ad82dc82b582ad82b582c482a082b082e982a38160814900",
+      "source_sha256": "858ca8297ca4c730101e1b68d38e2ccb1f8aeda1280cf42b5f1c4b31d8011d95",
+      "japanese": "レミィ「うん　わかった。\n\nレミィ「レミィの魔法で{unclassified-control:7e}さんを\n　たくましくしてあげるぅ～！",
+      "references": [
+        {
+          "slot": 500,
+          "index": 125
+        }
+      ],
+      "english": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+        "revision": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2cb7",
+      "source_hex": "838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "2b3ea6d15a81dc0ab467018c34c0f988a2f3114469a143a2a6f1b498bde42990",
+      "japanese": "レミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 508,
+          "index": 127
+        }
+      ],
+      "english": "Remi: Now, is there anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Now, is there anything else you'd like?",
+        "revision": "Remi: Now, is there anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2d38",
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f181420d814082e282df82c482a882ad82cc82cb814200",
+      "source_sha256": "c9dab7ac93255822211057ff5c9fc7a5d2066f25379fe4dd545e90564409ec89",
+      "japanese": "レミィ「あら　ざんねん。\n　やめておくのね。",
+      "references": [
+        {
+          "slot": 520,
+          "index": 130
+        }
+      ],
+      "english": "Remi: Oh, what a shame. You've changed your mind.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame. You've changed your mind.",
+        "revision": "Remi: Oh, what a shame. You've changed your mind.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2e50",
+      "source_hex": "838c837e8342817596da82f082c682b682c481420d814082a282a28148814082a282ad82ed82e681480d0d0d838c837e83428175838c8378838b834181608362837681490d814081458145814582a682a282c1814900",
+      "source_sha256": "50b0492ed10e7f7885f34c86963a48b76085695c3309e51edf72617b4810717c",
+      "japanese": "レミィ「目をとじて。\n　いい？　いくわよ？\n\n\nレミィ「レベルア～ップ！\n　・・・えいっ！",
+      "references": [
+        {
+          "slot": 532,
+          "index": 133
+        }
+      ],
+      "english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Leveeel uuuup! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Leveeel uuuup! ...Hah!",
+        "revision": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Leveeel uuuup! ...Hah!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2ea6",
+      "source_hex": "838c837e8342817582a482c182ed829f816081490d81407e82b382f1814082bd82ad82dc82b582a282ed816081490d838c837e8342817582b182ea82c5838283938358835e815b82c882f182a90d814082bf82e582bf82e582a282cc82bf82e582a2814082cb814900",
+      "source_sha256": "cef34f8e97f790c3409deeb4995c1a898670b54cd00a53756341821cf9f2ba5a",
+      "japanese": "レミィ「うっわぁ～！\n　{unclassified-control:7e}さん　たくましいわ～！\nレミィ「これでモンスターなんか\n　ちょちょいのちょい　ね！",
+      "references": [
+        {
+          "slot": 536,
+          "index": 134
+        }
+      ],
+      "english": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+        "revision": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2f0f",
+      "source_hex": "838c837e834281758ff182cc89f1909482f082d382e282b582bd82a281490d814082c182c4838f835082cb814200",
+      "source_sha256": "bb056053752b64a1a1258c751ec08e4c25d82863eaa1a35e5fc3d4c504f71070",
+      "japanese": "レミィ「杖の回数をふやしたい！\n　ってワケね。",
+      "references": [
+        {
+          "slot": 540,
+          "index": 135
+        }
+      ],
+      "english": "Remi: You want more staff charges! Is that it?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: You want more staff charges! Is that it?",
+        "revision": "Remi: You want more staff charges! Is that it?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2f3d",
+      "source_hex": "838c837e8342817582c582e081458145814582a082c882bd0d81408ff182f08e9d82c182c482c882a282dd82bd82a282e681420d0d0d838c837e834281758ff182f08ee882c993fc82ea82c482a982e70d814082dc82bd978882c482cb814200",
+      "source_sha256": "80c51bca7d3df6f9278ad645db10a85690b59bf76056754565f854c5fa724153",
+      "japanese": "レミィ「でも・・・あなた\n　杖を持ってないみたいよ。\n\n\nレミィ「杖を手に入れてから\n　また来てね。",
+      "references": [
+        {
+          "slot": 544,
+          "index": 136
+        }
+      ],
+      "english": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+        "revision": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.2f9d",
+      "source_hex": "838c837e8342817582c582e08145814581450d0d838c837e8342817582a082c882bd82cc8e9d82c182c482a282e98ff182c182c40d814082e082a489f1909482f082d382e282b982c882a281420d838c837e8342817582d982a982cc8ff182f08ee882c993fc82ea82c482a982e70d814082dc82bd814082b182b182c9978882c482d982b582a282c8829f814200",
+      "source_sha256": "e40bd8248cde0f2f13ce0a8ce652412fbd63b3b5a53337e33d2dc0bd778c646b",
+      "japanese": "レミィ「でも・・・\n\nレミィ「あなたの持っている杖って\n　もう回数をふやせない。\nレミィ「ほかの杖を手に入れてから\n　また　ここに来てほしいなぁ。",
+      "references": [
+        {
+          "slot": 548,
+          "index": 137
+        }
+      ],
+      "english": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+        "revision": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.302b",
+      "source_hex": "838c837e8342817582bb82ea82b682e182a0814082c782cc8ff182cc89f1909482f00d814082d382e282b582c482d982b582a282cc82a981408bb382a682c482ad82ea82c882a2814800",
+      "source_sha256": "b0324e6e861a1e0862e4a88ad3cc3eda6f59864346972833c89f122bf549ad6a",
+      "japanese": "レミィ「それじゃあ　どの杖の回数を\n　ふやしてほしいのか　教えてくれない？",
+      "references": [
+        {
+          "slot": 552,
+          "index": 138
+        }
+      ],
+      "english": "Remi: Which staff would you like me to add charges to?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Which staff would you like me to add charges to?",
+        "revision": "Remi: Which staff would you like me to add charges to?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3075",
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81480d8140838c837e8342814082bf82e582c182c682a982c882b582a282c8829f81420d0d0d838c837e8342817582cb82a682cb82a6814082bb82ea82b682e182a00d814082d982a982c982cd814089bd82a982c882a282a982c8829f814800",
+      "source_sha256": "48bf9935851b4f29fbf2b2aabb2b07ff2466fe781c7e3cffc07f306e93ff9439",
+      "japanese": "レミィ「あら　やめちゃうの？\n　レミィ　ちょっとかなしいなぁ。\n\n\nレミィ「ねえねえ　それじゃあ\n　ほかには　何かないかなぁ？",
+      "references": [
+        {
+          "slot": 556,
+          "index": 139
+        }
+      ],
+      "english": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.30f4",
+      "source_hex": "838c837e8342817582a482f1814082ed82a982c182bd81420d814082bb82cc8ff182cc89f1909482f082d382e282b782cc82cb814200",
+      "source_sha256": "8e1d08b555aa6d98dac7cbf1ccaf074c1d6ff5c2e8e5588df15e27ce5bd3aa62",
+      "japanese": "レミィ「うん　わかった。\n　その杖の回数をふやすのね。",
+      "references": [
+        {
+          "slot": 564,
+          "index": 141
+        }
+      ],
+      "english": "Remi: All right! More charges for that staff, then.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right! More charges for that staff, then.",
+        "revision": "Remi: All right! More charges for that staff, then.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.31f1",
+      "source_hex": "838c837e8342817582a682a68160814082e282df82bf82e182a482cc81480d0d0d0d838c837e8342817582a4816082f1814082bb82ea82b682e182a082b30d814082d982a982c982cd814089bd82a982c882a282a982b582e7814800",
+      "source_sha256": "c792f621279ee8a4723940f2a607006dc3177f89590c6047d7c5eac354850a71",
+      "japanese": "レミィ「ええ～　やめちゃうの？\n\n\n\nレミィ「う～ん　それじゃあさ\n　ほかには　何かないかしら？",
+      "references": [
+        {
+          "slot": 572,
+          "index": 143
+        }
+      ],
+      "english": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+        "revision": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.324d",
+      "source_hex": "838c837e8342817582a682a6814082ed82a982c182bd82ed81420d0d0d0d838c837e8342817596da82f082c682b682c481420d814081458145814582a282a28148814082a282ad82ed82e681480d0d0d838c837e834281758ff182cc89f19094814082d382a682eb82a7816082c181490d814081458145814582a682a282c1814900",
+      "source_sha256": "4b3f481bb905ffcc333c72077e3534c2945cb9797aabc8b949ef18c100abfb31",
+      "japanese": "レミィ「ええ　わかったわ。\n\n\n\nレミィ「目をとじて。\n　・・・いい？　いくわよ？\n\n\nレミィ「杖の回数　ふえろぉ～っ！\n　・・・えいっ！",
+      "references": [
+        {
+          "slot": 576,
+          "index": 144
+        }
+      ],
+      "english": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+        "revision": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.32cf",
+      "source_hex": "838c837e8342817581458145814582cd82a2814091e582b982a282b182a482e681490d814082bd82a282b982c282c98e6782c182c482cb814200",
+      "source_sha256": "90e8cd0a356c1d6b119780e2d4684f0c56521f70d8f0476381e2e023265d965e",
+      "japanese": "レミィ「・・・はい　大せいこうよ！\n　たいせつに使ってね。",
+      "references": [
+        {
+          "slot": 580,
+          "index": 145
+        }
+      ],
+      "english": "Remi: ...There! A perfect success! Make good use of it!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: ...There! A perfect success! Make good use of it!",
+        "revision": "Remi: ...There! A perfect success! Make good use of it!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.33b4",
+      "source_hex": "838c837e8342817582a082e882aa82c682a482b282b482a282dc82b781490d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "70e458ab67cff58940989402db9f8b6d127b80c5414515606e9161fbe25806b5",
+      "japanese": "レミィ「ありがとうございます！\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 588,
+          "index": 147
+        }
+      ],
+      "english": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3404",
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f1816081420d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "ea1a3613c106106925d16a0ce296b367b9432d7c24943b5cb93b274d61a2a28d",
+      "japanese": "レミィ「あら　ざんねん～。\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 592,
+          "index": 148
+        }
+      ],
+      "english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3450",
+      "source_hex": "838c837e8342817582a082e781480d81408353815b838b836882aa82bd82e882c882a282dd82bd82a282e681420d838c837e834281758353815b838b836882f082bd82df82c482a982e70d814082dc82bd948382a282c9978882c482d982b582a282c8829f816081420d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "8b2f3bf062f5d5394521b062e1691adb6d43402db1b2695846fab65ed596bf8a",
+      "japanese": "レミィ「あら？\n　ゴールドがたりないみたいよ。\nレミィ「ゴールドをためてから\n　また買いに来てほしいなぁ～。\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 596,
+          "index": 149
+        }
+      ],
+      "english": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.34e8",
+      "source_hex": "838c837e8342817582a082e781480d81408e9d82bf82e082cc82aa82a282c182cf82a282dd82bd82a282e681420d838c837e834281758e9d82bf82e082cc82f090ae979d82b582c482a982e70d814082dc82bd978882c482ad82ea82e982c682a482ea82b582a282c8829f816081420d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "04c6ba357e0307e89613dc1f9a4adfa96cab5b7813d696ad22755abb5488a343",
+      "japanese": "レミィ「あら？\n　持ちものがいっぱいみたいよ。\nレミィ「持ちものを整理してから\n　また来てくれるとうれしいなぁ～。\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 600,
+          "index": 150
+        }
+      ],
+      "english": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3586",
+      "source_hex": "838c837e8342817582a082e7814082e082a48e9d82c182c482e982dd82bd82a282e681420d814081458145814582e082a48140835f838182cb82a5816081420d0d0d838c837e8342817582cb82a682cb82a681400d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "55ed6f3c1b080acc6decd0909ed37b7cc0ad3a218e60ba6eba2100738b0b7700",
+      "japanese": "レミィ「あら　もう持ってるみたいよ。\n　・・・もう　ダメねぇ～。\n\n\nレミィ「ねえねえ　\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 604,
+          "index": 151
+        }
+      ],
+      "english": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3685",
+      "source_hex": "838c837e8342817582d382d382d3814082bb82a482e682cb81420d814082a082c882bd82c982cd81408fa4906c82aa83738362835e838a82be82e082f1814900",
+      "source_sha256": "ce42078b7fa80fdc0c9f9273e66d9c434ea7c758aa343a9ffd339fafcc0776f6",
+      "japanese": "レミィ「ふふふ　そうよね。\n　あなたには　商人がピッタリだもん！",
+      "references": [
+        {
+          "slot": 628,
+          "index": 157
+        }
+      ],
+      "english": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+        "revision": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.36c5",
+      "source_hex": "838c837e8342817582a082e7814082a282b382dc82b582a281490d0d838c837e8342817582a082c882bd82c182c4814082c682c182c482e08bad82a282a982e70d814090ed8e6d82c983738362835e838a82cb814200",
+      "source_sha256": "88792e768d628af2ae6ab112dab08e202e595f945b342fe9775b15c4eded01c8",
+      "japanese": "レミィ「あら　いさましい！\n\nレミィ「あなたって　とっても強いから\n　戦士にピッタリね。",
+      "references": [
+        {
+          "slot": 632,
+          "index": 158
+        }
+      ],
+      "english": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+        "revision": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.371b",
+      "source_hex": "838c837e8342817582ab82e1814082a482ea82b582a281490d0d838c837e8342817593af82b6968296408e6782a282be82c6814082a882c682e082be82bf81490d814082c182c482a282a48ab482b682aa82b782e982e082f182cb814900",
+      "source_sha256": "e37fb453d16b774580ba8e464268bb72879498121d72aefcec00d2c0fc609e96",
+      "japanese": "レミィ「きゃ　うれしい！\n\nレミィ「同じ魔法使いだと　おともだち！\n　っていう感じがするもんね！",
+      "references": [
+        {
+          "slot": 636,
+          "index": 159
+        }
+      ],
+      "english": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+        "revision": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3779",
+      "source_hex": "838c837e8342817582bb82ea82b682e182a08140935d904582b782e982cb81420d8140814581458145837a8393836782c982a282a2814800",
+      "source_sha256": "f53aa94603ef092cb9885a46a017dcfc4c5f538735d743cadd48e7adf59187f3",
+      "japanese": "レミィ「それじゃあ　転職するね。\n　・・・ホントにいい？",
+      "references": [
+        {
+          "slot": 640,
+          "index": 160
+        }
+      ],
+      "english": "Remi: I'll change your vocation, then. ...Are you sure?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: I'll change your vocation, then. ...Are you sure?",
+        "revision": "Remi: I'll change your vocation, then. ...Are you sure?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.37b1",
+      "source_hex": "838c837e8342817596da82f082c682b682c481420d814082a282a28148814082a282ad82ed82e681480d0d0d838c837e83428175935d904583728160838081490d814081458145814582a682a282c1814900",
+      "source_sha256": "7c9beb6d368c2f7f2f71a8205e5803f4147ccad204a2b3d9a865edb613bfe634",
+      "japanese": "レミィ「目をとじて。\n　いい？　いくわよ？\n\n\nレミィ「転職ビ～ム！\n　・・・えいっ！",
+      "references": [
+        {
+          "slot": 644,
+          "index": 161
+        }
+      ],
+      "english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+        "revision": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3803",
+      "source_hex": "838c837e8342817582a482d3814091e582b982a282b182a482c181490d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "2fc4b96e2288cca753b4a4c6340ec60d3b6e29a071575b8bfcd7c41d5d19004a",
+      "japanese": "レミィ「うふ　大せいこうっ！\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 648,
+          "index": 162
+        }
+      ],
+      "english": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3851",
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f182be82ed81420d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "b21dc1188f49e3f6fcc16a6c08307869a2c75013e56b7cb1d2a7b15c4c224187",
+      "japanese": "レミィ「あら　ざんねんだわ。\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 652,
+          "index": 163
+        }
+      ],
+      "english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.38b2",
+      "source_hex": "838c837e8342817582a082e781408d7382c182bd82b182c682cc82a082e90d8140835f839383578387839382c9838f815b837682b582bd82a282cc81480d0d0d838c837e8342817582a482f1814082a282a282ed81420d0d838c837e8342817582bb82ea82b682e182a0814082c782cc835f839383578387839382c90d81408d7382ab82bd82a282cc82a981408bb382a682c482bf82e582a482be82a2814200",
+      "source_sha256": "dcfcf0d758f404f02e83779c1aa6c561cfb885b12134383f1acce0c645fa608d",
+      "japanese": "レミィ「あら　行ったことのある\n　ダンジョンにワープしたいの？\n\n\nレミィ「うん　いいわ。\n\nレミィ「それじゃあ　どのダンジョンに\n　行きたいのか　教えてちょうだい。",
+      "references": [
+        {
+          "slot": 668,
+          "index": 167
+        }
+      ],
+      "english": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+        "revision": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3952",
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81420d814081458145814582bf82e582c182c682b482f182cb82f181420d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "56d7e57e1c0c400b4e0d2ec232851568f0ce4816638382ca4fe4fc7e5c3f5607",
+      "japanese": "レミィ「あら　やめちゃうの。\n　・・・ちょっとざんねん。\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 672,
+          "index": 168
+        }
+      ],
+      "english": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3a1e",
+      "source_hex": "838c837e8342817582a082e7829f81608140835f838182e682a7816081420d0d838c837e8342817582bb82cc835f839383578387839382c982cd814082d082c682c282e00d8140834183438365838082f08e9d82c182c482a282af82c882a282ed814200",
+      "source_sha256": "59ae26d44a173f34000eaf6965f7bb320c5db7d542b101526d4b1744f3b47508",
+      "japanese": "レミィ「あらぁ～　ダメよぉ～。\n\nレミィ「そのダンジョンには　ひとつも\n　アイテムを持っていけないわ。",
+      "references": [
+        {
+          "slot": 832,
+          "index": 208
+        }
+      ],
+      "english": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+        "revision": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3a82",
+      "source_hex": "838c837e8342817582a082e7829f81608140835f838182e682a7816081420d0d838c837e8342817582bb82cc835f839383578387839382c98d7382ad82c982cd0d81408353815b838b836882f08140824f82c982b582c882a282c682a282af82c882a282ed814200",
+      "source_sha256": "7babbec297adce6f4301d042e7d1136bde5528b7d27c33cd3ac9d82cfd7b042f",
+      "japanese": "レミィ「あらぁ～　ダメよぉ～。\n\nレミィ「そのダンジョンに行くには\n　ゴールドを　０にしないといけないわ。",
+      "references": [
+        {
+          "slot": 800,
+          "index": 200
+        }
+      ],
+      "english": "Remi: Oh, no, you can't!\n\nRemi: You can't bring any gold into that dungeon.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, no, you can't!\n\nRemi: You can't bring any gold into that dungeon.",
+        "revision": "Remi: Oh, no, you can't!\n\nRemi: You can't bring any gold into that dungeon.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3aea",
+      "source_hex": "838c837e8342817582a082e7829f816081480d0d838c837e8342817582c782a482e282e78140838f815b837682c582ab82e90d8140835f839383578387839382aa82c882a282dd82bd82a282e6814200",
+      "source_sha256": "0d42ecc2b6801d35d4c5e8752fbca2e303809a0e8e22a2403d841d51c219cb15",
+      "japanese": "レミィ「あらぁ～？\n\nレミィ「どうやら　ワープできる\n　ダンジョンがないみたいよ。",
+      "references": [
+        {
+          "slot": 680,
+          "index": 170
+        }
+      ],
+      "english": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+        "revision": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3c14",
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81480d814081458145814582bf82e582c182c6814082aa82c182a982e882a1816081420d0d0d838c837e8342817582cb82a682cb82a681400d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "3c0cec666cffb4d61c30550aa2f39a7c5e5d270193414c8b722706b8303dc162",
+      "japanese": "レミィ「あら　やめちゃうの？\n　・・・ちょっと　がっかりぃ～。\n\n\nレミィ「ねえねえ　\n　ほかにも　何かあるかしら？",
+      "references": [
+        {
+          "slot": 696,
+          "index": 174
+        }
+      ],
+      "english": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    },
+    {
+      "id": "town-common.3c84",
+      "source_hex": "838c837e8342817596da82f082c682b682c481420d814082a282a28148814082a282ad82ed82e681480d0d0d838c837e83428175836f8356838b81608389829f816081490d814081458145814582a682a282c1814900",
+      "source_sha256": "a8f86e693295565527a9cdb01c5cee0a5b23d083710c45eb16e584ac2f02df5d",
+      "japanese": "レミィ「目をとじて。\n　いい？　いくわよ？\n\n\nレミィ「バシル～ラぁ～！\n　・・・えいっ！",
+      "references": [
+        {
+          "slot": 700,
+          "index": 175
+        }
+      ],
+      "english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+        "revision": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+        "reason": "Second bilingual reading retains speaker voice, question polarity and the complete source meaning. Paragraph breaks are editorial; native paging and consumer flow require separate validation."
+      }
+    }
+  ]
+}

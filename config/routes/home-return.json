@@ -1,0 +1,12 @@
+{
+  "id": "first-home-return",
+  "description": "Start at the naturally reached first castle Home menu. Complete the evening and morning, then restore the resulting village checkpoint between nearby conversations. Ordinary inputs only.",
+  "home_reads": ["event-bank-1.0400", "rom.0014c8f4", "generated.0202f44c", "event-bank-1.0557", "event-bank-1.128a", "event-bank-1.12be", "event-bank-1.056e", "event-bank-1.146e", "event-bank-1.149c", "event-bank-1.292e", "event-bank-1.1249", "event-bank-1.121e"],
+  "village_position": [176, 320],
+  "routes": [
+    {"id": "ed-yes", "choice": "yes", "steps": [{"key": "LEFT", "hold": 16}], "reads": ["event-bank-1.3622", "rom.0006309c", "event-bank-1.3790"]},
+    {"id": "ed-no", "choice": "no", "steps": [{"key": "LEFT", "hold": 16}], "reads": ["event-bank-1.3622", "rom.0006309c", "event-bank-1.3846"]},
+    {"id": "gossip", "steps": [{"key": "DOWN", "hold": 8}, {"key": "LEFT", "hold": 48}, {"key": "UP", "hold": 8}], "reads": ["event-bank-1.388d"]},
+    {"id": "mansion-rumour", "steps": [{"key": "RIGHT", "hold": 56}], "reads": ["event-bank-1.4022"]}
+  ]
+}

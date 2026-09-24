@@ -82,7 +82,7 @@ def capture_sample(output, ident, text, font):
     return report
 
 
-def call_thumb(game, address, argument):
+def call_thumb(game, address, argument, argument1=None):
     """Redirect a disposable snapshot to a function; restore every change afterward."""
     snapshot = game.snapshot()
     try:
@@ -92,6 +92,8 @@ def call_thumb(game, address, argument):
             cpu.gprs[i] = value
         stack = int(cpu.gprs[13]) & 0xFFFFFFFF
         cpu.gprs[0] = argument
+        if argument1 is not None:
+            cpu.gprs[1] = argument1
         cpu.gprs[14] = 0x08000355
         for register, value in ((b"cpsr", int(cpu.cpsr.packed) | 0x20), (b"pc", address)):
             require(game.core._core.writeRegister(game.core._core, register, ffi.new("uint32_t*", value)),

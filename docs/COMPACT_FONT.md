@@ -1,6 +1,12 @@
-# Compact English font
+# Selected compact English font
 
-The selected English font preserves the original compact capitals and digits
+This page records the original compact-font milestone. After comparison with
+Torneko 3, the user preferred this font's readability. It is restored as the
+build default following the [early menu resize](MENU_LAYOUTS.md). The capitals/digits and authored letters remain; the current asset narrows only
+the blank word-space advance to three pixels. See [typography corrections](TYPOGRAPHY.md). Open the [side-by-side audition](../build/font-audition/index.html)
+for both fonts and original/resized budgets.
+
+The earlier English font preserves the original compact capitals and digits
 and supplies matching lowercase. It covers all **95 printable ASCII characters**.
 Open the [interactive preview](../build/compact-font/index.html),
 [complete glyph sheet](../build/compact-font/compact-english.png), or
@@ -63,6 +69,10 @@ This extension establishes its own appended resources and one label relocation.
 It does not establish the rest of the game's text tables or pointer conventions.
 
 ## Build and review
+
+The commands below now follow the active font selection. For the current build,
+output paths and two-font comparison, use [FONT_AUDITION.md](FONT_AUDITION.md).
+The historical measurements in this page describe this unchanged compact asset.
 
 ```bash
 .venv/bin/python -m tools.build_compact_font

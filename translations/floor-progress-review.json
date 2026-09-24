@@ -1,0 +1,67 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "event-bank-5.25d2",
+      "english": "Old man: Hmph... Only {floor}F so far?\n\nOld man: I doubt our destination is that close to the surface.\n\nOld man: Keep at it, {player}!",
+      "source_hex": "9856906c817582d382f181458145814582dc82be814025644682a981420d0d9856906c817582be82aa814096da934982cc8fea8f8a82aa0d814082bb82ea82d982c782a082b382a28fea8f8a82be82c682cd8e7682a682ca82c881420d9856906c81757e82e6814082aa82f182ce82e982cc82be814900",
+      "source_sha256": "f5cd4da521446876c2a6ac2bb56f8386daad9bf978b3c85bcf6c2a0bfab78175",
+      "japanese": "老人「ふん・・・まだ　%{unclassified-control:64}Fか。\n\n老人「だが　目的の場所が\n　それほどあさい場所だとは思えぬな。\n老人「{unclassified-control:7e}よ　がんばるのだ！",
+      "prose_review": {
+        "previous_draft": "Old man: Hmph... Only {floor}F so far?\n\nOld man: I doubt our destination is that close to the surface.\n\nOld man: Keep at it, {player}!",
+        "revised": "Old man: Hmph... Only {floor}F so far?\n\nOld man: I doubt our destination is that close to the surface.\n\nOld man: Keep at it, {player}!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-5.2649",
+      "english": "Old man: ...Oh? You reached {floor}F?\n\nOld man: But our destination is probably much deeper still.\n\nOld man: Keep at it, {player}!",
+      "source_hex": "9856906c817581458145814582d982a481420d814025644682dc82c58d7382af82bd82cc82a981420d9856906c817582b582a982b5814096da934982cc8fea8f8a82cd0d814082a882bb82e782ad814082dc82be82dc82be905b82a282bc81420d9856906c81757e82e6814082aa82f182ce82e982cc82be814900",
+      "source_sha256": "19379c8f1942aed6596de5f4e43513dbf92f61446263fe9a0082ba1fa781e678",
+      "japanese": "老人「・・・ほう。\n　%{unclassified-control:64}Fまで行けたのか。\n老人「しかし　目的の場所は\n　おそらく　まだまだ深いぞ。\n老人「{unclassified-control:7e}よ　がんばるのだ！",
+      "prose_review": {
+        "previous_draft": "Old man: ...Oh? You reached {floor}F?\n\nOld man: But our destination is probably much deeper still.\n\nOld man: Keep at it, {player}!",
+        "revised": "Old man: ...Oh? You reached {floor}F?\n\nOld man: But our destination is probably much deeper still.\n\nOld man: Keep at it, {player}!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-5.26c4",
+      "english": "Old man: Ah! You reached {floor}F! You must be nearly there!\n\nOld man: Only a feeling of mine, of course...\n\nOld man: Keep at it, {player}!",
+      "source_hex": "9856906c817582a882a88149814025644682dc82c58d7382c182bd82a981490d814082e082a4814082a082c682b782b182b582c582cd82c882a282a981480d9856906c817582e082bf82eb82f18140838f835682cc834a839382be82aa82c881458145814581420d0d9856906c81757e82e6814082aa82f182ce82e982cc82be814900",
+      "source_sha256": "09642f7cf5f4ca1f4af808d9a9763a5bd13e3ff5f4b9e41262b96cf9d0d62776",
+      "japanese": "老人「おお！　%{unclassified-control:64}Fまで行ったか！\n　もう　あとすこしではないか？\n老人「もちろん　ワシのカンだがな・・・。\n\n老人「{unclassified-control:7e}よ　がんばるのだ！",
+      "prose_review": {
+        "previous_draft": "Old man: Ah! You reached {floor}F! You must be nearly there!\n\nOld man: Only a feeling of mine, of course...\n\nOld man: Keep at it, {player}!",
+        "revised": "Old man: Ah! You reached {floor}F! You must be nearly there!\n\nOld man: Only a feeling of mine, of course...\n\nOld man: Keep at it, {player}!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-5.2747",
+      "english": "Old man: What! You reached 27F!\n\nOld man: You must be brushing right past it! Only a feeling of mine, mind you!\n\nOld man: Keep at it, {player}!",
+      "source_hex": "9856906c817589bd82c681498140825182564682dc82c58d7382af82bd82a981490d0d9856906c817582e082a48140834a835882c182c482e982cc82c582cd82c882a282a981480d814082a282e2814082b182ea82e0838f835682cc834a839382be82aa82c881490d9856906c81757e82e6814082aa82f182ce82e982cc82be814900",
+      "source_sha256": "71bc9f018692f0ac42b7d038f2191ac116e4910d374e943fbbcfdb06294f6714",
+      "japanese": "老人「何と！　２７Fまで行けたか！\n\n老人「もう　カスってるのではないか？\n　いや　これもワシのカンだがな！\n老人「{unclassified-control:7e}よ　がんばるのだ！",
+      "prose_review": {
+        "previous_draft": "Old man: What! You reached 27F!\n\nOld man: You must be brushing right past it! Only a feeling of mine, mind you!\n\nOld man: Keep at it, {player}!",
+        "revised": "Old man: What! You reached 27F!\n\nOld man: You must be brushing right past it! Only a feeling of mine, mind you!\n\nOld man: Keep at it, {player}!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": false,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    }
+  ],
+  "scope": "Reviewed T2 Japanese source and independently written English. Insert through the owned, natively tested consumer. Ordinary later-story progression remains separate from controlled consumer acceptance.",
+  "native_consumer_evidence": "build/floor-progress-prototype/report.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned strength/max-HP draining handler. Three private formats; existing native player wrapper supplies maximum-HP and strength-resistance results. Ordinary monster AI remains separate.",
+  "entries": [
+    {
+      "id": "drain.258",
+      "table_offset": 600,
+      "source": {
+        "offset": 407564,
+        "end_exclusive": 407589,
+        "raw_hex": "257382cd2082bf82a982e782f082b782a282c682c182bd2100",
+        "sha256": "ef6472c08ec76bc7e85e7bfa3c59924cb77e643ceb39b3c67fb4f783b5e3c614",
+        "japanese": "%{unclassified-control:73}は ちからをすいとった!"
+      },
+      "english": "{actor} {fit}drains strength!",
+      "status": "reviewed",
+      "review": "Dedicated Japanese and native-consumer bilingual review: Preserve the attacker and strength-draining effect; the following result supplies the exact maximum-strength decrease. Conditional wrapping preserves full meaning and maximum substitutions."
+    },
+    {
+      "id": "drain.94c",
+      "table_offset": 2380,
+      "source": {
+        "offset": 394304,
+        "end_exclusive": 394327,
+        "raw_hex": "257382cd0e0a4e485082f082b782a282c682c182bd2100",
+        "sha256": "87bc620d5d9f9650310e9f6c378ae9ae6ccf67680bc623019b3cb4aa6c5e4838",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}HPをすいとった!"
+      },
+      "english": "{actor} {fit}drains HP!",
+      "status": "reviewed",
+      "review": "Dedicated Japanese and native-consumer bilingual review: Preserve the attacker and HP-draining action; the following result specifies maximum HP. No damage amount or healing is invented. Conditional wrapping preserves full meaning and maximum substitutions."
+    },
+    {
+      "id": "drain.a18",
+      "table_offset": 2584,
+      "source": {
+        "offset": 393040,
+        "end_exclusive": 393072,
+        "raw_hex": "257382cd2082bf82a982e782cc8dc591e5926c82aa256489ba82aa82c182bd00",
+        "sha256": "c50c75241d397feb4c8b58324d22e6c205349a2bc5dc21d474c2c1deffd44be8",
+        "japanese": "%{unclassified-control:73}は ちからの最大値が%{unclassified-control:64}下がった"
+      },
+      "english": "{player}'s {fit}max strength fell by {number}.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese and native-consumer bilingual review: Preserve maximum strength, affected player and actual decrease. Native code clamps maximum strength to1 and passes the actual loss, including zero. Conditional wrapping preserves full meaning and maximum substitutions."
+    }
+  ]
+}

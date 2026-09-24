@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "stage": "bilingual review complete for opening batch; human audition remains available",
+  "drafts": [
+    {
+      "id": "event-bank-0.02c2",
+      "japanese": "ネネ「ねえ　あなた。@C@\n　王様へ　お知らせした方がよくなくって？\nネネ「何か　わかるかもしれないし・・・。",
+      "english": "Tessie: Dear...@C@ Should we tell the King?\n\nTessie: He might know something...",
+      "source_sha256": "04497841b16e54313b868d8185d8431a2c281c4eeac25c556f8a7be5b513ad37"
+    },
+    {
+      "id": "event-bank-0.035b",
+      "japanese": "ネネ「は　はいっ？！",
+      "english": "Tessie: Y-yes?!",
+      "source_sha256": "d0d94d835ff43706bf0f50fa00d0521bfd672a958fa110f9971512819b18dcbd"
+    },
+    {
+      "id": "event-bank-0.0370",
+      "japanese": "ネネ「あ　そうそう。\n　そうなのよ　あなた。じつはね・・・。",
+      "english": "Tessie: Oh, yes! Of course. You see, dear...",
+      "source_sha256": "5303b9a868c09f01ee66484cf5e034f6a3911d7a533978b652b96706b47006fb"
+    },
+    {
+      "id": "event-bank-0.03ac",
+      "japanese": "ネネ「おかえりなさい　あなた。\n　お仕事ごくろうさま。",
+      "english": "Tessie: Welcome home, dear. You've worked hard today.",
+      "source_sha256": "bd700beae735a3d749cd21fa516772c3e7eef26d03343dce01e4a83346d080a9"
+    },
+    {
+      "id": "event-bank-0.105e",
+      "japanese": "ポポロ「あ　パパだぁ～！\n　パパ　おかえりなさ～い！@B@",
+      "english": "Tipper: Oh, it's Dad! Welcome home, Dad!@B@",
+      "source_sha256": "f0543965da425cdfd47b19cdcc58f249999e7ef6108da6417c81a38227e9f07a"
+    },
+    {
+      "id": "event-bank-0.1095",
+      "japanese": "ポポロ「ママ～っ！\n　パパだよ　パパがかえってきたよ！",
+      "english": "Tipper: Muuum! It's Dad! Dad's home!",
+      "source_sha256": "4ea2b0acadb24a3b9a64d2e161a690c4659c863f60b926180ba17b52a56826c8"
+    },
+    {
+      "id": "event-bank-0.10cb",
+      "japanese": "ポポロ「ねえねえ　パパ。\n　パパも　いっしょに遊ぼうよ！",
+      "english": "Tipper: Hey, Dad! Come and play with me!",
+      "source_sha256": "b626da2513ddd177e1b3dff71681afd77a3927641b6ed4eef82f0baf16f8d409"
+    },
+    {
+      "id": "event-bank-0.1103",
+      "japanese": "ポポロ「やったぁ～！\n　パパ　大好き～っ！\nポポロ「・・・あ　そうだ！　さっきね\n　知らないおじいさんが　来たんだよ。\nポポロ「・・・ね　ママ。",
+      "english": "Tipper: Hooray! I love you, Dad!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "source_sha256": "5fe311577cdf37ad6bbe9bdf573fb548955d06dfee6c2f6702ba3a3b4d5355c3"
+    },
+    {
+      "id": "event-bank-0.1190",
+      "japanese": "ネネ「もう　ポポロったら。\n　パパは　お仕事でつかれてるのよ。\nネネ「いい子だから　あとにしましょうね。\n\nポポロ「ちぇ　つまんないの～。\n\nポポロ「・・・あ　そうだ！　さっきね\n　知らないおじいさんが　来たんだよ。\nポポロ「・・・ね　ママ。",
+      "english": "Tessie: Now, Tipper. Your father's tired from work.\n\nTessie: Be a good boy. You can play together later.\n\nTipper: Aww, that's no fun!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "source_sha256": "da0134611cd419ec7248aa001467d4e850a6039bf7ce9fdb62b92ce3a11a1d7c"
+    },
+    {
+      "id": "event-bank-0.127b",
+      "japanese": "ポポロ「不思議のダンジョンをぬけて\n　お城まで行けるのは　パパだけだよ！",
+      "english": "Tipper: You're the only one who can get through a magic dungeon to the castle, Dad!",
+      "source_sha256": "032840df713c7d9bd0b0060912b54514ca582a2b981fcc9ed7cb10233e3eb266"
+    },
+    {
+      "id": "event-bank-0.12c6",
+      "japanese": "ポポロ「パパ～！　がんばってねぇ～！",
+      "english": "Tipper: Good luck, Dad! You can do it!",
+      "source_sha256": "b7b0290c2511387cb4092b41c149db3909cd0bccc3a8840d0982148dcf01330a"
+    },
+    {
+      "id": "event-bank-0.131d",
+      "japanese": "ひとのいいおじさん「そのとおり！\n　わしも　そう思うよ。\nひとのいいおじさん「ご主人なら\n　お城へ行ける！",
+      "english": "Friendly man: He's right! I think so too.\n\nFriendly man: You can make it to the castle, sir!",
+      "source_sha256": "ec4bf213e8e4587b06cfc0d9a12fa1535f927262c050a393805e42edf756d3f2"
+    },
+    {
+      "id": "event-bank-0.1cb4",
+      "japanese": "老人「・・・いかんな。\n　あれは　まさしく　しあわせの箱。\n老人「このままでは・・・。",
+      "english": "Old man: ...This is troubling. That is unmistakably the Joy Chest.\n\nOld man: If this goes on...",
+      "source_sha256": "522657268c56906fbf860f12610c7f284e828161b78612595232d0706b0060d6"
+    },
+    {
+      "id": "event-bank-0.1d09",
+      "japanese": "老人「・・・・・・。",
+      "english": "Old man: ...",
+      "source_sha256": "255f8ded6a67d9d25c1628f894e17db63d8e11e6e4d89589a8e8d5cdf7044c8b"
+    },
+    {
+      "id": "event-bank-0.1d1e",
+      "japanese": "老人「・・・奥方っ！",
+      "english": "Old man: ...Madam!",
+      "source_sha256": "725fbbaabb61ca5bf703cc1af096464d6d43032ff953bd5da47da5e033cc7359"
+    },
+    {
+      "id": "event-bank-0.1d33",
+      "japanese": "老人「この箱は・・・どうした？\n　なぜ　ここにあるのだ？\nネネ「主人が不思議のダンジョンから\n　持ちかえったものですが・・・。\n老人「・・・なんと！\n　不思議のダンジョンからじゃと？\nネネ「ええ。私どもは　この村で\n　道具屋を　いとなんでおります。\nネネ「半年ほど前\n　王様のおゆるしをいただき　それで・・・。\n老人「・・・奥方。\n　この箱　開けてみてもよろしいかな？\nネネ「え　ええ　どうぞ。\n\nネネ「みなさんに見ていただくために\n\nネネ「こうやって「しあわせの部屋」まで\n　作ったぐらいですから。",
+      "english": "Old man: This chest... Where did it come from? Why is it here?\n\nTessie: My husband brought it back from the Magic Dungeon...\n\nOld man: ...What?! From the Magic Dungeon, you say?\n\nTessie: Yes. We run an item shop here in the village.\n\nTessie: About six months ago, the King gave my husband permission, and...\n\nOld man: ...Madam. Would you mind if I opened this chest?\n\nTessie: Oh, please do.\n\nTessie: We wanted everyone to see it.\n\nTessie: We even built this Joy Chamber especially for it.",
+      "source_sha256": "b41cbea8d527dbdab67aef27ff87eac93271d34989f44c7b8bd1fd54d47031f6"
+    },
+    {
+      "id": "event-bank-0.1f17",
+      "japanese": "老人「・・・お　おおっ！\n　まさしくこれは　しあわせの箱！",
+      "english": "Old man: ...O-oh! This truly is the Joy Chest!",
+      "source_sha256": "a71360bc67f79448b53082007f16d2599c75d04f6e0e84d001315ab50c8b4e9f"
+    },
+    {
+      "id": "event-bank-0.1f51",
+      "japanese": "老人「・・・奥方よ。\n　そなたは今　しあわせだな？\nネネ「えっ？　ええ　もちろんですわ。\n\nネネ「私だけでなく　この曲をきくと\n\nネネ「みなさん　しあわせになると\n　おっしゃいますし・・・。\n老人「むう　やはり　そうか。\n　・・・それは・・・いかんな。\nネネ「え・・・？",
+      "english": "Old man: ...Madam. You are happy at present, are you not?\n\nTessie: Pardon? Yes, of course I am.\n\nTessie: And it is not just me. Everyone says this melody makes them happy...\n\nOld man: Hmm. Just as I thought. ...That is... troubling.\n\nTessie: What...?",
+      "source_sha256": "5c63003cb4e54fa9d578bfd76453db8f66c09dc35e1079390943172d87c11a25"
+    },
+    {
+      "id": "event-bank-0.2056",
+      "japanese": "老人「・・・ご主人は？\n\nネネ「あ　あの・・・\n　今は仕事で外に出ておりますが・・・。\n老人「・・・そうか。\n　では　出なおすことにしよう。",
+      "english": "Old man: ...And your husband?\n\nTessie: Oh, well... He is out working at the moment...\n\nOld man: ...I see. Then I shall call again.",
+      "source_sha256": "6b7dcb69fbc5108d5f01c16c7bcbb658a5f917438b5dacc9d924fb07a587243a"
+    },
+    {
+      "id": "event-bank-0.20de",
+      "japanese": "老人「では　またのちほど。",
+      "english": "Old man: Until later, then.",
+      "source_sha256": "48496aaec46ae2752a855598f44fe3735f8ae8ea2eb1e4ff54cd40388451362c"
+    },
+    {
+      "id": "event-bank-0.20f9",
+      "japanese": "老人「ご主人に　つたえよ。\n\n老人「邪悪の封印がかなう者は\n　聖霊の声を聞きし者のみ・・・と。\nネネ「それは　一体・・・。\n\n老人「では　いずれまた。",
+      "english": "Old man: Tell your husband this.\n\nOld man: Only one who has heard the voice of the holy spirit can seal away evil...\n\nTessie: What do you mean...?\n\nOld man: We shall meet again.",
+      "source_sha256": "82c08eb514eabce5eb6a17074bacba86c90298809c9ec39e5fbbcc14e164ecdf"
+    },
+    {
+      "id": "event-bank-0.218a",
+      "japanese": "ネネ「な　何かご用でも？",
+      "english": "Tessie: C-can I help you?",
+      "source_sha256": "3e807d658043994d048ba2a3388d49f357030187fce9c17c607727997e8b64a6"
+    },
+    {
+      "id": "event-bank-0.21a3",
+      "japanese": "ネネ「あ　あの・・・何か？",
+      "english": "Tessie: Um... Is there something else?",
+      "source_sha256": "d51416b3421255c08ddb086841d80d6836b7f728781c29afdd0be4f093673eb8"
+    },
+    {
+      "id": "event-bank-0.21be",
+      "japanese": "ネネ「・・・・・・。",
+      "english": "Tessie: ...",
+      "source_sha256": "db8758811a7e452f46c36328ad005f076f12f0be5dc2b932616cf66756eaf83c"
+    },
+    {
+      "id": "event-bank-0.2255",
+      "japanese": "ネネ「ねえ　あなた。\n　私　なんだか　むなさわぎが・・・。\nひとのいいおじさん「タ　タ　タ・・・\n　タイヘンだぁ～っ！",
+      "english": "Tessie: Dear... I have a dreadful feeling about this...\n\nFriendly man: T-t-trouble! We're in trouble!",
+      "source_sha256": "47d8c5f6a2c00cd77dc4db145f6ce681f62bdd44970a42829f86f89cdc260c45"
+    },
+    {
+      "id": "event-bank-0.22c9",
+      "japanese": "ひとのいいおじさん「ご　ご主人！\n　タイヘンなことに　なっちゃったよ。\nひとのいいおじさん「東の草原に\n　モンスターが出たんだ！\nネネ「えっ！　東の草原って\n　お城へぬける　あの草原のことよね？\nひとのいいおじさん「そうなんだよ！\n\nひとのいいおじさん「キノコとりに出かけたら\n　ミョウにデカいキノコを　見つけてさ。\nひとのいいおじさん「それで\n　近よってみたら・・・。\nネネ「まさか・・・\n　それが　モンスターだったの？\nひとのいいおじさん「そうそう。\n\nひとのいいおじさん「それに草原の地形まで\n　何だか　おかしくなっちゃってて・・・。\nひとのいいおじさん「ご主人！\n　わしゃ　思うんだ・・・\nポポロ「・・・まるで\n　不思議のダンジョンみたいだね！\nひとのいいおじさん「そうそう！\n　わしゃ　それが言いたかったんだ。\nひとのいいおじさん「何でそう思うかって？\n\nひとのいいおじさん「そりゃあ\n　行ってみれば　わかるよ！\nネネ「東の草原が　そんなふうに\n　なっちゃったなんて・・・。",
+      "english": "Friendly man: S-sir! Something terrible's happened!\n\nFriendly man: Monsters have appeared in the meadow to the east!\n\nTessie: What?! You mean the meadow on the way to the castle?\n\nFriendly man: That's right!\n\nFriendly man: I went out picking mushrooms and found an oddly big one.\n\nFriendly man: But when I went closer...\n\nTessie: Don't tell me... It was a monster?\n\nFriendly man: Exactly!\n\nFriendly man: And even the lay of the land has changed. Something's wrong...\n\nFriendly man: Sir! You know what I think...?\n\nTipper: ...It's just like the Magic Dungeon!\n\nFriendly man: Yes! That's what I was trying to say.\n\nFriendly man: Why do I think so?\n\nFriendly man: Well, go and see for yourself!\n\nTessie: To think the eastern meadow could change like that...",
+      "source_sha256": "42f4f6d6eef58356677cb913fee73c47d53a7b63144c853b2a993a068672f443"
+    },
+    {
+      "id": "rom.0006309c",
+      "japanese": " はい  いいえ",
+      "english": "Yes / No",
+      "source_sha256": "4f0a824e9f9439dbf09212f06d4b8ab88a1fe549923b498bf90121c45bd4b36a"
+    },
+    {
+      "id": "rom.0006b0e8",
+      "japanese": "階段をめざして進んで行こう！\n\nモンスターにであったら\nそちらを向いてAボタンで攻撃だ！\nBボタンを押しながら十字ボタンで\nすばやく移動できるのもおぼえておこう！",
+      "english": "Head for the stairs!\n\nIf you meet a monster, face it and press A to attack!\n\nRemember: hold B and use the Control Pad to move quickly!",
+      "source_sha256": "2b8c33756f3691c48c4efaf6147f8d16f45f158670dba776d9dc3ab0911269fe"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "event-bank-0.02c2",
+      "source_sha256": "04497841b16e54313b868d8185d8431a2c281c4eeac25c556f8a7be5b513ad37",
+      "before": "Tessie: Dear...@C@ Should we tell the King?\n\nTessie: He might know something...",
+      "after": "Tessie: Dear...@C@ Should we tell the King?\n\nTessie: He might know something...",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.035b",
+      "source_sha256": "d0d94d835ff43706bf0f50fa00d0521bfd672a958fa110f9971512819b18dcbd",
+      "before": "Tessie: Y-yes?!",
+      "after": "Tessie: Y-yes?!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.0370",
+      "source_sha256": "5303b9a868c09f01ee66484cf5e034f6a3911d7a533978b652b96706b47006fb",
+      "before": "Tessie: Oh, yes! Of course. You see, dear...",
+      "after": "Tessie: Oh, yes! Of course. You see, dear...",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.03ac",
+      "source_sha256": "bd700beae735a3d749cd21fa516772c3e7eef26d03343dce01e4a83346d080a9",
+      "before": "Tessie: Welcome home, dear. You've worked hard today.",
+      "after": "Tessie: Welcome home, dear. You've worked hard today.",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.105e",
+      "source_sha256": "f0543965da425cdfd47b19cdcc58f249999e7ef6108da6417c81a38227e9f07a",
+      "before": "Tipper: Oh, it's Dad! Welcome home, Dad!@B@",
+      "after": "Tipper: Oh, it's Dad! Welcome home, Dad!@B@",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1095",
+      "source_sha256": "4ea2b0acadb24a3b9a64d2e161a690c4659c863f60b926180ba17b52a56826c8",
+      "before": "Tipper: Muuum! It's Dad! Dad's home!",
+      "after": "Tipper: Muuum! It's Dad! Dad's home!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.10cb",
+      "source_sha256": "b626da2513ddd177e1b3dff71681afd77a3927641b6ed4eef82f0baf16f8d409",
+      "before": "Tipper: Hey, Dad! Come and play with me!",
+      "after": "Tipper: Hey, Dad! Will you come and play too?",
+      "reason": "Make the invitation an explicit question matching the native Yes/No choice; retain the sense of joining in.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1103",
+      "source_sha256": "5fe311577cdf37ad6bbe9bdf573fb548955d06dfee6c2f6702ba3a3b4d5355c3",
+      "before": "Tipper: Hooray! I love you, Dad!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "after": "Tipper: Hooray! I love you, Dad!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1190",
+      "source_sha256": "da0134611cd419ec7248aa001467d4e850a6039bf7ce9fdb62b92ce3a11a1d7c",
+      "before": "Tessie: Now, Tipper. Your father's tired from work.\n\nTessie: Be a good boy. You can play together later.\n\nTipper: Aww, that's no fun!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "after": "Tessie: Now, Tipper. Your father's tired from work.\n\nTessie: Be a good boy. You can play together later.\n\nTipper: Aww, that's no fun!\n\nTipper: ...Oh, I almost forgot! An old man I didn't know came here earlier.\n\nTipper: ...Didn't he, Mum?",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.127b",
+      "source_sha256": "032840df713c7d9bd0b0060912b54514ca582a2b981fcc9ed7cb10233e3eb266",
+      "before": "Tipper: You're the only one who can get through a magic dungeon to the castle, Dad!",
+      "after": "Tipper: Only you can get through a magic dungeon and reach the castle, Dad!",
+      "reason": "Preserve the exclusive encouragement and destination while keeping the thought on one page.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.12c6",
+      "source_sha256": "b7b0290c2511387cb4092b41c149db3909cd0bccc3a8840d0982148dcf01330a",
+      "before": "Tipper: Good luck, Dad! You can do it!",
+      "after": "Tipper: Good luck, Dad! You can do it!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.131d",
+      "source_sha256": "ec4bf213e8e4587b06cfc0d9a12fa1535f927262c050a393805e42edf756d3f2",
+      "before": "Friendly man: He's right! I think so too.\n\nFriendly man: You can make it to the castle, sir!",
+      "after": "Friendly man: He's right! I think so too.\n\nFriendly man: You can make it to the castle, sir!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1cb4",
+      "source_sha256": "522657268c56906fbf860f12610c7f284e828161b78612595232d0706b0060d6",
+      "before": "Old man: ...This is troubling. That is unmistakably the Joy Chest.\n\nOld man: If this goes on...",
+      "after": "Old man: ...This is troubling. That is unmistakably the Joy Chest.\n\nOld man: If this goes on...",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1d09",
+      "source_sha256": "255f8ded6a67d9d25c1628f894e17db63d8e11e6e4d89589a8e8d5cdf7044c8b",
+      "before": "Old man: ...",
+      "after": "Old man: ...",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1d1e",
+      "source_sha256": "725fbbaabb61ca5bf703cc1af096464d6d43032ff953bd5da47da5e033cc7359",
+      "before": "Old man: ...Madam!",
+      "after": "Old man: ...Madam!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1d33",
+      "source_sha256": "b41cbea8d527dbdab67aef27ff87eac93271d34989f44c7b8bd1fd54d47031f6",
+      "before": "Old man: This chest... Where did it come from? Why is it here?\n\nTessie: My husband brought it back from the Magic Dungeon...\n\nOld man: ...What?! From the Magic Dungeon, you say?\n\nTessie: Yes. We run an item shop here in the village.\n\nTessie: About six months ago, the King gave my husband permission, and...\n\nOld man: ...Madam. Would you mind if I opened this chest?\n\nTessie: Oh, please do.\n\nTessie: We wanted everyone to see it.\n\nTessie: We even built this Joy Chamber especially for it.",
+      "after": "Old man: This chest... Where did it come from? Why is it here?\n\nTessie: My husband brought it back from the Magic Dungeon...\n\nOld man: ...What?! From the Magic Dungeon, you say?\n\nTessie: Yes. We run an item shop here in the village.\n\nTessie: About six months ago, we received the King's permission, and...\n\nOld man: ...Madam. Would you mind if I opened this chest?\n\nTessie: Oh, please do.\n\nTessie: We wanted everyone to see it.\n\nTessie: We even built this Joy Chamber especially for it.",
+      "reason": "Retain the household's ambiguous permission clause without inventing an object or narrowing it to the husband.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1f17",
+      "source_sha256": "a71360bc67f79448b53082007f16d2599c75d04f6e0e84d001315ab50c8b4e9f",
+      "before": "Old man: ...O-oh! This truly is the Joy Chest!",
+      "after": "Old man: ...O-oh! This truly is the Joy Chest!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.1f51",
+      "source_sha256": "5c63003cb4e54fa9d578bfd76453db8f66c09dc35e1079390943172d87c11a25",
+      "before": "Old man: ...Madam. You are happy at present, are you not?\n\nTessie: Pardon? Yes, of course I am.\n\nTessie: And it is not just me. Everyone says this melody makes them happy...\n\nOld man: Hmm. Just as I thought. ...That is... troubling.\n\nTessie: What...?",
+      "after": "Old man: ...Madam. You are happy at present, are you not?\n\nTessie: Pardon? Yes, of course I am.\n\nTessie: And it is not just me. Everyone says this melody makes them happy...\n\nOld man: Hmm. Just as I thought. ...That is... troubling.\n\nTessie: What...?",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2056",
+      "source_sha256": "6b7dcb69fbc5108d5f01c16c7bcbb658a5f917438b5dacc9d924fb07a587243a",
+      "before": "Old man: ...And your husband?\n\nTessie: Oh, well... He is out working at the moment...\n\nOld man: ...I see. Then I shall call again.",
+      "after": "Old man: ...And your husband?\n\nTessie: Oh, well... He is out working at the moment...\n\nOld man: ...I see. Then I shall call again.",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.20de",
+      "source_sha256": "48496aaec46ae2752a855598f44fe3735f8ae8ea2eb1e4ff54cd40388451362c",
+      "before": "Old man: Until later, then.",
+      "after": "Old man: Until later, then.",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.20f9",
+      "source_sha256": "82c08eb514eabce5eb6a17074bacba86c90298809c9ec39e5fbbcc14e164ecdf",
+      "before": "Old man: Tell your husband this.\n\nOld man: Only one who has heard the voice of the holy spirit can seal away evil...\n\nTessie: What do you mean...?\n\nOld man: We shall meet again.",
+      "after": "Old man: Tell your husband this.\n\nOld man: Only those who hear the holy spirit's voice can seal away evil...\n\nTessie: What do you mean...?\n\nOld man: We shall meet again.",
+      "reason": "Tighten the prophecy without dropping the restriction or hearing requirement; avoid a page containing only evil.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.218a",
+      "source_sha256": "3e807d658043994d048ba2a3388d49f357030187fce9c17c607727997e8b64a6",
+      "before": "Tessie: C-can I help you?",
+      "after": "Tessie: C-can I help you?",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.21a3",
+      "source_sha256": "d51416b3421255c08ddb086841d80d6836b7f728781c29afdd0be4f093673eb8",
+      "before": "Tessie: Um... Is there something else?",
+      "after": "Tessie: Um... Is there something else?",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.21be",
+      "source_sha256": "db8758811a7e452f46c36328ad005f076f12f0be5dc2b932616cf66756eaf83c",
+      "before": "Tessie: ...",
+      "after": "Tessie: ...",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2255",
+      "source_sha256": "47d8c5f6a2c00cd77dc4db145f6ce681f62bdd44970a42829f86f89cdc260c45",
+      "before": "Tessie: Dear... I have a dreadful feeling about this...\n\nFriendly man: T-t-trouble! We're in trouble!",
+      "after": "Tessie: Dear... I have a dreadful feeling about this...\n\nFriendly man: T-t-trouble! We're in trouble!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.22c9",
+      "source_sha256": "42f4f6d6eef58356677cb913fee73c47d53a7b63144c853b2a993a068672f443",
+      "before": "Friendly man: S-sir! Something terrible's happened!\n\nFriendly man: Monsters have appeared in the meadow to the east!\n\nTessie: What?! You mean the meadow on the way to the castle?\n\nFriendly man: That's right!\n\nFriendly man: I went out picking mushrooms and found an oddly big one.\n\nFriendly man: But when I went closer...\n\nTessie: Don't tell me... It was a monster?\n\nFriendly man: Exactly!\n\nFriendly man: And even the lay of the land has changed. Something's wrong...\n\nFriendly man: Sir! You know what I think...?\n\nTipper: ...It's just like the Magic Dungeon!\n\nFriendly man: Yes! That's what I was trying to say.\n\nFriendly man: Why do I think so?\n\nFriendly man: Well, go and see for yourself!\n\nTessie: To think the eastern meadow could change like that...",
+      "after": "Friendly man: S-sir! Something terrible's happened!\n\nFriendly man: Monsters have appeared in the meadow to the east!\n\nTessie: What?! You mean the meadow on the way to the castle?\n\nFriendly man: That's right!\n\nFriendly man: I went out picking mushrooms and found an oddly big one.\n\nFriendly man: But when I went closer...\n\nTessie: Don't tell me... It was a monster?\n\nFriendly man: Exactly!\n\nFriendly man: Even the meadow itself looks different now. Something's wrong...\n\nFriendly man: Sir! You know what I think...?\n\nTipper: ...It's just like the Magic Dungeon!\n\nFriendly man: Yes! That's what I was trying to say.\n\nFriendly man: Why do I think so?\n\nFriendly man: Well, go and see for yourself!\n\nTessie: To think the eastern meadow could change like that...",
+      "reason": "Use conversational wording for the changed terrain; keep the warning together on one page.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "rom.0006309c",
+      "source_sha256": "4f0a824e9f9439dbf09212f06d4b8ab88a1fe549923b498bf90121c45bd4b36a",
+      "before": "Yes / No",
+      "after": "Yes / No",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "rom.0006b0e8",
+      "source_sha256": "2b8c33756f3691c48c4efaf6147f8d16f45f158670dba776d9dc3ab0911269fe",
+      "before": "Head for the stairs!\n\nIf you meet a monster, face it and press A to attack!\n\nRemember: hold B and use the Control Pad to move quickly!",
+      "after": "Head for the stairs!\n\nIf you meet a monster, face it and press A to attack!\n\nRemember: hold B and use the Control Pad to move quickly!",
+      "reason": "Read against Japanese in connected scene order; meaning, speaker, tone and any event commands retained.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.127b",
+      "source_sha256": "032840df713c7d9bd0b0060912b54514ca582a2b981fcc9ed7cb10233e3eb266",
+      "before": "Tipper: Only you can get through a magic dungeon and reach the castle, Dad!",
+      "after": "Tipper: Only you can cross a magic dungeon to reach the castle, Dad!",
+      "reason": "Native screenshot review: remove an isolated final-word page while preserving the warning or encouragement.",
+      "reviewer": "Codex; native layout and bilingual review",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.22c9",
+      "source_sha256": "42f4f6d6eef58356677cb913fee73c47d53a7b63144c853b2a993a068672f443",
+      "before": "Friendly man: S-sir! Something terrible's happened!\n\nFriendly man: Monsters have appeared in the meadow to the east!\n\nTessie: What?! You mean the meadow on the way to the castle?\n\nFriendly man: That's right!\n\nFriendly man: I went out picking mushrooms and found an oddly big one.\n\nFriendly man: But when I went closer...\n\nTessie: Don't tell me... It was a monster?\n\nFriendly man: Exactly!\n\nFriendly man: Even the meadow itself looks different now. Something's wrong...\n\nFriendly man: Sir! You know what I think...?\n\nTipper: ...It's just like the Magic Dungeon!\n\nFriendly man: Yes! That's what I was trying to say.\n\nFriendly man: Why do I think so?\n\nFriendly man: Well, go and see for yourself!\n\nTessie: To think the eastern meadow could change like that...",
+      "after": "Friendly man: S-sir! Something terrible's happened!\n\nFriendly man: Monsters have appeared in the meadow to the east!\n\nTessie: What?! You mean the meadow on the way to the castle?\n\nFriendly man: That's right!\n\nFriendly man: I went out picking mushrooms and found an oddly big one.\n\nFriendly man: But when I went closer...\n\nTessie: Don't tell me... It was a monster?\n\nFriendly man: Exactly!\n\nFriendly man: Even the meadow's shape has changed! Something's wrong...\n\nFriendly man: Sir! You know what I think...?\n\nTipper: ...It's just like the Magic Dungeon!\n\nFriendly man: Yes! That's what I was trying to say.\n\nFriendly man: Why do I think so?\n\nFriendly man: Well, go and see for yourself!\n\nTessie: To think the eastern meadow could change like that...",
+      "reason": "Native screenshot review: remove an isolated final-word page while preserving the warning or encouragement.",
+      "reviewer": "Codex; native layout and bilingual review",
+      "date": "2026-09-13"
+    }
+  ]
+}

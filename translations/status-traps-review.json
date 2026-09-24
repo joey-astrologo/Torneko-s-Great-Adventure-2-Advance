@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Five direct notices in native handlers08027A10/08027A8C/08027B08 via four private literal bindings. Ordinary trap discovery/placement, other handlers and special resistance branches require separate proof.",
+  "entries": [
+    {
+      "id": "status-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual reading preserves the trap switch, failed activation and specific sleep/hallucination/spinning notices. Sleeping gas wording matches the existing player-wrapper review. Plain notices fit one line; player effect acknowledgements retain their separately owned translations. Other trap handlers are not changed."
+    },
+    {
+      "id": "status-trap.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual reading preserves the trap switch, failed activation and specific sleep/hallucination/spinning notices. Sleeping gas wording matches the existing player-wrapper review. Plain notices fit one line; player effect acknowledgements retain their separately owned translations. Other trap handlers are not changed."
+    },
+    {
+      "id": "status-trap.308",
+      "table_offset": 776,
+      "source": {
+        "offset": 406624,
+        "end_exclusive": 406638,
+        "raw_hex": "82cb82de82e8834b835882be2100",
+        "sha256": "dc8f177098e85e7f614e27d19a700bdca802e653f59f741e182a012df41e26f1",
+        "japanese": "ねむりガスだ!"
+      },
+      "english": "Sleeping gas!",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual reading preserves the trap switch, failed activation and specific sleep/hallucination/spinning notices. Sleeping gas wording matches the existing player-wrapper review. Plain notices fit one line; player effect acknowledgements retain their separately owned translations. Other trap handlers are not changed."
+    },
+    {
+      "id": "status-trap.310",
+      "table_offset": 784,
+      "source": {
+        "offset": 406588,
+        "end_exclusive": 406608,
+        "raw_hex": "89f1935d94d582cc8fe382c98fe682c182bd2100",
+        "sha256": "53a505b8fef917b80addb08991eeca2647f83ec0f29fcb7aef780ad673918086",
+        "japanese": "回転盤の上に乗った!"
+      },
+      "english": "You stepped on a spinning plate!",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual reading preserves the trap switch, failed activation and specific sleep/hallucination/spinning notices. Sleeping gas wording matches the existing player-wrapper review. Plain notices fit one line; player effect acknowledgements retain their separately owned translations. Other trap handlers are not changed."
+    },
+    {
+      "id": "status-trap.314",
+      "table_offset": 788,
+      "source": {
+        "offset": 406572,
+        "end_exclusive": 406588,
+        "raw_hex": "82dc82c782ed82b5834b835882be2100",
+        "sha256": "785613ae67f36f5b8680270159d44c24335b677c06e9fa8a18dad4c873891b6b",
+        "japanese": "まどわしガスだ!"
+      },
+      "english": "Hallucination gas!",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual reading preserves the trap switch, failed activation and specific sleep/hallucination/spinning notices. Sleeping gas wording matches the existing player-wrapper review. Plain notices fit one line; player effect acknowledgements retain their separately owned translations. Other trap handlers are not changed."
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "29 naturally observed castle holy-flame and warehouse-opening sources. Graphics excluded. Native English validation pending.",
+  "entries": [
+    {
+      "id": "event-bank-1.0ab5",
+      "japanese": "ネネ「はやく倉庫を　なおしましょうね。\n\nネネ「私も　あなたの仕入れた道具を\n　がんばって売るからね！",
+      "english": "Tessie: Let's get the warehouse repaired soon.\n\nTessie: I'll do my best to sell the things you bring back!",
+      "source_sha256": "43ac68db3c3929b2d59d0763ece218b3085cbf040e61244e6b37d789dfdbebc3",
+      "raw_hex": "836c836c817582cd82e282ad91718cc982f0814082c882a882b582dc82b582e582a482cb81420d0d836c836c81758e8482e0814082a082c882bd82cc8e6493fc82ea82bd93b98bef82f00d814082aa82f182ce82c182c4948482e982a982e782cb814900"
+    },
+    {
+      "id": "event-bank-1.0d86",
+      "japanese": "ネネ「ええっ！\n\nネネ「お城の地下が不思議のダンジョンに\n　なってしまったんですってぇ！\nネネ「・・・いったいどうなってるのかしら。\n\nネネ「で　王様は？\n　王様は　何かおっしゃってた？",
+      "english": "Tessie: What?!\n\nTessie: The castle basement has turned into a mystery dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+      "source_sha256": "d98fe442b1aa6baadefa431e8edc115df9507ad01d7b165a08dab776605a2795",
+      "raw_hex": "836c836c817582a682a682c181490d0d836c836c817582a88fe982cc926e89ba82aa95738e768b6382cc835f839383578387839382c90d814082c882c182c482b582dc82c182bd82f182c582b782c182c482a581490d836c836c817581458145814582a282c182bd82a282c782a482c882c182c482e982cc82a982b582e781420d0d836c836c817582c5814089a4976c82cd81480d814089a4976c82cd814089bd82a982a882c182b582e182c182c482bd814800"
+    },
+    {
+      "id": "event-bank-1.0fe0",
+      "japanese": "ネネ「倉庫の使い方のコツを聞く？",
+      "english": "Tessie: Would you like some tips on using the warehouse?",
+      "source_sha256": "f7117b2d19a47eaa59d148b792d675b035174b4a7929c56179cdb1cbb2bd7088",
+      "raw_hex": "836c836c817591718cc982cc8e6782a295fb82cc8352836382f095b782ad814800"
+    },
+    {
+      "id": "event-bank-1.1001",
+      "japanese": "ネネ「まずはカウンターの\n　青いノートを見てね。\nネネ「そうするとメニューが出るから\n\nネネ「たとえば「倉庫に入れる」を選ぶと\n　アイテムのリストが出るの。\nネネ「そしたら　入れたいアイテムを\n　{legacy-position:0306}Ｒボタン{unclassified-control:05}で好きなだけマークするの。\nネネ「手持ちのアイテム全てを\n　一度にマークしたい場合は\nネネ「{legacy-position:0306}スタートボタン{unclassified-control:05}を使うといいわ。\n\nネネ「つぎに{legacy-position:0306}Ａボタン{unclassified-control:05}を　おすと\n　選んでおいたアイテムが倉庫に入るわ。\nネネ「ダンジョンによっては\n\nネネ「持っていけるアイテムの数が\n　限られることもあるらしいの。\nネネ「倉庫をうまく利用して\n　がんばってね　あなた。",
+      "english": "Tessie: First, look at the blue notebook on the counter.\n\nTessie: That opens the menu.\n\nTessie: Choose Store items, for example, to see your item list.\n\nTessie: Use {color:6}R{/color} to mark as many items as you want to store.\n\nTessie: To mark all the items you're carrying at once...\n\nTessie: Just press {color:6}START{/color}.\n\nTessie: Then press {color:6}A{/color} to put the marked items in storage.\n\nTessie: I've heard that some dungeons...\n\nTessie: Only let you take a limited number of items with you.\n\nTessie: Make good use of the warehouse, and do your best, dear!",
+      "source_sha256": "604cc50c3cd57588d4c46dd76c276c7f63f24d221e284435b375d4d4e59f944d",
+      "raw_hex": "836c836c817582dc82b882cd834a83458393835e815b82cc0d814090c282a2836d815b836782f08ca982c482cb81420d836c836c817582bb82a482b782e982c68381836a8385815b82aa8f6f82e982a982e70d0d836c836c817582bd82c682a682ce817591718cc982c993fc82ea82e9817682f0914982d482c60d8140834183438365838082cc838a8358836782aa8f6f82e982cc81420d836c836c817582bb82b582bd82e7814093fc82ea82bd82a2834183438365838082f00d814003068271837b835e83930582c58d4482ab82c882be82af837d815b834e82b782e982cc81420d836c836c81758ee88e9d82bf82cc8341834383658380915382c482f00d814088ea937882c9837d815b834e82b582bd82a28fea8d8782cd0d836c836c817503068358835e815b8367837b835e83930582f08e6782a482c682a282a282ed81420d0d836c836c817582c282ac82c903068260837b835e83930582f0814082a882b782c60d8140914982f182c582a882a282bd834183438365838082aa91718cc982c993fc82e982ed81420d836c836c8175835f839383578387839382c982e682c182c482cd0d0d836c836c81758e9d82c182c482a282af82e9834183438365838082cc909482aa0d81408cc082e782ea82e982b182c682e082a082e982e782b582a282cc81420d836c836c817591718cc982f082a482dc82ad9798977082b582c40d814082aa82f182ce82c182c482cb814082a082c882bd814200"
+    },
+    {
+      "id": "event-bank-1.256d",
+      "japanese": "ネネ「そう・・・。あの王様が\n　「ひとりにしてくれ」なんて\nネネ「よほど\n　おなやみになっておられるのね。",
+      "english": "Tessie: I see... For the King to say he wants to be left alone...\n\nTessie: He must be terribly troubled.",
+      "source_sha256": "09465d764b7cc90daae0bed7b535be0816769587681c0c51916ffa3b0e1d5d08",
+      "raw_hex": "836c836c817582bb82a4814581458145814282a082cc89a4976c82aa0d8140817582d082c682e882c982b582c482ad82ea817682c882f182c40d836c836c817582e682d982c70d814082a882c882e282dd82c982c882c182c482a882e782ea82e982cc82cb814200"
+    },
+    {
+      "id": "event-bank-1.2613",
+      "japanese": "ネネ「ねえ　あなた。\n　このことは誰にも言っちゃダメよ。\nネネ「みんな　すごく不安になるから。\n　ネッ！\nポポロ「ただいま～！",
+      "english": "Tessie: Listen, dear. You mustn't tell anyone about this.\n\nTessie: It would only frighten everyone. All right?\n\nTipper: I'm home!",
+      "source_sha256": "209f09df97e3635c136f1bd55bf319584430236f8cf3bf90eac5088942536284",
+      "raw_hex": "836c836c817582cb82a6814082a082c882bd81420d814082b182cc82b182c682cd924e82c982e08cbe82c182bf82e1835f838182e681420d836c836c817582dd82f182c8814082b782b282ad957388c082c982c882e982a982e781420d8140836c836281490d837c837c838d817582bd82be82a282dc8160814900"
+    },
+    {
+      "id": "event-bank-1.268e",
+      "japanese": "ポポロ「ねえねえ　何の話？",
+      "english": "Tipper: Hey! What are you talking about?",
+      "source_sha256": "8a8eb7da0c04305fa605b7b376afda2fead4c148c2a9315beb528f208ce54c31",
+      "raw_hex": "837c837c838d817582cb82a682cb82a6814089bd82cc9862814800"
+    },
+    {
+      "id": "event-bank-1.26a9",
+      "japanese": "ネネ「ううん　なんでもないのよ・・・。\n\nポポロ「ええ！　ずるいやぁ。\n　ぼくにも教えてよぉ～。\nネネ「大人の話だから\n　ポポロは知らなくていいのよ。\nポポロ「ちぇっ！\n\nポポロ「大人って　都合のわるいときは\n　いつもそうだよね。\nネネ「それより　パパにエドさんの\n　話をするんじゃなかったの？\nポポロ「あ　そうだった！\n\nポポロ「パパ　大工のエドさんがね。\n\nポポロ「倉庫のカギが　なおったから\n　修理が　できるようになったんだって！\nポポロ「鍛冶屋さんの仕事のスピードが\n　すごくはやくてね・・・。",
+      "english": "Tessie: Oh, nothing, dear...\n\nTipper: What?! That's not fair! Tell me, too!\n\nTessie: It's grown-up talk. You don't need to know.\n\nTipper: Hmph!\n\nTipper: Grown-ups always say that when they don't want to tell you something.\n\nTessie: Weren't you going to tell Dad about Ed?\n\nTipper: Oh, yeah!\n\nTipper: Dad! Ed the carpenter said...\n\nTipper: Now the warehouse lock's fixed, he can start repairing it!\n\nTipper: The blacksmith works really fast, and...",
+      "source_sha256": "b2b42e4672c7b21f4abeed8c8612a991a5b0e454243a895ced6277091f6804f2",
+      "raw_hex": "836c836c817582a482a482f1814082c882f182c582e082c882a282cc82e681458145814581420d0d837c837c838d817582a682a68149814082b882e982a282e2829f81420d814082da82ad82c982e08bb382a682c482e682a7816081420d836c836c817591e5906c82cc986282be82a982e70d8140837c837c838d82cd926d82e782c882ad82c482a282a282cc82e681420d837c837c838d817582bf82a582c181490d0d837c837c838d817591e5906c82c182c4814093738d8782cc82ed82e982a282c682ab82cd0d814082a282c282e082bb82a482be82e682cb81420d836c836c817582bb82ea82e682e881408370837082c98347836882b382f182cc0d8140986282f082b782e982f182b682e182c882a982c182bd82cc81480d837c837c838d817582a0814082bb82a482be82c182bd81490d0d837c837c838d817583708370814091e58d4882cc8347836882b382f182aa82cb81420d0d837c837c838d817591718cc982cc834a834d82aa814082c882a882c182bd82a982e70d81408f43979d82aa814082c582ab82e982e682a482c982c882c182bd82f182be82c182c481490d837c837c838d8175926296e889ae82b382f182cc8e648e9682cc83588373815b836882aa0d814082b782b282ad82cd82e282ad82c482cb814581458145814200"
+    },
+    {
+      "id": "event-bank-1.288d",
+      "japanese": "ネネ「ふたりともっ。\n\nネネ「もう　おそいから\n　そのつづきは　おフトンの中でしましょ。\nネネ「さあ　さあ・・・。",
+      "english": "Tessie: You two!\n\nTessie: It's getting late. You can finish your story in bed.\n\nTessie: Come along, now!",
+      "source_sha256": "5d8b395e6990b9d917c460ebfd94055d448a252babc203c30b913214c2efd4d3",
+      "raw_hex": "836c836c817582d382bd82e882c682e082c181420d0d836c836c817582e082a4814082a882bb82a282a982e70d814082bb82cc82c282c382ab82cd814082a883748367839382cc928682c582b582dc82b582e581420d836c836c817582b382a0814082b382a0814581458145814200"
+    },
+    {
+      "id": "event-bank-1.2a64",
+      "japanese": "ポポロ「ふあーあ。\n　きのうは　しずかで　よくねむれたなあ。\nポポロ「でも　まだねむいや・・・。\n　ふわーあ。\nネネ「じゃあ　あなた\n　気をつけていってらっしゃい。",
+      "english": "Tipper: Yaaawn... It was nice and quiet last night. I slept really well.\n\nTipper: But I'm still sleepy... Yaaawn...\n\nTessie: Well, take care out there, dear.",
+      "source_sha256": "c7e8836e49040ada6b720e4d3779c02f56cfbf8f4be8eedd83b74a529ab07bd2",
+      "raw_hex": "837c837c838d817582d382a0815b82a081420d814082ab82cc82a482cd814082b582b882a982c5814082e682ad82cb82de82ea82bd82c882a081420d837c837c838d817582c582e0814082dc82be82cb82de82a282e281458145814581420d814082d382ed815b82a081420d836c836c817582b682e182a0814082a082c882bd0d81408b4382f082c282af82c482a282c182c482e782c182b582e182a2814200"
+    },
+    {
+      "id": "event-bank-1.2b04",
+      "japanese": "エド「できやしたぜ！　ダンナ。\n　倉庫が　やっと使えますぜ！\nネネ「エドさん　ごくろうさま。",
+      "english": "Ed: All done, guv'nor! You can finally use the warehouse!\n\nTessie: Thank you, Ed.",
+      "source_sha256": "b3bd30e2292a1d21910d2564d0918008c79c3d808ea5b35410742e8ef8aac884",
+      "raw_hex": "83478368817582c582ab82e282b582bd82ba81498140835f8393836981420d814091718cc982aa814082e282c182c68e6782a682dc82b782ba81490d836c836c81758347836882b382f1814082b282ad82eb82a482b382dc814200"
+    },
+    {
+      "id": "event-bank-1.2b5f",
+      "japanese": "ネネ「これでやっと　ダンジョンから\n　持ちかえったものが　ためておけるわ。\nネネ「ダンジョンからもどったら\n\nネネ「とっておきたいものや　売りたいものは\n　かならず　{legacy-position:0306}冒険の書{unclassified-control:05}につけておいてね。",
+      "english": "Tessie: Now we can store the things you bring back from the dungeons.\n\nTessie: Whenever you come home...\n\nTessie: Make sure you enter anything you want to keep or sell in the {color:6}Adventure Log{/color}.",
+      "source_sha256": "5193351bed87a05ac6ae52792155be686294f93d0a21884ebea901562d0e1114",
+      "raw_hex": "836c836c817582b182ea82c582e282c182c68140835f839383578387839382a982e70d81408e9d82bf82a982a682c182bd82e082cc82aa814082bd82df82c482a882af82e982ed81420d836c836c8175835f839383578387839382a982e782e082c782c182bd82e70d0d836c836c817582c682c182c482a882ab82bd82a282e082cc82e28140948482e882bd82a282e082cc82cd0d814082a982c882e782b88140030696608caf82cc8f910582c982c282af82c482a882a282c482cb814200"
+    },
+    {
+      "id": "event-bank-1.2c1e",
+      "japanese": "ポポロ「パパ！　{legacy-position:0306}冒険の書{unclassified-control:05}はね\n　カウンターの上の　青いノートだよ！\nポポロ「まちがえないようにね！",
+      "english": "Tipper: Dad! The {color:6}Adventure Log{/color} is the blue notebook on the counter!\n\nTipper: Don't get it mixed up!",
+      "source_sha256": "3e982d1ebe327471484eb23fb541b37feb3d407c7cafc54b35a29d9bd864e2a5",
+      "raw_hex": "837c837c838d81758370837081498140030696608caf82cc8f910582cd82cb0d8140834a83458393835e815b82cc8fe382cc814090c282a2836d815b836782be82e681490d837c837c838d817582dc82bf82aa82a682c882a282e682a482c982cb814900"
+    },
+    {
+      "id": "event-bank-1.2c82",
+      "japanese": "ネネ「もう　ポポロったら・・・。\n　まちがえるのは　いつも　あなたでしょ？\nポポロ「しまった！\n\nネネ「フフフ・・・。\n\nエド「あの～。\n\nエド「ご家族だんらんのところ\n　もうしわけねえんでやすが・・・。",
+      "english": "Tessie: Oh, Tipper... You're the one who always gets it wrong!\n\nTipper: Oops!\n\nTessie: Hee hee...\n\nEd: Erm...\n\nEd: Sorry to interrupt the family chat, but...",
+      "source_sha256": "c9115d9de76605da8286b3cb7f4fd356ffdec01e31ea419c059befbb673ce868",
+      "raw_hex": "836c836c817582e082a48140837c837c838d82c182bd82e781458145814581420d814082dc82bf82aa82a682e982cc82cd814082a282c282e0814082a082c882bd82c582b582e581480d837c837c838d817582b582dc82c182bd81490d0d836c836c817583748374837481458145814581420d0d83478368817582a082cc816081420d0d83478368817582b289c691b082be82f182e782f182cc82c682b182eb0d814082e082a482b582ed82af82cb82a682f182c582e282b782aa814581458145814200"
+    },
+    {
+      "id": "event-bank-1.2d46",
+      "japanese": "ネネ「は　はい！　何か・・・？\n\nエド「じつを言うと　まだ完成\n　ってわけじゃねえんで・・・ヘイ。\nエド「倉庫の中が　もう\n　シッチャカメッチャカに　なってやんして・・。\nエド「何とか　２０個だけは\n　おけるように　したんでやすが・・・。\nネネ「まだ　時間がかかるのね？\n\nエド「ヘイ。それと・・・\n　かかるのは時間だけじゃねえんで・・・。\nエド「材料がその・・・おアシの方も・・・。\n\nネネ「ああ　材料代ね。\n　ごめんなさい　気がきかなくて。\nネネ「でも・・・うちも・・・。\n\nネネ「ねえ　あなた・・・ちょっと。",
+      "english": "Tessie: Y-yes? What is it?\n\nEd: Well, truth be told, the job ain't quite finished...\n\nEd: It's still a right mess in there.\n\nEd: I've managed to make room for twenty items, but...\n\nTessie: You need more time?\n\nEd: Aye. And, er... Time ain't the only thing I need...\n\nEd: There's materials, and, well... the money...\n\nTessie: Oh, the cost of materials! I'm sorry. I should have thought of that.\n\nTessie: But... we haven't much ourselves...\n\nTessie: Dear, could I have a word?",
+      "source_sha256": "2023786f651fa409a3e4588fcbacb51b60c8078a9d98d5c5ba74f653b465e05a",
+      "raw_hex": "836c836c817582cd814082cd82a28149814089bd82a981458145814581480d0d83478368817582b682c282f08cbe82a482c6814082dc82be8aae90ac0d814082c182c482ed82af82b682e182cb82a682f182c58145814581458377834381420d83478368817591718cc982cc928682aa814082e082a40d81408356836283608383834a8381836283608383834a82c9814082c882c182c482e282f182b582c48145814581420d83478368817589bd82c682a981408251824f8cc282be82af82cd0d814082a882af82e982e682a482c9814082b582bd82f182c582e282b782aa81458145814581420d836c836c817582dc82be81408e9e8ad482aa82a982a982e982cc82cb81480d0d83478368817583778343814282bb82ea82c68145814581450d814082a982a982e982cc82cd8e9e8ad482be82af82b682e182cb82a682f182c581458145814581420d8347836881758dde97bf82aa82bb82cc81458145814582a88341835682cc95fb82e081458145814581420d0d836c836c817582a082a081408dde97bf91e382cb81420d814082b282df82f182c882b382a281408b4382aa82ab82a982c882ad82c481420d836c836c817582c582e081458145814582a482bf82e081458145814581420d0d836c836c817582cb82a6814082a082c882bd81458145814582bf82e582c182c6814200"
+    },
+    {
+      "id": "event-bank-1.2f37",
+      "japanese": "ネネ「ゴニョゴニョゴニョ・・・。\n\nポポロ「また　大人の話してる！",
+      "english": "Tessie: Whisper, whisper...\n\nTipper: More grown-up talk!",
+      "source_sha256": "388db36e31ad62858bf93ecbf7a6bc4ac619d97466dfdb30a275e89d5cc0aaa1",
+      "raw_hex": "836c836c81758353836a83878353836a83878353836a838781458145814581420d0d837c837c838d817582dc82bd814091e5906c82cc986282b582c482e9814900"
+    },
+    {
+      "id": "event-bank-1.2f78",
+      "japanese": "ネネ「では　これではどうですか？\n　１０００ゴールドずつ　たまったら\nネネ「うちの{unclassified-control:7e}が\n　そのたびに　おしはらいします。\nネネ「それで　材料をそろえてもらって\n　少しずつ倉庫をなおしていただく　と。\nエド「ようがす！　それで行きやしょう！\n\nエド「アッシも　いっぺんにいただいても\n　すぐにはできやせんから！",
+      "english": "Tessie: How about this? Every time we save up another 1,000 gold...\n\nTessie: {player} will pay you.\n\nTessie: You can buy materials and repair the warehouse a little at a time.\n\nEd: Sounds good! Let's do that!\n\nEd: Even if you paid me all at once, I couldn't finish it straight away!",
+      "source_sha256": "831ed6731e1d2547479416d059715d22eab374c00f146409e8f3e36dc952ce50",
+      "raw_hex": "836c836c817582c582cd814082b182ea82c582cd82c782a482c582b782a981480d81408250824f824f824f8353815b838b836882b882c2814082bd82dc82c182bd82e70d836c836c817582a482bf82cc7e82aa0d814082bb82cc82bd82d182c9814082a882b582cd82e782a282b582dc82b781420d836c836c817582bb82ea82c581408dde97bf82f082bb82eb82a682c482e082e782c182c40d81408fad82b582b882c291718cc982f082c882a882b582c482a282bd82be82ad814082c681420d83478368817582e682a482aa82b78149814082bb82ea82c58d7382ab82e282b582e582a481490d0d83478368817583418362835682e0814082a282c182d882f182c982a282bd82be82a282c482e00d814082b782ae82c982cd82c582ab82e282b982f182a982e7814900"
+    },
+    {
+      "id": "event-bank-1.32ca",
+      "japanese": "ネネ「じゃあ　あなた。\n　倉庫を使うときはこっちよ。",
+      "english": "Tessie: The warehouse is this way, dear.",
+      "source_sha256": "d0a3518f01f1a06f7310bae271b08140eff3b85780cfbea7f704e69045fcc179",
+      "raw_hex": "836c836c817582b682e182a0814082a082c882bd81420d814091718cc982f08e6782a482c682ab82cd82b182c182bf82e6814200"
+    },
+    {
+      "id": "event-bank-1.331b",
+      "japanese": "ポポロ「・・・ちぇ！\n　オトナの話はつまんないや。",
+      "english": "Tipper: ...Hmph! Grown-up talk is boring.",
+      "source_sha256": "18f04e8fb2e8c1bc17d453d4a1e99904e692740648cf2ddfebe766fdc7104c59",
+      "raw_hex": "837c837c838d817581458145814582bf82a581490d814083498367836982cc986282cd82c282dc82f182c882a282e2814200"
+    },
+    {
+      "id": "event-bank-1.3878",
+      "japanese": "エド「ダンナぁ～っ！",
+      "english": "Ed: Guv'nor!",
+      "source_sha256": "81b97cd47215259aba387e0b70db7e8e5ede4918c4c81d4966ff3c9e27f9687d",
+      "raw_hex": "834783688175835f83938369829f816082c1814900"
+    },
+    {
+      "id": "event-bank-1.4f16",
+      "japanese": "パン屋「はぁ～。\n　なんてにぎやかな　お墓なんだろう。\nパン屋「どこもかしこも　オバケだらけだ。\n\nパン屋「これじゃあ　いつまでたっても\n　師匠のお墓まで　たどりつけないや。\nパン屋「もうちょっとしずかな　\n　お墓だったら　よかったのに・・・。",
+      "english": "Baker: Sigh... What a lively graveyard.\n\nBaker: There are ghosts everywhere!\n\nBaker: At this rate, I'll never reach my master's grave.\n\nBaker: I wish he'd been buried somewhere a little quieter...",
+      "source_sha256": "a7e6b0b15981f380dfcf8dff559411bbd8ff0aaf61ebd8feda8a431521f24e9e",
+      "raw_hex": "8370839389ae817582cd829f816081420d814082c882f182c482c982ac82e282a982c8814082a895e682c882f182be82eb82a481420d8370839389ae817582c782b182e082a982b582b182e081408349836f835082be82e782af82be81420d0d8370839389ae817582b182ea82b682e182a0814082a282c282dc82c582bd82c182c482e00d81408e748fa082cc82a895e682dc82c5814082bd82c782e882c282af82c882a282e281420d8370839389ae817582e082a482bf82e582c182c682b582b882a982c881400d814082a895e682be82c182bd82e7814082e682a982c182bd82cc82c9814581458145814200"
+    },
+    {
+      "id": "event-bank-1.691e",
+      "japanese": "鍛冶屋「ちくしょう！！\n\n鍛冶屋「やっと王様のおゆるしを\n　いただいたっていうのに！\n鍛冶屋「うーん　ダンジョンかあ・・・。\n　うーん　モンスターかあ・・・。",
+      "english": "Blacksmith: Blast it!\n\nBlacksmith: And I'd finally got the King's permission, too!\n\nBlacksmith: A dungeon, eh...? And monsters... Hmm...",
+      "source_sha256": "fb7b0629fc2c419c22c34187bc2bcfbcabc14733a6adc0b6b8cbb1356e3f1115",
+      "raw_hex": "926296e889ae817582bf82ad82b582e582a4814981490d0d926296e889ae817582e282c182c689a4976c82cc82a882e482e982b582f00d814082a282bd82be82a282bd82c182c482a282a482cc82c981490d926296e889ae817582a4815b82f18140835f839383578387839382a982a081458145814581420d814082a4815b82f18140838283938358835e815b82a982a0814581458145814200"
+    },
+    {
+      "id": "event-bank-1.69b8",
+      "japanese": "鍛冶屋「ちくしょう！！\n\n鍛冶屋「オレのちからじゃあ\n　まったく　ハが立たない！",
+      "english": "Blacksmith: Blast it!\n\nBlacksmith: I'm no match for them!",
+      "source_sha256": "4efa3d7626c3bb4ccaa29ea9350f59ce11b26a6d0398971288d9e215cc120913",
+      "raw_hex": "926296e889ae817582bf82ad82b582e582a4814981490d0d926296e889ae81758349838c82cc82bf82a982e782b682e182a00d814082dc82c182bd82ad8140836e82aa97a782bd82c882a2814900"
+    },
+    {
+      "id": "event-bank-1.6a06",
+      "japanese": "鍛冶屋「・・・え？\n\n鍛冶屋「もしかして　アンタが\n　オレのかわりに{legacy-position:0306}聖なる炎{unclassified-control:05}を？",
+      "english": "Blacksmith: ...Eh?\n\nBlacksmith: You'll get the {color:6}sacred flame{/color} for me?",
+      "source_sha256": "254a7527b1838f79a41ba4833d92ff6a61853c6581e2a7864a6d1238d8ec508a",
+      "raw_hex": "926296e889ae817581458145814582a681480d0d926296e889ae817582e082b582a982b582c4814083418393835e82aa0d81408349838c82cc82a982ed82e882c9030690b982c882e9898a0582f0814800",
+      "terminology_revision": {
+        "previous_english": "Blacksmith: ...Eh?\n\nBlacksmith: You'll get the {color:6}holy flame{/color} for me?",
+        "reason": "Standardise the castle quest on sacred flame, matching the existing glossary and PS1 naming documented by a secondary town guide. Do not conflate it with DQ IV lighthouse lore.",
+        "source_url": "https://www.woodus.com/den/games/tq2psx/town.php"
+      }
+    },
+    {
+      "id": "event-bank-1.6a74",
+      "japanese": "鍛冶屋「そいつはカンゲキだ！\n\n鍛冶屋「{legacy-position:0306}聖なる炎{unclassified-control:05}は７Fにある！\n　よろしくたのむぜ！",
+      "english": "Blacksmith: You're a lifesaver!\n\nBlacksmith: The {color:6}sacred flame{/color} is on 7F. I'm counting on you!",
+      "source_sha256": "b9b6b5a01b6e506a514318571a4ba5c1dd1877ac8bffa4517e8e9e5505de89a3",
+      "raw_hex": "926296e889ae817582bb82a282c282cd834a83938351834c82be81490d0d926296e889ae8175030690b982c882e9898a0582cd82564682c982a082e981490d814082e682eb82b582ad82bd82cc82de82ba814900",
+      "terminology_revision": {
+        "previous_english": "Blacksmith: You're a lifesaver!\n\nBlacksmith: The {color:6}holy flame{/color} is on 7F. I'm counting on you!",
+        "reason": "Standardise the castle quest on sacred flame, matching the existing glossary and PS1 naming documented by a secondary town guide. Do not conflate it with DQ IV lighthouse lore.",
+        "source_url": "https://www.woodus.com/den/games/tq2psx/town.php"
+      }
+    },
+    {
+      "id": "event-bank-1.6c40",
+      "japanese": "鍛冶屋「おおっ　こ　これは・・・！\n　ま　まちがいない！\n鍛冶屋「これこそが　{legacy-position:0306}聖なる炎{unclassified-control:05}だっ！\n\n鍛冶屋「あ　ありがとう！\n　なにか　お礼をさせてくれ！",
+      "english": "Blacksmith: Oh! Th-this is...! There's no mistaking it!\n\nBlacksmith: It's the {color:6}sacred flame{/color}!\n\nBlacksmith: Thank you! Let me do something to repay you!",
+      "source_sha256": "5f16620fb1cde7f80606291f9e774be16bdd9a07b5df103101692804aff334f5",
+      "raw_hex": "926296e889ae817582a882a882c1814082b1814082b182ea82cd81458145814581490d814082dc814082dc82bf82aa82a282c882a281490d926296e889ae817582b182ea82b182bb82aa8140030690b982c882e9898a0582be82c181490d0d926296e889ae817582a0814082a082e882aa82c682a481490d814082c882c982a9814082a897e782f082b382b982c482ad82ea814900",
+      "terminology_revision": {
+        "previous_english": "Blacksmith: Oh! Th-this is...! There's no mistaking it!\n\nBlacksmith: It's the {color:6}holy flame{/color}!\n\nBlacksmith: Thank you! Let me do something to repay you!",
+        "reason": "Standardise the castle quest on sacred flame, matching the existing glossary and PS1 naming documented by a secondary town guide. Do not conflate it with DQ IV lighthouse lore.",
+        "source_url": "https://www.woodus.com/den/games/tq2psx/town.php"
+      }
+    },
+    {
+      "id": "event-bank-1.6e07",
+      "japanese": "鍛冶屋「倉庫のカギがこわれてるって？\n\n鍛冶屋「へへへ・・・\n　そんなものお安いご用だ！\n鍛冶屋「先に行って　なおしとくぜ！",
+      "english": "Blacksmith: Your warehouse lock's broken?\n\nBlacksmith: Heh heh... That's an easy job!\n\nBlacksmith: I'll go on ahead and fix it!",
+      "source_sha256": "37fbfbda55ffe0f180b9208e9316e0ff30b3072c5f6ee37504c8bbe76d056e56",
+      "raw_hex": "926296e889ae817591718cc982cc834a834d82aa82b182ed82ea82c482e982c182c481480d0d926296e889ae817582d682d682d68145814581450d814082bb82f182c882e082cc82a888c082a282b2977082be81490d926296e889ae817590e682c98d7382c182c4814082c882a882b582c682ad82ba814900"
+    },
+    {
+      "id": "event-bank-1.6ed5",
+      "japanese": "鍛冶屋「いいや！　オレはやる！\n\n鍛冶屋「オレは・・・オレは\n　かならず世界一の鍛冶屋になる！\n鍛冶屋「よ～し　行くぜっ！",
+      "english": "Blacksmith: No! I'm going to do it!\n\nBlacksmith: I... I'm going to be the greatest blacksmith in the world!\n\nBlacksmith: Right! Here goes!",
+      "source_sha256": "ed16f95484c09c42d73f8c4acc3757370757d58adc7c2edcb053c43355afb235",
+      "raw_hex": "926296e889ae817582a282a282e2814981408349838c82cd82e282e981490d0d926296e889ae81758349838c82cd8145814581458349838c82cd0d814082a982c882e782b890a28a4588ea82cc926296e889ae82c982c882e981490d926296e889ae817582e6816082b581408d7382ad82ba82c1814900"
+    },
+    {
+      "id": "rom.00061998",
+      "japanese": "{unclassified-control:14}{unclassified-control:7e}は\n{unclassified-control:14}聖なる炎を手に入れた!",
+      "english": "{center}{player}\n{center}obtained the sacred flame!",
+      "source_sha256": "ea90b3d56e26cf2478a4531970f99bdfb7372be775f4ea6692fb9007a00dce4f",
+      "raw_hex": "147e82cd0d1490b982c882e9898a82f08ee882c993fc82ea82bd2100",
+      "terminology_revision": {
+        "previous_english": "{center}{player}\n{center}obtained the holy flame!",
+        "reason": "Standardise the castle quest on sacred flame, matching the existing glossary and PS1 naming documented by a secondary town guide. Do not conflate it with DQ IV lighthouse lore.",
+        "source_url": "https://www.woodus.com/den/games/tq2psx/town.php"
+      }
+    }
+  ]
+}

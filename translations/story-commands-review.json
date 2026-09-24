@@ -1,0 +1,320 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "event-bank-5.23e9",
+      "source_hex": "9856906c817591d282c182c482a882c182bd82bc81490d814081458145814582b182ea82be81408ef382af82c682e982aa82e682a282c181490d144041407e82cd0d14959588f382cc94a082f08ee882c993fc82ea82bd81490d1482bb82b582c481407e82cd8140959588f382cc94a082f00d1482d382c682b182eb905b82ad814082b582dc82a282b182f182be00",
+      "source_sha256": "acfe453a3d0902935e8a9e7f9d98c2251047d63433789ba2b133d036a9d5be55",
+      "japanese": "老人「待っておったぞ！\n　・・・これだ　受けとるがよいっ！\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}封印の箱を手に入れた！\n{unclassified-control:14}そして　{unclassified-control:7e}は　封印の箱を\n{unclassified-control:14}ふところ深く　しまいこんだ",
+      "english": "Old man: I have been waiting! ...Here, take this!\n\n{center}@A@{player}\n{center}received the Sealing chest!\n\n{center}{player} tucked the chest\n{center}deep inside his coat.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Old man: I have been waiting! ...Here, take this!\n\n{center}@A@{player}\n{center}received the Sealing chest!\n\n{center}{player} tucked the chest\n{center}deep inside his coat.",
+        "revised": "Old man: I have been waiting! ...Here, take this!\n\n{center}@A@{player}\n{center}received the Sealing chest!\n\n{center}{player} tucked the chest\n{center}deep inside his coat.",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/final-quest-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-5.2478",
+      "source_hex": "9856906c817581458145814582b682e382f182d182cd82c582ab82bd81420d0d9856906c817582a082c682cd814082b182ea82f095738e768b6382cc835f839383578387839382d60d814082a882a282c482ad82e982be82af82be82c881420d9856906c817582b582a982b58145814581450d814095738e768b6382cc835f839383578387839382cd905b82a281420d9856906c817582c782b182dc82c5814082e082ae82ea82ce82e682a282cc82a982cd0d814082b182cc838f835682c582b382a68140926d82e782ca82cc82be81420d9856906c817582be82aa814082bb82c882bd82c882e782ce0d814082ab82c182c6814082e282e882c682b082e982c582a082eb82a482c881420d9856906c817581458145814591d282c182c482a882e982bc81490d0d144041407e82cd95738e768b6382cc835f839383578387839382d60d148d7382af82e982e682a482c982c882c182bd814900",
+      "source_sha256": "1cf54ac33b25629562b85d07be3862148dcfe6878651ac42d84d658f167cbd0a",
+      "japanese": "老人「・・・じゅんびはできた。\n\n老人「あとは　これを不思議のダンジョンへ\n　おいてくるだけだな。\n老人「しかし・・・\n　不思議のダンジョンは深い。\n老人「どこまで　もぐればよいのかは\n　このワシでさえ　知らぬのだ。\n老人「だが　そなたならば\n　きっと　やりとげるであろうな。\n老人「・・・待っておるぞ！\n\n{unclassified-control:14}@A@{unclassified-control:7e}は不思議のダンジョンへ\n{unclassified-control:14}行けるようになった！",
+      "english": "Old man: ...Everything is ready.\n\nOld man: All that remains is to leave this in the Magic Dungeon.\n\nOld man: But... The dungeon runs deep.\n\nOld man: Even I do not know how far down you must go.\n\nOld man: Yet I am sure you will see this through.\n\nOld man: ...I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Magic Dungeon!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Old man: ...Everything is ready.\n\nOld man: All that remains is to leave this in the Magic Dungeon.\n\nOld man: But... The dungeon runs deep.\n\nOld man: Even I do not know how far down you must go.\n\nOld man: Yet I am sure you will see this through.\n\nOld man: ...I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Magic Dungeon!",
+        "revised": "Old man: ...Everything is ready.\n\nOld man: All that remains is to leave this in the Magic Dungeon.\n\nOld man: But... The dungeon runs deep.\n\nOld man: Even I do not know how far down you must go.\n\nOld man: Yet I am sure you will see this through.\n\nOld man: ...I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Magic Dungeon!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": false,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/final-quest-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-5.6488",
+      "source_hex": "144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d8be08b9b817582bb82a282c282cd81408347836083498373834182dd82e282b082b381420d814082a082f182bd82c982e282e982e681420d8be08b9b817582c582e082cb82a681458145814581420d814090a282cc928682cd95738e768b6382c882b182c682aa82a082e982e681420d8be08b9b817582e082b58140926d82e882bd82af82ea82ce814082dc82bd8dc58f8982cc0d81409682964089ae82cc9085834b838182cc82c682b182dc82c5978882c482b282e782f1814200",
+      "source_sha256": "c1096cd2735aac89f82c401db51c4f0a8f300774acd26a5f8dda49ec0189659d",
+      "japanese": "{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\n金魚「そいつは　エチオピアみやげさ。\n　あんたにやるよ。\n金魚「でもねえ・・・。\n　世の中は不思議なことがあるよ。\n金魚「もし　知りたければ　また最初の\n　魔法屋の水ガメのとこまで来てごらん。",
+      "english": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+        "revised": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": false,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/final-quest-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-5.89fa",
+      "source_hex": "89d4817582a082e7814082a482ea82b582a281490d0d89d4817582c582cb814088ea94d482a882e082b582eb82a982c182bd82cc82cd0d0d89d48175834d815b834b82c182c482a282a482a882b682a282b382f182aa0d814082a082bb82b182cc95e6926e82c9814082a882e882c48d7382c182bd82c682ab82cb81420d89d48175834d815b834b82c182c482a282a4906c82cd814082bd82b582a98145814581450d0d89d48175836883898353839382f0814082bd82a882b582c40d814082dd82f182c882f0814082bd82b782af82c482a082b082bd82f182c582b582e581480d89d4817582c882cc82c9906c8ad482c182bd82e7814082c282ac82cd834a838c82f00d8140836f83508382836d82be82c182c481408cbe82a282be82b582c481458145814581420d89d4817582a082cc82c682ab82cd814082b382b782aa82cc8341835e835682e00d8140834c838c82bf82e182c182bd82ed82e681420d89d4817582dc82a081408341835e835682cd89d482be82a982e782b30d0d89d48175834c838c82bd82c182c482a282c182c482e00d814082d782c282c9814082c782a482c182c482b182c682c882a282f182be82af82c782cb81420d89d4817582c582e082cb814082b582ce82e782ad82b582bd82e70d8140906c8ad482c182c482a282a282c8829f82c182c481408e7682a282c882a882b582bd82ed81420d89d4817582a895e682dc82a282e882c981408d7382ad906c82aa82cb0d8140914f82c982ad82e782d782c4814082d382a682bd82cc82e681420d89d4817582b182ea82c182c4814082c782a482a282b182c682a982ed82a982e981480d0d89d4817589bd82be82a982f182be8cbe82c182c482e00d0d89d4817591ba82cc906c82bd82bf82cd8140834d815b834b82b382f182f00d81408970975982be82c182c481408e7682c182c482e982c182c482b182c681420d89d4817582bb82a482b682e182c882af82ea82ce814082a082cc82a895e682cd0d814082c682c182ad82c981408e6782ed82ea82c882ad82c882c182c482e982be82eb82a482b50d89d4817582bb82cc82bb82ce82c98f5a82e082a482c882f182c48e7682ed82c882a281420d814082cb81458145814582bb82a482c582b582e581480d89d4817581458145814581458145814581420d0d89d4817582c882f182a9814082d082b382b582d482e882c90d8140906c8ad482c682a882b582e182d782e882b582c4814082bd82cc82b582a982c182bd82e681420d89d4817582bb82cc82a897e782c682a282c182bf82e182c882f182be82af82c70d814082b182ea814082a082f182bd82c982a082b082e982e681420d144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d89d4817582a082f182bd82dd82bd82a282c8906c8ad482ce82c182a982e882be82c60d0d89d481758341835e835682e0814082cd82e882ab82c182c40d814082e082c182c682ab82ea82a282c889d482b382a982b982e982f182be82af82c782cb81420d89d4817581458145814582d382d382d381420d0d89d4817582bb82ea82b682e182a0814082dc82bd82cb814200",
+      "source_sha256": "dbd6a3030a86b06d7a8bf04b8271abaf832ea8d8b270bdfbf4f99ee0b958c00c",
+      "japanese": "花「あら　うれしい！\n\n花「でね　一番おもしろかったのは\n\n花「ギーガっていうおじいさんが\n　あそこの墓地に　おりて行ったときね。\n花「ギーガっていう人は　たしか・・・\n\n花「ドラゴンを　たおして\n　みんなを　たすけてあげたんでしょ？\n花「なのに人間ったら　つぎはカレを\n　バケモノだって　言いだして・・・。\n花「あのときは　さすがのアタシも\n　キレちゃったわよ。\n花「まあ　アタシは花だからさ\n\n花「キレたっていっても\n　べつに　どうってことないんだけどね。\n花「でもね　しばらくしたら\n　人間っていいなぁって　思いなおしたわ。\n花「お墓まいりに　行く人がね\n　前にくらべて　ふえたのよ。\n花「これって　どういことかわかる？\n\n花「何だかんだ言っても\n\n花「村の人たちは　ギーガさんを\n　英雄だって　思ってるってこと。\n花「そうじゃなければ　あのお墓は\n　とっくに　使われなくなってるだろうし\n花「そのそばに住もうなんて思わない。\n　ね・・・そうでしょ？\n花「・・・・・・。\n\n花「なんか　ひさしぶりに\n　人間とおしゃべりして　たのしかったよ。\n花「そのお礼といっちゃなんだけど\n　これ　あんたにあげるよ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\n花「あんたみたいな人間ばっかりだと\n\n花「アタシも　はりきって\n　もっときれいな花さかせるんだけどね。\n花「・・・ふふふ。\n\n花「それじゃあ　またね。",
+      "english": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+        "revised": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/final-quest-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-5.a476",
+      "source_hex": "8388838d8343817582a682a6816082c181498140837e838b839382b382f182aa0d8140837b834e82c68366815b836782b582c482ad82ea82e982f182c582b782a981480d8388838d8343817582e2814082e2814082e2814082e282c182bd829f829f829f829f82c181490d814082a082e882aa82c682a482b282b482a282dc82b781407e82b382f181490d8388838d8343817581458145814582a0814082bb82a482be81490d0d8388838d8343817582c282dc82e782c882a282e082cc82c582b782aa814082b182ea82f00d814082a897e782c682b582c481408ef382af82c682c182c482e082e782a682dc82b982f182a981480d144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d8388838d834381757e82b382f181490d8140837a8393836782c982a082e882aa82c682a482b282b482a282dc82b582bd814900",
+      "source_sha256": "014ef1e474f981060f28948757d4bfa6120cd3d7330457000ecda08fb89a5aae",
+      "japanese": "ヨロイ「ええ～っ！　ミルンさんが\n　ボクとデートしてくれるんですか？\nヨロイ「や　や　や　やったぁぁぁぁっ！\n　ありがとうございます　{unclassified-control:7e}さん！\nヨロイ「・・・あ　そうだ！\n\nヨロイ「つまらないものですが　これを\n　お礼として　受けとってもらえませんか？\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\nヨロイ「{unclassified-control:7e}さん！\n　ホントにありがとうございました！",
+      "english": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+        "revised": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/final-quest-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-3.4f92",
+      "source_hex": "89a4976c817582a882a882c181408d7382c182c482ad82ea82e982a981490d814097e782f08cbe82a482bc81407e82e681420d0d144041407e82cd0d1496c082a282cc905882d68d7382af82e982e682a482c982c882c182bd814900",
+      "source_sha256": "f0d193769f875c02b1def9c6dfeef4bd1f715a2802db967fd422f4a2b51b7f22",
+      "japanese": "王様「おおっ　行ってくれるか！\n　礼を言うぞ　{unclassified-control:7e}よ。\n\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}迷いの森へ行けるようになった！",
+      "english": "King: Ah! You will go? Thank you, {player}!\n\n{center}@A@{player}\n{center}can now visit the Lost Forest!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "King: Ah! You will go? Thank you, {player}!\n\n{center}@A@{player}\n{center}can now visit the Lost Forest!",
+        "revised": "King: Ah! You will go? Thank you, {player}!\n\n{center}@A@{player}\n{center}can now visit the Lost Forest!",
+        "reason": "Second bilingual read preserves T2 story, speaker changes, conditions and concrete gameplay instructions, including approximate turn counts, arrows, item effects and inventory-order synthesis.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+          "kind": "Secondary PS1 naming evidence; dungeon sections 3.5 and 3.6. T2 story roles/sequence checked; no PS1 prose imported."
+        }
+      ],
+      "draft_catalog": "translations/forest-story-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-2.032f",
+      "source_hex": "8ca992a382e882cc95ba8e6d81759856906c82cd82a282dc82b982f181420d0d8ca992a382e882cc95ba8e6d817582a882bb82e782ad814089ce908182ab8e5282d60d81408cfc82a982c182bd82e082cc82c68e7682ed82ea82dc82b781420d8ca992a382e882cc95ba8e6d817589ce908182ab8e5282c982cd814082a282c982b582a682cc0d814090b997ec82aa82b782de82c682cc8cbe82a2936082a682aa82a082e882dc82b781420d8ca992a382e882cc95ba8e6d817590b997ec82cc814082a882dd82bf82d182ab82aa0d814082a082e882dc82b782e682a4814082a882a282cc82e882b582c482a882e882dc82b781420d144041407e82cd0d1489ce908182ab8e5282d68d7382af82e982e682a482c982c882c182bd814900",
+      "source_sha256": "c4ef93877f206d752da4fa33989e1b5f2899916ae8bf10d1a7dfdbb785e978ef",
+      "japanese": "見張りの兵士「老人はいません。\n\n見張りの兵士「おそらく　火吹き山へ\n　向かったものと思われます。\n見張りの兵士「火吹き山には　いにしえの\n　聖霊がすむとの言い伝えがあります。\n見張りの兵士「聖霊の　おみちびきが\n　ありますよう　おいのりしております。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}火吹き山へ行けるようになった！",
+      "english": "Guard: The old man isn't here. We believe he has gone to Mt. Fiery.\n\nGuard: Legend has it that an ancient holy spirit lives there.\n\nGuard: I pray that the spirit will guide you.\n\n{center}@A@{player}\n{center}can now visit Mt. Fiery!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Guard: The old man isn't here. We believe he has gone to Mt. Fiery.\n\nGuard: Legend has it that an ancient spirit lives there.\n\nGuard: I pray that the spirit will guide you.\n\n{center}@A@{player}\n{center}can now visit Mt. Fiery!",
+        "revised": "Guard: The old man isn't here. We believe he has gone to Mt. Fiery.\n\nGuard: Legend has it that an ancient holy spirit lives there.\n\nGuard: I pray that the spirit will guide you.\n\n{center}@A@{player}\n{center}can now visit Mt. Fiery!",
+        "reason": "Retain the sacred quality of 聖霊 in the legend.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [
+        {
+          "url": "https://www.neoseeker.com/torneko/faqs/27583-a.html",
+          "term": "Mt. Fiery",
+          "kind": "secondary PS1 walkthrough; chapter 5 dungeon"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/71464",
+          "term": "Mt. Fiery",
+          "kind": "secondary PS1 walkthrough; chapter 2.5"
+        }
+      ],
+      "draft_catalog": "translations/missing-king-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-0.1918",
+      "source_hex": "836c836c817582dc82b382a9814082a082c882bd82c982b182ea82aa954b977682c982c882e90d814082c682cd8e7682ed82c882a982c182bd82af82c781458145814581420d836c836c817582c682c182c482a882ab82cc919594f582e681420d0d144041407e82cd814082cd82ae82ea8381835e838b82cc8c9582c681400d1482cd82ae82ea8381835e838b82cc8f8282f081408ee882c993fc82ea82bd81490d836c836c8175919594f582b782e982cc82f08140965982ea82c882a282c582cb814200",
+      "source_sha256": "7fcc1cd0713db12bd85599460ad93a41c3c4f1b0a71a2fec1f07e8b2722c23d0",
+      "japanese": "ネネ「まさか　あなたにこれが必要になる\n　とは思わなかったけど・・・。\nネネ「とっておきの装備よ。\n\n{unclassified-control:14}@A@{unclassified-control:7e}は　はぐれメタルの剣と　\n{unclassified-control:14}はぐれメタルの盾を　手に入れた！\nネネ「装備するのを　忘れないでね。",
+      "english": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received\n{center}a Liquid metal sword and shield!\n\nTessie: Don't forget to equip them!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received a Liquid metal sword and\n{center}a Liquid metal shield!\n\nTessie: Don't forget to equip them!",
+        "revised": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received\n{center}a Liquid metal sword and shield!\n\nTessie: Don't forget to equip them!",
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required.",
+        "layout_revision": "Share Liquid metal across sword and shield in the second centered line; both distinct gifts remain explicit. Preserve the two original centers, @A command and player substitution. Widest names fit."
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/opening-remaining-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-6.051c",
+      "source_hex": "836c836c8175cfc096608cafc68f6fc0b8c30d81408345835983458359bcc3d9dd82c5bc82e581480d836c836c8175b3cccc8140dcb682c1c3d9dc81420d0d836c836c8175cab28140bada81420d0d144041407e82cd0d1491e582ab82c88370839382f08ee882c993fc82ea82bd0d836c836c8175b282c1c3d782c1bc82e1b2814200",
+      "source_sha256": "6fba0376802e964a7b834e599b3d705bebefd90d04304f6405fd026adc763488",
+      "japanese": "ネネ「ﾏﾀ冒険ﾆ出ﾀｸﾃ\n　ウズウズｼﾃﾙﾝでｼょ？\nネネ「ｳﾌﾌ　ﾜｶっﾃﾙﾜ。\n\nネネ「ﾊｲ　ｺﾚ。\n\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}大きなパンを手に入れた\nネネ「ｲっﾃﾗっｼゃｲ。",
+      "english": "Tessie: You're itching to go on another adventure, aren't you?\n\nTessie: Hee hee. I know you.\n\nTessie: Here, take this.\n\n{center}@A@{player}\n{center}received a Big bread.\n\nTessie: Have a good trip!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Tessie: You're itching to go on another adventure, aren't you?\n\nTessie: Hee hee. I know you.\n\nTessie: Here, take this.\n\n{center}@A@{player}\n{center}received a Big bread.\n\nTessie: Have a good trip!",
+        "revised": "Tessie: You're itching to go on another adventure, aren't you?\n\nTessie: Hee hee. I know you.\n\nTessie: Here, take this.\n\n{center}@A@{player}\n{center}received a Big bread.\n\nTessie: Have a good trip!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/postgame-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-6.3db1",
+      "source_hex": "8382836d8d44b7c5926a8175b5b582c181420d81400306825182574605cf82c58d7382c1c39788c0dd82bec881490d8382836d8d44b7c5926a817582c5ca8140d4b8bfb882c7b5d80d81400306cfd3d8c98e7797d60582f08376838c835b83938367bdd9d681420d144041407e82cd0d1482dc82e082e882cc8e7797d682f08ee882c993fc82ea82bd81490d8382836d8d44b7c5926a81750306cfd3d8c98e7797d605ca0d8140cf82becf82beb1d9dd82be81420d8382836d8d44b7c5926a817589bdd38e9dc082b8c60306825182574605cf82c50d81408d73b9c0d78140cfc081408376838c835b83938367bdd9d6814200",
+      "source_sha256": "d1a760e7c497b9748f20ce24eb59ca6051fc2df896fe96251d483d813b9d0ea6",
+      "japanese": "モノ好ｷﾅ男「ｵｵっ。\n　{legacy-position:0306}２８F{unclassified-control:05}ﾏで行っﾃ来ﾀﾝだﾈ！\nモノ好ｷﾅ男「でﾊ　ﾔｸｿｸどｵﾘ\n　{legacy-position:0306}ﾏﾓﾘﾉ指輪{unclassified-control:05}をプレゼントｽﾙﾖ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}まもりの指輪を手に入れた！\nモノ好ｷﾅ男「{legacy-position:0306}ﾏﾓﾘﾉ指輪{unclassified-control:05}ﾊ\n　ﾏだﾏだｱﾙﾝだ。\nモノ好ｷﾅ男「何ﾓ持ﾀずﾆ{legacy-position:0306}２８F{unclassified-control:05}ﾏで\n　行ｹﾀﾗ　ﾏﾀ　プレゼントｽﾙﾖ。",
+      "english": "Eccentric man: Oh! You made it to {color:6}28F{/color} and back!\n\nEccentric man: As promised, here's a {color:6}Protection ring{/color}!\n\n{center}@A@{player}\n{center}received a Protection ring!\n\nEccentric man: I've still got plenty of {color:6}Protection rings{/color}.\n\nEccentric man: Reach {color:6}28F{/color} again with no items, and I'll give you another!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Eccentric man: Oh! You made it to {color:6}28F{/color} and back!\n\nEccentric man: As promised, here's a {color:6}Protection ring{/color}!\n\n{center}@A@{player}\n{center}received a Protection ring!\n\nEccentric man: I've still got plenty of {color:6}Protection rings{/color}.\n\nEccentric man: Reach {color:6}28F{/color} again with no items, and I'll give you another!",
+        "revised": "Eccentric man: Oh! You made it to {color:6}28F{/color} and back!\n\nEccentric man: As promised, here's a {color:6}Protection ring{/color}!\n\n{center}@A@{player}\n{center}received a Protection ring!\n\nEccentric man: I've still got plenty of {color:6}Protection rings{/color}.\n\nEccentric man: Reach {color:6}28F{/color} again with no items, and I'll give you another!",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/postgame-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-6.7bfe",
+      "source_hex": "8388838d83438175b4b4816082c181498140837e838b8393bbdd82aa0d8140837b834ec48366815b8367bcc3b8dad9dd82c5bdb681480d8388838d83438175d48140d48140d48140d482c1c0829f829f829f829f82c181490d8140b1d882aac4b382b282b4b2cfbd81407ebbdd81490d8388838d83438175814581458145b18140bfb382be81490d0d8388838d83438175c2cfd7c5b2d3c982c5bd82aa8140bada82f00d8140b597e7c4bcc381408ef3b9c482c1c3d3d7b4cfbeddb681480d144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d8388838d834381757ebbdd81490d8140837a83938367c6b1d882aac4b382b282b4b2cfbcc0814900",
+      "source_sha256": "0530d2eb7b30a17accc121d573319c4260032e869540573070e5e3439a007d6a",
+      "japanese": "ヨロイ「ｴｴ～っ！　ミルンｻﾝが\n　ボクﾄデートｼﾃｸﾚﾙﾝでｽｶ？\nヨロイ「ﾔ　ﾔ　ﾔ　ﾔっﾀぁぁぁぁっ！\n　ｱﾘがﾄｳござｲﾏｽ　{unclassified-control:7e}ｻﾝ！\nヨロイ「・・・ｱ　ｿｳだ！\n\nヨロイ「ﾂﾏﾗﾅｲﾓﾉでｽが　ｺﾚを\n　ｵ礼ﾄｼﾃ　受ｹﾄっﾃﾓﾗｴﾏｾﾝｶ？\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\nヨロイ「{unclassified-control:7e}ｻﾝ！\n　ホントﾆｱﾘがﾄｳござｲﾏｼﾀ！",
+      "english": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+        "revised": "Armour: What?! Milun will go on a date with me?\n\nArmour: Y-y-yes! Thank you, {player}!\n\nArmour: ...Oh, right!\n\nArmour: It's nothing special, but please take this as a thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nArmour: {player}! Thank you so much!",
+        "reason": "Reconciled against a separately bilingual-reviewed T2 source with identical English and exact normalized Japanese. NFKC, katakana-to-hiragana and whitespace normalization only; punctuation, controls, quantities and words must match. Original source bytes remain separate and unchanged.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "normalized-exact-reconciliation",
+        "reviewed_source": {
+          "catalog": "final-quest-draft.json",
+          "id": "event-bank-5.a476",
+          "source_sha256": "014ef1e474f981060f28948757d4bfa6120cd3d7330457000ecda08fb89a5aae",
+          "context_pending": true
+        },
+        "normalization": "NFKC; U+30A1..U+30F6 to hiragana; remove whitespace"
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/postgame-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-6.912e",
+      "source_hex": "89d48175b1d78140b3dabcb281490d0d89d4817582c5c8814088ea94d4b5d3bcdbb682c1c0c9ca0d0d89d48175834d815b834b82c1c3b2b3b582b6b2bbdd82aa0d8140b1bfbac995e6926ec6b5d8c38d7382c1c0c4b7c881420d89d48175834d815b834b82c1c3b2b3906cca8140c0bcb68145814581450d0d89d48175836883898353839382f08140c0b5bcc30d8140d0ddc582f08140c0bdb9c3b182b0c0dd82c5bc82e581480d89d48175c5c9c6906c8ad482c1c0d78140c282acca834a838c82f00d8140836f83508382836d82be82c1c381408cbeb282bebcc381458145814581420d89d48175b1c9c4b7ca8140bbbd82aac98341835e8356d30d8140834c838cc182e182c1c0dcd681420d89d48175cfb181408341835e8356ca89d482beb6d7bb0d0d89d48175834c838cc082c1c3b282c1c3d30d814082d7c2c6814082c7b382c1c3bac4c5b2dd82beb982c7c881420d89d4817582c5d3c88140bc82ced7b8bcc0d70d8140906c8ad482c1c3b2b2c5829f82c1c381408e76b2c5b5bcc0dc81420d89d48175b595e6cfb2d8c681408d73b8906c82aac80d8140914fc6b8d782d7c38140ccb4c0c9d681420d89d48175bada82c1c3814082c7b3b2b3bac4b6dcb6d981480d0d89d4817589bd82beb6dd82be8cbe82c1c3d30d0d89d4817591bac9906cc0c1ca8140834d815b834bbbdd82f00d81408970975982be82c1c381408e7682c1c3d982c1c3bac481420d89d48175bfb382b682e1c5b9da82ce8140b1c9b595e6ca0d8140c482c1b8c681408e67dcdac5b8c582c1c3d982bedbb3bc0d89d48175bfc9bf82cec68f5ad3b3c5ddc38e76dcc5b281420d8140c8814581458145bfb382c5bc82e581480d89d4817581458145814581458145814581420d0d89d48175c5ddb68140cbbbbc82d4d8c60d8140906c8ad4c4b5bc82e182d7d8bcc38140c0c9bcb682c1c0d681420d89d48175bfc9b597e7c4b282c1c182e1c5dd82beb982c70d8140bada8140b1ddc0c6b182b0d9d681420d144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d89d48175b1ddc0d0c0b2c5906c8ad482ce82c1b6d882bec40d0d89d481758341835e8356d38140cad8b782c1c30d8140d382c1c4b7dab2c589d4bbb6bed9dd82beb982c7c881420d89d48175814581458145cccccc81420d0d89d48175bfda82b682e1b18140cfc0c8814200",
+      "source_sha256": "1cdd25e76b51cc1189a4ca9949904fb8c372ba7cfe1c96d044ee2f64d1e8f9eb",
+      "japanese": "花「ｱﾗ　ｳﾚｼｲ！\n\n花「でﾈ　一番ｵﾓｼﾛｶっﾀﾉﾊ\n\n花「ギーガっﾃｲｳｵじｲｻﾝが\n　ｱｿｺﾉ墓地ﾆｵﾘﾃ行っﾀﾄｷﾈ。\n花「ギーガっﾃｲｳ人ﾊ　ﾀｼｶ・・・\n\n花「ドラゴンを　ﾀｵｼﾃ\n　ﾐﾝﾅを　ﾀｽｹﾃｱげﾀﾝでｼょ？\n花「ﾅﾉﾆ人間っﾀﾗ　ﾂぎﾊカレを\n　バケモノだっﾃ　言ｲだｼﾃ・・・。\n花「ｱﾉﾄｷﾊ　ｻｽがﾉアタシﾓ\n　キレﾁゃっﾀﾜﾖ。\n花「ﾏｱ　アタシﾊ花だｶﾗｻ\n\n花「キレﾀっﾃｲっﾃﾓ\n　べﾂﾆ　どｳっﾃｺﾄﾅｲﾝだｹどﾈ。\n花「でﾓﾈ　ｼばﾗｸｼﾀﾗ\n　人間っﾃｲｲﾅぁっﾃ　思ｲﾅｵｼﾀﾜ。\n花「ｵ墓ﾏｲﾘﾆ　行ｸ人がﾈ\n　前ﾆｸﾗべﾃ　ﾌｴﾀﾉﾖ。\n花「ｺﾚっﾃ　どｳｲｳｺﾄｶﾜｶﾙ？\n\n花「何だｶﾝだ言っﾃﾓ\n\n花「村ﾉ人ﾀﾁﾊ　ギーガｻﾝを\n　英雄だっﾃ　思っﾃﾙっﾃｺﾄ。\n花「ｿｳじゃﾅｹﾚば　ｱﾉｵ墓ﾊ\n　ﾄっｸﾆ　使ﾜﾚﾅｸﾅっﾃﾙだﾛｳｼ\n花「ｿﾉｿばﾆ住ﾓｳﾅﾝﾃ思ﾜﾅｲ。\n　ﾈ・・・ｿｳでｼょ？\n花「・・・・・・。\n\n花「ﾅﾝｶ　ﾋｻｼぶﾘﾆ\n　人間ﾄｵｼゃべﾘｼﾃ　ﾀﾉｼｶっﾀﾖ。\n花「ｿﾉｵ礼ﾄｲっﾁゃﾅﾝだｹど\n　ｺﾚ　ｱﾝﾀﾆｱげﾙﾖ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\n花「ｱﾝﾀﾐﾀｲﾅ人間ばっｶﾘだﾄ\n\n花「アタシﾓ　ﾊﾘｷっﾃ\n　ﾓっﾄｷﾚｲﾅ花ｻｶｾﾙﾝだｹどﾈ。\n花「・・・ﾌﾌﾌ。\n\n花「ｿﾚじゃｱ　ﾏﾀﾈ。",
+      "english": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+        "revised": "Flower: Oh, lovely!\n\nFlower: The most interesting thing was when an old man called Giga went down into that cemetery.\n\nFlower: Giga... He defeated the dragon and saved everyone, didn't he?\n\nFlower: But then the humans began calling him a monster...\n\nFlower: Even I lost my temper at that.\n\nFlower: Well, I'm a flower. Losing my temper doesn't really do much.\n\nFlower: But after a while, I began to think better of humans again.\n\nFlower: More people started visiting the graves. Do you know what that means?\n\nFlower: Whatever they said, the villagers still thought of Giga as a hero.\n\nFlower: Otherwise, they'd have abandoned that cemetery long ago. They wouldn't want to live beside it either.\n\nFlower: Don't you think?\n\nFlower: ...\n\nFlower: It's been so long since I talked to a human. I've enjoyed this.\n\nFlower: Here, take this as a little thank-you.\n\n{center}@A@{player}\n{center}received a Mini medal!\n\nFlower: If all humans were like you, I'd put even more effort into blooming beautifully.\n\nFlower: ...Hee hee.\n\nFlower: See you again.",
+        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "direct-bilingual-read"
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/postgame-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-6.a3a8",
+      "source_hex": "144041407e82cd0d148fac82b382c88381835f838b82f08ee882c993fc82ea82bd81490d8be08b9b8175bfb2c2ca814083478360834983738341d0d482b0bb81420d8140b1ddc0c6d4d9d681420d8be08b9b817582c5d3c8b481458145814581420d814090a2c99286ca95738e768b63c5bac482aab1d9d681420d8be08b9b8175d3bc8140926dd8c0b9da82ce8140cfc08dc58f89c90d81409682964089aec99085834b8381c9c4bacf82c59788c382b2d7dd814200",
+      "source_sha256": "9558d27cff6a2a36a2c4f51cf60bdacc7753cbe07d0b1f3dcfbd5bf2390f62dd",
+      "japanese": "{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}小さなメダルを手に入れた！\n金魚「ｿｲﾂﾊ　エチオピアﾐﾔげｻ。\n　ｱﾝﾀﾆﾔﾙﾖ。\n金魚「でﾓﾈｴ・・・。\n　世ﾉ中ﾊ不思議ﾅｺﾄがｱﾙﾖ。\n金魚「ﾓｼ　知ﾘﾀｹﾚば　ﾏﾀ最初ﾉ\n　魔法屋ﾉ水ガメﾉﾄｺﾏで来ﾃごﾗﾝ。",
+      "english": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+        "revised": "{center}@A@{player}\n{center}received a Mini medal!\n\nGoldfish: A souvenir from Ethiopia. It's yours.\n\nGoldfish: Still... The world is full of strange things.\n\nGoldfish: If you'd like to know more, come back to the water jar in the magic shop, where we started.",
+        "reason": "Reconciled against a separately bilingual-reviewed T2 source with identical English and exact normalized Japanese. NFKC, katakana-to-hiragana and whitespace normalization only; punctuation, controls, quantities and words must match. Original source bytes remain separate and unchanged.",
+        "context_pending": false,
+        "insertion_approved": false,
+        "method": "normalized-exact-reconciliation",
+        "reviewed_source": {
+          "catalog": "final-quest-draft.json",
+          "id": "event-bank-5.6488",
+          "source_sha256": "c1096cd2735aac89f82c401db51c4f0a8f300774acd26a5f8dda49ec0189659d",
+          "context_pending": false
+        },
+        "normalization": "NFKC; U+30A1..U+30F6 to hiragana; remove whitespace"
+      },
+      "terminology_evidence": [],
+      "draft_catalog": "translations/postgame-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-4.4181",
+      "source_hex": "9856906c817582a482de8149814082c582cd814091d282c182c482a882e982bc81490d0d144041407e82cd0d148367838d88e290d582d68d7382af82e982e682a482c982c882c182bd814900",
+      "source_sha256": "e7e1a78a7c2b679160189cb13b18518a254708f9e35171fdcbd535df4d5caa00",
+      "japanese": "老人「うむ！　では　待っておるぞ！\n\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}トロ遺跡へ行けるようになった！",
+      "english": "Old man: Good! I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Old man: Good! I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+        "revised": "Old man: Good! I shall await your return!\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+        "reason": "Second bilingual read preserves T2 source meaning, named speakers, source controls, plot causality and concrete item mechanics. Magic Dungeon retains the established glossary term for the named source location.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+          "kind": "Secondary PS1 naming evidence, dungeon section 3.7. Same T2 ruins after forest story; no PS1 prose imported."
+        }
+      ],
+      "draft_catalog": "translations/sage-story-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    },
+    {
+      "id": "event-bank-4.41cd",
+      "source_hex": "9856906c817582a282e281458145814581420d0d9856906c817582a882ca82b582cd8d7382ad926a82b682e181420d8140838f835682cd82bb82a4904d82b682c4814091d282c182c482a882e982bc81420d144041407e82cd0d148367838d88e290d582d68d7382af82e982e682a482c982c882c182bd814900",
+      "source_sha256": "215485252c55ffbb1849bb77ffc3e3f5edbe8e0d5cd675d5178d0dafac76324c",
+      "japanese": "老人「いや・・・。\n\n老人「おぬしは行く男じゃ。\n　ワシはそう信じて　待っておるぞ。\n{unclassified-control:14}@A@{unclassified-control:7e}は\n{unclassified-control:14}トロ遺跡へ行けるようになった！",
+      "english": "Old man: No...\n\nOld man: You are a man who will go. I believe in you, and I shall wait.\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Old man: No...\n\nOld man: You are a man who will go. I believe in you, and I shall wait.\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+        "revised": "Old man: No...\n\nOld man: You are a man who will go. I believe in you, and I shall wait.\n\n{center}@A@{player}\n{center}can now visit the Toro Ruins!",
+        "reason": "Second bilingual read preserves T2 source meaning, named speakers, source controls, plot causality and concrete item mechanics. Magic Dungeon retains the established glossary term for the named source location.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "terminology_evidence": [
+        {
+          "url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+          "kind": "Secondary PS1 naming evidence, dungeon section 3.7. Same T2 ruins after forest story; no PS1 prose imported."
+        }
+      ],
+      "draft_catalog": "translations/sage-story-draft.json",
+      "consumer_review": "Single @A@ callback proven by full 08051664 disassembly to request only the native sound. Original center/player/colour/command order retained. Controlled native wrapper, getter, callback timing and state preservation required; gift/unlock gameplay lies outside this display callback."
+    }
+  ],
+  "scope": "Fifteen reviewed T2 announcement streams. Separate prototype passes 45 native wrapper/callback cases, all seven ROM bank loads and 1046 getters. Exact A-jingle timing/arguments and state preservation pass. Cumulative insertion and ordinary gift/unlock progression remain separate."
+}

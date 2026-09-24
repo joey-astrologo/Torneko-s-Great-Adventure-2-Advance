@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "date": "2026-09-13",
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "source_save_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+  "original_files_unchanged": true,
+  "emulator": "0.10.5",
+  "bios": "mGBA built-in BIOS; no external BIOS loaded",
+  "reproduce": ".venv/bin/python -m tools.trace_name_entry",
+  "original_character_limit": 6,
+  "native_displays": 4,
+  "native_confirmation_copies": 1,
+  "normal_buttons_only": true,
+  "ram_or_register_overrides": false,
+  "english_name_entry_implemented": false,
+  "battery_persistence_verified": false,
+  "minimum_required_name": "Torneko",
+  "minimum_required_characters": 7,
+  "scope": "Unmodified Japanese editor; normal buttons and observational breakpoints. Confirms entry limit and RAM copy, not battery persistence or English support.",
+  "artifacts": {
+    "tools/trace_name_entry.py": "a5a9e480a3cbb17b7687a658d63c7f78609a3d94c511cbc72fbcc8a6b4734e94",
+    "build/name-entry/base-trace/report.json": "4b5b42d9c107644f321f10f90a38a32864c29a87728f4a0525dbfe53207e64d3",
+    "build/name-entry/editor-functions.txt": "e3b791e4119044f1f5b0cf25d40142476cb2f9387927ae3277964f9505704012",
+    "build/name-entry/input.txt": "799803dc5723ff9efa41de1e276c43a5466ade44d01975e48844d6f909985bdd",
+    "build/name-entry/menu.txt": "7f498fadd27d91114c4e41331f9e445ffece9cb13a7ad6a1b2db56e80179670c",
+    "build/name-entry/name-consumers.txt": "c94129073fb7f991904d8bf3144dbdf757f63febfc342fbea1d387afaa6db36d",
+    "build/name-entry/state-transfer.txt": "d543d7f57b963c02ec34e331a0bf4143593f59dc34d3a0df68ac177bdf812ce8"
+  }
+}

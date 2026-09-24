@@ -96,6 +96,24 @@ Requests that cannot end at exactly the requested frame fail explicitly.
 Follow the [localization plan](LOCALIZATION_PLAN.md) for the agreed terminology
 and prose rules, work sequence, coverage criteria and first integrated milestone.
 
+The [opening-text discovery pass](OPENING_TEXT.md) records a natural route into
+the first dungeon, 30 verified text sources, seven event-bank decodes and the
+separate broad-scan queue. Use its reproduction commands for the source catalog
+and native decoder checks. The [English opening build](OPENING_ENGLISH.md) now
+covers name entry, both opening branches, resume prompts, first-dungeon tutorials,
+the first royal audience, nearby castle NPCs and the first destination menu.
+The [home-return batch](HOME_RETURN.md) adds the first evening/morning, sale
+proceeds and three neighbouring NPCs with both Ed choices. The accumulated
+catalog has 86 native sources and 79 reviewed/inserted resources. Bank one has
+checked insertion and all 214 getters validated in both ROMs. The
+[home-book/banker batch](HOME_BOOKS.md) adds the shared town bank, red-book tips,
+blue-book/save flows and the first mansion entrance. Green-book contents and
+repaired-storehouse flows remain open. Next, follow the mansion safe-recovery
+route and its item/message families; broader coverage remains ongoing.
+The [graphics inventory](GRAPHICS_INVENTORY.md) now identifies the first dungeon
+arrival card and the distinct title/menu background families, without artwork
+changes.
+
 The initial-menu string, reader, pointer and Latin glyph lookup are verified in
 [FONTS.md](FONTS.md). The [compact English extension](COMPACT_FONT.md) adds the
 missing lowercase and symbols, verifies all 95 printable ASCII characters,
@@ -106,9 +124,16 @@ Next, map other text readers, window widths, command syntax and string tables
 before translating more content. Reuse `tools.rom_build.RomBuild` for insertion
 ownership, checked source patches and appended allocation; do not allocate
 independent overlapping regions. Record discoveries in `MEMORY_MAP.md` before
-insertion. General gameplay, other expansion-sensitive paths and save structure
-still need Torneko 2 evidence.
+insertion. Later gameplay and other expansion-sensitive paths still need route evidence.
+The name fields and native first-floor save/cold resume are documented in
+[NAME_ENTRY.md](NAME_ENTRY.md).
 
 For a future patch, `python -m tools.bps source.gba target.gba output.bps`
 checks that applying the patch reproduces every target byte before replacing
 the output. This helper does not build a translation or authorize ROM ranges.
+
+`Session.press(("A", "B"), hold=3, wait=30)` sends simultaneous buttons and
+records a `keys` array in the input receipt. Single-button records keep `key`.
+The native KEYINPUT read at `08000F00` verifies both held and released masks;
+use a breakpoint after that read rather than reading a watched I/O register
+from its own watchpoint callback, which would recursively trigger the watch.

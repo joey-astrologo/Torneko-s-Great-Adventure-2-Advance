@@ -2,13 +2,14 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw
 
 from tools.build_compact_font import OUTPUT
 from tools.compact_font import ASSET, load_font, measure
-from tools.rom import digest, require
+from tools.rom import ROOT, digest, require
 
 
 def draw_text(picture, text, position, font, color=(255, 255, 255), scale=1):
@@ -27,8 +28,10 @@ def draw_text(picture, text, position, font, color=(255, 255, 255), scale=1):
 def atlas(font, output):
     sheet = Image.new("RGB", (960, 792), "#142136")
     draw = ImageDraw.Draw(sheet)
-    draw.text((24, 20), "TORNEKO 2 / COMPACT ENGLISH", fill="white", font_size=22)
-    draw.text((24, 54), "95 printable characters. White: 63 original glyphs. Mint: 32 additions. Labels show pixel advance.",
+    imported = font.get('schema') == 2
+    draw.text((24, 20), "TORNEKO 2 / " + ('TORNEKO 3 LATIN FONT 0' if imported else 'COMPACT ENGLISH'), fill="white", font_size=22)
+    draw.text((24, 54), ('95 original Torneko 3 glyphs. Advances and ink preserved. Labels show pixel advance.' if imported else
+                        "95 printable characters. White: 62 original glyphs and a three-pixel word space. Mint: 32 additions. Labels show pixel advance."),
               fill="#becbdc", font_size=14)
     for i, (char, glyph) in enumerate(font["glyphs"].items()):
         x, y = 24 + (i % 16) * 57, 94 + (i // 16) * 78
@@ -63,13 +66,13 @@ code {font:14px ui-monospace,monospace} button {font:inherit;padding:8px 12px;bo
 </style>
 <h1>Compact English, completed</h1>
 <p>The original compact capitals and digits, with a matching lowercase alphabet.
-All 95 printable ASCII characters are covered: 63 original glyphs and 32 additions.
+All 95 printable ASCII characters are covered: 62 original glyphs and a three-pixel word space and 32 additions.
 New lowercase advances are 3–6 pixels. Ascenders share the capital height; descenders fit the native 14-row bitmap.</p>
 <p class="good">Native mGBA verification: all 95 glyphs, final screen pixels, cursor advances and string measurements passed.</p>
 <div class="card">
 <h2 style="margin-top:0">Try a line</h2>
 <p class="note">This preview uses the actual font rows and advances. The 96-pixel default is the observed initial-menu width.
-The test ROM includes a leading space; include it here to reproduce that label's 88-pixel total.
+The test ROM includes a leading space; include it here to reproduce that label's 82-pixel total.
 Lines keep your explicit breaks. No automatic wrapping or translation storage budget is implied.</p>
 <label for="sample">Text</label>
 <textarea id="sample" spellcheck="false"> Start adventure
@@ -150,7 +153,20 @@ def review(output=OUTPUT):
             "Native validation is for an older font asset")
     atlas(font, output)
     payload = json.dumps(font, ensure_ascii=True).replace("<", "\\u003c")
-    (output / "index.html").write_text(PAGE.replace("__FONT__", payload))
+    page = PAGE
+    if font.get('schema') == 2:
+        page = page.replace('Compact English, completed','Torneko 3 Latin font 0 in Torneko 2')
+        start = page.index('<p>The original compact capitals')
+        end = page.index('<p class="good">',start)
+        page = page[:start] + '<p>All 95 original Torneko 3 Latin glyphs, with unchanged 3–7 pixel advances and ink. Two blank top rows align the baseline with Torneko 2. <a href="../index.html">Compare fonts and menu budgets</a>.</p>\n' + page[end:]
+        start = page.index('<p>Mint glyphs')
+        end = page.index('<a href="compact-english.png">',start)
+        page = page[:start] + '<p>The complete imported glyph set, rendered from the frozen source asset.</p>\n' + page[end:]
+        page = page.replace('82-pixel total','83-pixel total').replace('assets/fonts/compact-english.json','assets/fonts/torneko3-english.json')
+    relative = os.path.relpath(ROOT, output)
+    page = page.replace('../../assets/', relative+'/assets/').replace('../../docs/',relative+'/docs/')
+    page = page.replace('href="../index.html"',f'href="{relative}/build/font-audition/index.html"')
+    (output / "index.html").write_text(page.replace("__FONT__", payload))
     print(output / "index.html")
 
 

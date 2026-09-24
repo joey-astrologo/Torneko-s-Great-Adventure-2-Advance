@@ -1,0 +1,25 @@
+"""Native gallery for one-line combat and safe long-message fallbacks."""
+import html,json
+from tools.rom import ROOT,digest,require
+
+def run():
+ build=json.loads((ROOT/'build/english/build.json').read_text());report=json.loads((ROOT/'build/english/combat-validation/controlled/report.json').read_text())
+ require(report['passed'] and report['rom_sha256']==build['output_sha256'],'Stale combat gallery')
+ out=ROOT/'build/combat';out.mkdir(exist_ok=True);images=[];cards=[]
+ cases=[('combat.19c-short','Damage, one line'),('combat.1b4-short','Incoming damage, one line'),('combat.1a0-short','Defeat and EXP, one line'),('combat.1a8-short','Critical hit, one line'),('combat.1b8-short','Incoming critical hit, one line'),('combat.19c-wide','Long name and extreme damage, safe fallback'),('combat.1a0-wide','Long name and extreme EXP, safe fallback'),('combat.1a8-wide','Long name and critical damage, safe fallback')]
+ for label,caption in cases:
+  row=next(r for r in report['cases'] if r['case']==label);path=ROOT/'build/english/combat-validation/controlled'/label/'rendered.png';rel=str(path.relative_to(ROOT));images.append({'source':rel,'sha256':digest(path.read_bytes()),'caption':caption})
+  cards.append(f'<figure><figcaption>{html.escape(caption)}<br><small>{html.escape(str(row["queue"]["line_widths"]))} px / 216 px; {row["queue"]["bytes"]} bytes / 256</small></figcaption><img width="480" height="320" src="../../{html.escape(rel)}" alt="{html.escape(caption)}"></figure>')
+ misses=json.loads((ROOT/'build/english/combat-validation/misses/report.json').read_text())
+ require(misses['passed'] and misses['rom_sha256']==build['output_sha256'],'Stale miss gallery')
+ for label,caption in [('wide-level','Miss, widest actor and maximum level'),('player-branch-required-English','Player miss, Torneko'),('player-branch-widest-Japanese','Player miss, widest supported Japanese name')]:
+  row=next(r for r in misses['cases'] if r['case']==label);path=ROOT/'build/english/combat-validation/misses'/label/'rendered.png';rel=str(path.relative_to(ROOT));images.append({'source':rel,'sha256':digest(path.read_bytes()),'caption':caption})
+  cards.append(f'<figure><figcaption>{html.escape(caption)}<br><small>{html.escape(str(row["queue"]["line_widths"]))} px / 216 px; {row["queue"]["bytes"]} bytes / 256</small></figcaption><img width="480" height="320" src="../../{html.escape(rel)}" alt="{html.escape(caption)}"></figure>')
+ statuses=json.loads((ROOT/'build/english/player-status-validation/report.json').read_text())
+ require(statuses['passed'] and statuses['rom_sha256']==build['output_sha256'],'Stale player-status gallery')
+ for label,caption in [('hallucination-required-English','Hallucination, Torneko'),('hallucination-widest-Japanese','Hallucination, maximum player-name width'),('blind-required-English','Blindness, Torneko'),('blind-refusal-widest-Japanese','Blindness refusal (controlled status)')]:
+  row=next(r for r in statuses['cases'] if r['case']==label);path=ROOT/'build/english/player-status-validation'/label/'effect.png';rel=str(path.relative_to(ROOT));images.append({'source':rel,'sha256':digest(path.read_bytes()),'caption':caption})
+  cards.append(f'<figure><figcaption>{html.escape(caption)}<br><small>{html.escape(str(row["queue"]["line_widths"]))} px / 216 px; {row["queue"]["bytes"]} bytes / 256</small></figcaption><img width="480" height="320" src="../../{html.escape(rel)}" alt="{html.escape(caption)}"></figure>')
+ (out/'index.html').write_text('''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Torneko 2 combat text</title><style>body{background:#12192a;color:white;font:17px/1.5 system-ui;max-width:1100px;margin:30px auto;padding:0 16px}.grid{display:flex;flex-wrap:wrap}figure{margin:10px}img{image-rendering:pixelated;max-width:100%;height:auto}a{color:#9de6d0}</style><h1>Combat text and width limits</h1><p>Controlled native formatter arguments on naturally reached battle checkpoints. Every screenshot uses the current cumulative English ROM. Player-status cases execute native Drink actions with controlled items/names and an explicit refusal-status setup; the preceding item-use line may remain Japanese. Maximum values test display bounds; they are not claims about naturally attainable damage or EXP.</p><p>Short messages use one line when native glyph widths fit. Longer combinations retain safe breaks. The original combat window and font spacing remain in use.</p><p><a href="../services/index.html">Story and services</a> · <a href="../../docs/TEXT_PROGRESS.md">Coverage and remaining work</a></p><div class="grid">'''+''.join(cards)+'</div></html>')
+ (out/'preview.json').write_text(json.dumps({'rom_sha256':build['output_sha256'],'images':images,'controlled_cases':len(report['cases'])+len(misses['cases'])+len(statuses['cases']),'one_line_cases':sum(r['queue']['one_line'] for r in report['cases']+misses['cases']+statuses['cases'])},indent=2)+'\n');print(out/'index.html')
+if __name__=='__main__':run()

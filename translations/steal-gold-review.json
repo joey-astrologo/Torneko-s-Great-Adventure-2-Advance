@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned monster gold theft handler,256-byte announcement,64-byte amount field and8-digit capped native amount. Resistance/transformation contexts retain attempt/failure wording.",
+  "entries": [
+    {
+      "id": "steal-gold.2b0",
+      "table_offset": 688,
+      "source": {
+        "offset": 407080,
+        "end_exclusive": 407103,
+        "raw_hex": "257382cd20257382a982e70d257382f0939082f182be00",
+        "sha256": "a7db25cc5fee49df6de29d6b6440a7fab82c3ea73c6e56c9156cb5eba165694c",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}から\n%{unclassified-control:73}を盗んだ"
+      },
+      "english": "{actor} {fit}robbed {player} of {amount}.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: Retain thief, victim and exact stolen amount in native argument order. Native transfer may report zero when no gold is held. No success, victim or amount is omitted to fit. Conditional lines retain the approved font."
+    },
+    {
+      "id": "steal-gold.2b4",
+      "table_offset": 692,
+      "source": {
+        "offset": 407068,
+        "end_exclusive": 407079,
+        "raw_hex": "25648353815b838b836800",
+        "sha256": "696822689626f22dc913d0ac41e68a0d96d8b7595d43de06927ea78205f0abf4",
+        "japanese": "%{unclassified-control:64}ゴールド"
+      },
+      "english": "{number}G",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: G is the established gold display unit; retain the complete native amount. No success, victim or amount is omitted to fit. Conditional lines retain the approved font."
+    },
+    {
+      "id": "steal-gold.710",
+      "table_offset": 1808,
+      "source": {
+        "offset": 398252,
+        "end_exclusive": 398294,
+        "raw_hex": "257382cd20257382f0939082e082a482c682b582bd0d82b582a982b520939082df82c882a982c182bd00",
+        "sha256": "ed8b38311f541fa4ed39a39741ef54460fd145d6bd5dea51044b58934ba72ea5",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を盗もうとした\nしかし 盗めなかった"
+      },
+      "english": "{actor} {fit}failed to steal {kind}.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: Retain the attempted theft and its failure. This handler supplies gold as the kind, not an arbitrary item. No success, victim or amount is omitted to fit. Conditional lines retain the approved font. Second wording pass: failed to steal naturally includes the unsuccessful attempt and keeps ordinary names on one line."
+    },
+    {
+      "id": "steal-gold.714",
+      "table_offset": 1812,
+      "source": {
+        "offset": 398240,
+        "end_exclusive": 398249,
+        "raw_hex": "8353815b838b836800",
+        "sha256": "7479f07d6e547705cec099da429eb2fcbf79a32302eb1246086a016ae91796c4",
+        "japanese": "ゴールド"
+      },
+      "english": "gold",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: Gold kind fragment is owned only for the failed gold-theft format. No success, victim or amount is omitted to fit. Conditional lines retain the approved font."
+    }
+  ]
+}

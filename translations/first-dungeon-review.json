@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "stage": "bilingual review and native English acceptance complete for the documented batch",
+  "entries": [
+    {
+      "id": "rom.000617ec",
+      "japanese": "冒険をつづけますか？　[いいえ]を選ぶと\n持ち物が全てなくなり　地上にもどります",
+      "source_sha256": "e0e93a8baf3c5b756e431a20f782b2861deaea206f10924ccf2ccca848526f7b",
+      "draft": "Continue your adventure?\n\nChoosing No returns you to the surface with all your items lost.",
+      "english": "Continue your adventure?\n\nChoosing No returns you to the surface with all your items lost.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.00061cdc",
+      "japanese": " 冒険の書を消す",
+      "source_sha256": "c42a98d43ab290143a24d7af21f633994bb150a831ffd907dbf020ee78074dff",
+      "draft": "Erase log",
+      "english": "Erase log",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.00061cec",
+      "japanese": " ハイスコア",
+      "source_sha256": "e84bb1e4f68f3b0f0a217dd83993c1208360884b6e2b7b017e4327307be53c60",
+      "draft": "High scores",
+      "english": "High scores",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.00061cf8",
+      "japanese": " つづきから",
+      "source_sha256": "8d5be997a6740e83df4f25485db30b1a6df3a54b21c21990ed28981a8edef378",
+      "draft": "Continue",
+      "english": "Continue",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.00061db0",
+      "japanese": "冒険の書を正しく読込みました\n中断した次のフロアから再開されます",
+      "source_sha256": "b545962c9bf50aede30d5b919e8faa05d70586c442683ecd840fe68f8901afbd",
+      "draft": "Adventure Log loaded.\n\nYour adventure will resume on the floor after the one where you suspended.",
+      "english": "Adventure Log loaded.\n\nYour adventure will resume on the floor after the one where you suspended.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.0006b03c",
+      "japanese": "HPがへったら AボタンとBボタンを\nいっしょに押してHPを回復しよう！",
+      "source_sha256": "040d04da47d7ccebf0aa38f6a52d0074ae7dfd01f509a6eb8c7491180e1ae158",
+      "draft": "When your HP is low, press A and B together to recover it.",
+      "english": "When your HP is low, press A and B together to recover it.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.0006b080",
+      "japanese": "Rボタンを押しながら十字ボタンで\nナナメだけに動けるぞ！\nLボタンを押すと\n歩いた範囲のマップが見られるぞ！",
+      "source_sha256": "e5e034747929b96599f352ea4b7cf8ac37b9140004e276fa1ef55dd255aeee4a",
+      "draft": "Hold R while using the Control Pad to move only diagonally.\n\nPress L to view a map of the areas you've explored.",
+      "english": "Hold R while using the Control Pad to move only diagonally.\n\nPress L to view a map of the areas you've explored.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    },
+    {
+      "id": "rom.0006b570",
+      "japanese": "降りる\nそのまま\nセーブして中断",
+      "source_sha256": "09ec080b99733559306c267cf62e0f9dd354219be5d3ff8204d75e9655d53278",
+      "draft": "Descend\nStay here\nSave & suspend",
+      "english": "Descend\nStay here\nSave & suspend",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13",
+      "reason": "Checked against Japanese: button combinations, explored-map scope, next-floor resume, all-items loss on No, stair actions and display abbreviation retain their meaning."
+    }
+  ],
+  "native_acceptance_report": "build/english/first-dungeon-validation/report.json"
+}

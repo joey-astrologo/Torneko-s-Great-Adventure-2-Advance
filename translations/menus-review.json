@@ -1,0 +1,468 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "action_table_sha256": "ff07367bb8e073ca6dddd227b382c85073031ed3bed12f87931a4996bed6b3d7",
+  "scope": "46 resources: seven root formats and all39 nonempty action IDs1..43 in the owned private44-slot copy. Full original table has45 slots; separate discard ID44 and other consumers are separately reviewed. Controlled availability remains distinct from natural gameplay.",
+  "entries": [
+    {
+      "id": "action.4",
+      "source": 134629784,
+      "japanese": "撃つ",
+      "source_hex": "8c8282c200",
+      "source_sha256": "1ca9bfbee8203e56e52a297fa4c5fb637b9f5b02067c6bb9232c3463346d4e60",
+      "english": "Shoot",
+      "status": "reviewed",
+      "review": "Projectile action; same meaning as native arrow Shoot."
+    },
+    {
+      "id": "action.5",
+      "source": 134629776,
+      "japanese": "装備",
+      "source_hex": "919594f500",
+      "source_sha256": "12089326ee2f5ecd9c28da011bb9c7d3328452b5e42577d49b7b8672efbf9c4e",
+      "english": "Equip",
+      "status": "reviewed",
+      "review": "Put equipment on; preserve native equip action ID."
+    },
+    {
+      "id": "action.6",
+      "source": 134612896,
+      "japanese": "はずす",
+      "source_hex": "82cd82b882b700",
+      "source_sha256": "de003f42dbe80ad2512be82a2d946075bad13aef0311bde52438527aed473862",
+      "english": "Remove",
+      "status": "reviewed",
+      "review": "User-approved compact wording; preserves original action and selection behavior. Remove equipped item; disabled/cursed handling remains native."
+    },
+    {
+      "id": "action.7",
+      "source": 134629768,
+      "japanese": "置く",
+      "source_hex": "927582ad00",
+      "source_sha256": "e4ec987f136bb064ab645d5cbff1d100e791dd41698b01ab878fb3caad8514ec",
+      "english": "Drop",
+      "status": "reviewed",
+      "review": "Place item on the ground; does not discard/delete it."
+    },
+    {
+      "id": "action.8",
+      "source": 134629760,
+      "japanese": "交換",
+      "source_hex": "8cf08ab700",
+      "source_sha256": "1c8a7514c9a51a80a806b2e6abeff31c9a8144a9de98dd8a046cf69c2fab1180",
+      "english": "Swap",
+      "status": "reviewed",
+      "review": "User-approved compact wording; preserves original action and selection behavior. Swap exchanges carried and ground items."
+    },
+    {
+      "id": "action.9",
+      "source": 134629752,
+      "japanese": "投げる",
+      "source_hex": "938a82b082e900",
+      "source_sha256": "1c01f05e0a54e65ab106e18335c6f446354649717508e6f8b44c6075a6777b19",
+      "english": "Throw",
+      "status": "reviewed",
+      "review": "Throw the selected item; arrow-specific Shoot remains a different action."
+    },
+    {
+      "id": "action.11",
+      "source": 134629736,
+      "japanese": "食べる",
+      "source_hex": "904882d782e900",
+      "source_sha256": "a45120de0d74ff026ff9fc849389c2e5384d4d503413ed1146f3961bc8a53e8d",
+      "english": "Eat",
+      "status": "reviewed",
+      "review": "Consume food; preserve original action order."
+    },
+    {
+      "id": "action.18",
+      "source": 134629688,
+      "japanese": "拾う",
+      "source_hex": "8f4582a400",
+      "source_sha256": "f65404f3a06fb719619b4f1480b331a5e5f89f97538bcbb29fb71f0c1e769b8a",
+      "english": "Take",
+      "status": "reviewed",
+      "review": "User-approved compact wording; preserves original action and selection behavior. Pick up the ground item; full-inventory restrictions remain native."
+    },
+    {
+      "id": "action.40",
+      "source": 134612880,
+      "japanese": "説明",
+      "source_hex": "90e096be00",
+      "source_sha256": "f16540b4d13dfd755892f196a59e1c105dd1791d471f9f6b824af5b5e61bbf55",
+      "english": "Info",
+      "status": "reviewed",
+      "review": "User-approved Info translates 説明 and opens item information; original action ID and selection behavior retained."
+    },
+    {
+      "id": "root.019cac",
+      "source": 134657512,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}道具\n",
+      "source_hex": "03256393b98bef0d00",
+      "source_sha256": "00d581311d51563687f3af512c03fe4124ea376519604b462068333922164eca",
+      "english": "Items",
+      "status": "reviewed",
+      "review": "Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "root.019cbc",
+      "source": 134657524,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}道具\n{legacy-position:0307}ﾜざ\n",
+      "source_hex": "03256393b98bef0d0307dc82b40d00",
+      "source_sha256": "bb203f4485893f47b70d96f21551a52d7b0cde89f8e54aa17b664e380f17f286",
+      "english": "Items / Skills",
+      "status": "reviewed",
+      "review": "Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "root.019d10",
+      "source": 134657540,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}道具\n{legacy-position:0307}呪文\n",
+      "source_hex": "03256393b98bef0d03078ef495b60d00",
+      "source_sha256": "c14030ded0288cd15a8e82f87e2b50514488b4db9f10a15e830bbb1587143bea",
+      "english": "Items / Spells",
+      "status": "reviewed",
+      "review": "Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "root.019d18",
+      "source": 134657556,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}階段\n",
+      "source_hex": "0325638a4b92690d00",
+      "source_sha256": "879de64ee2026aea2f82014715d2a2283ac100dba8c38ca3509d160e02e24f79",
+      "english": "Stairs",
+      "status": "reviewed",
+      "review": "Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "root.019d34",
+      "source": 134657568,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}ワナ\n",
+      "source_hex": "032563838f83690d00",
+      "source_sha256": "a1ce00b27a6d9dcd03d0e5606609ffaf88a6b3908411cf70d4f8c27452cec664",
+      "english": "Trap",
+      "status": "reviewed",
+      "review": "Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "root.019d94",
+      "source": 134657580,
+      "japanese": "{legacy-position:0325}{unclassified-control:63}足元\n",
+      "source_hex": "03256391ab8cb30d00",
+      "source_sha256": "e2598877df920b4720d696283fbb5ccd49baa41146e8e7bec33c10d22f20b43a",
+      "english": "Floor",
+      "status": "reviewed",
+      "review": "User-approved compact wording; preserves original action and selection behavior. Floor refers to the tile underfoot."
+    },
+    {
+      "id": "root.019d98",
+      "source": 134657592,
+      "japanese": "{legacy-position:0307}作戦",
+      "source_hex": "03078dec90ed00",
+      "source_sha256": "1c881d7111b150fcbcd4efd32f9d8ef0b58d517512b08d53b6b9be8a8cc245f4",
+      "english": "Option",
+      "status": "reviewed",
+      "review": "User-approved compact wording; preserves original action and selection behavior. Preserve original format argument, dynamic disabled colour, row order and mode-specific command. Items/Skills/Spells/Floor/Stairs/Trap/Option are UI labels, not prose."
+    },
+    {
+      "id": "action.10",
+      "source": 134629744,
+      "japanese": "振る",
+      "source_hex": "905582e900",
+      "source_sha256": "e1a72ed4d7156fb2016ddaf2eb075235284998f40f55975ee31ad222b0de4a41",
+      "english": "Swing",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.12",
+      "source": 134629728,
+      "japanese": "読む",
+      "source_hex": "93c782de00",
+      "source_sha256": "a133a7dfcf0b33a76973a0e26bb559039681311ad031a3c03415ab984ed7bace",
+      "english": "Read",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.13",
+      "source": 134629720,
+      "japanese": "のむ",
+      "source_hex": "82cc82de00",
+      "source_sha256": "37af86b57500a6f367c6dfa3210894704eba15e9ada34795b82d1cfacdf08951",
+      "english": "Drink",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.14",
+      "source": 134629712,
+      "japanese": "使う",
+      "source_hex": "8e6782a400",
+      "source_sha256": "1f1ac347ffe92f44a828d84dd9ebb9a03e9539a6417c9e19a95b64a5fd6f90a7",
+      "english": "Use",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.15",
+      "source": 134629704,
+      "japanese": "入れる",
+      "source_hex": "93fc82ea82e900",
+      "source_sha256": "fa38296359a01b6763ae2fc9e82a22a8c42345e8bc3c21784842965f2ab8614c",
+      "english": "Put in",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.17",
+      "source": 134629712,
+      "japanese": "使う",
+      "source_hex": "8e6782a400",
+      "source_sha256": "1f1ac347ffe92f44a828d84dd9ebb9a03e9539a6417c9e19a95b64a5fd6f90a7",
+      "english": "Use",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.32",
+      "source": 134629712,
+      "japanese": "使う",
+      "source_hex": "8e6782a400",
+      "source_sha256": "1f1ac347ffe92f44a828d84dd9ebb9a03e9539a6417c9e19a95b64a5fd6f90a7",
+      "english": "Use",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.33",
+      "source": 134629664,
+      "japanese": "書込む",
+      "source_hex": "8f918d9e82de00",
+      "source_sha256": "e5f9f48b710d93657cc36912c0315e7efc3b9d3a685888a030cdb01a4afbf1bd",
+      "english": "Write",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.42",
+      "source": 134629632,
+      "japanese": "見る",
+      "source_hex": "8ca982e900",
+      "source_sha256": "86d59b64b58099cba5a310b6546f4121888664a32095466f47ab72964f59c250",
+      "english": "View",
+      "status": "reviewed",
+      "review": "Japanese action independently reviewed in the native item/state matrix. Preserve its original action ID; display fits 36 px."
+    },
+    {
+      "id": "action.1",
+      "source": 134616496,
+      "japanese": "なし",
+      "source_hex": "82c882b500",
+      "source_sha256": "3f6db0c05933c656d11b1c06b08379bbcd2601e84e358f5989e0b053fcc4c0d1",
+      "english": "None",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.2",
+      "source": 134629800,
+      "japanese": "あるく",
+      "source_hex": "82a082e982ad00",
+      "source_sha256": "6c8cfc96932b27daf0488a54b34ee65abd6bdbee428cb5d97c80c69671cafc1c",
+      "english": "Walk",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.3",
+      "source": 134629792,
+      "japanese": "攻撃",
+      "source_hex": "8d558c8200",
+      "source_sha256": "bbc9db3dd1e9150e9c81ac31b90e5bdb6919e39ecb038a0f6e689a1756b85281",
+      "english": "Attack",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.16",
+      "source": 134629696,
+      "japanese": "出す",
+      "source_hex": "8f6f82b700",
+      "source_sha256": "38f0ed9f8c08c5bab189e1bd4bea92377eaf17b93cadc30d1be74e37470cc126",
+      "english": "Take",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.19",
+      "source": 134629752,
+      "japanese": "投げる",
+      "source_hex": "938a82b082e900",
+      "source_sha256": "1c01f05e0a54e65ab106e18335c6f446354649717508e6f8b44c6075a6777b19",
+      "english": "Throw",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.20",
+      "source": 134629680,
+      "japanese": "踏む",
+      "source_hex": "93a582de00",
+      "source_sha256": "e78e358a2e413e5729b27a923ba2a37c119cbd873f1ac6188a182c66f5d3d7da",
+      "english": "Step",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.21",
+      "source": 134629704,
+      "japanese": "入れる",
+      "source_hex": "93fc82ea82e900",
+      "source_sha256": "fa38296359a01b6763ae2fc9e82a22a8c42345e8bc3c21784842965f2ab8614c",
+      "english": "Put in",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.22",
+      "source": 134629696,
+      "japanese": "出す",
+      "source_hex": "8f6f82b700",
+      "source_sha256": "38f0ed9f8c08c5bab189e1bd4bea92377eaf17b93cadc30d1be74e37470cc126",
+      "english": "Take",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.23",
+      "source": 134629712,
+      "japanese": "使う",
+      "source_hex": "8e6782a400",
+      "source_sha256": "1f1ac347ffe92f44a828d84dd9ebb9a03e9539a6417c9e19a95b64a5fd6f90a7",
+      "english": "Use",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.24",
+      "source": 134629672,
+      "japanese": "階段",
+      "source_hex": "8a4b926900",
+      "source_sha256": "a2363c0ddff53bb76cfbe841b9196a53b3a919a09feb40cee900145c7e719e48",
+      "english": "Stairs",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.25",
+      "source": 134629784,
+      "japanese": "撃つ",
+      "source_hex": "8c8282c200",
+      "source_sha256": "1ca9bfbee8203e56e52a297fa4c5fb637b9f5b02067c6bb9232c3463346d4e60",
+      "english": "Shoot",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.26",
+      "source": 134629752,
+      "japanese": "投げる",
+      "source_hex": "938a82b082e900",
+      "source_sha256": "1c01f05e0a54e65ab106e18335c6f446354649717508e6f8b44c6075a6777b19",
+      "english": "Throw",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.27",
+      "source": 134629744,
+      "japanese": "振る",
+      "source_hex": "905582e900",
+      "source_sha256": "e1a72ed4d7156fb2016ddaf2eb075235284998f40f55975ee31ad222b0de4a41",
+      "english": "Swing",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.28",
+      "source": 134629736,
+      "japanese": "食べる",
+      "source_hex": "904882d782e900",
+      "source_sha256": "a45120de0d74ff026ff9fc849389c2e5384d4d503413ed1146f3961bc8a53e8d",
+      "english": "Eat",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.29",
+      "source": 134629728,
+      "japanese": "読む",
+      "source_hex": "93c782de00",
+      "source_sha256": "a133a7dfcf0b33a76973a0e26bb559039681311ad031a3c03415ab984ed7bace",
+      "english": "Read",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.30",
+      "source": 134629720,
+      "japanese": "のむ",
+      "source_hex": "82cc82de00",
+      "source_sha256": "37af86b57500a6f367c6dfa3210894704eba15e9ada34795b82d1cfacdf08951",
+      "english": "Drink",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.31",
+      "source": 134629712,
+      "japanese": "使う",
+      "source_hex": "8e6782a400",
+      "source_sha256": "1f1ac347ffe92f44a828d84dd9ebb9a03e9539a6417c9e19a95b64a5fd6f90a7",
+      "english": "Use",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.34",
+      "source": 134629656,
+      "japanese": "わざ",
+      "source_hex": "82ed82b400",
+      "source_sha256": "3b448049a305592a82b5bfc0d4e702a84824aab6c823bc8bd2d07f850a8bb5c1",
+      "english": "Skills",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.35",
+      "source": 134629648,
+      "japanese": "まほう",
+      "source_hex": "82dc82d982a400",
+      "source_sha256": "acc320b777dafca5465c748b1d355eb320f3f7dc6b2f53272eb85e57d0605e36",
+      "english": "Spells",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.41",
+      "source": 134629640,
+      "japanese": "名前",
+      "source_hex": "96bc914f00",
+      "source_sha256": "215a26ed1d6df7d173f9565d93fb88165123b94a21ced8d27cf9e7a34ef3326c",
+      "english": "Name",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    },
+    {
+      "id": "action.43",
+      "source": 134629656,
+      "japanese": "わざ",
+      "source_hex": "82ed82b400",
+      "source_sha256": "3b448049a305592a82b5bfc0d4e702a84824aab6c823bc8bd2d07f850a8bb5c1",
+      "english": "Skills",
+      "status": "reviewed",
+      "review": "Literal native action meaning; repeated labels retain approved wording. Take means removal from this container/menu context. Only the private item-action table consumer is changed."
+    }
+  ]
+}

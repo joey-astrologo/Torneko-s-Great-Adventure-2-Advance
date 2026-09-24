@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Repaired storage menu, deposit/withdraw/empty messages, filled-pot warning, capacity failures and sale confirmation/results. Legacy bulk-selection menus and upgrades tracked separately.",
+  "entries": [
+    {
+      "id": "storage.menu",
+      "indexes": [
+        178
+      ],
+      "source_hex": "202091718cc982c993fc82ea82e90470202091718cc982a982e782be82b70d202091718cc982f08ca982e90470202091718cc982a982e7948482e90d2020834183438365838082f0948482e904702020834183438365838082f08ca982e90d2020835a815b837582b582c491b182af82e904702020835a815b837582b582c482a882ed82e900",
+      "source_sha256": "94a42251fc59354eadca973870534e859014e8cfac34d197f6263623516890b0",
+      "japanese": "  倉庫に入れる{legacy-x:0470}  倉庫からだす\n  倉庫を見る{legacy-x:0470}  倉庫から売る\n  アイテムを売る{legacy-x:0470}  アイテムを見る\n  セーブして続ける{legacy-x:0470}  セーブしておわる",
+      "english": [
+        "Store items",
+        "Take items",
+        "View storage",
+        "Sell stored",
+        "Sell carried",
+        "View carried",
+        "Save and continue",
+        "Save and quit"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 translation, preserving menu ordering and transaction meaning. Native two-column positions and original window size retained."
+    },
+    {
+      "id": "storage.deposited",
+      "indexes": [
+        183,
+        184
+      ],
+      "source_hex": "91718cc982c9834183438365838082f093fc82ea82dc82b582bd814200",
+      "source_sha256": "3f152099e63bae045bcbc439cd02fb30b6849b4af78f71f61b043f0831d14335",
+      "japanese": "倉庫にアイテムを入れました。",
+      "english": "Items placed in storage.",
+      "status": "reviewed",
+      "review": "Independent T2 translation, preserving menu ordering and transaction meaning. Native two-column positions and original window size retained."
+    },
+    {
+      "id": "storage.withdrawn",
+      "indexes": [
+        187
+      ],
+      "source_hex": "91718cc982a982e7834183438365838082f082be82b582dc82b582bd814200",
+      "source_sha256": "385df9f9a23704b973006ca2896e8261b6b75d09b1b84b789c8d0429d999e8de",
+      "japanese": "倉庫からアイテムをだしました。",
+      "english": "Items taken out of storage.",
+      "status": "reviewed",
+      "review": "Independent T2 translation, preserving menu ordering and transaction meaning. Native two-column positions and original window size retained."
+    },
+    {
+      "id": "storage.empty",
+      "indexes": [
+        192
+      ],
+      "source_hex": "91718cc982cc928682c982cd0d89bd82e0834183438365838082cd93fc82c182c482a282dc82b982f1814200",
+      "source_sha256": "397d69e35a08864c6dd2ac3c89bc3f21f3a915b7affcb0b685ae1cb43383151a",
+      "japanese": "倉庫の中には\n何もアイテムは入っていません。",
+      "english": "There are no items in storage.",
+      "status": "reviewed",
+      "review": "Independent T2 translation, preserving menu ordering and transaction meaning. Native two-column positions and original window size retained."
+    },
+    {
+      "id": "storage.filled-pot",
+      "indexes": [
+        181
+      ],
+      "source_hex": "834183438365838082cc93fc82c182c482a282e99ae282cd0d82bb82cc82dc82dc91718cc982c993fc82ea82e982b182c682cd82c582ab82dc82b982f181420d0d0d82c782a482b582c482e081409ae282cc9286906782f082a082b882af82bd82a282c682ab82cd0d9ae282f082ed82e88140928682cc82e082cc82f082c682e88f6f82b582dc82b781420d82b182cc257382f082ed82c182c482e00d82a282a282c582b782a9814800",
+      "source_sha256": "5da7e88136f9db7b66c8af79d55724e0ae00ecf4760cb86f29a7833b130ee193",
+      "japanese": "アイテムの入っている壺は\nそのまま倉庫に入れることはできません。\n\n\nどうしても　壺の中身をあずけたいときは\n壺をわり　中のものをとり出します。\nこの%{unclassified-control:73}をわっても\nいいですか？",
+      "english": "Filled pots can't be stored.\nBreak a pot to store its contents.\n\nBreak {item}?",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    },
+    {
+      "id": "storage.full",
+      "indexes": [
+        182
+      ],
+      "source_hex": "91718cc982c982cd814025648cc282e682e891bd82ad834183438365838082f00d93fc82ea82e982b182c682cd82c582ab82dc82b982f181420d0d0d82b182ea88c88fe3814091718cc982c993fc82ea82e982ce82a082a282cd0d928682cc834183438365838082f08140948482e982a982b782c482e982a982b582c482ad82be82b382a2814200",
+      "source_sha256": "43818447fdc0c97b10c22b59cc94e8b402ece83e98932e7969b5381e29f61001",
+      "japanese": "倉庫には　%{unclassified-control:64}個より多くアイテムを\n入れることはできません。\n\n\nこれ以上　倉庫に入れるばあいは\n中のアイテムを　売るかすてるかしてください。",
+      "english": "Storage holds at most {count} items.\n\nSell or discard stored items\nto make room.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    },
+    {
+      "id": "storage.inventory-full",
+      "indexes": [
+        186
+      ],
+      "source_hex": "8e9d82bf95a882aa82a282c182cf82a282c50d91718cc982a982e7834183438365838082f082be82b982dc82b982f1814200",
+      "source_sha256": "8879769d1981721d96a0da6ec8b314a22fc119afc4b039eb14b74eabfaa0a957",
+      "japanese": "持ち物がいっぱいで\n倉庫からアイテムをだせません。",
+      "english": "You're carrying too many items.\nYou can't take any out of storage.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    },
+    {
+      "id": "storage.sale-confirmation",
+      "indexes": [
+        188
+      ],
+      "source_hex": "82bb82ea82f0948482e982c68145814581450d03052564058353815b838b836882c982c882e882dc82b781420d82e682eb82b582a282c582b582e582a482a9814800",
+      "source_sha256": "ebd82b19e0d342e96317b1811301b50808331e611f23e052c7cab908699baf7d",
+      "japanese": "それを売ると・・・\n{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}ゴールドになります。\nよろしいでしょうか？",
+      "english": "Sell for {amount} gold?\nIs that all right?",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    },
+    {
+      "id": "storage.cancelled",
+      "indexes": [
+        189
+      ],
+      "source_hex": "82e282df82dc82b582bd814200",
+      "source_sha256": "439ac47522d91bf9319c85f48420725994cfb86911c9d63feb0a6e3d8adbe0e1",
+      "japanese": "やめました。",
+      "english": "Cancelled.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    },
+    {
+      "id": "storage.sold",
+      "indexes": [
+        190
+      ],
+      "source_hex": "834183438365838082f0948482e982b182c682c982b582dc82b582bd814200",
+      "source_sha256": "fe35b330a1296099af6929eb09077de0ffc3339d441862c0a6111c4de812903a",
+      "japanese": "アイテムを売ることにしました。",
+      "english": "Items sold.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source translation; retains filled-pot destruction warning, capacity condition or sale confirmation as applicable. Exact native substitutions retained. Dynamic lines reserve maximum numeric/item widths; English native verification required."
+    }
+  ]
+}

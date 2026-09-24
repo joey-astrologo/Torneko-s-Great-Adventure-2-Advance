@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned acid handler and rust selector/shield/sword literals only. Native item fields and enhancement/resistance branches need independent checks; other shared readers remain unchanged.",
+  "entries": [
+    {
+      "id": "rust.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.300",
+      "table_offset": 768,
+      "source": {
+        "offset": 406640,
+        "end_exclusive": 406655,
+        "raw_hex": "8e5f82aa82d382c182c482ab82bd00",
+        "sha256": "dea5dd39ce3dd0a8b5ab335bdc117abaa7d15a62c59fd2b9ed37e8e2f930965b",
+        "japanese": "酸がふってきた"
+      },
+      "english": "Acid rained down!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.27c",
+      "table_offset": 636,
+      "source": {
+        "offset": 407376,
+        "end_exclusive": 407398,
+        "raw_hex": "82b582a982b52082b382d182b882c982b782f182be00",
+        "sha256": "cbd55964cb8a9a4f6ea23a95b90f61218905d8ad4303a6af0a12a85642e45428",
+        "japanese": "しかし さびずにすんだ"
+      },
+      "english": "But nothing rusted.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.280",
+      "table_offset": 640,
+      "source": {
+        "offset": 407356,
+        "end_exclusive": 407376,
+        "raw_hex": "8f8282aa82b382d182c482b582dc82c182bd2100",
+        "sha256": "d61b8c1c8a9276a59145c40d57240db7c3b03b2bb5df6e0dc3f8dd73a67d491f",
+        "japanese": "盾がさびてしまった!"
+      },
+      "english": "Your shield rusted!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.284",
+      "table_offset": 644,
+      "source": {
+        "offset": 407336,
+        "end_exclusive": 407356,
+        "raw_hex": "8c9582aa82b382d182c482b582dc82c182bd2100",
+        "sha256": "4e0a0873c3470608357942ea61e9933f2607a22b7f478ab4d25458eaf8a34f62",
+        "japanese": "剣がさびてしまった!"
+      },
+      "english": "Your weapon rusted!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.288",
+      "table_offset": 648,
+      "source": {
+        "offset": 407304,
+        "end_exclusive": 407335,
+        "raw_hex": "82b382d182e982e082cc82f0919594f582b582c482a282c882a982c182bd00",
+        "sha256": "3655e74072c6abd80171885ae3dc9e262ae774e3779deb5cf09f9b60d95b3b1c",
+        "japanese": "さびるものを装備していなかった"
+      },
+      "english": "You had no equipment that could rust.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.304",
+      "table_offset": 772,
+      "source": {
+        "offset": 407376,
+        "end_exclusive": 407398,
+        "raw_hex": "82b582a982b52082b382d182b882c982b782f182be00",
+        "sha256": "cbd55964cb8a9a4f6ea23a95b90f61218905d8ad4303a6af0a12a85642e45428",
+        "japanese": "しかし さびずにすんだ"
+      },
+      "english": "But nothing rusted.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.43c",
+      "table_offset": 1084,
+      "source": {
+        "offset": 404644,
+        "end_exclusive": 404665,
+        "raw_hex": "82b582a982b520257382cd82b382d182c882a22100",
+        "sha256": "720825d15c186f08f6ef8f30b2faade8fde943d3f108cc1826c60c8cc84ef4f2",
+        "japanese": "しかし %{unclassified-control:73}はさびない!"
+      },
+      "english": "But {item} {fit}won't rust!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.8e4",
+      "table_offset": 2276,
+      "source": {
+        "offset": 394980,
+        "end_exclusive": 395009,
+        "raw_hex": "82b382d182e98f8282f0919594f582b582c482a282c882a982c182bd00",
+        "sha256": "3a86b04e1cf4d60342467fc8e7426b15fde5980627cf706ea6fdf45a768b9f52",
+        "japanese": "さびる盾を装備していなかった"
+      },
+      "english": "You had no shield that could rust.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    },
+    {
+      "id": "rust.8e8",
+      "table_offset": 2280,
+      "source": {
+        "offset": 394948,
+        "end_exclusive": 394977,
+        "raw_hex": "82b382d182e98c9582f0919594f582b582c482a282c882a982c182bd00",
+        "sha256": "98c5d2fae0ee22adb8df753b4eef08114a5ce59c2303ef5defddf28339aee189",
+        "japanese": "さびる剣を装備していなかった"
+      },
+      "english": "You had no weapon that could rust.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves acid, activation failure, actual rust, avoided rust and lack of rustable equipment. Weapon covers the native sword-category equipment including clubs/axes, consistent with the approved Weapon label. The named immunity line preserves its complete item field and uses the verified conditional break; no field or meaning is shortened to force fit."
+    }
+  ]
+}

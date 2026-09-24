@@ -1,0 +1,356 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private dungeon priest root/four services and talk wrapper. Other shared consumers and false-priest/companion source branch remain separately audited.",
+  "entries": [
+    {
+      "id": "priest.4c8",
+      "table_offset": 1224,
+      "source": {
+        "offset": 403596,
+        "end_exclusive": 403650,
+        "raw_hex": "905f9583817582a882a8814096c082a682e982b182d082c282b682e60d814089bd82f082a882cc82bc82dd82c582b582e582a4814800",
+        "sha256": "c8ad4a3cf73f8107b75d6b57a046d77da542e0030a05a1aa2d945f432b8eb26c",
+        "japanese": "神父「おお　迷えるこひつじよ\n　何をおのぞみでしょう？"
+      },
+      "english": "Priest: Ah, lost lamb. What do you seek?",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4cc",
+      "table_offset": 1228,
+      "source": {
+        "offset": 403548,
+        "end_exclusive": 403594,
+        "raw_hex": "905f9583817582a082c882bd82c98140905f82cc82b282a982b282aa0d814082a082e882dc82b782e682a482c900",
+        "sha256": "02ae7ee27726596cb8ae60f5d362e432fc675add33bcfaffeb425710169811ee",
+        "japanese": "神父「あなたに　神のごかごが\n　ありますように"
+      },
+      "english": "Priest: May God watch over you.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4d0",
+      "table_offset": 1232,
+      "source": {
+        "offset": 403496,
+        "end_exclusive": 403546,
+        "raw_hex": "905f9583817582a882a8814096c082a682e9838283938358835e815b82e60d814082c682e082c98b4682e882c882b382a200",
+        "sha256": "517a308edf8d43ac9a85e1ed501aaeb1a42c3e0c7b932a6a2c57b7c31591d7bf",
+        "japanese": "神父「おお　迷えるモンスターよ\n　ともに祈りなさい"
+      },
+      "english": "Priest: Ah, lost monster. Let us pray together.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4d8",
+      "table_offset": 1240,
+      "source": {
+        "offset": 403456,
+        "end_exclusive": 403489,
+        "raw_hex": "905f95838175905f82cc82b282a982b282aa82a082e882dc82b782e682a482c900",
+        "sha256": "a4a41881819165384e755fd271ce2737ae62c49674c94eef58367f6c66d8f6f4",
+        "japanese": "神父「神のごかごがありますように"
+      },
+      "english": "Priest: May God watch over you.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4dc",
+      "table_offset": 1244,
+      "source": {
+        "offset": 403356,
+        "end_exclusive": 403455,
+        "raw_hex": "814081408ef482a282f089f082ad090903053132303005470d81408140485082f089f1959c82b782e90909030533303005470d8140814093c582f08fc182b7090909030535303005470d81408140926e8fe382d682e082c782e9090903053530054700",
+        "sha256": "0f676d7e6308039ae09f8bc719b3af21eb1b07e8d2548db4758184141f0ff337",
+        "japanese": "　　呪いを解く{tab:09}{tab:09}{legacy-position:0305}1200{unclassified-control:05}G\n　　HPを回復する{tab:09}{tab:09}{legacy-position:0305}300{unclassified-control:05}G\n　　毒を消す{tab:09}{tab:09}{tab:09}{legacy-position:0305}500{unclassified-control:05}G\n　　地上へもどる{tab:09}{tab:09}{legacy-position:0305}50{unclassified-control:05}G"
+      },
+      "english": "Lift curse\nRestore HP\nCure poison\nReturn to surface",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4e4",
+      "table_offset": 1252,
+      "source": {
+        "offset": 403232,
+        "end_exclusive": 403315,
+        "raw_hex": "905f958381758ef482a282f089f082ad82cc82c582b782cb0d0d905f9583817582bb82ea82c582cd03052564058353815b838b836882cc0d814082b282ab82d382f0814082a882cb82aa82a282b582dc82b700",
+        "sha256": "416c7116a60ecbd5ea07f87f1ca29b23cadce5670f0b66b81cc4927351b40fab",
+        "japanese": "神父「呪いを解くのですね\n\n神父「それでは{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}ゴールドの\n　ごきふを　おねがいします"
+      },
+      "english": "Priest: You wish to lift a curse?\n\nPriest: Please donate {color:5}{amount}{/color} gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4e8",
+      "table_offset": 1256,
+      "source": {
+        "offset": 403156,
+        "end_exclusive": 403230,
+        "raw_hex": "905f9583817582a882a80d814082b182cc82e082cc82c98140905f82cc82b582e382ad82d382ad82f00d0d0d0d147e82cc919594f5956982a982e70d148ef482a282aa8fc182a682bd00",
+        "sha256": "c0f567c793b4371f86b853758edf1b86b568d149469bde61ae90961318465a89",
+        "japanese": "神父「おお\n　このものに　神のしゅくふくを\n\n\n\n{unclassified-control:14}{unclassified-control:7e}の装備品から\n{unclassified-control:14}呪いが消えた"
+      },
+      "english": "Priest: O Lord, bless this soul.\n\n{center}{player}'s equipment\n{center}is freed of its curses.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4ec",
+      "table_offset": 1260,
+      "source": {
+        "offset": 403116,
+        "end_exclusive": 403156,
+        "raw_hex": "905f9583817582a882a80d81408353815b838b836882aa82bd82e882c882a282e682a482c582b700",
+        "sha256": "151710284e167301c8be613b49cbd36889a8c79446d9f83112826bd207b1083b",
+        "japanese": "神父「おお\n　ゴールドがたりないようです"
+      },
+      "english": "Priest: Ah, you lack the gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4f0",
+      "table_offset": 1264,
+      "source": {
+        "offset": 403036,
+        "end_exclusive": 403115,
+        "raw_hex": "905f95838175485082cc89f1959c82c582b782cb0d0d905f9583817582bb82ea82c582cd03052564058353815b838b836882cc0d814082b282ab82d382f0814082a882cb82aa82a282b582dc82b700",
+        "sha256": "b0cdf87f9ffb9ab46a82749b77afb00776022f01abb0ea2698b5f3ec4f9d8cb5",
+        "japanese": "神父「HPの回復ですね\n\n神父「それでは{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}ゴールドの\n　ごきふを　おねがいします"
+      },
+      "english": "Priest: You seek to restore your HP?\n\nPriest: Please donate {color:5}{amount}{/color} gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4f4",
+      "table_offset": 1268,
+      "source": {
+        "offset": 402972,
+        "end_exclusive": 403034,
+        "raw_hex": "905f9583817582a882a80d814082b182cc82e082cc82c98140905f82cc82b582e382ad82d382ad82f00d0d0d0d147e82cc485082aa89f1959c82b582bd00",
+        "sha256": "9174b7674dfff33fa25c304f4a4ab8283bf7834f01de05290019f28bd67aab35",
+        "japanese": "神父「おお\n　このものに　神のしゅくふくを\n\n\n\n{unclassified-control:14}{unclassified-control:7e}のHPが回復した"
+      },
+      "english": "Priest: O Lord, bless this soul.\n\n{center}{player} recovered HP.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4f8",
+      "table_offset": 1272,
+      "source": {
+        "offset": 403116,
+        "end_exclusive": 403156,
+        "raw_hex": "905f9583817582a882a80d81408353815b838b836882aa82bd82e882c882a282e682a482c582b700",
+        "sha256": "151710284e167301c8be613b49cbd36889a8c79446d9f83112826bd207b1083b",
+        "japanese": "神父「おお\n　ゴールドがたりないようです"
+      },
+      "english": "Priest: Ah, you lack the gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.4fc",
+      "table_offset": 1276,
+      "source": {
+        "offset": 402880,
+        "end_exclusive": 402969,
+        "raw_hex": "905f9583817591cc82a982e793c582f08fc182b782cc82c582b782cb0d0d905f9583817582bb82ea82c582cd814003052564058353815b838b836882cc0d814082b282ab82d382f0814082a882cb82aa82a282b582dc82b700",
+        "sha256": "9f1ee3bf8b3fb5cf14a069b2e679dd09ec13faf03fa3e25ecdb4533f44122ce2",
+        "japanese": "神父「体から毒を消すのですね\n\n神父「それでは　{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}ゴールドの\n　ごきふを　おねがいします"
+      },
+      "english": "Priest: You wish to be cured of poison?\n\nPriest: Please donate {color:5}{amount}{/color} gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.500",
+      "table_offset": 1280,
+      "source": {
+        "offset": 402808,
+        "end_exclusive": 402878,
+        "raw_hex": "905f9583817582a882a80d814082b182cc82e082cc82c98140905f82cc82b582e382ad82d382ad82f00d0d0d0d147e82cc82a982e782be82a982e793c582aa8fc182a682bd00",
+        "sha256": "c8d3216cd7334a006fd8e92cbafbafa6ab8f7cc6a160ebef64a2032ff7e7b8fe",
+        "japanese": "神父「おお\n　このものに　神のしゅくふくを\n\n\n\n{unclassified-control:14}{unclassified-control:7e}のからだから毒が消えた"
+      },
+      "english": "Priest: O Lord, bless this soul.\n\n{center}{player} is cured of poison.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.504",
+      "table_offset": 1284,
+      "source": {
+        "offset": 403116,
+        "end_exclusive": 403156,
+        "raw_hex": "905f9583817582a882a80d81408353815b838b836882aa82bd82e882c882a282e682a482c582b700",
+        "sha256": "151710284e167301c8be613b49cbd36889a8c79446d9f83112826bd207b1083b",
+        "japanese": "神父「おお\n　ゴールドがたりないようです"
+      },
+      "english": "Priest: Ah, you lack the gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.508",
+      "table_offset": 1288,
+      "source": {
+        "offset": 402716,
+        "end_exclusive": 402807,
+        "raw_hex": "905f95838175926e8fe382c982e082c782e882bd82a282cc82c582b782cb0d0d905f9583817582bb82ea82c582cd814003052564058353815b838b836882cc0d814082b282ab82d382f0814082a882cb82aa82a282b582dc82b700",
+        "sha256": "9fc6b32d16fa65a3cc4580a9e3d21e5efa7d66ff7b1c4641e9c4a1d694220e9c",
+        "japanese": "神父「地上にもどりたいのですね\n\n神父「それでは　{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}ゴールドの\n　ごきふを　おねがいします"
+      },
+      "english": "Priest: You wish to return to the surface?\n\nPriest: Please donate {color:5}{amount}{/color} gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.510",
+      "table_offset": 1296,
+      "source": {
+        "offset": 403116,
+        "end_exclusive": 403156,
+        "raw_hex": "905f9583817582a882a80d81408353815b838b836882aa82bd82e882c882a282e682a482c582b700",
+        "sha256": "151710284e167301c8be613b49cbd36889a8c79446d9f83112826bd207b1083b",
+        "japanese": "神父「おお\n　ゴールドがたりないようです"
+      },
+      "english": "Priest: Ah, you lack the gold.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.514",
+      "table_offset": 1300,
+      "source": {
+        "offset": 402616,
+        "end_exclusive": 402670,
+        "raw_hex": "905f95838175935682c9837a83568140926e82c9837083938145814581450d814082b382a08140905f82cc82df82ae82dd82c582b700",
+        "sha256": "6cdd54bffaacaf9a85b59639130b42178bc4b99e89c72623746b2c62abcd6047",
+        "japanese": "神父「天にホシ　地にパン・・・\n　さあ　神のめぐみです"
+      },
+      "english": "Priest: Stars in heaven, bread on earth... Behold the bounty of God.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.518",
+      "table_offset": 1304,
+      "source": {
+        "offset": 402512,
+        "end_exclusive": 402613,
+        "raw_hex": "905f95838175935682c9837a83568140926e82c9837083938145814581450d814082b382a08140905f82cc82df82ae82dd81458145814582c68e7682a282dc82b582bd82aa0d905f95838175927582ad82c682b182eb82aa82c882a282e682a482c582b700",
+        "sha256": "f6ac639138ca48dca3381a48afac575e1d94ffb959d795eda63ab3234206f2d3",
+        "japanese": "神父「天にホシ　地にパン・・・\n　さあ　神のめぐみ・・・と思いましたが\n神父「置くところがないようです"
+      },
+      "english": "Priest: Stars in heaven, bread on earth... Behold the bounty of...\n\nPriest: Ah, there is nowhere to put it.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.51c",
+      "table_offset": 1308,
+      "source": {
+        "offset": 402444,
+        "end_exclusive": 402510,
+        "raw_hex": "905f9583817582a882a80d0d905f95838175905f82cd82b782c582c9814082bb82cc82b582e382ad82d382ad82cd0d814082a082bd82a682e782ea82dc82b582bd00",
+        "sha256": "879ee7769a4a8a8f8179cead49d0d26af3152f9ae6627b07b1a16b65756b0dd6",
+        "japanese": "神父「おお\n\n神父「神はすでに　そのしゅくふくは\n　あたえられました"
+      },
+      "english": "Priest: Ah...\n\nPriest: God has already granted that blessing.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.520",
+      "table_offset": 1312,
+      "source": {
+        "offset": 402400,
+        "end_exclusive": 402442,
+        "raw_hex": "905f9583817582a882a8814082c882ba82a98da10d8140905f82cc8cf582aa8ca982a682dc82b982ca00",
+        "sha256": "84897167c47ef5e01e74cfc7e46336425d460f7922e9be13da597a5af06a999a",
+        "japanese": "神父「おお　なぜか今\n　神の光が見えませぬ"
+      },
+      "english": "Priest: Ah, for some reason, I cannot see the light of God just now.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.9e4",
+      "table_offset": 2532,
+      "source": {
+        "offset": 402672,
+        "end_exclusive": 402714,
+        "raw_hex": "905f9583817582a882a80d814082b182cc82e082cc82c98140905f82cc82b582e382ad82d382ad82f000",
+        "sha256": "3ce7cf62fd99d16a388798861428694875edfa375cbcb8cabb08cad8fd3c6309",
+        "japanese": "神父「おお\n　このものに　神のしゅくふくを"
+      },
+      "english": "Priest: O Lord, bless this soul.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.9e8",
+      "table_offset": 2536,
+      "source": {
+        "offset": 393444,
+        "end_exclusive": 393464,
+        "raw_hex": "148dc591e5485082aa256482c982c882c182bd00",
+        "sha256": "6a76f80f64df47c9764b2150382187d21a79064db04e062c0e205ab534e90645",
+        "japanese": "{unclassified-control:14}最大HPが%{unclassified-control:64}になった"
+      },
+      "english": "{center}Maximum HP is now {amount}.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.9ec",
+      "table_offset": 2540,
+      "source": {
+        "offset": 393416,
+        "end_exclusive": 393442,
+        "raw_hex": "1482b182ea88c88fe38dc591e5485082cd82d382a682c882a200",
+        "sha256": "461402f1283e4d88a0871197d64ac6a681cf7c7f551bf0a2941e239d9abb1db5",
+        "japanese": "{unclassified-control:14}これ以上最大HPはふえない"
+      },
+      "english": "{center}Maximum HP cannot rise further.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.9f0",
+      "table_offset": 2544,
+      "source": {
+        "offset": 393372,
+        "end_exclusive": 393413,
+        "raw_hex": "905f9583817589bd82e08ef482ed82ea82c482a282c882a282e682a482c582b782aa81458145814500",
+        "sha256": "2e7030a8dec2af012e273bda837611626c6732cbdc1994979c63e35c79f1a118",
+        "japanese": "神父「何も呪われていないようですが・・・"
+      },
+      "english": "Priest: Nothing seems to be cursed...",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    },
+    {
+      "id": "priest.9f4",
+      "table_offset": 2548,
+      "source": {
+        "offset": 393324,
+        "end_exclusive": 393372,
+        "raw_hex": "905f9583817582bf82a982e782cd0d814089ba82aa82c182c482a282c882a282e682a482c582b782aa81458145814500",
+        "sha256": "60ecc362a6810281b8a1ed6d2a95bbd2aad0e5d49d270d5d2183da35a4bdd3fd",
+        "japanese": "神父「ちからは\n　下がっていないようですが・・・"
+      },
+      "english": "Priest: Your strength does not seem to have fallen...",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source prose review. Priest speaks plainly and courteously with religious diction; preserve request, cost, negation, gift-space and repeat-service restrictions. Source centre/player/colour control order is retained. Poison wording is faithful to Japanese although native effect restores current strength; do not invent a separate status cure. Menu order/prices/geometry stay native."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "stage": "bilingual review and native English acceptance complete for the documented batch",
+  "entries": [
+    {
+      "id": "event-bank-0.26c0",
+      "source_sha256": "0f3f1354658dcfa8d9eed2a885cf2c7a97ad64c9160aeb9cf66f7e204f1ddaf4",
+      "japanese": "王様「おお　{unclassified-control:7e}よ。何かあったのか？\n\n王様「なに？草原が不思議のダンジョンに\n　なってしまったと申すか。\n王様「よく知らせてくれた。礼を言うぞ。\n\n王様「・・・じつを言うと\n　このところ　少し困っておるのじゃ。\n王様「今までモンスターはダンジョンの\n　外に出ることは　なかったのじゃが・・・。\n王様「なぜかちかごろ　人の住む地にも\n　姿を見せるようになっての。\n王様「今　その原因を　さぐらせるため\n　王子を西の都へ　おくっておるのじゃが\n王様「まだ　おとさたがない。\n\n王様「今のところは　これといって\n　大事には　いたっておらんが・・・。\n王様「{unclassified-control:7e}よ。\n\n王様「また　何かわかったら\n　すぐに　ワシに知らせてくれ。",
+      "english": "King: Ah, {player}! Has something happened?\n\nKing: What? You say the meadow has become a magic dungeon?\n\nKing: Thank you for bringing me word of this.\n\nKing: ...To tell the truth, something has been troubling me lately.\n\nKing: Monsters never used to venture outside the dungeons...\n\nKing: Yet recently they have begun appearing in places where people live.\n\nKing: I have sent the Prince to the western city to investigate the cause.\n\nKing: But I have had no word from him yet.\n\nKing: So far, nothing particularly serious has happened...\n\nKing: {player}...\n\nKing: If you discover anything else, let me know at once."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "event-bank-0.26c0",
+      "source_sha256": "0f3f1354658dcfa8d9eed2a885cf2c7a97ad64c9160aeb9cf66f7e204f1ddaf4",
+      "before": "King: Ah, {player}! Has something happened?\n\nKing: What? You say the meadow has become a magic dungeon?\n\nKing: Thank you for bringing me word of this.\n\nKing: ...To tell the truth, something has been troubling me lately.\n\nKing: Monsters never used to venture outside the dungeons...\n\nKing: Yet recently they have begun appearing in places where people live.\n\nKing: I have sent the Prince to the western city to investigate the cause.\n\nKing: But I have had no word from him yet.\n\nKing: So far, nothing particularly serious has happened...\n\nKing: {player}...\n\nKing: If you discover anything else, let me know at once.",
+      "after": "King: Ah, {player}! Has something happened?\n\nKing: What? You say the meadow has become a magic dungeon?\n\nKing: You did well to bring me this news. You have my thanks.\n\nKing: ...To tell the truth, something has been troubling me lately.\n\nKing: Monsters never used to venture outside the dungeons...\n\nKing: Yet recently they have begun appearing in places where people live.\n\nKing: I have sent the Prince to the western city to investigate the cause.\n\nKing: But I have had no word from him yet.\n\nKing: So far, nothing particularly serious has happened...\n\nKing: {player}...\n\nKing: If you discover anything else, let me know at once.",
+      "reason": "Restore the explicit praise as well as thanks; retain both name substitutions and all facts of the report, investigation and request.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_layout_revisions": [
+    {
+      "id": "event-bank-0.26c0",
+      "source_sha256": "0f3f1354658dcfa8d9eed2a885cf2c7a97ad64c9160aeb9cf66f7e204f1ddaf4",
+      "before": "King: Ah, {player}! Has something happened?\n\nKing: What? You say the meadow has become a magic dungeon?\n\nKing: You did well to bring me this news. You have my thanks.\n\nKing: ...To tell the truth, something has been troubling me lately.\n\nKing: Monsters never used to venture outside the dungeons...\n\nKing: Yet recently they have begun appearing in places where people live.\n\nKing: I have sent the Prince to the western city to investigate the cause.\n\nKing: But I have had no word from him yet.\n\nKing: So far, nothing particularly serious has happened...\n\nKing: {player}...\n\nKing: If you discover anything else, let me know at once.",
+      "after": "King: Ah, {player}! Has something happened?\n\nKing: What? You say the meadow has become a magic dungeon?\n\nKing: You did well to bring me this news. You have my thanks.\n\nKing: ...To tell the truth, something has been troubling me lately.\n\nKing: Monsters never used to venture outside the dungeons...\n\nKing: Yet recently they have begun appearing in places where people live.\n\nKing: I have sent the Prince to the western city to investigate the cause.\n\nKing: But I have had no word from him.\n\nKing: So far, nothing particularly serious has happened...\n\nKing: {player}...\n\nKing: If you discover anything else, let me know at once.",
+      "reason": "Native page review: retain the Japanese facts and voice while avoiding an isolated fragment page or very short continuation line. Minister information is grouped into two complete pages.",
+      "reviewer": "Codex; bilingual and native-page review",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_acceptance_report": "build/english/castle-validation/report.json"
+}

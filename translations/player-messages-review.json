@@ -1,0 +1,728 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "player-message.3c0",
+      "table_offset": 960,
+      "source": {
+        "offset": 405460,
+        "end_exclusive": 405488,
+        "raw_hex": "257382cd0d977882e882a982e782c682ab82cd82c882bd82ea82bd00",
+        "sha256": "272d61e6aaaf7422f5beb842cda2e134c8f611d9e826ef2f3151ebdd447c3bc5",
+        "japanese": "%{unclassified-control:73}は\n踊りからときはなたれた"
+      },
+      "english": "{player} stopped dancing.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134290094,
+          "original_hex": "03f0cbfe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.354",
+      "table_offset": 852,
+      "source": {
+        "offset": 406188,
+        "end_exclusive": 406229,
+        "raw_hex": "257382cd0d90a28a458ef782cc977482cc82a882a982b082c5814082d382c182a982c282b582bd2100",
+        "sha256": "b392fd0c3e67ac05abe62dc243132d531af6cd7e97d643dcda73e7b8448128ca",
+        "japanese": "%{unclassified-control:73}は\n世界樹の葉のおかげで　ふっかつした!"
+      },
+      "english": "{player}{fit} revived with a Yggdrasil leaf!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134295808,
+          "original_hex": "02f0a2fb"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.884",
+      "table_offset": 2180,
+      "source": {
+        "offset": 395316,
+        "end_exclusive": 395347,
+        "raw_hex": "8381834b8355838b82cc8cf889ca82c52082e682dd82aa82a682c182bd2100",
+        "sha256": "9261499abc486b1c87f8ba8bece698192185a99e0beeb8ef8c2672b528cda647",
+        "japanese": "メガザルの効果で よみがえった!"
+      },
+      "english": "Kerplunk revived you!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134295848,
+          "original_hex": "02f08efb"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.198",
+      "table_offset": 408,
+      "source": {
+        "offset": 408836,
+        "end_exclusive": 408860,
+        "raw_hex": "257382cd2082cb82de82c182c482a282e981458145814500",
+        "sha256": "a958715ec6c37451744b8cfa6021dda3768dcfac3f7c51f26cfac2d830d663ef",
+        "japanese": "%{unclassified-control:73}は ねむっている・・・"
+      },
+      "english": "{player} is asleep...",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134359538,
+          "original_hex": "f2f729ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.76c",
+      "table_offset": 1900,
+      "source": {
+        "offset": 397732,
+        "end_exclusive": 397749,
+        "raw_hex": "82df82a282bb82a4928681458145814500",
+        "sha256": "e28f26dfc518a96ec115b9ddd3b273426a7add58cc6eec2f45fe763eee2eab6e",
+        "japanese": "めいそう中・・・"
+      },
+      "english": "Meditating...",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134359604,
+          "original_hex": "f2f708ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.474",
+      "table_offset": 1140,
+      "source": {
+        "offset": 404236,
+        "end_exclusive": 404258,
+        "raw_hex": "257382cd2082b182a882e782b382ea82c482a282e900",
+        "sha256": "eee048eef91c4c66d2b506a2536f69ae1da4ab5854aa61d971a8bc7ee81d04f6",
+        "japanese": "%{unclassified-control:73}は こおらされている"
+      },
+      "english": "{player} is frozen.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134359644,
+          "original_hex": "f2f7f4fe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.2e0",
+      "table_offset": 736,
+      "source": {
+        "offset": 406816,
+        "end_exclusive": 406831,
+        "raw_hex": "257382cd2093ae82af82c882a22100",
+        "sha256": "2500134e23fc0e4c9621460627bb1b53b7dbce3f57bb8feac2dd669d93e2e7a4",
+        "japanese": "%{unclassified-control:73}は 動けない!"
+      },
+      "english": "{player} can't move!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134360292,
+          "original_hex": "f2f7b0fd"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.364",
+      "table_offset": 868,
+      "source": {
+        "offset": 406100,
+        "end_exclusive": 406124,
+        "raw_hex": "82b182cc834183438365838082cd8ca982a682c882a22100",
+        "sha256": "cef2fe66257c486b69b0ab548427da9711104fc0d063d30bf1017822caca9d5a",
+        "japanese": "このアイテムは見えない!"
+      },
+      "english": "This item is invisible!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134372024,
+          "original_hex": "eff7c6fe"
+        },
+        {
+          "address": 134425664,
+          "original_hex": "e2f702fe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.2d8",
+      "table_offset": 728,
+      "source": {
+        "offset": 406860,
+        "end_exclusive": 406874,
+        "raw_hex": "257382cd2093ae82af82c882a200",
+        "sha256": "a71ded7755aab39e7492a4e6b45fce301dc775b1e9b02b80114a3c2662f685d1",
+        "japanese": "%{unclassified-control:73}は 動けない"
+      },
+      "english": "{player} can't move.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134375598,
+          "original_hex": "eef7cbff"
+        },
+        {
+          "address": 134375636,
+          "original_hex": "eef7b8ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.308",
+      "table_offset": 776,
+      "source": {
+        "offset": 406624,
+        "end_exclusive": 406638,
+        "raw_hex": "82cb82de82e8834b835882be2100",
+        "sha256": "dc8f177098e85e7f614e27d19a700bdca802e653f59f741e182a012df41e26f1",
+        "japanese": "ねむりガスだ!"
+      },
+      "english": "Sleeping gas!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134380126,
+          "original_hex": "edf7f3fe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.7d4",
+      "table_offset": 2004,
+      "source": {
+        "offset": 396856,
+        "end_exclusive": 396877,
+        "raw_hex": "257382cd96ee82f082c682ea82c882a982c182bd00",
+        "sha256": "9c0caa31b3be73a17c9f71debaeaa13e043026a69d3d1a9deecb3e4eb32d8042",
+        "japanese": "%{unclassified-control:73}は矢をとれなかった"
+      },
+      "english": "{player}{fit} failed to catch the arrow.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134394410,
+          "original_hex": "eaf70dfb"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.7d8",
+      "table_offset": 2008,
+      "source": {
+        "offset": 396832,
+        "end_exclusive": 396854,
+        "raw_hex": "257382cd96ee82f0834c83838362836082b582bd2100",
+        "sha256": "620d5ce271b891ecd1db463b766cf824b4a037d6db0361550381ca8c6c1070ef",
+        "japanese": "%{unclassified-control:73}は矢をキャッチした!"
+      },
+      "english": "{player} caught the arrow!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134394456,
+          "original_hex": "eaf7f6fa"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.2fc",
+      "table_offset": 764,
+      "source": {
+        "offset": 406656,
+        "end_exclusive": 406684,
+        "raw_hex": "257382cd2097cd82aa89ba82aa82e782c882a282c582b782f182be00",
+        "sha256": "85901afe0d95b9c9fc0733b27afe3014e9db862ad35a44359bd17901e0ef2ac0",
+        "japanese": "%{unclassified-control:73}は 力が下がらないですんだ"
+      },
+      "english": "{player} lost no strength.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134396734,
+          "original_hex": "e9f783fe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.2bc",
+      "table_offset": 700,
+      "source": {
+        "offset": 407020,
+        "end_exclusive": 407044,
+        "raw_hex": "257382cc8dc591e5485082aa0e054e89ba82aa82c182bd00",
+        "sha256": "d4ebd9cfa4941fee2c65e930c37f268fd60c59ac1c08f4e34a8d911aa5ccc645",
+        "japanese": "%{unclassified-control:73}の最大HPが{fit-next:0e054e}下がった"
+      },
+      "english": "{player}'s max HP fell.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134396966,
+          "original_hex": "e9f70ffe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.190",
+      "table_offset": 400,
+      "source": {
+        "offset": 408888,
+        "end_exclusive": 408925,
+        "raw_hex": "257382cd2088dd89ba908282c882cc82c50d969e95a0937882cd95cf82ed82e782c882a200",
+        "sha256": "0a32ebd0baebdd090b43878ef8fd87ff1f9c527460db228aaf2c592c7ed1c7e0",
+        "japanese": "%{unclassified-control:73}は 胃下垂なので\n満腹度は変わらない"
+      },
+      "english": "{player}'s leaky belly{fit} prevents any change in fullness.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134398316,
+          "original_hex": "e9f76cfb"
+        },
+        {
+          "address": 134427022,
+          "original_hex": "e2f75bfb"
+        },
+        {
+          "address": 134427222,
+          "original_hex": "e2f7f7fa"
+        },
+        {
+          "address": 134428966,
+          "original_hex": "e1f78fff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.4ac",
+      "table_offset": 1196,
+      "source": {
+        "offset": 403816,
+        "end_exclusive": 403859,
+        "raw_hex": "257382cd2096da82aa82b382a682c482a282c40d8dc396b082c982cd82a982a982e782c882a982c182bd00",
+        "sha256": "080fccdd1f8e05c0d419221a4a5f9e3bffba263e49b4eed2a564462f9da5c279",
+        "japanese": "%{unclassified-control:73}は 目がさえていて\n催眠にはかからなかった"
+      },
+      "english": "Wide awake, {player}{fit} resisted hypnosis.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134398508,
+          "original_hex": "e9f70cfb"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.108",
+      "table_offset": 264,
+      "source": {
+        "offset": 409716,
+        "end_exclusive": 409738,
+        "raw_hex": "257382cd2082bf82a982e782aa8fe382aa82c182bd00",
+        "sha256": "4ad5825837005bbda18a678454ef9e2467be030985fe7d46423953fe4204a848",
+        "japanese": "%{unclassified-control:73}は ちからが上がった"
+      },
+      "english": "{player}'s strength rose.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.10c",
+      "table_offset": 268,
+      "source": {
+        "offset": 409652,
+        "end_exclusive": 409713,
+        "raw_hex": "257382cd2082b182cc8374838d834182c982a282e982a082a282be0d834183438365838082f08eaf95ca82c582ab82e982e682a482c982c882c182bd00",
+        "sha256": "167646be8d5afe75dc58a52302ca88671b0544174105e397e3f5b98cb25a6dba",
+        "japanese": "%{unclassified-control:73}は このフロアにいるあいだ\nアイテムを識別できるようになった"
+      },
+      "english": "{player}{fit} can identify items on this floor.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428242,
+          "original_hex": "e2f7f9f8"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.188",
+      "table_offset": 392,
+      "source": {
+        "offset": 408936,
+        "end_exclusive": 408967,
+        "raw_hex": "257382cd200e0d4e96da82aa8ca982a682e982e682a482c982c882c182bd00",
+        "sha256": "1cce5aa9b67ebc8c90678674caf9aba3d686a9586cdb7d59f597737c8d107ed5",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0d4e}目が見えるようになった"
+      },
+      "english": "{player} can see again.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428314,
+          "original_hex": "e2f7d5f8"
+        },
+        {
+          "address": 134428444,
+          "original_hex": "e2f794f8"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.17c",
+      "table_offset": 380,
+      "source": {
+        "offset": 409012,
+        "end_exclusive": 409031,
+        "raw_hex": "257382cd8dac979082aa82c882a882c182bd00",
+        "sha256": "2be3b49a3a5ab35d142d6f2ffeb641e43f0462d80490451868c1c1e6ede3592e",
+        "japanese": "%{unclassified-control:73}は混乱がなおった"
+      },
+      "english": "{player}'s confusion ended.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428344,
+          "original_hex": "e2f7c6f8"
+        },
+        {
+          "address": 134428414,
+          "original_hex": "e2f7a3f8"
+        },
+        {
+          "address": 134482046,
+          "original_hex": "d4f7e3ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.180",
+      "table_offset": 384,
+      "source": {
+        "offset": 408988,
+        "end_exclusive": 409011,
+        "raw_hex": "257382cc82dc82c782ed82b582aa82c882a882c182bd00",
+        "sha256": "6fcb8f8bc051f781ae80b4e32c1f350534af1e0dcb5678f5a37e440fdfdceff3",
+        "japanese": "%{unclassified-control:73}のまどわしがなおった"
+      },
+      "english": "{player} stopped hallucinating.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428474,
+          "original_hex": "e2f785f8"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.8fc",
+      "table_offset": 2300,
+      "source": {
+        "offset": 394780,
+        "end_exclusive": 394816,
+        "raw_hex": "257382cd834183438365838082aa0e0b4e82ed82a982e982e682a482c982c882c182bd00",
+        "sha256": "1af4ad46011162f34d1ad76271e75579f3de8d8714198665f9b89ad6c4a91042",
+        "japanese": "%{unclassified-control:73}はアイテムが{fit-next:0e0b4e}わかるようになった"
+      },
+      "english": "{player}{fit} can identify items again.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428502,
+          "original_hex": "e2f777f8"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.178",
+      "table_offset": 376,
+      "source": {
+        "offset": 409032,
+        "end_exclusive": 409054,
+        "raw_hex": "257382cc0e0a4e8dc591e5485082aa919d82a682bd00",
+        "sha256": "3443a8dc98ac9d1304fa42fd63433615268262c644fd0ce107f0382dd9b41b44",
+        "japanese": "%{unclassified-control:73}の{fit-next:0e0a4e}最大HPが増えた"
+      },
+      "english": "{player}'s max HP rose.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134429418,
+          "original_hex": "e1f7adfe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.990",
+      "table_offset": 2448,
+      "source": {
+        "offset": 393904,
+        "end_exclusive": 393928,
+        "raw_hex": "8dc591e5485082cd2082e082a48fe382aa82e782c882a200",
+        "sha256": "5dcebed653124a86b8f0728173f8046c848cf4bda50d84d5427b8dc33b025344",
+        "japanese": "最大HPは もう上がらない"
+      },
+      "english": "Max HP can't rise any further.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134429440,
+          "original_hex": "e1f7a2fe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.194",
+      "table_offset": 404,
+      "source": {
+        "offset": 408860,
+        "end_exclusive": 408888,
+        "raw_hex": "257382cd20969e95a0937882aa919d82a682c882ad82c882c182bd00",
+        "sha256": "ad84933a38e4cd0100089853923901d8a72556a36f2892ce763a27321d76ec6c",
+        "japanese": "%{unclassified-control:73}は 満腹度が増えなくなった"
+      },
+      "english": "{player}{fit} can no longer gain fullness.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134431486,
+          "original_hex": "e1f7a3fa"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.0e0",
+      "table_offset": 224,
+      "source": {
+        "offset": 410096,
+        "end_exclusive": 410110,
+        "raw_hex": "257382cd208dac979082b582bd00",
+        "sha256": "4d6a0bf81ba562c7b83f776c50a5bf145fd70197e9886a91b9e570482d5ae89a",
+        "japanese": "%{unclassified-control:73}は 混乱した"
+      },
+      "english": "{player} is confused.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134431802,
+          "original_hex": "e1f705fa"
+        },
+        {
+          "address": 134437680,
+          "original_hex": "dff78afe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.118",
+      "table_offset": 280,
+      "source": {
+        "offset": 409628,
+        "end_exclusive": 409650,
+        "raw_hex": "257382cd0e0a4e8dac979082b582c882a982c182bd00",
+        "sha256": "ec9e237a7005e67cbb9407a5f0277ed6d8ab40cd3d7f63f87b0998fb2a7274b0",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}混乱しなかった"
+      },
+      "english": "{player} isn't confused.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134431828,
+          "original_hex": "e1f7f8f9"
+        },
+        {
+          "address": 134437680,
+          "original_hex": "dff78afe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.528",
+      "table_offset": 1320,
+      "source": {
+        "offset": 402336,
+        "end_exclusive": 402369,
+        "raw_hex": "257382cd200e0e4e836f815b8354815b834a815b8ff391d482c982c882c182bd00",
+        "sha256": "78595056ea0c9a79638f5e6bc4e5a977fb2b4246611a6c3fd4be3339ec872482",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0e4e}バーサーカー状態になった"
+      },
+      "english": "{player} went berserk!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134432504,
+          "original_hex": "e1f7a6f8"
+        },
+        {
+          "address": 134446126,
+          "original_hex": "ddf70bfe"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.218",
+      "table_offset": 536,
+      "source": {
+        "offset": 407980,
+        "end_exclusive": 408021,
+        "raw_hex": "257382cc919594f582b582c482a282e9834183438365838082cc0d8ef482a282aa82c682af82bd2100",
+        "sha256": "e79c434d42bb17158bd0e0cc1b5aca4ca84a512d0c76d738a6c6bb889889ba6e",
+        "japanese": "%{unclassified-control:73}の装備しているアイテムの\n呪いがとけた!"
+      },
+      "english": "{player}'s equipped items{fit} are no longer cursed!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134435476,
+          "original_hex": "e0f7d8fa"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.3b4",
+      "table_offset": 948,
+      "source": {
+        "offset": 405548,
+        "end_exclusive": 405569,
+        "raw_hex": "257382cd2097cd82f082bd82df82c482a282e92100",
+        "sha256": "2e78df3b8dc8944c8e4059d1d148cea1e544658506cb7b342bd273e74abe2d71",
+        "japanese": "%{unclassified-control:73}は 力をためている!"
+      },
+      "english": "{player} gathers strength!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134466006,
+          "original_hex": "d8f737ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.888",
+      "table_offset": 2184,
+      "source": {
+        "offset": 395268,
+        "end_exclusive": 395313,
+        "raw_hex": "257382cd208381834b8355838b82cc8cf889ca82c50d88ea89f182be82af82e682dd82aa82a682e882dc82b700",
+        "sha256": "c08bbf872b26142fc52752db3ba11823e92c641142b0f614b89e18c15932a9be",
+        "japanese": "%{unclassified-control:73}は メガザルの効果で\n一回だけよみがえります"
+      },
+      "english": "Kerplunk will revive{fit} {player} once.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134481800,
+          "original_hex": "d5f75ef8"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.174",
+      "table_offset": 372,
+      "source": {
+        "offset": 409056,
+        "end_exclusive": 409077,
+        "raw_hex": "82df82c282d482b582a982e789f1959c82b582bd00",
+        "sha256": "af5ba8897199b887d66bdc044275502459d7526d9675ba6f99b186782cbb8a61",
+        "japanese": "めつぶしから回復した"
+      },
+      "english": "Your sight returned.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134482074,
+          "original_hex": "d4f7d5ff"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.890",
+      "table_offset": 2192,
+      "source": {
+        "offset": 395212,
+        "end_exclusive": 395234,
+        "raw_hex": "257382cc96688ce497cd82aa8fe382aa82c182bd2100",
+        "sha256": "e8cd24a130cb7f4e6193f885d9278d84e24e29db406940ee70d172b39d8283dd",
+        "japanese": "%{unclassified-control:73}の防御力が上がった!"
+      },
+      "english": "{player}'s defence rose!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134483224,
+          "original_hex": "d4f796fd"
+        }
+      ],
+      "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    }
+  ],
+  "terminology_evidence": {
+    "Kerplunk": {
+      "id": "spell.kerplunk",
+      "japanese": [
+        "メガザル"
+      ],
+      "english": "Kerplunk",
+      "status": "modern_official_name_secondary_evidence",
+      "sources": [
+        "dqwiki_spell_kerplunk"
+      ],
+      "reference": "../torneko-3-gba/translations/glossary.json",
+      "scope": "Exact Japanese spell identity only; no T3 mechanics imported."
+    },
+    "Yggdrasil leaf": "Exact T2 item172, translations/items-review.json",
+    "leaky belly": "Consistent with T2 item189 Leaky belly seed; preserves unchanged fullness, distinct from inability to gain fullness."
+  },
+  "scope": "33 original source pointers mapped only inside player-name formatter08015848. Original shared table and all other consumers remain unchanged. Static aligned Thumb BL sites and nearby argument loads identify callers; controlled wrapper validation does not establish ordinary reachability of every effect."
+}

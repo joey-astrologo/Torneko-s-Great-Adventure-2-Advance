@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "stage": "bilingual review and native English acceptance complete for the documented batch",
+  "entries": [
+    {
+      "id": "event-bank-0.2914",
+      "source_sha256": "1c35b1858cb265305943cf3997bec96aead10d1567c3e98df13bd8ba022c2fed",
+      "japanese": "王様「なにかあったら\n　すぐに　ワシに知らせてくれ！",
+      "english": "King: If anything happens, let me know at once!"
+    },
+    {
+      "id": "event-bank-0.2948",
+      "source_sha256": "7f02341e0cd952d5bdda100c6b76e1511bcf16b10375bf6822e63e04518225af",
+      "japanese": "大臣「王子の向かった　西の都には\n　えらい学者が　おおぜい　いらっしゃいます。\n大臣「何かつかめればいいのですが・・・。",
+      "english": "Minister: The Prince is in the western city, where many learned scholars live.\n\nMinister: I hope he can learn something..."
+    },
+    {
+      "id": "event-bank-0.29bf",
+      "source_sha256": "6f90a9326aae0713f40567117a2d6708bc1d4dd53c6512ad939842f37681ab62",
+      "japanese": "家老「たくさんの兵士にぃぃ！\n　異変の原因を　調べさせているのだあ！\n家老「しかーし！\n\n家老「はあ　はあ　はあ・・・\n\n家老「さっぱり　わからんのじゃ。",
+      "english": "Chancellor: I have MANY soldiers investigating these strange happenings!\n\nChancellor: BUT!\n\nChancellor: Huff... puff... huff...\n\nChancellor: We still haven't a clue."
+    },
+    {
+      "id": "event-bank-0.2a54",
+      "source_sha256": "f8cbf2b7552f388211e40f82d38f7054fd59585d607db13042fe29d937740d43",
+      "japanese": "兵士「王子さまに　あこがれて\n　お城の兵士に　なったッス。\n兵士「自分も　王子さまみたいに\n　カッコよくなりたいッス！",
+      "english": "Soldier: I joined the castle guard because I look up to the Prince.\n\nSoldier: I wanna be as cool as him!"
+    },
+    {
+      "id": "event-bank-0.2c86",
+      "source_sha256": "f1de582f378b8d92e2e3583480d4de85846fea284f30466a45f457ef62a10cf4",
+      "japanese": "兵士「村で　あやしげな老人を\n　見かけませんでしたか？",
+      "english": "Soldier: Have you seen a suspicious old man in the village?"
+    },
+    {
+      "id": "event-bank-0.2cbc",
+      "source_sha256": "ee26f438abea29a5e75b9132af165b1ad3cfd24945aba2096157f11a2c460e4a",
+      "japanese": "兵士「モンスターが出はじめたのと\n　その老人には\n兵士「何かふかい関係が\n　あるような気がするのです。",
+      "english": "Soldier: I feel there must be some connection between that old man and the monsters appearing."
+    },
+    {
+      "id": "event-bank-0.2d20",
+      "source_sha256": "d362049e3216069d5414e4797e34ffaa161783af889be805311535fe9c4e720d",
+      "japanese": "兵士「そうですか・・・。",
+      "english": "Soldier: I see..."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "event-bank-0.2914",
+      "source_sha256": "1c35b1858cb265305943cf3997bec96aead10d1567c3e98df13bd8ba022c2fed",
+      "before": "King: If anything happens, let me know at once!",
+      "after": "King: If anything happens, let me know at once!",
+      "reason": "Retain the immediate reporting request and emphatic ending; no new quest objective.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2948",
+      "source_sha256": "7f02341e0cd952d5bdda100c6b76e1511bcf16b10375bf6822e63e04518225af",
+      "before": "Minister: The Prince is in the western city, where many learned scholars live.\n\nMinister: I hope he can learn something...",
+      "after": "Minister: The Prince has gone to the western city. Many learned scholars live there.\n\nMinister: I do hope he finds a clue...",
+      "reason": "Avoid asserting his confirmed arrival: 向かった describes his destination. Keep the scholars and the minister's uncertainty.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.29bf",
+      "source_sha256": "6f90a9326aae0713f40567117a2d6708bc1d4dd53c6512ad939842f37681ab62",
+      "before": "Chancellor: I have MANY soldiers investigating these strange happenings!\n\nChancellor: BUT!\n\nChancellor: Huff... puff... huff...\n\nChancellor: We still haven't a clue.",
+      "after": "Chancellor: I have MANY soldiers investigating these strange happenings!\n\nChancellor: BUT!\n\nChancellor: Huff... puff... huff...\n\nChancellor: We still haven't a clue.",
+      "reason": "Preserve the many soldiers, emphatic delivery, three panting beats and comic admission of ignorance. Chancellor is a provisional role rendering for 家老, distinct from 大臣.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2a54",
+      "source_sha256": "f8cbf2b7552f388211e40f82d38f7054fd59585d607db13042fe29d937740d43",
+      "before": "Soldier: I joined the castle guard because I look up to the Prince.\n\nSoldier: I wanna be as cool as him!",
+      "after": "Soldier: I joined the castle guard because I look up to the Prince.\n\nSoldier: I want to be just as cool as he is!",
+      "reason": "Keep the young guard's admiration and informal enthusiasm without adding a phonetic accent.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2c86",
+      "source_sha256": "f1de582f378b8d92e2e3583480d4de85846fea284f30466a45f457ef62a10cf4",
+      "before": "Soldier: Have you seen a suspicious old man in the village?",
+      "after": "Soldier: Have you seen a suspicious old man in the village?",
+      "reason": "Preserve the suspicious old man and village context, as a yes/no question; do not reveal his identity.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2cbc",
+      "source_sha256": "ee26f438abea29a5e75b9132af165b1ad3cfd24945aba2096157f11a2c460e4a",
+      "before": "Soldier: I feel there must be some connection between that old man and the monsters appearing.",
+      "after": "Soldier: I suspect that old man is closely tied to the monsters appearing.",
+      "reason": "Keep the close connection and the guard's suspicion rather than presenting it as established fact.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2d20",
+      "source_sha256": "d362049e3216069d5414e4797e34ffaa161783af889be805311535fe9c4e720d",
+      "before": "Soldier: I see...",
+      "after": "Soldier: I see...",
+      "reason": "Retain the restrained acknowledgement and trailing pause; no invented follow-up information.",
+      "reviewer": "Codex; separate bilingual editorial pass",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_layout_revisions": [
+    {
+      "id": "event-bank-0.2948",
+      "source_sha256": "7f02341e0cd952d5bdda100c6b76e1511bcf16b10375bf6822e63e04518225af",
+      "before": "Minister: The Prince has gone to the western city. Many learned scholars live there.\n\nMinister: I do hope he finds a clue...",
+      "after": "Minister: The Prince has gone to the western city.\n\nMinister: Many learned scholars live there. I hope he finds a clue...",
+      "reason": "Native page review: retain the Japanese facts and voice while avoiding an isolated fragment page or very short continuation line. Minister information is grouped into two complete pages.",
+      "reviewer": "Codex; bilingual and native-page review",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-0.2a54",
+      "source_sha256": "f8cbf2b7552f388211e40f82d38f7054fd59585d607db13042fe29d937740d43",
+      "before": "Soldier: I joined the castle guard because I look up to the Prince.\n\nSoldier: I want to be just as cool as he is!",
+      "after": "Soldier: I joined the castle guard because I look up to the Prince.\n\nSoldier: I want to be as cool as him!",
+      "reason": "Native page review: retain the Japanese facts and voice while avoiding an isolated fragment page or very short continuation line. Minister information is grouped into two complete pages.",
+      "reviewer": "Codex; bilingual and native-page review",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_acceptance_report": "build/english/castle-conversations-validation/report.json"
+}

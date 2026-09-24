@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private stumbling-trap table literals; original item shuffle/drop/placement/breaking logic retained. Ordinary trap discovery, arbitrary terrain and contained pot contents remain separate.",
+  "entries": [
+    {
+      "id": "stumble-trap.32c",
+      "table_offset": 812,
+      "source": {
+        "offset": 406424,
+        "end_exclusive": 406448,
+        "raw_hex": "926e96ca82c9836683628370838a82aa82a082c182bd2100",
+        "sha256": "23792642ed1a45532975ed261e642c7b25a8a01831b8c62a98ebddfed980f65e",
+        "japanese": "地面にデッパリがあった!"
+      },
+      "english": "A bump in the floor!",
+      "status": "reviewed",
+      "review": "Independent bilingual T2 reading preserves the floor bump, staff preventing the fall, avoided harm and the dropped item becoming unusable. The last notice retains the complete formatted item field and the ground/loss outcome. Conditional wrapping preserves full meaning and normal selected-font spacing."
+    },
+    {
+      "id": "stumble-trap.330",
+      "table_offset": 816,
+      "source": {
+        "offset": 406392,
+        "end_exclusive": 406424,
+        "raw_hex": "82b582a982b5208ff182cc8cf889ca82c5935d82ce82b882c982b782f182be00",
+        "sha256": "45ee63038e600e9cb2d5b385343cd212f1baf2ce61ecadea8c0b3bfcdd1075a2",
+        "japanese": "しかし 杖の効果で転ばずにすんだ"
+      },
+      "english": "But your staff prevented a fall.",
+      "status": "reviewed",
+      "review": "Independent bilingual T2 reading preserves the floor bump, staff preventing the fall, avoided harm and the dropped item becoming unusable. The last notice retains the complete formatted item field and the ground/loss outcome. Conditional wrapping preserves full meaning and normal selected-font spacing."
+    },
+    {
+      "id": "stumble-trap.328",
+      "table_offset": 808,
+      "source": {
+        "offset": 406448,
+        "end_exclusive": 406478,
+        "raw_hex": "82b582a982b52082bd82a282b582bd82b182c682cd82c882a982c182bd00",
+        "sha256": "b1e982ebc6f835ef5b415281df8ab64ed96db4d98b46fd5140930929dd0eaaf5",
+        "japanese": "しかし たいしたことはなかった"
+      },
+      "english": "But it wasn't too bad.",
+      "status": "reviewed",
+      "review": "Independent bilingual T2 reading preserves the floor bump, staff preventing the fall, avoided harm and the dropped item becoming unusable. The last notice retains the complete formatted item field and the ground/loss outcome. Conditional wrapping preserves full meaning and normal selected-font spacing."
+    },
+    {
+      "id": "stumble-trap.1d0",
+      "table_offset": 464,
+      "source": {
+        "offset": 408396,
+        "end_exclusive": 408439,
+        "raw_hex": "257382cd20926e96ca82c982a882bf82c40d8e6782a282e082cc82c982c882e782c882ad82c882c182bd00",
+        "sha256": "23b907061074e1ad89d4cef5506bd441d3b1664fd4a3bfac2ab93791e6a8177d",
+        "japanese": "%{unclassified-control:73}は 地面におちて\n使いものにならなくなった"
+      },
+      "english": "{item} {fit}hit the ground and was ruined.",
+      "status": "reviewed",
+      "review": "Independent bilingual T2 reading preserves the floor bump, staff preventing the fall, avoided harm and the dropped item becoming unusable. The last notice retains the complete formatted item field and the ground/loss outcome. Conditional wrapping preserves full meaning and normal selected-font spacing.",
+      "prose_review": {
+        "previous_english": "{item} {fit}fell to the ground and became unusable.",
+        "revision": "{item} {fit}hit the ground and was ruined.",
+        "reason": "Second bilingual edit keeps the item hitting the ground and becoming unusable. Natural wording permits the ordinary Life herb field to stay on one line; wide and maximum-byte fields retain the verified conditional fallback. No item identity or loss outcome is omitted."
+      }
+    }
+  ]
+}

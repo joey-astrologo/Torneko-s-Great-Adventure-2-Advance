@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "stage": "dedicated bilingual review and native insertion acceptance complete for the first home/village batch",
+  "entries": [
+    {
+      "id": "event-bank-1.0400",
+      "source_sha256": "1e833058e6ba7382c1fd294a850d5dca0865c2aed7c9baded05ecee7e3beca9a",
+      "japanese": "ネネ「そう・・・。\n　やっぱり王様も　お気づきだったのね。\nネネ「モンスターも前より\n　キョウボウになってるって聞くし・・・。\nネネ「あなたも気をつけてね。\n\nネネ「そうそう　言い忘れてたわ。\n\nネネ「あなたが　お城に行ってるあいだに\n　倉庫が　こわれちゃったの。\nネネ「大工のエドさんに修理を\n　たのんでおいたんだけど\nネネ「しばらくは　ガマンしてね。",
+      "english": "Tessie: I see... So the King has noticed it too.\n\nTessie: I've heard the monsters are fiercer than before... Do be careful, dear.\n\nTessie: Oh, there's something I forgot to tell you.\n\nTessie: The storehouse broke while you were at the castle.\n\nTessie: I've asked Ed the carpenter to repair it, but we'll have to manage without it for a while."
+    },
+    {
+      "id": "event-bank-1.0557",
+      "source_sha256": "eac1bb907dd48c1e9f1af89f6c80c7e1cfbfa989bf1aadf8a1279b1eb1194183",
+      "japanese": "ポポロ「ただいま～っ！",
+      "english": "Tipper: I'm ho-o-ome!"
+    },
+    {
+      "id": "event-bank-1.056e",
+      "source_sha256": "93591e67b47bd15196bdfa94d280909dff627d3f5904a9034ad6b06459156f20",
+      "japanese": "ネネ「ほら　となりの部屋の\n　カウンターの上の　３さつの本のことよ。\nネネ「左の本が　前に王様がくれた\n　{legacy-position:0306}冒険の１０の心得{unclassified-control:05}でしょ。\nネネ「まんなかが　{legacy-position:0306}冒険の書{unclassified-control:05}。\n　パパが　冒険の記録を残す本。\nネネ「それで　右の本が\n　パパの{legacy-position:0306}冒険のメモ{unclassified-control:05}じゃない。\nネネ「ポポロったら\n　いつも　まちがえるのよ。\nポポロ「だってえ～。\n\nネネ「あら　いけない！　もう　こんな時間。\n\nネネ「さあさあ　あなたも　つかれたでしょ。\n　今日はもう　やすみましょう。",
+      "english": "Tessie: He means the three books on the counter in the next room.\n\nTessie: The one on the left is {color:6}Ten Tips for Adventurers{/color}, the book the King gave us.\n\nTessie: The middle one is the {color:6}Adventure Log{/color}. That's where Dad records his adventures.\n\nTessie: And the one on the right is Dad's {color:6}Exploration Log{/color}.\n\nTessie: Honestly, Tipper. You always get them mixed up.\n\nTipper: But, Mum...\n\nTessie: Oh, goodness! Look at the time!\n\nTessie: You must be tired, dear. Let's get some rest."
+    },
+    {
+      "id": "event-bank-1.121e",
+      "source_sha256": "c85e89e5e49a03b318dfe70e771c0b06a795b56457bce60afecda8a853aafe50",
+      "japanese": "ネネ「それじゃ　あなた　いってらっしゃい⑮",
+      "english": "Tessie: Off you go, then, dear!{heart}"
+    },
+    {
+      "id": "event-bank-1.1249",
+      "source_sha256": "e92067c7ee97846f1ca02af0af16c644d0012ee1e7de6b2141044b0a28d4f152",
+      "japanese": "ポポロ「ぼく　広場に行って遊んでくる！",
+      "english": "Tipper: I'm going to play in the square!"
+    },
+    {
+      "id": "event-bank-1.128a",
+      "source_sha256": "8c03ae0827904c376a86b20ed4e30b5c65ce881e6dec1ed9d73be52c7171104f",
+      "japanese": "ポポロ「あ　パパっ！\n　もう　かえってきてたんだね！",
+      "english": "Tipper: Oh, Dad! You're back already!"
+    },
+    {
+      "id": "event-bank-1.12be",
+      "source_sha256": "f6c357ed05c9a930cfc767f2e8d0fc94851a2f618b228b5875962095bd68aebb",
+      "japanese": "ポポロ「ねえねえ　パパ。\n\nポポロ「カウンターの上の本って\n　どれが何だったっけ？",
+      "english": "Tipper: Hey, Dad!\n\nTipper: Which book on the counter is which again?"
+    },
+    {
+      "id": "event-bank-1.146e",
+      "source_sha256": "07d063e82ec2f75a5b10956563b3f7a1c95aa0c1012f671fdb079f251fc90cef",
+      "japanese": "＊「ひえ～っ！\n　モ　モ　モンスターだぁ～っ！",
+      "english": "???: Aaaagh! M-m-monsters!"
+    },
+    {
+      "id": "event-bank-1.149c",
+      "source_sha256": "8642c82eaa0fc13782c135373c69f18b9ed30bd471ec97cd5f849e4ee45e7ff5",
+      "japanese": "＊「せっかく　買ったっていうのに\n　何であの屋敷に　モンスターがぁ～？\n＊「ああ　どうしましょうったら\n　どうしましょう・・・。",
+      "english": "???: I've only just bought the place! Why are there monsters in that mansion?\n\n???: Oh, what am I going to do? What am I going to do...?"
+    },
+    {
+      "id": "event-bank-1.292e",
+      "source_sha256": "8ebc7fbae6d68d79c11cc3f24298fdee9d23fd625b31a7d5ca8721f0127838b3",
+      "japanese": "ポポロ「朝はやく　だれかが\n　おもてで　さわいでたよね。\nポポロ「ぼく　あれで目がさめちゃって・・・。\n\nポポロ「ふわ～あ。　まだ　ねむいや・・・。\n\nネネ「あの声は　銀行屋さんだわ。\n\nネネ「最近　村に銀行を作るんだって\n　広場のお屋敷を　買いとったんですって。\nネネ「ねえ　あなた。\n　ちょっと　見に行ってあげたら？",
+      "english": "Tipper: Someone was making a fuss outside really early this morning.\n\nTipper: They woke me up... Yaaawn. I'm still sleepy...\n\nTessie: That was the banker.\n\nTessie: He bought the mansion by the square. He's planning to open a bank here in the village.\n\nTessie: Would you go and see if he's all right, dear?"
+    },
+    {
+      "id": "event-bank-1.3622",
+      "source_sha256": "17ab8ec5816c2a0d31230d4703c0b18eccb1a1e922b31d135ea84363c21abd95",
+      "japanese": "エド「ヨッ　ダンナ。おひさしぶり！\n\nエド「エドモンド大工商会の　このエドが\n　みずから　倉庫の修理にうかがいやした。\nエド「えっ？　アイボウのモンドが\n　いないのが　気になりやすか？",
+      "english": "Ed: Hey, boss! Long time no see!\n\nEd: Ed of Ed & Mondo Carpentry, here to fix your storehouse in person!\n\nEd: Eh? Wondering where my partner Mondo's got to?"
+    },
+    {
+      "id": "event-bank-1.3790",
+      "source_sha256": "d298195b9ebc29c3cb2300392422b61078e360d45f11835c253678c8c6aeb63e",
+      "japanese": "エド「いえね。\n\nエド「今　あいつ　仕事で　ふるさとの\n　西の都に　かえってるんでさあ。\nエド「でも　心配いりやせんぜ。\n\nエド「こんなもん　アッシひとりでも\n　ヒョヒョイのヒョイでさあ。",
+      "english": "Ed: Well, you see...\n\nEd: He's back in his hometown, the western city, on a job.\n\nEd: Don't you worry, though. I'll have this fixed in a jiffy, all by myself!"
+    },
+    {
+      "id": "event-bank-1.3846",
+      "source_sha256": "47be813885c3536dd575ea9ba21f75729c1661efd99748710311403e2dbd79c2",
+      "japanese": "エド「そうスか。\n　アッシの考えすぎでやんしたね。",
+      "english": "Ed: Oh, right. Just me getting the wrong idea, then."
+    },
+    {
+      "id": "event-bank-1.388d",
+      "source_sha256": "8d62a39a19222ba0cb79f626e20983f79d120dc45abd00fec868f0921e8a9a37",
+      "japanese": "ウワサ好きのおばさん「西の都に\n　よばれるとは　モンドも　出世したもんだ。\nウワサ好きのおばさん「これも\n　しあわせの箱の　おかげかもしれないねぇ。",
+      "english": "Gossip: Called away to the western city, eh? Mondo's really going up in the world.\n\nGossip: Maybe that's the Joy Chest's doing too."
+    },
+    {
+      "id": "event-bank-1.4022",
+      "source_sha256": "8e764b267f494bb641481cf3cd35b0729ba21aba6f48fd3ac8cf85771bd667e7",
+      "japanese": "村人「広場のわきの屋敷を\n　買いとった人がいるらしいですよ。\n村人「でも　あそこも　さいきんは\n　モンスターが出るってウワサなんです。\n村人「だいじょうぶなんですかね？",
+      "english": "Villager: I hear someone's bought the mansion by the square.\n\nVillager: But they say monsters have been turning up there lately.\n\nVillager: Will they be all right?"
+    },
+    {
+      "id": "rom.0006c424",
+      "source_sha256": "5ec62135c3934beaa315f7ccdd2b9b4290010f70e2339cdc375b19b47b03d508",
+      "japanese": "{unclassified-control:0a}{unclassified-control:14}@A@{unclassified-control:7e}は{legacy-position:0305}%-{unclassified-control:6c}{unclassified-control:64}{unclassified-control:05}G手に入れた！{unclassified-control:0a}{unclassified-control:0a}",
+      "english": "{player}\ngot {color:5}{amount}{/color}G!"
+    },
+    {
+      "id": "rom.0014c8f4",
+      "source_sha256": "078694ae18fb5fa516583911a5335f85a53aa353a9979f9d2b8c5ccf8b99f4be",
+      "japanese": "ネネ「草原から持ちかえったアイテムは\n　お店で　売っておいたからね。\nネネ「はい　これがその代金よ。\n",
+      "english": "Tessie: I sold the items you brought back from the meadow in our shop.\n\nTessie: Here's the money they made."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "event-bank-1.0400",
+      "source_sha256": "1e833058e6ba7382c1fd294a850d5dca0865c2aed7c9baded05ecee7e3beca9a",
+      "before": "Tessie: I see... So the King has noticed it too.\n\nTessie: I've heard the monsters are fiercer than before... Do be careful, dear.\n\nTessie: Oh, there's something I forgot to tell you.\n\nTessie: The storehouse broke while you were at the castle.\n\nTessie: I've asked Ed the carpenter to repair it, but we'll have to manage without it for a while.",
+      "after": "Tessie: I see... So the King has noticed it too.\n\nTessie: I hear the monsters are fiercer than before...\n\nTessie: Please be careful, dear.\n\nTessie: Oh, there's something I forgot to tell you.\n\nTessie: Our storehouse was damaged while you were at the castle.\n\nTessie: I've asked Ed the carpenter to fix it.\n\nTessie: We'll have to do without it for a while.",
+      "reason": "Preserve Tessie's concern and the sequence: damage during the castle visit, Ed already asked, temporary loss of storage. Give the warning and repair consequence complete pages; 'was damaged' reads naturally for a building.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.0557",
+      "source_sha256": "eac1bb907dd48c1e9f1af89f6c80c7e1cfbfa989bf1aadf8a1279b1eb1194183",
+      "before": "Tipper: I'm ho-o-ome!",
+      "after": "Tipper: I'm ho-o-ome!",
+      "reason": "Stretch the homecoming greeting to convey Tipper's enthusiastic drawn-out ただいま, without adding story information.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.056e",
+      "source_sha256": "93591e67b47bd15196bdfa94d280909dff627d3f5904a9034ad6b06459156f20",
+      "before": "Tessie: He means the three books on the counter in the next room.\n\nTessie: The one on the left is {color:6}Ten Tips for Adventurers{/color}, the book the King gave us.\n\nTessie: The middle one is the {color:6}Adventure Log{/color}. That's where Dad records his adventures.\n\nTessie: And the one on the right is Dad's {color:6}Exploration Log{/color}.\n\nTessie: Honestly, Tipper. You always get them mixed up.\n\nTipper: But, Mum...\n\nTessie: Oh, goodness! Look at the time!\n\nTessie: You must be tired, dear. Let's get some rest.",
+      "after": "Tessie: He means the three books on the counter in the next room.\n\nTessie: On the left is {color:6}Ten Tips for Adventurers{/color}.\n\nTessie: That's the book the King gave us.\n\nTessie: In the middle is the {color:6}Adventure Log{/color}.\n\nTessie: Dad records his adventures in that one.\n\nTessie: And the one on the right is Dad's {color:6}Exploration Log{/color}.\n\nTessie: Honestly, Tipper. You always get them mixed up.\n\nTipper: But, Mum...\n\nTessie: Oh, goodness! Look at the time!\n\nTessie: You must be tired, dear. Let's get some rest.",
+      "reason": "Keep the three distinct books and their left/middle/right order, the King's gift, saving role, Tipper's whine and bedtime transition. Reuse Adventure Log; Exploration Log is a PS1 fallback with secondary identity evidence; Ten Tips for Adventurers is a provisional project title. Each title retains its original colour span, and sentences no longer leave isolated fragments on another page.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.121e",
+      "source_sha256": "c85e89e5e49a03b318dfe70e771c0b06a795b56457bce60afecda8a853aafe50",
+      "before": "Tessie: Off you go, then, dear!{heart}",
+      "after": "Tessie: Off you go, then, dear!{heart}",
+      "reason": "Warm send-off from Tessie. Preserve the actual heart glyph, not the misleading CP932 circled-15 display alias.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.1249",
+      "source_sha256": "e92067c7ee97846f1ca02af0af16c644d0012ee1e7de6b2141044b0a28d4f152",
+      "before": "Tipper: I'm going to play in the square!",
+      "after": "Tipper: I'm off to the square to play!",
+      "reason": "Natural childlike departure; retain the square and playing, without implying another destination.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.128a",
+      "source_sha256": "8c03ae0827904c376a86b20ed4e30b5c65ce881e6dec1ed9d73be52c7171104f",
+      "before": "Tipper: Oh, Dad! You're back already!",
+      "after": "Tipper: Oh, Dad! You're back already!",
+      "reason": "Keep the child's surprise that Dad is already home; Dad matches the existing modern family names and voice.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.12be",
+      "source_sha256": "f6c357ed05c9a930cfc767f2e8d0fc94851a2f618b228b5875962095bd68aebb",
+      "before": "Tipper: Hey, Dad!\n\nTipper: Which book on the counter is which again?",
+      "after": "Tipper: Hey, Dad!\n\nTipper: Which book on the counter is which again?",
+      "reason": "The child asks which counter book is which; 'again' conveys having forgotten, setting up Tessie's explanation.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.146e",
+      "source_sha256": "07d063e82ec2f75a5b10956563b3f7a1c95aa0c1012f671fdb079f251fc90cef",
+      "before": "???: Aaaagh! M-m-monsters!",
+      "after": "???: Aaaagh! M-m-monsters!",
+      "reason": "Preserve the startled scream and stammer. The source withholds the speaker's identity; do not label him Banker yet.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.149c",
+      "source_sha256": "8642c82eaa0fc13782c135373c69f18b9ed30bd471ec97cd5f849e4ee45e7ff5",
+      "before": "???: I've only just bought the place! Why are there monsters in that mansion?\n\n???: Oh, what am I going to do? What am I going to do...?",
+      "after": "???: I've only just bought that mansion!\n\n???: Why are there monsters in it?\n\n???: Oh, what am I going to do? What am I going to do...?",
+      "reason": "Retain the recent purchase, mansion, monsters and repeated panic. Split at a sentence boundary to avoid a page containing only 'mansion?'. Keep the speaker unidentified until Tessie identifies the voice.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.292e",
+      "source_sha256": "8ebc7fbae6d68d79c11cc3f24298fdee9d23fd625b31a7d5ca8721f0127838b3",
+      "before": "Tipper: Someone was making a fuss outside really early this morning.\n\nTipper: They woke me up... Yaaawn. I'm still sleepy...\n\nTessie: That was the banker.\n\nTessie: He bought the mansion by the square. He's planning to open a bank here in the village.\n\nTessie: Would you go and see if he's all right, dear?",
+      "after": "Tipper: Someone was making a fuss outside really early this morning.\n\nTipper: They woke me up... Yaaawn. I'm still sleepy...\n\nTessie: That was the banker.\n\nTessie: He just bought the mansion by the square.\n\nTessie: He's planning to open a bank here in the village.\n\nTessie: Would you go and see if he's all right, dear?",
+      "reason": "Read with the preceding cries: Tessie now identifies the banker. Preserve the early waking/yawn, recent purchase and planned village bank. Do not imply it is already open; separate the purchase and plan into complete pages.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.3622",
+      "source_sha256": "17ab8ec5816c2a0d31230d4703c0b18eccb1a1e922b31d135ea84363c21abd95",
+      "before": "Ed: Hey, boss! Long time no see!\n\nEd: Ed of Ed & Mondo Carpentry, here to fix your storehouse in person!\n\nEd: Eh? Wondering where my partner Mondo's got to?",
+      "after": "Ed: Hey, boss! Long time no see!\n\nEd: Ed of Ed & Mondo Carpentry, here to fix your storehouse in person!\n\nEd: Eh? Wondering where my partner Mondo's got to?",
+      "reason": "Read with both native 1/0 answers: Ed asks whether Torneko is wondering about Mondo's absence. Keep the familiar craftsman's 'boss' voice, personal repair visit and Ed/Mondo company wordplay; company wording is a project choice, not claimed official.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.3790",
+      "source_sha256": "d298195b9ebc29c3cb2300392422b61078e360d45f11835c253678c8c6aeb63e",
+      "before": "Ed: Well, you see...\n\nEd: He's back in his hometown, the western city, on a job.\n\nEd: Don't you worry, though. I'll have this fixed in a jiffy, all by myself!",
+      "after": "Ed: Well, you see...\n\nEd: He's back in his hometown, the western city, on a job.\n\nEd: Don't you worry, though. I'll have this fixed in a jiffy, all by myself!",
+      "reason": "Yes branch explains that Mondo has returned to his hometown for work, not permanently left the company. Preserve Ed's breezy confidence that he can handle the repair alone.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.3846",
+      "source_sha256": "47be813885c3536dd575ea9ba21f75729c1661efd99748710311403e2dbd79c2",
+      "before": "Ed: Oh, right. Just me getting the wrong idea, then.",
+      "after": "Ed: Oh, right. Just me getting the wrong idea, then.",
+      "reason": "No branch acknowledges Ed's mistaken assumption that Torneko was concerned about Mondo; it does not refuse the repair.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.388d",
+      "source_sha256": "8d62a39a19222ba0cb79f626e20983f79d120dc45abd00fec868f0921e8a9a37",
+      "before": "Gossip: Called away to the western city, eh? Mondo's really going up in the world.\n\nGossip: Maybe that's the Joy Chest's doing too.",
+      "after": "Gossip: Mondo's been called to the western city!\n\nGossip: He's going up in the world.\n\nGossip: Maybe that's the Joy Chest's doing too.",
+      "reason": "Preserve being called to the city as a sign of success and the speculative link to the Joy Chest. Use a generic role label and a provisional descriptive city rendering, not an invented named location; avoid a page fragment.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "event-bank-1.4022",
+      "source_sha256": "8e764b267f494bb641481cf3cd35b0729ba21aba6f48fd3ac8cf85771bd667e7",
+      "before": "Villager: I hear someone's bought the mansion by the square.\n\nVillager: But they say monsters have been turning up there lately.\n\nVillager: Will they be all right?",
+      "after": "Villager: I hear someone's bought the mansion by the square.\n\nVillager: But they say monsters have been turning up there lately.\n\nVillager: Will they be all right?",
+      "reason": "Retain hearsay about the mansion purchase and recent monsters, ending in concern for the purchaser. No claim that the monsters have already been removed.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "rom.0006c424",
+      "source_sha256": "5ec62135c3934beaa315f7ccdd2b9b4290010f70e2339cdc375b19b47b03d508",
+      "before": "{player}\ngot {color:5}{amount}{/color}G!",
+      "after": "{player}\ngot {color:5}{amount}{/color}G!",
+      "reason": "Concise two-row acquisition notice. Preserve the actual native %-ld amount, player substitution, gold unit and colour; never hard-code the observed 100. Layout is one byte shorter than the original template for any identical amount.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "rom.0014c8f4",
+      "source_sha256": "078694ae18fb5fa516583911a5335f85a53aa353a9979f9d2b8c5ccf8b99f4be",
+      "before": "Tessie: I sold the items you brought back from the meadow in our shop.\n\nTessie: Here's the money they made.",
+      "after": "Tessie: I sold the items you brought back from the meadow in our shop.\n\nTessie: Here's the money they made.",
+      "reason": "Tessie already sold the items brought back from the meadow; these are proceeds, not an invented reward or sale price. Keep the connected money notification separate and dynamic.",
+      "reviewer": "Codex; separate bilingual editorial pass after drafting, same assistant",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_acceptance_report": "build/english/home-validation/report.json",
+  "native_acceptance_date": "2026-09-14",
+  "screenshot_review": "Reviewed the complete evening/morning contact sheet, highlighted book names, heart, sale amount including longest-name/amount probes, and nearby NPC/choice captures. Same assistant; no independent human review claimed."
+}

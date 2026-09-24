@@ -1,0 +1,167 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Nine owned literal consumers inside native history CPU08056E04; no record/save format changes.",
+  "entries": [
+    {
+      "id": "history.empty",
+      "literal": 355968,
+      "source": {
+        "offset": 451532,
+        "end_exclusive": 451557,
+        "raw_hex": "974c8cf882c88366815b835e82cd82a082e882dc82b982f100",
+        "sha256": "44ad9330fda26f5810e947b335e942858327c0495b761938f32073b2e856a93d",
+        "japanese": "有効なデータはありません"
+      },
+      "english": "No valid records.",
+      "fields": [],
+      "budget": 144,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.heading",
+      "literal": 356188,
+      "source": {
+        "offset": 451560,
+        "end_exclusive": 451571,
+        "raw_hex": "836e834383588352834100",
+        "sha256": "ebf3f371a838b0611a912bc20c75116260d6671a21a48b89e52af6a337f7543d",
+        "japanese": "ハイスコア"
+      },
+      "english": "High score",
+      "fields": [],
+      "budget": 56,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.rank",
+      "literal": 356200,
+      "source": {
+        "offset": 451572,
+        "end_exclusive": 451578,
+        "raw_hex": "25336488ca00",
+        "sha256": "b7116e4cd376873bf245bdcfe7f189838b80cba8b07bd2ebdafe6b4e43bf3837",
+        "japanese": "%3{unclassified-control:64}位"
+      },
+      "english": "Rank {rank}",
+      "fields": [
+        "rank"
+      ],
+      "budget": 72,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.score",
+      "literal": 356204,
+      "source": {
+        "offset": 451580,
+        "end_exclusive": 451587,
+        "raw_hex": "25386c64935f00",
+        "sha256": "cbd57b72bb3d4274f1bb114bae3485dd34f96d3218fca39d2acf9f65785b0fe0",
+        "japanese": "%8{unclassified-control:6c}{unclassified-control:64}点"
+      },
+      "english": "{score} pts",
+      "fields": [
+        "score"
+      ],
+      "budget": 108,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.depths",
+      "literal": 356208,
+      "source": {
+        "offset": 451588,
+        "end_exclusive": 451595,
+        "raw_hex": "899c905b82ad00",
+        "sha256": "08cafe838bf848e8110344964580dc4aab9987fee5a699332e4bb637b1616e04",
+        "japanese": "奥深く"
+      },
+      "english": "Depths",
+      "fields": [],
+      "budget": 44,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.floor",
+      "literal": 356320,
+      "source": {
+        "offset": 451596,
+        "end_exclusive": 451601,
+        "raw_hex": "2533644600",
+        "sha256": "f1e4a35a6339ae60f8914a90bf46d62aabef3742128d432203afa5e9c7f622de",
+        "japanese": "%3{unclassified-control:64}F"
+      },
+      "english": "{floor}F",
+      "fields": [
+        "floor"
+      ],
+      "budget": 44,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.stats",
+      "literal": 356792,
+      "source": {
+        "offset": 451608,
+        "end_exclusive": 451648,
+        "raw_hex": "030748503a03052564044003074c4556454c3a030525640496030782bf82a982e73a030525640d00",
+        "sha256": "c62a0c89a1fb55b7e9cdf78c55645253c0510edd8fed037d7c822023cb272c3a",
+        "japanese": "{legacy-position:0307}HP:{legacy-position:0305}%{unclassified-control:64}{legacy-x:0440}{legacy-position:0307}LEVEL:{legacy-position:0305}%{unclassified-control:64}{legacy-x:0496}{legacy-position:0307}ちから:{legacy-position:0305}%{unclassified-control:64}\n"
+      },
+      "english": "{white}HP: {cyan}{hp}  {white}Level: {cyan}{level}  {white}Strength: {cyan}{strength}\n",
+      "fields": [
+        "hp",
+        "level",
+        "strength"
+      ],
+      "budget": 224,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.wealth",
+      "literal": 356796,
+      "source": {
+        "offset": 451648,
+        "end_exclusive": 451669,
+        "raw_hex": "03074558503a0305256c640486256c640307470d00",
+        "sha256": "c178533ed76b9c120fc2443f706d94d7108ad06946a229a1534678ffeb4fbd21",
+        "japanese": "{legacy-position:0307}EXP:{legacy-position:0305}%{unclassified-control:6c}{unclassified-control:64}{legacy-x:0486}%{unclassified-control:6c}{unclassified-control:64}{legacy-position:0307}G\n"
+      },
+      "english": "{white}EXP: {cyan}{exp}  {gold}{white}G\n",
+      "fields": [
+        "exp",
+        "gold"
+      ],
+      "budget": 224,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    },
+    {
+      "id": "history.time",
+      "literal": 356804,
+      "source": {
+        "offset": 451672,
+        "end_exclusive": 451703,
+        "raw_hex": "03052564030789f104400305256c6403078e9e8ad40305256c64030795aa00",
+        "sha256": "5d8b07342e2a9a4577af196aa6d8d2d469b1405cb51ecb7740bbce3d5fb0237b",
+        "japanese": "{legacy-position:0305}%{unclassified-control:64}{legacy-position:0307}回{legacy-x:0440}{legacy-position:0305}%{unclassified-control:6c}{unclassified-control:64}{legacy-position:0307}時間{legacy-position:0305}%{unclassified-control:6c}{unclassified-control:64}{legacy-position:0307}分"
+      },
+      "english": "{white}Trip {cyan}{trip}  {hours}{white}h {cyan}{minutes}{white}m",
+      "fields": [
+        "trip",
+        "hours",
+        "minutes"
+      ],
+      "budget": 224,
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source review of the original high-score record UI. Preserve numeric argument order, score points, floor/depths, HP/level/strength, EXP/gold, adventure count and hours/minutes. Native writer confirms record+10 is maxHP, +12 adventure count, +18 maxstrength and +19 level. White labels/cyan values are retained. Compact English removes Japanese fixed padding while preserving the three original summary columns and all window geometry."
+    }
+  ]
+}

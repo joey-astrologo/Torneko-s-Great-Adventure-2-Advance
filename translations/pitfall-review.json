@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned pitfall handler and its separately traced delayed five-damage message. Native floor transition and HP logic retained; ordinary discovery/progression and death branches remain separate.",
+  "entries": [
+    {
+      "id": "pitfall.334",
+      "table_offset": 820,
+      "source": {
+        "offset": 406380,
+        "end_exclusive": 406392,
+        "raw_hex": "82a882c682b58c8a82be2100",
+        "sha256": "7eab0807210261d2a47df11ab25d3cab5a235fb9d4494becd03380212e6b27c3",
+        "japanese": "おとし穴だ!"
+      },
+      "english": "A pitfall!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves the pitfall, avoided harm and exact five-point damage acknowledgement. Complete static one-line messages. The delayed damage message belongs to the floor-transition caller, not the trap handler itself."
+    },
+    {
+      "id": "pitfall.328",
+      "table_offset": 808,
+      "source": {
+        "offset": 406448,
+        "end_exclusive": 406478,
+        "raw_hex": "82b582a982b52082bd82a282b582bd82b182c682cd82c882a982c182bd00",
+        "sha256": "b1e982ebc6f835ef5b415281df8ab64ed96db4d98b46fd5140930929dd0eaaf5",
+        "japanese": "しかし たいしたことはなかった"
+      },
+      "english": "But it wasn't too bad.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves the pitfall, avoided harm and exact five-point damage acknowledgement. Complete static one-line messages. The delayed damage message belongs to the floor-transition caller, not the trap handler itself."
+    },
+    {
+      "id": "pitfall.338",
+      "table_offset": 824,
+      "source": {
+        "offset": 406352,
+        "end_exclusive": 406380,
+        "raw_hex": "35837c83438393836782cc835f8381815b835782f08ef382af82bd00",
+        "sha256": "ddd1083de74c7c71d7cdbb65eec3c59601a8485a0c467b8a9c0bbb1643e0c57a",
+        "japanese": "5ポイントのダメージを受けた"
+      },
+      "english": "You took 5 damage.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves the pitfall, avoided harm and exact five-point damage acknowledgement. Complete static one-line messages. The delayed damage message belongs to the floor-transition caller, not the trap handler itself."
+    }
+  ]
+}

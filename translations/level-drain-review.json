@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned native monster level-drain formatter, including transformed and minimum-level branches. Resistance notice retains the existing static queue mapping.",
+  "entries": [
+    {
+      "id": "level-drain.ec",
+      "table_offset": 236,
+      "source": {
+        "offset": 410008,
+        "end_exclusive": 410031,
+        "raw_hex": "257382cd200d838c8378838b82aa89ba82aa82c182bd00",
+        "sha256": "3ca217db3003c2b11b33f32dc5dc775f8c0cab2632114763f5c486aba2585450",
+        "japanese": "%{unclassified-control:73}は \nレベルが下がった"
+      },
+      "english": "{player}'s level fell.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: The source reports a decrease in level without an amount; preserve that scope. Maximum seven-character Japanese or English player names fit the native line and256-byte buffer."
+    },
+    {
+      "id": "level-drain.904",
+      "table_offset": 2308,
+      "source": {
+        "offset": 394728,
+        "end_exclusive": 394751,
+        "raw_hex": "257382cc838c8378838b82cd95cf82ed82e782c882a200",
+        "sha256": "a2e311d667489edeeff5037781654acdfa35637b4a94e711fb6cfc0f7a3e6caa",
+        "japanese": "%{unclassified-control:73}のレベルは変わらない"
+      },
+      "english": "{player}'s level is unchanged.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: The transformation branch leaves the player level unchanged; no cause or immunity is invented. Maximum seven-character Japanese or English player names fit the native line and256-byte buffer. Edited did not change to is unchanged after the widest Japanese player field exceeded216px; meaning is retained."
+    },
+    {
+      "id": "level-drain.c8",
+      "table_offset": 200,
+      "source": {
+        "offset": 410232,
+        "end_exclusive": 410256,
+        "raw_hex": "82b582a982b52089bd82e08b4e82ab82c882a982c182bd00",
+        "sha256": "71b94a43565f07f34af0fe86babbf4e5ddf41e4ec1aef5a2133042111ce24d13",
+        "japanese": "しかし 何も起きなかった"
+      },
+      "english": "But nothing happened.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context bilingual review: The level-one branch has no effect; retain the contrast and complete no-effect meaning. Maximum seven-character Japanese or English player names fit the native line and256-byte buffer."
+    }
+  ]
+}

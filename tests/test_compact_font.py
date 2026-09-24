@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from tools.compact_font import ASSET, encode, load_font, measure
+from tools.compact_font import ASSET, COMPACT_ASSET, TORNEKO3_ASSET, encode, load_font, measure
 from tools.rom import load_base
 from tools.rom_build import RomBuild
 
@@ -35,18 +35,32 @@ class CompactFontTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "font.json"
             for mutate in (shape, width, ownership, coverage):
-                font = json.loads(ASSET.read_text())
+                font = json.loads(COMPACT_ASSET.read_text())
                 mutate(font)
                 path.write_text(json.dumps(font))
                 with self.subTest(mutation=mutate.__name__), self.assertRaises(ValueError):
                     load_font(path)
 
     def test_measure_requires_one_supported_line(self):
-        font = load_font()
-        self.assertEqual(measure(" Start adventure", font), 88)
+        font = load_font(COMPACT_ASSET)
+        self.assertEqual(measure(" Start adventure", font), 82)
         self.assertLess(measure("ill", font), measure("WWW", font))
         with self.assertRaises(ValueError):
             measure("first\nsecond", font)
+
+    def test_imported_font_preserves_original_ink_and_advances(self):
+        font = load_font(TORNEKO3_ASSET)
+        self.assertEqual(measure(' Start adventure',font),83)
+        self.assertEqual(measure('Unequip',font),34)
+        self.assertEqual(measure('Examine',font),37)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'font.json'
+            for field,value in [('advance',5),('origin','new'),('source_bitmap_hex','00'*72)]:
+                changed = json.loads(TORNEKO3_ASSET.read_text())
+                changed['glyphs']['A'][field] = value
+                path.write_text(json.dumps(changed))
+                with self.subTest(field=field),self.assertRaises(ValueError):
+                    load_font(path)
 
 
 class RomBuildTest(unittest.TestCase):

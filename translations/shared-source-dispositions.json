@@ -1,0 +1,445 @@
+{
+  "schema": 1,
+  "scope": "All 654 shared pointer slots accounted for as drafts or explicit dispositions. Aliases are not unique strings. Does not establish all-game extraction, native reachability or completed translation.",
+  "draft_catalog_sha256": "2f41b2df2585fbf8b70dc68affc25e237dd206973d28de94b0e4970948de19b8",
+  "entries": [
+    {
+      "table_offset": 0,
+      "pointer_offset": 1314152,
+      "source": {
+        "offset": 411892,
+        "end_exclusive": 411893,
+        "raw_hex": "00",
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+        "japanese": ""
+      },
+      "disposition": "empty-native-resource",
+      "notes": "Preserve terminator and prove consumer before reclassifying."
+    },
+    {
+      "table_offset": 4,
+      "pointer_offset": 1314156,
+      "source": {
+        "offset": 411880,
+        "end_exclusive": 411889,
+        "raw_hex": "010101010101010100",
+        "sha256": "3c11e27f72b0e3989976087d7f0c2ac01d5549ddd2ec31f01dc00b03d9b13303",
+        "japanese": "{style-on:01}{style-on:01}{style-on:01}{style-on:01}{style-on:01}{style-on:01}{style-on:01}{style-on:01}"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 8,
+      "pointer_offset": 1314160,
+      "source": {
+        "offset": 411856,
+        "end_exclusive": 411877,
+        "raw_hex": "874987408741874287438744874587468747874800",
+        "sha256": "f4bc56c86344fc7bb30e8339b1c45e2d6f49a060dff1f4264426d65bf6e03676",
+        "japanese": "⑩①②③④⑤⑥⑦⑧⑨"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 68,
+      "pointer_offset": 1314220,
+      "source": {
+        "offset": 411324,
+        "end_exclusive": 411571,
+        "raw_hex": "040e82a0042282a2043682a4044a82a6045e82a8048482cd049882d004ac82d304c082d604d482d90d040e82a9042282ab043682ad044a82af045e82b1048482dc049882dd04ac82de04c082df04d482e00d040e82b3042282b5043682b7044a82b9045e82bb048482e20498814004ac82e404c0814004d482e60d040e82bd042282bf043682c2044a82c4045e82c6048482e7049882e804ac82e904c082ea04d482eb0d040e82c8042282c9043682ca044a82cb045e82cc048482ed049882f004ac82f104c0814a04d4814b0d040e829f042282a1043682a3044a82a5045e82a7048482e1049882e304ac82e504c082c104d4815b0d00",
+        "sha256": "109547ab62a40a3e96a6dccd9829aae5f8b732c2923d0d8e1eb243f50342e0cd",
+        "japanese": "{legacy-x:040e}あ{legacy-x:0422}い{legacy-x:0436}う{legacy-x:044a}え{legacy-x:045e}お{legacy-x:0484}は{legacy-x:0498}ひ{legacy-x:04ac}ふ{legacy-x:04c0}へ{legacy-x:04d4}ほ\n{legacy-x:040e}か{legacy-x:0422}き{legacy-x:0436}く{legacy-x:044a}け{legacy-x:045e}こ{legacy-x:0484}ま{legacy-x:0498}み{legacy-x:04ac}む{legacy-x:04c0}め{legacy-x:04d4}も\n{legacy-x:040e}さ{legacy-x:0422}し{legacy-x:0436}す{legacy-x:044a}せ{legacy-x:045e}そ{legacy-x:0484}や{legacy-x:0498}　{legacy-x:04ac}ゆ{legacy-x:04c0}　{legacy-x:04d4}よ\n{legacy-x:040e}た{legacy-x:0422}ち{legacy-x:0436}つ{legacy-x:044a}て{legacy-x:045e}と{legacy-x:0484}ら{legacy-x:0498}り{legacy-x:04ac}る{legacy-x:04c0}れ{legacy-x:04d4}ろ\n{legacy-x:040e}な{legacy-x:0422}に{legacy-x:0436}ぬ{legacy-x:044a}ね{legacy-x:045e}の{legacy-x:0484}わ{legacy-x:0498}を{legacy-x:04ac}ん{legacy-x:04c0}゛{legacy-x:04d4}゜\n{legacy-x:040e}ぁ{legacy-x:0422}ぃ{legacy-x:0436}ぅ{legacy-x:044a}ぇ{legacy-x:045e}ぉ{legacy-x:0484}ゃ{legacy-x:0498}ゅ{legacy-x:04ac}ょ{legacy-x:04c0}っ{legacy-x:04d4}ー\n"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 72,
+      "pointer_offset": 1314224,
+      "source": {
+        "offset": 411076,
+        "end_exclusive": 411323,
+        "raw_hex": "040e83410422834304368345044a8347045e83490484836e0498837104ac837404c0837704d4837a0d040e834a0422834c0436834e044a8350045e83520484837d0498837e04ac838004c0838104d483820d040e83540422835604368358044a835a045e835c048483840498814004ac838604c0814004d483880d040e835e0422836004368363044a8365045e8367048483890498838a04ac838b04c0838c04d4838d0d040e83690422836a0436836b044a836c045e836d0484838f0498839204ac839304c0814a04d4814b0d040e83400422834204368344044a8346045e8348048483830498838504ac838704c0836204d4815b0d00",
+        "sha256": "67222e64d41940664f060daf97e3a7e20987b80d7b613b270e5e6616735b3a2f",
+        "japanese": "{legacy-x:040e}ア{legacy-x:0422}イ{legacy-x:0436}ウ{legacy-x:044a}エ{legacy-x:045e}オ{legacy-x:0484}ハ{legacy-x:0498}ヒ{legacy-x:04ac}フ{legacy-x:04c0}ヘ{legacy-x:04d4}ホ\n{legacy-x:040e}カ{legacy-x:0422}キ{legacy-x:0436}ク{legacy-x:044a}ケ{legacy-x:045e}コ{legacy-x:0484}マ{legacy-x:0498}ミ{legacy-x:04ac}ム{legacy-x:04c0}メ{legacy-x:04d4}モ\n{legacy-x:040e}サ{legacy-x:0422}シ{legacy-x:0436}ス{legacy-x:044a}セ{legacy-x:045e}ソ{legacy-x:0484}ヤ{legacy-x:0498}　{legacy-x:04ac}ユ{legacy-x:04c0}　{legacy-x:04d4}ヨ\n{legacy-x:040e}タ{legacy-x:0422}チ{legacy-x:0436}ツ{legacy-x:044a}テ{legacy-x:045e}ト{legacy-x:0484}ラ{legacy-x:0498}リ{legacy-x:04ac}ル{legacy-x:04c0}レ{legacy-x:04d4}ロ\n{legacy-x:040e}ナ{legacy-x:0422}ニ{legacy-x:0436}ヌ{legacy-x:044a}ネ{legacy-x:045e}ノ{legacy-x:0484}ワ{legacy-x:0498}ヲ{legacy-x:04ac}ン{legacy-x:04c0}゛{legacy-x:04d4}゜\n{legacy-x:040e}ァ{legacy-x:0422}ィ{legacy-x:0436}ゥ{legacy-x:044a}ェ{legacy-x:045e}ォ{legacy-x:0484}ャ{legacy-x:0498}ュ{legacy-x:04ac}ョ{legacy-x:04c0}ッ{legacy-x:04d4}ー\n"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 108,
+      "pointer_offset": 1314260,
+      "source": {
+        "offset": 410868,
+        "end_exclusive": 410879,
+        "raw_hex": "874f875087518752875300",
+        "sha256": "e8623e997907f7d36a882598996ab50d1500c420562301d4f15875a5b3204683",
+        "japanese": "⑯⑰⑱⑲⑳"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 112,
+      "pointer_offset": 1314264,
+      "source": {
+        "offset": 410824,
+        "end_exclusive": 410867,
+        "raw_hex": "874f87558756875787588759875a875b875c875d875f87608761876287638764876c876d876e876f877000",
+        "sha256": "337a024554394d3ed3902952c06342f50ae5dcdf314357ccfea63821a04f4c02",
+        "japanese": "⑯ⅡⅢⅣⅤⅥⅦⅧⅨⅩ㍉㌔㌢㍍㌘㌧㌫㍊㌻㎜㎝"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 412,
+      "pointer_offset": 1314564,
+      "source": {
+        "offset": 408800,
+        "end_exclusive": 408836,
+        "raw_hex": "257382c90d2564837c83438393836782cc835f8381815b835782f082a082bd82a682bd00",
+        "sha256": "40424f0d3beed34f94e26ba02b0e200eebfa3dfe1d93250957adefce354f8d3d",
+        "japanese": "%{unclassified-control:73}に\n%{unclassified-control:64}ポイントのダメージをあたえた"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.19c"
+    },
+    {
+      "table_offset": 416,
+      "pointer_offset": 1314568,
+      "source": {
+        "offset": 408760,
+        "end_exclusive": 408800,
+        "raw_hex": "257382f082e282c182c282af82bd0d2564837c83438393836782cc8c6f8cb1926c82f082a682bd00",
+        "sha256": "df4a2f84ee9257c1f778967c3363636016cf9d1a3f7e21b18b3b00b414fe8a24",
+        "japanese": "%{unclassified-control:73}をやっつけた\n%{unclassified-control:64}ポイントの経験値をえた"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1a0"
+    },
+    {
+      "table_offset": 420,
+      "pointer_offset": 1314572,
+      "source": {
+        "offset": 408732,
+        "end_exclusive": 408759,
+        "raw_hex": "09257382cd838c8378838b256482c90e064e8fe382aa82c182bd00",
+        "sha256": "7649200a519f657187425267482b527c2c8c57ce3133408e1cc0e482072c1b9d",
+        "japanese": "{tab:09}%{unclassified-control:73}はレベル%{unclassified-control:64}に{fit-next:0e064e}上がった"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1a4"
+    },
+    {
+      "table_offset": 424,
+      "pointer_offset": 1314576,
+      "source": {
+        "offset": 408684,
+        "end_exclusive": 408732,
+        "raw_hex": "89ef905382cc88ea8c822120257382c90d2564837c83438393836782cc835f8381815b835782f082a082bd82a682bd00",
+        "sha256": "5725f825851f1bfcb43fc09990d6ac3c7a0b550b0fa967423b4b6eaea1fa89fb",
+        "japanese": "会心の一撃! %{unclassified-control:73}に\n%{unclassified-control:64}ポイントのダメージをあたえた"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1a8"
+    },
+    {
+      "table_offset": 436,
+      "pointer_offset": 1314588,
+      "source": {
+        "offset": 408576,
+        "end_exclusive": 408583,
+        "raw_hex": "257382a982e700",
+        "sha256": "1484bc7bc93909805bfb5c80190dcc3e15b83929af3f462e74abaec0f44a4809",
+        "japanese": "%{unclassified-control:73}から"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1b4"
+    },
+    {
+      "table_offset": 440,
+      "pointer_offset": 1314592,
+      "source": {
+        "offset": 408552,
+        "end_exclusive": 408575,
+        "raw_hex": "82c282a482b182f182cc88ea8c822120257382a982e700",
+        "sha256": "fdf56dc96cf9fd39ac2fd9c27e594d9c1373e54d145d6c7b3e9bc5849df2f71b",
+        "japanese": "つうこんの一撃! %{unclassified-control:73}から"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1b8"
+    },
+    {
+      "table_offset": 444,
+      "pointer_offset": 1314596,
+      "source": {
+        "offset": 408524,
+        "end_exclusive": 408550,
+        "raw_hex": "257382cd838c8378838b256482c90e054e8fe382aa82c182bd00",
+        "sha256": "7d9a89d6e8b596488a46373b05166a3f89aca80512570e6498e0aed280d2e4e8",
+        "japanese": "%{unclassified-control:73}はレベル%{unclassified-control:64}に{fit-next:0e054e}上がった"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1bc"
+    },
+    {
+      "table_offset": 448,
+      "pointer_offset": 1314600,
+      "source": {
+        "offset": 408504,
+        "end_exclusive": 408522,
+        "raw_hex": "257382cd2082bf82a982e782c282ab82bd00",
+        "sha256": "9192e29a29cc0aa512b9f3c82c6ef10caf0276e7139daca9ae0b73f6ed0935bd",
+        "japanese": "%{unclassified-control:73}は ちからつきた"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1c0"
+    },
+    {
+      "table_offset": 452,
+      "pointer_offset": 1314604,
+      "source": {
+        "offset": 408472,
+        "end_exclusive": 408501,
+        "raw_hex": "2564837c83438393836782cc835f8381815b835782f08ef382af82bd00",
+        "sha256": "85c623d14c8ff60b37cd407b1a2421c6460fcaf1c88ae5f6f2ab3227f259a978",
+        "japanese": "%{unclassified-control:64}ポイントのダメージを受けた"
+      },
+      "disposition": "reviewed-core-combat",
+      "catalog": "translations/combat-review.json",
+      "id": "combat.1c4"
+    },
+    {
+      "table_offset": 1236,
+      "pointer_offset": 1315388,
+      "source": {
+        "offset": 403492,
+        "end_exclusive": 403496,
+        "raw_hex": "33303900",
+        "sha256": "902a51000445824d2217af0362201b46b2fc3bd77ebe84661e9e6b1a228efafe",
+        "japanese": "309"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1368,
+      "pointer_offset": 1315520,
+      "source": {
+        "offset": 401644,
+        "end_exclusive": 401648,
+        "raw_hex": "33343200",
+        "sha256": "97324ed3d44ac6ee2d0b20c657051d8162ae2dafc3a7a16f81a4deaeacdd6205",
+        "japanese": "342"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1376,
+      "pointer_offset": 1315528,
+      "source": {
+        "offset": 401572,
+        "end_exclusive": 401576,
+        "raw_hex": "33343400",
+        "sha256": "5cb516d80ed0a7cd8968afb2afeb43a63099c5ec391211b42fca71b25c6c55d6",
+        "japanese": "344"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1408,
+      "pointer_offset": 1315560,
+      "source": {
+        "offset": 401148,
+        "end_exclusive": 401152,
+        "raw_hex": "33353200",
+        "sha256": "4a2f278545beac1f0b07e156a3b7f1a282bed51e481fd66b5365b77d69e8c18b",
+        "japanese": "352"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1440,
+      "pointer_offset": 1315592,
+      "source": {
+        "offset": 411892,
+        "end_exclusive": 411893,
+        "raw_hex": "00",
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+        "japanese": ""
+      },
+      "disposition": "empty-native-resource",
+      "notes": "Preserve terminator and prove consumer before reclassifying."
+    },
+    {
+      "table_offset": 1568,
+      "pointer_offset": 1315720,
+      "source": {
+        "offset": 399732,
+        "end_exclusive": 399736,
+        "raw_hex": "33393200",
+        "sha256": "a039bcb93afec66a8fb95feb50d5d1f06edfee4664bc32d0d09cab2e7cbb75ea",
+        "japanese": "392"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1572,
+      "pointer_offset": 1315724,
+      "source": {
+        "offset": 399728,
+        "end_exclusive": 399732,
+        "raw_hex": "33393300",
+        "sha256": "7044c6d9480a5c91b98f39e1fdd55e8ff620a1af574481439dfd16ad54eb26ab",
+        "japanese": "393"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1576,
+      "pointer_offset": 1315728,
+      "source": {
+        "offset": 399724,
+        "end_exclusive": 399728,
+        "raw_hex": "33393400",
+        "sha256": "4e0de9ea72a6d7f7a2e21bd3e103aff630efb54f6376bb6d559aaa446876afc4",
+        "japanese": "394"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1708,
+      "pointer_offset": 1315860,
+      "source": {
+        "offset": 398896,
+        "end_exclusive": 398900,
+        "raw_hex": "34323700",
+        "sha256": "0dc9ccd8adcd2f0eb20aae713b77974d531a01a71de73435e041cb1ed2c1ef6b",
+        "japanese": "427"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 1736,
+      "pointer_offset": 1315888,
+      "source": {
+        "offset": 398776,
+        "end_exclusive": 398780,
+        "raw_hex": "34333400",
+        "sha256": "1df5efb82c4a614bc679955cfc090823bf50a90099215d0ba06e0f0031dba2bd",
+        "japanese": "434"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 2040,
+      "pointer_offset": 1316192,
+      "source": {
+        "offset": 411892,
+        "end_exclusive": 411893,
+        "raw_hex": "00",
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+        "japanese": ""
+      },
+      "disposition": "empty-native-resource",
+      "notes": "Preserve terminator and prove consumer before reclassifying."
+    },
+    {
+      "table_offset": 2076,
+      "pointer_offset": 1316228,
+      "source": {
+        "offset": 396004,
+        "end_exclusive": 396008,
+        "raw_hex": "35313900",
+        "sha256": "62018b910cc075f57e50cd05f4b0a8dbc18c87fe99de774447e045bca4567208",
+        "japanese": "519"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 2080,
+      "pointer_offset": 1316232,
+      "source": {
+        "offset": 396000,
+        "end_exclusive": 396004,
+        "raw_hex": "35323000",
+        "sha256": "0b779ba5487e5eaf24101781a0c6a2eccd50134b7004bc113ecc679412a35437",
+        "japanese": "520"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 2084,
+      "pointer_offset": 1316236,
+      "source": {
+        "offset": 395996,
+        "end_exclusive": 396000,
+        "raw_hex": "35323100",
+        "sha256": "e23563c6eec28b7fa756bf5157a7f895cd6c24e513b4791a168c63c261738a18",
+        "japanese": "521"
+      },
+      "disposition": "numeric-source-marker-needs-reachability-review",
+      "notes": "Source is a numeric marker, not a translated sentence. Possible retained/debug material; no claim of dead code without consumer proof."
+    },
+    {
+      "table_offset": 2228,
+      "pointer_offset": 1316380,
+      "source": {
+        "offset": 395120,
+        "end_exclusive": 395129,
+        "raw_hex": "874f87718772877300",
+        "sha256": "e39915be02099d5b7493fc5ffa937aa9504344b06e962210d512cf3258b4c6dd",
+        "japanese": "⑯㎞㎎㎏"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    },
+    {
+      "table_offset": 2456,
+      "pointer_offset": 1316608,
+      "source": {
+        "offset": 411892,
+        "end_exclusive": 411893,
+        "raw_hex": "00",
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+        "japanese": ""
+      },
+      "disposition": "empty-native-resource",
+      "notes": "Preserve terminator and prove consumer before reclassifying."
+    },
+    {
+      "table_offset": 2528,
+      "pointer_offset": 1316680,
+      "source": {
+        "offset": 393464,
+        "end_exclusive": 393534,
+        "raw_hex": "040e31042232043633044a34045e3504843604983704ac3804c03904d4300d040e2b04222d04368148044a21045e815e04848160049881a804ac816d04c0816e04d481400d00",
+        "sha256": "defe7e9f7c8863580e49e479a8c88113153d40b841697987dc1e3be1f0fadb85",
+        "japanese": "{legacy-x:040e}1{legacy-x:0422}2{legacy-x:0436}3{legacy-x:044a}4{legacy-x:045e}5{legacy-x:0484}6{legacy-x:0498}7{legacy-x:04ac}8{legacy-x:04c0}9{legacy-x:04d4}0\n{legacy-x:040e}+{legacy-x:0422}-{legacy-x:0436}？{legacy-x:044a}!{legacy-x:045e}／{legacy-x:0484}～{legacy-x:0498}→{legacy-x:04ac}［{legacy-x:04c0}］{legacy-x:04d4}　\n"
+      },
+      "disposition": "control-or-character-table-needs-consumer-review",
+      "notes": "Not standalone prose. Native glyph identity, controls or keyboard mapping require separate handling; CP932 symbol labels are not reliable visual identities."
+    }
+  ]
+}

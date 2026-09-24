@@ -86,6 +86,19 @@ class ResearchToolsTest(unittest.TestCase):
                 self.assertEqual(783, session.core.frame_counter)
                 self.assertEqual([0x080000C0], [event["address"] for event in trace.events])
 
+    def test_combined_buttons_reach_native_key_register_and_release(self):
+        with tempfile.TemporaryDirectory() as directory, Session(self.rom, directory) as session:
+            session.frames(600)
+            sampled = []
+            with Debugger(session, lambda event: sampled.append(event['registers'][1] & 3)) as trace:
+                # Native ldrh at 08000F00 has just read KEYINPUT into r1.
+                # Reading the watched I/O address from a watch callback recurses.
+                trace.breakpoint(0x08000F02)
+                session.press(('A', 'B'), hold=3, wait=3)
+            self.assertIn(0, sampled)  # GBA KEYINPUT is active-low: both held.
+            self.assertEqual(sampled[-1], 3)
+            self.assertEqual(session.inputs[-1]['keys'], ['A', 'B'])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "selection-prompt.which",
+      "table_offset": 20,
+      "source": {
+        "offset": 411820,
+        "end_exclusive": 411827,
+        "raw_hex": "82c782ea82f000",
+        "sha256": "4c539f9761eddc33d6ff40cd784ab0f15eb24fc937b08671fafc712181ed4995",
+        "japanese": "どれを"
+      },
+      "english": "Which?",
+      "status": "reviewed",
+      "review": "Japanese dore o asks which item to select. Which? preserves the prompt within the original40px header region;33px in selected T2 font. Applies only to the header reader inside0801DD5C, through its private table literal. Other original shared-table readers remain unchanged."
+    }
+  ]
+}

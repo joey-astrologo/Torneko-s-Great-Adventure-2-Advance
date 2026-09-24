@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private monster fullness-drain, player spell-sealing and monster Kaclang announcements. Original effect helpers, fixed-point rounding, status values and resistance branches are preserved.",
+  "entries": [
+    {
+      "id": "monster-condition.2c4",
+      "table_offset": 708,
+      "source": {
+        "offset": 406960,
+        "end_exclusive": 406979,
+        "raw_hex": "969e95a0937882aa256482c982c882c182bd00",
+        "sha256": "0f7d41f6e84b45e61af8143e7b271e0c840ef9890fcf87c3a510bd725a28f328",
+        "japanese": "満腹度が%{unclassified-control:64}になった"
+      },
+      "english": "Fullness is now {number}.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-consumer bilingual review: Report the resulting fullness, not the amount lost. The original does not insert a percent sign. Normal messages use one line where possible; complete maximum fields retain the approved font and buffer bounds."
+    },
+    {
+      "id": "monster-condition.418",
+      "table_offset": 1048,
+      "source": {
+        "offset": 404916,
+        "end_exclusive": 404938,
+        "raw_hex": "257382cd208ef495b682f0959582b682e782ea82bd00",
+        "sha256": "3a51e524fc8142cf2a3b9851916d5679d5ce826fb365895d7f0b846bfd3d56bd",
+        "japanese": "%{unclassified-control:73}は 呪文を封じられた"
+      },
+      "english": "{player} can't cast spells.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-consumer bilingual review: Preserve the inability to cast spells caused by sealing. No duration or named spell is invented. Normal messages use one line where possible; complete maximum fields retain the approved font and buffer bounds."
+    },
+    {
+      "id": "monster-condition.490",
+      "table_offset": 1168,
+      "source": {
+        "offset": 404032,
+        "end_exclusive": 404061,
+        "raw_hex": "257382cd0d834183588367838d83938ff391d482c982c882c182bd2100",
+        "sha256": "637f8e4aa7c92b769d4c1869ee33053a7423c0e8ca11de05e64ddd3e872d07c4",
+        "japanese": "%{unclassified-control:73}は\nアストロン状態になった!"
+      },
+      "english": "{actor} {fit}is under Kaclang!",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-consumer bilingual review: Preserve the named actor entering the Kaclang state. Do not claim they cast a spell or invent a duration. Normal messages use one line where possible; complete maximum fields retain the approved font and buffer bounds."
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned dungeon status, Option menu and child help/prompts; copied pointer tables isolate other consumers.",
+  "entries": [
+    {
+      "id": "option.0",
+      "source": 440104,
+      "source_hex": "03256391808dec90e096be0d00",
+      "source_sha256": "8f037d84c748722050fec9cf2dc8342765eb8541763178024d0ffdb49c6c9ba2",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}操作説明\n",
+      "english": "Controls",
+      "kind": "option",
+      "pointers": [
+        1343616
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563",
+      "suffix": false,
+      "newline": true
+    },
+    {
+      "id": "option.1",
+      "source": 440084,
+      "source_hex": "032563032563835483458393836825730d00",
+      "source_sha256": "5bfc5aea2ac5ef0a5bb2c233954a3aa41af05a5a41ed76c38ad43792e2972664",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}{legacy-position:0325}{unclassified-control:63}サウンド%{unclassified-control:73}\n",
+      "english": "Sound",
+      "kind": "option",
+      "pointers": [
+        1343620
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563032563",
+      "suffix": "onoff",
+      "newline": true
+    },
+    {
+      "id": "option.2",
+      "source": 440068,
+      "source_hex": "0325638ea993ae90558cfc25730d00",
+      "source_sha256": "0e60b4090c601343cd2b11fb6ff79fe554063db9cc7c4fadbb83a7bd0c270d05",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}自動振向%{unclassified-control:73}\n",
+      "english": "Auto turn",
+      "kind": "option",
+      "pointers": [
+        1343624
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563",
+      "suffix": "onoff",
+      "newline": true
+    },
+    {
+      "id": "option.3",
+      "source": 440052,
+      "source_hex": "032563837d8362837625730d00",
+      "source_sha256": "63b28bde7906f52258ba9365edfb5c7855111c14bdf880f4ed090501b6bd4095",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}マップ%{unclassified-control:73}\n",
+      "english": "Map",
+      "kind": "option",
+      "pointers": [
+        1343628
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563",
+      "suffix": "map",
+      "newline": true
+    },
+    {
+      "id": "option.4",
+      "source": 440036,
+      "source_hex": "03256396608caf82cc92868e7e0d00",
+      "source_sha256": "239e61d085ec9a4425e6fb3a039c3d5782fe84478d84b4676801f27dc11e9f5e",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}冒険の中止\n",
+      "english": "Give up",
+      "kind": "option",
+      "pointers": [
+        1343632
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563",
+      "suffix": false,
+      "newline": true
+    },
+    {
+      "id": "option.5",
+      "source": 440024,
+      "source_hex": "0325638358838a815b837600",
+      "source_sha256": "e2085d558866143261e044fe24b81c60bc52bce44dffe00440b9d0b3d5854167",
+      "japanese": "{legacy-position:0325}{unclassified-control:63}スリープ",
+      "english": "Sleep",
+      "kind": "option",
+      "pointers": [
+        1343636
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "prefix_hex": "032563",
+      "suffix": false,
+      "newline": false
+    },
+    {
+      "id": "toggle.0",
+      "source": 439884,
+      "source_hex": "044c204f4e20014f46460200",
+      "source_sha256": "a650b872ea23ef81858a73933f56fbb386de179d53ca0dc1dad1b601083c6fde",
+      "japanese": "{legacy-x:044c} ON {style-on:01}OFF{style-off:02}",
+      "english": [
+        "ON",
+        "OFF"
+      ],
+      "kind": "toggle",
+      "pointers": [
+        1343588
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "selected": 1,
+      "group": "onoff"
+    },
+    {
+      "id": "toggle.1",
+      "source": 439872,
+      "source_hex": "044c20014f4e02204f464600",
+      "source_sha256": "55523b17c093fa9d24af43a7294d57425195dfb2f92ace1fde319ccc2b3f0e42",
+      "japanese": "{legacy-x:044c} {style-on:01}ON{style-off:02} OFF",
+      "english": [
+        "ON",
+        "OFF"
+      ],
+      "kind": "toggle",
+      "pointers": [
+        1343592
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "selected": 0,
+      "group": "onoff"
+    },
+    {
+      "id": "toggle.2",
+      "source": 439924,
+      "source_hex": "044c20838d8362834e82a082e82001838d8362834e82c882b50200",
+      "source_sha256": "30c40b3bd3653c23e5cfe931783dad8faff5d320e375d87c5a9acf7b5d054600",
+      "japanese": "{legacy-x:044c} ロックあり {style-on:01}ロックなし{style-off:02}",
+      "english": [
+        "Lock",
+        "Free"
+      ],
+      "kind": "toggle",
+      "pointers": [
+        1343596
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "selected": 1,
+      "group": "map"
+    },
+    {
+      "id": "toggle.3",
+      "source": 439896,
+      "source_hex": "044c2001838d8362834e82a082e80220838d8362834e82c882b500",
+      "source_sha256": "9c68f42b4cd46b5c354ba0b8bf9757a7f9158c3d41ab3e459f2c2273b998f934",
+      "japanese": "{legacy-x:044c} {style-on:01}ロックあり{style-off:02} ロックなし",
+      "english": [
+        "Lock",
+        "Free"
+      ],
+      "kind": "toggle",
+      "pointers": [
+        1343600
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "selected": 0,
+      "group": "map"
+    },
+    {
+      "id": "status.0",
+      "source": 411024,
+      "source_hex": "939e924293780425632564042563969e95a0937804256325732f257300",
+      "source_sha256": "664619a706a84c9150499685d6cd30a1aa0e510d425d396999dffbc2eac55b89",
+      "japanese": "到達度{legacy-x:0425}{unclassified-control:63}%{unclassified-control:64}{legacy-x:0425}{unclassified-control:63}満腹度{legacy-x:0425}{unclassified-control:63}%{unclassified-control:73}/%{unclassified-control:73}",
+      "english": [
+        "Depth",
+        "Hunger"
+      ],
+      "kind": "status",
+      "pointers": [
+        1314232
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "middle_hex": "0425632564042563",
+      "end_hex": "04256325732f2573"
+    },
+    {
+      "id": "status.1",
+      "source": 410992,
+      "source_hex": "8c9582cc8bad82b3042563256404256382bf82a982e704256325732f257300",
+      "source_sha256": "736271a37a653346df0184c5cf3ff080854f1d3f9ecdec5fb32c160c42cdc166",
+      "japanese": "剣の強さ{legacy-x:0425}{unclassified-control:63}%{unclassified-control:64}{legacy-x:0425}{unclassified-control:63}ちから{legacy-x:0425}{unclassified-control:63}%{unclassified-control:73}/%{unclassified-control:73}",
+      "english": [
+        "Weapon",
+        "Strength"
+      ],
+      "kind": "status",
+      "pointers": [
+        1314236
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "middle_hex": "0425632564042563",
+      "end_hex": "04256325732f2573"
+    },
+    {
+      "id": "status.2",
+      "source": 410960,
+      "source_hex": "8f8282cc8bad82b30425630325632564050425638c6f8cb1926c042563256400",
+      "source_sha256": "708780331be15a1ab1813ebd4990660199158a296f621eab172452335fbdbc9e",
+      "japanese": "盾の強さ{legacy-x:0425}{unclassified-control:63}{legacy-position:0325}{unclassified-control:63}%{unclassified-control:64}{unclassified-control:05}{legacy-x:0425}{unclassified-control:63}経験値{legacy-x:0425}{unclassified-control:63}%{unclassified-control:64}",
+      "english": [
+        "Shield",
+        "XP"
+      ],
+      "kind": "status",
+      "pointers": [
+        1314240
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion.",
+      "middle_hex": "042563032563256405042563",
+      "end_hex": "0425632564"
+    },
+    {
+      "id": "ui.141458",
+      "source": 398524,
+      "source_hex": "8145915391cc837d83628376955c8ea682cd4c837b835e839300",
+      "source_sha256": "65385d3474423efb8646bac556649cd98158ef06c50dedb17401ed11491e5d06",
+      "japanese": "・全体マップ表示はLボタン",
+      "english": "Press L to view the full map.",
+      "kind": "plain",
+      "pointers": [
+        1315928
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.1416f0",
+      "source": 393952,
+      "source_hex": "8145834183438365838090ae979d82cd8358835e815b8367837b835e839300",
+      "source_sha256": "06461746bb6179228131259cb21b7ec9ca1f4f8c32feedc0b3b8bf3aa007b996",
+      "japanese": "・アイテム整理はスタートボタン",
+      "english": "Press START to sort your items.",
+      "kind": "plain",
+      "pointers": [
+        1316592
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.141468",
+      "source": 398388,
+      "source_hex": "81458d8291ac88da93ae82cd42837b835e83932b8f5c8e9a837b835e839300",
+      "source_sha256": "146ec94465f5d4cccb30afd1eb276f2b2e9aece4a8cee0432d1b51b64da4434e",
+      "japanese": "・高速移動はBボタン+十字ボタン",
+      "english": "Hold B + a direction to run.",
+      "kind": "plain",
+      "pointers": [
+        1315944
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.14146c",
+      "source": 398360,
+      "source_hex": "81458d8291ac89f1959c82cd41837b835e83932b42837b835e839300",
+      "source_sha256": "4e71db04e80a35b5dedab4e0359c1852f3a4b2d727223c6304795ef0a498fbf1",
+      "japanese": "・高速回復はAボタン+Bボタン",
+      "english": "Hold A + B to recover quickly.",
+      "kind": "plain",
+      "pointers": [
+        1315948
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.14145c",
+      "source": 398488,
+      "source_hex": "814583698369838182cd52837b835e839382f0899f82b582c882aa82e788da93ae00",
+      "source_sha256": "4734f06876433d8b9833e3d17f8f69419101d0332c81935464c3afa55406ba83",
+      "japanese": "・ナナメはRボタンを押しながら移動",
+      "english": "Hold R to move diagonally.",
+      "kind": "plain",
+      "pointers": [
+        1315932
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.141460",
+      "source": 398464,
+      "source_hex": "814582bb82cc8fea82c582cc95fb8cfc935d8ab782cd00",
+      "source_sha256": "9b2108c2f16a3ae45a50d64de3bc6328dd5cecd5c839c41fa8a53204ae140fd6",
+      "japanese": "・その場での方向転換は",
+      "english": "To turn without moving,",
+      "kind": "plain",
+      "pointers": [
+        1315936
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.141464",
+      "source": 398420,
+      "source_hex": "814052837b835e839382f082bf82e582c182c6899f82b582c482a982e78f5c8e9a837b835e839382c500",
+      "source_sha256": "5c538e964e47b271cdc4aa57a2677e30c68293989f495c0d30a4a671d4056027",
+      "japanese": "　Rボタンをちょっと押してから十字ボタンで",
+      "english": "tap R, then press a direction.",
+      "kind": "plain",
+      "pointers": [
+        1315940
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.141454",
+      "source": 398552,
+      "source_hex": "814596ee82f082a482c282cc82cd919594f582b582c48358835e815b83672b41837b835e839300",
+      "source_sha256": "c1d46c471c3602cf528336abb1b95f0bb7e480b17fe7d501e35f408fd7dd5b6d",
+      "japanese": "・矢をうつのは装備してスタート+Aボタン",
+      "english": "Equip arrows; press START + A to fire.",
+      "kind": "plain",
+      "pointers": [
+        1315924
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.141564",
+      "source": 396568,
+      "source_hex": "96608caf82f082a082ab82e782df82dc82b782a981480d0d82bd82be82b58e9d82c182c482a282e9834183438365838082cd0d82b782d782c482c882ad82c882c182c482b582dc82a282dc82b700",
+      "source_sha256": "c0de34305645a30a1e6eb26be7845cab384e1a098a7a4b7d1f451e1c83d66862",
+      "japanese": "冒険をあきらめますか？\n\nただし持っているアイテムは\nすべてなくなってしまいます",
+      "english": "Give up this adventure?\nYou will lose all carried items.",
+      "kind": "plain",
+      "pointers": [
+        1316196
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    },
+    {
+      "id": "ui.14179c",
+      "source": 392728,
+      "source_hex": "8358838a815b837682b582dc82b72093648cb982cd90d882e782c882a282c582ad82be82b382a20d412b535441525482c58cb382c996df82e882dc82b700",
+      "source_sha256": "535c0f65e5995127e5d8c9bc24ea4893e0484289ffc46e2c61c7466192a323f8",
+      "japanese": "スリープします 電源は切らないでください\nA+STARTで元に戻ります",
+      "english": "Enter sleep mode? Keep the power on.\nPress A + START to wake up.",
+      "kind": "plain",
+      "pointers": [
+        1316764
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-to-English review; preserve controls, mechanics and native selection order. Width and byte limits checked before insertion."
+    }
+  ]
+}

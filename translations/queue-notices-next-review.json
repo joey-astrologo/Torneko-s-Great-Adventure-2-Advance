@@ -1,0 +1,2592 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Closed source-pointer mapping in the existing owned dialogue queue. Only complete static notices with no dynamic fields or native controls. Original shared table and other readers are untouched; native queue tests and ordinary gameplay discovery are distinct.",
+  "entries": [
+    {
+      "id": "queue-notice.0c8",
+      "table_offset": 200,
+      "equivalent_slots": [
+        200
+      ],
+      "source": {
+        "offset": 410232,
+        "end_exclusive": 410256,
+        "raw_hex": "82b582a982b52089bd82e08b4e82ab82c882a982c182bd00",
+        "sha256": "71b94a43565f07f34af0fe86babbf4e5ddf41e4ec1aef5a2133042111ce24d13",
+        "japanese": "しかし 何も起きなかった"
+      },
+      "english": "But nothing happened.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But nothing happened.",
+        "revised": "But nothing happened.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.128",
+      "table_offset": 296,
+      "equivalent_slots": [
+        296
+      ],
+      "source": {
+        "offset": 409516,
+        "end_exclusive": 409535,
+        "raw_hex": "485082aa8aae915382c989f1959c82b582bd00",
+        "sha256": "701df33ddce5bb0a0948f12e838c4a6f3929d78c8d4991390210655393321e6a",
+        "japanese": "HPが完全に回復した"
+      },
+      "english": "HP fully restored.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "HP fully restored.",
+        "revised": "HP fully restored.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.12c",
+      "table_offset": 300,
+      "equivalent_slots": [
+        300
+      ],
+      "source": {
+        "offset": 409500,
+        "end_exclusive": 409513,
+        "raw_hex": "8ef482a282aa82c682af82bd00",
+        "sha256": "3c6832597892fa3a4ebd2fd1fd7abc52156c265875e0326fdab0368c0a95c149",
+        "japanese": "呪いがとけた"
+      },
+      "english": "The curse is lifted.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The curse is lifted.",
+        "revised": "The curse is lifted.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.138",
+      "table_offset": 312,
+      "equivalent_slots": [
+        312
+      ],
+      "source": {
+        "offset": 409432,
+        "end_exclusive": 409462,
+        "raw_hex": "838f836982aa82bd82ad82b382f182c582ab82c482b582dc82c182bd2100",
+        "sha256": "af4b8595ef08512e4c3e44fabaeb5b4a99f766d0a413fe75942f8c031486e593",
+        "japanese": "ワナがたくさんできてしまった!"
+      },
+      "english": "Traps appear everywhere!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Traps appear everywhere!",
+        "revised": "Traps appear everywhere!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.13c",
+      "table_offset": 316,
+      "equivalent_slots": [
+        316
+      ],
+      "source": {
+        "offset": 409416,
+        "end_exclusive": 409431,
+        "raw_hex": "834a837882aa82ad82b882ea82bd00",
+        "sha256": "d758f621894dd09729b3ec0825a2262bc5a7d4029a4973723e4536ce51a7c868",
+        "japanese": "カベがくずれた"
+      },
+      "english": "The walls collapse.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The walls collapse.",
+        "revised": "The walls collapse.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.15c",
+      "table_offset": 348,
+      "equivalent_slots": [
+        348
+      ],
+      "source": {
+        "offset": 409216,
+        "end_exclusive": 409241,
+        "raw_hex": "834183438365838082cc8fea8f8a82aa82ed82a982c182bd00",
+        "sha256": "cbf1b60abd27e0f03b17dd3185a715659857257332081ff8f7985ab91931ae25",
+        "japanese": "アイテムの場所がわかった"
+      },
+      "english": "Item locations are revealed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Item locations are revealed.",
+        "revised": "Item locations are revealed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.16c",
+      "table_offset": 364,
+      "equivalent_slots": [
+        364
+      ],
+      "source": {
+        "offset": 409108,
+        "end_exclusive": 409141,
+        "raw_hex": "8ca982a682c882a282e082cc82aa8ca982a682e982e682a482c982c882c182bd00",
+        "sha256": "b31fb9c894f5e06fdba9e734787599eba6c63d6180ee642a7cc5d744c8eb6794",
+        "japanese": "見えないものが見えるようになった"
+      },
+      "english": "Invisible things become visible.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Invisible things become visible.",
+        "revised": "Invisible things become visible.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.170",
+      "table_offset": 368,
+      "equivalent_slots": [
+        368
+      ],
+      "source": {
+        "offset": 409080,
+        "end_exclusive": 409105,
+        "raw_hex": "82dc82c782ed82b58ff391d482a982e789f1959c82b582bd00",
+        "sha256": "1c2a6bb22207a23c8729fb8788d21f351313eb192597e00528f5fe2cd7bb26fe",
+        "japanese": "まどわし状態から回復した"
+      },
+      "english": "The hallucinations end.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The hallucinations end.",
+        "revised": "The hallucinations end.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.1b0",
+      "table_offset": 432,
+      "equivalent_slots": [
+        432
+      ],
+      "source": {
+        "offset": 408584,
+        "end_exclusive": 408613,
+        "raw_hex": "82b182cc8374838d834182cc837d8362837682aa82ed82a982c182bd00",
+        "sha256": "6bc7ab5b42d355424ed707bf1dc065e79d215cbb50f236e3de59562c596ce77c",
+        "japanese": "このフロアのマップがわかった"
+      },
+      "english": "The map of this floor is revealed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The map of this floor is revealed.",
+        "revised": "The map of this floor is revealed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.1e4",
+      "table_offset": 484,
+      "equivalent_slots": [
+        484
+      ],
+      "source": {
+        "offset": 408308,
+        "end_exclusive": 408324,
+        "raw_hex": "82b182b182cd2082d982ea82c882a200",
+        "sha256": "01877a7058a00666b1a207b205045a293425a576b57fe1dd7ec063854a272a80",
+        "japanese": "ここは ほれない"
+      },
+      "english": "You can't dig here.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't dig here.",
+        "revised": "You can't dig here.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.1f8",
+      "table_offset": 504,
+      "equivalent_slots": [
+        504
+      ],
+      "source": {
+        "offset": 408176,
+        "end_exclusive": 408195,
+        "raw_hex": "8cb382cc91ac82b382c982e082c782c182bd00",
+        "sha256": "83a506607b464dc2b6f49e23e8e67a6a7028495cc5970a754f683083d149a0a7",
+        "japanese": "元の速さにもどった"
+      },
+      "english": "Speed returns to normal.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Speed returns to normal.",
+        "revised": "Speed returns to normal.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.1fc",
+      "table_offset": 508,
+      "equivalent_slots": [
+        508
+      ],
+      "source": {
+        "offset": 408156,
+        "end_exclusive": 408173,
+        "raw_hex": "82bf82a982e782aa89f1959c82b582bd00",
+        "sha256": "dcdd963bb7fea1587e2480ff27dfecda14e14750e8db0cc3ce46f2c994d30d84",
+        "japanese": "ちからが回復した"
+      },
+      "english": "Strength is restored.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Strength is restored.",
+        "revised": "Strength is restored.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.20c",
+      "table_offset": 524,
+      "equivalent_slots": [
+        524
+      ],
+      "source": {
+        "offset": 408060,
+        "end_exclusive": 408077,
+        "raw_hex": "82bd82be82cc82b482c182bb82a482be00",
+        "sha256": "a467093407372ab142776b84fb8e2e125d8295aeb3cf4b43f87e628c2df77f3e",
+        "japanese": "ただのざっそうだ"
+      },
+      "english": "It's just a weed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "It's just a weed.",
+        "revised": "It's just a weed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.214",
+      "table_offset": 532,
+      "equivalent_slots": [
+        532
+      ],
+      "source": {
+        "offset": 408024,
+        "end_exclusive": 408043,
+        "raw_hex": "89bd82e082a882b182e782c882a982c182bd00",
+        "sha256": "dd75a403fff0a8c76fde573d9a81e5b403a497a4693064dad4c57478fd0a3721",
+        "japanese": "何もおこらなかった"
+      },
+      "english": "Nothing happened.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Nothing happens.",
+        "revised": "Nothing happened.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.21c",
+      "table_offset": 540,
+      "equivalent_slots": [
+        540
+      ],
+      "source": {
+        "offset": 407952,
+        "end_exclusive": 407977,
+        "raw_hex": "81458145814589bd82e08f9182a982ea82c482a282c882a200",
+        "sha256": "58fe86d9d4a5a9c35d510aae2835adfbccf7d5131a687c3160ead05c1c709fa2",
+        "japanese": "・・・何も書かれていない"
+      },
+      "english": "...Nothing is written on it.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "...Nothing is written on it.",
+        "revised": "...Nothing is written on it.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.264",
+      "table_offset": 612,
+      "equivalent_slots": [
+        612
+      ],
+      "source": {
+        "offset": 407492,
+        "end_exclusive": 407506,
+        "raw_hex": "8f8282aa8ef482ed82ea82bd2100",
+        "sha256": "51da75035f4ff72417a538aeefe5aebfce8b65238f5fbf44a6f8c6143675a77a",
+        "japanese": "盾が呪われた!"
+      },
+      "english": "Your shield is cursed!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your shield is cursed!",
+        "revised": "Your shield is cursed!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.268",
+      "table_offset": 616,
+      "equivalent_slots": [
+        616
+      ],
+      "source": {
+        "offset": 407476,
+        "end_exclusive": 407490,
+        "raw_hex": "8c9582aa8ef482ed82ea82bd2100",
+        "sha256": "5c79fd58809c7a033b9379f4868f05f77f130d497020320642b821fda93d0661",
+        "japanese": "剣が呪われた!"
+      },
+      "english": "Your weapon is cursed!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your weapon is cursed!",
+        "revised": "Your weapon is cursed!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.26c",
+      "table_offset": 620,
+      "equivalent_slots": [
+        620
+      ],
+      "source": {
+        "offset": 407460,
+        "end_exclusive": 407476,
+        "raw_hex": "8e7797d682aa8ef482ed82ea82bd2100",
+        "sha256": "d9b50d8ab14bb48feb14f36d3642e1c3cfab47bbdafc88a9a1dc36f3a2521f27",
+        "japanese": "指輪が呪われた!"
+      },
+      "english": "Your ring is cursed!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your ring is cursed!",
+        "revised": "Your ring is cursed!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.270",
+      "table_offset": 624,
+      "equivalent_slots": [
+        624
+      ],
+      "source": {
+        "offset": 407440,
+        "end_exclusive": 407460,
+        "raw_hex": "8e9d82bf82e082cc82aa8ef482ed82ea82bd2100",
+        "sha256": "6f032dae8a6be3f1cc2875856342b38a1b9c805e30b61db1e2c5a3bcb8cf293d",
+        "japanese": "持ちものが呪われた!"
+      },
+      "english": "Your items are cursed!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your items are cursed!",
+        "revised": "Your items are cursed!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.278",
+      "table_offset": 632,
+      "equivalent_slots": [
+        632
+      ],
+      "source": {
+        "offset": 407400,
+        "end_exclusive": 407424,
+        "raw_hex": "82b582a982b5208ef482ed82ea82b882c982b782f182be00",
+        "sha256": "9ab20707ce518130180331c02443a3a76541c392db2883feefb440c913317b7b",
+        "japanese": "しかし 呪われずにすんだ"
+      },
+      "english": "But the curse was avoided.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But the curse is avoided.",
+        "revised": "But the curse was avoided.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.2c0",
+      "table_offset": 704,
+      "equivalent_slots": [
+        704
+      ],
+      "source": {
+        "offset": 406980,
+        "end_exclusive": 407017,
+        "raw_hex": "82c882f182c62120834183438365838082cd0d838283938358835e815b82be82c182bd2100",
+        "sha256": "ed9f95692bae206d9ef49abb3ecda763c2e73add6246cb3ae3979469e779f266",
+        "japanese": "なんと! アイテムは\nモンスターだった!"
+      },
+      "english": "The item was a monster!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The item was a monster!",
+        "revised": "The item was a monster!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.2c8",
+      "table_offset": 712,
+      "equivalent_slots": [
+        712
+      ],
+      "source": {
+        "offset": 406936,
+        "end_exclusive": 406960,
+        "raw_hex": "969e95a0937882aa2082d682e782b882c982b782f182be00",
+        "sha256": "80c714759b4d5ac4010f4bb1171d3b742099646825fdf81b0c5a8e4730138bb3",
+        "japanese": "満腹度が へらずにすんだ"
+      },
+      "english": "Fullness did not decrease.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Fullness does not fall.",
+        "revised": "Fullness did not decrease.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.2cc",
+      "table_offset": 716,
+      "equivalent_slots": [
+        716
+      ],
+      "source": {
+        "offset": 406900,
+        "end_exclusive": 406934,
+        "raw_hex": "82c882f182c62120834183438365838082cd0d82dc82da82eb82b582be82c182bd00",
+        "sha256": "bc7853b9636851714f1e9d422e228859c12c77cc93fe3d191eeb870c12ca3b41",
+        "japanese": "なんと! アイテムは\nまぼろしだった"
+      },
+      "english": "The item was an illusion!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The item was an illusion!",
+        "revised": "The item was an illusion!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.2e4",
+      "table_offset": 740,
+      "equivalent_slots": [
+        740
+      ],
+      "source": {
+        "offset": 406796,
+        "end_exclusive": 406815,
+        "raw_hex": "93ae82af82e982e682a482c982c882c182bd00",
+        "sha256": "bd6727184bf2f6009e9e9b370b9b496eb6daa1086e28f0e9671682a43fa27ff4",
+        "japanese": "動けるようになった"
+      },
+      "english": "You can move again.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can move again.",
+        "revised": "You can move again.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.344",
+      "table_offset": 836,
+      "equivalent_slots": [
+        836
+      ],
+      "source": {
+        "offset": 406300,
+        "end_exclusive": 406321,
+        "raw_hex": "97cd82aa89ba82aa82e782b882c982b782f182be00",
+        "sha256": "9950d603d1ced20808dc7008d542d3f9254e0f2a42eaa31ea11939e7a9e4c956",
+        "japanese": "力が下がらずにすんだ"
+      },
+      "english": "Strength did not decrease.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Strength does not fall.",
+        "revised": "Strength did not decrease.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.348",
+      "table_offset": 840,
+      "equivalent_slots": [
+        840
+      ],
+      "source": {
+        "offset": 406272,
+        "end_exclusive": 406297,
+        "raw_hex": "838c8378838b82aa89ba82aa82e782b882c982b782f182be00",
+        "sha256": "88341d8d6e35e2780a83b8993bfd5b0d4d59596e7956ec1e87aac3423e6f1c8a",
+        "japanese": "レベルが下がらずにすんだ"
+      },
+      "english": "Your level did not decrease.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your level does not fall.",
+        "revised": "Your level did not decrease.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.370",
+      "table_offset": 880,
+      "equivalent_slots": [
+        880
+      ],
+      "source": {
+        "offset": 405976,
+        "end_exclusive": 406025,
+        "raw_hex": "82b782d782c482cc838283938358835e815b82aa0d834183438365838082c995cf82ed82c182c482b582dc82c182bd2100",
+        "sha256": "b8deec1431882db4dde83319b377f138ce1ac695777e24967d79968dc8e03b4a",
+        "japanese": "すべてのモンスターが\nアイテムに変わってしまった!"
+      },
+      "english": "All monsters turned into items!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "All monsters turn into items!",
+        "revised": "All monsters turned into items!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.374",
+      "table_offset": 884,
+      "equivalent_slots": [
+        884
+      ],
+      "source": {
+        "offset": 405940,
+        "end_exclusive": 405976,
+        "raw_hex": "82b782d782c482cc838283938358835e815b82aa8fc182a682c482b582dc82c182bd2100",
+        "sha256": "762c160fe3c0f3485fa3706838347aa7265432822eaa82acd141e01d4b50f6cf",
+        "japanese": "すべてのモンスターが消えてしまった!"
+      },
+      "english": "All monsters disappeared!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "All monsters disappear!",
+        "revised": "All monsters disappeared!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.378",
+      "table_offset": 888,
+      "equivalent_slots": [
+        888
+      ],
+      "source": {
+        "offset": 405920,
+        "end_exclusive": 405938,
+        "raw_hex": "358374838d834189ba82c982a882e882bd00",
+        "sha256": "4c359f35633aea10970424af6b694a0fa29d5bb6fe8b32844bf8951fc324a932",
+        "japanese": "5フロア下におりた"
+      },
+      "english": "Descended five floors.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Descended five floors.",
+        "revised": "Descended five floors.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.380",
+      "table_offset": 896,
+      "equivalent_slots": [
+        896
+      ],
+      "source": {
+        "offset": 405884,
+        "end_exclusive": 405903,
+        "raw_hex": "82b582a982b52082a482bf8fc182b582bd2100",
+        "sha256": "0fc40fc29e3411ec9d1fee7ec3ccf9139f879d2bc1aefb57728af5108eaed94f",
+        "japanese": "しかし うち消した!"
+      },
+      "english": "But the effect was cancelled!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But the effect was cancelled!",
+        "revised": "But the effect was cancelled!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.3c8",
+      "table_offset": 968,
+      "equivalent_slots": [
+        968
+      ],
+      "source": {
+        "offset": 405408,
+        "end_exclusive": 405434,
+        "raw_hex": "977882c182c482a282c42082bb82ea82cd82c582ab82c882a200",
+        "sha256": "b98ad42f242c9dfe8afb2e5cb0fb6758b62706bc2716888daea8ea170ad98569",
+        "japanese": "踊っていて それはできない"
+      },
+      "english": "You can't do that while dancing.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't do that while dancing.",
+        "revised": "You can't do that while dancing.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.3d0",
+      "table_offset": 976,
+      "equivalent_slots": [
+        976
+      ],
+      "source": {
+        "offset": 405360,
+        "end_exclusive": 405382,
+        "raw_hex": "82cb82de82e88d558c8282f095d482b382ea82bd2100",
+        "sha256": "85a331057510aa1793a1912f8aa54e567cc78d61a783e29f3ca99bae7b998ec4",
+        "japanese": "ねむり攻撃を返された!"
+      },
+      "english": "The sleep attack was reflected!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The sleep attack was reflected!",
+        "revised": "The sleep attack was reflected!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.3e4",
+      "table_offset": 996,
+      "equivalent_slots": [
+        996
+      ],
+      "source": {
+        "offset": 405228,
+        "end_exclusive": 405252,
+        "raw_hex": "95cf9067928682c52082bb82ea82cd82c582ab82c882a200",
+        "sha256": "bf390f920d87b365b1094f2aca7eff89223c94fbc641c1fd4e0b70235178bc74",
+        "japanese": "変身中で それはできない"
+      },
+      "english": "You can't do that while transformed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't do that while transformed.",
+        "revised": "You can't do that while transformed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.3fc",
+      "table_offset": 1020,
+      "equivalent_slots": [
+        1020
+      ],
+      "source": {
+        "offset": 405072,
+        "end_exclusive": 405102,
+        "raw_hex": "838283938358835e815b82cc96688ce497cd82aa89ba82aa82c182bd2100",
+        "sha256": "b317d8e34cf62538f44501beef6ef0fda01664b9978c3e3bafe5823f97312874",
+        "japanese": "モンスターの防御力が下がった!"
+      },
+      "english": "The monster's defence decreased!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The monster's defence falls!",
+        "revised": "The monster's defence decreased!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.404",
+      "table_offset": 1028,
+      "equivalent_slots": [
+        1028
+      ],
+      "source": {
+        "offset": 405020,
+        "end_exclusive": 405047,
+        "raw_hex": "838283938358835e815b82cc8fea8f8a82aa82ed82a982c182bd00",
+        "sha256": "6504e5c0ebf6afccad011b22e119eba4332414a147c359f78ec2b86ead1707af",
+        "japanese": "モンスターの場所がわかった"
+      },
+      "english": "Monster locations are revealed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Monster locations are revealed.",
+        "revised": "Monster locations are revealed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.408",
+      "table_offset": 1032,
+      "equivalent_slots": [
+        1032
+      ],
+      "source": {
+        "offset": 404996,
+        "end_exclusive": 405018,
+        "raw_hex": "82a882d182a682c482a282c42082c582ab82c882a200",
+        "sha256": "da2e350f08013c911399792f7965eddceab71b8a906cb9752296bcad67214bc8",
+        "japanese": "おびえていて できない"
+      },
+      "english": "You're too frightened to do that.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You're too frightened to do that.",
+        "revised": "You're too frightened to do that.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.40c",
+      "table_offset": 1036,
+      "equivalent_slots": [
+        1036
+      ],
+      "source": {
+        "offset": 404968,
+        "end_exclusive": 404993,
+        "raw_hex": "82b182ea82cd82ad82b382c182c482a282c4837d8359834300",
+        "sha256": "2a6e1eb278ecbfba85de122b289c89254c2dc48f159407dfd2ac57268f9856bb",
+        "japanese": "これはくさっていてマズイ"
+      },
+      "english": "This is rotten! It tastes awful.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This is rotten! It tastes awful.",
+        "revised": "This is rotten! It tastes awful.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.410",
+      "table_offset": 1040,
+      "equivalent_slots": [
+        1040
+      ],
+      "source": {
+        "offset": 404948,
+        "end_exclusive": 404966,
+        "raw_hex": "9ae282cd2082b782a282b182df82c882a200",
+        "sha256": "d8a8276db98489a82f7792043db3538cb852808e5ce4914c709cdb318d3f0bc2",
+        "japanese": "壺は すいこめない"
+      },
+      "english": "You can't suck up a pot.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't suck up a pot.",
+        "revised": "You can't suck up a pot.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.42c",
+      "table_offset": 1068,
+      "equivalent_slots": [
+        1068
+      ],
+      "source": {
+        "offset": 404780,
+        "end_exclusive": 404797,
+        "raw_hex": "82b182cc8fb082cd208343835e83432100",
+        "sha256": "75b9f7556cb2e5978af2418521d90b7e1ae6e949325cd2c69710c155cd88e249",
+        "japanese": "この床は イタイ!"
+      },
+      "english": "This floor hurts!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This floor hurts!",
+        "revised": "This floor hurts!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.44c",
+      "table_offset": 1100,
+      "equivalent_slots": [
+        1100
+      ],
+      "source": {
+        "offset": 404552,
+        "end_exclusive": 404562,
+        "raw_hex": "82a882e220959782be00",
+        "sha256": "9dd09d2ac7c6f6b8acaded661c1124eb7d671ea3ac313ee14d8028c198b28e25",
+        "japanese": "おや 風だ"
+      },
+      "english": "Oh? A breeze...",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Oh? A breeze...",
+        "revised": "Oh? A breeze...",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.450",
+      "table_offset": 1104,
+      "equivalent_slots": [
+        1104
+      ],
+      "source": {
+        "offset": 404536,
+        "end_exclusive": 404551,
+        "raw_hex": "82b382c182ab82e682e88bad82a200",
+        "sha256": "7ff49d02743c491d8c7376a6addd8d221275c5b3cb6253f89ed6e8b21be5477f",
+        "japanese": "さっきより強い"
+      },
+      "english": "It's stronger than before.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "It's stronger than before.",
+        "revised": "It's stronger than before.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.454",
+      "table_offset": 1108,
+      "equivalent_slots": [
+        1108
+      ],
+      "source": {
+        "offset": 404516,
+        "end_exclusive": 404536,
+        "raw_hex": "82c682f182c582e082c882a28bad959782be2100",
+        "sha256": "21febbbd639fe52cbe5d5b54f77f2bdecc69d89912e9222761ab70dcefda6a2d",
+        "japanese": "とんでもない強風だ!"
+      },
+      "english": "An incredibly strong wind!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "An incredibly strong wind!",
+        "revised": "An incredibly strong wind!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.460",
+      "table_offset": 1120,
+      "equivalent_slots": [
+        1120
+      ],
+      "source": {
+        "offset": 404404,
+        "end_exclusive": 404446,
+        "raw_hex": "927582a282bd834183438365838082cd0d8e6782a282e082cc82c982c882e782c882ad82c882c182bd00",
+        "sha256": "fba91a48dbc99181821eb3ed78d5e2943dac5df8bad9f52b0036009fa1e4a902",
+        "japanese": "置いたアイテムは\n使いものにならなくなった"
+      },
+      "english": "The item you placed became unusable.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The item you placed became unusable.",
+        "revised": "The item you placed became unusable.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.46c",
+      "table_offset": 1132,
+      "equivalent_slots": [
+        1132
+      ],
+      "source": {
+        "offset": 404288,
+        "end_exclusive": 404311,
+        "raw_hex": "814581458145959782cc82af82cd82a282aa82b782e900",
+        "sha256": "be5cd32284fae135ab9c8c274be1431c60ab94d97a37365a9309cc6ce569db20",
+        "japanese": "・・・風のけはいがする"
+      },
+      "english": "...You sense a breeze.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "...You sense a breeze.",
+        "revised": "...You sense a breeze.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.494",
+      "table_offset": 1172,
+      "equivalent_slots": [
+        1172
+      ],
+      "source": {
+        "offset": 403984,
+        "end_exclusive": 404030,
+        "raw_hex": "834183438365838082cd94f282f182c582a282c182c40d835283698353836982c982ad82be82af82bf82c182bd00",
+        "sha256": "392ffcb6fa23bd3c9017cbd12cb1baaef0af8d1c61ad6022f14bf84981fe2fa2",
+        "japanese": "アイテムは飛んでいって\nコナゴナにくだけちった"
+      },
+      "english": "The item flew away and shattered.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The item flew away and shattered.",
+        "revised": "The item flew away and shattered.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.49c",
+      "table_offset": 1180,
+      "equivalent_slots": [
+        1180
+      ],
+      "source": {
+        "offset": 403932,
+        "end_exclusive": 403948,
+        "raw_hex": "977882e882cc838f836982be83622100",
+        "sha256": "4eb90512797af343e526852994c4907f4accb0e9276c5b54592595fd15484d58",
+        "japanese": "踊りのワナだッ!"
+      },
+      "english": "A dancing trap!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "A dancing trap!",
+        "revised": "A dancing trap!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.4a4",
+      "table_offset": 1188,
+      "equivalent_slots": [
+        1188
+      ],
+      "source": {
+        "offset": 403876,
+        "end_exclusive": 403901,
+        "raw_hex": "96da82b482dc82b5919082cc8cf889ca82aa90d882ea82bd00",
+        "sha256": "b7eb0f87c77465024f2ef839992fe92643a64e26b4b3b84524e2923bdf36d526",
+        "japanese": "目ざまし草の効果が切れた"
+      },
+      "english": "The Wakeful herb wears off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The Wakeful herb wears off.",
+        "revised": "The Wakeful herb wears off.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.4b8",
+      "table_offset": 1208,
+      "equivalent_slots": [
+        1208
+      ],
+      "source": {
+        "offset": 403732,
+        "end_exclusive": 403760,
+        "raw_hex": "8370839382cc8aaa95a882cd208370839382c982c582ab82c882a200",
+        "sha256": "897743d23ef73ad9eb592e6d41eb762e51718e2f8edf7b385808e3dac871f48c",
+        "japanese": "パンの巻物は パンにできない"
+      },
+      "english": "A Bread scroll can't become bread.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "A Bread scroll can't become bread.",
+        "revised": "A Bread scroll can't become bread.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.4bc",
+      "table_offset": 1212,
+      "equivalent_slots": [
+        1212
+      ],
+      "source": {
+        "offset": 403704,
+        "end_exclusive": 403731,
+        "raw_hex": "838283938358835e815b82cc90b391cc82aa82ed82a982c182bd00",
+        "sha256": "44a65ee5aac184c05073abba3e997ee229e73e69d94f51a1c0a0c490c66dffa2",
+        "japanese": "モンスターの正体がわかった"
+      },
+      "english": "The monster's true form is revealed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The monster's true form is revealed.",
+        "revised": "The monster's true form is revealed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.4c4",
+      "table_offset": 1220,
+      "equivalent_slots": [
+        1220
+      ],
+      "source": {
+        "offset": 403652,
+        "end_exclusive": 403675,
+        "raw_hex": "838283938358835e815b82f08cc482d182e682b982bd00",
+        "sha256": "03ff76f8ea01f26af400b9717b261987cc4d2de0b7a7fd90657476adf3f383ba",
+        "japanese": "モンスターを呼びよせた"
+      },
+      "english": "Monsters were summoned.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Monsters were summoned.",
+        "revised": "Monsters were summoned.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.524",
+      "table_offset": 1316,
+      "equivalent_slots": [
+        1316
+      ],
+      "source": {
+        "offset": 402372,
+        "end_exclusive": 402397,
+        "raw_hex": "836f815b8354815b834a815b8ff391d482aa82c682af82bd00",
+        "sha256": "d1bed49b555500fc810e160eef563e9cdfd99e1bda9794334629e829be94e371",
+        "japanese": "バーサーカー状態がとけた"
+      },
+      "english": "The berserk state ends.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The berserk state ends.",
+        "revised": "The berserk state ends.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.604",
+      "table_offset": 1540,
+      "equivalent_slots": [
+        1540
+      ],
+      "source": {
+        "offset": 400140,
+        "end_exclusive": 400153,
+        "raw_hex": "8e9e8ad482aa96df82c182bd00",
+        "sha256": "51127c0b990c85db67c7dfa14168331c5b26e40cdf779603cd981d80f30fc523",
+        "japanese": "時間が戻った"
+      },
+      "english": "Time turned back.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Time turned back.",
+        "revised": "Time turned back.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.608",
+      "table_offset": 1544,
+      "equivalent_slots": [
+        1544
+      ],
+      "source": {
+        "offset": 400124,
+        "end_exclusive": 400139,
+        "raw_hex": "926e8fe382d68b4182e882dc82b700",
+        "sha256": "f8be5d99bede109f2c7d1e640af0e6cc6b337f40f0ff7ef5ed30d4a1c21babb1",
+        "japanese": "地上へ帰ります"
+      },
+      "english": "Returning to the surface.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Returning to the surface.",
+        "revised": "Returning to the surface.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.60c",
+      "table_offset": 1548,
+      "equivalent_slots": [
+        1548
+      ],
+      "source": {
+        "offset": 400108,
+        "end_exclusive": 400122,
+        "raw_hex": "94e082aa82d082e782a282bd2100",
+        "sha256": "7ac6dae955eb036ec58c79ed52c674293e86c7e64b22cb6a310a9522a24e7c45",
+        "japanese": "扉がひらいた!"
+      },
+      "english": "The door opened!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The door opened!",
+        "revised": "The door opened!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.648",
+      "table_offset": 1608,
+      "equivalent_slots": [
+        1608
+      ],
+      "source": {
+        "offset": 399420,
+        "end_exclusive": 399438,
+        "raw_hex": "95cf82c882e082cc82f082d382f182be2100",
+        "sha256": "25464d8765586c58a8c3e16f064bef84ccd96c3e1d3ce356916a9a3d8984f544",
+        "japanese": "変なものをふんだ!"
+      },
+      "english": "You stepped on something strange!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You stepped on something strange!",
+        "revised": "You stepped on something strange!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.72c",
+      "table_offset": 1836,
+      "equivalent_slots": [
+        1836
+      ],
+      "source": {
+        "offset": 398052,
+        "end_exclusive": 398070,
+        "raw_hex": "82b182b182c582cd208e6782a682c882a200",
+        "sha256": "a24c53c908aebb45ccf02ac51b30175a9dafe06c0b38aa45684976121082527e",
+        "japanese": "ここでは 使えない"
+      },
+      "english": "You can't use that here.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't use that here.",
+        "revised": "You can't use that here.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.744",
+      "table_offset": 1860,
+      "equivalent_slots": [
+        1860
+      ],
+      "source": {
+        "offset": 397952,
+        "end_exclusive": 397970,
+        "raw_hex": "90ed8e6d82c982cd2082c582ab82c882a200",
+        "sha256": "206d3863a7d89fa79cf1f9f9388d9522158934585ee673587db59656b0bd97b0",
+        "japanese": "戦士には できない"
+      },
+      "english": "Warriors can't do that.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Warriors can't do that.",
+        "revised": "Warriors can't do that.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.748",
+      "table_offset": 1864,
+      "equivalent_slots": [
+        1864
+      ],
+      "source": {
+        "offset": 397928,
+        "end_exclusive": 397950,
+        "raw_hex": "968296408e6782a282c982cd2082c582ab82c882a200",
+        "sha256": "3cfca59c45ad4efca697e772d2878c0149d239726512e35f0d8ab650046b5f50",
+        "japanese": "魔法使いには できない"
+      },
+      "english": "Mages can't do that.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Mages can't do that.",
+        "revised": "Mages can't do that.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.768",
+      "table_offset": 1896,
+      "equivalent_slots": [
+        1896
+      ],
+      "source": {
+        "offset": 397752,
+        "end_exclusive": 397771,
+        "raw_hex": "82df82a282bb82a482a982e782b382df82bd00",
+        "sha256": "b6e31e4c291213b7ff7e69be0d539de9b91beab48b2507abc7c218379b137213",
+        "japanese": "めいそうからさめた"
+      },
+      "english": "Meditation ends.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Meditation ends.",
+        "revised": "Meditation ends.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.770",
+      "table_offset": 1904,
+      "equivalent_slots": [
+        1904
+      ],
+      "source": {
+        "offset": 397708,
+        "end_exclusive": 397729,
+        "raw_hex": "89bd82e08b5a82f08e6782a682c882a982c182bd00",
+        "sha256": "9d009739ef58bc68f263dc4adb48112130d7af2cca3004a2e301c06300832c79",
+        "japanese": "何も技を使えなかった"
+      },
+      "english": "No skills could be used.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "No skills could be used.",
+        "revised": "No skills could be used.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.778",
+      "table_offset": 1912,
+      "equivalent_slots": [
+        1912
+      ],
+      "source": {
+        "offset": 397660,
+        "end_exclusive": 397690,
+        "raw_hex": "93ae82af82c882a282cc82c589ba82d682a882e882e782ea82c882a22100",
+        "sha256": "7b8d3b7b2d82aa231124091966f7456e475d000f150001d4bab987d46cad45e1",
+        "japanese": "動けないので下へおりられない!"
+      },
+      "english": "You can't descend while unable to move!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't descend while unable to move!",
+        "revised": "You can't descend while unable to move!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.77c",
+      "table_offset": 1916,
+      "equivalent_slots": [
+        1916,
+        2160,
+        2164
+      ],
+      "source": {
+        "offset": 397644,
+        "end_exclusive": 397660,
+        "raw_hex": "82b582a982b5208eb8947382b582bd00",
+        "sha256": "8e5d7ab7615bc0f21e612c3a49f46d3e93f7c930bb1da225bd0f2144628eaafa",
+        "japanese": "しかし 失敗した"
+      },
+      "english": "But it failed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But it failed.",
+        "revised": "But it failed.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.7a4",
+      "table_offset": 1956,
+      "equivalent_slots": [
+        1956
+      ],
+      "source": {
+        "offset": 397060,
+        "end_exclusive": 397086,
+        "raw_hex": "82b582a982b52082b182b182eb82f082a882bf82c282af82bd00",
+        "sha256": "d3f1c9ce7e2735d02dcd6eaa74b6a671b5d235953e8fbabc33f8c7c110f9d2ae",
+        "japanese": "しかし こころをおちつけた"
+      },
+      "english": "But you calmed your mind.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But you calmed your mind.",
+        "revised": "But you calmed your mind.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.7e4",
+      "table_offset": 2020,
+      "equivalent_slots": [
+        2020
+      ],
+      "source": {
+        "offset": 396748,
+        "end_exclusive": 396775,
+        "raw_hex": "838283938358835e815b82cc93ae82ab82aa82c682dc82c182bd00",
+        "sha256": "3ccd139d5e473cab92e07c0ce336032e4606842950482bcce68cd40e3fc8edaf",
+        "japanese": "モンスターの動きがとまった"
+      },
+      "english": "The monster stopped moving.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The monster stops moving.",
+        "revised": "The monster stopped moving.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.7e8",
+      "table_offset": 2024,
+      "equivalent_slots": [
+        2024
+      ],
+      "source": {
+        "offset": 396720,
+        "end_exclusive": 396745,
+        "raw_hex": "82b182ea82cd91668ee882c582ad82e882be82b78b5a82be00",
+        "sha256": "81b640607246e05fc8c28bfc270e4370c2ef98d073df39191ddbfebccaf03153",
+        "japanese": "これは素手でくりだす技だ"
+      },
+      "english": "This skill uses bare hands.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This skill uses bare hands.",
+        "revised": "This skill uses bare hands.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.7ec",
+      "table_offset": 2028,
+      "equivalent_slots": [
+        2028
+      ],
+      "source": {
+        "offset": 396696,
+        "end_exclusive": 396719,
+        "raw_hex": "82b182ea82cd8c9582c582ad82e882be82b78b5a82be00",
+        "sha256": "9bf8f9a4d7e76ad55d5e51fce525c789bd5331b9eb5fdd0baa7b58bbc8ae14c7",
+        "japanese": "これは剣でくりだす技だ"
+      },
+      "english": "This skill uses a sword.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This skill uses a sword.",
+        "revised": "This skill uses a sword.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.7f0",
+      "table_offset": 2032,
+      "equivalent_slots": [
+        2032
+      ],
+      "source": {
+        "offset": 396672,
+        "end_exclusive": 396695,
+        "raw_hex": "82b182ea82cd8f8282c582ad82e882be82b78b5a82be00",
+        "sha256": "e025ea06a8fc2cc0e9512e9a63da1647c6e234d34a608d0afeb559924bc5d41e",
+        "japanese": "これは盾でくりだす技だ"
+      },
+      "english": "This skill uses a shield.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This skill uses a shield.",
+        "revised": "This skill uses a shield.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.838",
+      "table_offset": 2104,
+      "equivalent_slots": [
+        2104
+      ],
+      "source": {
+        "offset": 395792,
+        "end_exclusive": 395818,
+        "raw_hex": "91718cc982aa82a282c182cf82a282c5208eb8947382b582bd00",
+        "sha256": "f64b42d08a4f75063a747fbc244d5dd8a18717836ce8bf93a6d2e7b8be24fc29",
+        "japanese": "倉庫がいっぱいで 失敗した"
+      },
+      "english": "Failed: storage is full.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Failed: storage is full.",
+        "revised": "Failed: storage is full.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.854",
+      "table_offset": 2132,
+      "equivalent_slots": [
+        2132
+      ],
+      "source": {
+        "offset": 395612,
+        "end_exclusive": 395650,
+        "raw_hex": "83588379838b83758362834e82c92082bb82cc96bc914f82cd8f9182ab82b182df82c882a200",
+        "sha256": "d644d3a8147808d10e522d4357bd143c342b68321a9b79cb832c1cd17a043775",
+        "japanese": "スペルブックに その名前は書きこめない"
+      },
+      "english": "You can't write that name in a Spellbook.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't write that name in a Spellbook.",
+        "revised": "You can't write that name in a Spellbook.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.864",
+      "table_offset": 2148,
+      "equivalent_slots": [
+        2148
+      ],
+      "source": {
+        "offset": 395472,
+        "end_exclusive": 395498,
+        "raw_hex": "82b582a982b52082de82c882b582ad82e08eb8947382b582bd00",
+        "sha256": "a83cf7c578ffa8325a07cb2742045dbd629622c678305d9370a64f91ea0ac68a",
+        "japanese": "しかし むなしくも失敗した"
+      },
+      "english": "But the attempt was in vain.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But the attempt was in vain.",
+        "revised": "But the attempt was in vain.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.86c",
+      "table_offset": 2156,
+      "equivalent_slots": [
+        2156
+      ],
+      "source": {
+        "offset": 395432,
+        "end_exclusive": 395446,
+        "raw_hex": "485082aa82bd82e882c882a22100",
+        "sha256": "3552d0d8b4b0188e9b2c46ec84bd46b70afa3c71ad039c5dc012133723d59d61",
+        "japanese": "HPがたりない!"
+      },
+      "english": "Not enough HP!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Not enough HP!",
+        "revised": "Not enough HP!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.878",
+      "table_offset": 2168,
+      "equivalent_slots": [
+        2168
+      ],
+      "source": {
+        "offset": 395404,
+        "end_exclusive": 395430,
+        "raw_hex": "82b582a982b52082cd82b682a982ea82b882c982b782f182be00",
+        "sha256": "6685db2ca93d79b2864f3d68c97d2ea77177eec9ba647ff740c432e1a3e0d700",
+        "japanese": "しかし はじかれずにすんだ"
+      },
+      "english": "But nothing was knocked away.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But nothing was knocked away.",
+        "revised": "But nothing was knocked away.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.87c",
+      "table_offset": 2172,
+      "equivalent_slots": [
+        2172
+      ],
+      "source": {
+        "offset": 395380,
+        "end_exclusive": 395402,
+        "raw_hex": "82b582a982b52089bd82c682e082c882a982c182bd00",
+        "sha256": "8feb7d22f24d36e28fc5a1f660b1596078cfbcee6a05a4c28c72e125906720d8",
+        "japanese": "しかし 何ともなかった"
+      },
+      "english": "But nothing happened.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "But nothing happened.",
+        "revised": "But nothing happened.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.8e0",
+      "table_offset": 2272,
+      "equivalent_slots": [
+        2272
+      ],
+      "source": {
+        "offset": 395012,
+        "end_exclusive": 395040,
+        "raw_hex": "8368838d837b815b8ff391d482c882cc82c58e6782a682c882a22100",
+        "sha256": "88670edd342a170fea51909b7a7091d9521876fb4038aed66f9c07b8f59107d4",
+        "japanese": "ドロボー状態なので使えない!"
+      },
+      "english": "You can't use that while you're a thief!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't use that while you're a thief!",
+        "revised": "You can't use that while you're a thief!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.8f8",
+      "table_offset": 2296,
+      "equivalent_slots": [
+        2296
+      ],
+      "source": {
+        "offset": 394816,
+        "end_exclusive": 394847,
+        "raw_hex": "82b182cc834183438365838082cc82b182c682cd82ed82a982e782c882a200",
+        "sha256": "df597a2039f2041acd53e6b459af1ac26c79a6731156651a3c6d06d591c8f92f",
+        "japanese": "このアイテムのことはわからない"
+      },
+      "english": "This item is unknown.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This item is unknown.",
+        "revised": "This item is unknown.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.900",
+      "table_offset": 2304,
+      "equivalent_slots": [
+        2304
+      ],
+      "source": {
+        "offset": 394752,
+        "end_exclusive": 394779,
+        "raw_hex": "82b182cc834183438365838082cd8eaf95ca82c582ab82c882a200",
+        "sha256": "ad2cb48bfcc5cfb1b742ccc08ae20ba8ac7e0b262bc2f2cd55eb5a87d00454e5",
+        "japanese": "このアイテムは識別できない"
+      },
+      "english": "This item cannot be identified.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "This item cannot be identified.",
+        "revised": "This item cannot be identified.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.928",
+      "table_offset": 2344,
+      "equivalent_slots": [
+        2344
+      ],
+      "source": {
+        "offset": 394520,
+        "end_exclusive": 394545,
+        "raw_hex": "95908aed82c9835a8362836782b382ea82c482a282c882a200",
+        "sha256": "b0c26b14fed792bec0efd26fa50ba8fb788222af06d55878fd99da63f78f372b",
+        "japanese": "武器にセットされていない"
+      },
+      "english": "Not set on a weapon.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Not set on a weapon.",
+        "revised": "Not set on a weapon.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.968",
+      "table_offset": 2408,
+      "equivalent_slots": [
+        2408
+      ],
+      "source": {
+        "offset": 394128,
+        "end_exclusive": 394153,
+        "raw_hex": "89bd82e08ef495b682f0919594f582b582c482a282c882a200",
+        "sha256": "f4b2697b360309ed306533d5a90cc64c8001d4119f6fb947d1eb4f8b007f269b",
+        "japanese": "何も呪文を装備していない"
+      },
+      "english": "No spell is equipped.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "No spell is equipped.",
+        "revised": "No spell is equipped.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.970",
+      "table_offset": 2416,
+      "equivalent_slots": [
+        2416
+      ],
+      "source": {
+        "offset": 394076,
+        "end_exclusive": 394103,
+        "raw_hex": "838283938358835e815b82cc8e7082a982e782e082c782c182bd00",
+        "sha256": "9e6775e21de1df9084e212291e7de100069a82235364a871d851925ed4a5d5ea",
+        "japanese": "モンスターの姿からもどった"
+      },
+      "english": "Returned from monster form.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Returned from monster form.",
+        "revised": "Returned from monster form.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.9cc",
+      "table_offset": 2508,
+      "equivalent_slots": [
+        2508
+      ],
+      "source": {
+        "offset": 393628,
+        "end_exclusive": 393653,
+        "raw_hex": "82b182ea88c88fe38dc591e5485082cd82d382a682c882a200",
+        "sha256": "a258a055b0155f8e4e523b66f23c7436a9c4bbfd826d9413edcbe61e37166416",
+        "japanese": "これ以上最大HPはふえない"
+      },
+      "english": "Maximum HP cannot rise any further.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Maximum HP cannot rise any further.",
+        "revised": "Maximum HP cannot rise any further.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.9d0",
+      "table_offset": 2512,
+      "equivalent_slots": [
+        2512
+      ],
+      "source": {
+        "offset": 393600,
+        "end_exclusive": 393625,
+        "raw_hex": "838283938358835e815b82f082e682d782c882a982c182bd00",
+        "sha256": "3be9f4f33fedf484bbc2e2c3a3f0c30f1b48b2175af20bde79959fe63c63760f",
+        "japanese": "モンスターをよべなかった"
+      },
+      "english": "No monsters could be summoned.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "No monsters could be summoned.",
+        "revised": "No monsters could be summoned.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.9f8",
+      "table_offset": 2552,
+      "equivalent_slots": [
+        2552
+      ],
+      "source": {
+        "offset": 393308,
+        "end_exclusive": 393321,
+        "raw_hex": "95cf906782aa82c682af82bd00",
+        "sha256": "406b49f7dc35e025e46477c71c00d3e62578e478f31a0d4d7ae26a6132d4c646",
+        "japanese": "変身がとけた"
+      },
+      "english": "The transformation ends.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The transformation ends.",
+        "revised": "The transformation ends.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.a00",
+      "table_offset": 2560,
+      "equivalent_slots": [
+        2560
+      ],
+      "source": {
+        "offset": 393240,
+        "end_exclusive": 393271,
+        "raw_hex": "8374838d8341928682cc838283938358835e815b82f082bd82a882b582bd00",
+        "sha256": "773887c1e6200be4ef501ce2c28ceb4c8e3d844b883bb1f45ccb96a1a883a4bb",
+        "japanese": "フロア中のモンスターをたおした"
+      },
+      "english": "Defeated all monsters on the floor.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Defeated all monsters on the floor.",
+        "revised": "Defeated all monsters on the floor.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.a10",
+      "table_offset": 2576,
+      "equivalent_slots": [
+        2576
+      ],
+      "source": {
+        "offset": 393104,
+        "end_exclusive": 393121,
+        "raw_hex": "838f836982f08ca982c282af82bd814900",
+        "sha256": "3931dc10b44eadb03e0193b9b168e09adafa6398c75a5b904ff0f83a4b7f1044",
+        "japanese": "ワナを見つけた！"
+      },
+      "english": "Found a trap!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Found a trap!",
+        "revised": "Found a trap!",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.a1c",
+      "table_offset": 2588,
+      "equivalent_slots": [
+        2588
+      ],
+      "source": {
+        "offset": 393008,
+        "end_exclusive": 393037,
+        "raw_hex": "8dc591e5969e95a0937882cd814082e082a48fe382aa82e782c882a200",
+        "sha256": "2ab8963aa79be7ba033895b9bafc883b4a9bbc21850239265166e220d59811c1",
+        "japanese": "最大満腹度は　もう上がらない"
+      },
+      "english": "Maximum fullness cannot rise further.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Maximum fullness cannot rise further.",
+        "revised": "Maximum fullness cannot rise further.",
+        "reason": "Dedicated bilingual comparison with this Japanese source: preserve completed action versus refusal, targets, all-monster scope, quantities, negation and equipment restrictions. This is a complete unformatted message, without native colour, position or substitution controls. English fits one 216px line; no font compression. Queue-pointer mapping only; other readers and ordinary occurrence remain separate."
+      }
+    },
+    {
+      "id": "queue-notice.028",
+      "table_offset": 40,
+      "equivalent_slots": [
+        40
+      ],
+      "source": {
+        "offset": 411724,
+        "end_exclusive": 411748,
+        "raw_hex": "837d83628376955c8ea682f04f464682c982b582dc82b700",
+        "sha256": "e90bed74b0722b6c065aac039e11183742cf6c2615697b07591ff6f00c0a7282",
+        "japanese": "マップ表示をOFFにします"
+      },
+      "english": "Turn the map display off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Turn the map display off.",
+        "revised": "Turn the map display off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.02c",
+      "table_offset": 44,
+      "equivalent_slots": [
+        44
+      ],
+      "source": {
+        "offset": 411700,
+        "end_exclusive": 411723,
+        "raw_hex": "837d83628376955c8ea682f04f4e82c982b582dc82b700",
+        "sha256": "a83ff9a7c02d63b95f37d96344e55950f4d97de3da0bd3ddf02861403d00ff96",
+        "japanese": "マップ表示をONにします"
+      },
+      "english": "Turn the map display on.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Turn the map display on.",
+        "revised": "Turn the map display on.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.030",
+      "table_offset": 48,
+      "equivalent_slots": [
+        48
+      ],
+      "source": {
+        "offset": 411676,
+        "end_exclusive": 411697,
+        "raw_hex": "91ab8cb382c989bd82e082a082e882dc82b982f100",
+        "sha256": "6b9627b3d04841017985b00189a5ea9a5f544c821a9d06a1374bebb0da7bf92b",
+        "japanese": "足元に何もありません"
+      },
+      "english": "There is nothing underfoot.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Nothing underfoot.",
+        "revised": "There is nothing underfoot.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.034",
+      "table_offset": 52,
+      "equivalent_slots": [
+        52
+      ],
+      "source": {
+        "offset": 411648,
+        "end_exclusive": 411673,
+        "raw_hex": "834183438365838082f08e9d82c182c482a282dc82b982f100",
+        "sha256": "516c61781d7d7274f2fa741a435d3f87d52cb2bc8e104b31521527cc834316e2",
+        "japanese": "アイテムを持っていません"
+      },
+      "english": "You have no items.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You have no items.",
+        "revised": "You have no items.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.04c",
+      "table_offset": 76,
+      "equivalent_slots": [
+        76
+      ],
+      "source": {
+        "offset": 411056,
+        "end_exclusive": 411076,
+        "raw_hex": "838283938358835e815b836e8345835882be2100",
+        "sha256": "a1d4265934590201f7346b9168363a35464c2d8625d91b1259f7b12b12fe5e26",
+        "japanese": "モンスターハウスだ!"
+      },
+      "english": "A monster house!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "A Monster house!",
+        "revised": "A monster house!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.08c",
+      "table_offset": 140,
+      "equivalent_slots": [
+        140
+      ],
+      "source": {
+        "offset": 410640,
+        "end_exclusive": 410654,
+        "raw_hex": "8ef482ed82ea82c482a282e92100",
+        "sha256": "cb576c2efe31f2fb73012fb0a70743613ef1af8ce735a7311eb2256f6d3e6a07",
+        "japanese": "呪われている!"
+      },
+      "english": "It's cursed!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "It's cursed!",
+        "revised": "It's cursed!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.0cc",
+      "table_offset": 204,
+      "equivalent_slots": [
+        204
+      ],
+      "source": {
+        "offset": 410208,
+        "end_exclusive": 410230,
+        "raw_hex": "82b782b182b52082a895a082aa82d382ad82ea82bd00",
+        "sha256": "9788b7f2edc8b005e706d64d478711b38e4ef2b3b97bb9f988be82212bf1c7ae",
+        "japanese": "すこし お腹がふくれた"
+      },
+      "english": "You feel a little fuller.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You feel a little fuller.",
+        "revised": "You feel a little fuller.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.0d4",
+      "table_offset": 212,
+      "equivalent_slots": [
+        212
+      ],
+      "source": {
+        "offset": 410160,
+        "end_exclusive": 410184,
+        "raw_hex": "82a895a082aa2082a282c182cf82a282c982c882c182bd00",
+        "sha256": "37ca08679d18274d2eb2bce2e867fd1e793b423858eab8ec325afe744214b4a7",
+        "japanese": "お腹が いっぱいになった"
+      },
+      "english": "You're full!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You're full!",
+        "revised": "You're full!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.130",
+      "table_offset": 304,
+      "equivalent_slots": [
+        304
+      ],
+      "source": {
+        "offset": 409480,
+        "end_exclusive": 409499,
+        "raw_hex": "8cfb82aa8e6782a682c882ad82c882c182bd00",
+        "sha256": "b897559a0601713d6ceeb9d549808d605d934ce8d567996e9628e953d82e08ae",
+        "japanese": "口が使えなくなった"
+      },
+      "english": "Your mouth is sealed.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your mouth is sealed.",
+        "revised": "Your mouth is sealed.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.134",
+      "table_offset": 308,
+      "equivalent_slots": [
+        308
+      ],
+      "source": {
+        "offset": 409464,
+        "end_exclusive": 409477,
+        "raw_hex": "8cfb82aa8e6782a682c882a200",
+        "sha256": "6eb7c9eae7641925d27b4bd7859238fb01f9cd64df07b108297b636c9349af12",
+        "japanese": "口が使えない"
+      },
+      "english": "You can't use your mouth.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't use your mouth.",
+        "revised": "You can't use your mouth.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.144",
+      "table_offset": 324,
+      "equivalent_slots": [
+        324
+      ],
+      "source": {
+        "offset": 409360,
+        "end_exclusive": 409382,
+        "raw_hex": "82a882dc82af82c9208ef482a282e082c682af82bd00",
+        "sha256": "81e6d6783bb47807cbadd72869ee9bf4f00f46d69cc9f1d9fe05636a4dda1d1c",
+        "japanese": "おまけに 呪いもとけた"
+      },
+      "english": "Its curse was lifted, too.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Its curse is lifted too.",
+        "revised": "Its curse was lifted, too.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.148",
+      "table_offset": 328,
+      "equivalent_slots": [
+        328
+      ],
+      "source": {
+        "offset": 409340,
+        "end_exclusive": 409357,
+        "raw_hex": "919594f582f083818362834c82b582bd00",
+        "sha256": "9e0d3047de675e717ccff52c66795d680a0f20f5bc0df32f77f76e4f426150f9",
+        "japanese": "装備をメッキした"
+      },
+      "english": "Your equipment was plated.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Your equipment is plated.",
+        "revised": "Your equipment was plated.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.14c",
+      "table_offset": 332,
+      "equivalent_slots": [
+        332
+      ],
+      "source": {
+        "offset": 409320,
+        "end_exclusive": 409337,
+        "raw_hex": "82d082eb82a682c882ad82c882c182bd00",
+        "sha256": "1ab0a9c1fb2e5405d94674de2b8ddaee1ad43b06693ea9289bb90dec8aaf98ce",
+        "japanese": "ひろえなくなった"
+      },
+      "english": "It can no longer be picked up.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "It can no longer be picked up.",
+        "revised": "It can no longer be picked up.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.384",
+      "table_offset": 900,
+      "equivalent_slots": [
+        900
+      ],
+      "source": {
+        "offset": 405864,
+        "end_exclusive": 405883,
+        "raw_hex": "8145814581458368838d837b815b82c1212100",
+        "sha256": "fe589d62e7274aeb9b2904aa7e8381768ea30d4209ba9ecf91ede7c73724bf88",
+        "japanese": "・・・ドロボーっ!!"
+      },
+      "english": "...Thief!!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "...Thief!!",
+        "revised": "...Thief!!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.388",
+      "table_offset": 904,
+      "equivalent_slots": [
+        904
+      ],
+      "source": {
+        "offset": 405844,
+        "end_exclusive": 405861,
+        "raw_hex": "82a282e782c182b582e182a282dc82b900",
+        "sha256": "0b8ef661638615c97e8394a924031d50b6b59d443896aca749d803ef0a7ac16d",
+        "japanese": "いらっしゃいませ"
+      },
+      "english": "Welcome!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Welcome!",
+        "revised": "Welcome!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.39c",
+      "table_offset": 924,
+      "equivalent_slots": [
+        924
+      ],
+      "source": {
+        "offset": 405716,
+        "end_exclusive": 405750,
+        "raw_hex": "835883898343838083698343836782cd0d835883898343838082c982c882c182bd00",
+        "sha256": "a1952d39fe7097c52ccad54546d78838fbf6a8f924b90f9e3caa408d613686b3",
+        "japanese": "スライムナイトは\nスライムになった"
+      },
+      "english": "The slime knight became a slime.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Slime knight becomes a Slime.",
+        "revised": "The slime knight became a slime.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.3a0",
+      "table_offset": 928,
+      "equivalent_slots": [
+        928
+      ],
+      "source": {
+        "offset": 405676,
+        "end_exclusive": 405716,
+        "raw_hex": "8381835e838b83898343835f815b82cd0d8381835e838b835883898343838082c982c882c182bd00",
+        "sha256": "d637ff4fdc3f0e104500b4a9b75067f89979976c014e1a4a8ae9db1fe7d5b551",
+        "japanese": "メタルライダーは\nメタルスライムになった"
+      },
+      "english": "Metal slime knight became metal slime.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Metal slime knight becomes a Metal slime.",
+        "revised": "Metal slime knight became metal slime.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve Metal slime knight changing into Metal slime, using the already reviewed T2 actor glossary. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.3b0",
+      "table_offset": 944,
+      "equivalent_slots": [
+        944
+      ],
+      "source": {
+        "offset": 405572,
+        "end_exclusive": 405605,
+        "raw_hex": "94f282ce82b382ea82e98f8282f0919594f582b582c482a282c882a982c182bd00",
+        "sha256": "c5781953c9b9bfdcd24bcda9fc2afb817469ff48d368ff318147e790f8536133",
+        "japanese": "飛ばされる盾を装備していなかった"
+      },
+      "english": "No shield was equipped to knock away.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "No shield was equipped to knock away.",
+        "revised": "No shield was equipped to knock away.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.3ec",
+      "table_offset": 1004,
+      "equivalent_slots": [
+        1004
+      ],
+      "source": {
+        "offset": 405188,
+        "end_exclusive": 405210,
+        "raw_hex": "82a895e682a982e782e682dd82aa82a682c182bd2100",
+        "sha256": "5d3342b1389769113c396b27429efc5663ad88d74f1e745bc2becfaeb95e0916",
+        "japanese": "お墓からよみがえった!"
+      },
+      "english": "Rose from the grave!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Rose from the grave!",
+        "revised": "Rose from the grave!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.3f0",
+      "table_offset": 1008,
+      "equivalent_slots": [
+        1008
+      ],
+      "source": {
+        "offset": 405160,
+        "end_exclusive": 405188,
+        "raw_hex": "837d837a8367815b839382f082a982af82e782ea82c482a282e92100",
+        "sha256": "ac866fe2dec43ea859f31f51d4108d01d28a34bf57d49435bf67673bc6886a1c",
+        "japanese": "マホトーンをかけられている!"
+      },
+      "english": "You're under Fizzle!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You're under Fizzle!",
+        "revised": "You're under Fizzle!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.3f4",
+      "table_offset": 1012,
+      "equivalent_slots": [
+        1012
+      ],
+      "source": {
+        "offset": 405132,
+        "end_exclusive": 405157,
+        "raw_hex": "837d837a8367815b839382cc8ff391d482aa82c682af82bd00",
+        "sha256": "583235018be59a55b9611850e271e6c90203201a4f455b2d0ac6097938400363",
+        "japanese": "マホトーンの状態がとけた"
+      },
+      "english": "Fizzle wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Fizzle wears off.",
+        "revised": "Fizzle wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.420",
+      "table_offset": 1056,
+      "equivalent_slots": [
+        1056
+      ],
+      "source": {
+        "offset": 404860,
+        "end_exclusive": 404883,
+        "raw_hex": "82a082e882aa82c682a482b282b482a282dc82b582bd00",
+        "sha256": "089eb35feb2b5faf4fed7b5ca67f4a5479f46a1d473c2afa07af967b9d60faeb",
+        "japanese": "ありがとうございました"
+      },
+      "english": "Thank you very much.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Thank you very much.",
+        "revised": "Thank you very much.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.428",
+      "table_offset": 1064,
+      "equivalent_slots": [
+        1064
+      ],
+      "source": {
+        "offset": 404800,
+        "end_exclusive": 404817,
+        "raw_hex": "82a88be082aa82bd82e882dc82b982f100",
+        "sha256": "f277556eeffaa1af2f9898cf3779da4f26ae3a53e4740eb24bee8a360d38a28d",
+        "japanese": "お金がたりません"
+      },
+      "english": "You don't have enough gold.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You don't have enough gold.",
+        "revised": "You don't have enough gold.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.430",
+      "table_offset": 1072,
+      "equivalent_slots": [
+        1072
+      ],
+      "source": {
+        "offset": 404732,
+        "end_exclusive": 404777,
+        "raw_hex": "82b182cc8374838d834182cc835f8381815b8357835d815b839382cd0d82e082a48343835e834e82c882a22100",
+        "sha256": "347f822f2a4fdf7ab088dbe285e918577c259751eda5c7f03dda7ca9909c81f5",
+        "japanese": "このフロアのダメージゾーンは\nもうイタクない!"
+      },
+      "english": "This floor's damage zones no longer hurt!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The damage zones on this floor no longer hurt!",
+        "revised": "This floor's damage zones no longer hurt!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the floor-limited scope and damage zones ceasing to hurt, without asserting permanence on other floors. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.434",
+      "table_offset": 1076,
+      "equivalent_slots": [
+        1076
+      ],
+      "source": {
+        "offset": 404696,
+        "end_exclusive": 404731,
+        "raw_hex": "834183438365838082f082d082eb82c182c49ae282c993fc82ea82e782ea82c882a200",
+        "sha256": "22d7deb3532eb4811f327846ced5d67242a9fcb2d2e02c9b2ce8d2b5a14c74d6",
+        "japanese": "アイテムをひろって壺に入れられない"
+      },
+      "english": "You can't put a picked-up item in a pot.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't pick up an item and put it in a pot.",
+        "revised": "You can't put a picked-up item in a pot.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.440",
+      "table_offset": 1088,
+      "equivalent_slots": [
+        1088
+      ],
+      "source": {
+        "offset": 404608,
+        "end_exclusive": 404644,
+        "raw_hex": "94928e8682cc8aaa95a882c92082bb82cc96bc914f82cd8f9182ab82b182df82c882a200",
+        "sha256": "098036702158eb37b367aa3b63110ef0e96d3e1b63c370c3a221e85653c360e2",
+        "japanese": "白紙の巻物に その名前は書きこめない"
+      },
+      "english": "That name can't go on a Blank scroll.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't write that name on a Blank scroll.",
+        "revised": "That name can't go on a Blank scroll.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve inability to inscribe that specific name on a Blank scroll; shorter natural phrasing retains the target and restriction. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.45c",
+      "table_offset": 1116,
+      "equivalent_slots": [
+        1116
+      ],
+      "source": {
+        "offset": 404448,
+        "end_exclusive": 404496,
+        "raw_hex": "834183438365838082cd926e96ca82c9978e82bf82c40d8e6782a282e082cc82c982c882e782c882ad82c882c182bd00",
+        "sha256": "86db9a6a07b7f869606ebb8fa60ce1005173746a250c834db697fbef82915342",
+        "japanese": "アイテムは地面に落ちて\n使いものにならなくなった"
+      },
+      "english": "The item hit the ground and was ruined.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The item fell to the ground and became unusable.",
+        "revised": "The item hit the ground and was ruined.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the item falling to the ground and becoming unusable. Ruined expresses loss without inventing a repair mechanic. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.4c0",
+      "table_offset": 1216,
+      "equivalent_slots": [
+        1216
+      ],
+      "source": {
+        "offset": 403676,
+        "end_exclusive": 403701,
+        "raw_hex": "82a895e682a982e782e682dd82aa82a682c182c482ab82bd00",
+        "sha256": "6d3ec6e6dd40a00c2f45670ac7381a6cc5dab74e893d59d62ef0f178f2a1f98f",
+        "japanese": "お墓からよみがえってきた"
+      },
+      "english": "Rose from the grave.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Rose from the grave.",
+        "revised": "Rose from the grave.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.5a4",
+      "table_offset": 1444,
+      "equivalent_slots": [
+        1444
+      ],
+      "source": {
+        "offset": 400696,
+        "end_exclusive": 400715,
+        "raw_hex": "82a882c282a982ea82b382dc82c582b582bd00",
+        "sha256": "acdb6d7ca6ae1385f5fad02f409d44abdbfc9048c943b5f0c793e186135b25b0",
+        "japanese": "おつかれさまでした"
+      },
+      "english": "Thanks for playing!",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Thanks for playing!",
+        "revised": "Thanks for playing!",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.630",
+      "table_offset": 1584,
+      "equivalent_slots": [
+        1584
+      ],
+      "source": {
+        "offset": 399680,
+        "end_exclusive": 399699,
+        "raw_hex": "89a98be082cc8e8690d882ea82c582a082e900",
+        "sha256": "2a763a141dc322296e8071c8d9a4d0213fd7446ffe6dfe76ab014a1b68d46ba1",
+        "japanese": "黄金の紙切れである"
+      },
+      "english": "A piece of golden paper.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "A piece of golden paper.",
+        "revised": "A piece of golden paper.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.728",
+      "table_offset": 1832,
+      "equivalent_slots": [
+        1832
+      ],
+      "source": {
+        "offset": 398072,
+        "end_exclusive": 398117,
+        "raw_hex": "838283938358835e815b82cd20926e96ca82c982cd82e882c282a282c40d93ae82af82c882ad82c882c182bd00",
+        "sha256": "fd184e5caa73cf23327c0d11cc88b994f765b5c76ae2607846e35eb00e183ce9",
+        "japanese": "モンスターは 地面にはりついて\n動けなくなった"
+      },
+      "english": "The monster is stuck fast to the ground.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "The monster is stuck to the ground and cannot move.",
+        "revised": "The monster is stuck fast to the ground.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve ground attachment and inability to move. Retain the monster target; stuck fast conveys inability to move as well as attachment. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.758",
+      "table_offset": 1880,
+      "equivalent_slots": [
+        1880
+      ],
+      "source": {
+        "offset": 397832,
+        "end_exclusive": 397851,
+        "raw_hex": "834183588367838d839382aa82c682af82bd00",
+        "sha256": "aebab262107930503e30db46b63fdd9c42b2c68a972c26e5288e148699016e40",
+        "japanese": "アストロンがとけた"
+      },
+      "english": "Kaclang wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Kaclang wears off.",
+        "revised": "Kaclang wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.868",
+      "table_offset": 2152,
+      "equivalent_slots": [
+        2152
+      ],
+      "source": {
+        "offset": 395448,
+        "end_exclusive": 395471,
+        "raw_hex": "837d836b815b835482cc8cf889ca82aa90d882ea82bd00",
+        "sha256": "c24ad47a05c63c154e092f7b0f904b527a66051f65ecde3b813af5943dba4e19",
+        "japanese": "マヌーサの効果が切れた"
+      },
+      "english": "Dazzle wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Dazzle wears off.",
+        "revised": "Dazzle wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.880",
+      "table_offset": 2176,
+      "equivalent_slots": [
+        2176
+      ],
+      "source": {
+        "offset": 395348,
+        "end_exclusive": 395377,
+        "raw_hex": "837d83578362834e836f838a834182cc8cf889ca82aa90d882ea82bd00",
+        "sha256": "75d2d5fc1bc4a1188620c151b4d04e4dbb933f8e2ba98cd7b2f6a4f3768c03e4",
+        "japanese": "マジックバリアの効果が切れた"
+      },
+      "english": "Magic Barrier wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Magic Barrier wears off.",
+        "revised": "Magic Barrier wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.960",
+      "table_offset": 2400,
+      "equivalent_slots": [
+        2400
+      ],
+      "source": {
+        "offset": 394168,
+        "end_exclusive": 394183,
+        "raw_hex": "835a8362836782b582dc82b582bd00",
+        "sha256": "0927a5b6d64664bb0bb4b4dacc78f2c70214b89aba1cf0e928a1a50aea91fe66",
+        "japanese": "セットしました"
+      },
+      "english": "Set.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Set.",
+        "revised": "Set.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.96c",
+      "table_offset": 2412,
+      "equivalent_slots": [
+        2412
+      ],
+      "source": {
+        "offset": 394104,
+        "end_exclusive": 394127,
+        "raw_hex": "838c83808349838b82cc8cf889ca82aa82ab82ea82bd00",
+        "sha256": "1824ae51b1f36b9e1fe6c15cd63e2542c3d97b750ca5d6b734fd5a45db188214",
+        "japanese": "レムオルの効果がきれた"
+      },
+      "english": "Fade wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Fade wears off.",
+        "revised": "Fade wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.98c",
+      "table_offset": 2444,
+      "equivalent_slots": [
+        2444
+      ],
+      "source": {
+        "offset": 393928,
+        "end_exclusive": 393950,
+        "raw_hex": "95f390ce94a082cd2082b782a282b182df82c882a200",
+        "sha256": "172c6aef724da10eb1465af4b2541d45f3da2e8bfff1b3ea705fbc4991b197c1",
+        "japanese": "宝石箱は すいこめない"
+      },
+      "english": "You can't suck up a Jewel box.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "You can't suck up a Jewel box.",
+        "revised": "You can't suck up a Jewel box.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    },
+    {
+      "id": "queue-notice.9d8",
+      "table_offset": 2520,
+      "equivalent_slots": [
+        2520
+      ],
+      "source": {
+        "offset": 393572,
+        "end_exclusive": 393597,
+        "raw_hex": "837d837a834a8393835e82cc8cf889ca82aa82ab82ea82bd00",
+        "sha256": "a7a5bbddb357f17d8a8be8f7dcfb20f38f6e28008335e0f8c9d85716332bde35",
+        "japanese": "マホカンタの効果がきれた"
+      },
+      "english": "Bounce wore off.",
+      "status": "reviewed",
+      "review": {
+        "previous_draft": "Bounce wears off.",
+        "revised": "Bounce wore off.",
+        "reason": "Dedicated bilingual Japanese-source review: Preserve the complete statement, target, negation, effect or on/off distinction. Existing reviewed series spell/actor terms are retained. This is an unformatted static queue notice; native queues are tested separately from other readers and ordinary progression. One216px line with the approved font."
+      }
+    }
+  ]
+}

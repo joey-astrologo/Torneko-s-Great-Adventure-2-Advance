@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the three native mud-trap table literals in08027DCC. Inventory and native identification effects are checked separately from controlled entry; ordinary trap discovery remains open.",
+  "entries": [
+    {
+      "id": "mud-trap.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch/failed activation, mud, spoiled bread and the harmless outcome. Complete notices fit one line. Exact affected bread types and original item transformation are validated separately."
+    },
+    {
+      "id": "mud-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch/failed activation, mud, spoiled bread and the harmless outcome. Complete notices fit one line. Exact affected bread types and original item transformation are validated separately."
+    },
+    {
+      "id": "mud-trap.320",
+      "table_offset": 800,
+      "source": {
+        "offset": 406516,
+        "end_exclusive": 406522,
+        "raw_hex": "934482be2100",
+        "sha256": "c49b90003b2ed68757dd1ee0706cafc6a0697f51d9d52b500485967f801211e6",
+        "japanese": "泥だ!"
+      },
+      "english": "Mud!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch/failed activation, mud, spoiled bread and the harmless outcome. Complete notices fit one line. Exact affected bread types and original item transformation are validated separately."
+    },
+    {
+      "id": "mud-trap.324",
+      "table_offset": 804,
+      "source": {
+        "offset": 406480,
+        "end_exclusive": 406515,
+        "raw_hex": "934482f082a082d182c40d8370839382aa82ad82b382c182c482b582dc82c182bd2100",
+        "sha256": "ae9c1bd4efdde6b1bca4764a94c7a4d7d6ad31b3fe63f714acf942b65705ca1c",
+        "japanese": "泥をあびて\nパンがくさってしまった!"
+      },
+      "english": "Mud spoiled your bread!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch/failed activation, mud, spoiled bread and the harmless outcome. Complete notices fit one line. Exact affected bread types and original item transformation are validated separately."
+    },
+    {
+      "id": "mud-trap.328",
+      "table_offset": 808,
+      "source": {
+        "offset": 406448,
+        "end_exclusive": 406478,
+        "raw_hex": "82b582a982b52082bd82a282b582bd82b182c682cd82c882a982c182bd00",
+        "sha256": "b1e982ebc6f835ef5b415281df8ab64ed96db4d98b46fd5140930929dd0eaaf5",
+        "japanese": "しかし たいしたことはなかった"
+      },
+      "english": "But it wasn't too bad.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves switch/failed activation, mud, spoiled bread and the harmless outcome. Complete notices fit one line. Exact affected bread types and original item transformation are validated separately."
+    }
+  ]
+}

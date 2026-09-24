@@ -1,0 +1,664 @@
+{
+  "id": "opening-default-yes",
+  "description": "Recorded Japanese opening: default name retained, first play-together choice accepted, dialogue advanced to the first dungeon and one movement input. Normal buttons only; redundant waits/inputs retained for reproducibility.",
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "steps": [
+    {
+      "frames": 600
+    },
+    {
+      "capture": "title"
+    },
+    {
+      "press": "START",
+      "wait": 180,
+      "hold": 3
+    },
+    {
+      "capture": "initial-menu"
+    },
+    {
+      "press": "A",
+      "wait": 180,
+      "hold": 3
+    },
+    {
+      "capture": "new-game"
+    },
+    {
+      "press": "START",
+      "wait": 180,
+      "hold": 3
+    },
+    {
+      "capture": "name-confirm"
+    },
+    {
+      "press": "UP",
+      "wait": 30,
+      "hold": 3
+    },
+    {
+      "press": "LEFT",
+      "wait": 30,
+      "hold": 3
+    },
+    {
+      "capture": "name-finish-selected"
+    },
+    {
+      "press": "A",
+      "wait": 180,
+      "hold": 3
+    },
+    {
+      "capture": "after-name"
+    },
+    {
+      "press": "RIGHT",
+      "wait": 60,
+      "hold": 3
+    },
+    {
+      "press": "A",
+      "wait": 60,
+      "hold": 3
+    },
+    {
+      "capture": "name-edit"
+    },
+    {
+      "frames": 600
+    },
+    {
+      "capture": "opening-1"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-01"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-02"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-03"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-04"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-05"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-06"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-07"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-08"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-09"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-10"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-11"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-12"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-13"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-14"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-15"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-16"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-17"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-18"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-19"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-20"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-21"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-22"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-23"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-24"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-25"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-26"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-27"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-28"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-29"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-30"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-31"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-32"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-33"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-34"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-35"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-36"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-37"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-38"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-39"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-40"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-41"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-42"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-43"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-44"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-45"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-46"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-47"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-48"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-49"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-50"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-51"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-52"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-53"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-54"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-55"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-56"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-57"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-58"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-59"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-60"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-61"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-62"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-63"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-64"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-65"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-66"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-67"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-68"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-69"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-70"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-71"
+    },
+    {
+      "press": "A",
+      "wait": 240,
+      "hold": 3
+    },
+    {
+      "capture": "story-72"
+    },
+    {
+      "capture": "first-dungeon"
+    },
+    {
+      "press": "RIGHT",
+      "wait": 60,
+      "hold": 8
+    },
+    {
+      "capture": "first-movement"
+    }
+  ]
+}

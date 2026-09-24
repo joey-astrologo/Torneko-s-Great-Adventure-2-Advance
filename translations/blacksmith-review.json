@@ -1,0 +1,652 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "43 sources read by owned blacksmith0801D110; private table at entry, original shared town table unchanged. Sources1/2/68 are not read by this function and remain separate. Native validation pending.",
+  "entries": [
+    {
+      "id": "blacksmith.0",
+      "source_id": "town-common.0fc2",
+      "index": 0,
+      "source_hex": "926296e889ae817582a0814981408349838c82cc82a882f182b682f182be81490d814082b182cc914f82cd82a082e882aa82c682e6814082bd82b782a982c182bd82ba81490d926296e889ae817582c682b182eb82c581408da193fa82cd82c882f182cc977082be82a281480d0d926296e889ae817582e082b582a982b582c481408c9582e28f8282f00d814082ab82bd82a682bd82a282c182c482ed82af82a9814800",
+      "source_sha256": "76e14156c2364b81daf019d04e005b4afff97fd3313b76ca943cc143a9474463",
+      "japanese": "鍛冶屋「あ！　オレのおんじんだ！\n　この前はありがとよ　たすかったぜ！\n鍛冶屋「ところで　今日はなんの用だい？\n\n鍛冶屋「もしかして　剣や盾を\n　きたえたいってわけか？",
+      "english": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+        "revision": "Blacksmith: Ah, my saviour! Thanks again for helping me out!\n\nBlacksmith: What brings you here today?\n\nBlacksmith: Want me to strengthen a weapon or shield?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.3",
+      "source_id": "town-common.10e3",
+      "index": 3,
+      "source_hex": "926296e889ae817582bb82ea82b682e182a0814082dc82bd82c8814900",
+      "source_sha256": "4d50fd11dc2f3f16eba3746bb8a331d6b410c12976199c3b72f161d1d220ba60",
+      "japanese": "鍛冶屋「それじゃあ　またな！",
+      "english": "Blacksmith: See you around!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: See you around!",
+        "revision": "Blacksmith: See you around!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.4",
+      "source_id": "town-common.126a",
+      "index": 4,
+      "source_hex": "926296e889ae817581458145814582c182c481490d814082a882a282a882a2814981408e9d82c182c482cb82a582b682e182cb82a682a981490d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d814082a982e782a982ed82c882a282c582ad82ea82e6814200",
+      "source_sha256": "e79b3e026b852b10783b6369b2688d84dcd1d48a1205c441cb8fa9610a587bfd",
+      "japanese": "鍛冶屋「・・・って！\n　おいおい！　持ってねぇじゃねえか！\n\n\n鍛冶屋「いくら　おんじんでも\n　からかわないでくれよ。",
+      "english": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+        "revision": "Blacksmith: ...Hey! You haven't got them!\n\nBlacksmith: You may be my saviour, but don't mess me about!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.5",
+      "source_id": "town-common.12dc",
+      "index": 5,
+      "source_hex": "926296e889ae817582dc82a02082a282a282e281420d814082dc82bd814082bb82cc82a482bf978882c482ad82ea82e6814200",
+      "source_sha256": "e2a5ecc7175d0794c2e481095f2a3bb9f808598bca78d01531034876fb1bc245",
+      "japanese": "鍛冶屋「まあ いいや。\n　また　そのうち来てくれよ。",
+      "english": "Blacksmith: Never mind. Come back some other time.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Never mind. Come back some other time.",
+        "revision": "Blacksmith: Never mind. Come back some other time.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.6",
+      "source_id": "town-common.130f",
+      "index": 6,
+      "source_hex": "926296e889ae817581458145814582c182c481490d814082a882a282a882a2814981408c9582e08f8282e082c882a282ba81420d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d814082c882a282e082cc82cd814082c582ab82cb82a682e6814200",
+      "source_sha256": "f34ae0bee6ec58494b7d6096d01ea0d64359f5824f289bffc66e5cccf3474944",
+      "japanese": "鍛冶屋「・・・って！\n　おいおい！　剣も盾もないぜ。\n\n\n鍛冶屋「いくら　おんじんでも\n　ないものは　できねえよ。",
+      "english": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+        "revision": "Blacksmith: ...Hey! You haven't got a weapon or a shield!\n\nBlacksmith: Saviour or not, I can't work on something you don't have!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.7",
+      "source_id": "town-common.13a1",
+      "index": 7,
+      "source_hex": "926296e889ae817582d681480d814082c882f182be82a281408da193fa82cd82e282df82c482a882ad82cc82a9814200",
+      "source_sha256": "7e249950245602d035e30490b815ed021ff5dd0f7d5a3c14674cebe9ba9c081d",
+      "japanese": "鍛冶屋「へ？\n　なんだい　今日はやめておくのか。",
+      "english": "Blacksmith: Huh? Leaving it for another day, are you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Huh? Leaving it for another day, are you?",
+        "revision": "Blacksmith: Huh? Leaving it for another day, are you?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.8",
+      "source_id": "town-common.13d1",
+      "index": 8,
+      "source_hex": "926296e889ae817582bb82ea82c5814082a282a282cc82a982a2814800",
+      "source_sha256": "9c7e71a353b3df3559158ae5eec79028e7b9b05a10f33afcb94b9e4d134b1c4c",
+      "japanese": "鍛冶屋「それで　いいのかい？",
+      "english": "Blacksmith: Is that the one you want?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Is that the one you want?",
+        "revision": "Blacksmith: Is that the one you want?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.9",
+      "source_id": "town-common.13ee",
+      "index": 9,
+      "source_hex": "926296e889ae817581458145814582c182c48149814082a882a282a882a281490d814082bb82e882e182e082a4814082ab82bd82a682e682a482aa82c882a282ba81420d0d0d926296e889ae817582a282ad82e7814082a882f182b682f182c582e00d81408380838a82c882e082f182cd81408380838a82be82e6814200",
+      "source_sha256": "02e87e0b9fe95c336d2b29a212de341adf1648e7d2f5be8ebcf0981ca0d35d13",
+      "japanese": "鍛冶屋「・・・って！　おいおい！\n　そりゃもう　きたえようがないぜ。\n\n\n鍛冶屋「いくら　おんじんでも\n　ムリなもんは　ムリだよ。",
+      "english": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+        "revision": "Blacksmith: ...Hey! I can't strengthen that any further!\n\nBlacksmith: Saviour or not, I can't do the impossible!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.10",
+      "source_id": "town-common.14f5",
+      "index": 10,
+      "source_hex": "926296e889ae817582dc82a082dc82a082cc82b582a082aa82e882be82c8814200",
+      "source_sha256": "add755b21da456d5e6609aac5d421614d6c0c8aae0fc0f0f2161c9022449d409",
+      "japanese": "鍛冶屋「まあまあのしあがりだな。",
+      "english": "Blacksmith: Not a bad bit of work.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Not a bad bit of work.",
+        "revision": "Blacksmith: Not a bad bit of work.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.11",
+      "source_id": "town-common.1516",
+      "index": 11,
+      "source_hex": "926296e889ae817582c882f182be82a981408da193fa82cd8b4395aa82aa82a282a282f182c50d814082a282c282e082e682e8814082a282a283568353836782aa82c582ab82bd82ba814900",
+      "source_sha256": "ae9ef85dfac4879517a7536827f9a9133b6eafc7e354b8ea77fb2d764c941fe7",
+      "japanese": "鍛冶屋「なんだか　今日は気分がいいんで\n　いつもより　いいシゴトができたぜ！",
+      "english": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+        "revision": "Blacksmith: I'm in a good mood today! Turned out even better than usual!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.12",
+      "source_id": "town-common.1735",
+      "index": 12,
+      "source_hex": "926296e889ae817582ed82a982c182bd82a982a2814800",
+      "source_sha256": "9c22c0977ce17f3251e87010b95e5d98b4ac2f5afb8efab3b00b830561e4a865",
+      "japanese": "鍛冶屋「わかったかい？",
+      "english": "Blacksmith: Got that?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Got that?",
+        "revision": "Blacksmith: Got that?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.13",
+      "source_id": "town-common.1b45",
+      "index": 13,
+      "source_hex": "926296e889ae817589a4976c82cd81409085928e82c882f182be82a0814900",
+      "source_sha256": "6fc7ddbc7ba0ff2506e1bdc17d12348d1c6e906daa568993b1e7503b62e50f9d",
+      "japanese": "鍛冶屋「王様は　水虫なんだあ！",
+      "english": "Blacksmith: The King has athlete's foot!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: The King has athlete's foot!",
+        "revision": "Blacksmith: The King has athlete's foot!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.14",
+      "source_id": "town-common.1b64",
+      "index": 14,
+      "source_hex": "926296e889ae8175836c836c82b382f182cd814082b782c582c90d81408c8b8da582b582c482e982f182be82c182c482e6814900",
+      "source_sha256": "ae830ad0e341f4eeac2565e2cbad9c31c54add27b2bccc55b0a5aee71f86ee93",
+      "japanese": "鍛冶屋「ネネさんは　すでに\n　結婚してるんだってよ！",
+      "english": "Blacksmith: Tessie's already married!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Tessie's already married!",
+        "revision": "Blacksmith: Tessie's already married!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.15",
+      "source_id": "town-common.1b98",
+      "index": 15,
+      "source_hex": "926296e889ae81758375834c837e82c890c2944e82cd0d814083418354834b834982f0814082bb82be82c482c482e982f182be814900",
+      "source_sha256": "51ff31d40bad5552e31a31be637773a6b5c9c925a9d88f6f72a1d7da1617b527",
+      "japanese": "鍛冶屋「ブキミな青年は\n　アサガオを　そだててるんだ！",
+      "english": "Blacksmith: That creepy young man grows morning glories!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: That creepy young man grows morning glories!",
+        "revision": "Blacksmith: That creepy young man grows morning glories!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.16",
+      "source_id": "town-common.1bce",
+      "index": 16,
+      "source_hex": "926296e889ae817582e082e082f182b682e182c182c4838283938358835e815b82cd0d814091cc928682aa8140835082be82e782af82c882f182be82a0814900",
+      "source_sha256": "388884d7e226143a55fd19de86f12f5fb1b6beb32cc093a22c6336ae2f32baa6",
+      "japanese": "鍛冶屋「ももんじゃってモンスターは\n　体中が　ケだらけなんだあ！",
+      "english": "Blacksmith: Platypunks are covered in hair!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Platypunks are covered in hair!",
+        "revision": "Blacksmith: Platypunks are covered in hair!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.17",
+      "source_id": "town-common.1c0e",
+      "index": 17,
+      "source_hex": "926296e889ae817582ad82b382c182bd8e8091cc82c182c48384836382cd0d814082b682c282cd82e082a481408e8082f182c582e982f182be814900",
+      "source_sha256": "ba2ea1d0ddf6cb162e8f84d191f22b41fd3d44f3e1969de44a3e5344d5b4a1dc",
+      "japanese": "鍛冶屋「くさった死体ってヤツは\n　じつはもう　死んでるんだ！",
+      "english": "Blacksmith: Walking corpses are actually dead already!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Walking corpses are actually dead already!",
+        "revision": "Blacksmith: Walking corpses are actually dead already!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.18",
+      "source_id": "town-common.1c4a",
+      "index": 18,
+      "source_hex": "926296e889ae81759682964089ae82cc838c837e834282cd0d814082c882f182c6814096828f9782c882f182be82a0814900",
+      "source_sha256": "641a98779ab920427bbc60ab7a8dddbdb94cf84a521ea5b992546aac053eb4cd",
+      "japanese": "鍛冶屋「魔法屋のレミィは\n　なんと　魔女なんだあ！",
+      "english": "Blacksmith: Remi at the magic shop is... a witch!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Remi at the magic shop is... a witch!",
+        "revision": "Blacksmith: Remi at the magic shop is... a witch!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.19",
+      "source_id": "town-common.1c7c",
+      "index": 19,
+      "source_hex": "926296e889ae8175837c837c838d82c182c4814082dc82be0d814083528368838282e782b582a282ba814900",
+      "source_sha256": "dcecce48a27457c3ad2cce5858b79d47188790066cfcffd4bb52915cb2345e9f",
+      "japanese": "鍛冶屋「ポポロって　まだ\n　コドモらしいぜ！",
+      "english": "Blacksmith: Apparently, Tipper's still a child!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Apparently, Tipper's still a child!",
+        "revision": "Blacksmith: Apparently, Tipper's still a child!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.20",
+      "source_id": "town-common.1ca8",
+      "index": 20,
+      "source_hex": "926296e889ae817582c282ac82cc8fee95f182cd81409798977089f1909482aa0d81408258824f89f182c982c882c182bd82c682ab82be814900",
+      "source_sha256": "385d6f86613fc9f0078e7b94524a863d2368d640dbaefc4681760ae48c0dd202",
+      "japanese": "鍛冶屋「つぎの情報は　利用回数が\n　９０回になったときだ！",
+      "english": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+        "revision": "Blacksmith: Your next tip comes when you've used my services 90 times!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.21",
+      "source_id": "town-common.1ce2",
+      "index": 21,
+      "source_hex": "926296e889ae81758349838c82cc8fee95f182c182c482a282a482cc82cd0d814082dc82c182bd82ad814082dc82c182bd82ad814082dc82c182bd82ad0d926296e889ae817582dc82c182bd82ad814088d396a182c882f182c482c882a282f182be82a0814900",
+      "source_sha256": "2d2da45cb3a2f7ef291c7efc0fe19006e66d1f81aa70aab39bbe9a0ecc252a73",
+      "japanese": "鍛冶屋「オレの情報っていうのは\n　まったく　まったく　まったく\n鍛冶屋「まったく　意味なんてないんだあ！",
+      "english": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+        "revision": "Blacksmith: My information is utterly, utterly, utterly...\n\nBlacksmith: Utterly useless!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.22",
+      "source_id": "town-common.1d49",
+      "index": 22,
+      "source_hex": "926296e889ae817595738e768b6382cc835f839383578387839382cc0d8140825882574682c982cd8175838d836782cc8c95817682aa82a082c182c40d926296e889ae81758175838283938358835e815b82cc8aaa95a8817682aa82a082ea82ce0d81408ee882c993fc82ea82e782ea82e982c182c4986282be82ba814200",
+      "source_sha256": "7ec1cbd7ce919a320ffc173cd543d24ffd296443ad06437d7e8e099ec9cad3b9",
+      "japanese": "鍛冶屋「不思議のダンジョンの\n　９８Fには「ロトの剣」があって\n鍛冶屋「「モンスターの巻物」があれば\n　手に入れられるって話だぜ。",
+      "english": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+        "revision": "Blacksmith: There's an Erdrick's sword on 98F of the Magic Dungeon.\n\nBlacksmith: I hear you can get it if you've got a Monster scroll.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.23",
+      "source_id": "town-common.1dc8",
+      "index": 23,
+      "source_hex": "926296e889ae817582d382a482a482a482a481458145814581458145814581420d814082c282a282c98cbe82c182bf82dc82c182bd81420d0d0d926296e889ae817582dc2082bb82a482a282a482b182c682be814200",
+      "source_sha256": "4b94e6dd66e3f7d9971c8581767808d95349ff778d38aa1d54126cab2adde22e",
+      "japanese": "鍛冶屋「ふうううう・・・・・・。\n　ついに言っちまった。\n\n\n鍛冶屋「ま そういうことだ。",
+      "english": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+        "revision": "Blacksmith: Phewwww... I finally said it.\n\nBlacksmith: Well, there you have it.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.24",
+      "source_id": "town-common.1e1e",
+      "index": 24,
+      "source_hex": "926296e889ae817582c282ac82c9978882e982c682ab82cd0d0d926296e889ae8175257382c60d8140257381420d926296e889ae817582b182cc825182c282f081408e9d82c182c4978882c482ad82ea82e681420d0d926296e889ae817582bb82ea82c6814082d082ab82a982a682c90d81408c9582a98f8282f082ab82bd82a682c482e282e982a982e782b3814200",
+      "source_sha256": "23473d3b1dd069d6b31bafd57294591ad37d73073f625b0bce01f325e8bbee42",
+      "japanese": "鍛冶屋「つぎに来るときは\n\n鍛冶屋「%{unclassified-control:73}と\n　%{unclassified-control:73}。\n鍛冶屋「この２つを　持って来てくれよ。\n\n鍛冶屋「それと　ひきかえに\n　剣か盾をきたえてやるからさ。",
+      "english": "Blacksmith: Next time, bring me {item1} and {item2}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Next time, bring me {arg1} and {arg2}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+        "revision": "Blacksmith: Next time, bring me {item1} and {item2}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.25",
+      "source_id": "town-common.1eae",
+      "index": 25,
+      "source_hex": "926296e889ae817582c282ac82c9978882e982c682ab82cd0d0d926296e889ae8175257382f00d8140825182c28e9d82c182c4978882c482ad82ea82e681420d926296e889ae817582bb82ea82c6814082d082ab82a982a682c90d81408c9582a98f8282f082ab82bd82a682c482e282e982a982e782b3814200",
+      "source_sha256": "b36a5c4d381c3fa921898ebad59bf14006db317a7bdc981a21db2006b1373e26",
+      "japanese": "鍛冶屋「つぎに来るときは\n\n鍛冶屋「%{unclassified-control:73}を\n　２つ持って来てくれよ。\n鍛冶屋「それと　ひきかえに\n　剣か盾をきたえてやるからさ。",
+      "english": "Blacksmith: Next time, bring me two of {item1}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Next time, bring me two of {arg1}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+        "revision": "Blacksmith: Next time, bring me two of {item1}.\n\nBlacksmith: In exchange, I'll strengthen a weapon or shield for you.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.26",
+      "source_id": "town-common.1f28",
+      "index": 26,
+      "source_hex": "926296e889ae817582b182ea82a982e782e00d814082e682eb82b582ad82bd82cc82de82ba814900",
+      "source_sha256": "e365653e97e934b77f26fe566e0d19bbccdf8e4ceb643f8742a374aa6e5eedc3",
+      "japanese": "鍛冶屋「これからも\n　よろしくたのむぜ！",
+      "english": "Blacksmith: Keep coming back!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Keep coming back!",
+        "revision": "Blacksmith: Keep coming back!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.60",
+      "source_id": "town-common.1066",
+      "index": 60,
+      "source_hex": "926296e889ae817582bb82a482a9814082b482f182cb82f182be82c8814200",
+      "source_sha256": "348edf7c75a5a1d1f5f51f12ecca7e9b905f281ac43b33d09b173eea44ddd0c7",
+      "japanese": "鍛冶屋「そうか　ざんねんだな。",
+      "english": "Blacksmith: Ah, that's a shame.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ah, that's a shame.",
+        "revision": "Blacksmith: Ah, that's a shame.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.61",
+      "source_id": "town-common.1100",
+      "index": 61,
+      "source_hex": "926296e889ae817582a882f182b682f182a982e782cd81408be082cd82c682ea82cb82a681420d814082bb82cc82a982ed82e882c90d926296e889ae8175257382c60d8140257381420d926296e889ae817582b182cc825182c282c5814082e282e782b982c482ad82ea82e6814200",
+      "source_sha256": "51857eebbb6974b7c6be5c48210bd804e09768633b0955128695bccf9d0f2347",
+      "japanese": "鍛冶屋「おんじんからは　金はとれねえ。\n　そのかわりに\n鍛冶屋「%{unclassified-control:73}と\n　%{unclassified-control:73}。\n鍛冶屋「この２つで　やらせてくれよ。",
+      "english": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me {item1} and {item2} instead, and I'll do the job.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me {arg1} and {arg2} instead, and I'll do the job.",
+        "revision": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me {item1} and {item2} instead, and I'll do the job.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.62",
+      "source_id": "town-common.116f",
+      "index": 62,
+      "source_hex": "926296e889ae817582a882f182b682f182a982e782cd81408be082cd82c682ea82cb82a681420d814082bb82cc82a982ed82e882c90d926296e889ae8175257382f0825182c281420d814082b182ea82c5814082e282e782b982c482ad82ea82e6814200",
+      "source_sha256": "4d28780b69e5be91db1a2c999f5dfc847933ceed51b33a0b2d1774032380d55a",
+      "japanese": "鍛冶屋「おんじんからは　金はとれねえ。\n　そのかわりに\n鍛冶屋「%{unclassified-control:73}を２つ。\n　これで　やらせてくれよ。",
+      "english": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me two of {item1} instead, and I'll do the job.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me two of {arg1} instead, and I'll do the job.",
+        "revision": "Blacksmith: I can't take money from my saviour!\n\nBlacksmith: Give me two of {item1} instead, and I'll do the job.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.63",
+      "source_id": "town-common.11d3",
+      "index": 63,
+      "source_hex": "926296e889ae817582a882c1814082a082e982cc82a982a2814800",
+      "source_sha256": "d44612390c0f772e6b916cefc0796090884551b76c84e95d18cbdd4c987eea07",
+      "japanese": "鍛冶屋「おっ　あるのかい？",
+      "english": "Blacksmith: Oh, you've got them?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Oh, you've got them?",
+        "revision": "Blacksmith: Oh, you've got them?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.64",
+      "source_id": "town-common.11ee",
+      "index": 64,
+      "source_hex": "926296e889ae817582a6816082c68140257382c60d8140257382f082c6814581458145814200",
+      "source_sha256": "20e95c49062023c7f3c004b11b89f9775862fd4b00ec8f32d0cd645cf0cc9bb4",
+      "japanese": "鍛冶屋「え～と　%{unclassified-control:73}と\n　%{unclassified-control:73}をと・・・。",
+      "english": "Blacksmith: Let's see... {item1} and {item2}...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Let's see... {arg1} and {arg2}...",
+        "revision": "Blacksmith: Let's see... {item1} and {item2}...",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.65",
+      "source_id": "town-common.1214",
+      "index": 65,
+      "source_hex": "926296e889ae817582a6816082c60d81402573825182c282f082c6814581458145814200",
+      "source_sha256": "042d3fd9d81a075e8d090a5398c61349b3c26cab80d74db640fa1235bf60a515",
+      "japanese": "鍛冶屋「え～と\n　%{unclassified-control:73}２つをと・・・。",
+      "english": "Blacksmith: Let's see... Two of {item1}...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Let's see... Two of {arg1}...",
+        "revision": "Blacksmith: Let's see... Two of {item1}...",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.66",
+      "source_id": "town-common.1238",
+      "index": 66,
+      "source_hex": "926296e889ae817582a082c182bd814082a082c182bd81490d814082b382c482c681458145814582bb82ea82b682e182a000",
+      "source_sha256": "a4ffa6e91272e93b4f6bec817b05e51728a7a2a4672cb00d2140d1c984a5931f",
+      "japanese": "鍛冶屋「あった　あった！\n　さてと・・・それじゃあ",
+      "english": "Blacksmith: There they are! Right, then...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: There they are! Right, then...",
+        "revision": "Blacksmith: There they are! Right, then...",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.67",
+      "source_id": "town-common.137d",
+      "index": 67,
+      "source_hex": "926296e889ae817582c782ea82f00d814082ab82bd82a682bd82a282f182be82a2814800",
+      "source_sha256": "02b542e31dd2fd685ef5907810266fd76b2c994781e5ef47cf3b8a2d0861304f",
+      "japanese": "鍛冶屋「どれを\n　きたえたいんだい？",
+      "english": "Blacksmith: Which one do you want me to strengthen?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Which one do you want me to strengthen?",
+        "revision": "Blacksmith: Which one do you want me to strengthen?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.69",
+      "source_id": "town-common.1562",
+      "index": 69,
+      "source_hex": "926296e889ae817582a882c182c6814082bb82a482bb82a481420d0d926296e889ae81758250824f89f19798977082b782e982b282c682c981408354815b8372835882c50d814082c682f182c582e082c882ad814082b782b082a68fee95f182f08bb382a682e982ba81420d0d926296e889ae817582bf82c882dd82c981408da182cc82a082f182bd82cc0d81409798977089f1909482cd8140256489f182be82ba814200",
+      "source_sha256": "1b927c855e3c4943c191e71d8ba7bba26ab3b6c656789ca45609605d90aaa62a",
+      "japanese": "鍛冶屋「おっと　そうそう。\n\n鍛冶屋「１０回利用するごとに　サービスで\n　とんでもなく　すげえ情報を教えるぜ。\n\n鍛冶屋「ちなみに　今のあんたの\n　利用回数は　%{unclassified-control:64}回だぜ。",
+      "english": "Blacksmith: Oh, one more thing!\n\nBlacksmith: Every ten jobs, I'll throw in some incredible information for free!\n\nBlacksmith: You've used my services {count} times so far.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Oh, one more thing!\n\nBlacksmith: Every ten jobs, I'll throw in some incredible information for free!\n\nBlacksmith: You've used my services {arg1} times so far.",
+        "revision": "Blacksmith: Oh, one more thing!\n\nBlacksmith: Every ten jobs, I'll throw in some incredible information for free!\n\nBlacksmith: You've used my services {count} times so far.",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.70",
+      "source_id": "town-common.1607",
+      "index": 70,
+      "source_hex": "926296e889ae817582a882c182c6814082a282af82cb82a681490d0d926296e889ae81757e82b382f1814082a082f182bd82cc9798977089f1909482aa0d81408da189f182c582bf82e582a482c7256489f182c982c882c182bd82ba81420d0d926296e889ae817596f191a982c782a882e8814082c682f182c582e082c882ad82b782b082a60d81408353815b83578383835882c58140834f838c8343836782c50d926296e889ae8175838f8393835f8374838b82c58140836683898362834e835882c88fee95f182f00d81408bb382a682bf82e182a482ba81490d926296e889ae817581458145814582a282a282a981480d0d926296e889ae817588ea937882b582a981408cbe82ed82cb82a682a982e70d814082e682a7816082ad814095b782a282c482ad82ea82e6814800",
+      "source_sha256": "d779d7b87b19fda49d4d0fba3d787738aefc01d8a8507f5d25db273403e46da9",
+      "japanese": "鍛冶屋「おっと　いけねえ！\n\n鍛冶屋「{unclassified-control:7e}さん　あんたの利用回数が\n　今回でちょうど%{unclassified-control:64}回になったぜ。\n\n鍛冶屋「約束どおり　とんでもなくすげえ\n　ゴージャスで　グレイトで\n鍛冶屋「ワンダフルで　デラックスな情報を\n　教えちゃうぜ！\n鍛冶屋「・・・いいか？\n\n鍛冶屋「一度しか　言わねえから\n　よぉ～く　聞いてくれよ？",
+      "english": "Blacksmith: Whoa, nearly forgot!\n\nBlacksmith: {player}, that's exactly {count} jobs!\n\nBlacksmith: As promised, here's some incredible, dazzling, magnificent, wonderful, top-class information!\n\nBlacksmith: Ready? I'll only say it once. Listen closely!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Whoa, nearly forgot!\n\nBlacksmith: {player}, that makes exactly {arg1} jobs I've done for you!\n\nBlacksmith: As promised, here's some incredible, dazzling, magnificent...\n\nBlacksmith: Wonderful, top-of-the-line information!\n\nBlacksmith: Ready? I'll only say it once, so listen closely!",
+        "revision": "Blacksmith: Whoa, nearly forgot!\n\nBlacksmith: {player}, that's exactly {count} jobs!\n\nBlacksmith: As promised, here's some incredible, dazzling, magnificent, wonderful, top-class information!\n\nBlacksmith: Ready? I'll only say it once. Listen closely!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.71",
+      "source_id": "town-common.174c",
+      "index": 71,
+      "source_hex": "926296e889ae81758343838482be82c182c48cbe82c182c482e082e60d814082bb82a282c282cd8380838a82c8986282be82ba81420d0d0d926296e889ae817583438357838f838b82b582c482e982f182b682e182c882ad82c40d814082b182a282c282cd814088ea937882b582a981408cbe82a682cb82a682f182be82e681420d926296e889ae817582bb82ea82be82af814082b782b082a68fee95f182c182c482ed82af82be814200",
+      "source_sha256": "75936893c58e87c409faf47b5771fbaff58bc22b3fc1bfecb9e80bc74d75c4d1",
+      "japanese": "鍛冶屋「イヤだって言ってもよ\n　そいつはムリな話だぜ。\n\n\n鍛冶屋「イジワルしてるんじゃなくて\n　こいつは　一度しか　言えねえんだよ。\n鍛冶屋「それだけ　すげえ情報ってわけだ。",
+      "english": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+        "revision": "Blacksmith: Even if you object, that's how it is.\n\nBlacksmith: I'm not being mean. I can only tell you once.\n\nBlacksmith: That's how incredible this information is!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.72",
+      "source_id": "town-common.17f7",
+      "index": 72,
+      "source_hex": "926296e889ae817582ed82a982c182c482ad82ea82bd82e682a482be82c881420d0d0d0d926296e889ae817582bb82ea82b682e182a0814082a282a282a982a281480d0d926296e889ae8175837a8393836782c9814088ea937882b582a981408cbe82ed82cb82a682a982e70d814082ba82c182bd82a282c9814095b782ab82cc82aa82b382cb82a682c582ad82ea82e6814800",
+      "source_sha256": "ad65948a268dd2c76088f85710588cd139ca9791cd92ad8ce68b86116f81ce7a",
+      "japanese": "鍛冶屋「わかってくれたようだな。\n\n\n\n鍛冶屋「それじゃあ　いいかい？\n\n鍛冶屋「ホントに　一度しか　言わねえから\n　ぜったいに　聞きのがさねえでくれよ？",
+      "english": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+        "revision": "Blacksmith: Sounds like you understand.\n\nBlacksmith: Ready, then?\n\nBlacksmith: I really will only say it once. Don't miss a word!",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.73",
+      "source_id": "town-common.188b",
+      "index": 73,
+      "source_hex": "926296e889ae817582bd82cc82de82ba814082be82f182c8816081420d814082b182ea82f08140986282b782cc82c182c482cc82cd82b3829f81600d926296e889ae81758349838c82be82c182c4814082bb82a482c682a4834c8350839382c8836e835682f00d814082ed82bd82e982c182c482b182c682c882f182be82ba81480d926296e889ae817582bb82b182f182c682b10d814082e682a7816082ad8d6c82a682c482ad82ea82e6814200",
+      "source_sha256": "c5f789cefefa61656e6faaa004c4a37a92cb07b76de6be725bd14e800fa39158",
+      "japanese": "鍛冶屋「たのむぜ　だんな～。\n　これを　話すのってのはさぁ～\n鍛冶屋「オレだって　そうとうキケンなハシを\n　わたるってことなんだぜ？\n鍛冶屋「そこんとこ\n　よぉ～く考えてくれよ。",
+      "english": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+        "revision": "Blacksmith: Come on, boss!\n\nBlacksmith: I'm taking a pretty big risk just telling you this!\n\nBlacksmith: Give that some thought, will you?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.74",
+      "source_id": "town-common.1939",
+      "index": 74,
+      "source_hex": "926296e889ae817582b382b782aa81407e82cc82be82f182c881420d0d926296e889ae817582b182cc8fee95f182cc82b782b282b382c182c482e082cc82f00d814082bf82e182f182c682ed82a982c182c482e982dd82bd82a282be82c881420d0d926296e889ae817582d382a4816081420d814082bb82ea82b682e182a0814082a282ad82ba81480d0d0d926296e889ae8175837a8393836782cc837a8393836782c90d814088ea89f182b582a98cbe82ed82cb82a682a982e782b30d0d0d926296e889ae8175905382cc82b682e382f182d182aa814082a282e982c882e70d81408da182cc82a482bf82be82ba81480d926296e889ae817582bf82e582c182c682be82af82c882e7814091d282c182c482c482e282e982af82c70d814082c782a482b782e982e6814800",
+      "source_sha256": "38313ebf3f81db093aca12aefa1cd7759a3f6d1a60af1bb7ffb09b2b46561b84",
+      "japanese": "鍛冶屋「さすが　{unclassified-control:7e}のだんな。\n\n鍛冶屋「この情報のすごさってものを\n　ちゃんとわかってるみたいだな。\n\n鍛冶屋「ふう～。\n　それじゃあ　いくぜ？\n\n\n鍛冶屋「ホントのホントに\n　一回しか言わねえからさ\n\n\n鍛冶屋「心のじゅんびが　いるなら\n　今のうちだぜ？\n鍛冶屋「ちょっとだけなら　待っててやるけど\n　どうするよ？",
+      "english": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+        "revision": "Blacksmith: That's the spirit, {player}!\n\nBlacksmith: You understand just how incredible this information is.\n\nBlacksmith: Phew... Right, here goes.\n\nBlacksmith: I really, truly will only say it once.\n\nBlacksmith: If you need to steel yourself, now's the time!\n\nBlacksmith: I can wait a little. What do you say?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.75",
+      "source_id": "town-common.1a65",
+      "index": 75,
+      "source_hex": "926296e889ae817591d282c182c482c482d982b582a282a982a2814800",
+      "source_sha256": "8d12fd4fc72d407bdb74f121e9d690dde908609f701dce014cd7493b4906a28e",
+      "japanese": "鍛冶屋「待っててほしいかい？",
+      "english": "Blacksmith: Want me to wait?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Want me to wait?",
+        "revision": "Blacksmith: Want me to wait?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.76",
+      "source_id": "town-common.1a82",
+      "index": 76,
+      "source_hex": "926296e889ae817581458145814582ed82a982c182bd82e681420d0d0d0d926296e889ae817581458145814581458145814581420d0d0d0d926296e889ae817581458145814581458145814581420d0d0d0d926296e889ae8175814581458145814581458145814200",
+      "source_sha256": "998fbaf03541fd012337b355635da6193bf577bb908221bf0ca7dfc7e405be62",
+      "japanese": "鍛冶屋「・・・わかったよ。\n\n\n\n鍛冶屋「・・・・・・。\n\n\n\n鍛冶屋「・・・・・・。\n\n\n\n鍛冶屋「・・・・・・。",
+      "english": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+        "revision": "Blacksmith: ...All right.\n\nBlacksmith: ......\n\nBlacksmith: ......\n\nBlacksmith: ......",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.77",
+      "source_id": "town-common.1aeb",
+      "index": 77,
+      "source_hex": "926296e889ae817582bb82eb82bb82eb814082a282a282a982a2814800",
+      "source_sha256": "7cfd12f0ef9f355f39b34daf7cd10bc5121520b2bdf872369194be70c04d4aa4",
+      "japanese": "鍛冶屋「そろそろ　いいかい？",
+      "english": "Blacksmith: Ready now?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Ready now?",
+        "revision": "Blacksmith: Ready now?",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    },
+    {
+      "id": "blacksmith.78",
+      "source_id": "town-common.1b08",
+      "index": 78,
+      "source_hex": "926296e889ae817582bb82ea82b682e182a00d8140837a8393836782c98cbe82a482ba81480d926296e889ae817582b682c282cd82c881458145814500",
+      "source_sha256": "50369a181c2176384038895779f1200f7923ef8734430b4b273e91004d6d1d85",
+      "japanese": "鍛冶屋「それじゃあ\n　ホントに言うぜ？\n鍛冶屋「じつはな・・・",
+      "english": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+        "revision": "Blacksmith: Right, here it comes!\n\nBlacksmith: The truth is...",
+        "reason": "Bilingual review preserves requested item multiplicity and order, exchanges, smithing limits, job counts and the complete tip dialogue. Compact index70 keeps all five extravagant adjectives and the one-time warning within the measured formatter reserve. Direct passages reuse town-prose-review."
+      }
+    }
+  ]
+}

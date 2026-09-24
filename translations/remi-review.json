@@ -1,0 +1,931 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "60 source slots read by Remi consumer0801E75C. Private table only; source133 and141 are not read by this function. Menu, number picker, formatted dialogue, saved-village substitution and actual service mechanics require their own native evidence. Dungeon selection/name consumers remain separate.",
+  "entries": [
+    {
+      "id": "remi.58",
+      "source_id": "town-common.2af3",
+      "index": 58,
+      "source_hex": "838c837e83428175838c837e834282cc82a8935882d682e682a482b182bb81490d814082b297708c8f814082a482a982aa82c182bf82e182a282dc82b782ed814900",
+      "source_sha256": "6038b66e9f5e7dd438fb7f0cf1bf3976252103dadeb8a130bb98cd02e1f7b408",
+      "japanese": "レミィ「レミィのお店へようこそ！\n　ご用件　うかがっちゃいますわ！",
+      "english": "Remi: Welcome to Remi's shop! What can I do for you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Welcome to Remi's shop! What can I do for you?",
+        "revision": "Remi: Welcome to Remi's shop! What can I do for you?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.124",
+      "source_id": "town-common.2b80",
+      "index": 124,
+      "source_hex": "838c837e8342817582a6814082e082a48b4182c182bf82e182a482cc81480d814082a882cb82aa82a282be82a982e7814082dc82bd978882c482cb81420d838c837e8342817582e282ad82bb82ad814082be82e6814900",
+      "source_sha256": "c5450afee380f208c33784e323e0a2f2e7c29360c79cc063325961e29569ef82",
+      "japanese": "レミィ「え　もう帰っちゃうの？\n　おねがいだから　また来てね。\nレミィ「やくそく　だよ！",
+      "english": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+        "revision": "Remi: Oh, leaving already? Please come again!\n\nRemi: Promise?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.125",
+      "source_id": "town-common.2bd7",
+      "index": 125,
+      "source_hex": "838c837e8342817582a482f1814082ed82a982c182bd81420d0d838c837e83428175838c837e834282cc9682964082c57e82b382f182f00d814082bd82ad82dc82b582ad82b582c482a082b082e982a38160814900",
+      "source_sha256": "858ca8297ca4c730101e1b68d38e2ccb1f8aeda1280cf42b5f1c4b31d8011d95",
+      "japanese": "レミィ「うん　わかった。\n\nレミィ「レミィの魔法で~さんを\n　たくましくしてあげるぅ～！",
+      "english": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+        "revision": "Remi: All right!\n\nRemi: I'll use my magic to make you big and strong, {player}!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.126",
+      "source_id": "town-common.2c2c",
+      "index": 126,
+      "source_hex": "838c837e8342817581458145814582c68e7682c182bd82af82c781400d81408353815b838b836882aa82bd82e882c882a282dd82bd82a282e681420d0d0d838c837e834281758dc592e182c582e00d814003052564054782bd82dc82c182c482a982e70d838c837e83428175838c837e834282cc82c682b182eb82c9975682d182c9978882c482cb814900",
+      "source_sha256": "d56974637ae994346093c44499d04b8da6493d4d6c6b392dbb5cc97344df5ab0",
+      "japanese": "レミィ「・・・と思ったけど　\n　ゴールドがたりないみたいよ。\n\n\nレミィ「最低でも\n　\u0003\u0005%d\u0005Gたまってから\nレミィ「レミィのところに遊びに来てね！",
+      "english": "Remi: ...Or so I thought. You don't have enough gold!\n\nRemi: Come and see me when you have at least {cost}G!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: ...Or I would, but you don't seem to have enough gold.\n\nRemi: Come and see me when you've saved at least {arg1}G!",
+        "revision": "Remi: ...Or so I thought. You don't have enough gold!\n\nRemi: Come and see me when you have at least {cost}G!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.127",
+      "source_id": "town-common.2cb7",
+      "index": 127,
+      "source_hex": "838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "2b3ea6d15a81dc0ab467018c34c0f988a2f3114469a143a2a6f1b498bde42990",
+      "japanese": "レミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Now, is there anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Now, is there anything else you'd like?",
+        "revision": "Remi: Now, is there anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.128",
+      "source_id": "town-common.2ce5",
+      "index": 128,
+      "source_hex": "838c837e8342817582a082c882bd82cc8e9d82c182c482a282e98353815b838b836882be82c60d8140838c8378838b256482dc82c581408fe382b082e782ea82e982af82c7814800",
+      "source_sha256": "cc82b449143b9b989c405705cdd35d50ca051aac122c7118868a2ca93dde780b",
+      "japanese": "レミィ「あなたの持っているゴールドだと\n　レベル%dまで　上げられるけど？",
+      "english": "Remi: With your gold, I can raise you to level {level}.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: With the gold you have, I can raise you to level {arg1}. How's that?",
+        "revision": "Remi: With your gold, I can raise you to level {level}.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.129",
+      "source_id": "town-common.2d2d",
+      "index": 129,
+      "source_hex": "8140838c8378838b257300",
+      "source_sha256": "4facb7bf51f74f01ae77cc0252c556a98fd5c4747ebbbb495e918897b633c3ee",
+      "japanese": "　レベル%s",
+      "english": "Level {number}",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Level {arg1}",
+        "revision": "Level {number}",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.130",
+      "source_id": "town-common.2d38",
+      "index": 130,
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f181420d814082e282df82c482a882ad82cc82cb814200",
+      "source_sha256": "c9dab7ac93255822211057ff5c9fc7a5d2066f25379fe4dd545e90564409ec89",
+      "japanese": "レミィ「あら　ざんねん。\n　やめておくのね。",
+      "english": "Remi: Oh, what a shame. You've changed your mind.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame. You've changed your mind.",
+        "revision": "Remi: Oh, what a shame. You've changed your mind.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.131",
+      "source_id": "town-common.2d64",
+      "index": 131,
+      "source_hex": "838c837e8342817582bb82ea82b682e182a00d8140838c8378838b256482dc82c5838c8378838b83418362837682b582c482a082b082e982cb81420d838c837e8342817503052564058353815b838b836882a982a982e982af82c781458145814581420d814081458145814582bb82ea82c582a282a282a982b582e7814800",
+      "source_sha256": "0321c7f1e55a8e1d30cc9344ac2262c746efe03c03d4bc1aa5180dee18b92677",
+      "japanese": "レミィ「それじゃあ\n　レベル%dまでレベルアップしてあげるね。\nレミィ「\u0003\u0005%d\u0005ゴールドかかるけど・・・。\n　・・・それでいいかしら？",
+      "english": "Remi: I'll raise you to level {level}, then. It costs {cost}G. Is that OK?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: I'll raise you to level {arg1}, then.\n\nRemi: It'll cost {arg2} gold... Is that all right?",
+        "revision": "Remi: I'll raise you to level {level}, then. It costs {cost}G. Is that OK?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.132",
+      "source_id": "town-common.2de3",
+      "index": 132,
+      "source_hex": "838c837e8342817582bf82e5814082bf82e582c182c682a7816081420d81408353815b838b836882aa82bd82e882c882a282dd82bd82a282e681420d0d0d838c837e8342817503052564058353815b838b836882bd82df82c482a982e70d814082dc82bd978882c482cb814900",
+      "source_sha256": "08995986791914c961ce4c74f6bbbafaf6aadb259c3a0027009c05cdce7967f2",
+      "japanese": "レミィ「ちょ　ちょっとぉ～。\n　ゴールドがたりないみたいよ。\n\n\nレミィ「\u0003\u0005%d\u0005ゴールドためてから\n　また来てね！",
+      "english": "Remi: H-hang on! You don't have enough gold.\n\nRemi: Come back with {cost}G!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: H-hold on! You don't seem to have enough gold.\n\nRemi: Come back when you've saved {arg1} gold!",
+        "revision": "Remi: H-hang on! You don't have enough gold.\n\nRemi: Come back with {cost}G!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.134",
+      "source_id": "town-common.2ea6",
+      "index": 134,
+      "source_hex": "838c837e8342817582a482c182ed829f816081490d81407e82b382f1814082bd82ad82dc82b582a282ed816081490d838c837e8342817582b182ea82c5838283938358835e815b82c882f182a90d814082bf82e582bf82e582a282cc82bf82e582a2814082cb814900",
+      "source_sha256": "cef34f8e97f790c3409deeb4995c1a898670b54cd00a53756341821cf9f2ba5a",
+      "japanese": "レミィ「うっわぁ～！\n　~さん　たくましいわ～！\nレミィ「これでモンスターなんか\n　ちょちょいのちょい　ね！",
+      "english": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+        "revision": "Remi: Oooh, {player}! You're so strong!\n\nRemi: Those monsters will be a pushover now!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.135",
+      "source_id": "town-common.2f0f",
+      "index": 135,
+      "source_hex": "838c837e834281758ff182cc89f1909482f082d382e282b582bd82a281490d814082c182c4838f835082cb814200",
+      "source_sha256": "bb056053752b64a1a1258c751ec08e4c25d82863eaa1a35e5fc3d4c504f71070",
+      "japanese": "レミィ「杖の回数をふやしたい！\n　ってワケね。",
+      "english": "Remi: You want more staff charges! Is that it?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: You want more staff charges! Is that it?",
+        "revision": "Remi: You want more staff charges! Is that it?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.136",
+      "source_id": "town-common.2f3d",
+      "index": 136,
+      "source_hex": "838c837e8342817582c582e081458145814582a082c882bd0d81408ff182f08e9d82c182c482c882a282dd82bd82a282e681420d0d0d838c837e834281758ff182f08ee882c993fc82ea82c482a982e70d814082dc82bd978882c482cb814200",
+      "source_sha256": "80c51bca7d3df6f9278ad645db10a85690b59bf76056754565f854c5fa724153",
+      "japanese": "レミィ「でも・・・あなた\n　杖を持ってないみたいよ。\n\n\nレミィ「杖を手に入れてから\n　また来てね。",
+      "english": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+        "revision": "Remi: But... You don't seem to have a staff.\n\nRemi: Come back when you've found one!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.137",
+      "source_id": "town-common.2f9d",
+      "index": 137,
+      "source_hex": "838c837e8342817582c582e08145814581450d0d838c837e8342817582a082c882bd82cc8e9d82c182c482a282e98ff182c182c40d814082e082a489f1909482f082d382e282b982c882a281420d838c837e8342817582d982a982cc8ff182f08ee882c993fc82ea82c482a982e70d814082dc82bd814082b182b182c9978882c482d982b582a282c8829f814200",
+      "source_sha256": "e40bd8248cde0f2f13ce0a8ce652412fbd63b3b5a53337e33d2dc0bd778c646b",
+      "japanese": "レミィ「でも・・・\n\nレミィ「あなたの持っている杖って\n　もう回数をふやせない。\nレミィ「ほかの杖を手に入れてから\n　また　ここに来てほしいなぁ。",
+      "english": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+        "revision": "Remi: But...\n\nRemi: I can't add any more charges to the staves you have.\n\nRemi: Find another staff and come back, won't you?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.138",
+      "source_id": "town-common.302b",
+      "index": 138,
+      "source_hex": "838c837e8342817582bb82ea82b682e182a0814082c782cc8ff182cc89f1909482f00d814082d382e282b582c482d982b582a282cc82a981408bb382a682c482ad82ea82c882a2814800",
+      "source_sha256": "b0324e6e861a1e0862e4a88ad3cc3eda6f59864346972833c89f122bf549ad6a",
+      "japanese": "レミィ「それじゃあ　どの杖の回数を\n　ふやしてほしいのか　教えてくれない？",
+      "english": "Remi: Which staff would you like me to add charges to?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Which staff would you like me to add charges to?",
+        "revision": "Remi: Which staff would you like me to add charges to?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.139",
+      "source_id": "town-common.3075",
+      "index": 139,
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81480d8140838c837e8342814082bf82e582c182c682a982c882b582a282c8829f81420d0d0d838c837e8342817582cb82a682cb82a6814082bb82ea82b682e182a00d814082d982a982c982cd814089bd82a982c882a282a982c8829f814800",
+      "source_sha256": "48bf9935851b4f29fbf2b2aabb2b07ff2466fe781c7e3cffc07f306e93ff9439",
+      "japanese": "レミィ「あら　やめちゃうの？\n　レミィ　ちょっとかなしいなぁ。\n\n\nレミィ「ねえねえ　それじゃあ\n　ほかには　何かないかなぁ？",
+      "english": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? I'm a little disappointed...\n\nRemi: Well, is there anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.140",
+      "source_id": "town-common.30ef",
+      "index": 140,
+      "source_hex": "817b257300",
+      "source_sha256": "6ebfd4a39e32c63a7db6b2a444d163afdab787a56ceb68508b9a445690227d8f",
+      "japanese": "＋%s",
+      "english": "+{number}",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "+{arg1}",
+        "revision": "+{number}",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.142",
+      "source_id": "town-common.318e",
+      "index": 142,
+      "source_hex": "838c837e8342817582bb82ea82b682e182a00d8140257382cc89f1909482f00d838c837e83428175256489f195aa82be82af814082d382e282b982ce82a282a282cc82cb81480d814003052564058353815b838b836882a982a982e982af82c7814200",
+      "source_sha256": "63bb5ccd36207a1c3d44ea5354b0f453e6dbc5677ea10606cdf6a740cb8eacce",
+      "japanese": "レミィ「それじゃあ\n　%sの回数を\nレミィ「%d回分だけ　ふやせばいいのね？\n　\u0003\u0005%d\u0005ゴールドかかるけど。",
+      "english": "Remi: For {item}, add {charges} charges? That costs {cost}G.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: So, {arg1}...\n\nRemi: You'd like {arg2} more charges? That will cost {arg3} gold.",
+        "revision": "Remi: For {item}, add {charges} charges? That costs {cost}G.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.143",
+      "source_id": "town-common.31f1",
+      "index": 143,
+      "source_hex": "838c837e8342817582a682a68160814082e282df82bf82e182a482cc81480d0d0d0d838c837e8342817582a4816082f1814082bb82ea82b682e182a082b30d814082d982a982c982cd814089bd82a982c882a282a982b582e7814800",
+      "source_sha256": "c792f621279ee8a4723940f2a607006dc3177f89590c6047d7c5eac354850a71",
+      "japanese": "レミィ「ええ～　やめちゃうの？\n\n\n\nレミィ「う～ん　それじゃあさ\n　ほかには　何かないかしら？",
+      "english": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+        "revision": "Remi: Aww, changed your mind?\n\nRemi: Hmm... Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.144",
+      "source_id": "town-common.324d",
+      "index": 144,
+      "source_hex": "838c837e8342817582a682a6814082ed82a982c182bd82ed81420d0d0d0d838c837e8342817596da82f082c682b682c481420d814081458145814582a282a28148814082a282ad82ed82e681480d0d0d838c837e834281758ff182cc89f19094814082d382a682eb82a7816082c181490d814081458145814582a682a282c1814900",
+      "source_sha256": "4b3f481bb905ffcc333c72077e3534c2945cb9797aabc8b949ef18c100abfb31",
+      "japanese": "レミィ「ええ　わかったわ。\n\n\n\nレミィ「目をとじて。\n　・・・いい？　いくわよ？\n\n\nレミィ「杖の回数　ふえろぉ～っ！\n　・・・えいっ！",
+      "english": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+        "revision": "Remi: All right!\n\nRemi: Close your eyes. ...Ready? Here goes!\n\nRemi: Chaaarges, increeease! ...Hah!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.145",
+      "source_id": "town-common.32cf",
+      "index": 145,
+      "source_hex": "838c837e8342817581458145814582cd82a2814091e582b982a282b182a482e681490d814082bd82a282b982c282c98e6782c182c482cb814200",
+      "source_sha256": "90e8cd0a356c1d6b119780e2d4684f0c56521f70d8f0476381e2e023265d965e",
+      "japanese": "レミィ「・・・はい　大せいこうよ！\n　たいせつに使ってね。",
+      "english": "Remi: ...There! A perfect success! Make good use of it!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: ...There! A perfect success! Make good use of it!",
+        "revision": "Remi: ...There! A perfect success! Make good use of it!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.146",
+      "source_id": "town-common.312a",
+      "index": 146,
+      "source_hex": "838c837e8342817589bd89f182ae82e782a2814082d382e282b582bd82a282cc81480d0d838c837e834281758e9d82c182c482a282e98353815b838b836882c582cd0d8140256489f195aa814082d382e282b782b182c682aa82c582ab82e982ed814200",
+      "source_sha256": "7196313ef4d27df7872cc890b53813f5bf3ec33374d7022f805e666d24ef3bab",
+      "japanese": "レミィ「何回ぐらい　ふやしたいの？\n\nレミィ「持っているゴールドでは\n　%d回分　ふやすことができるわ。",
+      "english": "Remi: How many charges would you like? You can afford {charges}.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: How many charges would you like?\n\nRemi: With the gold you have, you can add {arg1} charges.",
+        "revision": "Remi: How many charges would you like? You can afford {charges}.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.147",
+      "source_id": "town-common.33b4",
+      "index": 147,
+      "source_hex": "838c837e8342817582a082e882aa82c682a482b282b482a282dc82b781490d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "70e458ab67cff58940989402db9f8b6d127b80c5414515606e9161fbe25806b5",
+      "japanese": "レミィ「ありがとうございます！\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Thank you!\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.148",
+      "source_id": "town-common.3404",
+      "index": 148,
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f1816081420d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "ea1a3613c106106925d16a0ce296b367b9432d7c24943b5cb93b274d61a2a28d",
+      "japanese": "レミィ「あら　ざんねん～。\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.149",
+      "source_id": "town-common.3450",
+      "index": 149,
+      "source_hex": "838c837e8342817582a082e781480d81408353815b838b836882aa82bd82e882c882a282dd82bd82a282e681420d838c837e834281758353815b838b836882f082bd82df82c482a982e70d814082dc82bd948382a282c9978882c482d982b582a282c8829f816081420d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "8b2f3bf062f5d5394521b062e1691adb6d43402db1b2695846fab65ed596bf8a",
+      "japanese": "レミィ「あら？\n　ゴールドがたりないみたいよ。\nレミィ「ゴールドをためてから\n　また買いに来てほしいなぁ～。\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh? You don't seem to have enough gold.\n\nRemi: Save up and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.150",
+      "source_id": "town-common.34e8",
+      "index": 150,
+      "source_hex": "838c837e8342817582a082e781480d81408e9d82bf82e082cc82aa82a282c182cf82a282dd82bd82a282e681420d838c837e834281758e9d82bf82e082cc82f090ae979d82b582c482a982e70d814082dc82bd978882c482ad82ea82e982c682a482ea82b582a282c8829f816081420d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "04c6ba357e0307e89613dc1f9a4adfa96cab5b7813d696ad22755abb5488a343",
+      "japanese": "レミィ「あら？\n　持ちものがいっぱいみたいよ。\nレミィ「持ちものを整理してから\n　また来てくれるとうれしいなぁ～。\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh? Your inventory seems to be full.\n\nRemi: Make some room and come back, won't you?\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.151",
+      "source_id": "town-common.3586",
+      "index": 151,
+      "source_hex": "838c837e8342817582a082e7814082e082a48e9d82c182c482e982dd82bd82a282e681420d814081458145814582e082a48140835f838182cb82a5816081420d0d0d838c837e8342817582cb82a682cb82a681400d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "55ed6f3c1b080acc6decd0909ed37b7cc0ad3a218e60ba6eba2100738b0b7700",
+      "japanese": "レミィ「あら　もう持ってるみたいよ。\n　・・・もう　ダメねぇ～。\n\n\nレミィ「ねえねえ　\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, you've already got one! You silly thing...\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.152",
+      "source_id": "town-common.3309",
+      "index": 152,
+      "source_hex": "838c837e83428175935382cc8be08cc982cd0d814003052564058353815b838b836882e681420d0d0d838c837e8342817582b182ea82aa82a082ea82ce8140835f839383578387839382c50d8140838283938358835e815b82c982e282e782ea82bf82e182c182c482e00d838c837e834281758353815b838b836882aa8cb882e782b882c982b782de82cc81420d814081458145814582a8948382a282c982c882e882dc82b782a3814800",
+      "source_sha256": "746edef9569ac4b1566376985c1cf7386cde8fdc434f0186c4319b179984c2c1",
+      "japanese": "レミィ「鉄の金庫は\n　\u0003\u0005%d\u0005ゴールドよ。\n\n\nレミィ「これがあれば　ダンジョンで\n　モンスターにやられちゃっても\nレミィ「ゴールドが減らずにすむの。\n　・・・お買いになりますぅ？",
+      "english": "Remi: An Iron safe costs {cost}G.\n\nRemi: It saves your gold if monsters defeat you in a dungeon. Want to buy one?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: An Iron safe costs {arg1} gold.\n\nRemi: With one of these, you won't lose any gold even if monsters defeat you in a dungeon.\n\nRemi: Would you like to buy one?",
+        "revision": "Remi: An Iron safe costs {cost}G.\n\nRemi: It saves your gold if monsters defeat you in a dungeon. Want to buy one?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.153",
+      "source_id": "town-common.35f8",
+      "index": 153,
+      "source_hex": "838c837e8342817582a082c882bd82cd8da18140257382be82af82c70d814082b182f182c782cd814082c782cc90458bc682c982c282ab82bd82a282cc814800",
+      "source_sha256": "37a0ea53ca5330ccfcb6ef3688b3e7a810dc4216cf3fdd47ef2d9a7ca82e8961",
+      "japanese": "レミィ「あなたは今　%sだけど\n　こんどは　どの職業につきたいの？",
+      "english": "Remi: You're a {vocation} now. Which vocation would you like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: You're a {arg1} now. What vocation would you like to try?",
+        "revision": "Remi: You're a {vocation} now. Which vocation would you like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.154",
+      "source_id": "town-common.366a",
+      "index": 154,
+      "source_hex": "202090ed8e6d0d2020968296408e6782a20d202082e282df82e900",
+      "source_sha256": "447bc9e2958acca47336d0b1e200cc3e08634bef351d6c2e80340d05623e865f",
+      "japanese": "  戦士\n  魔法使い\n  やめる",
+      "english": [
+        "Warrior",
+        "Mage",
+        "Cancel"
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Warrior\nMage\nCancel",
+        "revision": [
+          "Warrior",
+          "Mage",
+          "Cancel"
+        ],
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.155",
+      "source_id": "town-common.364f",
+      "index": 155,
+      "source_hex": "20208fa4906c0d2020968296408e6782a20d202082e282df82e900",
+      "source_sha256": "82fe933a2044f64299271a6823b715281599e262d8b65bfc4648e3aff084b2bf",
+      "japanese": "  商人\n  魔法使い\n  やめる",
+      "english": [
+        "Merchant",
+        "Mage",
+        "Cancel"
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Merchant\nMage\nCancel",
+        "revision": [
+          "Merchant",
+          "Mage",
+          "Cancel"
+        ],
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.156",
+      "source_id": "town-common.3638",
+      "index": 156,
+      "source_hex": "20208fa4906c0d202090ed8e6d0d202082e282df82e900",
+      "source_sha256": "046eea09dc23d84f745dcb51544096ba88e87e0d59e1908f96d0060ca44e0583",
+      "japanese": "  商人\n  戦士\n  やめる",
+      "english": [
+        "Merchant",
+        "Warrior",
+        "Cancel"
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Merchant\nWarrior\nCancel",
+        "revision": [
+          "Merchant",
+          "Warrior",
+          "Cancel"
+        ],
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.157",
+      "source_id": "town-common.3685",
+      "index": 157,
+      "source_hex": "838c837e8342817582d382d382d3814082bb82a482e682cb81420d814082a082c882bd82c982cd81408fa4906c82aa83738362835e838a82be82e082f1814900",
+      "source_sha256": "ce42078b7fa80fdc0c9f9273e66d9c434ea7c758aa343a9ffd339fafcc0776f6",
+      "japanese": "レミィ「ふふふ　そうよね。\n　あなたには　商人がピッタリだもん！",
+      "english": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+        "revision": "Remi: Hee hee, of course! Being a merchant suits you perfectly!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.158",
+      "source_id": "town-common.36c5",
+      "index": 158,
+      "source_hex": "838c837e8342817582a082e7814082a282b382dc82b582a281490d0d838c837e8342817582a082c882bd82c182c4814082c682c182c482e08bad82a282a982e70d814090ed8e6d82c983738362835e838a82cb814200",
+      "source_sha256": "88792e768d628af2ae6ab112dab08e202e595f945b342fe9775b15c4eded01c8",
+      "japanese": "レミィ「あら　いさましい！\n\nレミィ「あなたって　とっても強いから\n　戦士にピッタリね。",
+      "english": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+        "revision": "Remi: Oh, how brave!\n\nRemi: You're so strong! You'd make a perfect warrior.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.159",
+      "source_id": "town-common.371b",
+      "index": 159,
+      "source_hex": "838c837e8342817582ab82e1814082a482ea82b582a281490d0d838c837e8342817593af82b6968296408e6782a282be82c6814082a882c682e082be82bf81490d814082c182c482a282a48ab482b682aa82b782e982e082f182cb814900",
+      "source_sha256": "e37fb453d16b774580ba8e464268bb72879498121d72aefcec00d2c0fc609e96",
+      "japanese": "レミィ「きゃ　うれしい！\n\nレミィ「同じ魔法使いだと　おともだち！\n　っていう感じがするもんね！",
+      "english": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+        "revision": "Remi: Ooh, lovely!\n\nRemi: If we're both mages, we'll feel like kindred spirits!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.160",
+      "source_id": "town-common.3779",
+      "index": 160,
+      "source_hex": "838c837e8342817582bb82ea82b682e182a08140935d904582b782e982cb81420d8140814581458145837a8393836782c982a282a2814800",
+      "source_sha256": "f53aa94603ef092cb9885a46a017dcfc4c5f538735d743cadd48e7adf59187f3",
+      "japanese": "レミィ「それじゃあ　転職するね。\n　・・・ホントにいい？",
+      "english": "Remi: I'll change your vocation, then. ...Are you sure?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: I'll change your vocation, then. ...Are you sure?",
+        "revision": "Remi: I'll change your vocation, then. ...Are you sure?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.161",
+      "source_id": "town-common.37b1",
+      "index": 161,
+      "source_hex": "838c837e8342817596da82f082c682b682c481420d814082a282a28148814082a282ad82ed82e681480d0d0d838c837e83428175935d904583728160838081490d814081458145814582a682a282c1814900",
+      "source_sha256": "7c9beb6d368c2f7f2f71a8205e5803f4147ccad204a2b3d9a865edb613bfe634",
+      "japanese": "レミィ「目をとじて。\n　いい？　いくわよ？\n\n\nレミィ「転職ビ～ム！\n　・・・えいっ！",
+      "english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+        "revision": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Vocation beeeam! ...Hah!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.162",
+      "source_id": "town-common.3803",
+      "index": 162,
+      "source_hex": "838c837e8342817582a482d3814091e582b982a282b182a482c181490d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "2fc4b96e2288cca753b4a4c6340ec60d3b6e29a071575b8bfcd7c41d5d19004a",
+      "japanese": "レミィ「うふ　大せいこうっ！\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Hee hee! A perfect success!\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.163",
+      "source_id": "town-common.3851",
+      "index": 163,
+      "source_hex": "838c837e8342817582a082e7814082b482f182cb82f182be82ed81420d0d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "b21dc1188f49e3f6fcc16a6c08307869a2c75013e56b7cb1d2a7b15c4c224187",
+      "japanese": "レミィ「あら　ざんねんだわ。\n\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, what a shame!\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.164",
+      "source_id": "town-common.389f",
+      "index": 164,
+      "source_hex": "8fa4906c00",
+      "source_sha256": "8213e4f1c53ebd6e0a7c93d9ca72d55e488f08c605c4c4163bf89b63fbb25205",
+      "japanese": "商人",
+      "english": "Merchant",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Merchant",
+        "revision": "Merchant",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.165",
+      "source_id": "town-common.38a4",
+      "index": 165,
+      "source_hex": "90ed8e6d00",
+      "source_sha256": "3fa5364269c249861b955e293ab4b7b3cbdbda18aefac6b2657c63f56035440a",
+      "japanese": "戦士",
+      "english": "Warrior",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Warrior",
+        "revision": "Warrior",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.166",
+      "source_id": "town-common.38a9",
+      "index": 166,
+      "source_hex": "968296408e6782a200",
+      "source_sha256": "8795d5fb8947d508f603aeb6d669628854cf50c2a99d30eeadd7d81dac8a6351",
+      "japanese": "魔法使い",
+      "english": "Mage",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Mage",
+        "revision": "Mage",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.167",
+      "source_id": "town-common.38b2",
+      "index": 167,
+      "source_hex": "838c837e8342817582a082e781408d7382c182bd82b182c682cc82a082e90d8140835f839383578387839382c9838f815b837682b582bd82a282cc81480d0d0d838c837e8342817582a482f1814082a282a282ed81420d0d838c837e8342817582bb82ea82b682e182a0814082c782cc835f839383578387839382c90d81408d7382ab82bd82a282cc82a981408bb382a682c482bf82e582a482be82a2814200",
+      "source_sha256": "dcfcf0d758f404f02e83779c1aa6c561cfb885b12134383f1acce0c645fa608d",
+      "japanese": "レミィ「あら　行ったことのある\n　ダンジョンにワープしたいの？\n\n\nレミィ「うん　いいわ。\n\nレミィ「それじゃあ　どのダンジョンに\n　行きたいのか　教えてちょうだい。",
+      "english": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+        "revision": "Remi: You'd like to warp to a dungeon you've visited before?\n\nRemi: All right!\n\nRemi: Which dungeon would you like to visit?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.168",
+      "source_id": "town-common.3952",
+      "index": 168,
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81420d814081458145814582bf82e582c182c682b482f182cb82f181420d0d0d838c837e8342817582cb82a682cb82a60d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "56d7e57e1c0c400b4e0d2ec232851568f0ce4816638382ca4fe4fc7e5c3f5607",
+      "japanese": "レミィ「あら　やめちゃうの。\n　・・・ちょっとざんねん。\n\n\nレミィ「ねえねえ\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? ...That's a shame.\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.169",
+      "source_id": "town-common.39ba",
+      "index": 169,
+      "source_hex": "838c837e8342817582a082e7829f81608140835f838182e682a7816081420d0d838c837e8342817582bb82cc835f839383578387839382c982cd814025648cc282b582a90d8140834183438365838082f08e9d82c182c482a282af82c882a282ed814200",
+      "source_sha256": "34b8a191d60cf6c7d7ac83ff42bb2679dd8e3cd07f235976dc323a9a1a4665a7",
+      "japanese": "レミィ「あらぁ～　ダメよぉ～。\n\nレミィ「そのダンジョンには　%d個しか\n　アイテムを持っていけないわ。",
+      "english": "Remi: Oh, no, you can't!\n\nRemi: You can only take {items} items into that dungeon.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, no, you can't!\n\nRemi: You can only take {arg1} items into that dungeon.",
+        "revision": "Remi: Oh, no, you can't!\n\nRemi: You can only take {items} items into that dungeon.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.170",
+      "source_id": "town-common.3aea",
+      "index": 170,
+      "source_hex": "838c837e8342817582a082e7829f816081480d0d838c837e8342817582c782a482e282e78140838f815b837682c582ab82e90d8140835f839383578387839382aa82c882a282dd82bd82a282e6814200",
+      "source_sha256": "0d42ecc2b6801d35d4c5e8752fbca2e303809a0e8e22a2403d841d51c219cb15",
+      "japanese": "レミィ「あらぁ～？\n\nレミィ「どうやら　ワープできる\n　ダンジョンがないみたいよ。",
+      "english": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+        "revision": "Remi: Oh?\n\nRemi: It seems there's no dungeon I can warp you to.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.171",
+      "source_id": "town-common.3b3a",
+      "index": 171,
+      "source_hex": "838c837e8342817589bd4682dc82c58140838f815b837682b582bd82a282cc81480d0d838c837e8342817582bf82c882dd82c9814082a082c882bd82cc8d7382af82e90d88ea94d4905b82a28374838d834182cd814025644682e6814200",
+      "source_sha256": "8a807a6b2e7b4f4da25ec58ec8d54a1228f9ab7ae3647b8e9dd449222fd16c96",
+      "japanese": "レミィ「何Fまで　ワープしたいの？\n\nレミィ「ちなみに　あなたの行ける\n一番深いフロアは　%dFよ。",
+      "english": "Remi: Which floor shall I warp you to? The deepest you can go is {floor}F.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Which floor would you like to warp to?\n\nRemi: The deepest you can go is {arg1}F.",
+        "revision": "Remi: Which floor shall I warp you to? The deepest you can go is {floor}F.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.172",
+      "source_id": "town-common.3b98",
+      "index": 172,
+      "source_hex": "838c837e8342817582a482f1814082ed82a982c182bd82ed81420d814082a082c882bd82aa8d7382ab82bd82a282cc82cd0d838c837e83428175257382cc0d814025644682cb814800",
+      "source_sha256": "a9d6650ff8242d607cc57d4fd9f890c07e7363991f4927eb8ababa219422fd18",
+      "japanese": "レミィ「うん　わかったわ。\n　あなたが行きたいのは\nレミィ「%sの\n　%dFね？",
+      "english": "Remi: All right! You want {dungeon}, {floor}F?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: All right! You want to go to {arg1}, {arg2}F. Is that right?",
+        "revision": "Remi: All right! You want {dungeon}, {floor}F?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.173",
+      "source_id": "town-common.3be1",
+      "index": 173,
+      "source_hex": "838c837e8342817582bb82ea82be82c60d814003052564054782c982c882e982af82c70d838c837e8342817582a282a2814800",
+      "source_sha256": "e235260da9e7c36d419996fd5425a99f3c3c086b1b080e50d5a45dfd90ddbdcd",
+      "japanese": "レミィ「それだと\n　\u0003\u0005%d\u0005Gになるけど\nレミィ「いい？",
+      "english": "Remi: That's {cost}G. Is that OK?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: That will be {arg1}G. Is that all right?",
+        "revision": "Remi: That's {cost}G. Is that OK?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.174",
+      "source_id": "town-common.3c14",
+      "index": 174,
+      "source_hex": "838c837e8342817582a082e7814082e282df82bf82e182a482cc81480d814081458145814582bf82e582c182c6814082aa82c182a982e882a1816081420d0d0d838c837e8342817582cb82a682cb82a681400d814082d982a982c982e0814089bd82a982a082e982a982b582e7814800",
+      "source_sha256": "3c0cec666cffb4d61c30550aa2f39a7c5e5d270193414c8b722706b8303dc162",
+      "japanese": "レミィ「あら　やめちゃうの？\n　・・・ちょっと　がっかりぃ～。\n\n\nレミィ「ねえねえ　\n　ほかにも　何かあるかしら？",
+      "english": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+        "revision": "Remi: Oh, changed your mind? ...I'm a little disappointed.\n\nRemi: Anything else you'd like?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.175",
+      "source_id": "town-common.3c84",
+      "index": 175,
+      "source_hex": "838c837e8342817596da82f082c682b682c481420d814082a282a28148814082a282ad82ed82e681480d0d0d838c837e83428175836f8356838b81608389829f816081490d814081458145814582a682a282c1814900",
+      "source_sha256": "a8f86e693295565527a9cdb01c5cee0a5b23d083710c45eb16e584ac2f02df5d",
+      "japanese": "レミィ「目をとじて。\n　いい？　いくわよ？\n\n\nレミィ「バシル～ラぁ～！\n　・・・えいっ！",
+      "english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+        "revision": "Remi: Close your eyes. Ready? Here goes!\n\nRemi: Bazoooom! ...Hah!",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.176",
+      "source_id": "town-common.3cda",
+      "index": 176,
+      "source_hex": "814025734600",
+      "source_sha256": "d7506ff26d7fe9aeac0dda773a68e217ed8128a7533a8b7366e4bc25f34ed37e",
+      "japanese": "　%sF",
+      "english": "{number}F",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "{arg1}F",
+        "revision": "{number}F",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.200",
+      "source_id": "town-common.3a82",
+      "index": 200,
+      "source_hex": "838c837e8342817582a082e7829f81608140835f838182e682a7816081420d0d838c837e8342817582bb82cc835f839383578387839382c98d7382ad82c982cd0d81408353815b838b836882f08140824f82c982b582c882a282c682a282af82c882a282ed814200",
+      "source_sha256": "7babbec297adce6f4301d042e7d1136bde5528b7d27c33cd3ac9d82cfd7b042f",
+      "japanese": "レミィ「あらぁ～　ダメよぉ～。\n\nレミィ「そのダンジョンに行くには\n　ゴールドを　０にしないといけないわ。",
+      "english": "Remi: Oh, no, you can't!\n\nRemi: You must have no gold to enter that dungeon.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, no, you can't!\n\nRemi: You can't bring any gold into that dungeon.",
+        "revision": "Remi: Oh, no, you can't!\n\nRemi: You must have no gold to enter that dungeon.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.201",
+      "source_id": "town-common.2b35",
+      "index": 201,
+      "source_hex": "2020935382cc8be08cc982f0948382a400",
+      "source_sha256": "61ba19007b4f3c177061d3c393fe52dbf8654da5b9748e8eb2e841810beeb5d6",
+      "japanese": "  鉄の金庫を買う",
+      "english": "Buy iron safe",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Buy iron safe",
+        "revision": "Buy iron safe",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.202",
+      "source_id": "town-common.2b46",
+      "index": 202,
+      "source_hex": "20208ff182cc89f1909482f0919d82e282b700",
+      "source_sha256": "ee9c8e0104d7365d97a63ac73093d6258f0eaceb7dac8aca38ab497e6965e101",
+      "japanese": "  杖の回数を増やす",
+      "english": "Add staff charges",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Add staff charges",
+        "revision": "Add staff charges",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.203",
+      "source_id": "town-common.2b59",
+      "index": 203,
+      "source_hex": "2020836f8356838b815b838900",
+      "source_sha256": "66c3921d7ac4b4cee6d82bbe7433b6b3575ca46e21de8e3fe98061f276eabf58",
+      "japanese": "  バシルーラ",
+      "english": "Bazoom",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Bazoom",
+        "revision": "Bazoom",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.204",
+      "source_id": "town-common.2b66",
+      "index": 204,
+      "source_hex": "2020838c8378838b83418362837600",
+      "source_sha256": "1928b77f3b16a372a7d9e81c384280519170db78008ef60b9c5dff69d5bf5bb3",
+      "japanese": "  レベルアップ",
+      "english": "Level up",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Level up",
+        "revision": "Level up",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.205",
+      "source_id": "town-common.2b75",
+      "index": 205,
+      "source_hex": "2020935d904582b782e900",
+      "source_sha256": "466492f5b6e89511d923f7723ee869350bd3f3549450f5b8e9d9e6d270123e66",
+      "japanese": "  転職する",
+      "english": "Change vocation",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Change vocation",
+        "revision": "Change vocation",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.208",
+      "source_id": "town-common.3a1e",
+      "index": 208,
+      "source_hex": "838c837e8342817582a082e7829f81608140835f838182e682a7816081420d0d838c837e8342817582bb82cc835f839383578387839382c982cd814082d082c682c282e00d8140834183438365838082f08e9d82c182c482a282af82c882a282ed814200",
+      "source_sha256": "59ae26d44a173f34000eaf6965f7bb320c5db7d542b101526d4b1744f3b47508",
+      "japanese": "レミィ「あらぁ～　ダメよぉ～。\n\nレミィ「そのダンジョンには　ひとつも\n　アイテムを持っていけないわ。",
+      "english": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+        "revision": "Remi: Oh, no, you can't!\n\nRemi: You can't take any items into that dungeon.",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate."
+      }
+    },
+    {
+      "id": "remi.213",
+      "source_id": "town-common.3ce0",
+      "index": 213,
+      "source_hex": "838c837e8342817582bb82ea82be82c60d814003052564054782c982c882e982ed81420d838c837e8342817582a082c68140835f839383578387839382c993fc82e9914f82c90d0d838c837e834281751f91ba82cc8366815b835e82f00d81408fe38f9182ab835a815b837582b782e982af82c7814082bb82ea82c582e082a282a2814800",
+      "source_sha256": "1d48ed20a39ca1e7c94c278537b490639228596019004da489ebdf6deabdd59b",
+      "japanese": "レミィ「それだと\n　\u0003\u0005%d\u0005Gになるわ。\nレミィ「あと　ダンジョンに入る前に\n\nレミィ「\u001f村のデータを\n　上書きセーブするけど　それでもいい？",
+      "english": "Remi: That's {cost}G.\n\nRemi: Entering the dungeon will overwrite the {village} Village save.\n\nRemi: Is that OK?",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_english": "Remi: That will be {arg1}G.\n\nRemi: Before you enter the dungeon, I'll overwrite the save for {village} Village. Is that all right?",
+        "revision": "Remi: That's {cost}G.\n\nRemi: Entering the dungeon will overwrite the {village} Village save.\n\nRemi: Is that OK?",
+        "reason": "Independent bilingual reading preserves Remi's playful service voice, staff charges, target levels, price, inventory and gold restrictions, dungeon/floor destination and question polarity. The Iron safe protects gold when defeated by monsters in a dungeon. The special warp warning explicitly retains overwriting the saved village. Original printf argument order and paired price colours are retained. Earlier plain-prose review is reused; insertion and native service coverage are separate. Final native screenshot review keeps the complete saved village name and Village together on the same page; the overwrite warning and whole confirmation question remain explicit."
+      }
+    }
+  ]
+}

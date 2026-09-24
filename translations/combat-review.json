@@ -1,0 +1,146 @@
+{
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "First core combat formats; no claim of complete combat coverage. Explicit soft breaks preserve safe fallback layout. Incoming fragments form one complete queued message.",
+  "entries": [
+    {
+      "id": "combat.19c",
+      "table_offset": 412,
+      "source": {
+        "offset": 408800,
+        "end_exclusive": 408836,
+        "raw_hex": "257382c90d2564837c83438393836782cc835f8381815b835782f082a082bd82a682bd00",
+        "sha256": "40424f0d3beed34f94e26ba02b0e200eebfa3dfe1d93250957adefce354f8d3d",
+        "japanese": "%{unclassified-control:73}に\n%{unclassified-control:64}ポイントのダメージをあたえた"
+      },
+      "english": "{actor} takes \n{value} damage.",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1a0",
+      "table_offset": 416,
+      "source": {
+        "offset": 408760,
+        "end_exclusive": 408800,
+        "raw_hex": "257382f082e282c182c282af82bd0d2564837c83438393836782cc8c6f8cb1926c82f082a682bd00",
+        "sha256": "df4a2f84ee9257c1f778967c3363636016cf9d1a3f7e21b18b3b00b414fe8a24",
+        "japanese": "%{unclassified-control:73}をやっつけた\n%{unclassified-control:64}ポイントの経験値をえた"
+      },
+      "english": "{actor} defeated! \n{value} EXP gained.",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1a4",
+      "table_offset": 420,
+      "source": {
+        "offset": 408732,
+        "end_exclusive": 408759,
+        "raw_hex": "09257382cd838c8378838b256482c90e064e8fe382aa82c182bd00",
+        "sha256": "7649200a519f657187425267482b527c2c8c57ce3133408e1cc0e482072c1b9d",
+        "japanese": "{tab:09}%{unclassified-control:73}はレベル%{unclassified-control:64}に{fit-next:0e064e}上がった"
+      },
+      "english": "{actor} reaches \nlevel {value}!",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1a8",
+      "table_offset": 424,
+      "source": {
+        "offset": 408684,
+        "end_exclusive": 408732,
+        "raw_hex": "89ef905382cc88ea8c822120257382c90d2564837c83438393836782cc835f8381815b835782f082a082bd82a682bd00",
+        "sha256": "5725f825851f1bfcb43fc09990d6ac3c7a0b550b0fa967423b4b6eaea1fa89fb",
+        "japanese": "会心の一撃! %{unclassified-control:73}に\n%{unclassified-control:64}ポイントのダメージをあたえた"
+      },
+      "english": "{actor} takes a \ncritical hit: {value} damage.",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1b4",
+      "table_offset": 436,
+      "source": {
+        "offset": 408576,
+        "end_exclusive": 408583,
+        "raw_hex": "257382a982e700",
+        "sha256": "1484bc7bc93909805bfb5c80190dcc3e15b83929af3f462e74abaec0f44a4809",
+        "japanese": "%{unclassified-control:73}から"
+      },
+      "english": "{actor} hits for \n",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1b8",
+      "table_offset": 440,
+      "source": {
+        "offset": 408552,
+        "end_exclusive": 408575,
+        "raw_hex": "82c282a482b182f182cc88ea8c822120257382a982e700",
+        "sha256": "fdf56dc96cf9fd39ac2fd9c27e594d9c1373e54d145d6c7b3e9bc5849df2f71b",
+        "japanese": "つうこんの一撃! %{unclassified-control:73}から"
+      },
+      "english": "{actor} lands a \ncritical hit for ",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1bc",
+      "table_offset": 444,
+      "source": {
+        "offset": 408524,
+        "end_exclusive": 408550,
+        "raw_hex": "257382cd838c8378838b256482c90e054e8fe382aa82c182bd00",
+        "sha256": "7d9a89d6e8b596488a46373b05166a3f89aca80512570e6498e0aed280d2e4e8",
+        "japanese": "%{unclassified-control:73}はレベル%{unclassified-control:64}に{fit-next:0e054e}上がった"
+      },
+      "english": "{actor} reaches \nlevel {value}!",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1c0",
+      "table_offset": 448,
+      "source": {
+        "offset": 408504,
+        "end_exclusive": 408522,
+        "raw_hex": "257382cd2082bf82a982e782c282ab82bd00",
+        "sha256": "9192e29a29cc0aa512b9f3c82c6ef10caf0276e7139daca9ae0b73f6ed0935bd",
+        "japanese": "%{unclassified-control:73}は ちからつきた"
+      },
+      "english": "{actor} falls.",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.1c4",
+      "table_offset": 452,
+      "source": {
+        "offset": 408472,
+        "end_exclusive": 408501,
+        "raw_hex": "2564837c83438393836782cc835f8381815b835782f08ef382af82bd00",
+        "sha256": "85c623d14c8ff60b37cd407b1a2421c6460fcaf1c88ae5f6f2ab3227f259a978",
+        "japanese": "%{unclassified-control:64}ポイントのダメージを受けた"
+      },
+      "english": "{value} damage.",
+      "status": "reviewed",
+      "review": "Full T2 meaning preserved: target/attacker, damage amount, critical distinction, defeat and experience gain, or level increase. Soft line breaks may be removed only after native-width measurement. Incoming actor prefix and damage fragment are joined by their owned queue caller; EXP terminology follows existing project rules."
+    },
+    {
+      "id": "combat.208",
+      "table_offset": 520,
+      "source": {
+        "offset": 408080,
+        "end_exclusive": 408102,
+        "raw_hex": "257382cc8d558c8282cd0e064e82cd82b882ea82bd00",
+        "sha256": "56aa9471d9f007c9043a835a89072fbdfac9f0723cc17f850542db675173e2f7",
+        "japanese": "%{unclassified-control:73}の攻撃は{fit-next:0e064e}はずれた"
+      },
+      "english": "{actor} misses!",
+      "status": "reviewed",
+      "review": "T2 source says the named actor misses an attack. Complete one-line English; widest supported actor/name/level fits without removing meaning. Native 0800BCBC consumers at C044 and C5B2 use its 256-byte stack message region."
+    }
+  ]
+}

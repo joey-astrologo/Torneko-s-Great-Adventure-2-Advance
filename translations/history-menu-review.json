@@ -1,0 +1,34 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the2/3-option private literals inside CPU08056BC0. Controlled unlock flag is separate from native progression.",
+  "entries": [
+    {
+      "id": "history-menu.3",
+      "literal": 355488,
+      "source": {
+        "offset": 451472,
+        "end_exclusive": 451505,
+        "raw_hex": "836e83438358835283410d96608caf82cc8b4c985e0d83708358838f815b836800",
+        "sha256": "bd987927d2be575c51a43d901fd43c82708598348dac1ad15566a45aedebb6f4",
+        "japanese": "ハイスコア\n冒険の記録\nパスワード"
+      },
+      "english": "Scores\nRecords\nPassword",
+      "status": "reviewed",
+      "review": "Independent Japanese-source menu review: High score, Adventure record and Password. Short menu labels retain their distinct destination meanings. Records is the adventure achievement record, not the save-book Adventure Log. The64px original window has a conservative58px text reserve; no geometry, cursor or command-ID changes."
+    },
+    {
+      "id": "history-menu.2",
+      "literal": 355668,
+      "source": {
+        "offset": 451508,
+        "end_exclusive": 451530,
+        "raw_hex": "836e83438358835283410d96608caf82cc8b4c985e00",
+        "sha256": "84e51841676d18dcf115f419ecf304ee946759eb41c02ad2ade53638a6769dd5",
+        "japanese": "ハイスコア\n冒険の記録"
+      },
+      "english": "Scores\nRecords",
+      "status": "reviewed",
+      "review": "Independent Japanese-source menu review: High score, Adventure record and Password. Short menu labels retain their distinct destination meanings. Records is the adventure achievement record, not the save-book Adventure Log. The64px original window has a conservative58px text reserve; no geometry, cursor or command-ID changes."
+    }
+  ]
+}

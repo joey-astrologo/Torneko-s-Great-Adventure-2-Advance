@@ -1,0 +1,2835 @@
+{
+  "schema": 1,
+  "scope": "All 56 remaining discovered event-bank-zero sources. Initial language drafts only; no insertion or acceptance claim. Three single-kana fragments and native event/control details require investigation.",
+  "entries": [
+    {
+      "id": "event-bank-0.01ec",
+      "source_sha256": "4dac8f16ea218a7f545493af45743079a9260b1c215d50d46922d7ac31baf816",
+      "raw_hex": "836c836c817582c8814082c882c982a982b2977082c582e081480d0d836c836c817582a682c18148814082a682a6814082e082bf82eb82f182c582b782ed81420d81408e8482be82af82c582c882ad814082b182cc8bc882f082ab82ad82c60d836c836c817582dd82c882b382f1814082b582a082ed82b982c982c882e982c60d814082a882c182b582e182a282dc82b782b581458145814581420d9856906c817582de82a4814082e282cd82e882bb82a482a981420d814081458145814582bb82ea82cd81458145814582a282a982f182c8814200",
+      "japanese": "ネネ「な　なにかご用でも？\n\nネネ「えっ？　ええ　もちろんですわ。\n　私だけでなく　この曲をきくと\nネネ「みなさん　しあわせになると\n　おっしゃいますし・・・。\n老人「むう　やはりそうか。\n　・・・それは・・・いかんな。",
+      "references": [
+        {
+          "slot": 132,
+          "group": 0,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: C-can I help you?\n\nTessie: What? Yes, of course. It's not just me. Everyone says this music makes them happy...\n\nOld man: Hmm. So it does... That... is not good.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: C-can I help you?"
+          ],
+          [
+            "Tessie: What? Yes, of course. It's not",
+            "just me. Everyone says this music makes"
+          ],
+          [
+            "them happy..."
+          ],
+          [
+            "Old man: Hmm. So it does... That... is not",
+            "good."
+          ]
+        ],
+        "line_widths": [
+          [
+            132
+          ],
+          [
+            198,
+            203
+          ],
+          [
+            73
+          ],
+          [
+            213,
+            30
+          ]
+        ],
+        "encoded_bytes": 332,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: C-can I help you?\n\nTessie: What? Yes, of course. It's not just me. Everyone says this music makes them happy...\n\nOld man: Hmm. So it does... That... is not good.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.032c",
+      "source_sha256": "a7e96de54938e632363135af5bf1768c67126c767596450a820ba19e96fd61ae",
+      "raw_hex": "836c836c817591718cc982f08e6782c182bd82e80d8140030696608caf82cc8f910582c98b4c985e82b782e9814800",
+      "japanese": "ネネ「倉庫を使ったり\n　{legacy-position:0306}冒険の書{unclassified-control:05}に記録する？",
+      "references": [
+        {
+          "slot": 140,
+          "group": 0,
+          "index": 2,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Would you like to use the storehouse or record your adventure in the {color:6}Adventure Log{/color}?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Would you like to use the",
+            "storehouse or record your adventure in"
+          ],
+          [
+            "the {color:6}Adventure Log{/color}?"
+          ]
+        ],
+        "line_widths": [
+          [
+            164,
+            200
+          ],
+          [
+            97
+          ]
+        ],
+        "encoded_bytes": 184,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Would you like to use the storehouse or record your adventure in the {color:6}Adventure Log{/color}?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.03e2",
+      "source_sha256": "c9b6588861ad22c4dd1ecda8fcddf1734cb32073d22dce82111a92ae99d0a830",
+      "raw_hex": "836c836c817591718cc982f08e6782c182bd82e80d814096608caf82cc8f9182c98b4c985e82b782e9814800",
+      "japanese": "ネネ「倉庫を使ったり\n　冒険の書に記録する？",
+      "references": [
+        {
+          "slot": 156,
+          "group": 0,
+          "index": 6,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Would you like to use the storehouse or record your adventure in the Adventure Log?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Would you like to use the",
+            "storehouse or record your adventure in"
+          ],
+          [
+            "the Adventure Log?"
+          ]
+        ],
+        "line_widths": [
+          [
+            164,
+            200
+          ],
+          [
+            97
+          ]
+        ],
+        "encoded_bytes": 181,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Would you like to use the storehouse or record your adventure in the Adventure Log?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.040e",
+      "source_sha256": "a1b6d6513fe8a0b202ca935fed6542e76a100cac43e33936524f7b20986ce751",
+      "raw_hex": "836c836c817582a082c882bd814082be82a282b682e582a482d481480d0d836c836c817582a082c882bd82d982c782cc906c82aa0d814082a88fe982d6814082bd82c782e882c282af82c882a982c182bd82c882f182c481458145814581420d836c836c817582ab82c182c6814082b582ce82e782ad835f839383578387839382d60d81408d7382c182c482c882a982c182bd82a982e78140965982ea82bf82e182c182bd82cc82cb81420d836c836c817582cb82a6814082a082c882bd81420d81408e8482cc83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「あなた　だいじょうぶ？\n\nネネ「あなたほどの人が\n　お城へ　たどりつけなかったなんて・・・。\nネネ「きっと　しばらくダンジョンへ\n　行ってなかったから　忘れちゃったのね。\nネネ「ねえ　あなた。\n　私のアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 160,
+          "group": 0,
+          "index": 7,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Are you all right, dear?\n\nTessie: To think someone like you couldn't even reach the castle...\n\nTessie: You must be rusty after so long away from the dungeons.\n\nTessie: Would you like some advice, dear?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Are you all right, dear?"
+          ],
+          [
+            "Tessie: To think someone like you couldn't",
+            "even reach the castle..."
+          ],
+          [
+            "Tessie: You must be rusty after so long",
+            "away from the dungeons."
+          ],
+          [
+            "Tessie: Would you like some advice, dear?"
+          ]
+        ],
+        "line_widths": [
+          [
+            160
+          ],
+          [
+            215,
+            127
+          ],
+          [
+            197,
+            124
+          ],
+          [
+            212
+          ]
+        ],
+        "encoded_bytes": 409,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Are you all right, dear?\n\nTessie: To think someone like you couldn't even reach the castle...\n\nTessie: You must be rusty after so long away from the dungeons.\n\nTessie: Would you like some advice, dear?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.04e8",
+      "source_sha256": "d7f68b83f9be544e41ada326c638947fc24af2e711fa6380ebe7210815d8ddfb",
+      "raw_hex": "836c836c8175836c836c82cc83418368836f8343835882bb82cc825081490d0d836c836c817582b182bf82e782aa8140825089f18d558c8282b782e982c60d8140838283938358835e815b82e08140825089f18d558c8282b582c482ad82e981420d836c836c817582b182c182bf82aa814088ea95e093ae82ad82c60d8140838283938358835e815b82e0814088ea95e093ae82ad81458145814581420d836c836c81758ea995aa82aa814093ae82a982c882af82ea82ce0d8140838283938358835e815b82e0814089bd82e082b582c482b182c882a282a982e70d836c836c817582b682c182ad82e88d6c82a682c481408d7393ae82c582ab82e982cc82e681420d0d836c836c8175834183438365838082f081408ca982bd82e881408cfc82ab82f00d814095cf82a682c482e08140838283938358835e815b82cd814093ae82a982c882a282ed81420d836c836c8175836c836c82cc83418368836f8343835882bb82cc825081408f4982ed82e881490d814082a082c882bd814082aa82f182ce82c182c482cb814283608385874e00",
+      "japanese": "ネネ「ネネのアドバイスその１！\n\nネネ「こちらが　１回攻撃すると\n　モンスターも　１回攻撃してくる。\nネネ「こっちが　一歩動くと\n　モンスターも　一歩動く・・・。\nネネ「自分が　動かなければ\n　モンスターも　何もしてこないから\nネネ「じっくり考えて　行動できるのよ。\n\nネネ「アイテムを　見たり　向きを\n　変えても　モンスターは　動かないわ。\nネネ「ネネのアドバイスその１　終わり！\n　あなた　がんばってね。チュ⑮",
+      "references": [
+        {
+          "slot": 164,
+          "group": 0,
+          "index": 8,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Here's my first tip!\n\nTessie: When you attack once, the monsters get to attack once. When you take a step, they take a step too.\n\nTessie: If you don't move, they won't do anything. You have plenty of time to think!\n\nTessie: Checking your items or changing direction won't make them move, either.\n\nTessie: And that's tip number one! Good luck, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Here's my first tip!"
+          ],
+          [
+            "Tessie: When you attack once, the",
+            "monsters get to attack once. When you"
+          ],
+          [
+            "take a step, they take a step too."
+          ],
+          [
+            "Tessie: If you don't move, they won't do",
+            "anything. You have plenty of time to think!"
+          ],
+          [
+            "Tessie: Checking your items or changing",
+            "direction won't make them move, either."
+          ],
+          [
+            "Tessie: And that's tip number one! Good",
+            "luck, dear. Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            139
+          ],
+          [
+            174,
+            193
+          ],
+          [
+            171
+          ],
+          [
+            208,
+            213
+          ],
+          [
+            203,
+            200
+          ],
+          [
+            203,
+            105
+          ]
+        ],
+        "encoded_bytes": 712,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Here's my first tip!\n\nTessie: When you attack once, the monsters get to attack once. When you take a step, they take a step too.\n\nTessie: If you don't move, they won't do anything. You have plenty of time to think!\n\nTessie: Checking your items or changing direction won't make them move, either.\n\nTessie: And that's tip number one! Good luck, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.067a",
+      "source_sha256": "68e8e703d322a37ef9b8b63f820fdd92a1f6fda3576b9babaf465a8efdab1c42",
+      "raw_hex": "836c836c817582a082c882bd814082aa82f182ce82c182c482cb814283608385874e00",
+      "japanese": "ネネ「あなた　がんばってね。チュ⑮",
+      "references": [
+        {
+          "slot": 168,
+          "group": 0,
+          "index": 9,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Good luck, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Good luck, dear. Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            174
+          ]
+        ],
+        "encoded_bytes": 63,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Good luck, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.069d",
+      "source_sha256": "c3488a136b8419f4a9d8c03c1cdfa7822b9dadb579e39e3af2b83e5bef0f33e3",
+      "raw_hex": "836c836c817581458145814582a682a682c181490d814082dc82bd814082a88fe982dc82c58d7382af82c882a982c182bd82cc81480d836c836c817582cb82a6814082dc82bd83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「・・・ええっ！\n　また　お城まで行けなかったの？\nネネ「ねえ　またアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 172,
+          "group": 0,
+          "index": 10,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: ...What? You couldn't reach the castle again?\n\nTessie: Would you like another tip?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: ...What? You couldn't reach the",
+            "castle again?"
+          ],
+          [
+            "Tessie: Would you like another tip?"
+          ]
+        ],
+        "line_widths": [
+          [
+            206,
+            67
+          ],
+          [
+            175
+          ]
+        ],
+        "encoded_bytes": 177,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: ...What? You couldn't reach the castle again?\n\nTessie: Would you like another tip?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.06f6",
+      "source_sha256": "c4e3b1b835f6866ccbed15e18c121968971a515f5e2b32fbaa50af986d10354c",
+      "raw_hex": "836c836c8175836c836c82cc83418368836f8343835882bb82cc8251816081490d814083698369838193ae82ab82f0814082a482dc82ad8e6782a282dc82b582e582a4816081490d836c836c8175835f839383578387839382c582cd0d814082a082c882bd82e0838283938358835e815b82e00d836c836c817583698369838182c993ae82af82c481408d558c8282e082c582ab82e982cc81420d0d836c836c817503068271837b835e83930582f0899f82b582c882aa82e78f5c8e9a837b835e839382c50d814083698369838182c982be82af814093ae82af82e982e682a482c982c882e982ed82e681420d836c836c8175836c836c82cc83418368836f8343835882bb82cc825181408f4982ed82e881490d814082a082c882bd82c882e782c582ab82e982ed814283608385874e00",
+      "japanese": "ネネ「ネネのアドバイスその２～！\n　ナナメ動きを　うまく使いましょう～！\nネネ「ダンジョンでは\n　あなたもモンスターも\nネネ「ナナメに動けて　攻撃もできるの。\n\nネネ「{legacy-position:0306}Ｒボタン{unclassified-control:05}を押しながら十字ボタンで\n　ナナメにだけ　動けるようになるわよ。\nネネ「ネネのアドバイスその２　終わり！\n　あなたならできるわ。チュ⑮",
+      "references": [
+        {
+          "slot": 176,
+          "group": 0,
+          "index": 11,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Tip number two! Make good use of diagonal movement!\n\nTessie: In a dungeon, you and the monsters can move and attack diagonally.\n\nTessie: Hold {color:6}R{/color} while using the Control Pad to move only diagonally.\n\nTessie: And that's tip number two! I know you can do it, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Tip number two! Make good use of",
+            "diagonal movement!"
+          ],
+          [
+            "Tessie: In a dungeon, you and the",
+            "monsters can move and attack diagonally."
+          ],
+          [
+            "Tessie: Hold {color:6}R{/color} while using the Control Pad",
+            "to move only diagonally."
+          ],
+          [
+            "Tessie: And that's tip number two! I know",
+            "you can do it, dear. Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            208,
+            97
+          ],
+          [
+            175,
+            209
+          ],
+          [
+            208,
+            121
+          ],
+          [
+            210,
+            148
+          ]
+        ],
+        "encoded_bytes": 541,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}",
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Tip number two! Make good use of diagonal movement!\n\nTessie: In a dungeon, you and the monsters can move and attack diagonally.\n\nTessie: Hold {color:6}R{/color} while using the Control Pad to move only diagonally.\n\nTessie: And that's tip number two! I know you can do it, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0827",
+      "source_sha256": "306dad9e78eaee10c49cfff187d3faedf635326becdaf181052d9ec3ddfd2583",
+      "raw_hex": "836c836c817582a082c882bd82c882e782c582ab82e982ed814283608385874e00",
+      "japanese": "ネネ「あなたならできるわ。チュ⑮",
+      "references": [
+        {
+          "slot": 180,
+          "group": 0,
+          "index": 12,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: I know you can do it, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: I know you can do it, dear.",
+            "Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            180,
+            43
+          ]
+        ],
+        "encoded_bytes": 84,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: I know you can do it, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0848",
+      "source_sha256": "f7f2756a7d1cc2ef2fa1f97bd15a1da98670b317e90665730a4d97c7fcf0a167",
+      "raw_hex": "836c836c817582e082b582a982b582c48145814581450d814082dc82bd8140835f838182be82c182bd82cc81480d836c836c817582cb82a681408e8482cc83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「もしかして・・・\n　また　ダメだったの？\nネネ「ねえ　私のアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 184,
+          "group": 0,
+          "index": 13,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Don't tell me... You didn't make it again?\n\nTessie: Would you like some advice?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Don't tell me... You didn't make it",
+            "again?"
+          ],
+          [
+            "Tessie: Would you like some advice?"
+          ]
+        ],
+        "line_widths": [
+          [
+            214,
+            33
+          ],
+          [
+            180
+          ]
+        ],
+        "encoded_bytes": 171,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Don't tell me... You didn't make it again?\n\nTessie: Would you like some advice?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0899",
+      "source_sha256": "21f6d7296a00ad59031938eabb1d5e63f447498600534210be995093725a269a",
+      "raw_hex": "836c836c8175836c836c82cc83418368836f8343835882bb82cc825282e681420d0d836c836c817582b182bf82e782cc485082cd814095e082ad82c689f1959c82b782e982af82c70d8140838283938358835e815b82cd814089f1959c82b582c882a282cc81420d836c836c817582a082c681408ff182e2919082f08e6782a482c682ab82cd0d81408cfc82ab82c9928d88d382e681420d836c836c817503068271837b835e83930582f082bf82e582c182c6899f82b582c482a982e70d814003068f5c8e9a837b835e83930582c58cfc82ab82f095cf82a682e782ea82e982a982e782cb81420d836c836c817582a082c882bd814090cc82cc834a839382f08e7682a282be82b582c481420d814083608385874e00",
+      "japanese": "ネネ「ネネのアドバイスその３よ。\n\nネネ「こちらのHPは　歩くと回復するけど\n　モンスターは　回復しないの。\nネネ「あと　杖や草を使うときは\n　向きに注意よ。\nネネ「{legacy-position:0306}Ｒボタン{unclassified-control:05}をちょっと押してから\n　{legacy-position:0306}十字ボタン{unclassified-control:05}で向きを変えられるからね。\nネネ「あなた　昔のカンを思いだして。\n　チュ⑮",
+      "references": [
+        {
+          "slot": 188,
+          "group": 0,
+          "index": 14,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Here's tip number three.\n\nTessie: Your HP recovers as you walk, but the monsters' HP doesn't.\n\nTessie: Mind which way you're facing when you use staves or herbs.\n\nTessie: Tap {color:6}R{/color}, then use the {color:6}Control Pad{/color} to change direction.\n\nTessie: It'll all come back to you, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Here's tip number three."
+          ],
+          [
+            "Tessie: Your HP recovers as you walk, but",
+            "the monsters' HP doesn't."
+          ],
+          [
+            "Tessie: Mind which way you're facing when",
+            "you use staves or herbs."
+          ],
+          [
+            "Tessie: Tap {color:6}R{/color}, then use the {color:6}Control Pad{/color} to",
+            "change direction."
+          ],
+          [
+            "Tessie: It'll all come back to you, dear.",
+            "Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            167
+          ],
+          [
+            214,
+            134
+          ],
+          [
+            213,
+            128
+          ],
+          [
+            213,
+            90
+          ],
+          [
+            205,
+            43
+          ]
+        ],
+        "encoded_bytes": 554,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}",
+          "{color:6}",
+          "{/color}",
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Here's tip number three.\n\nTessie: Your HP recovers as you walk, but the monsters' HP doesn't.\n\nTessie: Mind which way you're facing when you use staves or herbs.\n\nTessie: Tap {color:6}R{/color}, then use the {color:6}Control Pad{/color} to change direction.\n\nTessie: It'll all come back to you, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.09af",
+      "source_sha256": "0fdf4d4ef444c6c61581f5acef2d5f4feb94bb14a9eb86eeee1e8d9852f52ccd",
+      "raw_hex": "836c836c817582a082c882bd814090cc82cc834a839382f08e7682a282be82b582c481420d814083608385874e00",
+      "japanese": "ネネ「あなた　昔のカンを思いだして。\n　チュ⑮",
+      "references": [
+        {
+          "slot": 192,
+          "group": 0,
+          "index": 15,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: It'll all come back to you, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: It'll all come back to you, dear.",
+            "Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            205,
+            43
+          ]
+        ],
+        "encoded_bytes": 96,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: It'll all come back to you, dear. Mwah!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.09dd",
+      "source_sha256": "b83aeb75e9517505ce966c0a9a1e862609303d20e1b163607825bed6f85e076d",
+      "raw_hex": "836c836c817582a082c882bd8145814581450d814082e082b582a982b582c481408bef8d8782aa82ed82e982a282cc81480d836c836c817582be82c182c4814082a082c882bd82cd0d814082a082cc95738e768b6382cc835f839383578387839382a982e70d836c836c817582b582a082ed82b982cc94a082f082c682c182c482ab82bd906c82be82e082f181420d0d836c836c817582a681458145814582c782b182e088ab82ad82c882a282c582b782c182c481480d0d836c836c817582cb814082cb82a6814082a082c882bd8145814581450d81408e8482cc83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「あなた・・・\n　もしかして　具合がわるいの？\nネネ「だって　あなたは\n　あの不思議のダンジョンから\nネネ「しあわせの箱をとってきた人だもん。\n\nネネ「え・・・どこも悪くないですって？\n\nネネ「ね　ねえ　あなた・・・\n　私のアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 196,
+          "group": 0,
+          "index": 16,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Dear... Are you feeling unwell?\n\nTessie: You're the man who brought the Joy Chest back from the Magic Dungeon!\n\nTessie: What? There's nothing wrong?\n\nTessie: W-well, dear... Would you like some advice?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Dear... Are you feeling unwell?"
+          ],
+          [
+            "Tessie: You're the man who brought the",
+            "Joy Chest back from the Magic Dungeon!"
+          ],
+          [
+            "Tessie: What? There's nothing wrong?"
+          ],
+          [
+            "Tessie: W-well, dear... Would you like",
+            "some advice?"
+          ]
+        ],
+        "line_widths": [
+          [
+            200
+          ],
+          [
+            199,
+            200
+          ],
+          [
+            192
+          ],
+          [
+            194,
+            66
+          ]
+        ],
+        "encoded_bytes": 410,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Dear... Are you feeling unwell?\n\nTessie: You're the man who brought the Joy Chest back from the Magic Dungeon!\n\nTessie: What? There's nothing wrong?\n\nTessie: W-well, dear... Would you like some advice?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0acb",
+      "source_sha256": "39501207592a351e623bfd3035039c40c5cb1c9adfb6313cd8db89ac318927c5",
+      "raw_hex": "836c836c8175836c836c82cc83418368836f8343835882bb82cc825382e681420d0d836c836c8175838283938358835e815b82aa82bd82ad82b382f182a282e982c682ab82cd0d81408343834982cc8aaa95a882f093c782de82cc82e681420d836c836c817588ea937882c982e282c182c282af82e782ea82e982a982e782cb81420d0d836c836c817582b582a082ed82b982cc82bd82cb82c5838c8378838b8341836283760d814082b782e982c6814082bb82ea82be82af96608caf82aa8a7982c982c882e982ed82e681420d836c836c817589ce898a919082cd8140838283938358835e815b82aa0d814082c682c882e882c9978882c482a982e7814082cc82de82cc81420d836c836c81758cfc82ab82c98b4382f082c282af82c482cb81420d0d836c836c81758e8482cc83418368836f8343835882cd814082a082c882bd82aa82a282c282e00d81408e8482c98140986282b582c482ad82ea82c482bd82b182c682e681420d836c836c81758e7682a282be82b582c482cb814283608385874e00",
+      "japanese": "ネネ「ネネのアドバイスその４よ。\n\nネネ「モンスターがたくさんいるときは\n　イオの巻物を読むのよ。\nネネ「一度にやっつけられるからね。\n\nネネ「しあわせのたねでレベルアップ\n　すると　それだけ冒険が楽になるわよ。\nネネ「火炎草は　モンスターが\n　となりに来てから　のむの。\nネネ「向きに気をつけてね。\n\nネネ「私のアドバイスは　あなたがいつも\n　私に　話してくれてたことよ。\nネネ「思いだしてね。チュ⑮",
+      "references": [
+        {
+          "slot": 200,
+          "group": 0,
+          "index": 17,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Here's tip number four.\n\nTessie: When there are lots of monsters, read a Bang scroll. You can defeat them all at once.\n\nTessie: Use a Seed of growth to level up and make your adventure easier.\n\nTessie: Wait until a monster is right beside you before drinking a Flame herb. Mind which way you're facing!\n\nTessie: All this advice comes from things you used to tell me. Try to remember, dear. Mwah!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "prose_review": {
+        "previous_draft": "Tessie: Here's tip number four.\n\nTessie: When there are lots of monsters, read a Bang scroll. You can defeat them all at once.\n\nTessie: Use a Seed of growth to level up and make your adventure easier.\n\nTessie: Wait until a monster is right beside you before eating a Flame herb. Mind which way you're facing!\n\nTessie: All this advice comes from things you used to tell me. Try to remember, dear. Mwah!{heart}",
+        "revised": "Tessie: Here's tip number four.\n\nTessie: When there are lots of monsters, read a Bang scroll. You can defeat them all at once.\n\nTessie: Use a Seed of growth to level up and make your adventure easier.\n\nTessie: Wait until a monster is right beside you before drinking a Flame herb. Mind which way you're facing!\n\nTessie: All this advice comes from things you used to tell me. Try to remember, dear. Mwah!{heart}",
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      },
+      "action_wording_review": {
+        "before": "Tessie: Here's tip number four.\n\nTessie: When there are lots of monsters, read a Bang scroll. You can defeat them all at once.\n\nTessie: Use a Seed of growth to level up and make your adventure easier.\n\nTessie: Wait until a monster is right beside you before eating a Flame herb. Mind which way you're facing!\n\nTessie: All this advice comes from things you used to tell me. Try to remember, dear. Mwah!{heart}",
+        "after": "Tessie: Here's tip number four.\n\nTessie: When there are lots of monsters, read a Bang scroll. You can defeat them all at once.\n\nTessie: Use a Seed of growth to level up and make your adventure easier.\n\nTessie: Wait until a monster is right beside you before drinking a Flame herb. Mind which way you're facing!\n\nTessie: All this advice comes from things you used to tell me. Try to remember, dear. Mwah!{heart}",
+        "reason": "Align the Japanese drinking action with the approved native Drink menu command for herbs/seeds. Bread and ordinary food dialogue remain Eat. This wording change is staging only."
+      },
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Here's tip number four."
+          ],
+          [
+            "Tessie: When there are lots of monsters,",
+            "read a Bang scroll. You can defeat them all"
+          ],
+          [
+            "at once."
+          ],
+          [
+            "Tessie: Use a Seed of growth to level up",
+            "and make your adventure easier."
+          ],
+          [
+            "Tessie: Wait until a monster is right beside",
+            "you before drinking a Flame herb. Mind"
+          ],
+          [
+            "which way you're facing!"
+          ],
+          [
+            "Tessie: All this advice comes from things",
+            "you used to tell me. Try to remember,"
+          ],
+          [
+            "dear. Mwah!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            161
+          ],
+          [
+            205,
+            214
+          ],
+          [
+            43
+          ],
+          [
+            200,
+            166
+          ],
+          [
+            212,
+            193
+          ],
+          [
+            126
+          ],
+          [
+            203,
+            186
+          ],
+          [
+            75
+          ]
+        ],
+        "encoded_bytes": 793,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      }
+    },
+    {
+      "id": "event-bank-0.0c50",
+      "source_sha256": "6426ba4d6f8eb5b1498b1075e5d3ed60ebbccef34980dd885c0c281812673ba3",
+      "raw_hex": "836c836c817582b582a082ed82b982cc94a082f082c682c182c482ab82bd82c682ab82cc0d814082b182c682f08e7682a282be82b982ce8a798f9f82e682cb814082a082c882bd874e00",
+      "japanese": "ネネ「しあわせの箱をとってきたときの\n　ことを思いだせば楽勝よね　あなた⑮",
+      "references": [
+        {
+          "slot": 204,
+          "group": 0,
+          "index": 18,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Just remember how you got the Joy Chest, dear. This should be easy!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Just remember how you got the Joy",
+            "Chest, dear. This should be easy!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            214,
+            187
+          ]
+        ],
+        "encoded_bytes": 152,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Just remember how you got the Joy Chest, dear. This should be easy!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0c9a",
+      "source_sha256": "1979e61b62abab3c9a6464060b213125d843dd45f6d3168cb3cf71dcd74e030a",
+      "raw_hex": "836c836c817582a082c882bd8145814581450d8140967b939682c9814089bd82e082a982e0965982ea82c482b582dc82c182bd82cc81480d836c836c817582a282c182bb81408e8482aa82a88fe982d68d7382c182bd82d982a482aa8145814581450d0d836c836c817581458145814582c8815b82f182bf82e182c182c481490d0d836c836c817582a082c882bd82aa81408380838a82c882cc82c90d81408e8482aa81408d7382af82e982ed82af82c882a282ed82e682cb81420d836c836c8175836c836c82cc83418368836f8343835882bb82cc8254814095b782ad814800",
+      "japanese": "ネネ「あなた・・・\n　本当に　何もかも忘れてしまったの？\nネネ「いっそ　私がお城へ行ったほうが・・・\n\nネネ「・・・なーんちゃって！\n\nネネ「あなたが　ムリなのに\n　私が　行けるわけないわよね。\nネネ「ネネのアドバイスその５　聞く？",
+      "references": [
+        {
+          "slot": 208,
+          "group": 0,
+          "index": 19,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Dear... Have you really forgotten everything?\n\nTessie: Perhaps I should go to the castle instead...\n\nTessie: ...Only joking! If you can't manage it, I certainly can't.\n\nTessie: Would you like my fifth tip?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Dear... Have you really forgotten",
+            "everything?"
+          ],
+          [
+            "Tessie: Perhaps I should go to the castle",
+            "instead..."
+          ],
+          [
+            "Tessie: ...Only joking! If you can't",
+            "manage it, I certainly can't."
+          ],
+          [
+            "Tessie: Would you like my fifth tip?"
+          ]
+        ],
+        "line_widths": [
+          [
+            213,
+            60
+          ],
+          [
+            209,
+            55
+          ],
+          [
+            186,
+            146
+          ],
+          [
+            172
+          ]
+        ],
+        "encoded_bytes": 415,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Dear... Have you really forgotten everything?\n\nTessie: Perhaps I should go to the castle instead...\n\nTessie: ...Only joking! If you can't manage it, I certainly can't.\n\nTessie: Would you like my fifth tip?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0d7b",
+      "source_sha256": "b0c6798c972a546ac904bb5212b9496611b42a94394ba6d77d9bc50f87567fc2",
+      "raw_hex": "836c836c8175919594f582cc82b182c68140965982ea82c482c882a281480d0d836c836c81758c9582e28f8282f08ee882c993fc82ea82bd82e7814082b782ae82c90d8140817593b98bef81768352837d8393836882c5919594f582b582c482dd82c482cb81420d836c836c817582bb82b582bd82e782e082a40d814082a9815b82f182bd82f182c9814082a88fe982c98d7382af82e982ed81420d836c836c817582aa82f182ce82c182c4814082a082c882bd874e00",
+      "japanese": "ネネ「装備のこと　忘れてない？\n\nネネ「剣や盾を手に入れたら　すぐに\n　「道具」コマンドで装備してみてね。\nネネ「そしたらもう\n　かーんたんに　お城に行けるわ。\nネネ「がんばって　あなた⑮",
+      "references": [
+        {
+          "slot": 212,
+          "group": 0,
+          "index": 20,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: You haven't forgotten to equip your gear, have you?\n\nTessie: As soon as you find a weapon or shield, equip it through the Items command.\n\nTessie: Then getting to the castle will be a breeze!\n\nTessie: Good luck, dear!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: You haven't forgotten to equip",
+            "your gear, have you?"
+          ],
+          [
+            "Tessie: As soon as you find a weapon or",
+            "shield, equip it through the Items"
+          ],
+          [
+            "command."
+          ],
+          [
+            "Tessie: Then getting to the castle will be a",
+            "breeze!"
+          ],
+          [
+            "Tessie: Good luck, dear!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            196,
+            109
+          ],
+          [
+            201,
+            168
+          ],
+          [
+            48
+          ],
+          [
+            212,
+            41
+          ],
+          [
+            141
+          ]
+        ],
+        "encoded_bytes": 439,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: You haven't forgotten to equip your gear, have you?\n\nTessie: As soon as you find a weapon or shield, equip it through the Items command.\n\nTessie: Then getting to the castle will be a breeze!\n\nTessie: Good luck, dear!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0e32",
+      "source_sha256": "dbe3a7ec4c7b00f285d22ff551cf07f2f612ac3e6c82601bb04c327d0df5995d",
+      "raw_hex": "836c836c817582aa82f182ce82c182c4814082a082c882bd874e00",
+      "japanese": "ネネ「がんばって　あなた⑮",
+      "references": [
+        {
+          "slot": 216,
+          "group": 0,
+          "index": 21,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Good luck, dear!{heart}",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Good luck, dear!{heart}"
+          ]
+        ],
+        "line_widths": [
+          [
+            141
+          ]
+        ],
+        "encoded_bytes": 51,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{heart}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Good luck, dear!{heart}",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0e4d",
+      "source_sha256": "cc79738bc38f051a350b8aaaa644adbdf95994807142928da1e316e0d7e5d668",
+      "raw_hex": "836c836c817582dc82bd8d7382af82c882a982c182bd82cc82cb81458145814581420d0d836c836c817582ed82a982c182bd81490d814082ab82c182c681408380838a82f082b582b782ac82c882cc82e681420d836c836c817582cb82a682cb82a681408e8482cc83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「また行けなかったのね・・・。\n\nネネ「わかった！\n　きっと　ムリをしすぎなのよ。\nネネ「ねえねえ　私のアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 220,
+          "group": 0,
+          "index": 22,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: You couldn't make it again...\n\nTessie: I know! You must be pushing yourself too hard.\n\nTessie: Would you like some advice?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: You couldn't make it again..."
+          ],
+          [
+            "Tessie: I know! You must be pushing",
+            "yourself too hard."
+          ],
+          [
+            "Tessie: Would you like some advice?"
+          ]
+        ],
+        "line_widths": [
+          [
+            191
+          ],
+          [
+            184,
+            93
+          ],
+          [
+            180
+          ]
+        ],
+        "encoded_bytes": 255,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: You couldn't make it again...\n\nTessie: I know! You must be pushing yourself too hard.\n\nTessie: Would you like some advice?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.0ec8",
+      "source_sha256": "db2cbeac4425940034a6f415c917478eb1928a20cfb78b6a09c0f8fa2f7b14f7",
+      "raw_hex": "836c836c8175485082aa82d682c182c482b582dc82c182bd82e70d0d836c836c817503068260837b835e83930582c603068261837b835e83930582f082a282c182b582e582c90d8140899f82b582c4814082b782ce82e282ad485082f089f1959c82b782e982c682a282a282ed81420d836c836c8175485082aa82d682c182bd82dc82dc0d81408345838d8345838d82b582bd82e8814082c282ac82cc959489ae82c9906982de82c60d836c836c8175835e83438377839382c882b182c682c982c882c182bf82e182a482e082cc81420d0d836c836c817582a0814082bb82a482bb82a4814282a082d482c882a282c682ab82cd0d814096f2919082c5814082a282c182ab82c9814089f1959c82b782e982cc82aa82a282a282ed82cb81420d836c836c817582b182ea82c582e082a48140836f83628360838a82cb81420d814082a082c882bd814082a082c682d082c682a282ab82e6814900",
+      "japanese": "ネネ「HPがへってしまったら\n\nネネ「{legacy-position:0306}Ａボタン{unclassified-control:05}と{legacy-position:0306}Ｂボタン{unclassified-control:05}をいっしょに\n　押して　すばやくHPを回復するといいわ。\nネネ「HPがへったまま\n　ウロウロしたり　つぎの部屋に進むと\nネネ「タイヘンなことになっちゃうもの。\n\nネネ「あ　そうそう。あぶないときは\n　薬草で　いっきに　回復するのがいいわね。\nネネ「これでもう　バッチリね。\n　あなた　あとひといきよ！",
+      "references": [
+        {
+          "slot": 224,
+          "group": 0,
+          "index": 23,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: When your HP runs low, hold {color:6}A{/color} and {color:6}B{/color} together to recover quickly.\n\nTessie: Wandering around or entering the next room with low HP can land you in real trouble.\n\nTessie: Oh, and when you're in danger, a Medicinal herb will restore HP right away.\n\nTessie: That should do it! Just a little further, dear!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: When your HP runs low, hold {color:6}A{/color} and",
+            "{color:6}B{/color} together to recover quickly."
+          ],
+          [
+            "Tessie: Wandering around or entering the",
+            "next room with low HP can land you in real"
+          ],
+          [
+            "trouble."
+          ],
+          [
+            "Tessie: Oh, and when you're in danger, a",
+            "Medicinal herb will restore HP right away."
+          ],
+          [
+            "Tessie: That should do it! Just a little",
+            "further, dear!"
+          ]
+        ],
+        "line_widths": [
+          [
+            211,
+            153
+          ],
+          [
+            208,
+            204
+          ],
+          [
+            42
+          ],
+          [
+            211,
+            205
+          ],
+          [
+            191,
+            74
+          ]
+        ],
+        "encoded_bytes": 610,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}",
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: When your HP runs low, hold {color:6}A{/color} and {color:6}B{/color} together to recover quickly.\n\nTessie: Wandering around or entering the next room with low HP can land you in real trouble.\n\nTessie: Oh, and when you're in danger, a Medicinal herb will restore HP right away.\n\nTessie: That should do it! Just a little further, dear!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1022",
+      "source_sha256": "2de2e9a8f4475a82e970af9fa1a113c4b11550085108b45dcbd5c53d36688ed0",
+      "raw_hex": "836c836c817582a082c882bd814082a082c682d082c682a282ab82e6814900",
+      "japanese": "ネネ「あなた　あとひといきよ！",
+      "references": [
+        {
+          "slot": 228,
+          "group": 0,
+          "index": 24,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Just a little further, dear!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Just a little further, dear!"
+          ]
+        ],
+        "line_widths": [
+          [
+            176
+          ]
+        ],
+        "encoded_bytes": 73,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Just a little further, dear!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1041",
+      "source_sha256": "c94c00f5860313527543c5245c09565893d07c9f2706c3818deb8f9ddf299298",
+      "raw_hex": "837c00",
+      "japanese": "ポ",
+      "references": [
+        {
+          "slot": 232,
+          "group": 1,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": null,
+      "status": "draft-needs-bilingual-flow-and-native-review",
+      "notes": "Single-kana source fragment: identify its native consumer before deciding English or intentional retention."
+    },
+    {
+      "id": "event-bank-0.1044",
+      "source_sha256": "2badd79b18eaa74fb4c06d6e4818ad4e3a939cd0434ea7fd4a45f3f620c0839c",
+      "raw_hex": "14834a834d82aa82a982a982c182c482a282e982e682a482be00",
+      "japanese": "{unclassified-control:14}カギがかかっているようだ",
+      "references": [
+        {
+          "slot": 236,
+          "group": 1,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "{center}It seems to be locked.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "{center}It seems to be locked."
+          ]
+        ],
+        "line_widths": [
+          [
+            113
+          ]
+        ],
+        "encoded_bytes": 46,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{center}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "{center}It seems to be locked.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.12c3",
+      "source_sha256": "aa4f7b3e444b66303312eb890e394bbcc72d22746fbef6975c3453caa6229cd4",
+      "raw_hex": "82d000",
+      "japanese": "ひ",
+      "references": [
+        {
+          "slot": 264,
+          "group": 1,
+          "index": 8,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": null,
+      "status": "draft-needs-bilingual-flow-and-native-review",
+      "notes": "Single-kana source fragment: identify its native consumer before deciding English or intentional retention."
+    },
+    {
+      "id": "event-bank-0.12eb",
+      "source_sha256": "af029d7159ee267fdb8846bf1d4648758e71ef7e9997ff1f55ab40d3a3f8ac21",
+      "raw_hex": "837c837c838d817582a081408370837082c181490d8140837b815b83508393814082aa82f182ce82c182c482cb82c1814900",
+      "japanese": "ポポロ「あ　パパっ！\n　ボーケン　がんばってねっ！",
+      "references": [
+        {
+          "slot": 272,
+          "group": 1,
+          "index": 10,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tipper: Oh, Dad! Good luck on your adventure!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tipper: Oh, Dad! Good luck on your",
+            "adventure!"
+          ]
+        ],
+        "line_widths": [
+          [
+            178,
+            57
+          ]
+        ],
+        "encoded_bytes": 90,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tipper: Oh, Dad! Good luck on your adventure!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1385",
+      "source_sha256": "b3af34fc459267b867b39d0f6254e1e48fd898c7b834b503d0eccd5c852bf141",
+      "raw_hex": "97f682b782e9926a817582c782a482a9814082a082cc835282aa0d814082da82ad82cc82b182c682f0814088a482b582c482ad82ea82dc82b782e682a482c9814900",
+      "japanese": "恋する男「どうか　あのコが\n　ぼくのことを　愛してくれますように！",
+      "references": [
+        {
+          "slot": 280,
+          "group": 2,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Lovestruck man: Please let her fall in love with me!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Lovestruck man: Please let her fall in love",
+            "with me!"
+          ]
+        ],
+        "line_widths": [
+          [
+            211,
+            40
+          ]
+        ],
+        "encoded_bytes": 104,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Lovestruck man: Please let her fall in love with me!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.13c7",
+      "source_sha256": "1e7eacde3484a65b0290908202f74220607e30f2168f6231b3a9411b07c96330",
+      "raw_hex": "14819681968196814096608caf82cc8250824f82cc905393be81408196819681960d0d1492988ed28140814089a4976c0d0d0d825081408ea995aa82c6838283938358835e815b82cd8f8794d482c993ae82ad81420d8140814082a082b982e982b182c682c882a982ea81490d8251814093b98bef82f08ca982bd82e881408cfc82ab82f095cf82a682e982cc82cd0d8140814093ae8dec82b582bd82b182c682c982cd82c882e782f181490d0d8252814082c982b082e982c682ab82cd0d81408140934782cc8369836983818d558c8282c9928d88d382b982e681490d8253814095e082a282c482a282e982c6485082cd89f1959c82b782e981420d8140814082a082d482c882ad82c882c182bd82e7814082dc82b882c982b082eb81490d0d82548140934782aa905182c482a282e982a98b4e82ab82c482a282e982a982f00d8140814082bd82b582a982df82e982b182c681490d8140814082b782d782c482cc838283938358835e815b82f00d8140814082bd82a882b7954b977682cd82c882a281490d0d8255814082c982b082e782ea82c882a28e9e82cd8140838b815b8389919082f082cc82de81490d8140814082dc82c782ed82b5919082cd8140838283938358835e815b82c9938a82b082e981490d8256814096f2919082e292ed90d8919082cd8140485082aa8dc58d8282cc82c682ab82c90d8140814082cc82de82c681408dc591e5485082aa8fad82b58fe382aa82e981420d0d8257814082a282a982b882bf82cc8ff182cd8140954b82b882a082bd82e981490d81408140836f8356838b815b838982cc8ff182cd8140934782f082c682ce82b781490d825881408381835f8370836a82cc8ff182cd8140837483898374838982c982b382b90d814081408389838a837a815b82cc8ff182cd8140918a8ee882f082cb82de82e782b982e981490d0d8250824f814093c582c589ba82aa82c182bd817582bf82a982e7817682cd0d81408140814093c582af82b5919082c5814082e082c682c982e082c782b781490d81408140814082bf82a982e782cc82bd82cb82cd814082bb82cc82a082c682c582cc82de81490d0d0d1482a882ed82e882b682e100",
+      "japanese": "{unclassified-control:14}＊＊＊　冒険の１０の心得　＊＊＊\n\n{unclassified-control:14}著者　　王様\n\n\n１　自分とモンスターは順番に動く。\n　　あせることなかれ！\n２　道具を見たり　向きを変えるのは\n　　動作したことにはならん！\n\n３　にげるときは\n　　敵のナナメ攻撃に注意せよ！\n４　歩いているとHPは回復する。\n　　あぶなくなったら　まずにげろ！\n\n５　敵が寝ているか起きているかを\n　　たしかめること！\n　　すべてのモンスターを\n　　たおす必要はない！\n\n６　にげられない時は　ルーラ草をのむ！\n　　まどわし草は　モンスターに投げる！\n７　薬草や弟切草は　HPが最高のときに\n　　のむと　最大HPが少し上がる。\n\n８　いかずちの杖は　必ずあたる！\n　　バシルーラの杖は　敵をとばす！\n９　メダパニの杖は　フラフラにさせ\n　　ラリホーの杖は　相手をねむらせる！\n\n１０　毒で下がった「ちから」は\n　　　毒けし草で　もとにもどす！\n　　　ちからのたねは　そのあとでのむ！\n\n\n{unclassified-control:14}おわりじゃ",
+      "references": [
+        {
+          "slot": 284,
+          "group": 2,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Drink a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, drinking a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then drink a Seed of strength!\n\n{center}That is all.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Byte-identical source to already reviewed event-bank-1.073a; reuse its English. This bank-zero consumer still needs insertion and native validation.",
+      "prose_review": {
+        "previous_draft": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Eat a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, eating a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then eat a Seed of strength!\n\n{center}That is all.",
+        "revised": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Drink a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, drinking a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then drink a Seed of strength!\n\n{center}That is all.",
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      },
+      "action_wording_review": {
+        "before": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Eat a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, eating a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then eat a Seed of strength!\n\n{center}That is all.",
+        "after": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Drink a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, drinking a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then drink a Seed of strength!\n\n{center}That is all.",
+        "reason": "Align the Japanese drinking action with the approved native Drink menu command for herbs/seeds. Bread and ordinary food dialogue remain Eat. This wording change is staging only."
+      },
+      "draft_layout": {
+        "pages": [
+          [
+            "{center}*** Ten Tips for Adventurers ***"
+          ],
+          [
+            "{center}By the King"
+          ],
+          [
+            "1. You and the monsters take turns. Do not",
+            "rush!"
+          ],
+          [
+            "2. Checking your items or changing",
+            "direction does not use up a turn."
+          ],
+          [
+            "3. When fleeing, watch out for enemies",
+            "attacking diagonally!"
+          ],
+          [
+            "4. Walking restores HP. When danger",
+            "threatens, run away first!"
+          ],
+          [
+            "5. Check if monsters are awake or asleep.",
+            "You needn't defeat them all!"
+          ],
+          [
+            "6. Drink a Zoom herb if trapped! Throw",
+            "Misleader herbs at monsters!"
+          ],
+          [
+            "7. At full HP, drinking a Medicinal herb or",
+            "Super herb raises max HP a little."
+          ],
+          [
+            "8. A Lightning staff never misses! A",
+            "Bazoom staff sends enemies away!"
+          ],
+          [
+            "9. A Fuddle staff confuses your foe. A",
+            "Snooze staff puts your foe to sleep!"
+          ],
+          [
+            "10. Use an Antidotal herb to restore",
+            "strength lost to poison."
+          ],
+          [
+            "Only then drink a Seed of strength!"
+          ],
+          [
+            "{center}That is all."
+          ]
+        ],
+        "line_widths": [
+          [
+            167
+          ],
+          [
+            55
+          ],
+          [
+            216,
+            29
+          ],
+          [
+            176,
+            166
+          ],
+          [
+            192,
+            107
+          ],
+          [
+            184,
+            133
+          ],
+          [
+            212,
+            142
+          ],
+          [
+            193,
+            146
+          ],
+          [
+            206,
+            167
+          ],
+          [
+            180,
+            171
+          ],
+          [
+            193,
+            182
+          ],
+          [
+            181,
+            120
+          ],
+          [
+            176
+          ],
+          [
+            55
+          ]
+        ],
+        "encoded_bytes": 1506,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{center}",
+          "{center}",
+          "{center}"
+        ]
+      }
+    },
+    {
+      "id": "event-bank-0.16e8",
+      "source_sha256": "f405dbc95a2c83ed3de267d58468fbfe272394a2a6c3f4fd8b5cc17ca1a76af0",
+      "raw_hex": "97f682b782e9926a817582a681458145814581420d0d97f682b782e9926a817582a482ed82a0829f829f816082c181490d814082e082b582a982b582c481408da182cc81458145814595b782a282c482dc82b582bd81480d97f682b782e9926a817582a2814082a282e282be82c8829f8160814200",
+      "japanese": "恋する男「え・・・。\n\n恋する男「うわあぁぁ～っ！\n　もしかして　今の・・・聞いてました？\n恋する男「い　いやだなぁ～。",
+      "references": [
+        {
+          "slot": 288,
+          "group": 2,
+          "index": 2,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Lovestruck man: Huh...?\n\nLovestruck man: Aaah! D-did you hear that?\n\nLovestruck man: H-how embarrassing...",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Lovestruck man: Huh...?"
+          ],
+          [
+            "Lovestruck man: Aaah! D-did you hear",
+            "that?"
+          ],
+          [
+            "Lovestruck man: H-how embarrassing..."
+          ]
+        ],
+        "line_widths": [
+          [
+            129
+          ],
+          [
+            194,
+            26
+          ],
+          [
+            205
+          ]
+        ],
+        "encoded_bytes": 207,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Lovestruck man: Huh...?\n\nLovestruck man: Aaah! D-did you hear that?\n\nLovestruck man: H-how embarrassing...",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.175d",
+      "source_sha256": "a280e0eb4a7f1256603b264088a6880f6224de4d3d441b36be2b95d88e91d133",
+      "raw_hex": "836c836c817581458145814582be82a282b682e582a482d4814082a082c882bd81480d81408da189f182cd814083458389838f835582c182db82a283418368836f8343835882e681420d836c836c817582a082c882bd814095b782ad814800",
+      "japanese": "ネネ「・・・だいじょうぶ　あなた？\n　今回は　ウラワザっぽいアドバイスよ。\nネネ「あなた　聞く？",
+      "references": [
+        {
+          "slot": 292,
+          "group": 2,
+          "index": 3,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: ...Are you all right, dear? This next tip is a bit of a trick.\n\nTessie: Want to hear it?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: ...Are you all right, dear? This",
+            "next tip is a bit of a trick."
+          ],
+          [
+            "Tessie: Want to hear it?"
+          ]
+        ],
+        "line_widths": [
+          [
+            202,
+            130
+          ],
+          [
+            119
+          ]
+        ],
+        "encoded_bytes": 189,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: ...Are you all right, dear? This next tip is a bit of a trick.\n\nTessie: Want to hear it?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.17bc",
+      "source_sha256": "c6ac109ef3b5737d156d75a7298f91c79d2a45b040b59d156a2bdf29c11b6be1",
+      "raw_hex": "836c836c817596f2919082c182c4485082aa82a282c182cf82a282cc82c682ab82c90d814082cc82de82c681408dc591e5485082f08fad82b582be82af82d382e282b982e982cc82e681420d836c836c81758e9d82bf95a882aa82a282c182cf82a282cc82c682ab82cd0d0d836c836c8175485082f089f1959c82b582c482a982e70d814096f2919082f0814082cc82de82e682a482c982b782e982c682a282a282ed81420d836c836c817582b182ea82c582e082a481408f9f82c182bd82e682a482c88382839382e682cb81420d0d836c836c817582a082c882bd81408374834083438367814900",
+      "japanese": "ネネ「薬草ってHPがいっぱいのときに\n　のむと　最大HPを少しだけふやせるのよ。\nネネ「持ち物がいっぱいのときは\n\nネネ「HPを回復してから\n　薬草を　のむようにするといいわ。\nネネ「これでもう　勝ったようなモンよね。\n\nネネ「あなた　ファイト！",
+      "references": [
+        {
+          "slot": 296,
+          "group": 2,
+          "index": 4,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Drinking a Medicinal herb when your HP is full raises your maximum HP a little.\n\nTessie: If your inventory is full, recover your HP first, then drink your Medicinal herbs.\n\nTessie: Now you're as good as through!\n\nTessie: You can do it, dear!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "prose_review": {
+        "previous_draft": "Tessie: Eating a Medicinal herb when your HP is full raises your maximum HP a little.\n\nTessie: If your inventory is full, recover your HP first, then eat your Medicinal herbs.\n\nTessie: Now you're as good as through!\n\nTessie: You can do it, dear!",
+        "revised": "Tessie: Drinking a Medicinal herb when your HP is full raises your maximum HP a little.\n\nTessie: If your inventory is full, recover your HP first, then drink your Medicinal herbs.\n\nTessie: Now you're as good as through!\n\nTessie: You can do it, dear!",
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      },
+      "action_wording_review": {
+        "before": "Tessie: Eating a Medicinal herb when your HP is full raises your maximum HP a little.\n\nTessie: If your inventory is full, recover your HP first, then eat your Medicinal herbs.\n\nTessie: Now you're as good as through!\n\nTessie: You can do it, dear!",
+        "after": "Tessie: Drinking a Medicinal herb when your HP is full raises your maximum HP a little.\n\nTessie: If your inventory is full, recover your HP first, then drink your Medicinal herbs.\n\nTessie: Now you're as good as through!\n\nTessie: You can do it, dear!",
+        "reason": "Align the Japanese drinking action with the approved native Drink menu command for herbs/seeds. Bread and ordinary food dialogue remain Eat. This wording change is staging only."
+      },
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Drinking a Medicinal herb when",
+            "your HP is full raises your maximum HP a"
+          ],
+          [
+            "little."
+          ],
+          [
+            "Tessie: If your inventory is full, recover",
+            "your HP first, then drink your Medicinal"
+          ],
+          [
+            "herbs."
+          ],
+          [
+            "Tessie: Now you're as good as through!"
+          ],
+          [
+            "Tessie: You can do it, dear!"
+          ]
+        ],
+        "line_widths": [
+          [
+            193,
+            196
+          ],
+          [
+            29
+          ],
+          [
+            209,
+            197
+          ],
+          [
+            35
+          ],
+          [
+            203
+          ],
+          [
+            144
+          ]
+        ],
+        "encoded_bytes": 489,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      }
+    },
+    {
+      "id": "event-bank-0.18a5",
+      "source_sha256": "6680f881d0b5809eeb5317acfe478031b39735c37f3121ed96b158cc434e8b51",
+      "raw_hex": "836c836c817582a082c882bd81408374834083438367814900",
+      "japanese": "ネネ「あなた　ファイト！",
+      "references": [
+        {
+          "slot": 300,
+          "group": 2,
+          "index": 5,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: You can do it, dear!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: You can do it, dear!"
+          ]
+        ],
+        "line_widths": [
+          [
+            144
+          ]
+        ],
+        "encoded_bytes": 57,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: You can do it, dear!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.18be",
+      "source_sha256": "bcb551b0926d65b9daf4bd05a6f92e0d08cb896c2058f0e426da5b08d2c9fab4",
+      "raw_hex": "836c836c817582a082c882bd81458145814582c282e782bb82a482cb81420d0d836c836c817582a482f1814082ed82a982c182bd82ed8145814581450d814082bf82e582c182c6814082b182b182c591d282c182c482c4814200",
+      "japanese": "ネネ「あなた・・・つらそうね。\n\nネネ「うん　わかったわ・・・\n　ちょっと　ここで待ってて。",
+      "references": [
+        {
+          "slot": 304,
+          "group": 2,
+          "index": 6,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Dear... You're having such a hard time.\n\nTessie: All right... Wait here a moment.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Dear... You're having such a",
+            "hard time."
+          ],
+          [
+            "Tessie: All right... Wait here a moment."
+          ]
+        ],
+        "line_widths": [
+          [
+            193,
+            51
+          ],
+          [
+            199
+          ]
+        ],
+        "encoded_bytes": 175,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Dear... You're having such a hard time.\n\nTessie: All right... Wait here a moment.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1918",
+      "source_sha256": "7fcc1cd0713db12bd85599460ad93a41c3c4f1b0a71a2fec1f07e8b2722c23d0",
+      "raw_hex": "836c836c817582dc82b382a9814082a082c882bd82c982b182ea82aa954b977682c982c882e90d814082c682cd8e7682ed82c882a982c182bd82af82c781458145814581420d836c836c817582c682c182c482a882ab82cc919594f582e681420d0d144041407e82cd814082cd82ae82ea8381835e838b82cc8c9582c681400d1482cd82ae82ea8381835e838b82cc8f8282f081408ee882c993fc82ea82bd81490d836c836c8175919594f582b782e982cc82f08140965982ea82c882a282c582cb814200",
+      "japanese": "ネネ「まさか　あなたにこれが必要になる\n　とは思わなかったけど・・・。\nネネ「とっておきの装備よ。\n\n{unclassified-control:14}@A@{unclassified-control:7e}は　はぐれメタルの剣と　\n{unclassified-control:14}はぐれメタルの盾を　手に入れた！\nネネ「装備するのを　忘れないでね。",
+      "references": [
+        {
+          "slot": 308,
+          "group": 2,
+          "index": 7,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received\n{center}a Liquid metal sword and shield!\n\nTessie: Don't forget to equip them!",
+      "status": "language-reviewed-pending-native-flow",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "prose_review": {
+        "previous_draft": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received a Liquid metal sword and\n{center}a Liquid metal shield!\n\nTessie: Don't forget to equip them!",
+        "revised": "Tessie: I never thought you'd need these...\n\nTessie: I've been saving this special equipment.\n\n{center}@A@{player} received\n{center}a Liquid metal sword and shield!\n\nTessie: Don't forget to equip them!",
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required.",
+        "layout_revision": "Share Liquid metal across sword and shield in the second centered line; both distinct gifts remain explicit. Preserve the two original centers, @A command and player substitution. Widest names fit."
+      },
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: I never thought you'd need",
+            "these..."
+          ],
+          [
+            "Tessie: I've been saving this special",
+            "equipment."
+          ],
+          [
+            "{center}@A@{player} received",
+            "{center}a Liquid metal sword and shield!"
+          ],
+          [
+            "Tessie: Don't forget to equip them!"
+          ]
+        ],
+        "line_widths": [
+          [
+            181,
+            46
+          ],
+          [
+            190,
+            55
+          ],
+          [
+            145,
+            159
+          ],
+          [
+            178
+          ]
+        ],
+        "encoded_bytes": 343,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{center}",
+          "@A@",
+          "{player}",
+          "{center}"
+        ]
+      }
+    },
+    {
+      "id": "event-bank-0.19dd",
+      "source_sha256": "1039ed2856ce35800aacbd0faef5cab256ec70d9ffd8bce29751661ac68725b5",
+      "raw_hex": "836c836c8175919594f582b782e982cc82f08140965982ea82c882a282c582cb814200",
+      "japanese": "ネネ「装備するのを　忘れないでね。",
+      "references": [
+        {
+          "slot": 312,
+          "group": 2,
+          "index": 8,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Don't forget to equip them!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Don't forget to equip them!"
+          ]
+        ],
+        "line_widths": [
+          [
+            178
+          ]
+        ],
+        "encoded_bytes": 71,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Don't forget to equip them!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1a00",
+      "source_sha256": "a18eae661746f72ca3f08cb605a25cc84de2c3dafdf3f483318e98002844690f",
+      "raw_hex": "836c836c81758e8482cc83418368836f83438358814095b782ad814800",
+      "japanese": "ネネ「私のアドバイス　聞く？",
+      "references": [
+        {
+          "slot": 316,
+          "group": 2,
+          "index": 9,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Tessie: Would you like some advice?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Tessie: Would you like some advice?"
+          ]
+        ],
+        "line_widths": [
+          [
+            180
+          ]
+        ],
+        "encoded_bytes": 71,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Tessie: Would you like some advice?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1a1d",
+      "source_sha256": "c460b54fe70e7ad86ba669e06fc02825a44d22821fff066614d4ce8f5dc1e3ec",
+      "raw_hex": "96608caf8ed2817582a082c882bd814096608caf82cc8b4c985e82cd0d814082bf82e182f182c6814082c282af82c482a882e882dc82b782a982c8814800",
+      "japanese": "冒険者「あなた　冒険の記録は\n　ちゃんと　つけておりますかな？",
+      "references": [
+        {
+          "slot": 320,
+          "group": 3,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Adventurer: Have you been keeping a proper record of your adventures?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Adventurer: Have you been keeping a",
+            "proper record of your adventures?"
+          ]
+        ],
+        "line_widths": [
+          [
+            188,
+            176
+          ]
+        ],
+        "encoded_bytes": 138,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Adventurer: Have you been keeping a proper record of your adventures?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1a5b",
+      "source_sha256": "3eacf79921b5720d42d94f1baac362437739ed309cc2f693b490f85c9a4fed96",
+      "raw_hex": "96608caf8ed2817582c882f182c681490d814096608caf82cc8b4c985e82cd814096608caf8ed282cc82bd82b582c882dd81420d96608caf8ed28175959489ae82cc928682c982a082e9030696608caf82cc8f910582f00d81408ca982c282af82c481408b4c985e82f082c282af82e982d782ab82c582b7814200",
+      "japanese": "冒険者「なんと！\n　冒険の記録は　冒険者のたしなみ。\n冒険者「部屋の中にある{legacy-position:0306}冒険の書{unclassified-control:05}を\n　見つけて　記録をつけるべきです。",
+      "references": [
+        {
+          "slot": 324,
+          "group": 3,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Adventurer: What! Keeping a record is part of being an adventurer.\n\nAdventurer: Find the {color:6}Adventure Log{/color} inside the house and record your adventure.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Adventurer: What! Keeping a record is",
+            "part of being an adventurer."
+          ],
+          [
+            "Adventurer: Find the {color:6}Adventure Log{/color} inside",
+            "the house and record your adventure."
+          ]
+        ],
+        "line_widths": [
+          [
+            193,
+            144
+          ],
+          [
+            213,
+            193
+          ]
+        ],
+        "encoded_bytes": 291,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Adventurer: What! Keeping a record is part of being an adventurer.\n\nAdventurer: Find the {color:6}Adventure Log{/color} inside the house and record your adventure.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1ad6",
+      "source_sha256": "4af4419709be2ba344e23772b1a2d4d9749aab36f4229a9411eb9852b0527b0e",
+      "raw_hex": "96608caf8ed2817582bb82a482c582b782a9814282bb82ea82cd82b782ce82e782b582a2814900",
+      "japanese": "冒険者「そうですか。それはすばらしい！",
+      "references": [
+        {
+          "slot": 328,
+          "group": 3,
+          "index": 2,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Adventurer: You have? Wonderful!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Adventurer: You have? Wonderful!"
+          ]
+        ],
+        "line_widths": [
+          [
+            173
+          ]
+        ],
+        "encoded_bytes": 65,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Adventurer: You have? Wonderful!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1afd",
+      "source_sha256": "854efed142444ec3d8cb6d4a69b5254b79f24e3934f8e9ba7223de404414c5cb",
+      "raw_hex": "91ba82cc8f978175838283938358835e815b82cc82d982a682e990ba82aa0d814091ba82cc928682dc82c5814095b782b182a682c482ab82c481458145814581420d91ba82cc8f97817582b182cc82dc82dc82be82c6814088c0905382b582c40d814082cb82de82e982b182c682b782e782c582ab82dc82b982f182ed814200",
+      "japanese": "村の女「モンスターのほえる声が\n　村の中まで　聞こえてきて・・・。\n村の女「このままだと　安心して\n　ねむることすらできませんわ。",
+      "references": [
+        {
+          "slot": 332,
+          "group": 4,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Village woman: We can hear the monsters roaring all the way here in the village...\n\nVillage woman: At this rate, we won't even be able to sleep in peace.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Village woman: We can hear the monsters",
+            "roaring all the way here in the village..."
+          ],
+          [
+            "Village woman: At this rate, we won't even",
+            "be able to sleep in peace."
+          ]
+        ],
+        "line_widths": [
+          [
+            201,
+            203
+          ],
+          [
+            210,
+            130
+          ]
+        ],
+        "encoded_bytes": 302,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Village woman: We can hear the monsters roaring all the way here in the village...\n\nVillage woman: At this rate, we won't even be able to sleep in peace.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.1b7d",
+      "source_sha256": "6142fa51dd871faecd79c450b2b4de75c9cbd1190844a59190033573a34ccc98",
+      "raw_hex": "82d082c682cc82a282a282a882b682b382f1817582c882f182c681490d814082b28ee5906c82aa814082a082cc91908cb482f0814082ca82af82e782ea82c882a282c682cd81490d82d082c682cc82a282a282a882b682b382f1817582b28ee5906c0d814082ed82b582e181408e7682a482f182be81458145814581420d82d082c682cc82a282a282a882b682b382f1817582a082f182bd0d8140967b8b4382be82b582c482c882a282cb81480d82d082c682cc82a282a282a882b682b382f1817589bd82c582bb82a48e7682a482a982c182c481480d0d82d082c682cc82a282a282a882b682b382f1817582bb82e882e182a00d814082b28ee5906c82f08140904d82b682c482e982a982e782b682e182e681490d82d082c682cc82a282a282a882b682b382f18175835f836e836e836e836e814900",
+      "japanese": "ひとのいいおじさん「なんと！\n　ご主人が　あの草原を　ぬけられないとは！\nひとのいいおじさん「ご主人\n　わしゃ　思うんだ・・・。\nひとのいいおじさん「あんた\n　本気だしてないね？\nひとのいいおじさん「何でそう思うかって？\n\nひとのいいおじさん「そりゃあ\n　ご主人を　信じてるからじゃよ！\nひとのいいおじさん「ダハハハハ！",
+      "references": [
+        {
+          "slot": 336,
+          "group": 4,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Friendly man: What! You can't get across those grasslands?\n\nFriendly man: I'll tell you what I think...\n\nFriendly man: You're not really trying, are you?\n\nFriendly man: Why do I think that? Because I believe in you, that's why!\n\nFriendly man: Dahahahaha!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Friendly man: What! You can't get across",
+            "those grasslands?"
+          ],
+          [
+            "Friendly man: I'll tell you what I think..."
+          ],
+          [
+            "Friendly man: You're not really trying, are",
+            "you?"
+          ],
+          [
+            "Friendly man: Why do I think that? Because",
+            "I believe in you, that's why!"
+          ],
+          [
+            "Friendly man: Dahahahaha!"
+          ]
+        ],
+        "line_widths": [
+          [
+            208,
+            93
+          ],
+          [
+            209
+          ],
+          [
+            216,
+            24
+          ],
+          [
+            215,
+            146
+          ],
+          [
+            137
+          ]
+        ],
+        "encoded_bytes": 495,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Friendly man: What! You can't get across those grasslands?\n\nFriendly man: I'll tell you what I think...\n\nFriendly man: You're not really trying, are you?\n\nFriendly man: Why do I think that? Because I believe in you, that's why!\n\nFriendly man: Dahahahaha!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.21d3",
+      "source_sha256": "a7e17ee29ac5552fb32921c5730393cbfe83db9d052429772eee6ee214998e71",
+      "raw_hex": "8347836881757e82cc835f8393836981490d814082e082b5814091e58d4882cc82b2977082aa82a082e882e282b582bd82e70d83478368817583418362835682e70d814081758347836883828393836891e58d488fa489ef817682c982a882dc82a982b982f0814900",
+      "japanese": "エド「{unclassified-control:7e}のダンナ！\n　もし　大工のご用がありやしたら\nエド「アッシら\n　「エドモンド大工商会」におまかせを！",
+      "references": [
+        {
+          "slot": 388,
+          "group": 6,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Ed: Mr {player}! If you ever need any carpentry done...\n\nEd: Leave it to us at Ed & Mondo Carpentry!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Business name follows the existing T2 glossary: Ed & Mondo Carpentry. Player substitution and native call flow require verification.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Ed: Mr {player}! If you ever",
+            "need any carpentry done..."
+          ],
+          [
+            "Ed: Leave it to us at Ed & Mondo",
+            "Carpentry!"
+          ]
+        ],
+        "line_widths": [
+          [
+            199,
+            143
+          ],
+          [
+            159,
+            56
+          ]
+        ],
+        "encoded_bytes": 181,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{player}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Ed: Mr {player}! If you ever need any carpentry done...\n\nEd: Leave it to us at Ed & Mondo Carpentry!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.223c",
+      "source_sha256": "49215a00842487be372d15205168ea586aa8d14dc219327f3ded58049999963a",
+      "raw_hex": "97f682b782e9926a817581458145814582c682d982d9814200",
+      "japanese": "恋する男「・・・とほほ。",
+      "references": [
+        {
+          "slot": 392,
+          "group": 7,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Lovestruck man: ...Oh, dear.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Lovestruck man: ...Oh, dear."
+          ]
+        ],
+        "line_widths": [
+          [
+            155
+          ]
+        ],
+        "encoded_bytes": 57,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Lovestruck man: ...Oh, dear.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2621",
+      "source_sha256": "5c31dc888c7e77ffef59c3bd729e682e7a93777d3d7af2eb612fa68fe95839d9",
+      "raw_hex": "91ba906c817582a681458145814582a88fe982d68d7382ad82cc82a982a2814800",
+      "japanese": "村人「え・・・お城へ行くのかい？",
+      "references": [
+        {
+          "slot": 404,
+          "group": 8,
+          "index": 2,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Villager: Huh... You're going to the castle?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Villager: Huh... You're going to the",
+            "castle?"
+          ]
+        ],
+        "line_widths": [
+          [
+            183,
+            37
+          ]
+        ],
+        "encoded_bytes": 88,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Villager: Huh... You're going to the castle?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2642",
+      "source_sha256": "3fe3d3ec60b52fd352b49ef4b76758150666b1014a827b315c708f1a1e73e831",
+      "raw_hex": "91ba906c817582a88fe982d681408d7382ad82c982cd00",
+      "japanese": "村人「お城へ　行くには",
+      "references": [
+        {
+          "slot": 408,
+          "group": 8,
+          "index": 3,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Villager: To get to the castle...",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Villager: To get to the castle..."
+          ]
+        ],
+        "line_widths": [
+          [
+            162
+          ]
+        ],
+        "encoded_bytes": 67,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Villager: To get to the castle...",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2659",
+      "source_sha256": "d98bb5a205a5d84462065fe761f636ad3089916c77996e53d32697aaefc90955",
+      "raw_hex": "8370839389ae817582b182ed82a282c8829f814200",
+      "japanese": "パン屋「こわいなぁ。",
+      "references": [
+        {
+          "slot": 412,
+          "group": 8,
+          "index": 4,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Baker: I'm scared...",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Baker: I'm scared..."
+          ]
+        ],
+        "line_widths": [
+          [
+            112
+          ]
+        ],
+        "encoded_bytes": 41,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Baker: I'm scared...",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.266e",
+      "source_sha256": "638adfc5fbedcf6d2a168ffe152579f4ba5751c4bce8fcd5049d1f97e52b9686",
+      "raw_hex": "838c837e8342817582a282e282cb82a5814082e082a4814900",
+      "japanese": "レミィ「いやねぇ　もう！",
+      "references": [
+        {
+          "slot": 416,
+          "group": 8,
+          "index": 5,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Remi: Oh, honestly!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review. Proper business/speaker naming evidence must be recorded before insertion.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Remi: Oh, honestly!"
+          ]
+        ],
+        "line_widths": [
+          [
+            100
+          ]
+        ],
+        "encoded_bytes": 39,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Remi: Oh, honestly!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      },
+      "terminology_evidence": [
+        {
+          "japanese": "レミィ",
+          "english": "Remi",
+          "url": "https://www.woodus.com/den/games/tq2psx/town.php",
+          "kind": "secondary PS1 naming evidence",
+          "identity_check": "The village magic-shop owner who sells level boosts and later other magical services. T2 source identifies the same role."
+        }
+      ]
+    },
+    {
+      "id": "event-bank-0.2687",
+      "source_sha256": "bd3b5964474120da0e5631527b1c051feb62a4fa342686b48d7c8fee865de544",
+      "raw_hex": "834b8343836f815b8389817581458145814581458145814582d382f181490d8140838f835682cc8d8790ac82cc9ae282c882e782ce00",
+      "japanese": "ガイバーラ「・・・・・・ふん！\n　ワシの合成の壺ならば",
+      "references": [
+        {
+          "slot": 420,
+          "group": 8,
+          "index": 6,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Gaibara: ...Hmph! With my Synthesis pot...",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review. Proper business/speaker naming evidence must be recorded before insertion.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Gaibara: ...Hmph! With my Synthesis",
+            "pot..."
+          ]
+        ],
+        "line_widths": [
+          [
+            184,
+            34
+          ]
+        ],
+        "encoded_bytes": 84,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Gaibara: ...Hmph! With my Synthesis pot...",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.26bd",
+      "source_sha256": "ee80a401146e5f5c21c5cbd1ae1a10f5c4a68b5862870446de120dcb07c008aa",
+      "raw_hex": "82a000",
+      "japanese": "あ",
+      "references": [
+        {
+          "slot": 424,
+          "group": 9,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": null,
+      "status": "draft-needs-bilingual-flow-and-native-review",
+      "notes": "Single-kana source fragment: identify its native consumer before deciding English or intentional retention."
+    },
+    {
+      "id": "event-bank-0.2ac8",
+      "source_sha256": "d04c316d970d8353cc97f36d9b35072828c9d880891f83885a6b15e19e2a516e",
+      "raw_hex": "95ba8e6d8175838283938358835e815b82c982cd814082b682c282c90d814082b382dc82b482dc82c88ff391d482aa82a082e882dc82b781420d95ba8e6d817582a895b782ab82c982c882e882dc82b782a9814800",
+      "japanese": "兵士「モンスターには　じつに\n　さまざまな状態があります。\n兵士「お聞きになりますか？",
+      "references": [
+        {
+          "slot": 448,
+          "group": 13,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Soldier: Monsters can be affected by all sorts of conditions.\n\nSoldier: Would you like to hear about them?",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Soldier: Monsters can be affected by all",
+            "sorts of conditions."
+          ],
+          [
+            "Soldier: Would you like to hear about them?"
+          ]
+        ],
+        "line_widths": [
+          [
+            200,
+            101
+          ],
+          [
+            214
+          ]
+        ],
+        "encoded_bytes": 209,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Soldier: Monsters can be affected by all sorts of conditions.\n\nSoldier: Would you like to hear about them?",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2b1d",
+      "source_sha256": "7bd785eacfd7a257a849390ab98d104815e22a30d056a2a38e96a558336728de",
+      "raw_hex": "95ba8e6d817582bb82ea82c582cd814082a88b4382f082c282af82c4814200",
+      "japanese": "兵士「それでは　お気をつけて。",
+      "references": [
+        {
+          "slot": 452,
+          "group": 13,
+          "index": 2,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Soldier: Take care, then.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Soldier: Take care, then."
+          ]
+        ],
+        "line_widths": [
+          [
+            131
+          ]
+        ],
+        "encoded_bytes": 51,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Soldier: Take care, then.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2b3c",
+      "source_sha256": "b1dd99e30c79bec5da43855b4932978eab038207d7df2d2942ee220223b67210",
+      "raw_hex": "95ba8e6d817582b182cc8fe982cc926e89ba82c982cd030690b982c882e9898a0582aa0d814082e082a682c482a282e982c682a282a481408cbe82a2936082a682aa82a082e882dc82b781420d95ba8e6d817582b582a982b58140905f90b982c882e082cc82c882cc82c50d0d95ba8e6d817589a489c682cc8ed288c88a4f82cd0d814097a782bf93fc82e8834c8393835682c982c882c182c482a882e882dc82b7814200",
+      "japanese": "兵士「この城の地下には{legacy-position:0306}聖なる炎{unclassified-control:05}が\n　もえているという　言い伝えがあります。\n兵士「しかし　神聖なものなので\n\n兵士「王家の者以外は\n　立ち入りキンシになっております。",
+      "references": [
+        {
+          "slot": 456,
+          "group": 13,
+          "index": 3,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Soldier: They say a {color:6}sacred flame{/color} burns beneath this castle.\n\nSoldier: But as it is sacred, only members of the royal family may enter.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Soldier: They say a {color:6}sacred flame{/color} burns",
+            "beneath this castle."
+          ],
+          [
+            "Soldier: But as it is sacred, only members",
+            "of the royal family may enter."
+          ]
+        ],
+        "line_widths": [
+          [
+            196,
+            102
+          ],
+          [
+            209,
+            146
+          ]
+        ],
+        "encoded_bytes": 267,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Soldier: They say a {color:6}sacred flame{/color} burns beneath this castle.\n\nSoldier: But as it is sacred, only members of the royal family may enter.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2be1",
+      "source_sha256": "b1dd99e30c79bec5da43855b4932978eab038207d7df2d2942ee220223b67210",
+      "raw_hex": "95ba8e6d817582b182cc8fe982cc926e89ba82c982cd030690b982c882e9898a0582aa0d814082e082a682c482a282e982c682a282a481408cbe82a2936082a682aa82a082e882dc82b781420d95ba8e6d817582b582a982b58140905f90b982c882e082cc82c882cc82c50d0d95ba8e6d817589a489c682cc8ed288c88a4f82cd0d814097a782bf93fc82e8834c8393835682c982c882c182c482a882e882dc82b7814200",
+      "japanese": "兵士「この城の地下には{legacy-position:0306}聖なる炎{unclassified-control:05}が\n　もえているという　言い伝えがあります。\n兵士「しかし　神聖なものなので\n\n兵士「王家の者以外は\n　立ち入りキンシになっております。",
+      "references": [
+        {
+          "slot": 460,
+          "group": 13,
+          "index": 4,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Soldier: They say a {color:6}sacred flame{/color} burns beneath this castle.\n\nSoldier: But as it is sacred, only members of the royal family may enter.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Soldier: They say a {color:6}sacred flame{/color} burns",
+            "beneath this castle."
+          ],
+          [
+            "Soldier: But as it is sacred, only members",
+            "of the royal family may enter."
+          ]
+        ],
+        "line_widths": [
+          [
+            196,
+            102
+          ],
+          [
+            209,
+            146
+          ]
+        ],
+        "encoded_bytes": 267,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Soldier: They say a {color:6}sacred flame{/color} burns beneath this castle.\n\nSoldier: But as it is sacred, only members of the royal family may enter.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2d39",
+      "source_sha256": "1068d3aea78d838d1fbe69156efda1756004dc9eead1c30af8639986aa65b459",
+      "raw_hex": "926296e889ae817582a882cb82aa82a282c582b781420d0d926296e889ae817590a28a4588ea82cc926296e889ae82c982c882e982bd82df82c982cd0d814082c782a482b582c482e08140030690b982c882e9898a0582aa82a282e982f182c582b781420d0d0d0d95ba8e6d817582be82df82be814082be82df82be81490d814082b182cc926e89ba82cd814089a489c682cc8ed288c88a4f82cd93fc82ea82c882a281490d95ba8e6d817582dc82b882cd814089a4976c82a982e70d814082a882e482e982b582f082a682e982f182be82c8814900",
+      "japanese": "鍛冶屋「おねがいです。\n\n鍛冶屋「世界一の鍛冶屋になるためには\n　どうしても　{legacy-position:0306}聖なる炎{unclassified-control:05}がいるんです。\n\n\n\n兵士「だめだ　だめだ！\n　この地下は　王家の者以外は入れない！\n兵士「まずは　王様から\n　おゆるしをえるんだな！",
+      "references": [
+        {
+          "slot": 476,
+          "group": 14,
+          "index": 3,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Blacksmith: Please! I need the {color:6}sacred flame{/color} to become the world's greatest blacksmith!\n\nSoldier: No, absolutely not! Only the royal family may go down there!\n\nSoldier: Get the King's permission first!",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Blacksmith: Please! I need the {color:6}sacred",
+            "flame{/color} to become the world's greatest"
+          ],
+          [
+            "blacksmith!"
+          ],
+          [
+            "Soldier: No, absolutely not! Only the royal",
+            "family may go down there!"
+          ],
+          [
+            "Soldier: Get the King's permission first!"
+          ]
+        ],
+        "line_widths": [
+          [
+            193,
+            183
+          ],
+          [
+            58
+          ],
+          [
+            214,
+            127
+          ],
+          [
+            202
+          ]
+        ],
+        "encoded_bytes": 396,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": [
+          "{color:6}",
+          "{/color}"
+        ]
+      },
+      "prose_review": {
+        "previous_draft": "Blacksmith: Please! I need the {color:6}sacred flame{/color} to become the world's greatest blacksmith!\n\nSoldier: No, absolutely not! Only the royal family may go down there!\n\nSoldier: Get the King's permission first!",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2e0f",
+      "source_sha256": "67159e5ea46b31700702e02238ff8901a15a3f24be736d023642dfa932eac237",
+      "raw_hex": "94d495ba817582bb82cc82a482bf814082a082bf82b182bf82cc91908cb482aa0d0d94d495ba817582b782d782c495738e768b6382cc835f839383578387839382c90d814082c882c182c482b582dc82a482f182b682e182c882a282c582b582e582a482a981480d94d495ba81758375838b838b838b836281490d814082a882bb82eb82b582a282b182c682c582b7814200",
+      "japanese": "番兵「そのうち　あちこちの草原が\n\n番兵「すべて不思議のダンジョンに\n　なってしまうんじゃないでしょうか？\n番兵「ブルルルッ！\n　おそろしいことです。",
+      "references": [
+        {
+          "slot": 480,
+          "group": 15,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Sentry: What if all the grasslands turn into magic dungeons one day?\n\nSentry: Brrr! What a dreadful thought.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Sentry: What if all the grasslands turn into",
+            "magic dungeons one day?"
+          ],
+          [
+            "Sentry: Brrr! What a dreadful thought."
+          ]
+        ],
+        "line_widths": [
+          [
+            213,
+            126
+          ],
+          [
+            195
+          ]
+        ],
+        "encoded_bytes": 213,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Sentry: What if all the grasslands turn into magic dungeons one day?\n\nSentry: Brrr! What a dreadful thought.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2ea1",
+      "source_sha256": "159f31205d4ea4fca8a6ab1bb58164cc310fbc7d5871c8143d2f1eca979e4aaa",
+      "raw_hex": "94d495ba817589a48e7182b382dc82aa814082a882a982a682e882c982c882ea82ce0d0d94d495ba8175838283938358835e815b82aa919d82a682bd8cb488f682e00d814082ab82c182c68140836e8362834c838a82b782e982c9814082bf82aa82a282a082e882dc82b982f1814200",
+      "japanese": "番兵「王子さまが　おかえりになれば\n\n番兵「モンスターが増えた原因も\n　きっと　ハッキリするに　ちがいありません。",
+      "references": [
+        {
+          "slot": 484,
+          "group": 16,
+          "index": 0,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Sentry: Once the Prince returns, we're sure to learn why there are so many monsters.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Sentry: Once the Prince returns, we're",
+            "sure to learn why there are so many"
+          ],
+          [
+            "monsters."
+          ]
+        ],
+        "line_widths": [
+          [
+            199,
+            178
+          ],
+          [
+            51
+          ]
+        ],
+        "encoded_bytes": 167,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Sentry: Once the Prince returns, we're sure to learn why there are so many monsters.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    },
+    {
+      "id": "event-bank-0.2f11",
+      "source_sha256": "fcf6488bbcfe38ecec66eb48d28269714ff0af50038ab18b7eab5237bf616870",
+      "raw_hex": "9856906c817581458145814582d382f181490d814095b782ab82ed82af82cc82c882a289a482be81420d9856906c817582b182cc8d91814082c882aa82ad82cd8e9d82bd82ca82c582a082eb82a482c8814200",
+      "japanese": "老人「・・・ふん！\n　聞きわけのない王だ。\n老人「この国　ながくは持たぬであろうな。",
+      "references": [
+        {
+          "slot": 488,
+          "group": 16,
+          "index": 1,
+          "bank": "event-bank-0"
+        }
+      ],
+      "english_draft": "Old man: ...Hmph! A king who won't listen to reason.\n\nOld man: This kingdom won't last long.",
+      "status": "language-reviewed-pending-flow-layout-and-insertion",
+      "notes": "Independent T2 translation; original event timing, Yes/No flow and native reader coverage remain open. Literal controls and source bytes retained for review.",
+      "draft_layout": {
+        "pages": [
+          [
+            "Old man: ...Hmph! A king who won't listen",
+            "to reason."
+          ],
+          [
+            "Old man: This kingdom won't last long."
+          ]
+        ],
+        "line_widths": [
+          [
+            209,
+            54
+          ],
+          [
+            191
+          ]
+        ],
+        "encoded_bytes": 181,
+        "maximum_width": 216,
+        "native_width": 224,
+        "commands": []
+      },
+      "prose_review": {
+        "previous_draft": "Old man: ...Hmph! A king who won't listen to reason.\n\nOld man: This kingdom won't last long.",
+        "revised": false,
+        "reason": "Dedicated Japanese/English pass: meaning, speaker voice, conditions, figures, colours, player substitutions and established item terms checked. Native connected-flow review remains required."
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "player-status.0e4",
+      "table_offset": 228,
+      "source": {
+        "offset": 410060,
+        "end_exclusive": 410093,
+        "raw_hex": "257382cd2090b382b582ad82e082cc82aa0d8ca982a682c882ad82c882c182bd00",
+        "sha256": "136923f09eb7e3d8e29eaa1742252644b95046b33d56cd59fbf889aa8ba87984",
+        "japanese": "%{unclassified-control:73}は 正しくものが\n見えなくなった"
+      },
+      "english": "{player} starts hallucinating.",
+      "status": "prototype-language-reviewed",
+      "review": "T2 Japanese meaning preserved. Audited native routines obtain only the player via 08009ACC(0); seven widest Japanese player glyphs fit one line. Blindness refusal uses direct negative wording without inventing intentional avoidance. Controlled native effect/branch validation required."
+    },
+    {
+      "id": "player-status.0e8",
+      "table_offset": 232,
+      "source": {
+        "offset": 410032,
+        "end_exclusive": 410057,
+        "raw_hex": "257382cd200d96da82aa8ca982a682c882ad82c882c182bd00",
+        "sha256": "caa6ed0954681d020d120eaa7eb04266672445cd38a1183ae0842c33a5cca313",
+        "japanese": "%{unclassified-control:73}は \n目が見えなくなった"
+      },
+      "english": "{player} is blinded.",
+      "status": "prototype-language-reviewed",
+      "review": "T2 Japanese meaning preserved. Audited native routines obtain only the player via 08009ACC(0); seven widest Japanese player glyphs fit one line. Blindness refusal uses direct negative wording without inventing intentional avoidance. Controlled native effect/branch validation required."
+    },
+    {
+      "id": "player-status.4a0",
+      "table_offset": 1184,
+      "source": {
+        "offset": 403904,
+        "end_exclusive": 403931,
+        "raw_hex": "96da82c282d482b58ff391d482c982c882e782c882a982c182bd00",
+        "sha256": "01e8438477b5aabe603dc4b40697e9db7d43f20fb8f95b413a9a40f55e1513a4",
+        "japanese": "目つぶし状態にならなかった"
+      },
+      "english": "You weren't blinded.",
+      "status": "prototype-language-reviewed",
+      "review": "T2 Japanese meaning preserved. Audited native routines obtain only the player via 08009ACC(0); seven widest Japanese player glyphs fit one line. Blindness refusal uses direct negative wording without inventing intentional avoidance. Controlled native effect/branch validation required."
+    }
+  ],
+  "scope": "Isolated candidate; no blanket shared-table translation or cumulative acceptance."
+}

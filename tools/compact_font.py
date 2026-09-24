@@ -7,7 +7,9 @@ import struct
 from tools.review_fonts import extract
 from tools.rom import ROOT, digest, load_base, require
 
-ASSET = ROOT / "assets/fonts/compact-english.json"
+COMPACT_ASSET = ROOT / "assets/fonts/compact-english.json"
+TORNEKO3_ASSET = ROOT / "assets/fonts/torneko3-english.json"
+ASSET = COMPACT_ASSET
 FIRST_CODE = 0xF020
 LAST_CODE = 0xF07E
 
@@ -15,22 +17,40 @@ LAST_CODE = 0xF07E
 def load_font(path=ASSET):
     original = load_base()
     font = json.loads(Path(path).read_text())
-    require(font["schema"] == 1, "Unsupported font schema")
+    require(font["schema"] in (1,2), "Unsupported font schema")
     require(font["base_rom_sha256"] == digest(original), "Font asset is for another base ROM")
     require(set(font["glyphs"]) == set(map(chr, range(32, 127))), "Font must cover all printable ASCII")
+    if font['schema'] == 2:
+        from tools.import_torneko3_font import SOURCE_SHA, convert_glyph
+        require(font['source_rom_sha256'] == SOURCE_SHA and font['source_font'] == 0,
+                'Imported font source differs')
+        records = bytearray()
+        for char in map(chr,range(32,127)):
+            glyph = font['glyphs'][char]
+            record,bitmap = bytes.fromhex(glyph['source_descriptor_hex']),bytes.fromhex(glyph['source_bitmap_hex'])
+            records.extend(record+bitmap)
+            advance,rows = convert_glyph(record,bitmap)
+            require(glyph['origin'] == 'torneko3-rom' and glyph['advance'] == advance and glyph['rows'] == rows,
+                    'Imported source shape, advance or ownership changed')
+        expected = '9c4a1302da0e4075cb91cc2fbe6d23843795367638326ee60b569138f8d9b5f6'
+        require(digest(records) == font['source_records_sha256'] == expected,'Imported source records changed')
+        return font
     for char, glyph in font["glyphs"].items():
-        expected_origin = "rom" if ord(char) < 0x60 and char != "\\" else "new"
+        expected_origin = "adapted-rom" if char == " " else "rom" if ord(char) < 0x60 and char != "\\" else "new"
         require(glyph["origin"] == expected_origin, "Original/new glyph ownership differs")
         width, rows = glyph["advance"], glyph["rows"]
         require(1 <= width <= 6 and len(rows) == 14, "Invalid compact glyph dimensions")
         require(all(len(row) == width and set(row) <= {".", "#"} for row in rows), "Invalid glyph bitmap")
         require(char == " " or any("#" in row for row in rows), "Missing visible glyph")
-        if glyph["origin"] == "rom":
+        if glyph["origin"] in ("rom", "adapted-rom"):
             source = extract(original, ord(char))
             require(glyph["rom_offset"] == source["rom_offset"] and glyph["source_hex"] == source["source_hex"],
                     "Original glyph provenance differs")
-            require(width == source["width"], "Original glyph advance changed")
-            require(pack_glyph(glyph) == bytes.fromhex(source["source_hex"]), "Original glyph bytes changed")
+            if glyph["origin"] == "adapted-rom":
+                require(char == " " and width == 3 and rows == ["..."] * 14, "Invalid adapted word space")
+            else:
+                require(width == source["width"], "Original glyph advance changed")
+                require(pack_glyph(glyph) == bytes.fromhex(source["source_hex"]), "Original glyph bytes changed")
         else:
             require(glyph["origin"] == "new", "Unknown glyph origin")
     return font

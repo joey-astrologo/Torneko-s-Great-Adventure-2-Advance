@@ -1,0 +1,60 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Reviewed T2 Japanese source and independently written English. Insert through the owned, natively tested consumer. Ordinary later-story progression remains separate from controlled consumer acceptance.",
+  "entries": [
+    {
+      "id": "event-bank-5.4a81",
+      "source_hex": "838283938368817582a68148814082dd82f182c88375835782c582b582bd82a981490d814082bb82e7814082e682a982c182bd81490d838283938368817582a282e282a0814082d082b382b582d482e882c90d8140257391ba82c982a982a682c182c482ab82bd82e70d8382839383688175837b8345837b834582e082a682c482bd82f182c50d814082d182c182ad82e882b582dc82b582bd82ed81490d838283938368817582bb82cc82a482bf81408f43979d82b582dc82c182b382a982a20d814082dc82a0814088c0905382b582c682a282c482e2814900",
+      "source_sha256": "1ecbf7ba8720768d525ebf15f502cf34bf9f29289806264adfcacb11b23bb9a0",
+      "japanese": "モンド「え？　みんなブジでしたか！\n　そら　よかった！\nモンド「いやあ　ひさしぶりに\n　%{unclassified-control:73}村にかえってきたら\nモンド「ボウボウもえてたんで\n　びっくりしましたわ！\nモンド「そのうち　修理しまっさかい\n　まあ　安心しといてや！",
+      "english": "Mondo: What? Everyone's safe? Thank goodness!\n\nMondo: I came back to {village} after so long, and there it was, blazing away! Gave me quite a fright!\n\nMondo: We'll get it repaired soon. Don't you worry!",
+      "prose_review": {
+        "previous_draft": "Mondo: What? Everyone's safe? Thank goodness!\n\nMondo: I came back to {village} after so long, and there it was, blazing away! Gave me quite a fright!\n\nMondo: We'll get it repaired soon. Don't you worry!",
+        "revised": "Mondo: What? Everyone's safe? Thank goodness!\n\nMondo: I came back to {village} after so long, and there it was, blazing away! Gave me quite a fright!\n\nMondo: We'll get it repaired soon. Don't you worry!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-5.a5c2",
+      "source_hex": "14257391ba836a8385815b83580d0d814081408140814081408140814081408140814081408b4c8ed28140838c837e834200",
+      "source_sha256": "6164d85107d47ae97390a42c4d6d275f044887fb729a1bcef8ebae06a9875bd4",
+      "japanese": "{unclassified-control:14}%{unclassified-control:73}村ニュース\n\n　　　　　　　　　　　記者　レミィ",
+      "english": "{center}{village} Village News\n\nReporter: Remi",
+      "prose_review": {
+        "previous_draft": "{center}{village} Village News\n\nReporter: Remi",
+        "revised": "{center}{village} Village News\n\nReporter: Remi",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.7d09",
+      "source_hex": "14257391ba836a8385815b83580d0d814081408140814081408140814081408140814081408b4c8ed28140838c837e834200",
+      "source_sha256": "6164d85107d47ae97390a42c4d6d275f044887fb729a1bcef8ebae06a9875bd4",
+      "japanese": "{unclassified-control:14}%{unclassified-control:73}村ニュース\n\n　　　　　　　　　　　記者　レミィ",
+      "english": "{center}{village} Village News\n\nReporter: Remi",
+      "prose_review": {
+        "previous_draft": "{center}{village} Village News\n\nReporter: Remi",
+        "revised": "{center}{village} Village News\n\nReporter: Remi",
+        "reason": "Reconciled against a separately bilingual-reviewed T2 source with identical English and exact normalized Japanese. NFKC, katakana-to-hiragana and whitespace normalization only; punctuation, controls, quantities and words must match. Original source bytes remain separate and unchanged.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "normalized-exact-reconciliation",
+        "reviewed_source": {
+          "catalog": "final-quest-draft.json",
+          "id": "event-bank-5.a5c2",
+          "source_sha256": "6164d85107d47ae97390a42c4d6d275f044887fb729a1bcef8ebae06a9875bd4",
+          "context_pending": true
+        },
+        "normalization": "NFKC; U+30A1..U+30F6 to hiragana; remove whitespace"
+      },
+      "status": "reviewed"
+    }
+  ],
+  "native_consumer_evidence": "build/village-prose-prototype/report.json"
+}

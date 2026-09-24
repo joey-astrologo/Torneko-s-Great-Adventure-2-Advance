@@ -1,0 +1,90 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private reads in central pickup08024AD8 and automatic-walk standing wrapper080249DC. Native192/256-byte outputs and64-byte item fields unchanged. Includes native gold/arrow/ordinary-item paths, full inventory and inability/stuck/standing messages. Other shared consumers remain separate.",
+  "entries": [
+    {
+      "id": "pickup.098",
+      "table_offset": 152,
+      "source": {
+        "offset": 410552,
+        "end_exclusive": 410584,
+        "raw_hex": "8e9d82bf95a882aa82a282c182cf82a282c52082e082a48e9d82c482c882a200",
+        "sha256": "6cef53356b08c3cc35ecf81a4b5bd90412a63319cce8040e4d7784a61562b61b",
+        "japanese": "持ち物がいっぱいで もう持てない"
+      },
+      "english": "Inventory full! Can't carry more.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    },
+    {
+      "id": "pickup.09c",
+      "table_offset": 156,
+      "source": {
+        "offset": 410536,
+        "end_exclusive": 410549,
+        "raw_hex": "257382f082d082eb82c182bd00",
+        "sha256": "38ccf4b34eaa0c0d6b4faff9a461723d3ee6b6fa1c260854861ea22151bf1a1f",
+        "japanese": "%{unclassified-control:73}をひろった"
+      },
+      "english": "Picked up{fit} {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    },
+    {
+      "id": "pickup.0a0",
+      "table_offset": 160,
+      "source": {
+        "offset": 410488,
+        "end_exclusive": 410533,
+        "raw_hex": "8e9d82bf82e082cc82aa82a282c182cf82a282c5208e9d82c482c882a20d257382cc8fe382c98fe682c182bd00",
+        "sha256": "d88f2d985fe61e750478d99691a8c1ee9889823631b15e1df498acdf68add856",
+        "japanese": "持ちものがいっぱいで 持てない\n%{unclassified-control:73}の上に乗った"
+      },
+      "english": "Inventory full! Can't carry more.\nStood on {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    },
+    {
+      "id": "pickup.150",
+      "table_offset": 336,
+      "source": {
+        "offset": 409304,
+        "end_exclusive": 409320,
+        "raw_hex": "257382cd2082d082eb82a682c882a200",
+        "sha256": "38e9fc4e005c0fddfd1c6148ad24356817bbb4d890c3c8a654b8eff28d150f7c",
+        "japanese": "%{unclassified-control:73}は ひろえない"
+      },
+      "english": "{item}{fit} cannot be picked up.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    },
+    {
+      "id": "pickup.1ec",
+      "table_offset": 492,
+      "source": {
+        "offset": 408256,
+        "end_exclusive": 408292,
+        "raw_hex": "257382cd0d926e96ca82c983738362835e838a82c682cd82e882c282a282c482a282e900",
+        "sha256": "7484e8df55c78cfeafcac3bcfe9ef963bee8b60254112f678115694a07903d46",
+        "japanese": "%{unclassified-control:73}は\n地面にピッタリとはりついている"
+      },
+      "english": "{item}{fit} is stuck fast to the ground.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    },
+    {
+      "id": "pickup.37c",
+      "table_offset": 892,
+      "source": {
+        "offset": 405904,
+        "end_exclusive": 405919,
+        "raw_hex": "257382cc8fe382c98fe682c182bd00",
+        "sha256": "d326c3be19f848e8232d8138afb65c45e2cf1a74d13a90d0037bc0257288dda6",
+        "japanese": "%{unclassified-control:73}の上に乗った"
+      },
+      "english": "Stood on {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Keeps pickup, full-inventory inability, standing on an item, and being firmly stuck to the ground distinct. The full-inventory standing message retains both clauses. Native conditional break permits one line when actual substitutions fit."
+    }
+  ]
+}

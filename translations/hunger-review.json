@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Five warnings selected by08008F4C at queue site08009104. Private copy bound only through literal08009148; original table/other callers unchanged. Native threshold/counter transitions and one-line rendering require separate evidence.",
+  "entries": [
+    {
+      "id": "hunger.23c",
+      "table_offset": 572,
+      "source": {
+        "offset": 407744,
+        "end_exclusive": 407767,
+        "raw_hex": "82a895a082aa82d682c182c482ab82bd81458145814500",
+        "sha256": "7ad290142a4697c9e53ec5079c8d94484ad7c38ee7d1eaa1181291ee5db0a1c3",
+        "japanese": "お腹がへってきた・・・"
+      },
+      "english": "You're getting hungry...",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves increasing hunger, dizziness, imminent collapse, urgent need to eat and starvation. The third warning uses an urgent fragment to retain its full meaning on one line. No substitution or source control is removed. Native fullness transitions and starvation counter select the messages; not a generic prose replacement."
+    },
+    {
+      "id": "hunger.240",
+      "table_offset": 576,
+      "source": {
+        "offset": 407712,
+        "end_exclusive": 407743,
+        "raw_hex": "836e83898379835282c596da82aa89f182c182c482ab82bd81458145814500",
+        "sha256": "7d999f35c30af5f8a598a5429453952dab985cb773a5cdf1af6214bb09b55793",
+        "japanese": "ハラペコで目が回ってきた・・・"
+      },
+      "english": "You're dizzy with hunger...",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves increasing hunger, dizziness, imminent collapse, urgent need to eat and starvation. The third warning uses an urgent fragment to retain its full meaning on one line. No substitution or source control is removed. Native fullness transitions and starvation counter select the messages; not a generic prose replacement."
+    },
+    {
+      "id": "hunger.244",
+      "table_offset": 580,
+      "source": {
+        "offset": 407684,
+        "end_exclusive": 407710,
+        "raw_hex": "835f838182be212082e082a482bd82a882ea82bb82a482be2100",
+        "sha256": "52bfea05a2510d7affc694a79437906b727ad72fd4dc245789f5f2d3049442f8",
+        "japanese": "ダメだ! もうたおれそうだ!"
+      },
+      "english": "Can't go on! You're about to collapse!",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves increasing hunger, dizziness, imminent collapse, urgent need to eat and starvation. The third warning uses an urgent fragment to retain its full meaning on one line. No substitution or source control is removed. Native fullness transitions and starvation counter select the messages; not a generic prose replacement."
+    },
+    {
+      "id": "hunger.248",
+      "table_offset": 584,
+      "source": {
+        "offset": 407660,
+        "end_exclusive": 407684,
+        "raw_hex": "82cd82e282ad212089bd82a9904882d782c882a282c62100",
+        "sha256": "a43588ef004bbd4f2cead17615fab393eaf1772bd8f6188263d5a37c31ea96c3",
+        "japanese": "はやく! 何か食べないと!"
+      },
+      "english": "Quick! You need to eat something!",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves increasing hunger, dizziness, imminent collapse, urgent need to eat and starvation. The third warning uses an urgent fragment to retain its full meaning on one line. No substitution or source control is removed. Native fullness transitions and starvation counter select the messages; not a generic prose replacement."
+    },
+    {
+      "id": "hunger.24c",
+      "table_offset": 588,
+      "source": {
+        "offset": 407640,
+        "end_exclusive": 407660,
+        "raw_hex": "82a482a68e8082c982b582c482b582dc82a42100",
+        "sha256": "26508b66849b45071f5b619e908e31711fe99c39ffbc5bf9ffdf07289bfa83d1",
+        "japanese": "うえ死にしてしまう!"
+      },
+      "english": "You're going to starve!",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves increasing hunger, dizziness, imminent collapse, urgent need to eat and starvation. The third warning uses an urgent fragment to retain its full meaning on one line. No substitution or source control is removed. Native fullness transitions and starvation counter select the messages; not a generic prose replacement."
+    }
+  ]
+}

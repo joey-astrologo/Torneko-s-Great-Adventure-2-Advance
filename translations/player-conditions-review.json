@@ -1,0 +1,132 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "player-condition.0f0",
+      "table_offset": 240,
+      "source": {
+        "offset": 409980,
+        "end_exclusive": 410005,
+        "raw_hex": "257382cd200e094e82cb82de82c182c482b582dc82c182bd00",
+        "sha256": "143f578c7974338aef7abb35df933159a9b1f31eca8a699af482bd00d90c6a65",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e094e}ねむってしまった"
+      },
+      "english": "{player} falls asleep.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.11c",
+      "table_offset": 284,
+      "source": {
+        "offset": 409580,
+        "end_exclusive": 409604,
+        "raw_hex": "257382cd0e0b4e82cb82de82e782b882c982b782f182be00",
+        "sha256": "97e6f2e5e6f777eafa36985ecb10945d9654b40893055f694345fa12373557a2",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0b4e}ねむらずにすんだ"
+      },
+      "english": "{player} stays awake.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.4a8",
+      "table_offset": 1192,
+      "source": {
+        "offset": 403860,
+        "end_exclusive": 403876,
+        "raw_hex": "257382cd2096da82aa82b382a682bd00",
+        "sha256": "fbbdf8f32db5eedccb5affcd436dc022f423908e822e8d7f16f0f43e3d0c9d78",
+        "japanese": "%{unclassified-control:73}は 目がさえた"
+      },
+      "english": "{player} is wide awake.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.1f0",
+      "table_offset": 496,
+      "source": {
+        "offset": 408224,
+        "end_exclusive": 408254,
+        "raw_hex": "257382cd0e0d4e93ae82ab82aa82c682dc82c182c482b582dc82c182bd00",
+        "sha256": "d89ce6d5ed51e5c52c8dac7ac9a4431a68c516d881de9099a6ee036e6b57566e",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0d4e}動きがとまってしまった"
+      },
+      "english": "{player} cannot move.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.88c",
+      "table_offset": 2188,
+      "source": {
+        "offset": 395236,
+        "end_exclusive": 395268,
+        "raw_hex": "82b582a982b52082b782ae82c993ae82af82e982e682a482c982c882c182bd00",
+        "sha256": "fbea8be9e65ccc323ab0735707f2993abbdad3fcf55a67e16268855d04a73aa5",
+        "japanese": "しかし すぐに動けるようになった"
+      },
+      "english": "But you can move again at once.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.0dc",
+      "table_offset": 220,
+      "source": {
+        "offset": 410112,
+        "end_exclusive": 410136,
+        "raw_hex": "257382cd2082bf82a982e782aa256489ba82aa82c182bd00",
+        "sha256": "64836fd1a31cfa1f3de57f4c52a7fade5dd6c9fb5048d9cd9d967309d605e5de",
+        "japanese": "%{unclassified-control:73}は ちからが%{unclassified-control:64}下がった"
+      },
+      "english": "{player} loses {value} strength.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.204",
+      "table_offset": 516,
+      "source": {
+        "offset": 408104,
+        "end_exclusive": 408126,
+        "raw_hex": "257382cd2093c582f08ef382af82c882a982c182bd00",
+        "sha256": "d7e34ef86a1996d9b93ed9034af4159de79b06e6b34028b93bf31de23e0c0525",
+        "japanese": "%{unclassified-control:73}は 毒を受けなかった"
+      },
+      "english": "{player} wasn't poisoned.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.2fc",
+      "table_offset": 764,
+      "source": {
+        "offset": 406656,
+        "end_exclusive": 406684,
+        "raw_hex": "257382cd2097cd82aa89ba82aa82e782c882a282c582b782f182be00",
+        "sha256": "85901afe0d95b9c9fc0733b27afe3014e9db862ad35a44359bd17901e0ef2ac0",
+        "japanese": "%{unclassified-control:73}は 力が下がらないですんだ"
+      },
+      "english": "{player} lost no strength.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    },
+    {
+      "id": "player-condition.298",
+      "table_offset": 664,
+      "source": {
+        "offset": 407212,
+        "end_exclusive": 407229,
+        "raw_hex": "257382cd2093c582f0966882a282be2100",
+        "sha256": "b2a04be4addd448925293f9c73e023c68f8c0037bac8492930ce3bde0f206284",
+        "japanese": "%{unclassified-control:73}は 毒を防いだ!"
+      },
+      "english": "{player} resists poison!",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review for the audited player-only consumer. Distinguishes falling asleep, staying awake and wakefulness; movement loss/recovery retains immediate recovery. Poison damage retains the exact strength decrease, and immunity/protection remain distinct. Existing native formatter obtains the player name only. Japanese fit-next presentation may become one verified English line without changing semantic meaning."
+    }
+  ],
+  "scope": "Nine reviewed private player-condition messages. Separate prototype passes 45 controlled native cases and 48 one-line message reads, including three player names, immediate-recovery sequencing, poison protection and actual 1..3 strength loss with native zero clamp. Not cumulative insertion or ordinary acquisition acceptance."
+}

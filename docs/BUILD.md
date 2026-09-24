@@ -1,0 +1,190 @@
+# Cumulative English build
+
+Run from the repository root with the documented toolchain installed:
+
+```bash
+./build.sh
+```
+
+The latest compiled outputs are also exported directly to the `build/` root:
+
+- `build/torneko-2-english.gba` — patched English ROM for local playtesting.
+- `build/torneko-2-english.bps` — BPS patch against the pinned Japanese ROM.
+- `build/torneko-2-english.release.json` — matching source/ROM/patch hashes,
+  inserted-resource count and development status.
+
+Both `./build.sh` and `.venv/bin/python -m tools.build_english` update this pair
+after compilation and an independent patch application reproduces the ROM.
+The manifest is installed last; consumers should check both file hashes against
+it. Failed validation leaves the previous exports intact. Explicit compiler
+`--output` directories are isolated and do not replace the default exports.
+To re-export existing compiler output, run
+`.venv/bin/python -m tools.export_release`. Native acceptance is recorded
+separately in the matching validation receipt; these convenient latest-build
+files remain development outputs while localization/playtesting is incomplete.
+Archived accepted milestones under `build/accepted/` are preserved.
+
+The build starts from the pinned Japanese ROM and retained source assets. It
+adds the selected Torneko 2 compact font and [original-sized early menus](MENU_LAYOUTS.md), English name entry, opening dialogue, resume/menu labels,
+first-dungeon tutorials, first-castle conversations, the first travel menu, and
+the reviewed story catalogs and bounded special formatters in one `RomBuild`
+allocation/patch ledger. It does not depend on a prior
+proof ROM, generated resource dump or emulator checkpoint. Source ROM/save files
+are preserved. ROM, BPS and report files are staged and verified before replacing
+generated outputs; the directory's existing playtest saves are retained.
+
+Outputs:
+
+- [English ROM](../build/english/torneko-2-english.gba), 16 MiB.
+- [BPS patch](../build/english/torneko-2-english.bps), verified by applying it to
+  the pinned Japanese base and comparing every output byte.
+- [Build ledger](../build/english/build.json), including allocations, expected
+  original bytes, patch owners, hashes and helper source.
+- [Native acceptance report](../build/english/name-entry-validation/report.json),
+  normal input schedules, screenshots and isolated disposable saves.
+- [Cumulative acceptance receipt](english-services-validation.json), linking the
+  ten gameplay/text reports, four additional menu reports, source verification
+  and reproducible build.
+- [Typography correction gallery](../build/typography/index.html), matching numbers,
+  normal item spacing, three-pixel word spaces and attached bank colons.
+- [Latest native preview](../build/english/mansion-preview.png).
+- [Font audition and menu budgets](../build/font-audition/index.html), including
+  original-window overflows, passing approved labels and native geometry evidence.
+
+The [English opening batch](OPENING_ENGLISH.md) includes both choice branches,
+the complete opening flashback, initial menu labels, resume prompts, stair
+options, the first three floor tutorials, the King's first audience and five
+nearby NPCs, including both answers to the guard, plus the travel question and
+player's home label. The [home-return batch](HOME_RETURN.md) adds the first
+evening/morning, sale proceeds and three village NPCs, including both Ed choices.
+The [home-book/banker batch](HOME_BOOKS.md) adds all ten tips, the blue-book
+actions/save flows, the first banker choices and mansion entrance. The
+[mansion quest batch](MANSION_QUEST.md) adds safe recovery, both family questions,
+the next morning and bank opening. Subsequent service work includes 206
+non-placeholder item names, reviewed descriptions, bank rewards, repaired
+storage, bakery purchases, dungeon actor names and the currently checked combat
+and status messages.
+
+The accepted build contains **2,500 reviewed inserted resources**. Its stable
+ROM, BPS, ledger and receipt are retained in `build/accepted/2500/`. Full
+regression,85 unit tests,90 WebKit contexts/890 measurements and byte-identical
+ROM/BPS rebuilding pass. This includes1,872 item cases,556 visibly verified
+static notices,27 monster-condition cases and336 result/history cases.
+Earlier milestones remain archived. The current development candidate adds110
+result UI/history/menu/record/Password resources; their matching cumulative checks are recorded
+separately. See [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage.
+Native checks distinguish controlled renderer/getter/formatter calls and state
+substitutions from ordinary gameplay routes.
+
+Remaining shared combat/system/town consumers, menus, custom names/inscriptions,
+special records, later modes and graphics still need work. A completed known
+catalog does not establish complete game coverage. Graphics editing remains
+deferred until the text is complete.
+
+Individual commands:
+
+```bash
+# Assemble and verify BPS output without replaying gameplay.
+.venv/bin/python -m tools.build_english
+
+# Rebuild in memory and verify name entry, real saves and cold gameplay loading.
+.venv/bin/python -m tools.verify_name_entry
+
+# Both English opening branches and all 90 bank-zero text getter targets.
+.venv/bin/python -m tools.verify_opening_dialogue
+
+# Resume, remaining tutorials, and Stay/Descend stair outcomes.
+# Uses the disposable native save generated by verify_name_entry above.
+.venv/bin/python -m tools.verify_first_dungeon
+
+# Continue its generated floor-three checkpoint to the first audience;
+# also probe seven-glyph English/Japanese name substitutions separately.
+.venv/bin/python -m tools.verify_castle_arrival
+
+# Six normal-input NPC routes from that audience-completion checkpoint.
+.venv/bin/python -m tools.verify_castle_conversations
+
+# Travel labels, worst-case name widths, native cursor, Cancel and Home.
+.venv/bin/python -m tools.verify_destination_menu
+
+# First home scene, sale proceeds, Ed choices, 214 getters per ROM and name/amount probes.
+# Standalone default uses the retained Japanese home research checkpoint.
+.venv/bin/python -m tools.verify_home_return
+
+# Shared town loader: two native loads, all 300 pointers in each ROM.
+.venv/bin/python -m tools.verify_town_text
+
+# Red/blue books, banker branches, mansion entry and save/cold-load acceptance.
+# Requires the fresh Japanese book trace generated by build.sh.
+.venv/bin/python -m tools.verify_home_books
+
+# Original mansion route and native suspend, then English cold continuation,
+# safe recovery, family branches, bank opening and name-width probes.
+.venv/bin/python -m tools.trace_mansion
+.venv/bin/python -m tools.verify_mansion
+
+# Later-story renderer checks, then actual ROM-bank getter resolution.
+.venv/bin/python -m tools.verify_prose_preflight --cumulative
+.venv/bin/python -m tools.research_event_relocation --cumulative
+
+# Specific native formatting consumers, with bounded temporary storage.
+.venv/bin/python -m tools.verify_floor_progress_prototype --cumulative
+.venv/bin/python -m tools.verify_well_level_prototype --cumulative
+.venv/bin/python -m tools.verify_village_prose_prototype --cumulative
+.venv/bin/python -m tools.verify_medal_prototype --cumulative
+
+# Early menu geometry/parent checks and font comparison; also in build.sh.
+.venv/bin/python -m tools.audit_menu_layouts
+.venv/bin/python -m tools.verify_compact_font --output build/font-audition/native
+.venv/bin/python -m tools.audition_fonts
+
+# Original toolchain/base-game checks and the unit suite.
+./validate.sh
+```
+
+`build_english` and `verify_name_entry` accept `--output DIRECTORY`, allowing
+validation from clean generated output without deleting research artifacts.
+The gameplay commands above depend on the disposable save/checkpoints produced
+by the preceding commands; `./build.sh` runs them in that order. ROM construction
+itself has no checkpoint dependency. Before home acceptance, the build script
+recreates a Japanese castle/destination/home chain under
+`build/english/home-validation/japanese-*`, using the native save generated by
+`verify_name_entry`, then passes that fresh fixture to the bank-one getter checks.
+Historical home-research checkpoints are not required by `./build.sh`.
+The mansion stages also regenerate their Japanese prefix and real dungeon
+suspend. English acceptance cold-loads that battery and continues through 6F and
+the return scenes; it does not claim an uninterrupted English 1F–6F run.
+Native tests operate on separate temporary cartridge/save pairs. To play in
+desktop mGBA, open the generated English ROM; it uses its own English save file
+beside the build, separate from the supplied Japanese files.
+
+Names support uppercase/lowercase English, digits and basic punctuation, with
+seven characters in the shared village/player editor. The original Japanese
+keyboard pages remain available. The save format is unchanged, and a native
+Japanese save passes import and resume in the English build. New English IDs
+require the English build to display correctly; do not pair those saves with
+the original Japanese ROM. See [NAME_ENTRY.md](NAME_ENTRY.md) for tested scope.
+
+The service pipeline additionally runs `verify_service_ui`, `verify_bank`,
+`extract_items`, `verify_items`, `trace_storage`, `verify_storage` and
+`verify_numeric_font`. The storage recipe regenerates a real Japanese book save
+from the earned bank-opening checkpoint, including the castle prerequisite quest.
+English storage checks cold-load it, perform ordinary transactions, save a deposit
+and cold-load/withdraw both naturally acquired items. See
+[SERVICE_BATCHES.md](SERVICE_BATCHES.md) for exact coverage and exclusions.
+
+Cumulative status/queue/trap/monster probes reuse the shared ordinary-input
+6F service checkpoint, with per-family snapshots and source/input provenance.
+Before enabling reuse, the independently produced2,255 service, status and queue
+fixtures were compared: core state, battery and held keys were byte-identical.
+The state hash was981c0f18f8f1eb3e1bab1427d0856e85e9ea9e734e16f74a5ead2754217302b3.
+This removes repeated setup replays; each actual native case still runs on the
+current ROM with its original checks. Isolated prototypes retain separate setup.
+
+Item cohorts can use `tools.verify_items --item ID --output DIRECTORY` with
+separate output directories. All assertions are identical to the full run;
+each successful case is written atomically after its captures. Independent
+workers preserve their complete reports and only stage matching-ROM, fixture,
+verifier/font-hash and capture evidence. The full run still requires the exact
+complete case set and revalidates all cache keys/captures. No concurrent worker
+uses the main verifier's output directory while executing cases.

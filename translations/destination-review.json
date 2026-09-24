@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "stage": "bilingual UI review and native insertion acceptance complete for the first destination menu",
+  "entries": [
+    {
+      "id": "rom.0006c14c",
+      "source_sha256": "cfe363a207d3a2c640a6448d4d1492af6e5d809aec81059d21ed06d365b14d06",
+      "japanese": "　{unclassified-control:7e}の家",
+      "english": "{player}'s home"
+    },
+    {
+      "id": "rom.0006c524",
+      "source_sha256": "41fe8aa6405f63edd297fb088afb95f84e8e4406e6dcab37f675f9ce0e34cafc",
+      "japanese": "どこにいきますか？",
+      "english": "Where to?"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rom.0006c14c",
+      "source_sha256": "cfe363a207d3a2c640a6448d4d1492af6e5d809aec81059d21ed06d365b14d06",
+      "before": "{player}'s home",
+      "after": "{player}'s home",
+      "reason": "Retain the exact native player token in the possessive home label; lowercase home is a destination description, not an invented named area.",
+      "reviewer": "Codex; separate Japanese/English UI review",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "rom.0006c524",
+      "source_sha256": "41fe8aa6405f63edd297fb088afb95f84e8e4406e6dcab37f675f9ce0e34cafc",
+      "before": "Where to?",
+      "after": "Where to?",
+      "reason": "Natural concise menu question for どこにいきますか？; retains destination selection meaning.",
+      "reviewer": "Codex; separate Japanese/English UI review",
+      "date": "2026-09-13"
+    }
+  ],
+  "native_acceptance_report": "build/english/destination-validation/report.json"
+}

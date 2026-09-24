@@ -1,9 +1,10 @@
 # Existing Latin font in Torneko 2
 
-This page records the original-ROM investigation. The selected English baseline
-now extends the compact set with newly authored lowercase and missing printable
-ASCII symbols; see [COMPACT_FONT.md](COMPACT_FONT.md) for the implementation,
-native validation and [interactive review](../build/compact-font/index.html).
+This page records the original-ROM investigation. The earlier
+[compact extension](COMPACT_FONT.md) added lowercase and missing ASCII symbols.
+The current user-selected baseline is the [Torneko 2 compact extension](FONT_AUDITION.md),
+with a [side-by-side audition](../build/font-audition/index.html) and measured
+menu budgets. Original-ROM findings below remain historical source evidence.
 
 **Confirmed on 2026-09-13:** the original Japanese ROM already contains usable
 uppercase and lowercase Latin glyphs. No replacement font is needed to make an

@@ -9,6 +9,110 @@ throughout. Work in small batches that proceed through source verification,
 translation, language review, insertion and native validation. Discovery and
 coverage audits continue while verified families are being translated.
 
+## Current standing authorization
+
+Continue autonomously toward all player-facing text being translated, reviewed,
+inserted and validated. Batches organize the work internally and do not require
+fresh user approval. Ask only when a consequential unresolved decision requires
+the user's insight or investigation. Maintain explicit discovery and validation
+gaps; completing a known catalog is not proof of complete game coverage.
+
+The user has deferred graphical editing and all graphics auditions, including
+dungeon arrival cards, title artwork and background logos, until text translation
+is complete. This supersedes earlier proposals to audition graphics alongside
+the upcoming text batches. Native screenshots for text validation continue.
+
+Prefer a single line for combat messages whenever their complete meaning,
+control behavior and widest supported substitutions fit the measured line and
+buffer budgets. Do not retain Japanese line breaks mechanically. Use two lines
+when required for fidelity or safe fit; do not omit mechanics, shrink text or
+compress spacing to force a one-line result. Record maximum expanded widths
+and native evidence for dynamic combat formats.
+
+## Revised next batches: font and menu layout
+
+Latest user direction (2026-09-19) supersedes the earlier T3 font selection:
+prefer the **Torneko 2 compact English extension for readability**, and keep
+Torneko 3's font as a fallback if the necessary T2 layouts are infeasible.
+**Completed:** the [four-batch result](MENU_LAYOUTS.md) restores T2 as the build
+default, inserts 16 reviewed early-menu resources, and validates the early menu
+families. The sequence below records the authorized work. The audition now
+compares original candidate wording and current approved wording; broader coverage gaps stay explicit.
+
+**Visual correction:** user review rejected the widened borders. Approved labels
+Swap, Info, Floor, Option, Remove and Take restore original 40 px windows,
+34/36 px text budgets and 8 px border gaps. Buffer fixes remain. The widening
+targets below are historical research, superseded by this correction.
+
+Both fonts overflowed with the initial candidate labels, but they do not impose
+identical geometry requirements. Keeping the measured insets, the smallest
+eight-pixel tile widths that fit those initial candidates are:
+
+| Region | Existing window / text budget | T2 prototype window / budget | T3 comparison window / budget |
+|---|---|---|---|
+| Dungeon main commands | 40 / 34 px | 48 / 42 px | 48 / 42 px |
+| Item and ground actions, including Exchange | 40 / 36 px | 56 / 52 px | 48 / 44 px |
+
+These are arithmetic targets, not tested layouts or sufficient budgets for all
+future action variants. T2's Exchange is 48 px; T3's is 42 px. A T2 action panel
+keeping the current right edge at screen x=232 would move from x=192 to x=176;
+T3's would move to x=184. The inventory content currently ends at x=176, so
+border, shading, counter and parent restoration behavior must be established
+before claiming either layout is safe. Do not shrink the item-name area merely
+to make an action label fit without checking complete formatted item rows.
+
+The name editor and travel menu already demonstrate that some Torneko 2 windows
+can be moved/widened and their native behavior validated. This is encouraging
+evidence, not proof about inventory windows or their shared callers. Resizing
+is also not logically mandatory if reviewed shorter wording fits; the preferred
+approach is to test readable T2 labels before abbreviating to avoid the work.
+
+1. **Prove the T2 layout on the tight early menus.** Trace creation, cursor,
+   clipping/shading, allocation and close/restore callers. Establish exact patch
+   ownership and string byte capacity. Build a disposable T2-font prototype of
+   the 48 px main menu and 56 px inventory/ground action menus with representative
+   labels, using checked ROM patches. Test all currently observed action sets,
+   selection, cancellation and repeated opening; compare restored parent pixels
+   against the pre-open state of the same build. Produce native before/after
+   screenshots and a pass/fail report. If the preferred arrangement fails,
+   investigate repositioning and the actual cause before trying the T3 fallback;
+   T3 still needs its own layout proof. Outcome: evidence of feasibility for
+   these panels, not a universal font-risk claim.
+
+2. **Expand the budget inventory before freezing the menu layout.** Trace other
+   item/action families and equipped, cursed, disabled and full-inventory states;
+   map complete item-row formatters (markers, counts, names, enhancements and
+   suffixes), bank amounts and populated storage/shop menus. Work in bounded
+   families and keep unavailable states explicit. Extend the audition to show
+   original and proposed geometry, both fonts and complete dynamic worst cases,
+   including seven-character names. Record pixel limits separately from encoded
+   byte/buffer limits. Outcome: a reviewed budget matrix for the first menu
+   insertion batch and an explicit remaining-coverage list.
+
+3. **Restore the preferred font and localize the proven menu families.** If the
+   T2 prototype passes, restore the T2 font as the build default, update the
+   audition selection and rebuild the existing translations. Apply established
+   terminology review to actual menu meanings; the current English audition
+   labels are candidates. Insert only families whose source ownership, geometry
+   and dynamic/byte limits passed batches 1–2. Add fit checks that fail builds on
+   overflow and native behavior checks for the changed panels. Outcome: a
+   playable T2-font build with the first audited English menus. Use T3 only if
+   its tested layout solves a demonstrated obstacle to the preferred font.
+
+4. **Run cumulative acceptance, then resume localization.** Recheck all 95
+   glyphs, name entry/save/load, existing opening/town/mansion routes, dialogue
+   wrapping and the new menu variants on the same ROM. Verify clean ROM/BPS
+   reproduction and save fresh screenshots and an acceptance receipt. Record
+   untested menus explicitly. Then resume bank/storage/records and later text
+   discovery using the new budget checks. Graphics auditions and broader
+   playtesting remain on the roadmap, after this text-layout foundation.
+
+The next implementation work is bank/storage/records discovery and English
+formatter review using the established budgets. The expanded audit is bounded:
+later populated shop/storage routes and nested pot contents still need native
+coverage. Do not perform a blanket window resize or infer whole-game sign-off
+from the completed early-menu batches.
+
 ## Current foundation
 
 - The Japanese ROM identity is pinned in `config/rom.json`. Preserve the supplied
@@ -30,6 +134,14 @@ encodings, commands, data structures, gameplay features and save assumptions
 must not be imported without Torneko 2 evidence.
 
 ## Translation source and terminology
+
+All inserted English must fit its measured width budget in the selected Torneko 2
+font. Include cursor reserves, columns, icons, quantities, suffixes and the widest
+supported dynamic substitutions. Check encoded byte capacity separately. Reword
+or use a documented display form while preserving meaning; do not silently clip,
+drop conditions, shrink the font or overlap neighboring window borders. Native
+captures must confirm fit and spacing. An unknown budget blocks insertion for
+that context until it is measured. This applies to prose as well as labels.
 
 Use the pinned **Torneko 2 Japanese ROM** as the translation source and build
 base. Author English independently. Fan translations may provide technical or
@@ -87,6 +199,8 @@ The three established rules are:
 1. **Natural English.**
 2. **Consistent, sourced series terminology.**
 3. **Fidelity to the Japanese meaning and character voice.**
+
+In addition, every final display must meet the width-budget requirement above.
 
 Preserve humour, dialect, childlike speech, monster cries, speaker reveals and
 the meaning of choices. Read connected dialogue in actual event order, with
@@ -277,6 +391,12 @@ text and graphics inventories alongside this work.
 
 Acceptance for that milestone:
 
+- Name entry must accept at least seven Latin letters so the exact name
+  `Torneko` can be entered. Verify selection, editing, confirmation, every
+  relevant name display/substitution, and persistence after saving and a cold
+  load. Do not abbreviate this required name to fit a Japanese limit. Character
+  count, encoded byte capacity and display width are separate constraints;
+  establish the original fields and their consumers before expanding them.
 - Source bytes round-trip exactly; references and insertion ownership are
   documented rather than inferred from a scan alone.
 - English follows this terminology/prose policy and retains original controls,
@@ -295,3 +415,133 @@ Acceptance for that milestone:
 | Broad extraction and coverage audit | Planned |
 | Opening-area integrated milestone | Planned; next implementation work |
 | Remaining text, graphics, ending and full playtest | Planned |
+
+## Progress after plan creation
+
+2026-09-13: the [first opening-text discovery pass](OPENING_TEXT.md) is implemented.
+A normal-input route reaches the first dungeon; 30 source strings are verified,
+seven compressed banks pass native decoder comparisons, and a separate candidate
+queue supports further discovery. The [graphics inventory](GRAPHICS_INVENTORY.md)
+records observed appearances and unconfirmed families. Name-entry producer and
+event-command/insertion research remain in progress. No bulk English translation
+or completion of the integrated opening milestone is claimed by this pass.
+
+2026-09-13: [name-entry research](NAME_ENTRY.md) confirms the opening editor's
+six-character limit, indexed working/stored records and fixed 14-pixel advance.
+The user's minimum is seven Latin letters for `Torneko`. The base-game probe
+passes; English keyboard/mapping, layout changes and save/cold-load acceptance
+remain part of the opening milestone.
+
+2026-09-13: the [cumulative English build](BUILD.md) implements seven-character
+shared/player name entry, both English cases and measured cursor/layout behavior.
+All 69 selectable English characters pass native checks. `Torneko` survives
+normal entry, first-floor save/suspend, a cold second-floor resume and movement.
+A separately generated Japanese save also imports and resumes correctly on the
+tested route. The save layout is unchanged. Next is opening event-command and
+insertion work; remaining name contexts and item-specific behavior continue in
+broader playtesting. The complete English opening milestone remains in progress.
+
+2026-09-13: the [English opening batch](OPENING_ENGLISH.md) translates and reviews
+36 catalog sources across both opening branches, the flashback, resume/menu
+labels, stair options and all three introductory floor tutorials. Native source,
+glyph, layout, page, event-side-effect and save/load checks pass within the
+documented routes. The seven known event tables now account for 1,046 sources;
+709 original scan candidates match exact table entries. Later dialogue, menu
+flows, save-preview formatting, arrival artwork and whole-game coverage remain
+ongoing. The next natural route extends through the first dungeon exit.
+
+2026-09-13: that route now reaches the King's first audience and the five NPCs
+around the throne. The current batch contains 44 reviewed/inserted text resources,
+including both answers to the guard's question. Native name substitutions support
+`Torneko` and seven widest English/Japanese glyphs; town controls resume after
+the conversations. The accumulated source catalog contains 47 native sources.
+The regenerated candidate queue has 2,716 entries: 701 exact known-table matches
+and 2,015 unresolved. These supersede the earlier queue counts without implying
+a whole-game completion percentage. Further castle/village states, other menu
+and message families, graphical text and full playtesting remain ongoing.
+
+2026-09-13: the current build also localizes the first destination menu, bringing
+the reviewed/inserted text batch to 46 resources. Cancel, Home, cursor alignment
+and seven widest Japanese/English name glyphs pass native checks. Returning home
+naturally loads bank one; its first Tessie conversation is retained untranslated
+for the next batch. There are now 50 native catalog sources and 2,714 scan
+candidates (700 exact table matches, 2,014 unresolved). A replayable arrival-frame
+viewer covers the first castle and home transitions; no separate title card was
+observed on these specific routes. Other arrival families, title artwork and
+ending credits still need their own discovery and auditions.
+
+2026-09-14: the four-step [home-return batch](HOME_RETURN.md) is complete. The
+cumulative build has 63 reviewed/inserted resources and 66 native catalog
+sources. Fifteen bank-one strings, the item-sale explanation and its dynamic
+money template cover the first evening/morning and three neighbouring NPCs,
+including both Ed choices. Both ROMs pass all 214 bank-one getters; native
+colour/heart rendering and twelve name/amount layout probes pass. The 34-test
+unit/toolchain suite and earlier gameplay/save checks pass on the cumulative ROM.
+The next text families are home-book/save/storehouse menus and the banker/mansion
+route. Current candidates: 2,701, with 687 exact table matches and 2,014 unresolved.
+
+The same batch identifies the first dungeon's separate 4bpp arrival atlas and
+floor compositor, with 600 consecutive frames verified by native replay. The
+large title and smaller menu logo use different uncompressed 8bpp resources;
+the observed menu and name editor share one selected background. Five menu
+background candidates are identified, with four still needing native audit.
+Graphics auditions, other arrival states and credits remain pending; no graphics
+have been inserted. These are measured scope increases, not whole-game coverage.
+
+2026-09-19: the [home-book/banker batch](HOME_BOOKS.md) adds 16 reviewed resources,
+bringing the build to 79 and the native catalog to 86. It covers all ten tips,
+the broken-storehouse blue-book actions, save/cancel/quit and cold town reloads,
+castle/square labels, both banker answers and the old-man scene, and the first
+mansion entrance/movement. Three controlled village-name layouts fit the existing
+128-byte overwrite buffer. A newly mapped shared town bank has 300 pointers and
+204 unique sources, all pointer relocations checked in both ROMs without RAM
+growth. Four green-book sources are discovered but remain untranslated. The
+37-test suite and earlier native routes pass. Mansion recovery, populated item
+and record lists, repaired services, graphics and full-game coverage remain open.
+
+2026-09-19: the combined [mansion discovery/localization batch](MANSION_QUEST.md)
+adds 25 reviewed resources, bringing the build to 104 and the native catalog to
+112. A reproducible Japanese route reaches the 6F special room, defeats the Imp,
+recovers the safe and returns home. English acceptance cold-loads a real Japanese
+5F suspend and continues through recovery, both family questions and the bank's
+opening; four branch replays include refusal/reconsideration and service-menu
+cancellation. It is not an uninterrupted English 1F–6F run. Native centring passes
+for `Torneko` and seven widest English/Japanese glyphs. The cumulative native
+checks and 38-test suite pass. Banking transactions, populated inventories,
+green-book records, other dungeon messages/results, graphics and full-game
+coverage remain open. The candidate queue has 2,814 entries, including 2,005
+unresolved leads; this is not a completion percentage.
+
+2026-09-19: the user selected the original Torneko 3 Latin font 0. All 95 ASCII
+glyphs are imported with their original pixels and advances, and pass native
+Torneko 2 rendering checks. The cumulative 104-resource English build passes
+its existing gameplay/save routes with this font; the unit suite now has 41
+tests. The previous compact font remains available in the
+[interactive font audition](../build/font-audition/index.html). It compares
+14 contexts and 100 label/font cases, with downloadable per-font budgets.
+
+The [menu audit](FONT_AUDITION.md) is now a required checkpoint before new menu
+translation. Eight native routes establish early dungeon actions, ground
+actions, options, inventory and bank regions. Repeated inventory action-menu
+opening/cancellation preserves parent descriptors and tilemap/tile pixels.
+The selected font improves fit but Tactics, Examine and Exchange still exceed
+their measured regions. Resolve the relevant wording or geometry, establish
+byte capacity and test dynamic extremes before inserting those menus. Later
+menu families, restricted item states and bank amount limits remain unknown;
+font selection does not constitute whole-game menu-layout acceptance.
+
+2026-09-19: the user's final font choice is Torneko 2 compact English with
+original-sized early windows and shorter action labels. The four
+[service batches](SERVICE_BATCHES.md) now add Option/status UI, core banking, an
+eight-item cohort and the naturally unlocked repaired-storage subset. All English
+translations must fit measured width budgets including dynamic fields.
+The visual follow-up keeps normal English item spacing, three-pixel word spaces,
+matching compact numeric glyphs and continuous inverse price backgrounds; bank
+labels include attached colons. Weapon replaces Sword in status. The build has
+184 reviewed resources across separate source catalogs.
+
+Storage's prerequisite castle quest and native save are reproduced with ordinary
+inputs; deposited bread/wand survive an English save and cold reload. The bakery,
+remaining storage child prompts, bank rewards, untranslated item identities and
+later modes remain explicit follow-ups. These bounded batches do not establish
+whole-game text, graphics or gameplay coverage.

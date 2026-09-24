@@ -1,0 +1,81 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Reviewed T2 English for the audited native consumers only. Controlled native prototype cases passed. Ordinary unlocking/progression and other consumers remain separately scoped.",
+  "entries": [
+    {
+      "id": "bakery.100",
+      "index": 100,
+      "english": "Baker: Ah, {player}! Welcome!\n\nBaker: Which bread would you like?",
+      "source_hex": "8370839389ae817582a081407e82b382f181490d814082a282e782c182b582e182a282dc82b981420d8370839389ae817582c782cc8370839382c9814082a282bd82b582dc82b582e582a482a9814800",
+      "source_sha256": "72c15a1f6a2a1c1549568b71a048cab20ebf5ededebd41b3deb90f46e4f4d7c3",
+      "japanese": "パン屋「あ　{unclassified-control:7e}さん！\n　いらっしゃいませ。\nパン屋「どのパンに　いたしましょうか？",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.101",
+      "index": 101,
+      "english": [
+        "Bread",
+        "Giant bread",
+        "Magic bread",
+        "Leave"
+      ],
+      "source_hex": "2020837083930909098250824f824f470d202082ab82e582be82a282c88370839309098252824f824f470d20209682964082cc8370839309098253824f824f470d2020948382ed82c882a200",
+      "source_sha256": "6d729d0ebf6160bdd7da9a88cd9b02c1198d6b807b3c991e624f8de955ec0f55",
+      "japanese": "  パン{tab:09}{tab:09}{tab:09}１００G\n  きょだいなパン{tab:09}{tab:09}３００G\n  魔法のパン{tab:09}{tab:09}４００G\n  買わない",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.102",
+      "index": 102,
+      "english": "Baker: I hope to see you again soon!",
+      "source_hex": "8370839389ae817582dc82bd82cc82b29788935882f00d814082a891d282bf82b582c482a882e882dc82b7814200",
+      "source_sha256": "1878bb34d94ab8a3205e0a3c0d497465c398dee69fcf959e1c11ec7c905f81be",
+      "japanese": "パン屋「またのご来店を\n　お待ちしております。",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.103",
+      "index": 103,
+      "english": "Baker: {item}? That'll be\n{price}G. Is that all right?",
+      "source_hex": "8370839389ae8175257382c582b782cb81420d814003052564054782c982c882e882dc82b782aa814082e682eb82b582a282c582b782a9814800",
+      "source_sha256": "1c1850f0571260fba3b18dfbbcfd8f026477a7689f6231cb097d9b61f7435545",
+      "japanese": "パン屋「%{unclassified-control:73}ですね。\n　{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gになりますが　よろしいですか？",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.104",
+      "index": 104,
+      "english": "Baker: Thank you! Would you like anything else?",
+      "source_hex": "8370839389ae817582a082e882aa82c682a482b282b482a282dc82b781490d814082d982a982c982e0814082a282a982aa82c582b782a9814800",
+      "source_sha256": "4281c88b981fc6861761b0621c3da5e5c594873627fc458dfa5c7f727f3e0cc1",
+      "japanese": "パン屋「ありがとうございます！\n　ほかにも　いかがですか？",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.106",
+      "index": 106,
+      "english": "Baker: {player}...\n\nBaker: I'm sorry, but you don't have enough gold.",
+      "source_hex": "8370839389ae81757e82b382f181420d0d8370839389ae817582e082a482b582ed82af82c882a282c582b782aa0d81408353815b838b836882aa814082bd82e882c882a282e682a482c582b7814200",
+      "source_sha256": "5286dd988a59f572c70f6a18d947d07b7fbea7aea09db00e4a4b1856ef4dddcd",
+      "japanese": "パン屋「{unclassified-control:7e}さん。\n\nパン屋「もうしわけないですが\n　ゴールドが　たりないようです。",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    },
+    {
+      "id": "bakery.107",
+      "index": 107,
+      "english": "Baker: {player}...\n\nBaker: Your inventory is full. You can't carry any more.",
+      "source_hex": "8370839389ae81757e82b382f181420d0d8370839389ae81758e9d82bf82e082cc82aa814082a282c182cf82a282c50d814082e082a481408e9d82c482c882a282e682a482c582b7814200",
+      "source_sha256": "ae128866832775ed2616026db641cf89d055ba5f2d8740d0f6c1a8a983c136f6",
+      "japanese": "パン屋「{unclassified-control:7e}さん。\n\nパン屋「持ちものが　いっぱいで\n　もう　持てないようです。",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese translation; quantity, item order, refusal and confirmation preserved. Names match the active item glossary. Native prototype validation required; no cumulative insertion approval."
+    }
+  ]
+}

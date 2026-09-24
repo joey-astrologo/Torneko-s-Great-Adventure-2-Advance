@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "remi-warp-name.0",
+      "dungeon_id": 0,
+      "table_index": 372,
+      "source": {
+        "offset": 400356,
+        "end_exclusive": 400373,
+        "raw_hex": "89ae957e82cc835f839383578387839300",
+        "sha256": "535805837abe9a7379bd3c98b8340f19e343672ee9de270b0f7b8975fc418199",
+        "japanese": "屋敷のダンジョン"
+      },
+      "english": "Banker's Mansion",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.1",
+      "dungeon_id": 1,
+      "table_index": 373,
+      "source": {
+        "offset": 400336,
+        "end_exclusive": 400353,
+        "raw_hex": "95e68fea82cc835f839383578387839300",
+        "sha256": "c57e0e951c6b6bec02acc1e0c2fea05d49c03855e0c73a8abe753d605b6b62e6",
+        "japanese": "墓場のダンジョン"
+      },
+      "english": "Cemetery Dungeon",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.2",
+      "dungeon_id": 2,
+      "table_index": 374,
+      "source": {
+        "offset": 400316,
+        "end_exclusive": 400333,
+        "raw_hex": "82a88fe982cc835f839383578387839300",
+        "sha256": "dee9b558cb6ec55114fdc4bd2be276f8052cfac7b27e36c83795147cfa00c7de",
+        "japanese": "お城のダンジョン"
+      },
+      "english": "Castle Dungeon",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.3",
+      "dungeon_id": 3,
+      "table_index": 375,
+      "source": {
+        "offset": 400304,
+        "end_exclusive": 400313,
+        "raw_hex": "96c082a282cc905800",
+        "sha256": "9015d3d9070405eac068f1b244b17c5b071bc34e190ea4c9e8d7dc3658ab32d7",
+        "japanese": "迷いの森"
+      },
+      "english": "Lost Forest",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.4",
+      "dungeon_id": 4,
+      "table_index": 376,
+      "source": {
+        "offset": 400292,
+        "end_exclusive": 400301,
+        "raw_hex": "89ce908182ab8e5200",
+        "sha256": "666aed51a8143817ebf013ce4fd8e8bff7efe3600628675d98130305f94b81e5",
+        "japanese": "火吹き山"
+      },
+      "english": "Mt. Fiery",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.5",
+      "dungeon_id": 5,
+      "table_index": 377,
+      "source": {
+        "offset": 400280,
+        "end_exclusive": 400289,
+        "raw_hex": "8367838d88e290d500",
+        "sha256": "0070e6ff7659685dfca61ab832abd0447ad6f56d0e5c22d3d7fdc6b1a9b2c954",
+        "japanese": "トロ遺跡"
+      },
+      "english": "Toro Ruins",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.6",
+      "dungeon_id": 6,
+      "table_index": 378,
+      "source": {
+        "offset": 400260,
+        "end_exclusive": 400279,
+        "raw_hex": "95738e768b6382cc835f839383578387839300",
+        "sha256": "643782383ec4de2ad1b6a8ce9db00d016b643274e3892a3e1741d8105dc2d03d",
+        "japanese": "不思議のダンジョン"
+      },
+      "english": "Magic Dungeon",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.8",
+      "dungeon_id": 8,
+      "table_index": 380,
+      "source": {
+        "offset": 400220,
+        "end_exclusive": 400229,
+        "raw_hex": "8e8e97fb82cc8ad900",
+        "sha256": "d2db4866612ba0add802d0721cb1b46e2fa8f3941b8f82fedaa95cb01ac42e65",
+        "japanese": "試練の館"
+      },
+      "english": "Ordeal Mansion",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.9",
+      "dungeon_id": 9,
+      "table_index": 381,
+      "source": {
+        "offset": 400204,
+        "end_exclusive": 400219,
+        "raw_hex": "8c9582cc835f839383578387839300",
+        "sha256": "9057abdf94943a2e318ddbce20a694c81a9914b612c1f310d7faacf9b122af98",
+        "japanese": "剣のダンジョン"
+      },
+      "english": "Sword Dungeon",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    },
+    {
+      "id": "remi-warp-name.10",
+      "dungeon_id": 10,
+      "table_index": 382,
+      "source": {
+        "offset": 400188,
+        "end_exclusive": 400203,
+        "raw_hex": "968282cc835f839383578387839300",
+        "sha256": "71175ea733f7337bbcd92c3f4749669951f16311ec7037a408ccb87e5efd33d5",
+        "japanese": "魔のダンジョン"
+      },
+      "english": "Mage Dungeon",
+      "status": "reviewed",
+      "review": "T2 Japanese dungeon identity is preserved. The same-location PS1 fallback uses its named English destination, including Banker's Mansion for the safe-recovery dungeon and Cemetery Dungeon for the graveyard route. Modern DQ item/monster naming does not supply a replacement name for these T2-specific locations. No translated prose is borrowed.",
+      "naming_evidence": {
+        "reference_game": "Torneko: The Last Hope, North American PS1",
+        "sources": [
+          "https://www.woodus.com/den/games/tq2psx/dungeons.php",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+        ],
+        "quality": "Secondary PS1 guide/name lists, cross-checked against T2 Japanese identities and observed routes. Not a primary bilingual game capture.",
+        "checked_on": "2026-09-24"
+      },
+      "layout_evidence": "Native warp selector128px, initial_x6:122 usable pixels. The same literal table supplies the owned Remi172 dungeon argument. Other shared-table consumers remain separate."
+    }
+  ],
+  "scope": "Ten dungeon names reachable through0801F064 across the three vocations. IDs7/11/12 are filtered by this selector and retain original pointers; other dungeon/title/result consumers remain separate. Remi menu paging/cancellation and actual argument binding require native English checks."
+}

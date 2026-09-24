@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Three table literals in native equipment-removal trap08027B84 only. Other trap handlers and ordinary trap acquisition remain separate.",
+  "entries": [
+    {
+      "id": "unequip-trap.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the switch, failed activation, involuntary equipment removal and empty-equipment branch. Plain one-line notices; original equipment state changes and resistance checks are tested separately."
+    },
+    {
+      "id": "unequip-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the switch, failed activation, involuntary equipment removal and empty-equipment branch. Plain one-line notices; original equipment state changes and resistance checks are tested separately."
+    },
+    {
+      "id": "unequip-trap.318",
+      "table_offset": 792,
+      "source": {
+        "offset": 406548,
+        "end_exclusive": 406572,
+        "raw_hex": "919594f582aa82cd82b882ea82c482b582dc82c182bd2100",
+        "sha256": "c6ebf639194e74fec9098657e3bd46e4f3887cdd0de29602de2cf3a1c0ffcc61",
+        "japanese": "装備がはずれてしまった!"
+      },
+      "english": "Your equipment came off!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the switch, failed activation, involuntary equipment removal and empty-equipment branch. Plain one-line notices; original equipment state changes and resistance checks are tested separately."
+    },
+    {
+      "id": "unequip-trap.438",
+      "table_offset": 1080,
+      "source": {
+        "offset": 404668,
+        "end_exclusive": 404693,
+        "raw_hex": "82c882c982e0919594f582b582c482a282c882a982c182bd00",
+        "sha256": "117a950fc39515f52679e18a7a36780541b01c8f71f48d0eccc00ac8483f0443",
+        "japanese": "なにも装備していなかった"
+      },
+      "english": "You had nothing equipped.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the switch, failed activation, involuntary equipment removal and empty-equipment branch. Plain one-line notices; original equipment state changes and resistance checks are tested separately."
+    }
+  ]
+}

@@ -1,0 +1,1951 @@
+{
+  "schema": 1,
+  "selected_font": "compact",
+  "fonts": [
+    {
+      "id": "compact",
+      "name": "Selected Torneko 2 compact English",
+      "asset": "assets/fonts/compact-english.json"
+    },
+    {
+      "id": "torneko3",
+      "name": "Torneko 3 original Latin font 0 (comparison)",
+      "asset": "assets/fonts/torneko3-english.json"
+    }
+  ],
+  "contexts": [
+    {
+      "id": "dungeon-root",
+      "name": "Dungeon main commands",
+      "window": 40,
+      "start": 6,
+      "end": 40,
+      "rows": 3,
+      "labels": [
+        "Items",
+        "Ground",
+        "Tactics"
+      ],
+      "alternatives": [
+        "Other"
+      ],
+      "route": "dungeon-root",
+      "match": "\u9053\u5177",
+      "note": "Original three-row window; compare the approved wording below. Both fonts overflow with the original candidate Tactics.",
+      "stage": "original"
+    },
+    {
+      "id": "item-food",
+      "name": "Inventory: food actions",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Eat",
+        "Throw",
+        "Drop",
+        "Examine"
+      ],
+      "alternatives": [
+        "Info"
+      ],
+      "route": "inventory-food",
+      "match": "\u98df\u3079\u308b",
+      "note": "\u8aac\u660e opens explanatory text; Examine is an audition candidate, not established terminology. Info is a shorter alternative.",
+      "stage": "original"
+    },
+    {
+      "id": "item-arrows",
+      "name": "Inventory: arrow actions",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Equip",
+        "Shoot",
+        "Drop",
+        "Examine"
+      ],
+      "alternatives": [
+        "Info"
+      ],
+      "route": "inventory-arrows",
+      "match": "\u88c5\u5099",
+      "note": "Arrow-specific Shoot replaces Throw. Menu width must not be inferred from item-list width.",
+      "stage": "original"
+    },
+    {
+      "id": "item-equipped",
+      "name": "Inventory: equipped actions",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Unequip",
+        "Throw",
+        "Drop",
+        "Examine"
+      ],
+      "alternatives": [
+        "Info"
+      ],
+      "route": "inventory-equipped",
+      "match": "\u306f\u305a\u3059",
+      "note": "Equipped leather shield observed. Cursed or otherwise restricted equipment is not yet covered.",
+      "stage": "original"
+    },
+    {
+      "id": "ground-actions",
+      "name": "Ground: dropped-arrow actions",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Pick up",
+        "Shoot",
+        "Exchange",
+        "Examine"
+      ],
+      "alternatives": [
+        "Swap",
+        "Info"
+      ],
+      "route": "ground-arrows",
+      "match": "\u62fe\u3046",
+      "note": "Original ground action window; both fonts overflow with Exchange. Compare the approved wording below.",
+      "stage": "original"
+    },
+    {
+      "id": "bank-verbs",
+      "name": "Bank: verbs before amount column",
+      "window": 176,
+      "start": 12,
+      "end": 64,
+      "rows": 3,
+      "labels": [
+        "Deposit",
+        "Withdraw",
+        "Cancel"
+      ],
+      "alternatives": [],
+      "route": "bank",
+      "match": "\u3042\u305a\u3051\u308b",
+      "note": "52 px stops at the colon column, not at the 176 px window edge. Native two-space prefix is 12 px; retain this explicit position when translating. Amount/suffix formatting has a separate unresolved budget.",
+      "stage": "original"
+    },
+    {
+      "id": "tactics-labels",
+      "name": "Options: labels before toggles",
+      "window": 192,
+      "start": 6,
+      "end": 71,
+      "rows": 3,
+      "labels": [
+        "Sound",
+        "Auto-turn",
+        "Map"
+      ],
+      "alternatives": [],
+      "route": "tactics",
+      "match": "\u30b5\u30a6\u30f3\u30c9",
+      "note": "65 px ends at the native setting column. Control 04 4C sets x=floor(15*76/16)=71. Toggles and their cursor positions need separate insertion checks.",
+      "stage": "original"
+    },
+    {
+      "id": "tactics-full",
+      "name": "Options: full-width commands",
+      "window": 192,
+      "start": 6,
+      "end": 192,
+      "rows": 3,
+      "labels": [
+        "Controls",
+        "Abandon adventure",
+        "Sleep"
+      ],
+      "alternatives": [],
+      "route": "tactics",
+      "match": "\u64cd\u4f5c\u8aac\u660e",
+      "note": "These rows share a six-row native settings window with the three toggle rows. Wording is provisional; do not infer the abandon/save consequences from this label.",
+      "stage": "original"
+    },
+    {
+      "id": "inventory-name",
+      "name": "Inventory: complete item row",
+      "window": 168,
+      "start": 6,
+      "end": 168,
+      "rows": 8,
+      "labels": [],
+      "alternatives": [],
+      "route": "inventory-equipped",
+      "match": "\u5927\u304d\u306a\u30d1\u30f3",
+      "note": "162 px includes the equipped marker, quantity, item name, enhancement and any other generated suffix. It is not a 162 px item-name-only allowance. Formatter audit pending.",
+      "stage": "original"
+    },
+    {
+      "id": "initial-menu",
+      "name": "Initial/resume menu labels",
+      "window": 96,
+      "start": 8,
+      "end": 96,
+      "rows": 3,
+      "labels": [
+        "Continue",
+        "High scores",
+        "Erase log"
+      ],
+      "alternatives": [
+        "Erase Adventure Log"
+      ],
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Existing compiled label limit, verified by the cumulative native build. The long alternate is deliberately stress-tested.",
+      "stage": "original"
+    },
+    {
+      "id": "stairs",
+      "name": "Stair choices",
+      "window": 96,
+      "start": 6,
+      "end": 96,
+      "rows": 3,
+      "labels": [
+        "Descend",
+        "Stay",
+        "Save & suspend"
+      ],
+      "alternatives": [],
+      "reference": "docs/OPENING_ENGLISH.md",
+      "note": "Existing three-row compiled menu limit and native acceptance.",
+      "stage": "original"
+    },
+    {
+      "id": "blue-book",
+      "name": "Broken-storehouse blue book",
+      "window": 120,
+      "start": 8,
+      "end": 120,
+      "rows": 4,
+      "labels": [
+        "View items",
+        "Sell items",
+        "Save and continue",
+        "Save and quit"
+      ],
+      "alternatives": [],
+      "reference": "tools/book_text.py",
+      "note": "Existing four-row compiled menu limit. Repaired storehouse is a distinct unaudited context.",
+      "stage": "original"
+    },
+    {
+      "id": "travel",
+      "name": "Travel destination labels",
+      "window": 152,
+      "start": 12,
+      "end": 152,
+      "rows": 6,
+      "labels": [
+        "Torneko's home",
+        "King's castle",
+        "Square"
+      ],
+      "alternatives": [],
+      "reference": "tools/build_dialogue.py",
+      "note": "Existing widened native menu. Torneko is a sample; the build separately reserves 98 px for seven widest Japanese name glyphs plus the English suffix.",
+      "stage": "original"
+    },
+    {
+      "id": "dialogue",
+      "name": "Story dialogue comparison",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Tipper: Hey, Dad! Were there lots of",
+        "monsters in the mansion?"
+      ],
+      "alternatives": [],
+      "reference": "tools/dialogue_layout.py",
+      "note": "216 px editorial limit retains an 8 px margin. Speaker names and substitutions share the line. This is not a menu-verb allowance.",
+      "stage": "original"
+    },
+    {
+      "id": "dungeon-root-current",
+      "name": "Dungeon main commands \u2014 current build",
+      "window": 40,
+      "start": 6,
+      "end": 40,
+      "rows": 3,
+      "labels": [
+        "Items",
+        "Floor",
+        "Option"
+      ],
+      "alternatives": [
+        "Skills",
+        "Spells",
+        "Stairs",
+        "Trap"
+      ],
+      "note": "Current English build uses original geometry: 40 px window; 34 px after cursor at screen x=8. Separate borders retain the original 8 px gap.",
+      "stage": "current",
+      "build_route": "dungeon-root"
+    },
+    {
+      "id": "item-food-current",
+      "name": "Inventory: food actions \u2014 current build",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Eat",
+        "Throw",
+        "Drop",
+        "Info"
+      ],
+      "alternatives": [],
+      "note": "Current English build uses original geometry: 40 px window; 36 px after cursor at screen x=192. Separate borders retain the original 8 px gap.",
+      "stage": "current",
+      "build_route": "inventory-food"
+    },
+    {
+      "id": "item-arrows-current",
+      "name": "Inventory: arrow actions \u2014 current build",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Equip",
+        "Shoot",
+        "Drop",
+        "Info"
+      ],
+      "alternatives": [],
+      "note": "Current English build uses original geometry: 40 px window; 36 px after cursor at screen x=192. Separate borders retain the original 8 px gap.",
+      "stage": "current",
+      "build_route": "inventory-arrows"
+    },
+    {
+      "id": "item-equipped-current",
+      "name": "Inventory: equipped actions \u2014 current build",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Remove",
+        "Throw",
+        "Drop",
+        "Info"
+      ],
+      "alternatives": [],
+      "note": "Current English build uses original geometry: 40 px window; 36 px after cursor at screen x=192. Separate borders retain the original 8 px gap.",
+      "stage": "current",
+      "build_route": "inventory-equipped"
+    },
+    {
+      "id": "ground-actions-current",
+      "name": "Ground: dropped-arrow actions \u2014 current build",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Take",
+        "Shoot",
+        "Swap",
+        "Info"
+      ],
+      "alternatives": [],
+      "note": "Current English build uses original geometry: 40 px window; 36 px after cursor at screen x=192. Separate borders retain the original 8 px gap.",
+      "stage": "current",
+      "build_route": "ground-arrows"
+    },
+    {
+      "id": "inventory-name-current",
+      "name": "Inventory: complete item row \u2014 current build",
+      "window": 168,
+      "start": 6,
+      "end": 168,
+      "rows": 8,
+      "labels": [],
+      "alternatives": [],
+      "note": "Original 168 px inventory parent retained, with 162 usable px including all markers, quantities and suffixes. Original action placement no longer covers its border.",
+      "stage": "current",
+      "build_route": "inventory-equipped"
+    },
+    {
+      "id": "bank-amount",
+      "name": "Bank amount entry (native digits)",
+      "stage": "original",
+      "window": 112,
+      "start": 0,
+      "end": 112,
+      "rows": 1,
+      "labels": [],
+      "alternatives": [],
+      "reference": "tools/audit_service_budgets.py",
+      "note": "Native eight-digit amount field uses original full-width digits, not either English font. Original-ROM natural/cancel and controlled maximum 99,999,999 display checked. No English amount-entry insertion."
+    },
+    {
+      "id": "more-actions-current",
+      "name": "Additional item commands",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Swing",
+        "Read",
+        "Drink",
+        "Use",
+        "Put in",
+        "Write",
+        "View"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/154-identified/actions.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "Original action window; 36 px after cursor."
+    },
+    {
+      "id": "status-left-current",
+      "name": "Dungeon status left labels",
+      "stage": "current",
+      "window": 224,
+      "start": 6,
+      "end": 67,
+      "rows": 3,
+      "labels": [
+        "Depth",
+        "Weapon",
+        "Shield"
+      ],
+      "alternatives": [],
+      "capture": "build/english/dungeon-ui-validation/controls/status.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "61 px before the fixed numeric column. Weapon applies to clubs and swords."
+    },
+    {
+      "id": "status-right-current",
+      "name": "Dungeon status right labels",
+      "stage": "current",
+      "window": 224,
+      "start": 111,
+      "end": 163,
+      "rows": 3,
+      "labels": [
+        "Hunger",
+        "Strength",
+        "XP"
+      ],
+      "alternatives": [],
+      "capture": "build/english/dungeon-ui-validation/controls/status.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "52 px before the fixed numeric column; dynamic digits checked natively."
+    },
+    {
+      "id": "option-current",
+      "name": "Option submenu label column",
+      "stage": "current",
+      "window": 192,
+      "start": 6,
+      "end": 71,
+      "rows": 6,
+      "labels": [
+        "Controls",
+        "Sound",
+        "Auto turn",
+        "Map",
+        "Give up",
+        "Sleep"
+      ],
+      "alternatives": [],
+      "capture": "build/english/dungeon-ui-validation/controls/options.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "65px before the toggle column. This bounded native format retains its six-pixel single-byte spaces; ordinary authored English uses three-pixel spaces."
+    },
+    {
+      "id": "bank-current",
+      "name": "Bank verbs",
+      "stage": "current",
+      "window": 176,
+      "start": 12,
+      "end": 69,
+      "rows": 3,
+      "labels": [
+        "Deposit:",
+        "Withdraw:",
+        "Leave"
+      ],
+      "alternatives": [],
+      "capture": "build/english/bank-validation/roundtrip/menu.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "Attached colons fit the 57px label region; amount starts at x69 in the original 176px window. Eight-digit reserves and 384-byte stack buffer."
+    },
+    {
+      "id": "storage-left-current",
+      "name": "Repaired storage: left column",
+      "stage": "current",
+      "window": 224,
+      "start": 12,
+      "end": 112,
+      "rows": 4,
+      "labels": [
+        "Store items",
+        "View storage",
+        "Sell carried",
+        "Save and continue"
+      ],
+      "alternatives": [],
+      "capture": "build/english/storage-validation/single-roundtrip/menu.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "Original two-column blue-book menu; 100px per column. Direct ROM stream; native transactions and cold reload checked."
+    },
+    {
+      "id": "storage-right-current",
+      "name": "Repaired storage: right column",
+      "stage": "current",
+      "window": 224,
+      "start": 124,
+      "end": 224,
+      "rows": 4,
+      "labels": [
+        "Take items",
+        "Sell stored",
+        "View carried",
+        "Save and quit"
+      ],
+      "alternatives": [],
+      "capture": "build/english/storage-validation/single-roundtrip/menu.png",
+      "reference": "docs/SERVICE_BATCHES.md",
+      "note": "Original two-column blue-book menu; 100px per column. Direct ROM stream; native transactions and cold reload checked."
+    },
+    {
+      "id": "bakery-names-current",
+      "name": "Bakery: bread choices",
+      "window": 176,
+      "start": 12,
+      "end": 120,
+      "rows": 4,
+      "labels": [
+        "Bread",
+        "Giant bread",
+        "Magic bread",
+        "Leave"
+      ],
+      "alternatives": [],
+      "stage": "current",
+      "capture": "build/english/bakery-validation/buy-2/menu.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Native bakery window retained. Names start at x12; prices at x128, with an eight-pixel right margin. Three exact native prices; 256-byte purchase confirmation checked separately. Controlled service invocation, not ordinary bakery unlock."
+    },
+    {
+      "id": "bakery-prices-current",
+      "name": "Bakery: price column",
+      "window": 176,
+      "start": 128,
+      "end": 168,
+      "rows": 4,
+      "labels": [
+        "100G",
+        "300G",
+        "400G"
+      ],
+      "alternatives": [],
+      "stage": "current",
+      "capture": "build/english/bakery-validation/buy-2/menu.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Native bakery window retained. Names start at x12; prices at x128, with an eight-pixel right margin. Three exact native prices; 256-byte purchase confirmation checked separately. Controlled service invocation, not ordinary bakery unlock."
+    },
+    {
+      "id": "item-names-cohort-1",
+      "name": "Item base names 1-8",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Oaken club",
+        "Gold sword",
+        "Copper sword",
+        "Iron axe",
+        "Dragonsbane",
+        "L. metal sword",
+        "Astraea's ab.",
+        "Surestrike sw."
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-2",
+      "name": "Item base names 9-16",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Hoodlum's axe",
+        "Heavy hood axe",
+        "Kamaitachi bld.",
+        "Zombiesbane",
+        "Doll crusher",
+        "Demonsbane",
+        "Wind spear",
+        "Ice sword"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-3",
+      "name": "Item base names 17-24",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Pickaxe",
+        "Falcon blade",
+        "Miracle sword",
+        "Whirlwind sword",
+        "M. king sword",
+        "Imp fork",
+        "Steel sword",
+        "Erdrick's sw."
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-4",
+      "name": "Item base names 25-32",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Golden pickaxe",
+        "Life drain",
+        "Sealing sword",
+        "Magic sword",
+        "Leather shield",
+        "Bronze shield",
+        "Scale shield",
+        "Silver shield"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-5",
+      "name": "Item base names 33-40",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Steel shield",
+        "Dragon shield",
+        "L. metal shield",
+        "Blade shield",
+        "Ogre shield",
+        "Magic shield",
+        "Parry shield",
+        "Thiefstop sh."
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-6",
+      "name": "Item base names 41-48",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Skill-X shield",
+        "M. king shield",
+        "Blastproof sh.",
+        "Golden shield",
+        "Sigil shield",
+        "Erdrick's sh.",
+        "Sealing staff",
+        "Decoy staff"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-7",
+      "name": "Item base names 49-56",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Swap staff",
+        "Lightning staff",
+        "Decel. staff",
+        "Snooze staff",
+        "Fuddle staff",
+        "Bazoom staff",
+        "Shapeshift stf.",
+        "Accel. staff"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-8",
+      "name": "Item base names 57-64",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Fade staff",
+        "Surefoot staff",
+        "Splitting staff",
+        "Whack staff",
+        "Double-edge stf",
+        "Great loss stf.",
+        "Itemizing staff",
+        "Lump mage staff"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-9",
+      "name": "Item base names 65-72",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Lump wiz. staff",
+        "Heal staff",
+        "Knockback stf.",
+        "Golden staff",
+        "Shaman staff",
+        "Sorcerer staff",
+        "Fear staff",
+        "Sap staff"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-10",
+      "name": "Item base names 73-80",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Berserker staff",
+        "Mimic staff",
+        "Great gain stf.",
+        "Identify staff",
+        "Wooden arrow",
+        "Iron arrow",
+        "Silver arrow",
+        "Pulling arrow"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-11",
+      "name": "Item base names 81-88",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Magic arrow",
+        "Poison arrow",
+        "Golden arrow",
+        "Passage ring",
+        "Haggler's ring",
+        "Recovery ring",
+        "Rustproof ring",
+        "Critical ring"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-12",
+      "name": "Item base names 89-96",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Brutal ring",
+        "Curseproof ring",
+        "Longthrow ring",
+        "Happiness ring",
+        "Spillage ring",
+        "Farsight ring",
+        "Clarity ring",
+        "Peep ring"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-13",
+      "name": "Item base names 97-104",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Strength ring",
+        "Antidote ring",
+        "Sleepless ring",
+        "Zoom ring",
+        "Satiation ring",
+        "Thief's ring",
+        "Pretty ring",
+        "Shadow ring"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-14",
+      "name": "Item base names 105-112",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Ravenous ring",
+        "Trapproof ring",
+        "Doll ward ring",
+        "Awaken ring",
+        "Golden ring",
+        "Explosion ring",
+        "Life ring",
+        "Protection ring"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-15",
+      "name": "Item base names 113-120",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Sheen scroll",
+        "Peep scroll",
+        "Bang scroll",
+        "Mouthseal scr.",
+        "Evac scroll",
+        "Trap scroll",
+        "Great room scr.",
+        "Monster scroll"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-16",
+      "name": "Item base names 121-128",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Blank scroll",
+        "Oomphle scroll",
+        "Buff scroll",
+        "Plating scroll",
+        "Vacuum scroll",
+        "No-pickup scr.",
+        "Sanctuary scr.",
+        "See-all scroll"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-17",
+      "name": "Item base names 129-136",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Bread scroll",
+        "Prayer scroll",
+        "Retry scroll",
+        "H. Pocus scroll",
+        "Glow scroll",
+        "Binding scroll",
+        "Suspend scroll",
+        "Lyre of Ire sc."
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-18",
+      "name": "Item base names 137-144",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Foe sight scr.",
+        "Safe Pass. sc.",
+        "Gale scroll",
+        "Foe bind scroll",
+        "Kasap scroll",
+        "Rooting scroll",
+        "Pulling scroll",
+        "Foe ID scroll"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-19",
+      "name": "Item base names 145-152",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Golden scrap",
+        "Kazing scroll",
+        "Spellbook",
+        "Scroll scrap",
+        "Storage pot",
+        "Clone pot",
+        "Peep pot",
+        "Recovery pot"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-20",
+      "name": "Item base names 153-160",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Monster pot",
+        "Shapeshift pot",
+        "Synthesis pot",
+        "Thief pot",
+        "Gunpowder pot",
+        "Unbreak. pot",
+        "Liar pot",
+        "Golden pot"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-21",
+      "name": "Item base names 161-168",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Warehouse pot",
+        "Magic jewel box",
+        "Medicinal herb",
+        "Super herb",
+        "Eyedrop herb",
+        "Yggdrasil leaf",
+        "Blinding herb",
+        "Misfortune seed"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-22",
+      "name": "Item base names 169-176",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Berserker seed",
+        "Misleader herb",
+        "Life herb",
+        "Big belly seed",
+        "Small belly sd.",
+        "Seed of agility",
+        "Seed of str.",
+        "Antidotal herb"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-23",
+      "name": "Item base names 177-184",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Poison herb",
+        "Fuddle herb",
+        "Snooze herb",
+        "Weed",
+        "Zoom herb",
+        "Flame herb",
+        "Leaky belly sd.",
+        "Seed of growth"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-24",
+      "name": "Item base names 185-192",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Wakeful herb",
+        "Golden herb",
+        "Binding seed",
+        "Dancing herb",
+        "Ironform seed",
+        "Nonsense herb",
+        "Bread",
+        "Big bread"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-25",
+      "name": "Item base names 193-200",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Rotten bread",
+        "Giant bread",
+        "Magic bread",
+        "Putrid bread",
+        "Golden bread",
+        "Onion bread",
+        "Gold",
+        "Mimic"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "item-names-cohort-26",
+      "name": "Item base names 201-206",
+      "stage": "current",
+      "window": 168,
+      "start": 6,
+      "end": 86,
+      "rows": 8,
+      "labels": [
+        "Mini medal",
+        "Strange box",
+        "Iron safe",
+        "Key",
+        "Banker's safe",
+        "Grave"
+      ],
+      "alternatives": [],
+      "capture": "build/english/items-validation/natural-0/inventory.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "80px base-name reserve and 31 encoded bytes. Complete 64-byte rows, markers, quantities, suffixes and prices require separate native checks. The image illustrates the native inventory, not every listed item."
+    },
+    {
+      "id": "combat-current-combat.19c-short",
+      "name": "Combat: combat.19c-short",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Slime takes 1 damage."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.19c-short/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "combat-current-combat.1b4-short",
+      "name": "Combat: combat.1b4-short",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Slime hits for 1 damage."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.1b4-short/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "combat-current-combat.1a0-short",
+      "name": "Combat: combat.1a0-short",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Slime defeated! 1 EXP gained."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.1a0-short/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "combat-current-combat.1a8-short",
+      "name": "Combat: combat.1a8-short",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Slime takes a critical hit: 1 damage."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.1a8-short/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "combat-current-combat.1a0-wide",
+      "name": "Combat: combat.1a0-wide",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Crack-billed platypunk Lv32767 defeated! ",
+        "2147483647 EXP gained."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.1a0-wide/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "combat-current-combat.1a8-wide",
+      "name": "Combat: combat.1a8-wide",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 216,
+      "rows": 2,
+      "labels": [
+        "Crack-billed platypunk Lv32767 takes a ",
+        "critical hit: 2147483647 damage."
+      ],
+      "alternatives": [],
+      "capture": "build/english/combat-validation/controlled/combat.1a8-wide/rendered.png",
+      "reference": "docs/TEXT_PROGRESS.md",
+      "note": "Native controlled combat screenshot. Lines are taken from the actual queued payload after the conditional one-line decision; names and numbers are explicit stress inputs."
+    },
+    {
+      "id": "owned-actions-current-group-1-enabled",
+      "name": "additional-action: group-1-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "None",
+        "Walk",
+        "Attack",
+        "Shoot",
+        "Equip",
+        "Remove",
+        "Drop"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-1-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "owned-actions-current-group-2-enabled",
+      "name": "additional-action: group-2-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Swap",
+        "Throw",
+        "Swing",
+        "Eat",
+        "Read",
+        "Drink",
+        "Use"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-2-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "owned-actions-current-group-3-enabled",
+      "name": "additional-action: group-3-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Put in",
+        "Take",
+        "Use",
+        "Take",
+        "Throw",
+        "Step",
+        "Put in"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-3-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "owned-actions-current-group-4-enabled",
+      "name": "additional-action: group-4-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Take",
+        "Use",
+        "Stairs",
+        "Shoot",
+        "Throw",
+        "Swing",
+        "Eat"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-4-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "owned-actions-current-group-5-enabled",
+      "name": "additional-action: group-5-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Read",
+        "Drink",
+        "Use",
+        "Use",
+        "Write",
+        "Skills",
+        "Spells"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-5-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "owned-actions-current-group-6-enabled",
+      "name": "additional-action: group-6-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Info",
+        "Name",
+        "View",
+        "Skills"
+      ],
+      "alternatives": [],
+      "capture": "build/english/additional-action-validation/group-6-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-1-enabled",
+      "name": "child-action: group-1-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "None",
+        "Walk",
+        "Attack",
+        "Shoot",
+        "Equip",
+        "Remove",
+        "Drop"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-1-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-2-enabled",
+      "name": "child-action: group-2-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Swap",
+        "Throw",
+        "Swing",
+        "Eat",
+        "Read",
+        "Drink",
+        "Use"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-2-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-3-enabled",
+      "name": "child-action: group-3-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Put in",
+        "Take",
+        "Use",
+        "Take",
+        "Throw",
+        "Step",
+        "Put in"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-3-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-4-enabled",
+      "name": "child-action: group-4-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Take",
+        "Use",
+        "Stairs",
+        "Shoot",
+        "Throw",
+        "Swing",
+        "Eat"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-4-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-5-enabled",
+      "name": "child-action: group-5-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 7,
+      "labels": [
+        "Read",
+        "Drink",
+        "Use",
+        "Use",
+        "Write",
+        "Skills",
+        "Spells"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-5-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "contained-actions-current-group-6-enabled",
+      "name": "child-action: group-6-enabled",
+      "stage": "current",
+      "window": 40,
+      "start": 4,
+      "end": 40,
+      "rows": 4,
+      "labels": [
+        "Info",
+        "Name",
+        "View",
+        "Skills"
+      ],
+      "alternatives": [],
+      "capture": "build/english/child-action-validation/group-6-enabled/open-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Native controlled action IDs with original36px region and8px border gap. Three open/cancel cycles check parent pixels, disabled states and producer buffers. This does not establish ordinary availability of every action."
+    },
+    {
+      "id": "town-actions-current-trash-no",
+      "name": "Town item actions: trash-no",
+      "stage": "current",
+      "window": 40,
+      "start": 6,
+      "end": 40,
+      "rows": 2,
+      "labels": [
+        "Trash",
+        "Info"
+      ],
+      "alternatives": [],
+      "capture": "build/english/town-action-validation/trash-no/actions-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Controlled native town inventory invocation. Original34px region,8px outer-border gap,256-byte message buffer. Trash preserves destructive discard meaning; its confirmation warns about all contents of a filled pot."
+    },
+    {
+      "id": "town-actions-current-pot-filled-no",
+      "name": "Town item actions: pot-filled-no",
+      "stage": "current",
+      "window": 40,
+      "start": 6,
+      "end": 40,
+      "rows": 3,
+      "labels": [
+        "View",
+        "Trash",
+        "Info"
+      ],
+      "alternatives": [],
+      "capture": "build/english/town-action-validation/pot-filled-no/actions-0.png",
+      "reference": "docs/MENU_LAYOUTS.md",
+      "note": "Controlled native town inventory invocation. Original34px region,8px outer-border gap,256-byte message buffer. Trash preserves destructive discard meaning; its confirmation warns about all contents of a filled pot."
+    },
+    {
+      "id": "town-services-current-synthesis",
+      "name": "Synthesis commands",
+      "stage": "current",
+      "window": 72,
+      "start": 12,
+      "end": 72,
+      "rows": 3,
+      "labels": [
+        "Synthesise",
+        "Explain",
+        "Leave"
+      ],
+      "alternatives": [],
+      "capture": "build/english/gaibara-validation/menu-cancel/root.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original72px panel and two six-pixel structural cursor spaces.60px label budget. All choices, help and repeated reopening pass."
+    },
+    {
+      "id": "town-services-current-which",
+      "name": "Shared item selection heading",
+      "stage": "current",
+      "window": 40,
+      "start": 0,
+      "end": 40,
+      "rows": 1,
+      "labels": [
+        "Which?"
+      ],
+      "alternatives": [],
+      "capture": "build/english/gaibara-validation/selector-info-reopen/opened.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original40px heading atx8; inventory atx64 preserves8px outer-border gap. Three Info/cancel cycles restore both panels exactly."
+    },
+    {
+      "id": "town-services-current-remi-root",
+      "name": "Remi services",
+      "stage": "current",
+      "window": 112,
+      "start": 12,
+      "end": 112,
+      "rows": 5,
+      "labels": [
+        "Buy iron safe",
+        "Level up",
+        "Add staff charges",
+        "Bazoom",
+        "Change vocation"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/root-4-gate-1/root.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original112px panel,12px structural cursor reserve and100px labels. Ten profile/gate cases pass."
+    },
+    {
+      "id": "town-services-current-vocation-0",
+      "name": "Change vocation: Merchant",
+      "stage": "current",
+      "window": 72,
+      "start": 12,
+      "end": 72,
+      "rows": 3,
+      "labels": [
+        "Warrior",
+        "Mage",
+        "Cancel"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/vocation-0-cancel/choices.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original72px panel and12px cursor reserve. Both offered vocations, both answers, Cancel and Leave pass; labels preserve choice order."
+    },
+    {
+      "id": "town-services-current-vocation-1",
+      "name": "Change vocation: Warrior",
+      "stage": "current",
+      "window": 72,
+      "start": 12,
+      "end": 72,
+      "rows": 3,
+      "labels": [
+        "Merchant",
+        "Mage",
+        "Cancel"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/vocation-1-cancel/choices.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original72px panel and12px cursor reserve. Both offered vocations, both answers, Cancel and Leave pass; labels preserve choice order."
+    },
+    {
+      "id": "town-services-current-vocation-2",
+      "name": "Change vocation: Mage",
+      "stage": "current",
+      "window": 72,
+      "start": 12,
+      "end": 72,
+      "rows": 3,
+      "labels": [
+        "Merchant",
+        "Warrior",
+        "Cancel"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/vocation-2-cancel/choices.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original72px panel and12px cursor reserve. Both offered vocations, both answers, Cancel and Leave pass; labels preserve choice order."
+    },
+    {
+      "id": "town-services-current-number-129",
+      "name": "Remi number selector: Level {number}",
+      "stage": "current",
+      "window": 88,
+      "start": 0,
+      "end": 88,
+      "rows": 1,
+      "labels": [
+        "Level 99"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/remi.129-number-99-B/picker.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original88px panel. Only the three owned templates use proportional advance; unknown formats keep12px. Native aliases use the same compact digit glyphs as this font. Runtime compiler conservatively reserves14px for two digits and128bytes for output."
+    },
+    {
+      "id": "town-services-current-number-140",
+      "name": "Remi number selector: +{number}",
+      "stage": "current",
+      "window": 88,
+      "start": 0,
+      "end": 88,
+      "rows": 1,
+      "labels": [
+        "+99"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/remi.140-number-99-B/picker.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original88px panel. Only the three owned templates use proportional advance; unknown formats keep12px. Native aliases use the same compact digit glyphs as this font. Runtime compiler conservatively reserves14px for two digits and128bytes for output."
+    },
+    {
+      "id": "town-services-current-number-176",
+      "name": "Remi number selector: {number}F",
+      "stage": "current",
+      "window": 88,
+      "start": 0,
+      "end": 88,
+      "rows": 1,
+      "labels": [
+        "99F"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/remi.176-number-99-B/picker.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original88px panel. Only the three owned templates use proportional advance; unknown formats keep12px. Native aliases use the same compact digit glyphs as this font. Runtime compiler conservatively reserves14px for two digits and128bytes for output."
+    },
+    {
+      "id": "town-services-current-warp-first",
+      "name": "Warp destinations: first page",
+      "stage": "current",
+      "window": 128,
+      "start": 6,
+      "end": 128,
+      "rows": 5,
+      "labels": [
+        "Banker's Mansion",
+        "Castle Dungeon",
+        "Cemetery Dungeon",
+        "Mt. Fiery",
+        "Lost Forest"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/warp-pages-0-0/first-page.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original128px panel with native6px inset leaves122px. Native order, cursor, cancellation and exact pixel restoration after paging pass."
+    },
+    {
+      "id": "town-services-current-warp-second-0",
+      "name": "Warp destinations: Merchant",
+      "stage": "current",
+      "window": 128,
+      "start": 6,
+      "end": 128,
+      "rows": 4,
+      "labels": [
+        "Toro Ruins",
+        "Magic Dungeon",
+        "Ordeal Mansion"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/warp-pages-0-0/second-page-0.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original second-page geometry and native vocation filtering;18 repeated page restorations and all ten destination selections pass. Other dungeon/title/result consumers remain separate."
+    },
+    {
+      "id": "town-services-current-warp-second-1",
+      "name": "Warp destinations: Warrior",
+      "stage": "current",
+      "window": 128,
+      "start": 6,
+      "end": 128,
+      "rows": 4,
+      "labels": [
+        "Toro Ruins",
+        "Magic Dungeon",
+        "Ordeal Mansion",
+        "Sword Dungeon"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/warp-pages-1-0/second-page-0.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original second-page geometry and native vocation filtering;18 repeated page restorations and all ten destination selections pass. Other dungeon/title/result consumers remain separate."
+    },
+    {
+      "id": "town-services-current-warp-second-2",
+      "name": "Warp destinations: Mage",
+      "stage": "current",
+      "window": 128,
+      "start": 6,
+      "end": 128,
+      "rows": 4,
+      "labels": [
+        "Toro Ruins",
+        "Magic Dungeon",
+        "Ordeal Mansion",
+        "Mage Dungeon"
+      ],
+      "alternatives": [],
+      "capture": "build/english/remi-validation/warp-pages-2-0/second-page-0.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original second-page geometry and native vocation filtering;18 repeated page restorations and all ten destination selections pass. Other dungeon/title/result consumers remain separate."
+    },
+    {
+      "id": "town-services-current-well-level",
+      "name": "Well difficulty selector",
+      "stage": "current",
+      "window": 88,
+      "start": 0,
+      "end": 88,
+      "rows": 1,
+      "labels": [
+        "Level 10"
+      ],
+      "alternatives": [],
+      "capture": "build/english/well-picker-validation/progress-10-initial/initial.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original88px number panel. Reuses the exact owned Remi proportional template; native progress caps, minimum/maximum, cancellation and return flags pass."
+    },
+    {
+      "id": "records-parent-current",
+      "name": "Records parent menu",
+      "stage": "current",
+      "window": 64,
+      "start": 6,
+      "end": 64,
+      "rows": 3,
+      "labels": [
+        "Scores",
+        "Records",
+        "Password"
+      ],
+      "alternatives": [],
+      "capture": "build/english/history-menu-validation/three-navigate/initial.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "history-heading-current",
+      "name": "High-score heading",
+      "stage": "current",
+      "window": 56,
+      "start": 0,
+      "end": 56,
+      "rows": 1,
+      "labels": [
+        "High score"
+      ],
+      "alternatives": [],
+      "capture": "build/english/history-ui-validation/history-maximum/panel.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "history-rank-current",
+      "name": "High-score rank column",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 72,
+      "rows": 1,
+      "labels": [
+        "Rank 50"
+      ],
+      "alternatives": [],
+      "capture": null,
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "history-score-current",
+      "name": "High-score points column",
+      "stage": "current",
+      "window": 224,
+      "start": 72,
+      "end": 180,
+      "rows": 1,
+      "labels": [
+        "2147483647 pts"
+      ],
+      "alternatives": [],
+      "capture": null,
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "history-floor-current",
+      "name": "High-score floor column",
+      "stage": "current",
+      "window": 224,
+      "start": 180,
+      "end": 224,
+      "rows": 1,
+      "labels": [
+        "32767F",
+        "Depths"
+      ],
+      "alternatives": [],
+      "capture": null,
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "records-header-current",
+      "name": "Arms merchant rank",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 224,
+      "rows": 1,
+      "labels": [
+        "Arms merchant Lv11: Super Dungeonist",
+        "Arms merchant Lv11: Dungeon Emperor"
+      ],
+      "alternatives": [],
+      "capture": null,
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "records-stat-labels-current",
+      "name": "Record statistic labels before maximum value",
+      "stage": "current",
+      "window": 224,
+      "start": 0,
+      "end": 152,
+      "rows": 6,
+      "labels": [
+        "Adventures",
+        "Highest level",
+        "Highest HP",
+        "Highest EXP",
+        "Highest max strength",
+        "Most gold acquired",
+        "Most turns on one floor",
+        "Most monsters defeated"
+      ],
+      "alternatives": [],
+      "capture": null,
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    },
+    {
+      "id": "password-heading-current",
+      "name": "Password heading",
+      "stage": "current",
+      "window": 64,
+      "start": 0,
+      "end": 58,
+      "rows": 1,
+      "labels": [
+        "Password"
+      ],
+      "alternatives": [],
+      "capture": "build/password-prototype/password-validation/password-0/page-0.png",
+      "reference": "docs/MEMORY_MAP.md",
+      "note": "Original native geometry and selected T2 font retained. Complete dynamic fields, byte limits and native pixels are checked in the corresponding results/history/records/password verifier; ordinary progression remains separate."
+    }
+  ],
+  "unresolved": [
+    "Current early-menu, Option, core bank and eight-item cohort labels fit the selected font. Historical candidates retain their recorded overflows.",
+    "286 controlled item/state probes cover 221 bounded item definitions; synthetic states are not natural acquisition or later-mode coverage.",
+    "Bakery, filled pots, storage full-capacity/sale prompts, later modes and untranslated item disguises need further natural routes and formatter budgets.",
+    "Bank gift/reward text and persisted transaction-save checks remain outside the 12 core bank cases.",
+    "Whole-game menu-layout sign-off remains open."
+  ]
+}

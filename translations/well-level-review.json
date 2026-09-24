@@ -1,0 +1,157 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Reviewed T2 Japanese source and independently written English. Insert through the owned, natively tested consumer. Ordinary later-story progression remains separate from controlled consumer acceptance.",
+  "entries": [
+    {
+      "id": "event-bank-5.3c32",
+      "source_hex": "88e48ccb89ae817581458145814581458145814582ed82a982e882dc82b582bd81420d814081752573817682c682a282a482b182c682c582a282ab82dc82b582e582a481420d88e48ccb89ae817582bb82ea82c582cd814082a882bd82cc82b582dd82ad82be82b382a2814900",
+      "source_sha256": "44dbf19db3c30a8ce5ca41d66c0b0c5cf7d6bacaf960269f9431868123f08e3a",
+      "japanese": "井戸屋「・・・・・・わかりました。\n　「%{unclassified-control:73}」ということでいきましょう。\n井戸屋「それでは　おたのしみください！",
+      "english": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+      "prose_review": {
+        "previous_draft": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+        "revised": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+        "reason": "Second complete bilingual read against T2 Japanese: preserve speakers, event/colour controls, quantities, requests and refusal branches, save-overwrite warning, item restrictions and story causality.",
+        "context_pending": true,
+        "insertion_approved": false
+      },
+      "status": "reviewed"
+    },
+    {
+      "id": "event-bank-6.2e6e",
+      "source_hex": "88e48ccb89ae8175814581458145814581458145dcb6d8cfbcc081420d8140817525738176c4b2b3bac482c5b2b7cfbc82e5b381420d88e48ccb89ae8175bfda82c5ca8140b5c0c9bcd0b882bebbb2814900",
+      "source_sha256": "f35f622fcb5f58badc1bbcc3ae4ceabdbce959f73b3a4e99259f044e7f38d9a7",
+      "japanese": "井戸屋「・・・・・・ﾜｶﾘﾏｼﾀ。\n　「%{unclassified-control:73}」ﾄｲｳｺﾄでｲｷﾏｼょｳ。\n井戸屋「ｿﾚでﾊ　ｵﾀﾉｼﾐｸだｻｲ！",
+      "english": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+      "prose_review": {
+        "previous_draft": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+        "revised": "Wellkeeper: ...Very well. We'll go with '{difficulty}'.\n\nWellkeeper: Enjoy yourself!",
+        "reason": "Reconciled against a separately bilingual-reviewed T2 source with identical English and exact normalized Japanese. NFKC, katakana-to-hiragana and whitespace normalization only; punctuation, controls, quantities and words must match. Original source bytes remain separate and unchanged.",
+        "context_pending": true,
+        "insertion_approved": false,
+        "method": "normalized-exact-reconciliation",
+        "reviewed_source": {
+          "catalog": "final-quest-draft.json",
+          "id": "event-bank-5.3c32",
+          "source_sha256": "44dbf19db3c30a8ce5ca41d66c0b0c5cf7d6bacaf960269f9431868123f08e3a",
+          "context_pending": true
+        },
+        "normalization": "NFKC; U+30A1..U+30F6 to hiragana; remove whitespace"
+      },
+      "status": "reviewed"
+    }
+  ],
+  "labels": [
+    {
+      "id": "well-level.1",
+      "value": 1,
+      "source_offset": 443372,
+      "source_hex": "838c8378838b825000",
+      "source_sha256": "ae2cffbeaeb80ca1b1d811ae634ca83c913a4549e4152234dd73c026bd0a1e77",
+      "japanese": "レベル１",
+      "english": "Level 1",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.2",
+      "value": 2,
+      "source_offset": 443360,
+      "source_hex": "838c8378838b825100",
+      "source_sha256": "c3bfdcc0d80d4360bcbcae6689e6742ddb8d77aa750b45a5fd3ec5cec790026a",
+      "japanese": "レベル２",
+      "english": "Level 2",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.3",
+      "value": 3,
+      "source_offset": 443348,
+      "source_hex": "838c8378838b825200",
+      "source_sha256": "1401a07405fc0211b9987655ea1c7a4e6d386f8c166049784eba8e2e777d68e9",
+      "japanese": "レベル３",
+      "english": "Level 3",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.4",
+      "value": 4,
+      "source_offset": 443336,
+      "source_hex": "838c8378838b825300",
+      "source_sha256": "66912472bcefec637785bfd32e4c540b8d258a2d264460f4baf4a0dee8fd2090",
+      "japanese": "レベル４",
+      "english": "Level 4",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.5",
+      "value": 5,
+      "source_offset": 443324,
+      "source_hex": "838c8378838b825400",
+      "source_sha256": "3e759f51cee64aa25464dea7cac32c0627e045fef9a3ad69414b4b28a8e2c001",
+      "japanese": "レベル５",
+      "english": "Level 5",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.6",
+      "value": 6,
+      "source_offset": 443312,
+      "source_hex": "838c8378838b825500",
+      "source_sha256": "f0776b22dde49fd1c8a566418a7c53f2316a9f7b804d8695de03eff69608f6ed",
+      "japanese": "レベル６",
+      "english": "Level 6",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.7",
+      "value": 7,
+      "source_offset": 443300,
+      "source_hex": "838c8378838b825600",
+      "source_sha256": "3708ab52f386b216efacee155d20c0b021e755b5a3adfde376159844e3fa21cc",
+      "japanese": "レベル７",
+      "english": "Level 7",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.8",
+      "value": 8,
+      "source_offset": 443288,
+      "source_hex": "838c8378838b825700",
+      "source_sha256": "1886fe6d55cfa126f7dd7fddadb888bbc7889f353e47d1c3e594cfbfee38b22b",
+      "japanese": "レベル８",
+      "english": "Level 8",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.9",
+      "value": 9,
+      "source_offset": 443276,
+      "source_hex": "838c8378838b825800",
+      "source_sha256": "2c11ba4f0ab3cfadbdc3283892b56b10836a7d6c303fa7894db14ee7f4143227",
+      "japanese": "レベル９",
+      "english": "Level 9",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    },
+    {
+      "id": "well-level.10",
+      "value": 10,
+      "source_offset": 443264,
+      "source_hex": "838c8378838b8250824f00",
+      "source_sha256": "4ffcabad54f53a9f92bf4bed46cdbd989a45d8614d912e8424f2a1e15d49ab74",
+      "japanese": "レベル１０",
+      "english": "Level 10",
+      "status": "reviewed",
+      "review": "Japanese レベル plus the exact level number; neutral functional label, independently translated. This private copy changes only the confirmed acknowledgement consumer."
+    }
+  ],
+  "native_consumer_evidence": "build/well-level-prototype/report.json"
+}

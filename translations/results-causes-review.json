@@ -1,0 +1,452 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned results and adventure-history monster-defeat line and raw actor table; all other result/stat/death consumers remain separate.",
+  "entries": [
+    {
+      "id": "results.monster-defeat",
+      "table_offset": 1620,
+      "source": {
+        "offset": 399312,
+        "end_exclusive": 399327,
+        "raw_hex": "257382c982bd82a882b382ea82bd00",
+        "sha256": "bb0cd34f620dc7c79a88823531ff1ddf8507c1aea6ab28cb80a1b534eb85aab2",
+        "japanese": "%{unclassified-control:73}にたおされた"
+      },
+      "english": "Defeated by {actor}.",
+      "status": "reviewed",
+      "review": "Japanese %sにたおされた identifies who defeated the player. Preserve that cause and one actor argument. Raw actor English is independently reviewed in monsters-review.json; do not use dungeon aliases for Someone or False priest."
+    },
+    {
+      "id": "results.cause-0",
+      "reason": 0,
+      "table_offset": 1624,
+      "source": {
+        "offset": 399300,
+        "end_exclusive": 399309,
+        "raw_hex": "82c882ba82be82a900",
+        "sha256": "ac8c9a361c833ae5a59e0898047328eb71ac052a542704ff72f8bbda55a3498e",
+        "japanese": "なぜだか"
+      },
+      "english": "for unknown reasons",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-1",
+      "reason": 1,
+      "table_offset": 1628,
+      "source": {
+        "offset": 399292,
+        "end_exclusive": 399299,
+        "raw_hex": "82a482a682c400",
+        "sha256": "614114e860c39effebb86d77cf0a3fae485be3b225b40781873a513bf6f11b23",
+        "japanese": "うえて"
+      },
+      "english": "from starvation",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-2",
+      "reason": 2,
+      "table_offset": 1632,
+      "source": {
+        "offset": 399272,
+        "end_exclusive": 399291,
+        "raw_hex": "82ad82b382e882ab82c182bd8370839382c500",
+        "sha256": "fb612ba4db6dd6c776d98e0e9913bf289330f98ae4345f89ffa4b9a9f9bd75a5",
+        "japanese": "くさりきったパンで"
+      },
+      "english": "from Putrid bread",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-3",
+      "reason": 3,
+      "table_offset": 1636,
+      "source": {
+        "offset": 399256,
+        "end_exclusive": 399271,
+        "raw_hex": "485082cc82d682e98ef495b682c500",
+        "sha256": "ec9087a7cf000f9e12572745b1fe980fd4b5f719a8d93a86dd7d16eea67b4dc7",
+        "japanese": "HPのへる呪文で"
+      },
+      "english": "from an HP-lowering spell",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-4",
+      "reason": 4,
+      "table_offset": 1640,
+      "source": {
+        "offset": 399236,
+        "end_exclusive": 399253,
+        "raw_hex": "82a882c682b58c8a82c982a882bf82c400",
+        "sha256": "e29be9caf0c5aa8851f57dece73502426174eeae1ee91ada9709a8b78acb7c80",
+        "japanese": "おとし穴におちて"
+      },
+      "english": "after falling into a pit",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-5",
+      "reason": 5,
+      "table_offset": 1644,
+      "source": {
+        "offset": 399212,
+        "end_exclusive": 399235,
+        "raw_hex": "82a282cc82bf82cc8e7797d682f082cd82b882b582c400",
+        "sha256": "87193c8a012ad269dba5a72e838203f9532da85f27b41fa49a975f5248074815",
+        "japanese": "いのちの指輪をはずして"
+      },
+      "english": "after removing a Life ring",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-6",
+      "reason": 6,
+      "table_offset": 1648,
+      "source": {
+        "offset": 399192,
+        "end_exclusive": 399211,
+        "raw_hex": "949a94ad82cc8e7797d682f082cd82df82c400",
+        "sha256": "d5a52ba0d139f9187a107d4174804c0c761659ee62a5f8a69cee17844330b50c",
+        "japanese": "爆発の指輪をはめて"
+      },
+      "english": "after equipping an Explosion ring",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-7",
+      "reason": 7,
+      "table_offset": 1652,
+      "source": {
+        "offset": 399176,
+        "end_exclusive": 399191,
+        "raw_hex": "949a92658ae282cc949a94ad82c500",
+        "sha256": "956a88fb67ba38c891decea77e4a1a4b1b0498ae4f8c8eed025cac99d52e912f",
+        "japanese": "爆弾岩の爆発で"
+      },
+      "english": "in a Rockbomb's explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-8",
+      "reason": 8,
+      "table_offset": 1656,
+      "source": {
+        "offset": 399156,
+        "end_exclusive": 399175,
+        "raw_hex": "935694b182cc949a94ad82f082a082d182c400",
+        "sha256": "feaf535d50c3064d48f71acbf3718f91ebcd94e7a062e853b375b0a2f70eaca2",
+        "japanese": "天罰の爆発をあびて"
+      },
+      "english": "in a divine punishment explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-9",
+      "reason": 9,
+      "table_offset": 1660,
+      "source": {
+        "offset": 399132,
+        "end_exclusive": 399153,
+        "raw_hex": "835f8381815b835782cc8fb082f082d382f182c500",
+        "sha256": "cf9827547c08b704ebd9de988af95f250ade0104b13f195d854c99cc6ad89636",
+        "japanese": "ダメージの床をふんで"
+      },
+      "english": "on a damaging floor",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-10",
+      "reason": 10,
+      "table_offset": 1664,
+      "source": {
+        "offset": 399116,
+        "end_exclusive": 399131,
+        "raw_hex": "90ce82aa82a882bf82c482ab82c400",
+        "sha256": "9d694f53c39fa44d37d639a45eccd8e6783980121b8f6a79518cd6dc1ed9741b",
+        "japanese": "石がおちてきて"
+      },
+      "english": "under a falling rock",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-11",
+      "reason": 11,
+      "table_offset": 1668,
+      "source": {
+        "offset": 399096,
+        "end_exclusive": 399115,
+        "raw_hex": "926e978b82cc838f836982f082d382f182c500",
+        "sha256": "70f38ca75e4b26be04333be5e932dee48054ec9ea9a57d4b8014e7ecb326ffb2",
+        "japanese": "地雷のワナをふんで"
+      },
+      "english": "after triggering a land mine",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-12",
+      "reason": 12,
+      "table_offset": 1672,
+      "source": {
+        "offset": 399068,
+        "end_exclusive": 399093,
+        "raw_hex": "94f282f182c582ab82bd93538b8582c982a082bd82c182c400",
+        "sha256": "de47c367c1797e072305de88f35ed830d7497c66fa88fdd1c13e49bd59412bcf",
+        "japanese": "飛んできた鉄球にあたって"
+      },
+      "english": "when struck by an iron ball",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-13",
+      "reason": 13,
+      "table_offset": 1676,
+      "source": {
+        "offset": 399052,
+        "end_exclusive": 399067,
+        "raw_hex": "898a82cc835f8381815b835782c500",
+        "sha256": "012fd28fe0176ba1bda121667ca146bf30bf2ac84eac6fad71885313a88996bf",
+        "japanese": "炎のダメージで"
+      },
+      "english": "from fire damage",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-14",
+      "reason": 14,
+      "table_offset": 1680,
+      "source": {
+        "offset": 399028,
+        "end_exclusive": 399049,
+        "raw_hex": "82a282a982b882bf82cc8ff182f082a482af82c400",
+        "sha256": "73340ba55a54ceb98ee8f46c382eaabeb070ee9a45d028e4c2adefab4e8ec259",
+        "japanese": "いかずちの杖をうけて"
+      },
+      "english": "from a Lightning staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-15",
+      "reason": 15,
+      "table_offset": 1684,
+      "source": {
+        "offset": 399008,
+        "end_exclusive": 399025,
+        "raw_hex": "8355834c82cc8ff182f082a482af82c400",
+        "sha256": "801e1a5b32938382b853a2eb069f6cbfdc0a6f1b951a8269f0a4a74b517cd582",
+        "japanese": "ザキの杖をうけて"
+      },
+      "english": "from a Whack staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-16",
+      "reason": 16,
+      "table_offset": 1688,
+      "source": {
+        "offset": 398988,
+        "end_exclusive": 399007,
+        "raw_hex": "82e082eb82cd82cc8ff182f082a482af82c400",
+        "sha256": "1fcf31b9bc216034384fc1c6858471509466510340d6a492b6fdd2d43e4d71c5",
+        "japanese": "もろはの杖をうけて"
+      },
+      "english": "from a Double-edged staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-17",
+      "reason": 17,
+      "table_offset": 1692,
+      "source": {
+        "offset": 398968,
+        "end_exclusive": 398985,
+        "raw_hex": "8adb93be82cc8ff182f082a482af82c400",
+        "sha256": "18ed1f05a161d856765d403e60378a620a1115aff6611ccf342901dfd487285d",
+        "japanese": "丸得の杖をうけて"
+      },
+      "english": "from a Great gain staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-18",
+      "reason": 18,
+      "table_offset": 1696,
+      "source": {
+        "offset": 398944,
+        "end_exclusive": 398967,
+        "raw_hex": "82d382ab82c682ce82b582cc8ff182f082a482af82c400",
+        "sha256": "abf8e79bbb204a954275126c5a67b7c0d3aaa9b24e483baab78fb31e09a046d1",
+        "japanese": "ふきとばしの杖をうけて"
+      },
+      "english": "from a Knockback staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-19",
+      "reason": 19,
+      "table_offset": 1700,
+      "source": {
+        "offset": 398920,
+        "end_exclusive": 398941,
+        "raw_hex": "89ce96f29ae282c982dc82ab82b182dc82ea82c400",
+        "sha256": "97d45548e031cc57eda9b0c9219b36d2e398741b29e17258c1937aa3bcf30290",
+        "japanese": "火薬壺にまきこまれて"
+      },
+      "english": "in a Gunpowder pot's explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-20",
+      "reason": 20,
+      "table_offset": 1704,
+      "source": {
+        "offset": 398900,
+        "end_exclusive": 398917,
+        "raw_hex": "91e591b982cc8ff182f082a482af82c400",
+        "sha256": "881d03e28b72048e10927b9b3f4fa201159d046ac88010ecea266dd17e66f90c",
+        "japanese": "大損の杖をうけて"
+      },
+      "english": "from a Great loss staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-22",
+      "reason": 22,
+      "table_offset": 1712,
+      "source": {
+        "offset": 398876,
+        "end_exclusive": 398895,
+        "raw_hex": "93c596ee82cc82ed82c882f082d382f182c500",
+        "sha256": "4b31acc9a22e685ee62c477b59bf50c2a19cb03923c7dcacb2b2fe9245290d3f",
+        "japanese": "毒矢のわなをふんで"
+      },
+      "english": "after triggering a poison-arrow trap",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-23",
+      "reason": 23,
+      "table_offset": 1716,
+      "source": {
+        "offset": 398856,
+        "end_exclusive": 398875,
+        "raw_hex": "949a94ad82c982dc82ab82b182dc82ea82c400",
+        "sha256": "07426462078e9fc51646529633a0faff6f1ca955efdfe30c47875b2c070eedfe",
+        "japanese": "爆発にまきこまれて"
+      },
+      "english": "in an explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-24",
+      "reason": 24,
+      "table_offset": 1720,
+      "source": {
+        "offset": 398844,
+        "end_exclusive": 398855,
+        "raw_hex": "834a837882cc928682c500",
+        "sha256": "9afa785b55e41132481b5246bed93340e057970a4b774010e738338585ccb3db",
+        "japanese": "カベの中で"
+      },
+      "english": "inside a wall",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-25",
+      "reason": 25,
+      "table_offset": 1724,
+      "source": {
+        "offset": 398824,
+        "end_exclusive": 398843,
+        "raw_hex": "8381834b8393836582c98eb8947382b582c400",
+        "sha256": "20296a5427af09f7011e6f056e9aee488f725c7b8670302389e0621ee364fa61",
+        "japanese": "メガンテに失敗して"
+      },
+      "english": "when Kamikazee failed",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-26",
+      "reason": 26,
+      "table_offset": 1728,
+      "source": {
+        "offset": 398800,
+        "end_exclusive": 398821,
+        "raw_hex": "82ab82c682a482b582cc8ff182f082a482af82c400",
+        "sha256": "d19ae821875d2c215a122e110baea293f34e2c32dcdf5ffe676f5133c1ed6652",
+        "japanese": "きとうしの杖をうけて"
+      },
+      "english": "from a shaman's staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-27",
+      "reason": 27,
+      "table_offset": 1732,
+      "source": {
+        "offset": 398780,
+        "end_exclusive": 398797,
+        "raw_hex": "89a98be082cc8ff182f082a482af82c400",
+        "sha256": "bc2b34f450ba3700a064113ed4e353891a98a0dcc33f7ebc16c572512e307826",
+        "japanese": "黄金の杖をうけて"
+      },
+      "english": "from a Golden staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.other-defeat",
+      "table_offset": 1748,
+      "source": {
+        "offset": 398744,
+        "end_exclusive": 398755,
+        "raw_hex": "257382bd82a882ea82bd00",
+        "sha256": "8c5a5fa4f314b34cf5f26f0c878339cce87cbf6c9b1fc378ad9866e36a4b3549",
+        "japanese": "%{unclassified-control:73}たおれた"
+      },
+      "english": "Fell {cause}.",
+      "status": "reviewed",
+      "review": "Japanese %sたおれた is the completion of a preceding defeat cause. Fell retains the result and all cause wording; no inserted line break or omitted mechanics. Only27 verified cause IDs are translated; unexplained higher reason IDs remain unchanged."
+    }
+  ],
+  "history_zero_actor": {
+    "id": "results.history-torneko",
+    "source": {
+      "offset": 453420,
+      "end_exclusive": 453429,
+      "raw_hex": "8367838b836c835200",
+      "sha256": "c5fcf583a4a436d7da02998be6207ec3798fe538b3ae3d5e394e79e372b0db0b",
+      "japanese": "トルネコ"
+    },
+    "english": "Torneko",
+    "status": "reviewed",
+    "review": "History attacker ID0 explicitly loads the fixed トルネコ string via0815460C, whereas results ID0 uses Someone. Preserve the distinct native meaning; do not substitute the current player name."
+  }
+}

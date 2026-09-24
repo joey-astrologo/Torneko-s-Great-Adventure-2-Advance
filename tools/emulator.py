@@ -129,17 +129,21 @@ class Session:
     def press(self, key, wait=120, hold=3):
         require(isinstance(hold, int) and hold > 0, "Hold must be positive")
         require(isinstance(wait, int) and wait >= 0, "Wait must be nonnegative")
-        code = getattr(self.core, "KEY_" + key.upper())
+        keys = tuple(k.upper() for k in key) if isinstance(key, (tuple, list)) else (key.upper(),)
+        require(keys and len(keys) == len(set(keys)), 'Keys must be a nonempty unique combination')
+        codes = [getattr(self.core, 'KEY_' + k) for k in keys]
+        mask = sum(1 << code for code in codes)
         before = self.core.frame_counter
-        self.core.set_keys(code)
+        self.core.set_keys(*codes)
         try:
-            require(self.core._core.getKeys(self.core._core) == 1 << code, "Key press failed")
+            require(self.core._core.getKeys(self.core._core) == mask, "Key press failed")
             self._advance(hold)
         finally:
-            self.core.clear_keys(code)
+            self.core.clear_keys(*codes)
         require(self.core._core.getKeys(self.core._core) == 0, "Key release failed")
         self._advance(wait)
-        self.inputs.append({"key": key.upper(), "hold": hold, "released": wait,
+        selected = {'key': keys[0]} if len(keys) == 1 else {'keys': list(keys)}
+        self.inputs.append({**selected, "hold": hold, "released": wait,
                             "start_frame": before, "end_frame": self.core.frame_counter})
 
     def capture(self, name):

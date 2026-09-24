@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "stage": "dedicated bilingual editorial pass complete; native acceptance recorded separately",
+  "reviewer": "Same assistant, separate source/draft/final reading; not independent human review",
+  "entries": [
+    {
+      "id": "rom.0006afe0",
+      "source_sha256": "0f5b97017e0420f7c5ba6a14f8c2adb1a44221d62ea4eace8bce2a185bcec3e6",
+      "japanese": "{unclassified-control:14}フロアの どこかから\n{unclassified-control:14}ヘンな声が 聞こえる\n＊ 「キイ キイ!\n　ボクちゃんの 金庫だもんネ～!",
+      "draft": "{center}A strange voice echoes\n{center}from somewhere on this floor...\n\n???: Kee! Kee! This safe's all mine!",
+      "english": "{center}A strange voice echoes\n{center}from somewhere on this floor...\n\n???: Kee! Kee! This safe's all mine!",
+      "reason": "Keep the voice anonymous before the Imp reveal. Preserve both centred narrator lines, the squeaking cry and possessive claim to the safe.",
+      "changed": false
+    },
+    {
+      "id": "rom.00061a08",
+      "source_sha256": "d7e88a5a08c55b7c061a47ca9d3c02c392d9fc3abdf433056129dba9d32e4700",
+      "japanese": "ベビーサタン「・・・・・・キィキィ!\n　なんだよ　おまえはっ？\nベビーサタン「あ　わかったゾ!\n\nベビーサタン「ボクちゃんの\n　大切な金庫を盗もうとしてるんだなぁ？\nベビーサタン「そういう悪いヤツは\n　ボクちゃん　ゆるさないも～んっ!",
+      "draft": "Imp: ...Kee! Kee! Who are you?\n\nImp: Aha! I know!\n\nImp: You're trying to steal my precious safe, aren't you?\n\nImp: I won't let a meanie like you get away with that!",
+      "english": "Imp: ...Kee! Kee! Who are you?\n\nImp: Aha! I know!\n\nImp: You're trying to steal my precious safe, aren't you?\n\nImp: I won't let a meanie like you get away with that!",
+      "reason": "Japanese ベビーサタン identifies the modern Imp species, not Minidemon. Preserve the childish possessive voice, question, recognition, accusation and threat; do not borrow other games' monster prose.",
+      "changed": false
+    },
+    {
+      "id": "rom.00061978",
+      "source_sha256": "8fd304c3fca43f0dad26bbdd81058abc69c4a1ad81d7640688a5e4cd5f3baced",
+      "japanese": "{unclassified-control:14}{unclassified-control:7e}は\n{unclassified-control:14}銀行屋の金庫を手に入れた!",
+      "draft": "{center}{player}\n{center}recovered the banker's safe!",
+      "english": "{center}{player}\n{center}recovered the banker's safe!",
+      "reason": "Preserve the player substitution and both independent centre commands on one page. The object belongs to the banker, not Torneko.",
+      "changed": false
+    },
+    {
+      "id": "rom.0006155c",
+      "source_sha256": "c7a851d86baf430bafa9af5560ee0f37d6c4fec238a0dca7a096d0d8719d7aed",
+      "japanese": "目的を果たし地上へもどった",
+      "draft": "Completed the quest and returned.",
+      "english": "Completed the quest and returned.",
+      "reason": "Single-line result preserves successful objective and return. Surface is implicit in the result screen; no additional reward or dungeon completion claim.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.47b9",
+      "source_sha256": "ea2b87f5eea646aa6a585f514348dd62e555a726b301bb93e1ac51bc99ac33c3",
+      "japanese": "銀行屋「おお！　・・・これです！\n　これこそが私の{legacy-position:0306}金庫{unclassified-control:05}です。\n銀行屋「ありがとうございます。\n\n銀行屋「これでようやく\n　村に銀行を開くことができます。\n銀行屋「コホンッ！　・・・では\n　銀行オープンの　じゅんびがありますので\n銀行屋「私は　これでシッケイします。",
+      "draft": "Banker: Oh! That's it! That's my {color:6}safe{/color}! Thank you!\n\nBanker: Now I can finally open a bank in the village.\n\nBanker: Ahem! Well, I have to get ready to open the bank.\n\nBanker: If you'll excuse me!",
+      "english": "Banker: Oh! That's it! That's my {color:6}safe{/color}! Thank you!\n\nBanker: Now I can finally open a bank in the village.\n\nBanker: Ahem! Well, I have to get ready to open the bank.\n\nBanker: If you'll excuse me!",
+      "reason": "Preserve recognition, gratitude, village bank plan, throat-clearing and departure to prepare. Keep the safe highlighted once; opening is still future here.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.0d4e",
+      "source_sha256": "3cf6d39fb6a57b9644328cc00f5609bbb649de48efc8a252d3288e7d2c8cb8e1",
+      "japanese": "ネネ「あなた　おつかれさま。",
+      "draft": "Tessie: You've had a long day, dear.",
+      "english": "Tessie: You've had a long day, dear.",
+      "reason": "Warm acknowledgement of her husband's efforts after the quest; no invented payment or task.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.172e",
+      "source_sha256": "00b58ea10bce51043b4915598704d74465363d4d3eaaecce67110a5f50bd8fda",
+      "japanese": "ポポロ「あ　パパだっ！",
+      "draft": "Tipper: Oh! Dad's back!",
+      "english": "Tipper: Oh! Dad's back!",
+      "reason": "Short excited child greeting, using the established Tipper name.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1745",
+      "source_sha256": "18a285ae42370c0469e015ac02d7804674514a572f643971f84372105ca24b48",
+      "japanese": "ポポロ「ねえねえ　パパ。\n　お屋敷にモンスター　いっぱいいたの？",
+      "draft": "Tipper: Hey, Dad! Were there lots of monsters in the mansion?",
+      "english": "Tipper: Hey, Dad! Were there lots of monsters in the mansion?",
+      "reason": "The Yes/No question asks whether there were many monsters; retain that polarity, not whether the dungeon was safe.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1785",
+      "source_sha256": "f4661758dd5cc93218c7e963f6c94bf50ccbdbf51d6846b9fb5b3c8484923112",
+      "japanese": "ポポロ「ええ～　そうなの？\n　でも　パパがいれば安心だよね！",
+      "draft": "Tipper: Really? But we're safe as long as you're here, Dad!",
+      "english": "Tipper: Really? But we're safe as long as you're here, Dad!",
+      "reason": "Yes branch expresses surprise then confidence with Dad present. It does not assert that all monsters have been cleared.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.17c1",
+      "source_sha256": "308c60ed9d952041bf0536d9c4ba0e5ad38e088e01b300f3ec2b809620dd9949",
+      "japanese": "ポポロ「ええ～　そうなの？\n　それじゃあ　ものたりなかったでしょ。",
+      "draft": "Tipper: Really? Then I bet it wasn't much of a challenge!",
+      "english": "Tipper: Really? Then I bet it wasn't much of a challenge!",
+      "reason": "No branch implies it was not enough of a challenge for Dad. Preserve the child's admiring assumption rather than add a factual combat result.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.0d6b",
+      "source_sha256": "4a8d94539d416c3acf0bfdbbdbfb1b7bf27687a532fc9b9e9853ce09d01477cb",
+      "japanese": "ネネ「もう　ポポロったら。",
+      "draft": "Tessie: Oh, Tipper!",
+      "english": "Tessie: Oh, Tipper!",
+      "reason": "Affectionate exasperation at Tipper fits either response; no added rebuke.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.2414",
+      "source_sha256": "42f9945d39f1b20328bd9bf0a0c473e186458d7e8e3ab79d85017b8fee8550d9",
+      "japanese": "ポポロ「あ　そういえば\n　あのおじいさん　また来たよ！\nネネ「え　そうなの？\n\nポポロ「うん　しあわせの箱を\n　じぃっと　にらんでたんだけど\nポポロ「きゅうに　出て行っちゃった。\n\nネネ「・・・私　なんだか心配で。\n　だいじょうぶかしら。",
+      "draft": "Tipper: Oh, that old man came back!\n\nTessie: He did?\n\nTipper: Yeah! He kept staring at the Joy Chest, then suddenly left.\n\nTessie: ...I'm a little worried. Do you think everything will be all right?",
+      "english": "Tipper: Oh, that old man came back!\n\nTessie: He did?\n\nTipper: Yeah! He kept staring at the Joy Chest, then suddenly left.\n\nTessie: ...I'm a little worried. Do you think everything will be all right?",
+      "reason": "Preserve the old man's return, prolonged stare at the Joy Chest and sudden departure. Tessie asks if things will be all right: Yes reassures her; No leads to caution. Do not reveal the old man's identity.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.24fa",
+      "source_sha256": "4da89286cb1c0de2345448311e7a6c517e2e657d2a9552a92b514d0055fb0044",
+      "japanese": "ネネ「そ　そうよね・・・。\n　私　かんがえすぎよね。",
+      "draft": "Tessie: Y-yes, you're right... I'm worrying too much.",
+      "english": "Tessie: Y-yes, you're right... I'm worrying too much.",
+      "reason": "Yes branch retains hesitant agreement and the thought that she is overthinking. The reassurance is not proof of future safety.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.252e",
+      "source_sha256": "d8c4c1c19e6935c74ad2b02819e999d568bd10724e18cec79363c6f0cf43ee57",
+      "japanese": "ネネ「そうよね。\n　用心にこしたことないわよね。",
+      "draft": "Tessie: You're right. It pays to be careful.",
+      "english": "Tessie: You're right. We should be careful.",
+      "reason": "No branch agrees that caution is sensible. Natural short English retains this response without reversing the question.",
+      "changed": true
+    },
+    {
+      "id": "event-bank-1.1803",
+      "source_sha256": "ed8ccc81fc709c78c3b23104659646c2fc9dd2071bf3f11dfc5517e564a60d8c",
+      "japanese": "ポポロ「ねえ　ママ～！\n　ぼく　おなかがへっちゃったよ。\nネネ「あらあら　そうね。\n　まずは　おなかの心配よね。\nネネ「それじゃあ　ごはんに　しましょうか。\n\nネネ「あなたも　やすんでくださいな。",
+      "draft": "Tipper: Mum! I'm hungry!\n\nTessie: Oh, of course. We'd better worry about your tummy first!\n\nTessie: Let's have dinner, shall we?\n\nTessie: You have a rest too, dear.",
+      "english": "Tipper: Mum! I'm hungry!\n\nTessie: Oh, of course. We'd better worry about your tummy first!\n\nTessie: Let's have dinner, shall we?\n\nTessie: You have a rest too, dear.",
+      "reason": "Preserve hunger, Tessie's light joke about worrying over his stomach first, dinner, and rest for her husband. Each speaker begins a deliberate page.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1bdf",
+      "source_sha256": "74a5559e3b6b57158b327e3e0313ee194027be869e24497fa4a9e235aa9362a7",
+      "japanese": "鍛冶屋「よぉ～しっ！\n\n鍛冶屋「やっと　王様から\n　城の地下へ入る　おゆるしをもらったぞ！\n鍛冶屋「世界一の鍛冶屋になるために\n　がんばって　{legacy-position:0306}聖なる炎{unclassified-control:05}を手に入れるぞー！\n鍛冶屋「ウオオオオオオー！！！",
+      "draft": "Blacksmith: All right!\n\nBlacksmith: The King finally gave me permission to go beneath the castle!\n\nBlacksmith: I'll get that {color:6}sacred flame{/color} and become the world's best blacksmith!\n\nBlacksmith: RAAAAAAH!",
+      "english": "Blacksmith: All right!\n\nBlacksmith: The King finally gave me permission to go beneath the castle!\n\nBlacksmith: I'll get that {color:6}sacred flame{/color}!\n\nBlacksmith: I'll be the world's best smith!\n\nBlacksmith: RAAAAAAH!",
+      "reason": "Preserve the King's permission, destination beneath the castle, ambition to be the world's best smith and shouted enthusiasm. Sacred flame is a provisional project rendering, not a verified PS1 term. Split ambition into its own page to avoid an orphan word; retain the one yellow span.",
+      "changed": true
+    },
+    {
+      "id": "event-bank-1.1ca5",
+      "source_sha256": "e6d07d642865b86dd165042fdb4f1bba5796cfa0bb877b1623290351ac0a75bf",
+      "japanese": "銀行屋「トホホ・・・。\n　金庫は　もどってきたけど\n銀行屋「モンスターのせいで\n　あのお屋敷は　やっぱり使えません。\n銀行屋「あ～あ　あきらめて\n　西の都にでも　かえろうかなあ。",
+      "draft": "Banker: Oh, dear... I have my safe back, but I still can't use the mansion.\n\nBanker: It's full of monsters!\n\nBanker: Sigh... Perhaps I should give up and go back to the western city.",
+      "english": "Banker: Oh, dear... I got my safe back.\n\nBanker: But monsters still keep me from using the mansion.\n\nBanker: Sigh... Perhaps I should give up and go back to the western city.",
+      "reason": "Having recovered the safe does not clear the mansion of monsters. Preserve his tentative thought of abandoning the bank and returning to the western city. Separate safe recovery and remaining obstacle to avoid an orphan page.",
+      "changed": true
+    },
+    {
+      "id": "event-bank-1.1d53",
+      "source_sha256": "46652bcf7a7249f1103d8c8008662ad16df6accf863cefe240c14e8efb754e90",
+      "japanese": "銀行屋「あれ？　この小屋・・・。\n\n銀行屋「フフフ\n　いいことを思いつきましたよ。",
+      "draft": "Banker: Hmm? This little hut...\n\nBanker: Heh heh! I've had an idea!",
+      "english": "Banker: Hmm? This little hut...\n\nBanker: Heh heh! I've had an idea!",
+      "reason": "Preserve noticing the hut and the pleased idea; do not explain his plan before the next scene.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1da3",
+      "source_sha256": "a7cb3ee7c4393025997c6a09699e9a56e2c7d36c8a51ea01b15f7c993c4a103d",
+      "japanese": "ポポロ「今朝も　おもてで\n　大声を出してる人がいたよね。\nポポロ「ぼく　また目がさめちゃって・・・。\n\nポポロ「ふわーあ。　ねむいや・・・。\n\nネネ「でも　今朝の声は\n　なんだか　うれしそうだったわね。\nネネ「あら？",
+      "draft": "Tipper: Someone was shouting outside again this morning.\n\nTipper: He woke me up again...\n\nTipper: Yaaawn... I'm sleepy.\n\nTessie: But whoever it was sounded happy this morning.\n\nTessie: Oh?",
+      "english": "Tipper: Someone was shouting outside again this morning.\n\nTipper: He woke me up again...\n\nTipper: Yaaawn... I'm sleepy.\n\nTessie: But whoever it was sounded happy this morning.\n\nTessie: Oh?",
+      "reason": "Keep repeated waking, outside shouting, sleepiness and Tessie's observation that today's voice sounded happy. The speaker has not been named by this dialogue.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1e74",
+      "source_sha256": "74f05e8889632d3217c25284cedaf8eb4e42c1cb8caf268b2183344af99a3fd8",
+      "japanese": "銀行屋「あ　　おはようございます。",
+      "draft": "Banker: Ah, good morning!",
+      "english": "Banker: Ah, good morning!",
+      "reason": "Polite morning greeting remains brief.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.1e97",
+      "source_sha256": "8731ed343880e18948014b378af8ddc1a523dedbcedc2de3d692fc561b749b49",
+      "japanese": "ポポロ「おじさん　何してるの？\n\n銀行屋「ふえ～ん。すみませ～ん。\n\n銀行屋「せっかく買ったのに　あの屋敷には\n　まだモンスターが出るんですう。\n銀行屋「グスン・・・。\n\n銀行屋「きのうは金庫をとってきて\n　いただいて　ありがとうございました。\n銀行屋「あつかましい　おねがいですが\n　おたすけついでに\n銀行屋「ここに銀行を開かせてください～。\n\nネネ「あら　ベンリでいいじゃない。\n　私はとっても　うれしいけど・・・。",
+      "draft": "Tipper: What are you doing, mister?\n\nBanker: Waaaah! I'm so sorry!\n\nBanker: I bought that mansion, but it's still full of monsters!\n\nBanker: Sniff...\n\nBanker: Thank you for bringing my safe back yesterday.\n\nBanker: I know it's a lot to ask, but could you do me one more favour?\n\nBanker: Please let me open my bank here!\n\nTessie: How handy! I'd be delighted, but...",
+      "english": "Tipper: What are you doing, mister?\n\nBanker: Waaaah! I'm so sorry!\n\nBanker: I bought that mansion, but it's still full of monsters!\n\nBanker: Sniff...\n\nBanker: Thank you for bringing my safe back yesterday.\n\nBanker: I know it's a lot to ask, but could you do me one more favour?\n\nBanker: May I open a bank here?\n\nTessie: How handy! I'd be delighted, but...",
+      "reason": "Preserve the purchased-but-infested mansion, tearful apology, yesterday's safe recovery, another favour and request to open here. Tessie favours convenience but leaves the decision open. Final request phrased as a clear permission question for the native Yes/No.",
+      "changed": true
+    },
+    {
+      "id": "event-bank-1.202d",
+      "source_sha256": "31b9f04ea009ccce5ac7f1fd11bdc8e572585a752ba47bd2cfea9c841c6191c3",
+      "japanese": "銀行屋「シクシク・・・。\n\nポポロ「パパかわいそうだよ。\n　ぼくからも　おねがい。ね？",
+      "draft": "Banker: Sob... Sob...\n\nTipper: Dad, I feel sorry for him. I'm asking too! Please?",
+      "english": "Banker: Sob... Sob...\n\nTipper: Dad, I feel sorry for him. I'm asking too! Please?",
+      "reason": "Refusal produces tears and Tipper's plea; it does not permanently deny access to the bank. Native request repeats.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.2081",
+      "source_sha256": "51f27d4908daedee253a20449afb0d1e9ba542ddceac7c19ac371287d0006aeb",
+      "japanese": "銀行屋「ありがとうございますう。\n\n銀行屋「コホンッ。さて・・・。\n\n銀行屋「こちらは銀行です。\n　どのようなご用件でしょうか？\nポポロ「銀行屋のおじさんって\n　ゲンキンだね。\n銀行屋「ゴホンッ　ゴホンッ！\n　さて・・・。",
+      "draft": "Banker: Thank you so much!\n\nBanker: Ahem! Now, then...\n\nBanker: Welcome to the bank. How may I help you?\n\nTipper: Money sure cheers him up!\n\nBanker: Ahem! AHEM! Now, then...",
+      "english": "Banker: Thank you so much!\n\nBanker: Ahem! Now, then...\n\nBanker: Welcome to the bank. How may I help you?\n\nTipper: Money sure cheers him up!\n\nBanker: Ahem! AHEM! Now, then...",
+      "reason": "Preserve sudden change from pleading to business, formal greeting and embarrassed coughs. Money sure cheers him up conveys the mercenary mood change and cash association of ゲンキン in childlike English; the Japanese homophone cannot be copied literally.",
+      "changed": false
+    },
+    {
+      "id": "town-common.04b0",
+      "source_sha256": "e386fc2eeb32c4006a3bd5d2172d4ebd1c993f60ff7848f56b7ee283ee659f29",
+      "japanese": "銀行屋「こちらは銀行です。\n　どのような　ご用件でしょうか？",
+      "draft": "Banker: Welcome to the bank. How may I help you?",
+      "english": "Banker: Welcome to the bank. How may I help you?",
+      "reason": "Shared bank greeting matches the new story greeting and asks what service is wanted; service menu itself remains Japanese pending producer audit.",
+      "changed": false
+    },
+    {
+      "id": "town-common.0527",
+      "source_sha256": "77417f0943b74fc453284d4074f6cfd31a3293ed5407bbedb05d199a001217da",
+      "japanese": "銀行屋「それでは・・・。\n　またの　ご利用をお待ちしております。",
+      "draft": "Banker: Until next time, then. We look forward to serving you again.",
+      "english": "Banker: Until next time, then. We look forward to serving you again.",
+      "reason": "Polite farewell invites return without claiming that any transaction occurred.",
+      "changed": false
+    }
+  ],
+  "native_page_review": {
+    "reviewed_on": "2026-09-19",
+    "method": "Read unchanged native captures alongside final Japanese/English source entries; measured pages and three name probes checked separately. Same assistant review.",
+    "findings": "Speaker pages, yellow safe/flame spans, anonymous voice, two-line acquisition centring and Yes/No polarity agree with the source. Blacksmith ambition and banker obstacle were deliberately separated during bilingual review to avoid isolated overflow pages. Banking transaction menu and other results UI remain visibly Japanese and are outside this batch."
+  }
+}

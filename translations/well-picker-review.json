@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Two literal references owned by08051290. Shared original strings remain unchanged. Selected level persistence/flags, bounds and input require native evidence; ordinary unlocking remains separate.",
+  "entries": [
+    {
+      "id": "well-picker.prompt",
+      "source": {
+        "offset": 443384,
+        "end_exclusive": 443413,
+        "raw_hex": "82c782cc838c8378838b82c982a282bd82b582dc82b582e582a4814800",
+        "sha256": "89b8a69f2fb9570ba0f8f01fddc614aea9ebf16d83b14335d07a09cc630950fb",
+        "japanese": "どのレベルにいたしましょう？"
+      },
+      "english": "Which level would you like?",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Independent Japanese reading: a polite choice of well difficulty level and the level-number label. The native %s is a generated two-cell number. Reuse the identically worded owned Remi template with its proportional-width helper; original bounds, input handling and window geometry remain native."
+      }
+    },
+    {
+      "id": "well-picker.level",
+      "source": {
+        "offset": 443416,
+        "end_exclusive": 443427,
+        "raw_hex": "8140838c8378838b257300",
+        "sha256": "4facb7bf51f74f01ae77cc0252c556a98fd5c4747ebbbb495e918897b633c3ee",
+        "japanese": "　レベル%{unclassified-control:73}"
+      },
+      "english": "Level {number}",
+      "status": "reviewed",
+      "prose_review": {
+        "reason": "Independent Japanese reading: a polite choice of well difficulty level and the level-number label. The native %s is a generated two-cell number. Reuse the identically worded owned Remi template with its proportional-width helper; original bounds, input handling and window geometry remain native."
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private monster curse handler. Its carried-item fallback changes exactly one eligible record. Existing static equipped-item/refusal notices use the audited queue mapping. Ordinary monster AI acquisition and other curse callers remain separate.",
+  "entries": [
+    {
+      "id": "curse.274",
+      "table_offset": 628,
+      "source": {
+        "offset": 407424,
+        "end_exclusive": 407438,
+        "raw_hex": "257382cc8ef482a28d558c822100",
+        "sha256": "56b7810cfdb90dbf58519aa197c90d30596eb656a56e8f677ce345b50806db03",
+        "japanese": "%{unclassified-control:73}の呪い攻撃!"
+      },
+      "english": "{actor} {fit}uses a curse attack!",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context review: preserve the named attacker and curse effect. Native2B918 prioritizes one equipped shield, weapon or ring, then curses only the first eligible carried item; the270 fallback therefore says an item, not all possessions. Complete actor field and conditional line break preserve width/byte budgets."
+    },
+    {
+      "id": "curse.270",
+      "table_offset": 624,
+      "source": {
+        "offset": 407440,
+        "end_exclusive": 407460,
+        "raw_hex": "8e9d82bf82e082cc82aa8ef482ed82ea82bd2100",
+        "sha256": "6f032dae8a6be3f1cc2875856342b38a1b9c805e30b61db1e2c5a3bcb8cf293d",
+        "japanese": "持ちものが呪われた!"
+      },
+      "english": "An item was cursed!",
+      "status": "reviewed",
+      "review": "Dedicated Japanese/native-context review: preserve the named attacker and curse effect. Native2B918 prioritizes one equipped shield, weapon or ring, then curses only the first eligible carried item; the270 fallback therefore says an item, not all possessions. Complete actor field and conditional line break preserve width/byte budgets."
+    }
+  ]
+}

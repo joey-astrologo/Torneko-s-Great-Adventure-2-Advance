@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "stage": "dedicated bilingual editorial pass complete; native acceptance recorded separately",
+  "entries": [
+    {
+      "id": "event-bank-1.073a",
+      "source_sha256": "1e7eacde3484a65b0290908202f74220607e30f2168f6231b3a9411b07c96330",
+      "japanese": "{unclassified-control:14}＊＊＊　冒険の１０の心得　＊＊＊\n\n{unclassified-control:14}著者　　王様\n\n\n１　自分とモンスターは順番に動く。\n　　あせることなかれ！\n２　道具を見たり　向きを変えるのは\n　　動作したことにはならん！\n\n３　にげるときは\n　　敵のナナメ攻撃に注意せよ！\n４　歩いているとHPは回復する。\n　　あぶなくなったら　まずにげろ！\n\n５　敵が寝ているか起きているかを\n　　たしかめること！\n　　すべてのモンスターを\n　　たおす必要はない！\n\n６　にげられない時は　ルーラ草をのむ！\n　　まどわし草は　モンスターに投げる！\n７　薬草や弟切草は　HPが最高のときに\n　　のむと　最大HPが少し上がる。\n\n８　いかずちの杖は　必ずあたる！\n　　バシルーラの杖は　敵をとばす！\n９　メダパニの杖は　フラフラにさせ\n　　ラリホーの杖は　相手をねむらせる！\n\n１０　毒で下がった「ちから」は\n　　　毒けし草で　もとにもどす！\n　　　ちからのたねは　そのあとでのむ！\n\n\n{unclassified-control:14}おわりじゃ",
+      "draft": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check whether monsters are asleep or awake. You need not defeat every monster!\n\n6. Eat a Zoom herb when you cannot escape. Throw a Misleader herb at a monster!\n\n7. Eat a Medicinal herb or Super herb at full HP to raise your maximum HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Restore strength lost to poison with an Antidotal herb. Only then should you eat a Seed of strength!\n\n{center}That is all.",
+      "english": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Drink a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, drinking a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then drink a Seed of strength!\n\n{center}That is all.",
+      "reason": "Read all ten Japanese tips independently against the draft. Preserve alternating turns; inspection/facing cost no turn; diagonal danger; walking recovery; sleeping/awake distinction; not all foes need defeating; eat versus throw; full-HP condition and small maximum-HP increase; distinct staff effects; poison recovery before the strength seed. Retain all three centred headings and the King's direct, unembellished voice. Terminology evidence and its limits are recorded in the glossary; no PS1 guide prose or mechanics copied.",
+      "changed": true,
+      "native_page_review": {
+        "before": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check whether monsters are asleep or awake. You need not defeat every monster!\n\n6. Eat a Zoom herb when you cannot escape. Throw a Misleader herb at a monster!\n\n7. Eat a Medicinal herb or Super herb at full HP to raise your maximum HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Restore strength lost to poison with an Antidotal herb. Only then should you eat a Seed of strength!\n\n{center}That is all.",
+        "after": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Eat a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, eating a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then eat a Seed of strength!\n\n{center}That is all.",
+        "reason": "Native capture review found isolated monster!/little. pages. Tips 5-7 now fit two rows each. Tip 10 gives poison recovery and the subsequent strength seed deliberate separate pages. Rechecked against Japanese: asleep/awake, optional fights, eat/throw, full HP, small max-HP gain and recovery-before-seed all retained."
+      },
+      "action_wording_review": {
+        "previous": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Eat a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, eating a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then eat a Seed of strength!\n\n{center}That is all.",
+        "revised": "{center}*** Ten Tips for Adventurers ***\n\n{center}By the King\n\n1. You and the monsters take turns. Do not rush!\n\n2. Checking your items or changing direction does not use up a turn.\n\n3. When fleeing, watch out for enemies attacking diagonally!\n\n4. Walking restores HP. When danger threatens, run away first!\n\n5. Check if monsters are awake or asleep. You needn't defeat them all!\n\n6. Drink a Zoom herb if trapped! Throw Misleader herbs at monsters!\n\n7. At full HP, drinking a Medicinal herb or Super herb raises max HP a little.\n\n8. A Lightning staff never misses! A Bazoom staff sends enemies away!\n\n9. A Fuddle staff confuses your foe. A Snooze staff puts your foe to sleep!\n\n10. Use an Antidotal herb to restore strength lost to poison.\n\nOnly then drink a Seed of strength!\n\n{center}That is all.",
+        "reason": "Match native Drink action for herbs and seeds, T2 のむ, and current item descriptions. Bread retains Eat."
+      }
+    },
+    {
+      "id": "event-bank-1.28fc",
+      "source_sha256": "6308cbf9df4331385553c47411f66a947daf396b052572ddfb18bf34d4471be6",
+      "japanese": "老人「いかん。いかんぞ。\n　ここも　すでに・・・。",
+      "draft": "Old man: No. This will not do. Even here, already...",
+      "english": "Old man: No. This will not do. Even here, already...",
+      "reason": "Keep the old man unidentified and his conclusion unfinished. No invented explanation of the mansion.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.449e",
+      "source_sha256": "a04602d8f3cdbbeadecc863cd2154c8dbec05be142b754221ffbadc12d8b8ac8",
+      "japanese": "銀行屋「はああ・・・。\n\n銀行屋「銀行を　はじめようと思って\n　この屋敷を買ったのに\n銀行屋「モンスターが\n　すみついちゃったんです。\n銀行屋「オマケに　開店資金の入った\n　{legacy-position:0306}金庫{unclassified-control:05}までモンスターに盗まれちゃったし・・。\n銀行屋「ああ　ついてないですぅ。\n\n銀行屋「ねえ　あなた。\n\n銀行屋「どなたか知りませんが　私の{legacy-position:0306}金庫{unclassified-control:05}を\n　とり返してきていただけませんか？",
+      "draft": "Banker: Sigh...\n\nBanker: I bought this mansion to open a bank, but monsters have moved in!\n\nBanker: They even stole my {color:6}safe{/color}, with all the money I needed to open up. What rotten luck...\n\nBanker: Say... I know we've never met, but would you bring back my {color:6}safe{/color} for me?",
+      "english": "Banker: Sigh...\n\nBanker: I bought this mansion to open a bank, but monsters have moved in!\n\nBanker: They even stole my {color:6}safe{/color}, with the money to open my bank!\n\nBanker: What rotten luck...\n\nBanker: We haven't met, but could you get my {color:6}safe{/color} back?",
+      "reason": "Preserve the planned bank, occupied mansion, stolen safe containing startup funds, and request to a stranger. Remove unsupported emphasis that all his money was stolen. Retain both yellow safe spans and the Yes/No request sense.",
+      "changed": true,
+      "native_page_review": {
+        "before": "Banker: Sigh...\n\nBanker: I bought this mansion to open a bank, but monsters have moved in!\n\nBanker: They even stole my {color:6}safe{/color}, with the money I needed to open up. What rotten luck...\n\nBanker: Say... I know we've never met, but would you bring back my {color:6}safe{/color} for me?",
+        "after": "Banker: Sigh...\n\nBanker: I bought this mansion to open a bank, but monsters have moved in!\n\nBanker: They even stole my {color:6}safe{/color}, with the money to open my bank!\n\nBanker: What rotten luck...\n\nBanker: We haven't met, but could you get my {color:6}safe{/color} back?",
+        "reason": "Read the Japanese again while reviewing every new dialogue page. Keep the request to a stranger, bank startup money, stolen safe and rotten luck; give the lament an intentional page and avoid a trailing for me?/back? page. Keep the odd small demon and uncertain location around 6F together, eliminating its orphan page. Both yellow spans and choice sense are unchanged."
+      }
+    },
+    {
+      "id": "event-bank-1.45fc",
+      "source_sha256": "b0f1b58b716d569c4000a6e1aa0700bc0918eb27f185c3c60b2362b9e038096f",
+      "japanese": "銀行屋「そりゃそうですよねえ。\n\n銀行屋「他人のあなたに　そこまで\n　甘えられませんよね・・・はああ。",
+      "draft": "Banker: Of course... I can't ask a stranger to do so much for me. Sigh...",
+      "english": "Banker: Of course... I can't ask a stranger to do so much for me. Sigh...",
+      "reason": "The No response accepts refusal with disappointment; it does not scold or promise a reward.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.4660",
+      "source_sha256": "d155c8a95b2126ef9842236dc9d48340c1073d86b84a794ac53f55108e0a772c",
+      "japanese": "銀行屋「・・・え？　ホントですか！\n　ぜひ　おねがいします。",
+      "draft": "Banker: ...Huh? Really? Oh, please do!",
+      "english": "Banker: ...Huh? Really? Oh, please do!",
+      "reason": "The Yes response expresses surprise and relief, without inventing payment.",
+      "changed": false
+    },
+    {
+      "id": "event-bank-1.469c",
+      "source_sha256": "8986291e9e0e5fa765ccbb81bb6eadd05eb594a068cc62f849eb687481efc258",
+      "japanese": "銀行屋「よろしくおねがいします！\n\n銀行屋「私の{legacy-position:0306}金庫{unclassified-control:05}を盗んだ　ヘンなチビの\n　悪魔は　たぶん６Fぐらいにいると思います。",
+      "draft": "Banker: I'm counting on you!\n\nBanker: I think that strange little demon who stole my {color:6}safe{/color} is somewhere around 6F.",
+      "english": "Banker: I'm counting on you!\n\nBanker: The odd little demon who stole my {color:6}safe{/color} should be around 6F.",
+      "reason": "Preserve the strange small demon, highlighted safe and uncertain location around 6F. The GBA source governs the floor clue, regardless of another edition's dungeon length.",
+      "changed": true,
+      "native_page_review": {
+        "before": "Banker: I'm counting on you!\n\nBanker: I think that strange little demon who stole my {color:6}safe{/color} is somewhere around 6F.",
+        "after": "Banker: I'm counting on you!\n\nBanker: The odd little demon who stole my {color:6}safe{/color} should be around 6F.",
+        "reason": "Read the Japanese again while reviewing every new dialogue page. Keep the request to a stranger, bank startup money, stolen safe and rotten luck; give the lament an intentional page and avoid a trailing for me?/back? page. Keep the odd small demon and uncertain location around 6F together, eliminating its orphan page. Both yellow spans and choice sense are unchanged."
+      }
+    },
+    {
+      "id": "event-bank-1.48bd",
+      "source_sha256": "3e1e013388433238cf5cfdd4dbf1731cc2fad0febc4d77b311cabd281ad0d2dd",
+      "japanese": "銀行屋「・・・・・・！！！\n\n銀行屋「今の人　なんだったんでしょう？\n　私　モンスターかと思いました！\n銀行屋「な　なんだか\n　ますます不安になってきました。\n銀行屋「なるべく　はやめにおねがいします！",
+      "draft": "Banker: ...!!!\n\nBanker: Who was that? I thought he was a monster!\n\nBanker: N-now I'm even more worried. Please hurry back!",
+      "english": "Banker: ...!!!\n\nBanker: Who was that? I thought he was a monster!\n\nBanker: N-now I'm even more worried. Please help me as soon as you can!",
+      "reason": "Retain shock, mistaking the old man for a monster, increased anxiety and request for prompt help. Revise the final appeal to avoid implying an immediate return command.",
+      "changed": true
+    },
+    {
+      "id": "rom.00061d38",
+      "source_sha256": "acdb6d7ca6ae1385f5fad02f409d44abdbfc9048c943b5f0c793e186135b25b0",
+      "japanese": "おつかれさまでした",
+      "draft": "Thanks for playing!",
+      "english": "Thanks for playing!",
+      "reason": "Natural game-session farewell for おつかれさまでした. The native quit formatter supplies its centring; do not add a duplicate control to this source.",
+      "changed": false
+    },
+    {
+      "id": "rom.00061ffc",
+      "source_sha256": "cceab4595c5d3e6ef28bfa7d8d1131d6e13fffefca500a12f449d696315b6fd3",
+      "japanese": "{unclassified-control:14}冒険の書の記録がおわりました",
+      "draft": "{center}Adventure Log saved.",
+      "english": "{center}Adventure Log saved.",
+      "reason": "Save completion, using the established Adventure Log label. Retain native centring. Also checked as the first part of the save-and-quit message.",
+      "changed": false
+    },
+    {
+      "id": "rom.0006c144",
+      "source_sha256": "2b9b1afe63c55d2c1bc040cb325ec1070ff8c2909d70770af8477d1effe2b71b",
+      "japanese": "　広場",
+      "draft": "Square",
+      "english": "Square",
+      "reason": "Village square, not a new town/dungeon name. Full label fits.",
+      "changed": false
+    },
+    {
+      "id": "rom.0006c154",
+      "source_sha256": "521f7d5fa1f5238249bd41551b60331ccb6bf1b56f3b552a6d37dbec2fbd1d54",
+      "japanese": "　王様のお城",
+      "draft": "King's castle",
+      "english": "King's castle",
+      "reason": "A destination, the King's castle; keep the possessive and measured travel-menu inset.",
+      "changed": false
+    },
+    {
+      "id": "rom.00148304",
+      "source_sha256": "ed4d08e2f6518b1d855a9fcf62f7e24ffce5f437f2f68841638af7add13874ca",
+      "japanese": "%{unclassified-control:73}村のデータがあります。\n上書きセーブしますが よろしいですか？",
+      "draft": "Overwrite the Adventure Log\nfor {village} Village?",
+      "english": "Overwrite the Adventure Log\nfor {village} Village?",
+      "reason": "Preserve the overwrite decision and the existing save's village name, not the player name. Naming the Adventure Log matches established save terminology. Two authored rows fit seven widest Japanese glyphs; the formatter still receives one %s.",
+      "changed": false
+    },
+    {
+      "id": "town-common.2a76",
+      "source_sha256": "647757c7a70719d5c8724ff31ec3511a2cdff3ca462f2c9e6704304a312a295f",
+      "japanese": "アイテムを何も持っていません。",
+      "draft": "You are not carrying any items.",
+      "english": "You are not carrying any items.",
+      "reason": "Keep the empty-inventory statement; do not imply that the storehouse is empty.",
+      "changed": false
+    },
+    {
+      "id": "town-common.3dec",
+      "source_sha256": "fdde639b71218c1866e74b5028242016032cb213e4e3ed10a46de53b55639d65",
+      "japanese": "  アイテムを見る\n  アイテムを売る\n  セーブして続ける\n  セーブしておわる",
+      "draft": "View items\nSell items\nSave and continue\nSave and quit",
+      "english": "View items\nSell items\nSave and continue\nSave and quit",
+      "reason": "Four actions retain the native order: viewing, selling, saving while continuing, saving while quitting. Storehouse deposit/withdraw options are absent in this broken-storehouse state. Full labels fit the measured 120-pixel window.",
+      "changed": false
+    },
+    {
+      "id": "town-common.4090",
+      "source_sha256": "647757c7a70719d5c8724ff31ec3511a2cdff3ca462f2c9e6704304a312a295f",
+      "japanese": "アイテムを何も持っていません。",
+      "draft": "You are not carrying any items.",
+      "english": "You are not carrying any items.",
+      "reason": "Same sentence as the viewing reply, but preserve this separate source identity used by selling.",
+      "changed": false
+    },
+    {
+      "id": "town-common.40f4",
+      "source_sha256": "d7dd853fa3745b7f40f94bbb24ffa79315fc8648b5c2d6deba04027b074a46bd",
+      "japanese": "記録するのをやめました。",
+      "draft": "Saving cancelled.",
+      "english": "Saving cancelled.",
+      "reason": "Confirmation that recording was cancelled; do not call it a save failure.",
+      "changed": false
+    }
+  ],
+  "reviewed_on": "2026-09-19",
+  "reviewer": "Codex; separate draft and bilingual editorial passes by the same assistant, not independent human review",
+  "scope": "16 sources: red book, broken-storehouse blue-book actions and save flows, travel destinations, first banker branches/old-man scene and 6F reminder. Green-book sources remain untranslated."
+}

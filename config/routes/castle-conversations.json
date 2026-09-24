@@ -1,0 +1,13 @@
+{
+  "id": "first-castle-conversations",
+  "description": "Each route starts from the naturally reached first-audience completion checkpoint at town coordinates 448,288. Restore that checkpoint between conversations; use ordinary movement and A only.",
+  "start_position": [448, 288],
+  "routes": [
+    {"id": "king-repeat", "steps": [{"key": "UP", "hold": 40}]},
+    {"id": "left-adviser", "steps": [{"key": "LEFT", "hold": 16}, {"key": "UP", "hold": 8}]},
+    {"id": "right-courtier", "steps": [{"key": "RIGHT", "hold": 16}, {"key": "UP", "hold": 8}]},
+    {"id": "left-guard", "steps": [{"key": "LEFT", "hold": 16}]},
+    {"id": "right-guard-yes", "choice": "yes", "steps": [{"key": "RIGHT", "hold": 16}]},
+    {"id": "right-guard-no", "choice": "no", "steps": [{"key": "RIGHT", "hold": 16}]}
+  ]
+}

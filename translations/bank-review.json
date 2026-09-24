@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Bank root, transactions and rewards. Language review is distinct from native acceptance; balances/persistence/reward cases are recorded separately.",
+  "entries": [
+    {
+      "id": "bank.81",
+      "index": 81,
+      "source": 1260,
+      "source_hex": "202082a082b882af82e906403a2003052564054782dc82c50d202082d082ab82be82b706403a2003052564054782dc82c50d202082e282df82e900",
+      "source_sha256": "fb4910520a30d82b94ab0649374c178fa8da4b5891760fb8098ae041a641ef09",
+      "japanese": "  あずける{pixel-x:0640}: {legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gまで\n  ひきだす{pixel-x:0640}: {legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gまで\n  やめる",
+      "english": "Deposit\nWithdraw\nLeave",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.83",
+      "index": 83,
+      "source": 1383,
+      "source_hex": "8be28d7389ae817589bd8353815b838b8368814082a082b882af82dc82b782a981480d81408cbb8ddd82cc8f8a8e9d8be03a03052564054700",
+      "source_sha256": "567f5da09cf7c7bbdaccaa20a0f6342e619e2965e71d9ea9254e884abc468448",
+      "japanese": "銀行屋「何ゴールド　あずけますか？\n　現在の所持金:{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}G",
+      "english": "Banker: How much will you deposit?\nCarrying: {amount}G",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.84",
+      "index": 84,
+      "source": 1440,
+      "source_hex": "8be28d7389ae817582a082c882bd82cd03052564054782b582a90d814082a88e9d82bf82c582cd82a082e882dc82b982f181420d8be28d7389ae817582ba82f182d4814082a082b882af82dc82b782a9814800",
+      "source_sha256": "4593aa354f10563d1c41aa44b738eacd248b8ed5a20b739e027f98cbed41c324",
+      "japanese": "銀行屋「あなたは{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gしか\n　お持ちではありません。\n銀行屋「ぜんぶ　あずけますか？",
+      "english": "Banker: You only have {amount}G.\nDeposit it all?",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.85",
+      "index": 85,
+      "source": 1523,
+      "source_hex": "8be28d7389ae817582a882a082b882a982e882c582ab82e98cc0937882f00d814082b182a682c482b582dc82c182c482a282dc82b781420d8be28d7389ae817582a882a082b882a982e882c582ab82c882a295aa82cd0d0d8be28d7389ae817582e082a482b582ed82af814082a082e882dc82b982f182aa0d814082c882ad82c882c182c482b582dc82a282dc82b781420d8be28d7389ae817582bb82ea82c582e0814082e682eb82b582a282c582b782a9814800",
+      "source_sha256": "abfbf6570aa4d8ae277778dd10fce7e9e3e9e44550eb1d195164fea228bdbdb2",
+      "japanese": "銀行屋「おあずかりできる限度を\n　こえてしまっています。\n銀行屋「おあずかりできない分は\n\n銀行屋「もうしわけ　ありませんが\n　なくなってしまいます。\n銀行屋「それでも　よろしいですか？",
+      "english": "Banker: This exceeds the bank limit.\nAny excess gold will be lost.\n\nProceed anyway?",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.86",
+      "index": 86,
+      "source": 1704,
+      "source_hex": "8be28d7389ae817582a082e882aa82c682a482b282b482a282dc82b7814200",
+      "source_sha256": "5cdecb4745cfbf261fea75c49ea3dbf4e10e6110b769b424d13d8626a1f76804",
+      "japanese": "銀行屋「ありがとうございます。",
+      "english": "Banker: Thank you.",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.88",
+      "index": 88,
+      "source": 1830,
+      "source_hex": "8be28d7389ae817582b582c282ea82a282c582b782aa0d81408353815b838b836882f0814082a88e9d82bf82c582cd82c882a282e682a482c582b782cb00",
+      "source_sha256": "92870ed3f327043b9fb1e4f702163da213ff07d680ef5f6b393d6270be28a4ec",
+      "japanese": "銀行屋「しつれいですが\n　ゴールドを　お持ちではないようですね",
+      "english": "Banker: You aren't carrying any gold.",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.94",
+      "index": 94,
+      "source": 2255,
+      "source_hex": "8be28d7389ae817582e082a482b582ed82af82a082e882dc82b982f182aa0d81408353815b838b836882cd814082a882a082b882a982e882b582c482a282dc82b982f1814200",
+      "source_sha256": "1d7653c8eddc3f8e524f2f4d4920eb853ab08b13cc7f992e00d5a88088b5a1f3",
+      "japanese": "銀行屋「もうしわけありませんが\n　ゴールドは　おあずかりしていません。",
+      "english": "Banker: You have no gold deposited.",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.95",
+      "index": 95,
+      "source": 2325,
+      "source_hex": "8be28d7389ae817582a282ad82e782d082ab82be82b582dc82b782a981480d81408cbb8ddd82cc8e638d823a03052564054700",
+      "source_sha256": "230a23bb9fd0cf48c56ac2f9e1bdd8f56644caeedd70bf05b7b7dec7f9bb5deb",
+      "japanese": "銀行屋「いくらひきだしますか？\n　現在の残高:{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}G",
+      "english": "Banker: How much will you withdraw?\nBalance: {amount}G",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.96",
+      "index": 96,
+      "source": 2376,
+      "source_hex": "8be28d7389ae817582a282dc82cc8e638d8282cd81400d030581402564054782c582b782cc82c50d8be28d7389ae817591538a7a82d082ab82be82b582dc82b782aa0d814082e682eb82b582a282c582b782a9814800",
+      "source_sha256": "c31a01694a61972bd9ee30efadec2248670239db4f286f7caa2c40759614e55a",
+      "japanese": "銀行屋「いまの残高は　\n{legacy-position:0305}　%{unclassified-control:64}{unclassified-control:05}Gですので\n銀行屋「全額ひきだしますが\n　よろしいですか？",
+      "english": "Banker: Your balance is {amount}G.\nWithdraw it all?",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.97",
+      "index": 97,
+      "source": 2462,
+      "source_hex": "8be28d7389ae817582b182f182c882c982bd82ad82b382f182cc8353815b838b836882cd0d814082a88e9d82bf82c982c882e982b182c682cd814082c582ab82dc82b982f181420d8be28d7389ae81758e9d82c482c882a295aa82cc8353815b838b836882cd0d814082c882ad82c882c182c482b582dc82a282dc82b781420d8be28d7389ae817582bb82ea82c582e0814082e682eb82b582a282c582b782a9814800",
+      "source_sha256": "c23161759aeba8a03abc3a33d69a5d021fb9a0634108867a33771bc64c6b1335",
+      "japanese": "銀行屋「こんなにたくさんのゴールドは\n　お持ちになることは　できません。\n銀行屋「持てない分のゴールドは\n　なくなってしまいます。\n銀行屋「それでも　よろしいですか？",
+      "english": "Banker: You can't carry that much.\nAny excess gold will be lost.\n\nProceed anyway?",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.98",
+      "index": 98,
+      "source": 2625,
+      "source_hex": "8be28d7389ae817582d982a982c9814082c882c982a90d814082b2977082cd82b282b482a282dc82b782a9814800",
+      "source_sha256": "55e436df2d58034a42c1f33804acf099f9c282c7faf375829340c2a6e7f95e40",
+      "japanese": "銀行屋「ほかに　なにか\n　ご用はございますか？",
+      "english": "Banker: Anything else?",
+      "status": "reviewed",
+      "review": "Independent translation and bilingual editorial review. Preserve numeric amounts, deposit/withdraw order, loss-of-excess warning and yes/no intent. Eight-digit dynamic reserve checked separately."
+    },
+    {
+      "id": "bank.87",
+      "index": 87,
+      "english": "Banker: Your deposits have reached\n{amount}G!\n\nBanker: I have a gift for you.",
+      "source_hex": "8be28d7389ae817582a082b882af82c482a282bd82be82a282bd81408353815b838b836882aa0d030581402564054782c982c882c182bd82cc82c50d8be28d7389ae81758376838c835b8393836782f082b382b582a082b082dc82b7814200",
+      "source_sha256": "c9a7a4e02e87eb2360b2db44953db8eb536090043ff832c938e1c19a3b8582fa",
+      "status": "reviewed",
+      "review": "Independent T2 translation; bilingual pass preserves deposit threshold, full-inventory refusal, reward count, gift recipient and next-threshold condition. Native reward cases required. Reward fragment retains player and raw item-name fields, with safe pagination for up to three gifts."
+    },
+    {
+      "id": "bank.89",
+      "index": 89,
+      "english": "Banker: ...Or I would, but your\ninventory seems to be full.\n\nBanker: Please make some room\nand come back.",
+      "source_hex": "8be28d7389ae817581458145814582c68e7682c182bd82cc82c582b782aa0d81408e9d82bf82e082cc82aa814082a282c182cf82a282cc82e682a482c582b782cb81420d8be28d7389ae81758e9d82bf82e082cc82f090ae979d82b582c482a982e70d814082dc82bd814082a882b182b582ad82be82b382a2814200",
+      "source_sha256": "833fd1fa3d0ddb7df86c6eed002424619d177ae299ec5398a25743de35f80f91",
+      "status": "reviewed",
+      "review": "Independent T2 translation; bilingual pass preserves deposit threshold, full-inventory refusal, reward count, gift recipient and next-threshold condition. Native reward cases required. Reward fragment retains player and raw item-name fields, with safe pagination for up to three gifts."
+    },
+    {
+      "id": "bank.90",
+      "index": 90,
+      "english": "Banker: You have {count} gifts\nto collect!",
+      "source_hex": "8be28d7389ae817582bf82c882dd82c981408376838c835b839383679569909482cd0d81402564956982c582a082e882dc82b7814900",
+      "source_sha256": "3964c53c632a2c605d420a49bf88bc15fc2338f9d5632a2525207abad651a276",
+      "status": "reviewed",
+      "review": "Independent T2 translation; bilingual pass preserves deposit threshold, full-inventory refusal, reward count, gift recipient and next-threshold condition. Native reward cases required. Reward fragment retains player and raw item-name fields, with safe pagination for up to three gifts."
+    },
+    {
+      "id": "bank.91",
+      "index": 91,
+      "english": "{player} got {item}!",
+      "source_hex": "7e82cd20257382f082e082e782c182bd81490d00",
+      "source_sha256": "9127d2160f0d645881e3b2b67bb4c2d68dcd9c4f82ac1f91a8082a35658380d1",
+      "status": "reviewed",
+      "review": "T2 received-gift meaning retained in a concise one-line fragment. Widest player name 98px and base item name 80px fit 216px together. Native one/three-gift concatenation and page counts require validation."
+    },
+    {
+      "id": "bank.92",
+      "index": 92,
+      "english": "Banker: Your next gift awaits\nwhen your balance reaches {amount}G.",
+      "source_hex": "8be28d7389ae817582c282ac82cc8376838c835b8393836782cd81408353815b838b836882aa0d814003052564054782c982c882c182bd82c682ab82c582b7814200",
+      "source_sha256": "ee37b58eafb784c000f40fd6358eebbbe6e562a54bd162f628a69adca940694a",
+      "status": "reviewed",
+      "review": "Independent T2 translation; bilingual pass preserves deposit threshold, full-inventory refusal, reward count, gift recipient and next-threshold condition. Native reward cases required. Reward fragment retains player and raw item-name fields, with safe pagination for up to three gifts."
+    },
+    {
+      "id": "bank.93",
+      "index": 93,
+      "english": "Banker: When your deposits reach\na new milestone, I'll give you a gift.",
+      "source_hex": "8be28d7389ae817582a082b882af82c482a282bd82be82a282bd0d81408353815b838b836882aa814088ea92e882cc8be08a7a82c982c882e982bd82d182c90d8be28d7389ae81758376838c835b8393836782f082b382b582a082b082dc82b7814200",
+      "source_sha256": "11607a87d46ce9869a26459b1a16556991ead4105e99ca0adaa75d1f86addb67",
+      "status": "reviewed",
+      "review": "Independent T2 translation; bilingual pass preserves deposit threshold, full-inventory refusal, reward count, gift recipient and next-threshold condition. Native reward cases required. Reward fragment retains player and raw item-name fields, with safe pagination for up to three gifts."
+    }
+  ]
+}

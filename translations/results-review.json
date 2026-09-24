@@ -1,0 +1,930 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned results and adventure-history monster-defeat line and raw actor table; all other result/stat/death consumers remain separate.",
+  "entries": [
+    {
+      "id": "results.monster-defeat",
+      "table_offset": 1620,
+      "source": {
+        "offset": 399312,
+        "end_exclusive": 399327,
+        "raw_hex": "257382c982bd82a882b382ea82bd00",
+        "sha256": "bb0cd34f620dc7c79a88823531ff1ddf8507c1aea6ab28cb80a1b534eb85aab2",
+        "japanese": "%{unclassified-control:73}にたおされた"
+      },
+      "english": "Defeated by {actor}.",
+      "status": "reviewed",
+      "review": "Japanese %sにたおされた identifies who defeated the player. Preserve that cause and one actor argument. Raw actor English is independently reviewed in monsters-review.json; do not use dungeon aliases for Someone or False priest."
+    },
+    {
+      "id": "results.cause-0",
+      "reason": 0,
+      "table_offset": 1624,
+      "source": {
+        "offset": 399300,
+        "end_exclusive": 399309,
+        "raw_hex": "82c882ba82be82a900",
+        "sha256": "ac8c9a361c833ae5a59e0898047328eb71ac052a542704ff72f8bbda55a3498e",
+        "japanese": "なぜだか"
+      },
+      "english": "for unknown reasons",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-1",
+      "reason": 1,
+      "table_offset": 1628,
+      "source": {
+        "offset": 399292,
+        "end_exclusive": 399299,
+        "raw_hex": "82a482a682c400",
+        "sha256": "614114e860c39effebb86d77cf0a3fae485be3b225b40781873a513bf6f11b23",
+        "japanese": "うえて"
+      },
+      "english": "from starvation",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-2",
+      "reason": 2,
+      "table_offset": 1632,
+      "source": {
+        "offset": 399272,
+        "end_exclusive": 399291,
+        "raw_hex": "82ad82b382e882ab82c182bd8370839382c500",
+        "sha256": "fb612ba4db6dd6c776d98e0e9913bf289330f98ae4345f89ffa4b9a9f9bd75a5",
+        "japanese": "くさりきったパンで"
+      },
+      "english": "from Putrid bread",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-3",
+      "reason": 3,
+      "table_offset": 1636,
+      "source": {
+        "offset": 399256,
+        "end_exclusive": 399271,
+        "raw_hex": "485082cc82d682e98ef495b682c500",
+        "sha256": "ec9087a7cf000f9e12572745b1fe980fd4b5f719a8d93a86dd7d16eea67b4dc7",
+        "japanese": "HPのへる呪文で"
+      },
+      "english": "from an HP-lowering spell",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-4",
+      "reason": 4,
+      "table_offset": 1640,
+      "source": {
+        "offset": 399236,
+        "end_exclusive": 399253,
+        "raw_hex": "82a882c682b58c8a82c982a882bf82c400",
+        "sha256": "e29be9caf0c5aa8851f57dece73502426174eeae1ee91ada9709a8b78acb7c80",
+        "japanese": "おとし穴におちて"
+      },
+      "english": "after falling into a pit",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-5",
+      "reason": 5,
+      "table_offset": 1644,
+      "source": {
+        "offset": 399212,
+        "end_exclusive": 399235,
+        "raw_hex": "82a282cc82bf82cc8e7797d682f082cd82b882b582c400",
+        "sha256": "87193c8a012ad269dba5a72e838203f9532da85f27b41fa49a975f5248074815",
+        "japanese": "いのちの指輪をはずして"
+      },
+      "english": "after removing a Life ring",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-6",
+      "reason": 6,
+      "table_offset": 1648,
+      "source": {
+        "offset": 399192,
+        "end_exclusive": 399211,
+        "raw_hex": "949a94ad82cc8e7797d682f082cd82df82c400",
+        "sha256": "d5a52ba0d139f9187a107d4174804c0c761659ee62a5f8a69cee17844330b50c",
+        "japanese": "爆発の指輪をはめて"
+      },
+      "english": "after equipping an Explosion ring",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-7",
+      "reason": 7,
+      "table_offset": 1652,
+      "source": {
+        "offset": 399176,
+        "end_exclusive": 399191,
+        "raw_hex": "949a92658ae282cc949a94ad82c500",
+        "sha256": "956a88fb67ba38c891decea77e4a1a4b1b0498ae4f8c8eed025cac99d52e912f",
+        "japanese": "爆弾岩の爆発で"
+      },
+      "english": "in a Rockbomb's explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-8",
+      "reason": 8,
+      "table_offset": 1656,
+      "source": {
+        "offset": 399156,
+        "end_exclusive": 399175,
+        "raw_hex": "935694b182cc949a94ad82f082a082d182c400",
+        "sha256": "feaf535d50c3064d48f71acbf3718f91ebcd94e7a062e853b375b0a2f70eaca2",
+        "japanese": "天罰の爆発をあびて"
+      },
+      "english": "in a divine punishment explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-9",
+      "reason": 9,
+      "table_offset": 1660,
+      "source": {
+        "offset": 399132,
+        "end_exclusive": 399153,
+        "raw_hex": "835f8381815b835782cc8fb082f082d382f182c500",
+        "sha256": "cf9827547c08b704ebd9de988af95f250ade0104b13f195d854c99cc6ad89636",
+        "japanese": "ダメージの床をふんで"
+      },
+      "english": "on a damaging floor",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-10",
+      "reason": 10,
+      "table_offset": 1664,
+      "source": {
+        "offset": 399116,
+        "end_exclusive": 399131,
+        "raw_hex": "90ce82aa82a882bf82c482ab82c400",
+        "sha256": "9d694f53c39fa44d37d639a45eccd8e6783980121b8f6a79518cd6dc1ed9741b",
+        "japanese": "石がおちてきて"
+      },
+      "english": "under a falling rock",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-11",
+      "reason": 11,
+      "table_offset": 1668,
+      "source": {
+        "offset": 399096,
+        "end_exclusive": 399115,
+        "raw_hex": "926e978b82cc838f836982f082d382f182c500",
+        "sha256": "70f38ca75e4b26be04333be5e932dee48054ec9ea9a57d4b8014e7ecb326ffb2",
+        "japanese": "地雷のワナをふんで"
+      },
+      "english": "after triggering a land mine",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-12",
+      "reason": 12,
+      "table_offset": 1672,
+      "source": {
+        "offset": 399068,
+        "end_exclusive": 399093,
+        "raw_hex": "94f282f182c582ab82bd93538b8582c982a082bd82c182c400",
+        "sha256": "de47c367c1797e072305de88f35ed830d7497c66fa88fdd1c13e49bd59412bcf",
+        "japanese": "飛んできた鉄球にあたって"
+      },
+      "english": "when struck by an iron ball",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-13",
+      "reason": 13,
+      "table_offset": 1676,
+      "source": {
+        "offset": 399052,
+        "end_exclusive": 399067,
+        "raw_hex": "898a82cc835f8381815b835782c500",
+        "sha256": "012fd28fe0176ba1bda121667ca146bf30bf2ac84eac6fad71885313a88996bf",
+        "japanese": "炎のダメージで"
+      },
+      "english": "from fire damage",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-14",
+      "reason": 14,
+      "table_offset": 1680,
+      "source": {
+        "offset": 399028,
+        "end_exclusive": 399049,
+        "raw_hex": "82a282a982b882bf82cc8ff182f082a482af82c400",
+        "sha256": "73340ba55a54ceb98ee8f46c382eaabeb070ee9a45d028e4c2adefab4e8ec259",
+        "japanese": "いかずちの杖をうけて"
+      },
+      "english": "from a Lightning staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-15",
+      "reason": 15,
+      "table_offset": 1684,
+      "source": {
+        "offset": 399008,
+        "end_exclusive": 399025,
+        "raw_hex": "8355834c82cc8ff182f082a482af82c400",
+        "sha256": "801e1a5b32938382b853a2eb069f6cbfdc0a6f1b951a8269f0a4a74b517cd582",
+        "japanese": "ザキの杖をうけて"
+      },
+      "english": "from a Whack staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-16",
+      "reason": 16,
+      "table_offset": 1688,
+      "source": {
+        "offset": 398988,
+        "end_exclusive": 399007,
+        "raw_hex": "82e082eb82cd82cc8ff182f082a482af82c400",
+        "sha256": "1fcf31b9bc216034384fc1c6858471509466510340d6a492b6fdd2d43e4d71c5",
+        "japanese": "もろはの杖をうけて"
+      },
+      "english": "from a Double-edged staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-17",
+      "reason": 17,
+      "table_offset": 1692,
+      "source": {
+        "offset": 398968,
+        "end_exclusive": 398985,
+        "raw_hex": "8adb93be82cc8ff182f082a482af82c400",
+        "sha256": "18ed1f05a161d856765d403e60378a620a1115aff6611ccf342901dfd487285d",
+        "japanese": "丸得の杖をうけて"
+      },
+      "english": "from a Great gain staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-18",
+      "reason": 18,
+      "table_offset": 1696,
+      "source": {
+        "offset": 398944,
+        "end_exclusive": 398967,
+        "raw_hex": "82d382ab82c682ce82b582cc8ff182f082a482af82c400",
+        "sha256": "abf8e79bbb204a954275126c5a67b7c0d3aaa9b24e483baab78fb31e09a046d1",
+        "japanese": "ふきとばしの杖をうけて"
+      },
+      "english": "from a Knockback staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-19",
+      "reason": 19,
+      "table_offset": 1700,
+      "source": {
+        "offset": 398920,
+        "end_exclusive": 398941,
+        "raw_hex": "89ce96f29ae282c982dc82ab82b182dc82ea82c400",
+        "sha256": "97d45548e031cc57eda9b0c9219b36d2e398741b29e17258c1937aa3bcf30290",
+        "japanese": "火薬壺にまきこまれて"
+      },
+      "english": "in a Gunpowder pot's explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-20",
+      "reason": 20,
+      "table_offset": 1704,
+      "source": {
+        "offset": 398900,
+        "end_exclusive": 398917,
+        "raw_hex": "91e591b982cc8ff182f082a482af82c400",
+        "sha256": "881d03e28b72048e10927b9b3f4fa201159d046ac88010ecea266dd17e66f90c",
+        "japanese": "大損の杖をうけて"
+      },
+      "english": "from a Great loss staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-22",
+      "reason": 22,
+      "table_offset": 1712,
+      "source": {
+        "offset": 398876,
+        "end_exclusive": 398895,
+        "raw_hex": "93c596ee82cc82ed82c882f082d382f182c500",
+        "sha256": "4b31acc9a22e685ee62c477b59bf50c2a19cb03923c7dcacb2b2fe9245290d3f",
+        "japanese": "毒矢のわなをふんで"
+      },
+      "english": "after triggering a poison-arrow trap",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-23",
+      "reason": 23,
+      "table_offset": 1716,
+      "source": {
+        "offset": 398856,
+        "end_exclusive": 398875,
+        "raw_hex": "949a94ad82c982dc82ab82b182dc82ea82c400",
+        "sha256": "07426462078e9fc51646529633a0faff6f1ca955efdfe30c47875b2c070eedfe",
+        "japanese": "爆発にまきこまれて"
+      },
+      "english": "in an explosion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-24",
+      "reason": 24,
+      "table_offset": 1720,
+      "source": {
+        "offset": 398844,
+        "end_exclusive": 398855,
+        "raw_hex": "834a837882cc928682c500",
+        "sha256": "9afa785b55e41132481b5246bed93340e057970a4b774010e738338585ccb3db",
+        "japanese": "カベの中で"
+      },
+      "english": "inside a wall",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-25",
+      "reason": 25,
+      "table_offset": 1724,
+      "source": {
+        "offset": 398824,
+        "end_exclusive": 398843,
+        "raw_hex": "8381834b8393836582c98eb8947382b582c400",
+        "sha256": "20296a5427af09f7011e6f056e9aee488f725c7b8670302389e0621ee364fa61",
+        "japanese": "メガンテに失敗して"
+      },
+      "english": "when Kamikazee failed",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-26",
+      "reason": 26,
+      "table_offset": 1728,
+      "source": {
+        "offset": 398800,
+        "end_exclusive": 398821,
+        "raw_hex": "82ab82c682a482b582cc8ff182f082a482af82c400",
+        "sha256": "d19ae821875d2c215a122e110baea293f34e2c32dcdf5ffe676f5133c1ed6652",
+        "japanese": "きとうしの杖をうけて"
+      },
+      "english": "from a shaman's staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.cause-27",
+      "reason": 27,
+      "table_offset": 1732,
+      "source": {
+        "offset": 398780,
+        "end_exclusive": 398797,
+        "raw_hex": "89a98be082cc8ff182f082a482af82c400",
+        "sha256": "bc2b34f450ba3700a064113ed4e353891a98a0dcc33f7ebc16c572512e307826",
+        "japanese": "黄金の杖をうけて"
+      },
+      "english": "from a Golden staff",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source review of the results/history cause, retaining triggering action and exact item/spell identity. Full catalog names, not item-row abbreviations. Rendered through the owned Fell {cause}. wrapper. The shaman staff is the monster's staff, not an invented item name."
+    },
+    {
+      "id": "results.other-defeat",
+      "table_offset": 1748,
+      "source": {
+        "offset": 398744,
+        "end_exclusive": 398755,
+        "raw_hex": "257382bd82a882ea82bd00",
+        "sha256": "8c5a5fa4f314b34cf5f26f0c878339cce87cbf6c9b1fc378ad9866e36a4b3549",
+        "japanese": "%{unclassified-control:73}たおれた"
+      },
+      "english": "Fell {cause}.",
+      "status": "reviewed",
+      "review": "Japanese %sたおれた is the completion of a preceding defeat cause. Fell retains the result and all cause wording; no inserted line break or omitted mechanics. Only27 verified cause IDs are translated; unexplained higher reason IDs remain unchanged."
+    }
+  ],
+  "history_zero_actor": {
+    "id": "results.history-torneko",
+    "source": {
+      "offset": 453420,
+      "end_exclusive": 453429,
+      "raw_hex": "8367838b836c835200",
+      "sha256": "c5fcf583a4a436d7da02998be6207ec3798fe538b3ae3d5e394e79e372b0db0b",
+      "japanese": "トルネコ"
+    },
+    "english": "Torneko",
+    "status": "reviewed",
+    "review": "History attacker ID0 explicitly loads the fixed トルネコ string via0815460C, whereas results ID0 uses Someone. Preserve the distinct native meaning; do not substitute the current player name."
+  },
+  "ui_entries": [
+    {
+      "id": "results.ui-5d0",
+      "table_offset": 1488,
+      "source": {
+        "offset": 400356,
+        "end_exclusive": 400373,
+        "raw_hex": "89ae957e82cc835f839383578387839300",
+        "sha256": "535805837abe9a7379bd3c98b8340f19e343672ee9de270b0f7b8975fc418199",
+        "japanese": "屋敷のダンジョン"
+      },
+      "english": "Banker's Mansion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5d4",
+      "table_offset": 1492,
+      "source": {
+        "offset": 400336,
+        "end_exclusive": 400353,
+        "raw_hex": "95e68fea82cc835f839383578387839300",
+        "sha256": "c57e0e951c6b6bec02acc1e0c2fea05d49c03855e0c73a8abe753d605b6b62e6",
+        "japanese": "墓場のダンジョン"
+      },
+      "english": "Cemetery Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5d8",
+      "table_offset": 1496,
+      "source": {
+        "offset": 400316,
+        "end_exclusive": 400333,
+        "raw_hex": "82a88fe982cc835f839383578387839300",
+        "sha256": "dee9b558cb6ec55114fdc4bd2be276f8052cfac7b27e36c83795147cfa00c7de",
+        "japanese": "お城のダンジョン"
+      },
+      "english": "Castle Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5dc",
+      "table_offset": 1500,
+      "source": {
+        "offset": 400304,
+        "end_exclusive": 400313,
+        "raw_hex": "96c082a282cc905800",
+        "sha256": "9015d3d9070405eac068f1b244b17c5b071bc34e190ea4c9e8d7dc3658ab32d7",
+        "japanese": "迷いの森"
+      },
+      "english": "Lost Forest",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5e0",
+      "table_offset": 1504,
+      "source": {
+        "offset": 400292,
+        "end_exclusive": 400301,
+        "raw_hex": "89ce908182ab8e5200",
+        "sha256": "666aed51a8143817ebf013ce4fd8e8bff7efe3600628675d98130305f94b81e5",
+        "japanese": "火吹き山"
+      },
+      "english": "Mt. Fiery",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5e4",
+      "table_offset": 1508,
+      "source": {
+        "offset": 400280,
+        "end_exclusive": 400289,
+        "raw_hex": "8367838d88e290d500",
+        "sha256": "0070e6ff7659685dfca61ab832abd0447ad6f56d0e5c22d3d7fdc6b1a9b2c954",
+        "japanese": "トロ遺跡"
+      },
+      "english": "Toro Ruins",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5e8",
+      "table_offset": 1512,
+      "source": {
+        "offset": 400260,
+        "end_exclusive": 400279,
+        "raw_hex": "95738e768b6382cc835f839383578387839300",
+        "sha256": "643782383ec4de2ad1b6a8ce9db00d016b643274e3892a3e1741d8105dc2d03d",
+        "japanese": "不思議のダンジョン"
+      },
+      "english": "Magic Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5ec",
+      "table_offset": 1516,
+      "source": {
+        "offset": 400232,
+        "end_exclusive": 400257,
+        "raw_hex": "82e082c182c695738e768b6382cc835f839383578387839300",
+        "sha256": "3a10a87f3d02edd688b8058ff1131e1ac3f8acdb962f6ebc927be436491e7454",
+        "japanese": "もっと不思議のダンジョン"
+      },
+      "english": "More Magic Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5f0",
+      "table_offset": 1520,
+      "source": {
+        "offset": 400220,
+        "end_exclusive": 400229,
+        "raw_hex": "8e8e97fb82cc8ad900",
+        "sha256": "d2db4866612ba0add802d0721cb1b46e2fa8f3941b8f82fedaa95cb01ac42e65",
+        "japanese": "試練の館"
+      },
+      "english": "Ordeal Mansion",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5f4",
+      "table_offset": 1524,
+      "source": {
+        "offset": 400204,
+        "end_exclusive": 400219,
+        "raw_hex": "8c9582cc835f839383578387839300",
+        "sha256": "9057abdf94943a2e318ddbce20a694c81a9914b612c1f310d7faacf9b122af98",
+        "japanese": "剣のダンジョン"
+      },
+      "english": "Sword Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5f8",
+      "table_offset": 1528,
+      "source": {
+        "offset": 400188,
+        "end_exclusive": 400203,
+        "raw_hex": "968282cc835f839383578387839300",
+        "sha256": "71175ea733f7337bbcd92c3f4749669951f16311ec7037a408ccb87e5efd33d5",
+        "japanese": "魔のダンジョン"
+      },
+      "english": "Mage Dungeon",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-5fc",
+      "table_offset": 1532,
+      "source": {
+        "offset": 400164,
+        "end_exclusive": 400185,
+        "raw_hex": "82bf82e582c182c695738e768b6382cc91908cb400",
+        "sha256": "c9836f842a323973f07ec2e43952a053cac2b23752823a24e10f82bb89c5a65f",
+        "japanese": "ちょっと不思議の草原"
+      },
+      "english": "Mysterious Meadow",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-600",
+      "table_offset": 1536,
+      "source": {
+        "offset": 400156,
+        "end_exclusive": 400161,
+        "raw_hex": "88e48ccb00",
+        "sha256": "e553116c627f3720bd6cb78347c458ed9ff7793c5964ff3b704309daf82caa5b",
+        "japanese": "井戸"
+      },
+      "english": "Well",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-650",
+      "table_offset": 1616,
+      "source": {
+        "offset": 399328,
+        "end_exclusive": 399338,
+        "raw_hex": "257325644682c982c400",
+        "sha256": "beb89735510e17f5e9c098a34cad678df4b3b4dd233207f7f1813107d9fb4703",
+        "japanese": "%{unclassified-control:73}%{unclassified-control:64}Fにて"
+      },
+      "english": "{dungeon}, {number}F",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-6e0",
+      "table_offset": 1760,
+      "source": {
+        "offset": 398672,
+        "end_exclusive": 398682,
+        "raw_hex": "257325644682a982e700",
+        "sha256": "e32537f3aa2ee939f6ce5067db5a4c258b79a889f71043259ddbd908575405e4",
+        "japanese": "%{unclassified-control:73}%{unclassified-control:64}Fから"
+      },
+      "english": "From {dungeon}, {number}F",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-6e4",
+      "table_offset": 1764,
+      "source": {
+        "offset": 398656,
+        "end_exclusive": 398671,
+        "raw_hex": "257382cc899c905b82ad82a982e700",
+        "sha256": "d97b25a9c3fe88993af0e9ceb349e677559871440f3fbf27789303f1425e9ec7",
+        "japanese": "%{unclassified-control:73}の奥深くから"
+      },
+      "english": "From deep within {dungeon}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-6cc",
+      "table_offset": 1740,
+      "source": {
+        "offset": 398768,
+        "end_exclusive": 398773,
+        "raw_hex": "82c882b500",
+        "sha256": "3f6db0c05933c656d11b1c06b08379bbcd2601e84e358f5989e0b053fcc4c0d1",
+        "japanese": "なし"
+      },
+      "english": "None",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-930",
+      "table_offset": 2352,
+      "source": {
+        "offset": 394456,
+        "end_exclusive": 394473,
+        "raw_hex": "83588352834120030625640504a8257300",
+        "sha256": "543a7246190755d4b1ee218026346a48e99e22e54abfdb97dad119c2daddf625",
+        "japanese": "スコア {legacy-position:0306}%{unclassified-control:64}{unclassified-control:05}{legacy-x:04a8}%{unclassified-control:73}"
+      },
+      "english": "Score: {color:6}{score}{/color}  {rank}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-934",
+      "table_offset": 2356,
+      "source": {
+        "offset": 394444,
+        "end_exclusive": 394454,
+        "raw_hex": "8f8788ca20256488ca00",
+        "sha256": "1d269119c10aadbb38b4b25d3831b7c59f774cb70f5d6d550e1f88978bdc8c24",
+        "japanese": "順位 %{unclassified-control:64}位"
+      },
+      "english": "Rank {number}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-938",
+      "table_offset": 2360,
+      "source": {
+        "offset": 394436,
+        "end_exclusive": 394443,
+        "raw_hex": "8f8788ca8a4f00",
+        "sha256": "901597b88fe58aae62254d0091e3155948213729b4d20ef49ed894afac727c73",
+        "japanese": "順位外"
+      },
+      "english": "Unranked",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-93c",
+      "table_offset": 2364,
+      "source": {
+        "offset": 394412,
+        "end_exclusive": 394433,
+        "raw_hex": "8c6f8cb1926c3a256404a882bf82a982e720256400",
+        "sha256": "d554f3123f1745777de14cdf3e77b04ee4c37b50e25ee4ef36ab19225ef0ee31",
+        "japanese": "経験値:%{unclassified-control:64}{legacy-x:04a8}ちから %{unclassified-control:64}"
+      },
+      "english": "EXP: {exp}  Strength: {strength}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-940",
+      "table_offset": 2368,
+      "source": {
+        "offset": 394384,
+        "end_exclusive": 394410,
+        "raw_hex": "8da189f182cc96608caf82cc8c8b89ca2028256489f196da2900",
+        "sha256": "d8d9532b4d134bd4441554a22a37cb62f8716d9d334ff5eb657e9a68eff51b6c",
+        "japanese": "今回の冒険の結果 (%{unclassified-control:64}回目)"
+      },
+      "english": "Adventure results (Trip {number})",
+      "status": "reviewed",
+      "review": "Dedicated Japanese-source results/history review. Preserve number and field order, trip ordinal meaning, location/from distinction and score colour. Existing reviewed Remi destination names are authoritative where identical. Short display labels retain complete meaning; original window geometry and font remain unchanged."
+    },
+    {
+      "id": "results.ui-97c",
+      "table_offset": 2428,
+      "source": {
+        "offset": 394008,
+        "end_exclusive": 394017,
+        "raw_hex": "8c95043c3a20257300",
+        "sha256": "13f29d85cf4261cf7beae45b13d91f7b71c59d7f40baca4a146e8e2256e81c7e",
+        "japanese": "剣{legacy-x:043c}: %{unclassified-control:73}"
+      },
+      "english": "Weapon: {item}",
+      "status": "reviewed",
+      "review": "Native result equipment name, using Weapon as approved. Keep attached colon and one normal3px space; preserve complete item field, markings, enhancement and any native price. Original absolute colon column is replaced by measured English label width in the original224px window. Custom names/inscriptions remain separately scoped."
+    },
+    {
+      "id": "results.ui-980",
+      "table_offset": 2432,
+      "source": {
+        "offset": 393996,
+        "end_exclusive": 394005,
+        "raw_hex": "8f82043c3a20257300",
+        "sha256": "c3c9ad5fe14c9e321a712747416e8ebc2d2cbef3c7408975b9131988ee014378",
+        "japanese": "盾{legacy-x:043c}: %{unclassified-control:73}"
+      },
+      "english": "Shield: {item}",
+      "status": "reviewed",
+      "review": "Native result equipment name, using Weapon as approved. Keep attached colon and one normal3px space; preserve complete item field, markings, enhancement and any native price. Original absolute colon column is replaced by measured English label width in the original224px window. Custom names/inscriptions remain separately scoped."
+    },
+    {
+      "id": "results.ui-984",
+      "table_offset": 2436,
+      "source": {
+        "offset": 393984,
+        "end_exclusive": 393995,
+        "raw_hex": "8e7797d6043c3a20257300",
+        "sha256": "4f0f201c4ae751f127a3f6283b7759caa4c97aba433752b2f250417ba75216e6",
+        "japanese": "指輪{legacy-x:043c}: %{unclassified-control:73}"
+      },
+      "english": "Ring: {item}",
+      "status": "reviewed",
+      "review": "Native result equipment name, using Weapon as approved. Keep attached colon and one normal3px space; preserve complete item field, markings, enhancement and any native price. Original absolute colon column is replaced by measured English label width in the original224px window. Custom names/inscriptions remain separately scoped."
+    },
+    {
+      "id": "results.ui-6d8",
+      "table_offset": 1752,
+      "source": {
+        "offset": 398712,
+        "end_exclusive": 398743,
+        "raw_hex": "838a838c837e836782cc8aaa95a882c5926e8fe382d682e082c782c182bd00",
+        "sha256": "571f633f771950bd517d5642bc222860acc7d11785af710f07b4569b3d2afccb",
+        "japanese": "リレミトの巻物で地上へもどった"
+      },
+      "english": "Used an Evac scroll to reach the surface.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-6dc",
+      "table_offset": 1756,
+      "source": {
+        "offset": 398684,
+        "end_exclusive": 398711,
+        "raw_hex": "96da934982f089ca82bd82b5926e8fe382d682e082c782c182bd00",
+        "sha256": "c7a851d86baf430bafa9af5560ee0f37d6c4fec238a0dca7a096d0d8719d7aed",
+        "japanese": "目的を果たし地上へもどった"
+      },
+      "english": "Returned to the surface, quest complete.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-70c",
+      "table_offset": 1804,
+      "source": {
+        "offset": 398296,
+        "end_exclusive": 398325,
+        "raw_hex": "959782c994f282ce82b382ea82c4926e8fe382d682e082c782c182bd00",
+        "sha256": "04aca6b1069a2176975c09e96129aec33a8158e5ec13f912603d784936205110",
+        "japanese": "風に飛ばされて地上へもどった"
+      },
+      "english": "Blown back to the surface by the wind.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-71c",
+      "table_offset": 1820,
+      "source": {
+        "offset": 398184,
+        "end_exclusive": 398226,
+        "raw_hex": "82bf82e582c182c695738e768b6382cc91908cb482f00d82d482b682c982c682a882e882ca82af82bd00",
+        "sha256": "d6088c2959312c9c98c0b2805a89ebc1e74e8f88c4f856214aa2a4d264f69553",
+        "japanese": "ちょっと不思議の草原を\nぶじにとおりぬけた"
+      },
+      "english": "Safely crossed Mysterious Meadow.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-720",
+      "table_offset": 1824,
+      "source": {
+        "offset": 398152,
+        "end_exclusive": 398181,
+        "raw_hex": "905f958382c982e682c182c4926e8fe382d682e082c782b382ea82bd00",
+        "sha256": "492cb6114fc31ee4a89f6ce542f9f191a36232b2cb2ac6a4a1bb1421d8499cf0",
+        "japanese": "神父によって地上へもどされた"
+      },
+      "english": "The priest sent you back to the surface.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-724",
+      "table_offset": 1828,
+      "source": {
+        "offset": 398120,
+        "end_exclusive": 398149,
+        "raw_hex": "96608caf82f082a082ab82e782df926e8fe382d682e082c782c182bd00",
+        "sha256": "d0ec4d814c4a58a7ff1b5c1bc4c566970178e2a7bc9c98bd6095574fb94885fb",
+        "japanese": "冒険をあきらめ地上へもどった"
+      },
+      "english": "Gave up and returned to the surface.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    },
+    {
+      "id": "results.ui-798",
+      "table_offset": 1944,
+      "source": {
+        "offset": 397148,
+        "end_exclusive": 397179,
+        "raw_hex": "82be82c182b582e382c282cc8b5a82c5926e8fe382d682e082c782c182bd00",
+        "sha256": "df4ff99d9035212ac53de6042b70f7edb26d7b8b43c987fd5c6b24de9fe0f7d2",
+        "japanese": "だっしゅつの技で地上へもどった"
+      },
+      "english": "The Escape skill took you to the surface.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome.",
+      "terminology": {
+        "id": "t2.skill.escape",
+        "japanese": "だっしゅつ",
+        "english": "Escape",
+        "reference_game": "Torneko: The Last Hope (US PlayStation)",
+        "quality": "secondary reports of official PS1 naming; no primary capture",
+        "confidence": "medium",
+        "review_date": "2026-09-24",
+        "sources": [
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+          "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/71464"
+        ],
+        "identity": "Both guides identify Escape as the warrior sword skill for leaving a dungeon. T2 result source namesだっしゅつの技 and its native result selector distinguishes scroll/skill/spell via0/1/2. This matches the escape skill, not Evac scroll/spell. Other PS1 mechanics are not imported."
+      }
+    },
+    {
+      "id": "results.ui-79c",
+      "table_offset": 1948,
+      "source": {
+        "offset": 397116,
+        "end_exclusive": 397147,
+        "raw_hex": "838a838c837e836782cc8ef495b682c5926e8fe382d682e082c782c182bd00",
+        "sha256": "9220d603c5c6ae3691c3f6d6b564e068fe5769d7243a7acc3549ba630a41f696",
+        "japanese": "リレミトの呪文で地上へもどった"
+      },
+      "english": "Used the Evac spell to reach the surface.",
+      "status": "reviewed",
+      "review": "Dedicated T2 Japanese-source review. Preserve method, destination/surface return, safe passage or completed objective without importing penalties or items. The complete sentence fits the original212px result line; the meadow wording fits one line while preserving its safe passage outcome."
+    }
+  ]
+}

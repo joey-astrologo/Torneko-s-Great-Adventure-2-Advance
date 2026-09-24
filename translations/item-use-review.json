@@ -1,0 +1,71 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "item-use.649b0",
+      "source": {
+        "offset": 412080,
+        "end_exclusive": 412099,
+        "raw_hex": "257382cd20257382f00e054e82cc82f182be00",
+        "sha256": "da8c98a60af1f5a66d33d9e0aafd58a1934be990da82f19cd6ee8bbe39f2710c",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を{fit-next:0e054e}のんだ"
+      },
+      "english": "{player} drank \n{item}.",
+      "status": "reviewed",
+      "review": "Independent T2 source translation. Exact two name substitutions preserve player and full formatted item identity. Waved describes staff use, not throwing. The authored break follows an existing space and may be removed only after measuring the complete native substitutions; longest names retain two lines. Japanese fit-next was presentation, not a gameplay command."
+    },
+    {
+      "id": "item-use.649c4",
+      "source": {
+        "offset": 412100,
+        "end_exclusive": 412119,
+        "raw_hex": "257382cd20257382f00e054e904882d782bd00",
+        "sha256": "5d5635265b5cd92e3bdb7b4abf53e54278cdda344c9ea5daf3fba5aff10f32a5",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を{fit-next:0e054e}食べた"
+      },
+      "english": "{player} ate \n{item}.",
+      "status": "reviewed",
+      "review": "Independent T2 source translation. Exact two name substitutions preserve player and full formatted item identity. Waved describes staff use, not throwing. The authored break follows an existing space and may be removed only after measuring the complete native substitutions; longest names retain two lines. Japanese fit-next was presentation, not a gameplay command."
+    },
+    {
+      "id": "item-use.649d8",
+      "source": {
+        "offset": 412120,
+        "end_exclusive": 412139,
+        "raw_hex": "257382cd20257382f00e054e905582c182bd00",
+        "sha256": "01352f94933d227ea8f3885dadc698a3a13fda24b5a947730fc5b963e6f38589",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を{fit-next:0e054e}振った"
+      },
+      "english": "{player} waved \n{item}.",
+      "status": "reviewed",
+      "review": "Independent T2 source translation. Exact two name substitutions preserve player and full formatted item identity. Waved describes staff use, not throwing. The authored break follows an existing space and may be removed only after measuring the complete native substitutions; longest names retain two lines. Japanese fit-next was presentation, not a gameplay command."
+    },
+    {
+      "id": "item-use.649ec",
+      "source": {
+        "offset": 412140,
+        "end_exclusive": 412159,
+        "raw_hex": "257382cd20257382f00e054e8e6782c182bd00",
+        "sha256": "ac98d5e466b556c5497a1e68ddfe7919f28c153cdc518cef0aa0ce3cdf94d7a2",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を{fit-next:0e054e}使った"
+      },
+      "english": "{player} used \n{item}.",
+      "status": "reviewed",
+      "review": "Independent T2 source translation. Exact two name substitutions preserve player and full formatted item identity. Waved describes staff use, not throwing. The authored break follows an existing space and may be removed only after measuring the complete native substitutions; longest names retain two lines. Japanese fit-next was presentation, not a gameplay command."
+    },
+    {
+      "id": "item-use.64a00",
+      "source": {
+        "offset": 412160,
+        "end_exclusive": 412179,
+        "raw_hex": "257382cd20257382f00e054e93c782f182be00",
+        "sha256": "e7ba5fe1c086d81029e2fcafb6cd6ba8525aa03985e34a87a3c5c23249f46098",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を{fit-next:0e054e}読んだ"
+      },
+      "english": "{player} read \n{item}.",
+      "status": "reviewed",
+      "review": "Independent T2 source translation. Exact two name substitutions preserve player and full formatted item identity. Waved describes staff use, not throwing. The authored break follows an existing space and may be removed only after measuring the complete native substitutions; longest names retain two lines. Japanese fit-next was presentation, not a gameplay command."
+    }
+  ],
+  "scope": "Reviewed five-source item-use announcement language. Separate native prototype passes 60 controlled category/name/colour cases: 40 one line and 20 safe fallbacks. Cumulative insertion, other ordinary actions, custom names and inscriptions remain separate."
+}

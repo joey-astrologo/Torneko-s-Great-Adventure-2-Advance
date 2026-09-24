@@ -1,0 +1,3187 @@
+{
+  "schema": 1,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "start_fixture": "build/mansion/native/family-1-1/morning",
+  "start_frame": 169087,
+  "inputs": [
+    {
+      "key": "DOWN",
+      "hold": 8,
+      "released": 60
+    },
+    {
+      "key": "RIGHT",
+      "hold": 120,
+      "released": 60
+    },
+    {
+      "key": "UP",
+      "hold": 8,
+      "released": 60
+    },
+    {
+      "key": "RIGHT",
+      "hold": 60,
+      "released": 120
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "UP",
+      "hold": 88,
+      "released": 60
+    },
+    {
+      "key": "LEFT",
+      "hold": 44,
+      "released": 60
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "DOWN",
+      "hold": 24,
+      "released": 60
+    },
+    {
+      "key": "LEFT",
+      "hold": 80,
+      "released": 60
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "UP",
+      "hold": 48,
+      "released": 60
+    },
+    {
+      "key": "LEFT",
+      "hold": 32,
+      "released": 60
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "DOWN",
+      "hold": 24,
+      "released": 60
+    },
+    {
+      "key": "LEFT",
+      "hold": 16,
+      "released": 60
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "DOWN",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "LEFT",
+      "hold": 16,
+      "released": 60
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "DOWN",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "LEFT",
+      "hold": 16,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 8,
+      "released": 120
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "LEFT",
+      "hold": 100,
+      "released": 120
+    },
+    {
+      "key": "UP",
+      "hold": 8,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "UP",
+      "hold": 16,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "RIGHT",
+      "hold": 4,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 16,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "keys": [
+        "LEFT",
+        "DOWN"
+      ],
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "keys": [
+        "RIGHT",
+        "DOWN"
+      ],
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "B",
+      "hold": 8,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 20
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "B",
+      "hold": 8,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 20
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "B",
+      "hold": 8,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 20
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30
+    },
+    {
+      "key": "B",
+      "hold": 8,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 20
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 600
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "DOWN",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "RIGHT",
+      "hold": 44,
+      "released": 30
+    },
+    {
+      "key": "DOWN",
+      "hold": 120,
+      "released": 120
+    },
+    {
+      "key": "RIGHT",
+      "hold": 20,
+      "released": 30
+    },
+    {
+      "key": "DOWN",
+      "hold": 120,
+      "released": 120
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "UP",
+      "hold": 32,
+      "released": 120
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "RIGHT",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 24,
+      "released": 30
+    },
+    {
+      "key": "LEFT",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "RIGHT",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 24,
+      "released": 30
+    },
+    {
+      "key": "LEFT",
+      "hold": 8,
+      "released": 30
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 120
+    },
+    {
+      "key": "DOWN",
+      "hold": 8,
+      "released": 120
+    },
+    {
+      "key": "RIGHT",
+      "hold": 16,
+      "released": 120
+    },
+    {
+      "key": "UP",
+      "hold": 32,
+      "released": 120
+    },
+    {
+      "key": "LEFT",
+      "hold": 16,
+      "released": 120
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 120
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 120
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180
+    }
+  ],
+  "segments": [
+    {
+      "name": "exit-research",
+      "end_input": 4,
+      "report": "build/services/exit-research/trace.json",
+      "sha256": "8263666cbcb3e3b91fc94a906eba3f71d4af1e6e3b25e932ac5265c13860c215"
+    },
+    {
+      "name": "castle-research",
+      "end_input": 5,
+      "report": "build/services/castle-research/trace.json",
+      "sha256": "dcc607d89be901f67d9d6b05704c598fe8ec76cc002846c7e61fcaa1a2273dd8"
+    },
+    {
+      "name": "castle-direct",
+      "end_input": 10,
+      "report": "build/services/castle-direct/trace.json",
+      "sha256": "efc6f584113ec2c000ea16349c8ce11721e5c5324edab4a2ab3ddb85c4cf009f"
+    },
+    {
+      "name": "smith-approach",
+      "end_input": 13,
+      "report": "build/services/smith-approach/trace.json",
+      "sha256": "7bdece3406c0982de38016db03a4f453a1b8e3327e8237250021acbd074e6d55"
+    },
+    {
+      "name": "smith-search",
+      "end_input": 16,
+      "report": "build/services/smith-search/trace.json",
+      "sha256": "c79f1be03b3d3c8cd0c0130ec8d112d427fff8c658f7b2b7dc1ceb4e7737f173"
+    },
+    {
+      "name": "smith-hall",
+      "end_input": 19,
+      "report": "build/services/smith-hall/trace.json",
+      "sha256": "091667bca64bd0888efc06fcb851093e087d48a74b3fdb63f13f2aaa09ca8824"
+    },
+    {
+      "name": "smith-found",
+      "end_input": 22,
+      "report": "build/services/smith-found/trace.json",
+      "sha256": "111c0c44bb0c5e47db723fb2b762b517afcba3f6eae3a4cdac8d815998259c67"
+    },
+    {
+      "name": "smith-request",
+      "end_input": 32,
+      "report": "build/services/smith-request/trace.json",
+      "sha256": "722da2d8f313ce999e288c801deb64f5007b5a21f900cc159c51ec5342b8de22"
+    },
+    {
+      "name": "smith-accepted",
+      "end_input": 42,
+      "report": "build/services/smith-accepted/trace.json",
+      "sha256": "47738fb0eacb82420a756f973528426a0c565c5a004ce39b5a59cf8bc4cd65d2"
+    },
+    {
+      "name": "basement-route",
+      "end_input": 45,
+      "report": "build/services/basement-route/trace.json",
+      "sha256": "b93ae77c60fd131d6be47e3bde09d929b2a015bf0aca13bd827063c838b051c2"
+    },
+    {
+      "name": "side-passage",
+      "end_input": 49,
+      "report": "build/services/side-passage/trace.json",
+      "sha256": "0eea78700dc4d84c079e8764edbb9e072e6dfc894e9ed2cdd8f53d8c22538a84"
+    },
+    {
+      "name": "west-passage",
+      "end_input": 50,
+      "report": "build/services/west-passage/trace.json",
+      "sha256": "5cd9db027c88631def517fe0b048024c0a209a1f4d08b2b12faa0b609578cfe1"
+    },
+    {
+      "name": "actual-basement",
+      "end_input": 53,
+      "report": "build/services/actual-basement/trace.json",
+      "sha256": "e31a7ae191e100faf44abcfb10312561d3f51d336ea9e42d33c937994bf1798c"
+    },
+    {
+      "name": "castle-dungeon",
+      "end_input": 56,
+      "report": "build/services/castle-dungeon/trace.json",
+      "sha256": "5022957d6a5f1c4027fa41d21475b68a96f777f56a23b08a682a8918d832fbca"
+    },
+    {
+      "name": "holy-flame-entrance",
+      "end_input": 60,
+      "report": "build/services/holy-flame-entrance/trace.json",
+      "sha256": "86a4f78a437c5ce59a2ed002c70c71d95a15c1322ea9061aa98ddeeb01aa90ed"
+    },
+    {
+      "name": "holy-flame-dungeon",
+      "end_input": 400,
+      "report": "build/services/holy-flame-dungeon/trace.json",
+      "sha256": "1d9e94dc313c9f7efcbad96b0adc4ba41953ca8f16240e469155d8870bd9a6e1"
+    },
+    {
+      "name": "holy-flame-equipped",
+      "end_input": 476,
+      "report": "build/services/holy-flame-equipped/report.json",
+      "sha256": "807c8a66fd1c7eb42b41ee12cdf789575fda24ab77bba77cb252a5ae3aa0cb93"
+    },
+    {
+      "name": "smith-return",
+      "end_input": 486,
+      "report": "build/services/smith-return/trace.json",
+      "sha256": "e2bfb8e47b74dffebb0dd078f093504441b1145e937ad00351e78b30d7dd904d"
+    },
+    {
+      "name": "repaired-home-travel",
+      "end_input": 489,
+      "report": "build/services/repaired-home-travel/trace.json",
+      "sha256": "f9d11ba3cf38254a2503efa734ba18e1434f8ef1418bfe9afa7f5ca14a5138da"
+    },
+    {
+      "name": "repaired-home-menu",
+      "end_input": 491,
+      "report": "build/services/repaired-home-menu/trace.json",
+      "sha256": "717f32149fff85af3e482cc7aee2cc7402b79d18e3a768ac7c7976cab6a5abfa"
+    },
+    {
+      "name": "repaired-home-arrival",
+      "end_input": 503,
+      "report": "build/services/repaired-home-arrival/trace.json",
+      "sha256": "f0ec7cb6a657adb04a9afea3109040dadc2e5f6699699155a24d82e74474b84e"
+    },
+    {
+      "name": "storage-morning",
+      "end_input": 519,
+      "report": "build/services/storage-morning/trace.json",
+      "sha256": "8b5d729c8a004653c7ccb515c6612d4aa11b6882da4f483afe6ab3bef37f6d5e"
+    },
+    {
+      "name": "storage-unlocked",
+      "end_input": 535,
+      "report": "build/services/storage-unlocked/trace.json",
+      "sha256": "ef1b34ab99b6c8804623e197c734d79b2b9c3e45cd185800a43438edaeab1860"
+    },
+    {
+      "name": "storage-ready",
+      "end_input": 551,
+      "report": "build/services/storage-ready/trace.json",
+      "sha256": "2a53633777c5855a8bfcf960447edbd9ba2b6474736ecc95c8047ac267f90e50"
+    },
+    {
+      "name": "storage-controls",
+      "end_input": 567,
+      "report": "build/services/storage-controls/trace.json",
+      "sha256": "59ec7145925e355b424f9892667e5cc6cdde098c2750919ebe29310fe8a2dedf"
+    },
+    {
+      "name": "storage-menu",
+      "end_input": 573,
+      "report": "build/services/storage-menu/trace.json",
+      "sha256": "b0311adc48b56e571acf65f9944fc06f3780a9ab08b6d68d56bc6e072494b60a"
+    },
+    {
+      "name": "storage-open",
+      "end_input": 579,
+      "report": "build/services/storage-open/trace.json",
+      "sha256": "ebff8109602e3c5a8aff35d2936c0b31da92c394b8152ffdd428129197c6bc3e"
+    },
+    {
+      "name": "storage-bluebook",
+      "end_input": 585,
+      "report": "build/services/storage-bluebook/trace.json",
+      "sha256": "b3497c6332c82a288c75a99bf678a97dbb4adcba7e390f2ebb7baf9d83002130"
+    },
+    {
+      "name": "storage-research",
+      "end_input": 594,
+      "report": "build/services/storage-research/report.json",
+      "sha256": "a4e5f5d261044cb9b0f060cf1cb4a97ce9cbe49297fcaec6e4bea63f1b5dbf57"
+    }
+  ],
+  "expected_save_sha256": "48c6c875e494047a78dfb8c00fdbf243b595107d446d4de5fda11d7221fd6912",
+  "scope": "Continuous ordinary-input route from earned bank opening through castle holy-flame quest, repaired warehouse, populated book menu and native save. Includes recorded detours; no failed sixth-floor continuation or RAM overrides."
+}

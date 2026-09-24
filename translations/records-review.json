@@ -1,0 +1,1061 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "48 owned adventure-record row formats,11 rank titles andfive private literals. Original game flags/records and original224px windows retained.",
+  "entries": [
+    {
+      "id": "records.row.0",
+      "kind": "record",
+      "index": 0,
+      "source": {
+        "offset": 453184,
+        "end_exclusive": 453199,
+        "raw_hex": "96608caf82b582bd89f19094257300",
+        "sha256": "98b50adfe283c451e49545a9d4134a3b6643bbc904af86d0263b25ae189362d0",
+        "japanese": "冒険した回数%{unclassified-control:73}"
+      },
+      "english": "Adventures{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.1",
+      "kind": "record",
+      "index": 1,
+      "source": {
+        "offset": 453160,
+        "end_exclusive": 453183,
+        "raw_hex": "82b182ea82dc82c582cc8dc58d82838c8378838b257300",
+        "sha256": "fa303d5d8ea63ed29f18530599d36bd030336f1bbaf3d146ebdcd0083cdb9d73",
+        "japanese": "これまでの最高レベル%{unclassified-control:73}"
+      },
+      "english": "Highest level{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.2",
+      "kind": "record",
+      "index": 2,
+      "source": {
+        "offset": 453140,
+        "end_exclusive": 453159,
+        "raw_hex": "82b182ea82dc82c582cc8dc58d824850257300",
+        "sha256": "adf80804260f3452eb2f9b141137bc31a65a6daa0455805f227d0a0eacce993f",
+        "japanese": "これまでの最高HP%{unclassified-control:73}"
+      },
+      "english": "Highest HP{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.3",
+      "kind": "record",
+      "index": 3,
+      "source": {
+        "offset": 453116,
+        "end_exclusive": 453139,
+        "raw_hex": "82b182ea82dc82c582cc8dc58d828c6f8cb1926c257300",
+        "sha256": "e80cabb803cdd00be0103f63fc2359054aecfbba866406891654a407a6f6a7a6",
+        "japanese": "これまでの最高経験値%{unclassified-control:73}"
+      },
+      "english": "Highest EXP{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.4",
+      "kind": "record",
+      "index": 4,
+      "source": {
+        "offset": 453088,
+        "end_exclusive": 453113,
+        "raw_hex": "82b182ea82dc82c582cc82bf82a982e78dc591e5926c257300",
+        "sha256": "55dbd55e1e50ba28e9c30b1c33606f13dede8232224bc1e517c079ae443d75d2",
+        "japanese": "これまでのちから最大値%{unclassified-control:73}"
+      },
+      "english": "Highest max strength{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.5",
+      "kind": "record",
+      "index": 5,
+      "source": {
+        "offset": 453068,
+        "end_exclusive": 453087,
+        "raw_hex": "8dc591e58a6c93be8353815b838b8368257300",
+        "sha256": "03fd46504211123c81ab1022a721e4c475f7cda0364dee00548b34405c0a225a",
+        "japanese": "最大獲得ゴールド%{unclassified-control:73}"
+      },
+      "english": "Most gold acquired{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.6",
+      "kind": "record",
+      "index": 6,
+      "source": {
+        "offset": 453040,
+        "end_exclusive": 453067,
+        "raw_hex": "82508374838d834182c582cc8dc591e5835e815b83939094257300",
+        "sha256": "39363a7cbb78fe4b591db356c75d3149fc79ffa16ad43d975adb54f204fddd72",
+        "japanese": "１フロアでの最大ターン数%{unclassified-control:73}"
+      },
+      "english": "Most turns on one floor{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.7",
+      "kind": "record",
+      "index": 7,
+      "source": {
+        "offset": 453012,
+        "end_exclusive": 453037,
+        "raw_hex": "937c82b582bd838283938358835e815b8dc591e59094257300",
+        "sha256": "9dce2000f07b725b64da4ea7a08eacfc1fd00ae1904bb954476331bb5a636efc",
+        "japanese": "倒したモンスター最大数%{unclassified-control:73}"
+      },
+      "english": "Most monsters defeated{value}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.8",
+      "kind": "record",
+      "index": 8,
+      "source": {
+        "offset": 452992,
+        "end_exclusive": 453009,
+        "raw_hex": "8ed788ab82c894a082f0937c82b582bd00",
+        "sha256": "f411a553e5b7be0048d4b650dfd8710e0962b8fa73d636111d76f181a5813360",
+        "japanese": "邪悪な箱を倒した"
+      },
+      "english": "Defeated the Darkevil chest",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.9",
+      "kind": "record",
+      "index": 9,
+      "source": {
+        "offset": 452964,
+        "end_exclusive": 452992,
+        "raw_hex": "95738e768b6382f089bd82e08e9d82bd82b882c9256446939e924200",
+        "sha256": "1e68cb85057defc9c715daeaa7d75e387f8c202cd931796471cdbbcf337a4dcb",
+        "japanese": "不思議を何も持たずに%{unclassified-control:64}F到達"
+      },
+      "english": "Magic Dungeon {number}F, empty-handed",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.10",
+      "kind": "record",
+      "index": 10,
+      "source": {
+        "offset": 452936,
+        "end_exclusive": 452961,
+        "raw_hex": "838283938358835e815b82cc8aaa95a882f093c782f182be00",
+        "sha256": "a82b532e1fdb467a09941a92b00f1c97291977c4df441f33044c4e6c5a0cc315",
+        "japanese": "モンスターの巻物を読んだ"
+      },
+      "english": "Read a Monster scroll",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.11",
+      "kind": "record",
+      "index": 11,
+      "source": {
+        "offset": 452908,
+        "end_exclusive": 452934,
+        "raw_hex": "82e082c182c695738e768b6382cc25644682dc82c5939e924200",
+        "sha256": "2312f31bc089fc4d058f7df0f383241e46605c5a8102af35b633f02f35143830",
+        "japanese": "もっと不思議の%{unclassified-control:64}Fまで到達"
+      },
+      "english": "More Magic Dungeon {number}F reached",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.12",
+      "kind": "record",
+      "index": 12,
+      "source": {
+        "offset": 452884,
+        "end_exclusive": 452906,
+        "raw_hex": "8e8e97fb82cc8ad982cc25644682dc82c5939e924200",
+        "sha256": "26eafd5606a159f8ef7b5a4342e9ed50afbf0c7e6d11f4044a2232463aa0ee63",
+        "japanese": "試練の館の%{unclassified-control:64}Fまで到達"
+      },
+      "english": "Ordeal Mansion {number}F reached",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.13",
+      "kind": "record",
+      "index": 13,
+      "source": {
+        "offset": 452856,
+        "end_exclusive": 452884,
+        "raw_hex": "8c9582cc835f839383578387839382cc25644682dc82c5939e924200",
+        "sha256": "05aaac4b1dc6a9b4bae31005f0e8cd65fdcf5993530b23f6553f23d2fbb0dff4",
+        "japanese": "剣のダンジョンの%{unclassified-control:64}Fまで到達"
+      },
+      "english": "Sword Dungeon {number}F reached",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.14",
+      "kind": "record",
+      "index": 14,
+      "source": {
+        "offset": 452828,
+        "end_exclusive": 452856,
+        "raw_hex": "968282cc835f839383578387839382cc25644682dc82c5939e924200",
+        "sha256": "da5fb16127139c3bffa6bc1b4e4c51b8592fa9d1c3191ba686d2d5c6159e8950",
+        "japanese": "魔のダンジョンの%{unclassified-control:64}Fまで到達"
+      },
+      "english": "Mage Dungeon {number}F reached",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.15",
+      "kind": "record",
+      "index": 15,
+      "source": {
+        "offset": 452788,
+        "end_exclusive": 452825,
+        "raw_hex": "88e48ccb82cc835f839383578387839382f0838c8378838b256482dc82c5834e838a834100",
+        "sha256": "2891deac30a5f3b12cafa4dea818fef03cb468588690921c9cce8792f0741efe",
+        "japanese": "井戸のダンジョンをレベル%{unclassified-control:64}までクリア"
+      },
+      "english": "Cleared Well Dungeon level {number}",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.16",
+      "kind": "record",
+      "index": 16,
+      "source": {
+        "offset": 452764,
+        "end_exclusive": 452785,
+        "raw_hex": "82b782d782c482cc8b5a82f082a882da82a682bd00",
+        "sha256": "30639a18a9593b37f9d726658dd7f568610f1c538197294a8f4b84b4c825c18b",
+        "japanese": "すべての技をおぼえた"
+      },
+      "english": "Learned every skill",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.17",
+      "kind": "record",
+      "index": 17,
+      "source": {
+        "offset": 452740,
+        "end_exclusive": 452763,
+        "raw_hex": "82b782d782c482cc9682964082f08f4393be82b582bd00",
+        "sha256": "9a755e8df2ed31a3d7c65267a71e9bfad67bb1e8631850133bd9eba47cb09c30",
+        "japanese": "すべての魔法を修得した"
+      },
+      "english": "Learned every spell",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.18",
+      "kind": "record",
+      "index": 18,
+      "source": {
+        "offset": 452704,
+        "end_exclusive": 452737,
+        "raw_hex": "8fac82b382c88381835f838b82f02564968789a4976c82c982ed82bd82b582bd00",
+        "sha256": "a4e50720aa35883ec87238d2193e0e1040d126464b0c3ed3ddd6bf7847a672d1",
+        "japanese": "小さなメダルを%{unclassified-control:64}枚王様にわたした"
+      },
+      "english": "Gave the King {number} mini medals",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.19",
+      "kind": "record",
+      "index": 19,
+      "source": {
+        "offset": 452676,
+        "end_exclusive": 452701,
+        "raw_hex": "838d836782cc8c9581458f8282f08ee882c993fc82ea82bd00",
+        "sha256": "37e21aa5168cbd84ada12cf7a0a5925931c1e3cdd7166725cace34ef784f067a",
+        "japanese": "ロトの剣・盾を手に入れた"
+      },
+      "english": "Obtained Erdrick's sword and shield",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.20",
+      "kind": "record",
+      "index": 20,
+      "source": {
+        "offset": 452640,
+        "end_exclusive": 452673,
+        "raw_hex": "8381835e838b834c8393834f82cc8c9581458f8282f08ee882c993fc82ea82bd00",
+        "sha256": "e9b2fac29ea0407074a1fe6b4d5407eaef5523ab5257653e14351b50d0d17dd6",
+        "japanese": "メタルキングの剣・盾を手に入れた"
+      },
+      "english": "Obtained Metal king sword and shield",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.21",
+      "kind": "record",
+      "index": 21,
+      "source": {
+        "offset": 452604,
+        "end_exclusive": 452637,
+        "raw_hex": "89a98be082cc834183438365838082f082b782d782c48ee882c993fc82ea82bd00",
+        "sha256": "b080e94a463aacac7a2e2cd9f0678812e382f367700404387869bd621715cbfb",
+        "japanese": "黄金のアイテムをすべて手に入れた"
+      },
+      "english": "Obtained every golden item",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.22",
+      "kind": "record",
+      "index": 22,
+      "source": {
+        "offset": 452576,
+        "end_exclusive": 452601,
+        "raw_hex": "82b782ce82e782b582a28c9582f08ee882c993fc82ea82bd00",
+        "sha256": "5a123fac050b21f0e8fbda61079e5ead54c8115818bde7cb8b082bc82f76df5b",
+        "japanese": "すばらしい剣を手に入れた"
+      },
+      "english": "Obtained a superb sword",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.23",
+      "kind": "record",
+      "index": 23,
+      "source": {
+        "offset": 452548,
+        "end_exclusive": 452573,
+        "raw_hex": "82b782ce82e782b582a28f8282f08ee882c993fc82ea82bd00",
+        "sha256": "d506688c7ca53f5a7c07f958af5e14a3b7e6647829ea77cfa2dc029bb1186b86",
+        "japanese": "すばらしい盾を手に入れた"
+      },
+      "english": "Obtained a superb shield",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.24",
+      "kind": "record",
+      "index": 24,
+      "source": {
+        "offset": 452528,
+        "end_exclusive": 452545,
+        "raw_hex": "82a882c682b58c8a82c5937c82ea82bd00",
+        "sha256": "c4718406de9528c88a4338858b32bb613c2ce3273fa257d5a2759a43ea1844a6",
+        "japanese": "おとし穴で倒れた"
+      },
+      "english": "Fell in a pitfall",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.25",
+      "kind": "record",
+      "index": 25,
+      "source": {
+        "offset": 452512,
+        "end_exclusive": 452525,
+        "raw_hex": "93c596ee82c5937c82ea82bd00",
+        "sha256": "3134e704be0825c5b12ae35f82660971104c30a159257fe9e33c3deda07e83f0",
+        "japanese": "毒矢で倒れた"
+      },
+      "english": "Fell to a poison arrow",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.26",
+      "kind": "record",
+      "index": 26,
+      "source": {
+        "offset": 452488,
+        "end_exclusive": 452509,
+        "raw_hex": "90ce82aa82a882bf82c482ab82c4937c82ea82bd00",
+        "sha256": "00e30e344c0463e80a9fe56c797079425b841e61be7a745c41437a4b7483106f",
+        "japanese": "石がおちてきて倒れた"
+      },
+      "english": "Fell to a falling rock",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.27",
+      "kind": "record",
+      "index": 27,
+      "source": {
+        "offset": 452464,
+        "end_exclusive": 452485,
+        "raw_hex": "93538b8582c982a082bd82c182c4937c82ea82bd00",
+        "sha256": "313600b88b98bb473fa4bdd006451a3b9e179d4a250a74575c18690e4b5e830e",
+        "japanese": "鉄球にあたって倒れた"
+      },
+      "english": "Fell to an iron ball",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.28",
+      "kind": "record",
+      "index": 28,
+      "source": {
+        "offset": 452432,
+        "end_exclusive": 452461,
+        "raw_hex": "82cb82de82c182c482a282e982a082a282be82c9937c82b382ea82bd00",
+        "sha256": "97088706638fc50d154e2b7358cabe3f976e3cc7b531b6779a6ed58a000deb31",
+        "japanese": "ねむっているあいだに倒された"
+      },
+      "english": "Defeated while asleep",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.29",
+      "kind": "record",
+      "index": 29,
+      "source": {
+        "offset": 452404,
+        "end_exclusive": 452431,
+        "raw_hex": "977882c182c482a282e982a082a282be82c9937c82b382ea82bd00",
+        "sha256": "e5c206fd0c24e385d46e46ce581fdea5853355460edceefab8eb10ac443dcaf4",
+        "japanese": "踊っているあいだに倒された"
+      },
+      "english": "Defeated while dancing",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.30",
+      "kind": "record",
+      "index": 30,
+      "source": {
+        "offset": 452372,
+        "end_exclusive": 452401,
+        "raw_hex": "8dac979082b582c482a282e982a082a282be82c9937c82b382ea82bd00",
+        "sha256": "f650a1fc7a556ab99e474134d260afad5837640670ed3c9d5adea716889c2ba8",
+        "japanese": "混乱しているあいだに倒された"
+      },
+      "english": "Defeated while confused",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.31",
+      "kind": "record",
+      "index": 31,
+      "source": {
+        "offset": 452336,
+        "end_exclusive": 452371,
+        "raw_hex": "836f815b8354815b834a815b8ff391d482cc82a082a282be82c9937c82b382ea82bd00",
+        "sha256": "5b9d9388bd2ca5490b940e58366a9af597ed1e19cfe7fdfee21b1899e65193a6",
+        "japanese": "バーサーカー状態のあいだに倒された"
+      },
+      "english": "Defeated while berserk",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.32",
+      "kind": "record",
+      "index": 32,
+      "source": {
+        "offset": 452316,
+        "end_exclusive": 452335,
+        "raw_hex": "834b815b83538343838b82f0937c82b582bd00",
+        "sha256": "427d0f7ab60b6644ecd78563265761269bf46a7bd15923416e7085d7b7c2a3a3",
+        "japanese": "ガーゴイルを倒した"
+      },
+      "english": "Defeated a Gargoyle",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.33",
+      "kind": "record",
+      "index": 33,
+      "source": {
+        "offset": 452292,
+        "end_exclusive": 452313,
+        "raw_hex": "837e837e8362834e82f08e9d82bf8b4182c182bd00",
+        "sha256": "2a6f98825f9dfebaaf08d267b10c0ffaed105c9247984a51873eabcd1c19a0eb",
+        "japanese": "ミミックを持ち帰った"
+      },
+      "english": "Brought a Mimic home",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.34",
+      "kind": "record",
+      "index": 34,
+      "source": {
+        "offset": 452264,
+        "end_exclusive": 452291,
+        "raw_hex": "8353815b838b83668393835883898343838082f0937c82b582bd00",
+        "sha256": "4b776a284e4c2f878e918815da072334e38734e0fd62d941618439d4de3e6fdf",
+        "japanese": "ゴールデンスライムを倒した"
+      },
+      "english": "Defeated a Gem slime",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.35",
+      "kind": "record",
+      "index": 35,
+      "source": {
+        "offset": 452244,
+        "end_exclusive": 452263,
+        "raw_hex": "837d835f8393836582f082ad82e782c182bd00",
+        "sha256": "6c87cc1a0c9578b5b6918e60efcad26ea75df168b087d3d38336bb5a561647f0",
+        "japanese": "マダンテをくらった"
+      },
+      "english": "Hit by Magic Burst",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1.",
+      "terminology": {
+        "reference_game": "Dragon Quest XI / XI S",
+        "source": "https://dragon-quest.org/wiki/Magic_Burst",
+        "quality": "secondary report of official series term; exact Japanese マダンテ identity",
+        "confidence": "high",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.row.36",
+      "kind": "record",
+      "index": 36,
+      "source": {
+        "offset": 452220,
+        "end_exclusive": 452243,
+        "raw_hex": "949a92658ae282f0313091cc9755949a82b382b982bd00",
+        "sha256": "f051d83254c9cebb35ca98a16d94516e14efb930e2f9b0c959787aa71aeb9a62",
+        "japanese": "爆弾岩を10体誘爆させた"
+      },
+      "english": "Set off a chain of 10 Rockbombs",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.37",
+      "kind": "record",
+      "index": 37,
+      "source": {
+        "offset": 452192,
+        "end_exclusive": 452217,
+        "raw_hex": "949a959782c982dc82ab82b182dc82ea82c4937c82ea82bd00",
+        "sha256": "1ade073f75fc8b52cad25d50aafcf39f95edc359ce0b42df0ade4c68be0c6ab2",
+        "japanese": "爆風にまきこまれて倒れた"
+      },
+      "english": "Fell in an explosion",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.38",
+      "kind": "record",
+      "index": 38,
+      "source": {
+        "offset": 452156,
+        "end_exclusive": 452191,
+        "raw_hex": "836f815b8354815b834a815b838c8378838b825488c88fe382c9937c82b382ea82bd00",
+        "sha256": "966dc0d16cf081b33e6600c0f11aceaefe165ecd8a9430618a74d064137f723d",
+        "japanese": "バーサーカーレベル５以上に倒された"
+      },
+      "english": "Defeated by a Lv5+ Berserker",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.39",
+      "kind": "record",
+      "index": 39,
+      "source": {
+        "offset": 452140,
+        "end_exclusive": 452153,
+        "raw_hex": "935694b182f08ef382af82bd00",
+        "sha256": "3b72a73998ada0ccbf068689df18426ea6f4ff4789769d9a322da0c2b50ec7ad",
+        "japanese": "天罰を受けた"
+      },
+      "english": "Suffered divine punishment",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.40",
+      "kind": "record",
+      "index": 40,
+      "source": {
+        "offset": 452120,
+        "end_exclusive": 452139,
+        "raw_hex": "82c782eb82da82a482f0256489f182b582bd00",
+        "sha256": "9e54d7e02904cba1e2633736e5b0009f60a7fae29073ce70c52a473b8d5e4363",
+        "japanese": "どろぼうを%{unclassified-control:64}回した"
+      },
+      "english": "Stole {number} times",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.41",
+      "kind": "record",
+      "index": 41,
+      "source": {
+        "offset": 452096,
+        "end_exclusive": 452119,
+        "raw_hex": "82c782eb82da82a482c9256489f190ac8cf782b582bd00",
+        "sha256": "63d453003b52e5575c449df3a39d520b2da46d8fdcb85f6a5ef16b01796e8012",
+        "japanese": "どろぼうに%{unclassified-control:64}回成功した"
+      },
+      "english": "Escaped after stealing {number} times",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.42",
+      "kind": "record",
+      "index": 42,
+      "source": {
+        "offset": 452076,
+        "end_exclusive": 452093,
+        "raw_hex": "256489f190b682ab82c496df82c182bd00",
+        "sha256": "3a54dfdf5bbc3f20e06bf250e922bdc1dab7c9a6e049642f6c7c4454a1f5c68d",
+        "japanese": "%{unclassified-control:64}回生きて戻った"
+      },
+      "english": "Returned alive {number} times",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.43",
+      "kind": "record",
+      "index": 43,
+      "source": {
+        "offset": 452048,
+        "end_exclusive": 452073,
+        "raw_hex": "8370838b83768393836582cc8aaa95a882f093c782f182be00",
+        "sha256": "48f9ed36a1cc3068e9e2c2e2ff44576584e8bec2988c42bd30a31566a78218a6",
+        "japanese": "パルプンテの巻物を読んだ"
+      },
+      "english": "Read a Hocus Pocus scroll",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.44",
+      "kind": "record",
+      "index": 44,
+      "source": {
+        "offset": 452020,
+        "end_exclusive": 452047,
+        "raw_hex": "82c282e982cd82b582f08d8790ac82b582c482b582dc82c182bd00",
+        "sha256": "a69113006293d96bd33a5cc0946dce421827b3df3b240e088c383606094a5653",
+        "japanese": "つるはしを合成してしまった"
+      },
+      "english": "Synthesised a pickaxe",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.45",
+      "kind": "record",
+      "index": 45,
+      "source": {
+        "offset": 452000,
+        "end_exclusive": 452019,
+        "raw_hex": "8d8790ac82cc9ae282f08993938a82b582bd00",
+        "sha256": "8737bc94e2f5dbf2efe9eb57ed2e0c2549cf4a32a6e7a3865a5c17972795e960",
+        "japanese": "合成の壺を遠投した"
+      },
+      "english": "Threw a Synthesis pot a long way",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.46",
+      "kind": "record",
+      "index": 46,
+      "source": {
+        "offset": 451984,
+        "end_exclusive": 451997,
+        "raw_hex": "82a482a682c4937c82ea82bd00",
+        "sha256": "2bdc537a082873edf68bead3c978f240f3989bfef2a6a2c00f263acdf32a914f",
+        "japanese": "うえて倒れた"
+      },
+      "english": "Fell to starvation",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.row.47",
+      "kind": "record",
+      "index": 47,
+      "source": {
+        "offset": 451956,
+        "end_exclusive": 451981,
+        "raw_hex": "959782c9908182a982ea82c4926e8fe382c996df82c182bd00",
+        "sha256": "57b57ca30e8ac7f58b18a08a415899d140c75947c988f299c7502f61e5c447b2",
+        "japanese": "風に吹かれて地上に戻った"
+      },
+      "english": "Blown to the surface by the wind",
+      "status": "reviewed",
+      "review": "Independent Japanese-source achievement/statistic translation. Preserve every count, dungeon, death status, collection target and success qualifier. Existing reviewed item/monster/dungeon terminology is reused by Japanese identity; display includes the complete native field within one224px list row. No mechanics inferred from PS1."
+    },
+    {
+      "id": "records.rank.0",
+      "kind": "rank",
+      "index": 0,
+      "source": {
+        "offset": 453404,
+        "end_exclusive": 453419,
+        "raw_hex": "835f8393835783878393837d839300",
+        "sha256": "64d139c1c5b5d2f15755a0127a44d012251b83a4adc3d71a49ce2657652d9ae8",
+        "japanese": "ダンジョンマン"
+      },
+      "english": "Dungeon Man",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.1",
+      "kind": "rank",
+      "index": 1,
+      "source": {
+        "offset": 453384,
+        "end_exclusive": 453401,
+        "raw_hex": "835f8393835783878393837d836a834100",
+        "sha256": "fac7d13bf14842d3557596566cd89d0c10582bc631c400980fb2b2362ffa0544",
+        "japanese": "ダンジョンマニア"
+      },
+      "english": "Dungeon Maniac",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.2",
+      "kind": "rank",
+      "index": 2,
+      "source": {
+        "offset": 453368,
+        "end_exclusive": 453383,
+        "raw_hex": "835f83938357838783938376838d00",
+        "sha256": "2ce6ac35d620ffb675c90a51dcaac832520a56f9e6722269d5c2af03a2c5f591",
+        "japanese": "ダンジョンプロ"
+      },
+      "english": "Dungeon Pro",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.3",
+      "kind": "rank",
+      "index": 3,
+      "source": {
+        "offset": 453352,
+        "end_exclusive": 453367,
+        "raw_hex": "835f839383578387836a8358836700",
+        "sha256": "4766754550182d5f75036b99e7194fae62965e0fe19245a237068381ff916444",
+        "japanese": "ダンジョニスト"
+      },
+      "english": "Dungeonist",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.4",
+      "kind": "rank",
+      "index": 4,
+      "source": {
+        "offset": 453328,
+        "end_exclusive": 453349,
+        "raw_hex": "834e815b838b835f839383578387836a8358836700",
+        "sha256": "d11bf85f5914da6e20526a965f5af06d34f1c095834a9079cdcc91f74757e695",
+        "japanese": "クールダンジョニスト"
+      },
+      "english": "Cool Dungeonist",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.5",
+      "kind": "rank",
+      "index": 5,
+      "source": {
+        "offset": 453304,
+        "end_exclusive": 453327,
+        "raw_hex": "8358815b8370815b835f839383578387836a8358836700",
+        "sha256": "c6463b2e6c91fa3c93ade0f550dbd5f9a2a0b77414d8a57f9798cb9d56916400",
+        "japanese": "スーパーダンジョニスト"
+      },
+      "english": "Super Dungeonist",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.6",
+      "kind": "rank",
+      "index": 6,
+      "source": {
+        "offset": 453284,
+        "end_exclusive": 453303,
+        "raw_hex": "835f8393835783878393834583438369815b00",
+        "sha256": "8596cdb14f87e2de39791560d0816b0a0e9b7c34c66d2e84711ccd7826b0c25a",
+        "japanese": "ダンジョンウイナー"
+      },
+      "english": "Dungeon Victor",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.7",
+      "kind": "rank",
+      "index": 7,
+      "source": {
+        "offset": 453264,
+        "end_exclusive": 453283,
+        "raw_hex": "835f8393835783878393837d8358835e815b00",
+        "sha256": "02fca658810e67c7378b63bed9686b32f6927a72f32390a0cd5461950c02934a",
+        "japanese": "ダンジョンマスター"
+      },
+      "english": "Dungeon Master",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.8",
+      "kind": "rank",
+      "index": 8,
+      "source": {
+        "offset": 453244,
+        "end_exclusive": 453261,
+        "raw_hex": "835f8393835783878393834c8393834f00",
+        "sha256": "8ff9dc588090df5d61064b559adf5a7cc47784cad515fb2dad9f357437ecdfb6",
+        "japanese": "ダンジョンキング"
+      },
+      "english": "Dungeon King",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.9",
+      "kind": "rank",
+      "index": 9,
+      "source": {
+        "offset": 453220,
+        "end_exclusive": 453241,
+        "raw_hex": "835f83938357838783938347839383798389815b00",
+        "sha256": "5c8a0b4c7731c2d0324a34e62da125001b82cd71253eb25b0feb4e7389f44fff",
+        "japanese": "ダンジョンエンペラー"
+      },
+      "english": "Dungeon Emperor",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.rank.10",
+      "kind": "rank",
+      "index": 10,
+      "source": {
+        "offset": 453200,
+        "end_exclusive": 453217,
+        "raw_hex": "835f839383578387839383538362836800",
+        "sha256": "9eb552a76dde3976483559da86fc6afe5beb872904283027ef507517ff285f57",
+        "japanese": "ダンジョンゴッド"
+      },
+      "english": "Dungeon Lord",
+      "status": "reviewed",
+      "review": "T2 Japanese rank identities and progression sequence match the official PS1 fallback title list as reported by a secondary guide. Preserve its distinct rank names; not an official primary capture.",
+      "terminology": {
+        "reference_game": "Torneko: The Last Hope (PS1, English)",
+        "source": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+        "section": "4.2 Exploration Log Titles",
+        "quality": "secondary report of official names",
+        "confidence": "medium",
+        "review_date": "2026-09-24"
+      }
+    },
+    {
+      "id": "records.literal.5744c",
+      "kind": "literal",
+      "literal": 357452,
+      "source": {
+        "offset": 451704,
+        "end_exclusive": 451728,
+        "raw_hex": "95908aed8fa4906c838c8378838b0305256403073a257300",
+        "sha256": "6889974c6430bebc2f95aa37da4731f39cf71ad573dfc647da7ce6f6264c491b",
+        "japanese": "武器商人レベル{legacy-position:0305}%{unclassified-control:64}{legacy-position:0307}:%{unclassified-control:73}"
+      },
+      "english": "Arms merchant Lv{cyan}{level}{white}: {rank}",
+      "status": "reviewed",
+      "review": "Independent translation preserving field order and source colour controls. Arms merchant is the source weapon-trader achievement level, distinct from combat level. Play time keeps hours and minutes. The count suffix 回 is expressed by Adventures in row0; its owned suffix becomes empty so no Japanese unit remains and the native scratch output only shrinks."
+    },
+    {
+      "id": "records.literal.574f8",
+      "kind": "literal",
+      "literal": 357624,
+      "source": {
+        "offset": 451728,
+        "end_exclusive": 451748,
+        "raw_hex": "95908aed8fa4906c838c8378838b25643a257300",
+        "sha256": "2b40d93b75db6917814be47b34c466795e251b66d40476d051b38ad1c9b1644d",
+        "japanese": "武器商人レベル%{unclassified-control:64}:%{unclassified-control:73}"
+      },
+      "english": "Arms merchant Lv{level}: {rank}",
+      "status": "reviewed",
+      "review": "Independent translation preserving field order and source colour controls. Arms merchant is the source weapon-trader achievement level, distinct from combat level. Play time keeps hours and minutes. The count suffix 回 is expressed by Adventures in row0; its owned suffix becomes empty so no Japanese unit remains and the native scratch output only shrinks."
+    },
+    {
+      "id": "records.literal.57500",
+      "kind": "literal",
+      "literal": 357632,
+      "source": {
+        "offset": 451748,
+        "end_exclusive": 451772,
+        "raw_hex": "8376838c83438e9e8ad43a256c648e9e8ad4256c6495aa00",
+        "sha256": "8b08a875a13df963473e1ae48ab9914b88f550e71943f93ef2e6af73f8517001",
+        "japanese": "プレイ時間:%{unclassified-control:6c}{unclassified-control:64}時間%{unclassified-control:6c}{unclassified-control:64}分"
+      },
+      "english": "Play time: {hours}h {minutes}m",
+      "status": "reviewed",
+      "review": "Independent translation preserving field order and source colour controls. Arms merchant is the source weapon-trader achievement level, distinct from combat level. Play time keeps hours and minutes. The count suffix 回 is expressed by Adventures in row0; its owned suffix becomes empty so no Japanese unit remains and the native scratch output only shrinks."
+    },
+    {
+      "id": "records.literal.575d0",
+      "kind": "literal",
+      "literal": 357840,
+      "source": {
+        "offset": 1393940,
+        "end_exclusive": 1393951,
+        "raw_hex": "8148814881488148814800",
+        "sha256": "6465f2abdb9714a52047bfee0893d9668e46d08061ff78f2c96e61a6ec360f79",
+        "japanese": "？？？？？"
+      },
+      "english": "?????",
+      "status": "reviewed",
+      "review": "Independent translation preserving field order and source colour controls. Arms merchant is the source weapon-trader achievement level, distinct from combat level. Play time keeps hours and minutes. The count suffix 回 is expressed by Adventures in row0; its owned suffix becomes empty so no Japanese unit remains and the native scratch output only shrinks."
+    },
+    {
+      "id": "records.literal.57758",
+      "kind": "literal",
+      "literal": 358232,
+      "source": {
+        "offset": 451788,
+        "end_exclusive": 451791,
+        "raw_hex": "89f100",
+        "sha256": "fd1b1e6bd2df069543b841c1d6fe40ce132489c19e1e638461cf26580052c0bb",
+        "japanese": "回"
+      },
+      "english": "",
+      "status": "reviewed",
+      "review": "Independent translation preserving field order and source colour controls. Arms merchant is the source weapon-trader achievement level, distinct from combat level. Play time keeps hours and minutes. The count suffix 回 is expressed by Adventures in row0; its owned suffix becomes empty so no Japanese unit remains and the native scratch output only shrinks."
+    }
+  ]
+}

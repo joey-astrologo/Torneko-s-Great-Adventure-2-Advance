@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the table literal in native warp-trap handler08027680. Other trap dispatch and ordinary trap discovery remain separate.",
+  "entries": [
+    {
+      "id": "warp-trap.2f0",
+      "table_offset": 752,
+      "source": {
+        "offset": 406728,
+        "end_exclusive": 406744,
+        "raw_hex": "838f815b837682cc838f836982be2100",
+        "sha256": "840508adf4ce52a1825774716dda04012179af55b459fef4f003bd18629a88bd",
+        "japanese": "ワープのワナだ!"
+      },
+      "english": "A warp trap!",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the announced warp trap and the failed-activation branch. Both are plain one-line notices. Native teleport destination, activation and original caller ownership are checked separately."
+    },
+    {
+      "id": "warp-trap.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent Japanese reading preserves the announced warp trap and the failed-activation branch. Both are plain one-line notices. Native teleport destination, activation and original caller ownership are checked separately."
+    }
+  ]
+}

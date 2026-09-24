@@ -12,30 +12,32 @@
     "descender_bottom": 13,
     "stroke_width": 1,
     "preserve_original_capitals_digits_and_existing_symbols": true,
-    "source_backslash_slot": "Original 0x5C is a yen sign; an English backslash is supplied in this separate table."
+    "source_backslash_slot": "Original 0x5C is a yen sign; an English backslash is supplied in this separate table.",
+    "word_space_advance": 3
   },
   "glyphs": {
     " ": {
-      "origin": "rom",
+      "origin": "adapted-rom",
       "rom_offset": 1572864,
       "source_hex": "0600000000000000000000000000000000000000000000000000000000000000",
-      "advance": 6,
+      "advance": 3,
       "rows": [
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......",
-        "......"
-      ]
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "..."
+      ],
+      "adaptation": "Blank word space reduced from six to three pixels after native visual review; original source record retained for provenance."
     },
     "!": {
       "origin": "rom",

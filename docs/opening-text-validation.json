@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-13",
+  "passed": true,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "source_save_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+  "original_files_unchanged": true,
+  "verified_sources": 30,
+  "native_string_reads": 32,
+  "verified_compressed_bank_sources": 25,
+  "runtime_reads_pending_provenance": 1,
+  "natural_bank_loads_verified": 1,
+  "controlled_native_bank_decodes": 7,
+  "candidate_leads": 2729,
+  "catalog_round_trips": 30,
+  "emulator": "0.10.5",
+  "route_sha256": "419ea673c15c84ff26138e11e6c021d174df2f30d311870fe9991c07a879b614",
+  "final_frame": 19688,
+  "validation": {
+    "full_toolchain_command": "./validate.sh",
+    "full_toolchain_passed": true,
+    "latest_unit_command": ".venv/bin/python -m unittest discover -s tests -v",
+    "latest_unit_tests": 23,
+    "latest_unit_tests_passed": true,
+    "catalog_javascript": "Catalog JavaScript passed: verified/candidate separation, Japanese/address search, pagination and empty results.",
+    "browser_visual_test": false
+  },
+  "new_english_insertions": 0,
+  "scope": "Initial opening-source discovery and extraction. Name-entry producer, event controls/insertion ownership and integrated English opening remain in progress; no whole-game completion percentage.",
+  "artifacts": {
+    "translations/master.json": "bf9be2babd65b4307a60f58627b8403bfcfd5a683d7534f8c91f096a6aa2eb2e",
+    "config/routes/opening.json": "419ea673c15c84ff26138e11e6c021d174df2f30d311870fe9991c07a879b614",
+    "build/opening-text/trace.json": "df5965703234e2cfff0fc8fb79e624c3509d19c6969b1ba508a9bad40e67a485",
+    "build/text-extraction/report.json": "c110424ffd36d1520b9ac3249b2cdf9a1019eac68d240f83e3534fefa2cecdcf",
+    "build/text-extraction/candidates.json": "2375ec83d792dc1160516267eb86f420cbb834e77723b3442b501744dc8bb950",
+    "build/text-extraction/verification/report.json": "60bd33fd6f9d8ff8d07e0c62ca213d4f9f330f44224859b4673bbd23c3c3fac9",
+    "build/text-extraction/index.html": "f318b717439e67233a4cbe00ef69da974ba9d3e60969c20fa50ea1a830802eb8"
+  },
+  "implementation": {
+    "tools/lz77.py": "606a65cb4d27bddddf057a6dce05efe1d7916d221db74e4ab794c14c32deeb6d",
+    "tools/text_codec.py": "f6b0a2e73843961002afb93fdd1723fbfffdb0dea4375e89dc69ee8f6d3a91b9",
+    "tools/opening_text.py": "0e808e2151c3c0c797fa266a026e1e69ad977f624efd404081300dda942cc7eb",
+    "tools/trace_opening.py": "71576e8ca15a90e3dae8307081ab5044ce097d80a282b906b1e0a8e74c5021bb",
+    "tools/extract_text.py": "480f9b1049672d5ec0e9a3f2028e2f8557e963669d412799de1cd06a893a0b3e",
+    "tools/verify_text_sources.py": "3320e2932257fecf4648404eb29248d9f8fbf3889fa5a039b6cd274d5b5852f0",
+    "tests/test_text_sources.py": "46b2ccd5339e8b56a3c326a5bf7853def9633495f8d44f22a41a3dd40b6f5e5e"
+  }
+}

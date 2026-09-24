@@ -1,0 +1,366 @@
+{
+  "schema": 1,
+  "scope": "Eleven item category labels and six remaining discovered native labels/prompts. Budgets and consumers pending.",
+  "entries": [
+    {
+      "id": "rom.00065f18",
+      "family": "item-category-label",
+      "source_sha256": "ee826387f2338e38d75110c5247685586bb59374c5dcef2c002878570b9f3992",
+      "raw_hex": "8e8091cc00",
+      "japanese": "死体",
+      "references": [
+        {
+          "category": 13,
+          "pointer_offset": 1326868
+        }
+      ],
+      "english_draft": "Corpse",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        35
+      ],
+      "encoded_bytes": 13,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f20",
+      "family": "item-category-label",
+      "source_sha256": "debb1f8bd456b298e3c73b6cebf1ac13f767da5ceff54b945bf236fd7f37dfd4",
+      "raw_hex": "94a000",
+      "japanese": "箱",
+      "references": [
+        {
+          "category": 11,
+          "pointer_offset": 1326860
+        }
+      ],
+      "english_draft": "Box",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        18
+      ],
+      "encoded_bytes": 7,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f24",
+      "family": "item-category-label",
+      "source_sha256": "49e9606102cb3c808d334601d956523f17470b80e3c2d337eba50705a012d424",
+      "raw_hex": "95f395a800",
+      "japanese": "宝物",
+      "references": [
+        {
+          "category": 10,
+          "pointer_offset": 1326856
+        }
+      ],
+      "english_draft": "Treasure",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        46
+      ],
+      "encoded_bytes": 17,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f2c",
+      "family": "item-category-label",
+      "source_sha256": "4768ef3b8f3a3d57709576ebe65c462e4506ab49725d0e2ba7160088ed072137",
+      "raw_hex": "9ae200",
+      "japanese": "壺",
+      "references": [
+        {
+          "category": 9,
+          "pointer_offset": 1326852
+        }
+      ],
+      "english_draft": "Pot",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        16
+      ],
+      "encoded_bytes": 7,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f30",
+      "family": "item-category-label",
+      "source_sha256": "8db1b6c72d346a6602a96079fd968e77053487e68e7f07aa6366ac5a0dc46b3a",
+      "raw_hex": "96ee00",
+      "japanese": "矢",
+      "references": [
+        {
+          "category": 8,
+          "pointer_offset": 1326848
+        }
+      ],
+      "english_draft": "Arrow",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        28
+      ],
+      "encoded_bytes": 11,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f34",
+      "family": "item-category-label",
+      "source_sha256": "5bf99bde5799b585017bb7b4489c36fe2af8c195950d3845196df182dbc1439e",
+      "raw_hex": "919000",
+      "japanese": "草",
+      "references": [
+        {
+          "category": 7,
+          "pointer_offset": 1326844
+        }
+      ],
+      "english_draft": "Herb",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        23
+      ],
+      "encoded_bytes": 9,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f38",
+      "family": "item-category-label",
+      "source_sha256": "e42afddbb664594b2f36cd7409d5072f0cbf86e58f869c0b1a9109913041b245",
+      "raw_hex": "8c9500",
+      "japanese": "剣",
+      "references": [
+        {
+          "category": 6,
+          "pointer_offset": 1326840
+        }
+      ],
+      "english_draft": "Sword",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        29
+      ],
+      "encoded_bytes": 11,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f3c",
+      "family": "item-category-label",
+      "source_sha256": "2c67317650608e989f5805bff55dbf1ce790b7bd2488f23ec16172349c61b51e",
+      "raw_hex": "82a88be000",
+      "japanese": "お金",
+      "references": [
+        {
+          "category": 4,
+          "pointer_offset": 1326832
+        }
+      ],
+      "english_draft": "Gold",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        21
+      ],
+      "encoded_bytes": 9,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f44",
+      "family": "item-category-label",
+      "source_sha256": "69eb80b460fbba77186427275ef06718a7635aa1be8f3b9c9c6b2e4bb9f3a285",
+      "raw_hex": "8f8200",
+      "japanese": "盾",
+      "references": [
+        {
+          "category": 3,
+          "pointer_offset": 1326828
+        }
+      ],
+      "english_draft": "Shield",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        30
+      ],
+      "encoded_bytes": 13,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f48",
+      "family": "item-category-label",
+      "source_sha256": "2637df4b1210681f471ad8c8b76982f5ffb06eb7db6a4973daa28d8b336c548c",
+      "raw_hex": "8ff100",
+      "japanese": "杖",
+      "references": [
+        {
+          "category": 2,
+          "pointer_offset": 1326824
+        }
+      ],
+      "english_draft": "Staff",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        24
+      ],
+      "encoded_bytes": 11,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.00065f4c",
+      "family": "item-category-label",
+      "source_sha256": "38734addd2934be179c3d840c34d12fecba2f483a2cdc9a89da7a2ef9e83ce6a",
+      "raw_hex": "8e7797d600",
+      "japanese": "指輪",
+      "references": [
+        {
+          "category": 1,
+          "pointer_offset": 1326820
+        }
+      ],
+      "english_draft": "Ring",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        21
+      ],
+      "encoded_bytes": 9,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.0006b590",
+      "family": "other-native",
+      "source_sha256": "287dd8e4a3945f6f03ca1dd65f8ed5cc34ec6c17509463051a3886ab17eb9806",
+      "raw_hex": "8d7e82e882e90d82bb82cc82dc82dc00",
+      "japanese": "降りる\nそのまま",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 439696,
+            "end_exclusive": 439712
+          }
+        }
+      ],
+      "english_draft": "Descend\nStay here",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        42,
+        48
+      ],
+      "encoded_bytes": 34,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.0006c314",
+      "family": "other-native",
+      "source_sha256": "6562d4a134358e5959a36a688e9797881c7af27d1f6ac636c57623e3199da5ab",
+      "raw_hex": "8140836e834383588352834100",
+      "japanese": "　ハイスコア",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 443156,
+            "end_exclusive": 443169
+          }
+        }
+      ],
+      "english_draft": "High scores",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        59
+      ],
+      "encoded_bytes": 23,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.0006c324",
+      "family": "other-native",
+      "source_sha256": "d349765649cddf1c676d2b9c4427013cd376454335c16d5076e78227459b4bc8",
+      "raw_hex": "814096608caf82cc8381838200",
+      "japanese": "　冒険のメモ",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 443172,
+            "end_exclusive": 443185
+          }
+        }
+      ],
+      "english_draft": "Exploration Log",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        78
+      ],
+      "encoded_bytes": 31,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage. Use the established Exploration Log term, distinct from Adventure Log (save data)."
+    },
+    {
+      "id": "rom.0006c4a4",
+      "family": "other-native",
+      "source_sha256": "2028afb0871933394fe033c5557c8be5af9f0c5a4989aafa0987d8c259a24c60",
+      "raw_hex": "82bf82e582c182c695738e768b6382cc91908cb482f082c682a882e882dc82b782a9814800",
+      "japanese": "ちょっと不思議の草原をとおりますか？",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 443556,
+            "end_exclusive": 443593
+          }
+        }
+      ],
+      "english_draft": "Cross the Mysterious Meadow?",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        150
+      ],
+      "encoded_bytes": 57,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage. Mysterious Meadow is a provisional dungeon label; reconcile with destination naming before insertion."
+    },
+    {
+      "id": "rom.0006c4cc",
+      "family": "other-native",
+      "source_sha256": "bca1e03744c1e3a9de6bfeeb481a7049165c4bb69163ede6f4056748e8b3a9df",
+      "raw_hex": "814082cd82a28140814082a282a282a600",
+      "japanese": "　はい　　いいえ",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 443596,
+            "end_exclusive": 443613
+          }
+        }
+      ],
+      "english_draft": "Yes  No",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        36
+      ],
+      "encoded_bytes": 15,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    },
+    {
+      "id": "rom.0006e3b4",
+      "family": "other-native",
+      "source_sha256": "84e51841676d18dcf115f419ecf304ee946759eb41c02ad2ade53638a6769dd5",
+      "raw_hex": "836e83438358835283410d96608caf82cc8b4c985e00",
+      "japanese": "ハイスコア\n冒険の記録",
+      "references": [
+        {
+          "source": {
+            "kind": "rom",
+            "offset": 451508,
+            "end_exclusive": 451530
+          }
+        }
+      ],
+      "english_draft": "High scores\nAdventure records",
+      "status": "draft-needs-native-consumer-and-layout-review",
+      "static_line_widths": [
+        59,
+        94
+      ],
+      "encoded_bytes": 58,
+      "notes": "Independent T2 source wording. Native aliases, cursor/column placement, custom rename format and buffer ownership require separate validation. No insertion or accepted coverage."
+    }
+  ]
+}

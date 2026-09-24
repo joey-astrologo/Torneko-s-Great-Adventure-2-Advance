@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned mine and iron-ball handlers only; private table literals. Original native effect/damage logic retained.",
+  "entries": [
+    {
+      "id": "blast-traps.2f4",
+      "table_offset": 756,
+      "source": {
+        "offset": 406704,
+        "end_exclusive": 406728,
+        "raw_hex": "89bd82a982cc20835883438362836082f082d382f182be00",
+        "sha256": "bd07aab399ece98a28b4d6ade524b57205747b45d843f581d416573047716300",
+        "japanese": "何かの スイッチをふんだ"
+      },
+      "english": "You stepped on a switch.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves activation refusal, the land mine and incoming iron ball. Complete one-line notices; native damage remains in the separately reviewed numeric damage format. Ordinary discovery and death/revival remain separately scoped."
+    },
+    {
+      "id": "blast-traps.2ec",
+      "table_offset": 748,
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves activation refusal, the land mine and incoming iron ball. Complete one-line notices; native damage remains in the separately reviewed numeric damage format. Ordinary discovery and death/revival remain separately scoped."
+    },
+    {
+      "id": "blast-traps.33c",
+      "table_offset": 828,
+      "source": {
+        "offset": 406344,
+        "end_exclusive": 406352,
+        "raw_hex": "926e978b82be2100",
+        "sha256": "42c09e951c6d00449f35b9374fd369a11ae54c863e108845ff3b7962f522c93b",
+        "japanese": "地雷だ!"
+      },
+      "english": "A land mine!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves activation refusal, the land mine and incoming iron ball. Complete one-line notices; native damage remains in the separately reviewed numeric damage format. Ordinary discovery and death/revival remain separately scoped."
+    },
+    {
+      "id": "blast-traps.340",
+      "table_offset": 832,
+      "source": {
+        "offset": 406324,
+        "end_exclusive": 406342,
+        "raw_hex": "93538b8582aa94f282f182c582ab82bd2100",
+        "sha256": "e51384742d53877f6dd711d93401ca627b3c892e471bfab0e97be505265c6bf5",
+        "japanese": "鉄球が飛んできた!"
+      },
+      "english": "An iron ball flew at you!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading preserves activation refusal, the land mine and incoming iron ball. Complete one-line notices; native damage remains in the separately reviewed numeric damage format. Ordinary discovery and death/revival remain separately scoped."
+    }
+  ]
+}

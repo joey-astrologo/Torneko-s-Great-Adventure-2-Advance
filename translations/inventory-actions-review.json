@@ -1,0 +1,132 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private reads in Equip 080246FC, Remove 08024918 and Drop 08024E70 only. The ambiguous ground-removal source 090 is deliberately unchanged. Native conditional break 0E0A49, proven separately, joins actual widths <=215; fixed messages may use the verified216px safe budget. Existing192-byte outputs and64-byte item fields remain unchanged.",
+  "entries": [
+    {
+      "id": "inventory-action.078",
+      "table_offset": 120,
+      "source": {
+        "offset": 410768,
+        "end_exclusive": 410798,
+        "raw_hex": "91ab8cb382cc834183438365838082cd0d919594f582c582ab82c882a200",
+        "sha256": "0ba2dfbb864c60d39b68a3e048b27bb2b80905d7c884add0bf698817f3295e9d",
+        "japanese": "足元のアイテムは\n装備できない"
+      },
+      "english": "Cannot equip an item on the floor.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Ground-item restriction remains explicit."
+    },
+    {
+      "id": "inventory-action.07c",
+      "table_offset": 124,
+      "source": {
+        "offset": 410736,
+        "end_exclusive": 410766,
+        "raw_hex": "257382cd20919594f582b782e9834183438365838082c582cd82c882a200",
+        "sha256": "f0daa9b0e8c5f5701eb8865fdb574374a2f06e24eea535a2f664d3d45c67dc3f",
+        "japanese": "%{unclassified-control:73}は 装備するアイテムではない"
+      },
+      "english": "{item}{fit} cannot be equipped.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Retains item-category rejection."
+    },
+    {
+      "id": "inventory-action.080",
+      "table_offset": 128,
+      "source": {
+        "offset": 410700,
+        "end_exclusive": 410734,
+        "raw_hex": "257382cd0d8ef482ed82ea82c482a282e982cc82c5814082cd82b882b982c882a200",
+        "sha256": "cc2c7a6900d5ee2d198adb0b0d36e369127068eaab00443bfe2aeb1ca420ca0c",
+        "japanese": "%{unclassified-control:73}は\n呪われているので　はずせない"
+      },
+      "english": "{item}{fit} is cursed and cannot be removed.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Retains both the curse and inability to remove; no causal information omitted."
+    },
+    {
+      "id": "inventory-action.084",
+      "table_offset": 132,
+      "source": {
+        "offset": 410672,
+        "end_exclusive": 410699,
+        "raw_hex": "82c882f182c62120257382cd0d8ef482ed82ea82c482a282bd2100",
+        "sha256": "bf60e161faadaa8fd308e83da865730f4819d65356373acec3c158159e8200d9",
+        "japanese": "なんと! %{unclassified-control:73}は\n呪われていた!"
+      },
+      "english": "Oh! {item}{fit} is cursed!",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Retains surprise and discovery of a curse."
+    },
+    {
+      "id": "inventory-action.088",
+      "table_offset": 136,
+      "source": {
+        "offset": 410656,
+        "end_exclusive": 410669,
+        "raw_hex": "257382f0919594f582b582bd00",
+        "sha256": "b0a468e02cb6c524efd9de530e8ef58d884d6d8d745f565b7f961065a6112da0",
+        "japanese": "%{unclassified-control:73}を装備した"
+      },
+      "english": "{item} equipped.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Successful equipment confirmation."
+    },
+    {
+      "id": "inventory-action.094",
+      "table_offset": 148,
+      "source": {
+        "offset": 410584,
+        "end_exclusive": 410603,
+        "raw_hex": "257382cc919594f582f082cd82b882b582bd00",
+        "sha256": "2df742e13b74e12108950633614680abe9ae162bf70e04b662f939120fbc47cc",
+        "japanese": "%{unclassified-control:73}の装備をはずした"
+      },
+      "english": "Removed {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Successful removal of equipment."
+    },
+    {
+      "id": "inventory-action.0a8",
+      "table_offset": 168,
+      "source": {
+        "offset": 410444,
+        "end_exclusive": 410461,
+        "raw_hex": "82b182b182c982cd927582af82c882a200",
+        "sha256": "9494c0c769331a9255a6e164595185b19fb0299273275c370dcfc48922b70d5a",
+        "japanese": "ここには置けない"
+      },
+      "english": "Cannot set an item down here.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Location-specific placement refusal."
+    },
+    {
+      "id": "inventory-action.0ac",
+      "table_offset": 172,
+      "source": {
+        "offset": 410424,
+        "end_exclusive": 410442,
+        "raw_hex": "257382f00d91ab8cb382c9927582a282bd00",
+        "sha256": "0bbf16ec6c5e38e9c19d67afc7caa64ae1a518bd39677e36dcdb6af339cbb09d",
+        "japanese": "%{unclassified-control:73}を\n足元に置いた"
+      },
+      "english": "Set {item}{fit} down at your feet.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Retains placement at the player's feet."
+    },
+    {
+      "id": "inventory-action.a14",
+      "table_offset": 2580,
+      "source": {
+        "offset": 393072,
+        "end_exclusive": 393102,
+        "raw_hex": "95738e768b6382c882bf82a982e782c520927582af82c882a982c182bd00",
+        "sha256": "21720e40db9bac09582017c34752e013d03a5bd2ae374bf53322729c418e5890",
+        "japanese": "不思議なちからで 置けなかった"
+      },
+      "english": "A mysterious force stopped you\nfrom setting it down.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Retains the mysterious force preventing placement; separate from occupied-floor refusal."
+    }
+  ]
+}

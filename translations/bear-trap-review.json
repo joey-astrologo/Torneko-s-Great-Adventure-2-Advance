@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private bear-trap handler table only. Existing native trap duration, grab-release helpers and animation retained; ordinary trap discovery and natural grabbing remain separate.",
+  "entries": [
+    {
+      "id": "bear-trap.2dc",
+      "table_offset": 732,
+      "source": {
+        "offset": 406832,
+        "end_exclusive": 406858,
+        "raw_hex": "83678389836f8354837e82c988f882c182a982a982c182bd2100",
+        "sha256": "764568ee4db444e4fa3b4b49c842b9f96889db4719d053d5ca7a109263e4db54",
+        "japanese": "トラバサミに引っかかった!"
+      },
+      "english": "Caught in a bear trap!",
+      "status": "reviewed",
+      "review": "Dedicated T2 bilingual reading preserves being caught, successful evasion and the grabbing monster releasing its hold in shock. The named release retains the full actor name and uses a conditional line break only when required. Native release helpers distinguish grasp types6/7 and player timers99/98."
+    },
+    {
+      "id": "bear-trap.2e8",
+      "table_offset": 744,
+      "source": {
+        "offset": 406772,
+        "end_exclusive": 406794,
+        "raw_hex": "82b582a982b52082a482dc82ad82a982ed82b582bd00",
+        "sha256": "2750333d8850e03ece88b134689e1ebffba99cd97b113d2dccca44f24335b04a",
+        "japanese": "しかし うまくかわした"
+      },
+      "english": "But you dodged it.",
+      "status": "reviewed",
+      "review": "Dedicated T2 bilingual reading preserves being caught, successful evasion and the grabbing monster releasing its hold in shock. The named release retains the full actor name and uses a conditional line break only when required. Native release helpers distinguish grasp types6/7 and player timers99/98."
+    },
+    {
+      "id": "bear-trap.978",
+      "table_offset": 2424,
+      "source": {
+        "offset": 394020,
+        "end_exclusive": 394051,
+        "raw_hex": "257382cd20835683878362834e82c50e074e8ee882f082cd82c882b582bd00",
+        "sha256": "94d0290a2f474ba9c3c1d4fecedf016fe30d5da9b502f77cd06acacb059e3dbb",
+        "japanese": "%{unclassified-control:73}は ショックで{fit-next:0e074e}手をはなした"
+      },
+      "english": "{actor} {fit}lets go in shock!",
+      "status": "reviewed",
+      "review": "Dedicated T2 bilingual reading preserves being caught, successful evasion and the grabbing monster releasing its hold in shock. The named release retains the full actor name and uses a conditional line break only when required. Native release helpers distinguish grasp types6/7 and player timers99/98."
+    }
+  ]
+}
