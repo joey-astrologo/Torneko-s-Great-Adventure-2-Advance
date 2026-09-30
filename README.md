@@ -36,6 +36,9 @@ already-reviewed text.
 
 The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
 names in all 13 locations; the earlier tests had missed this separate reader.
+The first [independent screen audit](docs/DUNGEON_SCREEN_AUDIT.md) checks 11
+dungeon/town scenarios, including 14 natural tutorial pickups, and fixes spacing
+between gold amounts and their label. Broader gameplay coverage remains open.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)

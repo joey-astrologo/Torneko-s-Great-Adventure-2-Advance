@@ -271,6 +271,10 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
     if include_title_art:
         from tools.title_art import add_title_art
         title_art = add_title_art(build)
+    # Append after existing resources so this formatter correction preserves
+    # every previously allocated text/graphics address.
+    from tools.gold_spacing import add_gold_spacing
+    gold_spacing = add_gold_spacing(build)
     data, report = build.finish()
     resource_counts = {
         'dialogue': len(dialogue['entries']), 'menus': len(menus['entries']),
@@ -400,6 +404,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
                   link_text=link_text, ending_notice=ending_notice, pickup_help=pickup_help,
                   carpenter=carpenter, fire_scene=fire_scene, travel_confirm=travel_confirm, town_routes=town_routes, form_refusal=form_refusal, ground_remove=ground_remove, monster_identity=monster_identity,
                   arrival_cards=arrival_cards, title_art=title_art, location_banner=location_banner,
+                  gold_spacing=gold_spacing,
                   total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")

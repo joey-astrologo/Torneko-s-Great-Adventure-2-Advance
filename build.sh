@@ -47,6 +47,9 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_inventory_action_prototype --cumulative
 .venv/bin/python -m tools.verify_pickup_prototype --cumulative
 .venv/bin/python -m tools.verify_walking_pickup
+.venv/bin/python -m tools.audit_dungeon_screens
+.venv/bin/python -m tools.audit_town_screens
+.venv/bin/python -m tools.accept_screen_audit
 .venv/bin/python -m tools.verify_projectiles --source build/english
 .venv/bin/python -m tools.verify_monster_announcements --source build/english
 .venv/bin/python -m tools.verify_priest --source build/english

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "reference_rom_sha256": "7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8",
+  "reference_rom_sha256": "c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4",
   "initial_save": "fresh",
   "scope": "Ordinary cold boot and Torneko name entry; home dialogue, Mysterious Meadow 1F arrival and natural first-floor item collection. No state restore or memory/register changes.",
   "expected_rgb_sha256": {

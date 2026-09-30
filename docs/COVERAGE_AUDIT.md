@@ -63,12 +63,17 @@ asking the user for additional investigation.
 | Area | Independent complete-screen coverage status |
 |---|---|
 | Dungeon root menu and location banner | Five text fields checked across 13 location selectors and three command modes, including reopening. Natural first-floor case; remaining selectors/modes are controlled. Broader gameplay states remain separate. |
-| Inventory, item actions, descriptions and custom naming | Existing resource/layout tests retained; independent complete-screen audit pending. Custom-name constraints remain unresolved. |
-| Options, bank, shops and storage | Existing route/resource checks retained; independent complete-screen audit pending. |
-| Story, pickups and combat | Existing translation and native route evidence retained; game-wide reader/route accounting pending. Earlier reported Japanese dungeon messages remain an open investigation. |
+| Inventory, item actions, descriptions and custom naming | Unfiltered audit now covers the naturally carried mansion inventory, Big bread Info/Eat/Drop, walking pickup and controlled inventory-full refusal. Other item states, effects and custom-name constraints remain open. |
+| Options, bank, shops and storage | Ordinary town-root reopening, earned-money bank round trip and repaired-storage deposit/withdrawal/empty acknowledgement audited without resource filters. Other service, shop and Option states still need the independent audit. |
+| Story, pickups and combat | Exact fresh tutorial replay reaches 14 pickups on three floors; natural mansion gold/arrow merge and associated combat audited. No unexpected Japanese in these scenarios; the earlier report remains unresolved outside this bounded matrix. Broader routes and readers remain pending. |
 | Later dungeons, classes, records and ending | Controlled and bounded route evidence exists; complete natural-route coverage unverified. |
 | Title, five corner logos, identified arrival cards and credits | Named assets have their own evidence. Additional graphical text discovery and natural late-game/ending coverage remain open. |
 
-This document corrects the interpretation of existing evidence and sets the
-next audit requirements. It does **not** claim that the pending audit has run
-or that the remaining gaps have been found.
+The first [dungeon/town audit](DUNGEON_SCREEN_AUDIT.md) now covers 11 scenarios
+with 7,068 observed glyph draws and explicit exceptions for native symbols and
+the exact player name retained in an imported Japanese save. It found and fixed
+missing spacing in gold pickup text. Historical controls prove that the new
+audit rejects both the old gold output and the missed Japanese banner.
+The [gallery and matrix](../build/coverage-audit/index.html) retain actual frames,
+input schedules and the ordinary/controlled distinction. These results do not
+close the other pending areas or establish a whole-game percentage.

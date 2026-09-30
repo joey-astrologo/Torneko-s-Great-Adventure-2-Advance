@@ -43,7 +43,19 @@ The current development candidate has **3,770 inserted text resources plus
 20 English graphics** (14 arrival graphics, the title and five backgrounds),
 exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
 Its ROM hash is
-`7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`.
+`c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`.
+The [independent dungeon/town audit](DUNGEON_SCREEN_AUDIT.md) passes 11 bounded
+scenarios, including all 14 natural tutorial pickups on three floors, earned
+gold/arrow pickups, item use, bank and storage round trips. Two capacity/amount
+cases are explicitly controlled. It fixes `321Gold` to `321 Gold` through one
+private formatter literal; every previous allocation and unrelated ROM byte
+remains identical. The previous banner-fix ROM
+`7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`
+is archived in `build/coverage-audit/pre-fix/`. Native glyph/window checks,
+22 item cases, five walking-pickup cases and 135 unit tests pass; historical
+negative controls reject the missing separator and Japanese banner. This is
+bounded current-build evidence, not full cumulative or whole-game acceptance.
+
 The [dungeon-menu banner correction](LOCATION_BANNER.md) fixes a user-reported
 missed reader: all 13 names in that field were still Japanese. The new whole-menu
 checks pass 39 cases / 117 openings and reject the old build. One pointer changes;

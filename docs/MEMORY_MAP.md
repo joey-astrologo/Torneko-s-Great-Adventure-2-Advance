@@ -4005,6 +4005,19 @@ separate. Evidence: `writing-picker-readers.txt`,
 `build/town-root-prototype/town-root-validation/`. The change is not included
 in the frozen3257 cumulative run.
 
+Ordinary town-menu follow-up (2026-09-30): on release ROM SHA256
+`7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`,
+pressing B inside the home/shop at the saved book and outside the bank reaches
+CPU `0x0804BF8A` and root `0x0802068C` without register, RAM or PC overrides.
+Both observed menus contain only Items/Option in the existing 40px, two-row
+window at x8/y24; no location-name banner is drawn. The indoor case also closes
+and reopens with B. Reader traces record just the English root stream for each
+opening. Evidence: `build/town-menu-location-check/{inside,outside}/report.json`
+and `menu.png`; the outside fixture's ordinary input route is in
+`build/town-menu-location-check/native/provenance.json`. Reports retain build,
+save and input provenance. This confirms ordinary entry in these two saved-game
+locations, not every town state, child menu or separate save-preview label.
+
 Custom-item editor research: ROM `[0x18284,0x1851C)` explicitly passes a limit
 of8 at18432 to19F3C, displays eight indexed glyphs in its17-byte local field,
 and copies10 working bytes to definition-state+9 before setting+8. General
@@ -5130,3 +5143,43 @@ Current ROM `7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`;
 previous ROM/ledger are archived in `build/location-banner/pre-fix/`. Evidence:
 `build/location-banner/{report,acceptance}.json`. Resource counts remain3770
 text and20 graphics; fixing this reader does not add new reviewed sources.
+
+## Dungeon screen audit: gold separator (2026-09-30)
+
+Ordinary mansion-floor-six walking reaches an existing 321-gold pile at (8,6).
+On ROM `7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`,
+the actual message is `Picked up 321Gold.`. The amount/name formatter preserves
+the Japanese no-space concatenation. This is an English spacing defect, not
+evidence of Japanese pickup text on that route.
+
+CPU `[0800F43C,0800F444)` loads its format from ROM `[0000F444,0000F448)`,
+loads the signed item halfword at record+4, and branches to `0800F4CA`.
+The shared tail `[0800F4CA,0800F4E0)` loads the reviewed item name and calls
+formatter `08000FB8`, returning at `0800F4DE`. Original literal bytes are
+`58 b4 06 08`; source ROM `[0006B458,0006B461)` is
+`03 25 63 25 64 25 73 05 00` (colour, signed amount, name, colour reset).
+Evidence: `build/coverage-audit/gold-branch.txt`, `gold-name-reader.txt`,
+and the unfiltered native formatter/queue trace and gold screenshot under
+`build/coverage-audit/dungeon/natural-gold-arrows-combat/`.
+
+`tools.gold_spacing` owns only that four-byte literal and one appended private
+format, adding the selected font's three-pixel word space between amount/name.
+The original shared template remains untouched. Append after all existing
+resources to preserve their addresses. The signed-halfword bound (six printable
+characters), existing 30-byte/80px name reserve and outer markers fit the
+64-byte item output and 162px row; no new RAM/save storage or window change.
+Validation now passes on ROM
+`c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`:
+ordinary 321 gold and controlled 32767 gold pickups, 22 item cases and five
+walking-pickup regressions. Existing allocations and all unrelated ROM bytes
+match the previous build exactly (`build/coverage-audit/gold-delta.json`).
+The original malformed message is rejected by the new scenario check.
+Current evidence and limits: [DUNGEON_SCREEN_AUDIT.md](DUNGEON_SCREEN_AUDIT.md).
+
+The screen audit observes queue entry at CPU `0801588C` and the post-hook
+payload at `080158CE` (r6). The former may still be a Japanese static pointer
+which the existing queue hook remaps before display. In the native Eat case,
+`お腹が いっぱいになった` at entry becomes `You're full!` before glyph output.
+Actual saved player-name bytes at EWRAM `[02003B58,02003B68)` are compared to
+the exact prefix of the displayed use-message; the old earned save's Japanese
+name is not an untranslated English-format defect. No new storage is claimed.

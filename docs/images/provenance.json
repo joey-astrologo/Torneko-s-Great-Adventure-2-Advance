@@ -1,11 +1,11 @@
 {
   "passed": true,
-  "rom_sha256": "7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8",
+  "rom_sha256": "c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4",
   "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
   "emulator": "0.10.5",
   "bios": "mGBA built-in BIOS; no external BIOS loaded",
   "route": "config/routes/readme.json",
-  "route_sha256": "0a828e35a4de74577c0d8fe513b94b8d0e024a76872f3586f1326998ba0637a9",
+  "route_sha256": "ceebf0a79a86d4c92e3d9bfea4ac54b99db8845c6e9a7d32a2139f58207caf68",
   "generator_sha256": "7632bdac76abfb0f3421a5aca87e52e7f6737a5e88eda2971cd9fe618d639ad8",
   "initial_save": "fresh",
   "controlled_overrides": [],
@@ -2773,9 +2773,9 @@
   "protected_hashes": {
     "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).gba": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
     "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).sav": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
-    "build/torneko-2-english.gba": "7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8",
-    "build/torneko-2-english.release.json": "ff14bf26c947dc9efdb820ece9d5f37d64b2e994f78b576caffe5ec7ae8402fe",
-    "build/torneko-2-english.bps": "ea883740d8099fa6e5d2bbc7cebba2d2f8b1de6662fa1cbab5811cb84a61f203"
+    "build/torneko-2-english.gba": "c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4",
+    "build/torneko-2-english.release.json": "c2cf82d8d635cc9f5b3c881ef68f79026c2679ab2ea9c4e52e997bf298c81fd4",
+    "build/torneko-2-english.bps": "72af3d0f428cd60d483ea684f364ab2b6eef785aa46a24dcb7b9c0a77379a67c"
   },
   "scope": "Ordinary cold boot and Torneko name entry; home dialogue, Mysterious Meadow 1F arrival and natural first-floor item collection. No state restore or memory/register changes. Unedited 240x160 framebuffer captures; no resizing or compositing."
 }

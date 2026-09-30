@@ -24,6 +24,7 @@ the missed-reader failure, and which complete-screen audits are still pending.
   and [original font research](FONTS.md).
 - [Menu geometry and action budgets](MENU_LAYOUTS.md).
 - [Dungeon-menu location banner correction and coverage gap](LOCATION_BANNER.md).
+- [Independent dungeon/town screen audit and native gallery](DUNGEON_SCREEN_AUDIT.md).
 - [Numbers, spacing and bank labels](TYPOGRAPHY.md).
 - [Service coverage and constraints](SERVICE_BATCHES.md).
 - [Item names and descriptions](ITEM_TEXT.md).

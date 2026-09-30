@@ -16,13 +16,19 @@ The latest compiled outputs are also exported directly to the `build/` root:
 Both `./build.sh` and `.venv/bin/python -m tools.build_english` update this pair
 after compilation and an independent patch application reproduces the ROM.
 The manifest is installed last; consumers should check both file hashes against
-it. Failed validation leaves the previous exports intact. Explicit compiler
+it. Failed patch-packaging validation leaves the previous exports intact.
+Gameplay checks run after compilation; their failure does not roll back the
+already exported development pair. Explicit compiler
 `--output` directories are isolated and do not replace the default exports.
 To re-export existing compiler output, run
 `.venv/bin/python -m tools.export_release`. Native acceptance is recorded
 separately in the matching validation receipt; these convenient latest-build
 files remain development outputs while localization/playtesting is incomplete.
 Archived accepted milestones under `build/accepted/` are preserved.
+The [independent screen audit](DUNGEON_SCREEN_AUDIT.md) runs 11 bounded dungeon
+and town scenarios without filtering readers to registered translations.
+`tools.accept_screen_audit` checks matching build/tool/image hashes and writes
+the scenario matrix and native gallery under `build/coverage-audit/`.
 The [location-banner check](LOCATION_BANNER.md) covers all five dungeon-menu
 text fields across 13 location labels and three command modes, including
 cancellation and reopening. It rejects unexpected Japanese glyphs on that
@@ -71,21 +77,22 @@ non-placeholder item names, reviewed descriptions, bank rewards, repaired
 storage, bakery purchases, dungeon actor names and the currently checked combat
 and status messages.
 
-The accepted build contains **2,500 reviewed inserted resources**. Its stable
+The archived **2,500-resource milestone** is an earlier accepted build. Its stable
 ROM, BPS, ledger and receipt are retained in `build/accepted/2500/`. Full
 regression,85 unit tests,90 WebKit contexts/890 measurements and byte-identical
 ROM/BPS rebuilding pass. This includes1,872 item cases,556 visibly verified
 static notices,27 monster-condition cases and336 result/history cases.
-Earlier milestones remain archived. The current development candidate adds110
+Earlier milestones remain archived. The following historical candidate added110
 result UI/history/menu/record/Password resources; their matching cumulative checks are recorded
 separately. See [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage.
 Native checks distinguish controlled renderer/getter/formatter calls and state
 substitutions from ordinary gameplay routes.
 
-Remaining shared combat/system/town consumers, menus, custom names/inscriptions,
-special records, later modes and graphics still need work. A completed known
-catalog does not establish complete game coverage. Graphics editing remains
-deferred until the text is complete.
+Current remaining work and accepted/development build identities are maintained
+in [TEXT_PROGRESS.md](TEXT_PROGRESS.md). A completed known catalog does not
+establish complete game coverage. Approved title/background and arrival graphics
+are now inserted; their validation and remaining natural-route gaps are recorded
+in the corresponding graphics guides.
 
 Individual commands:
 
