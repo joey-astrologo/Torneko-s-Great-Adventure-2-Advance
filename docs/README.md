@@ -4,6 +4,9 @@ Start with [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage, accepted
 milestones and remaining work. Older batch reports retain their original ROM
 hashes and validation scope.
 
+[Coverage assessment](COVERAGE_AUDIT.md) explains what those figures establish,
+the missed-reader failure, and which complete-screen audits are still pending.
+
 ## Everyday work
 
 | Task | Guide |
@@ -20,6 +23,7 @@ hashes and validation scope.
 - [Selected font and comparisons](FONT_AUDITION.md), [compact English extension](COMPACT_FONT.md)
   and [original font research](FONTS.md).
 - [Menu geometry and action budgets](MENU_LAYOUTS.md).
+- [Dungeon-menu location banner correction and coverage gap](LOCATION_BANNER.md).
 - [Numbers, spacing and bank labels](TYPOGRAPHY.md).
 - [Service coverage and constraints](SERVICE_BATCHES.md).
 - [Item names and descriptions](ITEM_TEXT.md).

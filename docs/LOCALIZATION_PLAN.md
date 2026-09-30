@@ -11,6 +11,14 @@ coverage audits continue while verified families are being translated.
 
 ## Current standing authorization
 
+Following the user-reported Japanese menu banner and loss of confidence on
+2026-09-30, prioritize the [independent coverage audit](COVERAGE_AUDIT.md).
+Whole-game completion remains unknown. Source review and resource insertion
+counts cannot substitute for accounting for every visible field and reader.
+The 113 unresolved catalog sources are not the complete remaining-work list.
+Preserve the distinction between completed family checks and pending whole-screen
+or natural-route audits in every progress report.
+
 Continue autonomously toward all player-facing text being translated, reviewed,
 inserted and validated. Batches organize the work internally and do not require
 fresh user approval. Ask only when a consequential unresolved decision requires

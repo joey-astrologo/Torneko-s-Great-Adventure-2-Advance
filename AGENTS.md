@@ -59,6 +59,11 @@ for menu fit. After any geometry change, check selection, clipping/shading and
 parent panels through opening, cancellation and repeated reopening. Unknown
 menu families and unresolved candidate overflows block menu-layout sign-off;
 they are not silently accepted because the font or earlier routes passed.
+The dungeon-menu location banner has 13 names in a 168px one-line region.
+Its separate reader was missed by earlier command/status checks; follow
+`docs/LOCATION_BANNER.md`. `tools.verify_location_banner` now checks every glyph
+and all five visible text fields, including the banner, in all three command
+modes. Never infer an English screen from checks limited to selected resources.
 The first action-label table is copied for its owned consumer; never translate
 the shared original table without auditing its other consumers. Current early
 action/main buffers are 256/64 bytes, with checked stack-frame changes. Item

@@ -17,7 +17,7 @@ acknowledgements. It does not manufacture items. No RAM/register modifications,
 raw state restores or imported saves are used for the gallery replay.
 
 The capture ROM SHA-256 is
-`bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
+`7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`.
 [Provenance](images/provenance.json) records the emulator version, built-in BIOS,
 ROM/source hashes, every actual input, capture frames and image hashes.
 The screenshot route demonstrates these scenes, not complete game coverage.

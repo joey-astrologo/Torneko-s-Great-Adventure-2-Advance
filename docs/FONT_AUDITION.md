@@ -24,6 +24,7 @@ Native captures are separate from simulated panels.
 | Context | Usable text pixels |
 |---|---:|
 | Dungeon main commands (original geometry) | 34 |
+| Dungeon-menu location banner (one line) | 168 |
 | Inventory/ground actions (original geometry) | 36 |
 | Complete inventory row while actions are open | 162, including every field |
 | Complete inventory row without actions | 162, including every field |

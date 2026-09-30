@@ -23,6 +23,10 @@ To re-export existing compiler output, run
 separately in the matching validation receipt; these convenient latest-build
 files remain development outputs while localization/playtesting is incomplete.
 Archived accepted milestones under `build/accepted/` are preserved.
+The [location-banner check](LOCATION_BANNER.md) covers all five dungeon-menu
+text fields across 13 location labels and three command modes, including
+cancellation and reopening. It rejects unexpected Japanese glyphs on that
+screen, which earlier resource-specific menu checks missed.
 
 The build starts from the pinned Japanese ROM and retained source assets. It
 adds the selected Torneko 2 compact font and [original-sized early menus](MENU_LAYOUTS.md), English name entry, opening dialogue, resume/menu labels,

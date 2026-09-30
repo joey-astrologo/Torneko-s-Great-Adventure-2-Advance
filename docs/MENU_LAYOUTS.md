@@ -26,6 +26,20 @@ They do not inflate the earlier extraction catalog's native-source count.
   builder uses the new copied label table; the other three consumers keep the
   original table and their original budgets.
 
+## Location banner follow-up (2026-09-30)
+
+The user found Japanese in the dungeon-menu banner after the earlier checks
+passed. Those checks covered selected command/status fields and geometry;
+they did not require the whole screen to be English. All 13 names in this
+reader still used the Japanese table. This was a missed reader and a missed
+visual-review defect.
+
+The [banner correction](LOCATION_BANNER.md) redirects that reader and checks
+all five text fields and every glyph through 39 location/mode cases and 117
+openings. All names fit its original 168px width. These checks now run in the
+cumulative build and reject the previous ROM. Earlier screenshots and receipts
+retain their historical scope.
+
 ## Geometry and storage
 
 Item names, including custom names, must occupy **one line** (user clarification,

@@ -5095,3 +5095,38 @@ colour-function probes cover the two used gamma selectors, five levels and
 colour/monochrome paths; these are explicitly controlled calls. Natural
 late-game routes and additional logo discovery remain open. Reproduction and
 full scope: `docs/TITLE_INSERTION.md`.
+
+### Dungeon-menu location banner reader correction (2026-09-30)
+
+The user's screenshot exposed a missed consumer: the main menu still read all
+13 Japanese names from the original shared table. Results/history already had
+reviewed English. Earlier command/status checks excluded this field and did
+not prove a wholly English screen. `docs/LOCATION_BANNER.md` records the gap,
+correction and stronger native checks.
+
+| Address space / exclusive range | Ownership / evidence | Certainty |
+|---|---|---|
+| ROM `[00019E44,00019E48)` | `dungeon-location-banner` owns one literal redirect: expected `08140D68`, replacement `088C626C` | Shared allocator checks source bytes and overlap. Only this four-byte field changes; all other ROM bytes and allocation records match the archived pre-fix build. |
+| Expanded ROM `[008C626C,008C6CA4)` | Existing `result-shared-table`, owned by `results`; banner reuses offsets `[5D0,604)` | No new allocation. All 13 pointers and corresponding existing `results-ui` English payloads checked before reuse. |
+| CPU `[08019E10,08019E28)` | Banner selection in main-menu producer `08019A98`: reads table literal, loads dungeon selector, adds `174`, scales by four, loads string, calls `08002298` at `08019E24` | Original Ghidra disassembly and actual native reader source/window observed. Bounded Thumb literal-load scan over original ROM `[0,5E000)` finds this literal referenced only at `19E10`; not a proof about arbitrary computed references. |
+| EWRAM `[02003B6C,02003B70)` | Existing dungeon selector read via literal at ROM `19E48` | Natural Meadow value 11. Other banner names tested by changing r1 only at `08019E16`, after this load; the RAM dungeon ID remains unchanged. No new RAM ownership. |
+| EWRAM `[02000030,02000048)` on the fresh root menu | Existing banner window descriptor | Native descriptor gives screen x64/y32, width168, initial x0, one row, proportional advance and zero extra spacing. This transient window is not new storage. |
+
+The English strings are read directly from ROM with no new stack formatter.
+Their maximum stored length is37 bytes including NUL; maximum advance is98px
+(More Magic Dungeon), below168px. Main outer border x52 and banner outer border
+x60 retain the8px gap. No name shortening, geometry edits or glyph changes.
+
+`build/location-banner/research/main-menu-owner.txt` and `menu-trace.json`
+retain static/native evidence. The39-case verifier covers13 names × three
+command modes, opening/cancelling/reopening three times each. All five reader
+fields and every drawn glyph are checked, including unknown/Japanese rejection.
+The pre-fix ROM is rejected by the new check. Meadow/normal mode is an ordinary
+fresh route; other IDs and the existing actor mode byte at `actor+90` are
+controlled display probes, with save and real dungeon identity preserved.
+No later class/dungeon unlock route is claimed.
+
+Current ROM `7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`;
+previous ROM/ledger are archived in `build/location-banner/pre-fix/`. Evidence:
+`build/location-banner/{report,acceptance}.json`. Resource counts remain3770
+text and20 graphics; fixing this reader does not add new reviewed sources.

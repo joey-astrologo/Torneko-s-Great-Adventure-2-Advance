@@ -1,5 +1,13 @@
 # Autonomous text-localization progress
 
+**Whole-game completion: unknown.** The 96.9% figure below measures review of
+identified catalog sources only. It does not measure the fraction of gameplay
+that displays English. The missed location banner demonstrated an additional
+class of gaps: untranslated readers of already-reviewed sources. The 113-source
+backlog is therefore not a complete estimate of remaining work. Existing test
+counts must not be used as evidence that complete screens were audited.
+See [the coverage assessment and independent audit requirements](COVERAGE_AUDIT.md).
+
 All player-facing text is authorized for continued work without batch approvals.
 The Torneko 3-derived rules in `LOCALIZATION_PLAN.md` apply, with Torneko 2's
 Japanese as the source and measured T2 font/window budgets mandatory. Graphics
@@ -35,8 +43,17 @@ The current development candidate has **3,770 inserted text resources plus
 20 English graphics** (14 arrival graphics, the title and five backgrounds),
 exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
 Its ROM hash is
-`bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
-The title delta preserves every previous text/arrival allocation and patch,
+`7716f8c51c452499a1bb651acd24ccd20d3833531188fa66f0732cf3bb8307c8`.
+The [dungeon-menu banner correction](LOCATION_BANNER.md) fixes a user-reported
+missed reader: all 13 names in that field were still Japanese. The new whole-menu
+checks pass 39 cases / 117 openings and reject the old build. One pointer changes;
+all allocations and other ROM bytes remain identical. Counts and review
+percentages do not increase because these names were already reviewed/inserted
+for other readers. The pre-fix ROM is in `build/location-banner/pre-fix/`.
+
+The preceding title-insertion ROM
+`bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`
+retains its original native reports. The title delta preserves every previous text/arrival allocation and patch,
 original credits and unrelated ROM bytes. All 36 title/menu snapshots, 640
 controlled colour probes, 30 arrival cases, both opening branches, name entry
 and save/cold-load checks, 135 unit tests and clean ROM/BPS reproduction pass.

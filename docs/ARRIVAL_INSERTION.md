@@ -12,9 +12,12 @@ credits are unchanged.
 - [Native report](../build/arrival-cards/inserted/report.json)
 - [Insertion acceptance and byte delta](../build/arrival-cards/inserted/acceptance.json)
 
-Current ROM SHA-256: `bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
+Arrival-validation ROM SHA-256: `bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
 BPS SHA-256: `c3b97e07cb143c7072b48e450baea605a0b4ed32afc4d4af8a5b2b5ee3a99bbc`.
 All 30 cases were rerun after [title/background insertion](TITLE_INSERTION.md).
+The latest root build additionally includes the [menu-banner fix](LOCATION_BANNER.md),
+which preserves every arrival graphics byte. These native reports retain their
+original validation-ROM hash.
 The original arrival-only build is archived in `build/title-insertion/pre-insertion/`.
 The release remains a development build: text discovery and full-game
 playtesting are still in progress. Counts are **3,770 inserted text resources

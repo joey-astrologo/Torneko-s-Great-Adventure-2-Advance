@@ -5,6 +5,8 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.build_english
 .venv/bin/python -m tools.verify_title_art
 .venv/bin/python -m tools.accept_title_art
+.venv/bin/python -m tools.verify_location_banner
+.venv/bin/python -m tools.accept_location_banner
 .venv/bin/python -m tools.verify_name_entry
 .venv/bin/python -m tools.verify_opening_dialogue
 .venv/bin/python -m tools.verify_arrival_art

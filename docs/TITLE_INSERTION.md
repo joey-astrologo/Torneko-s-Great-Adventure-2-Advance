@@ -13,9 +13,13 @@ bottom 24 rows, including `Push START!`, and every background pixel outside its
 - [Insertion acceptance](../build/title-insertion/acceptance.json)
 - [Frozen artwork approval](../assets/title-screen/approved.json)
 
-The current ROM SHA-256 is
+The title-insertion validation ROM SHA-256 is
 `bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
-It contains **3,770 inserted text resources and 20 English graphics**:
+The latest root build also includes the [menu-banner correction](LOCATION_BANNER.md);
+its single pointer change preserves all these graphics bytes. The gallery and
+reports here retain the title-insertion build identity.
+
+That build contains **3,770 inserted text resources and 20 English graphics**:
 14 arrival graphics and these six title/background images. This is still a
 development build; graphics insertion does not change text-review percentages.
 
@@ -98,7 +102,7 @@ The pre-insertion ROM/BPS and ledger are archived in
 The audition tools use that archive for original-art references. Native
 verification independently rebuilds a comparison ROM from the current text and
 arrival assets with `include_title_art=False`, saving it under
-`build/title-insertion/comparison/`. This currently reproduces the archived ROM
-exactly and also lets future text batches run the graphics checks. Acceptance
+`build/title-insertion/comparison/`. At title insertion this reproduced the archived ROM
+exactly; later text fixes also enter the comparison build. Acceptance
 restores only the six new allocations and pointer patches and requires exact
 equality with this comparison ROM; unrelated byte changes fail acceptance.

@@ -17,6 +17,11 @@ from a fresh save. [Capture details and reproduction](docs/SCREENSHOTS.md).
 
 ## Project status
 
+**Whole-game coverage is unverified.** There is no reliable completion
+percentage yet. The missed Japanese menu banner exposed a gap in both the
+automated coverage checks and visual review. See the
+[coverage assessment and audit requirements](docs/COVERAGE_AUDIT.md).
+
 The current development build contains **3,770 inserted text resources and
 20 English graphics**, including the approved title, all five corner logos and
 13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
@@ -26,7 +31,11 @@ The original GBA credits are already English and remain unchanged.
 Translation, discovery and playtesting continue. **113 known catalog sources
 still need investigation or review**; complete text discovery and full-game
 runtime coverage are not yet proven. Insertion counts are not a completion
-percentage.
+percentage. The 113-source backlog also excludes missed display paths for
+already-reviewed text.
+
+The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
+names in all 13 locations; the earlier tests had missed this separate reader.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)

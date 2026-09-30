@@ -259,6 +259,10 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
         ground_remove=add_ground_remove(build)
         from tools.monster_identity_text import add_monster_identity
         monster_identity=add_monster_identity(build)
+    location_banner = None
+    if include_extra_consumers:
+        from tools.location_banner import add_location_banner
+        location_banner = add_location_banner(build, results)
     arrival_cards = None
     if include_arrival_art:
         from tools.arrival_art import add_arrival_art
@@ -395,7 +399,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
                   travel_gate=travel_gate, ending_text=ending_text, dungeon_travel=dungeon_travel, tutorial_help=tutorial_help,
                   link_text=link_text, ending_notice=ending_notice, pickup_help=pickup_help,
                   carpenter=carpenter, fire_scene=fire_scene, travel_confirm=travel_confirm, town_routes=town_routes, form_refusal=form_refusal, ground_remove=ground_remove, monster_identity=monster_identity,
-                  arrival_cards=arrival_cards, title_art=title_art,
+                  arrival_cards=arrival_cards, title_art=title_art, location_banner=location_banner,
                   total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")
