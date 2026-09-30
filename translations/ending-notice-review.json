@@ -1,0 +1,22 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "ending-notice.save-cancelled",
+      "source": {
+        "offset": 446264,
+        "end_exclusive": 446293,
+        "raw_hex": "96608caf82cc8f9182cc8b4c985e82f09286926682b582dc82b582bd00",
+        "sha256": "13ec371e21a06e3a2ef3e58fde1a68544a4d6bf62bbd64d32ec7b461b7f89825",
+        "japanese": "冒険の書の記録を中断しました"
+      },
+      "english": "Adventure Log saving was cancelled.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Adventure Log saving was cancelled.",
+        "reason": "Bilingual reread: Adventure Log recording was interrupted/cancelled, displayed after native save reports failure before the ending. No claim that progress was saved or that all save data was lost."
+      }
+    }
+  ],
+  "scope": "Single original54DA4 save-aborted notification; native save outcome, ending progression and credits remain separate."
+}

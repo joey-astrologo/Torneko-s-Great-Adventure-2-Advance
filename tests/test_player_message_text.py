@@ -20,7 +20,8 @@ class PlayerMessageText(unittest.TestCase):
         self.assertEqual(rom[:0x15848], original[:0x15848])
         self.assertEqual(rom[0x15850:len(original)], original[0x15850:])
         table = report['mapping_offset']
-        actual = [struct.unpack_from('<II', rom, table + 8 * i) for i in range(33)]
+        self.assertEqual(len(report['entries']), 40)
+        actual = [struct.unpack_from('<II', rom, table + 8 * i) for i in range(len(report['entries']))]
         self.assertEqual(actual, [(r['source']['offset'] + 0x08000000, r['offset'] + 0x08000000) for r in report['entries']])
 
     def test_cannot_drop_a_player_argument_or_overflow_a_line(self):

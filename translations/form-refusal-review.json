@@ -1,0 +1,24 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "One guard refusal selected by the original map-transition owner. Only literal4B9AC is replaced. Existing form-code predicate, colour4/restoration and modal layout are preserved; natural transformation access remains separate.",
+  "entries": [
+    {
+      "id": "form-refusal.guard",
+      "source": {
+        "offset": 1361994,
+        "end_exclusive": 1362059,
+        "raw_hex": "030482a882ca82b582cc8e7082c593fc82e982b182c682cd82e482e982b382ca814981490d82b182b182e682e897a782bf82b382ea814981498149814981490500",
+        "sha256": "178ef7a12f49d86f7c0cbfc32dbc9293a93b5eb19fc26bd49b7514bb717b15fc",
+        "japanese": "{legacy-position:0304}おぬしの姿で入ることはゆるさぬ！！\nここより立ちされ！！！！！{unclassified-control:05}"
+      },
+      "english": "{color:4}You may not enter in that form!\nBegone!{/color}",
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "{color:4}You may not enter in that form!\nBegone!{/color}",
+        "revised": "{color:4}You may not enter in that form!\nBegone!{/color}",
+        "reason": "Independent bilingual review preserves the prohibition on entry in the present form and the angry command to leave. Keeps the original colour4 span and two-row display; no invented transformation name or gameplay condition.",
+        "review_date": "2026-09-29"
+      }
+    }
+  ]
+}

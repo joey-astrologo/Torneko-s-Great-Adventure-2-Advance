@@ -1,0 +1,58 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private four entry-restriction sources, original128-byte global scratch and owned52044/4BCC0 consumers.",
+  "entries": [
+    {
+      "id": "travel-gate.limit",
+      "source": {
+        "offset": 442760,
+        "end_exclusive": 442854,
+        "raw_hex": "82bb82cc835f839383578387839382d682cd0d25648cc282cc834183438365838082b582a98e9d82bf82b182df82dc82b982f181420d8e9d82c182c482a282e9834183438365838082f082d682e782b582c482ad82be82b382a281420d00",
+        "sha256": "7483c60de81097a622cad4c1677c82694e996dbdc7f0ac05dfc4d13c5f6191ea",
+        "japanese": "そのダンジョンへは\n%{unclassified-control:64}個のアイテムしか持ちこめません。\n持っているアイテムをへらしてください。\n"
+      },
+      "english": "Only {count} items allowed here.\nCarry fewer items.",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves dungeon-entry condition and required item reduction, storage/discard, sale/discard or level1 remedy. Two-line display fits the existing128-byte scratch and216px region. Limit comes from the original signed16-bit getter;32767 is a rendering bound, not a claimed gameplay capacity."
+    },
+    {
+      "id": "travel-gate.store",
+      "source": {
+        "offset": 442948,
+        "end_exclusive": 443042,
+        "raw_hex": "82b182cc835f839383578387839382d682cd0d834183438365838082f08e9d82bf8d9e82de82b182c682aa8f6f978882dc82b982f181420d91718cc982c982a882a282c482ad82e982a9814082b782c482c482ad82be82b382a281420d00",
+        "sha256": "32229fbf42771df9e0533d94e4d717aa677a504674a7c95da869f89785c20722",
+        "japanese": "このダンジョンへは\nアイテムを持ち込むことが出来ません。\n倉庫においてくるか　すててください。\n"
+      },
+      "english": "No items allowed in this dungeon.\nStore or discard them first.",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves dungeon-entry condition and required item reduction, storage/discard, sale/discard or level1 remedy. Two-line display fits the existing128-byte scratch and216px region. Limit comes from the original signed16-bit getter;32767 is a rendering bound, not a claimed gameplay capacity."
+    },
+    {
+      "id": "travel-gate.sell",
+      "source": {
+        "offset": 442856,
+        "end_exclusive": 442948,
+        "raw_hex": "82b182cc835f839383578387839382d682cd0d834183438365838082f08e9d82bf8d9e82de82b182c682aa8f6f978882dc82b982f181420d834183438365838082f0948482e982a9814082b782c482c482ad82be82b382a281420d00",
+        "sha256": "d65b03aae24f6ac0061e8f716973acecf5dab96cd45f0cd7c0913484783e5bc9",
+        "japanese": "このダンジョンへは\nアイテムを持ち込むことが出来ません。\nアイテムを売るか　すててください。\n"
+      },
+      "english": "No items allowed in this dungeon.\nSell or discard them first.",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves dungeon-entry condition and required item reduction, storage/discard, sale/discard or level1 remedy. Two-line display fits the existing128-byte scratch and216px region. Limit comes from the original signed16-bit getter;32767 is a rendering bound, not a claimed gameplay capacity."
+    },
+    {
+      "id": "travel-gate.level",
+      "source": {
+        "offset": 443044,
+        "end_exclusive": 443145,
+        "raw_hex": "82b182cc835f839383578387839382cd8140838c8378838b82aa8fe382aa82c182c482a282e982c60d93fc82e982b182c682aa82c582ab82dc82b982f181420d0d838c8378838b825082cc8ff391d482c592a790ed82b582c482ad82be82b382a281420d00",
+        "sha256": "c2dd3b87f06d1e6355e4fd8bca5cb9d135e7bdd4ada0491d56a11a06951968a8",
+        "japanese": "このダンジョンは　レベルが上がっていると\n入ることができません。\n\nレベル１の状態で挑戦してください。\n"
+      },
+      "english": "You must be at level 1\nto enter this dungeon.",
+      "status": "reviewed",
+      "review": "Independent bilingual review preserves dungeon-entry condition and required item reduction, storage/discard, sale/discard or level1 remedy. Two-line display fits the existing128-byte scratch and216px region. Limit comes from the original signed16-bit getter;32767 is a rendering bound, not a claimed gameplay capacity."
+    }
+  ]
+}

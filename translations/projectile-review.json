@@ -1,0 +1,76 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private shared-table reads in CPU080259FC Throw consumer only. Native256-byte output and separate64-byte item/actor fields; no projectile physics, outcome or original shared table changes. Other projectile consumers and the separate invisible-item static notice retain their separately audited behavior.",
+  "entries": [
+    {
+      "id": "projectile.080",
+      "table_offset": 128,
+      "source": {
+        "offset": 410700,
+        "end_exclusive": 410734,
+        "raw_hex": "257382cd0d8ef482ed82ea82c482a282e982cc82c5814082cd82b882b982c882a200",
+        "sha256": "cc2c7a6900d5ee2d198adb0b0d36e369127068eaab00443bfe2aeb1ca420ca0c",
+        "japanese": "%{unclassified-control:73}は\n呪われているので　はずせない"
+      },
+      "english": "{item}{fit} is cursed and cannot be removed.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Preserve throwing, collision target, falling to the ground, cursed-equipment refusal and being stuck fast as separate meanings. Existing approved curse/stuck wording is reused. Conditional line break joins only when the complete actual substitution fits; no font or geometry change."
+    },
+    {
+      "id": "projectile.1ec",
+      "table_offset": 492,
+      "source": {
+        "offset": 408256,
+        "end_exclusive": 408292,
+        "raw_hex": "257382cd0d926e96ca82c983738362835e838a82c682cd82e882c282a282c482a282e900",
+        "sha256": "7484e8df55c78cfeafcac3bcfe9ef963bee8b60254112f678115694a07903d46",
+        "japanese": "%{unclassified-control:73}は\n地面にピッタリとはりついている"
+      },
+      "english": "{item}{fit} is stuck fast to the ground.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Preserve throwing, collision target, falling to the ground, cursed-equipment refusal and being stuck fast as separate meanings. Existing approved curse/stuck wording is reused. Conditional line break joins only when the complete actual substitution fits; no font or geometry change."
+    },
+    {
+      "id": "projectile.1c8",
+      "table_offset": 456,
+      "source": {
+        "offset": 408452,
+        "end_exclusive": 408470,
+        "raw_hex": "257382cd0d257382c9939682bd82c182bd00",
+        "sha256": "65e970d26d09dd92f7e08824eeecfd1768db56e7ab57386070aa32ba87309749",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に当たった"
+      },
+      "english": "{item} hit{fit} {actor}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Preserve throwing, collision target, falling to the ground, cursed-equipment refusal and being stuck fast as separate meanings. Existing approved curse/stuck wording is reused. Conditional line break joins only when the complete actual substitution fits; no font or geometry change."
+    },
+    {
+      "id": "projectile.1d4",
+      "table_offset": 468,
+      "source": {
+        "offset": 408376,
+        "end_exclusive": 408394,
+        "raw_hex": "257382cd20926e96ca82c982a882bf82bd00",
+        "sha256": "e5553e54d4f0343b671bdc31dd7e8cd99c2cba5ab38f53c43dcb10f1e00aba5b",
+        "japanese": "%{unclassified-control:73}は 地面におちた"
+      },
+      "english": "{item}{fit} fell to the ground.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Preserve throwing, collision target, falling to the ground, cursed-equipment refusal and being stuck fast as separate meanings. Existing approved curse/stuck wording is reused. Conditional line break joins only when the complete actual substitution fits; no font or geometry change."
+    },
+    {
+      "id": "projectile.2d0",
+      "table_offset": 720,
+      "source": {
+        "offset": 406888,
+        "end_exclusive": 406900,
+        "raw_hex": "257382f020938a82b082bd00",
+        "sha256": "cc74ea5154954f48cb6c2f1c66ff370008029a0b27032121f03bc7a9e2aae898",
+        "japanese": "%{unclassified-control:73}を 投げた"
+      },
+      "english": "Threw{fit} {item}.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source review. Preserve throwing, collision target, falling to the ground, cursed-equipment refusal and being stuck fast as separate meanings. Existing approved curse/stuck wording is reused. Conditional line break joins only when the complete actual substitution fits; no font or geometry change."
+    }
+  ]
+}

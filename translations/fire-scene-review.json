@@ -1,0 +1,806 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Forty nonempty records in the fixed256-byte scene block150470..152F70, relocated with a larger checked stride for complete English. Original empty indices10,11,20 retained. All original text, padding, scene choreography and progression preserved; controlled complete text dispatcher validation is separate from natural story playback.",
+  "entries": [
+    {
+      "id": "fire-scene.0",
+      "index": 0,
+      "source": {
+        "offset": 1377392,
+        "end_exclusive": 1377442,
+        "raw_hex": "838b838b817582cb82a68140837c837c838d81490d814082a0816082bb816082d1816082dc816082b582e5816082c1814900",
+        "sha256": "ae6436d6a0bd254079babd557011d63ffd831e37d3cea244f2ae07806332cc8b",
+        "japanese": "ルル「ねえ　ポポロ！\n　あ～そ～び～ま～しょ～っ！"
+      },
+      "english": "Lulu: Hey, Tipper! Come out and plaaay!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Lulu: Hey, Tipper! Come out and plaaay!",
+        "revised": "Lulu: Hey, Tipper! Come out and plaaay!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.1",
+      "index": 1,
+      "source": {
+        "offset": 1377648,
+        "end_exclusive": 1377716,
+        "raw_hex": "836c836c817582b182f182c982bf82cd8140838b838b82bf82e182f181420d814091d282c182c482cb814082b782ae82c9837c837c838d82aa82ad82e982a982e7814200",
+        "sha256": "975d035899be1dfce6edd72efd6951f48b286516b578482075c48a7605d5291e",
+        "japanese": "ネネ「こんにちは　ルルちゃん。\n　待ってね　すぐにポポロがくるから。"
+      },
+      "english": "Tessie: Hello, Lulu. Just a moment. Tipper will be right out.",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: Hello, Lulu. Just a moment. Tipper will be right out.",
+        "revised": "Tessie: Hello, Lulu. Just a moment. Tipper will be right out.",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.2",
+      "index": 2,
+      "source": {
+        "offset": 1377904,
+        "end_exclusive": 1377935,
+        "raw_hex": "837c837c838d8175837d837d814082a282c182c482ab82dc816082b7814900",
+        "sha256": "48562ffdb37190baa28865acde908245625a4a625575d3e15ebd524ff4a24191",
+        "japanese": "ポポロ「ママ　いってきま～す！"
+      },
+      "english": "Tipper: Bye, Mum! I'm off!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tipper: Bye, Mum! I'm off!",
+        "revised": "Tipper: Bye, Mum! I'm off!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.3",
+      "index": 3,
+      "source": {
+        "offset": 1378160,
+        "end_exclusive": 1378220,
+        "raw_hex": "836c836c817582cd82a2814082a282c182c482e782c182b582e182a281420d814082d382bd82e882c682e081408b4382f082c282af82c482cb814200",
+        "sha256": "4809b4fa6b127bfb9bfc963fb98682d9cc269c2974c32b6767271460030e964f",
+        "japanese": "ネネ「はい　いってらっしゃい。\n　ふたりとも　気をつけてね。"
+      },
+      "english": "Tessie: Have fun! Both of you, be careful.",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: Have fun! Both of you, be careful.",
+        "revised": "Tessie: Have fun! Both of you, be careful.",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.4",
+      "index": 4,
+      "source": {
+        "offset": 1378416,
+        "end_exclusive": 1378443,
+        "raw_hex": "838b838b817582a482f1814082be82a282b682e582a482d4814900",
+        "sha256": "2ec22d9c7c6cb6bf276511fe298f8ee3591cc3f36a113611add0458ba1c96253",
+        "japanese": "ルル「うん　だいじょうぶ！"
+      },
+      "english": "Lulu: We will!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Lulu: We will!",
+        "revised": "Lulu: We will!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.5",
+      "index": 5,
+      "source": {
+        "offset": 1378672,
+        "end_exclusive": 1378716,
+        "raw_hex": "836c836c817581458145814582d382d382d381420d814082a282c282e0928782aa82a282a282ed82cb814200",
+        "sha256": "6ed3dedc0dc4b94cc64bc388e9ec17e0172f97aff26616c2e33015a7f98ddacb",
+        "japanese": "ネネ「・・・ふふふ。\n　いつも仲がいいわね。"
+      },
+      "english": "Tessie: ...Hee hee. Those two always get along so well.",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: ...Hee hee. Those two always get along so well.",
+        "revised": "Tessie: ...Hee hee. Those two always get along so well.",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.6",
+      "index": 6,
+      "source": {
+        "offset": 1378928,
+        "end_exclusive": 1378994,
+        "raw_hex": "819681758352835282c9814082b582a0838f82b982cc836e835282aa82a082e90d814081458145814582c682a282a48345838f835482be8140834c834c8362814900",
+        "sha256": "ef7e746f7b85cca3ad543355962a415416cd22f54e927f1cce8f4a9d1c7110fc",
+        "japanese": "＊「ココに　しあワせのハコがある\n　・・・というウワサだ　キキッ！"
+      },
+      "english": "???: Rumour has it the Joy Chest is here... Kee-kee!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Rumour has it the Joy Chest is here... Kee-kee!",
+        "revised": "???: Rumour has it the Joy Chest is here... Kee-kee!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.7",
+      "index": 7,
+      "source": {
+        "offset": 1379184,
+        "end_exclusive": 1379244,
+        "raw_hex": "819681758352838f82b9814082a282dc82ed82b582ab836e835281490d814082e282ab82cd82e782a6814082cc82eb82ed82ea82b5836e8352814900",
+        "sha256": "e7cd997d11e6607162f4535855f05dddeee5eadd03d0eec17bb14b18d64ebb60",
+        "japanese": "＊「コワせ　いまわしきハコ！\n　やきはらえ　のろわれしハコ！"
+      },
+      "english": "???: Smash that wretched chest! Burn that cursed chest!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Smash that wretched chest! Burn that cursed chest!",
+        "revised": "???: Smash that wretched chest! Burn that cursed chest!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.8",
+      "index": 8,
+      "source": {
+        "offset": 1379440,
+        "end_exclusive": 1379490,
+        "raw_hex": "81968175838282e282b582c482e2838b81490d814082e082e28356836582e282e9814082e0838482b582c4838482e9814900",
+        "sha256": "dfd33d0844ea455d29a56957adf10cd10e31f8ae72ad545bd16893ef37336f26",
+        "japanese": "＊「モやしてやル！\n　もやシテやる　もヤしてヤる！"
+      },
+      "english": "???: I'll burn it! Burn it, burn it!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: I'll burn it! Burn it, burn it!",
+        "revised": "???: I'll burn it! Burn it, burn it!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.9",
+      "index": 9,
+      "source": {
+        "offset": 1379696,
+        "end_exclusive": 1379894,
+        "raw_hex": "97f682b782e9926a817582a082a0814082c782a482b582c48145814581450d0d97f682b782e9926a817582c782a482b582c4814082da82ad82cc82b182cc944d82a2917a82a282cd0d814094de8f9782c9936082ed82e782c882a282cc82be82eb82a481420d0d97f682b782e9926a817594de8f9782cc82b182c682f0814082a982f182aa82a682e982c60d814082b182f182c882c982e091cc82aa944d82ad82c882e98145814581450d0d0d97f682b782e9926a817582a6814581458145944d82ad814800",
+        "sha256": "54d045e5afe327fcf12f58fa96f624a1fc4b3215cc6b4b8783027e7aa24089bf",
+        "japanese": "恋する男「ああ　どうして・・・\n\n恋する男「どうして　ぼくのこの熱い想いは\n　彼女に伝わらないのだろう。\n\n恋する男「彼女のことを　かんがえると\n　こんなにも体が熱くなる・・・\n\n\n恋する男「え・・・熱く？"
+      },
+      "english": "Lovestruck man: Ah, why...?\n\nLovestruck man: Why can't she feel the burning passion in my heart?\n\nLovestruck man: Just thinking of her makes my whole body feel so hot...\n\nLovestruck man: Wait... Hot?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Lovestruck man: Ah, why...?\n\nLovestruck man: Why can't she feel the burning passion in my heart?\n\nLovestruck man: Just thinking of her makes my whole body feel so hot...\n\nLovestruck man: Wait... Hot?",
+        "revised": "Lovestruck man: Ah, why...?\n\nLovestruck man: Why can't she feel the burning passion in my heart?\n\nLovestruck man: Just thinking of her makes my whole body feel so hot...\n\nLovestruck man: Wait... Hot?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.12",
+      "index": 12,
+      "source": {
+        "offset": 1380464,
+        "end_exclusive": 1380516,
+        "raw_hex": "97f682b782e9926a817582a482ed82c181490d814082a9814082a9814082a9814089ce8e9682be829f829f829f816082c1814900",
+        "sha256": "c0fa85c5a3aa842c288c3829a79cbeb17409fa5ac6403a403879e377e9572b60",
+        "japanese": "恋する男「うわっ！\n　か　か　か　火事だぁぁぁ～っ！"
+      },
+      "english": "Lovestruck man: Aah! F-f-f-fire!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Lovestruck man: Aah! F-f-f-fire!",
+        "revised": "Lovestruck man: Aah! F-f-f-fire!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.13",
+      "index": 13,
+      "source": {
+        "offset": 1380720,
+        "end_exclusive": 1380790,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f1817589ce8e9682b682e182c681480d814082c8814082c8814082c882f182c681498140967b939682c989ce8e9682b682e1814900",
+        "sha256": "dca0c587b86119cb81a8bbca4cbf2ab3ebe459ec9fb973b2ce63516878d9a68f",
+        "japanese": "ひとのいいおじさん「火事じゃと？\n　な　な　なんと！　本当に火事じゃ！"
+      },
+      "english": "Friendly man: Fire? W-what?! It really is a fire!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Fire? W-what?! It really is a fire!",
+        "revised": "Friendly man: Fire? W-what?! It really is a fire!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.14",
+      "index": 14,
+      "source": {
+        "offset": 1380976,
+        "end_exclusive": 1381033,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582bd814091e595cf81490d81407e82b382f182cc89c682aa814082e082a682c482a282e982ed814900",
+        "sha256": "543d001057294e3bb0c3efdc482a391e78ec3c62946c6c957ba302eab97cc019",
+        "japanese": "マギーおばさん「た　大変！\n　{unclassified-control:7e}さんの家が　もえているわ！"
+      },
+      "english": "Aunt Maggie: Oh, no! {player}'s house is on fire!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: Oh, no! {player}'s house is on fire!",
+        "revised": "Aunt Maggie: Oh, no! {player}'s house is on fire!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.15",
+      "index": 15,
+      "source": {
+        "offset": 1381232,
+        "end_exclusive": 1381294,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f1817582a482d082e182c181490d814082c7814082c782a482b582c48140838283938358835e815b82aa814800",
+        "sha256": "fbc9368a36b24b78469b67564415356e3c94b7408955640b0c70ab047a23934d",
+        "japanese": "ひとのいいおじさん「うひゃっ！\n　ど　どうして　モンスターが？"
+      },
+      "english": "Friendly man: Eek! Wh-what are monsters doing here?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Eek! Wh-what are monsters doing here?",
+        "revised": "Friendly man: Eek! Wh-what are monsters doing here?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.16",
+      "index": 16,
+      "source": {
+        "offset": 1381488,
+        "end_exclusive": 1381556,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582e0814082e082b582a982b582c481400d814089ce8e9682cd814083418393835e82e782cc8e648bc682c882cc82a982a2814800",
+        "sha256": "e84c7537159dc236e9af0f526972e0bf47d7f2d2e0b55c2ec42d3faba8b1416f",
+        "japanese": "マギーおばさん「も　もしかして　\n　火事は　アンタらの仕業なのかい？"
+      },
+      "english": "Aunt Maggie: D-don't tell me... You lot started this fire?!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: D-don't tell me... You lot started this fire?!",
+        "revised": "Aunt Maggie: D-don't tell me... You lot started this fire?!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.17",
+      "index": 17,
+      "source": {
+        "offset": 1381744,
+        "end_exclusive": 1381806,
+        "raw_hex": "819681758369836a82e082a982e0814082e082e282b781490d8140837e83938369814082e082e282b582c482e282e9814581458145834c834c8362814900",
+        "sha256": "beef49eb0833e37e105a16d882ee92689b5a87f94435f343a7fbfed44e69f22a",
+        "japanese": "＊「ナニもかも　もやす！\n　ミンナ　もやしてやる・・・キキッ！"
+      },
+      "english": "???: Burn it all! We'll burn everything... Kee-kee!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Burn it all! We'll burn everything... Kee-kee!",
+        "revised": "???: Burn it all! We'll burn everything... Kee-kee!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.18",
+      "index": 18,
+      "source": {
+        "offset": 1382000,
+        "end_exclusive": 1382035,
+        "raw_hex": "8196817581458145814582bb82a482cd82e482a982ca82c58353838f835882e6814900",
+        "sha256": "cb227194f26b9e51003fabe95ba975eedf9057261281435f4d8f7421cbdeb51d",
+        "japanese": "＊「・・・そうはゆかぬでゴワスよ！"
+      },
+      "english": "???: ...I shall not allow it!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: ...I shall not allow it!",
+        "revised": "???: ...I shall not allow it!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.19",
+      "index": 19,
+      "source": {
+        "offset": 1382256,
+        "end_exclusive": 1382415,
+        "raw_hex": "82b382b782e782a282cc8c958e6d8175838283938358835e815b82df81490d814081458145814582b382a0814082a982a982c182c482ad82e982c58353838f835881490d0d0d82b382b782e782a282cc8c958e6d81757e82c782cc82cc0d814088ea94d492ed8e7182cc8c958b5a0d82b382b782e782a282cc8c958e6d817591b695aa82c90d81408ca982b982c482e282e982c58353838f835882e6814900",
+        "sha256": "62310081ffb66283eeaaf4de23158bc5330568732df171a76ff5d1c730a3fb4b",
+        "japanese": "さすらいの剣士「モンスターめ！\n　・・・さあ　かかってくるでゴワス！\n\n\nさすらいの剣士「{unclassified-control:7e}どのの\n　一番弟子の剣技\nさすらいの剣士「存分に\n　見せてやるでゴワスよ！"
+      },
+      "english": "Wandering swordsman: You monsters! Come and face me!\n\nWandering swordsman: Behold the swordsmanship of {player}'s foremost apprentice!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Wandering swordsman: You monsters! Come and face me!\n\nWandering swordsman: Behold the swordsmanship of {player}'s foremost apprentice!",
+        "revised": "Wandering swordsman: You monsters! Come and face me!\n\nWandering swordsman: Behold the swordsmanship of {player}'s foremost apprentice!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.21",
+      "index": 21,
+      "source": {
+        "offset": 1382768,
+        "end_exclusive": 1382801,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582a0814082a082f182bd81458145814500",
+        "sha256": "0142bc3a9888c5c876502b042118853aaaa3fc8f5fbb92e13f0e804a0dcb6e79",
+        "japanese": "マギーおばさん「あ　あんた・・・"
+      },
+      "english": "Aunt Maggie: Y-you...",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: Y-you...",
+        "revised": "Aunt Maggie: Y-you...",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.22",
+      "index": 22,
+      "source": {
+        "offset": 1383024,
+        "end_exclusive": 1383084,
+        "raw_hex": "82b382b782e782a282cc8c958e6d817581458145814582de82d382d381420d81409053947a82cd82b296b39770814082c58353838f835882e6814200",
+        "sha256": "3a8c3c7f3ec9cda518c12e64af3f960afabbe2ff3d649d6e556a6c0ab013c39d",
+        "japanese": "さすらいの剣士「・・・むふふ。\n　心配はご無用　でゴワスよ。"
+      },
+      "english": "Wandering swordsman: ...Heh heh. There is no need to worry.",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Wandering swordsman: ...Heh heh. There is no need to worry.",
+        "revised": "Wandering swordsman: ...Heh heh. There is no need to worry.",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.23",
+      "index": 23,
+      "source": {
+        "offset": 1383280,
+        "end_exclusive": 1383335,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582a282c282a982e70d81407e82b382f182cc92ed8e7182c982c882c182bd82f182be82a2814800",
+        "sha256": "8758f47827f250e642c1459f20caf3e3826312d0255b6c90f44a29e6b34b85e5",
+        "japanese": "マギーおばさん「いつから\n　{unclassified-control:7e}さんの弟子になったんだい？"
+      },
+      "english": "Aunt Maggie: Since when were you {player}'s apprentice?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: Since when were you {player}'s apprentice?",
+        "revised": "Aunt Maggie: Since when were you {player}'s apprentice?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.24",
+      "index": 24,
+      "source": {
+        "offset": 1383536,
+        "end_exclusive": 1383642,
+        "raw_hex": "82b382b782e782a282cc8c958e6d817581458145814582de82ae82ae81420d0d0d0d82b382b782e782a282cc8c958e6d817582bb814082bb82ea82cd82c682e082a982ad81490d814082b382a082b382a0814082a982a982c182c482ad82e982c58353838f8358814900",
+        "sha256": "4504560d5dd71760262372f5d80fd0e3dd12be96174e53716fda3a7d64a0ee5f",
+        "japanese": "さすらいの剣士「・・・むぐぐ。\n\n\n\nさすらいの剣士「そ　それはともかく！\n　さあさあ　かかってくるでゴワス！"
+      },
+      "english": "Wandering swordsman: ...Urgh.\n\nWandering swordsman: N-never mind that! Come on, then! Face me!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Wandering swordsman: ...Urgh.\n\nWandering swordsman: N-never mind that! Come on, then! Face me!",
+        "revised": "Wandering swordsman: ...Urgh.\n\nWandering swordsman: N-never mind that! Come on, then! Face me!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.25",
+      "index": 25,
+      "source": {
+        "offset": 1383792,
+        "end_exclusive": 1383844,
+        "raw_hex": "81968175814581458145834c834c836281490d814082c782a482b782e9814082b182cc836a83938351839382c782e082cd814800",
+        "sha256": "11a397b634f94ed80cc17d48e38452d5786458fa9b9f659898c17c8f3de36072",
+        "japanese": "＊「・・・キキッ！\n　どうする　このニンゲンどもは？"
+      },
+      "english": "???: ...Kee-kee! What do we do about these humans?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: ...Kee-kee! What do we do about these humans?",
+        "revised": "???: ...Kee-kee! What do we do about these humans?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.26",
+      "index": 26,
+      "source": {
+        "offset": 1384048,
+        "end_exclusive": 1384096,
+        "raw_hex": "8196817582d982a482c182c482a882af81420d814082b182b182c982cd814082e082a48388834582cd82c882a2814200",
+        "sha256": "e09ad024de32e68a17921548c09a074b4e29c6432f59800f661bb16e8f483234",
+        "japanese": "＊「ほうっておけ。\n　ここには　もうヨウはない。"
+      },
+      "english": "???: Leave them. Our work here is done.",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Leave them. Our work here is done.",
+        "revised": "???: Leave them. Our work here is done.",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.27",
+      "index": 27,
+      "source": {
+        "offset": 1384304,
+        "end_exclusive": 1384325,
+        "raw_hex": "8196817582bb82a4835f814082bb82a4835f814200",
+        "sha256": "6636a9cdfa8e0d186083da04fbf9960abb2cc1fe125537c6ef4e5bd8e52fbbe9",
+        "japanese": "＊「そうダ　そうダ。"
+      },
+      "english": "???: Yes! Yes!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Yes! Yes!",
+        "revised": "???: Yes! Yes!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.28",
+      "index": 28,
+      "source": {
+        "offset": 1384560,
+        "end_exclusive": 1384630,
+        "raw_hex": "82b382b782e782a282cc8c958e6d817582c782a482b582bd82c58353838f835881490d814093a682b082e9918a926b82c582e082b582c482e982c58353838f835882a9814800",
+        "sha256": "a6fc983e40d8b009bc875eb605cbfb295a2355e3e016399e2b1f5120b906b226",
+        "japanese": "さすらいの剣士「どうしたでゴワス！\n　逃げる相談でもしてるでゴワスか？"
+      },
+      "english": "Wandering swordsman: What is it? Planning your escape?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Wandering swordsman: What is it? Planning your escape?",
+        "revised": "Wandering swordsman: What is it? Planning your escape?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.29",
+      "index": 29,
+      "source": {
+        "offset": 1384816,
+        "end_exclusive": 1384837,
+        "raw_hex": "8196817582c582cd814082e082c782e982a9814200",
+        "sha256": "35cad1818c7564b74a85fe514f2baae96150e411c9fb027af7977c803005c169",
+        "japanese": "＊「では　もどるか。"
+      },
+      "english": "???: Shall we head back, then?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "???: Shall we head back, then?",
+        "revised": "???: Shall we head back, then?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.30",
+      "index": 30,
+      "source": {
+        "offset": 1385072,
+        "end_exclusive": 1385130,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f1817582d382a481420d814082e682a982c182bd814082bd82b782a982c182bd814581458145814200",
+        "sha256": "6fc8e5c1b12b63ec4894d4fcfd76072a086857fc1b1101f6c377f689684a0b85",
+        "japanese": "ひとのいいおじさん「ふう。\n　よかった　たすかった・・・。"
+      },
+      "english": "Friendly man: Phew. Thank goodness! We're saved...",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Phew. Thank goodness! We're saved...",
+        "revised": "Friendly man: Phew. Thank goodness! We're saved...",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.31",
+      "index": 31,
+      "source": {
+        "offset": 1385328,
+        "end_exclusive": 1385396,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582bb814082bb82ea82e682e882e081490d814089c682cc928682c9814082be82ea82a982a282bd82e791e595cf82be82e6814900",
+        "sha256": "afab8fbba9e464dc96397d12b3e7e172bcc2a4098e6f14606d2a19fb281383b0",
+        "japanese": "マギーおばさん「そ　それよりも！\n　家の中に　だれかいたら大変だよ！"
+      },
+      "english": "Aunt Maggie: N-never mind that! What if there's someone in the house?!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: N-never mind that! What if there's someone in the house?!",
+        "revised": "Aunt Maggie: N-never mind that! What if there's someone in the house?!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.32",
+      "index": 32,
+      "source": {
+        "offset": 1385584,
+        "end_exclusive": 1385632,
+        "raw_hex": "836c836c817581458145814582d382a481420d814082c882f182be82a981408da193fa82cd8f8b82a282ed82cb814200",
+        "sha256": "cec850c6a3e90a9b3a223ceaf19d0c9af989780aff652fc6246e0184a450ef96",
+        "japanese": "ネネ「・・・ふう。\n　なんだか　今日は暑いわね。"
+      },
+      "english": "Tessie: ...Phew. Isn't it hot today?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: ...Phew. Isn't it hot today?",
+        "revised": "Tessie: ...Phew. Isn't it hot today?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.33",
+      "index": 33,
+      "source": {
+        "offset": 1385840,
+        "end_exclusive": 1385908,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582bf82e5814082bf82e582c182c681490d814082c882c9836d8393834c82c882b182c681408cbe82c182c482f182be82a2814900",
+        "sha256": "9b909c4f3afc4dab99563485de08d170743140c01dfa40d9d41e9b89e6c89e7b",
+        "japanese": "マギーおばさん「ちょ　ちょっと！\n　なにノンキなこと　言ってんだい！"
+      },
+      "english": "Aunt Maggie: H-hey! How can you be so calm?!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: H-hey! How can you be so calm?!",
+        "revised": "Aunt Maggie: H-hey! How can you be so calm?!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.34",
+      "index": 34,
+      "source": {
+        "offset": 1386096,
+        "end_exclusive": 1386113,
+        "raw_hex": "836c836c817581458145814582a6814800",
+        "sha256": "ba1a13f86a156542054aa100a48e68fe564f3a94332c570aab3e158b5791a696",
+        "japanese": "ネネ「・・・え？"
+      },
+      "english": "Tessie: ...Huh?",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: ...Huh?",
+        "revised": "Tessie: ...Huh?",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.35",
+      "index": 35,
+      "source": {
+        "offset": 1386352,
+        "end_exclusive": 1386367,
+        "raw_hex": "836c836c8175814581458145814900",
+        "sha256": "f10320bfd3f19f03a5be787af7c2cb60097bd912eec54539ac8a11f666675a79",
+        "japanese": "ネネ「・・・！"
+      },
+      "english": "Tessie: ...!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: ...!",
+        "revised": "Tessie: ...!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.36",
+      "index": 36,
+      "source": {
+        "offset": 1386608,
+        "end_exclusive": 1386631,
+        "raw_hex": "836c836c817582ab82e182a0829f829f829f82c1814900",
+        "sha256": "aede6c245dcfc462fc337a5b49a4ecf627836ad51135ac8fb64c5835c55942b8",
+        "japanese": "ネネ「きゃあぁぁぁっ！"
+      },
+      "english": "Tessie: Aaaah!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: Aaaah!",
+        "revised": "Tessie: Aaaah!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.37",
+      "index": 37,
+      "source": {
+        "offset": 1386864,
+        "end_exclusive": 1386932,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f1817582cd814082cd82e282ad81490d8140836c836c82b382f1814082cd82e282ad93a682b082e982f182b682e182c1814900",
+        "sha256": "ca4ec48fe6e77538746df018f4712dc94d59b30606e3aa44077ae4a754fbb4b8",
+        "japanese": "ひとのいいおじさん「は　はやく！\n　ネネさん　はやく逃げるんじゃっ！"
+      },
+      "english": "Friendly man: Q-quick! Tessie, get out of there!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Q-quick! Tessie, get out of there!",
+        "revised": "Friendly man: Q-quick! Tessie, get out of there!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.38",
+      "index": 38,
+      "source": {
+        "offset": 1387120,
+        "end_exclusive": 1387145,
+        "raw_hex": "836c836c8175814581458145965982ea82c482bd82ed814900",
+        "sha256": "681dc84131bbec398cca28f82d90021f73d591f8cdf2accefd8193421be40661",
+        "japanese": "ネネ「・・・忘れてたわ！"
+      },
+      "english": "Tessie: ...I forgot something!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Tessie: ...I forgot something!",
+        "revised": "Tessie: ...I forgot something!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.39",
+      "index": 39,
+      "source": {
+        "offset": 1387376,
+        "end_exclusive": 1387438,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f18175836c836c82b382f181490d814082c7814082c7814082c782b182d68d7382ad82f182b682e182c1814900",
+        "sha256": "66c8e33245fc000c17c49c5ec256315141aeddb3005466464a15169c7e261d04",
+        "japanese": "ひとのいいおじさん「ネネさん！\n　ど　ど　どこへ行くんじゃっ！"
+      },
+      "english": "Friendly man: Tessie! Wh-wh-where are you going?!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Tessie! Wh-wh-where are you going?!",
+        "revised": "Friendly man: Tessie! Wh-wh-where are you going?!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.40",
+      "index": 40,
+      "source": {
+        "offset": 1387632,
+        "end_exclusive": 1387661,
+        "raw_hex": "82b382b782e782a282cc8c958e6d8175836c836c82c782cc82c1814900",
+        "sha256": "322d801e592f482309e1abf709763f6e7ae78eb0183810ee950ee51d4d7efe78",
+        "japanese": "さすらいの剣士「ネネどのっ！"
+      },
+      "english": "Wandering swordsman: Lady Tessie!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Wandering swordsman: Lady Tessie!",
+        "revised": "Wandering swordsman: Lady Tessie!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.41",
+      "index": 41,
+      "source": {
+        "offset": 1387888,
+        "end_exclusive": 1387954,
+        "raw_hex": "82d082c682cc82a282a282a882b682b382f1817582dd82c882cc82e082cc81490d814089ce82f081458145814589ce82f08fc182b782f182b682e1816082c1814900",
+        "sha256": "772173d6301ce0dfa27973061a8b87c80b10ce37992df4833925e831074eb2af",
+        "japanese": "ひとのいいおじさん「みなのもの！\n　火を・・・火を消すんじゃ～っ！"
+      },
+      "english": "Friendly man: Everyone! Put out... Put out the fire!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Friendly man: Everyone! Put out... Put out the fire!",
+        "revised": "Friendly man: Everyone! Put out... Put out the fire!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "fire-scene.42",
+      "index": 42,
+      "source": {
+        "offset": 1388144,
+        "end_exclusive": 1388252,
+        "raw_hex": "837d834d815b82a882ce82b382f1817582d982e7814082d982e782c181490d0d837d834d815b82a882ce82b382f181758ee882aa82a082a282c482a282e9906c82cd81400d814082cd82e282ad8140927282a982e7908582f082ad82f182c582ab82c482a882ad82ea814900",
+        "sha256": "892548a60ec0a1727a31c5f27f4b00a2de83b853be55c2181b9abc24958180dd",
+        "japanese": "マギーおばさん「ほら　ほらっ！\n\nマギーおばさん「手があいている人は　\n　はやく　池から水をくんできておくれ！"
+      },
+      "english": "Aunt Maggie: Come on! Come on!\n\nAunt Maggie: Anyone with their hands free, hurry and fetch water from the pond!",
+      "status": "reviewed",
+      "prose_review": {
+        "method": "Independent bilingual reading in fixed-block scene order, followed by a second comparison against the Japanese and existing character/glossary identities.",
+        "previous_draft": "Aunt Maggie: Come on! Come on!\n\nAunt Maggie: Anyone with their hands free, hurry and fetch water from the pond!",
+        "revised": "Aunt Maggie: Come on! Come on!\n\nAunt Maggie: Anyone with their hands free, hurry and fetch water from the pond!",
+        "reason": "Preserves the burning-passion joke, threats, unknown speakers, apprentice claim and rebuttal, urgency and Tessie returning for something; Tipper/Tessie, Aunt Maggie, Friendly man and Joy Chest match reviewed T2 identities. Wandering swordsman retains formal bravado; source29 included without asserting a natural caller.",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

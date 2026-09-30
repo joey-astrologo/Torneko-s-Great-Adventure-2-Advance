@@ -1,0 +1,3673 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "All27 tutorial configurations with104 unique reviewed source strings. Private copies preserve every nontext bank/group reference and original descriptor/cursor/column geometry. Some retained legacy configurations have incoherent original label-to-explanation mappings; native reachability and disposition remain unresolved, so this is not complete menu acceptance.",
+  "groups": [
+    {
+      "index": 0,
+      "menu": 12,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        136,
+        0,
+        9,
+        4
+      ],
+      "rows": 4,
+      "labels_offset": 1365824,
+      "intro_offset": 1365884,
+      "labels": [
+        {
+          "offset": 443908,
+          "end_exclusive": 443923,
+          "raw_hex": "814082dc82c782ed82b58ff391d400",
+          "sha256": "beb06e768beba8804871bb7788f2b7fb0079d978835b15ff8aebb4905e5f8b05",
+          "japanese": "　まどわし状態"
+        },
+        {
+          "offset": 443892,
+          "end_exclusive": 443907,
+          "raw_hex": "814082a882d182a682c482a282e900",
+          "sha256": "bba33e5e23dcb4bff7df76baf95f146b376254319d4145d9f60ae0312fd6bd7d",
+          "japanese": "　おびえている"
+        },
+        {
+          "offset": 443876,
+          "end_exclusive": 443891,
+          "raw_hex": "814082cb82de82c182c482a282e900",
+          "sha256": "2ef6606966fa8f04643758cc2f31551e15ac38dfdd1d7ee52b17fa7e13268b41",
+          "japanese": "　ねむっている"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1365884,
+          "source": {
+            "offset": 444028,
+            "end_exclusive": 444057,
+            "raw_hex": "82c782ea82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+            "sha256": "491be87c2267344d696e635ee2bda39cd4430fef8c186bac4af9440c6f9de245",
+            "japanese": "どれについて知りたいですか？"
+          }
+        },
+        {
+          "slot": 1365888,
+          "source": {
+            "offset": 1367614,
+            "end_exclusive": 1367786,
+            "raw_hex": "95ba8e6d817582dc82c782ed82b382ea82c482a282c4814082dc82ed82e882aa0d814082bf82e182f182c681408ca982a682c882ad82c882c182c482a282dc82b781420d0d0d95ba8e6d81758374838d834182c982a282e982a082a282be82cd0d814082b882c182c68ff391d482aa82c282c382ad82cc82c50d95ba8e6d81758d558c8282b782e982c882e8814093a682b082e982c882e80d81408d4482ab82c982c582ab82dc82b7814200",
+            "sha256": "f0433f30c38e604069e5d9212ee59f652a9f5d94967405c820559076f7e8e0db",
+            "japanese": "兵士「まどわされていて　まわりが\n　ちゃんと　見えなくなっています。\n\n\n兵士「フロアにいるあいだは\n　ずっと状態がつづくので\n兵士「攻撃するなり　逃げるなり\n　好きにできます。"
+          }
+        },
+        {
+          "slot": 1365892,
+          "source": {
+            "offset": 1366176,
+            "end_exclusive": 1366306,
+            "raw_hex": "95ba8e6d817582a882d182a682c482a282e9838283938358835e815b82cd0d814082b182bf82e782a982e7814093a682b082e682a482c682b582c482a282dc82b781420d95ba8e6d817593a682b091ab82aa91ac82a282cc82c50d814082d982a482c182c482a882ad82cc82aa814082a282a282c68e7682a282dc82b782e6814200",
+            "sha256": "7559558d9f9ee8fcc8670ceb097672e29b7234fac74da6e80f0e14ecd252fe39",
+            "japanese": "兵士「おびえているモンスターは\n　こちらから　逃げようとしています。\n兵士「逃げ足が速いので\n　ほうっておくのが　いいと思いますよ。"
+          }
+        },
+        {
+          "slot": 1365896,
+          "source": {
+            "offset": 1366306,
+            "end_exclusive": 1366519,
+            "raw_hex": "95ba8e6d8175838283938358835e815b82f0834183438365838082c50d814082cb82de82e782b982ea82ce81408d558c8282b582c482e096da82f082b382dc82b582dc82b982f181420d0d95ba8e6d817582bd82be81408d558c8282b582c482e082b582c882ad82c482e00d814082b582ce82e782ad82b782e982c6814096da82b482df82c482b582dc82a282dc82b781420d95ba8e6d817590ed82a482d782ab82a9814093a682b082e982d782ab82a981420d814081458145814582de82b882a982b582a282c682b182eb82c582b782cb814200",
+            "sha256": "1106971da4c4946fee37463f246a8703f4e6a65b1a4da2366f774663df04bc55",
+            "japanese": "兵士「モンスターをアイテムで\n　ねむらせれば　攻撃しても目をさましません。\n\n兵士「ただ　攻撃してもしなくても\n　しばらくすると　目ざめてしまいます。\n兵士「戦うべきか　逃げるべきか。\n　・・・むずかしいところですね。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0c0400",
+      "intro_table_hex": "7cc606083ede1408a0d8140822d91408",
+      "labels_table_hex": "04c60608f4c50608e4c5060858c50608"
+    },
+    {
+      "index": 1,
+      "menu": 5,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        72,
+        0,
+        9,
+        2
+      ],
+      "rows": 2,
+      "labels_offset": 1367788,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        },
+        {
+          "slot": 1367820,
+          "source": {
+            "offset": 444176,
+            "end_exclusive": 444179,
+            "raw_hex": "090100",
+            "sha256": "9a11b8500d230ff15fcc83cf115bac733be92be1f0cd98b6ccf6578c47265b15",
+            "japanese": "{tab:09}{style-on:01}"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "050400",
+      "intro_table_hex": "14c7060810c70608",
+      "labels_table_hex": "9cc6060858c50608"
+    },
+    {
+      "index": 2,
+      "menu": 6,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        104,
+        0,
+        9,
+        3
+      ],
+      "rows": 3,
+      "labels_offset": 1367788,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        },
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        },
+        {
+          "slot": 1367820,
+          "source": {
+            "offset": 444176,
+            "end_exclusive": 444179,
+            "raw_hex": "090100",
+            "sha256": "9a11b8500d230ff15fcc83cf115bac733be92be1f0cd98b6ccf6578c47265b15",
+            "japanese": "{tab:09}{style-on:01}"
+          }
+        },
+        {
+          "slot": 1367824,
+          "source": {
+            "offset": 444172,
+            "end_exclusive": 444176,
+            "raw_hex": "09030000",
+            "sha256": "b58b0dfaf09d7f648e89016fbe0a0eb2ef75e9434eb1dc7c387069b1115f1634",
+            "japanese": "{tab:09}{legacy-position:0300}"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "060400",
+      "intro_table_hex": "14c7060810c706080cc70608",
+      "labels_table_hex": "9cc6060858c506089cc60608"
+    },
+    {
+      "index": 3,
+      "menu": 6,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        104,
+        0,
+        9,
+        3
+      ],
+      "rows": 3,
+      "labels_offset": 1367836,
+      "intro_offset": 1367884,
+      "labels": [
+        {
+          "offset": 444220,
+          "end_exclusive": 444233,
+          "raw_hex": "8140959782c982c282a282c400",
+          "sha256": "60d833cb3004130aa614f66f8d3669cef1488a9003f5586bc3bfc836d0ebd52e",
+          "japanese": "　風について"
+        },
+        {
+          "offset": 444204,
+          "end_exclusive": 444219,
+          "raw_hex": "8140838f836982c982c282a282c400",
+          "sha256": "3092227be7f9b9f8882d5167513e82fe7a839cb4581ed7ae39d7a6c05423b8e5",
+          "japanese": "　ワナについて"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367884,
+          "source": {
+            "offset": 444276,
+            "end_exclusive": 444301,
+            "raw_hex": "89bd82a995b782ab82bd82a282b182c682cd82a082e9814800",
+            "sha256": "39d45cc80e6e602ce1aef51686d2e24b921befd37108a4c8342e6c9ba0add43e",
+            "japanese": "何か聞きたいことはある？"
+          }
+        },
+        {
+          "slot": 1367888,
+          "source": {
+            "offset": 1367904,
+            "end_exclusive": 1368229,
+            "raw_hex": "96608caf8ed28175835f839383578387839382c5814082a882c882b68374838d834182c90d814082b882a3816082c182c682a282e982c68140959782aa82d382ad82f182be81420d0d0d96608caf8ed28175959782cd814082c782f182c782f181408bad82ad82c882e981420d0d96608caf8ed2817582bb82cc82a482bf81408dc58bad82cc959782aa908182ad82c60d81408a4f82dc82c58140908182ab82c682ce82b382ea82bf82dc82a481420d0d96608caf8ed2817582bb82a482c882c182bd82e781408ee882c993fc82ea82bd0d8140834183438365838082e0814082c882ad82c882c182c482b582dc82a482a982e70d96608caf8ed2817582a082f182dc82e88140959782aa8bad82ad82c882e782cb82a682a482bf82c90d814082c682c182c682c6814089ba82cc8374838d834182c982a882e882bf82dc82a282c8814200",
+            "sha256": "55b0611b6cd2472c29f18a2f27cbd0088d934100f4fa6960b48345daafe7ec06",
+            "japanese": "冒険者「ダンジョンで　おなじフロアに\n　ずぅ～っといると　風がふくんだ。\n\n\n冒険者「風は　どんどん　強くなる。\n\n冒険者「そのうち　最強の風が吹くと\n　外まで　吹きとばされちまう。\n\n冒険者「そうなったら　手に入れた\n　アイテムも　なくなってしまうから\n冒険者「あんまり　風が強くならねえうちに\n　とっとと　下のフロアにおりちまいな。"
+          }
+        },
+        {
+          "slot": 1367892,
+          "source": {
+            "offset": 1368229,
+            "end_exclusive": 1368460,
+            "raw_hex": "96608caf8ed28175838f836982c9814082c782a482b582c482e00d814082a982a982e882bd82ad82c882a28e9e82c182c482a082e982e682c881420d0d0d96608caf8ed2817582bb82a482a282a48e9e82cd81408c9582f082d382c182c482dd82c881420d0d96608caf8ed2817582e082b5814096da82cc914f82c9838f836982aa82a082ea82ce0d81408ca982a682e982e682a482c982c882e982a982e782b381420d0d96608caf8ed28175485082aa8fad82c882a28e9e82cd0d814082bb82a482e282c182c48356839383608387834582c982a282c182bd95fb82aa82a282a282ba814200",
+            "sha256": "b51a0f962abc2b9f9ec2837b811da95e8505aef194d2004418443250505431ff",
+            "japanese": "冒険者「ワナに　どうしても\n　かかりたくない時ってあるよな。\n\n\n冒険者「そういう時は　剣をふってみな。\n\n冒険者「もし　目の前にワナがあれば\n　見えるようになるからさ。\n\n冒険者「HPが少ない時は\n　そうやってシンチョウにいった方がいいぜ。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "060400",
+      "intro_table_hex": "74c7060860df1408a5e01408",
+      "labels_table_hex": "3cc706082cc7060858c50608"
+    },
+    {
+      "index": 4,
+      "menu": 10,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        88,
+        264,
+        0,
+        9,
+        8
+      ],
+      "rows": 4,
+      "labels_offset": 1369004,
+      "intro_offset": 1369084,
+      "labels": [
+        {
+          "offset": 444368,
+          "end_exclusive": 444387,
+          "raw_hex": "2096f291900459208389838a837a815b919000",
+          "sha256": "31dc6262933afc9443a6d770a67dec3b3e36f4d412359902da29ca84a4c5c465",
+          "japanese": " 薬草{legacy-x:0459} ラリホー草"
+        },
+        {
+          "offset": 444348,
+          "end_exclusive": 444367,
+          "raw_hex": "2092ed90d89190045920838b815b8389919000",
+          "sha256": "d7629912ee40a27503572d9fbf128152e8e78a84d2159155b0e43fef3b7cc07a",
+          "japanese": " 弟切草{legacy-x:0459} ルーラ草"
+        },
+        {
+          "offset": 444324,
+          "end_exclusive": 444345,
+          "raw_hex": "2082df82ae82b782e8919004592089ce898a919000",
+          "sha256": "5c0c08831481a7b1da9b3f094f658fcb4a3db1b321db1e16a664e6a7e064e006",
+          "japanese": " めぐすり草{legacy-x:0459} 火炎草"
+        },
+        {
+          "offset": 444304,
+          "end_exclusive": 444323,
+          "raw_hex": "2093c582af82b5919004592082e282df82e900",
+          "sha256": "06b5090d0d2c4965193b0d76086fa431a2b6f1137c839591c78173b40893831d",
+          "japanese": " 毒けし草{legacy-x:0459} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369084,
+          "source": {
+            "offset": 444416,
+            "end_exclusive": 444439,
+            "raw_hex": "89bd82a981418bb382a682c482e282eb82a482a9814800",
+            "sha256": "a1b21bb1ee0db0753e4c48228299220a312d20942d8df819a7f72eafb5b3457e",
+            "japanese": "何か、教えてやろうか？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0a0401",
+      "intro_table_hex": "00c80608fcc70608f8c70608f4c70608f0c70608ecc70608e8c70608e4c70608",
+      "labels_table_hex": "d0c70608bcc70608a4c7060890c70608"
+    },
+    {
+      "index": 5,
+      "menu": 8,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        132,
+        152,
+        200,
+        0,
+        9,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1369116,
+      "intro_offset": 1369140,
+      "labels": [
+        {
+          "offset": 444536,
+          "end_exclusive": 444557,
+          "raw_hex": "814082bf82a982e782f082bd82df82e98d558c8200",
+          "sha256": "d0c1e34962fec71cd9cb5046a5f63f51d9db940363e8e85a4673714ea92c2c64",
+          "japanese": "　ちからをためる攻撃"
+        },
+        {
+          "offset": 444512,
+          "end_exclusive": 444533,
+          "raw_hex": "81408c9582e28f8282f082b382d182b382b982e900",
+          "sha256": "b550296dddee174dd9a30cca488baaff51cafb4a8d852838ac8a9814055b4a6b",
+          "japanese": "　剣や盾をさびさせる"
+        },
+        {
+          "offset": 444488,
+          "end_exclusive": 444509,
+          "raw_hex": "814082e082cc82f0939082f182c582b582dc82a400",
+          "sha256": "6654b22421ceed7163c0ddc7bd59bd79220639d635e0ba26f2ddef98dfc8da0d",
+          "japanese": "　ものを盗んでしまう"
+        },
+        {
+          "offset": 444464,
+          "end_exclusive": 444485,
+          "raw_hex": "814095aa97f482b782e9838283938358835e815b00",
+          "sha256": "e7194b682f391cd0bd06517d078c320a0846f6e4e8f6d26cdee7540238ef6387",
+          "japanese": "　分裂するモンスター"
+        },
+        {
+          "offset": 444440,
+          "end_exclusive": 444461,
+          "raw_hex": "814096ee82f082a482c2838283938358835e815b00",
+          "sha256": "5128633082e9e90d3f27b8abac668a91444133b53156f754bc55a3f8417951be",
+          "japanese": "　矢をうつモンスター"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369140,
+          "source": {
+            "offset": 444572,
+            "end_exclusive": 444599,
+            "raw_hex": "89bd82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+            "sha256": "c6129c146131a696ea7f68b955c89eaeddccc31c680ad5cbf2500e7815a09a9c",
+            "japanese": "何について知りたいですか？"
+          }
+        },
+        {
+          "slot": 1369144,
+          "source": {
+            "offset": 444568,
+            "end_exclusive": 444571,
+            "raw_hex": "090200",
+            "sha256": "b79e31d6e176610660ff9b6fff3c520c5f9222da8e12eea842b8a24b8164f4da",
+            "japanese": "{tab:09}{style-off:02}"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "080401",
+      "intro_table_hex": "9cc8060898c8060898c806080cc7060808c7060894c8060890c80608",
+      "labels_table_hex": "78c8060860c8060848c8060830c8060818c8060858c50608"
+    },
+    {
+      "index": 6,
+      "menu": 8,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        132,
+        152,
+        200,
+        0,
+        9,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1369168,
+      "intro_offset": 1369192,
+      "labels": [
+        {
+          "offset": 444696,
+          "end_exclusive": 444719,
+          "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825000",
+          "sha256": "f954953076f931db02bf4fd0a3af516cec7f83f790c71ffaaf16afa7fb89e450",
+          "japanese": "　明日のために、その１"
+        },
+        {
+          "offset": 444672,
+          "end_exclusive": 444695,
+          "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825100",
+          "sha256": "9e5b9444d03693be022f45ffe8d53726d20f87bd106b9932d8b4be82e008fc0c",
+          "japanese": "　明日のために、その２"
+        },
+        {
+          "offset": 444648,
+          "end_exclusive": 444671,
+          "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825200",
+          "sha256": "0248a8d183aacd6f664c588e2269178309f7d5ef0956daeff6bf40c4c6c8c976",
+          "japanese": "　明日のために、その３"
+        },
+        {
+          "offset": 444624,
+          "end_exclusive": 444647,
+          "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825300",
+          "sha256": "e4aa169dd6fa5bdf5c3d1438c034be5df6bfe819976533af7bf9693caa6665bf",
+          "japanese": "　明日のために、その４"
+        },
+        {
+          "offset": 444600,
+          "end_exclusive": 444623,
+          "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825400",
+          "sha256": "8f8aa9d648073508b46bbcf5b665c52fb9787728d8465f1be7a2427050f31b2c",
+          "japanese": "　明日のために、その５"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369192,
+          "source": {
+            "offset": 444772,
+            "end_exclusive": 444810,
+            "raw_hex": "82a882a482c181492089bd82c982c282a282c48bb382a682c482d982b582a282f182be814800",
+            "sha256": "05901f064de4f8d2ab9cbbbfccbab2ed8908c8e9daf79b7e15252af9b51f3e12",
+            "japanese": "おうっ！ 何について教えてほしいんだ？"
+          }
+        },
+        {
+          "slot": 1369196,
+          "source": {
+            "offset": 444740,
+            "end_exclusive": 444769,
+            "raw_hex": "89bd82c982c282a282c48bb382a682c482d982b582a282f182be814800",
+            "sha256": "fe9c5c869ac37bae33ee137422cc77d883fb83c2498fccc3d1768134654ea7e2",
+            "japanese": "何について教えてほしいんだ？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "080b01",
+      "intro_table_hex": "64c9060844c9060840c906083cc9060838c9060834c9060830c90608",
+      "labels_table_hex": "18c9060800c90608e8c80608d0c80608b8c8060858c50608"
+    },
+    {
+      "index": 7,
+      "menu": 14,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        104,
+        264,
+        0,
+        10,
+        8
+      ],
+      "rows": 4,
+      "labels_offset": 1369516,
+      "intro_offset": 1369532,
+      "labels": [
+        {
+          "offset": 445420,
+          "end_exclusive": 445443,
+          "raw_hex": "208d8790ac82cc9ae204732082dc82e082cc82cc9ae200",
+          "sha256": "a5665da0596a38c0f0cb81d7263d8ad54c7a56ff66c509cc89ba71eb6fa4ec28",
+          "japanese": " 合成の壺{legacy-x:0473} まものの壺"
+        },
+        {
+          "offset": 445392,
+          "end_exclusive": 445419,
+          "raw_hex": "2082d682f182b082cc9ae204732082c682a482bc82ad82cc9ae200",
+          "sha256": "2b6f1f91fda6670b34df2b414bb727cc9abccf01cfb3396c26772b07a4fcf5d7",
+          "japanese": " へんげの壺{legacy-x:0473} とうぞくの壺"
+        },
+        {
+          "offset": 445368,
+          "end_exclusive": 445391,
+          "raw_hex": "2082a482bb82c282ab82cc9ae204732089ce96f29ae200",
+          "sha256": "3052ef8c46565acf0a6d87710c15e0e8a3c71896ffde22d2c9adefd271e4d0e0",
+          "japanese": " うそつきの壺{legacy-x:0473} 火薬壺"
+        },
+        {
+          "offset": 445348,
+          "end_exclusive": 445367,
+          "raw_hex": "2089f1959c82cc9ae204732082e282df82e900",
+          "sha256": "1a91cbc0060f084526dc9551ff1b4b541bd31ff9ca2becd18c996497aac0c38d",
+          "japanese": " 回復の壺{legacy-x:0473} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369532,
+          "source": {
+            "offset": 445472,
+            "end_exclusive": 445503,
+            "raw_hex": "81458145814589bd82a995b782a282c482ad82be82b382a282dc82b7814800",
+            "sha256": "2343f365ba768120a9e6be47ea454c623552e1aeefdcf6110ec9e2ccd794ff9c",
+            "japanese": "・・・何か聞いてくださいます？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0e0401",
+      "intro_table_hex": "20cc06081ccc060818cc060814cc060810cc06080ccc060808cc060804cc0608",
+      "labels_table_hex": "eccb0608d0cb0608b8cb0608a4cb0608"
+    },
+    {
+      "index": 8,
+      "menu": 12,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        136,
+        0,
+        9,
+        4
+      ],
+      "rows": 4,
+      "labels_offset": 1367788,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        },
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 444136,
+          "end_exclusive": 444161,
+          "raw_hex": "814082d682f182b082cc8ff182f08ea995aa82c982d382e900",
+          "sha256": "e6903b501a923ffe3ceb1162b372e9f0b00623d21024df9eda41affa2bf816cf",
+          "japanese": "　へんげの杖を自分にふる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0c0401",
+      "intro_table_hex": "14c7060810c706080cc7060808c70608",
+      "labels_table_hex": "9cc6060858c506089cc60608e8c60608"
+    },
+    {
+      "index": 9,
+      "menu": 7,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        168,
+        0,
+        9,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1367788,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        },
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 444136,
+          "end_exclusive": 444161,
+          "raw_hex": "814082d682f182b082cc8ff182f08ea995aa82c982d382e900",
+          "sha256": "e6903b501a923ffe3ceb1162b372e9f0b00623d21024df9eda41affa2bf816cf",
+          "japanese": "　へんげの杖を自分にふる"
+        },
+        {
+          "offset": 444112,
+          "end_exclusive": 444135,
+          "raw_hex": "814093588ee582c9959588f382cc8ff182f08e6782a400",
+          "sha256": "b2e8bdfdbf78aeeb64301715a16b3fe21ba8fd42ffc75482faea9871814f37b1",
+          "japanese": "　店主に封印の杖を使う"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "070401",
+      "intro_table_hex": "14c7060810c706080cc7060808c7060804c70608",
+      "labels_table_hex": "9cc6060858c506089cc60608e8c60608d0c60608"
+    },
+    {
+      "index": 10,
+      "menu": 13,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        152,
+        296,
+        0,
+        10,
+        9
+      ],
+      "rows": 5,
+      "labels_offset": 1369220,
+      "intro_offset": 1369240,
+      "labels": [
+        {
+          "offset": 444916,
+          "end_exclusive": 444941,
+          "raw_hex": "2094e782cc8f820483208349815b834b8356815b838b836800",
+          "sha256": "6d2128f89b011d485828eb32e539d1aa92833b73ee00626095b3a9df6ab42227",
+          "japanese": " 皮の盾{legacy-x:0483} オーガシールド"
+        },
+        {
+          "offset": 444888,
+          "end_exclusive": 444913,
+          "raw_hex": "2082a482eb82b182cc8f820483208ca990d882e882cc8f8200",
+          "sha256": "d657cdcad43475169b3c2ae4f2b74b4d74d70a56396740d404f0f5c1db1dfc2f",
+          "japanese": " うろこの盾{legacy-x:0483} 見切りの盾"
+        },
+        {
+          "offset": 444856,
+          "end_exclusive": 444885,
+          "raw_hex": "2082dd82a982aa82dd82cc8f82048320939082dd82e682af82cc8f8200",
+          "sha256": "1b98a8c2b3cf253c7103d451567dc8fc6d2aa73f42d6ad933a8dc30313b654a9",
+          "japanese": " みかがみの盾{legacy-x:0483} 盗みよけの盾"
+        },
+        {
+          "offset": 444836,
+          "end_exclusive": 444854,
+          "raw_hex": "2083688389835383938356815b838b836800",
+          "sha256": "08ebbf8688046bd7e907c209e7926821bdf227e36c6605f79b1222a1a8151b21",
+          "japanese": " ドラゴンシールド"
+        },
+        {
+          "offset": 444812,
+          "end_exclusive": 444833,
+          "raw_hex": "2082e282a282ce82cc8f8204832082e282df82e900",
+          "sha256": "08160e8ddbe4b6d1bfba828aa1cba330a987c2d0eb78e7a1f3486ec2f71767c4",
+          "japanese": " やいばの盾{legacy-x:0483} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369240,
+          "source": {
+            "offset": 444976,
+            "end_exclusive": 445007,
+            "raw_hex": "82b382a0814082c882f182c582e095b782a282c482ad82be82b382a2814200",
+            "sha256": "8810e384c7036d0997dabf9080246e7e269792db21f1396b49ba91413ea87cca",
+            "japanese": "さあ　なんでも聞いてください。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0d0401",
+      "intro_table_hex": "30ca06082cca060828ca060824ca060820ca06081cca060818ca060814ca060810ca0608",
+      "labels_table_hex": "f4c90608d8c90608b8c90608a4c906088cc90608"
+    },
+    {
+      "index": 11,
+      "menu": 13,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        152,
+        296,
+        0,
+        10,
+        9
+      ],
+      "rows": 5,
+      "labels_offset": 1369276,
+      "intro_offset": 1369368,
+      "labels": [
+        {
+          "offset": 445112,
+          "end_exclusive": 445147,
+          "raw_hex": "208368838983538393834c8389815b0483208345834283938368835883738341815b00",
+          "sha256": "d481cf5ca7a0c80073dabe4a3316ae31abe7db19bd5bb96abd7f67d3c46f716e",
+          "japanese": " ドラゴンキラー{legacy-x:0483} ウィンドスピアー"
+        },
+        {
+          "offset": 445084,
+          "end_exclusive": 445111,
+          "raw_hex": "20954b928682cc8c9504832083788372815b83748348815b834e00",
+          "sha256": "1ec8007b9f41414bbe909cde854efb2b63b3b2fa36355506acf9bfa404543957",
+          "japanese": " 必中の剣{legacy-x:0483} ベビーフォーク"
+        },
+        {
+          "offset": 445048,
+          "end_exclusive": 445083,
+          "raw_hex": "208366835883588367815b834a815b82cc958004832082df82b882e782b582a28c9500",
+          "sha256": "50e2e0bc031a6a63fbda2d0a38cf1ff912c3a6b4a554f65e1f9d03d97afe91be",
+          "japanese": " デスストーカーの斧{legacy-x:0483} めずらしい剣"
+        },
+        {
+          "offset": 445032,
+          "end_exclusive": 445048,
+          "raw_hex": "2097648c9582a982dc82a282bd82bf00",
+          "sha256": "4ecc16aa3505ed617b9d0aa690ee3dbee0743a0748f89b2681a4af9cdbae8c87",
+          "japanese": " 妖剣かまいたち"
+        },
+        {
+          "offset": 445008,
+          "end_exclusive": 445031,
+          "raw_hex": "20835d83938372834c8389815b04832082e282df82e900",
+          "sha256": "12b9f6f4f3eed2c5d0d08f2776144b89dc65753daa6b8ac2ddd941a3596c6683",
+          "japanese": " ゾンビキラー{legacy-x:0483} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369368,
+          "source": {
+            "offset": 444976,
+            "end_exclusive": 445007,
+            "raw_hex": "82b382a0814082c882f182c582e095b782a282c482ad82be82b382a2814200",
+            "sha256": "8810e384c7036d0997dabf9080246e7e269792db21f1396b49ba91413ea87cca",
+            "japanese": "さあ　なんでも聞いてください。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0d0401",
+      "intro_table_hex": "30ca0608f8ca0608f4ca0608f0ca0608ecca0608e8ca0608e4ca0608e0ca0608dcca0608",
+      "labels_table_hex": "b8ca06089cca060878ca060868ca060850ca0608"
+    },
+    {
+      "index": 12,
+      "menu": 14,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        104,
+        264,
+        0,
+        10,
+        8
+      ],
+      "rows": 4,
+      "labels_offset": 1369516,
+      "intro_offset": 1369532,
+      "labels": [
+        {
+          "offset": 445420,
+          "end_exclusive": 445443,
+          "raw_hex": "208d8790ac82cc9ae204732082dc82e082cc82cc9ae200",
+          "sha256": "a5665da0596a38c0f0cb81d7263d8ad54c7a56ff66c509cc89ba71eb6fa4ec28",
+          "japanese": " 合成の壺{legacy-x:0473} まものの壺"
+        },
+        {
+          "offset": 445392,
+          "end_exclusive": 445419,
+          "raw_hex": "2082d682f182b082cc9ae204732082c682a482bc82ad82cc9ae200",
+          "sha256": "2b6f1f91fda6670b34df2b414bb727cc9abccf01cfb3396c26772b07a4fcf5d7",
+          "japanese": " へんげの壺{legacy-x:0473} とうぞくの壺"
+        },
+        {
+          "offset": 445368,
+          "end_exclusive": 445391,
+          "raw_hex": "2082a482bb82c282ab82cc9ae204732089ce96f29ae200",
+          "sha256": "3052ef8c46565acf0a6d87710c15e0e8a3c71896ffde22d2c9adefd271e4d0e0",
+          "japanese": " うそつきの壺{legacy-x:0473} 火薬壺"
+        },
+        {
+          "offset": 445348,
+          "end_exclusive": 445367,
+          "raw_hex": "2089f1959c82cc9ae204732082e282df82e900",
+          "sha256": "1a91cbc0060f084526dc9551ff1b4b541bd31ff9ca2becd18c996497aac0c38d",
+          "japanese": " 回復の壺{legacy-x:0473} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369532,
+          "source": {
+            "offset": 445472,
+            "end_exclusive": 445503,
+            "raw_hex": "81458145814589bd82a995b782a282c482ad82be82b382a282dc82b7814800",
+            "sha256": "2343f365ba768120a9e6be47ea454c623552e1aeefdcf6110ec9e2ccd794ff9c",
+            "japanese": "・・・何か聞いてくださいます？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0e0401",
+      "intro_table_hex": "20cc06081ccc060818cc060814cc060810cc06080ccc060808cc060804cc0608",
+      "labels_table_hex": "eccb0608d0cb0608b8cb0608a4cb0608"
+    },
+    {
+      "index": 13,
+      "menu": 14,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        104,
+        264,
+        0,
+        10,
+        8
+      ],
+      "rows": 4,
+      "labels_offset": 1369404,
+      "intro_offset": 1369484,
+      "labels": [
+        {
+          "offset": 445268,
+          "end_exclusive": 445293,
+          "raw_hex": "20959588f382cc8ff10466208389838a837a815b82cc8ff100",
+          "sha256": "44666e36b1debc12e337af7acf69816df6b46be8142ca867fb697a81039400f6",
+          "japanese": " 封印の杖{legacy-x:0466} ラリホーの杖"
+        },
+        {
+          "offset": 445236,
+          "end_exclusive": 445265,
+          "raw_hex": "20906791e382ed82e882cc8ff10466208381835f8370836a82cc8ff100",
+          "sha256": "e451cade0fb7f3289a771a20929714952804a2d2b6c864d7bfc209eab3dfd7e4",
+          "japanese": " 身代わりの杖{legacy-x:0466} メダパニの杖"
+        },
+        {
+          "offset": 445204,
+          "end_exclusive": 445235,
+          "raw_hex": "2082a282a982b882bf82cc8ff1046620836f8356838b815b838982cc8ff100",
+          "sha256": "6b503604602a30be1c8e0d1c95e22a18b849318f75266f79f66460a001ddd1f4",
+          "japanese": " いかずちの杖{legacy-x:0466} バシルーラの杖"
+        },
+        {
+          "offset": 445180,
+          "end_exclusive": 445203,
+          "raw_hex": "20837b837e8349835882cc8ff104662082e282df82e900",
+          "sha256": "5a9e31a5bb58979e5c50521f1c56071b6b6fa6a7172665702f95bcad02a86ee7",
+          "japanese": " ボミオスの杖{legacy-x:0466} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369484,
+          "source": {
+            "offset": 445324,
+            "end_exclusive": 445347,
+            "raw_hex": "89bd82a981408bb382a682c482e282eb82a482a9814800",
+            "sha256": "93ee3d63b2e8c98b87c240d2c6391fafcf25007b953ad0f834eb849657bfd728",
+            "japanese": "何か　教えてやろうか？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0e0401",
+      "intro_table_hex": "8ccb060888cb060884cb060880cb06087ccb060878cb060874cb060870cb0608",
+      "labels_table_hex": "54cb060834cb060814cb0608fcca0608"
+    },
+    {
+      "index": 14,
+      "menu": 17,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        152,
+        200,
+        0,
+        9,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1367788,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        },
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 444136,
+          "end_exclusive": 444161,
+          "raw_hex": "814082d682f182b082cc8ff182f08ea995aa82c982d382e900",
+          "sha256": "e6903b501a923ffe3ceb1162b372e9f0b00623d21024df9eda41affa2bf816cf",
+          "japanese": "　へんげの杖を自分にふる"
+        },
+        {
+          "offset": 444112,
+          "end_exclusive": 444135,
+          "raw_hex": "814093588ee582c9959588f382cc8ff182f08e6782a400",
+          "sha256": "b2e8bdfdbf78aeeb64301715a16b3fe21ba8fd42ffc75482faea9871814f37b1",
+          "japanese": "　店主に封印の杖を使う"
+        },
+        {
+          "offset": 444088,
+          "end_exclusive": 444111,
+          "raw_hex": "81408ff182f08eaf95ca82b582bd82a282c882e7814800",
+          "sha256": "dd92938e8259173a1663f615fb1c235a073ae22adc5f7e584b605e2f30879f1a",
+          "japanese": "　杖を識別したいなら？"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "110401",
+      "intro_table_hex": "14c7060810c706080cc7060808c7060804c706083cc70608",
+      "labels_table_hex": "9cc6060858c506089cc60608e8c60608d0c60608b8c60608"
+    },
+    {
+      "index": 15,
+      "menu": 7,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        168,
+        0,
+        9,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1367796,
+      "intro_offset": 1367816,
+      "labels": [
+        {
+          "offset": 444060,
+          "end_exclusive": 444085,
+          "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+          "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+          "japanese": "　ミミックをひろうには？"
+        },
+        {
+          "offset": 444136,
+          "end_exclusive": 444161,
+          "raw_hex": "814082d682f182b082cc8ff182f08ea995aa82c982d382e900",
+          "sha256": "e6903b501a923ffe3ceb1162b372e9f0b00623d21024df9eda41affa2bf816cf",
+          "japanese": "　へんげの杖を自分にふる"
+        },
+        {
+          "offset": 444112,
+          "end_exclusive": 444135,
+          "raw_hex": "814093588ee582c9959588f382cc8ff182f08e6782a400",
+          "sha256": "b2e8bdfdbf78aeeb64301715a16b3fe21ba8fd42ffc75482faea9871814f37b1",
+          "japanese": "　店主に封印の杖を使う"
+        },
+        {
+          "offset": 444088,
+          "end_exclusive": 444111,
+          "raw_hex": "81408ff182f08eaf95ca82b582bd82a282c882e7814800",
+          "sha256": "dd92938e8259173a1663f615fb1c235a073ae22adc5f7e584b605e2f30879f1a",
+          "japanese": "　杖を識別したいなら？"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367816,
+          "source": {
+            "offset": 444180,
+            "end_exclusive": 444201,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+            "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+            "japanese": "何について聞きたい？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "070401",
+      "intro_table_hex": "14c7060810c706080cc7060808c7060804c70608",
+      "labels_table_hex": "9cc60608e8c60608d0c60608b8c6060858c50608"
+    },
+    {
+      "index": 16,
+      "menu": 14,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        104,
+        264,
+        0,
+        10,
+        8
+      ],
+      "rows": 4,
+      "labels_offset": 1369516,
+      "intro_offset": 1369532,
+      "labels": [
+        {
+          "offset": 445420,
+          "end_exclusive": 445443,
+          "raw_hex": "208d8790ac82cc9ae204732082dc82e082cc82cc9ae200",
+          "sha256": "a5665da0596a38c0f0cb81d7263d8ad54c7a56ff66c509cc89ba71eb6fa4ec28",
+          "japanese": " 合成の壺{legacy-x:0473} まものの壺"
+        },
+        {
+          "offset": 445392,
+          "end_exclusive": 445419,
+          "raw_hex": "2082d682f182b082cc9ae204732082c682a482bc82ad82cc9ae200",
+          "sha256": "2b6f1f91fda6670b34df2b414bb727cc9abccf01cfb3396c26772b07a4fcf5d7",
+          "japanese": " へんげの壺{legacy-x:0473} とうぞくの壺"
+        },
+        {
+          "offset": 445368,
+          "end_exclusive": 445391,
+          "raw_hex": "2082a482bb82c282ab82cc9ae204732089ce96f29ae200",
+          "sha256": "3052ef8c46565acf0a6d87710c15e0e8a3c71896ffde22d2c9adefd271e4d0e0",
+          "japanese": " うそつきの壺{legacy-x:0473} 火薬壺"
+        },
+        {
+          "offset": 445348,
+          "end_exclusive": 445367,
+          "raw_hex": "2089f1959c82cc9ae204732082e282df82e900",
+          "sha256": "1a91cbc0060f084526dc9551ff1b4b541bd31ff9ca2becd18c996497aac0c38d",
+          "japanese": " 回復の壺{legacy-x:0473} やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369532,
+          "source": {
+            "offset": 445472,
+            "end_exclusive": 445503,
+            "raw_hex": "81458145814589bd82a995b782a282c482ad82be82b382a282dc82b7814800",
+            "sha256": "2343f365ba768120a9e6be47ea454c623552e1aeefdcf6110ec9e2ccd794ff9c",
+            "japanese": "・・・何か聞いてくださいます？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0e0401",
+      "intro_table_hex": "20cc06081ccc060818cc060814cc060810cc06080ccc060808cc060804cc0608",
+      "labels_table_hex": "eccb0608d0cb0608b8cb0608a4cb0608"
+    },
+    {
+      "index": 17,
+      "menu": 19,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        132,
+        72,
+        200,
+        0,
+        4,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1369564,
+      "intro_offset": 1369588,
+      "labels": [
+        {
+          "offset": 445536,
+          "end_exclusive": 445541,
+          "raw_hex": "8140919000",
+          "sha256": "654e752cff50b5c5a5f8d5bfc35bda73dd08c70ee0ef79708a1e19c101e79099",
+          "japanese": "　草"
+        },
+        {
+          "offset": 445528,
+          "end_exclusive": 445535,
+          "raw_hex": "81408aaa95a800",
+          "sha256": "d617cfd27e9297c7bafbc64df73e6b1dd9416b7d73ad9454e393ebc852c097aa",
+          "japanese": "　巻物"
+        },
+        {
+          "offset": 445520,
+          "end_exclusive": 445525,
+          "raw_hex": "81409ae200",
+          "sha256": "7962aa8d8aac6a94c6266d0ca454a78f80095a46dc0468f1a9acfd6e978650b6",
+          "japanese": "　壺"
+        },
+        {
+          "offset": 445512,
+          "end_exclusive": 445517,
+          "raw_hex": "81408ff100",
+          "sha256": "7fc4ed285711d7e10c05848855b4b7497b41d08d83463fa60a4465fc384b97a5",
+          "japanese": "　杖"
+        },
+        {
+          "offset": 445504,
+          "end_exclusive": 445511,
+          "raw_hex": "81408e7797d600",
+          "sha256": "205f094188a4dc06c0d4a7651d456080e1a1dd0e7b60e88b64220fb16b9ae331",
+          "japanese": "　指輪"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369588,
+          "source": {
+            "offset": 445592,
+            "end_exclusive": 445628,
+            "raw_hex": "89bd82c982c282a282c4208bb382a682c482ad82ea82e982c58353838f835882a9814800",
+            "sha256": "d0cb357950d33d8070f60f479efa9f1c9608591adf1aeea6218facaba716004a",
+            "japanese": "何について 教えてくれるでゴワスか？"
+          }
+        },
+        {
+          "slot": 1369592,
+          "source": {
+            "offset": 445564,
+            "end_exclusive": 445589,
+            "raw_hex": "8bb382a682c482ad82ea82e982c58353838f835882a9814800",
+            "sha256": "93671992e1535ec5041a82e59c95d3e1a9bdab1e8f870f2adf692897a3b4f66f",
+            "japanese": "教えてくれるでゴワスか？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "130b01",
+      "intro_table_hex": "98cc06087ccc060878cc060874cc060870cc06086ccc060868cc0608",
+      "labels_table_hex": "60cc060858cc060850cc060848cc060840cc060858c50608"
+    },
+    {
+      "index": 18,
+      "menu": 3,
+      "mode": 2,
+      "descriptor": [
+        0,
+        16,
+        100,
+        120,
+        200,
+        0,
+        10,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1365840,
+      "intro_offset": 1365884,
+      "labels": [
+        {
+          "offset": 443908,
+          "end_exclusive": 443923,
+          "raw_hex": "814082dc82c782ed82b58ff391d400",
+          "sha256": "beb06e768beba8804871bb7788f2b7fb0079d978835b15ff8aebb4905e5f8b05",
+          "japanese": "　まどわし状態"
+        },
+        {
+          "offset": 443892,
+          "end_exclusive": 443907,
+          "raw_hex": "814082a882d182a682c482a282e900",
+          "sha256": "bba33e5e23dcb4bff7df76baf95f146b376254319d4145d9f60ae0312fd6bd7d",
+          "japanese": "　おびえている"
+        },
+        {
+          "offset": 443876,
+          "end_exclusive": 443891,
+          "raw_hex": "814082cb82de82c182c482a282e900",
+          "sha256": "2ef6606966fa8f04643758cc2f31551e15ac38dfdd1d7ee52b17fa7e13268b41",
+          "japanese": "　ねむっている"
+        },
+        {
+          "offset": 443940,
+          "end_exclusive": 443955,
+          "raw_hex": "814082a882c782c182c482a282e900",
+          "sha256": "5ef782e07306556e7aaf357e739534a6c5d65cc8d8dd74ecaed4c5c3b5a975f9",
+          "japanese": "　おどっている"
+        },
+        {
+          "offset": 443924,
+          "end_exclusive": 443939,
+          "raw_hex": "81408dac979082b582c482a282e900",
+          "sha256": "e2f266091cac3ecc4f71a37626a8a48066c1a2f822e6722e6844e7654e58c1ba",
+          "japanese": "　混乱している"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1365884,
+          "source": {
+            "offset": 444028,
+            "end_exclusive": 444057,
+            "raw_hex": "82c782ea82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+            "sha256": "491be87c2267344d696e635ee2bda39cd4430fef8c186bac4af9440c6f9de245",
+            "japanese": "どれについて知りたいですか？"
+          }
+        },
+        {
+          "slot": 1365888,
+          "source": {
+            "offset": 1367614,
+            "end_exclusive": 1367786,
+            "raw_hex": "95ba8e6d817582dc82c782ed82b382ea82c482a282c4814082dc82ed82e882aa0d814082bf82e182f182c681408ca982a682c882ad82c882c182c482a282dc82b781420d0d0d95ba8e6d81758374838d834182c982a282e982a082a282be82cd0d814082b882c182c68ff391d482aa82c282c382ad82cc82c50d95ba8e6d81758d558c8282b782e982c882e8814093a682b082e982c882e80d81408d4482ab82c982c582ab82dc82b7814200",
+            "sha256": "f0433f30c38e604069e5d9212ee59f652a9f5d94967405c820559076f7e8e0db",
+            "japanese": "兵士「まどわされていて　まわりが\n　ちゃんと　見えなくなっています。\n\n\n兵士「フロアにいるあいだは\n　ずっと状態がつづくので\n兵士「攻撃するなり　逃げるなり\n　好きにできます。"
+          }
+        },
+        {
+          "slot": 1365892,
+          "source": {
+            "offset": 1366176,
+            "end_exclusive": 1366306,
+            "raw_hex": "95ba8e6d817582a882d182a682c482a282e9838283938358835e815b82cd0d814082b182bf82e782a982e7814093a682b082e682a482c682b582c482a282dc82b781420d95ba8e6d817593a682b091ab82aa91ac82a282cc82c50d814082d982a482c182c482a882ad82cc82aa814082a282a282c68e7682a282dc82b782e6814200",
+            "sha256": "7559558d9f9ee8fcc8670ceb097672e29b7234fac74da6e80f0e14ecd252fe39",
+            "japanese": "兵士「おびえているモンスターは\n　こちらから　逃げようとしています。\n兵士「逃げ足が速いので\n　ほうっておくのが　いいと思いますよ。"
+          }
+        },
+        {
+          "slot": 1365896,
+          "source": {
+            "offset": 1366306,
+            "end_exclusive": 1366519,
+            "raw_hex": "95ba8e6d8175838283938358835e815b82f0834183438365838082c50d814082cb82de82e782b982ea82ce81408d558c8282b582c482e096da82f082b382dc82b582dc82b982f181420d0d95ba8e6d817582bd82be81408d558c8282b582c482e082b582c882ad82c482e00d814082b582ce82e782ad82b782e982c6814096da82b482df82c482b582dc82a282dc82b781420d95ba8e6d817590ed82a482d782ab82a9814093a682b082e982d782ab82a981420d814081458145814582de82b882a982b582a282c682b182eb82c582b782cb814200",
+            "sha256": "1106971da4c4946fee37463f246a8703f4e6a65b1a4da2366f774663df04bc55",
+            "japanese": "兵士「モンスターをアイテムで\n　ねむらせれば　攻撃しても目をさましません。\n\n兵士「ただ　攻撃してもしなくても\n　しばらくすると　目ざめてしまいます。\n兵士「戦うべきか　逃げるべきか。\n　・・・むずかしいところですね。"
+          }
+        },
+        {
+          "slot": 1365900,
+          "source": {
+            "offset": 1366519,
+            "end_exclusive": 1366710,
+            "raw_hex": "95ba8e6d8175838283938358835e815b82e0814082c682ab82c982cd0d814082a882c782e882bd82ad82c882e982c682ab82e082a082e982e682a482c582b781420d0d0d95ba8e6d81758bdf82c382ad82c681408d558c8282b382ea82e982b182c682e082a082e982cc82c50d814096ee82e28ff182c582bd82a882b782cc82aa82a282a282a982e082b582ea82dc82b982f181420d95ba8e6d817582e082bf82eb82f1814093a682b082e982cc82e082a282a282c582b582e582a4814200",
+            "sha256": "b5fcbdbd9db5cd3fc0837ca6da661f1180b16c98a053dde8dde370d26e6048cb",
+            "japanese": "兵士「モンスターも　ときには\n　おどりたくなるときもあるようです。\n\n\n兵士「近づくと　攻撃されることもあるので\n　矢や杖でたおすのがいいかもしれません。\n兵士「もちろん　逃げるのもいいでしょう。"
+          }
+        },
+        {
+          "slot": 1365904,
+          "source": {
+            "offset": 1366710,
+            "end_exclusive": 1366977,
+            "raw_hex": "95ba8e6d81758dac979082b582c482a282e9838283938358835e815b82cd0d81408366835e8389838182c993ae82ab82dc82ed82c182c482a282dc82b782aa0d95ba8e6d817582c682ab82c982cd814082b182bf82e782c98d558c8282b582c482ab82dc82b781420d0d95ba8e6d817582b182bf82e782cc485082cc8e6382e882aa8fad82c882a282c682ab82cd0d814082d982a482c182c482a882ad82cc82aa82a282a282c582b582e582a482cb81420d0d95ba8e6d817582a0814082bb82a482bb82a481420d0d95ba8e6d81758dac979082b582c482a282e9838283938358835e815b82cd0d814093af8e6d82a482bf82b782e982b182c682e082a082e982f182c582b782e6814200",
+            "sha256": "1f1ee4d0628c1354c966e3a82b549a9c0d8814d0f522c78953aabebc6ee780d5",
+            "japanese": "兵士「混乱しているモンスターは\n　デタラメに動きまわっていますが\n兵士「ときには　こちらに攻撃してきます。\n\n兵士「こちらのHPの残りが少ないときは\n　ほうっておくのがいいでしょうね。\n\n兵士「あ　そうそう。\n\n兵士「混乱しているモンスターは\n　同士うちすることもあるんですよ。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "030402",
+      "intro_table_hex": "7cc606083ede1408a0d8140822d91408f7d91408b6da1408",
+      "labels_table_hex": "04c60608f4c50608e4c5060824c6060814c6060858c50608"
+    },
+    {
+      "index": 19,
+      "menu": 20,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        120,
+        168,
+        0,
+        10,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1365864,
+      "intro_offset": 1365908,
+      "labels": [
+        {
+          "offset": 444008,
+          "end_exclusive": 444027,
+          "raw_hex": "8140836f815b8354815b834a815b8ff391d400",
+          "sha256": "168bbe9495fb5b6e535f5409dca6465107ec72bf8b99bd99ba982c7c7e57b18c",
+          "japanese": "　バーサーカー状態"
+        },
+        {
+          "offset": 443988,
+          "end_exclusive": 444005,
+          "raw_hex": "814082a982c882b582ce82e88ff391d400",
+          "sha256": "90b489ac2f9fd453361abc17ea6d14210232ba38ecf62dede3c7b34c76230391",
+          "japanese": "　かなしばり状態"
+        },
+        {
+          "offset": 443972,
+          "end_exclusive": 443987,
+          "raw_hex": "814082df82c282d482b58ff391d400",
+          "sha256": "1eb06ff2beb1fda01e29b9a969a38295c7b07e9937cd233c85290d07f0cf3c64",
+          "japanese": "　めつぶし状態"
+        },
+        {
+          "offset": 443956,
+          "end_exclusive": 443969,
+          "raw_hex": "8140834183588367838d839300",
+          "sha256": "be11daae881cc9fcd55927086029b1db95284e211dd43d4355e9c9c6a3713166",
+          "japanese": "　アストロン"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1365908,
+          "source": {
+            "offset": 444028,
+            "end_exclusive": 444057,
+            "raw_hex": "82c782ea82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+            "sha256": "491be87c2267344d696e635ee2bda39cd4430fef8c186bac4af9440c6f9de245",
+            "japanese": "どれについて知りたいですか？"
+          }
+        },
+        {
+          "slot": 1365912,
+          "source": {
+            "offset": 1366977,
+            "end_exclusive": 1367235,
+            "raw_hex": "95ba8e6d8175836f815b8354815b834a815b8ff391d482c682a282a482cc82cd0d8140937b82e882ad82e982c182c482a282e982c682a282a482e682a482c888d396a182c582b781420d0d0d95ba8e6d817582bb82cc82bd82df0d814093c18eea8d558c8282b182bb814082b582c482ab82dc82b982f182aa0d95ba8e6d817582b782b282a283588373815b836882c58140934796a195fb8ad68c5782c882ad0d814082a882bb82a282a982a982c182c482ad82e982c582b582e582a481420d95ba8e6d817588ab82a282b182c682cd8cbe82a282dc82b982f181420d814082b182a482a282a482c682ab82cd814093a682b082e982aa8f9f82bf82c582b7814200",
+            "sha256": "e52ee673c44d40909a6b72173df63b8fde3d7b58568fedd96939a466925ac369",
+            "japanese": "兵士「バーサーカー状態というのは\n　怒りくるっているというような意味です。\n\n\n兵士「そのため\n　特殊攻撃こそ　してきませんが\n兵士「すごいスピードで　敵味方関係なく\n　おそいかかってくるでしょう。\n兵士「悪いことは言いません。\n　こういうときは　逃げるが勝ちです。"
+          }
+        },
+        {
+          "slot": 1365916,
+          "source": {
+            "offset": 1367235,
+            "end_exclusive": 1367400,
+            "raw_hex": "95ba8e6d817582a982c882b582ce82e88ff391d482cc838283938358835e815b82cd0d814082dc82c182bd82ad906793ae82ab82aa82c582ab82dc82b982f181420d0d0d95ba8e6d817582bd82be81408d558c8282b782e982c6838283938358835e815b82cd0d814093ae82af82e982e682a482c982c882c182c482b582dc82a482f182c582b781420d95ba8e6d81758b4382f082c282af82c482ad82be82b382a2814200",
+            "sha256": "d180a74cfbb502bbc8942a5b1121a3edcc168ede5a886e00002cd31a76eb7c90",
+            "japanese": "兵士「かなしばり状態のモンスターは\n　まったく身動きができません。\n\n\n兵士「ただ　攻撃するとモンスターは\n　動けるようになってしまうんです。\n兵士「気をつけてください。"
+          }
+        },
+        {
+          "slot": 1365920,
+          "source": {
+            "offset": 1367400,
+            "end_exclusive": 1367614,
+            "raw_hex": "95ba8e6d817582bb82cc96bc82cc82c682a882e88140838283938358835e815b82cd0d814096da82aa8ca982a682c882a28ff391d482c982c882c182c482a282dc82b781420d0d0d95ba8e6d817582b182bf82e782cc8e7082aa8ca982a682c482a282c882a282cc82c50d814082a882bb82a282a982a982c182c482ad82e982b182c682cd82a082e882dc82b982f182aa0d95ba8e6d8175838283938358835e815b82cc96da82cc914f82c997a782c282c60d81408d558c8282b382ea82c482b582dc82a482b182c682e082a082e882dc82b7814200",
+            "sha256": "960f744f5105e24666105081df2515f24eb16207f0052359bb2fd9195dba5117",
+            "japanese": "兵士「その名のとおり　モンスターは\n　目が見えない状態になっています。\n\n\n兵士「こちらの姿が見えていないので\n　おそいかかってくることはありませんが\n兵士「モンスターの目の前に立つと\n　攻撃されてしまうこともあります。"
+          }
+        },
+        {
+          "slot": 1365924,
+          "source": {
+            "offset": 1365928,
+            "end_exclusive": 1366176,
+            "raw_hex": "95ba8e6d8175834183588367838d8393814082c682a282a482cc82cd0d814091cc82aa935382c982c882c182c482a282e981408ff391d482cc82b182c682c582b781420d95ba8e6d817582bb82cc82bd82df81408c9582cc8d558c8282be82af82c582c882ad0d8140834183438365838082f08e6782c182c482e081408cf889ca82aa82a082e882dc82b982f181420d95ba8e6d817582b582ce82e782ad82b782e982c681408cb382c982e082c782e982cc82c50d0d95ba8e6d817582bb82ea82a982e781408d558c8282b782e982a90d814082bb82cc82a082a282be82c9814093a682b082e982d782ab82c582b582e582a482cb814200",
+            "sha256": "3de2908de3381e8adbe88d781fd23fe358af706670a1d2cfe054239b40b8dfa4",
+            "japanese": "兵士「アストロン　というのは\n　体が鉄になっている　状態のことです。\n兵士「そのため　剣の攻撃だけでなく\n　アイテムを使っても　効果がありません。\n兵士「しばらくすると　元にもどるので\n\n兵士「それから　攻撃するか\n　そのあいだに　逃げるべきでしょうね。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "140400",
+      "intro_table_hex": "7cc60608c1db1408c3dc140868dd1408a8d71408",
+      "labels_table_hex": "68c6060854c6060844c6060834c6060858c50608"
+    },
+    {
+      "index": 20,
+      "menu": 21,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        132,
+        136,
+        104,
+        0,
+        8,
+        3
+      ],
+      "rows": 3,
+      "labels_offset": 1369616,
+      "intro_offset": 1369628,
+      "labels": [
+        {
+          "offset": 445648,
+          "end_exclusive": 445667,
+          "raw_hex": "814090ed8e6d82cc82c682ad82bf82e582a400",
+          "sha256": "cdceb1c847da3921f8cc41b1164414db408427c7bee54256b9e6161332b22f08",
+          "japanese": "　戦士のとくちょう"
+        },
+        {
+          "offset": 445628,
+          "end_exclusive": 445645,
+          "raw_hex": "81408b5a82cc82a882da82a682a982bd00",
+          "sha256": "d2c138bc4bbee27b4b83ab1307cecf9233219627eadc634c45c086f669d08e76",
+          "japanese": "　技のおぼえかた"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369628,
+          "source": {
+            "offset": 445700,
+            "end_exclusive": 445739,
+            "raw_hex": "82e682a2905382aa82af82be814289bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+            "sha256": "eadd338e96b09311ecd6267254527d5eb9b2b5f728b97524e19edc60bdc23ee5",
+            "japanese": "よい心がけだ。何について聞きたいのだ？"
+          }
+        },
+        {
+          "slot": 1369632,
+          "source": {
+            "offset": 445672,
+            "end_exclusive": 445697,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+            "sha256": "45e9b08dba6dfc445a3f3a7e9746b9c96a3022e8d238fd0d2e2b0348e049a631",
+            "japanese": "何について聞きたいのだ？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "150b01",
+      "intro_table_hex": "04cd0608e8cc0608e4cc0608fcc70608",
+      "labels_table_hex": "d0cc0608bccc060858c50608"
+    },
+    {
+      "index": 21,
+      "menu": 22,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        132,
+        136,
+        168,
+        0,
+        8,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1369644,
+      "intro_offset": 1369664,
+      "labels": [
+        {
+          "offset": 445804,
+          "end_exclusive": 445827,
+          "raw_hex": "8140968296408e6782a282cc82c682ad82bf82e582a400",
+          "sha256": "0b7ac2349a6fa3619a4d25f1fd42b9f6016bc5a703bbd56adabafaa90861ded7",
+          "japanese": "　魔法使いのとくちょう"
+        },
+        {
+          "offset": 445784,
+          "end_exclusive": 445803,
+          "raw_hex": "81409682964082cc82a882da82a682a982bd00",
+          "sha256": "190a390e8ee2459df0c04611fc35e923bbab7cd4e15c6b91fd9e3bc14a325f01",
+          "japanese": "　魔法のおぼえかた"
+        },
+        {
+          "offset": 445760,
+          "end_exclusive": 445783,
+          "raw_hex": "814083588379838b83758362834e82c982c282a282c400",
+          "sha256": "1319fee63c1e4ce722af279031e06dabd39fe7a7face642adb209b6d11310c2a",
+          "japanese": "　スペルブックについて"
+        },
+        {
+          "offset": 445740,
+          "end_exclusive": 445759,
+          "raw_hex": "81408381834b8393836582c982c282a282c400",
+          "sha256": "47251d3fcdaa4739823ba5669d93446b7f291fd0847dcb3448c8f34897ca0de4",
+          "japanese": "　メガンテについて"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369664,
+          "source": {
+            "offset": 445700,
+            "end_exclusive": 445739,
+            "raw_hex": "82e682a2905382aa82af82be814289bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+            "sha256": "eadd338e96b09311ecd6267254527d5eb9b2b5f728b97524e19edc60bdc23ee5",
+            "japanese": "よい心がけだ。何について聞きたいのだ？"
+          }
+        },
+        {
+          "slot": 1369668,
+          "source": {
+            "offset": 445672,
+            "end_exclusive": 445697,
+            "raw_hex": "89bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+            "sha256": "45e9b08dba6dfc445a3f3a7e9746b9c96a3022e8d238fd0d2e2b0348e049a631",
+            "japanese": "何について聞きたいのだ？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "160b01",
+      "intro_table_hex": "04cd0608e8cc0608f8c70608f4c70608f0c70608ecc70608",
+      "labels_table_hex": "6ccd060858cd060840cd06082ccd060858c50608"
+    },
+    {
+      "index": 22,
+      "menu": 17,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        152,
+        200,
+        0,
+        9,
+        6
+      ],
+      "rows": 6,
+      "labels_offset": 1369688,
+      "intro_offset": 1369712,
+      "labels": [
+        {
+          "offset": 445884,
+          "end_exclusive": 445897,
+          "raw_hex": "8140835d8393837282ac82e800",
+          "sha256": "08b02fa2ba5669223546e6b9a8b5b0959d44ca563c8b635f9591b9acb9ebf39b",
+          "japanese": "　ゾンビぎり"
+        },
+        {
+          "offset": 445872,
+          "end_exclusive": 445883,
+          "raw_hex": "814082df82c282d482b500",
+          "sha256": "cc34605fcce875e42839891ebfb441a1c1d7769e11227a4438d391a2ec6248b3",
+          "japanese": "　めつぶし"
+        },
+        {
+          "offset": 445856,
+          "end_exclusive": 445869,
+          "raw_hex": "814082e082eb82cd82ac82e800",
+          "sha256": "cef0ef4836f86e72a02fa704494234fe886ac53576ed127f8c3ce24535abaa34",
+          "japanese": "　もろはぎり"
+        },
+        {
+          "offset": 445844,
+          "end_exclusive": 445855,
+          "raw_hex": "8140838f836982dd82a600",
+          "sha256": "4ae050055ec09cc037e36dc4e5403da01f16c5cd5e2e6f84f1c4373293aa830b",
+          "japanese": "　ワナみえ"
+        },
+        {
+          "offset": 445828,
+          "end_exclusive": 445841,
+          "raw_hex": "814082b182eb82d182e682af00",
+          "sha256": "437c1e859ac2f7d7aec0219fef922729752fca0f751418283cfe30988a11b0b8",
+          "japanese": "　ころびよけ"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369712,
+          "source": {
+            "offset": 445920,
+            "end_exclusive": 445947,
+            "raw_hex": "82c782cc8b5a82cc90e096be82f082b582dc82b582e582a4814800",
+            "sha256": "dc17b5d405e0b6e45edf5a393a57b2a808cd10a848e44bfcc387722b0e107f18",
+            "japanese": "どの技の説明をしましょう？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "110401",
+      "intro_table_hex": "e0cd0608dccd0608d8cd0608d4cd0608d0cd0608cccd0608",
+      "labels_table_hex": "bccd0608b0cd0608a0cd060894cd060884cd060858c50608"
+    },
+    {
+      "index": 23,
+      "menu": 7,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        168,
+        0,
+        9,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1369736,
+      "intro_offset": 1369756,
+      "labels": [
+        {
+          "offset": 445996,
+          "end_exclusive": 446011,
+          "raw_hex": "814091e5959489ae82cc8aaa95a800",
+          "sha256": "6073388da90381572afd604188ee1f2182dd8fdfb8e3986c7f97535c73d413a4",
+          "japanese": "　大部屋の巻物"
+        },
+        {
+          "offset": 445980,
+          "end_exclusive": 445993,
+          "raw_hex": "814082d682f182b082cc8ff100",
+          "sha256": "3742671790a2bd7341f0a5db36a464feb6a57ef242c86e7916fe6562b5a31bc4",
+          "japanese": "　へんげの杖"
+        },
+        {
+          "offset": 445964,
+          "end_exclusive": 445979,
+          "raw_hex": "814082c682a482bc82ad82cc9ae200",
+          "sha256": "9ce61b7ca79c89f1299ddf031d9c23ede96ee5bcda7c8e274575d956918d8bcb",
+          "japanese": "　とうぞくの壺"
+        },
+        {
+          "offset": 445948,
+          "end_exclusive": 445963,
+          "raw_hex": "8140906791e382ed82e882cc8ff100",
+          "sha256": "35562a24c3853232a57aa4536121cfd84a8802a66425f4e10d813e1732d5063d",
+          "japanese": "　身代わりの杖"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369756,
+          "source": {
+            "offset": 446032,
+            "end_exclusive": 446059,
+            "raw_hex": "82c782cc8365834e82f095b782ab82bd82a282c582b782a9814800",
+            "sha256": "0a0c0bf8e528798899e13e6ad8ea801233e1e211f4297e7d95f7cef491682a01",
+            "japanese": "どのテクを聞きたいですか？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "070401",
+      "intro_table_hex": "50ce06084cce060848ce060844ce060840ce0608",
+      "labels_table_hex": "2cce06081cce06080cce0608fccd060858c50608"
+    },
+    {
+      "index": 24,
+      "menu": 12,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        136,
+        0,
+        9,
+        4
+      ],
+      "rows": 4,
+      "labels_offset": 1367848,
+      "intro_offset": 1367884,
+      "labels": [
+        {
+          "offset": 444220,
+          "end_exclusive": 444233,
+          "raw_hex": "8140959782c982c282a282c400",
+          "sha256": "60d833cb3004130aa614f66f8d3669cef1488a9003f5586bc3bfc836d0ebd52e",
+          "japanese": "　風について"
+        },
+        {
+          "offset": 444204,
+          "end_exclusive": 444219,
+          "raw_hex": "8140838f836982c982c282a282c400",
+          "sha256": "3092227be7f9b9f8882d5167513e82fe7a839cb4581ed7ae39d7a6c05423b8e5",
+          "japanese": "　ワナについて"
+        },
+        {
+          "offset": 444236,
+          "end_exclusive": 444257,
+          "raw_hex": "814094928e8682cc8aaa95a882c982c282a282c400",
+          "sha256": "f783ed115f5cb34dd840cda378d9719301536e1903d7ef04ead07e17521e1ffd",
+          "japanese": "　白紙の巻物について"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367884,
+          "source": {
+            "offset": 444276,
+            "end_exclusive": 444301,
+            "raw_hex": "89bd82a995b782ab82bd82a282b182c682cd82a082e9814800",
+            "sha256": "39d45cc80e6e602ce1aef51686d2e24b921befd37108a4c8342e6c9ba0add43e",
+            "japanese": "何か聞きたいことはある？"
+          }
+        },
+        {
+          "slot": 1367888,
+          "source": {
+            "offset": 1367904,
+            "end_exclusive": 1368229,
+            "raw_hex": "96608caf8ed28175835f839383578387839382c5814082a882c882b68374838d834182c90d814082b882a3816082c182c682a282e982c68140959782aa82d382ad82f182be81420d0d0d96608caf8ed28175959782cd814082c782f182c782f181408bad82ad82c882e981420d0d96608caf8ed2817582bb82cc82a482bf81408dc58bad82cc959782aa908182ad82c60d81408a4f82dc82c58140908182ab82c682ce82b382ea82bf82dc82a481420d0d96608caf8ed2817582bb82a482c882c182bd82e781408ee882c993fc82ea82bd0d8140834183438365838082e0814082c882ad82c882c182c482b582dc82a482a982e70d96608caf8ed2817582a082f182dc82e88140959782aa8bad82ad82c882e782cb82a682a482bf82c90d814082c682c182c682c6814089ba82cc8374838d834182c982a882e882bf82dc82a282c8814200",
+            "sha256": "55b0611b6cd2472c29f18a2f27cbd0088d934100f4fa6960b48345daafe7ec06",
+            "japanese": "冒険者「ダンジョンで　おなじフロアに\n　ずぅ～っといると　風がふくんだ。\n\n\n冒険者「風は　どんどん　強くなる。\n\n冒険者「そのうち　最強の風が吹くと\n　外まで　吹きとばされちまう。\n\n冒険者「そうなったら　手に入れた\n　アイテムも　なくなってしまうから\n冒険者「あんまり　風が強くならねえうちに\n　とっとと　下のフロアにおりちまいな。"
+          }
+        },
+        {
+          "slot": 1367892,
+          "source": {
+            "offset": 1368229,
+            "end_exclusive": 1368460,
+            "raw_hex": "96608caf8ed28175838f836982c9814082c782a482b582c482e00d814082a982a982e882bd82ad82c882a28e9e82c182c482a082e982e682c881420d0d0d96608caf8ed2817582bb82a482a282a48e9e82cd81408c9582f082d382c182c482dd82c881420d0d96608caf8ed2817582e082b5814096da82cc914f82c9838f836982aa82a082ea82ce0d81408ca982a682e982e682a482c982c882e982a982e782b381420d0d96608caf8ed28175485082aa8fad82c882a28e9e82cd0d814082bb82a482e282c182c48356839383608387834582c982a282c182bd95fb82aa82a282a282ba814200",
+            "sha256": "b51a0f962abc2b9f9ec2837b811da95e8505aef194d2004418443250505431ff",
+            "japanese": "冒険者「ワナに　どうしても\n　かかりたくない時ってあるよな。\n\n\n冒険者「そういう時は　剣をふってみな。\n\n冒険者「もし　目の前にワナがあれば\n　見えるようになるからさ。\n\n冒険者「HPが少ない時は\n　そうやってシンチョウにいった方がいいぜ。"
+          }
+        },
+        {
+          "slot": 1367896,
+          "source": {
+            "offset": 1368657,
+            "end_exclusive": 1369001,
+            "raw_hex": "96608caf8ed2817582d982b582a28aaa95a882f08e9d82c182c482c882ad82c482e00d814082b182cc94928e8682cc8aaa95a882b382a682a082ea82ce0d96608caf8ed2817582dc82c182bd82ad9053947a82cd82a282e782cb82a682f182be81420d0d96608caf8ed281758e6782a282bd82a28aaa95a882cc96bc914f82f00d814082b182b182c98f9182ab82b182df82ce81458145814582a082e7814095738e768b6381490d96608caf8ed2817582bb82cc8aaa95a882c90d814095cf82ed82c182c482ad82ea82e982c182c4838f835082b381420d0d96608caf8ed2817582c582e08140928d88d382aa82d082c682c281490d0d96608caf8ed281758da182dc82c582c993c782f182be82b182c682cc82a082e98aaa95a882b582a90d814082b182b182c982cd8f9182ab82b182df82c882a282f182be81420d96608caf8ed28175928d88d382b582c482ad82ea82e682c8814200",
+            "sha256": "447085356fdfdcdc7b9399bd36ffb3df004887c8b344f939b157f9627228e4f6",
+            "japanese": "冒険者「ほしい巻物を持ってなくても\n　この白紙の巻物さえあれば\n冒険者「まったく心配はいらねえんだ。\n\n冒険者「使いたい巻物の名前を\n　ここに書きこめば・・・あら　不思議！\n冒険者「その巻物に\n　変わってくれるってワケさ。\n\n冒険者「でも　注意がひとつ！\n\n冒険者「今までに読んだことのある巻物しか\n　ここには書きこめないんだ。\n冒険者「注意してくれよな。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "0c0400",
+      "intro_table_hex": "74c7060860df1408a5e0140851e21408",
+      "labels_table_hex": "3cc706082cc706084cc7060858c50608"
+    },
+    {
+      "index": 25,
+      "menu": 7,
+      "mode": 0,
+      "descriptor": [
+        0,
+        16,
+        100,
+        136,
+        168,
+        0,
+        9,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1367864,
+      "intro_offset": 1367884,
+      "labels": [
+        {
+          "offset": 444220,
+          "end_exclusive": 444233,
+          "raw_hex": "8140959782c982c282a282c400",
+          "sha256": "60d833cb3004130aa614f66f8d3669cef1488a9003f5586bc3bfc836d0ebd52e",
+          "japanese": "　風について"
+        },
+        {
+          "offset": 444204,
+          "end_exclusive": 444219,
+          "raw_hex": "8140838f836982c982c282a282c400",
+          "sha256": "3092227be7f9b9f8882d5167513e82fe7a839cb4581ed7ae39d7a6c05423b8e5",
+          "japanese": "　ワナについて"
+        },
+        {
+          "offset": 444236,
+          "end_exclusive": 444257,
+          "raw_hex": "814094928e8682cc8aaa95a882c982c282a282c400",
+          "sha256": "f783ed115f5cb34dd840cda378d9719301536e1903d7ef04ead07e17521e1ffd",
+          "japanese": "　白紙の巻物について"
+        },
+        {
+          "offset": 444260,
+          "end_exclusive": 444275,
+          "raw_hex": "81408e7797d682c982c282a282c400",
+          "sha256": "54c64164de284b0590fde035db7e482ba511c419b04baee59d4d05cff0e1c9d1",
+          "japanese": "　指輪について"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1367884,
+          "source": {
+            "offset": 444276,
+            "end_exclusive": 444301,
+            "raw_hex": "89bd82a995b782ab82bd82a282b182c682cd82a082e9814800",
+            "sha256": "39d45cc80e6e602ce1aef51686d2e24b921befd37108a4c8342e6c9ba0add43e",
+            "japanese": "何か聞きたいことはある？"
+          }
+        },
+        {
+          "slot": 1367888,
+          "source": {
+            "offset": 1367904,
+            "end_exclusive": 1368229,
+            "raw_hex": "96608caf8ed28175835f839383578387839382c5814082a882c882b68374838d834182c90d814082b882a3816082c182c682a282e982c68140959782aa82d382ad82f182be81420d0d0d96608caf8ed28175959782cd814082c782f182c782f181408bad82ad82c882e981420d0d96608caf8ed2817582bb82cc82a482bf81408dc58bad82cc959782aa908182ad82c60d81408a4f82dc82c58140908182ab82c682ce82b382ea82bf82dc82a481420d0d96608caf8ed2817582bb82a482c882c182bd82e781408ee882c993fc82ea82bd0d8140834183438365838082e0814082c882ad82c882c182c482b582dc82a482a982e70d96608caf8ed2817582a082f182dc82e88140959782aa8bad82ad82c882e782cb82a682a482bf82c90d814082c682c182c682c6814089ba82cc8374838d834182c982a882e882bf82dc82a282c8814200",
+            "sha256": "55b0611b6cd2472c29f18a2f27cbd0088d934100f4fa6960b48345daafe7ec06",
+            "japanese": "冒険者「ダンジョンで　おなじフロアに\n　ずぅ～っといると　風がふくんだ。\n\n\n冒険者「風は　どんどん　強くなる。\n\n冒険者「そのうち　最強の風が吹くと\n　外まで　吹きとばされちまう。\n\n冒険者「そうなったら　手に入れた\n　アイテムも　なくなってしまうから\n冒険者「あんまり　風が強くならねえうちに\n　とっとと　下のフロアにおりちまいな。"
+          }
+        },
+        {
+          "slot": 1367892,
+          "source": {
+            "offset": 1368229,
+            "end_exclusive": 1368460,
+            "raw_hex": "96608caf8ed28175838f836982c9814082c782a482b582c482e00d814082a982a982e882bd82ad82c882a28e9e82c182c482a082e982e682c881420d0d0d96608caf8ed2817582bb82a482a282a48e9e82cd81408c9582f082d382c182c482dd82c881420d0d96608caf8ed2817582e082b5814096da82cc914f82c9838f836982aa82a082ea82ce0d81408ca982a682e982e682a482c982c882e982a982e782b381420d0d96608caf8ed28175485082aa8fad82c882a28e9e82cd0d814082bb82a482e282c182c48356839383608387834582c982a282c182bd95fb82aa82a282a282ba814200",
+            "sha256": "b51a0f962abc2b9f9ec2837b811da95e8505aef194d2004418443250505431ff",
+            "japanese": "冒険者「ワナに　どうしても\n　かかりたくない時ってあるよな。\n\n\n冒険者「そういう時は　剣をふってみな。\n\n冒険者「もし　目の前にワナがあれば\n　見えるようになるからさ。\n\n冒険者「HPが少ない時は\n　そうやってシンチョウにいった方がいいぜ。"
+          }
+        },
+        {
+          "slot": 1367896,
+          "source": {
+            "offset": 1368657,
+            "end_exclusive": 1369001,
+            "raw_hex": "96608caf8ed2817582d982b582a28aaa95a882f08e9d82c182c482c882ad82c482e00d814082b182cc94928e8682cc8aaa95a882b382a682a082ea82ce0d96608caf8ed2817582dc82c182bd82ad9053947a82cd82a282e782cb82a682f182be81420d0d96608caf8ed281758e6782a282bd82a28aaa95a882cc96bc914f82f00d814082b182b182c98f9182ab82b182df82ce81458145814582a082e7814095738e768b6381490d96608caf8ed2817582bb82cc8aaa95a882c90d814095cf82ed82c182c482ad82ea82e982c182c4838f835082b381420d0d96608caf8ed2817582c582e08140928d88d382aa82d082c682c281490d0d96608caf8ed281758da182dc82c582c993c782f182be82b182c682cc82a082e98aaa95a882b582a90d814082b182b182c982cd8f9182ab82b182df82c882a282f182be81420d96608caf8ed28175928d88d382b582c482ad82ea82e682c8814200",
+            "sha256": "447085356fdfdcdc7b9399bd36ffb3df004887c8b344f939b157f9627228e4f6",
+            "japanese": "冒険者「ほしい巻物を持ってなくても\n　この白紙の巻物さえあれば\n冒険者「まったく心配はいらねえんだ。\n\n冒険者「使いたい巻物の名前を\n　ここに書きこめば・・・あら　不思議！\n冒険者「その巻物に\n　変わってくれるってワケさ。\n\n冒険者「でも　注意がひとつ！\n\n冒険者「今までに読んだことのある巻物しか\n　ここには書きこめないんだ。\n冒険者「注意してくれよな。"
+          }
+        },
+        {
+          "slot": 1367900,
+          "source": {
+            "offset": 1368460,
+            "end_exclusive": 1368657,
+            "raw_hex": "96608caf8ed281758e7797d682cd8140908582cc8fe382f095e082af82bd82e80d8140836e838982aa82d682e782c882ad82c882c182bd82e80d96608caf8ed28175934782e2834183438365838082cc8fea8f8a82aa0d814082ed82a982c182bd82e881458145814582c682c982a982ad814083788393838a82be81420d96608caf8ed2817582bd82be82b581408ef482ed82ea82bd82e082cc82be82c60d814082cd82b882b982c882ad2082c882c182bf82dc82a482a982e7928d88d382b582c8814200",
+            "sha256": "a35edb29f69b271177cc517162e5a2914b0d8f6aad262c04ceb235b9dafafde1",
+            "japanese": "冒険者「指輪は　水の上を歩けたり\n　ハラがへらなくなったり\n冒険者「敵やアイテムの場所が\n　わかったり・・・とにかく　ベンリだ。\n冒険者「ただし　呪われたものだと\n　はずせなく なっちまうから注意しな。"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "070400",
+      "intro_table_hex": "74c7060860df1408a5e0140851e214088ce11408",
+      "labels_table_hex": "3cc706082cc706084cc7060864c7060858c50608"
+    },
+    {
+      "index": 26,
+      "menu": 27,
+      "mode": 1,
+      "descriptor": [
+        0,
+        16,
+        100,
+        168,
+        168,
+        0,
+        10,
+        5
+      ],
+      "rows": 5,
+      "labels_offset": 1369780,
+      "intro_offset": 1369800,
+      "labels": [
+        {
+          "offset": 446136,
+          "end_exclusive": 446155,
+          "raw_hex": "8140838283938358835e815b82f08d558c8200",
+          "sha256": "2b4ad0cd3b476280d90ab5260567a33bcb7f678f676c45bbcf3a5bcd2f70e391",
+          "japanese": "　モンスターを攻撃"
+        },
+        {
+          "offset": 446108,
+          "end_exclusive": 446135,
+          "raw_hex": "8140838283938358835e815b82cc8ff391d482f095cf82a682e900",
+          "sha256": "886394cbd5ad34e3c3366209047b3d0e1f5751f4c777683a92346019a14b372b",
+          "japanese": "　モンスターの状態を変える"
+        },
+        {
+          "offset": 446084,
+          "end_exclusive": 446105,
+          "raw_hex": "81408d558c828347838a834182f08d4c82b082e900",
+          "sha256": "cb07a6ccd5e6993ec44a0ef5b7837e4671ccd50030269d68ef7551659590fa5b",
+          "japanese": "　攻撃エリアを広げる"
+        },
+        {
+          "offset": 446060,
+          "end_exclusive": 446081,
+          "raw_hex": "81408ea995aa82cc8ff391d482f095cf82a682e900",
+          "sha256": "58b1f75c94da78efaeeae298677a38472eb32128576d4987beacefa627a59b25",
+          "japanese": "　自分の状態を変える"
+        },
+        {
+          "offset": 443736,
+          "end_exclusive": 443745,
+          "raw_hex": "814082e282df82e900",
+          "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+          "japanese": "　やめる"
+        }
+      ],
+      "prose": [
+        {
+          "slot": 1369800,
+          "source": {
+            "offset": 446172,
+            "end_exclusive": 446207,
+            "raw_hex": "82c782cc835e8343837682cc90e096be82f095b782ab82bd82a282f182be82a2814800",
+            "sha256": "97ed969df8b803e24a31ff3c7f54b033541187a67eaf33e39d9ff139eedac02a",
+            "japanese": "どのタイプの説明を聞きたいんだい？"
+          }
+        }
+      ],
+      "descriptor_triple_hex": "1b0401",
+      "intro_table_hex": "dcce0608d8ce0608d4ce0608d0ce0608ccce0608",
+      "labels_table_hex": "b8ce06089cce060884ce06086cce060858c50608"
+    }
+  ],
+  "entries": [
+    {
+      "id": "tutorial-help.0006c558",
+      "source": {
+        "offset": 443736,
+        "end_exclusive": 443745,
+        "raw_hex": "814082e282df82e900",
+        "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+        "japanese": "　やめる"
+      },
+      "english": "Cancel",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c5e4",
+      "source": {
+        "offset": 443876,
+        "end_exclusive": 443891,
+        "raw_hex": "814082cb82de82c182c482a282e900",
+        "sha256": "2ef6606966fa8f04643758cc2f31551e15ac38dfdd1d7ee52b17fa7e13268b41",
+        "japanese": "　ねむっている"
+      },
+      "english": "Asleep",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c5f4",
+      "source": {
+        "offset": 443892,
+        "end_exclusive": 443907,
+        "raw_hex": "814082a882d182a682c482a282e900",
+        "sha256": "bba33e5e23dcb4bff7df76baf95f146b376254319d4145d9f60ae0312fd6bd7d",
+        "japanese": "　おびえている"
+      },
+      "english": "Frightened",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c604",
+      "source": {
+        "offset": 443908,
+        "end_exclusive": 443923,
+        "raw_hex": "814082dc82c782ed82b58ff391d400",
+        "sha256": "beb06e768beba8804871bb7788f2b7fb0079d978835b15ff8aebb4905e5f8b05",
+        "japanese": "　まどわし状態"
+      },
+      "english": "Deluded",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c614",
+      "source": {
+        "offset": 443924,
+        "end_exclusive": 443939,
+        "raw_hex": "81408dac979082b582c482a282e900",
+        "sha256": "e2f266091cac3ecc4f71a37626a8a48066c1a2f822e6722e6844e7654e58c1ba",
+        "japanese": "　混乱している"
+      },
+      "english": "Confused",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c624",
+      "source": {
+        "offset": 443940,
+        "end_exclusive": 443955,
+        "raw_hex": "814082a882c782c182c482a282e900",
+        "sha256": "5ef782e07306556e7aaf357e739534a6c5d65cc8d8dd74ecaed4c5c3b5a975f9",
+        "japanese": "　おどっている"
+      },
+      "english": "Dancing",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c634",
+      "source": {
+        "offset": 443956,
+        "end_exclusive": 443969,
+        "raw_hex": "8140834183588367838d839300",
+        "sha256": "be11daae881cc9fcd55927086029b1db95284e211dd43d4355e9c9c6a3713166",
+        "japanese": "　アストロン"
+      },
+      "english": "Kaclang",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c644",
+      "source": {
+        "offset": 443972,
+        "end_exclusive": 443987,
+        "raw_hex": "814082df82c282d482b58ff391d400",
+        "sha256": "1eb06ff2beb1fda01e29b9a969a38295c7b07e9937cd233c85290d07f0cf3c64",
+        "japanese": "　めつぶし状態"
+      },
+      "english": "Blind",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c654",
+      "source": {
+        "offset": 443988,
+        "end_exclusive": 444005,
+        "raw_hex": "814082a982c882b582ce82e88ff391d400",
+        "sha256": "90b489ac2f9fd453361abc17ea6d14210232ba38ecf62dede3c7b34c76230391",
+        "japanese": "　かなしばり状態"
+      },
+      "english": "Paralysed",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c668",
+      "source": {
+        "offset": 444008,
+        "end_exclusive": 444027,
+        "raw_hex": "8140836f815b8354815b834a815b8ff391d400",
+        "sha256": "168bbe9495fb5b6e535f5409dca6465107ec72bf8b99bd99ba982c7c7e57b18c",
+        "japanese": "　バーサーカー状態"
+      },
+      "english": "Berserk",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c67c",
+      "source": {
+        "offset": 444028,
+        "end_exclusive": 444057,
+        "raw_hex": "82c782ea82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+        "sha256": "491be87c2267344d696e635ee2bda39cd4430fef8c186bac4af9440c6f9de245",
+        "japanese": "どれについて知りたいですか？"
+      },
+      "english": "What would you like to know?",
+      "status": "reviewed",
+      "kind": "heading",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c72c",
+      "source": {
+        "offset": 444204,
+        "end_exclusive": 444219,
+        "raw_hex": "8140838f836982c982c282a282c400",
+        "sha256": "3092227be7f9b9f8882d5167513e82fe7a839cb4581ed7ae39d7a6c05423b8e5",
+        "japanese": "　ワナについて"
+      },
+      "english": "Traps",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c73c",
+      "source": {
+        "offset": 444220,
+        "end_exclusive": 444233,
+        "raw_hex": "8140959782c982c282a282c400",
+        "sha256": "60d833cb3004130aa614f66f8d3669cef1488a9003f5586bc3bfc836d0ebd52e",
+        "japanese": "　風について"
+      },
+      "english": "Wind",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c74c",
+      "source": {
+        "offset": 444236,
+        "end_exclusive": 444257,
+        "raw_hex": "814094928e8682cc8aaa95a882c982c282a282c400",
+        "sha256": "f783ed115f5cb34dd840cda378d9719301536e1903d7ef04ead07e17521e1ffd",
+        "japanese": "　白紙の巻物について"
+      },
+      "english": "Blank scrolls",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c764",
+      "source": {
+        "offset": 444260,
+        "end_exclusive": 444275,
+        "raw_hex": "81408e7797d682c982c282a282c400",
+        "sha256": "54c64164de284b0590fde035db7e482ba511c419b04baee59d4d05cff0e1c9d1",
+        "japanese": "　指輪について"
+      },
+      "english": "Rings",
+      "status": "reviewed",
+      "kind": "label",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c774",
+      "source": {
+        "offset": 444276,
+        "end_exclusive": 444301,
+        "raw_hex": "89bd82a995b782ab82bd82a282b182c682cd82a082e9814800",
+        "sha256": "39d45cc80e6e602ce1aef51686d2e24b921befd37108a4c8342e6c9ba0add43e",
+        "japanese": "何か聞きたいことはある？"
+      },
+      "english": "Anything you want to ask?",
+      "status": "reviewed",
+      "kind": "heading",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014d7a8",
+      "source": {
+        "offset": 1365928,
+        "end_exclusive": 1366176,
+        "raw_hex": "95ba8e6d8175834183588367838d8393814082c682a282a482cc82cd0d814091cc82aa935382c982c882c182c482a282e981408ff391d482cc82b182c682c582b781420d95ba8e6d817582bb82cc82bd82df81408c9582cc8d558c8282be82af82c582c882ad0d8140834183438365838082f08e6782c182c482e081408cf889ca82aa82a082e882dc82b982f181420d95ba8e6d817582b582ce82e782ad82b782e982c681408cb382c982e082c782e982cc82c50d0d95ba8e6d817582bb82ea82a982e781408d558c8282b782e982a90d814082bb82cc82a082a282be82c9814093a682b082e982d782ab82c582b582e582a482cb814200",
+        "sha256": "3de2908de3381e8adbe88d781fd23fe358af706670a1d2cfe054239b40b8dfa4",
+        "japanese": "兵士「アストロン　というのは\n　体が鉄になっている　状態のことです。\n兵士「そのため　剣の攻撃だけでなく\n　アイテムを使っても　効果がありません。\n兵士「しばらくすると　元にもどるので\n\n兵士「それから　攻撃するか\n　そのあいだに　逃げるべきでしょうね。"
+      },
+      "english": "Soldier: Kaclang turns a monster's body to iron. Sword attacks and items have no effect on it.\n\nSoldier: It'll return to normal after a while. You should wait until then to attack, or escape in the meantime.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014d8a0",
+      "source": {
+        "offset": 1366176,
+        "end_exclusive": 1366306,
+        "raw_hex": "95ba8e6d817582a882d182a682c482a282e9838283938358835e815b82cd0d814082b182bf82e782a982e7814093a682b082e682a482c682b582c482a282dc82b781420d95ba8e6d817593a682b091ab82aa91ac82a282cc82c50d814082d982a482c182c482a882ad82cc82aa814082a282a282c68e7682a282dc82b782e6814200",
+        "sha256": "7559558d9f9ee8fcc8670ceb097672e29b7234fac74da6e80f0e14ecd252fe39",
+        "japanese": "兵士「おびえているモンスターは\n　こちらから　逃げようとしています。\n兵士「逃げ足が速いので\n　ほうっておくのが　いいと思いますよ。"
+      },
+      "english": "Soldier: Frightened monsters try to run away from you. They're quick on their feet, so I suggest leaving them alone.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014d922",
+      "source": {
+        "offset": 1366306,
+        "end_exclusive": 1366519,
+        "raw_hex": "95ba8e6d8175838283938358835e815b82f0834183438365838082c50d814082cb82de82e782b982ea82ce81408d558c8282b582c482e096da82f082b382dc82b582dc82b982f181420d0d95ba8e6d817582bd82be81408d558c8282b582c482e082b582c882ad82c482e00d814082b582ce82e782ad82b782e982c6814096da82b482df82c482b582dc82a282dc82b781420d95ba8e6d817590ed82a482d782ab82a9814093a682b082e982d782ab82a981420d814081458145814582de82b882a982b582a282c682b182eb82c582b782cb814200",
+        "sha256": "1106971da4c4946fee37463f246a8703f4e6a65b1a4da2366f774663df04bc55",
+        "japanese": "兵士「モンスターをアイテムで\n　ねむらせれば　攻撃しても目をさましません。\n\n兵士「ただ　攻撃してもしなくても\n　しばらくすると　目ざめてしまいます。\n兵士「戦うべきか　逃げるべきか。\n　・・・むずかしいところですね。"
+      },
+      "english": "Soldier: If you put a monster to sleep with an item, attacking it won't wake it up.\n\nSoldier: But it'll wake up after a while, whether you attack it or not. Should you fight or flee...? It's a difficult choice.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014d9f7",
+      "source": {
+        "offset": 1366519,
+        "end_exclusive": 1366710,
+        "raw_hex": "95ba8e6d8175838283938358835e815b82e0814082c682ab82c982cd0d814082a882c782e882bd82ad82c882e982c682ab82e082a082e982e682a482c582b781420d0d0d95ba8e6d81758bdf82c382ad82c681408d558c8282b382ea82e982b182c682e082a082e982cc82c50d814096ee82e28ff182c582bd82a882b782cc82aa82a282a282a982e082b582ea82dc82b982f181420d95ba8e6d817582e082bf82eb82f1814093a682b082e982cc82e082a282a282c582b582e582a4814200",
+        "sha256": "b5fcbdbd9db5cd3fc0837ca6da661f1180b16c98a053dde8dde370d26e6048cb",
+        "japanese": "兵士「モンスターも　ときには\n　おどりたくなるときもあるようです。\n\n\n兵士「近づくと　攻撃されることもあるので\n　矢や杖でたおすのがいいかもしれません。\n兵士「もちろん　逃げるのもいいでしょう。"
+      },
+      "english": "Soldier: Even monsters feel like dancing sometimes, it seems.\n\nSoldier: They may attack if you get close, so arrows or staves might be a better way to defeat them. Of course, you could run away, too.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014dab6",
+      "source": {
+        "offset": 1366710,
+        "end_exclusive": 1366977,
+        "raw_hex": "95ba8e6d81758dac979082b582c482a282e9838283938358835e815b82cd0d81408366835e8389838182c993ae82ab82dc82ed82c182c482a282dc82b782aa0d95ba8e6d817582c682ab82c982cd814082b182bf82e782c98d558c8282b582c482ab82dc82b781420d0d95ba8e6d817582b182bf82e782cc485082cc8e6382e882aa8fad82c882a282c682ab82cd0d814082d982a482c182c482a882ad82cc82aa82a282a282c582b582e582a482cb81420d0d95ba8e6d817582a0814082bb82a482bb82a481420d0d95ba8e6d81758dac979082b582c482a282e9838283938358835e815b82cd0d814093af8e6d82a482bf82b782e982b182c682e082a082e982f182c582b782e6814200",
+        "sha256": "1f1ee4d0628c1354c966e3a82b549a9c0d8814d0f522c78953aabebc6ee780d5",
+        "japanese": "兵士「混乱しているモンスターは\n　デタラメに動きまわっていますが\n兵士「ときには　こちらに攻撃してきます。\n\n兵士「こちらのHPの残りが少ないときは\n　ほうっておくのがいいでしょうね。\n\n兵士「あ　そうそう。\n\n兵士「混乱しているモンスターは\n　同士うちすることもあるんですよ。"
+      },
+      "english": "Soldier: Confused monsters wander about at random, but they sometimes attack you. If you're low on HP, it's best to leave them alone.\n\nSoldier: Oh, yes! Confused monsters sometimes attack one another, too.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014dbc1",
+      "source": {
+        "offset": 1366977,
+        "end_exclusive": 1367235,
+        "raw_hex": "95ba8e6d8175836f815b8354815b834a815b8ff391d482c682a282a482cc82cd0d8140937b82e882ad82e982c182c482a282e982c682a282a482e682a482c888d396a182c582b781420d0d0d95ba8e6d817582bb82cc82bd82df0d814093c18eea8d558c8282b182bb814082b582c482ab82dc82b982f182aa0d95ba8e6d817582b782b282a283588373815b836882c58140934796a195fb8ad68c5782c882ad0d814082a882bb82a282a982a982c182c482ad82e982c582b582e582a481420d95ba8e6d817588ab82a282b182c682cd8cbe82a282dc82b982f181420d814082b182a482a282a482c682ab82cd814093a682b082e982aa8f9f82bf82c582b7814200",
+        "sha256": "e52ee673c44d40909a6b72173df63b8fde3d7b58568fedd96939a466925ac369",
+        "japanese": "兵士「バーサーカー状態というのは\n　怒りくるっているというような意味です。\n\n\n兵士「そのため\n　特殊攻撃こそ　してきませんが\n兵士「すごいスピードで　敵味方関係なく\n　おそいかかってくるでしょう。\n兵士「悪いことは言いません。\n　こういうときは　逃げるが勝ちです。"
+      },
+      "english": "Soldier: Berserk means being in a furious rage. A berserk monster won't use special attacks, but it'll strike at friend and foe alike with incredible speed.\n\nSoldier: Take my advice. Running away is the way to win this one.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014dcc3",
+      "source": {
+        "offset": 1367235,
+        "end_exclusive": 1367400,
+        "raw_hex": "95ba8e6d817582a982c882b582ce82e88ff391d482cc838283938358835e815b82cd0d814082dc82c182bd82ad906793ae82ab82aa82c582ab82dc82b982f181420d0d0d95ba8e6d817582bd82be81408d558c8282b782e982c6838283938358835e815b82cd0d814093ae82af82e982e682a482c982c882c182c482b582dc82a482f182c582b781420d95ba8e6d81758b4382f082c282af82c482ad82be82b382a2814200",
+        "sha256": "d180a74cfbb502bbc8942a5b1121a3edcc168ede5a886e00002cd31a76eb7c90",
+        "japanese": "兵士「かなしばり状態のモンスターは\n　まったく身動きができません。\n\n\n兵士「ただ　攻撃するとモンスターは\n　動けるようになってしまうんです。\n兵士「気をつけてください。"
+      },
+      "english": "Soldier: Paralysed monsters can't move at all. But attacking one lets it move again, so be careful.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014dd68",
+      "source": {
+        "offset": 1367400,
+        "end_exclusive": 1367614,
+        "raw_hex": "95ba8e6d817582bb82cc96bc82cc82c682a882e88140838283938358835e815b82cd0d814096da82aa8ca982a682c882a28ff391d482c982c882c182c482a282dc82b781420d0d0d95ba8e6d817582b182bf82e782cc8e7082aa8ca982a682c482a282c882a282cc82c50d814082a882bb82a282a982a982c182c482ad82e982b182c682cd82a082e882dc82b982f182aa0d95ba8e6d8175838283938358835e815b82cc96da82cc914f82c997a782c282c60d81408d558c8282b382ea82c482b582dc82a482b182c682e082a082e882dc82b7814200",
+        "sha256": "960f744f5105e24666105081df2515f24eb16207f0052359bb2fd9195dba5117",
+        "japanese": "兵士「その名のとおり　モンスターは\n　目が見えない状態になっています。\n\n\n兵士「こちらの姿が見えていないので\n　おそいかかってくることはありませんが\n兵士「モンスターの目の前に立つと\n　攻撃されてしまうこともあります。"
+      },
+      "english": "Soldier: As the name suggests, blind monsters can't see. They can't see you, so they won't come after you.\n\nSoldier: But if you stand right in front of one, it may attack you.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014de3e",
+      "source": {
+        "offset": 1367614,
+        "end_exclusive": 1367786,
+        "raw_hex": "95ba8e6d817582dc82c782ed82b382ea82c482a282c4814082dc82ed82e882aa0d814082bf82e182f182c681408ca982a682c882ad82c882c182c482a282dc82b781420d0d0d95ba8e6d81758374838d834182c982a282e982a082a282be82cd0d814082b882c182c68ff391d482aa82c282c382ad82cc82c50d95ba8e6d81758d558c8282b782e982c882e8814093a682b082e982c882e80d81408d4482ab82c982c582ab82dc82b7814200",
+        "sha256": "f0433f30c38e604069e5d9212ee59f652a9f5d94967405c820559076f7e8e0db",
+        "japanese": "兵士「まどわされていて　まわりが\n　ちゃんと　見えなくなっています。\n\n\n兵士「フロアにいるあいだは\n　ずっと状態がつづくので\n兵士「攻撃するなり　逃げるなり\n　好きにできます。"
+      },
+      "english": "Soldier: Deluded monsters can't see their surroundings properly. The effect lasts as long as they're on that floor, so you're free to attack or run away as you please.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014df60",
+      "source": {
+        "offset": 1367904,
+        "end_exclusive": 1368229,
+        "raw_hex": "96608caf8ed28175835f839383578387839382c5814082a882c882b68374838d834182c90d814082b882a3816082c182c682a282e982c68140959782aa82d382ad82f182be81420d0d0d96608caf8ed28175959782cd814082c782f182c782f181408bad82ad82c882e981420d0d96608caf8ed2817582bb82cc82a482bf81408dc58bad82cc959782aa908182ad82c60d81408a4f82dc82c58140908182ab82c682ce82b382ea82bf82dc82a481420d0d96608caf8ed2817582bb82a482c882c182bd82e781408ee882c993fc82ea82bd0d8140834183438365838082e0814082c882ad82c882c182c482b582dc82a482a982e70d96608caf8ed2817582a082f182dc82e88140959782aa8bad82ad82c882e782cb82a682a482bf82c90d814082c682c182c682c6814089ba82cc8374838d834182c982a882e882bf82dc82a282c8814200",
+        "sha256": "55b0611b6cd2472c29f18a2f27cbd0088d934100f4fa6960b48345daafe7ec06",
+        "japanese": "冒険者「ダンジョンで　おなじフロアに\n　ずぅ～っといると　風がふくんだ。\n\n\n冒険者「風は　どんどん　強くなる。\n\n冒険者「そのうち　最強の風が吹くと\n　外まで　吹きとばされちまう。\n\n冒険者「そうなったら　手に入れた\n　アイテムも　なくなってしまうから\n冒険者「あんまり　風が強くならねえうちに\n　とっとと　下のフロアにおりちまいな。"
+      },
+      "english": "Adventurer: Stay on the same dungeon floor for ages, and the wind starts blowing. It gets stronger and stronger, until the strongest gust blows you right outside.\n\nAdventurer: You'll lose the items you've found if that happens. So get down to the next floor before the wind gets too strong!",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014e0a5",
+      "source": {
+        "offset": 1368229,
+        "end_exclusive": 1368460,
+        "raw_hex": "96608caf8ed28175838f836982c9814082c782a482b582c482e00d814082a982a982e882bd82ad82c882a28e9e82c182c482a082e982e682c881420d0d0d96608caf8ed2817582bb82a482a282a48e9e82cd81408c9582f082d382c182c482dd82c881420d0d96608caf8ed2817582e082b5814096da82cc914f82c9838f836982aa82a082ea82ce0d81408ca982a682e982e682a482c982c882e982a982e782b381420d0d96608caf8ed28175485082aa8fad82c882a28e9e82cd0d814082bb82a482e282c182c48356839383608387834582c982a282c182bd95fb82aa82a282a282ba814200",
+        "sha256": "b51a0f962abc2b9f9ec2837b811da95e8505aef194d2004418443250505431ff",
+        "japanese": "冒険者「ワナに　どうしても\n　かかりたくない時ってあるよな。\n\n\n冒険者「そういう時は　剣をふってみな。\n\n冒険者「もし　目の前にワナがあれば\n　見えるようになるからさ。\n\n冒険者「HPが少ない時は\n　そうやってシンチョウにいった方がいいぜ。"
+      },
+      "english": "Adventurer: Sometimes you really don't want to step on a trap, right? Try swinging your sword. If there's a trap right in front of you, it'll become visible.\n\nAdventurer: That's a good way to take things carefully when you're low on HP.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014e18c",
+      "source": {
+        "offset": 1368460,
+        "end_exclusive": 1368657,
+        "raw_hex": "96608caf8ed281758e7797d682cd8140908582cc8fe382f095e082af82bd82e80d8140836e838982aa82d682e782c882ad82c882c182bd82e80d96608caf8ed28175934782e2834183438365838082cc8fea8f8a82aa0d814082ed82a982c182bd82e881458145814582c682c982a982ad814083788393838a82be81420d96608caf8ed2817582bd82be82b581408ef482ed82ea82bd82e082cc82be82c60d814082cd82b882b982c882ad2082c882c182bf82dc82a482a982e7928d88d382b582c8814200",
+        "sha256": "a35edb29f69b271177cc517162e5a2914b0d8f6aad262c04ceb235b9dafafde1",
+        "japanese": "冒険者「指輪は　水の上を歩けたり\n　ハラがへらなくなったり\n冒険者「敵やアイテムの場所が\n　わかったり・・・とにかく　ベンリだ。\n冒険者「ただし　呪われたものだと\n　はずせなく なっちまうから注意しな。"
+      },
+      "english": "Adventurer: Rings can let you walk on water, stop you getting hungry, or show you where enemies and items are. They're handy things!\n\nAdventurer: Just be careful. If you equip a cursed one, you won't be able to take it off.",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0014e251",
+      "source": {
+        "offset": 1368657,
+        "end_exclusive": 1369001,
+        "raw_hex": "96608caf8ed2817582d982b582a28aaa95a882f08e9d82c182c482c882ad82c482e00d814082b182cc94928e8682cc8aaa95a882b382a682a082ea82ce0d96608caf8ed2817582dc82c182bd82ad9053947a82cd82a282e782cb82a682f182be81420d0d96608caf8ed281758e6782a282bd82a28aaa95a882cc96bc914f82f00d814082b182b182c98f9182ab82b182df82ce81458145814582a082e7814095738e768b6381490d96608caf8ed2817582bb82cc8aaa95a882c90d814095cf82ed82c182c482ad82ea82e982c182c4838f835082b381420d0d96608caf8ed2817582c582e08140928d88d382aa82d082c682c281490d0d96608caf8ed281758da182dc82c582c993c782f182be82b182c682cc82a082e98aaa95a882b582a90d814082b182b182c982cd8f9182ab82b182df82c882a282f182be81420d96608caf8ed28175928d88d382b582c482ad82ea82e682c8814200",
+        "sha256": "447085356fdfdcdc7b9399bd36ffb3df004887c8b344f939b157f9627228e4f6",
+        "japanese": "冒険者「ほしい巻物を持ってなくても\n　この白紙の巻物さえあれば\n冒険者「まったく心配はいらねえんだ。\n\n冒険者「使いたい巻物の名前を\n　ここに書きこめば・・・あら　不思議！\n冒険者「その巻物に\n　変わってくれるってワケさ。\n\n冒険者「でも　注意がひとつ！\n\n冒険者「今までに読んだことのある巻物しか\n　ここには書きこめないんだ。\n冒険者「注意してくれよな。"
+      },
+      "english": "Adventurer: Don't have the scroll you want? No worries, as long as you have a Blank scroll!\n\nAdventurer: Write the name of the scroll you want to use on it, and... like magic, it turns into that scroll!\n\nAdventurer: But there's one catch. You can only write the names of scrolls you've read before. Remember that!",
+      "status": "reviewed",
+      "kind": "prose",
+      "review_note": "Bilingual review preserves: sleep not broken by attacks but temporary; dancing/confused monsters may attack; confused friendly fire; berserk speed and no specials; paralysis broken by attacks; blindness front-facing danger; floor-long delusion; Kaclang immunity and expiry; wind escalation/ejection/item loss; sword trap detection; curse removal restriction; Blank scroll requires prior reading. Soldier remains courteous, adventurer conversational. Menus retain topic identity and original controls/cancellation. No shortened mechanical meaning."
+    },
+    {
+      "id": "tutorial-help.0006c69c",
+      "source": {
+        "offset": 444060,
+        "end_exclusive": 444085,
+        "raw_hex": "8140837e837e8362834e82f082d082eb82a482c982cd814800",
+        "sha256": "0571e007b87bf740508e54dc419fbccfa4ed20ba0944aad859176c394f634f77",
+        "japanese": "　ミミックをひろうには？"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Pick up a Mimic",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c6b8",
+      "source": {
+        "offset": 444088,
+        "end_exclusive": 444111,
+        "raw_hex": "81408ff182f08eaf95ca82b582bd82a282c882e7814800",
+        "sha256": "dd92938e8259173a1663f615fb1c235a073ae22adc5f7e584b605e2f30879f1a",
+        "japanese": "　杖を識別したいなら？"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Identify a staff",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c6d0",
+      "source": {
+        "offset": 444112,
+        "end_exclusive": 444135,
+        "raw_hex": "814093588ee582c9959588f382cc8ff182f08e6782a400",
+        "sha256": "b2e8bdfdbf78aeeb64301715a16b3fe21ba8fd42ffc75482faea9871814f37b1",
+        "japanese": "　店主に封印の杖を使う"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Sealing staff on shop owner",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c6e8",
+      "source": {
+        "offset": 444136,
+        "end_exclusive": 444161,
+        "raw_hex": "814082d682f182b082cc8ff182f08ea995aa82c982d382e900",
+        "sha256": "e6903b501a923ffe3ceb1162b372e9f0b00623d21024df9eda41affa2bf816cf",
+        "japanese": "　へんげの杖を自分にふる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Shapeshift staff on self",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Shapeshift staff on yourself"
+    },
+    {
+      "id": "tutorial-help.0006c714",
+      "source": {
+        "offset": 444180,
+        "end_exclusive": 444201,
+        "raw_hex": "89bd82c982c282a282c495b782ab82bd82a2814800",
+        "sha256": "2ccd060cd84100377310637129a8396ad5902f2930cf8e0e0e2a41b35a06bf81",
+        "japanese": "何について聞きたい？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "What do you want to ask?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c790",
+      "source": {
+        "offset": 444304,
+        "end_exclusive": 444323,
+        "raw_hex": "2093c582af82b5919004592082e282df82e900",
+        "sha256": "06b5090d0d2c4965193b0d76086fa431a2b6f1137c839591c78173b40893831d",
+        "japanese": " 毒けし草{legacy-x:0459} やめる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Antidotal herb | Cancel",
+      "cells": [
+        "Antidotal herb",
+        "Cancel"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 83
+    },
+    {
+      "id": "tutorial-help.0006c7a4",
+      "source": {
+        "offset": 444324,
+        "end_exclusive": 444345,
+        "raw_hex": "2082df82ae82b782e8919004592089ce898a919000",
+        "sha256": "5c0c08831481a7b1da9b3f094f658fcb4a3db1b321db1e16a664e6a7e064e006",
+        "japanese": " めぐすり草{legacy-x:0459} 火炎草"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Eyedrop herb | Flame herb",
+      "cells": [
+        "Eyedrop herb",
+        "Flame herb"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 83
+    },
+    {
+      "id": "tutorial-help.0006c7bc",
+      "source": {
+        "offset": 444348,
+        "end_exclusive": 444367,
+        "raw_hex": "2092ed90d89190045920838b815b8389919000",
+        "sha256": "d7629912ee40a27503572d9fbf128152e8e78a84d2159155b0e43fef3b7cc07a",
+        "japanese": " 弟切草{legacy-x:0459} ルーラ草"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Super herb | Zoom herb",
+      "cells": [
+        "Super herb",
+        "Zoom herb"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 83
+    },
+    {
+      "id": "tutorial-help.0006c7d0",
+      "source": {
+        "offset": 444368,
+        "end_exclusive": 444387,
+        "raw_hex": "2096f291900459208389838a837a815b919000",
+        "sha256": "31dc6262933afc9443a6d770a67dec3b3e36f4d412359902da29ca84a4c5c465",
+        "japanese": " 薬草{legacy-x:0459} ラリホー草"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Medicinal herb | Snooze herb",
+      "cells": [
+        "Medicinal herb",
+        "Snooze herb"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 83
+    },
+    {
+      "id": "tutorial-help.0006c800",
+      "source": {
+        "offset": 444416,
+        "end_exclusive": 444439,
+        "raw_hex": "89bd82a981418bb382a682c482e282eb82a482a9814800",
+        "sha256": "a1b21bb1ee0db0753e4c48228299220a312d20942d8df819a7f72eafb5b3457e",
+        "japanese": "何か、教えてやろうか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Want me to teach you something?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c818",
+      "source": {
+        "offset": 444440,
+        "end_exclusive": 444461,
+        "raw_hex": "814096ee82f082a482c2838283938358835e815b00",
+        "sha256": "5128633082e9e90d3f27b8abac668a91444133b53156f754bc55a3f8417951be",
+        "japanese": "　矢をうつモンスター"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Arrow-shooting monsters",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c830",
+      "source": {
+        "offset": 444464,
+        "end_exclusive": 444485,
+        "raw_hex": "814095aa97f482b782e9838283938358835e815b00",
+        "sha256": "e7194b682f391cd0bd06517d078c320a0846f6e4e8f6d26cdee7540238ef6387",
+        "japanese": "　分裂するモンスター"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Splitting monsters",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c848",
+      "source": {
+        "offset": 444488,
+        "end_exclusive": 444509,
+        "raw_hex": "814082e082cc82f0939082f182c582b582dc82a400",
+        "sha256": "6654b22421ceed7163c0ddc7bd59bd79220639d635e0ba26f2ddef98dfc8da0d",
+        "japanese": "　ものを盗んでしまう"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Stealing your items",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c860",
+      "source": {
+        "offset": 444512,
+        "end_exclusive": 444533,
+        "raw_hex": "81408c9582e28f8282f082b382d182b382b982e900",
+        "sha256": "b550296dddee174dd9a30cca488baaff51cafb4a8d852838ac8a9814055b4a6b",
+        "japanese": "　剣や盾をさびさせる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Rusting swords and shields",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c878",
+      "source": {
+        "offset": 444536,
+        "end_exclusive": 444557,
+        "raw_hex": "814082bf82a982e782f082bd82df82e98d558c8200",
+        "sha256": "d0c1e34962fec71cd9cb5046a5f63f51d9db940363e8e85a4673714ea92c2c64",
+        "japanese": "　ちからをためる攻撃"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Charge attacks",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c89c",
+      "source": {
+        "offset": 444572,
+        "end_exclusive": 444599,
+        "raw_hex": "89bd82c982c282a282c4926d82e882bd82a282c582b782a9814800",
+        "sha256": "c6129c146131a696ea7f68b955c89eaeddccc31c680ad5cbf2500e7815a09a9c",
+        "japanese": "何について知りたいですか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "What would you like to know?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c8b8",
+      "source": {
+        "offset": 444600,
+        "end_exclusive": 444623,
+        "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825400",
+        "sha256": "8f8aa9d648073508b46bbcf5b665c52fb9787728d8465f1be7a2427050f31b2c",
+        "japanese": "　明日のために、その５"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "For tomorrow, part 5",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Ready for tomorrow 5"
+    },
+    {
+      "id": "tutorial-help.0006c8d0",
+      "source": {
+        "offset": 444624,
+        "end_exclusive": 444647,
+        "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825300",
+        "sha256": "e4aa169dd6fa5bdf5c3d1438c034be5df6bfe819976533af7bf9693caa6665bf",
+        "japanese": "　明日のために、その４"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "For tomorrow, part 4",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Ready for tomorrow 4"
+    },
+    {
+      "id": "tutorial-help.0006c8e8",
+      "source": {
+        "offset": 444648,
+        "end_exclusive": 444671,
+        "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825200",
+        "sha256": "0248a8d183aacd6f664c588e2269178309f7d5ef0956daeff6bf40c4c6c8c976",
+        "japanese": "　明日のために、その３"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "For tomorrow, part 3",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Ready for tomorrow 3"
+    },
+    {
+      "id": "tutorial-help.0006c900",
+      "source": {
+        "offset": 444672,
+        "end_exclusive": 444695,
+        "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825100",
+        "sha256": "9e5b9444d03693be022f45ffe8d53726d20f87bd106b9932d8b4be82e008fc0c",
+        "japanese": "　明日のために、その２"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "For tomorrow, part 2",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Ready for tomorrow 2"
+    },
+    {
+      "id": "tutorial-help.0006c918",
+      "source": {
+        "offset": 444696,
+        "end_exclusive": 444719,
+        "raw_hex": "814096be93fa82cc82bd82df82c9814182bb82cc825000",
+        "sha256": "f954953076f931db02bf4fd0a3af516cec7f83f790c71ffaaf16afa7fb89e450",
+        "japanese": "　明日のために、その１"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "For tomorrow, part 1",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "draft_english": "Ready for tomorrow 1"
+    },
+    {
+      "id": "tutorial-help.0006c944",
+      "source": {
+        "offset": 444740,
+        "end_exclusive": 444769,
+        "raw_hex": "89bd82c982c282a282c48bb382a682c482d982b582a282f182be814800",
+        "sha256": "fe9c5c869ac37bae33ee137422cc77d883fb83c2498fccc3d1768134654ea7e2",
+        "japanese": "何について教えてほしいんだ？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "What do you want me to teach you?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c964",
+      "source": {
+        "offset": 444772,
+        "end_exclusive": 444810,
+        "raw_hex": "82a882a482c181492089bd82c982c282a282c48bb382a682c482d982b582a282f182be814800",
+        "sha256": "05901f064de4f8d2ab9cbbbfccbab2ed8908c8e9daf79b7e15252af9b51f3e12",
+        "japanese": "おうっ！ 何について教えてほしいんだ？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Hey! What do you want me to teach you?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c98c",
+      "source": {
+        "offset": 444812,
+        "end_exclusive": 444833,
+        "raw_hex": "2082e282a282ce82cc8f8204832082e282df82e900",
+        "sha256": "08160e8ddbe4b6d1bfba828aa1cba330a987c2d0eb78e7a1f3486ec2f71767c4",
+        "japanese": " やいばの盾{legacy-x:0483} やめる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Blade shield | Cancel",
+      "cells": [
+        "Blade shield",
+        "Cancel"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006c9a4",
+      "source": {
+        "offset": 444836,
+        "end_exclusive": 444854,
+        "raw_hex": "2083688389835383938356815b838b836800",
+        "sha256": "08ebbf8688046bd7e907c209e7926821bdf227e36c6605f79b1222a1a8151b21",
+        "japanese": " ドラゴンシールド"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Dragon shield",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006c9b8",
+      "source": {
+        "offset": 444856,
+        "end_exclusive": 444885,
+        "raw_hex": "2082dd82a982aa82dd82cc8f82048320939082dd82e682af82cc8f8200",
+        "sha256": "1b98a8c2b3cf253c7103d451567dc8fc6d2aa73f42d6ad933a8dc30313b654a9",
+        "japanese": " みかがみの盾{legacy-x:0483} 盗みよけの盾"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Silver shield | Thiefstop shield",
+      "cells": [
+        "Silver shield",
+        "Thiefstop shield"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006c9d8",
+      "source": {
+        "offset": 444888,
+        "end_exclusive": 444913,
+        "raw_hex": "2082a482eb82b182cc8f820483208ca990d882e882cc8f8200",
+        "sha256": "d657cdcad43475169b3c2ae4f2b74b4d74d70a56396740d404f0f5c1db1dfc2f",
+        "japanese": " うろこの盾{legacy-x:0483} 見切りの盾"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Scale shield | Parry shield",
+      "cells": [
+        "Scale shield",
+        "Parry shield"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006c9f4",
+      "source": {
+        "offset": 444916,
+        "end_exclusive": 444941,
+        "raw_hex": "2094e782cc8f820483208349815b834b8356815b838b836800",
+        "sha256": "6d2128f89b011d485828eb32e539d1aa92833b73ee00626095b3a9df6ab42227",
+        "japanese": " 皮の盾{legacy-x:0483} オーガシールド"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Leather shield | Ogre shield",
+      "cells": [
+        "Leather shield",
+        "Ogre shield"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006ca30",
+      "source": {
+        "offset": 444976,
+        "end_exclusive": 445007,
+        "raw_hex": "82b382a0814082c882f182c582e095b782a282c482ad82be82b382a2814200",
+        "sha256": "8810e384c7036d0997dabf9080246e7e269792db21f1396b49ba91413ea87cca",
+        "japanese": "さあ　なんでも聞いてください。"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Go on, ask me anything.",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ca50",
+      "source": {
+        "offset": 445008,
+        "end_exclusive": 445031,
+        "raw_hex": "20835d83938372834c8389815b04832082e282df82e900",
+        "sha256": "12b9f6f4f3eed2c5d0d08f2776144b89dc65753daa6b8ac2ddd941a3596c6683",
+        "japanese": " ゾンビキラー{legacy-x:0483} やめる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Zombiesbane | Cancel",
+      "cells": [
+        "Zombiesbane",
+        "Cancel"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006ca68",
+      "source": {
+        "offset": 445032,
+        "end_exclusive": 445048,
+        "raw_hex": "2097648c9582a982dc82a282bd82bf00",
+        "sha256": "4ecc16aa3505ed617b9d0aa690ee3dbee0743a0748f89b2681a4af9cdbae8c87",
+        "japanese": " 妖剣かまいたち"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Kamaitachi blade",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ca78",
+      "source": {
+        "offset": 445048,
+        "end_exclusive": 445083,
+        "raw_hex": "208366835883588367815b834a815b82cc958004832082df82b882e782b582a28c9500",
+        "sha256": "50e2e0bc031a6a63fbda2d0a38cf1ff912c3a6b4a554f65e1f9d03d97afe91be",
+        "japanese": " デスストーカーの斧{legacy-x:0483} めずらしい剣"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Heavy hood's axe | Rare swords",
+      "cells": [
+        "Heavy hood's axe",
+        "Rare swords"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006ca9c",
+      "source": {
+        "offset": 445084,
+        "end_exclusive": 445111,
+        "raw_hex": "20954b928682cc8c9504832083788372815b83748348815b834e00",
+        "sha256": "1ec8007b9f41414bbe909cde854efb2b63b3b2fa36355506acf9bfa404543957",
+        "japanese": " 必中の剣{legacy-x:0483} ベビーフォーク"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Surestrike sword | Imp fork",
+      "cells": [
+        "Surestrike sword",
+        "Imp fork"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006cab8",
+      "source": {
+        "offset": 445112,
+        "end_exclusive": 445147,
+        "raw_hex": "208368838983538393834c8389815b0483208345834283938368835883738341815b00",
+        "sha256": "d481cf5ca7a0c80073dabe4a3316ae31abe7db19bd5bb96abd7f67d3c46f716e",
+        "japanese": " ドラゴンキラー{legacy-x:0483} ウィンドスピアー"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Dragonsbane | Wind spear",
+      "cells": [
+        "Dragonsbane",
+        "Wind spear"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 122
+    },
+    {
+      "id": "tutorial-help.0006cafc",
+      "source": {
+        "offset": 445180,
+        "end_exclusive": 445203,
+        "raw_hex": "20837b837e8349835882cc8ff104662082e282df82e900",
+        "sha256": "5a9e31a5bb58979e5c50521f1c56071b6b6fa6a7172665702f95bcad02a86ee7",
+        "japanese": " ボミオスの杖{legacy-x:0466} やめる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Deceleratle staff | Cancel",
+      "cells": [
+        "Deceleratle staff",
+        "Cancel"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 95
+    },
+    {
+      "id": "tutorial-help.0006cb14",
+      "source": {
+        "offset": 445204,
+        "end_exclusive": 445235,
+        "raw_hex": "2082a282a982b882bf82cc8ff1046620836f8356838b815b838982cc8ff100",
+        "sha256": "6b503604602a30be1c8e0d1c95e22a18b849318f75266f79f66460a001ddd1f4",
+        "japanese": " いかずちの杖{legacy-x:0466} バシルーラの杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Lightning staff | Bazoom staff",
+      "cells": [
+        "Lightning staff",
+        "Bazoom staff"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 95
+    },
+    {
+      "id": "tutorial-help.0006cb34",
+      "source": {
+        "offset": 445236,
+        "end_exclusive": 445265,
+        "raw_hex": "20906791e382ed82e882cc8ff10466208381835f8370836a82cc8ff100",
+        "sha256": "e451cade0fb7f3289a771a20929714952804a2d2b6c864d7bfc209eab3dfd7e4",
+        "japanese": " 身代わりの杖{legacy-x:0466} メダパニの杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Decoy staff | Fuddle staff",
+      "cells": [
+        "Decoy staff",
+        "Fuddle staff"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 95
+    },
+    {
+      "id": "tutorial-help.0006cb54",
+      "source": {
+        "offset": 445268,
+        "end_exclusive": 445293,
+        "raw_hex": "20959588f382cc8ff10466208389838a837a815b82cc8ff100",
+        "sha256": "44666e36b1debc12e337af7acf69816df6b46be8142ca867fb697a81039400f6",
+        "japanese": " 封印の杖{legacy-x:0466} ラリホーの杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Sealing staff | Snooze staff",
+      "cells": [
+        "Sealing staff",
+        "Snooze staff"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 95
+    },
+    {
+      "id": "tutorial-help.0006cb8c",
+      "source": {
+        "offset": 445324,
+        "end_exclusive": 445347,
+        "raw_hex": "89bd82a981408bb382a682c482e282eb82a482a9814800",
+        "sha256": "93ee3d63b2e8c98b87c240d2c6391fafcf25007b953ad0f834eb849657bfd728",
+        "japanese": "何か　教えてやろうか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Want me to teach you something?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cba4",
+      "source": {
+        "offset": 445348,
+        "end_exclusive": 445367,
+        "raw_hex": "2089f1959c82cc9ae204732082e282df82e900",
+        "sha256": "1a91cbc0060f084526dc9551ff1b4b541bd31ff9ca2becd18c996497aac0c38d",
+        "japanese": " 回復の壺{legacy-x:0473} やめる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Recovery pot | Cancel",
+      "cells": [
+        "Recovery pot",
+        "Cancel"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 107
+    },
+    {
+      "id": "tutorial-help.0006cbb8",
+      "source": {
+        "offset": 445368,
+        "end_exclusive": 445391,
+        "raw_hex": "2082a482bb82c282ab82cc9ae204732089ce96f29ae200",
+        "sha256": "3052ef8c46565acf0a6d87710c15e0e8a3c71896ffde22d2c9adefd271e4d0e0",
+        "japanese": " うそつきの壺{legacy-x:0473} 火薬壺"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Liar pot | Gunpowder pot",
+      "cells": [
+        "Liar pot",
+        "Gunpowder pot"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 107
+    },
+    {
+      "id": "tutorial-help.0006cbd0",
+      "source": {
+        "offset": 445392,
+        "end_exclusive": 445419,
+        "raw_hex": "2082d682f182b082cc9ae204732082c682a482bc82ad82cc9ae200",
+        "sha256": "2b6f1f91fda6670b34df2b414bb727cc9abccf01cfb3396c26772b07a4fcf5d7",
+        "japanese": " へんげの壺{legacy-x:0473} とうぞくの壺"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Shapeshift pot | Thief pot",
+      "cells": [
+        "Shapeshift pot",
+        "Thief pot"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 107
+    },
+    {
+      "id": "tutorial-help.0006cbec",
+      "source": {
+        "offset": 445420,
+        "end_exclusive": 445443,
+        "raw_hex": "208d8790ac82cc9ae204732082dc82e082cc82cc9ae200",
+        "sha256": "a5665da0596a38c0f0cb81d7263d8ad54c7a56ff66c509cc89ba71eb6fa4ec28",
+        "japanese": " 合成の壺{legacy-x:0473} まものの壺"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Synthesis pot | Monster pot",
+      "cells": [
+        "Synthesis pot",
+        "Monster pot"
+      ],
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation.",
+      "source_column_x": 107
+    },
+    {
+      "id": "tutorial-help.0006cc20",
+      "source": {
+        "offset": 445472,
+        "end_exclusive": 445503,
+        "raw_hex": "81458145814589bd82a995b782a282c482ad82be82b382a282dc82b7814800",
+        "sha256": "2343f365ba768120a9e6be47ea454c623552e1aeefdcf6110ec9e2ccd794ff9c",
+        "japanese": "・・・何か聞いてくださいます？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "...Would you like to ask me something?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc40",
+      "source": {
+        "offset": 445504,
+        "end_exclusive": 445511,
+        "raw_hex": "81408e7797d600",
+        "sha256": "205f094188a4dc06c0d4a7651d456080e1a1dd0e7b60e88b64220fb16b9ae331",
+        "japanese": "　指輪"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Rings",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc48",
+      "source": {
+        "offset": 445512,
+        "end_exclusive": 445517,
+        "raw_hex": "81408ff100",
+        "sha256": "7fc4ed285711d7e10c05848855b4b7497b41d08d83463fa60a4465fc384b97a5",
+        "japanese": "　杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Staves",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc50",
+      "source": {
+        "offset": 445520,
+        "end_exclusive": 445525,
+        "raw_hex": "81409ae200",
+        "sha256": "7962aa8d8aac6a94c6266d0ca454a78f80095a46dc0468f1a9acfd6e978650b6",
+        "japanese": "　壺"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Pots",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc58",
+      "source": {
+        "offset": 445528,
+        "end_exclusive": 445535,
+        "raw_hex": "81408aaa95a800",
+        "sha256": "d617cfd27e9297c7bafbc64df73e6b1dd9416b7d73ad9454e393ebc852c097aa",
+        "japanese": "　巻物"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Scrolls",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc60",
+      "source": {
+        "offset": 445536,
+        "end_exclusive": 445541,
+        "raw_hex": "8140919000",
+        "sha256": "654e752cff50b5c5a5f8d5bfc35bda73dd08c70ee0ef79708a1e19c101e79099",
+        "japanese": "　草"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Herbs",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc7c",
+      "source": {
+        "offset": 445564,
+        "end_exclusive": 445589,
+        "raw_hex": "8bb382a682c482ad82ea82e982c58353838f835882a9814800",
+        "sha256": "93671992e1535ec5041a82e59c95d3e1a9bdab1e8f870f2adf692897a3b4f66f",
+        "japanese": "教えてくれるでゴワスか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Would you teach me?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cc98",
+      "source": {
+        "offset": 445592,
+        "end_exclusive": 445628,
+        "raw_hex": "89bd82c982c282a282c4208bb382a682c482ad82ea82e982c58353838f835882a9814800",
+        "sha256": "d0cb357950d33d8070f60f479efa9f1c9608591adf1aeea6218facaba716004a",
+        "japanese": "何について 教えてくれるでゴワスか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "What could you teach me?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ccbc",
+      "source": {
+        "offset": 445628,
+        "end_exclusive": 445645,
+        "raw_hex": "81408b5a82cc82a882da82a682a982bd00",
+        "sha256": "d2c138bc4bbee27b4b83ab1307cecf9233219627eadc634c45c086f669d08e76",
+        "japanese": "　技のおぼえかた"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Learning skills",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ccd0",
+      "source": {
+        "offset": 445648,
+        "end_exclusive": 445667,
+        "raw_hex": "814090ed8e6d82cc82c682ad82bf82e582a400",
+        "sha256": "cdceb1c847da3921f8cc41b1164414db408427c7bee54256b9e6161332b22f08",
+        "japanese": "　戦士のとくちょう"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Warrior traits",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cce8",
+      "source": {
+        "offset": 445672,
+        "end_exclusive": 445697,
+        "raw_hex": "89bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+        "sha256": "45e9b08dba6dfc445a3f3a7e9746b9c96a3022e8d238fd0d2e2b0348e049a631",
+        "japanese": "何について聞きたいのだ？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "What do you want to know?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd04",
+      "source": {
+        "offset": 445700,
+        "end_exclusive": 445739,
+        "raw_hex": "82e682a2905382aa82af82be814289bd82c982c282a282c495b782ab82bd82a282cc82be814800",
+        "sha256": "eadd338e96b09311ecd6267254527d5eb9b2b5f728b97524e19edc60bdc23ee5",
+        "japanese": "よい心がけだ。何について聞きたいのだ？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Good attitude! What do you want to know?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd2c",
+      "source": {
+        "offset": 445740,
+        "end_exclusive": 445759,
+        "raw_hex": "81408381834b8393836582c982c282a282c400",
+        "sha256": "47251d3fcdaa4739823ba5669d93446b7f291fd0847dcb3448c8f34897ca0de4",
+        "japanese": "　メガンテについて"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Kamikazee",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd40",
+      "source": {
+        "offset": 445760,
+        "end_exclusive": 445783,
+        "raw_hex": "814083588379838b83758362834e82c982c282a282c400",
+        "sha256": "1319fee63c1e4ce722af279031e06dabd39fe7a7face642adb209b6d11310c2a",
+        "japanese": "　スペルブックについて"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Spellbooks",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd58",
+      "source": {
+        "offset": 445784,
+        "end_exclusive": 445803,
+        "raw_hex": "81409682964082cc82a882da82a682a982bd00",
+        "sha256": "190a390e8ee2459df0c04611fc35e923bbab7cd4e15c6b91fd9e3bc14a325f01",
+        "japanese": "　魔法のおぼえかた"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Learning spells",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd6c",
+      "source": {
+        "offset": 445804,
+        "end_exclusive": 445827,
+        "raw_hex": "8140968296408e6782a282cc82c682ad82bf82e582a400",
+        "sha256": "0b7ac2349a6fa3619a4d25f1fd42b9f6016bc5a703bbd56adabafaa90861ded7",
+        "japanese": "　魔法使いのとくちょう"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Mage traits",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd84",
+      "source": {
+        "offset": 445828,
+        "end_exclusive": 445841,
+        "raw_hex": "814082b182eb82d182e682af00",
+        "sha256": "437c1e859ac2f7d7aec0219fef922729752fca0f751418283cfe30988a11b0b8",
+        "japanese": "　ころびよけ"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Trip guard",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cd94",
+      "source": {
+        "offset": 445844,
+        "end_exclusive": 445855,
+        "raw_hex": "8140838f836982dd82a600",
+        "sha256": "4ae050055ec09cc037e36dc4e5403da01f16c5cd5e2e6f84f1c4373293aa830b",
+        "japanese": "　ワナみえ"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "See traps",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cda0",
+      "source": {
+        "offset": 445856,
+        "end_exclusive": 445869,
+        "raw_hex": "814082e082eb82cd82ac82e800",
+        "sha256": "cef0ef4836f86e72a02fa704494234fe886ac53576ed127f8c3ce24535abaa34",
+        "japanese": "　もろはぎり"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Double-Edged Slash",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cdb0",
+      "source": {
+        "offset": 445872,
+        "end_exclusive": 445883,
+        "raw_hex": "814082df82c282d482b500",
+        "sha256": "cc34605fcce875e42839891ebfb441a1c1d7769e11227a4438d391a2ec6248b3",
+        "japanese": "　めつぶし"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Blind",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cdbc",
+      "source": {
+        "offset": 445884,
+        "end_exclusive": 445897,
+        "raw_hex": "8140835d8393837282ac82e800",
+        "sha256": "08b02fa2ba5669223546e6b9a8b5b0959d44ca563c8b635f9591b9acb9ebf39b",
+        "japanese": "　ゾンビぎり"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Undead Undoer",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cde0",
+      "source": {
+        "offset": 445920,
+        "end_exclusive": 445947,
+        "raw_hex": "82c782cc8b5a82cc90e096be82f082b582dc82b582e582a4814800",
+        "sha256": "dc17b5d405e0b6e45edf5a393a57b2a808cd10a848e44bfcc387722b0e107f18",
+        "japanese": "どの技の説明をしましょう？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Which skill should I explain?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cdfc",
+      "source": {
+        "offset": 445948,
+        "end_exclusive": 445963,
+        "raw_hex": "8140906791e382ed82e882cc8ff100",
+        "sha256": "35562a24c3853232a57aa4536121cfd84a8802a66425f4e10d813e1732d5063d",
+        "japanese": "　身代わりの杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Decoy staff",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce0c",
+      "source": {
+        "offset": 445964,
+        "end_exclusive": 445979,
+        "raw_hex": "814082c682a482bc82ad82cc9ae200",
+        "sha256": "9ce61b7ca79c89f1299ddf031d9c23ede96ee5bcda7c8e274575d956918d8bcb",
+        "japanese": "　とうぞくの壺"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Thief pot",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce1c",
+      "source": {
+        "offset": 445980,
+        "end_exclusive": 445993,
+        "raw_hex": "814082d682f182b082cc8ff100",
+        "sha256": "3742671790a2bd7341f0a5db36a464feb6a57ef242c86e7916fe6562b5a31bc4",
+        "japanese": "　へんげの杖"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Shapeshift staff",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce2c",
+      "source": {
+        "offset": 445996,
+        "end_exclusive": 446011,
+        "raw_hex": "814091e5959489ae82cc8aaa95a800",
+        "sha256": "6073388da90381572afd604188ee1f2182dd8fdfb8e3986c7f97535c73d413a4",
+        "japanese": "　大部屋の巻物"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Great room scroll",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce50",
+      "source": {
+        "offset": 446032,
+        "end_exclusive": 446059,
+        "raw_hex": "82c782cc8365834e82f095b782ab82bd82a282c582b782a9814800",
+        "sha256": "0a0c0bf8e528798899e13e6ad8ea801233e1e211f4297e7d95f7cef491682a01",
+        "japanese": "どのテクを聞きたいですか？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Which trick would you like to hear?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce6c",
+      "source": {
+        "offset": 446060,
+        "end_exclusive": 446081,
+        "raw_hex": "81408ea995aa82cc8ff391d482f095cf82a682e900",
+        "sha256": "58b1f75c94da78efaeeae298677a38472eb32128576d4987beacefa627a59b25",
+        "japanese": "　自分の状態を変える"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Change your status",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce84",
+      "source": {
+        "offset": 446084,
+        "end_exclusive": 446105,
+        "raw_hex": "81408d558c828347838a834182f08d4c82b082e900",
+        "sha256": "cb07a6ccd5e6993ec44a0ef5b7837e4671ccd50030269d68ef7551659590fa5b",
+        "japanese": "　攻撃エリアを広げる"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Expand attack area",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ce9c",
+      "source": {
+        "offset": 446108,
+        "end_exclusive": 446135,
+        "raw_hex": "8140838283938358835e815b82cc8ff391d482f095cf82a682e900",
+        "sha256": "886394cbd5ad34e3c3366209047b3d0e1f5751f4c777683a92346019a14b372b",
+        "japanese": "　モンスターの状態を変える"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Change monster status",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006ceb8",
+      "source": {
+        "offset": 446136,
+        "end_exclusive": 446155,
+        "raw_hex": "8140838283938358835e815b82f08d558c8200",
+        "sha256": "2b4ad0cd3b476280d90ab5260567a33bcb7f678f676c45bbcf3a5bcd2f70e391",
+        "japanese": "　モンスターを攻撃"
+      },
+      "kind": "label",
+      "status": "reviewed",
+      "english": "Attack monsters",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    },
+    {
+      "id": "tutorial-help.0006cedc",
+      "source": {
+        "offset": 446172,
+        "end_exclusive": 446207,
+        "raw_hex": "82c782cc835e8343837682cc90e096be82f095b782ab82bd82a282f182be82a2814800",
+        "sha256": "97ed969df8b803e24a31ff3c7f54b033541187a67eaf33e39d9ff139eedac02a",
+        "japanese": "どのタイプの説明を聞きたいんだい？"
+      },
+      "kind": "heading",
+      "status": "reviewed",
+      "english": "Which type do you want me to explain?",
+      "review_note": "Dedicated bilingual label review: names match approved item/skill/spell identities, canonical full forms fit these wider columns, and condition/actor/target distinctions are retained. Shapeshift staff on self preserves the reflexive target within138px. For tomorrow, part1–5 retains the original numbered lesson phrasing. The teach-me question remains addressed to the player, unlike NPC-offered teaching. Original cursor/column and explanation mapping require separate native validation."
+    }
+  ]
+}

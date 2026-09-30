@@ -23,6 +23,28 @@ class QuestTrace(EnglishTrace):
     ADDRESSES = TextChecks.ADDRESSES + (0x08015CE8, 0x08015E28,
                                       0x08002124, 0x0800212A, 0x08002138, 0x080022C4)
 
+    def __init__(self, game, route, build, save_fixture=True):
+        super().__init__(game, route, build, save_fixture)
+        # The results panel now owns its private copy of this same Japanese
+        # source. Observe its actual reviewed bytes under the source identity;
+        # merely dropping the old required source would hide a route regression.
+        for row in build.get('results', {}).get('ui_entries', []):
+            if row['table_offset'] != 0x6DC:
+                continue
+            prior = next(r for r in self.resources.values() if r['id'] == 'rom.0006155c')
+            require(row['source']['offset'] == 0x6155C and
+                    row['source']['sha256'] == prior['source_sha256'] and
+                    row['status'] == 'reviewed' and not row['printf_kinds'],
+                    'Private quest-result source identity differs')
+            replacement = prior | {'rom_offset': row['offset'], 'encoded_hex': row['encoded_hex'],
+                'replacement_resource_id': row['id'],
+                'layout': prior['layout'] | {'pages': [[row['english']]],
+                    'line_widths': [[row['maximum_width']]], 'encoded_bytes': len(bytes.fromhex(row['encoded_hex']))}}
+            pointer = row['offset'] + 0x08000000
+            self.resources[pointer] = replacement
+            self.checks.resources[pointer] = replacement
+            self.targets[prior['id']] = pointer
+
     def callback(self, event):
         a, r = event['address'], event['registers']
         if a == 0x080022C4:

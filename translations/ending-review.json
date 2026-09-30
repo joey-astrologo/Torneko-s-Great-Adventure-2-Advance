@@ -1,0 +1,983 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Five timed ending-scene dialogue tables; separate from credit/title graphics. Empty sentinel record43 remains unchanged. Status/timing fields and all native W/w delays plus mode0/1 retained.",
+  "entries": [
+    {
+      "id": "ending.00",
+      "index": 0,
+      "record_offset": 1392416,
+      "flags": 1,
+      "timer": 120,
+      "source": {
+        "offset": 447736,
+        "end_exclusive": 447768,
+        "raw_hex": "89c69856817582e282cd82e881407e82c782cc82cd8145814581458142133000",
+        "sha256": "28dd6a77743b6d94d060886018020ddd2e3a841a47f80655bdaa6a435b4ea1a5",
+        "japanese": "家老「やはり　{unclassified-control:7e}どのは・・・。{text-mode:1330}"
+      },
+      "english": "Chancellor: So {player} really has...{mode:0}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.01",
+      "index": 1,
+      "record_offset": 1392428,
+      "flags": 0,
+      "timer": 240,
+      "source": {
+        "offset": 447668,
+        "end_exclusive": 447735,
+        "raw_hex": "89a4976c817582a282a982c981407e82c682cd82a282a60d81408da189f182ce82a982e882cd814095aa82aa88ab82a982c182bd82cc82a982e082b582ea82ca814200",
+        "sha256": "bfd3b30761b52d7c867b1e71e6ae11457932409fe8870e102761ac8187ad473a",
+        "japanese": "王様「いかに　{unclassified-control:7e}とはいえ\n　今回ばかりは　分が悪かったのかもしれぬ。"
+      },
+      "english": "King: Even {player} may have had the odds against him this time.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated.",
+      "draft_english": "King: Even {player} may have faced impossible odds this time."
+    },
+    {
+      "id": "ending.02",
+      "index": 2,
+      "record_offset": 1392440,
+      "flags": 256,
+      "timer": 240,
+      "source": {
+        "offset": 447564,
+        "end_exclusive": 447667,
+        "raw_hex": "89a48f97817582bb82f182c881458145814582bb82f182c882d082c782a281490d405702400d89a48f97817582dd82f182c882cc82bd82df82c990ed82c182bd7e82b382f182aa0d814082c782a482b582c48149814081458145814582c782a482b582c4814900",
+        "sha256": "b3b62cf4e561251d1e4c7a376b829bb131ad2ac235acc4a5c02ec364b09c17ad",
+        "japanese": "王女「そんな・・・そんなひどい！\n@W\u0002@\n王女「みんなのために戦った{unclassified-control:7e}さんが\n　どうして！　・・・どうして！"
+      },
+      "english": "Princess: No... That's terrible!{wait:W:2}\n\nPrincess: {player} fought for us all! Why... Why?!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.03",
+      "index": 3,
+      "record_offset": 1392452,
+      "flags": 256,
+      "timer": 240,
+      "source": {
+        "offset": 447472,
+        "end_exclusive": 447564,
+        "raw_hex": "89a48e71817582a082a081458145814581490d405702400d89a48e71817582e282cd82e881408e8482aa81458145814581490d814082b982df82c4814082a882c682e082be82af82c582e082b782e982d782ab82c582b582bd814900",
+        "sha256": "0a279b31875f1e5fcf0b7b558eeb320f2f7d6526ef0cc646496834a2db3efcce",
+        "japanese": "王子「ああ・・・！\n@W\u0002@\n王子「やはり　私が・・・！\n　せめて　おともだけでもするべきでした！"
+      },
+      "english": "Prince: Ah...!{wait:W:2}\n\nPrince: I should have... I should at least have gone along!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.04",
+      "index": 4,
+      "record_offset": 1392464,
+      "flags": 0,
+      "timer": 180,
+      "source": {
+        "offset": 447416,
+        "end_exclusive": 447470,
+        "raw_hex": "89a4976c817582c782a482e282e7814581458145405702400d8140838f835682cd8ac382a682c482a282bd82e682a482b682e1814200",
+        "sha256": "93fe727a1b13bedf2d78366c1504a34455e4b788da46b84db634788548753ebe",
+        "japanese": "王様「どうやら・・・@W\u0002@\n　ワシは甘えていたようじゃ。"
+      },
+      "english": "King: It seems...{wait:W:2} I have relied on others too much.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.05",
+      "index": 5,
+      "record_offset": 1392476,
+      "flags": 0,
+      "timer": 240,
+      "source": {
+        "offset": 447200,
+        "end_exclusive": 447413,
+        "raw_hex": "89a4976c817588a482b782d782ab96af82f0814082dd82b882a982e782cc97cd82c58ee782e80d814082b582a082ed82b982d682c682dd82bf82d182ad8145814581458142405704400d89a4976c817582b182ea82b182bb82aa814082dc82b182c682cc89a482cc96f096da8142405703400d0d89a4976c817582bb82f182c891e590d882c882b182c682f00d814082a282c282cc8ad482c982a98140965982ea82c482a282bd82c682cd8145814581458142405704400d89a4976c8175838f835682c989a482cc8e918a6982cd82c882a2814200",
+        "sha256": "159c8eb608a5ca014f403673788f907f9ea6cd2aab04828750d1cd178412f508",
+        "japanese": "王様「愛すべき民を　みずからの力で守り\n　しあわせへとみちびく・・・。@W\u0004@\n王様「これこそが　まことの王の役目。@W\u0003@\n\n王様「そんな大切なことを\n　いつの間にか　忘れていたとは・・・。@W\u0004@\n王様「ワシに王の資格はない。"
+      },
+      "english": "King: To protect my beloved people myself and lead them to happiness...{wait:W:4}\n\nKing: That is a king's true duty.{wait:W:3}\n\nKing: How could I have forgotten something so important...?{wait:W:4}\n\nKing: I am not worthy of this crown.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated.",
+      "before_layout_review": "King: To protect my beloved people with my own strength, and lead them to happiness...{wait:W:4}\n\nKing: That is a king's true duty.{wait:W:3}\n\nKing: How could I have forgotten something so important...?{wait:W:4}\n\nKing: I am not worthy of this crown."
+    },
+    {
+      "id": "ending.06",
+      "index": 6,
+      "record_offset": 1392488,
+      "flags": 0,
+      "timer": 180,
+      "source": {
+        "offset": 447168,
+        "end_exclusive": 447199,
+        "raw_hex": "89a48e71817595838fe3814082a882c682e082a282bd82b582dc82b7814900",
+        "sha256": "e9bb404d8d371dcf8458ad46424bae1f3b3077a3c9298477dc5c54a94e756d97",
+        "japanese": "王子「父上　おともいたします！"
+      },
+      "english": "Prince: Father, I shall accompany you!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.07",
+      "index": 7,
+      "record_offset": 1392500,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 447080,
+        "end_exclusive": 447168,
+        "raw_hex": "91e59062817582a8814082a891d282bf82ad82be82b382a28149405702400d0d91e59062817589a4976c82c9814082e082b582e082cc82b182c682aa82a082c182bd82e70d814082b182cc8d9182cd814581458145814900",
+        "sha256": "1e38146afb9157682a26e5d0f6376c5424319ac75c9165c45d72b05d8b622b7c",
+        "japanese": "大臣「お　お待ちください！@W\u0002@\n\n大臣「王様に　もしものことがあったら\n　この国は・・・！"
+      },
+      "english": "Minister: W-wait, Your Majesty!{wait:W:2}\n\nMinister: If anything should happen to you, the kingdom...!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.08",
+      "index": 8,
+      "record_offset": 1392512,
+      "flags": 0,
+      "timer": 120,
+      "source": {
+        "offset": 446980,
+        "end_exclusive": 447077,
+        "raw_hex": "89a4976c817582bb82cc82c682ab82cd814581458145405702400d814082bb82c882bd82aa814089a482c982c882ea82ce82e682a982eb82a48142405704400d0d0d89a4976c81758145814581454057024095ba82f08f5782df82e682c1814900",
+        "sha256": "5c5090731d45f798e98abc9579b71217a2bb66344c7ed0c83ef54073bef605b0",
+        "japanese": "王様「そのときは・・・@W\u0002@\n　そなたが　王になればよかろう。@W\u0004@\n\n\n王様「・・・@W\u0002@兵を集めよっ！"
+      },
+      "english": "King: In that case...{wait:W:2} you shall become king.{wait:W:4}\n\nKing: ...{wait:W:2}Gather the troops!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.09",
+      "index": 9,
+      "record_offset": 1392524,
+      "flags": 0,
+      "timer": 90,
+      "source": {
+        "offset": 446960,
+        "end_exclusive": 446979,
+        "raw_hex": "819681757f81407e82b382f182be82c1814900",
+        "sha256": "093c983a8112ed30c26c830ad53ce2503f054ef8749e2fcee4bf5daa78f9aa50",
+        "japanese": "＊「{unclassified-control:7f}　{unclassified-control:7e}さんだっ！"
+      },
+      "english": "???: It's {initial}-{player}!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.10",
+      "index": 10,
+      "record_offset": 1392536,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 446868,
+        "end_exclusive": 446958,
+        "raw_hex": "89a4976c817582ed82c182cd82cd82cd82cd82c181490d814082e282c182bd82c8814082e282e882a882c182bd82c882c18149405703400d89a4976c817582b382b782aa82b682e1814082b382b782aa7e82b682e182c1814900",
+        "sha256": "a979c80ea4f3f20dede5897457838d0f3643b2afd2ecfd7b49753bd3a3228486",
+        "japanese": "王様「わっははははっ！\n　やったな　やりおったなっ！@W\u0003@\n王様「さすがじゃ　さすが{unclassified-control:7e}じゃっ！"
+      },
+      "english": "King: Wahahaha! You did it! You really did it!{wait:W:3}\n\nKing: I knew you could, {player}!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.11",
+      "index": 11,
+      "record_offset": 1392548,
+      "flags": 0,
+      "timer": 180,
+      "source": {
+        "offset": 446848,
+        "end_exclusive": 446868,
+        "raw_hex": "89a48e7181757e82b382f1814581458145814200",
+        "sha256": "b01df9429d0fb06a9d78d9ba5e9e6e5037fee75b12efc8f9d7290c6a4f4d6007",
+        "japanese": "王子「{unclassified-control:7e}さん・・・。"
+      },
+      "english": "Prince: {player}...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.12",
+      "index": 12,
+      "record_offset": 1392560,
+      "flags": 257,
+      "timer": 120,
+      "source": {
+        "offset": 446748,
+        "end_exclusive": 446847,
+        "raw_hex": "89c69856817582b7814082b7814082b782ce82e782b582a2816082c181490d814082a882ca82b582b182bb814082dc82b182c682cc8970975982b682e182c18149405702400d89c69856817582cd82a0814082cd82a0814082cd82a081458145814500",
+        "sha256": "577fd451bb09a7e9c9d037cedd765e0af08a46daf3aedd2407597ec4a57b2c00",
+        "japanese": "家老「す　す　すばらしい～っ！\n　おぬしこそ　まことの英雄じゃっ！@W\u0002@\n家老「はあ　はあ　はあ・・・"
+      },
+      "english": "Chancellor: S-s-SPLENDID! You are a TRUE HERO!{wait:W:2}\n\nChancellor: Huff... puff... huff...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.13",
+      "index": 13,
+      "record_offset": 1392572,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 446624,
+        "end_exclusive": 446746,
+        "raw_hex": "89a4976c817582c5814082c782a482b682e182c182bd81480d814082c782f182c8838283938358835e815b82aa82a282bd8148405703400d89a4976c8175835f839383578387839382cd82c782f182c882d382a482be82c182bd81480d814082bb82ea82a982e7814082bb82ea82a982e7814581458145814200",
+        "sha256": "9bb6dcfacc3cd00a0e8770ca188a6e9b3d621c4c682a897457ad3fee904fb7cd",
+        "japanese": "王様「で　どうじゃった？\n　どんなモンスターがいた？@W\u0003@\n王様「ダンジョンはどんなふうだった？\n　それから　それから・・・。"
+      },
+      "english": "King: Well? How was it? What monsters did you meet?{wait:W:3}\n\nKing: What was the dungeon like? And then? And then...?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.14",
+      "index": 14,
+      "record_offset": 1392584,
+      "flags": 256,
+      "timer": 90,
+      "source": {
+        "offset": 446608,
+        "end_exclusive": 446621,
+        "raw_hex": "89a48e71817595838fe3814900",
+        "sha256": "f385fd33622e4c0c49bed91dc946d21a1eebc7c0a69eca900f8592be08d5a80d",
+        "japanese": "王子「父上！"
+      },
+      "english": "Prince: Father!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.15",
+      "index": 15,
+      "record_offset": 1392596,
+      "flags": 256,
+      "timer": 90,
+      "source": {
+        "offset": 446588,
+        "end_exclusive": 446607,
+        "raw_hex": "89a4976c817581458145814582a482de814800",
+        "sha256": "728e334d77a2b65e803ea4b41754e0d51a7330cebbd18ee20eb78f2875ee490d",
+        "japanese": "王様「・・・うむ？"
+      },
+      "english": "King: ...Hmm?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.16",
+      "index": 16,
+      "record_offset": 1392608,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 446532,
+        "end_exclusive": 446585,
+        "raw_hex": "89a48e7181757e82b382f182cc82a882a982a682e882f00d814091d282bf82ed82d182c482a282e9906c82aa814581458145814200",
+        "sha256": "96562a8c5f6c07c4b0e5d9ba6759c0f63db421368797798a83e7ffe281fa6535",
+        "japanese": "王子「{unclassified-control:7e}さんのおかえりを\n　待ちわびている人が・・・。"
+      },
+      "english": "Prince: Someone is waiting anxiously for {player} to return...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.17",
+      "index": 17,
+      "record_offset": 1392620,
+      "flags": 512,
+      "timer": 240,
+      "source": {
+        "offset": 446296,
+        "end_exclusive": 446530,
+        "raw_hex": "89a4976c817581458145814582a882a882c18149814082bb82a482b682e1814082bb82a482b682e182c881420d405702400d89a4976c817582a482de814082b782dc82c882a282b182c682f082b582bd8142405703400d0d89a4976c817582b382c182bb82ad814082a982a682e982aa82e682a982eb82a481420d405703400d89a4976c817582b582a982b581407e82e68145814581458142405703400d0d89a4976c817582a082c682c5814082e482c182ad82e80d814096608caf82cc986282f095b782a982b982c482ad82ea8142405703400d89a4976c817581458145814582e682a282c8814800",
+        "sha256": "4ab61d0730809b01aed7158353df28dfcb766ed6d0f2e5366c6a75080ed72ae1",
+        "japanese": "王様「・・・おおっ！　そうじゃ　そうじゃな。\n@W\u0002@\n王様「うむ　すまないことをした。@W\u0003@\n\n王様「さっそく　かえるがよかろう。\n@W\u0003@\n王様「しかし　{unclassified-control:7e}よ・・・。@W\u0003@\n\n王様「あとで　ゆっくり\n　冒険の話を聞かせてくれ。@W\u0003@\n王様「・・・よいな？"
+      },
+      "english": "King: ...Oh! Yes, yes, of course.{wait:W:2}\n\nKing: Forgive me.{wait:W:3}\n\nKing: You should go home at once.{wait:W:3}\n\nKing: But, {player}...{wait:W:3}\n\nKing: You must tell me all about your adventure later, at your leisure.{wait:W:3}\n\nKing: ...Agreed?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.18",
+      "index": 18,
+      "record_offset": 1392632,
+      "flags": 1,
+      "timer": 180,
+      "source": {
+        "offset": 448756,
+        "end_exclusive": 448808,
+        "raw_hex": "82a882ce82a082b382f1817582b182ea82b182ea81420d814082bb82b182cc814082a88360837282b382f182bd82bf82e2814200",
+        "sha256": "53974d00802bc93189791abf918cc1bf7b5e9ddb751db99ba412945b9aa2e7cf",
+        "japanese": "おばあさん「これこれ。\n　そこの　おチビさんたちや。"
+      },
+      "english": "Old woman: Hello there, you little ones.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.19",
+      "index": 19,
+      "record_offset": 1392644,
+      "flags": 1,
+      "timer": 180,
+      "source": {
+        "offset": 448724,
+        "end_exclusive": 448753,
+        "raw_hex": "838b838b817582c882c98148814082a882ce82a082bf82e182f1814200",
+        "sha256": "d4e623f3a643b83ed742eebbf809461e47ee6bf688213ca69a0ea302e822d061",
+        "japanese": "ルル「なに？　おばあちゃん。"
+      },
+      "english": "Lulu: Yes, Granny?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.20",
+      "index": 20,
+      "record_offset": 1392656,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 448664,
+        "end_exclusive": 448723,
+        "raw_hex": "82a882ce82a082b382f1817582b182cc91ba82c981407e82b382f182c682a282a40d814082a8906c82cd814082a882e782ea82e982a982cc814800",
+        "sha256": "d75cc3c278d002067c1141ef502bab7ba53537eb33299347ab0ffba3e89946ef",
+        "japanese": "おばあさん「この村に　{unclassified-control:7e}さんという\n　お人は　おられるかの？"
+      },
+      "english": "Old woman: Does someone called {player} live in this village?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.21",
+      "index": 21,
+      "record_offset": 1392668,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 448608,
+        "end_exclusive": 448664,
+        "raw_hex": "837c837c838d817582a482f1814082a282e982e68142405701400d814082c582e08da181408370837082cd838b835882c882f182be814900",
+        "sha256": "b21d152f1a1c4ddfcf7a1766bd82a11db66c20ecab994728a67165cc0af3f301",
+        "japanese": "ポポロ「うん　いるよ。@W\u0001@\n　でも今　パパはルスなんだ！"
+      },
+      "english": "Tipper: Yes!{wait:W:1} But Dad's out right now!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.22",
+      "index": 22,
+      "record_offset": 1392680,
+      "flags": 257,
+      "timer": 240,
+      "source": {
+        "offset": 448544,
+        "end_exclusive": 448607,
+        "raw_hex": "82a882ce82a082b382f1817582a882e282a882e2814082bb82a482a982a281420d814082a88360837282b382f181407e82b382f182cc814581458145814200",
+        "sha256": "8278ea2ef3d5b080306feecd5d189e66975861406ee41f87c4ba352ed83ee156",
+        "japanese": "おばあさん「おやおや　そうかい。\n　おチビさん　{unclassified-control:7e}さんの・・・。"
+      },
+      "english": "Old woman: Oh, I see. Then you're {player}'s little...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.23",
+      "index": 23,
+      "record_offset": 1392692,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 448496,
+        "end_exclusive": 448544,
+        "raw_hex": "837c837c838d817582da82ad814082a88360837282b682e182c882a282e681420d8140837c837c838d82be82e6814900",
+        "sha256": "a4740a7efb013aa4aef590682105f08adedd425a67ad942a8d47e110c0b626dc",
+        "japanese": "ポポロ「ぼく　おチビじゃないよ。\n　ポポロだよ！"
+      },
+      "english": "Tipper: I'm not 'little'! I'm Tipper!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.24",
+      "index": 24,
+      "record_offset": 1392704,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 448468,
+        "end_exclusive": 448495,
+        "raw_hex": "838b838b817582a082bd82b582cd838b838b82be82e082f1814900",
+        "sha256": "3d8322ca27e326acae118f3836ca4e7be4dbc52383a2e7947b0f33d7c3cb36c3",
+        "japanese": "ルル「あたしはルルだもん！"
+      },
+      "english": "Lulu: And I'm Lulu!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.25",
+      "index": 25,
+      "record_offset": 1392716,
+      "flags": 257,
+      "timer": 1,
+      "source": {
+        "offset": 447964,
+        "end_exclusive": 448465,
+        "raw_hex": "82a882ce82a082b382f1817582d982c182d982d982d90d814082bb82ea82cd814082b782dc82c882a982c182bd82cb82a58142405703400d82a882ce82a082b382f1817582bb82a482a982a2814581458145838b835882c682cd8e63944f82b682e181420d405704400d82a882ce82a082b382f1817582c582cd837c837c838d82bf82e182f182c6838b838b82bf82e182f181420d814082a882cb82aa82a282b682e18142405703400d82a882ce82a082b382f1817582ed82b582cc82a982ed82e882c981407e82b382f182c90d814082a897e782f081408cbe82c182c682a282c482ad82ea82c882a282a982a28142405703400d82a882ce82a082b382f1817582b582a082ed82b982cc94a082cc82a882a982b082c50d405702400d82a882ce82a082b382f18175956e82b582a982c182bd814082ed82b582e782cc91ba82c90d814082b582a082ed82b982aa814082e082c782c182c482ab82bd82f182b682e18142405703400d82a882ce82a082b382f1817582bb82cc82a897e782aa8cbe82a282bd82ad82c482cc82a48142405704400d0d837c837c838d817582ed82a982c182bd814082a882ce82a082bf82e182f18149405703400d0d837c837c838d81758370837082aa82a982a682c182bd82e7814082da82ad0d814082bf82e182f182c68cbe82c182c682ad82e681424057034000",
+        "sha256": "52ac3badb43e590cfd9bb63d6030f8b28e15f56a9c3fc5813c8e00cabaafdbec",
+        "japanese": "おばあさん「ほっほほほ\n　それは　すまなかったねぇ。@W\u0003@\nおばあさん「そうかい・・・ルスとは残念じゃ。\n@W\u0004@\nおばあさん「ではポポロちゃんとルルちゃん。\n　おねがいじゃ。@W\u0003@\nおばあさん「わしのかわりに　{unclassified-control:7e}さんに\n　お礼を　言っといてくれないかい。@W\u0003@\nおばあさん「しあわせの箱のおかげで\n@W\u0002@\nおばあさん「貧しかった　わしらの村に\n　しあわせが　もどってきたんじゃ。@W\u0003@\nおばあさん「そのお礼が言いたくてのう。@W\u0004@\n\nポポロ「わかった　おばあちゃん！@W\u0003@\n\nポポロ「パパがかえったら　ぼく\n　ちゃんと言っとくよ。@W\u0003@"
+      },
+      "english": "Old woman: Hohoho! I'm sorry, dears.{wait:W:3}\n\nOld woman: What a shame he's out.{wait:W:4}\n\nOld woman: Tipper and Lulu, would you do me a favour?{wait:W:3}\n\nOld woman: Will you thank {player} for me?{wait:W:3}\n\nOld woman: Thanks to the Joy Chest...{wait:W:2}\n\nOld woman: Happiness has returned to our poor village.{wait:W:3}\n\nOld woman: I wanted to thank him for that.{wait:W:4}\n\nTipper: All right, Granny!{wait:W:3}\n\nTipper: I'll be sure to tell Dad when he gets home!{wait:W:3}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated.",
+      "draft_english": "Old woman: Hohoho! I'm sorry, dears.{wait:W:3}\n\nOld woman: What a shame he's out.{wait:W:4}\n\nOld woman: Tipper and Lulu, would you do me a favour?{wait:W:3}\n\nOld woman: Will you thank {player} for me?{wait:W:3}\n\nOld woman: Thanks to the Box of Joy...{wait:W:2}\n\nOld woman: Happiness has returned to our poor village.{wait:W:3}\n\nOld woman: I wanted to thank him for that.{wait:W:4}\n\nTipper: All right, Granny!{wait:W:3}\n\nTipper: I'll be sure to tell Dad when he gets home!{wait:W:3}"
+    },
+    {
+      "id": "ending.26",
+      "index": 26,
+      "record_offset": 1392728,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 447948,
+        "end_exclusive": 447963,
+        "raw_hex": "838b838b8175838b838b82e0814900",
+        "sha256": "de2a22af3d946a586d88aee05e7ca8ad47bee16e0cde709a7b2d7f5c8be84cbf",
+        "japanese": "ルル「ルルも！"
+      },
+      "english": "Lulu: Me too!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.27",
+      "index": 27,
+      "record_offset": 1392740,
+      "flags": 1,
+      "timer": 300,
+      "source": {
+        "offset": 447892,
+        "end_exclusive": 447948,
+        "raw_hex": "82a882ce82a082b382f1817582a082e882aa82c682a482e68142405703400d814082c582cd814082bd82cc82dd82dc82b582bd82e6814200",
+        "sha256": "a32ee0eb12737314ed1a52aecc2f325dbe7f10263dd50ab030fc75f760c9ad74",
+        "japanese": "おばあさん「ありがとうよ。@W\u0003@\n　では　たのみましたよ。"
+      },
+      "english": "Old woman: Thank you, dears.{wait:W:3} I'll leave it to you, then.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.28",
+      "index": 28,
+      "record_offset": 1392752,
+      "flags": 1,
+      "timer": 240,
+      "source": {
+        "offset": 447868,
+        "end_exclusive": 447891,
+        "raw_hex": "837c837c838d817582a882ce82a082bf82e182f1814900",
+        "sha256": "bdeddfee440d3168ebba4604fc8f450620b50760a74a433b248fefd94b74e434",
+        "japanese": "ポポロ「おばあちゃん！"
+      },
+      "english": "Tipper: Granny!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.29",
+      "index": 29,
+      "record_offset": 1392764,
+      "flags": 1,
+      "timer": 360,
+      "source": {
+        "offset": 447828,
+        "end_exclusive": 447867,
+        "raw_hex": "837c837c838d81758cb38b4382c582cb82a68149814092b790b682ab82b582c482cb81490d0d00",
+        "sha256": "2574c37343feb962c502f99eb5b1c82b5ceff56405b6f73d5f72f69a23a8f0ba",
+        "japanese": "ポポロ「元気でねえ！　長生きしてね！\n\n"
+      },
+      "english": "Tipper: Take care! Live a long, long time!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.30",
+      "index": 30,
+      "record_offset": 1392776,
+      "flags": 513,
+      "timer": 360,
+      "source": {
+        "offset": 447768,
+        "end_exclusive": 447826,
+        "raw_hex": "82a882ce82a082b382f1817582a082e882aa82c682a482cb82a68142405705400d814082b682e182a0814082b282ab82b082f182e682a4814200",
+        "sha256": "ee3fec7edcf4c1d8bcc126600d762ed6bf317ebfb2995a8bb8c87993e9202fac",
+        "japanese": "おばあさん「ありがとうねえ。@W\u0005@\n　じゃあ　ごきげんよう。"
+      },
+      "english": "Old woman: Thank you, dear.{wait:W:5} Goodbye, now.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.31",
+      "index": 31,
+      "record_offset": 1392788,
+      "flags": 0,
+      "timer": 90,
+      "source": {
+        "offset": 449216,
+        "end_exclusive": 449241,
+        "raw_hex": "9856906c817582de82de814581458145814581458145814900",
+        "sha256": "36e2dd8e4c78040a24244629a2fd83f599f795dd339a4bf2c1f146606a409b63",
+        "japanese": "老人「むむ・・・・・・！"
+      },
+      "english": "Old man: Hmm...!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.32",
+      "index": 32,
+      "record_offset": 1392800,
+      "flags": 1,
+      "timer": 180,
+      "source": {
+        "offset": 449180,
+        "end_exclusive": 449213,
+        "raw_hex": "9856906c81758ed788ab82c88b43947a82aa8145814581458fc182a682bd814200",
+        "sha256": "05bfce8b0351f459897cc8fbfb4d4d0d2fe05941b4131af80cd2b1d8ba4b851e",
+        "japanese": "老人「邪悪な気配が・・・消えた。"
+      },
+      "english": "Old man: The evil presence... has vanished.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.33",
+      "index": 33,
+      "record_offset": 1392812,
+      "flags": 1,
+      "timer": 1,
+      "source": {
+        "offset": 448940,
+        "end_exclusive": 449179,
+        "raw_hex": "9856906c81758cbe82ed82ca82c582e082ed82a982e981420d81407e82e68145814581458ca98e9682be8142405704400d0d0d9856906c817595ba8e6d82c582e082c882ad814097458ed282c582e082c882a20d814082bb82f182c88140837683888376838882cc836e838982cc82bb82c882bd82aa8145814581458142405703400d9856906c817582a282e281408eb897e781490d81408353837a839383628149405703400d9856906c817582b382a0814082c882c982f0834f8359834f835982b582c482a882e981420d814082a282c282dc82c589c691b082f091d282bd82b982e98b4382be81494057044000",
+        "sha256": "d148546e7b85b95935956f07cae88a9a7f0e39448f88ce536668f025f819d157",
+        "japanese": "老人「言わぬでもわかる。\n　{unclassified-control:7e}よ・・・見事だ。@W\u0004@\n\n\n老人「兵士でもなく　勇者でもない\n　そんな　プヨプヨのハラのそなたが・・・。@W\u0003@\n老人「いや　失礼！\n　ゴホンッ！@W\u0003@\n老人「さあ　なにをグズグズしておる。\n　いつまで家族を待たせる気だ！@W\u0004@"
+      },
+      "english": "Old man: You needn't say a word. Well done, {player}.{wait:W:4}\n\nOld man: Neither a soldier nor a hero, with that soft, flabby belly...{wait:W:3}\n\nOld man: Ah, forgive me! Ahem!{wait:W:3}\n\nOld man: Well, what are you dawdling for? How long will you keep your family waiting?!{wait:W:4}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.34",
+      "index": 34,
+      "record_offset": 1392824,
+      "flags": 513,
+      "timer": 300,
+      "source": {
+        "offset": 448808,
+        "end_exclusive": 448940,
+        "raw_hex": "9856906c817582a082cc926a814581458145405701400d81408fa4906c82c982b582c482a882ad82c982cd81458145814582a882b582a282c88142405703400d9856906c817590ed8e6d82e2968296408e6782a282c682c882ea82ce0d814088ea91cc814082c782ea82d982c782cc82e082cc82c982c882e982a9814581458145814200",
+        "sha256": "884bc4de85cbcb1a5f4801de05b5e8608f94fe44041b39bc6de7621bcda1f0c9",
+        "japanese": "老人「あの男・・・@W\u0001@\n　商人にしておくには・・・おしいな。@W\u0003@\n老人「戦士や魔法使いとなれば\n　一体　どれほどのものになるか・・・。"
+      },
+      "english": "Old man: That man...{wait:W:1} He's wasted as a merchant.{wait:W:3}\n\nOld man: Just how far could he go as a warrior or a mage...?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.35",
+      "index": 35,
+      "record_offset": 1392836,
+      "flags": 0,
+      "timer": 180,
+      "source": {
+        "offset": 449540,
+        "end_exclusive": 449596,
+        "raw_hex": "82ed82a982a28f97817582cb82a68145814581450d814082b582a082ed82b982c182c4814082c882f182c882cc82a982b582e782cb814200",
+        "sha256": "68395626f348dbcf6f43c1ef2822f4d1b99765885219860516ec9e01ff9b1221",
+        "japanese": "わかい女「ねえ・・・\n　しあわせって　なんなのかしらね。"
+      },
+      "english": "Young woman: Tell me... What do you think happiness is?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.36",
+      "index": 36,
+      "record_offset": 1392848,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 449492,
+        "end_exclusive": 449537,
+        "raw_hex": "97f682b782e9926a817582a6814581458145814082a282ab82c882e8814082c782a482b582bd82cc81480d0d00",
+        "sha256": "094b0e075b29b26435352bf12a1c515fdb27dde17230130cdfb835fed69d86af",
+        "japanese": "恋する男「え・・・　いきなり　どうしたの？\n\n"
+      },
+      "english": "Lovestruck man: Huh...? Where did that come from?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.37",
+      "index": 37,
+      "record_offset": 1392860,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 449404,
+        "end_exclusive": 449491,
+        "raw_hex": "82ed82a982a28f97817582c882ba82a98da10d814082b782b282ad814082b582a082ed82b982c88b4395aa82c882cc8142405703400d82ed82a982a28f97817581458145814582c782a482b582c482a982b582e7814800",
+        "sha256": "57743ae7f295bad030dc3a9464d7d1578bb2bcb7fa216a26180cfc65af6c2cc3",
+        "japanese": "わかい女「なぜか今\n　すごく　しあわせな気分なの。@W\u0003@\nわかい女「・・・どうしてかしら？"
+      },
+      "english": "Young woman: For some reason, I feel so happy right now.{wait:W:3}\n\nYoung woman: ...Why is that?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.38",
+      "index": 38,
+      "record_offset": 1392872,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 449356,
+        "end_exclusive": 449401,
+        "raw_hex": "97f682b782e9926a817582bb82a482a282a682ce8145814581458140837b834e82e081458145814581420d0d00",
+        "sha256": "eb0a78c9c7fbf6803b5c60b3afc830844e46e968f9d5e70e31327556f3a7bed6",
+        "japanese": "恋する男「そういえば・・・　ボクも・・・。\n\n"
+      },
+      "english": "Lovestruck man: Now that you mention it... So do I...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.39",
+      "index": 39,
+      "record_offset": 1392884,
+      "flags": 256,
+      "timer": 180,
+      "source": {
+        "offset": 449328,
+        "end_exclusive": 449355,
+        "raw_hex": "82ed82a982a28f97817595738e768b6382cb814581458145814200",
+        "sha256": "d5b4ab28be1691e6d7d0a4488ba2644f0524266a5a085bdef7fc771e2dcefa76",
+        "japanese": "わかい女「不思議ね・・・。"
+      },
+      "english": "Young woman: How strange...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.40",
+      "index": 40,
+      "record_offset": 1392896,
+      "flags": 256,
+      "timer": 95,
+      "source": {
+        "offset": 449300,
+        "end_exclusive": 449325,
+        "raw_hex": "97f682b782e9926a817582a082cc82b3814581458145814200",
+        "sha256": "892b08e3ce189fabce639def5fa5880ca8986e2ca852c52310485af915b19df0",
+        "japanese": "恋する男「あのさ・・・。"
+      },
+      "english": "Lovestruck man: Listen...",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.41",
+      "index": 41,
+      "record_offset": 1392908,
+      "flags": 256,
+      "timer": 215,
+      "source": {
+        "offset": 449276,
+        "end_exclusive": 449299,
+        "raw_hex": "82ed82a982a28f97817582c882c9814581458145814800",
+        "sha256": "2ae1ed2d80f509b1554db4afd5b86a482d36351a5a790300d8692602bc26b68e",
+        "japanese": "わかい女「なに・・・？"
+      },
+      "english": "Young woman: What is it...?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.42",
+      "index": 42,
+      "record_offset": 1392920,
+      "flags": 0,
+      "timer": 120,
+      "source": {
+        "offset": 449248,
+        "end_exclusive": 449275,
+        "raw_hex": "97f682b782e9926a81758145814581458d4482ab82be82e6814200",
+        "sha256": "0ff175c952e2406e84c35462e76e4817e772f2534b3099226c1162801ad8679e",
+        "japanese": "恋する男「・・・好きだよ。"
+      },
+      "english": "Lovestruck man: ...I love you.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.44",
+      "index": 44,
+      "record_offset": 1392944,
+      "flags": 0,
+      "timer": 90,
+      "source": {
+        "offset": 450280,
+        "end_exclusive": 450301,
+        "raw_hex": "836c836c817582a0814082a082c882bd82c1814900",
+        "sha256": "92bde2563d96dc524d5b6d4e435c47beba0477d0631c0621cafcf5a00878952d",
+        "japanese": "ネネ「あ　あなたっ！"
+      },
+      "english": "Tessie: D-darling!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.45",
+      "index": 45,
+      "record_offset": 1392956,
+      "flags": 1,
+      "timer": 1,
+      "source": {
+        "offset": 450208,
+        "end_exclusive": 450279,
+        "raw_hex": "836c836c817582a882a982a682e882c882b382a28142405702400d0d836c836c817582a0814082a082e781458145814582b2814082b282df82f182c882b382a281494057024000",
+        "sha256": "6a6783507618de8f6d4ddee4cd22a5dfd4913117e90c96a0e68e7bb8780b0538",
+        "japanese": "ネネ「おかえりなさい。@W\u0002@\n\nネネ「あ　あら・・・ご　ごめんなさい！@W\u0002@"
+      },
+      "english": "Tessie: Welcome home.{wait:W:2}\n\nTessie: Oh... I-I'm sorry!{wait:W:2}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.46",
+      "index": 46,
+      "record_offset": 1392968,
+      "flags": 257,
+      "timer": 120,
+      "source": {
+        "offset": 450200,
+        "end_exclusive": 450206,
+        "raw_hex": "7e8175814800",
+        "sha256": "412d3525863b31200d91d142a3738fa3ae98fd50d7de3ad239b130a1b8fba337",
+        "japanese": "{unclassified-control:7e}「？"
+      },
+      "english": "{player}: ?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.47",
+      "index": 47,
+      "record_offset": 1392980,
+      "flags": 1,
+      "timer": 120,
+      "source": {
+        "offset": 450156,
+        "end_exclusive": 450199,
+        "raw_hex": "837c837c838d817582a082c18140837083708149814082a882a982a682e882c882b3816082a281490d0d00",
+        "sha256": "d9b1e2a5fafa907cfa2ac019d1c30946443a9a093c547654b567ff6c328bb5d3",
+        "japanese": "ポポロ「あっ　パパ！　おかえりなさ～い！\n\n"
+      },
+      "english": "Tipper: Dad! Welcome ho-o-ome!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.48",
+      "index": 48,
+      "record_offset": 1392992,
+      "flags": 1,
+      "timer": 120,
+      "source": {
+        "offset": 450112,
+        "end_exclusive": 450156,
+        "raw_hex": "837c837c838d817582a082ea81480d8140837d837d814082c782a482b582c48b8382a282c482e982cc814800",
+        "sha256": "ad6649b1f381f5ff9d0eec6cfbd2e8fca78c3e2d00d12ac9f38875a0a005dd05",
+        "japanese": "ポポロ「あれ？\n　ママ　どうして泣いてるの？"
+      },
+      "english": "Tipper: Huh? Mum, why are you crying?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.49",
+      "index": 49,
+      "record_offset": 1393004,
+      "flags": 1,
+      "timer": 180,
+      "source": {
+        "offset": 450056,
+        "end_exclusive": 450112,
+        "raw_hex": "836c836c817581458145814582a482d382d38142814082a882a982b582a282ed82cb81420d814082c782a482b582c482a982b582e7814200",
+        "sha256": "eb17dc7b4ef5af1fe6ab3573ef621e2d453609bf1d6a980b34b64630b76ede86",
+        "japanese": "ネネ「・・・うふふ。　おかしいわね。\n　どうしてかしら。"
+      },
+      "english": "Tessie: ...Heehee. How strange. I wonder why.",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.50",
+      "index": 50,
+      "record_offset": 1393016,
+      "flags": 1,
+      "timer": 120,
+      "source": {
+        "offset": 449948,
+        "end_exclusive": 450054,
+        "raw_hex": "837c837c838d817582bb82ea82e682e882b382a081408370837081490d814082b382c182ab82cb814082da82ad82cb82a5814581458145405702400d837c837c838d8175926d82e782c882a282a882ce82a082b382f182c90d814082a082c182bd82f182be82e6814900",
+        "sha256": "ed424d24cafe9e6f923569edb27108ab062c2f7ddd10b7be331aaa411a01a21f",
+        "japanese": "ポポロ「それよりさあ　パパ！\n　さっきね　ぼくねぇ・・・@W\u0002@\nポポロ「知らないおばあさんに\n　あったんだよ！"
+      },
+      "english": "Tipper: Anyway, Dad! Just now, I...{wait:W:2}\n\nTipper: I met an old woman I didn't know!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.51",
+      "index": 51,
+      "record_offset": 1393028,
+      "flags": 257,
+      "timer": 240,
+      "source": {
+        "offset": 449888,
+        "end_exclusive": 449948,
+        "raw_hex": "836c836c817582b181408da1937882cd81490d8140926d82e782c882a282a882ce82a082b382f181458145814582c582b782c182c482a58148814900",
+        "sha256": "8198c0a0336e2170401ce17a77fa1af8dc72dee859d0a7e91dc60dbe18ffc970",
+        "japanese": "ネネ「こ　今度は！\n　知らないおばあさん・・・ですってぇ？！"
+      },
+      "english": "Tessie: A-and now... An old woman you don't know?!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.52",
+      "index": 52,
+      "record_offset": 1393040,
+      "flags": 257,
+      "timer": 90,
+      "source": {
+        "offset": 449868,
+        "end_exclusive": 449888,
+        "raw_hex": "7e81758145814581458145814581458149814900",
+        "sha256": "67925a1e31b91aaf52f7719d06c886a8b4ff6e95248df3c2a0c6e0f42204fa9c",
+        "japanese": "{unclassified-control:7e}「・・・・・・！！"
+      },
+      "english": "{player}: ...!!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.53",
+      "index": 53,
+      "record_offset": 1393052,
+      "flags": 1,
+      "timer": 90,
+      "source": {
+        "offset": 449844,
+        "end_exclusive": 449865,
+        "raw_hex": "837c837c838d817582c782a482b582bd82cc814800",
+        "sha256": "50f35a9b10843157980f77e89146790ff84fb2f56f05e0ff860ff4a4f5ae3f1c",
+        "japanese": "ポポロ「どうしたの？"
+      },
+      "english": "Tipper: What's wrong?",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.54",
+      "index": 54,
+      "record_offset": 1393064,
+      "flags": 257,
+      "timer": 240,
+      "source": {
+        "offset": 449768,
+        "end_exclusive": 449842,
+        "raw_hex": "836c836c817581458145814582a482a482f181409053947a82cd82a282e782c882a282ed81420d814082e082a489bd82aa82a082c182c482e0814082be82a282b682e582a482d4814900",
+        "sha256": "b9fc4d77ab28471f6ce8e52f77b2a8d2e345037ff0407f2ace6cd5b4e700c02c",
+        "japanese": "ネネ「・・・ううん　心配はいらないわ。\n　もう何があっても　だいじょうぶ！"
+      },
+      "english": "Tessie: ...No, don't worry. We'll be all right, whatever happens now!",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated.",
+      "before_layout_review": "Tessie: ...No, there's nothing to worry about. Whatever happens now, we'll be all right!"
+    },
+    {
+      "id": "ending.55",
+      "index": 55,
+      "record_offset": 1393076,
+      "flags": 257,
+      "timer": 180,
+      "source": {
+        "offset": 449752,
+        "end_exclusive": 449767,
+        "raw_hex": "837c837c838d817581488148814800",
+        "sha256": "3672023b856d8a02b11ec04f1e05c3848ef6d26d0fa3c8c4b6838eab35142db1",
+        "japanese": "ポポロ「？？？"
+      },
+      "english": "Tipper: ???",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.56",
+      "index": 56,
+      "record_offset": 1393088,
+      "flags": 257,
+      "timer": 1,
+      "source": {
+        "offset": 449620,
+        "end_exclusive": 449749,
+        "raw_hex": "836c836c817582bb82a482e682cb814082a082c882bd81490d405703400d836c836c817582b182ea82a982e782e08252906c82c5814082bf82a982e782f082a082ed82b982c40d81408a7982b582ad90b682ab82c482a282ab82dc82b582e582a48149405704400d836c836c8175837c837c838d82e0814082cb81494057034000",
+        "sha256": "ff7b380a91f7c02e3bb82a6182e8098689ca8b6a983482493c05528576dfe7ea",
+        "japanese": "ネネ「そうよね　あなた！\n@W\u0003@\nネネ「これからも３人で　ちからをあわせて\n　楽しく生きていきましょう！@W\u0004@\nネネ「ポポロも　ね！@W\u0003@"
+      },
+      "english": "Tessie: Isn't that right, darling?{wait:W:3}\n\nTessie: Let's keep working together, the three of us, and live a happy life!{wait:W:4}\n\nTessie: You too, Tipper!{wait:W:3}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    },
+    {
+      "id": "ending.57",
+      "index": 57,
+      "record_offset": 1393100,
+      "flags": 1,
+      "timer": 1,
+      "source": {
+        "offset": 449596,
+        "end_exclusive": 449617,
+        "raw_hex": "837c837c838d817582a482f1814940770b40133100",
+        "sha256": "ee0718545a56aee111de2c1e580f1b7a1262b9880ea13a2949a7388ddb9544aa",
+        "japanese": "ポポロ「うん！@w\u000b@{text-mode:1331}"
+      },
+      "english": "Tipper: Yeah!{wait:w:11}{mode:1}",
+      "status": "reviewed",
+      "review_note": "Bilingual review against the full five-scene Japanese sequence: preserve speakers, grief/reveal, King taking responsibility, unnamed village gratitude, old-man insult/apology, lovers, Tessie/Tipper family and all native wait/mode/player/initial controls. Existing glossary Joy Chest; no new event outcome or mechanic invented. Layout and native timing remain separately validated."
+    }
+  ],
+  "review_changes": {
+    "1": "Avoid overstating 分が悪かった as impossible odds.",
+    "25": "Use established Joy Chest glossary term."
+  }
+}

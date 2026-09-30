@@ -3,35 +3,306 @@
 All player-facing text is authorized for continued work without batch approvals.
 The Torneko 3-derived rules in `LOCALIZATION_PLAN.md` apply, with Torneko 2's
 Japanese as the source and measured T2 font/window budgets mandatory. Graphics
-editing and auditions remain deferred until the text is complete.
+editing and auditions were initially deferred until text completion. On
+2026-09-29 the user reopened ending-credit discovery and credits/arrival-card
+auditions. On 2026-09-30 the user also requested the
+[title-screen audition](TITLE_AUDITION.md), then approved insertion of the main
+title and all five corner logos. These are now
+[inserted and natively verified](TITLE_INSERTION.md). The five backgrounds use
+floating lettering with no wood backing; all pixels outside their corner
+rectangles remain exact. See
+[the graphics studios and evidence](GRAPHICS_AUDITION.md). The GBA credits are
+already English (67 raster lines); this discovery does not add 67 translated
+dialogue sources or change the text/insertion percentages below.
+On 2026-09-30 the user approved keeping that original credit artwork unchanged.
+The user then approved [insertion of the Shiren arrival cards](ARRIVAL_INSERTION.md).
+All 13 names plus Level are inserted and pass 30 native renderer cases, including
+the widened Ordeal Mansion. The first entry continues through the English
+tutorial and ordinary movement; other selectors use documented controlled probes.
 
 ## Accepted milestone and current candidate
 
-The latest accepted milestone is **2,500 inserted resources**, ROM
-`b08d16b210a30b6a313c3e18eeda3e22a8aa8e059c309f0e2811bd97494e189a`.
-Its ROM/BPS/ledger/receipt are preserved in `build/accepted/2500/`.
-The receipt is also `docs/english-services-validation.json`. Full cumulative
-regression,85 unit tests,90 WebKit contexts/890 measurements, clean rebuild
-and independent BPS application pass. This includes1,872 item cases,556 visible
-static-notice cases,27 monster-condition cases and336 results/history cases.
-Logs: `build/services/complete-build-2500.log`, `accept-2500.log`.
-The earlier2,312 and2,255 milestones remain archived separately.
+The latest accepted milestone has **3,768 inserted resources**, ROM
+`a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`.
+Its ROM, BPS, ledger and receipts are preserved in `build/accepted/3768/`.
+Full cumulative regression, 2,006 item cases, 135 unit tests, 314 WebKit contexts /
+3,428 measurements, clean rebuild and independent BPS application pass. Logs:
+`build/services/complete-build-3768.log`, `font-browser-3768.log`,
+`unit-3768.log`, `accept-3768.log` and `repro-3768.json`.
+Earlier accepted milestones remain archived separately.
 
-The latest **development candidate has2,610 inserted resources**, exported as
-`build/torneko-2-english.gba` and `build/torneko-2-english.bps`. The matching
-manifest pins source/ROM/patch hashes and independently verifies application.
-ROM: `bb45e403ac90272571d925f204af3535fa3187b61807bcf7c34371bde8eebb61`.
-It adds110 resources beyond2,500:33 result UI,nine history,two parent-menu,
-64 adventure-record andtwo Password resources. Matching full regression is
-running;85 unit tests pass. Isolated native checks include648 result UI,54
-history,336 actor/cause,nine parent-menu,15 records andfour Password cases.
+The current development candidate has **3,770 inserted text resources plus
+20 English graphics** (14 arrival graphics, the title and five backgrounds),
+exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
+Its ROM hash is
+`bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
+The title delta preserves every previous text/arrival allocation and patch,
+original credits and unrelated ROM bytes. All 36 title/menu snapshots, 640
+controlled colour probes, 30 arrival cases, both opening branches, name entry
+and save/cold-load checks, 135 unit tests and clean ROM/BPS reproduction pass.
+[Title insertion evidence and limits](TITLE_INSERTION.md) ·
+[arrival evidence](ARRIVAL_INSERTION.md).
 
-Unique reviewed sources are2,546/2,897 (87.9% language review), with348 still
-untranslated andthree prior retained/component dispositions. Discovery now
-includes the private results/history/record/password literals. This is separate
-from inserted-resource counts and does not establish complete consumer or game
-coverage. Work continues on remaining identified dungeon combat, priest/service,
-input/skill/spell menus, item/category and retained-source investigation.
+The preceding arrival-only graphics build
+`c6cf871bcb20060b91ca226d203bdf78713d89aa8cb1643170286e0b011f96c5`
+is archived in `build/title-insertion/pre-insertion/`; historical reports
+retain their original build identity.
+
+The preceding text-only 3,770 ROM
+`838f42fa1a126ebff1959a1f4a0f618859aa377101c87581617d82148beada70`
+is archived under `build/arrival-cards/pre-insertion/`.
+Its two text additions cover the floor-Remove fragment and a monster identity format.
+The latter is formatted but discarded by its original owner; no new on-screen
+message is claimed. On that text-only ROM, two ground-Remove cases, 145 identity
+cases, 44 existing item-action cases, 40 discovery cases and five walking-pickup
+cases pass, along with 135 unit tests and clean ROM/BPS reproduction. The byte
+delta against accepted 3,768 is limited to two owned literals and four appended
+allocations; all previous allocations and other ROM bytes remain identical.
+Evidence: `build/services/delta-3770.json`, `repro-3770.json` and the matching
+family/unit logs. Full cumulative acceptance remains at 3,768; its reports retain
+their original ROM hash. The release manifest marks the root build as development
+because discovery and full-game playtesting remain incomplete.
+
+The ten additions accepted at 3,768 cover nine older town/dungeon destination
+labels and one guard form refusal. All 67 travel-list and ten refusal cases pass,
+along with first-dungeon/castle/destination checks, both opening branches and the
+fresh three-floor tutorial pickup audit.
+
+The 51 additions accepted at 3,758 cover nine carpenter repair passages, 40 house-fire
+scene passages and two dungeon-entry/saved-village overwrite prompts. Accepted 3,768
+also passes a fresh-game, ordinary-input tutorial pickup regression: three floors
+and 14 pickups, with no Japanese text glyph leads. These checks do not establish
+complete game discovery or natural access to every translated branch.
+
+The current inventory accounts for 3,654 unique sources: 3,512 reviewed,
+113 unresolved (catalog status `untranslated`) and 29 retained/component sources.
+The earlier **96.1%** figure divides reviewed English by every catalog source.
+Its remaining 3.9% therefore includes 29 sources that do not need another English
+translation: 22 nonlinguistic entries, four sources replaced by English UI
+components, and three deliberately retained Japanese sources (the optional kana
+input pages and an internal appearance-table sentinel).
+
+Excluding those 29 accounted-for sources, **3,512 of 3,625 sources (96.9%) have
+reviewed English; 113 (3.1%) remain unresolved**. This is a review metric for the
+known catalog, not whole-game completion or proof that every reader displays
+English. Some unresolved sources already have English drafts but still need
+reader, context or layout verification. Neither percentage measures engineering
+time remaining. The ten sources added at 3,768 were newly identified. A separate
+byte/consumer audit classified the eight empty name-cell IDs as nonlinguistic
+data; no Japanese text was removed.
+Remaining work includes custom-name layouts, 36 single-character event stubs,
+legacy system strings and shared-reader audits. The reviewed-source percentage
+does not count these investigation gaps as complete.
+
+The 113 unresolved sources currently divide as follows:
+
+| Sources | Family | Remaining work |
+|---:|---|---|
+| 36 | Single-character event placeholders | Two render through controlled native branches; context and ordinary reachability still under investigation. |
+| 56 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
+| 11 | Custom-name category labels | English is drafted/reviewed; all item names must remain on one line. Long Japanese custom-name layouts still need a solution. |
+| 10 | Town/service table sources | Establish active readers and their actual formatting/layout requirements. |
+
+The [native screenshot gallery](../build/text-decisions/index.html) and
+[investigation notes](TEXT_OPEN_QUESTIONS.md) explain these cases. The user has
+confirmed that **item names cannot take more than one line**. The earlier request
+to choose “Sa/Na” versus an ellipsis was premature; these incomplete dialogue
+entries need context/reachability investigation first. The failing custom-name
+prototype remains separate from the root ROM.
+
+This is a source count, not a percentage of engineering time remaining. Retained
+internal data, reviewed English, native insertion and natural gameplay coverage
+must remain separate.
+
+The floor-Remove fragment passed two native queue/action checks and all 44
+existing Equip/Remove/Drop regressions in `build/ground-remove-prototype/` before
+integration. New source audits map all 133 ordinary event-script roots and the
+seven NPC resource banks. Six controlled native checks confirm two unresolved
+single-character placeholders really render through their selected branches;
+their context and ordinary reachability remain under investigation. The audit also records two
+mismatched original help-menu bank/configuration combinations. Natural access
+and their proper explanations remain unresolved. Appearance alias154 is proven
+to be an assignment sentinel, with three native initializer checks; that
+internal record is now explicitly retained as metadata, adding no insertion.
+These investigations do not establish whole-game completion or increase the accepted insertion count.
+
+The 95 additions accepted at 3,707 cover 75 further tutorial resources,
+11 link-trade resources, eight pickup tutorial tips and an ending save notice.
+The five original inconsistent tutorial selection mappings remain explicit
+investigation gaps; their displayed text is translated and mapping behavior
+preserved. Both occurrences of Seal staff in the bank6 dialogue now use Sealing
+staff. A natural fresh tutorial run on that ROM completed all three floors,
+14 pickups and 14 English tips, with no Japanese glyph leads; full-game and
+arrival-artwork coverage remain separate.
+
+The98 additions accepted at3,612 cover dungeon-entry restrictions(4), timed
+ending dialogue(57), dungeon destination labels/heading(8), and the first29
+soldier/adventurer tutorial resources. Older staged notes below are prototype
+history unless explicitly marked as an unresolved investigation.
+
+The 71 additions accepted at 3,514 cover legacy record/travel prompts (8),
+fused-equipment Info descriptions (41), dungeon cutscene prose (21) and the
+empty-inventory Read refusal (1).
+
+The152 additions accepted at3,443 cover English inscription inputs, fused-ability
+loss messages, talk refusals, Step/Stairs choices and pot-content labels. Eight
+additional compact numeric aliases cover16–20 and(1)–(3), without increasing
+the text resource count. All prototype/staged notes below are historical unless
+explicitly called out as unresolved; the four families listed above are now
+included in the root development build.
+
+The 113 resources added between3,144 and3,257 cover dungeon effects/status/fullness, spell
+messages and spellbook rows, discovery/transformation, staff draining/waving,
+pulling, inscribed-scroll names, writing results, item loss/pot results, and
+player recovery/no-staff notices. Evidence is bound to each tested ROM; earlier
+reports are not relabelled as current evidence.
+
+The following independently tested prototypes were integrated at3,291;
+current galleries are under `build/english/` with the matching family names:
+`build/dungeon-shop-prototype/` adds five resources for three price/half-price
+confirmations and thank-you/insufficient-funds panels. All 16 rendering cases
+pass with original Yes/No geometry, numeric colours and maximum decimal values.
+Actual commerce outcomes and the separate dropped-item offer remain open.
+`build/save-notices-prototype/` adds damaged-save and improper-suspension
+notices; both native modal checks pass. The latter retains all consequences
+and the original two-row window, with a native page wait between its four
+lines. Save validation/reset outcomes are excluded from these render probes.
+The reference-list prototype also passes nine cases across all27 scroll,100
+skill and50 spell names, eligible/locked states, every page, cursor wrapping,
+refusal and repeated reopening. Original windows and8px gaps are preserved.
+Gallery: `build/reference-lists-prototype/reference-lists-validation/index.html`.
+The save-preview prototype passes56 cases, including real town/dungeon
+Continue, every destination/town/completion selector and maximum stored names
+and positive signed16-bit numeric fields. The existing bottom-left castle
+graphic has a20px text reserve; window/artwork are unchanged. Two full native
+priest-expiry calls also pass with actual timer/actor-flag outcomes. Galleries:
+`build/save-preview-prototype/save-preview-validation/index.html` and
+`build/priest-warning-prototype/priest-warning-validation/index.html`.
+The separate town Items/Option root passes four native menu cases. Its
+32px window becomes40px to supply the required34px label region; it closes
+before either child opens. Native selection, empty/populated inventory,
+Option, cancellation and repeated reopening pass. Gallery:
+`build/town-root-prototype/town-root-validation/index.html`.
+A staged accounting audit identifies23 numeric/control, keyboard and already
+localized component sources; it makes no unused-code claims and does not count
+these as new ROM insertions. The unresolved single-character stubs remain open.
+All34 new resources are included in the root build. Their source dispositions
+are accounted separately and add no insertion count.
+
+On 3,257, 37 battle-result render cases pass: damage absorption, Cop Out,
+and both area-effect/spell readers for kill totals, total EXP and reached level.
+Tests include zero and maximum nonnegative decimal substitutions, longest names
+and visible pixels. The 88 dungeon-leaf and 12 strengthening cases also pass
+after the numeric verifier extension. These message-block checks do not claim
+the underlying combat outcomes.
+Gallery: `build/english/battle-results-validation/index.html`.
+
+On 3,251, all 512 skill-name attack/finisher cases and 384 skill-acquisition
+selector/player-name cases pass. The latter include native learned-flag changes
+and the sword/shield follow-up explanations selected by all128 original definitions.
+The retained bare-hand explanation is not selected by this native table; its
+bit is always overridden by a nonzero shield mask. Battle cries fit
+one line; the acquisition popup retains its original two-row layout.
+Galleries: `build/english/skill-shouts-validation/index.html` and
+`build/english/skill-learning-validation/index.html`.
+
+On 3,245, all 88 dungeon-leaf cases pass, including three Kerplunk callers
+and the grabbed/unable-to-move message. Combat outcomes are explicitly outside
+the controlled message-block checks.
+
+On 3,243, both player strengthening messages pass 12 native effect checks,
+including all three player-name cases and ordinary/capped item and stat states.
+The complete 258-case player-wrapper routing/rendering cohort passes.
+Gallery: `build/english/strengthening-validation/index.html`.
+
+On 3,241, 32 item-loss/pot field cases andsix player-name notice cases pass,
+along with112 unit tests. Complete loss/breakage/explosion messages fit one line
+with maximum item names. Skill-item removal and player recovery/refusal changes
+execute natively; the other loss/pot cases explicitly exercise their original
+message blocks and frames while excluding gameplay conditions/outcomes.
+
+On3,236, all102 writing target/refusal cases and the earlier72 dungeon-leaf,
+56 status,40 discovery,eight monster-interaction andeight staff-use cases pass.
+Writing checks include actual item identity, inscription flags and spell-ID
+changes, preserving the distinction between a used scroll and an ever-learned
+spell. Ordinary text-input matching remains separate. Identification retains
+complete old/new names and the surprise cue, with ordinary examples on one line.
+
+On3,230,77 inscribed-scroll rows,125 spellbook rows, mansion/main menus,
+17 priest-service branches and142 WebKit contexts /1,502 measurements pass.
+Explicit labels such as `Blank: Sheen` replace the unsafe Japanese six-byte
+suffix truncation. The maximum scroll base is101px in the110px name region;
+the conservative complete row bound is63/64bytes. Spellbooks use `Sp.` with
+complete spell names (maximum97px). Original windows and continuous inverse
+price backgrounds are preserved. Custom names and ordinary writing eligibility
+remain separate. Galleries: `build/english/scroll-item-validation/index.html`
+and `build/english/writing-validation/index.html`; check each report's ROM hash.
+
+Earlier3,180 checks cover384 cast/learn/forget cases, including HP gates/payment
+and actual learned/history flag changes. Individual spell targeting/effects
+remain separate. The3,173 targeted cohort also covers25 bonus effects,
+12 fullness changes,246 common player-wrapper cases andfive walking pickups.
+These results do not replace cumulative regression of the latest candidate.
+
+The accepted 3,144 milestone added five theft/wait formats, 266 skill Info
+bindings and 19 skill-menu bindings. Native checks pass 25 theft, 131 Info,
+four full list/navigation, seven equipment-preview, one actual Set/cancel and
+three retained-action render-only cases. Those retained actions are never
+executed; the ordinary warrior action builder emits Set/disabled Set plus Info,
+or Info alone when already assigned. Original menu geometry and 8px border
+gaps are preserved.
+
+The September26 report of Japanese pickup/dungeon messages remains actionable.
+Five additional walking cases passed on the accepted build: native item,
+gold, arrow merging, full inventory and the controlled standing flag. The
+native item case uses ordinary Drop and directional buttons without memory or
+register overrides. These routes do not establish completion of other actions.
+Gallery: `build/english/walking-pickup-validation/index.html` (regenerated for
+current development builds; check the matching report hash).
+
+The accepted2,670 milestone added25 priest resources, five Throw formats,
+24 species-selected monster announcements and six baker companion passages.
+Tests include35 priest text and17 service cases,20 Throw field/colour cases,
+all45 monster selectors plus72 field-bound cases, and six companion selectors.
+Native encounters, projectile collision outcomes and companion progression
+remain distinct from these controlled checks.
+
+The accepted2,854 milestone added184 resources:30 bindings for15 special/reserved item
+definitions, seven Controls-help bindings, three recovery/warp formats, seven
+wounded-soldier passages,132 spell Info resources and five spell-menu resources.
+Isolated tests passed19 recovery, four Controls-mode, nine soldier,64 spell Info
+and nine spell-menu cases before integration. Spell menus cover all50 eligible
+names in affordable/unaffordable states, page/cursor wrapping, Info, actual
+Set/Unset toggles and close/reopen behavior. Original geometry is preserved.
+All61 spell records have independently translated descriptions and original
+native HP costs/targets. Spell acquisition/casting outcomes remain separate.
+The display qualifier "Room Kacrack" distinguishes ヒャダイン from マヒャド;
+both retain canonical Kacrack in the glossary. User preference remains pending.
+
+Item153 uses a spell ID in its amount byte and opens spell Info. Forcing it
+unidentified produces alias999, outside the original155-record appearance
+table; that invalid synthetic state is explicitly excluded. All other required
+row states and every spell Info selector remain tested. Special/reserved
+records are not being declared unused or ordinarily obtainable.
+
+Unique reviewed sources are **3,500/3,644 (96.0% language review)**, with117
+untranslated and27 explicitly retained/component dispositions. These consist
+of21 nonlinguistic streams, four replaced components and two optional Japanese
+keyboard pages; none is being silently classified as unused. These counts include
+the61 spell and128 skill definitions/descriptions. Skill Info body/footer text
+has210px after the native6px inset, three body rows and footer row4. The
+19 new audition contexts include all100 menu-eligible skill names and actual
+cost/confirmation budgets; both fonts fit, with T2 remaining selected.
+Discovery is ongoing;
+reviewed sources and inserted resources are separate counts, and neither proves
+that every shared caller or every game text family is localized. Remaining work
+includes combat, item naming/inscriptions, skill/input menus, other shared
+consumers and source disposition research. Work continues without batch approval.
+
+Build font validation now uses a strictly scoped immutable snapshot, validated
+on entry and exit. Independent calls remain strict. This reproduces the accepted
+ROM/BPS byte for byte while reducing build time from roughly100seconds to3seconds.
+Evidence: `build/text-next/font-snapshot-repro.json` and dedicated mutation tests.
 
 The following2,159 summary is retained as milestone history.
 
@@ -115,17 +386,17 @@ quest run is not yet accepted.
 
 ## Discovery and remaining coverage
 
-The source inventory now accounts for **2,821 unique sources**, with 2,448 language
-reviews (including the integrated trap and static-notice catalogs).
-Another 299 sources have draft wording, and 71 lack resolved drafts; two are
-replaced by components and one is intentionally retained Japanese. It joins seven event banks, the 300-slot shared town table, 654 shared
+Current accounting: **3,400 unique sources**,3,256 reviewed,117 unresolved,
+and27 retained/component dispositions. This includes154 original inscription
+lookup rows (deduplicated by source) and40 fused-ability label pointers.
+The inventory joins seven event banks, the300-slot shared town table,654 shared
 system/combat/menu pointers, 221 item definitions and descriptions, both 141-ID
 actor-name tables, 154 unidentified appearances plus their end marker, category
 labels, five item-use announcement sources, ten well-level labels, and owned menu/UI reviews. Source aliases are deduplicated. Language
-review does not establish insertion through every shared consumer; both actor
-name tables are now inserted in the2,500 candidate, with raw result/history
-consumer acceptance pending its cumulative regression. The new fixed history
-Torneko field adds one explicitly identified source.
+review does not establish insertion through every shared consumer. Both actor
+name tables, result/history consumers and fixed history Torneko field are now
+in the accepted cumulative build. The catalog-specific draft history below
+records earlier research and is superseded by the current totals above.
 
 `translations/town-remaining-draft.json` has 177 source drafts with a dedicated
 bilingual pass, including six superseded by the active bank review. Remaining
@@ -166,10 +437,11 @@ static formatter sources and two medal reward commands now have tested consumers
 in the accepted story build. The fifteen further A-command sources are now
 in the accepted1,887-resource build with passing native checks. This does not establish native progression through later banks.
 
-Open work includes remaining combat/system/town consumers, custom-named items,
-scroll inscription, special item definitions, bakery and other services,
-results/history actor-name consumers, warrior skills, nested pots and later
-modes. Other text tables and unclassified scan leads still require discovery.
+Open work includes remaining combat/system/town consumers, custom-name priced
+rows, unidentified script fragments and legacy resources whose GBA consumers
+are not established. English inscriptions and pot labels are integrated in
+3,514 and undergoing cumulative checks. Other text tables and unclassified
+scan leads still require discovery.
 The source inventory is not proof of complete extraction.
 
 `tools.audit_text_staging` separately reports 2,044 reviewed sources and 700
@@ -815,3 +1087,272 @@ trip/time rows. Its54 history cases pass, including maximum fields, rank50,
 empty history and native next/previous selection. The combined ROM also passes648 result UI and336 actor/cause cases. Root exports remain the2,500
 candidate until its cumulative regression is accepted; these prototype counts
 are not silently included in current language/acceptance totals.
+
+### 3,291 cumulative route retry
+
+The first cumulative attempt stopped at a native floor-three defeat (no ROM
+crash or injected-state test). Its log/failure inputs are retained in
+`build/services/complete-build-3291-attempt1.log` and the original castle
+walk-failure report. A staged ordinary-button route leaves and re-enters the
+floor-two stairs before descent; it passes first-dungeon and all castle
+audience checks without RAM/register changes. That recorded round trip is
+now part of `verify_first_dungeon`; cumulative checks resume from that verifier,
+using the already passing current-ROM name-entry/opening checks.
+
+### Staged English inscription input
+
+An isolated writing prototype passes584 native lookup cases, nine actual
+Write/Name editor cases and the existing shared-name-editor input regression.
+It accepts full English spell/effect names and displayed scroll names, without
+case sensitivity, while preserving original kana entries and native history
+requirements. Special writing inputs allow15characters; ordinary item names
+stay8 and player/village limits stay7. No save layout changes. It remains
+outside the root build until integration after the3,291 cumulative run.
+
+### Staged fused-ability and talk refusals
+
+The synthesized-ability loss prototype adds40 ability labels and its complete
+message. All39 cases pass: every20 sword/16 shield bit admitted by the native
+wrapper, plus three field bounds. The original removal logic executes; a
+recorded valid RNG result selects the tested bit. Normal and widest captures
+were visually inspected. Gallery: `build/fused-loss-prototype/fused-loss-validation/index.html`.
+The separate talk-refusal prototype passes12 cases across both original
+message blocks, three player-name profiles and three actor-field bounds.
+Actual conversation conditions are excluded from these controlled block probes.
+Gallery: `build/cannot-talk-prototype/cannot-talk-validation/index.html`.
+Neither prototype is counted in the3,291 root build.
+
+The3,291 monster-announcement verifier encountered a repeated debugger
+observation of the same glyph preparation (41 glyphs,42 observations). Its
+check now validates identical preparation state before counting it once, as
+in the existing dungeon-leaf verifier. The failing case and full announcement
+cohort pass exact final-frame pixel checks; no ROM change was required.
+
+The separate Step/Stairs prototype passes six native menu cases with two
+cancellation/reopening cycles each, final B/Stay/action choices, exact command
+results, original geometry and final pixels. It adds two resources and remains
+outside3,291. Gallery: `build/step-stairs-prototype/step-stairs-validation/index.html`.
+
+Custom-item category/punctuation research confirms eight-character English
+names fit the tested six category rows with native prices. The initial Japanese
+sample used eight13px glyphs and overlapped price cells in all six categories;
+its normal rows remained within168px (the pot row reached161px). That sample
+was not the actual maximum. The prototype is deliberately not
+integrated or signed off. Captures and actual inputs are retained in
+`build/custom-item-prototype/probe/`; this is a layout blocker, not evidence
+that ordinary English names need a narrower font.
+
+The pot View prototype adds concealed/empty-content labels and passes11
+native inventory/View states with three opens each. The Thief-pot path also
+checks all9 native label copies and their64-byte guards. Its original07/08
+bytes were verified as inert GBA controls and retained. Gallery:
+`build/pot-view-prototype/pot-view-validation/index.html`.
+These two resources remain staged while3,291 cumulative checks finish.
+
+### Staged legacy record menu and travel prompts
+
+`build/book-travel-prototype/` adds eight resources: Records/Scores/Trade items,
+the stored-item requirement, Meadow traversal, Yes/No, saved-village overwrite
+and travel confirmation. All16 native cases pass, with two cancel/reopen
+cycles per case, native choices/results, original windows, exact pixels and
+caller ABI/guards. The overwrite warning also passes eight widest English and
+Japanese saved-name glyphs through the original save-header/name getter.
+Native save-header substitutions are explicitly controlled; ordinary script
+routing and actual trading/travel/save effects remain separate. The gallery
+was visually reviewed. These resources are not yet in the3,443 root build.
+
+### Coverage and custom-name follow-up
+
+The original name keyboard permits14px glyphs, including `げ` (82B0).
+Eight such glyphs in the staged English pot/category row exceed the original
+168px window even without a price: the bracket starts at166px, and visible
+ink reaches169px. The normal text-bounds checker rejects this case. Diagnostic
+captures preserve the clipped result separately; they are not passing checks.
+Evidence: `build/custom-item-maximum-prototype/probe-maximum-japanese/partial.json`
+and `probe-pot-overflow/`. Custom-name insertion remains blocked pending a
+layout that preserves the full legacy name, category, count and price.
+
+A fresh scan found219 pointer-backed Japanese candidates outside the current
+inventory ranges (`build/text-next/unaccounted-rom-pointers-3443.json`). These
+include possible duplicate/legacy text and false-positive data; each requires
+source ownership and consumer validation before changing coverage totals.
+One confirmed gap is the separate40-entry fused-equipment Info table and its
+alternate material-monster description. All45 native cases now pass, including
+every slot, the alternate, combined-property selection, colour masks and two
+reopens. Gallery: `build/ability-info-prototype/ability-info-validation/index.html`.
+The41 resources remain staged outside3,443. Property badges are sprites and
+remain on the deferred graphics list. The catalog percentage is not a
+whole-game completion percentage.
+
+The same discovery pass confirms21 additional text resources for the baker's
+grave, forest relic/old man and flame relic/King scenes. All33 controlled native
+cases pass, including complete page colours/pixels, widest name/initial fields
+and the original Yes/No/B response branches. The grave and voice inscriptions
+retain yellow at each native page clear. Gallery:
+`build/dungeon-story-prototype/dungeon-story-validation/index.html`.
+These21 resources are staged outside3,443; movement, quest state and natural
+scene access remain separate. Two stored farewell strings lack established
+readers in these owners and remain unchanged, with no global-unused claim.
+
+## Next private-table text prototypes after3,514
+
+Four dungeon-entry restrictions pass11 native cases in
+`build/travel-gate-prototype/travel-gate-validation/`: maximum items,
+store/discard, sell/discard and level1, including both item-message placements
+and original128-byte scratch bounds. Actual travel/unlock outcomes remain separate.
+
+Fifty-seven ending dialogue sources pass85 native cases in
+`build/ending-prototype/ending-validation/`. All five scene tables preserve
+native flags/timers, exact W/w delays and mode commands; auto pages work without
+advancing input, including the widest English/Japanese player names. Bilingual
+review uses Joy Chest and the established speaker names. These are text-only
+changes; actor staging, natural ending progression and credits artwork remain
+outside the controlled render probes. Both families are prepared but not yet
+integrated into the3,514-resource root candidate while its regression is running.
+
+Eight dungeon destination-picker resources also pass25 cases at
+`build/dungeon-travel-prototype/dungeon-travel-validation/`, with original
+geometry, cursor wrapping, positive selections and repeated reopening.
+The stored Meadow label is explicitly a controlled selector case.
+
+Another29 prepared sources cover soldier status topics and13 complete
+soldier/adventurer explanations. Six full menu cases pass every owned topic,
+both soldier pages, all prose pages and repeated reopening at
+`build/tutorial-help-prototype/tutorial-help-validation/`. The original
+27-configuration tutorial system also contains21 other configurations; those
+remain a separate active task. Japanese two-byte bank/group references are
+preserved as data, not misclassified as text. All98 prepared additions remain
+outside3,514 until its regression is accepted and the next cohort is integrated.
+
+
+The four prototypes described above are now integrated at 3,612. A separate
+75-source extension for the other tutorial topic menus is reviewed and under
+layout/native investigation. It is **not** in the root build: the equipment
+picker exposed a different native cursor inset, and several legacy descriptor
+configurations have incoherent original label/explanation mappings that still
+need reachability/disposition work. No universal menu sign-off is claimed.
+
+## Prepared after the 3,612 candidate
+
+A separate tutorial expansion adds75 reviewed sources to the first29. Its
+104-source prototype passes27 configuration render/cursor cases, six complete
+direct-help cases,20 correct-bank explanation cases and four controlled
+alternate-header cases. Gallery folders are under
+`build/tutorial-all-prototype/`. Equipment labels start11px into their original
+window because that cursor starts at x5; every other column uses its own
+measured cursor/text region. Original window geometry is preserved. Five
+inconsistent original configurations remain explicit selection/reachability
+gaps, with their original nontext mappings unchanged; no unused-code claim.
+
+The11-source link-trade prototype passes21 message/Yes/No/cancel/maximum-field
+cases and three picker/Info/Trade-selection cases. Its original40px action
+window,168px parent and8px outer border gap pass exact restoration checks.
+Actual cable transfer remains separate. Gallery:
+`build/link-prototype/link-picker-validation/index.html` and
+`link-message-validation/index.html` in the same prototype.
+
+A one-source pre-ending save-cancellation prototype also passes both A/B
+acknowledgements, preserving the original secondary wait and window closure.
+Gallery: `build/ending-notice-prototype/ending-notice-validation/index.html`.
+These87 additional resources remain staged while3,612 completes cumulative
+regression. They are not yet included in the root ROM or current inventory totals.
+One earlier prose spelling, Seal staff, also needs canonical Sealing staff in
+the next build. Great room scroll was checked against the glossary and already
+uses the correct full name.
+
+### Additional tutorial pickup messages found (2026-09-27)
+
+Eight previously unaccounted Japanese tips follow successful pickups in mode11.
+They cover bread, weapon/shield equipment, ranged staff use, room-damage scrolls,
+HP recovery, fire breathing and level gain. This is a plausible source of the
+reported Japanese pickup text, separate from the already translated ordinary
+pickup message; the user's exact route/build is still unknown.
+
+The separate pickup-help prototype translates and reviews all eight, preserves
+native controls and passes13 actual walking-dispatch probes for all11 item IDs
+and two negatives. Glyph pixels, complete wording, original wait flags, byte
+bounds, inventory/gold outcomes and caller ABI pass. Item identities and the
+mode load are controlled, not naturally reached tutorial progression. The
+queued reader interprets09 as a flag, not the dialogue reader's tab; this was
+confirmed before finalizing budgets. Native gallery:
+`build/pickup-help-prototype/pickup-help-validation/index.html`.
+These eight are staged for the next cumulative build with the additional75
+NPC tutorial resources,11 link-menu resources and one ending save notice.
+
+### Warehouse repair text staged (2026-09-27)
+
+Nine more direct carpenter messages are now translated and reviewed in an
+isolated prototype. These include work in progress, completed repairs, changing
+capacity, the1,000-gold proposal, acceptance/refusal and insufficient funds.
+All28 native full-function cases pass, including both original window positions,
+all pages, Yes/No/B, actual payment and capacity/flag outcomes, formatter bounds
+and visible pixels. Entry and initial state are controlled; ordinary unlock,
+completion scheduling and save persistence are not claimed. Gallery:
+`build/carpenter-prototype/carpenter-validation/index.html`.
+This family is staged after3,707 and is not yet in the root development build.
+
+### Ordinary tutorial pickups verified on3,707 (2026-09-27)
+
+A fresh English opening/name-entry checkpoint now continues with ordinary buttons
+through all three tutorial floors. Read-only map-guided walking, native attacks
+and acknowledgements produce14 actual floor-item pickups and14 complete English
+tips, with no Japanese glyph leads in the monitored text renderer. The natural
+cohort includes weapon, shield, bread, healing herb, room-damage scroll and
+ranged staff tips. Fire-herb and level-herb tips remain covered by the explicit
+controlled selector tests, not this natural run. No RAM/register substitutions,
+item identity edits or progression overrides occur. Original arrival artwork is
+deferred and outside this text check.
+
+Evidence: `build/text-next/native-tutorial-walk/report.json` and its
+`index.html` gallery, bound to ROM373287eefc1a7b3601d410666935c125184d67daed4f51a5aa5127b2e338ea01
+and the current fresh-opening fixture hash/input provenance. An earlier route
+policy stalled while waiting for a distant monster in a passage; it was corrected
+to use ordinary movement/adjacent combat and the complete run was replayed.
+This verifies the reported pickup context in normal tutorial gameplay, not
+all later dungeons or a100% text-discovery claim.
+
+### Newly identified fixed-block fire scene (staged)
+
+A computed-address reader uncovered40 further passages outside the event banks,
+covering Lulu/Tipper leaving to play, the monsters' attack, the wandering
+swordsman's apprentice boast and Tessie inside the burning house. All40 have an
+independent bilingual review with existing T2 character names. The private
+512-byte ROM records preserve the original two-row window and full meaning;
+no font or RAM changes. All56 native dispatcher checks pass, including maximum
+player names, consecutive batches, every page, visible pixels and ABI/guard
+checks. Gallery:`build/fire-scene-prototype/fire-scene-validation/index.html`.
+This is staged beyond the3,707 candidate; the actual scene trigger, actor
+animation and story progression remain separate. A second byte-identical source
+block has no proven reader yet and is kept as an explicit discovery lead.
+
+Two further direct travel questions were absent from the previous inventory:
+entering the selected dungeon and confirming overwrite of saved village data.
+Their six literal consumers are independently patched in the staged travel
+confirmation prototype; all105 native branch/layout/name/Yes/No/B cases pass.
+Gallery:`build/travel-confirm-prototype/travel-confirm-validation/index.html`.
+Saved Japanese village names remain user/save data; the surrounding prompt is
+English. Actual overwrite and travel outcomes are separate from these checks.
+Together with carpenter and fire-scene text,51 new resources are staged for
+integration after the3,707 cumulative candidate passes.
+
+Custom-name layout research also confirms that the existing Japanese-label
+layout already overlaps the inverse price column for an eight-glyph Japanese
+pot name: visible name right151px versus price left121px, on the3,707 ROM.
+The English category prototype requires additional layout work, including an
+unpriced maximum pot row. English eight-letter names fit the measured inventory
+rows. This is not sign-off for custom names or other list consumers. Evidence:
+`build/text-next/custom-japanese-baseline/partial.json` and the previously
+recorded custom-name prototypes. The later user clarification requires all item
+names to stay on one line; the proposed additional-line solution is rejected.
+
+Further menu discovery after that staging: the older town travel menus also
+index the pointer region`14BE98..14BED0`. Only the previously audited castle,
+home and square labels there are currently patched. `0804CB10` selects up to
+six rows from eight town labels using stage/unlock masks; `0804CC70` selects
+three dungeon rows with an independent heading. The unreviewed list includes
+Adventurer's Inn, graveyard, old man's house, dungeon/cancel, and the separate
+Mt. Fiery/Lost Forest/Toro Ruins source aliases. Their English must be measured
+in the actual140px town and76px dungeon cursor-adjusted regions before
+insertion, with all masks, selection and repeated reopening tested. This is
+an active discovery lead, not an accepted menu family. Evidence:
+`build/text-next/town-destination-menu.txt`, `town-destination-owners.txt`.

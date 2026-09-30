@@ -1,0 +1,41 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the native staff-wave announcement and empty-staff result in263F8..267E0. Separate reflection/effect readers remain independent.",
+  "entries": [
+    {
+      "id": "staff-use.3d8",
+      "table_offset": 984,
+      "source": {
+        "offset": 405296,
+        "end_exclusive": 405313,
+        "raw_hex": "257382cd20257382f082d382c182bd2100",
+        "sha256": "c8f04c19d121374d3c148476427b6ce9702c6180ed7113b51156c621d00a196c",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}をふった!"
+      },
+      "english": "{player} waved{fit} {item}!",
+      "fields": [
+        "player",
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Retain the player and complete staff name, including remaining uses. Empty-air result preserves the failed swing meaning."
+    },
+    {
+      "id": "staff-use.228",
+      "table_offset": 552,
+      "source": {
+        "offset": 407844,
+        "end_exclusive": 407868,
+        "raw_hex": "257382cd0d82de82c882b582ad8bf382f090d882c182bd00",
+        "sha256": "47a842381fb5ac5522a3a20a7869bb404ab7eaff68949d81646515425c17bd6d",
+        "japanese": "%{unclassified-control:73}は\nむなしく空を切った"
+      },
+      "english": "{item}{fit} swung through thin air.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Retain the player and complete staff name, including remaining uses. Empty-air result preserves the failed swing meaning."
+    }
+  ]
+}

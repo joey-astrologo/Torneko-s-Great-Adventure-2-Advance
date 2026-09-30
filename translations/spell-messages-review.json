@@ -1,0 +1,76 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private literals for native cast40FD0, learn3EDF8 and forget41A58. All gameplay definition fields preserved; other shared readers remain independent. Native format/queue and learning/forgetting state validation required before integration.",
+  "entries": [
+    {
+      "id": "spell-message.860",
+      "table_offset": 2144,
+      "source": {
+        "offset": 395500,
+        "end_exclusive": 395512,
+        "raw_hex": "257382f08fa582a682bd2100",
+        "sha256": "4a8c3fc34e147fac37d13e65b1f6014255bca9ff48696bdc78a17d4e385d15c6",
+        "japanese": "%{unclassified-control:73}を唱えた!"
+      },
+      "english": "Cast {spell}!",
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Preserve player/spell identity, cast availability and control14 on forgetting. Conditional break for widest supported player names; full spell names retained."
+    },
+    {
+      "id": "spell-message.86c",
+      "table_offset": 2156,
+      "source": {
+        "offset": 395432,
+        "end_exclusive": 395446,
+        "raw_hex": "485082aa82bd82e882c882a22100",
+        "sha256": "3552d0d8b4b0188e9b2c46ec84bd46b70afa3c71ad039c5dc012133723d59d61",
+        "japanese": "HPがたりない!"
+      },
+      "english": "Not enough HP!",
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Preserve player/spell identity, cast availability and control14 on forgetting. Conditional break for widest supported player names; full spell names retained."
+    },
+    {
+      "id": "spell-message.920",
+      "table_offset": 2336,
+      "source": {
+        "offset": 394564,
+        "end_exclusive": 394585,
+        "raw_hex": "257382cc8ef495b682cd8e6782a682dc82b982f100",
+        "sha256": "0564068fd2cae6892bd14236e1e22bd44ce698d53e3f8d4ba85b24f0df032a4b",
+        "japanese": "%{unclassified-control:73}の呪文は使えません"
+      },
+      "english": "You cannot cast {spell}.",
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Preserve player/spell identity, cast availability and control14 on forgetting. Conditional break for widest supported player names; full spell names retained."
+    },
+    {
+      "id": "spell-message.848",
+      "table_offset": 2120,
+      "source": {
+        "offset": 395696,
+        "end_exclusive": 395720,
+        "raw_hex": "7e82cd257382cc0d8ef495b682f082a882da82a682bd2100",
+        "sha256": "99c956bc1e2c3f2457f9dfbb877e4ca97e9908dd8555adcb731f755a588cb06e",
+        "japanese": "{unclassified-control:7e}は%{unclassified-control:73}の\n呪文をおぼえた!"
+      },
+      "english": "{player}{fit} learned {spell}!",
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Preserve player/spell identity, cast availability and control14 on forgetting. Conditional break for widest supported player names; full spell names retained."
+    },
+    {
+      "id": "spell-message.91c",
+      "table_offset": 2332,
+      "source": {
+        "offset": 394588,
+        "end_exclusive": 394614,
+        "raw_hex": "14257382cc8ef495b682cd8e6782a682c882ad82c882c182bd00",
+        "sha256": "18f1b9d4d49ad8d79b5612f5980e280b88929eb7e330876d31c2151fe478059c",
+        "japanese": "{unclassified-control:14}%{unclassified-control:73}の呪文は使えなくなった"
+      },
+      "english": "You can no longer cast {spell}.",
+      "status": "reviewed",
+      "review": "Independent Japanese translation. Preserve player/spell identity, cast availability and control14 on forgetting. Conditional break for widest supported player names; full spell names retained."
+    }
+  ]
+}

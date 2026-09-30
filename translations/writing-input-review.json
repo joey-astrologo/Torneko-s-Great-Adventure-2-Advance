@@ -1,0 +1,3289 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Case-insensitive English spell/effect and displayed-scroll input aliases for the original27 scroll/50 spell lookup target sets. Original154 kana lookup entries remain byte-identical; native learned-history eligibility and target IDs are unchanged. Special Write inputs allow15characters; ordinary item names remain8 and player/village remain7. No new RAM/save storage.",
+  "tables": [
+    {
+      "family": "scroll",
+      "source_offset": 1327816,
+      "end_exclusive": 1328256,
+      "source_sha256": "3fa9353a5417f6c425920aa22a9ef51026ad1784016271ffaeb5cec31f0a62ef",
+      "original_entries": [
+        {
+          "source": {
+            "offset": 425192,
+            "end_exclusive": 425201,
+            "raw_hex": "82b582e182c882ad00",
+            "sha256": "d506ddba4b4dfe2206796d11a3b3b571bd2740eec05478dbc1351ac0de8c7522",
+            "japanese": "しゃなく"
+          },
+          "target": 116,
+          "record_hex": "e87c060874000000",
+          "english_aliases": [
+            "Sheen",
+            "Sheen scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425180,
+            "end_exclusive": 425189,
+            "raw_hex": "835683838369834e00",
+            "sha256": "223fc01ee1b9f1177dbc6612e8d8f26e31a3e7f4887df77c3993e6cf97ba1b60",
+            "japanese": "シャナク"
+          },
+          "target": 116,
+          "record_hex": "dc7c060874000000",
+          "english_aliases": [
+            "Sheen",
+            "Sheen scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425168,
+            "end_exclusive": 425177,
+            "raw_hex": "82a282f182cf82b700",
+            "sha256": "143d7a8c789bd63afb4762f491105ed7f0f197e782894e839e6b0c1cb1e2024a",
+            "japanese": "いんぱす"
+          },
+          "target": 117,
+          "record_hex": "d07c060875000000",
+          "english_aliases": [
+            "Peep",
+            "Peep scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425156,
+            "end_exclusive": 425165,
+            "raw_hex": "834383938370835800",
+            "sha256": "a9e8838ba50d3db81264633f54786f9146f507b5cded60f12367b9bcfd2585fa",
+            "japanese": "インパス"
+          },
+          "target": 117,
+          "record_hex": "c47c060875000000",
+          "english_aliases": [
+            "Peep",
+            "Peep scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425148,
+            "end_exclusive": 425153,
+            "raw_hex": "82a282a800",
+            "sha256": "2bc3df322c37d8034bf09231317cec8166be0354eebee643477290934fa509e4",
+            "japanese": "いお"
+          },
+          "target": 118,
+          "record_hex": "bc7c060876000000",
+          "english_aliases": [
+            "Bang",
+            "Bang scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425140,
+            "end_exclusive": 425145,
+            "raw_hex": "8343834900",
+            "sha256": "2eb5da76afffbd1a8ef2fbec8692f91af9f3e6bde991e86efd8fb2aedd515023",
+            "japanese": "イオ"
+          },
+          "target": 118,
+          "record_hex": "b47c060876000000",
+          "english_aliases": [
+            "Bang",
+            "Bang scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425128,
+            "end_exclusive": 425137,
+            "raw_hex": "82ad82bf82c882b500",
+            "sha256": "6eef5a0ae4464d409e0edfeae8f286f6f80a11194ce2bbf9fe07ecea79cdabc7",
+            "japanese": "くちなし"
+          },
+          "target": 119,
+          "record_hex": "a87c060877000000",
+          "english_aliases": [
+            "Mouthseal",
+            "Mouthseal scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425116,
+            "end_exclusive": 425125,
+            "raw_hex": "834e83608369835600",
+            "sha256": "d16b55084c4f578a076a8b7f39f627bb173a4f01e676de45b6d768d92bd00379",
+            "japanese": "クチナシ"
+          },
+          "target": 119,
+          "record_hex": "9c7c060877000000",
+          "english_aliases": [
+            "Mouthseal",
+            "Mouthseal scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425104,
+            "end_exclusive": 425113,
+            "raw_hex": "82e882ea82dd82c600",
+            "sha256": "929ef4dfd74a5871f242afd8571b65f5dd41d989aff275f4e9d4aedcf5b3ebe9",
+            "japanese": "りれみと"
+          },
+          "target": 120,
+          "record_hex": "907c060878000000",
+          "english_aliases": [
+            "Evac",
+            "Evac scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425092,
+            "end_exclusive": 425101,
+            "raw_hex": "838a838c837e836700",
+            "sha256": "bfd87ab98aad6a2d5de4ca90708f53fff11102f914ecf0d599423ca7350f9351",
+            "japanese": "リレミト"
+          },
+          "target": 120,
+          "record_hex": "847c060878000000",
+          "english_aliases": [
+            "Evac",
+            "Evac scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425084,
+            "end_exclusive": 425089,
+            "raw_hex": "82ed82c800",
+            "sha256": "b49001f69bf11702c4a5533e3c7d4cb313d973a8b5d3dce3b5397d0c3f6c2bb9",
+            "japanese": "わな"
+          },
+          "target": 121,
+          "record_hex": "7c7c060879000000",
+          "english_aliases": [
+            "Trap",
+            "Trap scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425076,
+            "end_exclusive": 425081,
+            "raw_hex": "838f836900",
+            "sha256": "a89978e1aa9120282ee05246944205c2f12514c4a67223a81c10a819c68e1dea",
+            "japanese": "ワナ"
+          },
+          "target": 121,
+          "record_hex": "747c060879000000",
+          "english_aliases": [
+            "Trap",
+            "Trap scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425064,
+            "end_exclusive": 425073,
+            "raw_hex": "82a882a882d782e200",
+            "sha256": "1b3663698e6b95207be4ed74f38fa49728a4923fe2a74461c9fd8dd3221bbb44",
+            "japanese": "おおべや"
+          },
+          "target": 122,
+          "record_hex": "687c06087a000000",
+          "english_aliases": [
+            "Great room",
+            "Great room scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425052,
+            "end_exclusive": 425061,
+            "raw_hex": "834983498378838400",
+            "sha256": "e5a014c6230dc2a594f6ac58d976d93611bf7a22a79c951887179f87a1a1ee40",
+            "japanese": "オオベヤ"
+          },
+          "target": 122,
+          "record_hex": "5c7c06087a000000",
+          "english_aliases": [
+            "Great room",
+            "Great room scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425040,
+            "end_exclusive": 425051,
+            "raw_hex": "82e082f182b782bd815b00",
+            "sha256": "516493954a0b5b35e538c2e47f3fc93011e93ece75f5112b9b4837f51970add6",
+            "japanese": "もんすたー"
+          },
+          "target": 123,
+          "record_hex": "507c06087b000000",
+          "english_aliases": [
+            "Monster",
+            "Monster scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425028,
+            "end_exclusive": 425039,
+            "raw_hex": "838283938358835e815b00",
+            "sha256": "259a6a11253445262198df5b942a3652d472d9531f58821cbfc21cd3d415ed41",
+            "japanese": "モンスター"
+          },
+          "target": 123,
+          "record_hex": "447c06087b000000",
+          "english_aliases": [
+            "Monster",
+            "Monster scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425016,
+            "end_exclusive": 425027,
+            "raw_hex": "82ce82a282ab82e982c600",
+            "sha256": "8d8c0672234ba73f7aee8023349f376808cf944f1562a2f7fa7f9d366bfa8cd7",
+            "japanese": "ばいきると"
+          },
+          "target": 125,
+          "record_hex": "387c06087d000000",
+          "english_aliases": [
+            "Oomphle",
+            "Oomphle scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425004,
+            "end_exclusive": 425015,
+            "raw_hex": "836f8343834c838b836700",
+            "sha256": "42e3257d6bd4ca21d57eaa55dacf50ab09cd40b57fb3401949b08588d26da4db",
+            "japanese": "バイキルト"
+          },
+          "target": 125,
+          "record_hex": "2c7c06087d000000",
+          "english_aliases": [
+            "Oomphle",
+            "Oomphle scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424996,
+            "end_exclusive": 425003,
+            "raw_hex": "82b782a982e700",
+            "sha256": "fe28bd0ac6aa56e7cfb706b80f85bcfbca5f8498b8c818dc8a53ba87333e2036",
+            "japanese": "すから"
+          },
+          "target": 126,
+          "record_hex": "247c06087e000000",
+          "english_aliases": [
+            "Buff",
+            "Buff scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424988,
+            "end_exclusive": 424995,
+            "raw_hex": "8358834a838900",
+            "sha256": "fda17aaa05191328c2a7f5bd62a827b590db0e6d8311882b167378b0ce317673",
+            "japanese": "スカラ"
+          },
+          "target": 126,
+          "record_hex": "1c7c06087e000000",
+          "english_aliases": [
+            "Buff",
+            "Buff scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424980,
+            "end_exclusive": 424987,
+            "raw_hex": "82df82c182ab00",
+            "sha256": "a008a2cee0f3d201782188fb403ce18fa2ec8e6128e34fc2f860510c8ab8a6b0",
+            "japanese": "めっき"
+          },
+          "target": 127,
+          "record_hex": "147c06087f000000",
+          "english_aliases": [
+            "Plating",
+            "Plating scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424972,
+            "end_exclusive": 424979,
+            "raw_hex": "83818362834c00",
+            "sha256": "a43da1feaca559d22eac18292762d242487fd5d7954e23fc8ada315fd0f0a059",
+            "japanese": "メッキ"
+          },
+          "target": 127,
+          "record_hex": "0c7c06087f000000",
+          "english_aliases": [
+            "Plating",
+            "Plating scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424960,
+            "end_exclusive": 424969,
+            "raw_hex": "82d082eb82a682b800",
+            "sha256": "07258fe748de402d39094c87df973abce5edcc8be1a45e6fc8a56b0e3a581f4d",
+            "japanese": "ひろえず"
+          },
+          "target": 129,
+          "record_hex": "007c060881000000",
+          "english_aliases": [
+            "No-pickup",
+            "No-pickup scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424948,
+            "end_exclusive": 424957,
+            "raw_hex": "8371838d8347835900",
+            "sha256": "a70f5628e003d4b32de0ef8ddf10f3b16efa041749f4bbe78a894d4b2a2b4900",
+            "japanese": "ヒロエズ"
+          },
+          "target": 129,
+          "record_hex": "f47b060881000000",
+          "english_aliases": [
+            "No-pickup",
+            "No-pickup scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424936,
+            "end_exclusive": 424945,
+            "raw_hex": "82b982a282a282ab00",
+            "sha256": "f78bf60744860a1b459495ecd22ab38d2f69179f8a3780dbf35246bfa1ebdbd0",
+            "japanese": "せいいき"
+          },
+          "target": 130,
+          "record_hex": "e87b060882000000",
+          "english_aliases": [
+            "Sanctuary",
+            "Sanctuary scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424924,
+            "end_exclusive": 424933,
+            "raw_hex": "835a83438343834c00",
+            "sha256": "04a687224478fdbb89536055611403e046ca7d36b97c5ebeaa7007f70f5e484f",
+            "japanese": "セイイキ"
+          },
+          "target": 130,
+          "record_hex": "dc7b060882000000",
+          "english_aliases": [
+            "Sanctuary",
+            "Sanctuary scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424912,
+            "end_exclusive": 424923,
+            "raw_hex": "82b982f182e882aa82f100",
+            "sha256": "e8a08135375fde6513150efc27e540dec2e4f8ceb83d16957a6a9f363518d752",
+            "japanese": "せんりがん"
+          },
+          "target": 131,
+          "record_hex": "d07b060883000000",
+          "english_aliases": [
+            "See-all",
+            "See-all scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424900,
+            "end_exclusive": 424911,
+            "raw_hex": "835a8393838a834b839300",
+            "sha256": "0818b39ab500b0d7ae60572d2435c499c8622367e83ee8f84a36b8aa21f9b6ff",
+            "japanese": "センリガン"
+          },
+          "target": 131,
+          "record_hex": "c47b060883000000",
+          "english_aliases": [
+            "See-all",
+            "See-all scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424892,
+            "end_exclusive": 424897,
+            "raw_hex": "82cf82f100",
+            "sha256": "ceaf631bf4a49ff7028497d79a24598d4b0a9a05fa2ea73e73497c6cb4057b84",
+            "japanese": "ぱん"
+          },
+          "target": 132,
+          "record_hex": "bc7b060884000000",
+          "english_aliases": [
+            "Bread",
+            "Bread scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 412396,
+            "end_exclusive": 412401,
+            "raw_hex": "8370839300",
+            "sha256": "104b344b6a99f26861ef31548f8fc488e7d63c0cacf971f1e504ced95048183c",
+            "japanese": "パン"
+          },
+          "target": 132,
+          "record_hex": "ec4a060884000000",
+          "english_aliases": [
+            "Bread",
+            "Bread scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424884,
+            "end_exclusive": 424891,
+            "raw_hex": "82a282cc82e800",
+            "sha256": "d8fa9a7fce24a0ec80af3c3edff0c43240034b5782cd422294b6116b6dfc0dc7",
+            "japanese": "いのり"
+          },
+          "target": 133,
+          "record_hex": "b47b060885000000",
+          "english_aliases": [
+            "Prayer",
+            "Prayer scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424876,
+            "end_exclusive": 424883,
+            "raw_hex": "8343836d838a00",
+            "sha256": "6598e1fd32cfd64d75a1fe82e62e86cefba7fa46e4bf1ee56c184f9710cc8674",
+            "japanese": "イノリ"
+          },
+          "target": 133,
+          "record_hex": "ac7b060885000000",
+          "english_aliases": [
+            "Prayer",
+            "Prayer scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424864,
+            "end_exclusive": 424873,
+            "raw_hex": "82ea82dd815b82e700",
+            "sha256": "313b86ffe81ae33d437c40af048028b35840d3b4d3fe9e3fd3d4d9e87c8a2dd3",
+            "japanese": "れみーら"
+          },
+          "target": 136,
+          "record_hex": "a07b060888000000",
+          "english_aliases": [
+            "Glow",
+            "Glow scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424852,
+            "end_exclusive": 424861,
+            "raw_hex": "838c837e815b838900",
+            "sha256": "d21c3638dd2348eb47ed02a21e8c261ffd56e0ccd68bccd8cce65e40851b8b41",
+            "japanese": "レミーラ"
+          },
+          "target": 136,
+          "record_hex": "947b060888000000",
+          "english_aliases": [
+            "Glow",
+            "Glow scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424840,
+            "end_exclusive": 424851,
+            "raw_hex": "82a982c882b582ce82e800",
+            "sha256": "f44f4a29bd06adfe85d4c35c60774cb3dea1e883cb668610d0d808f954b9f308",
+            "japanese": "かなしばり"
+          },
+          "target": 137,
+          "record_hex": "887b060889000000",
+          "english_aliases": [
+            "Binding",
+            "Binding scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424828,
+            "end_exclusive": 424839,
+            "raw_hex": "834a83698356836f838a00",
+            "sha256": "19c578b7fac1340350d68ce364437390c933555476f3a3a3d5568a4d8835014b",
+            "japanese": "カナシバリ"
+          },
+          "target": 137,
+          "record_hex": "7c7b060889000000",
+          "english_aliases": [
+            "Binding",
+            "Binding scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424812,
+            "end_exclusive": 424827,
+            "raw_hex": "82ac82f182cc82bd82c482b282c600",
+            "sha256": "8d2cf2fddaab85a3a835fbad121474f749f706699c149d4e6753a0fe8035cb56",
+            "japanese": "ぎんのたてごと"
+          },
+          "target": 140,
+          "record_hex": "6c7b06088c000000",
+          "english_aliases": [
+            "Lyre of Ire",
+            "Lyre of Ire sc."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424796,
+            "end_exclusive": 424811,
+            "raw_hex": "834d8393836d835e83658353836700",
+            "sha256": "36e94489c44304d342d67a4aa1e3790d04443c6482542e146826983d61d8db86",
+            "japanese": "ギンノタテゴト"
+          },
+          "target": 140,
+          "record_hex": "5c7b06088c000000",
+          "english_aliases": [
+            "Lyre of Ire",
+            "Lyre of Ire sc."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424784,
+            "end_exclusive": 424795,
+            "raw_hex": "82b682b282ad82dd82dd00",
+            "sha256": "e660593098cbe6e76ae34494595d7983b191ddf0178e273faa17fc1d2969e085",
+            "japanese": "じごくみみ"
+          },
+          "target": 141,
+          "record_hex": "507b06088d000000",
+          "english_aliases": [
+            "Foe sight",
+            "Foe sight scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424772,
+            "end_exclusive": 424783,
+            "raw_hex": "83578353834e837e837e00",
+            "sha256": "671a1af02587376dc6500d4af5526730cab247f94440371e1745ba0b8aa9237b",
+            "japanese": "ジゴクミミ"
+          },
+          "target": 141,
+          "record_hex": "447b06088d000000",
+          "english_aliases": [
+            "Foe sight",
+            "Foe sight scr."
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424760,
+            "end_exclusive": 424769,
+            "raw_hex": "82c682e782dc82c800",
+            "sha256": "021fd533297b1c234c7fb5a3db7b46b5e36a1c994b5f94159acf9db65a196322",
+            "japanese": "とらまな"
+          },
+          "target": 142,
+          "record_hex": "387b06088e000000",
+          "english_aliases": [
+            "Safe Pass.",
+            "Safe Pass. sc.",
+            "Safe Passage"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424748,
+            "end_exclusive": 424757,
+            "raw_hex": "83678389837d836900",
+            "sha256": "936618421ec70a624f6f293defd8bd44548b0761855a750f69b65a4d45240281",
+            "japanese": "トラマナ"
+          },
+          "target": 142,
+          "record_hex": "2c7b06088e000000",
+          "english_aliases": [
+            "Safe Pass.",
+            "Safe Pass. sc.",
+            "Safe Passage"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424736,
+            "end_exclusive": 424745,
+            "raw_hex": "82a882a882a982ba00",
+            "sha256": "5b00a141fe955e3a81ed0b1004e0a8286520a6768a20a522e8725b9b4ac87900",
+            "japanese": "おおかぜ"
+          },
+          "target": 143,
+          "record_hex": "207b06088f000000",
+          "english_aliases": [
+            "Gale",
+            "Gale scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424724,
+            "end_exclusive": 424733,
+            "raw_hex": "83498349834a835b00",
+            "sha256": "84c915a713eb95d83490c0f2c46842c4fe86c175a3675a5d3046359b818e02d3",
+            "japanese": "オオカゼ"
+          },
+          "target": 143,
+          "record_hex": "147b06088f000000",
+          "english_aliases": [
+            "Gale",
+            "Gale scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424708,
+            "end_exclusive": 424721,
+            "raw_hex": "82dc82e082cc82b582ce82e800",
+            "sha256": "27062df147d6c2c4e1edf3ac867f18ecdc0163552c8668bd16bd950bad18683f",
+            "japanese": "まものしばり"
+          },
+          "target": 144,
+          "record_hex": "047b060890000000",
+          "english_aliases": [
+            "Foe bind",
+            "Foe bind scroll",
+            "Monster bind"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424692,
+            "end_exclusive": 424705,
+            "raw_hex": "837d8382836d8356836f838a00",
+            "sha256": "3551c407399dc4b552d694627b876fdb4433c81526e8ba5a2655537e86161dde",
+            "japanese": "マモノシバリ"
+          },
+          "target": 144,
+          "record_hex": "f47a060890000000",
+          "english_aliases": [
+            "Foe bind",
+            "Foe bind scroll",
+            "Monster bind"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424680,
+            "end_exclusive": 424689,
+            "raw_hex": "82e982a982c882f100",
+            "sha256": "4f3106a1e93dfdab7a397e3a8df8505141f01e4e2f39235de6090d4ec5d24bdc",
+            "japanese": "るかなん"
+          },
+          "target": 145,
+          "record_hex": "e87a060891000000",
+          "english_aliases": [
+            "Kasap",
+            "Kasap scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424668,
+            "end_exclusive": 424677,
+            "raw_hex": "838b834a8369839300",
+            "sha256": "48468642d0a8ba1fe9f9ddf3359072d6bedd10f6268d283035620af88d1e2d45",
+            "japanese": "ルカナン"
+          },
+          "target": 145,
+          "record_hex": "dc7a060891000000",
+          "english_aliases": [
+            "Kasap",
+            "Kasap scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424656,
+            "end_exclusive": 424665,
+            "raw_hex": "82cd82e882c282af00",
+            "sha256": "0277e6b33b88cf386ffc922428ebf274761f68044e85036ac29c057dc1d4e8c5",
+            "japanese": "はりつけ"
+          },
+          "target": 146,
+          "record_hex": "d07a060892000000",
+          "english_aliases": [
+            "Rooting",
+            "Rooting scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424644,
+            "end_exclusive": 424653,
+            "raw_hex": "836e838a8363835000",
+            "sha256": "1a74077e31947607c58535d0d1d178bd627af060bbf37f82123eed9cbd1eab60",
+            "japanese": "ハリツケ"
+          },
+          "target": 146,
+          "record_hex": "c47a060892000000",
+          "english_aliases": [
+            "Rooting",
+            "Rooting scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424632,
+            "end_exclusive": 424641,
+            "raw_hex": "82d082ab82e682b900",
+            "sha256": "273cb0fbec97a90d68e9a25793f94024e0575d9eaf0ecd1f57f3a8f15e9a247a",
+            "japanese": "ひきよせ"
+          },
+          "target": 147,
+          "record_hex": "b87a060893000000",
+          "english_aliases": [
+            "Pulling",
+            "Pulling scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424620,
+            "end_exclusive": 424629,
+            "raw_hex": "8371834c8388835a00",
+            "sha256": "800b75b01dcef1fa346b23c7f2f81bdb595bcaa3fff6d5d075be1c565c7643e8",
+            "japanese": "ヒキヨセ"
+          },
+          "target": 147,
+          "record_hex": "ac7a060893000000",
+          "english_aliases": [
+            "Pulling",
+            "Pulling scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424608,
+            "end_exclusive": 424617,
+            "raw_hex": "82b482a882e882ad00",
+            "sha256": "fad46f345dbfdc9e191446ce29eb25da8e2b8eda5ffba9980e10f0567b40afa3",
+            "japanese": "ざおりく"
+          },
+          "target": 150,
+          "record_hex": "a07a060896000000",
+          "english_aliases": [
+            "Kazing",
+            "Kazing scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424596,
+            "end_exclusive": 424605,
+            "raw_hex": "83558349838a834e00",
+            "sha256": "ee5264522c28ec3462b09ecc4fdd98a087c2a2f69e13cc4230af27b05198a9a4",
+            "japanese": "ザオリク"
+          },
+          "target": 150,
+          "record_hex": "947a060896000000",
+          "english_aliases": [
+            "Kazing",
+            "Kazing scroll"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        }
+      ]
+    },
+    {
+      "family": "spell",
+      "source_offset": 1328256,
+      "end_exclusive": 1329064,
+      "source_sha256": "e98ed569d042820e38ec544f31d02636bcf4fc2ed7187b316e50d70da1dd144a",
+      "original_entries": [
+        {
+          "source": {
+            "offset": 426124,
+            "end_exclusive": 426129,
+            "raw_hex": "8381838900",
+            "sha256": "30fcdad0ed1d7f639de328b130072e4f5fa676a7d8929cd4821ca5f907a72c24",
+            "japanese": "メラ"
+          },
+          "target": 1,
+          "record_hex": "8c80060801000000",
+          "english_aliases": [
+            "Frizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426116,
+            "end_exclusive": 426121,
+            "raw_hex": "82df82e700",
+            "sha256": "f2e02f42b3eedf31de765d3fd899f6d6e185e99e72de1ea40b18499aa13ad549",
+            "japanese": "めら"
+          },
+          "target": 1,
+          "record_hex": "8480060801000000",
+          "english_aliases": [
+            "Frizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426108,
+            "end_exclusive": 426115,
+            "raw_hex": "83818389837e00",
+            "sha256": "b2a657ddd5bc991ed283dfdb601479edc4f4edd1c52ad09ab7987f0c5af2c2dd",
+            "japanese": "メラミ"
+          },
+          "target": 2,
+          "record_hex": "7c80060802000000",
+          "english_aliases": [
+            "Frizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426100,
+            "end_exclusive": 426107,
+            "raw_hex": "82df82e782dd00",
+            "sha256": "ac290fd085565f8432375fdb95f8d3947b55670fe63add75a087535da88fc030",
+            "japanese": "めらみ"
+          },
+          "target": 2,
+          "record_hex": "7480060802000000",
+          "english_aliases": [
+            "Frizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426088,
+            "end_exclusive": 426099,
+            "raw_hex": "83818389835d815b837d00",
+            "sha256": "e6d029d9e590d829695b6b28c3ecb24fa8daf08d81dd446f1520f07e0ed2e626",
+            "japanese": "メラゾーマ"
+          },
+          "target": 3,
+          "record_hex": "6880060803000000",
+          "english_aliases": [
+            "Kafrizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426076,
+            "end_exclusive": 426087,
+            "raw_hex": "82df82e782bc815b82dc00",
+            "sha256": "ccb3767378d89700cb538e168eb69e35f7ff8e3e61b3f9b3e4b697c0662c6968",
+            "japanese": "めらぞーま"
+          },
+          "target": 3,
+          "record_hex": "5c80060803000000",
+          "english_aliases": [
+            "Kafrizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426068,
+            "end_exclusive": 426073,
+            "raw_hex": "834d838900",
+            "sha256": "9e2c57604f4a2ad7ccca31282bd1379ecbbba443c101484ba5dd86d73ec7a53d",
+            "japanese": "ギラ"
+          },
+          "target": 4,
+          "record_hex": "5480060804000000",
+          "english_aliases": [
+            "Sizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426060,
+            "end_exclusive": 426065,
+            "raw_hex": "82ac82e700",
+            "sha256": "bc15de519b8e7802ef32d2eea0fefddca1f245fa2d25519a04d08af647ae1f2a",
+            "japanese": "ぎら"
+          },
+          "target": 4,
+          "record_hex": "4c80060804000000",
+          "english_aliases": [
+            "Sizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426048,
+            "end_exclusive": 426057,
+            "raw_hex": "8378834d8389837d00",
+            "sha256": "89cd5cd1293546eefd01fcfef1c306c2d99b249272a343d321c7b759ba1b815a",
+            "japanese": "ベギラマ"
+          },
+          "target": 5,
+          "record_hex": "4080060805000000",
+          "english_aliases": [
+            "Sizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426036,
+            "end_exclusive": 426045,
+            "raw_hex": "82d782ac82e782dc00",
+            "sha256": "ac5d1812449d1b00a85374d82e6d3233036a1973e6b636f8ee4ce4b37ae3436f",
+            "japanese": "べぎらま"
+          },
+          "target": 5,
+          "record_hex": "3480060805000000",
+          "english_aliases": [
+            "Sizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426024,
+            "end_exclusive": 426035,
+            "raw_hex": "8378834d83898353839300",
+            "sha256": "9133c8c9858c302d2fd4ac9aade00a175dc3e3ccfc13e35e7a91d669c23a26d2",
+            "japanese": "ベギラゴン"
+          },
+          "target": 6,
+          "record_hex": "2880060806000000",
+          "english_aliases": [
+            "Kasizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426012,
+            "end_exclusive": 426023,
+            "raw_hex": "82d782ac82e782b282f100",
+            "sha256": "58a51073b12287d2ec8d2f84b6b801710362e6c8fc0caad543b57401bc548c94",
+            "japanese": "べぎらごん"
+          },
+          "target": 6,
+          "record_hex": "1c80060806000000",
+          "english_aliases": [
+            "Kasizz"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425140,
+            "end_exclusive": 425145,
+            "raw_hex": "8343834900",
+            "sha256": "2eb5da76afffbd1a8ef2fbec8692f91af9f3e6bde991e86efd8fb2aedd515023",
+            "japanese": "イオ"
+          },
+          "target": 7,
+          "record_hex": "b47c060807000000",
+          "english_aliases": [
+            "Bang"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425148,
+            "end_exclusive": 425153,
+            "raw_hex": "82a282a800",
+            "sha256": "2bc3df322c37d8034bf09231317cec8166be0354eebee643477290934fa509e4",
+            "japanese": "いお"
+          },
+          "target": 7,
+          "record_hex": "bc7c060807000000",
+          "english_aliases": [
+            "Bang"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 426004,
+            "end_exclusive": 426011,
+            "raw_hex": "83438349838900",
+            "sha256": "f4c52ee9c034de01e3c572ac5c35cab214648409a5897c09575c523e744415c0",
+            "japanese": "イオラ"
+          },
+          "target": 8,
+          "record_hex": "1480060808000000",
+          "english_aliases": [
+            "Boom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425996,
+            "end_exclusive": 426003,
+            "raw_hex": "82a282a882e700",
+            "sha256": "5e81d782eff70febd1c6441bfebfef751d2da85cdf74e4144ef529bcb6f08e18",
+            "japanese": "いおら"
+          },
+          "target": 8,
+          "record_hex": "0c80060808000000",
+          "english_aliases": [
+            "Boom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425984,
+            "end_exclusive": 425995,
+            "raw_hex": "8343834983698359839300",
+            "sha256": "22df93d849ac3038129a025d00ca8999970d753190c354e2e7e9f4b3319e984e",
+            "japanese": "イオナズン"
+          },
+          "target": 9,
+          "record_hex": "0080060809000000",
+          "english_aliases": [
+            "Kaboom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425972,
+            "end_exclusive": 425983,
+            "raw_hex": "82a282a882c882b882f100",
+            "sha256": "d19097da462494f9604b46ba1952fd55efbc59e8dc63804d88b026b8b5d1e573",
+            "japanese": "いおなずん"
+          },
+          "target": 9,
+          "record_hex": "f47f060809000000",
+          "english_aliases": [
+            "Kaboom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425964,
+            "end_exclusive": 425969,
+            "raw_hex": "836f834d00",
+            "sha256": "054b658e820bd593e5ab1ba9097d7b1251e5fafbf8b01f20fdd9cb28cc7f1be0",
+            "japanese": "バギ"
+          },
+          "target": 10,
+          "record_hex": "ec7f06080a000000",
+          "english_aliases": [
+            "Woosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425956,
+            "end_exclusive": 425961,
+            "raw_hex": "82ce82ac00",
+            "sha256": "8f75c2bb13dd69b4f0454a8a17d70410eeba263d78eeadba5b6419c6d850764c",
+            "japanese": "ばぎ"
+          },
+          "target": 10,
+          "record_hex": "e47f06080a000000",
+          "english_aliases": [
+            "Woosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425948,
+            "end_exclusive": 425955,
+            "raw_hex": "836f834d837d00",
+            "sha256": "3d2aa7f153504278d81d597e413696ea1f789cc50db39601ad00baac82336c78",
+            "japanese": "バギマ"
+          },
+          "target": 11,
+          "record_hex": "dc7f06080b000000",
+          "english_aliases": [
+            "Swoosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425940,
+            "end_exclusive": 425947,
+            "raw_hex": "82ce82ac82dc00",
+            "sha256": "d554aeac579f88e586aa0bf86350bfba096ce4d79d5e08d46d362fe7eed068bc",
+            "japanese": "ばぎま"
+          },
+          "target": 11,
+          "record_hex": "d47f06080b000000",
+          "english_aliases": [
+            "Swoosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425928,
+            "end_exclusive": 425939,
+            "raw_hex": "836f834d834e838d835800",
+            "sha256": "ad429acf6b938597077d1710cd4146bc40907df29c62964038b7af0c8476a610",
+            "japanese": "バギクロス"
+          },
+          "target": 12,
+          "record_hex": "c87f06080c000000",
+          "english_aliases": [
+            "Kaswoosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425916,
+            "end_exclusive": 425927,
+            "raw_hex": "82ce82ac82ad82eb82b700",
+            "sha256": "03b176fd8b8b4d49ce70414c41a8ecb4bddba9c6e3a853f676e76a8110f4c892",
+            "japanese": "ばぎくろす"
+          },
+          "target": 12,
+          "record_hex": "bc7f06080c000000",
+          "english_aliases": [
+            "Kaswoosh"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425908,
+            "end_exclusive": 425915,
+            "raw_hex": "83718383836800",
+            "sha256": "e88fff87c947275a0d6fe7f0eb38136371784e4941edc48ffaf077a183368700",
+            "japanese": "ヒャド"
+          },
+          "target": 13,
+          "record_hex": "b47f06080d000000",
+          "english_aliases": [
+            "Crack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425900,
+            "end_exclusive": 425907,
+            "raw_hex": "82d082e182c700",
+            "sha256": "a01bf93e023cf0816190890c279f97163a66ffc95ed76d77f4b684acc5eba19c",
+            "japanese": "ひゃど"
+          },
+          "target": 13,
+          "record_hex": "ac7f06080d000000",
+          "english_aliases": [
+            "Crack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425888,
+            "end_exclusive": 425899,
+            "raw_hex": "83718383835f838b835200",
+            "sha256": "b63fd3dc38c08f52b26c036188775ab3104fb08237dfae8825b6d8bf0f7842f5",
+            "japanese": "ヒャダルコ"
+          },
+          "target": 14,
+          "record_hex": "a07f06080e000000",
+          "english_aliases": [
+            "Crackle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425876,
+            "end_exclusive": 425887,
+            "raw_hex": "82d082e182be82e982b100",
+            "sha256": "628e89140943ae7bee88248451901e64cbe93e7c05e9ad805e28f3c4045a4b44",
+            "japanese": "ひゃだるこ"
+          },
+          "target": 14,
+          "record_hex": "947f06080e000000",
+          "english_aliases": [
+            "Crackle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425864,
+            "end_exclusive": 425873,
+            "raw_hex": "837d83718383836800",
+            "sha256": "134adfaf00996252b49d19a17bc57f6770cf3a34cba5847ca0e56bf7ef4a2dca",
+            "japanese": "マヒャド"
+          },
+          "target": 15,
+          "record_hex": "887f06080f000000",
+          "english_aliases": [
+            "Kacrack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425852,
+            "end_exclusive": 425861,
+            "raw_hex": "82dc82d082e182c700",
+            "sha256": "a19437f0513993582c1436faeabda02544510277a1c71cbc2c62496651d61e9a",
+            "japanese": "まひゃど"
+          },
+          "target": 15,
+          "record_hex": "7c7f06080f000000",
+          "english_aliases": [
+            "Kacrack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425840,
+            "end_exclusive": 425851,
+            "raw_hex": "83718383835f8343839300",
+            "sha256": "cef356b4511232dae76b32203bdde2f77b9449663b81f7901b5c82c732ee0d3b",
+            "japanese": "ヒャダイン"
+          },
+          "target": 16,
+          "record_hex": "707f060810000000",
+          "english_aliases": [
+            "Room Kacrack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425828,
+            "end_exclusive": 425839,
+            "raw_hex": "82d082e182be82a282f100",
+            "sha256": "ce45c7bf534d5ac5f9a495714601fb4cd27d73719c047a7e6bbe7b99082ebf5f",
+            "japanese": "ひゃだいん"
+          },
+          "target": 16,
+          "record_hex": "647f060810000000",
+          "english_aliases": [
+            "Room Kacrack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425820,
+            "end_exclusive": 425827,
+            "raw_hex": "83668343839300",
+            "sha256": "adfecef6d4bd26bd0296f9769a7bc2d54c1b3a73e92a0901439072ceccbb481c",
+            "japanese": "デイン"
+          },
+          "target": 17,
+          "record_hex": "5c7f060811000000",
+          "english_aliases": [
+            "Zap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425812,
+            "end_exclusive": 425819,
+            "raw_hex": "82c582a282f100",
+            "sha256": "f2648c79cb13ca569b43b371fee2518e59dffe6430713729b464a6737fb9ef57",
+            "japanese": "でいん"
+          },
+          "target": 17,
+          "record_hex": "547f060811000000",
+          "english_aliases": [
+            "Zap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425800,
+            "end_exclusive": 425811,
+            "raw_hex": "8389834383668343839300",
+            "sha256": "e04931da7eb58e11ac506d911db5665c6738cd464f3823e357598b466deede5e",
+            "japanese": "ライデイン"
+          },
+          "target": 18,
+          "record_hex": "487f060812000000",
+          "english_aliases": [
+            "Zapple"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425788,
+            "end_exclusive": 425799,
+            "raw_hex": "82e782a282c582a282f100",
+            "sha256": "42a4bc85dd3df7400f245efc63f085c0b89b724c7634ed39f0326dacd3582f5c",
+            "japanese": "らいでいん"
+          },
+          "target": 18,
+          "record_hex": "3c7f060812000000",
+          "english_aliases": [
+            "Zapple"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425776,
+            "end_exclusive": 425787,
+            "raw_hex": "834d834b83668343839300",
+            "sha256": "d83f750e31dc77af6ae3ab98ed4828017cd7c1a65619c6183b0db0bc6aa4e90e",
+            "japanese": "ギガデイン"
+          },
+          "target": 19,
+          "record_hex": "307f060813000000",
+          "english_aliases": [
+            "Kazap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425764,
+            "end_exclusive": 425775,
+            "raw_hex": "82ac82aa82c582a282f100",
+            "sha256": "5ddbbb411e5c2b04c5f7adafa0a1f290d105b077a5636871f35aa69efafd83f9",
+            "japanese": "ぎがでいん"
+          },
+          "target": 19,
+          "record_hex": "247f060813000000",
+          "english_aliases": [
+            "Kazap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425756,
+            "end_exclusive": 425761,
+            "raw_hex": "8355834c00",
+            "sha256": "a3a3f2efa4eebd99f33c52a1996d33777001ac468cc6aedd97b48bdb3772acf7",
+            "japanese": "ザキ"
+          },
+          "target": 20,
+          "record_hex": "1c7f060814000000",
+          "english_aliases": [
+            "Whack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425748,
+            "end_exclusive": 425753,
+            "raw_hex": "82b482ab00",
+            "sha256": "d8741e7ad27b42ca5b619dc9d120bd783ee775cff1a2b9e017cf2b97b9fec888",
+            "japanese": "ざき"
+          },
+          "target": 20,
+          "record_hex": "147f060814000000",
+          "english_aliases": [
+            "Whack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425736,
+            "end_exclusive": 425747,
+            "raw_hex": "83558389834c815b837d00",
+            "sha256": "5bd86f0bb9bf751d87de1889623d4cbfb83de955e13ba267a553c3cdb3e6c9d0",
+            "japanese": "ザラキーマ"
+          },
+          "target": 21,
+          "record_hex": "087f060815000000",
+          "english_aliases": [
+            "Kathwack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425724,
+            "end_exclusive": 425735,
+            "raw_hex": "82b482e782ab815b82dc00",
+            "sha256": "51bbe434544cdf90f11b86187c2bd67dcdbe43d87a52582aa0812dadab087e0b",
+            "japanese": "ざらきーま"
+          },
+          "target": 21,
+          "record_hex": "fc7e060815000000",
+          "english_aliases": [
+            "Kathwack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425712,
+            "end_exclusive": 425721,
+            "raw_hex": "8381834b8393836500",
+            "sha256": "731e6fbaf4c25e3e8da0344b6fd0ed4dc3bdbc2df9a0e7d42af6c6bc7c288c32",
+            "japanese": "メガンテ"
+          },
+          "target": 22,
+          "record_hex": "f07e060816000000",
+          "english_aliases": [
+            "Kamikazee"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425700,
+            "end_exclusive": 425709,
+            "raw_hex": "82df82aa82f182c400",
+            "sha256": "60621df8d1d8c2701c4137fcb605d4e0d90b2fa1f09c1e0e92df5fb90145b3a0",
+            "japanese": "めがんて"
+          },
+          "target": 22,
+          "record_hex": "e47e060816000000",
+          "english_aliases": [
+            "Kamikazee"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425688,
+            "end_exclusive": 425697,
+            "raw_hex": "8389838a837a815b00",
+            "sha256": "a7fc7eb594f1b60f12365e5bc6d991bbd9751c075ce96958365170af35ab5628",
+            "japanese": "ラリホー"
+          },
+          "target": 23,
+          "record_hex": "d87e060817000000",
+          "english_aliases": [
+            "Snooze"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425676,
+            "end_exclusive": 425685,
+            "raw_hex": "82e782e882d9815b00",
+            "sha256": "fa2d8c9a7d32b3b82f7345ea2a1724cef145ed18040f5467d8ce42334ab5553b",
+            "japanese": "らりほー"
+          },
+          "target": 23,
+          "record_hex": "cc7e060817000000",
+          "english_aliases": [
+            "Snooze"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425664,
+            "end_exclusive": 425675,
+            "raw_hex": "837d837a8367815b839300",
+            "sha256": "04989db5eaef8478c7cc26ead53b7e95a0f0aac215eb193e9c180e1b30146a7e",
+            "japanese": "マホトーン"
+          },
+          "target": 24,
+          "record_hex": "c07e060818000000",
+          "english_aliases": [
+            "Fizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425652,
+            "end_exclusive": 425663,
+            "raw_hex": "82dc82d982c6815b82f100",
+            "sha256": "0d2492c75dccd37cc92dace0e2b325a9ea4bb3550a5a351d3adf5640260a78a4",
+            "japanese": "まほとーん"
+          },
+          "target": 24,
+          "record_hex": "b47e060818000000",
+          "english_aliases": [
+            "Fizzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425640,
+            "end_exclusive": 425649,
+            "raw_hex": "837d836b815b835400",
+            "sha256": "ff7f2213ef5e7e17af746741821c1e7bd3d5a84b82b63a7b29777b9c0f61dd20",
+            "japanese": "マヌーサ"
+          },
+          "target": 25,
+          "record_hex": "a87e060819000000",
+          "english_aliases": [
+            "Dazzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425628,
+            "end_exclusive": 425637,
+            "raw_hex": "82dc82ca815b82b300",
+            "sha256": "319bce23dd19042c186b60c455c4052b16a14eb7b66a5a8db193bde7133d979d",
+            "japanese": "まぬーさ"
+          },
+          "target": 25,
+          "record_hex": "9c7e060819000000",
+          "english_aliases": [
+            "Dazzle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425616,
+            "end_exclusive": 425625,
+            "raw_hex": "8381835f8370836a00",
+            "sha256": "d4f1393b0a97feb17c9db76d6b9f519c22f66266e9bec2b046a1f23f820f6c4c",
+            "japanese": "メダパニ"
+          },
+          "target": 26,
+          "record_hex": "907e06081a000000",
+          "english_aliases": [
+            "Fuddle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425604,
+            "end_exclusive": 425613,
+            "raw_hex": "82df82be82cf82c900",
+            "sha256": "f39ea588f6f0b855fa21cc8d5550073f59048378f5c1910ecf9eb2d730d124d9",
+            "japanese": "めだぱに"
+          },
+          "target": 26,
+          "record_hex": "847e06081a000000",
+          "english_aliases": [
+            "Fuddle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425592,
+            "end_exclusive": 425601,
+            "raw_hex": "837b837e8349835800",
+            "sha256": "3d9e964eb97e661156d54e0ceff516033ed406ee2f0548aee588148962e10554",
+            "japanese": "ボミオス"
+          },
+          "target": 27,
+          "record_hex": "787e06081b000000",
+          "english_aliases": [
+            "Deceleratle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425580,
+            "end_exclusive": 425589,
+            "raw_hex": "82da82dd82a882b700",
+            "sha256": "31c585775c38117679b1616138dfed03c28d97f7708231a0c4e243d5582f9d5a",
+            "japanese": "ぼみおす"
+          },
+          "target": 27,
+          "record_hex": "6c7e06081b000000",
+          "english_aliases": [
+            "Deceleratle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425180,
+            "end_exclusive": 425189,
+            "raw_hex": "835683838369834e00",
+            "sha256": "223fc01ee1b9f1177dbc6612e8d8f26e31a3e7f4887df77c3993e6cf97ba1b60",
+            "japanese": "シャナク"
+          },
+          "target": 29,
+          "record_hex": "dc7c06081d000000",
+          "english_aliases": [
+            "Sheen"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425192,
+            "end_exclusive": 425201,
+            "raw_hex": "82b582e182c882ad00",
+            "sha256": "d506ddba4b4dfe2206796d11a3b3b571bd2740eec05478dbc1351ac0de8c7522",
+            "japanese": "しゃなく"
+          },
+          "target": 29,
+          "record_hex": "e87c06081d000000",
+          "english_aliases": [
+            "Sheen"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425564,
+            "end_exclusive": 425579,
+            "raw_hex": "837d83578362834e836f838a834100",
+            "sha256": "653b99d43316a07dbdaa60a48858bb1697563854a0a910c5f9ff569956fe7c41",
+            "japanese": "マジックバリア"
+          },
+          "target": 30,
+          "record_hex": "5c7e06081e000000",
+          "english_aliases": [
+            "Magic Barrier"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425548,
+            "end_exclusive": 425563,
+            "raw_hex": "82dc82b682c182ad82ce82e882a000",
+            "sha256": "f8b60a334f23d0d314e60cd631a185a980a1ab1019552500679bcd63e178e14d",
+            "japanese": "まじっくばりあ"
+          },
+          "target": 30,
+          "record_hex": "4c7e06081e000000",
+          "english_aliases": [
+            "Magic Barrier"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425536,
+            "end_exclusive": 425547,
+            "raw_hex": "837d837a834a8393835e00",
+            "sha256": "0f87561182c97b8fa87d0217ccdea892159cace101919773a0acf76af2c6d82c",
+            "japanese": "マホカンタ"
+          },
+          "target": 32,
+          "record_hex": "407e060820000000",
+          "english_aliases": [
+            "Bounce"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425524,
+            "end_exclusive": 425535,
+            "raw_hex": "82dc82d982a982f182bd00",
+            "sha256": "dc9defb1b17ce3789b0cc74a0a05133ab72346dc47a5e01715d39c352cab5652",
+            "japanese": "まほかんた"
+          },
+          "target": 32,
+          "record_hex": "347e060820000000",
+          "english_aliases": [
+            "Bounce"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425512,
+            "end_exclusive": 425521,
+            "raw_hex": "838283568383835800",
+            "sha256": "c9662a933b92aed58af2b41a9238f5269e96cb3df5b1c58f59f21843d6f0765c",
+            "japanese": "モシャス"
+          },
+          "target": 33,
+          "record_hex": "287e060821000000",
+          "english_aliases": [
+            "Morph"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425500,
+            "end_exclusive": 425509,
+            "raw_hex": "82e082b582e182b700",
+            "sha256": "bc7b7f1dcd3fa298c5d205e4821c0cecab84afaa5ee0773148e0de5f220177c6",
+            "japanese": "もしゃす"
+          },
+          "target": 33,
+          "record_hex": "1c7e060821000000",
+          "english_aliases": [
+            "Morph"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425488,
+            "end_exclusive": 425497,
+            "raw_hex": "8381834b8355838b00",
+            "sha256": "be4e0794c8933b7dc568c58ba85863f13a3502b9fd175d09269bd7b77d0f9461",
+            "japanese": "メガザル"
+          },
+          "target": 36,
+          "record_hex": "107e060824000000",
+          "english_aliases": [
+            "Kerplunk"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425476,
+            "end_exclusive": 425485,
+            "raw_hex": "82df82aa82b482e900",
+            "sha256": "585370db8f4828719143f086a3ac87c6f2649235edabdba5c2b98747a75cba20",
+            "japanese": "めがざる"
+          },
+          "target": 36,
+          "record_hex": "047e060824000000",
+          "english_aliases": [
+            "Kerplunk"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425464,
+            "end_exclusive": 425473,
+            "raw_hex": "834c83418389838b00",
+            "sha256": "04f271be9945c2408c16502a0b07c6f874deba3fad274c186ee968a7719a0e4d",
+            "japanese": "キアラル"
+          },
+          "target": 39,
+          "record_hex": "f87d060827000000",
+          "english_aliases": [
+            "Defuddle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425452,
+            "end_exclusive": 425461,
+            "raw_hex": "82ab82a082e782e900",
+            "sha256": "18010fa337c77b92176de1070b698ac37e310fcbe22a3cd1431d477b040c7975",
+            "japanese": "きあらる"
+          },
+          "target": 39,
+          "record_hex": "ec7d060827000000",
+          "english_aliases": [
+            "Defuddle"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424748,
+            "end_exclusive": 424757,
+            "raw_hex": "83678389837d836900",
+            "sha256": "936618421ec70a624f6f293defd8bd44548b0761855a750f69b65a4d45240281",
+            "japanese": "トラマナ"
+          },
+          "target": 40,
+          "record_hex": "2c7b060828000000",
+          "english_aliases": [
+            "Safe Passage"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424760,
+            "end_exclusive": 424769,
+            "raw_hex": "82c682e782dc82c800",
+            "sha256": "021fd533297b1c234c7fb5a3db7b46b5e36a1c994b5f94159acf9db65a196322",
+            "japanese": "とらまな"
+          },
+          "target": 40,
+          "record_hex": "387b060828000000",
+          "english_aliases": [
+            "Safe Passage"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424852,
+            "end_exclusive": 424861,
+            "raw_hex": "838c837e815b838900",
+            "sha256": "d21c3638dd2348eb47ed02a21e8c261ffd56e0ccd68bccd8cce65e40851b8b41",
+            "japanese": "レミーラ"
+          },
+          "target": 41,
+          "record_hex": "947b060829000000",
+          "english_aliases": [
+            "Glow"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424864,
+            "end_exclusive": 424873,
+            "raw_hex": "82ea82dd815b82e700",
+            "sha256": "313b86ffe81ae33d437c40af048028b35840d3b4d3fe9e3fd3d4d9e87c8a2dd3",
+            "japanese": "れみーら"
+          },
+          "target": 41,
+          "record_hex": "a07b060829000000",
+          "english_aliases": [
+            "Glow"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425440,
+            "end_exclusive": 425451,
+            "raw_hex": "8370838b83768393836500",
+            "sha256": "f807155eb6b93c9a6ba32aab6ef9ffb3001852b0552922d6fb7239be707c5d3a",
+            "japanese": "パルプンテ"
+          },
+          "target": 42,
+          "record_hex": "e07d06082a000000",
+          "english_aliases": [
+            "Hocus Pocus"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425428,
+            "end_exclusive": 425439,
+            "raw_hex": "82cf82e982d582f182c400",
+            "sha256": "b5d40012aa1f9d1c44aff38fd5dfb4352af6d3407727f5d085225ef666862fc7",
+            "japanese": "ぱるぷんて"
+          },
+          "target": 42,
+          "record_hex": "d47d06082a000000",
+          "english_aliases": [
+            "Hocus Pocus"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425412,
+            "end_exclusive": 425425,
+            "raw_hex": "8357835383588370815b834e00",
+            "sha256": "f564d7199a3a0ac28700abdb595060ff012fb643893d289a7fd4cc249cd31768",
+            "japanese": "ジゴスパーク"
+          },
+          "target": 43,
+          "record_hex": "c47d06082b000000",
+          "english_aliases": [
+            "Lightning Storm"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425396,
+            "end_exclusive": 425409,
+            "raw_hex": "82b682b282b782cf815b82ad00",
+            "sha256": "23859283921d60acdb45fa6190699b9298de37777abf333f2a422c3fe92a47f9",
+            "japanese": "じごすぱーく"
+          },
+          "target": 43,
+          "record_hex": "b47d06082b000000",
+          "english_aliases": [
+            "Lightning Storm"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425384,
+            "end_exclusive": 425395,
+            "raw_hex": "83728362834f836f839300",
+            "sha256": "348d4f79484caacc8a43979c98831afc9ee1a55138220077bb6a2eae2c4ad63c",
+            "japanese": "ビッグバン"
+          },
+          "target": 44,
+          "record_hex": "a87d06082c000000",
+          "english_aliases": [
+            "Big Banga"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425372,
+            "end_exclusive": 425383,
+            "raw_hex": "82d182c182ae82ce82f100",
+            "sha256": "9082dfc16bf8ef1c492b801c57e7d6f4c4c89b6c8ebef34e9913abb2079179df",
+            "japanese": "びっぐばん"
+          },
+          "target": 44,
+          "record_hex": "9c7d06082c000000",
+          "english_aliases": [
+            "Big Banga"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425156,
+            "end_exclusive": 425165,
+            "raw_hex": "834383938370835800",
+            "sha256": "a9e8838ba50d3db81264633f54786f9146f507b5cded60f12367b9bcfd2585fa",
+            "japanese": "インパス"
+          },
+          "target": 45,
+          "record_hex": "c47c06082d000000",
+          "english_aliases": [
+            "Peep"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425168,
+            "end_exclusive": 425177,
+            "raw_hex": "82a282f182cf82b700",
+            "sha256": "143d7a8c789bd63afb4762f491105ed7f0f197e782894e839e6b0c1cb1e2024a",
+            "japanese": "いんぱす"
+          },
+          "target": 45,
+          "record_hex": "d07c06082d000000",
+          "english_aliases": [
+            "Peep"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425360,
+            "end_exclusive": 425369,
+            "raw_hex": "837d837a8367838900",
+            "sha256": "7468d223e0e043eb57149f64508566a3eba603c4b36bc4ba3603d15f704987fe",
+            "japanese": "マホトラ"
+          },
+          "target": 46,
+          "record_hex": "907d06082e000000",
+          "english_aliases": [
+            "Drain Magic"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425348,
+            "end_exclusive": 425357,
+            "raw_hex": "82dc82d982c682e700",
+            "sha256": "790696a65ae89ded752d50fc0fe0493b9de0c0ab0d8988175df1108a56d7c32a",
+            "japanese": "まほとら"
+          },
+          "target": 46,
+          "record_hex": "847d06082e000000",
+          "english_aliases": [
+            "Drain Magic"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425336,
+            "end_exclusive": 425345,
+            "raw_hex": "8341836f834a838000",
+            "sha256": "5e6822139fd3f2bb6dacd62be4920f69c30850a34e46075660f82e0f55fea992",
+            "japanese": "アバカム"
+          },
+          "target": 47,
+          "record_hex": "787d06082f000000",
+          "english_aliases": [
+            "Click"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425324,
+            "end_exclusive": 425333,
+            "raw_hex": "82a082ce82a982de00",
+            "sha256": "d2188b36ac4c76ad713ca84bb9f364e9ea71f98a52c5c987af5a2fd76902bfbe",
+            "japanese": "あばかむ"
+          },
+          "target": 47,
+          "record_hex": "6c7d06082f000000",
+          "english_aliases": [
+            "Click"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425316,
+            "end_exclusive": 425323,
+            "raw_hex": "838b834a836a00",
+            "sha256": "e80dfe10c93225b1bfc850bbeea29ae6a00fefc1014268774202d881d364f3ec",
+            "japanese": "ルカニ"
+          },
+          "target": 48,
+          "record_hex": "647d060830000000",
+          "english_aliases": [
+            "Sap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425308,
+            "end_exclusive": 425315,
+            "raw_hex": "82e982a982c900",
+            "sha256": "6cf9990d84af658ba5d9ec26360de775d24705d679d4442da6b87a1a5725cb7b",
+            "japanese": "るかに"
+          },
+          "target": 48,
+          "record_hex": "5c7d060830000000",
+          "english_aliases": [
+            "Sap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424668,
+            "end_exclusive": 424677,
+            "raw_hex": "838b834a8369839300",
+            "sha256": "48468642d0a8ba1fe9f9ddf3359072d6bedd10f6268d283035620af88d1e2d45",
+            "japanese": "ルカナン"
+          },
+          "target": 49,
+          "record_hex": "dc7a060831000000",
+          "english_aliases": [
+            "Kasap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424680,
+            "end_exclusive": 424689,
+            "raw_hex": "82e982a982c882f100",
+            "sha256": "4f3106a1e93dfdab7a397e3a8df8505141f01e4e2f39235de6090d4ec5d24bdc",
+            "japanese": "るかなん"
+          },
+          "target": 49,
+          "record_hex": "e87a060831000000",
+          "english_aliases": [
+            "Kasap"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424988,
+            "end_exclusive": 424995,
+            "raw_hex": "8358834a838900",
+            "sha256": "fda17aaa05191328c2a7f5bd62a827b590db0e6d8311882b167378b0ce317673",
+            "japanese": "スカラ"
+          },
+          "target": 50,
+          "record_hex": "1c7c060832000000",
+          "english_aliases": [
+            "Buff"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 424996,
+            "end_exclusive": 425003,
+            "raw_hex": "82b782a982e700",
+            "sha256": "fe28bd0ac6aa56e7cfb706b80f85bcfbca5f8498b8c818dc8a53ba87333e2036",
+            "japanese": "すから"
+          },
+          "target": 50,
+          "record_hex": "247c060832000000",
+          "english_aliases": [
+            "Buff"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425296,
+            "end_exclusive": 425307,
+            "raw_hex": "834183588367838d839300",
+            "sha256": "f4576f1af2a55266cc3c4ab100deea76bbea09adf2723be9fdceaf3fb9931659",
+            "japanese": "アストロン"
+          },
+          "target": 51,
+          "record_hex": "507d060833000000",
+          "english_aliases": [
+            "Kaclang"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425284,
+            "end_exclusive": 425295,
+            "raw_hex": "82a082b782c682eb82f100",
+            "sha256": "2c29c1bd76103b054598fae64e5182df9d1942c5d8327bf5e5c20557a23fe98a",
+            "japanese": "あすとろん"
+          },
+          "target": 51,
+          "record_hex": "447d060833000000",
+          "english_aliases": [
+            "Kaclang"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425276,
+            "end_exclusive": 425283,
+            "raw_hex": "83558389834c00",
+            "sha256": "f15a952253e081ab18f74909b8c0c49fe8483e3ca88842b91b8820b527d92503",
+            "japanese": "ザラキ"
+          },
+          "target": 55,
+          "record_hex": "3c7d060837000000",
+          "english_aliases": [
+            "Thwack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425268,
+            "end_exclusive": 425275,
+            "raw_hex": "82b482e782ab00",
+            "sha256": "c80e15fdce9e03106d430022a3a5a93064d618a0eaf60ff70642e4f3de9e9d9c",
+            "japanese": "ざらき"
+          },
+          "target": 55,
+          "record_hex": "347d060837000000",
+          "english_aliases": [
+            "Thwack"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425256,
+            "end_exclusive": 425265,
+            "raw_hex": "836a83748389838000",
+            "sha256": "39502ef912185183878f8156ce939c408b1e6cb80e3e359bdb254cd15da8268b",
+            "japanese": "ニフラム"
+          },
+          "target": 56,
+          "record_hex": "287d060838000000",
+          "english_aliases": [
+            "Poof"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425244,
+            "end_exclusive": 425253,
+            "raw_hex": "82c982d382e782de00",
+            "sha256": "dbd8b70d35e6e486113d14d5c79f2d7f2643886d5ed6e740b4ed7966f7e50404",
+            "japanese": "にふらむ"
+          },
+          "target": 56,
+          "record_hex": "1c7d060838000000",
+          "english_aliases": [
+            "Poof"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425232,
+            "end_exclusive": 425243,
+            "raw_hex": "836f8356838b815b838900",
+            "sha256": "179651e7df52b762f85378ffe6b4f13d38d38301831bdc7b63b641db25ad390a",
+            "japanese": "バシルーラ"
+          },
+          "target": 57,
+          "record_hex": "107d060839000000",
+          "english_aliases": [
+            "Bazoom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425220,
+            "end_exclusive": 425231,
+            "raw_hex": "82ce82b582e9815b82e700",
+            "sha256": "f8fdc0fa93c470f446f59b15a77077a386a9fe7f67544bff1d55aaf27ad7d79c",
+            "japanese": "ばしるーら"
+          },
+          "target": 57,
+          "record_hex": "047d060839000000",
+          "english_aliases": [
+            "Bazoom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425092,
+            "end_exclusive": 425101,
+            "raw_hex": "838a838c837e836700",
+            "sha256": "bfd87ab98aad6a2d5de4ca90708f53fff11102f914ecf0d599423ca7350f9351",
+            "japanese": "リレミト"
+          },
+          "target": 58,
+          "record_hex": "847c06083a000000",
+          "english_aliases": [
+            "Evac"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425104,
+            "end_exclusive": 425113,
+            "raw_hex": "82e882ea82dd82c600",
+            "sha256": "929ef4dfd74a5871f242afd8571b65f5dd41d989aff275f4e9d4aedcf5b3ebe9",
+            "japanese": "りれみと"
+          },
+          "target": 58,
+          "record_hex": "907c06083a000000",
+          "english_aliases": [
+            "Evac"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425212,
+            "end_exclusive": 425219,
+            "raw_hex": "838b815b838900",
+            "sha256": "dd9764a6782a477e99422a97edd829b54841a31f1fdc4241298cae236a84880a",
+            "japanese": "ルーラ"
+          },
+          "target": 59,
+          "record_hex": "fc7c06083b000000",
+          "english_aliases": [
+            "Zoom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        },
+        {
+          "source": {
+            "offset": 425204,
+            "end_exclusive": 425211,
+            "raw_hex": "82e9815b82e700",
+            "sha256": "3b1a112cca93c57aaa5763c04f8591d1414afa0b2d78fb34e071c66f6c48ba48",
+            "japanese": "るーら"
+          },
+          "target": 59,
+          "record_hex": "f47c06083b000000",
+          "english_aliases": [
+            "Zoom"
+          ],
+          "status": "reviewed",
+          "disposition": "Original kana input retained for compatibility; English aliases select the identical original target."
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "writing-input.scroll.116.0",
+      "family": "scroll",
+      "target": 116,
+      "english": "Sheen",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.116.1",
+      "family": "scroll",
+      "target": 116,
+      "english": "Sheen scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.117.2",
+      "family": "scroll",
+      "target": 117,
+      "english": "Peep",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.117.3",
+      "family": "scroll",
+      "target": 117,
+      "english": "Peep scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.118.4",
+      "family": "scroll",
+      "target": 118,
+      "english": "Bang",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.118.5",
+      "family": "scroll",
+      "target": 118,
+      "english": "Bang scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.119.6",
+      "family": "scroll",
+      "target": 119,
+      "english": "Mouthseal",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.119.7",
+      "family": "scroll",
+      "target": 119,
+      "english": "Mouthseal scr.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.120.8",
+      "family": "scroll",
+      "target": 120,
+      "english": "Evac",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.120.9",
+      "family": "scroll",
+      "target": 120,
+      "english": "Evac scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.121.10",
+      "family": "scroll",
+      "target": 121,
+      "english": "Trap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.121.11",
+      "family": "scroll",
+      "target": 121,
+      "english": "Trap scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.122.12",
+      "family": "scroll",
+      "target": 122,
+      "english": "Great room",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.122.13",
+      "family": "scroll",
+      "target": 122,
+      "english": "Great room scr.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.123.14",
+      "family": "scroll",
+      "target": 123,
+      "english": "Monster",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.123.15",
+      "family": "scroll",
+      "target": 123,
+      "english": "Monster scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.125.16",
+      "family": "scroll",
+      "target": 125,
+      "english": "Oomphle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.125.17",
+      "family": "scroll",
+      "target": 125,
+      "english": "Oomphle scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.126.18",
+      "family": "scroll",
+      "target": 126,
+      "english": "Buff",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.126.19",
+      "family": "scroll",
+      "target": 126,
+      "english": "Buff scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.127.20",
+      "family": "scroll",
+      "target": 127,
+      "english": "Plating",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.127.21",
+      "family": "scroll",
+      "target": 127,
+      "english": "Plating scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.129.22",
+      "family": "scroll",
+      "target": 129,
+      "english": "No-pickup",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.129.23",
+      "family": "scroll",
+      "target": 129,
+      "english": "No-pickup scr.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.130.24",
+      "family": "scroll",
+      "target": 130,
+      "english": "Sanctuary",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.130.25",
+      "family": "scroll",
+      "target": 130,
+      "english": "Sanctuary scr.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.131.26",
+      "family": "scroll",
+      "target": 131,
+      "english": "See-all",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.131.27",
+      "family": "scroll",
+      "target": 131,
+      "english": "See-all scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.132.28",
+      "family": "scroll",
+      "target": 132,
+      "english": "Bread",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.132.29",
+      "family": "scroll",
+      "target": 132,
+      "english": "Bread scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.133.30",
+      "family": "scroll",
+      "target": 133,
+      "english": "Prayer",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.133.31",
+      "family": "scroll",
+      "target": 133,
+      "english": "Prayer scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.136.32",
+      "family": "scroll",
+      "target": 136,
+      "english": "Glow",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.136.33",
+      "family": "scroll",
+      "target": 136,
+      "english": "Glow scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.137.34",
+      "family": "scroll",
+      "target": 137,
+      "english": "Binding",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.137.35",
+      "family": "scroll",
+      "target": 137,
+      "english": "Binding scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.140.36",
+      "family": "scroll",
+      "target": 140,
+      "english": "Lyre of Ire",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.140.37",
+      "family": "scroll",
+      "target": 140,
+      "english": "Lyre of Ire sc.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.141.38",
+      "family": "scroll",
+      "target": 141,
+      "english": "Foe sight",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.141.39",
+      "family": "scroll",
+      "target": 141,
+      "english": "Foe sight scr.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.142.40",
+      "family": "scroll",
+      "target": 142,
+      "english": "Safe Pass.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.142.41",
+      "family": "scroll",
+      "target": 142,
+      "english": "Safe Pass. sc.",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.142.42",
+      "family": "scroll",
+      "target": 142,
+      "english": "Safe Passage",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.143.43",
+      "family": "scroll",
+      "target": 143,
+      "english": "Gale",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.143.44",
+      "family": "scroll",
+      "target": 143,
+      "english": "Gale scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.144.45",
+      "family": "scroll",
+      "target": 144,
+      "english": "Foe bind",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.144.46",
+      "family": "scroll",
+      "target": 144,
+      "english": "Foe bind scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.144.47",
+      "family": "scroll",
+      "target": 144,
+      "english": "Monster bind",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.145.48",
+      "family": "scroll",
+      "target": 145,
+      "english": "Kasap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.145.49",
+      "family": "scroll",
+      "target": 145,
+      "english": "Kasap scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.146.50",
+      "family": "scroll",
+      "target": 146,
+      "english": "Rooting",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.146.51",
+      "family": "scroll",
+      "target": 146,
+      "english": "Rooting scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.147.52",
+      "family": "scroll",
+      "target": 147,
+      "english": "Pulling",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.147.53",
+      "family": "scroll",
+      "target": 147,
+      "english": "Pulling scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.150.54",
+      "family": "scroll",
+      "target": 150,
+      "english": "Kazing",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.scroll.150.55",
+      "family": "scroll",
+      "target": 150,
+      "english": "Kazing scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.1.56",
+      "family": "spell",
+      "target": 1,
+      "english": "Frizz",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.2.57",
+      "family": "spell",
+      "target": 2,
+      "english": "Frizzle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.3.58",
+      "family": "spell",
+      "target": 3,
+      "english": "Kafrizz",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.4.59",
+      "family": "spell",
+      "target": 4,
+      "english": "Sizz",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.5.60",
+      "family": "spell",
+      "target": 5,
+      "english": "Sizzle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.6.61",
+      "family": "spell",
+      "target": 6,
+      "english": "Kasizz",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.7.62",
+      "family": "spell",
+      "target": 7,
+      "english": "Bang",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.8.63",
+      "family": "spell",
+      "target": 8,
+      "english": "Boom",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.9.64",
+      "family": "spell",
+      "target": 9,
+      "english": "Kaboom",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.10.65",
+      "family": "spell",
+      "target": 10,
+      "english": "Woosh",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.11.66",
+      "family": "spell",
+      "target": 11,
+      "english": "Swoosh",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.12.67",
+      "family": "spell",
+      "target": 12,
+      "english": "Kaswoosh",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.13.68",
+      "family": "spell",
+      "target": 13,
+      "english": "Crack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.14.69",
+      "family": "spell",
+      "target": 14,
+      "english": "Crackle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.15.70",
+      "family": "spell",
+      "target": 15,
+      "english": "Kacrack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.16.71",
+      "family": "spell",
+      "target": 16,
+      "english": "Room Kacrack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.17.72",
+      "family": "spell",
+      "target": 17,
+      "english": "Zap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.18.73",
+      "family": "spell",
+      "target": 18,
+      "english": "Zapple",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.19.74",
+      "family": "spell",
+      "target": 19,
+      "english": "Kazap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.20.75",
+      "family": "spell",
+      "target": 20,
+      "english": "Whack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.21.76",
+      "family": "spell",
+      "target": 21,
+      "english": "Kathwack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.22.77",
+      "family": "spell",
+      "target": 22,
+      "english": "Kamikazee",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.23.78",
+      "family": "spell",
+      "target": 23,
+      "english": "Snooze",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.24.79",
+      "family": "spell",
+      "target": 24,
+      "english": "Fizzle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.25.80",
+      "family": "spell",
+      "target": 25,
+      "english": "Dazzle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.26.81",
+      "family": "spell",
+      "target": 26,
+      "english": "Fuddle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.27.82",
+      "family": "spell",
+      "target": 27,
+      "english": "Deceleratle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.29.83",
+      "family": "spell",
+      "target": 29,
+      "english": "Sheen",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.30.84",
+      "family": "spell",
+      "target": 30,
+      "english": "Magic Barrier",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.32.85",
+      "family": "spell",
+      "target": 32,
+      "english": "Bounce",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.33.86",
+      "family": "spell",
+      "target": 33,
+      "english": "Morph",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.36.87",
+      "family": "spell",
+      "target": 36,
+      "english": "Kerplunk",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.39.88",
+      "family": "spell",
+      "target": 39,
+      "english": "Defuddle",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.40.89",
+      "family": "spell",
+      "target": 40,
+      "english": "Safe Passage",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.41.90",
+      "family": "spell",
+      "target": 41,
+      "english": "Glow",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.42.91",
+      "family": "spell",
+      "target": 42,
+      "english": "Hocus Pocus",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.43.92",
+      "family": "spell",
+      "target": 43,
+      "english": "Lightning Storm",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.44.93",
+      "family": "spell",
+      "target": 44,
+      "english": "Big Banga",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.45.94",
+      "family": "spell",
+      "target": 45,
+      "english": "Peep",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.46.95",
+      "family": "spell",
+      "target": 46,
+      "english": "Drain Magic",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.47.96",
+      "family": "spell",
+      "target": 47,
+      "english": "Click",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.48.97",
+      "family": "spell",
+      "target": 48,
+      "english": "Sap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.49.98",
+      "family": "spell",
+      "target": 49,
+      "english": "Kasap",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.50.99",
+      "family": "spell",
+      "target": 50,
+      "english": "Buff",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.51.100",
+      "family": "spell",
+      "target": 51,
+      "english": "Kaclang",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.55.101",
+      "family": "spell",
+      "target": 55,
+      "english": "Thwack",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.56.102",
+      "family": "spell",
+      "target": 56,
+      "english": "Poof",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.57.103",
+      "family": "spell",
+      "target": 57,
+      "english": "Bazoom",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.58.104",
+      "family": "spell",
+      "target": 58,
+      "english": "Evac",
+      "status": "reviewed"
+    },
+    {
+      "id": "writing-input.spell.59.105",
+      "family": "spell",
+      "target": 59,
+      "english": "Zoom",
+      "status": "reviewed"
+    }
+  ],
+  "review": "Names are drawn from reviewed items-review, scroll-item-review and spells-review catalogs. Every original input spelling maps to the same target and gains all reviewed English spellings for that target; no additional spell or scroll is made writable."
+}

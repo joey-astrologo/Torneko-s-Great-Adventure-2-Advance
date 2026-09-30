@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "town-root.994",
+      "table_offset": 2452,
+      "source": {
+        "offset": 393892,
+        "end_exclusive": 393904,
+        "raw_hex": "2093b98bef0d208dec90ed00",
+        "sha256": "c1aace861297cee960d1dd5514bb93efe75eb32575ad99266b5210686497dfaa",
+        "japanese": " 道具\n 作戦"
+      },
+      "english": "  Items\n  Option",
+      "status": "reviewed",
+      "review": "Reuse approved Items and Option command wording. Two3px spaces reserve the native6px cursor. The original32px window cannot contain the31px Option label after its cursor reserve;40px supplies34px of actual text space. The owner closes this root before either inventory or Option child."
+    }
+  ],
+  "scope": "Owned2068C two-command town root, native call4BF8A. Only label-table literal206B8 and width immediate2069A change. Original position/height, cursor, choice mapping, full frame and closure-before-child order remain unchanged."
+}

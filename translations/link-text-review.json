@@ -1,0 +1,182 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "link-text.0006ebb0",
+      "source": {
+        "offset": 453552,
+        "end_exclusive": 453581,
+        "raw_hex": "918a8ee882a982e782cc899e939a82aa82a082e882dc82b982f1814200",
+        "sha256": "04606cfb33909a5f3cae43e70466dcf2a99d5c41d6f76c220250d42570bacd75",
+        "japanese": "相手からの応答がありません。"
+      },
+      "english": "No response from the other player.",
+      "status": "reviewed",
+      "review": {
+        "previous": "No response from the other player.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006eb94",
+      "source": {
+        "offset": 453524,
+        "end_exclusive": 453549,
+        "raw_hex": "836e815b836883458347834182cc8fe18a5182c582b7814200",
+        "sha256": "cbf99c36a8d03057a3959f53e40d28b2a1a0a65851396eee78c36e44854ac831",
+        "japanese": "ハードウエアの障害です。"
+      },
+      "english": "Hardware error.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Hardware error.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006eb74",
+      "source": {
+        "offset": 453492,
+        "end_exclusive": 453523,
+        "raw_hex": "825291e488c88fe390da91b182b582c882a282c582ad82be82b382a2814200",
+        "sha256": "37eeed8627a743787003dc2ec8a5e9584a1f97f66ac503859247da0756bcc931",
+        "japanese": "３台以上接続しないでください。"
+      },
+      "english": "Connect only two systems.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Connect only two systems.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006eb58",
+      "source": {
+        "offset": 453464,
+        "end_exclusive": 453491,
+        "raw_hex": "90da91b1918a8ee882aa8ca982c282a982e882dc82b982f1814200",
+        "sha256": "7e9c3971ea8d3bfb8c98b8f9356ac2b41c8f9bd8f21614e0782f370ad8f26272",
+        "japanese": "接続相手が見つかりません。"
+      },
+      "english": "No other player found.",
+      "status": "reviewed",
+      "review": {
+        "previous": "No other player found.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006eb38",
+      "source": {
+        "offset": 453432,
+        "end_exclusive": 453461,
+        "raw_hex": "90b382b582ad8ef3904d82c582ab82dc82b982f182c582b582bd814200",
+        "sha256": "12746c9a270dd079d33ddce7ee6b7636d2bfb813ae47dda8d1e019f3c238fe11",
+        "japanese": "正しく受信できませんでした。"
+      },
+      "english": "Data was not received correctly.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Data was not received correctly.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ebd0",
+      "source": {
+        "offset": 453584,
+        "end_exclusive": 453620,
+        "raw_hex": "25730d92ca904d8350815b8375838b82f08a6d944682b582c482ad82be82b382a2814200",
+        "sha256": "afb59008112219eac586e870b8a0132aee2a969fdd0e5aa73e748cc65df997ea",
+        "japanese": "%{unclassified-control:73}\n通信ケーブルを確認してください。"
+      },
+      "english": "{error}\nCheck the link cable.",
+      "status": "reviewed",
+      "review": {
+        "previous": "{error}\nCheck the link cable.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ebf4",
+      "source": {
+        "offset": 453620,
+        "end_exclusive": 453646,
+        "raw_hex": "81752573817682f00d918a8ee882c9936e82b582dc82b7814200",
+        "sha256": "1f04d8f133a5ac6865761abe1f1309c8ab297c027a0e7a2b12f6243c88c52609",
+        "japanese": "「%{unclassified-control:73}」を\n相手に渡します。"
+      },
+      "english": "Give \"{item}\"\nto the other player?",
+      "status": "reviewed",
+      "review": {
+        "previous": "Give \"{item}\"\nto the other player?",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ec10",
+      "source": {
+        "offset": 453648,
+        "end_exclusive": 453725,
+        "raw_hex": "92ca904d8350815b8375838b82f082c282c882ac2082a882bd82aa82a282cc8f8094f582aa0d82c582ab82dc82b582bd82e7817582cd82a2817682f0899f82b582c482ad82be82b382a2814200",
+        "sha256": "244b928453de895f6b31336a7a4769a2b76d53dbdfbf412f1c9c02ec66b80b1d",
+        "japanese": "通信ケーブルをつなぎ おたがいの準備が\nできましたら「はい」を押してください。"
+      },
+      "english": "Connect the link cable. Select Yes\nwhen both players are ready.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Connect the link cable. Select Yes\nwhen both players are ready.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ec60",
+      "source": {
+        "offset": 453728,
+        "end_exclusive": 453802,
+        "raw_hex": "82c282c382af82c4834183438365838082f08cf08ab782b582dc82b782a981480d82c282c382af82e98fea8d8782cd817582cd82a2817682f0899f82b582c482ad82be82b382a2814200",
+        "sha256": "d576916c42c5f3957421f98733c0d426a9173f10cf0b48b0827771f8968ca541",
+        "japanese": "つづけてアイテムを交換しますか？\nつづける場合は「はい」を押してください。"
+      },
+      "english": "Trade another item?\nSelect Yes to continue.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Trade another item?\nSelect Yes to continue.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ecac",
+      "source": {
+        "offset": 453804,
+        "end_exclusive": 453814,
+        "raw_hex": "8cf08ab70d90e096be00",
+        "sha256": "8663e7dcd1e1fa75c3293040c7f42f1ee82e364943ee2818f7b2fc31fa564547",
+        "japanese": "交換\n説明"
+      },
+      "english": "Trade\nInfo",
+      "status": "reviewed",
+      "review": {
+        "previous": "Trade\nInfo",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    },
+    {
+      "id": "link-text.0006ecb8",
+      "source": {
+        "offset": 453816,
+        "end_exclusive": 453872,
+        "raw_hex": "91718cc982cc928682a982e7918a8ee882c9936e82b7834183438365838082f00d82d082c682c2914982f182c582ad82be82b382a2814200",
+        "sha256": "bc52bb182debf8523cd141608375b20556e63609d311fbc5b313053c39e183ed",
+        "japanese": "倉庫の中から相手に渡すアイテムを\nひとつ選んでください。"
+      },
+      "english": "Choose one item from storage\nto give to the other player.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Choose one item from storage\nto give to the other player.",
+        "reason": "Bilingual reread of Japanese and native consumers57C1C/57C54/57E08/58084. Preserve specific failure reason, two-system limit, cable check, selected item and storage origin; retain affirmative Yes/No sense and established Trade/Info labels."
+      }
+    }
+  ],
+  "scope": "Link-trade UI and five error reasons, keeping native cable/other-player meaning, Yes/No actions, original geometry and buffer bounds. Text rendering and selection probes do not establish successful cable transfer."
+}

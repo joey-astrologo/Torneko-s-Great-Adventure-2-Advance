@@ -1,0 +1,43 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the two audited private monster staff-drain and player-pull message readers; unchanged effect semantics.",
+  "entries": [
+    {
+      "id": "monster-interaction.478",
+      "table_offset": 1144,
+      "source": {
+        "offset": 404204,
+        "end_exclusive": 404234,
+        "raw_hex": "257382cd20257382cc0d257382cc89f1909482f082d682e782b582bd2100",
+        "sha256": "1e9722ac7bf0901bf7b5eb1293d6a03e36ff20c9221ab187194d679816adf75f",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}の\n%{unclassified-control:73}の回数をへらした!"
+      },
+      "english": "{actor}{fit} reduced {player}'s{fit} {item} uses.",
+      "fields": [
+        "actor",
+        "player",
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation, preserving both identities and the complete effect. Native actor/player/item budgets and conditional wrapping required."
+    },
+    {
+      "id": "monster-interaction.470",
+      "table_offset": 1136,
+      "source": {
+        "offset": 404260,
+        "end_exclusive": 404288,
+        "raw_hex": "257382cd208bdf82ad82c90d257382f088f882ab82e682b982bd2100",
+        "sha256": "9e44b06bc83c9b4d6a955f724e7f98f9a1ed6b4f5d038ec5448a59dcf6cab62c",
+        "japanese": "%{unclassified-control:73}は 近くに\n%{unclassified-control:73}を引きよせた!"
+      },
+      "english": "{actor}{fit} pulled {player} closer!",
+      "fields": [
+        "actor",
+        "player"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation, preserving both identities and the complete effect. Native actor/player/item budgets and conditional wrapping required."
+    }
+  ]
+}

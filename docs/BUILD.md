@@ -28,7 +28,9 @@ The build starts from the pinned Japanese ROM and retained source assets. It
 adds the selected Torneko 2 compact font and [original-sized early menus](MENU_LAYOUTS.md), English name entry, opening dialogue, resume/menu labels,
 first-dungeon tutorials, first-castle conversations, the first travel menu, and
 the reviewed story catalogs and bounded special formatters in one `RomBuild`
-allocation/patch ledger. It does not depend on a prior
+allocation/patch ledger. It also includes the approved Shiren arrival cards and
+[title plus five background logos](TITLE_INSERTION.md), using frozen source
+assets and checked graphics ownership. It does not depend on a prior
 proof ROM, generated resource dump or emulator checkpoint. Source ROM/save files
 are preserved. ROM, BPS and report files are staged and verified before replacing
 generated outputs; the directory's existing playtest saves are retained.

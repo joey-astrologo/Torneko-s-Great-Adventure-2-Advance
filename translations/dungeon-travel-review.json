@@ -1,0 +1,118 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Seven private dungeon-travel labels and centered heading for CPU52304; original ordering, five-row geometry and exit mapping retained. Stored meadow label has separate controlled rendering coverage. Actual travel/unlocking remains separate.",
+  "entries": [
+    {
+      "id": "dungeon-travel.0",
+      "index": 0,
+      "source": {
+        "offset": 443860,
+        "end_exclusive": 443873,
+        "raw_hex": "814089a4976c82cc82a88fe900",
+        "sha256": "521f7d5fa1f5238249bd41551b60331ccb6bf1b56f3b552a6d37dbec2fbd1d54",
+        "japanese": "　王様のお城"
+      },
+      "english": "King's castle",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.1",
+      "index": 1,
+      "source": {
+        "offset": 443836,
+        "end_exclusive": 443859,
+        "raw_hex": "814082bf82e582c182c695738e768b6382c891908cb400",
+        "sha256": "97e1b7d77a7af0f019e422f7ff3ad1fbb4c6babd53f2721f77bdfd96f629a640",
+        "japanese": "　ちょっと不思議な草原"
+      },
+      "english": "Mysterious Meadow",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.2",
+      "index": 2,
+      "source": {
+        "offset": 443824,
+        "end_exclusive": 443835,
+        "raw_hex": "814096c082a282cc905800",
+        "sha256": "539f84f2304cd739a1d2cc70ff3823392ae44c9bec81f0adc8206edfa4f3c874",
+        "japanese": "　迷いの森"
+      },
+      "english": "Lost Forest",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.3",
+      "index": 3,
+      "source": {
+        "offset": 443812,
+        "end_exclusive": 443823,
+        "raw_hex": "814089ce908182ab8e5200",
+        "sha256": "17549bc497baae7d776ecca0ffdedac45a2bca7ce39fa7b764a47ffb66881fbe",
+        "japanese": "　火吹き山"
+      },
+      "english": "Mt. Fiery",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.4",
+      "index": 4,
+      "source": {
+        "offset": 443800,
+        "end_exclusive": 443811,
+        "raw_hex": "81408367838d88e290d500",
+        "sha256": "b358ba6bdc3cf76da69a99eed3e4b22690caee29c88b80aecff6f083a53e9ca6",
+        "japanese": "　トロ遺跡"
+      },
+      "english": "Toro Ruins",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.5",
+      "index": 5,
+      "source": {
+        "offset": 443776,
+        "end_exclusive": 443797,
+        "raw_hex": "814095738e768b6382cc835f839383578387839300",
+        "sha256": "a1443b0e9594d3dad16f245954ee34d495f1624921c00b5ac2a9684b1ba2b611",
+        "japanese": "　不思議のダンジョン"
+      },
+      "english": "Magic Dungeon",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.6",
+      "index": 6,
+      "source": {
+        "offset": 443748,
+        "end_exclusive": 443775,
+        "raw_hex": "814082e082c182c695738e768b6382cc835f839383578387839300",
+        "sha256": "9e61cacb92be4168a0aa53b89cb030e41e50b5402d9dc6beec3aadf44e43f4e0",
+        "japanese": "　もっと不思議のダンジョン"
+      },
+      "english": "More Magic Dungeon",
+      "status": "reviewed",
+      "review_note": "Direct Japanese-source review using the established Torneko2 destination glossary. Preserve native selection ordering; index1 meadow is stored but not emitted by the eight observed immutable availability rows, so test it as a controlled label selector only."
+    },
+    {
+      "id": "dungeon-travel.heading",
+      "index": 7,
+      "source": {
+        "offset": 1365036,
+        "end_exclusive": 1365056,
+        "raw_hex": "1482c782b182c982a282ab82dc82b782a9814800",
+        "sha256": "7b8d314ef01d7aebc0ac7c631cf37c6a45f2c7712b5c5a939a89da40f88ff9bf",
+        "japanese": "{unclassified-control:14}どこにいきますか？"
+      },
+      "english": "Where to?",
+      "status": "reviewed",
+      "review_note": "Direct centered travel question. Same meaning in concise heading form; no destination, condition or choice omitted."
+    }
+  ]
+}

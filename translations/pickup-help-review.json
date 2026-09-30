@@ -1,0 +1,208 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "pickup-help.bread",
+      "literal_offset": 151056,
+      "item_ids": [
+        203,
+        204
+      ],
+      "source": {
+        "offset": 1340612,
+        "end_exclusive": 1340638,
+        "raw_hex": "09904882d782e982c695a082aa82d382ad82ea82e982bc814900",
+        "sha256": "3fc3bcc1d752131d0f0ff6cd8a1056b3bc834732fa514e833ef48ca24eb34491",
+        "japanese": "{tab:09}食べると腹がふくれるぞ！"
+      },
+      "english": "\tEat this to fill your belly!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\tEat this to fill your belly!",
+        "reason": "Preserves eating to fill the belly; no extra amount or fullness condition."
+      },
+      "measured_line_ends": [
+        126
+      ]
+    },
+    {
+      "id": "pickup-help.weapon",
+      "literal_offset": 151064,
+      "item_ids": [
+        1,
+        3
+      ],
+      "source": {
+        "offset": 1340004,
+        "end_exclusive": 1340089,
+        "raw_hex": "09919594f582b782e982c68d558c8297cd82aa8fe382aa82e982bc81490d42837b835e839382c58381836a8385815b82f08a4a82ab0d817593b98bef81768352837d8393836882c5919594f582b582e682a4814900",
+        "sha256": "c3ae648a70c29e72bfc7faf3f1615d89d293f1b26c668dbb24c7bd90d4991ccb",
+        "japanese": "{tab:09}装備すると攻撃力が上がるぞ！\nBボタンでメニューを開き\n「道具」コマンドで装備しよう！"
+      },
+      "english": "\tEquip this to raise your attack!\nPress B to open the menu, then\nchoose Items to equip it.",
+      "status": "reviewed",
+      "review": {
+        "previous": "\tEquip this to raise your attack!\nPress B to open the menu, then\nchoose Items to equip it.",
+        "reason": "Preserves attack increase, B menu and Items/equip action."
+      },
+      "measured_line_ends": [
+        158,
+        155,
+        126
+      ]
+    },
+    {
+      "id": "pickup-help.shield",
+      "literal_offset": 151072,
+      "item_ids": [
+        30,
+        31
+      ],
+      "source": {
+        "offset": 1340092,
+        "end_exclusive": 1340177,
+        "raw_hex": "09919594f582b782e982c696688ce497cd82aa8fe382aa82e982bc81490d42837b835e839382c58381836a8385815b82f08a4a82ab0d817593b98bef81768352837d8393836882c5919594f582b582e682a4814900",
+        "sha256": "f8ab5e8f490b230ee0a4bd07bb351acf5f562b553cd90e6d3acae5324e785fd7",
+        "japanese": "{tab:09}装備すると防御力が上がるぞ！\nBボタンでメニューを開き\n「道具」コマンドで装備しよう！"
+      },
+      "english": "\tEquip this to raise your defence!\nPress B to open the menu, then\nchoose Items to equip it.",
+      "status": "reviewed",
+      "review": {
+        "previous": "\tEquip this to raise your defence!\nPress B to open the menu, then\nchoose Items to equip it.",
+        "reason": "Preserves defence increase, B menu and Items/equip action."
+      },
+      "measured_line_ends": [
+        166,
+        155,
+        126
+      ]
+    },
+    {
+      "id": "pickup-help.staff",
+      "literal_offset": 151080,
+      "item_ids": [
+        51
+      ],
+      "source": {
+        "offset": 1340476,
+        "end_exclusive": 1340611,
+        "raw_hex": "0d0982b182ea82f082d382ea82ce2082cd82c882ea82c482a282e90d838283938358835e815b82c982e08d558c8282c582ab82e982bc81490d0952837b835e839382f082bf82e582c182c6899f82b582c482a982e78f5c8e9a837b835e839382c50d838283938358835e815b82cc82d982a482f08cfc82a282c482a982e78e6782a882a4814900",
+        "sha256": "6c1b19923c635cdab5494c9201b5e3c87d7dcad40f48e286a9c5aad19140bf53",
+        "japanese": "\n{tab:09}これをふれば はなれている\nモンスターにも攻撃できるぞ！\n{tab:09}Rボタンをちょっと押してから十字ボタンで\nモンスターのほうを向いてから使おう！"
+      },
+      "english": "\n\tWave this staff to attack\nmonsters from a distance!\n\tTap R, then use the Control Pad\nto face a monster before using it!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\n\tWave this staff to attack\nmonsters from a distance!\n\tTap R, then use the Control Pad\nto face a monster before using it!",
+        "reason": "Preserves distance attack and the sequence of tapping R, then turning with the Control Pad, then using the staff."
+      },
+      "measured_line_ends": [
+        0,
+        121,
+        130,
+        158,
+        168
+      ]
+    },
+    {
+      "id": "pickup-help.scroll",
+      "literal_offset": 151088,
+      "item_ids": [
+        118
+      ],
+      "source": {
+        "offset": 1340408,
+        "end_exclusive": 1340473,
+        "raw_hex": "0d0993c782de82c620959489ae82c982a282e9838283938358835e815b82c90d91e582ab82c8835f8381815b835782f082a082bd82a682e782ea82e982bc814900",
+        "sha256": "b0e8e85f1862a2c1ce6b1fad8ab6a3e2051fed6c78b3fd16341b107958a4ea42",
+        "japanese": "\n{tab:09}読むと 部屋にいるモンスターに\n大きなダメージをあたえられるぞ！"
+      },
+      "english": "\n\tRead this to deal heavy damage\nto the monsters in the room!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\n\tRead this to deal heavy damage\nto the monsters in the room!",
+        "reason": "Preserves heavy damage to monsters in the current room, not adjacent monsters or every floor."
+      },
+      "measured_line_ends": [
+        0,
+        155,
+        140
+      ]
+    },
+    {
+      "id": "pickup-help.healing-herb",
+      "literal_offset": 151096,
+      "item_ids": [
+        169
+      ],
+      "source": {
+        "offset": 1340180,
+        "end_exclusive": 1340236,
+        "raw_hex": "0982b182ea82f082cc82de82c6485082aa89f1959c82b782e982bc81490d83738393836082c982c882c182bd82e72082cc82e082a4814900",
+        "sha256": "232af46e28df67720672d3d6b3c5dddba0649aada783a4be5af38f2a2ccd21f4",
+        "japanese": "{tab:09}これをのむとHPが回復するぞ！\nピンチになったら のもう！"
+      },
+      "english": "\tDrink this to recover HP!\nUse it when you're in trouble!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\tDrink this to recover HP!\nUse it when you're in trouble!",
+        "reason": "Preserves HP recovery and advice to drink when in trouble."
+      },
+      "measured_line_ends": [
+        125,
+        150
+      ]
+    },
+    {
+      "id": "pickup-help.fire-herb",
+      "literal_offset": 151104,
+      "item_ids": [
+        188
+      ],
+      "source": {
+        "offset": 1340236,
+        "end_exclusive": 1340373,
+        "raw_hex": "0d0982b182ea82f082cc82de82c62082c682c882e882c989ce82f00d82cd82a282c48d558c8282b782e982b182c682aa82c582ab82e982bc81490d0952837b835e839382f082bf82e582c182c6899f82b582c482a982e78f5c8e9a837b835e839382c50d838283938358835e815b82cc82d982a482f08cfc82a282c482a982e782cc82e082a4814900",
+        "sha256": "afbccad556cac7ccdc8bb1b7cee3f696ed21f59a01ddc627fad91d26921a9cbf",
+        "japanese": "\n{tab:09}これをのむと となりに火を\nはいて攻撃することができるぞ！\n{tab:09}Rボタンをちょっと押してから十字ボタンで\nモンスターのほうを向いてからのもう！"
+      },
+      "english": "\n\tDrink this to breathe fire at\na monster next to you!\n\tTap R, then use the Control Pad\nto face a monster before drinking!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\n\tDrink this to breathe fire at\na monster next to you!\n\tTap R, then use the Control Pad\nto face a monster before drinking!",
+        "reason": "Preserves drinking to breathe fire at an adjacent target, and tapping R then turning before drinking."
+      },
+      "measured_line_ends": [
+        0,
+        137,
+        113,
+        158,
+        172
+      ]
+    },
+    {
+      "id": "pickup-help.level-herb",
+      "literal_offset": 151148,
+      "item_ids": [
+        190
+      ],
+      "source": {
+        "offset": 1340376,
+        "end_exclusive": 1340407,
+        "raw_hex": "0982cc82de82c620838c8378838b83418362837682c582ab82e982bc814900",
+        "sha256": "313842ec01d4b7cbe56d2a67d17c5fefdfbefb3c39c514f0a8a7018efdef1fcb",
+        "japanese": "{tab:09}のむと レベルアップできるぞ！"
+      },
+      "english": "\tDrink this to gain a level!",
+      "status": "reviewed",
+      "review": {
+        "previous": "\tDrink this to gain a level!",
+        "reason": "Preserves gaining a level by drinking."
+      },
+      "measured_line_ends": [
+        127
+      ]
+    }
+  ],
+  "scope": "Eight literal tips selected by original pickup owner08024AD8 for eleven item IDs when game mode is11. Source09 queued-reader flags and initial newlines are preserved;09 is not indentation in this reader. Ordinary pickup and other tutorial prose are separate."
+}

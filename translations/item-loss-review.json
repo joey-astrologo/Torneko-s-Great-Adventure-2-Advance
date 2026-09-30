@@ -1,0 +1,57 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Six audited item-loss readers plus pot break/explosion announcements. Original event mechanics remain unchanged. Explicit formatter/render preflight is distinguished from native skill-item consumption.",
+  "entries": [
+    {
+      "id": "item-loss.1e0",
+      "table_offset": 480,
+      "source": {
+        "offset": 408324,
+        "end_exclusive": 408339,
+        "raw_hex": "257382f082a482b582c882c182bd00",
+        "sha256": "d654e4715def1f6957550f64a321a12c4d203c8ebddad2997c7ffbc71706a5c3",
+        "japanese": "%{unclassified-control:73}をうしなった"
+      },
+      "english": "Lost {item}.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation, retaining the complete item name and loss/breakage/explosion result. The full maximum item field fits one line in the approved font."
+    },
+    {
+      "id": "item-loss.1d8",
+      "table_offset": 472,
+      "source": {
+        "offset": 408364,
+        "end_exclusive": 408376,
+        "raw_hex": "257382aa2082ed82ea82bd00",
+        "sha256": "09871924a7f4560ec6292c8b975bb4ed8b840d898a0380fc0980f562776d328f",
+        "japanese": "%{unclassified-control:73}が われた"
+      },
+      "english": "{item} broke.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation, retaining the complete item name and loss/breakage/explosion result. The full maximum item field fits one line in the approved font."
+    },
+    {
+      "id": "item-loss.34c",
+      "table_offset": 844,
+      "source": {
+        "offset": 406256,
+        "end_exclusive": 406271,
+        "raw_hex": "257382aa20949a94ad82b582bd2100",
+        "sha256": "887b53fa5cd0801351a4f6fcdfbbc87daee5e23e37e48abcb3e613b1e394e5a9",
+        "japanese": "%{unclassified-control:73}が 爆発した!"
+      },
+      "english": "{item} exploded!",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation, retaining the complete item name and loss/breakage/explosion result. The full maximum item field fits one line in the approved font."
+    }
+  ]
+}

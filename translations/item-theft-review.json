@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "item-theft.2ac",
+      "table_offset": 684,
+      "source": {
+        "offset": 407104,
+        "end_exclusive": 407124,
+        "raw_hex": "257382cd20976c8e7182f08ca982c482a282e900",
+        "sha256": "abceb62ca1f70996ebbdada42102a4828befcc8a452e684a91aca2a51eb9d232",
+        "japanese": "%{unclassified-control:73}は 様子を見ている"
+      },
+      "english": "{actor} {fit}is watching.",
+      "status": "reviewed",
+      "review": "Preserve the watch-and-wait action; no attack or success implied."
+    },
+    {
+      "id": "item-theft.2b0",
+      "table_offset": 688,
+      "source": {
+        "offset": 407080,
+        "end_exclusive": 407103,
+        "raw_hex": "257382cd20257382a982e70d257382f0939082f182be00",
+        "sha256": "a7db25cc5fee49df6de29d6b6440a7fab82c3ea73c6e56c9156cb5eba165694c",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}から\n%{unclassified-control:73}を盗んだ"
+      },
+      "english": "{actor} {fit}stole {player}'s {fit}{item}.",
+      "status": "reviewed",
+      "review": "Preserve thief, victim and complete item field in native argument order. Two conditional boundaries allow three safe fallback lines; native checks must prove joining."
+    },
+    {
+      "id": "item-theft.2b8",
+      "table_offset": 696,
+      "source": {
+        "offset": 407044,
+        "end_exclusive": 407066,
+        "raw_hex": "257382cd2089bd82e0939082df82c882a982c182bd00",
+        "sha256": "18437370b860dc0494cf6a61deca6e283aeb55cbf3b52874699d3500781ed921",
+        "japanese": "%{unclassified-control:73}は 何も盗めなかった"
+      },
+      "english": "{actor} {fit}couldn't steal anything.",
+      "status": "reviewed",
+      "review": "Preserve failed theft, without inventing the reason."
+    },
+    {
+      "id": "item-theft.710",
+      "table_offset": 1808,
+      "source": {
+        "offset": 398252,
+        "end_exclusive": 398294,
+        "raw_hex": "257382cd20257382f0939082e082a482c682b582bd0d82b582a982b520939082df82c882a982c182bd00",
+        "sha256": "ed8b38311f541fa4ed39a39741ef54460fd145d6bd5dea51044b58934ba72ea5",
+        "japanese": "%{unclassified-control:73}は %{unclassified-control:73}を盗もうとした\nしかし 盗めなかった"
+      },
+      "english": "{actor} {fit}tried to steal {kind}, but failed.",
+      "status": "reviewed",
+      "review": "Preserve attempted theft and its failure; resistance/transformation details remain in native logic."
+    },
+    {
+      "id": "item-theft.718",
+      "table_offset": 1816,
+      "source": {
+        "offset": 398228,
+        "end_exclusive": 398237,
+        "raw_hex": "834183438365838000",
+        "sha256": "2de51f7f3bbc90e56c001ba72267117c50610216b0b561bbb841ab9754bd762f",
+        "japanese": "アイテム"
+      },
+      "english": "items",
+      "status": "reviewed",
+      "review": "Plural category field for an item-theft refusal."
+    }
+  ],
+  "scope": "Owned native item-theft helper and waiting branch; field bounds and outcomes require matching native evidence. Original shared sources and unrelated consumers stay separate."
+}

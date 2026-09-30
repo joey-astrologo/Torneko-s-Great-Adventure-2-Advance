@@ -705,6 +705,146 @@
         }
       ],
       "review": "Independent T2 bilingual pass preserves player target, negation, floor duration, recovery or remaining one-time revival, and exact effect. Common formatter always supplies player getter(0); 98px player reserve. Existing reviewed e0/118/2fc wording retained. Conditional break only where full maximum substitutions exceed216px; no font compression."
+    },
+    {
+      "id": "player-message.0f4",
+      "table_offset": 244,
+      "source": {
+        "offset": 409924,
+        "end_exclusive": 409977,
+        "raw_hex": "257382cd2082b182cc8374838d834182c982a282e982a082a282be0d82bf82a982e782aa89ba82aa82e782c882ad82c882c182bd00",
+        "sha256": "1426a22309c4963558d515ddb081b06b0d1eafbe5f016a962bd4af5113b90baa",
+        "japanese": "%{unclassified-control:73}は このフロアにいるあいだ\nちからが下がらなくなった"
+      },
+      "english": "{player}{fit} won't lose strength on this floor.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual review: preserves the player target, exact protected condition and duration limited to this floor. Waking other monsters is distinct from the player sleeping. HP recovery does not assert an amount. CPU080334E0 selects the source then the original player-only wrapper supplies getter(0), with a256-byte output and98px name reserve. Conditional breaks only when full maximum names need them."
+    },
+    {
+      "id": "player-message.0f8",
+      "table_offset": 248,
+      "source": {
+        "offset": 409876,
+        "end_exclusive": 409921,
+        "raw_hex": "257382cd2082b182cc8374838d834182c982a282e982a082a282be0d82cb82de82e782c882ad82c882c182bd00",
+        "sha256": "34f247368a790cdb4f19f32abb3b75340ee0da6ac4ffa8611c3d0e1988e66ec6",
+        "japanese": "%{unclassified-control:73}は このフロアにいるあいだ\nねむらなくなった"
+      },
+      "english": "{player}{fit} won't fall asleep on this floor.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual review: preserves the player target, exact protected condition and duration limited to this floor. Waking other monsters is distinct from the player sleeping. HP recovery does not assert an amount. CPU080334E0 selects the source then the original player-only wrapper supplies getter(0), with a256-byte output and98px name reserve. Conditional breaks only when full maximum names need them."
+    },
+    {
+      "id": "player-message.0fc",
+      "table_offset": 252,
+      "source": {
+        "offset": 409824,
+        "end_exclusive": 409873,
+        "raw_hex": "257382cd2082b182cc8374838d834182c982a282e982a082a282be0d82a895a082aa82d682e782c882ad82c882c182bd00",
+        "sha256": "df70eafbc35aeae79f16d7f3c7cc8ecee9d346bd7ada6cabef927e7387bce6cd",
+        "japanese": "%{unclassified-control:73}は このフロアにいるあいだ\nお腹がへらなくなった"
+      },
+      "english": "{player}{fit} won't get hungry on this floor.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual review: preserves the player target, exact protected condition and duration limited to this floor. Waking other monsters is distinct from the player sleeping. HP recovery does not assert an amount. CPU080334E0 selects the source then the original player-only wrapper supplies getter(0), with a256-byte output and98px name reserve. Conditional breaks only when full maximum names need them."
+    },
+    {
+      "id": "player-message.100",
+      "table_offset": 256,
+      "source": {
+        "offset": 409760,
+        "end_exclusive": 409823,
+        "raw_hex": "257382cd2082b182cc8374838d834182c982a282e982a082a282be0d838283938358835e815b82f08b4e82b182b382c882a282e682a482c982c882c182bd00",
+        "sha256": "0029c1968f407c7277382fa99585b0f01490bfbde30cfdb2c1f057041c33ebe7",
+        "japanese": "%{unclassified-control:73}は このフロアにいるあいだ\nモンスターを起こさないようになった"
+      },
+      "english": "{player}{fit} won't wake monsters on this floor.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual review: preserves the player target, exact protected condition and duration limited to this floor. Waking other monsters is distinct from the player sleeping. HP recovery does not assert an amount. CPU080334E0 selects the source then the original player-only wrapper supplies getter(0), with a256-byte output and98px name reserve. Conditional breaks only when full maximum names need them."
+    },
+    {
+      "id": "player-message.104",
+      "table_offset": 260,
+      "source": {
+        "offset": 409740,
+        "end_exclusive": 409757,
+        "raw_hex": "257382cd485082aa89f1959c82b582bd00",
+        "sha256": "139cf7b8626229a138d2469154297715425a5dee1f3981770c72f429bcb39f08",
+        "japanese": "%{unclassified-control:73}はHPが回復した"
+      },
+      "english": "{player} recovers HP.",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134428210,
+          "original_hex": "e2f709f9"
+        }
+      ],
+      "review": "Independent T2 bilingual review: preserves the player target, exact protected condition and duration limited to this floor. Waking other monsters is distinct from the player sleeping. HP recovery does not assert an amount. CPU080334E0 selects the source then the original player-only wrapper supplies getter(0), with a256-byte output and98px name reserve. Conditional breaks only when full maximum names need them."
+    },
+    {
+      "id": "player-message.368",
+      "table_offset": 872,
+      "source": {
+        "offset": 406060,
+        "end_exclusive": 406097,
+        "raw_hex": "257382cc8e9d82c182c482a282e9834183438365838082aa0d8bad89bb82b382ea82bd2100",
+        "sha256": "1dc503d7ae6f24fcf39abf1204f1c36874aad4345f7d4b635c77b2d70cabd2bc",
+        "japanese": "%{unclassified-control:73}の持っているアイテムが\n強化された!"
+      },
+      "english": "{player}'s items{fit} were strengthened!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134437680,
+          "original_hex": "dff78afe"
+        }
+      ],
+      "review": "T2 source retains player possession and strengthening of carried items, or both strength and HP. Original random-effect branches0/1 converge on the player-only formatter15848 at35B30; this is the player name, not an arbitrary monster actor. Conditional wrap preserves complete meaning for98px player names; ordinary Torneko fits one line. Native mechanics remain unchanged."
+    },
+    {
+      "id": "player-message.36c",
+      "table_offset": 876,
+      "source": {
+        "offset": 406028,
+        "end_exclusive": 406057,
+        "raw_hex": "257382cc82bf82a982e782c6485082aa0d8bad89bb82b382ea82bd2100",
+        "sha256": "3e03e1aa4df3068969179b9c65687f49d72d7f0ab7c93888e188f00fd066b5a5",
+        "japanese": "%{unclassified-control:73}のちからとHPが\n強化された!"
+      },
+      "english": "{player}'s strength and HP{fit} increased!",
+      "status": "reviewed",
+      "calls": [
+        {
+          "address": 134437680,
+          "original_hex": "dff78afe"
+        }
+      ],
+      "review": "T2 source retains player possession and strengthening of carried items, or both strength and HP. Original random-effect branches0/1 converge on the player-only formatter15848 at35B30; this is the player name, not an arbitrary monster actor. Conditional wrap preserves complete meaning for98px player names; ordinary Torneko fits one line. Native mechanics remain unchanged."
     }
   ],
   "terminology_evidence": {
@@ -724,5 +864,5 @@
     "Yggdrasil leaf": "Exact T2 item172, translations/items-review.json",
     "leaky belly": "Consistent with T2 item189 Leaky belly seed; preserves unchanged fullness, distinct from inability to gain fullness."
   },
-  "scope": "33 original source pointers mapped only inside player-name formatter08015848. Original shared table and all other consumers remain unchanged. Static aligned Thumb BL sites and nearby argument loads identify callers; controlled wrapper validation does not establish ordinary reachability of every effect."
+  "scope": "Closed player-name-wrapper source mapping, including five additional native item bonus-effect branch messages; other shared readers remain independent."
 }

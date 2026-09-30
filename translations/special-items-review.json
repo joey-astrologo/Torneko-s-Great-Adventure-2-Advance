@@ -1,0 +1,456 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Literal English for the15 remaining bounded item definitions, including equipment state and reserved/unclear records. These are not declared unused or normal acquireable items. Native formatting/description tests are required; mechanics and definitions are unchanged.",
+  "entries": [
+    {
+      "id": 0,
+      "name": "Bare hands",
+      "name_source": {
+        "offset": 415264,
+        "end_exclusive": 415272,
+        "raw_hex": "030691668ee80500",
+        "sha256": "2f1b47a96ec00de2912b4327888dfcf139f6fd41e300c06e1d160fdd002bfe32",
+        "japanese": "{legacy-position:0306}素手{unclassified-control:05}"
+      },
+      "description": "Nothing is equipped. Some skills can\nbe used with bare hands.",
+      "description_source": {
+        "offset": 424552,
+        "end_exclusive": 424596,
+        "raw_hex": "89bdd3919594f5bcc3b2c5b2bd82c5c98ff391d482bea10dbd82c582c5b8d882bebed98b5ad3b1d982bca100",
+        "sha256": "f342de3295be3109504630e54f60c784c85f7a521b915ec96214831f164bb390",
+        "japanese": "何ﾓ装備ｼﾃｲﾅｲｽでﾉ状態だ｡\nｽででｸﾘだｾﾙ技ﾓｱﾙぞ｡"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "{legacy-position:0306}素手{unclassified-control:05}",
+        "english": "Bare hands",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "independent descriptive equipment-state label",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 11,
+      "name": "Reserved",
+      "name_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約",
+        "english": "Reserved",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 85,
+      "name": "Reserved",
+      "name_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約",
+        "english": "Reserved",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 86,
+      "name": "Reserved",
+      "name_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約",
+        "english": "Reserved",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 139,
+      "name": "Scroll",
+      "name_source": {
+        "offset": 413240,
+        "end_exclusive": 413245,
+        "raw_hex": "8aaa95a800",
+        "sha256": "acdcda25ec973b0eab7d14c8cc3ef0b426ff03d3a61e08d2347aa80bc4cb0324",
+        "japanese": "巻物"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "巻物",
+        "english": "Scroll",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 153,
+      "name": "Spellbook 2",
+      "name_source": {
+        "offset": 413008,
+        "end_exclusive": 413022,
+        "raw_hex": "83588379838b83758362834e3200",
+        "sha256": "78746e66a927ca83cb7051813c25e579b961ad82624a8d8bc7283967f9e94826",
+        "japanese": "スペルブック2"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "スペルブック2",
+        "english": "Spellbook 2",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 168,
+      "name": "Reserved pot 2",
+      "name_source": {
+        "offset": 412816,
+        "end_exclusive": 412827,
+        "raw_hex": "975c96f182cc9ae2825100",
+        "sha256": "ee3b7744818e98b29770255d8970dfca31fba209b9243fdb0b09524c26cc5f11",
+        "japanese": "予約の壺２"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約の壺２",
+        "english": "Reserved pot 2",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 197,
+      "name": "Reserved 5",
+      "name_source": {
+        "offset": 412448,
+        "end_exclusive": 412455,
+        "raw_hex": "975c96f1825400",
+        "sha256": "0eea3e99e1908115a111347e5171329b911a70ecef9e3eb4897f069ca97dbe54",
+        "japanese": "予約５"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約５",
+        "english": "Reserved 5",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 198,
+      "name": "Reserved 6",
+      "name_source": {
+        "offset": 412440,
+        "end_exclusive": 412447,
+        "raw_hex": "975c96f1825500",
+        "sha256": "f74c1043de5110d931996b0441fd3b40135d3654e4f1ccfb1e559391b63edb89",
+        "japanese": "予約６"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約６",
+        "english": "Reserved 6",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 199,
+      "name": "Reserved 7",
+      "name_source": {
+        "offset": 412432,
+        "end_exclusive": 412439,
+        "raw_hex": "975c96f1825600",
+        "sha256": "bf80a147d71f21598b5311fb38f32c9402afa6349ee4ddcd4e534b31f04456b4",
+        "japanese": "予約７"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約７",
+        "english": "Reserved 7",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 200,
+      "name": "Reserved 8",
+      "name_source": {
+        "offset": 412424,
+        "end_exclusive": 412431,
+        "raw_hex": "975c96f1825700",
+        "sha256": "b93524e86b88bc8bfa838f422d53ff973774e27e26aa2c95d6518e0e8585b9ff",
+        "japanese": "予約８"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約８",
+        "english": "Reserved 8",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 201,
+      "name": "Reserved 9",
+      "name_source": {
+        "offset": 412416,
+        "end_exclusive": 412423,
+        "raw_hex": "975c96f1825800",
+        "sha256": "b8e86fc7fe1aaaa20d3c01e58ea0cc55bbdfffa92e9f479938f816165fd5d961",
+        "japanese": "予約９"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約９",
+        "english": "Reserved 9",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 202,
+      "name": "Reserved 10",
+      "name_source": {
+        "offset": 412404,
+        "end_exclusive": 412413,
+        "raw_hex": "975c96f18250824f00",
+        "sha256": "2bdbce37677c4e6d8540d83a7fc835759c7876964d9389e2ac1c8ce3df99ed5c",
+        "japanese": "予約１０"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約１０",
+        "english": "Reserved 10",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 211,
+      "name": "Reserved bread",
+      "name_source": {
+        "offset": 412276,
+        "end_exclusive": 412287,
+        "raw_hex": "975c96f182cc8370839300",
+        "sha256": "9993cd77f00bb6df92c4ec7042dcc5fbcd2dae1596e1b80ccdfd4c632ea4ea88",
+        "japanese": "予約のパン"
+      },
+      "description": "Reserved",
+      "description_source": {
+        "offset": 415112,
+        "end_exclusive": 415117,
+        "raw_hex": "975c96f100",
+        "sha256": "75838e222b044b25ff8f0aab30f80654e4dcd237b68f1dc9c0dfed6ea0847774",
+        "japanese": "予約"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "予約のパン",
+        "english": "Reserved bread",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    },
+    {
+      "id": 214,
+      "name": "Fire",
+      "name_source": {
+        "offset": 412252,
+        "end_exclusive": 412261,
+        "raw_hex": "837483408343834100",
+        "sha256": "4926d021fe9b076af0eca06457319cb3dcc654b4f1fc082b1553dd8609f90f4b",
+        "japanese": "ファイア"
+      },
+      "description": "Fire",
+      "description_source": {
+        "offset": 412252,
+        "end_exclusive": 412261,
+        "raw_hex": "837483408343834100",
+        "sha256": "4926d021fe9b076af0eca06457319cb3dcc654b4f1fc082b1553dd8609f90f4b",
+        "japanese": "ファイア"
+      },
+      "status": "reviewed",
+      "terminology": {
+        "japanese": "ファイア",
+        "english": "Fire",
+        "reference_game": "Torneko 2 Advance Japanese ROM",
+        "status": "literal source label; gameplay identity unresolved",
+        "reviewed": "2026-09-26",
+        "evidence": "Exact original definition ID and source bytes. Reserved labels remain reserved labels; no unused/non-player-facing disposition or new item identity is inferred. Fire is the literal transcription of the otherwise unexplained category10 definition214, not an official spell-name claim."
+      },
+      "identity_review": "Native definition and source identity confirmed; controlled list/Info rendering is required before insertion. Natural acquisition and reserved-slot reachability remain unverified.",
+      "review": "Bilingual source comparison. Preserve reservation numbering, generic scroll/second spellbook distinctions and the bare-hands equipment-state/skill description. Preserve the bare-hands native colour span."
+    }
+  ]
+}

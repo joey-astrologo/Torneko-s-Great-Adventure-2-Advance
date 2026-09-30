@@ -9693,20 +9693,30 @@
     },
     {
       "id": "event-bank-6.35d5",
-      "english": "Trick-loving youth: Ever tried using a Seal staff on a shopkeeper?\n\nTrick-loving youth: A Seal staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
+      "english": "Trick-loving youth: Ever tried using a Sealing staff on a shopkeeper?\n\nTrick-loving youth: A Sealing staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
       "source_hex": "834583898b5a8d44b7c990c2944e8175959588f3c98ff182f00d814093588ee5c68e6782c1c3d0c0bac4cab1d9b6c581480d834583898b5a8d44b7c990c2944e8175959588f3c98ff1ca8140918a8ee8c90d814093c18eeac5836d8345838a8387834e82f0959582b6d9d3c9c5dd82be81420d834583898b5a8d44b7c990c2944e817593588ee582bec40d814089bd82aa959588f3bbdad9c9b68145814581450d834583898b5a8d44b7c990c2944e8175cdcdcd8145814581450d8140834c83878345837e82aab1d982c5bc82e5814800",
       "source_sha256": "cb5a16f8dec465733a6ba3b7adee9a83dae581a560c02c75c0aa41d0319a77e1",
       "japanese": "ウラ技好ｷﾉ青年「封印ﾉ杖を\n　店主ﾆ使っﾃﾐﾀｺﾄﾊｱﾙｶﾅ？\nウラ技好ｷﾉ青年「封印ﾉ杖ﾊ　相手ﾉ\n　特殊ﾅノウリョクを封じﾙﾓﾉﾅﾝだ。\nウラ技好ｷﾉ青年「店主だﾄ\n　何が封印ｻﾚﾙﾉｶ・・・\nウラ技好ｷﾉ青年「ﾍﾍﾍ・・・\n　キョウミがｱﾙでｼょ？",
       "prose_review": {
         "previous_draft": "Trick-loving youth: Ever tried using a Seal staff on a shopkeeper?\n\nTrick-loving youth: A Seal staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
-        "revised": "Trick-loving youth: Ever tried using a Seal staff on a shopkeeper?\n\nTrick-loving youth: A Seal staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
-        "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+        "revised": "Trick-loving youth: Ever tried using a Sealing staff on a shopkeeper?\n\nTrick-loving youth: A Sealing staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
+        "reason": "Bilingual reread of封印ﾉ杖: use canonical Sealing staff from the item glossary in both occurrences. Preserve shopkeeper/ability question and teasing voice; rewrap and rerender in original event bank and tutorial caller.",
         "context_pending": false,
         "insertion_approved": false,
         "method": "direct-bilingual-read"
       },
       "status": "reviewed",
-      "draft_catalog": "translations/postgame-draft.json"
+      "draft_catalog": "translations/postgame-draft.json",
+      "review_history": [
+        {
+          "previous_draft": "Trick-loving youth: Ever tried using a Seal staff on a shopkeeper?\n\nTrick-loving youth: A Seal staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
+          "revised": "Trick-loving youth: Ever tried using a Seal staff on a shopkeeper?\n\nTrick-loving youth: A Seal staff seals away the target's special abilities.\n\nTrick-loving youth: So what does it seal away in a shopkeeper...?\n\nTrick-loving youth: Heh heh... Aren't you curious?",
+          "reason": "Second bilingual read of mixed-width T2 Japanese, preserving normal character voices, instructions, all counts, vocation restrictions, item effects, quest conditions and source controls.",
+          "context_pending": false,
+          "insertion_approved": false,
+          "method": "direct-bilingual-read"
+        }
+      ]
     },
     {
       "id": "event-bank-6.36a6",

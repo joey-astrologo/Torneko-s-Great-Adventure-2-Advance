@@ -1,0 +1,20 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "One shared source, owned pointer literal23DA8 and both original actor-talk refusal blocks in23C14. Maximum native actor field186px/63bytes;256byte output. No change to interaction conditions.",
+  "entries": [
+    {
+      "id": "cannot-talk.950",
+      "table_offset": 2384,
+      "source": {
+        "offset": 394280,
+        "end_exclusive": 394302,
+        "raw_hex": "257382cd0d986282b582a982af82e782ea82c882a200",
+        "sha256": "30e579f67719c8730ea1d349410cfad2a4290fde81482279aa19884ed354f41c",
+        "japanese": "%{unclassified-control:73}は\n話しかけられない"
+      },
+      "english": "{actor}\ncan't talk.",
+      "status": "reviewed",
+      "review": "Topic marker ha and player getter09ACC(0) identify the actor unable to talk; preserve the original inability without inventing an object or reason."
+    }
+  ]
+}

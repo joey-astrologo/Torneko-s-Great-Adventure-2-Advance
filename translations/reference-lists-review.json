@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "reference-list.9b0",
+      "table_offset": 2480,
+      "source": {
+        "offset": 393768,
+        "end_exclusive": 393779,
+        "raw_hex": "94928e86838a8358836700",
+        "sha256": "d66399994ad002096531d96a2ff5a402a89bc455c1e1b2c836ddd0cc0dc532e4",
+        "japanese": "白紙リスト"
+      },
+      "english": "Blank list",
+      "status": "reviewed",
+      "review": "List of scrolls eligible for inscription on a Blank scroll. Compact label retains the explicit Blank category in the58px region; the full original27 entries and their names remain visible."
+    },
+    {
+      "id": "reference-list.9b4",
+      "table_offset": 2484,
+      "source": {
+        "offset": 396924,
+        "end_exclusive": 396933,
+        "raw_hex": "8b5a838a8358836700",
+        "sha256": "91fecc8d13f2b58cd9095709ea7d8bddb0001f52c4ee5b6411bce0bb08f88576",
+        "japanese": "技リスト"
+      },
+      "english": "Skill list",
+      "status": "reviewed",
+      "review": "Native warrior skill reference list, full100 menu-ordered entries."
+    },
+    {
+      "id": "reference-list.9b8",
+      "table_offset": 2488,
+      "source": {
+        "offset": 393756,
+        "end_exclusive": 393767,
+        "raw_hex": "96829640838a8358836700",
+        "sha256": "4e9761bc55888c01554668fce5122566bbdc5638fc46a33feeb4476b51a08269",
+        "japanese": "魔法リスト"
+      },
+      "english": "Spell list",
+      "status": "reviewed",
+      "review": "Native spell reference list, full50 menu-ordered entries."
+    },
+    {
+      "id": "reference-list.9bc",
+      "table_offset": 2492,
+      "source": {
+        "offset": 393740,
+        "end_exclusive": 393753,
+        "raw_hex": "8f9182ab8d9e82df82c882a200",
+        "sha256": "d0c1040d3e0f2d1e52524704b51610641aa5d1c253f3dfe5d6d9cf59bf78dd82",
+        "japanese": "書き込めない"
+      },
+      "english": "Can't write",
+      "status": "reviewed",
+      "review": "Unusable Blank-scroll inscription entry. Preserve refusal rather than imply unidentified."
+    },
+    {
+      "id": "reference-list.74c",
+      "table_offset": 1868,
+      "source": {
+        "offset": 397912,
+        "end_exclusive": 397927,
+        "raw_hex": "82a882da82a682c482a282c882a200",
+        "sha256": "7c0a8dc4766c8302db6146028f773e0aa012b990966bf6ba99bb86060e008710",
+        "japanese": "おぼえていない"
+      },
+      "english": "Not learned",
+      "status": "reviewed",
+      "review": "Reuse reviewed skill/spell wording; distinction from inscription eligibility is retained."
+    }
+  ],
+  "scope": "Private20760 category selector and20A18/20C40/20E88 reference rows; existing reviewed221-item/128-skill/61-spell definition copies supply full names, with unchanged mechanics. Original64px category and168px row windows,6px cursor reserve,64-byte row buffer,40px separate page indicator and8px border gap. Input matching and natural reference-list unlocks remain separate."
+}

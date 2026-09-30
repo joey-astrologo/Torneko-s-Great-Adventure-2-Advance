@@ -1,0 +1,2112 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": 0,
+      "record_offset": 1338868,
+      "record_hex": "d48d06080000000063000000",
+      "name_source": {
+        "offset": 429524,
+        "end_exclusive": 429529,
+        "raw_hex": "82a082ab00",
+        "sha256": "4bb05daa661ad522339bc2cb6a49444a17c602590a08bec3ccbae1b4811a9440",
+        "japanese": "あき"
+      },
+      "description_source": {
+        "offset": 436184,
+        "end_exclusive": 436193,
+        "raw_hex": "90e096be8146b1b700",
+        "sha256": "5b1e0eb9690c1726be9cdc986934c1e4c6c62565515863090dcb41c6c386f928",
+        "japanese": "説明：ｱｷ"
+      },
+      "hp_cost": 0,
+      "target_kind": 0,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Reserved",
+      "canonical_name": "Reserved",
+      "description": "Description: Reserved",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 1,
+      "record_offset": 1338880,
+      "record_hex": "8c8006080200071802000000",
+      "name_source": {
+        "offset": 426124,
+        "end_exclusive": 426129,
+        "raw_hex": "8381838900",
+        "sha256": "30fcdad0ed1d7f639de328b130072e4f5fa676a7d8929cd4821ca5f907a72c24",
+        "japanese": "メラ"
+      },
+      "description_source": {
+        "offset": 436140,
+        "end_exclusive": 436181,
+        "raw_hex": "90b396caa68facbbc5898a82c58d558c82a10d3130837c83438393836782cc835f8381815b8357a100",
+        "sha256": "0380de67d5a54f5f3a6222b98203c2734c89c771043757149786b22a3789880d",
+        "japanese": "正面ｦ小ｻﾅ炎で攻撃｡\n10ポイントのダメージ｡"
+      },
+      "hp_cost": 2,
+      "target_kind": 7,
+      "menu_order": 2,
+      "menu_eligible": true,
+      "name": "Frizz",
+      "canonical_name": "Frizz",
+      "description": "Attacks straight ahead with a small flame.\nDeals 10 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 2,
+      "record_offset": 1338892,
+      "record_hex": "7c8006080400070c03000000",
+      "name_source": {
+        "offset": 426108,
+        "end_exclusive": 426115,
+        "raw_hex": "83818389837e00",
+        "sha256": "b2a657ddd5bc991ed283dfdb601479edc4f4edd1c52ad09ab7987f0c5af2c2dd",
+        "japanese": "メラミ"
+      },
+      "description_source": {
+        "offset": 436096,
+        "end_exclusive": 436137,
+        "raw_hex": "90b396caa691e5b7c5898a82c58d558c82a10d3230837c83438393836782cc835f8381815b8357a100",
+        "sha256": "da2ff50eab9ce1da8d9e970ac4850d6a94c4497e35cebdb99617a6706f879a96",
+        "japanese": "正面ｦ大ｷﾅ炎で攻撃｡\n20ポイントのダメージ｡"
+      },
+      "hp_cost": 4,
+      "target_kind": 7,
+      "menu_order": 3,
+      "menu_eligible": true,
+      "name": "Frizzle",
+      "canonical_name": "Frizzle",
+      "description": "Attacks straight ahead with a large flame.\nDeals 20 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 3,
+      "record_offset": 1338904,
+      "record_hex": "688006080600070804000000",
+      "name_source": {
+        "offset": 426088,
+        "end_exclusive": 426099,
+        "raw_hex": "83818389835d815b837d00",
+        "sha256": "e6d029d9e590d829695b6b28c3ecb24fa8daf08d81dd446f1520f07e0ed2e626",
+        "japanese": "メラゾーマ"
+      },
+      "description_source": {
+        "offset": 436052,
+        "end_exclusive": 436094,
+        "raw_hex": "90b396caa68b9091e5c5898a82c58d558c82a10d3430837c83438393836782cc835f8381815b8357a100",
+        "sha256": "6a0d64c2587a46af83263a9d8c8db7aba7560a4af97d164d7384161aec6ac48a",
+        "japanese": "正面ｦ巨大ﾅ炎で攻撃｡\n40ポイントのダメージ｡"
+      },
+      "hp_cost": 6,
+      "target_kind": 7,
+      "menu_order": 4,
+      "menu_eligible": true,
+      "name": "Kafrizz",
+      "canonical_name": "Kafrizz",
+      "description": "Attacks straight ahead with a huge flame.\nDeals 40 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 4,
+      "record_offset": 1338916,
+      "record_hex": "548006080400021805000000",
+      "name_source": {
+        "offset": 426068,
+        "end_exclusive": 426073,
+        "raw_hex": "834d838900",
+        "sha256": "9e2c57604f4a2ad7ccca31282bd1379ecbbba443c101484ba5dd86d73ec7a53d",
+        "japanese": "ギラ"
+      },
+      "description_source": {
+        "offset": 436004,
+        "end_exclusive": 436051,
+        "raw_hex": "914f3395fb8cfca68facbbc5898a82c58d558c82a10d3781603130837c83438393836782cc835f8381815b8357a100",
+        "sha256": "61218514590782c161275726289032b3d28aecebb37351b61d857e9cd05e588b",
+        "japanese": "前3方向ｦ小ｻﾅ炎で攻撃｡\n7～10ポイントのダメージ｡"
+      },
+      "hp_cost": 4,
+      "target_kind": 2,
+      "menu_order": 5,
+      "menu_eligible": true,
+      "name": "Sizz",
+      "canonical_name": "Sizz",
+      "description": "Attacks in the three forward directions\nwith small flames. Deals 7-10 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 5,
+      "record_offset": 1338928,
+      "record_hex": "408006080800020c06000000",
+      "name_source": {
+        "offset": 426048,
+        "end_exclusive": 426057,
+        "raw_hex": "8378834d8389837d00",
+        "sha256": "89cd5cd1293546eefd01fcfef1c306c2d99b249272a343d321c7b759ba1b815a",
+        "japanese": "ベギラマ"
+      },
+      "description_source": {
+        "offset": 435956,
+        "end_exclusive": 436004,
+        "raw_hex": "914f3395fb8cfca691e5b7c5898a82c58d558c82a10d313581603330837c83438393836782cc835f8381815b8357a100",
+        "sha256": "8669b191eac2a9b4358c939944c23b46f074a03c82868167f77e0ce6fe9ab6fa",
+        "japanese": "前3方向ｦ大ｷﾅ炎で攻撃｡\n15～30ポイントのダメージ｡"
+      },
+      "hp_cost": 8,
+      "target_kind": 2,
+      "menu_order": 6,
+      "menu_eligible": true,
+      "name": "Sizzle",
+      "canonical_name": "Sizzle",
+      "description": "Attacks in the three forward directions\nwith large flames. Deals 15-30 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 6,
+      "record_offset": 1338940,
+      "record_hex": "288006081900020807000000",
+      "name_source": {
+        "offset": 426024,
+        "end_exclusive": 426035,
+        "raw_hex": "8378834d83898353839300",
+        "sha256": "9133c8c9858c302d2fd4ac9aade00a175dc3e3ccfc13e35e7a91d669c23a26d2",
+        "japanese": "ベギラゴン"
+      },
+      "description_source": {
+        "offset": 435904,
+        "end_exclusive": 435953,
+        "raw_hex": "914f3395fb8cfca68b9091e5c5898a82c58d558c82a10d343581603630837c83438393836782cc835f8381815b8357a100",
+        "sha256": "fc58a2d28159345e347eb78e6edd19067714c047aa7970d2842be1f6984d65f9",
+        "japanese": "前3方向ｦ巨大ﾅ炎で攻撃｡\n45～60ポイントのダメージ｡"
+      },
+      "hp_cost": 25,
+      "target_kind": 2,
+      "menu_order": 7,
+      "menu_eligible": true,
+      "name": "Kasizz",
+      "canonical_name": "Kasizz",
+      "description": "Attacks in the three forward directions\nwith huge flames. Deals 45-60 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 7,
+      "record_offset": 1338952,
+      "record_hex": "b47c06080500031808000000",
+      "name_source": {
+        "offset": 425140,
+        "end_exclusive": 425145,
+        "raw_hex": "8343834900",
+        "sha256": "2eb5da76afffbd1a8ef2fbec8692f91af9f3e6bde991e86efd8fb2aedd515023",
+        "japanese": "イオ"
+      },
+      "description_source": {
+        "offset": 435848,
+        "end_exclusive": 435904,
+        "raw_hex": "93af82b6959489ae82c58facbbc5949a94ad82c982e682e98d558c82a10d313081603235837c83438393836782cc835f8381815b8357a100",
+        "sha256": "93738e98b1a75f463e55ec68e4820a2f1cf63303372fc78bed1ca61fa055a359",
+        "japanese": "同じ部屋で小ｻﾅ爆発による攻撃｡\n10～25ポイントのダメージ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 3,
+      "menu_order": 8,
+      "menu_eligible": true,
+      "name": "Bang",
+      "canonical_name": "Bang",
+      "description": "Attacks with a small explosion in the\nsame room. Deals 10-25 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 8,
+      "record_offset": 1338964,
+      "record_hex": "148006080a00030c09000000",
+      "name_source": {
+        "offset": 426004,
+        "end_exclusive": 426011,
+        "raw_hex": "83438349838900",
+        "sha256": "f4c52ee9c034de01e3c572ac5c35cab214648409a5897c09575c523e744415c0",
+        "japanese": "イオラ"
+      },
+      "description_source": {
+        "offset": 435792,
+        "end_exclusive": 435848,
+        "raw_hex": "93af82b6959489ae82c591e5b7c5949a94ad82c982e682e98d558c82a10d323081603530837c83438393836782cc835f8381815b8357a100",
+        "sha256": "b5e95eda20a46e6aef0781e2436bd80863178a3806a10cc5f84069125061bbde",
+        "japanese": "同じ部屋で大ｷﾅ爆発による攻撃｡\n20～50ポイントのダメージ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 3,
+      "menu_order": 9,
+      "menu_eligible": true,
+      "name": "Boom",
+      "canonical_name": "Boom",
+      "description": "Attacks with a large explosion in the\nsame room. Deals 20-50 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 9,
+      "record_offset": 1338976,
+      "record_hex": "008006081e0003080a000000",
+      "name_source": {
+        "offset": 425984,
+        "end_exclusive": 425995,
+        "raw_hex": "8343834983698359839300",
+        "sha256": "22df93d849ac3038129a025d00ca8999970d753190c354e2e7e9f4b3319e984e",
+        "japanese": "イオナズン"
+      },
+      "description_source": {
+        "offset": 435732,
+        "end_exclusive": 435789,
+        "raw_hex": "93af82b6959489ae82c58b9091e5c5949a94ad82c982e682e98d558c82a10d333081603730837c83438393836782cc835f8381815b8357a100",
+        "sha256": "a8a96517720f44cd55bb46c4fc982bd650290fd2a18f450336070248a024bf00",
+        "japanese": "同じ部屋で巨大ﾅ爆発による攻撃｡\n30～70ポイントのダメージ｡"
+      },
+      "hp_cost": 30,
+      "target_kind": 3,
+      "menu_order": 10,
+      "menu_eligible": true,
+      "name": "Kaboom",
+      "canonical_name": "Kaboom",
+      "description": "Attacks with a huge explosion in the\nsame room. Deals 30-70 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 10,
+      "record_offset": 1338988,
+      "record_hex": "ec7f06080400001811000000",
+      "name_source": {
+        "offset": 425964,
+        "end_exclusive": 425969,
+        "raw_hex": "836f834d00",
+        "sha256": "054b658e820bd593e5ab1ba9097d7b1251e5fafbf8b01f20fdd9cb28cc7f1be0",
+        "japanese": "バギ"
+      },
+      "description_source": {
+        "offset": 435664,
+        "end_exclusive": 435729,
+        "raw_hex": "cfdcd83895fb8cfcc6b2d9838283938358835e815bc60d8facbbc597b38aaa82c58d558c82a10d313581603230837c83438393836782cc835f8381815b8357a100",
+        "sha256": "1606d3a1dde72066b43c3e415e09c982ca1691364771d5084c1656426886ff3e",
+        "japanese": "ﾏﾜﾘ8方向ﾆｲﾙモンスターﾆ\n小ｻﾅ竜巻で攻撃｡\n15～20ポイントのダメージ｡"
+      },
+      "hp_cost": 4,
+      "target_kind": 0,
+      "menu_order": 17,
+      "menu_eligible": true,
+      "name": "Woosh",
+      "canonical_name": "Woosh",
+      "description": "Attacks monsters in all eight surrounding\ndirections with a small whirlwind.\nDeals 15-20 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 11,
+      "record_offset": 1339000,
+      "record_hex": "dc7f06080c00000c12000000",
+      "name_source": {
+        "offset": 425948,
+        "end_exclusive": 425955,
+        "raw_hex": "836f834d837d00",
+        "sha256": "3d2aa7f153504278d81d597e413696ea1f789cc50db39601ad00baac82336c78",
+        "japanese": "バギマ"
+      },
+      "description_source": {
+        "offset": 435596,
+        "end_exclusive": 435661,
+        "raw_hex": "cfdcd83895fb8cfcc6b2d9838283938358835e815bc60d91e5b7c597b38aaa82c58d558c82a10d323081603430837c83438393836782cc835f8381815b8357a100",
+        "sha256": "18ffab8f53d2ba67f06d3c5b64a1f31065489d584d70367a5506c5d75cf3913b",
+        "japanese": "ﾏﾜﾘ8方向ﾆｲﾙモンスターﾆ\n大ｷﾅ竜巻で攻撃｡\n20～40ポイントのダメージ｡"
+      },
+      "hp_cost": 12,
+      "target_kind": 0,
+      "menu_order": 18,
+      "menu_eligible": true,
+      "name": "Swoosh",
+      "canonical_name": "Swoosh",
+      "description": "Attacks monsters in all eight surrounding\ndirections with a large whirlwind.\nDeals 20-40 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 12,
+      "record_offset": 1339012,
+      "record_hex": "c87f06082300000813000000",
+      "name_source": {
+        "offset": 425928,
+        "end_exclusive": 425939,
+        "raw_hex": "836f834d834e838d835800",
+        "sha256": "ad429acf6b938597077d1710cd4146bc40907df29c62964038b7af0c8476a610",
+        "japanese": "バギクロス"
+      },
+      "description_source": {
+        "offset": 435528,
+        "end_exclusive": 435594,
+        "raw_hex": "cfdcd83895fb8cfcc6b2d9838283938358835e815bc60d8b9091e5c597b38aaa82c58d558c82a10d363081603930837c83438393836782cc835f8381815b8357a100",
+        "sha256": "113c47a174709afc026c901d7017795161d5ddd7b282d27d873320507ccade5b",
+        "japanese": "ﾏﾜﾘ8方向ﾆｲﾙモンスターﾆ\n巨大ﾅ竜巻で攻撃｡\n60～90ポイントのダメージ｡"
+      },
+      "hp_cost": 35,
+      "target_kind": 0,
+      "menu_order": 19,
+      "menu_eligible": true,
+      "name": "Kaswoosh",
+      "canonical_name": "Kaswoosh",
+      "description": "Attacks monsters in all eight surrounding\ndirections with a huge whirlwind.\nDeals 60-90 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 13,
+      "record_offset": 1339024,
+      "record_hex": "b47f0608050000180d000000",
+      "name_source": {
+        "offset": 425908,
+        "end_exclusive": 425915,
+        "raw_hex": "83718383836800",
+        "sha256": "e88fff87c947275a0d6fe7f0eb38136371784e4941edc48ffaf077a183368700",
+        "japanese": "ヒャド"
+      },
+      "description_source": {
+        "offset": 435480,
+        "end_exclusive": 435528,
+        "raw_hex": "cfdcd83895fb8cfca68facbbc5955882c58d558c82a10d3881603132837c83438393836782cc835f8381815b8357a100",
+        "sha256": "4c81c66899cf6eb37b6aa8b9f6e73638b9c3ec300374b646faa3ef42816e12ee",
+        "japanese": "ﾏﾜﾘ8方向ｦ小ｻﾅ氷で攻撃｡\n8～12ポイントのダメージ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 0,
+      "menu_order": 13,
+      "menu_eligible": true,
+      "name": "Crack",
+      "canonical_name": "Crack",
+      "description": "Attacks in all eight surrounding\ndirections with small ice shards.\nDeals 8-12 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 14,
+      "record_offset": 1339036,
+      "record_hex": "a07f06080900000c0e000000",
+      "name_source": {
+        "offset": 425888,
+        "end_exclusive": 425899,
+        "raw_hex": "83718383835f838b835200",
+        "sha256": "b63fd3dc38c08f52b26c036188775ab3104fb08237dfae8825b6d8bf0f7842f5",
+        "japanese": "ヒャダルコ"
+      },
+      "description_source": {
+        "offset": 435428,
+        "end_exclusive": 435477,
+        "raw_hex": "cfdcd83895fb8cfca691e5b7c5955882c58d558c82a10d313581603330837c83438393836782cc835f8381815b8357a100",
+        "sha256": "aac19de26005c9f403d9ca18ebd411b29e57f0a3dfaf018cf8972f80e9a6da1e",
+        "japanese": "ﾏﾜﾘ8方向ｦ大ｷﾅ氷で攻撃｡\n15～30ポイントのダメージ｡"
+      },
+      "hp_cost": 9,
+      "target_kind": 0,
+      "menu_order": 14,
+      "menu_eligible": true,
+      "name": "Crackle",
+      "canonical_name": "Crackle",
+      "description": "Attacks in all eight surrounding\ndirections with large ice shards.\nDeals 15-30 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 15,
+      "record_offset": 1339048,
+      "record_hex": "887f0608140000080f000000",
+      "name_source": {
+        "offset": 425864,
+        "end_exclusive": 425873,
+        "raw_hex": "837d83718383836800",
+        "sha256": "134adfaf00996252b49d19a17bc57f6770cf3a34cba5847ca0e56bf7ef4a2dca",
+        "japanese": "マヒャド"
+      },
+      "description_source": {
+        "offset": 435376,
+        "end_exclusive": 435426,
+        "raw_hex": "cfdcd83895fb8cfca68b9091e5c5955882c58d558c82a10d333581603535837c83438393836782cc835f8381815b8357a100",
+        "sha256": "78cd587bb6e5b18d2fada87037e31679936fed8c7f685fc6c773ac50592d01d3",
+        "japanese": "ﾏﾜﾘ8方向ｦ巨大ﾅ氷で攻撃｡\n35～55ポイントのダメージ｡"
+      },
+      "hp_cost": 20,
+      "target_kind": 0,
+      "menu_order": 15,
+      "menu_eligible": true,
+      "name": "Kacrack",
+      "canonical_name": "Kacrack",
+      "description": "Attacks in all eight surrounding\ndirections with huge ice shards.\nDeals 35-55 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Kacrack",
+        "note": "Mahyado uses the XI Kacrack mapping. Hyadain also maps to Kacrack in modernIII/IV; Room Kacrack is a project display distinction for this room-targeting T2 spell. User preference pending; no original spell identity or mechanics changed."
+      }
+    },
+    {
+      "id": 16,
+      "record_offset": 1339060,
+      "record_hex": "707f06082800030810000000",
+      "name_source": {
+        "offset": 425840,
+        "end_exclusive": 425851,
+        "raw_hex": "83718383835f8343839300",
+        "sha256": "cef356b4511232dae76b32203bdde2f77b9449663b81f7901b5c82c732ee0d3b",
+        "japanese": "ヒャダイン"
+      },
+      "description_source": {
+        "offset": 435308,
+        "end_exclusive": 435374,
+        "raw_hex": "93af82b6959489aec6b2d9838283938358835e815bc60d8facbbc59558c9959782c58d558c82a10d353081603830837c83438393836782cc835f8381815b8357a100",
+        "sha256": "546612740ff02c9f83db2bb8622864b4e6b5128df4f018c64218a5d1b9c03231",
+        "japanese": "同じ部屋ﾆｲﾙモンスターﾆ\n小ｻﾅ氷ﾉ風で攻撃｡\n50～80ポイントのダメージ｡"
+      },
+      "hp_cost": 40,
+      "target_kind": 3,
+      "menu_order": 16,
+      "menu_eligible": true,
+      "name": "Room Kacrack",
+      "canonical_name": "Kacrack",
+      "description": "Attacks monsters in the same room with\na small icy wind. Deals 50-80 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Kacrack",
+        "note": "Mahyado uses the XI Kacrack mapping. Hyadain also maps to Kacrack in modernIII/IV; Room Kacrack is a project display distinction for this room-targeting T2 spell. User preference pending; no original spell identity or mechanics changed."
+      }
+    },
+    {
+      "id": 17,
+      "record_offset": 1339072,
+      "record_hex": "5c7f06080300010814000000",
+      "name_source": {
+        "offset": 425820,
+        "end_exclusive": 425827,
+        "raw_hex": "83668343839300",
+        "sha256": "adfecef6d4bd26bd0296f9769a7bc2d54c1b3a73e92a0901439072ceccbb481c",
+        "japanese": "デイン"
+      },
+      "description_source": {
+        "offset": 435252,
+        "end_exclusive": 435308,
+        "raw_hex": "914f95fbc9838283938358835e815bc68facbbc5978b82c58d558c82a10d313081603135837c83438393836782cc835f8381815b8357a100",
+        "sha256": "d69a12194e37f4b397523666222850b5a5748d9a74af40a152b64c655abe13a2",
+        "japanese": "前方ﾉモンスターﾆ小ｻﾅ雷で攻撃｡\n10～15ポイントのダメージ｡"
+      },
+      "hp_cost": 3,
+      "target_kind": 1,
+      "menu_order": 20,
+      "menu_eligible": true,
+      "name": "Zap",
+      "canonical_name": "Zap",
+      "description": "Attacks a monster ahead with a small\nlightning bolt. Deals 10-15 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 18,
+      "record_offset": 1339084,
+      "record_hex": "487f06080f00010815000000",
+      "name_source": {
+        "offset": 425800,
+        "end_exclusive": 425811,
+        "raw_hex": "8389834383668343839300",
+        "sha256": "e04931da7eb58e11ac506d911db5665c6738cd464f3823e357598b466deede5e",
+        "japanese": "ライデイン"
+      },
+      "description_source": {
+        "offset": 435196,
+        "end_exclusive": 435252,
+        "raw_hex": "914f95fbc9838283938358835e815bc691e5b7c5978b82c58d558c82a10d323081603330837c83438393836782cc835f8381815b8357a100",
+        "sha256": "2574e4f22620bbb7c8d9494a14b76bd658f978a534b37646bbadbbb7aac395ad",
+        "japanese": "前方ﾉモンスターﾆ大ｷﾅ雷で攻撃｡\n20～30ポイントのダメージ｡"
+      },
+      "hp_cost": 15,
+      "target_kind": 1,
+      "menu_order": 21,
+      "menu_eligible": true,
+      "name": "Zapple",
+      "canonical_name": "Zapple",
+      "description": "Attacks a monster ahead with a large\nlightning bolt. Deals 20-30 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 19,
+      "record_offset": 1339096,
+      "record_hex": "307f06081900010416000000",
+      "name_source": {
+        "offset": 425776,
+        "end_exclusive": 425787,
+        "raw_hex": "834d834b83668343839300",
+        "sha256": "d83f750e31dc77af6ae3ab98ed4828017cd7c1a65619c6183b0db0bc6aa4e90e",
+        "japanese": "ギガデイン"
+      },
+      "description_source": {
+        "offset": 435136,
+        "end_exclusive": 435193,
+        "raw_hex": "914f95fbc9838283938358835e815bc68b9091e5c5978b82c58d558c82a10d333081603530837c83438393836782cc835f8381815b8357a100",
+        "sha256": "62b973dddb9f35409cbff705bcc898c23f5b400559885e43536defa93c259195",
+        "japanese": "前方ﾉモンスターﾆ巨大ﾅ雷で攻撃｡\n30～50ポイントのダメージ｡"
+      },
+      "hp_cost": 25,
+      "target_kind": 1,
+      "menu_order": 22,
+      "menu_eligible": true,
+      "name": "Kazap",
+      "canonical_name": "Kazap",
+      "description": "Attacks a monster ahead with a huge\nlightning bolt. Deals 30-50 damage.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 20,
+      "record_offset": 1339108,
+      "record_hex": "1c7f06084b00010118000000",
+      "name_source": {
+        "offset": 425756,
+        "end_exclusive": 425761,
+        "raw_hex": "8355834c00",
+        "sha256": "a3a3f2efa4eebd99f33c52a1996d33777001ac468cc6aedd97b48bdb3772acf7",
+        "japanese": "ザキ"
+      },
+      "description_source": {
+        "offset": 435108,
+        "end_exclusive": 435133,
+        "raw_hex": "914f95fbc9838283938358835e815ba691a68e80bbbed9a100",
+        "sha256": "d88c1266aa9af30d2a19de910df9ae472fe552ed6976be88e1f361f1a5fab0e3",
+        "japanese": "前方ﾉモンスターｦ即死ｻｾﾙ｡"
+      },
+      "hp_cost": 75,
+      "target_kind": 1,
+      "menu_order": 24,
+      "menu_eligible": true,
+      "name": "Whack",
+      "canonical_name": "Whack",
+      "description": "Instantly kills a monster ahead.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 21,
+      "record_offset": 1339120,
+      "record_hex": "087f06089600030119000000",
+      "name_source": {
+        "offset": 425736,
+        "end_exclusive": 425747,
+        "raw_hex": "83558389834c815b837d00",
+        "sha256": "5bd86f0bb9bf751d87de1889623d4cbfb83de955e13ba267a553c3cdb3e6c9d0",
+        "japanese": "ザラキーマ"
+      },
+      "description_source": {
+        "offset": 435076,
+        "end_exclusive": 435105,
+        "raw_hex": "93af82b6959489aec9838283938358835e815ba691a68e80bbbed9a100",
+        "sha256": "18a9a347f4800774fd67262b2d36d7f2343d85518215ef44075d1a82c1ced515",
+        "japanese": "同じ部屋ﾉモンスターｦ即死ｻｾﾙ｡"
+      },
+      "hp_cost": 150,
+      "target_kind": 3,
+      "menu_order": 25,
+      "menu_eligible": true,
+      "name": "Kathwack",
+      "canonical_name": "Kathwack",
+      "description": "Instantly kills the monsters in the\nsame room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 22,
+      "record_offset": 1339132,
+      "record_hex": "f07e06080000060001000000",
+      "name_source": {
+        "offset": 425712,
+        "end_exclusive": 425721,
+        "raw_hex": "8381834b8393836500",
+        "sha256": "731e6fbaf4c25e3e8da0344b6fd0ed4dc3bdbc2df9a0e7d42af6c6bc7c288c32",
+        "japanese": "メガンテ"
+      },
+      "description_source": {
+        "offset": 435028,
+        "end_exclusive": 435073,
+        "raw_hex": "bfc98374838d8341c9838283938358835e815ba6915396c5bbbed9b60d7e82aac0b5dad9b6c982c7c1d7b6a100",
+        "sha256": "2ec118dd0b5ad38b8478b6608a7dc1afa5e9bb56d7924ebed0e67a60b3efe4fe",
+        "japanese": "ｿﾉフロアﾉモンスターｦ全滅ｻｾﾙｶ\n{unclassified-control:7e}がﾀｵﾚﾙｶﾉどﾁﾗｶ｡"
+      },
+      "hp_cost": 0,
+      "target_kind": 6,
+      "menu_order": 1,
+      "menu_eligible": true,
+      "name": "Kamikazee",
+      "canonical_name": "Kamikazee",
+      "description": "Either wipes out all monsters on the\nfloor, or {player} falls.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 23,
+      "record_offset": 1339144,
+      "record_hex": "d87e06080f0001081d000000",
+      "name_source": {
+        "offset": 425688,
+        "end_exclusive": 425697,
+        "raw_hex": "8389838a837a815b00",
+        "sha256": "a7fc7eb594f1b60f12365e5bc6d991bbd9751c075ce96958365170af35ab5628",
+        "japanese": "ラリホー"
+      },
+      "description_source": {
+        "offset": 435004,
+        "end_exclusive": 435027,
+        "raw_hex": "914f95fbc9838283938358835e815ba6c8d1d7bed9a100",
+        "sha256": "4fdc7dda7db281adc271a7ee9ef13f8bf065a0bb81053b14ccf9a1f5435fad09",
+        "japanese": "前方ﾉモンスターｦﾈﾑﾗｾﾙ｡"
+      },
+      "hp_cost": 15,
+      "target_kind": 1,
+      "menu_order": 29,
+      "menu_eligible": true,
+      "name": "Snooze",
+      "canonical_name": "Snooze",
+      "description": "Puts a monster ahead to sleep.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 24,
+      "record_offset": 1339156,
+      "record_hex": "c07e06080a0008081c000000",
+      "name_source": {
+        "offset": 425664,
+        "end_exclusive": 425675,
+        "raw_hex": "837d837a8367815b839300",
+        "sha256": "04989db5eaef8478c7cc26ead53b7e95a0f0aac215eb193e9c180e1b30146a7e",
+        "japanese": "マホトーン"
+      },
+      "description_source": {
+        "offset": 434964,
+        "end_exclusive": 435001,
+        "raw_hex": "93af82b6959489aec9838283938358835e815bc90d93c18eea8d558c82a6959582b6d9a100",
+        "sha256": "1dccf3504b06842d788962473b93bf1cd95f7676497766bc5c8ec6f28fde43d8",
+        "japanese": "同じ部屋ﾉモンスターﾉ\n特殊攻撃ｦ封じﾙ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 8,
+      "menu_order": 28,
+      "menu_eligible": true,
+      "name": "Fizzle",
+      "canonical_name": "Fizzle",
+      "description": "Seals the special attacks of monsters\nin the same room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 25,
+      "record_offset": 1339168,
+      "record_hex": "a87e06080300020820000000",
+      "name_source": {
+        "offset": 425640,
+        "end_exclusive": 425649,
+        "raw_hex": "837d836b815b835400",
+        "sha256": "ff7f2213ef5e7e17af746741821c1e7bd3d5a84b82b63a7b29777b9c0f61dd20",
+        "japanese": "マヌーサ"
+      },
+      "description_source": {
+        "offset": 434916,
+        "end_exclusive": 434964,
+        "raw_hex": "838283938358835e815bc992ca8fed8d558c8282aa0d3130835e815b839382cc82a082a282beca82b8dad4bd82a2a100",
+        "sha256": "62c356ba48b9a5fd55e2174d337ac3b9ca4f7161f47e9ac4fcda382374c56b9d",
+        "japanese": "モンスターﾉ通常攻撃が\n10ターンのあいだﾊずﾚﾔｽい｡"
+      },
+      "hp_cost": 3,
+      "target_kind": 2,
+      "menu_order": 32,
+      "menu_eligible": true,
+      "name": "Dazzle",
+      "canonical_name": "Dazzle",
+      "description": "Makes monsters more likely to miss\nwith normal attacks for 10 turns.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 26,
+      "record_offset": 1339180,
+      "record_hex": "907e06080c0008081f000000",
+      "name_source": {
+        "offset": 425616,
+        "end_exclusive": 425625,
+        "raw_hex": "8381835f8370836a00",
+        "sha256": "d4f1393b0a97feb17c9db76d6b9f519c22f66266e9bec2b046a1f23f820f6c4c",
+        "japanese": "メダパニ"
+      },
+      "description_source": {
+        "offset": 434884,
+        "end_exclusive": 434916,
+        "raw_hex": "93af82b6959489aec6b2d9838283938358835e815ba60d8dac9790bbbed9a100",
+        "sha256": "e7fe0081d6e92422f627013c83d414d5783aba773e6e4af88f18e88478b7f48e",
+        "japanese": "同じ部屋ﾆｲﾙモンスターｦ\n混乱ｻｾﾙ｡"
+      },
+      "hp_cost": 12,
+      "target_kind": 8,
+      "menu_order": 31,
+      "menu_eligible": true,
+      "name": "Fuddle",
+      "canonical_name": "Fuddle",
+      "description": "Confuses monsters in the same room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 27,
+      "record_offset": 1339192,
+      "record_hex": "787e06080a0001081b000000",
+      "name_source": {
+        "offset": 425592,
+        "end_exclusive": 425601,
+        "raw_hex": "837b837e8349835800",
+        "sha256": "3d9e964eb97e661156d54e0ceff516033ed406ee2f0548aee588148962e10554",
+        "japanese": "ボミオス"
+      },
+      "description_source": {
+        "offset": 434852,
+        "end_exclusive": 434882,
+        "raw_hex": "914f95fbc6b2d9838283938358835e815bc993aeb7a60db5bfb8bdd9a100",
+        "sha256": "06f74655da1bc9c0d714dec31705bf2039e1e2ca6bd0207ab9a69408f6f5a8bd",
+        "japanese": "前方ﾆｲﾙモンスターﾉ動ｷｦ\nｵｿｸｽﾙ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 1,
+      "menu_order": 27,
+      "menu_eligible": true,
+      "name": "Deceleratle",
+      "canonical_name": "Deceleratle",
+      "description": "Slows the movement of a monster ahead.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 28,
+      "record_offset": 1339204,
+      "record_hex": "ac9e06080300010063000000",
+      "name_source": {
+        "offset": 433836,
+        "end_exclusive": 433845,
+        "raw_hex": "83738349838a838000",
+        "sha256": "6bc48c1abd1b1a5d17d6a81912b951d2206bf75c075318366e97c0586946cd8c",
+        "japanese": "ピオリム"
+      },
+      "description_source": {
+        "offset": 434824,
+        "end_exclusive": 434852,
+        "raw_hex": "914f95fbc9838283938358835e815bc993aeb7a60dcad4b8bdd9a100",
+        "sha256": "2dcc4404e3ec9f157ccdc728a322fa8d9e05a71ad4b546db3a5c7297650b58ee",
+        "japanese": "前方ﾉモンスターﾉ動ｷｦ\nﾊﾔｸｽﾙ｡"
+      },
+      "hp_cost": 3,
+      "target_kind": 1,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Acceleratle",
+      "canonical_name": "Acceleratle",
+      "description": "Speeds up a monster ahead.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 29,
+      "record_offset": 1339216,
+      "record_hex": "dc7c06080f00050329000000",
+      "name_source": {
+        "offset": 425180,
+        "end_exclusive": 425189,
+        "raw_hex": "835683838369834e00",
+        "sha256": "223fc01ee1b9f1177dbc6612e8d8f26e31a3e7f4887df77c3993e6cf97ba1b60",
+        "japanese": "シャナク"
+      },
+      "description_source": {
+        "offset": 434796,
+        "end_exclusive": 434821,
+        "raw_hex": "919594f5bcc3b2d98341834383658380c98ef4b2a6c4b8a100",
+        "sha256": "6ecf85ae1f92de769ace75683c57bfdae79eda6f164aa22f8511be794630d898",
+        "japanese": "装備ｼﾃｲﾙアイテムﾉ呪ｲｦﾄｸ｡"
+      },
+      "hp_cost": 15,
+      "target_kind": 5,
+      "menu_order": 41,
+      "menu_eligible": true,
+      "name": "Sheen",
+      "canonical_name": "Sheen",
+      "description": "Lifts curses from equipped items.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 30,
+      "record_offset": 1339228,
+      "record_hex": "5c7e06080300050824000000",
+      "name_source": {
+        "offset": 425564,
+        "end_exclusive": 425579,
+        "raw_hex": "837d83578362834e836f838a834100",
+        "sha256": "653b99d43316a07dbdaa60a48858bb1697563854a0a910c5f9ff569956fe7c41",
+        "japanese": "マジックバリア"
+      },
+      "description_source": {
+        "offset": 434748,
+        "end_exclusive": 434794,
+        "raw_hex": "3130835e815b8393c9b1b282be20c4b782c7b70d838283938358835e815bc996829640a696b38cf889bbbdd9a100",
+        "sha256": "392229585865b7cb455da617d4d19d41eb414683abfc499e350191d113a4823e",
+        "japanese": "10ターンﾉｱｲだ ﾄｷどｷ\nモンスターﾉ魔法ｦ無効化ｽﾙ｡"
+      },
+      "hp_cost": 3,
+      "target_kind": 5,
+      "menu_order": 36,
+      "menu_eligible": true,
+      "name": "Magic Barrier",
+      "canonical_name": "Magic Barrier",
+      "description": "Sometimes nullifies monster magic\nfor 10 turns.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 31,
+      "record_offset": 1339240,
+      "record_hex": "a09e06080400050063000000",
+      "name_source": {
+        "offset": 433824,
+        "end_exclusive": 433835,
+        "raw_hex": "837d837a835e815b839300",
+        "sha256": "19f17b6352ec3a6d00593e3ce45599ea4ae5ac5e436a032f1358cf0142c33f82",
+        "japanese": "マホターン"
+      },
+      "description_source": {
+        "offset": 434696,
+        "end_exclusive": 434746,
+        "raw_hex": "31835e815b8393c9b1b282be82beb92093c18eea8d558c82a60dbcc3b7c0838283938358835e815ba68dac9790bbbed9a100",
+        "sha256": "1eeed6e37ee3a2f8fda533f8c31fb75c13b84d16d4c33e6fc9605df41e07ace1",
+        "japanese": "1ターンﾉｱｲだだｹ 特殊攻撃ｦ\nｼﾃｷﾀモンスターｦ混乱ｻｾﾙ｡"
+      },
+      "hp_cost": 4,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Bound",
+      "canonical_name": "Bound",
+      "description": "For one turn, confuses monsters that\nuse special attacks against you.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 32,
+      "record_offset": 1339252,
+      "record_hex": "407e06080a00050825000000",
+      "name_source": {
+        "offset": 425536,
+        "end_exclusive": 425547,
+        "raw_hex": "837d837a834a8393835e00",
+        "sha256": "0f87561182c97b8fa87d0217ccdea892159cace101919773a0acf76af2c6d82c",
+        "japanese": "マホカンタ"
+      },
+      "description_source": {
+        "offset": 434648,
+        "end_exclusive": 434696,
+        "raw_hex": "3130835e815b8393c9b1b282be20968296408d558c82a60dbcc3b7c0838283938358835e815ba68dac9790bbbed9a100",
+        "sha256": "a013e0de1a4893692db10fdab03f701b7048624f8939f8e5dd1fee46b20ae91c",
+        "japanese": "10ターンﾉｱｲだ 魔法攻撃ｦ\nｼﾃｷﾀモンスターｦ混乱ｻｾﾙ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 5,
+      "menu_order": 37,
+      "menu_eligible": true,
+      "name": "Bounce",
+      "canonical_name": "Bounce",
+      "description": "For 10 turns, confuses monsters that\nuse magic attacks against you.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 33,
+      "record_offset": 1339264,
+      "record_hex": "287e06080500050826000000",
+      "name_source": {
+        "offset": 425512,
+        "end_exclusive": 425521,
+        "raw_hex": "838283568383835800",
+        "sha256": "c9662a933b92aed58af2b41a9238f5269e96cb3df5b1c58f59f21843d6f0765c",
+        "japanese": "モシャス"
+      },
+      "description_source": {
+        "offset": 434628,
+        "end_exclusive": 434648,
+        "raw_hex": "838283938358835e815bc68e70a695cfb4d9a100",
+        "sha256": "cb13d8cbb575982ed116b3a80fa6caa1afc0e6b68fde6323984cd986333897d8",
+        "japanese": "モンスターﾆ姿ｦ変ｴﾙ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 5,
+      "menu_order": 38,
+      "menu_eligible": true,
+      "name": "Morph",
+      "canonical_name": "Morph",
+      "description": "Transforms you into a monster.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 34,
+      "record_offset": 1339276,
+      "record_hex": "949e06080a00000063000000",
+      "name_source": {
+        "offset": 433812,
+        "end_exclusive": 433821,
+        "raw_hex": "835583498389838b00",
+        "sha256": "5ca8e66ccd55421267b7dcb4cd91332c5d0f540d38cd41fcbcfd62520c73b4f6",
+        "japanese": "ザオラル"
+      },
+      "description_source": {
+        "offset": 434596,
+        "end_exclusive": 434627,
+        "raw_hex": "cfdcd8c9b595e6b6d7838283938358835e815ba60dd6d082aab4d7bed9a100",
+        "sha256": "fa4f41dff847ee0fe593e1b1c3f87bee35d21dbe3c14e8a3a2c224c53a151f0e",
+        "japanese": "ﾏﾜﾘﾉｵ墓ｶﾗモンスターｦ\nﾖﾐがｴﾗｾﾙ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 0,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Zing",
+      "canonical_name": "Zing",
+      "description": "Revives monsters from nearby graves.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 35,
+      "record_offset": 1339288,
+      "record_hex": "947a06081400030063000000",
+      "name_source": {
+        "offset": 424596,
+        "end_exclusive": 424605,
+        "raw_hex": "83558349838a834e00",
+        "sha256": "ee5264522c28ec3462b09ecc4fdd98a087c2a2f69e13cc4230af27b05198a9a4",
+        "japanese": "ザオリク"
+      },
+      "description_source": {
+        "offset": 434556,
+        "end_exclusive": 434596,
+        "raw_hex": "959489aec99286c9bd82d7c3c9b595e6b6d70d838283938358835e815ba6d6d082aab4d7bed9a100",
+        "sha256": "6a7b4436bac027ca99441e2333f957273237a3d8afa09cb7d4f4f0b9702fa66a",
+        "japanese": "部屋ﾉ中ﾉｽべﾃﾉｵ墓ｶﾗ\nモンスターｦﾖﾐがｴﾗｾﾙ｡"
+      },
+      "hp_cost": 20,
+      "target_kind": 3,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Kazing",
+      "canonical_name": "Kazing",
+      "description": "Revives monsters from all graves\nin the room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 36,
+      "record_offset": 1339300,
+      "record_hex": "107e06084b00050828000000",
+      "name_source": {
+        "offset": 425488,
+        "end_exclusive": 425497,
+        "raw_hex": "8381834b8355838b00",
+        "sha256": "be4e0794c8933b7dc568c58ba85863f13a3502b9fd175d09269bd7b77d0f9461",
+        "japanese": "メガザル"
+      },
+      "description_source": {
+        "offset": 434516,
+        "end_exclusive": 434556,
+        "raw_hex": "838283938358835e815bc6d4d7dac0c4b782c5d30dccafb6c2bdd982aa8fa5b4d9c49659dad9a100",
+        "sha256": "6a19c89cba0bc6d09b242d7a40ff4e5bc9551652fca41fa5f1bb7ed5407a9c8e",
+        "japanese": "モンスターﾆﾔﾗﾚﾀﾄｷでﾓ\nﾌｯｶﾂｽﾙが唱ｴﾙﾄ忘ﾚﾙ｡"
+      },
+      "hp_cost": 75,
+      "target_kind": 5,
+      "menu_order": 40,
+      "menu_eligible": true,
+      "name": "Kerplunk",
+      "canonical_name": "Kerplunk",
+      "description": "Revives you if a monster defeats you.\nYou forget this spell when you cast it.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 37,
+      "record_offset": 1339312,
+      "record_hex": "889e06080d00050063000000",
+      "name_source": {
+        "offset": 433800,
+        "end_exclusive": 433809,
+        "raw_hex": "834c8341838a815b00",
+        "sha256": "8517e719be009cd43a454a814b640cfe869554800b674c766a4ad98f5ad4e2fc",
+        "japanese": "キアリー"
+      },
+      "description_source": {
+        "offset": 434504,
+        "end_exclusive": 434514,
+        "raw_hex": "c1b6d7a689f1959ca100",
+        "sha256": "ae33d95f13ffa215bd2dc4c9f1f7e4964dba75ae172f5b05612ad262c95a8074",
+        "japanese": "ﾁｶﾗｦ回復｡"
+      },
+      "hp_cost": 13,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Squelch",
+      "canonical_name": "Squelch",
+      "description": "Restores strength.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 38,
+      "record_offset": 1339324,
+      "record_hex": "7c9e06080a00050063000000",
+      "name_source": {
+        "offset": 433788,
+        "end_exclusive": 433797,
+        "raw_hex": "834c8341838a834e00",
+        "sha256": "16b601bb8c3dbea0225fb3fe7c53cd56206b27b749c7e7a2bca5a4be10a0edd1",
+        "japanese": "キアリク"
+      },
+      "description_source": {
+        "offset": 434476,
+        "end_exclusive": 434503,
+        "raw_hex": "8dac979020d2c282d4bc8ff391d482f089f1959c82b782e9814200",
+        "sha256": "d328879ed55e374c85ccc4f9bb83fc7ea50a6c73262585300de95001aa0107fa",
+        "japanese": "混乱 ﾒﾂぶｼ状態を回復する。"
+      },
+      "hp_cost": 10,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Tingle",
+      "canonical_name": "Tingle",
+      "description": "Cures confusion and blindness.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 39,
+      "record_offset": 1339336,
+      "record_hex": "f87d06080f0005032a000000",
+      "name_source": {
+        "offset": 425464,
+        "end_exclusive": 425473,
+        "raw_hex": "834c83418389838b00",
+        "sha256": "04f271be9945c2408c16502a0b07c6f874deba3fad274c186ee968a7719a0e4d",
+        "japanese": "キアラル"
+      },
+      "description_source": {
+        "offset": 434476,
+        "end_exclusive": 434503,
+        "raw_hex": "8dac979020d2c282d4bc8ff391d482f089f1959c82b782e9814200",
+        "sha256": "d328879ed55e374c85ccc4f9bb83fc7ea50a6c73262585300de95001aa0107fa",
+        "japanese": "混乱 ﾒﾂぶｼ状態を回復する。"
+      },
+      "hp_cost": 15,
+      "target_kind": 5,
+      "menu_order": 42,
+      "menu_eligible": true,
+      "name": "Defuddle",
+      "canonical_name": "Defuddle",
+      "description": "Cures confusion and blindness.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 40,
+      "record_offset": 1339348,
+      "record_hex": "2c7b0608140005082c000000",
+      "name_source": {
+        "offset": 424748,
+        "end_exclusive": 424757,
+        "raw_hex": "83678389837d836900",
+        "sha256": "936618421ec70a624f6f293defd8bd44548b0761855a750f69b65a4d45240281",
+        "japanese": "トラマナ"
+      },
+      "description_source": {
+        "offset": 431276,
+        "end_exclusive": 431297,
+        "raw_hex": "8fb0c9835f8381815b8357a68ef3b9c5b8c5d9a100",
+        "sha256": "3f9e6d7e094480a82b77d61d2b6b389930aae50398c661fc62831f62a71e4d02",
+        "japanese": "床ﾉダメージｦ受ｹﾅｸﾅﾙ｡"
+      },
+      "hp_cost": 20,
+      "target_kind": 5,
+      "menu_order": 44,
+      "menu_eligible": true,
+      "name": "Safe Passage",
+      "canonical_name": "Safe Passage",
+      "description": "Prevents damage from the floor.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 41,
+      "record_offset": 1339360,
+      "record_hex": "947b0608050005082d000000",
+      "name_source": {
+        "offset": 424852,
+        "end_exclusive": 424861,
+        "raw_hex": "838c837e815b838900",
+        "sha256": "d21c3638dd2348eb47ed02a21e8c261ffd56e0ccd68bccd8cce65e40851b8b41",
+        "japanese": "レミーラ"
+      },
+      "description_source": {
+        "offset": 434456,
+        "end_exclusive": 434476,
+        "raw_hex": "cfdcd882aad6b88ca9dcc0bed9d6b3c6c5d9a100",
+        "sha256": "c28c4ac8a2b2f80c76af63349342c7e519e6580ab412c93cc9af0e73ac16160d",
+        "japanese": "ﾏﾜﾘがﾖｸ見ﾜﾀｾﾙﾖｳﾆﾅﾙ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 5,
+      "menu_order": 45,
+      "menu_eligible": true,
+      "name": "Glow",
+      "canonical_name": "Glow",
+      "description": "Lets you see your surroundings clearly.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 42,
+      "record_offset": 1339372,
+      "record_hex": "e07d0608c80005012b000000",
+      "name_source": {
+        "offset": 425440,
+        "end_exclusive": 425451,
+        "raw_hex": "8370838b83768393836500",
+        "sha256": "f807155eb6b93c9a6ba32aab6ef9ffb3001852b0552922d6fb7239be707c5d3a",
+        "japanese": "パルプンテ"
+      },
+      "description_source": {
+        "offset": 434440,
+        "end_exclusive": 434455,
+        "raw_hex": "c5c682aab5bad9b6dcb6d7c5b22100",
+        "sha256": "92c053c92f4dc060e68c048c1d30b037acdad82b23fe59c81c5bb11ac9bfe99f",
+        "japanese": "ﾅﾆがｵｺﾙｶﾜｶﾗﾅｲ!"
+      },
+      "hp_cost": 200,
+      "target_kind": 5,
+      "menu_order": 43,
+      "menu_eligible": true,
+      "name": "Hocus Pocus",
+      "canonical_name": "Hocus Pocus",
+      "description": "Who knows what will happen!",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 43,
+      "record_offset": 1339384,
+      "record_hex": "c47d0608460003020b000000",
+      "name_source": {
+        "offset": 425412,
+        "end_exclusive": 425425,
+        "raw_hex": "8357835383588370815b834e00",
+        "sha256": "f564d7199a3a0ac28700abdb595060ff012fb643893d289a7fd4cc249cd31768",
+        "japanese": "ジゴスパーク"
+      },
+      "description_source": {
+        "offset": 434392,
+        "end_exclusive": 434440,
+        "raw_hex": "93af82b6959489aec9838283938358835e815bc60d37358160313030837c83438393836782cc835f8381815b8357a100",
+        "sha256": "21ef485acff47bdca54e3704377c2d008c322bbbe556174c134a2413609b5a56",
+        "japanese": "同じ部屋ﾉモンスターﾆ\n75～100ポイントのダメージ｡"
+      },
+      "hp_cost": 70,
+      "target_kind": 3,
+      "menu_order": 11,
+      "menu_eligible": true,
+      "name": "Lightning Storm",
+      "canonical_name": "Lightning Storm",
+      "description": "Deals 75-100 damage to monsters\nin the same room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Lightning_Storm"
+      }
+    },
+    {
+      "id": 44,
+      "record_offset": 1339396,
+      "record_hex": "a87d0608640003040c000000",
+      "name_source": {
+        "offset": 425384,
+        "end_exclusive": 425395,
+        "raw_hex": "83728362834f836f839300",
+        "sha256": "348d4f79484caacc8a43979c98831afc9ee1a55138220077bb6a2eae2c4ad63c",
+        "japanese": "ビッグバン"
+      },
+      "description_source": {
+        "offset": 434344,
+        "end_exclusive": 434392,
+        "raw_hex": "93af82b6959489aec9838283938358835e815bc60d39358160313230837c83438393836782cc835f8381815b8357a100",
+        "sha256": "5256057e241a5e6e5972160ad687af79ffcddbe6d7bda7032d769ae5e524ea62",
+        "japanese": "同じ部屋ﾉモンスターﾆ\n95～120ポイントのダメージ｡"
+      },
+      "hp_cost": 100,
+      "target_kind": 3,
+      "menu_order": 12,
+      "menu_eligible": true,
+      "name": "Big Banga",
+      "canonical_name": "Big Banga",
+      "description": "Deals 95-120 damage to monsters\nin the same room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Big_Banga"
+      }
+    },
+    {
+      "id": 45,
+      "record_offset": 1339408,
+      "record_hex": "c47c06080f0005042f000000",
+      "name_source": {
+        "offset": 425156,
+        "end_exclusive": 425165,
+        "raw_hex": "834383938370835800",
+        "sha256": "a9e8838ba50d3db81264633f54786f9146f507b5cded60f12367b9bcfd2585fa",
+        "japanese": "インパス"
+      },
+      "description_source": {
+        "offset": 434324,
+        "end_exclusive": 434342,
+        "raw_hex": "8341834383658380a6bcb782d7c2bdd9a100",
+        "sha256": "2a6eb99e41c595b4595cf4fffd5e942422ab34fced66d0bcf4a3ffd95e60e03c",
+        "japanese": "アイテムｦｼｷべﾂｽﾙ｡"
+      },
+      "hp_cost": 15,
+      "target_kind": 5,
+      "menu_order": 47,
+      "menu_eligible": true,
+      "name": "Peep",
+      "canonical_name": "Peep",
+      "description": "Identifies items.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 46,
+      "record_offset": 1339420,
+      "record_hex": "907d06080500070427000000",
+      "name_source": {
+        "offset": 425360,
+        "end_exclusive": 425369,
+        "raw_hex": "837d837a8367838900",
+        "sha256": "7468d223e0e043eb57149f64508566a3eba603c4b36bc4ba3603d15f704987fe",
+        "japanese": "マホトラ"
+      },
+      "description_source": {
+        "offset": 434292,
+        "end_exclusive": 434323,
+        "raw_hex": "914f95fbc9838283938358835e815bb6d70d4850a6b7adb3bcadb3bdd9a100",
+        "sha256": "a7b877a4d49c8f81d91d12857299e1ded311a7581976939912c878959e24ecca",
+        "japanese": "前方ﾉモンスターｶﾗ\nHPｦｷｭｳｼｭｳｽﾙ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 7,
+      "menu_order": 39,
+      "menu_eligible": true,
+      "name": "Drain Magic",
+      "canonical_name": "Drain Magic",
+      "description": "Absorbs HP from a monster ahead.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List",
+        "note": "Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+      }
+    },
+    {
+      "id": 47,
+      "record_offset": 1339432,
+      "record_hex": "787d0608280005022e000000",
+      "name_source": {
+        "offset": 425336,
+        "end_exclusive": 425345,
+        "raw_hex": "8341836f834a838000",
+        "sha256": "5e6822139fd3f2bb6dacd62be4920f69c30850a34e46075660f82e0f55fea992",
+        "japanese": "アバカム"
+      },
+      "description_source": {
+        "offset": 434272,
+        "end_exclusive": 434290,
+        "raw_hex": "834a834dc2b7c9c482d1d7a68a4ab9d9a100",
+        "sha256": "23e0943123712fd32778fa8cda1720d8a48f446e6a699d14d37d9fe5f6e922d3",
+        "japanese": "カギﾂｷﾉﾄびﾗｦ開ｹﾙ｡"
+      },
+      "hp_cost": 40,
+      "target_kind": 5,
+      "menu_order": 46,
+      "menu_eligible": true,
+      "name": "Click",
+      "canonical_name": "Click",
+      "description": "Opens locked doors.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 48,
+      "record_offset": 1339444,
+      "record_hex": "647d06080500010621000000",
+      "name_source": {
+        "offset": 425316,
+        "end_exclusive": 425323,
+        "raw_hex": "838b834a836a00",
+        "sha256": "e80dfe10c93225b1bfc850bbeea29ae6a00fefc1014268774202d881d364f3ec",
+        "japanese": "ルカニ"
+      },
+      "description_source": {
+        "offset": 434244,
+        "end_exclusive": 434269,
+        "raw_hex": "838283938358835e815bc996688ce497cda689ba82b0d9a100",
+        "sha256": "e1e542bfe08a0bb28041433b6e0135bc39b4a1209e8daafc7875f4ddfff9b752",
+        "japanese": "モンスターﾉ防御力ｦ下げﾙ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 1,
+      "menu_order": 33,
+      "menu_eligible": true,
+      "name": "Sap",
+      "canonical_name": "Sap",
+      "description": "Lowers a monster's defence.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 49,
+      "record_offset": 1339456,
+      "record_hex": "dc7a06080a00040622000000",
+      "name_source": {
+        "offset": 424668,
+        "end_exclusive": 424677,
+        "raw_hex": "838b834a8369839300",
+        "sha256": "48468642d0a8ba1fe9f9ddf3359072d6bedd10f6268d283035620af88d1e2d45",
+        "japanese": "ルカナン"
+      },
+      "description_source": {
+        "offset": 434200,
+        "end_exclusive": 434242,
+        "raw_hex": "bfc98374838d8341c6b2d9bd82d7c3c90d838283938358835e815bc996688ce497cda689ba82b0d9a100",
+        "sha256": "71b8b360d4a9085d3a15f610a315c2bf9bf623f7df871f53f95f12db032154f7",
+        "japanese": "ｿﾉフロアﾆｲﾙｽべﾃﾉ\nモンスターﾉ防御力ｦ下げﾙ｡"
+      },
+      "hp_cost": 10,
+      "target_kind": 4,
+      "menu_order": 34,
+      "menu_eligible": true,
+      "name": "Kasap",
+      "canonical_name": "Kasap",
+      "description": "Lowers the defence of all monsters\non the floor.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 50,
+      "record_offset": 1339468,
+      "record_hex": "1c7c06082800050223000000",
+      "name_source": {
+        "offset": 424988,
+        "end_exclusive": 424995,
+        "raw_hex": "8358834a838900",
+        "sha256": "fda17aaa05191328c2a7f5bd62a827b590db0e6d8311882b167378b0ce317673",
+        "japanese": "スカラ"
+      },
+      "description_source": {
+        "offset": 434144,
+        "end_exclusive": 434199,
+        "raw_hex": "82bb82cc8374838d834182c596688ce497cda68fe382b0d9a10d3289f18fa582a682e982c696688ce497cd32947b82c982c882e9814200",
+        "sha256": "540117448c6a77ce347c090303547348eef3dfa7791f221f8b3840e13734954b",
+        "japanese": "そのフロアで防御力ｦ上げﾙ｡\n2回唱えると防御力2倍になる。"
+      },
+      "hp_cost": 40,
+      "target_kind": 5,
+      "menu_order": 35,
+      "menu_eligible": true,
+      "name": "Buff",
+      "canonical_name": "Buff",
+      "description": "Raises your defence on this floor.\nCast twice to double your defence.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 51,
+      "record_offset": 1339480,
+      "record_hex": "507d0608280005081e000000",
+      "name_source": {
+        "offset": 425296,
+        "end_exclusive": 425307,
+        "raw_hex": "834183588367838d839300",
+        "sha256": "f4576f1af2a55266cc3c4ab100deea76bbea09adf2723be9fdceaf3fb9931659",
+        "japanese": "アストロン"
+      },
+      "description_source": {
+        "offset": 434128,
+        "end_exclusive": 434142,
+        "raw_hex": "8ea995aaa6935389bbbbbed9a100",
+        "sha256": "017c942b6a1c90aea458336b9d7b0d981e648ba3c6568a116a31445297fc4fe5",
+        "japanese": "自分ｦ鉄化ｻｾﾙ｡"
+      },
+      "hp_cost": 40,
+      "target_kind": 5,
+      "menu_order": 30,
+      "menu_eligible": true,
+      "name": "Kaclang",
+      "canonical_name": "Kaclang",
+      "description": "Turns you to iron.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 52,
+      "record_offset": 1339492,
+      "record_hex": "749e06080200050063000000",
+      "name_source": {
+        "offset": 433780,
+        "end_exclusive": 433787,
+        "raw_hex": "837a8343837e00",
+        "sha256": "0b0cfad01fa6ce58ac4d499de081f452b78b0909c175b5078b78c39731bdb1b9",
+        "japanese": "ホイミ"
+      },
+      "description_source": {
+        "offset": 434108,
+        "end_exclusive": 434125,
+        "raw_hex": "8ea995aac94850a6bdbabc89f1959ca100",
+        "sha256": "6bc6186c7c46a1d14a55add80f5eb665b81b86bf217e9c4d373ac0d10471956e",
+        "japanese": "自分ﾉHPｦｽｺｼ回復｡"
+      },
+      "hp_cost": 2,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Heal",
+      "canonical_name": "Heal",
+      "description": "Restores a little of your HP.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 53,
+      "record_offset": 1339504,
+      "record_hex": "689e06080500050063000000",
+      "name_source": {
+        "offset": 433768,
+        "end_exclusive": 433777,
+        "raw_hex": "8378837a8343837e00",
+        "sha256": "e17c2a0291f07dbb6ebc98c009004de12257e407cb6db539374ab44d0945043f",
+        "japanese": "ベホイミ"
+      },
+      "description_source": {
+        "offset": 434088,
+        "end_exclusive": 434105,
+        "raw_hex": "8ea995aac94850a6b6c5d889f1959ca100",
+        "sha256": "d8f84a0d9fa7c5452194af32e40160fa121093016cce4d67d0c86d01454e38c1",
+        "japanese": "自分ﾉHPｦｶﾅﾘ回復｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Midheal",
+      "canonical_name": "Midheal",
+      "description": "Restores a lot of your HP.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 54,
+      "record_offset": 1339516,
+      "record_hex": "609e06086400050063000000",
+      "name_source": {
+        "offset": 433760,
+        "end_exclusive": 433767,
+        "raw_hex": "8378837a837d00",
+        "sha256": "d615604befcab97c54dec2deadd842ab77e36689bab8726b668237faf94e21ae",
+        "japanese": "ベホマ"
+      },
+      "description_source": {
+        "offset": 434068,
+        "end_exclusive": 434087,
+        "raw_hex": "8ea995aac94850a68aae9153c689f1959ca100",
+        "sha256": "8499171ebf407dfa5d5333267fd56389dcf3f15efbf6f388629f5485248a7a7d",
+        "japanese": "自分ﾉHPｦ完全ﾆ回復｡"
+      },
+      "hp_cost": 100,
+      "target_kind": 5,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Fullheal",
+      "canonical_name": "Fullheal",
+      "description": "Fully restores your HP.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 55,
+      "record_offset": 1339528,
+      "record_hex": "3c7d06087d0001011a000000",
+      "name_source": {
+        "offset": 425276,
+        "end_exclusive": 425283,
+        "raw_hex": "83558389834c00",
+        "sha256": "f15a952253e081ab18f74909b8c0c49fe8483e3ca88842b91b8820b527d92503",
+        "japanese": "ザラキ"
+      },
+      "description_source": {
+        "offset": 433992,
+        "end_exclusive": 434065,
+        "raw_hex": "914f95fbc9838283938358835e815ba691a68e80bbbed9a10d959489aec6bfdac493af82b6838283938358835e815b82aa0db2c0d720bfc9838283938358835e815bd391a68e80a100",
+        "sha256": "292536712577fd66c2d949a3f26ecadf6df1079afb08f76a645e625c614fd74f",
+        "japanese": "前方ﾉモンスターｦ即死ｻｾﾙ｡\n部屋ﾆｿﾚﾄ同じモンスターが\nｲﾀﾗ ｿﾉモンスターﾓ即死｡"
+      },
+      "hp_cost": 125,
+      "target_kind": 1,
+      "menu_order": 26,
+      "menu_eligible": true,
+      "name": "Thwack",
+      "canonical_name": "Thwack",
+      "description": "Instantly kills a monster ahead.\nAlso kills any monsters of the same\nkind in the room.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 56,
+      "record_offset": 1339540,
+      "record_hex": "287d06083700010417000000",
+      "name_source": {
+        "offset": 425256,
+        "end_exclusive": 425265,
+        "raw_hex": "836a83748389838000",
+        "sha256": "39502ef912185183878f8156ce939c408b1e6cb80e3e359bdb254cd15da8268b",
+        "japanese": "ニフラム"
+      },
+      "description_source": {
+        "offset": 433956,
+        "end_exclusive": 433992,
+        "raw_hex": "838283938358835e815ba68fc1bcbbd9a10dc082bebc8c6f8cb1926ccad3d7b4c5b2a100",
+        "sha256": "ae463244e7285c672cf25a5fb0fc37b4d491ecc1e17ffdea8df4a4348dfe10f0",
+        "japanese": "モンスターｦ消ｼｻﾙ｡\nﾀだｼ経験値ﾊﾓﾗｴﾅｲ｡"
+      },
+      "hp_cost": 55,
+      "target_kind": 1,
+      "menu_order": 23,
+      "menu_eligible": true,
+      "name": "Poof",
+      "canonical_name": "Poof",
+      "description": "Erases a monster, but you gain no\nexperience points.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 57,
+      "record_offset": 1339552,
+      "record_hex": "107d06081900010830000000",
+      "name_source": {
+        "offset": 425232,
+        "end_exclusive": 425243,
+        "raw_hex": "836f8356838b815b838900",
+        "sha256": "179651e7df52b762f85378ffe6b4f13d38d38301831bdc7b63b641db25ad390a",
+        "japanese": "バシルーラ"
+      },
+      "description_source": {
+        "offset": 433912,
+        "end_exclusive": 433956,
+        "raw_hex": "914f95fbc9838283938358835e815ba60d93af82b68374838d8341c982c7bab6c6838f815b8376bbbed9a100",
+        "sha256": "fe5fa01d854995fe0c763350b2c8132bda9c4c56885421a49685ad8a9c3ecfc9",
+        "japanese": "前方ﾉモンスターｦ\n同じフロアﾉどｺｶﾆワープｻｾﾙ｡"
+      },
+      "hp_cost": 25,
+      "target_kind": 1,
+      "menu_order": 48,
+      "menu_eligible": true,
+      "name": "Bazoom",
+      "canonical_name": "Bazoom",
+      "description": "Warps a monster ahead to somewhere\non the same floor.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 58,
+      "record_offset": 1339564,
+      "record_hex": "847c06080100050231000000",
+      "name_source": {
+        "offset": 425092,
+        "end_exclusive": 425101,
+        "raw_hex": "838a838c837e836700",
+        "sha256": "bfd87ab98aad6a2d5de4ca90708f53fff11102f914ecf0d599423ca7350f9351",
+        "japanese": "リレミト"
+      },
+      "description_source": {
+        "offset": 430940,
+        "end_exclusive": 430962,
+        "raw_hex": "835f8393835783878393b6d782beafbcadc2bdd9a100",
+        "sha256": "0430940297b56ffaf805b493581d024cf7c5c9ba3acfdffa3c51c89d04dfc734",
+        "japanese": "ダンジョンｶﾗだｯｼｭﾂｽﾙ｡"
+      },
+      "hp_cost": 1,
+      "target_kind": 5,
+      "menu_order": 49,
+      "menu_eligible": true,
+      "name": "Evac",
+      "canonical_name": "Evac",
+      "description": "Escapes from the dungeon.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 59,
+      "record_offset": 1339576,
+      "record_hex": "fc7c06081400050832000000",
+      "name_source": {
+        "offset": 425212,
+        "end_exclusive": 425219,
+        "raw_hex": "838b815b838900",
+        "sha256": "dd9764a6782a477e99422a97edd829b54841a31f1fdc4241298cae236a84880a",
+        "japanese": "ルーラ"
+      },
+      "description_source": {
+        "offset": 433876,
+        "end_exclusive": 433909,
+        "raw_hex": "93af82b68374838d8341c982c7bab6c60d8ea995aaa6838f815b8376bbbed9a100",
+        "sha256": "eb4f906038cdd7c272fce76a477e9f8e0193b7aad27ab3a675d17a3904946411",
+        "japanese": "同じフロアﾉどｺｶﾆ\n自分ｦワープｻｾﾙ｡"
+      },
+      "hp_cost": 20,
+      "target_kind": 5,
+      "menu_order": 50,
+      "menu_eligible": true,
+      "name": "Zoom",
+      "canonical_name": "Zoom",
+      "description": "Warps you to somewhere on the same\nfloor.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    },
+    {
+      "id": 60,
+      "record_offset": 1339588,
+      "record_hex": "549e06080500010063000000",
+      "name_source": {
+        "offset": 433748,
+        "end_exclusive": 433757,
+        "raw_hex": "838c83808349838b00",
+        "sha256": "d8c8c75918d54491b6bd193bb39d6c460712d3f32baa82a064e2086e574db4c6",
+        "japanese": "レムオル"
+      },
+      "description_source": {
+        "offset": 433848,
+        "end_exclusive": 433876,
+        "raw_hex": "914f95fbc9838283938358835e815bc98e70a68ca9b4c5b8bdd9a100",
+        "sha256": "aa07e29f4cc6e91cee83bdee7b74b66cd27b713ae01cc260f791176a13772608",
+        "japanese": "前方ﾉモンスターﾉ姿ｦ見ｴﾅｸｽﾙ｡"
+      },
+      "hp_cost": 5,
+      "target_kind": 1,
+      "menu_order": 99,
+      "menu_eligible": false,
+      "name": "Fade",
+      "canonical_name": "Fade",
+      "description": "Makes a monster ahead invisible.",
+      "status": "reviewed",
+      "review": {
+        "source": "Pinned Torneko2 Japanese ROM; independently authored English. Preserve its specific target, amount, duration and drawbacks. Other-game mechanics are not imported.",
+        "naming": "Modern official series identity, secondary bilingual evidence; reserved record0 is a literal project label.",
+        "reference_url": "https://dragon-quest.org/wiki/Spell_List"
+      }
+    }
+  ],
+  "scope": "Language review of all61 native spell records. First insertion target is the isolated spell Info consumer; menu, casting, item-name and other consumers need their own ownership/budget validation.",
+  "schema": 1,
+  "reviewed_on": "2026-09-26",
+  "ui_entries": [
+    {
+      "id": "spell-info.840",
+      "table_offset": 2112,
+      "source": {
+        "offset": 395744,
+        "end_exclusive": 395765,
+        "raw_hex": "2573203a208fc194ef485020256420205b25735d00",
+        "sha256": "c1db531e4aeb5b08a50afc4f54e64f9848a15708e4f772ef7eb99a2b021e6db6",
+        "japanese": "%{unclassified-control:73} : 消費HP %{unclassified-control:64}  [%{unclassified-control:73}]"
+      },
+      "english": "{spell}: {cost} HP [{target}]",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8bc",
+      "table_offset": 2236,
+      "source": {
+        "offset": 395088,
+        "end_exclusive": 395095,
+        "raw_hex": "82c682c882e800",
+        "sha256": "18b586dcb05cc41da8d7698948d1f228fbbb4c51adbad11ecd404be5934b7203",
+        "japanese": "となり"
+      },
+      "english": "Adjacent",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8c0",
+      "table_offset": 2240,
+      "source": {
+        "offset": 395080,
+        "end_exclusive": 395087,
+        "raw_hex": "914f95fb313000",
+        "sha256": "f599f6d983499c1d1c5f9e125c2d1cbb5d41e41c7b65a03ec0a025afba8b6dcb",
+        "japanese": "前方10"
+      },
+      "english": "Ahead 10",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8c4",
+      "table_offset": 2244,
+      "source": {
+        "offset": 395072,
+        "end_exclusive": 395078,
+        "raw_hex": "3395fb8cfc00",
+        "sha256": "22a1283af5860ac9849aeed3ec2a491618a5ba0ccc8a03dd73c01de3909bf3b0",
+        "japanese": "3方向"
+      },
+      "english": "3 ways",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8c8",
+      "table_offset": 2248,
+      "source": {
+        "offset": 395064,
+        "end_exclusive": 395069,
+        "raw_hex": "959489ae00",
+        "sha256": "a0a25260620a43578c61ba0d2f70764ae3e4900da80a1a993e562670909b31e1",
+        "japanese": "部屋"
+      },
+      "english": "Room",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8cc",
+      "table_offset": 2252,
+      "source": {
+        "offset": 395056,
+        "end_exclusive": 395063,
+        "raw_hex": "8374838d834100",
+        "sha256": "ba9a98da1b0ce97b998652dfccd6129fab5fe5652ad3faad9f7feb1b398615f0",
+        "japanese": "フロア"
+      },
+      "english": "Floor",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8d0",
+      "table_offset": 2256,
+      "source": {
+        "offset": 395048,
+        "end_exclusive": 395053,
+        "raw_hex": "8ea995aa00",
+        "sha256": "f600fe85971d23218d0007c7201c2459acf42f1bbd40d7853a92e6e26b4956f3",
+        "japanese": "自分"
+      },
+      "english": "Self",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8d4",
+      "table_offset": 2260,
+      "source": {
+        "offset": 395056,
+        "end_exclusive": 395063,
+        "raw_hex": "8374838d834100",
+        "sha256": "ba9a98da1b0ce97b998652dfccd6129fab5fe5652ad3faad9f7feb1b398615f0",
+        "japanese": "フロア"
+      },
+      "english": "Floor",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8d8",
+      "table_offset": 2264,
+      "source": {
+        "offset": 395040,
+        "end_exclusive": 395045,
+        "raw_hex": "90b396ca00",
+        "sha256": "1333b0736bd7e4416b47d97c7377c2f5ee15157fdca1aa102cf5b071c9e3d03a",
+        "japanese": "正面"
+      },
+      "english": "Front",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    },
+    {
+      "id": "spell-info.8dc",
+      "table_offset": 2268,
+      "source": {
+        "offset": 395064,
+        "end_exclusive": 395069,
+        "raw_hex": "959489ae00",
+        "sha256": "a0a25260620a43578c61ba0d2f70764ae3e4900da80a1a993e562670909b31e1",
+        "japanese": "部屋"
+      },
+      "english": "Room",
+      "status": "reviewed",
+      "review": "Native target kind labels; descriptive scope preserved. Header retains spell name, HP cost and target in original argument order."
+    }
+  ]
+}

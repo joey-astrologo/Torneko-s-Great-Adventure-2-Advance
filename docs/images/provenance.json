@@ -1,0 +1,2781 @@
+{
+  "passed": true,
+  "rom_sha256": "bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3",
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "emulator": "0.10.5",
+  "bios": "mGBA built-in BIOS; no external BIOS loaded",
+  "route": "config/routes/readme.json",
+  "route_sha256": "a27886ffbe58fdb8a194d9729eb78dbb621c8fada93ee2bcfcc8a32e060f6d2f",
+  "generator_sha256": "7632bdac76abfb0f3421a5aca87e52e7f6737a5e88eda2971cd9fe618d639ad8",
+  "initial_save": "fresh",
+  "controlled_overrides": [],
+  "images": [
+    {
+      "file": "title-screen.png",
+      "frame": 600,
+      "rgb_sha256": "f64f39899996d23f90b93f504406eb27859f693af9234e2516278e0d570edab7",
+      "png_sha256": "3626eff24ef2237f85c0358f23ea7c96818fb18883997a0848eecaf3684be544"
+    },
+    {
+      "file": "dialogue.png",
+      "frame": 3336,
+      "rgb_sha256": "1b3db34e90df46bc454cebcb6fb33b61d4c6b56031355bb9664350f8edd90165",
+      "png_sha256": "d1b7f073a28b1c4c7b7b83dfe9cb1946494ca54c265e32959030658c2de623b2"
+    },
+    {
+      "file": "dungeon-arrival.png",
+      "frame": 18730,
+      "rgb_sha256": "7ca4f698d9f495086de5b4a4a47fa3bcb53a1af376d79d10221a7951a9bd7f61",
+      "png_sha256": "b6800f8fd792fe6a257cfab87acc26ca8425a29d74f4149a0d40e7304778c103"
+    },
+    {
+      "file": "inventory.png",
+      "frame": 41768,
+      "rgb_sha256": "249e94b4461ff1bae5998dcce1a4f28067842b1bf92585d5e33f54f587ff1883",
+      "png_sha256": "5caa61bdd3195d3c6f9ead36d7e8e288896535f7d689288fd6afdee6f416cc9e"
+    }
+  ],
+  "inputs": [
+    {
+      "frames": 600,
+      "start_frame": 0,
+      "end_frame": 600
+    },
+    {
+      "key": "START",
+      "hold": 3,
+      "released": 180,
+      "start_frame": 600,
+      "end_frame": 783
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180,
+      "start_frame": 783,
+      "end_frame": 966
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 966,
+      "end_frame": 981
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 981,
+      "end_frame": 996
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 996,
+      "end_frame": 1011
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1011,
+      "end_frame": 1026
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1026,
+      "end_frame": 1041
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1041,
+      "end_frame": 1056
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1056,
+      "end_frame": 1071
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1071,
+      "end_frame": 1086
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1086,
+      "end_frame": 1101
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1101,
+      "end_frame": 1116
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1116,
+      "end_frame": 1131
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1131,
+      "end_frame": 1146
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1146,
+      "end_frame": 1161
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1161,
+      "end_frame": 1176
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1176,
+      "end_frame": 1191
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1191,
+      "end_frame": 1206
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1206,
+      "end_frame": 1221
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1221,
+      "end_frame": 1236
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1236,
+      "end_frame": 1251
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1251,
+      "end_frame": 1266
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1266,
+      "end_frame": 1281
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1281,
+      "end_frame": 1296
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1296,
+      "end_frame": 1311
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1311,
+      "end_frame": 1326
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1326,
+      "end_frame": 1341
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1341,
+      "end_frame": 1356
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1356,
+      "end_frame": 1371
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1371,
+      "end_frame": 1386
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1386,
+      "end_frame": 1401
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1401,
+      "end_frame": 1416
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1416,
+      "end_frame": 1431
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1431,
+      "end_frame": 1446
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1446,
+      "end_frame": 1461
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1461,
+      "end_frame": 1476
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1476,
+      "end_frame": 1491
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1491,
+      "end_frame": 1506
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1506,
+      "end_frame": 1521
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1521,
+      "end_frame": 1536
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1536,
+      "end_frame": 1551
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1551,
+      "end_frame": 1566
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1566,
+      "end_frame": 1581
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1581,
+      "end_frame": 1596
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1596,
+      "end_frame": 1611
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1611,
+      "end_frame": 1626
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1626,
+      "end_frame": 1641
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1641,
+      "end_frame": 1656
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1656,
+      "end_frame": 1671
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1671,
+      "end_frame": 1686
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1686,
+      "end_frame": 1701
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1701,
+      "end_frame": 1716
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1716,
+      "end_frame": 1731
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1731,
+      "end_frame": 1746
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1746,
+      "end_frame": 1761
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1761,
+      "end_frame": 1776
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1776,
+      "end_frame": 1791
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1791,
+      "end_frame": 1806
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1806,
+      "end_frame": 1821
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1821,
+      "end_frame": 1836
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1836,
+      "end_frame": 1851
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1851,
+      "end_frame": 1866
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1866,
+      "end_frame": 1881
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1881,
+      "end_frame": 1896
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1896,
+      "end_frame": 1911
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1911,
+      "end_frame": 1926
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1926,
+      "end_frame": 1941
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1941,
+      "end_frame": 1956
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1956,
+      "end_frame": 1971
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1971,
+      "end_frame": 1986
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 1986,
+      "end_frame": 2001
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2001,
+      "end_frame": 2016
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2016,
+      "end_frame": 2031
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2031,
+      "end_frame": 2046
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2046,
+      "end_frame": 2061
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2061,
+      "end_frame": 2076
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2076,
+      "end_frame": 2091
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2091,
+      "end_frame": 2106
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2106,
+      "end_frame": 2121
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2121,
+      "end_frame": 2136
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2136,
+      "end_frame": 2151
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2151,
+      "end_frame": 2166
+    },
+    {
+      "key": "START",
+      "hold": 3,
+      "released": 12,
+      "start_frame": 2166,
+      "end_frame": 2181
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 180,
+      "start_frame": 2181,
+      "end_frame": 2364
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 2364,
+      "end_frame": 2607
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 2607,
+      "end_frame": 2850
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 2850,
+      "end_frame": 3093
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 3093,
+      "end_frame": 3336
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 3336,
+      "end_frame": 3579
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 3579,
+      "end_frame": 3822
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 3822,
+      "end_frame": 4065
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 4065,
+      "end_frame": 4308
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 4308,
+      "end_frame": 4551
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 4551,
+      "end_frame": 4794
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 4794,
+      "end_frame": 5037
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 5037,
+      "end_frame": 5280
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 5280,
+      "end_frame": 5523
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 5523,
+      "end_frame": 5766
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 5766,
+      "end_frame": 6009
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 6009,
+      "end_frame": 6252
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 6252,
+      "end_frame": 6495
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 6495,
+      "end_frame": 6738
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 6738,
+      "end_frame": 6981
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 6981,
+      "end_frame": 7224
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 7224,
+      "end_frame": 7467
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 7467,
+      "end_frame": 7710
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 7710,
+      "end_frame": 7953
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 7953,
+      "end_frame": 8196
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 8196,
+      "end_frame": 8439
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 8439,
+      "end_frame": 8682
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 8682,
+      "end_frame": 8925
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 8925,
+      "end_frame": 9168
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 9168,
+      "end_frame": 9411
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 9411,
+      "end_frame": 9654
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 9654,
+      "end_frame": 9897
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 9897,
+      "end_frame": 10140
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 10140,
+      "end_frame": 10383
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 10383,
+      "end_frame": 10626
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 10626,
+      "end_frame": 10869
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 10869,
+      "end_frame": 11112
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 11112,
+      "end_frame": 11355
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 11355,
+      "end_frame": 11598
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 11598,
+      "end_frame": 11841
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 11841,
+      "end_frame": 12084
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 12084,
+      "end_frame": 12327
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 12327,
+      "end_frame": 12570
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 12570,
+      "end_frame": 12813
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 12813,
+      "end_frame": 13056
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 13056,
+      "end_frame": 13299
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 13299,
+      "end_frame": 13542
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 13542,
+      "end_frame": 13785
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 13785,
+      "end_frame": 14028
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 14028,
+      "end_frame": 14271
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 14271,
+      "end_frame": 14514
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 14514,
+      "end_frame": 14757
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 14757,
+      "end_frame": 15000
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 15000,
+      "end_frame": 15243
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 15243,
+      "end_frame": 15486
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 15486,
+      "end_frame": 15729
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 15729,
+      "end_frame": 15972
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 15972,
+      "end_frame": 16215
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 16215,
+      "end_frame": 16458
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 16458,
+      "end_frame": 16701
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 16701,
+      "end_frame": 16944
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 16944,
+      "end_frame": 17187
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 17187,
+      "end_frame": 17430
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 17430,
+      "end_frame": 17673
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 17673,
+      "end_frame": 17916
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 17916,
+      "end_frame": 18159
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 18159,
+      "end_frame": 18402
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 18402,
+      "end_frame": 18645
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 82,
+      "start_frame": 18645,
+      "end_frame": 18730
+    },
+    {
+      "frames": 158,
+      "start_frame": 18730,
+      "end_frame": 18888
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 18888,
+      "end_frame": 19131
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 19131,
+      "end_frame": 19374
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 19374,
+      "end_frame": 19617
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 120,
+      "start_frame": 19617,
+      "end_frame": 19740
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 30,
+      "start_frame": 19740,
+      "end_frame": 19773
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 19773,
+      "end_frame": 19866
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 19866,
+      "end_frame": 19959
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 19959,
+      "end_frame": 20052
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20052,
+      "end_frame": 20145
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20145,
+      "end_frame": 20238
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20238,
+      "end_frame": 20331
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20331,
+      "end_frame": 20424
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20424,
+      "end_frame": 20517
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20517,
+      "end_frame": 20610
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20610,
+      "end_frame": 20703
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20703,
+      "end_frame": 20796
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20796,
+      "end_frame": 20889
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20889,
+      "end_frame": 20982
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 20982,
+      "end_frame": 21075
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21075,
+      "end_frame": 21168
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21168,
+      "end_frame": 21261
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21261,
+      "end_frame": 21354
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21354,
+      "end_frame": 21447
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21447,
+      "end_frame": 21540
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21540,
+      "end_frame": 21633
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21633,
+      "end_frame": 21726
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21726,
+      "end_frame": 21819
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21819,
+      "end_frame": 21912
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 21912,
+      "end_frame": 22005
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22005,
+      "end_frame": 22098
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22098,
+      "end_frame": 22191
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22191,
+      "end_frame": 22284
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22284,
+      "end_frame": 22377
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22377,
+      "end_frame": 22470
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22470,
+      "end_frame": 22563
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22563,
+      "end_frame": 22656
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22656,
+      "end_frame": 22749
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22749,
+      "end_frame": 22842
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22842,
+      "end_frame": 22935
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 22935,
+      "end_frame": 23028
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23028,
+      "end_frame": 23121
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23121,
+      "end_frame": 23214
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23214,
+      "end_frame": 23307
+    },
+    {
+      "key": "A",
+      "hold": 1,
+      "released": 120,
+      "start_frame": 23307,
+      "end_frame": 23428
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23428,
+      "end_frame": 23521
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23521,
+      "end_frame": 23614
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23614,
+      "end_frame": 23707
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23707,
+      "end_frame": 23800
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23800,
+      "end_frame": 23893
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23893,
+      "end_frame": 23986
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 23986,
+      "end_frame": 24079
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24079,
+      "end_frame": 24172
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24172,
+      "end_frame": 24265
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24265,
+      "end_frame": 24358
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24358,
+      "end_frame": 24451
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24451,
+      "end_frame": 24544
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24544,
+      "end_frame": 24637
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24637,
+      "end_frame": 24730
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24730,
+      "end_frame": 24823
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24823,
+      "end_frame": 24916
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 24916,
+      "end_frame": 25009
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25009,
+      "end_frame": 25102
+    },
+    {
+      "key": "A",
+      "hold": 1,
+      "released": 120,
+      "start_frame": 25102,
+      "end_frame": 25223
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25223,
+      "end_frame": 25316
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25316,
+      "end_frame": 25409
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25409,
+      "end_frame": 25502
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25502,
+      "end_frame": 25595
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25595,
+      "end_frame": 25688
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25688,
+      "end_frame": 25781
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25781,
+      "end_frame": 25874
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25874,
+      "end_frame": 25967
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 25967,
+      "end_frame": 26060
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26060,
+      "end_frame": 26153
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26153,
+      "end_frame": 26246
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26246,
+      "end_frame": 26339
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26339,
+      "end_frame": 26432
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26432,
+      "end_frame": 26525
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26525,
+      "end_frame": 26618
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26618,
+      "end_frame": 26711
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26711,
+      "end_frame": 26804
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26804,
+      "end_frame": 26897
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26897,
+      "end_frame": 26990
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 26990,
+      "end_frame": 27083
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27083,
+      "end_frame": 27176
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27176,
+      "end_frame": 27269
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27269,
+      "end_frame": 27362
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27362,
+      "end_frame": 27455
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27455,
+      "end_frame": 27548
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27548,
+      "end_frame": 27641
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27641,
+      "end_frame": 27734
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27734,
+      "end_frame": 27827
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27827,
+      "end_frame": 27920
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 27920,
+      "end_frame": 28013
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28013,
+      "end_frame": 28106
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28106,
+      "end_frame": 28199
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28199,
+      "end_frame": 28292
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28292,
+      "end_frame": 28385
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28385,
+      "end_frame": 28478
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28478,
+      "end_frame": 28571
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28571,
+      "end_frame": 28664
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28664,
+      "end_frame": 28757
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28757,
+      "end_frame": 28850
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28850,
+      "end_frame": 28943
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 28943,
+      "end_frame": 29036
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29036,
+      "end_frame": 29129
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29129,
+      "end_frame": 29222
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29222,
+      "end_frame": 29315
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29315,
+      "end_frame": 29408
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29408,
+      "end_frame": 29501
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29501,
+      "end_frame": 29594
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29594,
+      "end_frame": 29687
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29687,
+      "end_frame": 29780
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29780,
+      "end_frame": 29873
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29873,
+      "end_frame": 29966
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 29966,
+      "end_frame": 30059
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30059,
+      "end_frame": 30152
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30152,
+      "end_frame": 30245
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30245,
+      "end_frame": 30338
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30338,
+      "end_frame": 30431
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30431,
+      "end_frame": 30524
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30524,
+      "end_frame": 30617
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30617,
+      "end_frame": 30710
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30710,
+      "end_frame": 30803
+    },
+    {
+      "key": "LEFT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30803,
+      "end_frame": 30896
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 30896,
+      "end_frame": 30989
+    },
+    {
+      "key": "A",
+      "hold": 1,
+      "released": 120,
+      "start_frame": 30989,
+      "end_frame": 31110
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31110,
+      "end_frame": 31203
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31203,
+      "end_frame": 31296
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31296,
+      "end_frame": 31389
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31389,
+      "end_frame": 31482
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31482,
+      "end_frame": 31575
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31575,
+      "end_frame": 31668
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31668,
+      "end_frame": 31761
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31761,
+      "end_frame": 31854
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31854,
+      "end_frame": 31947
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 31947,
+      "end_frame": 32040
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32040,
+      "end_frame": 32133
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32133,
+      "end_frame": 32226
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32226,
+      "end_frame": 32319
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32319,
+      "end_frame": 32412
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32412,
+      "end_frame": 32505
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32505,
+      "end_frame": 32598
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32598,
+      "end_frame": 32691
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32691,
+      "end_frame": 32784
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32784,
+      "end_frame": 32877
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32877,
+      "end_frame": 32970
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 32970,
+      "end_frame": 33063
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33063,
+      "end_frame": 33156
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33156,
+      "end_frame": 33249
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33249,
+      "end_frame": 33342
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33342,
+      "end_frame": 33435
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33435,
+      "end_frame": 33528
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33528,
+      "end_frame": 33621
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33621,
+      "end_frame": 33714
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33714,
+      "end_frame": 33807
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33807,
+      "end_frame": 33900
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33900,
+      "end_frame": 33993
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 33993,
+      "end_frame": 34086
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34086,
+      "end_frame": 34179
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34179,
+      "end_frame": 34272
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34272,
+      "end_frame": 34365
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34365,
+      "end_frame": 34458
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34458,
+      "end_frame": 34551
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34551,
+      "end_frame": 34644
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34644,
+      "end_frame": 34737
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34737,
+      "end_frame": 34830
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34830,
+      "end_frame": 34923
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 34923,
+      "end_frame": 35016
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35016,
+      "end_frame": 35109
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35109,
+      "end_frame": 35202
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35202,
+      "end_frame": 35295
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35295,
+      "end_frame": 35388
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35388,
+      "end_frame": 35481
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35481,
+      "end_frame": 35574
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35574,
+      "end_frame": 35667
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35667,
+      "end_frame": 35760
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35760,
+      "end_frame": 35853
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35853,
+      "end_frame": 35946
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 35946,
+      "end_frame": 36039
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36039,
+      "end_frame": 36132
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36132,
+      "end_frame": 36225
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36225,
+      "end_frame": 36318
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36318,
+      "end_frame": 36411
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36411,
+      "end_frame": 36504
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36504,
+      "end_frame": 36597
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36597,
+      "end_frame": 36690
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36690,
+      "end_frame": 36783
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36783,
+      "end_frame": 36876
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36876,
+      "end_frame": 36969
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 36969,
+      "end_frame": 37062
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37062,
+      "end_frame": 37155
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37155,
+      "end_frame": 37248
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37248,
+      "end_frame": 37341
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37341,
+      "end_frame": 37434
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37434,
+      "end_frame": 37527
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37527,
+      "end_frame": 37620
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37620,
+      "end_frame": 37713
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37713,
+      "end_frame": 37806
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37806,
+      "end_frame": 37899
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37899,
+      "end_frame": 37992
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 37992,
+      "end_frame": 38085
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38085,
+      "end_frame": 38178
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38178,
+      "end_frame": 38271
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38271,
+      "end_frame": 38364
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38364,
+      "end_frame": 38457
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38457,
+      "end_frame": 38550
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38550,
+      "end_frame": 38643
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38643,
+      "end_frame": 38736
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38736,
+      "end_frame": 38829
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38829,
+      "end_frame": 38922
+    },
+    {
+      "key": "DOWN",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 38922,
+      "end_frame": 39015
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39015,
+      "end_frame": 39108
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39108,
+      "end_frame": 39201
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39201,
+      "end_frame": 39294
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39294,
+      "end_frame": 39387
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39387,
+      "end_frame": 39480
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39480,
+      "end_frame": 39573
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39573,
+      "end_frame": 39666
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39666,
+      "end_frame": 39759
+    },
+    {
+      "key": "UP",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39759,
+      "end_frame": 39852
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39852,
+      "end_frame": 39945
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 39945,
+      "end_frame": 40038
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40038,
+      "end_frame": 40131
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40131,
+      "end_frame": 40224
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40224,
+      "end_frame": 40317
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40317,
+      "end_frame": 40410
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40410,
+      "end_frame": 40503
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40503,
+      "end_frame": 40596
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40596,
+      "end_frame": 40689
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40689,
+      "end_frame": 40782
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40782,
+      "end_frame": 40875
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40875,
+      "end_frame": 40968
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 40968,
+      "end_frame": 41061
+    },
+    {
+      "key": "RIGHT",
+      "hold": 3,
+      "released": 90,
+      "start_frame": 41061,
+      "end_frame": 41154
+    },
+    {
+      "key": "B",
+      "hold": 3,
+      "released": 120,
+      "start_frame": 41154,
+      "end_frame": 41277
+    },
+    {
+      "key": "B",
+      "hold": 8,
+      "released": 240,
+      "start_frame": 41277,
+      "end_frame": 41525
+    },
+    {
+      "key": "A",
+      "hold": 3,
+      "released": 240,
+      "start_frame": 41525,
+      "end_frame": 41768
+    }
+  ],
+  "protected_hashes": {
+    "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).gba": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+    "Dragon Quest Characters - Torneko no Daibouken 2 Advance - Fushigi no Dungeon (Japan).sav": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+    "build/torneko-2-english.gba": "bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3",
+    "build/torneko-2-english.release.json": "7545d434534c3800bd8e8f6aa4b6f916766cf2419e3c0972b3303e3088b396fe",
+    "build/torneko-2-english.bps": "c3b97e07cb143c7072b48e450baea605a0b4ed32afc4d4af8a5b2b5ee3a99bbc"
+  },
+  "scope": "Ordinary cold boot and Torneko name entry; home dialogue, Mysterious Meadow 1F arrival and natural first-floor item collection. No state restore or memory/register changes. Unedited 240x160 framebuffer captures; no resizing or compositing."
+}

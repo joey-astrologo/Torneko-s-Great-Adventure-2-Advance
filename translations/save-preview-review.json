@@ -1,0 +1,287 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "save-preview.5c8",
+      "table_offset": 1480,
+      "source": {
+        "offset": 400392,
+        "end_exclusive": 400430,
+        "raw_hex": "257391ba204c562532642048502533642f2533640d257320253264462025346489f196da0d00",
+        "sha256": "4c633f7b822c958e3c1fc13efd341d6a06c317a5c8093c5cfcbf682afd965b9f",
+        "japanese": "%{unclassified-control:73}村 LV%2{unclassified-control:64} HP%3{unclassified-control:64}/%3{unclassified-control:64}\n%{unclassified-control:73} %2{unclassified-control:64}F %4{unclassified-control:64}回目\n"
+      },
+      "english": "{village} Village\nLv{level}  HP {hp}/{maxhp}\n{inset}{place} {floor}F  Run {attempt}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese comparison preserves village suffix, level, both HP values, dungeon/town name, floor versus Well level and attempt number in original argument order. Three native preview rows replace the Japanese two-line density, reserving20px on the third row for the existing castle sprite; completion retains both Darkevil chest and Magic Dungeon. No save field or consequence changed."
+    },
+    {
+      "id": "save-preview.a0c",
+      "table_offset": 2572,
+      "source": {
+        "offset": 393124,
+        "end_exclusive": 393167,
+        "raw_hex": "257391ba204c562532642048502533642f2533640d257320838c8378838b2532642025346489f196da0d00",
+        "sha256": "c2a04761c78b99285aeaeb3147bfda32f9350caaed3d788d1afbd509da92cca5",
+        "japanese": "%{unclassified-control:73}村 LV%2{unclassified-control:64} HP%3{unclassified-control:64}/%3{unclassified-control:64}\n%{unclassified-control:73} レベル%2{unclassified-control:64} %4{unclassified-control:64}回目\n"
+      },
+      "english": "{village} Village\nLv{level}  HP {hp}/{maxhp}\n{inset}{place} Lv{floor}  Run {attempt}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese comparison preserves village suffix, level, both HP values, dungeon/town name, floor versus Well level and attempt number in original argument order. Three native preview rows replace the Japanese two-line density, reserving20px on the third row for the existing castle sprite; completion retains both Darkevil chest and Magic Dungeon. No save field or consequence changed."
+    },
+    {
+      "id": "save-preview.5cc",
+      "table_offset": 1484,
+      "source": {
+        "offset": 400376,
+        "end_exclusive": 400392,
+        "raw_hex": "257391ba2025346489f196da0d257300",
+        "sha256": "e28e0e4b85beef32a710b2753b16eb9ee55aba5310613a7b53a0d2cea8c132ea",
+        "japanese": "%{unclassified-control:73}村 %4{unclassified-control:64}回目\n%{unclassified-control:73}"
+      },
+      "english": "{village} Village  Run {attempt}\n{place}",
+      "status": "reviewed",
+      "review": "Dedicated Japanese comparison preserves village suffix, level, both HP values, dungeon/town name, floor versus Well level and attempt number in original argument order. Three native preview rows replace the Japanese two-line density, reserving20px on the third row for the existing castle sprite; completion retains both Darkevil chest and Magic Dungeon. No save field or consequence changed."
+    },
+    {
+      "id": "save-preview.944",
+      "table_offset": 2372,
+      "source": {
+        "offset": 394344,
+        "end_exclusive": 394383,
+        "raw_hex": "95738e768b6382cc835f839383578387839382c58ed788ab82c894a082f082bd82a882b582bd00",
+        "sha256": "9613782f69c02a902d18cbb4a2c73d98a5475db0f4905526c1864bb8512a8d9e",
+        "japanese": "不思議のダンジョンで邪悪な箱をたおした"
+      },
+      "english": "Defeated the Darkevil chest\n{inset}in Magic Dungeon.",
+      "status": "reviewed",
+      "review": "Dedicated Japanese comparison preserves village suffix, level, both HP values, dungeon/town name, floor versus Well level and attempt number in original argument order. Three native preview rows replace the Japanese two-line density, reserving20px on the third row for the existing castle sprite; completion retains both Darkevil chest and Magic Dungeon. No save field or consequence changed."
+    },
+    {
+      "id": "save-preview.5d0",
+      "table_offset": 1488,
+      "source": {
+        "offset": 400356,
+        "end_exclusive": 400373,
+        "raw_hex": "89ae957e82cc835f839383578387839300",
+        "sha256": "535805837abe9a7379bd3c98b8340f19e343672ee9de270b0f7b8975fc418199",
+        "japanese": "屋敷のダンジョン"
+      },
+      "english": "Banker's Mansion",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5d4",
+      "table_offset": 1492,
+      "source": {
+        "offset": 400336,
+        "end_exclusive": 400353,
+        "raw_hex": "95e68fea82cc835f839383578387839300",
+        "sha256": "c57e0e951c6b6bec02acc1e0c2fea05d49c03855e0c73a8abe753d605b6b62e6",
+        "japanese": "墓場のダンジョン"
+      },
+      "english": "Cemetery Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5d8",
+      "table_offset": 1496,
+      "source": {
+        "offset": 400316,
+        "end_exclusive": 400333,
+        "raw_hex": "82a88fe982cc835f839383578387839300",
+        "sha256": "dee9b558cb6ec55114fdc4bd2be276f8052cfac7b27e36c83795147cfa00c7de",
+        "japanese": "お城のダンジョン"
+      },
+      "english": "Castle Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5dc",
+      "table_offset": 1500,
+      "source": {
+        "offset": 400304,
+        "end_exclusive": 400313,
+        "raw_hex": "96c082a282cc905800",
+        "sha256": "9015d3d9070405eac068f1b244b17c5b071bc34e190ea4c9e8d7dc3658ab32d7",
+        "japanese": "迷いの森"
+      },
+      "english": "Lost Forest",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5e0",
+      "table_offset": 1504,
+      "source": {
+        "offset": 400292,
+        "end_exclusive": 400301,
+        "raw_hex": "89ce908182ab8e5200",
+        "sha256": "666aed51a8143817ebf013ce4fd8e8bff7efe3600628675d98130305f94b81e5",
+        "japanese": "火吹き山"
+      },
+      "english": "Mt. Fiery",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5e4",
+      "table_offset": 1508,
+      "source": {
+        "offset": 400280,
+        "end_exclusive": 400289,
+        "raw_hex": "8367838d88e290d500",
+        "sha256": "0070e6ff7659685dfca61ab832abd0447ad6f56d0e5c22d3d7fdc6b1a9b2c954",
+        "japanese": "トロ遺跡"
+      },
+      "english": "Toro Ruins",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5e8",
+      "table_offset": 1512,
+      "source": {
+        "offset": 400260,
+        "end_exclusive": 400279,
+        "raw_hex": "95738e768b6382cc835f839383578387839300",
+        "sha256": "643782383ec4de2ad1b6a8ce9db00d016b643274e3892a3e1741d8105dc2d03d",
+        "japanese": "不思議のダンジョン"
+      },
+      "english": "Magic Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5ec",
+      "table_offset": 1516,
+      "source": {
+        "offset": 400232,
+        "end_exclusive": 400257,
+        "raw_hex": "82e082c182c695738e768b6382cc835f839383578387839300",
+        "sha256": "3a10a87f3d02edd688b8058ff1131e1ac3f8acdb962f6ebc927be436491e7454",
+        "japanese": "もっと不思議のダンジョン"
+      },
+      "english": "More Magic Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5f0",
+      "table_offset": 1520,
+      "source": {
+        "offset": 400220,
+        "end_exclusive": 400229,
+        "raw_hex": "8e8e97fb82cc8ad900",
+        "sha256": "d2db4866612ba0add802d0721cb1b46e2fa8f3941b8f82fedaa95cb01ac42e65",
+        "japanese": "試練の館"
+      },
+      "english": "Ordeal Mansion",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5f4",
+      "table_offset": 1524,
+      "source": {
+        "offset": 400204,
+        "end_exclusive": 400219,
+        "raw_hex": "8c9582cc835f839383578387839300",
+        "sha256": "9057abdf94943a2e318ddbce20a694c81a9914b612c1f310d7faacf9b122af98",
+        "japanese": "剣のダンジョン"
+      },
+      "english": "Sword Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5f8",
+      "table_offset": 1528,
+      "source": {
+        "offset": 400188,
+        "end_exclusive": 400203,
+        "raw_hex": "968282cc835f839383578387839300",
+        "sha256": "71175ea733f7337bbcd92c3f4749669951f16311ec7037a408ccb87e5efd33d5",
+        "japanese": "魔のダンジョン"
+      },
+      "english": "Mage Dungeon",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.5fc",
+      "table_offset": 1532,
+      "source": {
+        "offset": 400164,
+        "end_exclusive": 400185,
+        "raw_hex": "82bf82e582c182c695738e768b6382cc91908cb400",
+        "sha256": "c9836f842a323973f07ec2e43952a053cac2b23752823a24e10f82bb89c5a65f",
+        "japanese": "ちょっと不思議の草原"
+      },
+      "english": "Mysterious Meadow",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.600",
+      "table_offset": 1536,
+      "source": {
+        "offset": 400156,
+        "end_exclusive": 400161,
+        "raw_hex": "88e48ccb00",
+        "sha256": "e553116c627f3720bd6cb78347c458ed9ff7793c5964ff3b704309daf82caa5b",
+        "japanese": "井戸"
+      },
+      "english": "Well",
+      "status": "reviewed",
+      "review": "Reuse independently reviewed matching T2 destination identity from results-review.json; new reader binding only."
+    },
+    {
+      "id": "save-preview.town-0",
+      "location_id": 0,
+      "source": {
+        "offset": 446236,
+        "end_exclusive": 446246,
+        "raw_hex": "7e82cc89c682cc928600",
+        "sha256": "fc356694c7b90f14cf45f23b01d1ec70ed78339c5e8235406e1d7cfdd10d6ebc",
+        "japanese": "{unclassified-control:7e}の家の中"
+      },
+      "english": "Inside {player}'s home",
+      "status": "reviewed",
+      "review": "Independent T2 location translation preserves inside/outside, the native7E player-name control for home, and the old mansion versus magic shop distinction."
+    },
+    {
+      "id": "save-preview.town-1",
+      "location_id": 1,
+      "source": {
+        "offset": 446220,
+        "end_exclusive": 446233,
+        "raw_hex": "8cc382d182bd8ad982cc914f00",
+        "sha256": "18286b2acce6e72b6cd03e265b010892865ce42c6ba4c8f2d01ba2e0e22ca65e",
+        "japanese": "古びた館の前"
+      },
+      "english": "Outside the old mansion",
+      "status": "reviewed",
+      "review": "Independent T2 location translation preserves inside/outside, the native7E player-name control for home, and the old mansion versus magic shop distinction."
+    },
+    {
+      "id": "save-preview.town-2",
+      "location_id": 2,
+      "source": {
+        "offset": 446208,
+        "end_exclusive": 446219,
+        "raw_hex": "9682964089ae82cc928600",
+        "sha256": "40ebccdbe055f97fba71da154e233bd7e0ff83d41bfda32f0e065403a54b9366",
+        "japanese": "魔法屋の中"
+      },
+      "english": "Inside the magic shop",
+      "status": "reviewed",
+      "review": "Independent T2 location translation preserves inside/outside, the native7E player-name control for home, and the old mansion versus magic shop distinction."
+    }
+  ],
+  "scope": "Original14780 title save-preview owner:256-byte outputSP14..114,17-byte indexed-name decodeSP114..125,224px/three-row window. Slots5C8/5CC/A0C and944 with13 destination labels; separate52B18 town getter owns three labels and its original third-label fallback. All original field order, names, save data, window/frame geometry and branch logic preserved. Artwork unchanged."
+}

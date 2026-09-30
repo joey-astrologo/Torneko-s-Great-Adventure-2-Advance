@@ -1,0 +1,18 @@
+Create an English localization artwork proposal for the Game Boy Advance title screen in reference image 1, Torneko 2. Reference image 1 is the edit target. Reference image 2 is the previously approved Torneko 3 English logo, supplied ONLY as a reference for confident, readable English lettering hierarchy and polish. Do not use its stone scroll, ocean background, number 3, or blue Advance styling.
+
+Output one complete opaque 3:2 landscape title-screen image, ideally 1536 by 1024, composed to remain legible when reduced to 240 by 160 pixels. Fill the entire canvas with the game screen, with no presentation border or device. Preserve the identity and composition of reference 1: a rustic weathered wooden plank sign with uneven edges, green mountain village scenery, pale blue sky and grey peaks, and the happy bright blue slime attached near the upper-right of the sign. Keep the sign large, occupying the central upper five-sixths of the frame. This is a carefully redrawn game title screen, not a mockup.
+
+Replace the Japanese lettering with EXACTLY these English words, spelled correctly, no additional wording:
+DRAGON QUEST CHARACTERS
+TORNEKO'S
+GREAT ADVENTURE
+2
+ADVANCE
+MYSTERY DUNGEON
+Push START!
+
+Use TORNEKO'S as the dominant top line of the main logo, GREAT ADVENTURE directly beneath across two bold readable lines if needed, and a prominent dimensional gold/orange 2 integrated on the lower-right. The main title should be rich golden yellow, with warm orange-brown beveled shading and crisp dark outlines, reminiscent of the original Japanese dimensional logo. Keep the letters broad and open enough to read at actual GBA resolution. ADVANCE is a smaller vivid red accent, echoing the original red Japanese Advance lettering. DRAGON QUEST CHARACTERS is a small clean centered header above the main lettering. MYSTERY DUNGEON is a modest readable dark subtitle along the bottom of the wooden sign. Avoid crowded overlapping lettering. Rebalance the plank shape slightly to accommodate English but keep the original wooden sign aesthetic and the blue slime fully recognizable.
+
+The bottom 15 percent is the original landscape footer: leave room for the centered yellow outlined Push START! prompt at the original height. Do not place any other lettering there. The audition will restore the original 24-pixel-tall footer at native resolution.
+
+Art direction: polished late-1990s/early-2000s Japanese fantasy game logo, charming rustic adventuring atmosphere, hand-painted scenery and wood with clean intentional edges. Prioritize an excellent small-screen logo with strong letter silhouettes. No modern flat typography, no blackletter, no tiny ornamental filigree, no blur, no watermarks, no extra panels. Preserve the Torneko 2 identity while making the whole title confidently English.

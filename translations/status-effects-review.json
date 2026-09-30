@@ -1,0 +1,132 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Thirteen private source-table literals in nine actor-effect routines. Every changed reader is tested separately; this is not a global replacement of shared sources or full natural encounter coverage.",
+  "entries": [
+    {
+      "id": "status-effect.0ec",
+      "table_offset": 236,
+      "source": {
+        "offset": 410008,
+        "end_exclusive": 410031,
+        "raw_hex": "257382cd200d838c8378838b82aa89ba82aa82c182bd00",
+        "sha256": "3ca217db3003c2b11b33f32dc5dc775f8c0cab2632114763f5c486aba2585450",
+        "japanese": "%{unclassified-control:73}は \nレベルが下がった"
+      },
+      "english": "{actor}{fit} loses a level.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.11c",
+      "table_offset": 284,
+      "source": {
+        "offset": 409580,
+        "end_exclusive": 409604,
+        "raw_hex": "257382cd0e0b4e82cb82de82e782b882c982b782f182be00",
+        "sha256": "97e6f2e5e6f777eafa36985ecb10945d9654b40893055f694345fa12373557a2",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0b4e}ねむらずにすんだ"
+      },
+      "english": "{actor}{fit} stays awake.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.1dc",
+      "table_offset": 476,
+      "source": {
+        "offset": 408340,
+        "end_exclusive": 408362,
+        "raw_hex": "257382cd0d82cb82de82c182c482b582dc82c182bd00",
+        "sha256": "021fc3e95accbd574f95117ccfb182d4abce4d02ca6f42a5f1d9ab181139f001",
+        "japanese": "%{unclassified-control:73}は\nねむってしまった"
+      },
+      "english": "{actor}{fit} falls asleep.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.1e8",
+      "table_offset": 488,
+      "source": {
+        "offset": 408292,
+        "end_exclusive": 408306,
+        "raw_hex": "257382cd0d8dac979082b582bd00",
+        "sha256": "eba0f38642a4d0a25a34d2f531e81689caa373ac2b8c348430d02e31b78d4e64",
+        "japanese": "%{unclassified-control:73}は\n混乱した"
+      },
+      "english": "{actor}{fit} becomes confused.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.200",
+      "table_offset": 512,
+      "source": {
+        "offset": 408128,
+        "end_exclusive": 408155,
+        "raw_hex": "257382cd200e0a4e93ae82ab82aa82a882bb82ad82c882c182bd00",
+        "sha256": "dda4def77935550ae50db3a7499509dba9c9d08651e765c5cb909d9694a9fcf0",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0a4e}動きがおそくなった"
+      },
+      "english": "{actor}{fit} slows down.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.22c",
+      "table_offset": 556,
+      "source": {
+        "offset": 407820,
+        "end_exclusive": 407844,
+        "raw_hex": "257382cd0e0a4e82c982b9905f958382c982c882c182bd00",
+        "sha256": "5a542fe596604d7c48e990134a1ca9eb71380c3bfd910cc88731647ed2c21152",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}にせ神父になった"
+      },
+      "english": "{actor}{fit} becomes a fake priest.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.62c",
+      "table_offset": 1580,
+      "source": {
+        "offset": 399700,
+        "end_exclusive": 399722,
+        "raw_hex": "257382cd2082bf82a982e782aa89ba82aa82c182bd00",
+        "sha256": "8f8d2f5be8a772da2099d6cec03c442f832206723f8ad0c0d73783724cceff08",
+        "japanese": "%{unclassified-control:73}は ちからが下がった"
+      },
+      "english": "{actor}{fit} loses strength.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.7f4",
+      "table_offset": 2036,
+      "source": {
+        "offset": 396648,
+        "end_exclusive": 396672,
+        "raw_hex": "257382cd0e0c4e8dc591e5485082aa8fe382aa82c182bd00",
+        "sha256": "41ed7ad4065dea406e0b7ee5d09bc7e893548f426a83d487562b2767bbf97ed9",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0c4e}最大HPが上がった"
+      },
+      "english": "{actor}'s{fit} max HP increases.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    },
+    {
+      "id": "status-effect.a20",
+      "table_offset": 2592,
+      "source": {
+        "offset": 392972,
+        "end_exclusive": 393005,
+        "raw_hex": "257382cd200d82b182ea88c88fe3838c8378838b82aa89ba82aa82e782c882a200",
+        "sha256": "3fd0c8329f894bfbc30fff438273836bfcbeb0535db4bf3b684db6e259dae447",
+        "japanese": "%{unclassified-control:73}は \nこれ以上レベルが下がらない"
+      },
+      "english": "{actor}{fit} cannot lose any more levels.",
+      "status": "reviewed",
+      "review": "Independent T2 bilingual review preserves the affected actor, condition, direction and minimum-level limitation. Fake priest is a disguise, not an imported monster species name. No amount is invented for HP or strength; the native level-decrease branch subtracts exactly1. Other readers of these shared sources remain separately tracked."
+    }
+  ]
+}

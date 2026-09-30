@@ -29,13 +29,18 @@ def run():
  for t in town_entries():
   raw=source_bytes(t['tokens']);require(raw==resource()['data'][t['start']:t['end_exclusive']],'Town round trip differs')
   retain(t['id'],'town',raw,readable(t['tokens']),{'slot':t['slot'],'index':t['index']})
- item_catalog=extract();review=json.loads((ROOT/'translations/items-review.json').read_text());items={r['id']:r for r in review['entries']}
+ item_catalog=extract();review=json.loads((ROOT/'translations/items-review.json').read_text())
+ extra_items=json.loads((ROOT/'translations/special-items-review.json').read_text())
+ require(extra_items['base_rom_sha256']==digest(rom),'Special item base differs')
+ items={r['id']:r for r in review['entries']+extra_items['entries']}
  for item in item_catalog['items']:
   for kind in ('name','description','category_description'):
    src=item[kind]
    if not src:continue
    row=retain(f"rom.{src['offset']:08x}",'item',bytes.fromhex(src['raw_hex']),src['japanese'],{'item':item['id'],'kind':kind,'category':item['category']})
-   translated=items.get(item['id'],{}).get(kind) if kind!='category_description' else review['category_descriptions'].get(str(item['category']))
+   reviewed_item=items.get(item['id'],{})
+   if reviewed_item:require(reviewed_item['name_source']==item['name'] and reviewed_item['description_source']==item['description'],'Item inventory review/source differs')
+   translated=reviewed_item.get(kind) if kind!='category_description' else review['category_descriptions'].get(str(item['category']))
    if translated:row.update(english=translated,language_status='reviewed')
  special=item_catalog['special_description_221']
  if special:
@@ -67,6 +72,37 @@ def run():
  for entry in extract_item_use()['entries']:
   src=entry['source']
   retain(f"rom.{src['offset']:08x}",'item-use',bytes.fromhex(src['raw_hex']),src['japanese'],{'category':entry['category'],'pointer_offset':entry['pointer_offset']})
+ from tools.extract_spells import extract as extract_spells
+ spell_catalog=json.loads((ROOT/'translations/spells-review.json').read_text())
+ spell_reviews={r['id']:r for r in spell_catalog['entries']}
+ require(spell_catalog['base_rom_sha256']==digest(rom),'Spell inventory base differs')
+ for spell in extract_spells()['entries']:
+  reviewed=spell_reviews[spell['id']]
+  require(all(reviewed[k]==v for k,v in spell.items()),'Spell inventory review/source differs')
+  for kind in ('name','description'):
+   src=spell[kind+'_source'];row=retain(f"rom.{src['offset']:08x}",'spell',bytes.fromhex(src['raw_hex']),src['japanese'],{'spell':spell['id'],'kind':kind,'menu_eligible':spell['menu_eligible']})
+   row.update(english=reviewed[kind],language_status=reviewed['status'])
+   row.setdefault('reviewed_variants',[]).append({'resource':f"spell.{kind}.{spell['id']}",'english':reviewed[kind],'scope':'Language review; isolated Info prototype and other spell consumers are separately validated.'})
+ for reviewed in spell_catalog['ui_entries']:
+  src=reviewed['source'];row=rows[f"rom.{src['offset']:08x}"]
+  require(row['raw_hex']==src['raw_hex'],'Spell UI inventory identity differs')
+  row.update(english=reviewed['english'],language_status=reviewed['status'])
+  row.setdefault('reviewed_variants',[]).append({'resource':reviewed['id'],'english':reviewed['english'],'scope':'Owned spell Info prototype; other shared consumers retain their original text.'})
+ from tools.extract_skills import extract as extract_skills
+ skill_catalog=json.loads((ROOT/'translations/skills-review.json').read_text())
+ skill_reviews={r['id']:r for r in skill_catalog['entries']}
+ require(skill_catalog['base_rom_sha256']==digest(rom),'Skill inventory base differs')
+ for skill in extract_skills()['entries']:
+  reviewed=skill_reviews[skill['id']]
+  require(all(reviewed[k]==v for k,v in skill.items()),'Skill inventory review/source differs')
+  for kind in ('name','description'):
+   src=skill[kind+'_source'];row=retain(f"rom.{src['offset']:08x}",'skill',bytes.fromhex(src['raw_hex']),src['japanese'],{'skill':skill['id'],'kind':kind,'menu_eligible':skill['menu_eligible']})
+   row.update(english=reviewed[kind],language_status=reviewed['status'])
+   row.setdefault('reviewed_variants',[]).append({'resource':f"skill.{kind}.{skill['id']}",'english':reviewed[kind],'scope':'Language review; skill Info prototype and other consumers are separately validated. Naming confidence remains explicit in skills-review.json.'})
+ for reviewed in skill_catalog['ui_entries']+skill_catalog['literal_entries']:
+  src=reviewed['source'];row=retain(f"rom.{src['offset']:08x}",'skill-ui',bytes.fromhex(src['raw_hex']),src['japanese'],{'resource':reviewed['id']})
+  row.update(english=reviewed['english'],language_status=reviewed['status'])
+  row.setdefault('reviewed_variants',[]).append({'resource':reviewed['id'],'english':reviewed['english'],'scope':'Owned skill Info prototype; other shared consumers remain separate.'})
  from tools.extract_action_labels import extract as extract_actions
  from tools.container_text import kind_sources
  for entry in extract_actions()['entries']:
@@ -76,7 +112,7 @@ def run():
  for entry in kind_sources(rom):
   src=entry['source']
   retain(f"rom.{src['offset']:08x}",'container-kind',bytes.fromhex(src['raw_hex']),src['japanese'],{'container_kind':entry['index'],'pointer_offset':entry['pointer_offset']})
- for filename in ('menus-review.json','dungeon-ui-review.json'):
+ for filename in ('menus-review.json','dungeon-ui-review.json','options-help-review.json'):
   for reviewed in json.loads((ROOT/'translations'/filename).read_text())['entries']:
    offset=reviewed['source'];offset=offset-0x8000000 if offset>=0x8000000 else offset
    raw=bytes.fromhex(reviewed['source_hex']);require(rom[offset:offset+len(raw)]==raw,'UI source review differs')
@@ -113,9 +149,9 @@ def run():
   require(row['raw_hex']==source['raw_hex'] and row['source_sha256']==source['sha256'],'Appearance review source differs')
   row.update(english=reviewed['name'],canonical_name=reviewed['canonical_name'],language_status=reviewed['status'])
   row.setdefault('reviewed_variants',[]).append({'resource':'item-appearance-'+str(reviewed['id']),'english':reviewed['name'],'scope':'Private unidentified-name consumer prototype; insertion in the cumulative ROM and ordinary discovery are separate.'})
- for filename in ('player-effects-review.json','item-use-review.json','player-conditions-review.json','inventory-actions-review.json','pickup-review.json','swap-review.json','container-review.json','player-messages-review.json','selection-prompts-review.json','remi-warp-names-review.json','well-picker-review.json','hunger-review.json','status-traps-review.json','warp-trap-review.json','unequip-trap-review.json','mud-trap-review.json','damage-traps-review.json','rust-review.json','summon-trap-review.json','blast-traps-review.json','pitfall-review.json','queue-notices-review.json','bear-trap-review.json','stumble-trap-review.json','curse-review.json','drain-review.json','level-drain-review.json','steal-gold-review.json','monster-conditions-review.json','results-review.json','history-review.json','history-menu-review.json','records-review.json','password-review.json'):
+ for filename in ('player-effects-review.json','item-use-review.json','player-conditions-review.json','inventory-actions-review.json','pickup-review.json','swap-review.json','container-review.json','player-messages-review.json','selection-prompts-review.json','remi-warp-names-review.json','well-picker-review.json','hunger-review.json','status-traps-review.json','warp-trap-review.json','unequip-trap-review.json','mud-trap-review.json','damage-traps-review.json','rust-review.json','summon-trap-review.json','blast-traps-review.json','pitfall-review.json','queue-notices-review.json','bear-trap-review.json','stumble-trap-review.json','curse-review.json','drain-review.json','level-drain-review.json','steal-gold-review.json','monster-conditions-review.json','results-review.json','history-review.json','history-menu-review.json','records-review.json','password-review.json','priest-review.json','projectile-review.json','monster-announcements-review.json','companion-review.json','recovery-review.json','soldier-review.json','spell-menu-review.json','item-theft-review.json','skill-menu-review.json','dungeon-leaves-review.json','floor-buff-review.json','fullness-review.json','status-effects-review.json','spell-item-review.json','spell-messages-review.json','discovery-messages-review.json','monster-interactions-review.json','staff-use-review.json','scroll-item-review.json','writing-review.json','item-loss-review.json','player-notices-review.json','skill-messages-review.json','battle-results-review.json','dungeon-shop-review.json','save-notices-review.json','reference-lists-review.json','priest-warning-review.json','save-preview-review.json','town-root-review.json','fused-loss-review.json','cannot-talk-review.json','step-stairs-review.json','pot-view-review.json','book-travel-review.json','ability-info-review.json','dungeon-story-review.json','empty-read-review.json','travel-gate-review.json','ending-review.json','dungeon-travel-review.json','tutorial-help-review.json','link-text-review.json','ending-notice-review.json','pickup-help-review.json','carpenter-review.json','fire-scene-review.json','travel-confirm-review.json','town-routes-review.json','form-refusal-review.json','ground-remove-review.json','monster-identity-review.json'):
   catalog=json.loads((ROOT/'translations'/filename).read_text())
-  for reviewed in catalog['entries']+catalog.get('ui_entries',[]):
+  for reviewed in catalog['entries']+catalog.get('ui_entries',[])+catalog.get('abilities',[]):
    source=reviewed['source']
    if f"rom.{source['offset']:08x}" not in rows:
     raw=bytes.fromhex(source['raw_hex']);offset=source['offset']
@@ -125,6 +161,16 @@ def run():
    require(row['raw_hex']==source['raw_hex'] and row['source_sha256']==source['sha256'],'Private message review source differs')
    row.update(english=reviewed['english'],language_status=reviewed['status'])
    row.setdefault('reviewed_variants',[]).append({'resource':reviewed['id'],'review':filename,'english':reviewed['english'],'scope':'Language review for an isolated consumer prototype; cumulative insertion and ordinary progression are separately reported.'})
+ inscription=json.loads((ROOT/'translations/writing-input-review.json').read_text())
+ require(inscription['base_rom_sha256']==digest(rom),'Inscription source base differs')
+ for table in inscription['tables']:
+  require(digest(rom[table['source_offset']:table['end_exclusive']])==table['source_sha256'],'Inscription table source differs')
+  for entry in table['original_entries']:
+   src=entry['source'];raw=bytes.fromhex(src['raw_hex']);offset=src['offset']
+   require(rom[offset:offset+len(raw)]==raw and digest(raw)==src['sha256'] and entry['status']=='reviewed','Inscription source review differs')
+   row=retain(f'rom.{offset:08x}','writing-input',raw,src['japanese'],{'review':'writing-input-review.json','family':table['family'],'target':entry['target']})
+   if row['language_status']=='untranslated':row.update(english=' / '.join(entry['english_aliases']),language_status='reviewed')
+   row.setdefault('reviewed_variants',[]).append({'english_aliases':entry['english_aliases'],'scope':'English input aliases map to the original target; original kana spellings remain accepted for compatibility.'})
  for filename in ('town-prose-review.json','blacksmith-review.json','gaibara-review.json','remi-review.json','mayor-review.json'):
   for reviewed in json.loads((ROOT/'translations'/filename).read_text())['entries']:
    row=rows[reviewed.get('source_id',reviewed['id'])]
@@ -146,7 +192,16 @@ def run():
  fixed=json.loads((ROOT/'translations/results-review.json').read_text())['history_zero_actor']
  src=fixed['source'];row=retain(f"rom.{src['offset']:08x}",'result-field',bytes.fromhex(src['raw_hex']),src['japanese'],{'review':'results-review.json','kind':'history-zero-actor'})
  row.update(english=fixed['english'],language_status=fixed['status'])
+ dispositions=json.loads((ROOT/'translations/source-dispositions-review.json').read_text())
+ require(dispositions['base_rom_sha256']==digest(rom),'Source disposition base differs')
+ require(len({r['id'] for r in dispositions['entries']})==len(dispositions['entries']),'Duplicate source dispositions')
+ for disposition in dispositions['entries']:
+  row=rows[disposition['id']]
+  require(disposition['language_status'] in ('reviewed','retained-nonlinguistic','retained-japanese','replaced-by-component'),'Unknown source disposition')
+  require(all(row[k]==disposition[k] for k in ('raw_hex','source_sha256','japanese')) and digest(bytes.fromhex(row['raw_hex']))==row['source_sha256'],'Source disposition differs from extracted bytes')
+  require(row['language_status'] in ('untranslated',disposition['language_status']),'Source disposition conflicts with existing review')
+  row.update(english=disposition['english'],language_status=disposition['language_status'],disposition_reason=disposition['reason'],disposition_evidence=disposition['evidence'],disposition_reachability=disposition['reachability'])
  rows=sorted(rows.values(),key=lambda r:r['id']);OUT.mkdir(parents=True,exist_ok=True)
- report={'source_rom_sha256':digest(rom),'unique_sources':len(rows),'source_families':dict(Counter(r['family'] for r in rows)),'language_status':dict(Counter(r['language_status'] for r in rows)),'native_observed':sum(r['native_observed'] for r in rows),'scope':'Seven event banks, shared town table, 654 shared system/combat/menu pointers, 221 item definitions and descriptions plus the invisible-item fallback, 154 unidentified appearances with an end marker and 14 category-label pointers, both 141-ID actor-name tables, five category-indexed item-use sources,40 nonempty original action-label IDs in45 slots, two container-kind labels and owned menu/UI reviews. Not all game text: other tables/consumers and unclassified scan leads remain to be accounted for. Language review is separate from insertion/native acceptance and does not establish translation of every shared consumer.'}
+ report={'source_rom_sha256':digest(rom),'unique_sources':len(rows),'source_families':dict(Counter(r['family'] for r in rows)),'language_status':dict(Counter(r['language_status'] for r in rows)),'native_observed':sum(r['native_observed'] for r in rows),'scope':'Seven event banks, shared town table, 654 shared system/combat/menu pointers, 221 item definitions and descriptions plus the invisible-item fallback, 154 unidentified appearances with an end marker and 14 category-label pointers, both 141-ID actor-name tables, 61 spell definitions and Info descriptions, 128 skill definitions and Info descriptions, five category-indexed item-use sources,40 nonempty original action-label IDs in45 slots, two container-kind labels and owned menu/UI reviews. Not all game text: other tables/consumers and unclassified scan leads remain to be accounted for. Language review is separate from insertion/native acceptance and does not establish translation of every shared consumer.'}
  (OUT/'catalog.json').write_text(json.dumps({'report':report,'entries':rows},ensure_ascii=False,indent=2)+'\n');(OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return report
 if __name__=='__main__':run()

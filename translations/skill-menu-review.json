@@ -1,0 +1,310 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned warrior weapon/shield selection, action/Set confirmation, equipment skill preview and assignment selection lists. Skill effects, acquisition and other compendium readers remain separately owned. Original geometry; numbers in equipment rows are Hunger costs identified by the heading.",
+  "entries": [
+    {
+      "id": "skill-menu.914",
+      "table_offset": 2324,
+      "literal": null,
+      "source": {
+        "offset": 394636,
+        "end_exclusive": 394652,
+        "raw_hex": "208c9582cc8b5a0d208f8282cc8b5a00",
+        "sha256": "7358a078825e6cd0d099717d518f3d74b296664eaa1d2650723a0c0f997869df",
+        "japanese": " 剣の技\n 盾の技"
+      },
+      "english": "  Weapon\n  Shield",
+      "kind": "selector",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.89c",
+      "table_offset": 2204,
+      "literal": null,
+      "source": {
+        "offset": 397996,
+        "end_exclusive": 398003,
+        "raw_hex": "82c282af82e900",
+        "sha256": "3b36b4ad3775bf5e9a8a076e061818c3500c45e00798dba2c992fea612c9f9ed",
+        "japanese": "つける"
+      },
+      "english": "Set",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.8a0",
+      "table_offset": 2208,
+      "literal": null,
+      "source": {
+        "offset": 395168,
+        "end_exclusive": 395175,
+        "raw_hex": "82cd82b882b700",
+        "sha256": "de003f42dbe80ad2512be82a2d946075bad13aef0311bde52438527aed473862",
+        "japanese": "はずす"
+      },
+      "english": "Unset",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.8a4",
+      "table_offset": 2212,
+      "literal": null,
+      "source": {
+        "offset": 395160,
+        "end_exclusive": 395165,
+        "raw_hex": "94ad93ae00",
+        "sha256": "212a9085f9e237e72c3865c66ee9dd88745e0c09b07dadcf1293610cb06a95d8",
+        "japanese": "発動"
+      },
+      "english": "Use",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.8a8",
+      "table_offset": 2216,
+      "literal": null,
+      "source": {
+        "offset": 395152,
+        "end_exclusive": 395157,
+        "raw_hex": "90e096be00",
+        "sha256": "f16540b4d13dfd755892f196a59e1c105dd1791d471f9f6b824af5b5e61bbf55",
+        "japanese": "説明"
+      },
+      "english": "Info",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.8ac",
+      "table_offset": 2220,
+      "literal": null,
+      "source": {
+        "offset": 395144,
+        "end_exclusive": 395152,
+        "raw_hex": "030294ad93ae0500",
+        "sha256": "4ec82c25d51cfa8c4463727abdb98c6e861a13ad11656a6563b66e6706895b81",
+        "japanese": "{legacy-position:0302}発動{unclassified-control:05}"
+      },
+      "english": "{grey}Use{reset}",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.8b0",
+      "table_offset": 2224,
+      "literal": null,
+      "source": {
+        "offset": 395132,
+        "end_exclusive": 395142,
+        "raw_hex": "030282c282af82e90500",
+        "sha256": "3b0652121c98b17fb119e5a9029fc02e33b18722cf5510176d29d132898b737f",
+        "japanese": "{legacy-position:0302}つける{unclassified-control:05}"
+      },
+      "english": "{grey}Set{reset}",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.74c",
+      "table_offset": 1868,
+      "literal": null,
+      "source": {
+        "offset": 397912,
+        "end_exclusive": 397927,
+        "raw_hex": "82a882da82a682c482a282c882a200",
+        "sha256": "7c0a8dc4766c8302db6146028f773e0aa012b990966bf6ba99bb86060e008710",
+        "japanese": "おぼえていない"
+      },
+      "english": "Not learned",
+      "kind": "unlearned",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.730",
+      "table_offset": 1840,
+      "literal": null,
+      "source": {
+        "offset": 398036,
+        "end_exclusive": 398049,
+        "raw_hex": "8b5a82aa89bd82e082c882a200",
+        "sha256": "f69fe6011c12952c68ee938051b4d93285be15660170ac5bf91bcf7c60cd771b",
+        "japanese": "技が何もない"
+      },
+      "english": "No skills set",
+      "kind": "header",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.734",
+      "table_offset": 1844,
+      "literal": null,
+      "source": {
+        "offset": 398012,
+        "end_exclusive": 398033,
+        "raw_hex": "8b5a838a8358836728836e83898377838a25642900",
+        "sha256": "2dd698f5e92f1730d2153bd3a0b54c5f53b7669fbcff9b6b194218c34166a4f9",
+        "japanese": "技リスト(ハラヘリ%{unclassified-control:64})"
+      },
+      "english": "Skills (Hunger: {cost})",
+      "kind": "header",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.738",
+      "table_offset": 1848,
+      "literal": null,
+      "source": {
+        "offset": 398004,
+        "end_exclusive": 398011,
+        "raw_hex": "82cd82c882c200",
+        "sha256": "da4362eaada84274c43cf5cd8e2c19db4d425cb2cf28b74d6e34c8059d45c8e5",
+        "japanese": "はなつ"
+      },
+      "english": "Use",
+      "kind": "action",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.7c4",
+      "table_offset": 1988,
+      "literal": null,
+      "source": {
+        "offset": 396924,
+        "end_exclusive": 396933,
+        "raw_hex": "8b5a838a8358836700",
+        "sha256": "91fecc8d13f2b58cd9095709ea7d8bddb0001f52c4ee5b6411bce0bb08f88576",
+        "japanese": "技リスト"
+      },
+      "english": "Skills",
+      "kind": "header",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.7c0",
+      "table_offset": 1984,
+      "literal": null,
+      "source": {
+        "offset": 396936,
+        "end_exclusive": 396955,
+        "raw_hex": "03256325730528836e83898377838a25642900",
+        "sha256": "1b1fedaf834e41b4ea53647e81d45e5d5f0c5a1b86c053b2a11c4aae26100124",
+        "japanese": "{legacy-position:0325}{unclassified-control:63}%{unclassified-control:73}{unclassified-control:05}(ハラヘリ%{unclassified-control:64})"
+      },
+      "english": "{colour}{skill}{reset} ({cost})",
+      "kind": "equipment-row",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.7cc",
+      "table_offset": 1996,
+      "literal": null,
+      "source": {
+        "offset": 396908,
+        "end_exclusive": 396915,
+        "raw_hex": "03256325730500",
+        "sha256": "335737b51368e6239ad2253518dfc0bbf8b8a6b48ec3b2482697011a92baaed4",
+        "japanese": "{legacy-position:0325}{unclassified-control:63}%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{colour}{skill}{reset}",
+      "kind": "equipment-row",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.92c",
+      "table_offset": 2348,
+      "literal": null,
+      "source": {
+        "offset": 394476,
+        "end_exclusive": 394517,
+        "raw_hex": "8b5a5b25735d82f020919594f582b582c482a282e90d5b25735d82c9835a8362836782b582dc82b700",
+        "sha256": "2f25ca418d121292f3e9837afe5591acba32d81c517ce3d44280dcc7113b1592",
+        "japanese": "技[%{unclassified-control:73}]を 装備している\n[%{unclassified-control:73}]にセットします"
+      },
+      "english": "Set {skill}\non your equipped {item}?",
+      "kind": "confirmation",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.960",
+      "table_offset": 2400,
+      "literal": null,
+      "source": {
+        "offset": 394168,
+        "end_exclusive": 394183,
+        "raw_hex": "835a8362836782b582dc82b582bd00",
+        "sha256": "0927a5b6d64664bb0bb4b4dacc78f2c70214b89aba1cf0e928a1a50aea91fe66",
+        "japanese": "セットしました"
+      },
+      "english": "Skill set.",
+      "kind": "message",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.available",
+      "table_offset": null,
+      "literal": 138744,
+      "source": {
+        "offset": 440680,
+        "end_exclusive": 440689,
+        "raw_hex": "257303256325730500",
+        "sha256": "3fd3a49644616227f03726df044d84ffc10c45ad39fb27f13d13364005ed6c81",
+        "japanese": "%{unclassified-control:73}{legacy-position:0325}{unclassified-control:63}%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{marker}{colour}{skill}{reset}",
+      "kind": "list-row",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.disabled",
+      "table_offset": null,
+      "literal": 138780,
+      "source": {
+        "offset": 440692,
+        "end_exclusive": 440700,
+        "raw_hex": "2573030225730500",
+        "sha256": "ad612c1fd68e6861331ad44c2b72a132b7d4dc2126274631785921332426f7bf",
+        "japanese": "%{unclassified-control:73}{legacy-position:0302}%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{marker}{grey}{skill}{reset}",
+      "kind": "list-row",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    },
+    {
+      "id": "skill-menu.equipment-disabled",
+      "table_offset": null,
+      "literal": 136692,
+      "source": {
+        "offset": 440628,
+        "end_exclusive": 440634,
+        "raw_hex": "030225730500",
+        "sha256": "5480b5192b943184aec6f0fbaf64cc57376b43e8046d26ecbe803425f1fe32b0",
+        "japanese": "{legacy-position:0302}%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{grey}{skill}{reset}",
+      "kind": "equipment-row",
+      "status": "reviewed",
+      "bilingual_review": "T2 Japanese reread against the native selection and argument order. Weapon/Shield are categories within Skills; the hunger heading identifies parenthesized row costs. Set confirmation preserves equipped-item meaning. Colours and all substitutions are retained."
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "The non-spell inscription name branch F2F8..F328 only, all37 category0 item definitions excluding spell item153. Explicit English effect labels replace six-byte Japanese suffix removal. Other categories are not claimed to be valid inscriptions; ordinary names and all mechanics remain unchanged.",
+  "entries": [
+    {
+      "id": "scroll-item.kind",
+      "table_offset": 1096,
+      "source": {
+        "offset": 404564,
+        "end_exclusive": 404569,
+        "raw_hex": "94928e8600",
+        "sha256": "2d68e0a736a691cbf27c1abe432fab3f11f0209c93d0f97ada84b84a3522b762",
+        "japanese": "白紙"
+      },
+      "english": "Blank",
+      "status": "reviewed"
+    },
+    {
+      "id": "scroll-item.format",
+      "source": {
+        "offset": 439352,
+        "end_exclusive": 439361,
+        "raw_hex": "030425733a25730500",
+        "sha256": "1274c009054f42f45aba4284c1cea4cc33b00f7b0614bafdadd9bbf4feba711b",
+        "japanese": "{legacy-position:0304}%{unclassified-control:73}:%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{kind}: {effect}",
+      "status": "reviewed"
+    }
+  ],
+  "effects": [
+    {
+      "id": "scroll-item.effect.116",
+      "item_id": 116,
+      "source": {
+        "offset": 413600,
+        "end_exclusive": 413615,
+        "raw_hex": "835683838369834e82cc8aaa95a800",
+        "sha256": "4e41f6bdc112efa279e7e7d4b33870b9c019b5104e1ef82acb813795dae8926e",
+        "japanese": "シャナクの巻物"
+      },
+      "english": "Sheen",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.117",
+      "item_id": 117,
+      "source": {
+        "offset": 413584,
+        "end_exclusive": 413599,
+        "raw_hex": "834383938370835882cc8aaa95a800",
+        "sha256": "0cc1bab801dd0fa467441b80acd01fa679d7b492f26f4910b8e5e550006a0b37",
+        "japanese": "インパスの巻物"
+      },
+      "english": "Peep",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.118",
+      "item_id": 118,
+      "source": {
+        "offset": 413572,
+        "end_exclusive": 413583,
+        "raw_hex": "8343834982cc8aaa95a800",
+        "sha256": "5df924779ddc4e474aa548c0b0c080f7c692dcabd83974134b80e2fdbc3bf397",
+        "japanese": "イオの巻物"
+      },
+      "english": "Bang",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.119",
+      "item_id": 119,
+      "source": {
+        "offset": 413556,
+        "end_exclusive": 413571,
+        "raw_hex": "82ad82bf82c882b582cc8aaa95a800",
+        "sha256": "8b9d873040e84a97cbafd4c99e4e86eae269feeb0dc6e9fc38238c46726ba3da",
+        "japanese": "くちなしの巻物"
+      },
+      "english": "Mouthseal",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.120",
+      "item_id": 120,
+      "source": {
+        "offset": 413540,
+        "end_exclusive": 413555,
+        "raw_hex": "838a838c837e836782cc8aaa95a800",
+        "sha256": "98a50228e0d80b975d8159877d563d2214166ebe4445aa40536e3eaa844ab160",
+        "japanese": "リレミトの巻物"
+      },
+      "english": "Evac",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.121",
+      "item_id": 121,
+      "source": {
+        "offset": 413528,
+        "end_exclusive": 413539,
+        "raw_hex": "838f836982cc8aaa95a800",
+        "sha256": "01ce8e67b0c9ef87b0019381a05fe09e8a59888056b01d28ede54eb8fd6c4da8",
+        "japanese": "ワナの巻物"
+      },
+      "english": "Trap",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.122",
+      "item_id": 122,
+      "source": {
+        "offset": 413512,
+        "end_exclusive": 413525,
+        "raw_hex": "91e5959489ae82cc8aaa95a800",
+        "sha256": "c992e43d767447c32898e4523782d86decc6166c97358c724408b40c1e6d52bb",
+        "japanese": "大部屋の巻物"
+      },
+      "english": "Great room",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.123",
+      "item_id": 123,
+      "source": {
+        "offset": 413492,
+        "end_exclusive": 413509,
+        "raw_hex": "838283938358835e815b82cc8aaa95a800",
+        "sha256": "bba73208d5a11fbe358cc8e7bae5ff3144d482776d48f7144508489478470728",
+        "japanese": "モンスターの巻物"
+      },
+      "english": "Monster",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.124",
+      "item_id": 124,
+      "source": {
+        "offset": 413480,
+        "end_exclusive": 413491,
+        "raw_hex": "94928e8682cc8aaa95a800",
+        "sha256": "bca2313928d8e51c97dd0d6d37099e1d637156d325cf30ba275856ab5868b008",
+        "japanese": "白紙の巻物"
+      },
+      "english": "Blank",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.125",
+      "item_id": 125,
+      "source": {
+        "offset": 413460,
+        "end_exclusive": 413477,
+        "raw_hex": "836f8343834c838b836782cc8aaa95a800",
+        "sha256": "00d65b3086f0b10627089d291086a73739ac141dc40bc05829832b71a954fedf",
+        "japanese": "バイキルトの巻物"
+      },
+      "english": "Oomphle",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.126",
+      "item_id": 126,
+      "source": {
+        "offset": 413444,
+        "end_exclusive": 413457,
+        "raw_hex": "8358834a838982cc8aaa95a800",
+        "sha256": "e68b5526d26a45ae0ce14078da053f2e26d9374841fddaf913758599a3b36832",
+        "japanese": "スカラの巻物"
+      },
+      "english": "Buff",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.127",
+      "item_id": 127,
+      "source": {
+        "offset": 413428,
+        "end_exclusive": 413441,
+        "raw_hex": "83818362834c82cc8aaa95a800",
+        "sha256": "e24a8d15046d01f43cd1342bd25e6a82c4a6ff49b468f06ba8d3d81157102728",
+        "japanese": "メッキの巻物"
+      },
+      "english": "Plating",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.128",
+      "item_id": 128,
+      "source": {
+        "offset": 413412,
+        "end_exclusive": 413427,
+        "raw_hex": "82b782a282be82b582cc8aaa95a800",
+        "sha256": "0bee4dc9248338b21432b515d3e2cfb59d551339b586e2bcb82c24a49f0f3382",
+        "japanese": "すいだしの巻物"
+      },
+      "english": "Vacuum",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.129",
+      "item_id": 129,
+      "source": {
+        "offset": 413396,
+        "end_exclusive": 413411,
+        "raw_hex": "82d082eb82a682b882cc8aaa95a800",
+        "sha256": "2042c0d67b62ca01e20695082f5b0dab4a96c087cbd8504bf0cbc2bb5e649266",
+        "japanese": "ひろえずの巻物"
+      },
+      "english": "No-pickup",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.130",
+      "item_id": 130,
+      "source": {
+        "offset": 413384,
+        "end_exclusive": 413395,
+        "raw_hex": "90b988e682cc8aaa95a800",
+        "sha256": "f774be7b743b2373c24048e63e3b57f8e0275e71be0c22513fd0205cae9aaebe",
+        "japanese": "聖域の巻物"
+      },
+      "english": "Sanctuary",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.131",
+      "item_id": 131,
+      "source": {
+        "offset": 413364,
+        "end_exclusive": 413381,
+        "raw_hex": "82b982f182e882aa82f182cc8aaa95a800",
+        "sha256": "4590bf97a58a89e218cfba2fc018cb1ef29fd5037670a1feee91bc317a5ec1ab",
+        "japanese": "せんりがんの巻物"
+      },
+      "english": "See-all",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.132",
+      "item_id": 132,
+      "source": {
+        "offset": 413352,
+        "end_exclusive": 413363,
+        "raw_hex": "8370839382cc8aaa95a800",
+        "sha256": "51cffcfd6912b288f4a195d26c677012afe5e9bde214b28136d9132e0d25d093",
+        "japanese": "パンの巻物"
+      },
+      "english": "Bread",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.133",
+      "item_id": 133,
+      "source": {
+        "offset": 413336,
+        "end_exclusive": 413349,
+        "raw_hex": "82a282cc82e882cc8aaa95a800",
+        "sha256": "448d49202989c657c8eb74d46e5cb3df8dc4b0bbb8596548b699ea3fbace4423",
+        "japanese": "いのりの巻物"
+      },
+      "english": "Prayer",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.134",
+      "item_id": 134,
+      "source": {
+        "offset": 413316,
+        "end_exclusive": 413333,
+        "raw_hex": "82e282e882c882a882b582cc8aaa95a800",
+        "sha256": "afc21562634151988f7cce52f014e2df24669a97e24fd093db5b4d0a94aaae3d",
+        "japanese": "やりなおしの巻物"
+      },
+      "english": "Retry",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.135",
+      "item_id": 135,
+      "source": {
+        "offset": 413296,
+        "end_exclusive": 413313,
+        "raw_hex": "8370838b83768393836582cc8aaa95a800",
+        "sha256": "815ecd697c3f2dbac566f15b7e1b80fc590b145970f8c399716a27cb076d1527",
+        "japanese": "パルプンテの巻物"
+      },
+      "english": "H. Pocus",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.136",
+      "item_id": 136,
+      "source": {
+        "offset": 413280,
+        "end_exclusive": 413295,
+        "raw_hex": "838c837e815b838982cc8aaa95a800",
+        "sha256": "e0615d37d9c6e108ade2a042df3a66884b6001bffbebf4a2c641e0324d3ba707",
+        "japanese": "レミーラの巻物"
+      },
+      "english": "Glow",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.137",
+      "item_id": 137,
+      "source": {
+        "offset": 413260,
+        "end_exclusive": 413277,
+        "raw_hex": "82a982c882b582ce82e882cc8aaa95a800",
+        "sha256": "2a69c2eed2b8c0d2239f34ba5c74c66a3dad79f5121aacbc1637396df5d99a99",
+        "japanese": "かなしばりの巻物"
+      },
+      "english": "Binding",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.138",
+      "item_id": 138,
+      "source": {
+        "offset": 413248,
+        "end_exclusive": 413259,
+        "raw_hex": "9286926682cc8aaa95a800",
+        "sha256": "87b2edd8c2fc7bda11419bdbb6d0050c54ce154fae40596f8e8cfdffcfa25ae7",
+        "japanese": "中断の巻物"
+      },
+      "english": "Suspend",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.139",
+      "item_id": 139,
+      "source": {
+        "offset": 413240,
+        "end_exclusive": 413245,
+        "raw_hex": "8aaa95a800",
+        "sha256": "acdcda25ec973b0eab7d14c8cc3ef0b426ff03d3a61e08d2347aa80bc4cb0324",
+        "japanese": "巻物"
+      },
+      "english": "Scroll",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.140",
+      "item_id": 140,
+      "source": {
+        "offset": 413220,
+        "end_exclusive": 413239,
+        "raw_hex": "8be282cc82bd82c482b282c682cc8aaa95a800",
+        "sha256": "392ffe06f04de599968d095273d09b698f09a9a275c2ba71225d2d8ab3678e55",
+        "japanese": "銀のたてごとの巻物"
+      },
+      "english": "Lyre of Ire",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.141",
+      "item_id": 141,
+      "source": {
+        "offset": 413204,
+        "end_exclusive": 413217,
+        "raw_hex": "926e8d968ea882cc8aaa95a800",
+        "sha256": "2c4c191508075c9c814153076a2bdf524123fba19de3fd26e52c361bfdd45c72",
+        "japanese": "地獄耳の巻物"
+      },
+      "english": "Foe sight",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.142",
+      "item_id": 142,
+      "source": {
+        "offset": 413188,
+        "end_exclusive": 413203,
+        "raw_hex": "83678389837d836982cc8aaa95a800",
+        "sha256": "b4a600a69fc580223536f732d2246b62342d7ac63e121625470332e3a8101339",
+        "japanese": "トラマナの巻物"
+      },
+      "english": "Safe Pass.",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.143",
+      "item_id": 143,
+      "source": {
+        "offset": 413176,
+        "end_exclusive": 413187,
+        "raw_hex": "91e5959782cc8aaa95a800",
+        "sha256": "eaaffcd044e5e29d650eecd9c7fced728f346002b958cc4324621a9a01bc7c2c",
+        "japanese": "大風の巻物"
+      },
+      "english": "Gale",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.144",
+      "item_id": 144,
+      "source": {
+        "offset": 413156,
+        "end_exclusive": 413175,
+        "raw_hex": "82dc82e082cc82b582ce82e882cc8aaa95a800",
+        "sha256": "aed07029e16136d9b2573282faeb555a5d17dd017c8b43f6ca5161fe4873fa24",
+        "japanese": "まものしばりの巻物"
+      },
+      "english": "Foe bind",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.145",
+      "item_id": 145,
+      "source": {
+        "offset": 413140,
+        "end_exclusive": 413155,
+        "raw_hex": "838b834a8369839382cc8aaa95a800",
+        "sha256": "27fac494479d2ce2b13502873ace205dd4efbeefdb889d833a7874811ab8cd3c",
+        "japanese": "ルカナンの巻物"
+      },
+      "english": "Kasap",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.146",
+      "item_id": 146,
+      "source": {
+        "offset": 413124,
+        "end_exclusive": 413139,
+        "raw_hex": "82cd82e882c282af82cc8aaa95a800",
+        "sha256": "3044ce884cd5e2f12ab8f6c78316da3512a83444f237e9e8a65ddd19920229ea",
+        "japanese": "はりつけの巻物"
+      },
+      "english": "Rooting",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.147",
+      "item_id": 147,
+      "source": {
+        "offset": 413108,
+        "end_exclusive": 413123,
+        "raw_hex": "82d082ab82e682b982cc8aaa95a800",
+        "sha256": "c2307e18ae55e1a09c1fa880c61c15b8d91701f2f4397c88da8d390c12f2e4a1",
+        "japanese": "ひきよせの巻物"
+      },
+      "english": "Pulling",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.148",
+      "item_id": 148,
+      "source": {
+        "offset": 413088,
+        "end_exclusive": 413107,
+        "raw_hex": "838283938358835e8eaf95ca82cc8aaa95a800",
+        "sha256": "463d89cd211c56bbe4e60761f6c90ff7d41e5df9dd33c2b4942ef8db1cc67652",
+        "japanese": "モンスタ識別の巻物"
+      },
+      "english": "Foe ID",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.149",
+      "item_id": 149,
+      "source": {
+        "offset": 413072,
+        "end_exclusive": 413085,
+        "raw_hex": "89a98be082cc8e8690d882ea00",
+        "sha256": "f968d51c1d90c25dfc0d23f9b3cd190e364b00fb0110e9173e14546083ce24fe",
+        "japanese": "黄金の紙切れ"
+      },
+      "english": "Golden scrap",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.150",
+      "item_id": 150,
+      "source": {
+        "offset": 413056,
+        "end_exclusive": 413071,
+        "raw_hex": "83558349838a834e82cc8aaa95a800",
+        "sha256": "c582770bcbf2645e91afd5cc15071435b21ea77dbafee39c99610c80eee78c4c",
+        "japanese": "ザオリクの巻物"
+      },
+      "english": "Kazing",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.151",
+      "item_id": 151,
+      "source": {
+        "offset": 413040,
+        "end_exclusive": 413053,
+        "raw_hex": "83588379838b83758362834e00",
+        "sha256": "43b698bef00f894f116346953a6c8bc3fc3b919025efa3db58cb042569a36a57",
+        "japanese": "スペルブック"
+      },
+      "english": "Spellbook",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    },
+    {
+      "id": "scroll-item.effect.152",
+      "item_id": 152,
+      "source": {
+        "offset": 413024,
+        "end_exclusive": 413039,
+        "raw_hex": "8aaa95a882cc82ab82ea82cd82b500",
+        "sha256": "62be3e713688d33ee4259233fb908a440120f869b98758b6849fc6d50a166259",
+        "japanese": "巻物のきれはし"
+      },
+      "english": "Scroll scrap",
+      "status": "reviewed",
+      "review": "The reviewed item display name with its English scroll category suffix removed when present. The native Blank prefix identifies the inscribed original; full effect identity is retained. Non-scroll special category members retain their complete reviewed name."
+    }
+  ]
+}

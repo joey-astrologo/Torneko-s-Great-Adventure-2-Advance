@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "decision": "User approved insertion of the Shiren source arrival cards, including wider Ordeal Mansion, on 2026-09-30.",
+  "face": "shiren-source",
+  "font_sha256": "c4e523eeaf456eea6aafcb2884358b2b430c1d8628975f11f76efcabb783ebad",
+  "height": 17,
+  "tracking": 0,
+  "floor_style": "original",
+  "names": {
+    "0": "Banker's Mansion",
+    "1": "Cemetery Dungeon",
+    "2": "Castle Dungeon",
+    "3": "Lost Forest",
+    "4": "Mt. Fiery",
+    "5": "Toro Ruins",
+    "6": "Magic Dungeon",
+    "7": "More Magic Dungeon",
+    "8": "Ordeal Mansion",
+    "9": "Sword Dungeon",
+    "10": "Mage Dungeon",
+    "11": "Mysterious Meadow",
+    "12": "Well"
+  },
+  "width_tiles": {
+    "8": 17
+  }
+}

@@ -1,22 +1,33 @@
 # Graphics discovery queue
 
-Updated 2026-09-14. This records native resource discoveries and work still to
+Updated 2026-09-30. This records native resource discoveries and work still to
 investigate. Exact ranges and evidence are in [MEMORY_MAP.md](MEMORY_MAP.md).
 Discovering an asset does not authorize overwriting it or establish complete
 graphics coverage.
 
 | Family | Current evidence | Remaining work |
 |---|---|---|
-| Main title artwork/logo | [Native title](../build/graphics-research/title/title.png); loader/record and uncompressed 8bpp tiles identified, complete frame reconstructed pixel-for-pixel | Audit palette calibration, intro/fade variants and editable lettering before auditions. |
-| Menu/name-entry logo appearance | [Native menu](../build/graphics-research/title/menu.png) and [name editor](../build/graphics-research/title/name.png) share the same selected background; title uses a different resource | Five random-menu resource candidates identified; four need native capture, and later logo occurrences remain open. |
+| Main title artwork/logo | Approved wood-and-gold title inserted; native full-screen, palette and startup-transition checks pass. Original footer exact. | [Inserted gallery and acceptance](TITLE_INSERTION.md). Full-game playtesting remains open. |
+| Menu/name-entry logo appearance | All five floating-logo backgrounds approved and inserted. Ordinary menu/name/cancel/reopen routes pass; surrounding pixels and 16 UI palette entries remain exact. | [Actual screenshots](../build/title-insertion/index.html). Later logo occurrences remain open. |
 | Town and opening backgrounds | [Opening scene](../build/opening-text/native/opening-1.png) and flashback captures in the recorded route | Decode the actual graphics families; inspect lettering, overlays and animated variants separately. |
-| Dungeon arrival lettering | [First card](../build/arrival-research/first-dungeon/card.png), source rectangle, separate floor digits and 4bpp atlas identified; 600 consecutive frames replay identically | Audit other dungeon IDs, floor formats and atlas rectangles; confirm terms and prepare card auditions. |
+| Dungeon arrival lettering | 13 English Shiren name graphics and Level inserted, including wider Ordeal Mansion; 30 native pixel/upload/return cases pass. Original digits/F retained. | [Native inserted-card gallery](../build/arrival-cards/inserted/index.html). Natural routes beyond the first entry remain open; [insertion evidence](ARRIVAL_INSERTION.md). |
 | Separate town arrival cards | [Frame viewer](../build/arrival-research/index.html): the first scripted castle arrival and return home fade directly into their scenes; no separate card observed on those routes | Trace other town entries and later story states before deciding whether a separate card family exists. |
 | Signs and other baked-in text | No completed asset audit | Inspect decoded scenes and sprite/object layers at native resolution. |
-| Ending credits and surrounding artwork | Not reached or decoded | Establish language, source resources and natural playback; translation and restyling are separate decisions. |
+| Ending credits and surrounding artwork | GBA scrolling bitmap decoded: 67 English lines / 15 sections; all visible lines covered by controlled native text-layer comparisons. User approved keeping this artwork unchanged on September 30. | [Original credits viewer](../build/credits/audition/index.html). Natural ending playback, surrounding artwork and untouched scene transitions remain open. |
 
-No title/arrival style has been selected for
-Torneko 2. Later auditions should show native-size output and native palette/tile
+The user reopened credits/arrival discovery and auditions on 2026-09-29.
+See [GRAPHICS_AUDITION.md](GRAPHICS_AUDITION.md) for reproduction, budgets and
+the distinction between decoded artwork and controlled native evidence.
+On September 30 the user nominated Shiren's SNES revamp lettering for arrival
+cards. Its [43 recovered glyphs and derived period](SHIREN_ARRIVAL_FONT.md)
+cover the current location names. The user then approved insertion, and
+Ordeal Mansion now fits its widened 136px rectangle at native pixel scale.
+The Shiren arrival style is selected. The user next requested the title audition
+on September 30, then approved the main title and five floating corner logos
+for insertion. All six resources are now inserted with native palette fitting,
+checked pointer ownership and ordinary menu/name/cancel/reopen validation. See
+[TITLE_INSERTION.md](TITLE_INSERTION.md) for evidence and remaining limits.
+Later auditions should show native-size output and native palette/tile
 constraints, preserve selected artwork/settings, and use one consistent English
 logo treatment across every verified occurrence.
 
@@ -35,7 +46,8 @@ The [new dungeon-entry receipt](../build/arrival-research/first-dungeon/report.j
 separately checks all 600 new frames against a second native replay.
 This is evidence for these particular transitions, not proof that all towns or
 dungeons lack cards. The first dungeon does have a separate card; no separate
-town card was observed on the two earlier town routes. Credits remain unmapped.
+town card was observed on the two earlier town routes. The newer credits/arrival
+audition research extends this early capture inventory as described above.
 No graphics insertion ownership is claimed from screenshots.
 
 ## Confirmed resource formats
@@ -52,7 +64,8 @@ is 4bpp artwork, 224×264 pixels, containing Japanese area labels and floor
 symbols. Dungeon ID 11 selects its 224×24 **ちょっと不思議の草原** rectangle;
 the compositor adds `1F` separately. It does not use the story font or the
 compact English extension. Its English area-name decision and artwork remain
-pending.
+pending in this initial discovery pass; the newer audition uses the existing
+reviewed destination name Mysterious Meadow.
 
 [Native graphics report](../build/graphics-research/report.json) ·
 [Title/background sources](../build/graphics-research/title/report.json) ·

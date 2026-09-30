@@ -163,6 +163,10 @@ class DialogueTest(unittest.TestCase):
             with self.subTest(raw=raw), self.assertRaises(ValueError):
                 compile_dialogue('A', tokenize(raw)[0])
 
+    def test_status_skill_palette_restores_the_original_foreground(self):
+        payload=bytes.fromhex('0303f04105f04200')
+        self.assertEqual(rendered_codes(payload,foreground=15,saved=8),[(0xF041,11),(0xF042,15)])
+
     def test_dynamic_sale_keeps_amount_and_original_buffer_bound(self):
         template, layout = compile_sale(ENGLISH)
         for amount in (0, 1, 9, 10, 100, 999999, 0x7FFFFFFF):

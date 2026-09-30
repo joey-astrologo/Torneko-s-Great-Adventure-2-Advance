@@ -66,7 +66,7 @@ markers, counts, enhancements and prices must fit together at normal spacing.
   ten digits and traverses all eight selection cells. Controlled balances are
   clearly distinguished from naturally earned money. No persisted transaction
   save is claimed.
-- Numeric lookup probes cover all 38 aliases, adjacent unchanged icons,
+- Numeric lookup probes cover all 46 aliases, adjacent unchanged icons,
   fallback boundaries and callee-saved registers/SP.
 
 Reports are under `build/english/{dungeon-ui,items,bank,numeric}-validation`.
@@ -78,3 +78,12 @@ The engine's original decimal conversion tables at ROM 000648D0 and 0006B423
 now independently enforce values 0–9 before any build. In particular 8754 is
 an equipped/curse icon, 8755 is 1, 875D is 9 and 875E is 0. This semantic check
 is separate from the bitmap and lookup checks.
+
+Compound native numerals now also cover indices16–20 (876C–8770) and skill
+counts(1)–(3) (8771–8773). Original sequence tables at ROM644C8 and60770
+verify the values independently. Parenthesized counts preserve every approved
+ink pixel and the digit's6px advance; only empty outer parenthesis columns
+are removed to fit one13px native glyph (native advance limit15px).
+`verify_compound_numbers` checks native reader/bitmap/cursor/final pixels in
+two controlled title-menu rows and72 lookup/ABI/fallback probes. This does
+not establish natural reachability of all number consumers.

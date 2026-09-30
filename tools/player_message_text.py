@@ -10,7 +10,7 @@ from tools.inventory_action_text import CONTROL
 CATALOG=ROOT/'translations/player-messages-review.json'
 SLOTS={0x3C0,0x354,0x884,0x198,0x76C,0x474,0x2E0,0x364,0x2D8,0x308,0x7D4,0x7D8,
        0x2FC,0x2BC,0x190,0x4AC,0x108,0x10C,0x188,0x17C,0x180,0x8FC,0x178,0x990,
-       0x194,0xE0,0x118,0x528,0x218,0x3B4,0x888,0x174,0x890}
+       0x194,0xE0,0x118,0x528,0x218,0x3B4,0x888,0x174,0x890,0xF4,0xF8,0xFC,0x100,0x104,0x368,0x36C}
 
 def add_player_messages(build):
     catalog=json.loads(CATALOG.read_text());sources={r['table_offset']:r['source'] for r in extract()['entries']}
@@ -44,7 +44,7 @@ def add_player_messages(build):
         require(pointer not in original_pointers,'Duplicate player wrapper source pointer');original_pointers.add(pointer)
         mapping.extend(struct.pack('<II',pointer,offset+0x08000000))
         rows.append(row|{'offset':offset,'encoded_hex':payload.hex(),'maximum_line_widths':widths,
-                         'maximum_bytes':maximum,'capacity':256,'player_width':PLAYER_WIDTH,'player_content_bytes':14})
+                         'fields':['player']*text.count('{player}'),'maximum_bytes':maximum,'capacity':256,'player_width':PLAYER_WIDTH,'player_content_bytes':14})
     table=build.allocate('player-message-pointer-map',bytes(mapping),'player-message-wrapper')
     helper=(len(build.data)+3)&~3
     assembly=f'''.gba

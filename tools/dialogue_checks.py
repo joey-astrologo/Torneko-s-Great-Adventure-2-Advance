@@ -51,12 +51,14 @@ def rendered_codes(payload, player=None, foreground=None, saved=None):
             output.append(glyph if foreground is None else (glyph, foreground))
         elif code == 0x20:
             output.append(code if foreground is None else (code, foreground))
-        elif code in (1, 2, 10, 13, 20, 28, 29):
+        elif code in (1, 2, 9, 10, 13, 20, 28, 29):
             pass
         elif code in (4, 6):
             cursor += 1
         elif code == 3:
-            require(cursor < len(payload) and payload[cursor] in (2, 4, 5, 6, 7), 'Unsupported rendered colour operand')
+            # Status-kind skill names use operand3 in the original four-kind
+            # palette map at ROM148364 (05 07 06 03).
+            require(cursor < len(payload) and payload[cursor] in (2, 3, 4, 5, 6, 7), 'Unsupported rendered colour operand')
             if foreground is not None:
                 saved, foreground = foreground, (payload[cursor] & 7) + 8
             cursor += 1

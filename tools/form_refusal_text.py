@@ -1,0 +1,7 @@
+import json,struct
+from tools.rom import ROOT,digest,require
+from tools.extract_items import source
+from tools.compact_font import encode,measure
+CATALOG=ROOT/'translations/form-refusal-review.json'
+def add_form_refusal(build):
+ c=json.loads(CATALOG.read_text());require(c['base_rom_sha256']==digest(build.original) and len(c['entries'])==1,'Form refusal catalog differs');e=c['entries'][0];require(e['status']=='reviewed' and e['source']==source(build.original,0x0814C84A),'Form refusal source differs');text=e['english'];original=bytes.fromhex(e['source']['raw_hex']);require(original[:2]==b'\x03\x04' and original[-2:]==b'\x05\0' and original.count(b'\r')==1,'Form refusal native controls differ');require(text.startswith('{color:4}') and text.endswith('{/color}'),'Form refusal colour differs');plain=text[len('{color:4}'):-len('{/color}')];lines=plain.split('\n');require(len(lines)==2 and not any(c in plain for c in '{}%@') and max(map(measure,lines))<=216,'Form refusal window/control overflow');raw=b'\x03\x04'+encode(plain)[:-1]+b'\x05\0';at=build.allocate(e['id'],raw,'form-refusal');build.patch('form-refusal-reader',0x4B9AC,struct.pack('<I',0x0814C84A),struct.pack('<I',at+0x08000000),'form-refusal');return dict(entries=[e|dict(offset=at,encoded_hex=raw.hex(),layout=dict(pages=[lines],line_widths=[list(map(measure,lines))],maximum_width=216))],catalog_sha256=digest(CATALOG.read_bytes()),scope=c['scope'])

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "approved-for-insertion",
+  "user_statement": "Okay let's insert this into the game please, these are all approved",
+  "source_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "audition_renderer_sha256": "a4497e9c5bd11588689f8ceddcc72971a647da15ee4ab598092345d106ab185e",
+  "audition_backgrounds_sha256": "3548ba74c927a77a4c47444dffeae41ccddf405fe89e589aa65e2110d7f82422",
+  "entries": [
+    {
+      "index": 16,
+      "raster": "assets/title-screen/approved/16.png",
+      "raster_sha256": "eb2f32b7a7b4264ce24b21da5f73d55e967dc2e93c1775344437f07df27b5200"
+    },
+    {
+      "index": 13,
+      "raster": "assets/title-screen/approved/13.png",
+      "raster_sha256": "bf5bd8db4a1c7347a2f08578c9b5672831f2be86c64a13ff0cf1e1b3ca12543b"
+    },
+    {
+      "index": 18,
+      "raster": "assets/title-screen/approved/18.png",
+      "raster_sha256": "a67e078f5961d15e2fe0daaf3919a9cb6e148269dd142b72a83c09c38426f8eb"
+    },
+    {
+      "index": 19,
+      "raster": "assets/title-screen/approved/19.png",
+      "raster_sha256": "7ae993ee8d4615ee5a2a51d05041845ef9f2223995da5e07589ca842386a90b0"
+    },
+    {
+      "index": 20,
+      "raster": "assets/title-screen/approved/20.png",
+      "raster_sha256": "069aa03f7dadb464827aed1e56175b08660830c083e623cf1a0ed77a7b18ee96"
+    },
+    {
+      "index": 21,
+      "raster": "assets/title-screen/approved/21.png",
+      "raster_sha256": "68f92e4c541e2b62367f2bdf029af74bb00c6ac02a73c72822980288deeb92f7"
+    }
+  ],
+  "scope": "Approved native-size title with original footer and five floating-logo composites. Quantization must preserve all original background pixels outside the corner rectangles and menu UI palette."
+}

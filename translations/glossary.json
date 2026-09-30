@@ -8194,6 +8194,748 @@
         "source_details": {}
       },
       "identity_review": "Exact T2 Japanese name/category checked against the T3 naming glossary; naming evidence only reused. Effects independently translated from T2."
+    },
+    {
+      "japanese": "ハラヘリー",
+      "english": "Hunger",
+      "status": "project_choice_provisional",
+      "reference_game": "Torneko 2 Advance, Japanese source",
+      "reviewed": "2026-09-26",
+      "confidence": "medium",
+      "evidence": "Independent English spell title conveying the Japanese hunger wordplay. Native Scare root ID76 selects this announcement and CPU0802C14C removes20 fullness; no replacement mechanics are imported. The consulted PS1 strategy guide describes Mandoras reducing belly but does not establish an English spell title. No exact modern/PS1 title was verified; this is not evidence that none exists.",
+      "consulted_secondary_url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
+      "identity": "Torneko 2 Scare root monster76 special announcement slot25C; associated fullness-drain effect0802C14C.",
+      "evidence_quality": "Japanese ROM identity/mechanics verified; independent provisional English title, not an official-name claim."
+    },
+    {
+      "japanese": "{legacy-position:0306}素手{unclassified-control:05}",
+      "english": "Bare hands",
+      "item_id": 0,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 0. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約",
+      "english": "Reserved",
+      "item_id": 11,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 11. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約",
+      "english": "Reserved",
+      "item_id": 85,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 85. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約",
+      "english": "Reserved",
+      "item_id": 86,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 86. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "巻物",
+      "english": "Scroll",
+      "item_id": 139,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 139. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "スペルブック2",
+      "english": "Spellbook 2",
+      "item_id": 153,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 153. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約の壺２",
+      "english": "Reserved pot 2",
+      "item_id": 168,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 168. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約５",
+      "english": "Reserved 5",
+      "item_id": 197,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 197. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約６",
+      "english": "Reserved 6",
+      "item_id": 198,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 198. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約７",
+      "english": "Reserved 7",
+      "item_id": 199,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 199. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約８",
+      "english": "Reserved 8",
+      "item_id": 200,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 200. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約９",
+      "english": "Reserved 9",
+      "item_id": 201,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 201. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約１０",
+      "english": "Reserved 10",
+      "item_id": 202,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 202. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "予約のパン",
+      "english": "Reserved bread",
+      "item_id": 211,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 special/reserved definition 211. Literal source label; no ordinary acquisition or unused-code claim."
+    },
+    {
+      "japanese": "ファイア",
+      "english": "Fire",
+      "item_id": 214,
+      "status": "independent literal special/reserved item label",
+      "confidence": "high source meaning; reachability separate",
+      "identity": "Torneko2 definition 214. No ordinary acquisition or unused-code claim. Fire is a literal source label, not an inferred official spell identity."
+    },
+    {
+      "japanese": "あき",
+      "english": "Reserved",
+      "spell_id": 0,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メラ",
+      "english": "Frizz",
+      "spell_id": 1,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メラミ",
+      "english": "Frizzle",
+      "spell_id": 2,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メラゾーマ",
+      "english": "Kafrizz",
+      "spell_id": 3,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ギラ",
+      "english": "Sizz",
+      "spell_id": 4,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ベギラマ",
+      "english": "Sizzle",
+      "spell_id": 5,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ベギラゴン",
+      "english": "Kasizz",
+      "spell_id": 6,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "イオ",
+      "english": "Bang",
+      "spell_id": 7,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "イオラ",
+      "english": "Boom",
+      "spell_id": 8,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "イオナズン",
+      "english": "Kaboom",
+      "spell_id": 9,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "バギ",
+      "english": "Woosh",
+      "spell_id": 10,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "バギマ",
+      "english": "Swoosh",
+      "spell_id": 11,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "バギクロス",
+      "english": "Kaswoosh",
+      "spell_id": 12,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ヒャド",
+      "english": "Crack",
+      "spell_id": 13,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ヒャダルコ",
+      "english": "Crackle",
+      "spell_id": 14,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "マヒャド",
+      "english": "Kacrack",
+      "spell_id": 15,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Kacrack",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Mahyado uses the XI Kacrack mapping. Hyadain also maps to Kacrack in modernIII/IV; Room Kacrack is a project display distinction for this room-targeting T2 spell. User preference pending; no original spell identity or mechanics changed."
+    },
+    {
+      "japanese": "ヒャダイン",
+      "english": "Kacrack",
+      "spell_id": 16,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Kacrack",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Mahyado uses the XI Kacrack mapping. Hyadain also maps to Kacrack in modernIII/IV; Room Kacrack is a project display distinction for this room-targeting T2 spell. User preference pending; no original spell identity or mechanics changed."
+    },
+    {
+      "japanese": "デイン",
+      "english": "Zap",
+      "spell_id": 17,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ライデイン",
+      "english": "Zapple",
+      "spell_id": 18,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ギガデイン",
+      "english": "Kazap",
+      "spell_id": 19,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ザキ",
+      "english": "Whack",
+      "spell_id": 20,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ザラキーマ",
+      "english": "Kathwack",
+      "spell_id": 21,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メガンテ",
+      "english": "Kamikazee",
+      "spell_id": 22,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ラリホー",
+      "english": "Snooze",
+      "spell_id": 23,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "マホトーン",
+      "english": "Fizzle",
+      "spell_id": 24,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "マヌーサ",
+      "english": "Dazzle",
+      "spell_id": 25,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メダパニ",
+      "english": "Fuddle",
+      "spell_id": 26,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ボミオス",
+      "english": "Deceleratle",
+      "spell_id": 27,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ピオリム",
+      "english": "Acceleratle",
+      "spell_id": 28,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "シャナク",
+      "english": "Sheen",
+      "spell_id": 29,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "マジックバリア",
+      "english": "Magic Barrier",
+      "spell_id": 30,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "マホターン",
+      "english": "Bound",
+      "spell_id": 31,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "マホカンタ",
+      "english": "Bounce",
+      "spell_id": 32,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "モシャス",
+      "english": "Morph",
+      "spell_id": 33,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ザオラル",
+      "english": "Zing",
+      "spell_id": 34,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ザオリク",
+      "english": "Kazing",
+      "spell_id": 35,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "メガザル",
+      "english": "Kerplunk",
+      "spell_id": 36,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "キアリー",
+      "english": "Squelch",
+      "spell_id": 37,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "キアリク",
+      "english": "Tingle",
+      "spell_id": 38,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "キアラル",
+      "english": "Defuddle",
+      "spell_id": 39,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "トラマナ",
+      "english": "Safe Passage",
+      "spell_id": 40,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "レミーラ",
+      "english": "Glow",
+      "spell_id": 41,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "パルプンテ",
+      "english": "Hocus Pocus",
+      "spell_id": 42,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ジゴスパーク",
+      "english": "Lightning Storm",
+      "spell_id": 43,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Lightning_Storm",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ビッグバン",
+      "english": "Big Banga",
+      "spell_id": 44,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Big_Banga",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "インパス",
+      "english": "Peep",
+      "spell_id": 45,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "マホトラ",
+      "english": "Drain Magic",
+      "spell_id": 46,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. Preserve the unusual T2 source effect; do not replace it with the usual mainline spell effect."
+    },
+    {
+      "japanese": "アバカム",
+      "english": "Click",
+      "spell_id": 47,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ルカニ",
+      "english": "Sap",
+      "spell_id": 48,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ルカナン",
+      "english": "Kasap",
+      "spell_id": 49,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "スカラ",
+      "english": "Buff",
+      "spell_id": 50,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "アストロン",
+      "english": "Kaclang",
+      "spell_id": 51,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ホイミ",
+      "english": "Heal",
+      "spell_id": 52,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ベホイミ",
+      "english": "Midheal",
+      "spell_id": 53,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ベホマ",
+      "english": "Fullheal",
+      "spell_id": 54,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ザラキ",
+      "english": "Thwack",
+      "spell_id": 55,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ニフラム",
+      "english": "Poof",
+      "spell_id": 56,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "バシルーラ",
+      "english": "Bazoom",
+      "spell_id": 57,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "リレミト",
+      "english": "Evac",
+      "spell_id": 58,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "ルーラ",
+      "english": "Zoom",
+      "spell_id": 59,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
+    },
+    {
+      "japanese": "レムオル",
+      "english": "Fade",
+      "spell_id": 60,
+      "reference_game": "Modern official Dragon Quest English; XI baseline and modern remake/Monsters gaps",
+      "source_url": "https://dragon-quest.org/wiki/Spell_List",
+      "evidence_quality": "secondary bilingual spell-name reference; no borrowed descriptions",
+      "confidence": "high identity; secondary naming evidence",
+      "identity": "Exact Torneko2 Japanese spell identity. Mechanics and description translated independently from its ROM. "
     }
   ]
 }

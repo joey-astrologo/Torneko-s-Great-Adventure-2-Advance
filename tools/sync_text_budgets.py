@@ -4,6 +4,8 @@ from tools.rom import ROOT,require
 CONFIG=ROOT/'config/font-audition.json'
 def run():
  config=json.loads(CONFIG.read_text());items=json.loads((ROOT/'translations/items-review.json').read_text())['entries']
+ items+=json.loads((ROOT/'translations/special-items-review.json').read_text())['entries']
+ items.sort(key=lambda row:row['id'])
  config['contexts']=[c for c in config['contexts'] if c['id']!='item-names-current' and not c['id'].startswith(('item-names-cohort-','combat-current-','owned-actions-current-','contained-actions-current-','town-actions-current-','town-services-current-'))]
  for start in range(0,len(items),8):
   group=items[start:start+8]
@@ -33,5 +35,51 @@ def run():
   config['contexts'].append({'id':'town-actions-current-'+name,'name':'Town item actions: '+name,'stage':'current','window':40,'start':6,'end':40,'rows':len(labels),'labels':labels,'alternatives':[],'capture':f'build/english/town-action-validation/{name}/actions-0.png','reference':'docs/MENU_LAYOUTS.md','note':'Controlled native town inventory invocation. Original34px region,8px outer-border gap,256-byte message buffer. Trash preserves destructive discard meaning; its confirmation warns about all contents of a filled pot.'})
  from tools.town_service_budgets import append_contexts
  append_contexts(config,build)
+ from tools.spell_menu_budgets import append_contexts as append_spell_contexts
+ append_spell_contexts(config,build)
+ from tools.skill_menu_budgets import append_contexts as append_skill_contexts
+ append_skill_contexts(config,build)
+ from tools.spell_item_budgets import append_contexts as append_spell_item_contexts
+ append_spell_item_contexts(config,build)
+ from tools.scroll_item_budgets import append_contexts as append_scroll_item_contexts
+ append_scroll_item_contexts(config,build)
+ from tools.saved_text_budgets import append_contexts as append_saved_contexts
+ append_saved_contexts(config,build)
+ from tools.input_text_budgets import append_contexts as append_input_contexts
+ append_input_contexts(config,build)
+ from tools.book_travel_budgets import append_contexts as append_book_travel
+ append_book_travel(config,build)
+ from tools.ability_info_budgets import append_contexts as append_ability_info
+ append_ability_info(config,build)
+ from tools.dungeon_story_budgets import append_contexts as append_dungeon_story
+ append_dungeon_story(config,build)
+ from tools.empty_read_budgets import append_contexts as append_empty_read
+ append_empty_read(config,build)
+ from tools.travel_gate_budgets import append_contexts as append_travel_gate
+ append_travel_gate(config,build)
+ from tools.ending_budgets import append_contexts as append_ending_text
+ append_ending_text(config,build)
+ from tools.dungeon_travel_budgets import append_contexts as append_dungeon_travel
+ append_dungeon_travel(config,build)
+ from tools.tutorial_help_budgets import append_contexts as append_tutorial_help
+ append_tutorial_help(config,build)
+ from tools.link_text_budgets import append_contexts as append_link_text
+ append_link_text(config,build)
+ from tools.ending_notice_budgets import append_contexts as append_ending_notice
+ append_ending_notice(config,build)
+ from tools.pickup_help_budgets import append_contexts as append_pickup_help
+ append_pickup_help(config,build)
+ from tools.carpenter_budgets import append_contexts as append_carpenter
+ append_carpenter(config,build)
+ from tools.fire_scene_budgets import append_contexts as append_fire_scene
+ append_fire_scene(config,build)
+ from tools.travel_confirm_budgets import append_contexts as append_travel_confirm
+ append_travel_confirm(config,build)
+ from tools.town_routes_budgets import append_contexts as append_town_routes
+ append_town_routes(config,build)
+ from tools.form_refusal_budgets import append_contexts as append_form_refusal
+ append_form_refusal(config,build)
+ from tools.ground_remove_budgets import append_contexts as append_ground_remove
+ append_ground_remove(config,build)
  CONFIG.write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n');print('Audition contexts:',len(config['contexts']))
 if __name__=='__main__':run()

@@ -1,0 +1,580 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Forty original sword/shield Info body entries and the unbreakable material-strike alternate, through17A4C only. Native property symbols/header and natural synthesis acquisition remain separately scoped.",
+  "entries": [
+    {
+      "id": "ability-info.00",
+      "index": 0,
+      "source": {
+        "offset": 427152,
+        "end_exclusive": 427160,
+        "raw_hex": "bb82d182c882a200",
+        "sha256": "8f5d4c99789a22c9669470cd93ed9e950a5e3ec7babfe5eea6918aaf72eb0130",
+        "japanese": "ｻびない"
+      },
+      "english": "Does not rust.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.01",
+      "index": 1,
+      "source": {
+        "offset": 427124,
+        "end_exclusive": 427151,
+        "raw_hex": "82dc82ed82e8825795fb8cfc82f082a282bf82c782c98d558c8200",
+        "sha256": "2b58c53000a0f573708066fcf5b9a0c91a907de35e1d48216a67b599453be189",
+        "japanese": "まわり８方向をいちどに攻撃"
+      },
+      "english": "Attacks all eight directions\nat once.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.02",
+      "index": 2,
+      "source": {
+        "offset": 427032,
+        "end_exclusive": 427121,
+        "raw_hex": "838283938358835e815b82cc93c18eea8d558c8282f082d382a482b682e90d5b95955d82c65b88f35d82cc825182c282cc82b582e982b582aa0d8d8782ed82b382c182c4814082cd82b682df82c48cf889ca82aa82a082e900",
+        "sha256": "831656d0a7be694c0f90f3801551230670729ff8eb37af4d7e77d331c9ceb098",
+        "japanese": "モンスターの特殊攻撃をふうじる\n[封]と[印]の２つのしるしが\n合わさって　はじめて効果がある"
+      },
+      "english": "Seals monsters' special attacks\nwhen both weapon and shield have\nthe Sealing property.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. The paired [封]/[印] source marks correspond to the sword/shield Sealing properties in the adjacent ability-name table; describe the required pair explicitly in English. Original property symbols remain for separate UI review."
+    },
+    {
+      "id": "ability-info.03",
+      "index": 3,
+      "source": {
+        "offset": 426964,
+        "end_exclusive": 427031,
+        "raw_hex": "838283938358835e815b82cc485082f0825082c982b582c40d8c9582f08bad82ad82b782e982aa0d8bad82ad82c882e882b782ac82e982c6814082b182ed82ea82e900",
+        "sha256": "79b979c08d6df87b597e9270e2fd6fd212de4a88a30b0908ff1c01d7cd88755c",
+        "japanese": "モンスターのHPを１にして\n剣を強くするが\n強くなりすぎると　こわれる"
+      },
+      "english": "Reduces a monster's HP to 1 and\nstrengthens the weapon. It breaks\nif it becomes too strong.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.04",
+      "index": 4,
+      "source": {
+        "offset": 426892,
+        "end_exclusive": 426961,
+        "raw_hex": "834a837882f08c4082c182c482e082b182ed82ea82c882a20d95a88ebf8c6e82cc838283938358835e815b82f00d8d558c8282b582c482e0814082b182ed82ea82c882a200",
+        "sha256": "a311b921f170533047a3f1c9adf21a488fb82c4a5c2c36ca54ccf2c60e5eccb2",
+        "japanese": "カベを掘ってもこわれない\n物質系のモンスターを\n攻撃しても　こわれない"
+      },
+      "english": "Does not break when digging walls\nor attacking material monsters.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.05",
+      "index": 5,
+      "source": {
+        "offset": 426820,
+        "end_exclusive": 426890,
+        "raw_hex": "89ce898a8c6e82cc838283938358835e815b82c9835f8381815b835791e50d82bd82be82b5814095588c6e82cc838283938358835e815b82c982cd8250835f8381815b835700",
+        "sha256": "782edd55a2402aaf4da2e7f1e0838de7a885186c286006fe75de6b14d241c124",
+        "japanese": "火炎系のモンスターにダメージ大\nただし　氷系のモンスターには１ダメージ"
+      },
+      "english": "Deals heavy damage to fire\nmonsters, but only 1 damage\nto ice monsters.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.06",
+      "index": 6,
+      "source": {
+        "offset": 426780,
+        "end_exclusive": 426818,
+        "raw_hex": "928882c9958282a282c482a282e9838283938358835e815b82c90d835f8381815b835791e500",
+        "sha256": "f34a1fcbed91d7ff5f5754cbe1508bd45702b851d339f226b91d3a6cb360a4a5",
+        "japanese": "宙に浮いているモンスターに\nダメージ大"
+      },
+      "english": "Deals heavy damage to flying\nmonsters.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.07",
+      "index": 7,
+      "source": {
+        "offset": 426748,
+        "end_exclusive": 426780,
+        "raw_hex": "88ab96828c6e82cc838283938358835e815b82c90d835f8381815b835791e500",
+        "sha256": "589dac94c7dec09f4875bfc9d68a5f767f27ab4ba75ea93b468d9e25af15652c",
+        "japanese": "悪魔系のモンスターに\nダメージ大"
+      },
+      "english": "Deals heavy damage to demons.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.08",
+      "index": 8,
+      "source": {
+        "offset": 426716,
+        "end_exclusive": 426748,
+        "raw_hex": "906c8c608c6e82cc838283938358835e815b82c90d835f8381815b835791e500",
+        "sha256": "e8cac281328fd74d9c622ccf7967d3e508fc5dd9729f4a67f76a62c56299e389",
+        "japanese": "人形系のモンスターに\nダメージ大"
+      },
+      "english": "Deals heavy damage to dolls.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.09",
+      "index": 9,
+      "source": {
+        "offset": 426696,
+        "end_exclusive": 426713,
+        "raw_hex": "8d558c8282b782e982c6485089f1959c00",
+        "sha256": "fbc3abfec2b0b07113fc71023b702c908ebe50edcc2d72516c078846a2aa43c7",
+        "japanese": "攻撃するとHP回復"
+      },
+      "english": "Restores HP when you attack.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.10",
+      "index": 10,
+      "source": {
+        "offset": 426664,
+        "end_exclusive": 426695,
+        "raw_hex": "8250835e815b839382c9825189f1838283938358835e815b82f08d558c8200",
+        "sha256": "3ab34601eb66fa467b3100cc8d1d659c94fe049eec61601f44e4b165c9094bc4",
+        "japanese": "１ターンに２回モンスターを攻撃"
+      },
+      "english": "Attacks monsters twice per turn.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.11",
+      "index": 11,
+      "source": {
+        "offset": 426616,
+        "end_exclusive": 426664,
+        "raw_hex": "838283938358835e815b82f082bd82a882b582bd82c682ab0d8353815b838b836882aa8f6f8cbb82b582e282b782a200",
+        "sha256": "691f6f548707d91703519782693132c58d784c19e2d51f66264801a75843cfdf",
+        "japanese": "モンスターをたおしたとき\nゴールドが出現しやすい"
+      },
+      "english": "Monsters are more likely to drop\ngold when defeated.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.12",
+      "index": 12,
+      "source": {
+        "offset": 426588,
+        "end_exclusive": 426613,
+        "raw_hex": "914f95fb825295fb8cfc82f082a282bf82c782c98d558c8200",
+        "sha256": "448ea231811bd9ddac6df707338306140cb4a0c6050d264d62bb20e98e659bd9",
+        "japanese": "前方３方向をいちどに攻撃"
+      },
+      "english": "Attacks three directions in front\nat once.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.13",
+      "index": 13,
+      "source": {
+        "offset": 426564,
+        "end_exclusive": 426585,
+        "raw_hex": "89ef905382cc88ea8c8282aa82c582e282b782a200",
+        "sha256": "96456d5b2f53e4feea86cd1570f9fe897545d26b479027d79ab2e11f9ce52726",
+        "japanese": "会心の一撃がでやすい"
+      },
+      "english": "Critical hits are more likely.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.14",
+      "index": 14,
+      "source": {
+        "offset": 426544,
+        "end_exclusive": 426561,
+        "raw_hex": "954b82b88d558c8282aa939682bd82e900",
+        "sha256": "cfcb8b8559f53d4e959ff07da61853bb59941f264059c2c18d19f74e790ca5f3",
+        "japanese": "必ず攻撃が当たる"
+      },
+      "english": "Attacks always hit.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.15",
+      "index": 15,
+      "source": {
+        "offset": 426512,
+        "end_exclusive": 426541,
+        "raw_hex": "834a837882f08c4082c182c482a282e982c6814082b182ed82ea82e900",
+        "sha256": "765da42cf15340f76fbd0dd1ed2ff9c1f5767f6cf20aa1c57033f053417f0677",
+        "japanese": "カベを掘っていると　こわれる"
+      },
+      "english": "Can break while digging walls.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.16",
+      "index": 16,
+      "source": {
+        "offset": 426464,
+        "end_exclusive": 426512,
+        "raw_hex": "95a88ebf8c6e82cc838283938358835e815b82f00d88ea8c8282c582bd82a882b982e982aa814082b182ed82ea82e900",
+        "sha256": "b733e19438a000263a28ce716dea416be6ce9b1e5aa3c65c801260cfd8145630",
+        "japanese": "物質系のモンスターを\n一撃でたおせるが　こわれる"
+      },
+      "english": "Defeats material monsters in\none hit, but breaks.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.17",
+      "index": 17,
+      "source": {
+        "offset": 426448,
+        "end_exclusive": 426461,
+        "raw_hex": "834a837882aa8c4082ea82e900",
+        "sha256": "9adf2e00502444c21545d377ccf2628eb04ef9db9da94d0431c197541df15c01",
+        "japanese": "カベが掘れる"
+      },
+      "english": "Can dig through walls.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.18",
+      "index": 18,
+      "source": {
+        "offset": 426412,
+        "end_exclusive": 426446,
+        "raw_hex": "835d839383728c6e82cc838283938358835e815b82c90d835f8381815b835791e500",
+        "sha256": "fc735e838264d1cb73617271e01de732e8c062e8cac9bfd3951c3b6f21e5eaea",
+        "japanese": "ゾンビ系のモンスターに\nダメージ大"
+      },
+      "english": "Deals heavy damage to zombies.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.19",
+      "index": 19,
+      "source": {
+        "offset": 426376,
+        "end_exclusive": 426412,
+        "raw_hex": "83688389835383938c6e82cc838283938358835e815b82c90d835f8381815b835791e500",
+        "sha256": "ec00df983f855bc880871ffb958a3f50fb76a0145506469758ba12f23c3c4da3",
+        "japanese": "ドラゴン系のモンスターに\nダメージ大"
+      },
+      "english": "Deals heavy damage to dragons.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.20",
+      "index": 20,
+      "source": {
+        "offset": 427152,
+        "end_exclusive": 427160,
+        "raw_hex": "bb82d182c882a200",
+        "sha256": "8f5d4c99789a22c9669470cd93ed9e950a5e3ec7babfe5eea6918aaf72eb0130",
+        "japanese": "ｻびない"
+      },
+      "english": "Does not rust.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.21",
+      "index": 21,
+      "source": {
+        "offset": 426356,
+        "end_exclusive": 426375,
+        "raw_hex": "82a882c882a982aa82d682e882c982ad82a200",
+        "sha256": "0c1babaecd1c24163bb6ca5cc6c46f23371c7256665e9ff91a9852a901707c9c",
+        "japanese": "おなかがへりにくい"
+      },
+      "english": "You get hungry more slowly.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. This full description is less numerical/specific than its short property name; do not add halving/doubling/reflection absent from this source."
+    },
+    {
+      "id": "ability-info.22",
+      "index": 22,
+      "source": {
+        "offset": 426336,
+        "end_exclusive": 426355,
+        "raw_hex": "93c582cc8d558c8282aa82ab82a982c882a200",
+        "sha256": "674ffedd2e92fff0a585a1077b5a22b40c7b4e9acfc71828b9b572feefc1c634",
+        "japanese": "毒の攻撃がきかない"
+      },
+      "english": "Protects against poison attacks.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.23",
+      "index": 23,
+      "source": {
+        "offset": 426312,
+        "end_exclusive": 426333,
+        "raw_hex": "898a82cc835f8381815b835782f08ee382df82e900",
+        "sha256": "b782301936ff7cb653b7344e8e93d883df6b2f1bd2bf5d94c8713ffca65ed575",
+        "japanese": "炎のダメージを弱める"
+      },
+      "english": "Reduces fire damage.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. This full description is less numerical/specific than its short property name; do not add halving/doubling/reflection absent from this source."
+    },
+    {
+      "id": "ability-info.24",
+      "index": 24,
+      "source": {
+        "offset": 426268,
+        "end_exclusive": 426312,
+        "raw_hex": "838283938358835e815b82cc8d558c82835f8381815b835782f00d82b782b182b582cd82cb82a982a682b700",
+        "sha256": "43136c92a1a52fee709cd80a8132e3087167040af9a736eb26e536a4e306790a",
+        "japanese": "モンスターの攻撃ダメージを\nすこしはねかえす"
+      },
+      "english": "Reflects a little of the damage\nfrom monsters' attacks.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.25",
+      "index": 25,
+      "source": {
+        "offset": 426248,
+        "end_exclusive": 426267,
+        "raw_hex": "82a882c882a982aa82d682e882e282b782a200",
+        "sha256": "ceaef2a4998cace167ca959d971212ff4b68be58fcd07c7f9d3f18d2c5dcd1a4",
+        "japanese": "おなかがへりやすい"
+      },
+      "english": "You get hungry more quickly.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. This full description is less numerical/specific than its short property name; do not add halving/doubling/reflection absent from this source."
+    },
+    {
+      "id": "ability-info.26",
+      "index": 26,
+      "source": {
+        "offset": 426228,
+        "end_exclusive": 426247,
+        "raw_hex": "968296408d558c8282aa82ab82a982c882a200",
+        "sha256": "f1f36c9fd8287e2923d29d14257c151944541be28f64aaf83d85eb8a9ddfaf98",
+        "japanese": "魔法攻撃がきかない"
+      },
+      "english": "Protects against magical attacks.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. This full description is less numerical/specific than its short property name; do not add halving/doubling/reflection absent from this source."
+    },
+    {
+      "id": "ability-info.27",
+      "index": 27,
+      "source": {
+        "offset": 426208,
+        "end_exclusive": 426227,
+        "raw_hex": "8d558c8282f082a982ed82b582e282b782a200",
+        "sha256": "e92e3d547a21eb9280250d6eb81cbe9dff008d1986b1b62d40b0437901feeec2",
+        "japanese": "攻撃をかわしやすい"
+      },
+      "english": "Makes attacks easier to dodge.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.28",
+      "index": 28,
+      "source": {
+        "offset": 426176,
+        "end_exclusive": 426205,
+        "raw_hex": "949a959782cc835f8381815b835782f082b782ad82c882ad82b782e900",
+        "sha256": "3a9a903517f348636a3b9d29007fc3f5a7636e09f6c3b5c9c69deccd17b1005b",
+        "japanese": "爆風のダメージをすくなくする"
+      },
+      "english": "Reduces explosion damage.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. This full description is less numerical/specific than its short property name; do not add halving/doubling/reflection absent from this source."
+    },
+    {
+      "id": "ability-info.29",
+      "index": 29,
+      "source": {
+        "offset": 426164,
+        "end_exclusive": 426175,
+        "raw_hex": "939082dc82ea82c882a200",
+        "sha256": "9f6de59c646968a087ac7139303db23132004c515711eed79a1d3812dcb353dc",
+        "japanese": "盗まれない"
+      },
+      "english": "Prevents theft.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.30",
+      "index": 30,
+      "source": {
+        "offset": 427032,
+        "end_exclusive": 427121,
+        "raw_hex": "838283938358835e815b82cc93c18eea8d558c8282f082d382a482b682e90d5b95955d82c65b88f35d82cc825182c282cc82b582e982b582aa0d8d8782ed82b382c182c4814082cd82b682df82c48cf889ca82aa82a082e900",
+        "sha256": "831656d0a7be694c0f90f3801551230670729ff8eb37af4d7e77d331c9ceb098",
+        "japanese": "モンスターの特殊攻撃をふうじる\n[封]と[印]の２つのしるしが\n合わさって　はじめて効果がある"
+      },
+      "english": "Seals monsters' special attacks\nwhen both weapon and shield have\nthe Sealing property.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked. The paired [封]/[印] source marks correspond to the sword/shield Sealing properties in the adjacent ability-name table; describe the required pair explicitly in English. Original property symbols remain for separate UI review."
+    },
+    {
+      "id": "ability-info.31",
+      "index": 31,
+      "source": {
+        "offset": 426136,
+        "end_exclusive": 426161,
+        "raw_hex": "838283938358835e815b82cc8b5a82f082d382a482b682e900",
+        "sha256": "fc0d1df9fd45b17cc1ba4fecc7cc2b5eb73dbc74ed8f0e691407b65ee6012d5f",
+        "japanese": "モンスターの技をふうじる"
+      },
+      "english": "Seals monsters' skills.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    },
+    {
+      "id": "ability-info.32",
+      "index": 32,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.33",
+      "index": 33,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.34",
+      "index": 34,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.35",
+      "index": 35,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.36",
+      "index": 36,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.37",
+      "index": 37,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.38",
+      "index": 38,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.39",
+      "index": 39,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Original question-mark placeholder. Preserve it without inventing a mechanic or claiming ordinary availability."
+    },
+    {
+      "id": "ability-info.40",
+      "index": 40,
+      "source": {
+        "offset": 393272,
+        "end_exclusive": 393308,
+        "raw_hex": "95a88ebf8c6e82cc838283938358835e815b82f00d88ea8c8282c582bd82a882b982e900",
+        "sha256": "51af23d19a345d09441cff5151e5dd6683c34911b28b10380b1ff8e0008d43e3",
+        "japanese": "物質系のモンスターを\n一撃でたおせる"
+      },
+      "english": "Defeats material monsters\nin one hit.",
+      "status": "reviewed",
+      "review": "Independent Japanese-source Info review. Preserve target, condition, damage limitation, breakage and effect without importing additional mechanics. Native three-row body and256-byte output bounds are checked."
+    }
+  ]
+}

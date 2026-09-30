@@ -54,6 +54,17 @@ def run(save=SAVE, output=OUTPUT):
             # A checked branch checkpoint, reached with normal inputs. Resume
             # it to test the other stair response without altering game state.
             game.restore(stairs)
+            # Audited ordinary-input route variation: leave and re-enter the
+            # floor-two stairs before selecting Descend.
+            game.press('B',wait=120)
+            step_origin=position(game)
+            for direction,back in [('LEFT','RIGHT'),('DOWN','UP'),('UP','DOWN'),('RIGHT','LEFT')]:
+                game.press(direction,wait=120)
+                if position(game)!=step_origin:
+                    game.press(back,wait=120)
+                    require(position(game)==step_origin,'Stair round trip failed')
+                    break
+            else:raise ValueError('No ordinary stair round-trip step')
             game.press('A', wait=600)
             game.capture('floor-three-help')
             for _ in range(8):

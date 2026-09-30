@@ -1,0 +1,100 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only26A30..26B86 writing messages, with private success-name definitions preserving all native mechanics. Normal name-entry matching remains separate.",
+  "entries": [
+    {
+      "id": "writing.440",
+      "table_offset": 1088,
+      "source": {
+        "offset": 404608,
+        "end_exclusive": 404644,
+        "raw_hex": "94928e8682cc8aaa95a882c92082bb82cc96bc914f82cd8f9182ab82b182df82c882a200",
+        "sha256": "098036702158eb37b367aa3b63110ef0e96d3e1b63c370c3a221e85653c360e2",
+        "japanese": "白紙の巻物に その名前は書きこめない"
+      },
+      "english": "Cannot write that name on a Blank scroll.",
+      "fields": [],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    },
+    {
+      "id": "writing.444",
+      "table_offset": 1092,
+      "source": {
+        "offset": 404572,
+        "end_exclusive": 404606,
+        "raw_hex": "94928e8682cc8aaa95a882c90d257382cc8cf889ca82f08f9182ab82b182f182be00",
+        "sha256": "b33f52caae92c1556040e609c0ab2fc379e8288692c2bfda14032b2c42c66ac6",
+        "japanese": "白紙の巻物に\n%{unclassified-control:73}の効果を書きこんだ"
+      },
+      "english": "Wrote {item}'s effect{fit} on the Blank scroll.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    },
+    {
+      "id": "writing.6e8",
+      "table_offset": 1768,
+      "source": {
+        "offset": 398592,
+        "end_exclusive": 398653,
+        "raw_hex": "82bb82cc8aaa95a882cd2082dc82be8e6782c182bd82b182c682aa82c882a282cc82c50d8f9182ab82b182de82b182c682cd82c582ab82dc82b982f100",
+        "sha256": "100c32afcf2b3bc991e0b6b0757a6ed0bbc0ed1c0a75b555404c18fbd8b7dfef",
+        "japanese": "その巻物は まだ使ったことがないので\n書きこむことはできません"
+      },
+      "english": "You cannot write a scroll\nyou have not used yet.",
+      "fields": [],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    },
+    {
+      "id": "writing.854",
+      "table_offset": 2132,
+      "source": {
+        "offset": 395612,
+        "end_exclusive": 395650,
+        "raw_hex": "83588379838b83758362834e82c92082bb82cc96bc914f82cd8f9182ab82b182df82c882a200",
+        "sha256": "d644d3a8147808d10e522d4357bd143c342b68321a9b79cb832c1cd17a043775",
+        "japanese": "スペルブックに その名前は書きこめない"
+      },
+      "english": "Cannot write that name in a Spellbook.",
+      "fields": [],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    },
+    {
+      "id": "writing.858",
+      "table_offset": 2136,
+      "source": {
+        "offset": 395576,
+        "end_exclusive": 395612,
+        "raw_hex": "83588379838b83758362834e82c90d257382cc8ef495b682f08f9182ab82b182f182be00",
+        "sha256": "95d3fb900e7792da25b3a20362cba8a8e93628f2e6ab845ecbc4b9822e8097d5",
+        "japanese": "スペルブックに\n%{unclassified-control:73}の呪文を書きこんだ"
+      },
+      "english": "Wrote {spell} in the Spellbook.",
+      "fields": [
+        "spell"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    },
+    {
+      "id": "writing.85c",
+      "table_offset": 2140,
+      "source": {
+        "offset": 395512,
+        "end_exclusive": 395574,
+        "raw_hex": "82bb82cc8ef495b682cd2082dc82be8e6782a682e982e682a482c982c882c182bd0d82b182c682aa82c882a282cc82c58f9182ab82b182df82c882a22100",
+        "sha256": "ac72bcea477cf0735764f8dd047db5d423d7b99ee795f2113bc1031d8aa0b56a",
+        "japanese": "その呪文は まだ使えるようになった\nことがないので書きこめない!"
+      },
+      "english": "You cannot write a spell\nyou have never learned!",
+      "fields": [],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; preserve used-scroll versus ever-learned-spell conditions and the written effect/name. Complete native name selectors and original mechanics are verified."
+    }
+  ]
+}

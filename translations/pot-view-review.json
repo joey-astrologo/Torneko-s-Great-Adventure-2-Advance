@@ -1,0 +1,34 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Two native pot-content UI labels, original row controls and inert legacy07/08 controls retained; concealed content remains concealed. Four private literals within the pot-content renderer; other shared readers unchanged.",
+  "entries": [
+    {
+      "id": "pot-view.020",
+      "table_offset": 32,
+      "source": {
+        "offset": 411776,
+        "end_exclusive": 411782,
+        "raw_hex": "208341838c00",
+        "sha256": "863c0f16adaeaafca50e45806bb4ffc2f9156546f37c1f6846e838b9248d7117",
+        "japanese": " アレ"
+      },
+      "english": " Something",
+      "status": "reviewed",
+      "review": "Indefinite concealed item label; do not reveal identity or imply an empty slot."
+    },
+    {
+      "id": "pot-view.024",
+      "table_offset": 36,
+      "source": {
+        "offset": 411748,
+        "end_exclusive": 411775,
+        "raw_hex": "072d814089bd82e093fc82c182c482a282dc82b982f181402d0800",
+        "sha256": "8ef252c8b653d263d24835258f25d4777ff38927d7718ba6acd0be82055686f4",
+        "japanese": "{unclassified-control:07}-　何も入っていません　-{unclassified-control:08}"
+      },
+      "english": "- Nothing inside -",
+      "status": "reviewed",
+      "review": "Empty container message and decorative dashes; original07/08 bytes are retained and verified to dispatch to the no-op return in this GBA reader."
+    }
+  ]
+}

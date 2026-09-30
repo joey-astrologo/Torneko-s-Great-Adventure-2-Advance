@@ -1,0 +1,104 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Seven type2 object selector values0..6 used by native A-action08023C14, via private literal24378. Other object selectors/table consumers remain original. No new object/RAM storage or natural quest progression claim.",
+  "entries": [
+    {
+      "id": "soldier.800",
+      "table_offset": 2048,
+      "source": {
+        "offset": 396520,
+        "end_exclusive": 396568,
+        "raw_hex": "95ba8e6d8175838f835e835682cc82b182c682e682e882e00d814082c782a482a9814089a4976c82f081458145814500",
+        "sha256": "1fec38737122c5c75c3e425378aed7efde0d39eb389c04501b4a1311a46e2d42",
+        "japanese": "兵士「ワタシのことよりも\n　どうか　王様を・・・"
+      },
+      "english": "Soldier: Please... Don't worry about me. Help the King...",
+      "status": "reviewed",
+      "review": "Preserves the unfinished request and putting the King before himself. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.804",
+      "table_offset": 2052,
+      "source": {
+        "offset": 396460,
+        "end_exclusive": 396518,
+        "raw_hex": "95ba8e6d8175838f835e835682cd82be82a282b682e582a482d482c582b70d814082bb82ea82e682e882e0814089a4976c82f081458145814500",
+        "sha256": "5194d2f8dbe5ec62e6dd2ec6d3e0744f731c82ecd864188315a83635264f9f91",
+        "japanese": "兵士「ワタシはだいじょうぶです\n　それよりも　王様を・・・"
+      },
+      "english": "Soldier: I'm all right. Please, help the King...",
+      "status": "reviewed",
+      "review": "Preserves reassurance and urgent concern for the King. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.808",
+      "table_offset": 2056,
+      "source": {
+        "offset": 396408,
+        "end_exclusive": 396457,
+        "raw_hex": "95ba8e6d81757e82b382f18145814581450d814082c782a482a9814089a4976c82f082a882cb82aa82a282b582dc82b700",
+        "sha256": "399fd7b03d42f47e5ae26c3525fc93c083e96fae10722bea69d31071de8180d9",
+        "japanese": "兵士「{unclassified-control:7e}さん・・・\n　どうか　王様をおねがいします"
+      },
+      "english": "Soldier: {player}... Please, save the King.",
+      "status": "reviewed",
+      "review": "Keeps the addressed player's name and polite plea. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.80c",
+      "table_offset": 2060,
+      "source": {
+        "offset": 396308,
+        "end_exclusive": 396405,
+        "raw_hex": "95ba8e6d817582dc82b382a9814082b182cc89ce8e5282aa967b939682c90d814095738e768b6382cc835f839383578387839382c982c882c182c482a282e982c682cd0d95ba8e6d81758e7682a282dc82b982f182c582b582bd81458145814500",
+        "sha256": "56cbd080227167f5e7293a01e4fb23c308cb47f71ef0e770b288cbd17d2ba63b",
+        "japanese": "兵士「まさか　この火山が本当に\n　不思議のダンジョンになっているとは\n兵士「思いませんでした・・・"
+      },
+      "english": "Soldier: I never thought this volcano would really turn into a magic dungeon...",
+      "status": "reviewed",
+      "review": "Generic magic dungeon describes the phenomenon here, not the specific named Magic Dungeon location. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.810",
+      "table_offset": 2064,
+      "source": {
+        "offset": 396220,
+        "end_exclusive": 396307,
+        "raw_hex": "95ba8e6d8175838283938358835e815b82aa8352838f834382f182c50d81408e8082f182be8374838a82f082b582c482e982f182c582b70d95ba8e6d817582dd82f182c882c982cd836983438356838782c582b782e600",
+        "sha256": "18f69c81ae72d9aa5aa0a255ecf675b0e7c8c96793ec09a941d15ac90ee897c4",
+        "japanese": "兵士「モンスターがコワイんで\n　死んだフリをしてるんです\n兵士「みんなにはナイショですよ"
+      },
+      "english": "Soldier: I'm scared of the monsters, so I'm playing dead.\n\nSoldier: Don't tell anyone!",
+      "status": "reviewed",
+      "review": "Preserves the cowardly comic admission and request for secrecy. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.814",
+      "table_offset": 2068,
+      "source": {
+        "offset": 396132,
+        "end_exclusive": 396218,
+        "raw_hex": "95ba8e6d817581458145814582ad82a481600d0d95ba8e6d817582b182f182c882b182c682c882e7814082e082c182c60d81408c9582cc8f438d7382f082b582c482a882af82ce814082e682a982c182bd8362835800",
+        "sha256": "ffebe752ce50c0630ea9d5c386ea02ccac8193d38c636b7875135f3a32a4b8a4",
+        "japanese": "兵士「・・・くう～\n\n兵士「こんなことなら　もっと\n　剣の修行をしておけば　よかったッス"
+      },
+      "english": "Soldier: ...Ugh...\n\nSoldier: If I'd known it'd come to this, I'd have practised more with my sword!",
+      "status": "reviewed",
+      "review": "Preserves regret over insufficient sword training and the informal voice. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    },
+    {
+      "id": "soldier.818",
+      "table_offset": 2072,
+      "source": {
+        "offset": 396008,
+        "end_exclusive": 396129,
+        "raw_hex": "95ba8e6d81758343835e835e835e835e8145814581450d0d95ba8e6d817582d082eb82c182bd8370839382f0904882d782bd82f182c582b782aa0d814082c782a482e282e782ad82b382c182c482a282bd82e682a482c582b70d95ba8e6d817582a082a0814082a895a082aa82a282bd82a282c582b7816000",
+        "sha256": "b3d9effa196a9b1e279e4e395e7e97e6d3bbba8f3477f18be4ae16b6530398f9",
+        "japanese": "兵士「イタタタタ・・・\n\n兵士「ひろったパンを食べたんですが\n　どうやらくさっていたようです\n兵士「ああ　お腹がいたいです～"
+      },
+      "english": "Soldier: Owww...\n\nSoldier: I ate some bread I found, but it must have been rotten.\n\nSoldier: Oh, my stomach hurts!",
+      "status": "reviewed",
+      "review": "Preserves the found bread, uncertain conclusion that it was rotten and repeated painful complaint. Independent Japanese-source translation and bilingual editorial comparison; native player command is retained."
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Nine newly reviewed sources in the original town/dungeon destination tables. Private shared pointer copy reuses the already-owned castle/home/square English allocations. Three reader literals only; no geometry, destination IDs, unlock flags or cursor logic changes. All masks and actual menu regions require native validation.",
+  "entries": [
+    {
+      "id": "town-routes.0",
+      "source": {
+        "offset": 442608,
+        "end_exclusive": 442627,
+        "raw_hex": "82c782cc835f839383578387839382d6814800",
+        "sha256": "f874622b8920560e9a78feed3e0b7f996e7497778f997517604c3226eac52dd3",
+        "japanese": "どのダンジョンへ？"
+      },
+      "english": "Which dungeon?",
+      "table_indices": [
+        0
+      ],
+      "text_budget": 96,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Which dungeon?",
+        "revised": "Which dungeon?",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.4",
+      "source": {
+        "offset": 442676,
+        "end_exclusive": 442689,
+        "raw_hex": "814096608caf8ed282cc8f6800",
+        "sha256": "662cec61cbefbfacd13af27e9892541b05a7f2e1c3397afcfec34668bb663f75",
+        "japanese": "　冒険者の宿"
+      },
+      "english": "Adventurer's Inn",
+      "table_indices": [
+        4
+      ],
+      "text_budget": 140,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Adventurer's Inn",
+        "revised": "Adventurer's Inn",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.5",
+      "source": {
+        "offset": 442668,
+        "end_exclusive": 442675,
+        "raw_hex": "814095e68fea00",
+        "sha256": "3767e9cad686161393b7f47192303883f3b350cb98c990b3e280efe4f6d660d1",
+        "japanese": "　墓場"
+      },
+      "english": "Graveyard",
+      "table_indices": [
+        5
+      ],
+      "text_budget": 140,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Graveyard",
+        "revised": "Graveyard",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.6",
+      "source": {
+        "offset": 442656,
+        "end_exclusive": 442667,
+        "raw_hex": "81409856906c82cc89c600",
+        "sha256": "1d9bcc20a5842c8ea82a8ba44016a93613e94550d3cc38d5ef9d064fcc4bffae",
+        "japanese": "　老人の家"
+      },
+      "english": "Old man's house",
+      "table_indices": [
+        6
+      ],
+      "text_budget": 140,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Old man's house",
+        "revised": "Old man's house",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.7",
+      "source": {
+        "offset": 442640,
+        "end_exclusive": 442655,
+        "raw_hex": "8140835f839383578387839382d600",
+        "sha256": "dc3a3e761bff6ff23361f3a8a4853a939b373606d639da399af8756d0e5a55ab",
+        "japanese": "　ダンジョンへ"
+      },
+      "english": "To dungeon",
+      "table_indices": [
+        7
+      ],
+      "text_budget": 140,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "To dungeon",
+        "revised": "To dungeon",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.8",
+      "source": {
+        "offset": 442628,
+        "end_exclusive": 442637,
+        "raw_hex": "814082e282df82e900",
+        "sha256": "0ee40f82f0e731441c45516155d482186c0241ca445d18d52ac20f500deb8b5e",
+        "japanese": "　やめる"
+      },
+      "english": "Cancel",
+      "table_indices": [
+        8,
+        12
+      ],
+      "text_budget": 76,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Cancel",
+        "revised": "Cancel",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.9",
+      "source": {
+        "offset": 442748,
+        "end_exclusive": 442759,
+        "raw_hex": "814089ce908182ab8e5200",
+        "sha256": "17549bc497baae7d776ecca0ffdedac45a2bca7ce39fa7b764a47ffb66881fbe",
+        "japanese": "　火吹き山"
+      },
+      "english": "Mt. Fiery",
+      "table_indices": [
+        9
+      ],
+      "text_budget": 76,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Mt. Fiery",
+        "revised": "Mt. Fiery",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.10",
+      "source": {
+        "offset": 442736,
+        "end_exclusive": 442747,
+        "raw_hex": "814096c082a282cc905800",
+        "sha256": "539f84f2304cd739a1d2cc70ff3823392ae44c9bec81f0adc8206edfa4f3c874",
+        "japanese": "　迷いの森"
+      },
+      "english": "Lost Forest",
+      "table_indices": [
+        10
+      ],
+      "text_budget": 76,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Lost Forest",
+        "revised": "Lost Forest",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "town-routes.11",
+      "source": {
+        "offset": 442724,
+        "end_exclusive": 442735,
+        "raw_hex": "81408367838d88e290d500",
+        "sha256": "b358ba6bdc3cf76da69a99eed3e4b22690caee29c88b80aecff6f083a53e9ca6",
+        "japanese": "　トロ遺跡"
+      },
+      "english": "Toro Ruins",
+      "table_indices": [
+        11
+      ],
+      "text_budget": 76,
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Toro Ruins",
+        "revised": "Toro Ruins",
+        "reason": "Bilingual source comparison retains exact destination identity and choice meaning. Mt. Fiery, Lost Forest and Toro Ruins reuse independently verified T2 destination names. No invented character name; existing twelve-pixel cursor inset retained.",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

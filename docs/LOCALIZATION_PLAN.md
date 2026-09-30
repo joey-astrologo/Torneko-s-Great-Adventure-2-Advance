@@ -17,10 +17,34 @@ fresh user approval. Ask only when a consequential unresolved decision requires
 the user's insight or investigation. Maintain explicit discovery and validation
 gaps; completing a known catalog is not proof of complete game coverage.
 
-The user has deferred graphical editing and all graphics auditions, including
-dungeon arrival cards, title artwork and background logos, until text translation
-is complete. This supersedes earlier proposals to audition graphics alongside
-the upcoming text batches. Native screenshots for text validation continue.
+On 2026-09-29 the user reopened ending-credit discovery and requested credits
+and arrival/dungeon-card audition systems following the Torneko 3 workflow.
+These discovery and audition tasks may proceed before the remaining text work.
+Title artwork and background-logo editing were initially deferred. Audition candidates
+are separate from approved artwork and ROM insertion. Native screenshots for
+text validation continue.
+
+On 2026-09-30 the user selected the original GBA credits for preservation:
+they are already English and their artwork should remain unchanged. The user
+also requested arrival lettering based on `../Shiren/shiren-revamp-fixes`.
+The reconstructed bitmap subset and its budgets are documented in
+[SHIREN_ARRIVAL_FONT.md](SHIREN_ARRIVAL_FONT.md). Later that day the user approved
+insertion and in-game validation. The [inserted cards](ARRIVAL_INSERTION.md)
+now pass 30 native cases; the selected dialogue/menu font stays unchanged.
+Natural late-game entry routes remain a playtesting gap.
+
+The user subsequently requested a title-screen audition on 2026-09-30.
+[TITLE_AUDITION.md](TITLE_AUDITION.md) records the wood-and-gold proposal,
+Torneko 3-derived comparison tools, fresh native references and browser checks.
+This reopens title artwork exploration. The user then approved the main title
+and requested matching auditions for the five menu backgrounds. These now use
+one shared transparent logo with exact preservation outside its corner rectangle.
+The user explicitly rejected wood behind the corner lettering; revision 2
+repairs the old Japanese logo areas and overlays floating English letters.
+The user then approved all six images and requested insertion. They are now
+[inserted and natively verified](TITLE_INSERTION.md): five ordinary background
+selections plus the supplied-save route, 36 stable scenes and 640 controlled
+colour probes. The editable studio retains its separate 85 browser checks.
 
 Prefer a single line for combat messages whenever their complete meaning,
 control behavior and widest supported substitutions fit the measured line and
@@ -142,6 +166,11 @@ or use a documented display form while preserving meaning; do not silently clip,
 drop conditions, shrink the font or overlap neighboring window borders. Native
 captures must confirm fit and spacing. An unknown budget blocks insertion for
 that context until it is measured. This applies to prose as well as labels.
+
+User clarification on 2026-09-29: **item names must remain on one line**, including
+custom names. The earlier proposal to add lines for long Japanese custom names
+is rejected. Resolve their widths within a single-row design; this instruction
+does not approve clipping, price overlap, changes to saved names or font shrinking.
 
 Use the pinned **Torneko 2 Japanese ROM** as the translation source and build
 base. Author English independently. Fan translations may provide technical or

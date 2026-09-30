@@ -1,125 +1,97 @@
-# Torneko 2 Advance localization research
+# Torneko 2 Advance — English translation
 
-The Torneko 3 research toolchain is reproduced here and validated against the
-supplied Japanese Torneko 2 ROM. The cumulative development build now includes
-both English opening branches, the flashback, introductory dungeon tutorials,
-resume/stair menus, the King's first audience, five nearby castle NPCs, and the
-first destination menu, the first evening/morning home scenes, and three nearby
-village NPCs with both Ed choices. It also covers the red-book tips, broken-storehouse
-blue-book/save flows, mansion safe recovery, family choices and the bank-opening scene.
-The home scene includes dynamic sale proceeds.
-[The selected font](docs/FONT_AUDITION.md) is the readable Torneko 2 compact
-English extension, with all 95 printable ASCII glyphs validated in native mGBA.
-[Original-sized early menus](docs/MENU_LAYOUTS.md) add main commands and eighteen
-item/ground actions through 25 reviewed menu resources. The first panels now
-have 34/36 usable pixels and the original 8 px border gaps; the Option/status UI, bank transactions and 206 identified item names have separate native checks.
-Open the [native menu gallery](build/menu-resize/index.html) and
-[typography corrections](build/typography/index.html) to review the result.
-[Service batches](docs/SERVICE_BATCHES.md) cover dungeon UI, core banking, the first
-item names/descriptions, bakery purchases and repaired storage with saved deposit/cold-reload checks.
-Open the [service gallery](build/services/index.html) and
-[current acceptance receipt](docs/english-services-validation.json). Ordinary bakery
-unlocking and later service coverage remain open. [Text progress](docs/TEXT_PROGRESS.md)
-tracks the accepted 2,500-resource build and subsequent town-service
-work. Stable ROM/BPS copies are retained in `build/accepted/2159/`, alongside the
-preceding 2,115-, 2,010-, 1,934-, 1,887-, 1,848-, 1,676- and 774-resource milestones.
+**Made with AI assistance.** An unofficial English localization of
+*Dragon Quest Characters: Torneko no Daibouken 2 Advance — Fushigi no Dungeon*
+for Game Boy Advance.
 
-The [localization plan](docs/LOCALIZATION_PLAN.md) records the agreed translation
-rules, extraction and coverage workflow, build requirements, graphics auditions,
-playtesting, and the first opening-area milestone.
+## Screenshots
 
-The native-observation catalog records 147 Japanese sources. The broader text
-inventory and separate review catalogs track discovered, reviewed, inserted and
-controlled-tested resources without treating those counts as ordinary gameplay
-coverage.
-The [initial discovery report](docs/OPENING_TEXT.md) preserves the earlier scope.
-Open the
-[searchable catalog](build/text-extraction/index.html) to inspect verified text
-and the separate candidate queue. All seven known event tables and the shared
-town table (300 pointers / 204 sources) are enumerated;
-this is not a whole-game coverage percentage.
+| English title | Inventory |
+|---|---|
+| <img src="docs/images/title-screen.png" alt="Localized Torneko 2 title screen" width="360"> | <img src="docs/images/inventory.png" alt="English inventory with bread, a bronze shield, an oaken club and a copper sword" width="360"> |
+| **Dialogue** | **Dungeon arrival** |
+| <img src="docs/images/dialogue.png" alt="Tipper welcomes Torneko home in English" width="360"> | <img src="docs/images/dungeon-arrival.png" alt="Mysterious Meadow, floor 1, arrival card" width="360"> |
 
-[English name entry](docs/NAME_ENTRY.md) now supports seven characters, including
-`Torneko`, with normal-input editing and native save/cold-load validation. Run
-`./build.sh` for the [cumulative English build](docs/BUILD.md), verified BPS patch
-and emulator checks. The latest compiled ROM and patch are exported to
-`build/torneko-2-english.gba` and `build/torneko-2-english.bps`, with matching
-hashes and development status in `build/torneko-2-english.release.json`.
-See [the English batch and acceptance scope](docs/OPENING_ENGLISH.md)
-for routes, language review, native name substitutions and remaining Japanese text.
-The [home-book/banker batch](docs/HOME_BOOKS.md) adds the shared town text bank,
-native save/cold-load checks and the mansion entrance. The earlier
-[home-return batch](docs/HOME_RETURN.md) establishes bank-one insertion;
-[graphics research](docs/GRAPHICS_INVENTORY.md) now identifies the first dungeon
-card and the distinct title/menu background resources.
+Actual mGBA screenshots from the English build, captured through ordinary play
+from a fresh save. [Capture details and reproduction](docs/SCREENSHOTS.md).
 
-The [mansion quest batch](docs/MANSION_QUEST.md) covers the Imp, recovered safe,
-return scenes and bank opening, with four family branches and seven-character
-name checks. [View the native preview](build/english/mansion-preview.png).
-The current cumulative build also translates the audited bank transactions,
-item labels and core combat messages; additional consumers remain in progress.
+## Project status
 
-Open the [side-by-side font audition](build/font-audition/index.html),
-[per-font menu budgets](build/font-audition/contexts.csv), or selected
-[glyph sheet](build/font-audition/native/compact-english.png). Rebuild with:
+The current development build contains **3,770 inserted text resources and
+20 English graphics**, including the approved title, all five corner logos and
+13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
+English font and supports seven-character player names, including `Torneko`.
+The original GBA credits are already English and remain unchanged.
 
-```bash
-.venv/bin/python -m tools.build_compact_font --output build/font-audition/native
-.venv/bin/python -m tools.verify_compact_font --output build/font-audition/native
-.venv/bin/python -m tools.review_compact_font --output build/font-audition/native
-.venv/bin/python -m tools.audition_fonts
+Translation, discovery and playtesting continue. **113 known catalog sources
+still need investigation or review**; complete text discovery and full-game
+runtime coverage are not yet proven. Insertion counts are not a completion
+percentage.
+
+[Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
+[Open text questions](docs/TEXT_OPEN_QUESTIONS.md)
+
+## Setup
+
+Use the project's Python 3.11 environment, native mGBA bindings and local tools.
+You need your own matching Japanese ROM, identified in [config/rom.json](config/rom.json).
+Torneko 3 supplies the tooling reference; this translation uses Torneko 2's
+Japanese text and verified resource layouts.
+
+[Installation and tool choices](docs/TOOLING.md)
+
+## Build and play
+
+From the project root:
+
+```sh
+./build.sh
 ```
 
-The [original-font research](docs/FONTS.md) documents the compact and larger
-Latin glyphs already present in the supplied ROM.
+| Output | Use |
+|---|---|
+| `build/torneko-2-english.gba` | Open a playtest copy in your GBA emulator |
+| `build/torneko-2-english.bps` | Apply to the clean Japanese ROM |
+| `build/torneko-2-english.release.json` | Source, ROM and patch hashes; build status |
 
-From this directory:
+The build compiles the translation, verifies that the BPS reproduces the ROM,
+and runs native emulator checks. Compilation uses retained source assets;
+the complete validation workflow also uses the documented research fixtures.
+These latest-build files remain development outputs while localization and
+playtesting are in progress.
 
-```bash
-./validate.sh
-.venv/bin/python -m tools.capture
-```
+[Build requirements, patching and checks](docs/BUILD.md)
 
-Validation covers the pinned ROM/header, native mGBA execution breakpoints and
-read watchpoints, 8/16/32-bit memory access, frame/input control, screenshots,
-raw and desktop-format state replay, native save persistence, Ghidra import,
-ARM/Thumb assembly, and verified BPS creation. Results are in
-`build/toolchain-validation/`. Captures are in `build/captures/title/`.
+## Translate and revise
 
-Open the prepared analysis project with Ghidra:
+Translate from the Japanese, follow the glossary and agreed Dragon Quest
+terminology, and preserve controls and substitutions. Check the actual font
+and window budgets, including the widest supported names and numbers. Item
+names must stay on one line; combat messages should use one line when their
+complete meaning safely fits. Revisions need checked insertion ownership and
+fresh native validation before they reach the ROM.
 
-```bash
-/opt/homebrew/bin/ghidraRun build/ghidra/Torneko2.gpr
-```
+[Translation and prose rules](docs/LOCALIZATION_PLAN.md) ·
+[Glossary](translations/glossary.json) · [Menu budgets](docs/MENU_LAYOUTS.md)
 
-The project contains the imported cartridge and startup disassembly. Full ROM
-auto-analysis has not been run. If the generated project was removed, recreate
-it with `bash tools/ghidra.sh import`; this command refuses to overwrite an
-existing analysis project.
+## Test and report bugs
 
-For desktop mGBA, prepare a separate ROM/save pair and open the printed path:
+Play a separate copy of the latest English ROM and keep its battery save beside
+it. Preserve the original Japanese ROM and supplied save. When reporting a
+problem, include a screenshot, reproduction steps, the matching save/state,
+emulator version and ROM hash from the release manifest. A save immediately
+before the problem is especially useful for checking a fix.
 
-```bash
-.venv/bin/python -m tools.prepare_playtest
-# Optional: add --save 'path/to/your.sav' to copy an existing save.
-open -a /Applications/mGBA.app 'the/printed/path/torneko-2-japanese.gba'
-```
+[Current validation scope](docs/TEXT_PROGRESS.md) ·
+[Emulator and capture workflow](docs/EXPLORATION.md)
 
-Each preparation creates a new directory under `build/playtest/`. Playtest saves
-belong beside that copy. The supplied source ROM and save are preserved.
+## Graphics and research
 
-See [the exploration workflow](docs/EXPLORATION.md),
-[installation and tool pins](docs/TOOLING.md), and
-[the initial memory map](docs/MEMORY_MAP.md).
+[Title and background logos](docs/TITLE_INSERTION.md) ·
+[Arrival cards](docs/ARRIVAL_INSERTION.md) ·
+[Credits and graphics auditions](docs/GRAPHICS_AUDITION.md)
 
-To reproduce the local environment from the already-installed Torneko 3 project:
+Record discoveries in the [memory map](docs/MEMORY_MAP.md) before insertion;
+use the shared allocator and checked patch ownership to prevent collisions.
 
-```bash
-./setup.sh ../torneko-3-gba
-./validate.sh
-```
-
-This creates this project's own venv, source copies and native builds. Installed
-Ghidra, its GBA loader, Java, Homebrew libraries and desktop mGBA are shared
-system dependencies. ROMs, saves, native tools and generated research artifacts
-are excluded by `.gitignore`.
+[Documentation index](docs/README.md) · [Graphics discovery queue](docs/GRAPHICS_INVENTORY.md)

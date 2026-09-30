@@ -26,8 +26,12 @@ def payload(row):
   return text(a)+bytes.fromhex(row['middle_hex'])+text(b)+bytes.fromhex(row['end_hex']).replace(b'/',text('/'))+b'\0'
  raise ValueError(kind)
 
-def add_ui(build):
+def add_ui(build,extra_catalog=None):
  catalog=json.loads(CATALOG.read_text());require(catalog['base_rom_sha256']==digest(build.original),'Dungeon UI base changed')
+ if extra_catalog:
+  extra=json.loads(extra_catalog.read_text());require(extra['base_rom_sha256']==digest(build.original),'Additional UI base changed')
+  require(not {r['id'] for r in catalog['entries']}&{r['id'] for r in extra['entries']},'Duplicate additional UI identity')
+  catalog['entries']+=extra['entries']
  rows=[]
  tables={0x140d68:bytearray(build.original[0x140d68:0x1417a0]),
          0x148080:bytearray(build.original[0x148080:0x148098]),
@@ -55,4 +59,5 @@ def add_ui(build):
   for toggle in [bytes.fromhex(r['encoded_hex'])[:-1] for r in toggles if r['group']==group] if group else [b'']:
    result=raw.replace(b'%s',toggle).replace(b'%c',b'\x07')
    require(len(result)<=36,'Option output exceeds original observed extent')
- return {'entries':rows,'review_sha256':digest(CATALOG.read_bytes()),'options_max_bytes':36,'original_geometry':True}
+ return {'entries':rows,'review_sha256':digest(CATALOG.read_bytes()),'options_max_bytes':36,'original_geometry':True,
+         'additional_review_sha256':digest(extra_catalog.read_bytes()) if extra_catalog else None}

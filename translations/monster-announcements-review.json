@@ -1,0 +1,352 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Private announcement table for CPU0802A998 only. Enumerates all45 nonzero species selectors,24 source messages from the unchanged141-record dungeon definition resource. Native256-byte output and64-byte actor-name scratch remain unchanged. Announcement rendering is separate from the subsequent combat/effect handler.",
+  "entries": [
+    {
+      "id": "monster-announcement.390",
+      "table_offset": 912,
+      "source": {
+        "offset": 405800,
+        "end_exclusive": 405823,
+        "raw_hex": "257382cd2095cf82c88ef495b682f08fa582a682bd2100",
+        "sha256": "92d00198315a46aacf39bbcf89e696b2588e01ea9333c62e68ee4ee671537b6a",
+        "japanese": "%{unclassified-control:73}は 変な呪文を唱えた!"
+      },
+      "english": "{actor}{fit} casts a strange spell!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.394",
+      "table_offset": 916,
+      "source": {
+        "offset": 405776,
+        "end_exclusive": 405797,
+        "raw_hex": "257382cd20837a8343837e82f08fa582a682bd2100",
+        "sha256": "d17d744504894a3857b23ba5d0d59ea93e6d6a23f391f5eaa1f00c5f9987814e",
+        "japanese": "%{unclassified-control:73}は ホイミを唱えた!"
+      },
+      "english": "{actor}{fit} casts Heal!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.398",
+      "table_offset": 920,
+      "source": {
+        "offset": 405752,
+        "end_exclusive": 405773,
+        "raw_hex": "257382cd208378837a837d82f08fa582a682bd2100",
+        "sha256": "ef665c73e198f09725115e5be7e3dc3ca2d7d893a785e1da26cb17a8b871800a",
+        "japanese": "%{unclassified-control:73}は ベホマを唱えた!"
+      },
+      "english": "{actor}{fit} casts Fullheal!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.294",
+      "table_offset": 660,
+      "source": {
+        "offset": 407232,
+        "end_exclusive": 407250,
+        "raw_hex": "257382cd2092878ad482f08cc482f182be00",
+        "sha256": "96bdd7569a141ac71bf40bfb5c47acd95a32c76bda72a3056dee00dd9e4db8d5",
+        "japanese": "%{unclassified-control:73}は 仲間を呼んだ"
+      },
+      "english": "{actor}{fit} calls for allies!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3a8",
+      "table_offset": 936,
+      "source": {
+        "offset": 405644,
+        "end_exclusive": 405658,
+        "raw_hex": "257382cc95588d558c8282be2100",
+        "sha256": "764c0b6c1dd3f98ace95b40fde6e7f9fb3ee9d75894a3999e0ff6f74e713b344",
+        "japanese": "%{unclassified-control:73}の氷攻撃だ!"
+      },
+      "english": "{actor}{fit} uses an ice attack!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.948",
+      "table_offset": 2376,
+      "source": {
+        "offset": 394328,
+        "end_exclusive": 394343,
+        "raw_hex": "257382cc208dac97908d558c822100",
+        "sha256": "8e50ea753d6c0a3cba3739761e43862ee7e1bebc662bde7691d26f45d268b09e",
+        "japanese": "%{unclassified-control:73}の 混乱攻撃!"
+      },
+      "english": "{actor}{fit} uses a confusing attack!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3b4",
+      "table_offset": 948,
+      "source": {
+        "offset": 405548,
+        "end_exclusive": 405569,
+        "raw_hex": "257382cd2097cd82f082bd82df82c482a282e92100",
+        "sha256": "2e78df3b8dc8944c8e4059d1d148cea1e544658506cb7b342bd273e74abe2d71",
+        "japanese": "%{unclassified-control:73}は 力をためている!"
+      },
+      "english": "{actor}{fit} is gathering strength!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.28c",
+      "table_offset": 652,
+      "source": {
+        "offset": 407280,
+        "end_exclusive": 407304,
+        "raw_hex": "257382cd2082ad82b382c182bd897482f082cd82a282bd00",
+        "sha256": "fdc54752c32014446b319344ff14fc7e7c7f2a9382acbd681928143bca053f19",
+        "japanese": "%{unclassified-control:73}は くさった液をはいた"
+      },
+      "english": "{actor}{fit} spits rotten fluid!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.908",
+      "table_offset": 2312,
+      "source": {
+        "offset": 394696,
+        "end_exclusive": 394726,
+        "raw_hex": "257382cc208f8282f00e094e82cd82b682ab94f282ce82b78d558c822100",
+        "sha256": "8c5aed2c41d9dbdae7f9d89251e382bf1c41d88732f15a264061a9ad4443a955",
+        "japanese": "%{unclassified-control:73}の 盾を{fit-next:0e094e}はじき飛ばす攻撃!"
+      },
+      "english": "{actor}{fit} tries to knock your shield away!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.250",
+      "table_offset": 592,
+      "source": {
+        "offset": 407616,
+        "end_exclusive": 407637,
+        "raw_hex": "257382cd2093c582cc91a782f082cd82a282bd2100",
+        "sha256": "f388264bb266f2b6c85f1698202a2966b13b907f5f1a9ae8eee3eba0fb7f3fd0",
+        "japanese": "%{unclassified-control:73}は 毒の息をはいた!"
+      },
+      "english": "{actor}{fit} breathes poison!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.254",
+      "table_offset": 596,
+      "source": {
+        "offset": 407592,
+        "end_exclusive": 407615,
+        "raw_hex": "257382cd208389838a837a815b82f08fa582a682bd2100",
+        "sha256": "c4890e9eddecc15bfd2c519b1425d4d928229386ff862332f40ad9f595d357ce",
+        "japanese": "%{unclassified-control:73}は ラリホーを唱えた!"
+      },
+      "english": "{actor}{fit} casts Snooze!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.260",
+      "table_offset": 608,
+      "source": {
+        "offset": 407508,
+        "end_exclusive": 407533,
+        "raw_hex": "257382cd208dc396b08d558c8282f082b582c482ab82bd2100",
+        "sha256": "da9ff60a1a8931d6b5c7dcbfd2d42474ed69370138f09dd778f0aa1ade3ef45e",
+        "japanese": "%{unclassified-control:73}は 催眠攻撃をしてきた!"
+      },
+      "english": "{actor}{fit} uses a hypnotic attack!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.290",
+      "table_offset": 656,
+      "source": {
+        "offset": 407252,
+        "end_exclusive": 407280,
+        "raw_hex": "257382cd2095738e768b6382c8977882e882f082a882c782c182bd00",
+        "sha256": "514ecf241c5901fda9574b131fca236e60de41bd84190ff7e811a770d6672247",
+        "japanese": "%{unclassified-control:73}は 不思議な踊りをおどった"
+      },
+      "english": "{actor}{fit} performs a mysterious dance!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3c4",
+      "table_offset": 964,
+      "source": {
+        "offset": 405436,
+        "end_exclusive": 405457,
+        "raw_hex": "257382cc20977882e882cc82e482a482ed82ad2100",
+        "sha256": "4cc2e9ee1e6225b24c4c1d7962b74aaa0d6c92133e5dadbb3f18c1ab6f2b1ae0",
+        "japanese": "%{unclassified-control:73}の 踊りのゆうわく!"
+      },
+      "english": "{actor}{fit} performs a bewitching dance!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.25c",
+      "table_offset": 604,
+      "source": {
+        "offset": 407536,
+        "end_exclusive": 407561,
+        "raw_hex": "257382cd20836e83898377838a815b82f08fa582a682bd2100",
+        "sha256": "b3142b772f893483b112b4df2ae0456b08c553b375d784403da70170f906ae7d",
+        "japanese": "%{unclassified-control:73}は ハラヘリーを唱えた!"
+      },
+      "english": "{actor}{fit} casts Hunger!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology.",
+      "terminology": {
+        "japanese": "ハラヘリー",
+        "english": "Hunger",
+        "status": "project_choice_provisional",
+        "reference_game": "Torneko 2 Advance, Japanese source",
+        "reviewed": "2026-09-26",
+        "confidence": "medium",
+        "evidence": "Independent English spell title conveying the Japanese hunger wordplay. Native Scare root ID76 selects this announcement and CPU0802C14C removes20 fullness; no replacement mechanics are imported. The consulted PS1 strategy guide describes Mandoras reducing belly but does not establish an English spell title. No exact modern/PS1 title was verified; this is not evidence that none exists.",
+        "consulted_secondary_url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107"
+      }
+    },
+    {
+      "id": "monster-announcement.29c",
+      "table_offset": 668,
+      "source": {
+        "offset": 407184,
+        "end_exclusive": 407209,
+        "raw_hex": "257382cd20836f8356838b815b838982f08fa582a682bd2100",
+        "sha256": "7aff32979e517c9c87590d958779e81a7e30ad1a1d536865acd0e66d98b57dd3",
+        "japanese": "%{unclassified-control:73}は バシルーラを唱えた!"
+      },
+      "english": "{actor}{fit} casts Bazoom!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3b8",
+      "table_offset": 952,
+      "source": {
+        "offset": 405516,
+        "end_exclusive": 405547,
+        "raw_hex": "257382cd2082b082f182b682e382c282b582cc8ff182f08e6782c182bd2100",
+        "sha256": "660290ac3cda8b58c874df0dd3c85fca243ae640e85be8591afeb3db3be9de0e",
+        "japanese": "%{unclassified-control:73}は げんじゅつしの杖を使った!"
+      },
+      "english": "{actor}{fit} uses a Lump mage staff!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3bc",
+      "table_offset": 956,
+      "source": {
+        "offset": 405488,
+        "end_exclusive": 405515,
+        "raw_hex": "257382cd208368838b8343836882cc8ff182f08e6782c182bd2100",
+        "sha256": "4645baf68cc04e39036cef0863a78baad079ebe05af419aac8363dac30bdfcf0",
+        "japanese": "%{unclassified-control:73}は ドルイドの杖を使った!"
+      },
+      "english": "{actor}{fit} uses a Lump wizard staff!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3cc",
+      "table_offset": 972,
+      "source": {
+        "offset": 405384,
+        "end_exclusive": 405406,
+        "raw_hex": "257382cd208cfb82f082d382b382a282c582ab82bd00",
+        "sha256": "624d430a4708680a366c74a9fc3b0122c0896e5e5573fd9fec66ada3339bbecc",
+        "japanese": "%{unclassified-control:73}は 口をふさいできた"
+      },
+      "english": "{actor}{fit} covers your mouth!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.3f8",
+      "table_offset": 1016,
+      "source": {
+        "offset": 405104,
+        "end_exclusive": 405131,
+        "raw_hex": "257382cd0e0a4e837d837a8367815b839382f08fa582a682bd2100",
+        "sha256": "4010820902e225bddfc1512b124d29ee5467c08963c34790d2828d88f2d03450",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0a4e}マホトーンを唱えた!"
+      },
+      "english": "{actor}{fit} casts Fizzle!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.484",
+      "table_offset": 1156,
+      "source": {
+        "offset": 404132,
+        "end_exclusive": 404159,
+        "raw_hex": "257382cd2082ab82c682a482b582cc8ff182f082d382c182bd2100",
+        "sha256": "6ad5ec36a242698f5cf2b7cbcfa53babd52d59b907ea8770e473b76a06f905d3",
+        "japanese": "%{unclassified-control:73}は きとうしの杖をふった!"
+      },
+      "english": "{actor}{fit} waves a Shaman staff!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.488",
+      "table_offset": 1160,
+      "source": {
+        "offset": 404100,
+        "end_exclusive": 404131,
+        "raw_hex": "257382cd0d82e682a482b682e382c282b582cc8ff182f082d382c182bd2100",
+        "sha256": "56bf1de32ab30480667910a4519409b32766b88a3232df049d153c04ed57457b",
+        "japanese": "%{unclassified-control:73}は\nようじゅつしの杖をふった!"
+      },
+      "english": "{actor}{fit} waves a Sorcerer staff!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.90c",
+      "table_offset": 2316,
+      "source": {
+        "offset": 394680,
+        "end_exclusive": 394696,
+        "raw_hex": "257382cc82b582d182ea8d558c822100",
+        "sha256": "1e2225f8b667c6cdf5b820892925d0e167862cf81e05d75bb5d06b205689116e",
+        "japanese": "%{unclassified-control:73}のしびれ攻撃!"
+      },
+      "english": "{actor}{fit} uses a paralysing attack!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    },
+    {
+      "id": "monster-announcement.8b8",
+      "table_offset": 2232,
+      "source": {
+        "offset": 395096,
+        "end_exclusive": 395119,
+        "raw_hex": "257382cd0d837d835f8393836582f08fa582a682bd2100",
+        "sha256": "2a183498c0c8dbc160136bb5571147969f8db49bb09b15945ad1396286a77caa",
+        "japanese": "%{unclassified-control:73}は\nマダンテを唱えた!"
+      },
+      "english": "{actor}{fit} casts Magic Burst!",
+      "status": "reviewed",
+      "review": "Independent T2 Japanese-source editorial review. Preserve announced action, spell/item identity and attack type without claiming a failed attack succeeded or importing another game's mechanics. Conditional joining permits one line for actual names; the complete186px actor bound retains two lines. Uses the local reviewed item/glossary compounds for the four staff identities and existing series spell terminology."
+    }
+  ]
+}

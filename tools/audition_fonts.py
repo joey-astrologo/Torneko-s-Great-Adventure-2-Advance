@@ -78,6 +78,20 @@ def run():
     contexts,measurements = [],[]
     for c in config['contexts']:
         require(0 <= c['start'] < c['end'] <= c['window'],'Invalid menu budget')
+        if c['id']=='priest-services':
+            evidence_path=ROOT/'build/english/priest-service-validation/report.json'
+            evidence=json.loads(evidence_path.read_text())
+            require(evidence['passed'] and evidence['rom_sha256']==ledger['output_sha256'],'Priest audition evidence stale')
+            case=next(r for r in evidence['cases'] if r['case']=='navigation')
+            row=next(r for r in ledger['priest']['entries'] if r['id']=='priest.4dc');layout=row['layout']
+            require((c['window'],c['rows'],c['start'],c['end']-c['start'])==
+                    (layout['native_width'],layout['native_rows'],layout['label_x'],layout['label_budget']) and
+                    c['labels']==layout['pages'][0],'Priest audition region/labels differ')
+            matches=[r for r in case['reads'] if r['id']==row['id']]
+            require(matches and all(r['width']==c['window'] for r in matches) and case['visible_pixels_checked']>0,'Priest native menu evidence missing')
+            capture=evidence_path.parent/'navigation/menu.png'
+            require(digest(capture.read_bytes())==case['images']['menu.png'],'Priest audition image changed')
+            c=c|{'capture':str(capture.relative_to(ROOT)),'native_reads':matches,'native_report_sha256':digest(evidence_path.read_bytes())}
         if 'build_route' in c:
             route=built_routes[c['build_route']]
             matches=[r for r in route['reads'][:route['menu_read_count']] if r['window_width']==c['window'] and ((not c['labels'] and r['initial_x']==c['start']) or (c['labels'] and encode(c['labels'][0])[:-1].hex() in r['raw_hex']))]

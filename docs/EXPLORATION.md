@@ -137,3 +137,37 @@ records a `keys` array in the input receipt. Single-button records keep `key`.
 The native KEYINPUT read at `08000F00` verifies both held and released masks;
 use a breakpoint after that read rather than reading a watched I/O register
 from its own watchpoint callback, which would recursively trigger the watch.
+
+## Original event and NPC script references
+
+For the newer credits and arrival-graphics workflow, see
+[GRAPHICS_AUDITION.md](GRAPHICS_AUDITION.md). `tools.extract_graphics_audition`
+decodes the sources, `tools.research_credits` and `tools.research_arrival_cards`
+retain controlled native evidence, and `tools.build_graphics_audition` packages
+the offline studios. These do not modify or build the release ROM.
+
+The newer `TEXT_PROGRESS.md` supersedes the early milestone counts above.
+The script-reference audit is read-only with respect to ROM/save data. Run its
+steps in order; the last two consume the preceding source-pinned reports:
+
+```sh
+.venv/bin/python -m tools.text_inventory
+# Required only if original opening traces are absent:
+.venv/bin/python -m tools.trace_opening_events
+.venv/bin/python -m tools.research_event_script_refs
+.venv/bin/python -m tools.research_npc_script_refs
+.venv/bin/python -m tools.research_npc_control_flow
+.venv/bin/python -m tools.research_event_menu_refs
+```
+
+Reports go to `build/event-script-audit/`. They cover the seven uncompressed
+script banks, seven compressed NPC resources, original actor-selector address
+arithmetic, opcode lengths, flag/choice branches, and custom help-menu selectors.
+The original opening trace supplies 54 independently observed source matches.
+All reports pin the base ROM. These are research reports: successful execution
+does **not** mean every root is reachable or every reference is valid. Bank2
+contains malformed/out-of-range roots; two original help configurations select
+incompatible text banks. The JSON retains those failures and their exact offsets.
+No source is classified unused from absence of an audited reference alone.
+See the September29 event-script sections in `MEMORY_MAP.md` for native
+confirmation of the two still-Japanese placeholders and the explicit exclusions.

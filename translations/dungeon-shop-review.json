@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "dungeon-shop.41c",
+      "table_offset": 1052,
+      "source": {
+        "offset": 404884,
+        "end_exclusive": 404916,
+        "raw_hex": "03052564054782c5834183438365838082f00d88f882ab82c682e882dc82b700",
+        "sha256": "01269dab058e037ae96bc8dbdf967cc8ac6ef6fb9c1e56b04ae824dbdc8f0e9f",
+        "japanese": "{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gでアイテムを\n引きとります"
+      },
+      "english": "I'll buy your items\nfor {amount}G.",
+      "status": "reviewed",
+      "review": "T2 dungeon shop caller243C0: preserve purchase/sale direction, quoted amount, explicit half-price offer, confirmation or insufficient funds. Reuse reviewed thank-you/no-gold wording. Keep numeric colour03/05 and original modal/choice geometry; two fixed rows preserve the automatic panel height."
+    },
+    {
+      "id": "dungeon-shop.420",
+      "table_offset": 1056,
+      "source": {
+        "offset": 404860,
+        "end_exclusive": 404883,
+        "raw_hex": "82a082e882aa82c682a482b282b482a282dc82b582bd00",
+        "sha256": "089eb35feb2b5faf4fed7b5ca67f4a5479f46a1d473c2afa07af967b9d60faeb",
+        "japanese": "ありがとうございました"
+      },
+      "english": "Thank you very much.",
+      "status": "reviewed",
+      "review": "T2 dungeon shop caller243C0: preserve purchase/sale direction, quoted amount, explicit half-price offer, confirmation or insufficient funds. Reuse reviewed thank-you/no-gold wording. Keep numeric colour03/05 and original modal/choice geometry; two fixed rows preserve the automatic panel height."
+    },
+    {
+      "id": "dungeon-shop.424",
+      "table_offset": 1060,
+      "source": {
+        "offset": 404820,
+        "end_exclusive": 404858,
+        "raw_hex": "03052564054782a282bd82be82ab82dc82b782aa0d82e682eb82b582a282c582b782a9814800",
+        "sha256": "85fe8a3c2ea7ab23ce9264e7374780f59197cbb1bc96570aa0d60d5a5bc546e1",
+        "japanese": "{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gいただきますが\nよろしいですか？"
+      },
+      "english": "That'll be {amount}G.\nIs that all right?",
+      "status": "reviewed",
+      "review": "T2 dungeon shop caller243C0: preserve purchase/sale direction, quoted amount, explicit half-price offer, confirmation or insufficient funds. Reuse reviewed thank-you/no-gold wording. Keep numeric colour03/05 and original modal/choice geometry; two fixed rows preserve the automatic panel height."
+    },
+    {
+      "id": "dungeon-shop.428",
+      "table_offset": 1064,
+      "source": {
+        "offset": 404800,
+        "end_exclusive": 404817,
+        "raw_hex": "82a88be082aa82bd82e882dc82b982f100",
+        "sha256": "f277556eeffaa1af2f9898cf3779da4f26ae3a53e4740eb24bee8a360d38a28d",
+        "japanese": "お金がたりません"
+      },
+      "english": "You don't have enough gold.",
+      "status": "reviewed",
+      "review": "T2 dungeon shop caller243C0: preserve purchase/sale direction, quoted amount, explicit half-price offer, confirmation or insufficient funds. Reuse reviewed thank-you/no-gold wording. Keep numeric colour03/05 and original modal/choice geometry; two fixed rows preserve the automatic panel height."
+    },
+    {
+      "id": "dungeon-shop.464",
+      "table_offset": 1124,
+      "source": {
+        "offset": 404364,
+        "end_exclusive": 404403,
+        "raw_hex": "82bb82ea82c582cd2094bc8a7a82cc0d03052564054782c582c782a482c582b582e582a4814800",
+        "sha256": "09d7a8b2f9c22f46a34a5627609fc34e3069242a39148b8303df9bec257b1e19",
+        "japanese": "それでは 半額の\n{legacy-position:0305}%{unclassified-control:64}{unclassified-control:05}Gでどうでしょう？"
+      },
+      "english": "Then how about half price:\n{amount}G?",
+      "status": "reviewed",
+      "review": "T2 dungeon shop caller243C0: preserve purchase/sale direction, quoted amount, explicit half-price offer, confirmation or insufficient funds. Reuse reviewed thank-you/no-gold wording. Keep numeric colour03/05 and original modal/choice geometry; two fixed rows preserve the automatic panel height."
+    }
+  ],
+  "scope": "Five private resources for dungeon shop handler243C0, including three price confirmations and native thank-you/insufficient-funds panels. Original commerce code, frames and choice geometry are unchanged. The separate dropped-item half-price source468 is not included until its caller is established."
+}

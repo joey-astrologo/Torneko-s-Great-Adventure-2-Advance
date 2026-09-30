@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "battle-result.7d0",
+      "table_offset": 2000,
+      "source": {
+        "offset": 396880,
+        "end_exclusive": 396907,
+        "raw_hex": "257382cd256482cc835f8381815b835782f08b7a8efb82b582bd00",
+        "sha256": "fe288cc9bd882d3de09cb31804484cf7974ef697f05146308736d567e0dd95bf",
+        "japanese": "%{unclassified-control:73}は%{unclassified-control:64}のダメージを吸収した"
+      },
+      "english": "{actor}{fit} absorbed {amount} damage.",
+      "fields": [
+        "actor",
+        "amount"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    },
+    {
+      "id": "battle-result.898",
+      "table_offset": 2200,
+      "source": {
+        "offset": 395176,
+        "end_exclusive": 395199,
+        "raw_hex": "82c582e282c121817582a482af82c882aa82b581762100",
+        "sha256": "0a4e3b39513552bc56f6f4e652644ad9b8a5c5be6e3403cf76a10b312fae2318",
+        "japanese": "でやっ!「うけながし」!"
+      },
+      "english": "Hiyah! Cop Out!",
+      "fields": [],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    },
+    {
+      "id": "battle-result.954",
+      "table_offset": 2388,
+      "source": {
+        "offset": 394252,
+        "end_exclusive": 394279,
+        "raw_hex": "256491cc82cc838283938358835e815b82f082bd82a882b582bd00",
+        "sha256": "9a456eb9f7c2942fae9cbd720172969ec38177af11a6f7e584270724aa79a6fc",
+        "japanese": "%{unclassified-control:64}体のモンスターをたおした"
+      },
+      "english": "Defeated {amount} monsters.",
+      "fields": [
+        "amount"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    },
+    {
+      "id": "battle-result.958",
+      "table_offset": 2392,
+      "source": {
+        "offset": 394216,
+        "end_exclusive": 394249,
+        "raw_hex": "256491cc82cc838283938358835e815b82e2905f958382f082bd82a882b582bd00",
+        "sha256": "464834c48d5fffb0e36dc452f0e952467158e060e98fa7b4a9be1bed9723c908",
+        "japanese": "%{unclassified-control:64}体のモンスターや神父をたおした"
+      },
+      "english": "Defeated {amount}{fit} monsters and priests.",
+      "fields": [
+        "amount"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    },
+    {
+      "id": "battle-result.82c",
+      "table_offset": 2092,
+      "source": {
+        "offset": 395936,
+        "end_exclusive": 395957,
+        "raw_hex": "8d878c76256482cc8c6f8cb1926c82f082a682bd00",
+        "sha256": "65a446c6ed2a984ba10308ad8aa21e85ff4771914ca476f42585292f94b2303a",
+        "japanese": "合計%{unclassified-control:64}の経験値をえた"
+      },
+      "english": "Gained {amount} total EXP.",
+      "fields": [
+        "amount"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    },
+    {
+      "id": "battle-result.830",
+      "table_offset": 2096,
+      "source": {
+        "offset": 395916,
+        "end_exclusive": 395936,
+        "raw_hex": "7e82cd838c8378838b256482c982c882c182bd00",
+        "sha256": "873d8b0e977bdfd25195467f4c0343be763e9ef1271f35189d994e58f70bc8c1",
+        "japanese": "{unclassified-control:7e}はレベル%{unclassified-control:64}になった"
+      },
+      "english": "{player}{fit} reached Lv. {amount}.",
+      "fields": [
+        "amount"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 source review preserves the absorbing actor and damage amount, named Cop Out skill/cry, exact defeated monster/priest scope, total experience, or player target and reached level. Cop Out matches the already reviewed skill identity. Maximum fields bound actor186px/player98px/signed-decimal66px; conditional wrap only for combined bounds above216px."
+    }
+  ],
+  "scope": "Six reviewed messages through four private shared-table literals. Two separate area-effect/spell battle-summary consumers, one damage-absorption block and one immutable-ROM Cop Out announcement. Original gameplay code, frames and mechanics remain untouched; controlled native message-block tests do not establish battle outcomes."
+}

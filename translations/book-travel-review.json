@@ -1,0 +1,110 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned50AA8 record-menu labels and empty-trade warning, and524F4 travel prompts only. Original tables remain for unaudited readers; ordinary script reachability and travel/save effects remain separate.",
+  "entries": [
+    {
+      "id": "book.records",
+      "source": {
+        "offset": 443172,
+        "end_exclusive": 443185,
+        "raw_hex": "814096608caf82cc8381838200",
+        "sha256": "d349765649cddf1c676d2b9c4427013cd376454335c16d5076e78227459b4bc8",
+        "japanese": "　冒険のメモ"
+      },
+      "english": "Records",
+      "status": "reviewed",
+      "review": "Adventure notes, the separate record destination. Consistent short navigation label; do not confuse with saving the Adventure Log."
+    },
+    {
+      "id": "book.scores",
+      "source": {
+        "offset": 443156,
+        "end_exclusive": 443169,
+        "raw_hex": "8140836e834383588352834100",
+        "sha256": "6562d4a134358e5959a36a688e9797881c7af27d1f6ac636c57623e3199da5ab",
+        "japanese": "　ハイスコア"
+      },
+      "english": "Scores",
+      "status": "reviewed",
+      "review": "High scores; consistent existing navigation label."
+    },
+    {
+      "id": "book.trade",
+      "source": {
+        "offset": 443188,
+        "end_exclusive": 443203,
+        "raw_hex": "814083418343836583808cf08ab700",
+        "sha256": "5b7fdbbdd8a211df5b2f2fcd85278026b0bed29acdba1308d31071ea47bbee9a",
+        "japanese": "　アイテム交換"
+      },
+      "english": "Trade items",
+      "status": "reviewed",
+      "review": "Exchange items. Keep the item scope in this72px window."
+    },
+    {
+      "id": "book.empty",
+      "source": {
+        "offset": 443204,
+        "end_exclusive": 443262,
+        "raw_hex": "83418343836583808cf08ab782f082b782e982bd82df82c982cd0d91718cc982cc928682c9834183438365838082aa954b977682c582b7814200",
+        "sha256": "e9da5033ea044fb011d37142d203915186aa2dbace3b17743afee8760021520b",
+        "japanese": "アイテム交換をするためには\n倉庫の中にアイテムが必要です。"
+      },
+      "english": "Put items in the storehouse\nto trade them.",
+      "status": "reviewed",
+      "review": "Preserve the requirement that stored items are needed for trading, not a refusal of all trading."
+    },
+    {
+      "id": "travel.meadow",
+      "source": {
+        "offset": 443556,
+        "end_exclusive": 443593,
+        "raw_hex": "82bf82e582c182c695738e768b6382cc91908cb482f082c682a882e882dc82b782a9814800",
+        "sha256": "2028afb0871933394fe033c5557c8be5af9f0c5a4989aafa0987d8c259a24c60",
+        "japanese": "ちょっと不思議の草原をとおりますか？"
+      },
+      "english": "Go through Mysterious Meadow?",
+      "status": "reviewed",
+      "review": "Preserve traversal question and established destination name from results-review.json."
+    },
+    {
+      "id": "travel.choices",
+      "source": {
+        "offset": 443596,
+        "end_exclusive": 443613,
+        "raw_hex": "814082cd82a28140814082a282a282a600",
+        "sha256": "bca1e03744c1e3a9de6bfeeb481a7049165c4bb69163ede6f4056748e8b3a9df",
+        "japanese": "　はい　　いいえ"
+      },
+      "english": "Yes / No",
+      "status": "reviewed",
+      "review": "Affirmative/negative, original order and32px cursor stride. Position labels after each6px cursor reserve."
+    },
+    {
+      "id": "travel.overwrite",
+      "source": {
+        "offset": 443616,
+        "end_exclusive": 443681,
+        "raw_hex": "141f91ba82cc8366815b835e82aa82a082e882dc82b781420d148fe38f9182ab835a815b837582b582dc82b782aa814082e682eb82b582a282c582b782a9814800",
+        "sha256": "2195097be87889ce9eeb32c428f9f053e77c69b49c93925da0354f4137ec3139",
+        "japanese": "{unclassified-control:14}{name-substitution:1f}村のデータがあります。\n{unclassified-control:14}上書きセーブしますが　よろしいですか？"
+      },
+      "english": "{saved} Village already\nhas save data. Overwrite it?",
+      "status": "reviewed",
+      "review": "Preserve saved-village substitution and overwriting warning/question. Original1F name getter decodes up to8 glyphs; reserve112px and preserve centered lines."
+    },
+    {
+      "id": "travel.question",
+      "source": {
+        "offset": 442564,
+        "end_exclusive": 442579,
+        "raw_hex": "88da93ae82b582dc82b782a9814800",
+        "sha256": "3820880ea96034c6409784aa51929616cd075c3df2590a21b53f1b55552e4b93",
+        "japanese": "移動しますか？"
+      },
+      "english": "Travel?",
+      "status": "reviewed",
+      "review": "Move/travel confirmation in travel function; concise complete question within original80px box."
+    }
+  ]
+}

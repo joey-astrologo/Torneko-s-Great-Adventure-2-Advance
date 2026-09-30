@@ -24,6 +24,19 @@ class ServiceTypographyTest(unittest.TestCase):
         self.assertEqual(ALIASES[0x875e],'0')
         self.assertNotIn(0x8754,ALIASES)  # Equipped-and-cursed icon.
 
+    def test_compound_numbers_keep_digit_and_parenthesis_ink(self):
+        font=load_font()
+        for code in range(0x8771,0x8774):
+            result=glyph(font,code)
+            self.assertLessEqual(result['advance'],15)
+            for y,row in enumerate(result['rows']):
+                self.assertEqual(row[3:9],font['glyphs'][ALIASES[code][1]]['rows'][y])
+                self.assertEqual(row.count('#'),sum(font['glyphs'][c]['rows'][y].count('#') for c in ALIASES[code]))
+        # An asset change may not silently cut new parenthesis ink.
+        font['glyphs']['(']['rows'][0]='#'+font['glyphs']['(']['rows'][0][1:]
+        with self.assertRaisesRegex(ValueError,'crop ink'):
+            glyph(font,0x8771)
+
     def test_storage_keeps_both_columns_within_original_window(self):
         row=json.loads(STORAGE.read_text())['entries'][0]
         payload,layout=compile_storage(row)

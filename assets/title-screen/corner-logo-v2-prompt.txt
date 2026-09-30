@@ -1,0 +1,7 @@
+Use case: background-extraction / text-localization.
+Edit target: the supplied Torneko 2 English corner logo with wooden backing.
+Remove ALL wooden backing, all wood grain, all wooden border and the surrounding opaque background. Keep ONLY the floating golden letters, orange number 2, red ADVANCE letters and their tight dark letter outlines. The result must be a real transparent RGBA PNG, including transparent holes inside letters and transparent gaps between the word shapes. Do not paint a checkerboard, solid white, solid black or a rectangular backplate. No plaque or sign whatsoever.
+
+Preserve the existing lettering style, spelling, relative layout and colours: TORNEKO'S across the top, GREAT and ADVENTURE stacked below, the prominent 2 to their right, and red ADVANCE by the 2. Exact text: TORNEKO'S / GREAT / ADVENTURE / 2 / ADVANCE. Nothing else. Match the approved main title's chunky warm gold/orange bevelled lettering. Letter outlines may remain, but no broad shadow panel or connected background silhouette. Do not add a tagline, header, slime, scenery or Japanese characters.
+
+Output a wide transparent image at approximately 19:9 aspect ratio. Keep the entire logo fully within the canvas with only a very small transparent safety margin. This will be shown at 76 by 36 pixels in the corner of existing GBA artwork, so use crisp open letter shapes. The source wood must be completely gone, showing the underlying game scene through every gap.

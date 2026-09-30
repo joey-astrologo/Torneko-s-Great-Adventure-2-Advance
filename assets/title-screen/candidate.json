@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "status": "approved-and-inserted",
+  "id": "wood-gold-v1",
+  "name": "Wood & gold",
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "english_title": "Dragon Quest Characters: Torneko's Great Adventure 2 Advance — Mystery Dungeon",
+  "japanese_title": "ドラゴンクエスト キャラクターズ トルネコの大冒険2 アドバンス 不思議のダンジョン",
+  "generation": {
+    "mode": "built-in image_gen",
+    "asset": "assets/title-screen/wood-gold-v1.png",
+    "asset_sha256": "eacc388c7edec3af1a39e03d042734d7a8fae842b63b1d88ce069c6e87f257fe",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "prompt": "assets/title-screen/wood-gold-v1-prompt.txt",
+    "prompt_sha256": "b1676ea9b3a83a0f4a9cf9b311b58460b9c8d3004f61302d820914f96e2cc5aa",
+    "references": [
+      {
+        "path": "/Users/joey/Documents/Workplace/torneko-2-gba/build/graphics-research/title/title.png",
+        "sha256": "28ac79371ebaeeae15be51e9ffbb63f03ad34572fa4531138d740c1c00c39986",
+        "role": "Torneko 2 edit target"
+      },
+      {
+        "path": "/Users/joey/Documents/Workplace/torneko-3-gba/assets/title-screen/approved.png",
+        "sha256": "46315067cee5af93ba4b13a68855c8edfa6e92b3fd287c34671dc3540db24502",
+        "role": "Torneko 3 lettering hierarchy reference only"
+      }
+    ]
+  },
+  "default_preview": {
+    "sampling": "area",
+    "colours": "rgb555",
+    "original_prompt_strip": true,
+    "original_prompt_rectangle": [
+      0,
+      136,
+      240,
+      160
+    ]
+  },
+  "scope": "AI-redrawn wooden sign and scenery. The optional original footer is composed by browser canvas. Approved artwork inserted with the original footer and native palette fitting.",
+  "approval": {
+    "date": "2026-09-30",
+    "user_statement": "Yes this looks good :D",
+    "scope": "Main title artwork approved; user next requested linked background auditions. No insertion performed."
+  },
+  "insertion_approval": {
+    "date": "2026-09-30",
+    "user_statement": "Okay let's insert this into the game please, these are all approved",
+    "frozen_rasters": "assets/title-screen/approved.json",
+    "evidence": "build/title-insertion/acceptance.json"
+  }
+}

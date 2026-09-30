@@ -6,7 +6,7 @@ def run(cumulative=False):
     out=ROOT/('build/english/player-message-validation' if cumulative else 'build/player-messages-prototype')
     ledger=ROOT/'build/english/build.json' if cumulative else out/'build.json'
     build=json.loads(ledger.read_text());report=json.loads((out/'report.json').read_text())
-    require(report['passed'] and report['rom_sha256']==build['output_sha256'] and len(report['cases'])==216,
+    require(report['passed'] and report['rom_sha256']==build['output_sha256'] and len(report['cases'])==6*(len(build['player_messages']['entries'])+3),
             'Player message gallery evidence stale/incomplete')
     rows={r['id']:r for r in build['player_messages']['entries']};e=html.escape;cards=[];images={}
     for case in report['cases']:
@@ -21,7 +21,7 @@ def run(cumulative=False):
 details{background:#242838;padding:16px;margin:12px 0}img{image-rendering:pixelated;max-width:100%;height:auto;margin:8px}
 code{overflow-wrap:anywhere}a{color:#bce}</style><h1>Torneko 2: player status messages</h1><p>'''+('Cumulative candidate. ' if cumulative else 'Separate prototype. ')+e(report['scope'])+'''</p>
 <p>ROM <code>'''+report['rom_sha256']+'''</code> · <a href="report.json">Results and input schedules</a></p>'''+''.join(cards)+'</html>\n'
-    (out/'index.html').write_text(page);(out/'preview.json').write_text(json.dumps({'rom_sha256':report['rom_sha256'],'cases':216,'images':images},indent=2)+'\n')
+    (out/'index.html').write_text(page);(out/'preview.json').write_text(json.dumps({'rom_sha256':report['rom_sha256'],'cases':len(report['cases']),'images':images},indent=2)+'\n')
     print(out/'index.html')
 
 if __name__=='__main__':

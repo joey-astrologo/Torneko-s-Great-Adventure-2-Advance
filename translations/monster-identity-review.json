@@ -1,0 +1,20 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only private literal29F00 in full original owner29EB8. The species-already-known branch formats its256-byte stack buffer and returns without queuing or rendering it; do not count this as a newly visible English message. Other readers and natural occurrence are excluded.",
+  "entries": [
+    {
+      "id": "monster-identity.910",
+      "table_offset": 2320,
+      "source": {
+        "offset": 394652,
+        "end_exclusive": 394678,
+        "raw_hex": "82b182cc838283938358835e815b82cd0d257382c582a082e900",
+        "sha256": "21aab089647c66bdb1312bcc77429e19e2053f1050547798155fbd4c97cbc44e",
+        "japanese": "このモンスターは\n%{unclassified-control:73}である"
+      },
+      "english": "This monster is\n{actor}.",
+      "status": "reviewed",
+      "review": "このモンスターは%sである states the monster identity, not a reveal, transformation or damage outcome. Preserve the native single name argument and explicit original line break. Translation does not add a display call."
+    }
+  ]
+}

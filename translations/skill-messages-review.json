@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "skill-message.754",
+      "table_offset": 1876,
+      "source": {
+        "offset": 397852,
+        "end_exclusive": 397895,
+        "raw_hex": "82c882f182c67e82cd205b25735d82cc0d8b5a82f0208e6782a682e982e682a482c982c882c182bd210900",
+        "sha256": "816ac72a648e65261cf13aa87fa3ee024f29b5dc55c556129319267eb4b4dc87",
+        "japanese": "なんと{unclassified-control:7e}は [%{unclassified-control:73}]の\n技を 使えるようになった!{tab:09}"
+      },
+      "english": "Wow! {player} learned\n{skill}!",
+      "status": "reviewed",
+      "review": "Retains the surprise cue and player acquisition of the named skill. Preserve native player control7E and trailing09 tab to the next32px boundary. Native pending/learned skill flags define the acquisition context. The native modal panel determines its height from explicit newlines; keep the original two-row acquisition layout."
+    },
+    {
+      "id": "skill-message.764",
+      "table_offset": 1892,
+      "source": {
+        "offset": 397772,
+        "end_exclusive": 397792,
+        "raw_hex": "82ad82e782a62120954b8e458175257381762100",
+        "sha256": "4c3833319b9176dabe18ca3bea088d3eff06745d26cdffb9089594b56177bff2",
+        "japanese": "くらえ! 必殺「%{unclassified-control:73}」!"
+      },
+      "english": "Take this! Finisher: {skill}!",
+      "status": "reviewed",
+      "review": "Retains the challenge and finishing-move emphasis (必殺), and the complete skill name. Maximum name fits a single216px line."
+    },
+    {
+      "id": "skill-message.774",
+      "table_offset": 1908,
+      "source": {
+        "offset": 397692,
+        "end_exclusive": 397707,
+        "raw_hex": "82c682e882e1218175257381762100",
+        "sha256": "53827b8f3a27985fe2b49617fa2c1c4c4335a3a7f56f846c261d5619304cbed5",
+        "japanese": "とりゃ!「%{unclassified-control:73}」!"
+      },
+      "english": "Hiyah! {skill}!",
+      "status": "reviewed",
+      "review": "Retains the attack cry and complete skill name. Maximum name fits one line."
+    },
+    {
+      "id": "skill-message.7e8",
+      "table_offset": 2024,
+      "source": {
+        "offset": 396720,
+        "end_exclusive": 396745,
+        "raw_hex": "82b182ea82cd91668ee882c582ad82e882be82b78b5a82be00",
+        "sha256": "81b640607246e05fc8c28bfc270e4370c2ef98d073df39191ddbfebccaf03153",
+        "japanese": "これは素手でくりだす技だ"
+      },
+      "english": "This skill uses bare hands.",
+      "status": "reviewed",
+      "review": "Reuse the established reviewed T2 skill equipment explanation. This newly audited acquisition caller displays it through15A18 after the learned-skill panel, independently of the common queue mapper."
+    },
+    {
+      "id": "skill-message.7ec",
+      "table_offset": 2028,
+      "source": {
+        "offset": 396696,
+        "end_exclusive": 396719,
+        "raw_hex": "82b182ea82cd8c9582c582ad82e882be82b78b5a82be00",
+        "sha256": "9bf8f9a4d7e76ad55d5e51fce525c789bd5331b9eb5fdd0baa7b58bbc8ae14c7",
+        "japanese": "これは剣でくりだす技だ"
+      },
+      "english": "This skill uses a sword.",
+      "status": "reviewed",
+      "review": "Reuse the established reviewed T2 skill equipment explanation. This newly audited acquisition caller displays it through15A18 after the learned-skill panel, independently of the common queue mapper."
+    },
+    {
+      "id": "skill-message.7f0",
+      "table_offset": 2032,
+      "source": {
+        "offset": 396672,
+        "end_exclusive": 396695,
+        "raw_hex": "82b182ea82cd8f8282c582ad82e882be82b78b5a82be00",
+        "sha256": "e025ea06a8fc2cc0e9512e9a63da1647c6e234d34a608d0afeb559924bc5d41e",
+        "japanese": "これは盾でくりだす技だ"
+      },
+      "english": "This skill uses a shield.",
+      "status": "reviewed",
+      "review": "Reuse the established reviewed T2 skill equipment explanation. This newly audited acquisition caller displays it through15A18 after the learned-skill panel, independently of the common queue mapper."
+    }
+  ],
+  "scope": "Six skill announcements/explanations through five separately owned message-table literals and four name-definition readers. Reuse the existing128-record private skill definition copy, preserving all mechanic bytes. Original frames and256-byte outputs remain unchanged. Controlled announcement and native acquisition checks do not establish natural eligibility or individual skill outcomes."
+}

@@ -1,0 +1,20 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Three native maximum-fullness formatters. Integer and state limits are verified in their original callers; other eating outcomes remain independently mapped.",
+  "entries": [
+    {
+      "id": "fullness.0d0",
+      "table_offset": 208,
+      "source": {
+        "offset": 410184,
+        "end_exclusive": 410207,
+        "raw_hex": "8dc591e5969e95a0937882aa256482c982c882c182bd00",
+        "sha256": "7d1c2851021a86f35adb0e74505071f839f3095fd3f9fefd16951c603fdc2c3e",
+        "japanese": "最大満腹度が%{unclassified-control:64}になった"
+      },
+      "english": "Max fullness is now {amount}.",
+      "status": "reviewed",
+      "review": "Independent T2 reading: reports the new maximum fullness, not current fullness or the size of the increase. Retains the native decimal argument. No percentage sign is added because the source does not contain one."
+    }
+  ]
+}

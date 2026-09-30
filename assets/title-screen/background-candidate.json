@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "corner-logo-v2",
+  "status": "approved-and-inserted",
+  "parent_title_sha256": "eacc388c7edec3af1a39e03d042734d7a8fae842b63b1d88ce069c6e87f257fe",
+  "asset": "assets/title-screen/corner-logo-v2.png",
+  "asset_sha256": "bae83dc66101b6d3407ef2493b296d01841103c6217deb0d816dbac91fdf7324",
+  "dimensions": [
+    1821,
+    864
+  ],
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt": "assets/title-screen/corner-logo-v2-prompt.txt",
+    "prompt_sha256": "9511a6f5feda11cca1ee7e2be589faa02ac8e651b984e109711007fa2be24483",
+    "references": [
+      {
+        "path": "assets/title-screen/corner-logo-v1.png",
+        "sha256": "1f7914aa6113f90df0fdebe31af9b4d83b9df3f46ec7dda43ff855c8a6cf67c7",
+        "role": "Remove wood from prior corner-logo lettering"
+      }
+    ]
+  },
+  "placement": {
+    "size": [
+      76,
+      36
+    ],
+    "x": 164,
+    "family_y": 124,
+    "other_y": 0
+  },
+  "scope": "Shared floating RGBA lettering, with no wooden backing. Old baked-in Japanese lettering removed by generated corner reconstructions. Original pixels outside each 76x36 corner rectangle remain exact. Approved and inserted through private native graphics resources.",
+  "repairs": [
+    {
+      "index": 13,
+      "asset": "assets/title-screen/background-13-clean-v2.png",
+      "asset_sha256": "a77e7554b616da683f344a613233674a43f84aa30cd33faa4036f9a9fbbc072a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "prompt": "assets/title-screen/background-13-clean-v2-prompt.txt",
+      "prompt_sha256": "ec204b750a03daa3a7198f5bc6abbc4b36ddc6d7e4937a8d67cea6415fe660c0",
+      "reference": "build/title-audition/backgrounds/reference/13/background.png",
+      "reference_sha256": "7199f0fc26edd7658cec681bde9d7e5b57a4c31f373ca182bd8046c82e6e2539",
+      "scope": "Generated reconstruction only inside the existing 76x36 corner rectangle; all pixels outside it discarded."
+    },
+    {
+      "index": 18,
+      "asset": "assets/title-screen/background-18-clean-v2.png",
+      "asset_sha256": "9ffad53f61f9d35f790ed76315fb424dfefc618354f22015d6f97f4b5240c713",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "prompt": "assets/title-screen/background-18-clean-v2-prompt.txt",
+      "prompt_sha256": "a5a7bc2af8cbef2fb01a6827dad8d09ee32335482f4f7b06f95bc063a76fbc14",
+      "reference": "build/title-audition/backgrounds/reference/18/background.png",
+      "reference_sha256": "c01eff70cb73dc791820be9d1dc8b544c072a934c8bcc8651fc56d37ef847449",
+      "scope": "Generated reconstruction only inside the existing 76x36 corner rectangle; all pixels outside it discarded."
+    },
+    {
+      "index": 19,
+      "asset": "assets/title-screen/background-19-clean-v2.png",
+      "asset_sha256": "e94021e8b9290ea460b837e41df0c78e5c138d93c61779586e4681b2a3e011c4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "prompt": "assets/title-screen/background-19-clean-v2-prompt.txt",
+      "prompt_sha256": "3cb38859633b31508a25b2e5e63e285c47ff29285bbae71b97c37fc24928325d",
+      "reference": "build/title-audition/backgrounds/reference/19/background.png",
+      "reference_sha256": "8d70b91c73de6707715fff51030767e664d9119999c0243705bcae56203d9815",
+      "scope": "Generated reconstruction only inside the existing 76x36 corner rectangle; all pixels outside it discarded."
+    },
+    {
+      "index": 20,
+      "asset": "assets/title-screen/background-20-clean-v2.png",
+      "asset_sha256": "4a34ab308a1d5fab5d71cbdf4ba7da7bdf6b6ab61f098471dfe515f9b729c3d6",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "prompt": "assets/title-screen/background-20-clean-v2-prompt.txt",
+      "prompt_sha256": "91b39a716709b8f64b6bd429e2a28fe30671b328f0acd7874116097c8ef278d9",
+      "reference": "build/title-audition/backgrounds/reference/20/background.png",
+      "reference_sha256": "6b3e8d7eabb8739e5193918cfee3db669eb3d4df66356246bedf50d734df0210",
+      "scope": "Generated reconstruction only inside the existing 76x36 corner rectangle; all pixels outside it discarded."
+    },
+    {
+      "index": 21,
+      "asset": "assets/title-screen/background-21-clean-v2.png",
+      "asset_sha256": "cab2ac0cac51a573010f252529f90f2b019cae96215492183fa5e454a9056e19",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "prompt": "assets/title-screen/background-21-clean-v2-prompt.txt",
+      "prompt_sha256": "7049c2fa69be17459cc0d452ce5869d0bfa40a6068d31706b14ca0afdf3dd3f7",
+      "reference": "build/title-audition/backgrounds/reference/21/background.png",
+      "reference_sha256": "a151d2bb30de3f0a396341edb944478ae7616e746c1d11d0c4fdfee428db8999",
+      "scope": "Generated reconstruction only inside the existing 76x36 corner rectangle; all pixels outside it discarded."
+    }
+  ],
+  "revision_reason": "User requested removal of wooden backing on all five corner logos.",
+  "insertion_approval": {
+    "date": "2026-09-30",
+    "user_statement": "Okay let's insert this into the game please, these are all approved",
+    "frozen_rasters": "assets/title-screen/approved.json",
+    "evidence": "build/title-insertion/acceptance.json"
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "fused-loss.3ac",
+      "table_offset": 940,
+      "source": {
+        "offset": 405608,
+        "end_exclusive": 405643,
+        "raw_hex": "257382c98d8790ac82b382ea82c482a282e90d816d2573816e82aa8fc182a682bd2100",
+        "sha256": "e1de63b7ec0c7b5b3bc9ff66963a66d8bc2d1509986cf11a5af864037e4a2c8e",
+        "japanese": "%{unclassified-control:73}に合成されている\n［%{unclassified-control:73}］が消えた!"
+      },
+      "english": "{item}{fit}lost its fused [{ability}]!",
+      "fields": [
+        "item",
+        "ability"
+      ],
+      "status": "reviewed",
+      "review": "Preserve both the complete equipment name and the named synthesized ability disappearing. Native conditional newline keeps the whole message on one line when both fields fit; otherwise the item and complete predicate remain on separate lines."
+    }
+  ],
+  "abilities": [
+    {
+      "id": "fused-ability.0.0",
+      "kind": 0,
+      "bit": 0,
+      "source": {
+        "offset": 427152,
+        "end_exclusive": 427160,
+        "raw_hex": "bb82d182c882a200",
+        "sha256": "8f5d4c99789a22c9669470cd93ed9e950a5e3ec7babfe5eea6918aaf72eb0130",
+        "japanese": "ｻびない"
+      },
+      "english": "Rustproof",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.1",
+      "kind": 0,
+      "bit": 1,
+      "source": {
+        "offset": 427580,
+        "end_exclusive": 427593,
+        "raw_hex": "82dc82ed82e8825795fb8cfc00",
+        "sha256": "abd213900e52371bb418db4e1ed511d8261d2d6db8511b5f4d1eb0c0893f038c",
+        "japanese": "まわり８方向"
+      },
+      "english": "8-way attack",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.2",
+      "kind": 0,
+      "bit": 2,
+      "source": {
+        "offset": 427572,
+        "end_exclusive": 427577,
+        "raw_hex": "959588f300",
+        "sha256": "3035b5acf970917809a65bdcf147d7986bba79bfdd3b2dcbc7d4ea6279efabb4",
+        "japanese": "封印"
+      },
+      "english": "Sealing",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.3",
+      "kind": 0,
+      "bit": 3,
+      "source": {
+        "offset": 414856,
+        "end_exclusive": 414871,
+        "raw_hex": "8389834383748368838c8343839300",
+        "sha256": "551f164843cf6efb9ccc104c5ce85b751a77ad85d3470393b8045f7edd4426db",
+        "japanese": "ライフドレイン"
+      },
+      "english": "Life drain",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.4",
+      "kind": 0,
+      "bit": 4,
+      "source": {
+        "offset": 427560,
+        "end_exclusive": 427571,
+        "raw_hex": "82b182ed82ea82c882a200",
+        "sha256": "aa2a61f89087540b9f093b996f5ee9bfb2e89432ce00db9436e074b1e4923fbe",
+        "japanese": "こわれない"
+      },
+      "english": "Unbreakable",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.5",
+      "kind": 0,
+      "bit": 5,
+      "source": {
+        "offset": 427540,
+        "end_exclusive": 427557,
+        "raw_hex": "89ce898a8c6e835f8381815b835791e500",
+        "sha256": "353263ef4bbe124c05208e8acc67cfc7200a0948d7f15f0aebf361cb559c409a",
+        "japanese": "火炎系ダメージ大"
+      },
+      "english": "Strong vs. fire foes",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.6",
+      "kind": 0,
+      "bit": 6,
+      "source": {
+        "offset": 427520,
+        "end_exclusive": 427537,
+        "raw_hex": "94f28d738c6e835f8381815b835791e500",
+        "sha256": "3c7b790253bad35e1d75de4c3f5aa3f7e0ba66037fd3967056675e3a91f2dbce",
+        "japanese": "飛行系ダメージ大"
+      },
+      "english": "Strong vs. flying foes",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.7",
+      "kind": 0,
+      "bit": 7,
+      "source": {
+        "offset": 427500,
+        "end_exclusive": 427517,
+        "raw_hex": "88ab96828c6e835f8381815b835791e500",
+        "sha256": "a9d11df1476c920359e648d93cb9608f5bff66d4100e6bf90daf4c8fffb6340e",
+        "japanese": "悪魔系ダメージ大"
+      },
+      "english": "Strong vs. demons",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.8",
+      "kind": 0,
+      "bit": 8,
+      "source": {
+        "offset": 427480,
+        "end_exclusive": 427497,
+        "raw_hex": "906c8c608c6e835f8381815b835791e500",
+        "sha256": "6251f3736e24c8054af507df9bb6ad08fce430c6fbabae23b90f17b423622f2f",
+        "japanese": "人形系ダメージ大"
+      },
+      "english": "Strong vs. dolls",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.9",
+      "kind": 0,
+      "bit": 9,
+      "source": {
+        "offset": 427468,
+        "end_exclusive": 427479,
+        "raw_hex": "8d558c82485089f1959c00",
+        "sha256": "c3df2d593765d9d6323c6de5dfdb3d304730dbf2d661c6f0a65b6b1271b1151b",
+        "japanese": "攻撃HP回復"
+      },
+      "english": "Attacks restore HP",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.10",
+      "kind": 0,
+      "bit": 10,
+      "source": {
+        "offset": 427456,
+        "end_exclusive": 427465,
+        "raw_hex": "825189f18d558c8200",
+        "sha256": "5dae8b18e6adcd3333d42aa8bb7d45ecb03a5ca0d7905b459152a2a8f83aeb93",
+        "japanese": "２回攻撃"
+      },
+      "english": "Double attack",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.11",
+      "kind": 0,
+      "bit": 11,
+      "source": {
+        "offset": 427436,
+        "end_exclusive": 427455,
+        "raw_hex": "82a88be082f082d082eb82a282e282b782a200",
+        "sha256": "e9a1766f427702125cd9bda63a2f5ee10b67b554d1889307424e7f826354a235",
+        "japanese": "お金をひろいやすい"
+      },
+      "english": "Easier gold pickup",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.12",
+      "kind": 0,
+      "bit": 12,
+      "source": {
+        "offset": 427416,
+        "end_exclusive": 427433,
+        "raw_hex": "914f95fb825295fb8cfc82c98d558c8200",
+        "sha256": "c3207b50c3a555be59e0a121bd2bffee7deea9b6cd63bff6d1164a7c3cbe93af",
+        "japanese": "前方３方向に攻撃"
+      },
+      "english": "3-way forward attack",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.13",
+      "kind": 0,
+      "bit": 13,
+      "source": {
+        "offset": 427404,
+        "end_exclusive": 427415,
+        "raw_hex": "89ef905382cc88ea8c8200",
+        "sha256": "c1299ea94e1b41ed4bd60b38ce8eaca3290b044ac9bfa09474f2652411226526",
+        "japanese": "会心の一撃"
+      },
+      "english": "Critical hits",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.14",
+      "kind": 0,
+      "bit": 14,
+      "source": {
+        "offset": 427392,
+        "end_exclusive": 427403,
+        "raw_hex": "954b82b8939682bd82e900",
+        "sha256": "431e87ab1a410c24634baff9cd77d20201adb3f3acc43ecbd9cd5785f51295a6",
+        "japanese": "必ず当たる"
+      },
+      "english": "Always hits",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.15",
+      "kind": 0,
+      "bit": 15,
+      "source": {
+        "offset": 427380,
+        "end_exclusive": 427389,
+        "raw_hex": "82b182ed82ea82e900",
+        "sha256": "5c36b0f9c4214be204e268a2fbaaf168b9ea682db53affc69cc8b92f072e5cf3",
+        "japanese": "こわれる"
+      },
+      "english": "Breakable",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.16",
+      "kind": 0,
+      "bit": 16,
+      "source": {
+        "offset": 427364,
+        "end_exclusive": 427379,
+        "raw_hex": "95a88ebf8c6e82f082b182ed82b700",
+        "sha256": "438407c30c6aeb94433a0eba0d35649361d54d4a0cd7134f03b345f2249488fc",
+        "japanese": "物質系をこわす"
+      },
+      "english": "Breaks material foes",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.17",
+      "kind": 0,
+      "bit": 17,
+      "source": {
+        "offset": 427348,
+        "end_exclusive": 427361,
+        "raw_hex": "834a837882aa82d982ea82e900",
+        "sha256": "6300c20e0b31bf77c10f839efc825aa1cc2ba73fdc51ee1e688e8c1f2882bd13",
+        "japanese": "カベがほれる"
+      },
+      "english": "Digs through walls",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.18",
+      "kind": 0,
+      "bit": 18,
+      "source": {
+        "offset": 427328,
+        "end_exclusive": 427347,
+        "raw_hex": "835d839383728c6e835f8381815b835791e500",
+        "sha256": "4144e6e8abb1d89c53732495c9b5be15bf7d9ab4b82c017a016d4aae68cb662c",
+        "japanese": "ゾンビ系ダメージ大"
+      },
+      "english": "Strong vs. zombies",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.0.19",
+      "kind": 0,
+      "bit": 19,
+      "source": {
+        "offset": 427308,
+        "end_exclusive": 427327,
+        "raw_hex": "8368838983538393835f8381815b835791e500",
+        "sha256": "ac9a230cfa2ce8e19b6ac3f0a47bc317722659bd8d9ecec2824f53310f9be4db",
+        "japanese": "ドラゴンダメージ大"
+      },
+      "english": "Strong vs. dragons",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.0",
+      "kind": 1,
+      "bit": 0,
+      "source": {
+        "offset": 427152,
+        "end_exclusive": 427160,
+        "raw_hex": "bb82d182c882a200",
+        "sha256": "8f5d4c99789a22c9669470cd93ed9e950a5e3ec7babfe5eea6918aaf72eb0130",
+        "japanese": "ｻびない"
+      },
+      "english": "Rustproof",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.1",
+      "kind": 1,
+      "bit": 1,
+      "source": {
+        "offset": 427292,
+        "end_exclusive": 427305,
+        "raw_hex": "836e838982d682e894bc95aa00",
+        "sha256": "9c7908f6877cab0aa67244e5e01c8e0aee40cbf1a3f6802c1612286d775c1f9f",
+        "japanese": "ハラへり半分"
+      },
+      "english": "Half Hunger",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.2",
+      "kind": 1,
+      "bit": 2,
+      "source": {
+        "offset": 427272,
+        "end_exclusive": 427289,
+        "raw_hex": "82bf82a982e782aa89ba82aa82e782b800",
+        "sha256": "e25771ad464b3f5941917b31b35818fe1c493a4c743ac63a00d471ec47152bf1",
+        "japanese": "ちからが下がらず"
+      },
+      "english": "No strength loss",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.3",
+      "kind": 1,
+      "bit": 3,
+      "source": {
+        "offset": 427256,
+        "end_exclusive": 427271,
+        "raw_hex": "898a835f8381815b835794bc95aa00",
+        "sha256": "057ab4f447d95b0216a6328f18323dc34846fcf3e67b7a435d2fad7aec452b8a",
+        "japanese": "炎ダメージ半分"
+      },
+      "english": "Halves fire damage",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.4",
+      "kind": 1,
+      "bit": 4,
+      "source": {
+        "offset": 427240,
+        "end_exclusive": 427255,
+        "raw_hex": "8d558c8282cd82cb82a982a682b500",
+        "sha256": "0b5f6eaf8742ea2bf3759093f1035356ff892146430fd86e83cf17ba0e8ea0c0",
+        "japanese": "攻撃はねかえし"
+      },
+      "english": "Reflects attacks",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.5",
+      "kind": 1,
+      "bit": 5,
+      "source": {
+        "offset": 427224,
+        "end_exclusive": 427237,
+        "raw_hex": "836e838982d682e88251947b00",
+        "sha256": "b891ef5690b956cabf247a4972bfe5ef0f76b696d42a2378eabc927fd3ceb4e7",
+        "japanese": "ハラへり２倍"
+      },
+      "english": "Double Hunger",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.6",
+      "kind": 1,
+      "bit": 6,
+      "source": {
+        "offset": 427208,
+        "end_exclusive": 427223,
+        "raw_hex": "9682964082cd82cb82a982a682b500",
+        "sha256": "ff49274273288e7a8cf8ddf84b8f7c5bbbb8ee63523b0cd1286662d1a9f7d58c",
+        "japanese": "魔法はねかえし"
+      },
+      "english": "Reflects spells",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.7",
+      "kind": 1,
+      "bit": 7,
+      "source": {
+        "offset": 427192,
+        "end_exclusive": 427207,
+        "raw_hex": "8d558c8282e682af82e282b782a200",
+        "sha256": "6ab17a7224ad2956bb8a02ed37879d028ae51189c33b9059e29d3acf3b68ec33",
+        "japanese": "攻撃よけやすい"
+      },
+      "english": "Easier dodging",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.8",
+      "kind": 1,
+      "bit": 8,
+      "source": {
+        "offset": 427172,
+        "end_exclusive": 427189,
+        "raw_hex": "949a94ad835f8381815b835794bc95aa00",
+        "sha256": "bcef250d9fa2f22014784694801280612990de73a2f4dd74d1c629fda01ed6e2",
+        "japanese": "爆発ダメージ半分"
+      },
+      "english": "Halves blast damage",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.9",
+      "kind": 1,
+      "bit": 9,
+      "source": {
+        "offset": 426164,
+        "end_exclusive": 426175,
+        "raw_hex": "939082dc82ea82c882a200",
+        "sha256": "9f6de59c646968a087ac7139303db23132004c515711eed79a1d3812dcb353dc",
+        "japanese": "盗まれない"
+      },
+      "english": "Theftproof",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.10",
+      "kind": 1,
+      "bit": 10,
+      "source": {
+        "offset": 427572,
+        "end_exclusive": 427577,
+        "raw_hex": "959588f300",
+        "sha256": "3035b5acf970917809a65bdcf147d7986bba79bfdd3b2dcbc7d4ea6279efabb4",
+        "japanese": "封印"
+      },
+      "english": "Sealing",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.11",
+      "kind": 1,
+      "bit": 11,
+      "source": {
+        "offset": 427160,
+        "end_exclusive": 427169,
+        "raw_hex": "8b5a82d382a482b600",
+        "sha256": "ae8cd5e1373485e8b6bcac7e02af8a65afe587bf074ac8423a0b66be8a2ee773",
+        "japanese": "技ふうじ"
+      },
+      "english": "Seals skills",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.12",
+      "kind": 1,
+      "bit": 12,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.13",
+      "kind": 1,
+      "bit": 13,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.14",
+      "kind": 1,
+      "bit": 14,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.15",
+      "kind": 1,
+      "bit": 15,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.16",
+      "kind": 1,
+      "bit": 16,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.17",
+      "kind": 1,
+      "bit": 17,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.18",
+      "kind": 1,
+      "bit": 18,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    },
+    {
+      "id": "fused-ability.1.19",
+      "kind": 1,
+      "bit": 19,
+      "source": {
+        "offset": 426132,
+        "end_exclusive": 426135,
+        "raw_hex": "814800",
+        "sha256": "34e0e6526a275d391190a0eb76f8c83497b1c2e141ef9fcf72d4b427b66eb9d7",
+        "japanese": "？"
+      },
+      "english": "?",
+      "status": "reviewed",
+      "review": "Independent T2 comparison preserves direction count, target category, damage/consumption factor, protection or drawback. Half/Double Hunger denote consumption rate. Question-mark slots remain literal unknown labels, without declaring those bits unused. These are ability labels, not renamed items."
+    }
+  ],
+  "scope": "Private message/ability table consumers in110FC; original inventory search, bit removal, special-item adjustments and frame remain unchanged. Native verification pending."
+}

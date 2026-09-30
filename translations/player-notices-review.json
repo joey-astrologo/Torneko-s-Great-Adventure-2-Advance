@@ -1,0 +1,34 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the direct-ROM no-staff and HP/status recovery consumers. Original name control7E remains native; no new RAM buffer.",
+  "entries": [
+    {
+      "id": "player-notice.47c",
+      "table_offset": 1148,
+      "source": {
+        "offset": 404184,
+        "end_exclusive": 404204,
+        "raw_hex": "7e82cd8ff182f08e9d82c182c482a282c882a200",
+        "sha256": "9e923437999a717115ee36a1004bc255cb79d235d7988e65fe6086d21c2d6d3d",
+        "japanese": "{unclassified-control:7e}は杖を持っていない"
+      },
+      "english": "{player} has no staffs.",
+      "status": "reviewed",
+      "review": "Independent Japanese translation; native player-name control and complete recovery/refusal meaning preserved. Maximum seven-character player names and original state changes are checked."
+    },
+    {
+      "id": "player-notice.9c0",
+      "table_offset": 2496,
+      "source": {
+        "offset": 393708,
+        "end_exclusive": 393738,
+        "raw_hex": "7e82cd20485082c683588365815b835e835882aa89f1959c82b582bd2100",
+        "sha256": "1dc9b6d885a0cf0df8ebd4304141192fd3c4232c4ae344cce1d1e618a9a469dc",
+        "japanese": "{unclassified-control:7e}は HPとステータスが回復した!"
+      },
+      "english": "{player}{fit} recovered HP and status!",
+      "status": "reviewed",
+      "review": "Independent Japanese translation; native player-name control and complete recovery/refusal meaning preserved. Maximum seven-character player names and original state changes are checked."
+    }
+  ]
+}

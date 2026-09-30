@@ -28,6 +28,11 @@ They do not inflate the earlier extraction catalog's native-source count.
 
 ## Geometry and storage
 
+Item names, including custom names, must occupy **one line** (user clarification,
+2026-09-29). Additional item-name rows are not a layout solution. The known
+Japanese custom-name/price overlap remains an unresolved single-row layout issue;
+the user has not accepted that overlap or a legacy-name limitation.
+
 | Region | Original | Current T2 build | Text allowance |
 |---|---|---|---|
 | Main commands | 40 px wide | Original 40 px, x=8 | 34 px after cursor |
@@ -191,3 +196,74 @@ level label in224px. Password retains64/128/224px heading/code/notice windows;
 the notice usesfive four-row pages and216px line budget. The generated kana
 code is protocol data and remains unchanged. See the compiler ledgers for byte
 bounds and native galleries for final pixels and state coverage.
+# Dungeon priest services, September 26
+
+The private priest menu preserves the original 184-pixel window at x8/y24
+and four 16-pixel rows. Labels begin at relative x12; prices begin at x128.
+The 108-pixel label budget leaves an 8-pixel gap before the price column.
+Lift curse, Restore HP, Cure poison and Return to surface fit the selected
+T2 font. Native costs remain 1200, 300, 500 and 50 gold.
+
+`tools.verify_priest_services` checks all four original transactions and
+refusals, cursor wrap, cancellation and repeated reopening, plus final visible
+glyph pixels. The entry actor and branch conditions are controlled; ordinary
+priest encounters and surface transition completion are separately unverified.
+`config/font-audition.json` includes this measured region for both fonts.
+
+## Spell selection and action menus (2,854 candidate)
+
+Original168px list windows retain156px for the complete row, including the
+marker. The compiler conservatively reserves14px for the widest marker, leaving
+142px for name and target. Native output remains64bytes. All50 eligible spell
+names pass available/disabled prototype cases; the61 definitions remain distinct
+from eligibility. Four pages and unlearned rows retain original navigation.
+
+The40px action window has a6px inset and34px label region. Cast, Set, Unset and
+Info fit; Remove exceeded this particular region. Original8px outer-border gaps
+are preserved. Native tests check colours, cursor wrap, Info, actual shortcut
+Set/Unset, cancellation, parent restoration and repeated reopening. Spell Info
+has216px lines in the original224px six-row window: one header row and up to
+four description rows. Its256-byte output preserves native HP costs/targets.
+
+Learned spells, vocation and HP are controlled for these cases. Natural spell
+acquisition and casting outcomes remain separate. Evidence for the current ROM
+is under `build/english/{spell-menu,spell-info}-validation/` when matching reports
+pass; earlier isolated galleries remain under their prototype folders.
+
+
+## Warrior skill menus (2026-09-26 candidate)
+
+The original geometry remains. The Weapon/Shield selector has42px after its
+6px cursor reserve; Set/Unset/Use/Info actions have34px. Selection rows have
+156px total including14px learned/kind markers, leaving142px for a skill name.
+All100 eligible names retain their full reviewed display form. Equipment rows
+start12px into a160px text region, leaving148px; headers have156px. Skill costs
+remain native values and their heading explicitly identifies Hunger.
+
+The19 new font-audition contexts include all names, enabled/disabled actions,
+equipment costs/empty states, category selector and dynamic confirmation. Both
+fonts fit; T2 remains selected. Native checks cover learned/unlearned lists,
+8/5-page wrapping, Info, cancellation/reopening, seven equipment preview states,
+and an actual Set confirmation/assignment. Retained action IDs1/2/4 are
+controlled render/cancel probes only: the ordinary warrior action builder
+emits Set/disabled Set and Info, or Info alone for assigned skills. Skill
+acquisition and combat use remain separate from menu validation.
+
+## Reference lists, save previews and separate town root
+
+At3,291, reference categories retain64px/58px labels after6px cursor space;
+scroll/skill/spell reference rows retain168px/162px text and64-byte output.
+The40px page indicator keeps the8px outer-border gap. All177 names, locked
+rows, page/cursor wrapping, cancellation and repeated reopening pass nine
+controlled native cases. Natural script invocation remains separate.
+
+The separate2068C town root uses Items/Option. Width increases32 to40px
+(34px labels after6px cursor reserve); x8/y24 and two rows remain. It closes
+before Items or Option opens. Four native cases verify cancellation, both item
+child states, Option and repeated reopening; screenshots and guards pass.
+
+Save preview keeps its original224px, three-row panel. Its third row reserves
+20px for the existing castle sprite and ends at216px. All54 controlled
+selector/name/stat profiles and two actual cold-load Continue cases pass.
+See `tools.saved_text_budgets` for font-specific audits and the native galleries
+under `build/english/`. Graphics are unchanged.

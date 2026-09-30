@@ -1,0 +1,104 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Seven private Option/Controls bindings for warrior, mage and town modes; merchant help is already owned by dungeon-ui. Fixed eight-row window, no new formatter or RAM allocation.",
+  "entries": [
+    {
+      "id": "ui.141470",
+      "source": 398328,
+      "source_hex": "81458b5a82f08f6f82b782cc82cd835a838c834e83672b41837b835e839300",
+      "source_sha256": "f9a1a83f88a5ee6f412010be8c04036abbb11fd5add358f44eb541641c2068b1",
+      "japanese": "・技を出すのはセレクト+Aボタン",
+      "english": "Press SELECT + A to use a skill.",
+      "kind": "plain",
+      "pointers": [
+        1315952
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.141590",
+      "source": 395960,
+      "source_hex": "81458ef495b682f08fa582a682e982cc82cd835a838c834e83672b41837b835e839300",
+      "source_sha256": "434fe4a8e5b3e7cea040b6917161be4902bba85a844c9eecf81f47ec5cd81909",
+      "japanese": "・呪文を唱えるのはセレクト+Aボタン",
+      "english": "Press SELECT + A to cast a spell.",
+      "kind": "plain",
+      "pointers": [
+        1316240
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.141704",
+      "source": 393860,
+      "source_hex": "8145924e82a982c6986282b582bd82e88c8892e882cd41837b835e839300",
+      "source_sha256": "5ed296484069bc84512bafca3c7c82bba4d689722debefa554e45eabc8449e5a",
+      "japanese": "・誰かと話したり決定はAボタン",
+      "english": "Press A to talk or confirm.",
+      "kind": "plain",
+      "pointers": [
+        1316612
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.141708",
+      "source": 393832,
+      "source_hex": "81458352837d839383688381836a8385815b82cd42837b835e839300",
+      "source_sha256": "728603221b5ee5ce55dde8559013523262f5455830500084134e2cc5f0c76b23",
+      "japanese": "・コマンドメニューはBボタン",
+      "english": "Press B to open the command menu.",
+      "kind": "plain",
+      "pointers": [
+        1316616
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.14170c",
+      "source": 398388,
+      "source_hex": "81458d8291ac88da93ae82cd42837b835e83932b8f5c8e9a837b835e839300",
+      "source_sha256": "146ec94465f5d4cccb30afd1eb276f2b2e9aece4a8cee0432d1b51b64da4434e",
+      "japanese": "・高速移動はBボタン+十字ボタン",
+      "english": "Hold B + a direction to run.",
+      "kind": "plain",
+      "pointers": [
+        1316620
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.141710",
+      "source": 393808,
+      "source_hex": "81458345834383938368834582f095c282b682bd82e800",
+      "source_sha256": "8c01befaff6c12b43644ba1af3c23de581de60bcd6a1c1ae5ff6f42cf11b9717",
+      "japanese": "・ウインドウを閉じたり",
+      "english": "To close a window or cancel,",
+      "kind": "plain",
+      "pointers": [
+        1316624
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    },
+    {
+      "id": "ui.141714",
+      "source": 393780,
+      "source_hex": "8140834c83838393835a838b82b782e982cc82cd42837b835e839300",
+      "source_sha256": "154d46e77c346a890711de9cadd534841571bb3a21d22b5473ea4820f71222e3",
+      "japanese": "　キャンセルするのはBボタン",
+      "english": "press B.",
+      "kind": "plain",
+      "pointers": [
+        1316628
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese-source prose review. Retain the button combination and action; the final two lines form one sentence in their original order. Each row is a single native help line within216px; no extra rows or geometry changes."
+    }
+  ]
+}

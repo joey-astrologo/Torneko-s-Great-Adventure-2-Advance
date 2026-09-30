@@ -3,8 +3,12 @@ set -euo pipefail
 cd "$(dirname "$0")"
 .venv/bin/python -m tools.audit_terminology
 .venv/bin/python -m tools.build_english
+.venv/bin/python -m tools.verify_title_art
+.venv/bin/python -m tools.accept_title_art
 .venv/bin/python -m tools.verify_name_entry
 .venv/bin/python -m tools.verify_opening_dialogue
+.venv/bin/python -m tools.verify_arrival_art
+.venv/bin/python -m tools.accept_arrival_art
 .venv/bin/python -m tools.verify_first_dungeon
 .venv/bin/python -m tools.verify_castle_arrival
 .venv/bin/python -m tools.verify_castle_conversations
@@ -40,12 +44,81 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_player_condition_prototype --cumulative
 .venv/bin/python -m tools.verify_inventory_action_prototype --cumulative
 .venv/bin/python -m tools.verify_pickup_prototype --cumulative
+.venv/bin/python -m tools.verify_walking_pickup
+.venv/bin/python -m tools.verify_projectiles --source build/english
+.venv/bin/python -m tools.verify_monster_announcements --source build/english
+.venv/bin/python -m tools.verify_priest --source build/english
+.venv/bin/python -m tools.verify_priest_services --source build/english
+.venv/bin/python -m tools.verify_companion --source build/english
+.venv/bin/python -m tools.verify_recovery --source build/english
+.venv/bin/python -m tools.verify_options_help --source build/english
+.venv/bin/python -m tools.verify_soldiers --source build/english
+.venv/bin/python -m tools.verify_spell_info --source build/english
+.venv/bin/python -m tools.verify_spell_menu --source build/english
+.venv/bin/python -m tools.verify_spell_item --source build/english
+.venv/bin/python -m tools.verify_scroll_item --source build/english
+.venv/bin/python -m tools.verify_spell_messages --source build/english
+.venv/bin/python -m tools.verify_item_theft --source build/english
+.venv/bin/python -m tools.verify_skill_info --source build/english
+.venv/bin/python -m tools.verify_skill_menu --source build/english
+.venv/bin/python -m tools.verify_skill_equipment --source build/english
+.venv/bin/python -m tools.verify_skill_set --source build/english
+.venv/bin/python -m tools.verify_skill_actions --source build/english
+.venv/bin/python -m tools.verify_dungeon_leaves --source build/english
+.venv/bin/python -m tools.verify_floor_buffs --source build/english
+.venv/bin/python -m tools.verify_fullness --source build/english
+.venv/bin/python -m tools.verify_status_effects --source build/english
+.venv/bin/python -m tools.verify_discovery_messages --source build/english
+.venv/bin/python -m tools.verify_monster_interactions --source build/english
+.venv/bin/python -m tools.verify_staff_use --source build/english
+.venv/bin/python -m tools.verify_writing --source build/english
+.venv/bin/python -m tools.verify_item_loss --source build/english
+.venv/bin/python -m tools.verify_player_notices --source build/english
 .venv/bin/python -m tools.verify_swap_prototype --cumulative
 .venv/bin/python -m tools.verify_container_prototype --cumulative
 .venv/bin/python -m tools.verify_town_actions --cumulative
 .venv/bin/python -m tools.verify_additional_actions --cumulative
 .venv/bin/python -m tools.verify_child_actions --cumulative
 .venv/bin/python -m tools.verify_player_messages --cumulative
+.venv/bin/python -m tools.verify_strengthening
+.venv/bin/python -m tools.verify_skill_shouts
+.venv/bin/python -m tools.verify_skill_learning
+.venv/bin/python -m tools.verify_battle_results
+.venv/bin/python -m tools.verify_dungeon_shop --source build/english
+.venv/bin/python -m tools.verify_save_notices --source build/english
+.venv/bin/python -m tools.verify_reference_lists --source build/english
+.venv/bin/python -m tools.verify_priest_warning --source build/english
+.venv/bin/python -m tools.verify_save_preview --source build/english
+.venv/bin/python -m tools.verify_town_root --source build/english
+.venv/bin/python -m tools.verify_writing_lookup --source build/english
+.venv/bin/python -m tools.verify_writing_editor --source build/english
+.venv/bin/python -m tools.verify_fused_loss --source build/english
+.venv/bin/python -m tools.verify_cannot_talk --source build/english
+.venv/bin/python -m tools.verify_step_stairs --source build/english
+.venv/bin/python -m tools.verify_pot_view --source build/english
+.venv/bin/python -m tools.verify_book_travel --source build/english
+.venv/bin/python -m tools.verify_ability_info --source build/english
+.venv/bin/python -m tools.verify_dungeon_story --source build/english
+.venv/bin/python -m tools.verify_empty_read --source build/english
+.venv/bin/python -m tools.verify_travel_gate --source build/english
+.venv/bin/python -m tools.verify_ending --source build/english
+.venv/bin/python -m tools.verify_dungeon_travel --source build/english
+.venv/bin/python -m tools.verify_tutorial_help --source build/english
+.venv/bin/python -m tools.verify_tutorial_menus --source build/english
+.venv/bin/python -m tools.verify_tutorial_banks --source build/english
+.venv/bin/python -m tools.verify_tutorial_alternates --source build/english
+.venv/bin/python -m tools.verify_link_messages --source build/english
+.venv/bin/python -m tools.verify_link_picker --source build/english
+.venv/bin/python -m tools.verify_ending_notice --source build/english
+.venv/bin/python -m tools.verify_pickup_help --source build/english
+.venv/bin/python -m tools.verify_carpenter --source build/english
+.venv/bin/python -m tools.verify_fire_scene --source build/english
+.venv/bin/python -m tools.verify_travel_confirm --source build/english
+.venv/bin/python -m tools.verify_town_routes --source build/english
+.venv/bin/python -m tools.verify_form_refusal --source build/english
+.venv/bin/python -m tools.verify_ground_remove --source build/english
+.venv/bin/python -m tools.verify_monster_identity --source build/english
+.venv/bin/python -m tools.verify_native_tutorial --source build/english
 .venv/bin/python -m tools.verify_blacksmith --cumulative
 .venv/bin/python -m tools.verify_blacksmith_transactions --cumulative
 .venv/bin/python -m tools.verify_gaibara --cumulative
@@ -115,6 +188,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_storage_services
 .venv/bin/python -m tools.verify_bank_persistence
 .venv/bin/python -m tools.verify_numeric_font
+.venv/bin/python -m tools.verify_compound_numbers
 .venv/bin/python -m tools.review_typography
 .venv/bin/python -m tools.review_services
 .venv/bin/python -m tools.review_combat
@@ -132,6 +206,10 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.review_action_labels --child --cumulative
 .venv/bin/python -m tools.review_town_actions --cumulative
 .venv/bin/python -m tools.review_player_messages --cumulative
+.venv/bin/python -m tools.review_text_panels --source build/english --folder strengthening-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-shouts-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-learning-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder battle-results-validation
 .venv/bin/python -m tools.review_blacksmith --cumulative
 .venv/bin/python -m tools.review_gaibara --cumulative
 .venv/bin/python -m tools.review_remi --cumulative
@@ -160,6 +238,68 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.review_text_panels --source build/english --folder history-menu-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder records-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder password-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder walking-pickup-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder projectile-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder monster-announcement-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder priest-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder priest-service-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder companion-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder recovery-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder options-help-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder soldier-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder spell-info-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder spell-menu-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder spell-item-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder scroll-item-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder spell-messages-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder item-theft-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-info-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-menu-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-equipment-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-set-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder skill-action-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder dungeon-leaves-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder floor-buff-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder fullness-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder status-effect-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder discovery-messages-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder monster-interactions-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder staff-use-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder writing-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder item-loss-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder player-notices-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder dungeon-shop-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder save-notices-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder reference-lists-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder priest-warning-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder save-preview-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder town-root-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder writing-editor-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder fused-loss-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder cannot-talk-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder step-stairs-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder pot-view-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder book-travel-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder ability-info-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder dungeon-story-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder empty-read-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder travel-gate-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder ending-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder dungeon-travel-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder tutorial-help-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder tutorial-all-menu-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder tutorial-bank-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder tutorial-alternate-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder link-message-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder link-picker-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder ending-notice-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder pickup-help-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder carpenter-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder fire-scene-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder travel-confirm-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder town-routes-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder form-refusal-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder ground-remove-validation
 .venv/bin/python -m tools.review_menus
 .venv/bin/python -m tools.audit_service_budgets
 .venv/bin/python -m tools.sync_text_budgets

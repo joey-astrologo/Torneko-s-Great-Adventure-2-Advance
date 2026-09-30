@@ -8,9 +8,23 @@ Follow `docs/LOCALIZATION_PLAN.md` for the agreed translation source,
 terminology/prose rules, coverage reporting and localization work sequence.
 The user authorizes autonomous work through all text localization; no per-batch
 approval is required. Interrupt only for necessary user insight/investigation.
-Defer graphics editing/auditions until text is complete. Prefer one-line combat
+The user reopened ending-credit discovery and credits/arrival-card auditions on
+2026-09-29; these may proceed now. On 2026-09-30 the user also requested a title-screen
+audition; follow `docs/TITLE_AUDITION.md`. The user subsequently approved and
+requested insertion of the main title and all five corner logos. These are now
+inserted; follow `docs/TITLE_INSERTION.md` and the hash-checked frozen assets in
+`assets/title-screen/approved.json`. The five corner logos must use floating lettering,
+with no wooden backing; the user rejected the plaque variant. Follow the
+transparent-logo revision in `docs/TITLE_AUDITION.md`. Prefer one-line combat
 messages when full meaning and maximum substitutions fit verified budgets;
 never force fit by omitting meaning or compressing the approved font.
+On 2026-09-30 the user approved preserving the original English GBA credits
+unchanged and requested Shiren SNES source lettering for arrival auditions.
+See `docs/SHIREN_ARRIVAL_FONT.md`; recovered glyphs and derived/missing characters
+must remain distinguishable. The user subsequently approved insertion of these
+13 cards and Level, including a wider Ordeal Mansion. Follow
+`docs/ARRIVAL_INSERTION.md`, `config/arrival-art.json` and the shared allocator;
+native acceptance covers all selectors, with late-game natural routes still open.
 
 Use `config/rom.json` as the Japanese base identity. Preserve the supplied ROM
 and save. Emulation uses `tools.emulator.Session` or a separate desktop copy
@@ -49,7 +63,9 @@ The first action-label table is copied for its owned consumer; never translate
 the shared original table without auditing its other consumers. Current early
 action/main buffers are 256/64 bytes, with checked stack-frame changes. Item
 rows have 162 usable pixels including markers/counts/suffixes in the original
-168-pixel parent window. Preserve the 8-pixel gaps between outer menu borders;
+168-pixel parent window. Item names, including custom names, must stay on one
+line; do not solve width problems with additional item-name rows. Preserve the
+8-pixel gaps between outer menu borders;
 text fit and restoration alone do not establish visual acceptance. Keep native
 routes distinct from controlled item/mode probes and explicit exclusions.
 

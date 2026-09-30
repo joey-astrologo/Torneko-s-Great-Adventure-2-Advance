@@ -1,0 +1,33 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Two owned menu sources in17854/1787C; original112px two-column Step/Stay menu and96px two-row Descend/Stay menu. Commands, indices, widths and input loop unchanged.",
+  "entries": [
+    {
+      "id": "step-stairs.step",
+      "source": {
+        "offset": 411804,
+        "end_exclusive": 411819,
+        "raw_hex": "93a582de043882bb82cc82dc82dc00",
+        "sha256": "4533f4e3fabf3d001ba721d6b3701cf587820ed6a2a43cee5efbdb4a6739831d",
+        "japanese": "踏む{legacy-x:0438}そのまま"
+      },
+      "table_offset": 24,
+      "english": "Step / Stay",
+      "status": "reviewed",
+      "review": "Step deliberately triggers the current trap; Stay leaves it alone. Original horizontal cursor positions retained."
+    },
+    {
+      "id": "step-stairs.stairs",
+      "source": {
+        "offset": 439696,
+        "end_exclusive": 439712,
+        "raw_hex": "8d7e82e882e90d82bb82cc82dc82dc00",
+        "sha256": "287dd8e4a3945f6f03ca1dd65f8ed5cc34ec6c17509463051a3886ab17eb9806",
+        "japanese": "降りる\nそのまま"
+      },
+      "english": "Descend\nStay",
+      "status": "reviewed",
+      "review": "Matches the already approved three-option stairs labels; this native variant offers no suspend action."
+    }
+  ]
+}

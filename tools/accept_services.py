@@ -9,7 +9,7 @@ def run():
  receipt=accept_menus();build=json.loads((ROOT/'build/english/build.json').read_text());counts={}
  from tools.verify_items import required_case_names
  item_cases=required_case_names(build)
- for name,count in [('dungeon-ui',6),('bank',12),('bank-rewards',21),('bakery',13),('player-status',9),('player-effect',39),('item-use',60),('item-alias',166),('player-condition',45),('inventory-action',44),('pickup',36),('swap',20),('container',54),('town-action',10),('additional-action',12),('child-action',12),('player-message',216),('blacksmith',57),('items',len(item_cases)),('numeric',62),('storage',3),('storage-services',9),('bank-persistence',3)]:
+ for name,count in [('dungeon-ui',6),('bank',12),('bank-rewards',21),('bakery',13),('player-status',9),('player-effect',39),('item-use',60),('item-alias',166),('player-condition',45),('inventory-action',44),('pickup',36),('swap',20),('container',54),('town-action',10),('additional-action',12),('child-action',12),('player-message',6*(len(build['player_messages']['entries'])+3)),('blacksmith',57),('items',len(item_cases)),('numeric',72),('storage',3),('storage-services',9),('bank-persistence',3)]:
   path=ROOT/f'build/english/{name}-validation/report.json';report=json.loads(path.read_text())
   require(report['passed'] and report['rom_sha256']==build['output_sha256'],'Stale service report: '+name)
   rows=report.get('cases',report.get('probes'));require(len(rows)==count,'Missing cases: '+name);counts[name]=count
@@ -38,7 +38,7 @@ def run():
    require({r['id'] for r in build['town_actions']['entries']}<={c['id'] for r in rows for c in r['reads']},'Town item messages missing')
    require({r['english'] for r in build['town_actions']['labels']}=={label for r in rows for f in r['formats'] for label in f['labels']},'Town action labels missing')
   if name=='player-message':
-   require(len({r['case'] for r in rows})==216,'Duplicate player-wrapper cases')
+   require(len({r['case'] for r in rows})==6*(len(build['player_messages']['entries'])+3),'Duplicate player-wrapper cases')
    require({r['id'] for r in rows if r['mapped']}=={r['id'] for r in build['player_messages']['entries']},'Player-wrapper sources missing')
    require({r['id'] for r in rows if not r['mapped']}=={'fallback-english','fallback-japanese','fallback-ram'},'Player-wrapper fallbacks missing')
    from tools.dialogue_checks import player_layout_cases
@@ -65,9 +65,19 @@ def run():
   require(report['passed'] and report['rom_sha256']==build['output_sha256'] and len(report['cases'])==expected,'Stale combat/name report: '+relative)
   receipt['artifacts'][relative]=digest(path.read_bytes())
   counts[relative]=expected
+ compound_path=ROOT/'build/english/compound-numbers-validation/report.json'
+ compound=json.loads(compound_path.read_text())
+ require(compound['passed'] and compound['rom_sha256']==build['output_sha256'] and compound['aliases']==46 and len(compound['probes'])==72 and {r['case'] for r in compound['cases']}=={'ordinals','skill-counts'},'Compound number evidence missing/stale')
+ require(all(r['visible_pixels_checked'] and r['reads'] for r in compound['cases']),'Compound numeral pixels missing')
+ receipt['artifacts'][str(compound_path.relative_to(ROOT))]=digest(compound_path.read_bytes())
+ for row in compound['cases']:
+  for name,sha in row['images'].items():
+   p=compound_path.parent/row['case']/name
+   require(digest(p.read_bytes())==sha,'Stale compound numeral image');receipt['artifacts'][str(p.relative_to(ROOT))]=sha
+ counts['compound-numbers']=2
  receipt.update(service_native_cases=counts,reviewed_ui_resources=len(build['ui']['entries']),
                 reviewed_bank_resources=len(build['dialogue']['town_resource']['service_entries']),
-                reviewed_item_resources=len(build['items']['entries']),compact_numeric_aliases=38,
+                reviewed_item_resources=len(build['items']['entries']),compact_numeric_aliases=46,
                 reviewed_actor_names=len(build['monsters']['entries']),reviewed_combat_formats=len(build['combat']['entries']),
                 english_item_spacing=0,english_word_space_px=3,storage_subset_complete=True, bakery_complete=False,bakery_consumer_resources=len(build['dialogue']['town_resource']['bakery_entries']),
                 reviewed_player_status_resources=len(build['player_status']['entries']),
@@ -114,10 +124,54 @@ def run():
  validate_monster_effects(build,receipt,counts)
  from tools.accept_queue_notices import validate as validate_queue_notices
  validate_queue_notices(build,receipt,counts)
+ from tools.accept_dungeon_text import validate as validate_dungeon_text
+ validate_dungeon_text(build,receipt,counts)
+ from tools.accept_saved_text import validate as validate_saved_text
+ validate_saved_text(build,receipt,counts)
+ from tools.accept_input_text import validate as validate_input_text
+ validate_input_text(build,receipt,counts)
+ from tools.accept_book_travel import validate as validate_book_travel
+ validate_book_travel(build,receipt,counts)
+ from tools.accept_ability_info import validate as validate_ability_info
+ validate_ability_info(build,receipt,counts)
+ from tools.accept_dungeon_story import validate as validate_dungeon_story
+ validate_dungeon_story(build,receipt,counts)
+ from tools.accept_empty_read import validate as validate_empty_read
+ validate_empty_read(build,receipt,counts)
+ from tools.accept_travel_gate import validate as validate_travel_gate
+ validate_travel_gate(build,receipt,counts)
+ from tools.accept_ending import validate as validate_ending_text
+ validate_ending_text(build,receipt,counts)
+ from tools.accept_dungeon_travel import validate as validate_dungeon_travel
+ validate_dungeon_travel(build,receipt,counts)
+ from tools.accept_tutorial_help import validate as validate_tutorial_help
+ validate_tutorial_help(build,receipt,counts)
+ from tools.accept_link_text import validate as validate_link_text
+ validate_link_text(build,receipt,counts)
+ from tools.accept_ending_notice import validate as validate_ending_notice
+ validate_ending_notice(build,receipt,counts)
+ from tools.accept_pickup_help import validate as validate_pickup_help
+ validate_pickup_help(build,receipt,counts)
+ from tools.accept_carpenter import validate as validate_carpenter
+ validate_carpenter(build,receipt,counts)
+ from tools.accept_fire_scene import validate as validate_fire_scene
+ validate_fire_scene(build,receipt,counts)
+ from tools.accept_travel_confirm import validate as validate_travel_confirm
+ validate_travel_confirm(build,receipt,counts)
+ from tools.accept_town_routes import validate as validate_town_routes
+ validate_town_routes(build,receipt,counts)
+ from tools.accept_form_refusal import validate as validate_form_refusal
+ validate_form_refusal(build,receipt,counts)
+ from tools.accept_ground_remove import validate as validate_ground_remove
+ validate_ground_remove(build,receipt,counts)
+ from tools.accept_monster_identity import validate as validate_monster_identity
+ validate_monster_identity(build,receipt,counts)
+ from tools.accept_native_tutorial import validate as validate_native_tutorial
+ validate_native_tutorial(build,receipt,counts)
  storage=json.loads((ROOT/'build/english/storage-validation/report.json').read_text());native=json.loads((ROOT/'build/services/storage-native/report.json').read_text())
  require(storage['persistence']['passed'] and native['passed'] and storage['source_save_sha256']==native['save_sha256'],'Storage save provenance/persistence missing')
  require(native['recipe_sha256']==digest((ROOT/'config/routes/storage-japanese.json').read_bytes()),'Storage recipe stale')
- receipt['scope']='Cumulative early-game text and typography build. Case counts are recorded by family above. Ordinary storage sales/empty-inventory, controlled capacity/filled-pot branches, native storage persistence and native bank deposit/withdrawal persistence pass. Sacred-flame dialogue rendering is checked separately with controlled reader arguments; ordinary English quest completion remains unaccepted. All 141 dungeon actor-name pointers and 322 controlled combat display cases pass (173 core and 149 misses); ordinary progression is limited to the recorded routes. All 206 reviewed item names pass nine row states plus natural and maximum-player-name Info cases. Twenty-one controlled bank reward cases check the explicitly enabled reward branch, gifts and full-inventory refusal. Thirteen controlled bakery calls validate all three purchases, cancellation and capacity/gold limits; nine player-status cases validate single-line hallucination, blindness and refusal. All 154 private appearance labels pass 166 controlled native row/state cases. Thirteen additional player-effect reads pass 39 one-line cases; five item-use formats pass 60 conditional join/fallback and colour cases. Story coverage includes 874 ordinary prose sources, 33 owned formatted/command sources, ten well labels and all seven native bank/getter paths, with ordinary later-story progression separately scoped. Fifteen additional story A-jingle streams pass45 native wrapper cases. Nine player conditions pass45 cases/48 one-line messages; nine equipment/removal/drop sources pass44 cases/48 messages; six pickup sources pass36 cases including native gold/arrow/inventory outcomes and the separately controlled automatic-walk wrapper. Five Swap formats pass20 native exchange/refusal cases;15 pot resources pass54 transfer/refusal cases with conserved identities and complete floor prefixes. All39 labels in the owned action copy pass12 grouped enabled/disabled cases in each of two producers. The separate contained-item producer has checked256/64-byte output/scratch regions and original window geometry. Six town inventory resources pass10 controlled invocation cases for View/Trash/Info, empty inventory, cancellation and filled-pot discard warnings. Thirty-three player-name-wrapper messages pass216 mapping/name/queue-flag/fallback cases in the original256-byte output. The private blacksmith table adds43 sources with57 rendering/formatter cases and13 native exchange/tip/counter-cap cases from controlled inventory and service entry; its largest formatted result is464 bytes within512. Ordinary blacksmith unlocking and unowned sources1/2/68 remain separate. Original192/256-byte item-message buffers and64-byte item fields are preserved. Ordinary bakery unlocking and saved purchases, randomized appearance discovery, custom names, inscriptions, special item records, remaining combat, later text consumers and modes remain open.'
+ receipt['scope']='Cumulative early-game text and typography build. Case counts are recorded by family above. Ordinary storage sales/empty-inventory, controlled capacity/filled-pot branches, native storage persistence and native bank deposit/withdrawal persistence pass. Sacred-flame dialogue rendering is checked separately with controlled reader arguments; ordinary English quest completion remains unaccepted. All 141 dungeon actor-name pointers and 322 controlled combat display cases pass (173 core and 149 misses); ordinary progression is limited to the recorded routes. All 221 reviewed item names pass the required row states plus natural and maximum-player-name Info cases. Nine states are checked except for the invalid item153 unidentified alias999. Special item153 dispatches to the separately verified spell Info family; scrolls124/151 expose Write instead of Info in this action route. Twenty-one controlled bank reward cases check the explicitly enabled reward branch, gifts and full-inventory refusal. Thirteen controlled bakery calls validate all three purchases, cancellation and capacity/gold limits; nine player-status cases validate single-line hallucination, blindness and refusal. All 154 private appearance labels pass 166 controlled native row/state cases. Thirteen additional player-effect reads pass 39 one-line cases; five item-use formats pass 60 conditional join/fallback and colour cases. Story coverage includes 874 ordinary prose sources, 33 owned formatted/command sources, ten well labels and all seven native bank/getter paths, with ordinary later-story progression separately scoped. Fifteen additional story A-jingle streams pass45 native wrapper cases. Nine player conditions pass45 cases/48 one-line messages; nine equipment/removal/drop sources pass44 cases/48 messages; six pickup sources pass36 cases including native gold/arrow/inventory outcomes and the separately controlled automatic-walk wrapper. Five Swap formats pass20 native exchange/refusal cases;15 pot resources pass54 transfer/refusal cases with conserved identities and complete floor prefixes. All39 labels in the owned action copy pass12 grouped enabled/disabled cases in each of two producers. The separate contained-item producer has checked256/64-byte output/scratch regions and original window geometry. Six town inventory resources pass10 controlled invocation cases for View/Trash/Info, empty inventory, cancellation and filled-pot discard warnings. Forty player-name-wrapper messages pass258 mapping/name/queue-flag/fallback cases in the original256-byte output. The private blacksmith table adds43 sources with57 rendering/formatter cases and13 native exchange/tip/counter-cap cases from controlled inventory and service entry; its largest formatted result is464 bytes within512. Ordinary blacksmith unlocking and unowned sources1/2/68 remain separate. Original192/256-byte item-message buffers and64-byte item fields are preserved. Ordinary bakery unlocking and saved purchases, randomized appearance discovery, custom names, inscriptions, ordinary acquisition of special/reserved item records, remaining combat, later text consumers and modes remain open.'
  receipt['scope']+=' Private synthesis/selector and Remi consumers add105 resources with72 and170 native cases respectively; see town_services_scope for the explicit progression/save exclusions.'
  receipt['scope']+=' Eighteen village-name/well-picker/hunger/status-trap bindings pass65 additional native cases; see additional_text_scope for controlled setup and progression exclusions.'
  receipt['scope']+=' Thirty-seven further trap/rust bindings pass71 native cases; see trap_text_scope for actual mechanics, field boundaries and explicit controlled-setup exclusions.'

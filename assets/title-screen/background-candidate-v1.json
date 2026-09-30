@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "corner-logo-v1",
+  "status": "unapproved-background-proposal",
+  "parent_title_sha256": "eacc388c7edec3af1a39e03d042734d7a8fae842b63b1d88ce069c6e87f257fe",
+  "asset": "assets/title-screen/corner-logo-v1.png",
+  "asset_sha256": "1f7914aa6113f90df0fdebe31af9b4d83b9df3f46ec7dda43ff855c8a6cf67c7",
+  "dimensions": [
+    1821,
+    864
+  ],
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt": "assets/title-screen/corner-logo-v1-prompt.txt",
+    "prompt_sha256": "d180eef918a53003c7e28a3ed95ad6dce5812e153029ac999f0daac6b592df87",
+    "references": [
+      {
+        "path": "assets/title-screen/wood-gold-v1.png",
+        "sha256": "eacc388c7edec3af1a39e03d042734d7a8fae842b63b1d88ce069c6e87f257fe",
+        "role": "Approved main-title styling"
+      },
+      {
+        "path": "build/title-audition/reference/menu-13-stored-palette.png",
+        "sha256": "d401185a96a850a2457fa1c8514e0aa9f3d9e47b27e86ab4ce9286dd3478df32",
+        "role": "Original corner-logo scale"
+      }
+    ]
+  },
+  "placement": {
+    "size": [
+      76,
+      36
+    ],
+    "x": 164,
+    "family_y": 124,
+    "other_y": 0
+  },
+  "scope": "One shared opaque wood plaque, reduced and composited over original corner lettering. Every pixel outside the placement rectangle is retained. No background repainting or ROM insertion."
+}

@@ -1,0 +1,262 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Reviewed remaining dungeon effect formats; source language review precedes owned consumer/stack validation. Other callers and natural acquisition remain separately tracked.",
+  "entries": [
+    {
+      "id": "dungeon-leaf.104",
+      "table_offset": 260,
+      "source": {
+        "offset": 409740,
+        "end_exclusive": 409757,
+        "raw_hex": "257382cd485082aa89f1959c82b582bd00",
+        "sha256": "139cf7b8626229a138d2469154297715425a5dee1f3981770c72f429bcb39f08",
+        "japanese": "%{unclassified-control:73}はHPが回復した"
+      },
+      "english": "{actor}{fit} recovers HP.",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.140",
+      "table_offset": 320,
+      "source": {
+        "offset": 409384,
+        "end_exclusive": 409413,
+        "raw_hex": "919594f582b582c482a282e90d257382aa208bad89bb82b382ea82bd00",
+        "sha256": "ebf46f3ae84584232ca313014d1a56a7799192cace5dbd5a0d9fd14ec4e51de2",
+        "japanese": "装備している\n%{unclassified-control:73}が 強化された"
+      },
+      "english": "Equipped {item}{fit} is strengthened.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.160",
+      "table_offset": 352,
+      "source": {
+        "offset": 409196,
+        "end_exclusive": 409214,
+        "raw_hex": "257382cd0d257382c995cf82ed82c182bd00",
+        "sha256": "fe712ce041e97a7111fae4ff16b1395b694af44ad903212e48f8fa339051de37",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に変わった"
+      },
+      "english": "{item}{fit} becomes {result}.",
+      "fields": [
+        "item",
+        "result"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.164",
+      "table_offset": 356,
+      "source": {
+        "offset": 409168,
+        "end_exclusive": 409193,
+        "raw_hex": "257382cc8e6782a682e989f1909482aa0d31919d82a682bd00",
+        "sha256": "a2462dbe21fd7cf4f9672bc30d8c9deebed5333f019c80bb07d2fe3ebd8cf14c",
+        "japanese": "%{unclassified-control:73}の使える回数が\n1増えた"
+      },
+      "english": "{item}{fit} gains 1 use.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.168",
+      "table_offset": 360,
+      "source": {
+        "offset": 409144,
+        "end_exclusive": 409165,
+        "raw_hex": "257382cc91e582ab82b382aa0d31919d82a682bd00",
+        "sha256": "c8aa1b4a3dc6b3bd996a06b8b0658c6329f56ad5c7c2c4594fb8ece5ebbd44be",
+        "japanese": "%{unclassified-control:73}の大きさが\n1増えた"
+      },
+      "english": "{item}{fit} gains 1 capacity.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.1f4",
+      "table_offset": 500,
+      "source": {
+        "offset": 408196,
+        "end_exclusive": 408224,
+        "raw_hex": "257382cd0e0c4e93ae82ab82aa82b782ce82e282ad82c882c182bd00",
+        "sha256": "cbc0452b6996e7e4dd2b99869463a0690d4fff025765841877a72d881da38107",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0c4e}動きがすばやくなった"
+      },
+      "english": "{actor}{fit} speeds up!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.358",
+      "table_offset": 856,
+      "source": {
+        "offset": 406172,
+        "end_exclusive": 406188,
+        "raw_hex": "257382cc898a82aa8341836382a22100",
+        "sha256": "a1e28424d3ec04782ad5052184126f7330dd289657c13ffb66111d745dabd72b",
+        "japanese": "%{unclassified-control:73}の炎がアツい!"
+      },
+      "english": "{actor}'s{fit} flame is scorching!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.400",
+      "table_offset": 1024,
+      "source": {
+        "offset": 405048,
+        "end_exclusive": 405070,
+        "raw_hex": "257382cc96688ce497cd82aa89ba82aa82c182bd2100",
+        "sha256": "16b777078287a2fbdfe2b2e24ffe46fcf4dd0d5d33ba83e481c75ec10c94e529",
+        "japanese": "%{unclassified-control:73}の防御力が下がった!"
+      },
+      "english": "{actor}{fit} loses defence!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.48c",
+      "table_offset": 1164,
+      "source": {
+        "offset": 404064,
+        "end_exclusive": 404097,
+        "raw_hex": "257382cd0d834183588367838d83938ff391d482c982c882c182c482a282e92100",
+        "sha256": "c7f41599abda203b92e47e6c1e5238a85ed9af8ae88f3fc10a738c4e6a86952b",
+        "japanese": "%{unclassified-control:73}は\nアストロン状態になっている!"
+      },
+      "english": "{actor}{fit} is under Kaclang!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.4b0",
+      "table_offset": 1200,
+      "source": {
+        "offset": 403788,
+        "end_exclusive": 403814,
+        "raw_hex": "919594f582b582c482a282e9257382aa0d2b3382b382ea82bd00",
+        "sha256": "5322b4491ff7f0fddcf7666c20f6a0727b6e6be4f4f77e1897368894fd26c998",
+        "japanese": "装備している%{unclassified-control:73}が\n+3された"
+      },
+      "english": "Equipped {item}{fit} gains +3.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.4b4",
+      "table_offset": 1204,
+      "source": {
+        "offset": 403760,
+        "end_exclusive": 403786,
+        "raw_hex": "257382cc8e6782a682e989f1909482aa0d2b3382b382ea82bd00",
+        "sha256": "efbef8f4d75cf6009f61f43198638dba5b45ab17926c2b5de86d0f8a436570d6",
+        "japanese": "%{unclassified-control:73}の使える回数が\n+3された"
+      },
+      "english": "{item}{fit} gains 3 uses.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.640",
+      "table_offset": 1600,
+      "source": {
+        "offset": 399500,
+        "end_exclusive": 399527,
+        "raw_hex": "257382cd208ff182cc8cf889ca82f096b38cf882c982b582bd2100",
+        "sha256": "f62a45eb24fa10cad613fc4eab21af04b00a36c6498954dc0d1b443146881867",
+        "japanese": "%{unclassified-control:73}は 杖の効果を無効にした!"
+      },
+      "english": "{actor}{fit} nullifies the staff's effect!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.9c4",
+      "table_offset": 2500,
+      "source": {
+        "offset": 393688,
+        "end_exclusive": 393705,
+        "raw_hex": "257382cc8ef482a282aa82c682af82bd00",
+        "sha256": "5bfc47609cf2bb74a08aa924452267163e82cc99baa443a20ef1cd8565d2a2a3",
+        "japanese": "%{unclassified-control:73}の呪いがとけた"
+      },
+      "english": "{item}{fit} is no longer cursed.",
+      "fields": [
+        "item"
+      ],
+      "status": "reviewed",
+      "review": "Independent T2 Japanese reading; preserves target, equipped status, exact increment and outcome. Actor/item substitutions and complete effect remain present; conditional breaks retain ordinary one-line wording and bounded maximum fields. Kaclang uses the established DQ spell identity. Insertion/each native consumer is verified separately."
+    },
+    {
+      "id": "dungeon-leaf.480",
+      "table_offset": 1152,
+      "source": {
+        "offset": 404160,
+        "end_exclusive": 404183,
+        "raw_hex": "257382cd208381834b8355838b82f08fa582a682bd2100",
+        "sha256": "4d6677a871a6b47b7ea7a8d7cf1a2c973ab0b68b0ed5e3c595d0868d76a1d0ae",
+        "japanese": "%{unclassified-control:73}は メガザルを唱えた!"
+      },
+      "english": "{actor}{fit} cast Kerplunk!",
+      "status": "reviewed",
+      "fields": [
+        "actor"
+      ],
+      "review": "メガザル uses the established DQ term Kerplunk. Preserve actor and spell-casting declaration. Three separately audited native readers; full mechanics and natural selection are not inferred from the controlled message-frame probes. Ordinary actor names fit one line; maximal186px actor uses the conditional break."
+    },
+    {
+      "id": "dungeon-leaf.360",
+      "table_offset": 864,
+      "source": {
+        "offset": 406124,
+        "end_exclusive": 406147,
+        "raw_hex": "257382c982c282a982dc82e82093ae82af82c882a22100",
+        "sha256": "6339adb3e79f8e642300ace79c3f01323879ac23a63e9ac668fdffe4efe1c135",
+        "japanese": "%{unclassified-control:73}につかまり 動けない!"
+      },
+      "english": "{actor}{fit} holds you! You can't move!",
+      "status": "reviewed",
+      "fields": [
+        "actor"
+      ],
+      "review": "Retains the named captor and inability to move. Original reader22C76 uses shared-table literal22CD4, independently confirmed in Ghidra; CFG lead22EBC was an imprecise provenance lead. The native actor-name getter and256-byte stack formatter remain unchanged. Ordinary names fit one line."
+    }
+  ]
+}

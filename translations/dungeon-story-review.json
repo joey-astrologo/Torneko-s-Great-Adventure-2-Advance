@@ -1,0 +1,405 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned baker, forest-relic/old-man and flame-relic/King message blocks in1BC24,1BFBC,1C2E8. Two stored farewells at relative indices9/19 have no established reader in these functions and remain excluded. Cutscene movement, story flags and relic acquisition effects are separately scoped.",
+  "entries": [
+    {
+      "id": "dungeon-story.00",
+      "index": 0,
+      "table_address": 1339864,
+      "source": {
+        "offset": 436868,
+        "end_exclusive": 436931,
+        "raw_hex": "8370839389ae817582a082a0814082b182b182c582b7210d814082b182ea82aa838f835e834e835682cc814082a88e748fa082cc82a895e682c582b7814200",
+        "sha256": "46ead370c14201a744eeee749ef07bf723a183df827dd45e5af13c3b67596d0a",
+        "japanese": "パン屋「ああ　ここです!\n　これがワタクシの　お師匠のお墓です。"
+      },
+      "english": "Baker: Ah, here we are! This is my master's grave.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Baker: Ah, here we are! This is my master's grave.",
+        "revised": "Baker: Ah, here we are! This is my master's grave.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.01",
+      "index": 1,
+      "table_address": 1339868,
+      "source": {
+        "offset": 436632,
+        "end_exclusive": 436868,
+        "raw_hex": "03061488a482b782e992ed8e7182bd82bf82d60d0d0d0d03061482c882ae82e982ce82a982e882c581408e748fa082e782b582a282b182c682f00d1489bd82e082b582c482e282e982b182c682aa814082c582ab82c882a982c182bd0d030614838f835682c982cd814082bb82ea82aa905382cc82b182e882be0d0d03061482be82a982e7814082cb82de82e882c982c282ad914f82c90d14838f835682a982e782cc82b382b382e282a982c891a182e895a882c682b582c40d03061495e690ce82c981409682964082cc8370839382cc8dec82e882a982bd82f00d1482b582e982b582c482a882a282bd00",
+        "sha256": "efe852d0636b2888de503fa3c811a4c3af18762f85024c106ec50d8f8ca6c8b9",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}愛する弟子たちへ\n\n\n\n{legacy-position:0306}{unclassified-control:14}なぐるばかりで　師匠らしいことを\n{unclassified-control:14}何もしてやることが　できなかった\n{legacy-position:0306}{unclassified-control:14}ワシには　それが心のこりだ\n\n{legacy-position:0306}{unclassified-control:14}だから　ねむりにつく前に\n{unclassified-control:14}ワシからのささやかな贈り物として\n{legacy-position:0306}{unclassified-control:14}墓石に　魔法のパンの作りかたを\n{unclassified-control:14}しるしておいた"
+      },
+      "english": "To my beloved pupils.\n\nI only ever struck you.\nI did nothing a master should.\n\nThat is my one regret.\n\nBefore I lay down to rest,\nI left a small gift for you:\n\nthe recipe for magic bread,\ninscribed upon my gravestone.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "To my beloved pupils.\n\nI only ever struck you.\nI did nothing a master should.\n\nThat is my one regret.\n\nBefore I lay down to rest,\nI left a small gift for you:\n\nthe recipe for magic bread,\ninscribed upon my gravestone.",
+        "revised": "To my beloved pupils.\n\nI only ever struck you.\nI did nothing a master should.\n\nThat is my one regret.\n\nBefore I lay down to rest,\nI left a small gift for you:\n\nthe recipe for magic bread,\ninscribed upon my gravestone.",
+        "reason": "Bilingual review preserves the master striking his pupils, failure as a teacher, regret, final rest and recipe inscribed as his gift; explicit page breaks preserve the solemn letter. Yellow/centering reflows are renderer-only."
+      }
+    },
+    {
+      "id": "dungeon-story.02",
+      "index": 2,
+      "table_address": 1339872,
+      "source": {
+        "offset": 436312,
+        "end_exclusive": 436630,
+        "raw_hex": "8370839389ae817582c882f182c621814083718350836382c682cd0d81409682964082cc8370839382cc81408dec82e895fb82be82c182bd82cc82a9210d8370839389ae817582d382f181458145814582d382f181458145814582c882e982d982c70d0d8370839389ae817581458145814582a88e748fa082b382dc0d814082a082e882aa82c682a482b282b482a282dc82b7210d8370839389ae817582a88e748fa082b382dc82cc814082a082cc96a182f00d8140838f835e834e835682aa82e082c182c681408d4c82df82c482a282ab82dc82b7210d8370839389ae817582c582cd814082bb82eb82bb82eb8eb897e782b582dc82b781420d0d8370839389ae817582b382a282b282c9814082a88e748fa082b382dc82cc0d814082df82a282d382ad82f0814082a882a282cc82e882a282bd82b582dc82b7814200",
+        "sha256": "c68b0d572b928f7159cd4d7ea8ab2dd125427dc3ca29d9295dd0ee45e7b8fa18",
+        "japanese": "パン屋「なんと!　ヒケツとは\n　魔法のパンの　作り方だったのか!\nパン屋「ふん・・・ふん・・・なるほど\n\nパン屋「・・・お師匠さま\n　ありがとうございます!\nパン屋「お師匠さまの　あの味を\n　ワタクシがもっと　広めていきます!\nパン屋「では　そろそろ失礼します。\n\nパン屋「さいごに　お師匠さまの\n　めいふくを　おいのりいたします。"
+      },
+      "english": "Baker: Goodness! So the secret was the recipe for magic bread!\n\nBaker: Hmm... Hmm... I see...\n\nBaker: ...Master, thank you!\n\nBaker: I'll share that wonderful flavour of yours with even more people!\n\nBaker: Well, I should be going.\n\nBaker: Before I leave, let me pray that your soul may rest in peace.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Baker: Goodness! So the secret was the recipe for magic bread!\n\nBaker: Hmm... Hmm... I see...\n\nBaker: ...Master, thank you!\n\nBaker: I'll share that wonderful flavour of yours with even more people!\n\nBaker: Well, I should be going.\n\nBaker: Before I leave, let me pray that your soul may rest in peace.",
+        "revised": "Baker: Goodness! So the secret was the recipe for magic bread!\n\nBaker: Hmm... Hmm... I see...\n\nBaker: ...Master, thank you!\n\nBaker: I'll share that wonderful flavour of yours with even more people!\n\nBaker: Well, I should be going.\n\nBaker: Before I leave, let me pray that your soul may rest in peace.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.03",
+      "index": 3,
+      "table_address": 1339876,
+      "source": {
+        "offset": 436252,
+        "end_exclusive": 436310,
+        "raw_hex": "8370839389ae81758370839382cc905f82cc814082a882dd82bf82d182ab82aa0d814082a082e882dc82b782e682a482c9814581458145814200",
+        "sha256": "67299eb8f6e9128a3989ab621c590c1fd546897df1618d197803a9177844c22c",
+        "japanese": "パン屋「パンの神の　おみちびきが\n　ありますように・・・。"
+      },
+      "english": "Baker: May the god of bread guide you...",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Baker: May the god of bread guide you...",
+        "revised": "Baker: May the god of bread guide you...",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.04",
+      "index": 4,
+      "table_address": 1339880,
+      "source": {
+        "offset": 436196,
+        "end_exclusive": 436252,
+        "raw_hex": "8370839389ae817582a882dc82bd82b982b582dc82b582bd81420d814082b382a0814091ba82d682e082c782e882dc82b582e582a4814200",
+        "sha256": "f483456ddd759db69171d8d6a099a402150ecc6f032a092566789f4fcdb233d3",
+        "japanese": "パン屋「おまたせしました。\n　さあ　村へもどりましょう。"
+      },
+      "english": "Baker: Thank you for waiting. Now, let's return to the village.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Baker: Thank you for waiting. Now, let's return to the village.",
+        "revised": "Baker: Thank you for waiting. Now, let's return to the village.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.05",
+      "index": 5,
+      "table_address": 1339884,
+      "source": {
+        "offset": 437888,
+        "end_exclusive": 437910,
+        "raw_hex": "1495738e768b6382c890ba82aa95b782b182a682e900",
+        "sha256": "00c3e4bc28a4018f56c0d2fa8c24e3332bbad14e22197111dda840d482ef34dc",
+        "japanese": "{unclassified-control:14}不思議な声が聞こえる"
+      },
+      "english": "A mysterious voice speaks.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "A mysterious voice speaks.",
+        "revised": "A mysterious voice speaks.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.06",
+      "index": 6,
+      "table_address": 1339888,
+      "source": {
+        "offset": 437868,
+        "end_exclusive": 437887,
+        "raw_hex": "030614814581458145906c82cc8e7182e62100",
+        "sha256": "d25bcff784bbb5818b1a65aa21fa09f24ccb0e7911ad376dccf97e0ce9d7f391",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}・・・人の子よ!"
+      },
+      "english": "...Child of man!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "...Child of man!",
+        "revised": "...Child of man!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.07",
+      "index": 7,
+      "table_address": 1339892,
+      "source": {
+        "offset": 437752,
+        "end_exclusive": 437868,
+        "raw_hex": "03061482b182cc926e82c98dc482d196bd82f082c682e882e082c782b782bd82df82c90d1482ed82aa94df82b582dd82f081408ef382af82c682e982aa82e682a281490d03061482a982c882e782b882e2814082bb82c882bd82cc96608caf82c90d1496f097a782c282c582a082eb82a4814900",
+        "sha256": "a9782bbe6525e58dba5158c5c50a90cf765c40a736bb468df5deeab90cfe8a5d",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}この地に再び命をとりもどすために\n{unclassified-control:14}わが悲しみを　受けとるがよい！\n{legacy-position:0306}{unclassified-control:14}かならずや　そなたの冒険に\n{unclassified-control:14}役立つであろう！"
+      },
+      "english": "To restore life to this land,\naccept my sorrow!\n\nIt shall surely aid you\non your adventure!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "To restore life to this land,\naccept my sorrow!\n\nIt shall surely aid you\non your adventure!",
+        "revised": "To restore life to this land,\naccept my sorrow!\n\nIt shall surely aid you\non your adventure!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.08",
+      "index": 8,
+      "table_address": 1339896,
+      "source": {
+        "offset": 437720,
+        "end_exclusive": 437752,
+        "raw_hex": "147e82cd0d1491e58ef782cc82c882b082ab82f08ee882c993fc82ea82bd2100",
+        "sha256": "4fab9c1b4bbe624becc3144492e0655cd881476ce25e9ef8e88593109d51b7c5",
+        "japanese": "{unclassified-control:14}{unclassified-control:7e}は\n{unclassified-control:14}大樹のなげきを手に入れた!"
+      },
+      "english": "{center}{player} obtained\n{center}the Great tree's lament!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "{center}{player} obtained\n{center}the Great tree's lament!",
+        "revised": "{center}{player} obtained\n{center}the Great tree's lament!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.10",
+      "index": 10,
+      "table_address": 1339904,
+      "source": {
+        "offset": 437684,
+        "end_exclusive": 437703,
+        "raw_hex": "819620817582a882a8814082bb82ea82cd2100",
+        "sha256": "eda606a30d36bdb1eadf408b80560bde24a7cfb79fa2f980f04e84bb2174ba7c",
+        "japanese": "＊ 「おお　それは!"
+      },
+      "english": "???: Oh! That is...!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "???: Oh! That is...!",
+        "revised": "???: Oh! That is...!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.11",
+      "index": 11,
+      "table_address": 1339908,
+      "source": {
+        "offset": 437588,
+        "end_exclusive": 437684,
+        "raw_hex": "9856906c817582bb82ea82cd814082dc82b382c991e58ef782cc82c882b082ab210d814082a882ca82b5814082a282c182bd82a289bd8ed282b682e181480d9856906c817582dc814082dc82b382a982a882ca82b582aa814581458145814800",
+        "sha256": "dd58fc003340b8bdf1a1dbbfe79bd22e9d6a24f31761697403aba5e180b66892",
+        "japanese": "老人「それは　まさに大樹のなげき!\n　おぬし　いったい何者じゃ？\n老人「ま　まさかおぬしが・・・？"
+      },
+      "english": "Old man: That is the Great tree's lament! Just who are you?\n\nOld man: C-could you be...?",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Old man: That is the Great tree's lament! Just who are you?\n\nOld man: C-could you be...?",
+        "revised": "Old man: That is the Great tree's lament! Just who are you?\n\nOld man: C-could you be...?",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims. Original15A18 call at1C164 owns the Yes/No identity question; preserve its positive sense and both response branches."
+      }
+    },
+    {
+      "id": "dungeon-story.12",
+      "index": 12,
+      "table_address": 1339912,
+      "source": {
+        "offset": 437540,
+        "end_exclusive": 437586,
+        "raw_hex": "9856906c817582a882a821814082b382aa82b582bd82bc210d814082bb82c882bd82aa814082a082cc7e82a92100",
+        "sha256": "3e8ad2916941d07f2c21cea514546cc6c0b021fa0f2cf05500bedbffcf9f2e86",
+        "japanese": "老人「おお!　さがしたぞ!\n　そなたが　あの{unclassified-control:7e}か!"
+      },
+      "english": "Old man: Ah! I've found you! So you're the famous {player}!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Old man: Ah! I've found you! Are you the famous {player}?",
+        "revised": "Old man: Ah! I've found you! So you're the famous {player}!",
+        "reason": "Bilingual second pass: this is the affirmative identity response after the previous native Yes/No question. Retain the exclamation, player substitution and recognition; do not pose a second question."
+      }
+    },
+    {
+      "id": "dungeon-story.13",
+      "index": 13,
+      "table_address": 1339916,
+      "source": {
+        "offset": 437456,
+        "end_exclusive": 437540,
+        "raw_hex": "9856906c817582a282e28140838f835682c982cd82ed82a982e981420d814082bb82c882bd82aa7e82b682e182c8210d9856906c817582b882c182c6814082b382aa82b582c482a882c182bd82cc82b682e12100",
+        "sha256": "80950197cb428e714fb9c0a13a331ba9d85802984d6248e12c60b382ffade64e",
+        "japanese": "老人「いや　ワシにはわかる。\n　そなたが{unclassified-control:7e}じゃな!\n老人「ずっと　さがしておったのじゃ!"
+      },
+      "english": "Old man: No, I can tell. You're {player}!\n\nOld man: I've been searching for you!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Old man: No, I can tell. You're {player}!\n\nOld man: I've been searching for you!",
+        "revised": "Old man: No, I can tell. You're {player}!\n\nOld man: I've been searching for you!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.14",
+      "index": 14,
+      "table_address": 1339920,
+      "source": {
+        "offset": 436936,
+        "end_exclusive": 437454,
+        "raw_hex": "9856906c817582a4815b82de81458145814582b582a982b50d0d9856906c8175838f835682cd82e082c182c6835a8343834a839382c80d814082b782e982c782a296da82c282ab82cc926a82f08d6c82a682c682c182bd81420d9856906c817582dc82b382a9814082b182f182c8837683888376838882cc836e838982cc8145814581450d0d9856906c817582a282e281408356836283508343210d0d9856906c817582bb82a482b682e18140836d83938372838a82c60d814082b182f182c8986282f082b582c482a282e98fea8d8782c582cd82c882a2210d9856906c8175838f835682cd82b882c182c6814082b182cc8d9182cc834183608352836082f00d814082b582e782d782c482a882c182bd82cc82b682e182aa8145814581450d9856906c817582b182b182dc82c595738e768b6382cc835f839383578387839382aa0d81408d4c82aa82c182c482a282e982c682cd8e7682ed82c882a982c182bd81420d9856906c817582bb82ea82c582b682e182c88145814581450d0d9856906c817582c882c981458145814581480d814089a482aa838f835682f082b382aa82b582c482a882e981480d9856906c817582bb82a482a9814082bb82ea82cd8d4493738d8782b682e10d81408fe982d68d7382ad82c682b782e982a981420d0d9856906c817589a482c9986282b382cb82ce82c882e782f182b182c682aa82a082e9814200",
+        "sha256": "ea50e6af7dcf3b156314cfcc9cdea51a5b41a0fd5f3f3fbe07b36dd879b1d3e1",
+        "japanese": "老人「うーむ・・・しかし\n\n老人「ワシはもっとセイカンな\n　するどい目つきの男を考えとった。\n老人「まさか　こんなプヨプヨのハラの・・・\n\n老人「いや　シッケイ!\n\n老人「そうじゃ　ノンビリと\n　こんな話をしている場合ではない!\n老人「ワシはずっと　この国のアチコチを\n　しらべておったのじゃが・・・\n老人「ここまで不思議のダンジョンが\n　広がっているとは思わなかった。\n老人「それでじゃな・・・\n\n老人「なに・・・？\n　王がワシをさがしておる？\n老人「そうか　それは好都合じゃ\n　城へ行くとするか。\n\n老人「王に話さねばならんことがある。"
+      },
+      "english": "Old man: Hmm... Still...\n\nOld man: I pictured a more rugged fellow, with piercing eyes.\n\nOld man: I never expected a belly so soft and flabby...\n\nOld man: Ahem! Forgive me!\n\nOld man: Yes, there's no time to stand about chatting!\n\nOld man: I've been investigating all over this kingdom...\n\nOld man: I had no idea the Mystery Dungeon had spread so far.\n\nOld man: And so...\n\nOld man: What...? The King is looking for me?\n\nOld man: Ah, how convenient. I shall go to the castle.\n\nOld man: There is something I must tell the King.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "Old man: Hmm... Still...\n\nOld man: I pictured a more rugged fellow, with piercing eyes.\n\nOld man: I never expected a belly so soft and flabby...\n\nOld man: Ahem! Forgive me!\n\nOld man: Yes, there's no time to stand about chatting!\n\nOld man: I've been investigating all over this kingdom...\n\nOld man: I had no idea the Mystery Dungeon had spread so far.\n\nOld man: And so...\n\nOld man: What...? The King is looking for me?\n\nOld man: Ah, how convenient. I shall go to the castle.\n\nOld man: There is something I must tell the King.",
+        "revised": "Old man: Hmm... Still...\n\nOld man: I pictured a more rugged fellow, with piercing eyes.\n\nOld man: I never expected a belly so soft and flabby...\n\nOld man: Ahem! Forgive me!\n\nOld man: Yes, there's no time to stand about chatting!\n\nOld man: I've been investigating all over this kingdom...\n\nOld man: I had no idea the Mystery Dungeon had spread so far.\n\nOld man: And so...\n\nOld man: What...? The King is looking for me?\n\nOld man: Ah, how convenient. I shall go to the castle.\n\nOld man: There is something I must tell the King.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.15",
+      "index": 15,
+      "table_address": 1339924,
+      "source": {
+        "offset": 437888,
+        "end_exclusive": 437910,
+        "raw_hex": "1495738e768b6382c890ba82aa95b782b182a682e900",
+        "sha256": "00c3e4bc28a4018f56c0d2fa8c24e3332bbad14e22197111dda840d482ef34dc",
+        "japanese": "{unclassified-control:14}不思議な声が聞こえる"
+      },
+      "english": "A mysterious voice speaks.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "A mysterious voice speaks.",
+        "revised": "A mysterious voice speaks.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.16",
+      "index": 16,
+      "table_address": 1339928,
+      "source": {
+        "offset": 437868,
+        "end_exclusive": 437887,
+        "raw_hex": "030614814581458145906c82cc8e7182e62100",
+        "sha256": "d25bcff784bbb5818b1a65aa21fa09f24ccb0e7911ad376dccf97e0ce9d7f391",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}・・・人の子よ!"
+      },
+      "english": "...Child of man!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "...Child of man!",
+        "revised": "...Child of man!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.17",
+      "index": 17,
+      "table_address": 1339932,
+      "source": {
+        "offset": 438116,
+        "end_exclusive": 438238,
+        "raw_hex": "03061482b182cc926e82c98dc482d18cf582f0814082c682e882e082c782b782bd82df82c90d1482ed82aa90ba82c882ab83528367836f82f08ef382af82c682e982aa82e682a281490d03061482a982c882e782b882e2814082bb82c882bd82cc96608caf82c90d1496f097a782c282c582a082eb82a4814900",
+        "sha256": "8621fce90d0d3a62cfa94b7f0946900d8985efa01cc01726d449aeff14904387",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}この地に再び光を　とりもどすために\n{unclassified-control:14}わが声なきコトバを受けとるがよい！\n{legacy-position:0306}{unclassified-control:14}かならずや　そなたの冒険に\n{unclassified-control:14}役立つであろう！"
+      },
+      "english": "To restore light to this land,\naccept my unspoken words!\n\nThey shall surely aid you\non your adventure!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "To restore light to this land,\naccept my unspoken words!\n\nThey shall surely aid you\non your adventure!",
+        "revised": "To restore light to this land,\naccept my unspoken words!\n\nThey shall surely aid you\non your adventure!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.18",
+      "index": 18,
+      "table_address": 1339936,
+      "source": {
+        "offset": 438084,
+        "end_exclusive": 438116,
+        "raw_hex": "147e82cd0d14898a82cc82b382b382e282ab82f08ee882c993fc82ea82bd2100",
+        "sha256": "2735def9a7447bdac720dbd6b3a5682c79c012f06fe49b05f5a7ab9465863182",
+        "japanese": "{unclassified-control:14}{unclassified-control:7e}は\n{unclassified-control:14}炎のささやきを手に入れた!"
+      },
+      "english": "{center}{player} obtained\n{center}the Flame's whisper!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "{center}{player} obtained\n{center}the Flame's whisper!",
+        "revised": "{center}{player} obtained\n{center}the Flame's whisper!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.20",
+      "index": 20,
+      "table_address": 1339944,
+      "source": {
+        "offset": 438036,
+        "end_exclusive": 438084,
+        "raw_hex": "8196817582be8140924e82b682e181480d814081458145814582bb82b182c98140924e82a982a882e982cc82a9814800",
+        "sha256": "b8eb5524d35b34827c27faee78fcd4568e611b1528779ce48eb115121ef43c8f",
+        "japanese": "＊「だ　誰じゃ？\n　・・・そこに　誰かおるのか？"
+      },
+      "english": "???: W-who is it? ...Is someone there?",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "???: W-who is it? ...Is someone there?",
+        "revised": "???: W-who is it? ...Is someone there?",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.21",
+      "index": 21,
+      "table_address": 1339948,
+      "source": {
+        "offset": 438012,
+        "end_exclusive": 438036,
+        "raw_hex": "89a4976c81757f81407e82c582cd82c882a282a982c12100",
+        "sha256": "b548d086bbfa7726713e49844d779e20862872e1f17cd14821ba6818fc208168",
+        "japanese": "王様「{unclassified-control:7f}　{unclassified-control:7e}ではないかっ!"
+      },
+      "english": "King: {initial}-{player}! Is that you?!",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "King: {initial}-{player}! Is that you?!",
+        "revised": "King: {initial}-{player}! Is that you?!",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    },
+    {
+      "id": "dungeon-story.22",
+      "index": 22,
+      "table_address": 1339952,
+      "source": {
+        "offset": 437912,
+        "end_exclusive": 438011,
+        "raw_hex": "89a4976c817582bd81408f9582a982c182bd82bc210d814082ad82ed82b582a282b182c682cd814082a082c682c5986282b781420d89a4976c817582b782dc82f182aa81408fe982dc82c50d814082c282ea82c482a982a682c182c482ad82ea814200",
+        "sha256": "47234acd592920f21eb975aa9669df5f3da12f6ab19603eed05e8d6438d0a101",
+        "japanese": "王様「た　助かったぞ!\n　くわしいことは　あとで話す。\n王様「すまんが　城まで\n　つれてかえってくれ。"
+      },
+      "english": "King: I-I'm saved! I'll explain everything later.\n\nKing: Please, take me back to the castle.",
+      "status": "reviewed",
+      "review": {
+        "previous_english": "King: I-I'm saved! I'll explain everything later.\n\nKing: Please, take me back to the castle.",
+        "revised": "King: I-I'm saved! I'll explain everything later.\n\nKing: Please, take me back to the castle.",
+        "reason": "Bilingual second pass against the pinned Japanese and connected native scene order; preserve speaker reveal, thanks/prayer, relic distinction, old-man insult/apology and yes/no identity sense. Reuse established Baker, King, Mystery Dungeon and relic names. No new official terminology claims."
+      }
+    }
+  ]
+}

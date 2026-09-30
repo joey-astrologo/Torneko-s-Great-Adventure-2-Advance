@@ -566,6 +566,35 @@ It selects `08003434`/`080034F8` or `08003490`/`08003550` according to halfword
 are not a substitute for the game's calibration/fade behaviour. The menu record
 loads 240 colours, leaving the final 16 for UI; the title record loads 256.
 
+Title-audition follow-up (2026-09-30): fresh native cold boots of the Japanese
+base and current English ROM `c6cf871b...f96c5` both select record 16 at frame
+600. Full 240×160 pixels, 38,400 tile bytes, native palette and all 600 visible
+BG0 map entries agree. The title resource is still ROM
+`[0042F138,00438938)`; palette `[0042F138,0042F338)`, tiles
+`[0042F338,00438938)`. Original START/A inputs select the same record 19 for
+menu/name entry at frames 783/966. The five menu resources above are now decoded
+as stored-palette previews; this does not expand native-selection coverage.
+Evidence: `build/title-audition/reference/provenance.json` and each case's
+`trace.json`; certainty: exact native observations for title and record 19,
+static decoding for the other menu candidates. The English title proposal is
+an offline audition only and creates no new ROM/RAM ownership or allocation.
+
+Linked-logo follow-up (2026-09-30): all five menu candidates above are now
+naturally selected by fresh cold boot followed by START at frames
+604/607/600/602/601 for records 13/18/19/20/21 respectively (3 held frames plus
+180 released frames). A with the same hold/wait then enters the name editor.
+Evidence: `build/title-audition/backgrounds/reference.json` and five
+`backgrounds/reference/<index>/trace.json` files. Exact original resource bytes,
+38,400 native tile bytes and 600 visible BG0 map entries match each case;
+the first 240 native palette entries persist into name entry. Every background
+pixel index is below 240. No selector, ROM, RAM or register edits are used.
+Certainty: observed native loads for all five listed menu/name variants, not
+complete later-game logo coverage. The proposed 76×36 rectangle at (164,124)
+for record 13, or (164,0) for the other four, is clear of the start menu.
+The name editor naturally overlays parts of the original logo; the report
+records that overlap. The audition composites modify no cartridge resources
+and grant no new source ownership or free-space assumptions.
+
 The first dungeon invokes arrival controller `08005C6C`, with dungeon ID 11 at
 `02003B6C` and floor 1 at `02005674`. Compositor `08005B6C` formats floor digits
 and chooses a rectangle from `0013EE58 + 8*dungeon_id`. Rectangle copier
@@ -3074,3 +3103,1995 @@ the widest10-digit/G field. Other rows and complete rank/header formats are
 checked against224px and128bytes. Hidden/grey/white state flags and all record
 values remain native; controlled record scenarios are separate from ordinary
 achievement acquisition and persistence.
+
+### Actual walking pickup validation (September26)
+
+On candidate ROM `bb45e403ac90272571d925f204af3535fa3187b61807bcf7c34371bde8eebb61`,
+ordinary Drop then directional step-away/return reaches CPU080249DC from
+080324C6, then CPU08024AD8 from08024ACC. These are observed native calls,
+without PC/register redirects. The ordinary item case has no controlled state
+changes. Gold123,5 arrows merging into10,and full20-slot inventory cases change
+only the recorded existing floor/inventory fields. All five cases pass exact
+formatter bytes,192/256-byte message guards,separate64-byte item fields,
+native dispatch and final visible coloured glyph pixels. Inventory/gold/arrow
+outcomes and unchanged battery are checked.
+
+The standing case sets existing transient byte `[0200567D,0200567E)` to1 at
+the actual walk callback. Movement refreshes this field, so setting it before
+movement is insufficient. This is explicitly a controlled branch test, not
+proof of the normal button/option that enables standing. Other four cases use
+the unmodified walk callback. No ROM changes or new memory ownership follow
+from this verifier. Evidence: `build/english/walking-pickup-validation/report.json`
+and its hash-pinned gallery; original source and input schedules are retained.
+
+### Dungeon priest private prototype ownership
+
+CPU ROM root `[0801AAFC,0801AE18)` dispatches four services at0801AE18,
+0801AF20,0801B0D4 and0801B1F0. Their original256-byte formatting outputs are
+`[SP+4,SP+104)` within0x104-byte local frames; root has0x9C local bytes,
+including its original120-byte bread temporary. No stack,RAM or save expansion
+is made. The native menu reader08015E68 reads its ROM stream directly.
+
+Owned four-byte shared-table literals start at original ROM offsets1AB8C,
+1AC30,1ADBC,1AE08,1AE94,1AF90,1B154,1B278,2467C,246B0,246F0; each exclusive
+end is start+4. `tools.priest_text` gives these consumers a checked private
+copy of `[00140D68,001417A0)`. It changes only25 reviewed slots listed in
+`translations/priest-review.json`; all other copied pointers retain original
+values. Root companion literal1AB3C remains original pending its separate audit.
+
+Native menu creation is(1,3,23,4),screen x8/y24,width184,four rows. Label
+start12 and price start128 leave108 usable label pixels plus8px separation.
+The English uses explicit X controls instead of Japanese space/tab counts;
+all labels fit the original geometry. The unchanged signed-halfword costs in
+ROM `[00144B24,00144B2C)` are return50,healing300,poison500,curse1200.
+The following halfword `[00144B2C,00144B2E)` is the40% random gift threshold.
+
+Observed native transactions clear cursed flag04000000 only on occupied,
+equipped inventory records (80000000 and00800000),restore current strength
+at actor+76 to maximum+78,and restore HP or add2 max HP when already full.
+Ordinary player max HP is capped at500 by0800DE88; a separate equipped item
+can alter that cap and is not claimed by the cap500 probe. Return charges50G
+then invokes08036CAC with reason35. Per-service flags prevent a second paid
+blessing in the same conversation. No changes to these mechanics are patched.
+
+Prototype35 paged/name/numeric-bound cases and17 native menu/transaction cases
+pass. Every captured glyph and its colour is checked on the final screen,
+along with original geometry,cursor wrap,menu reopening,formatter tails/guards,
+caller registers/SP,payments and recorded outcomes. Transaction tests explicitly
+set an existing dungeon actor to priest and prepare existing inventory/player
+fields; they force the independent gift RNG result to99 when reached. They
+do not claim a natural priest encounter,random gift acquisition or a completed
+surface transition. Both gifts' texts are covered by paged preflight.
+Evidence: `build/priest-prototype/{priest,priest-service}-validation/report.json`.
+
+### Throw consumer and monster announcements (September 26)
+
+The native Throw handler occupies CPU ROM `[080259FC,080263EE)`. Its 0x234-byte
+local frame contains the unchanged output `[SP+10,SP+110)` (256 bytes), item
+copy `[SP+110,SP+188)` (120 bytes) and name field `[SP+188,SP+1C8)` (64 bytes).
+The region beginning at SP+1C8 is other native state, not an additional name
+buffer. Actor-name arguments come from the native name helper, which can return
+an immutable ROM name or its existing 64-byte scratch at 02008D08.
+
+`tools.projectile_text` owns six four-byte ROM literals: 25A58,25A90,25B10,
+260E0,263F0 point to the shared-table base; 25FEC points inside it at +1D4.
+Each exclusive end is start+4. Their private copy changes only slots 80,1C8,
+1D4,1EC,2D0. The original table `[00140D68,001417A0)` and source code remain
+unchanged. Item/actor bounds are respectively 162/186 pixels and 64 bytes;
+formatted output is at most 142 bytes. Conditional joining uses the existing
+215-pixel limit; complete fallback lines fit 216 pixels.
+
+Twenty prototype cases pass final pixels/colours, field preservation, output
+tails/guards and full caller ABI. Native Throw of a controlled equipped/cursed
+item reaches the refusal branch. The other messages use explicit formatter
+arguments there and do not establish natural hit/landing branches. Ordinary
+Big bread Throw in the recorded fixture lands silently; visibility-dependent
+announcement conditions remain separate. Evidence:
+`build/projectile-prototype/projectile-validation/report.json` and
+`build/text-next/throw-consumer.txt`.
+
+Monster special-action announcements are selected in CPU ROM
+`[0802A998,0802AB82)`, with unchanged output `[SP,SP+100)` (256 bytes).
+The signed halfword at +20 in each original 28-byte monster definition is a
+shared-table index. All 141 definitions yield 45 nonzero actor selectors and
+24 distinct source slots. The compiler rechecks this exact selector set from
+the original compressed resource `[00477700,0047CE7D)` before insertion.
+Only literal `[0002AA54,0002AA58)` is redirected to the private table; the
+resource, ability code and other table consumers are untouched by this module.
+
+Native formatter call/return are 0802A9EC/0802A9F0; queue call is 0802A9F4.
+All 45 selectors plus 72 maximum-width/maximum-byte/colour cases pass. Tests
+dispatch an existing actor into the native function after opening a message
+window, then explicitly skip the ability body at 0802A9F8 to the 0802AB76
+epilogue. They establish selection, formatting, visible rendering and caller
+preservation, not natural encounters or ability outcomes. Maximum fields are
+placed in the helper's existing scratch; ordinary immutable ROM names are
+never overwritten. Evidence:
+`build/monster-announcement-prototype/monster-announcement-validation/report.json`.
+
+### Baker companion floor conversations
+
+Within the priest root `[0801AAFC,0801AE18)`, actor byte +91 equal to 86 hex
+selects the baker branch. Literal `[0001AB3C,0001AB40)` is owned solely by this
+branch; it is separate from the priest service literals. Native signed dungeon
+floor `[02005674,02005676)` plus constant 1DF selects a shared-table index,
+so floors 1 through 6 select slots 780,784,788,78C,790,794. The compiler checks
+the existing floor pointer/constant at ROM `[0001AB40,0001AB48)`.
+
+The private table changes only these six direct-ROM dialogue pointers. Other
+floor values retain their original pointer cells; their reachability is not
+assumed. Native reader 08015A18 is called from 0801AB82, with its original
+224-pixel window and 216-pixel prose budget. No formatting buffer is enlarged.
+Six controlled actor/floor cases use the unchanged selector, with no source
+pointer substitution, and check every page's final glyph pixels/colours,
+caller ABI/guard and unchanged inventory/gold/battery. Natural recruitment and
+quest progression remain separate. Evidence:
+`build/companion-prototype/companion-validation/report.json`.
+
+### Recovery and warp formatter follow-up
+
+`tools.recovery_text` privately replaces slots 120,124,210 for four owned
+four-byte literals, ROM starts 13E30,13EB0,40E30,122EC (exclusive ends +4).
+General recovery `[08013D90,08013EAE)` has 0x108 local bytes, with output
+`[SP,SP+100)` followed by two saved native pointers. Skill recovery
+`[08040DB8,08040E30)` and warp `[08012220,080122EA)` each retain their original
+0x100-byte output. Shared table, code, scalar HP updates and all other literals
+remain unchanged. Actor fields are bounded at 186 pixels/64 bytes. Integer
+reserves conservatively allow 11 glyphs, although the native decimal formatter
+does not support signed negative output; valid HP amounts are nonnegative.
+
+Nineteen prototype cases cover every caller, real HP/max-HP arithmetic and
+explicit zero/2147483647 formatter substitutions, name bounds, colour, output
+guards and full caller preservation. The controlled skill context skips only
+sprite animation helper 0803F354 (return 08040DD0); its initialization is absent
+from this Drink-based harness. Warp skips movement/animation after its genuine
+message return at 08012268 to the native 080122E2 epilogue. These exclusions
+are in the report and input/override schedules; natural skill activation and
+teleport destinations are not claimed. Evidence:
+`build/recovery-prototype/recovery-validation/report.json`.
+
+### Controls help modes and wounded-soldier objects
+
+Option/Controls selector table is original ROM `[0006B736,0006B776)`: four
+groups of eight signed-halfword shared-text indices. CPU0801A794 chooses group
+0/1/2 from the existing player vocation byte +90, or group3 when its town-mode
+argument is nonzero. Its existing private UI table literal1A9F0 covers all four
+groups. Seven additional reviewed bindings complete warrior/mage/town help,
+including the separate town Run slot9A4. The unchanged help window is224px,
+eight rows, x8/y24. Every row fits216px; no formatting output expands.
+All four controlled mode cases pass native selection/order, every final glyph
+pixel, twice closing/reopening and caller/battery preservation. Ordinary class
+unlocking and town-mode entry remain separate.
+
+The A-action dispatcher `[08023C14,080243BC)` scans56 existing 68-byte world
+object records at EWRAM `[0200D048,0200DF28)`. Type word+00 equal to2 and tile
+bytes+3E/+3F matching the facing tile select soldier dialogue. Unsigned byte+40
+is added to200 hex and multiplied by4, yielding slots800 through818 for the
+seven reviewed selectors0..6. Only shared-table literal `[00024378,0002437C)`
+is redirected. Other selectors remain original, with reachability unclaimed.
+The paged reader is called at08024370 and the full dispatcher returns at
+080243BA. No new world-object, stack, RAM or save storage is allocated.
+
+Nine native A-input cases temporarily set the first existing object record at
+08023E2C, then restore all its original bytes at0802434E, immediately after the
+selector load. No PC/register/source-pointer redirect is used. Seven passages
+and three player-name variants for the addressed-name passage pass all pages,
+final glyph pixels/colours, full caller guard/ABI and unchanged inventory/gold/
+battery. Natural wounded-soldier placement and quest progression remain separate.
+Evidence: `build/soldier-prototype/soldier-validation/report.json`.
+
+### Spell definitions, Info and selection menus
+
+Original ROM `[00146DF4,001470D0)` contains 61 spell records of 12 bytes.
+The corresponding 61 description pointers occupy `[001470D0,001471C4)`.
+Name pointer is +0, signed HP cost +4, target kind +6 and menu order +8.
+Both enumeration loops at CPU080222BA and CPU080222EC stop after index60;
+order99 records are skipped by these loops. This is a bounded menu exclusion,
+not proof that those names or descriptions are unused in every consumer.
+`tools.extract_spells` checks the loop bounds and all source bytes. This family
+adds 121 distinct sources to the inventory, including one shared description.
+
+Item Info owner `[08017A4C,08017EEE)` checks item ID153 at08017B06 and calls
+CPU08022828 with the item's signed byte+4 as spell ID. Consequently this item
+shows spell Info, not its ordinary item-description pointer. Controlled item
+checks must use a valid spell ID0..60; quantity99 is not valid for this field.
+The item table still has exactly221 definitions. Its 15 special/reserved rows
+are not being classified as naturally obtainable or unused.
+
+Spell Info `[08022828,080228CA)` uses a 0x104-byte local frame, with its256-byte
+header output at `[SP+4,SP+104)`. Four-byte literals at ROM228CC,228D0,228D8
+(exclusive ends +4) select the shared header/target table, spell definitions
+and description table respectively. Only these literals are redirected by
+`tools.spell_text`; all scalar costs/target IDs and source tables are preserved.
+Header arguments remain name, signed cost, target. Native costs are nonnegative.
+Original Info window is x8/y32,224px wide and six rows; header row0 and body
+row1 use216px. Descriptions use at most four body rows, including a98px reserve
+for the seven-character player substitution. Evidence:
+`build/text-next/{item-info-owner,spell-description,spell-menus}.txt` and
+`build/spell-info-prototype/spell-info-validation/report.json`.
+
+All61 Info selectors plus three explicit player-name variants pass:64 cases,
+with two ordinary Info openings per case. Tests set an existing item153 record
+and then use normal inventory buttons, without PC/register dispatch overrides.
+Native source selection, exact costs/targets, complete glyph sequences, final
+coloured pixels,256-byte header guards, caller preservation and unchanged
+battery pass. Casting, acquisition and other text consumers remain separate.
+
+Selection root `[08022280,080224D6)` uses existing learned bytes at EWRAM
+`[02004D80,02004DBD)` and equipped spell byte `[02004E7A,02004E7B)`.
+The list producer `[080224D8,0802267E)` keeps its64-byte output at
+`[SP+8,SP+48)` and eight-byte marker scratch at `[SP+48,SP+50)`, in the
+original0x6C-byte local frame. Its order lookup searches up to128 entries,
+although there are only61 spell definitions. The menu prototype therefore
+copies the exact original read window `[00146DF4,001473F4)` and replaces only
+name pointers in records0..60. The copied tail is not reclassified as spell
+records or free space. Private literals225C8/22600 own this lookup.
+
+The spell list uses its original168px window; marker plus text reserve is156px.
+Its action menu `[08022690,080227E0)` has256-byte output and original40px,
+three-row geometry with34px labels after its native six-pixel inset. Private shared-table literals225D8,
+226DC,22760 and interior literal2261C (base+74C) cover target/marker,
+Cast/Set/Unset/Info and Not learned. Native row-format literals225E0,
+22604,22620 receive equivalent colour/argument controls with compact brackets
+and a three-pixel English word space. Menu validation is ongoing; the Info
+checks above do not sign off these separate menu consumers.
+
+### Special spellbook invalid unidentified state
+
+Definition153 at ROM `[001429F4,00142A0C)` retains category0 and alias sentinel
+999 at record+10. The controlled native RAM type record at EWRAM
+`[020047A0,020047B4)` has that999 in its+4 alias field (verify address arithmetic
+from02003BAC+153*20; no new storage is allocated). Clearing its known-name flag
+forces the generic unidentified reader0800F650..0800F670 to index999 in a
+155-record appearance table. This is an invalid synthetic input, not a supported
+appearance; it is excluded explicitly from required item row cases. Eight other
+row states and all61 spell Info IDs remain required. Evidence:
+`build/text-next/spellbook-unknown-trace/trace.json`, source disassembly
+`build/text-next/item-formatter.txt`, and source sentinel checks in verify_items.
+
+### Item theft and waiting (isolated candidate)
+
+Native item theft is CPU ROM `[0802BE5C,0802C146)`. Its local150hex frame owns
+output `[SP+4,SP+104)` (256bytes), item field `[SP+104,SP+144)` (64bytes), and
+locals through SP+150. Only original shared-base literals at ROM2BEA4,2BED4,
+2C0EC,2C110,2C148 are redirected to a private copy, changing slots2AC,2B0,
+2B8,710,718. Its inventory scan is exactly20 carried120-byte records;
+its stolen-item store is16 records, bounded by the original loops. The exact
+stolen-store address is pinned by original literal2C0E0 in the verifier. Native
+record copy, ownership at actor+50, carried-item removal and refusal outcomes
+are checked; the production code and item identities stay original.
+
+The same2AC waiting source has another owned reader in
+`[0802A72C,0802A996)`, with local118hex and256-byte output `[SP+8,SP+108)`.
+Only literal ROM2A824 is redirected. Visibility/state inputs are controlled for
+its four native cases; post-queue native actor cleanup and caller return run.
+
+Twenty-five isolated cases pass under `build/item-theft-prototype/`: theft
+success/empty/store-full, resistance/ability/transformation refusals, waiting,
+maximum width/byte/colour fields and seven-character player names. Sprite
+animations and the successful thief's post-transfer teleport are explicitly
+skipped because they close/redraw the message in this controlled context.
+Ordinary messages join to one line. Two native conditional controls can yield
+three lines for maximum synthetic fields; the native two-row log then scrolls.
+Every glyph bitmap is checked while drawn; final-frame pixels cover only the
+remaining visible rows, and scrolled glyph counts are recorded. This is not
+proof of ordinary AI encounters, teleport destination or recovery of stolen
+items. The full compiler/consumer patches remain outside the2,854 root build.
+
+### Skill records and isolated Info/menu readers (2026-09-26)
+
+ROM `[001457EC,001469EC)` contains128 skill records of36bytes, and ROM
+`[00146BF4,00146DF4)` contains128 description pointers. Original128-ID loops
+at CPU08021A0A/08021A42/08021A7A/08021AB2 corroborate the count. Each record's
+name pointer is+0, Hunger cost byte+23, display order+25 and kind+26. The100
+menu-eligible records exclude orderF0; that exclusion does not prove unusedness.
+`tools/extract_skills.py` pins definitions, descriptions and consumer evidence.
+
+Info CPU `[0802172C,080218E2)` owns an original0x150-byte local frame:
+`[SP+4,SP+104)` is256-byte formatted output, `[SP+104,SP+144)` is64-byte
+equipment-name scratch, `[SP+144,SP+14C)` is the four-kind index map, and
+`[SP+14C,SP+150)` is the footer visibility argument. Kind3 maps to Status.
+Its224px/six-row window has a zero-inset header, then a native6px inset for
+body/footer (080217B6). The right-margin endpoint remains216px, so body/footer
+text has210px, three body rows, and footer row4. These constraints are verified
+by native glyph positions and final pixels, not dialogue-window assumptions.
+
+The footer reads48 equipment definitions and the existing assignment bytes
+EWRAM `[02004CF0,02004D80)` (48×3). Its no-assignment branch distinguishes IDs
+at most76 or115 (weapon) from others (shield). The multiple-assignment branch
+originally copies9bytes of Japanese at CPU0802182E. The isolated Info patch
+replaces exactly `[0002182E,00021836)` with a Thumb call to the original
+strcpy CPU0805CF54 and two NOPs, retaining64-byte scratch and ABI. Complete
+English copying is checked at entry/return and through final pixels. Empty
+assignment bytes make reserved skill0 match all slots; this original behavior
+is reported explicitly rather than declaring the record unreachable.
+
+`tools/skill_text.py` allocates private definition, description, shared-UI and
+48-record equipment copies through RomBuild. Only name pointers change in
+copied definition records; all cost, ordering and gameplay bytes are preserved.
+Info redirects literals2184C/21854/21850/21888/2185C and literal labels21864/
+218E4. Original tables and other readers remain untouched. The skill-menu
+prototype reuses the owned names and changes only literals in warrior reader
+CPU08020F9C, equipment preview0802144C, selection08021974 and row producer
+08021C90; their exact sites are declared in `tools/skill_menu_text.py`.
+
+Learned-skill bytes are EWRAM `[02004DFA,02004E7A)`; the following byte is the
+independent equipped-spell selector. Controlled menus change only the existing
+learned/assignment fields and retain these original bounds. Selection's row
+producer has64-byte output `[SP+4,SP+44)` and marker scratch `[SP+44,SP+4C)`
+inside its0x74-byte local frame. Equipment preview has256-byte output
+`[SP+8,SP+108)` within its0x114-byte frame. Confirmation has256-byte output
+`[SP+24,SP+124)` within the0x13C-byte warrior-menu frame. No new RAM/save storage
+or original-ROM free-space claim follows from this work.
+
+Evidence: isolated `build/skill-info-prototype/skill-info-validation/report.json`
+passes131 cases, every128 ID plus single/multiple/hidden footer states, twice
+opened and closed. This is controlled native-rendering coverage; ordinary skill
+acquisition, all menu transitions and combat outcomes remain separate. Menu
+prototype validation is ongoing. The item-theft stolen-record area is existing
+EWRAM `[0200E888,0200F008)` (16×120bytes), selected by original literal2C0E0;
+its native transfer/removal checks allocate no additional storage.
+
+
+## Remaining dungeon effect readers (2026-09-26)
+
+The private `dungeon-leaves` table owns only the sixteen original ROM literals
+listed in `tools/dungeon_leaf_text.py`; their original four bytes must point to
+ROM00140D68. Thirteen shared source slots are translated in this private copy.
+All other slots retain original pointers, including the existing independently
+translated queue notices C8,144,1FC,D4. Original shared strings/table and other
+callers remain owned by their original readers. Each new resource uses RomBuild
+allocation and overlap checks. No original padding or source text is free space.
+
+CPU `[08037D80,08038434)` is the staff effect dispatcher. Its original local
+frame0x44 has a64-byte output at `[SP+4,SP+44)`. The full linear disassembly
+`build/text-next/staff-effect-frame.txt` contains only SP+0 for an outgoing fifth
+argument and SP+4 for the message, besides allocation/release. There are no
+incoming stack-argument loads. Checked patches at ROM00037D86/00038428 enlarge
+the frame to0x104 and the output to `[SP+4,SP+104)` (256bytes), preserving
+existing offsets and all dispatch code. Original bytes91B0/11B0 become C1B0/41B0.
+This is stack-local storage, not a new EWRAM/save allocation.
+
+The other readers retain their existing256-byte outputs: upgrade/uncurse
+CPU08035074 at SP+4; transformation080352CC, charge/capacity08035370, healing
+pot08035B50, full recovery080356E8, speed0803431C/08037760 and defence08037B80
+at SP+0. CPU08036EFC uses `[SP+8,SP+108)` for Kaclang and
+`[SP+108,SP+208)` for the flame announcement in its0x208 frame. Kaclang guards
+in0800BCBC,0800CD38 and0800D694 use `[SP+1C,SP+11C)`. These exclusive ranges
+are relative to each function's allocated SP. Item scratch stays separate.
+
+Evidence: `build/dungeon-leaves-prototype/dungeon-leaves-validation/report.json`
+and gallery,72 controlled cases across18 caller/branch variants. Checks cover
+original format selection, expanded bytes, adjacent guards, field preservation,
+native line breaks, colours, visible pixels, caller ABI and battery preservation.
+Upgrade amounts, curse removal, transformation, charges/capacity, HP recovery
+and defence state are checked directly. All four Kaclang text callers are
+exercised. Flame's subsequent damage body is explicitly skipped after native
+announcement rendering to retain its pixels; damage outcomes are not claimed.
+RNG branch choices, actor activity/Kaclang flags and attack visibility are
+recorded controlled inputs. These probes are separate from ordinary encounters.
+
+
+## Item bonus effects and maximum fullness (2026-09-26 prototypes)
+
+CPU `[080334E0,08033664)` selects an unused effect from seven existing bytes
+in EWRAM `[020081E6,020081ED)`. The original RNG result0..6 starts its native
+search. Selection sets one byte and changes existing actor flags at+8
+(40000000 strength protection,20000000 sleep protection,10000000 hunger
+protection,08000000 quiet movement,04000000 identification), or restores HP
+at+84 from+86, or increases current/max strength at+76/+78. Source F4/F8/FC/100/
+104 joins the existing108/10C mapping only at player wrapper CPU08015848. Its
+original256-byte output and player-name bound apply; other shared readers
+remain independent. The shared branch call is CPU08033632 (six outcomes),
+with identification using08033652. Byte evidence is in
+`build/text-next/bonus-effect-dispatch.txt` and the prototype ledgers.
+
+When all seven effect bytes are set, original source8EC is formatted in the
+function's existing `[SP,SP+100)` output. Its item-name argument uses a raw
+24-byte definition record. `tools/floor_buff_text.py` owns ROM00033548 and
+00033550 only, copies the shared table and all221 definitions privately, and
+changes only copied name pointers. Original gameplay bytes and the original
+item table remain intact. It reports no special effect without denying the
+ordinary fullness restoration that runs before the selection. The exact
+item dispatch is CPU08032D98; no guessed English item identity is required.
+
+Maximum-fullness source D0 has three owned readers in CPU0803316C,08033908
+and08033998, each with `[SP,SP+100)` output. Literals ROM000331F8,00033994 and
+00033A10 are redirected by `tools/fullness_text.py`; other shared slots remain
+unchanged. Actor+54/+58 are current/max fullness in256ths. Original cap is
+200*256; the ordinary food increase reports D0 only below200, while the other
+increase path can report200. Decrease clamps to0. Native decimal output is
+nonnegative; it does not implement signed negative numbers. Extra formatter
+probes cover0 and2147483647 without changing bounded native state.
+
+Evidence:25 native bonus-effect cases and246 common-wrapper cases in
+`build/floor-buffs-prototype/`, plus12 fullness cases in
+`build/food-effects-prototype/fullness-validation/`. These checks cover exact
+selection, full caller/buffer/name/battery preservation, actual HP/strength/
+fullness/flag changes and final pixels. Controlled RNG/name/state inputs are
+recorded. Ordinary item acquisition and floor-transition expiration remain
+separate. Unit checks preserve every scalar in the copied item definitions.
+
+
+## Additional actor status readers (2026-09-26 prototype)
+
+`tools/status_effect_text.py` owns thirteen original shared-table literals in
+nine native routines: sleep08039054/08039860/0803C6FC, confusion080390EC/
+080398C0, fake-priest disguise08039700, maximum HP0803947C, level0803953C,
+and strength/speed08039158. Each retains `[SP,SP+100)`256-byte output. Nine
+source slots are copied privately; all other copied slots and original shared
+resources remain unchanged. Exact literal/source pairs are declared in the
+module and checked against original bytes. No new RAM/save storage is used.
+
+Controlled native state evidence: actor+97 holds sleep turns6..10 for a
+non-player target; existing+ A4 protection prevents sleep. Confusion uses+95
+(10..12 turns). Disguise sets+A9 to20 and+BE to0. HP increase adds5 to+86,
+leaving current+84 unchanged; actor maximum is900 from0800DE88. Level+88
+subtracts1 unless already at1. Strength+76 changes10 to7 in08039158; its
+speed-only path uses actor+92 and native0800B120 halves it, setting+8 bit20
+when speed becomes0. These findings describe the probed actors/branches.
+
+Evidence:56 cases in `build/status-effects-prototype/status-effect-validation/`
+exercise every changed literal, both sleep outcomes through three callers,
+both confusion callers, disguise, HP, both level branches, strength and speed.
+All actual helpers run, with input overrides recorded. They verify formatter
+bytes/guards/ABI, maximum fields, native conditional wrapping, colours, final
+pixels and complete caller/battery preservation. The skill sleep helper returns
+through r1; the others use r0. Natural encounters and other shared callers
+remain separate. Repeated IRQ-resume notifications at glyph preparation are
+deduplicated only when their glyph pointer, registers and colour match exactly.
+
+### Spell messages and inscribed spellbooks (September 26)
+
+ROM offsets below are file offsets; CPU addresses add `08000000`.
+`spell_message_text.py` privately copies shared table `[140D68,1417A0)` and
+redirects only literals `41070`, `411E0`, `3EF3C`, `41B8C`. The five owned
+slots are `920` (unlearned), `860` (cast), `86C` (insufficient HP), `848`
+(learned), `91C` (forgotten). Spell definition literals `41074`, `411E4`,
+`3EF38`, `41B94` reuse the independently owned 61-record copy; all eight
+non-pointer bytes of every original 12-byte record remain unchanged.
+Original definitions `[146DF4,1470D0)` and all unowned shared slots are intact.
+
+CPU cast `[08040FD0,08041A42)` has a `264`-byte local frame and 256-byte
+output `[SP+8,SP+108)`. Learn `[0803EDF8,0803EF2A)` has a `1FC`-byte local
+frame with output `[SP,SP+100)`; forget `[08041A58,08041B76)` has the same
+local-frame size with output `[SP+4,SP+104)`. No frame changes were required.
+Existing EWRAM `[02004D80,02004DBD)` contains 61 learned-spell flags;
+`[02004DBD,02004DFA)` receives the matching learned-history flags. Evidence:
+original loops and native state changes, not a claim of new storage ownership.
+The forgetting routine excludes spell IDs 0, 1 and 22 and checks existing
+EWRAM byte `0200883A`; this is not newly allocated storage.
+
+`verify_spell_messages.py` passes 384 native cases: 60 cast, 60 unavailable,
+59 insufficient-HP, 49 learnable selectors with three player names, and 58
+forgetting selectors. Learning retains control `7E`, forgetting retains `14`.
+The full spell names fit; learning uses a conditional break for wide Japanese
+player names. Native casts are stopped after HP payment and before individual
+spell targeting/effects, explicitly recorded in each case. Learned/history
+bytes, actual HP changes, formatter/queue/panel output, 256-byte guards,
+caller ABI, native glyphs/final pixels and unchanged battery are checked.
+These are controlled routines, not ordinary spell acquisition/progression.
+
+Item153's inscription branch `[0800F2BE,0800F2E4)` now redirects only ROM
+literals `F2E8`, `F2EC`, `F2F4` to an owned format, private shared slot `84C`
+and the owned spell definitions. It uses a valid signed amount-byte selector
+0..60 with inscription bit `00400000`. The separate ordinary-known tests
+continue to leave that bit clear. Original non-spell inscription suffix
+operation at `F310` is unchanged and remains an open reader.
+
+The category display is `Sp.` (Spell), followed by a three-pixel space and
+the full spell name. `Spell: Lightning Storm` failed the actual priced-row
+64-byte guard with 67 bytes; `Sp. Lightning Storm` uses 61 bytes in the
+same row, with a conservative compiler bound of 63 bytes. Maximum base width
+is 97px. Original 168px inventory geometry, 162px usable row, six-digit
+price region, normal glyph spacing and action-panel border gap remain intact.
+The dedicated test distinguishes inverse-price glyphs from the green spell
+name even though they share a foreground colour. It checks all 61 normal and
+priced selectors plus longest-name maximum-price and marker stress cases,
+full row buffers, name/price separation, final pixels and repeated cancellation.
+Other custom names, writing/acquisition and non-spell inscriptions remain open.
+
+### Identification, transformation and decoy readers
+
+`tools.discovery_message_text` copies `[00140D68,001417A0)` privately,
+replacing only slots `074`, `1AC`, `230`, `35C`, `7E0`, `95C`, `9C8`.
+Owned file-offset literals: `32ECC`, `33BE4`, `40C24`, `33B7C`, `399F4`,
+`2C368`, `2A01C`, `2D98C`, `2D9B8`. All original tables, code and unrelated
+copied entries remain unchanged; RomBuild checks expected pointer bytes and
+shared allocation overlap. No buffer enlargement or new RAM/save allocation.
+
+Native CPU routines and exclusive bounds: identification after item use
+`[08032E4C,08032ECC)`, identify-scroll `[08033B10,08033BE2)`, identify-spell
+`[08040B7C,08040C24)`, actor transformation `[08039928,080399EA)`, monster
+revelation `[08029EB8,0802A01C)`, grabbing `[0802C258,0802C368)`, actor-turn/
+decoy timer `[0802D5C8,0802DE7E)`. Ghidra evidence is in
+`build/text-next/{identify-leaves,actor-next-leaves,monster-status-names}.txt`.
+
+The first two identification routines have 180hex local frames: old/new item
+names `[SP,SP+40)` and `[SP+40,SP+80)`, output `[SP+80,SP+180)`.
+The spell reader instead has output `[SP,SP+100)` and old/new names in
+`[SP+100,SP+140)` / `[SP+140,SP+180)`. Transformation's140hex frame uses
+output `[SP,SP+100)` and original actor name `[SP+100,SP+140)`; the new
+name comes from getter09ACC, whose existing scratch is
+`[02008D08,02008D48)` (level1 can return an immutable ROM name directly).
+Revelation's104hex frame uses `[SP,SP+100)` output. Grabbing's11Chex frame
+reserves outgoing arguments `[SP,SP+1C)` then256-byte output. The108hex
+actor-turn frame uses256-byte output then two local pointers.
+
+Ten native branches × four field cases pass. Grabbing checks both species
+branches, hero+A3 values98/99 and its actor pointer at+C0. Revelation clears
+the selected existing species-definition byte+13hex; transformation actually
+changes species1→2. Item readers actually set identification flags, and both
+decoy branches decrement+A9 to zero and restore the original actor pointer.
+Decoy sprite movement is explicitly skipped; other original timer and state
+updates run. Selection/RNG overrides and input schedules are recorded.
+
+`Oh!` preserves the source surprise cue while allowing ordinary item discovery
+(old alias plus full identified name) to fit one line. The existing two-control
+conditional-break path retains full identities at maximum widths; three
+synthetic lines can scroll the two-row log. Every glyph is checked during draw,
+while final screenshot checks cover remaining visible rows and report the
+scrolled glyph count. No ordinary three-line combat claim is made.
+The original known-monster branch at29EF8 formats slot910 and jumps directly
+to the epilogue without queuing it. That separate source remains untranslated
+pending a disposition or a separately bounded consumer; no queue was added.
+
+Final prototype/current3,187 SHA:
+`b88c2e4b7d8a2e5a32fabc7ddfca9faaf0ffd3632d552ef8d171416494d6b928`.
+All40 cases were transferred only after confirming the integrated ROM is byte
+identical to the tested candidate. Prior3,180 spell checks and137-context font
+acceptance retain their own hashes; cumulative acceptance is still3,144.
+
+### Staff draining, pulling and waving (September 26)
+
+Audited native CPU readers `[0802F9C4,0802FAB6)`,
+`[0803181C,0803191C)` and `[080263F8,080267DE)` use private copies of
+shared slots478/470 and3D8/228, respectively. ROM literals2FAB8,31924,
+264E8 alone move to the corresponding owned tables. Source disassembly:
+`build/text-next/save-and-monster-readers.txt` and `other-item-readers.txt`.
+The pull reader's sole SP+0 output grows64→256bytes at ROM
+`[31824,31826)`/`[3190E,31910)`; original halfwordsB090/B010 becomeB0C0/B040.
+Its complete body has no additional stack locals or incoming stack arguments.
+Staff drain retains its original194hex frame: outgoing third field pointer at
+SP+0,20 candidate pointers atSP+4..54,256-byte outputSP+54..154 and64-byte
+item nameSP+154..194. Actor getter scratch is the existing
+EWRAM`[02008D08,02008D48)`; player field remains the existing16-byte name,
+14content bytes /98px maximum. No new RAM storage is claimed.
+
+Native checks cover8 cases per family. The staff charge actually decrements,
+and pulling updates the player to the original facing-derived destination.
+Staff waving retains frame164hex, outputSP+8..108 and nameSP+108..148.
+Zero-charge completion runs normally; the announcement case explicitly skips
+projectile targeting/effects at264AE→267BA and executes the original charge
+update. Ordinary AI encounters and projectile effect outcomes remain separate.
+Three-field formatting uses the real fifth argument atSP+0; maximum player
+probes never overwrite64bytes into the16-byte name. Glyphs, visible pixels,
+conditional wrapping/scrolling, fields, guards, ABI and disposable battery pass.
+`build/english/staff-use-validation` is bound to the3,191 development ROM;
+monster-interaction evidence from3,189 remains separately hash-bound.
+
+### Non-spell inscription labels (September 26)
+
+CPU`[0800F2F8,0800F328)` previously copied a name then removed six bytes,
+matching the Japanese suffix. The selected English names do not share that
+suffix length. ROM`[0000F310,0000F312)` changes3806→4600 (SUB r0,6→MOV r0,r0),
+keeping the full explicitly compiled effect. The original64-byte field at
+SP+4..44 and native44hex local frame stay unchanged.
+
+Private ROM literalsF328/F32C/F330 point to a dedicated221×24-byte definition
+copy, the coloured `{kind}: {effect}` format, and a shared-table copy changing
+only slot448 (`Blank`). Every original definition's bytes4..24 remain identical;
+37 category0 non-spell name pointers use reviewed effects. English category
+suffixes ` scroll`, ` scr.` or ` sc.` are removed editorially in the catalog,
+not by unchecked runtime subtraction. Special names retain their full labels.
+Item153 continues through its separate, previously audited spell branch.
+`add_items(reserve_inscription=True)` leavesF328 for this explicit owner, while
+ordinary name consumers retain their complete English names. No shared original
+text is changed. Owned allocations and all four patches useRomBuild.
+
+All77 native row cases pass on the3,230 development ROM:37 selectors in
+normal/priced states and the widest row with six-digit price, equipped marker
+and cursed marker. These are explicit controlled inscription states, including
+special/reserved category members; ordinary writing eligibility remains separate.
+Native field/row guards, exact effect lookup, original windows, final glyph and
+inverse-price pixels, two action cancellations/reopenings, caller ABI and
+unchanged battery are checked. Maximum base101px in the conservative110px name
+region; conservative complete byte bound63/64. Evidence:
+`build/english/scroll-item-validation/report.json` and its gallery. This
+supersedes the earlier open non-spell suffix operation. Custom names remain open.
+
+### Native scroll/spell writing (September 26)
+
+The complete CPU reader `[08026A30,08026B86)` has an original100hex local
+frame, used solely as a256-byte output. Six private shared-table literals
+ROM26A64/26ABC/26ADC/26B04/26B50/26B88 supply slots440/444/6E8/854/858/85C.
+ROM26AC4 and26B58 reuse the owned item/spell definition copies; all gameplay
+fields remain unchanged. Static evidence: `build/text-next/other-item-readers.txt`.
+
+The selected item getter atF6E0 determines the existing item; the command's
+byte+6 supplies the writing selector. Blank scroll124 changes to its selected
+item ID only when that definition's existing20-byte history record has bit
+00400000. Spellbook151 requires the ever-learned byte at
+EWRAM`[02004DBD,02004DFA)` indexed by selector-10, then becomes153 with that
+spell ID in amount byte+4. These are distinct history conditions, both retained
+in English. Attempt bit01000000 and successful inscription bit00400000 keep
+native semantics. Invalid name selectors leave the item identity intact.
+
+All102 native checks pass on the3,236 development ROM:37 category0 non-spell
+selectors,61 spell selectors and four actual refusal branches. Special/reserved
+states are explicitly controlled; this is not a claim that text entry permits
+every target. The original getter, identity/flags/amount mutations, full named
+messages,256-byte output, native static-copy source and guards, direct-ROM
+sources, caller ABI, glyph pixels and unchanged battery are checked. The generic
+leaf verifier now accepts explicit native-selector cohorts and audited static
+copy/direct-ROM queues, in addition to its earlier format/field checks. Earlier
+leaf families are rerun after that verifier extension. English successes use
+complete owned ROM names, with measured bounds taken from those exact catalogs.
+
+### Item loss, pot results and direct player notices (September 26)
+
+Private slot1E0 (complete item loss) redirects ROM literalsC468,14338,28864,
+3E260,3E81C,3EA80. Slots1D8/34C (pot break/explosion) redirect3891C/38D08.
+All eight are source-checked shared-table pointer patches; no original code or
+other shared entry changes. Ghidra: `attack-resolution.txt`,
+`lost-item-readers.txt`, `other-item-readers.txt` under `build/text-next/`.
+Audited native256-byte outputs and separate64-byte name fields, relative toSP:
+
+| CPU function | Local frame | Output | Name |
+|---|---:|---:|---:|
+| 080287E8 | 140 | 000..100 | 100..140 |
+| 0800BCBC | 2A8 | 11C..21C | 21C..25C |
+| 08014150 | 140 | 000..100 | 100..140 |
+| 0803D894 | 408 | 078..178 | 178..1B8 |
+| 0803E278 | 268 | 108..208 | 208..248 |
+| 0803E93C | 14C | 000..100 | 100..140 |
+| 08038834, both messages | 670 | 01C..11C | 11C..15C |
+
+Numbers in this table are hexadecimal exclusive ranges. The warrior output
+pointer is stored atSP+3F0; it points toSP+78, not SP+280. The pot item pointer
+is stored atSP+644. All32 native field/colour cases fit one line, including
+maximum162px item fields. The skill-item routine runs its assigned-skill gate
+and actual item clear at28846. Its subsequent10228 cleanup can compact another
+item into the vacated slot; the verifier therefore observes removal at28848.
+The other cases deliberately execute original prologue/name/formatter/queue/
+epilogue blocks while skipping gameplay conditions and outcomes. The separate
+skill name-cache copy to0200FD58 is explicitly skipped; its ownership/capacity
+is not established by this test and remains a research lead. This is bounded
+rendering/insertion evidence, not full combat/skill/pot acceptance.
+
+The no-staff and full-recovery consumers retain native player control7E:
+ROM2FA40 redirects slot47C; ROM3CBD0 redirects9C0. They stream immutable English
+ROM directly through1588C, introducing no RAM output. Six native cases cover
+Torneko, widest seven-letter English and widest seven-character Japanese names,
+empty-inventory preservation, HP/strength restoration and the nine original
+status-byte clears. Complete native name expansion, conditional wrapping,
+coloured glyph pixels, full caller ABI and unchanged battery pass. Evidence for
+both families is regenerated against the3,241 development ROM in
+`build/english/item-loss-validation` and `player-notices-validation`.
+
+
+### Player strengthening notices (native random-effect branches0/1)
+
+Verified ROM `[0x356E8,0x35B50)` owns a `0x108`-byte frame and preserves
+R4–R8. Its RNG branches0/1 converge at CPU `0x08035B2C`, load shared slots
+`0x368/0x36C` and call the player-only wrapper at `0x08035B30`. The existing
+wrapper's exact source-pointer mapping now contains40 entries. No original
+shared table, caller frame or gameplay code is changed. Player substitution
+uses the existing16-byte name record (14 content bytes,98px bound), and the
+wrapper's existing256-byte output. New English segments fit216px; ordinary
+Torneko fits one line, while maximum names use the existing conditional break.
+
+Evidence: `build/text-next/item-full-recovery.txt`,
+`build/text-next/strengthen-branches.txt`; 12 controlled native handler cases
+verify all eligible inventory increments, unchanged unsupported records,
+weapon/shield/staff saturation at99, pot saturation at7, both strength fields
+at96 and HP against the native `0x0800DE88` result. All three supported name
+extremes and ordinary/capped states pass full output, pixel, stack/caller ABI
+and battery checks. The full258-case wrapper cohort also passes. The probe
+controls the original valid RNG result; natural selection is not claimed.
+Generated evidence is pinned to its ROM hash; no new RAM/save storage owned.
+
+
+### Kerplunk and grabbed movement messages
+
+Original shared slot0x480 has three independently audited readers: ROM
+`[0xCD38,0xD694)`, `[0xD694,0xDB84)` and `[0x2FBA4,0x2FCC6)`.
+Only literals D1A8/D9DC/2FCC8 redirect to the owned dungeon-leaf copy.
+The respective original local frames are0x268/0x160/0x120 bytes, with the
+256-byte text output atSP+0x1C. The native actor getter supplies the name.
+Evidence: `build/text-next/kerplunk-consumers.txt`; all three callers and
+four field extremes pass. Controlled message entry/epilogue skips explicitly
+exclude revival, death, damage and map changes from gameplay acceptance.
+
+Grabbed movement reader ROM `[0x2291C,0x22ED2)` owns0x104 local bytes,
+with text output `[SP,SP+0x100)`. Exact literal22CD4 reads slot0x360; the
+earlier CFG-provenance lead22EBC was imprecise and is not patched. The
+existing player-record pointer at+C0 selects the captor. All four name/colour
+cases retain the original prologue, name getter, formatter, queue and epilogue;
+movement dispatch and grab animation are explicitly skipped in the probe.
+Evidence: `build/text-next/grab-reader.txt`. Original shared sources untouched.
+
+### Skill acquisition and attack announcements
+
+ROM `[0x3BE18,0x3BF5E)` owns0x108 local bytes; output
+`[SP+4,SP+0x104)` and incoming saved parameter atSP+0x104. The native
+acquisition loop scans128 bytes in EWRAM `[02004E7B,02004EFB)`, clears a
+pending flag and sets the corresponding existing learned flag in
+`[02004DFA,02004E7A)`. These are existing records, not new storage.
+Parameter0 suppresses the optional celebration animation; the two actual
+panels still execute. The first uses shared slot754 and an indexed skill
+name; the second selects7E8/7EC/7F0 from unchanged definition flags.
+Only original literals3BF64/3BF70 redirect those message lookups;3BF74
+reuses the already-owned128×36-byte skill definition copy, with all non-name
+mechanic bytes preserved. The first panel keeps its original two explicit
+rows and trailing09 tab: CPU `[080020D6,080020E2)` advances x to the next
+32px boundary. Evidence: `build/text-next/control09.txt`, `grab-reader.txt`.
+
+Attack owner ROM `[0x3D894,0x3E254)` owns0x408 local bytes. The two
+announcement regions are `[SP+0x80,SP+0x180)` and `[SP+0x2A0,SP+0x3A0)`.
+Message literals3DB18/3DC04/3DF9C use slots774/764 (with original literal
+addends preserved); name literals3DB20/3DC08/3DFA0 reuse the same definition
+copy. Both battle cries, including the finishing-move emphasis, fit one line
+with every full skill name (maximum99px). No frame/window changes.
+Evidence: `build/text-next/lost-item-readers.txt`; all512 selectors through
+four native message blocks pass field/output/stack guards, ABI and pixels.
+Those render probes explicitly exclude skill selection and battle outcomes.
+All384 skill-acquisition selector/player-name cases execute native flag changes
+and both panels, with source routing,09 tab, pixels, ABI and battery checks.
+Reports/galleries are hash-bound; natural skill eligibility remains separate.
+
+
+### Battle totals, damage absorption and Cop Out
+
+The six shared source slots7D0/898/954/958/82C/830 have private ownership
+only through original literals C95C/BEBC/33DCC/417DC. They share no changed
+source table or original string bytes. Cop Out uses the established skill name
+forうけながし. Slots954/958 preserve the distinction between monsters alone
+and monsters plus priests;82C preserves total EXP;830 keeps player control7E.
+
+ROM owner `[0xBCBC,0xCC96)` has0x2A8 local bytes; absorption formats into
+`[SP+0x1C,SP+0x11C)`, while Cop Out queues immutable ROM directly.
+Area-effect owner `[0x33BE8,0x33DC6)` has0x108 local bytes and output
+`[SP+4,SP+0x104)`. Spell owner `[0x40FD0,0x41A42)` has0x264 local bytes,
+summary output `[SP+0x138,SP+0x238)`, saved old level atSP+0x238 and EXP
+atSP+0x23C. Counts select shared954/958 from the original priest-inclusion
+flag; XP and level use separate original argument blocks. No frame/code
+changes or new RAM/save allocation. Bounds retain186px actor,98px player and
+66px decimal reserves. Most messages remain one line; conditional wrapping
+is available only where the complete maximum exceeds216px.
+
+Evidence: `build/text-next/numeric-battle-reader.txt`, `spell-summary-reader.txt`
+and valid code ranges `[08041730,080417C4)` / `[08041A2C,08041A42)` in
+`spell-summary-block.txt` (its first12 bytes begin inside a data pool and are
+not code evidence).37 native message preflights cover nine numeric readers
+and the direct-ROM announcement, zero/max positive signed32-bit values,
+longest names, colours, guards, full caller ABI, final pixels and battery.
+They preserve original prologues/epilogues but explicitly skip gameplay
+calculations. The generic verifier treats `%d` as a value, never a RAM pointer.
+
+
+### Staged dungeon-shop panels and save notices
+
+The dungeon shop handler ROM `[0x243C0,0x2461C)` has0x204 local bytes.
+Price output is `[SP+4,SP+0x104)`; SP+0 is the existing outgoing fifth
+argument. Shared slots41C/424/464 are respectively the item purchase offer,
+payment confirmation and half-price counteroffer. Slots420/428 retain reviewed
+thank-you and insufficient-gold wording for this independent modal consumer.
+Only literals24480/24544/24588/245D4/2461C redirect in the isolated prototype.
+Every original instruction and choice flag is retained.16 message-block cases
+cover prices17/0/999999/2147483647, original Yes/No options, numeric colour
+03/05, exact bytes, final pixels and full stack/caller/modal ABI. The probes
+explicitly skip commerce effects; no natural transaction acceptance is claimed.
+Evidence: `build/text-next/dungeon-shop-readers.txt`, the staged compiler/review
+and `build/dungeon-shop-prototype/dungeon-shop-validation/`. Slot468 and its
+caller are still outside this ownership.
+
+Save notices are immutable-ROM sources: slot5C4 via literal14E20 in owner
+ROM `[0x14780,0x14E5A)`, and598 via15058 in `[0x14F04,0x151A6)`. Original
+frames are0x148 and4 local bytes, with no formatted English output in RAM.
+The actual common modal reader15A50 creates a28-tile-wide, two-row window.
+The four-line improper-suspension notice therefore retains the native wait
+between two pages; it does not create a four-row window. Both source branches
+pass original-prologue/epilogue, source, modal/caller ABI and all visible
+pixels, without changing gold/battery. Corruption/suspension detection and the
+subsequent inventory/gold reset are explicitly skipped in these preflights.
+Evidence: `save-and-monster-readers.txt`, `modal-body.txt`, and the isolated
+`build/save-notices-prototype/save-notices-validation/` gallery/report.
+The staged resources are not part of the frozen3257 cumulative run.
+
+### Staged reference-list consumers
+
+ROM `[0x20760,0x208CC)` is the reference category selector. Its 12-byte local
+frame contains up to three existing action indices; labels come from shared
+slots9B0/9B4/9B8 through literal207F0. Original window geometry is `(1,3,8,n)`:
+64px with a6px cursor inset, leaving58px. "Blank list", "Skill list" and
+"Spell list" fit. The source script call at50A38 remains separately audited;
+the rendering probe invokes the complete function from a clean native menu
+context, not from an inventory panel with incompatible active clipping.
+
+The original row renderers are ROM `[0x20A18,0x20ADA)` (27 scrolls),
+`[0x20C40,0x20D16)` (100 menu-ordered skills) and `[0x20E88,0x20F52)`
+(50 menu-ordered spells). Each owns a64-byte local output. Their row window
+is168px with6px inset /162px text, created by1D00C. The separate40px page
+indicator remains atx192, preserving an8px outer-border gap. Its16-byte
+output is formatted by1CFBC with unchanged `%2d/%2d`.
+
+Literal20A84 reuses the English221-record item copy;20AFC/20CC8 reuse the
+128-record skill copy;20D48/20F08 reuse the61-record spell copy. Only name
+pointers differ from the original records. The scroll selector is the original
+27-byte table at ROM `[0x148343,0x14835E)`; the history bit00400000 is in
+its20-byte definition-state records at EWRAM02003BAC, not in an inventory
+item's flags. Skill availability reads `[02004DFA,02004E7A)`; spell history
+reads `[02004DBD,02004DFA)`. The latter is distinct from currently learned
+spells. These are existing state fields; this work claims no new RAM.
+
+The isolated private text table also owns "Can't write" at9BC via20A80,
+and "Not learned" at74C via20D18/20F54. Existing `%s`, grey `%s`, and
+colour `%c%s` formats retain their controls. No geometry or frame changes.
+All nine staged cases pass: masks1/3/7, all177 names in eligible/locked
+cohorts, every page and short final page, cursor wrapping, refusal and twice
+opening/cancelling, exact bytes, full caller/formatter ABI, pixels and battery.
+Source/ownership evidence: `build/text-next/writing-picker-functions.txt`,
+`writing-picker-readers.txt`, `list-menu-parents.txt`, and
+`build/reference-lists-prototype/reference-lists-validation/`. This remains
+outside the frozen3257 cumulative run until integration.
+
+### Staged priest expiry notice and title save-preview text
+
+Priest slot4E0 is read through ROM14144 in the complete original function
+ROM `[0x140AC,0x1413E)`. The handler has16 local bytes, decrements its existing
+signed16-bit timer (address loaded at14140), and on expiry scans56 actor
+pointers. Active actor flags at+8 lose bit2; the message queues once via14104,
+then native12F3C map effects run. Two complete controlled calls, targeting the
+player or an existing monster, verify the actual timer/flag changes, original
+map calls, queue, full caller ABI, pixels and battery. The isolated private
+pointer table contains only the English priest notice; all mechanics remain
+original. Evidence: `common-message-helpers.txt` and
+`build/priest-warning-prototype/priest-warning-validation/`.
+
+Title owner ROM `[0x14780,0x14E5A)` formats its save preview into
+`[SP+0x14,SP+0x114)` (256 bytes). The indexed village-name decode is the
+adjacent17-byte `[SP+0x114,SP+0x125)` field, supporting all eight stored
+indices; the current input editor's lower limit is separate. Original labels
+use slots5C8 (ordinary dungeon), A0C (Well level),5CC (town/completion) and944
+(completion). Private literals14978/149B8/14A18/14B28 bind20 preview resources:
+three formats, completion,13 dungeon names and three town location names.
+The copied table retains the already-owned Name/Village editor substitutions.
+
+Town names are selected by ROM `[0x52B18,0x52B3A)`, through literals52B2C and
+52B38 and the three-pointer table `[0x14E6DC,0x14E6E8)`. Selectors0/1/2 are
+inside the player's home, outside the old mansion and inside the magic shop;
+values above2 retain the original third-label fallback. New exact sources are
+ROM `[0x6CF1C,0x6CF26)`, `[0x6CF0C,0x6CF19)` and `[0x6CF00,0x6CF0B)`.
+The home label retains native7E rather than baking in the player's name.
+
+Preview window creation remains `(1,13,28,3)`:224px and three rows. The
+existing castle sprite occupies the bottom-left of row3. English row3 therefore
+uses native control04/14 to reserve20px, leaving196px through the conservative
+216px right boundary. This is text positioning; the sprite, background and
+window are unchanged. The widest ordinary dungeon line is194px after the
+inset; the Well branch's measured label is18px. Every displayed field remains
+present, including current/max HP, floor versus Well level and run count.
+
+All56 staged preview cases pass: two unmodified cold save/resume routes plus
+18 selector states × three name/numeric profiles. Controls exercise all13
+dungeon labels, town0/1/2/fallback3 and completed-game summary, native eight-ID
+name decoding, seven-character player substitution, and32767 signed16-bit
+positive field bounds. Guard checks cover the following name/local fields,
+formatter/caller ABI (caller return only on the two real resume routes), all
+three visible rows and exact pixels. Controlled profiles stop at the preview.
+Natural later-game progression and artwork remain excluded. Evidence:
+`save-and-monster-readers.txt`, `save-preview-location-reader.txt`, and
+`build/save-preview-prototype/save-preview-validation/`. These staged builds
+remain outside the frozen3257 cumulative run.
+
+### Staged separate town command root
+
+ROM `[0x2068C,0x20760)` supplies the two-command Items/Option root called
+at4BF8A with existing context020141AC. Shared slot994 has its own literal206B8.
+Its original32px width leaves only26px after the6px cursor; "Items" needs28px
+and "Option"31px. The staged width immediate at ROM `[0x2069A,0x2069C)`
+changes `0422` to `0522`, giving40px/34px without altering position or height.
+The new text reserves6px with two selected-font spaces. No frame grows.
+
+The owner closes this root at20724 before either child: Items at20732 calls
+1E490, while Option at20750 calls1A780. Four staged cases verify cancellation,
+empty/populated Items, Option, both original selection indices, cursor wrap,
+twice opening/closing each child, actual root descriptor closure, restoration,
+full caller ABI, final pixels and unchanged inventory/gold/battery. Controlled
+native bank invocation supplies the same context; ordinary4BF78 entry remains
+separate. Evidence: `writing-picker-readers.txt`,
+`reference-list-native-caller.txt`, and
+`build/town-root-prototype/town-root-validation/`. The change is not included
+in the frozen3257 cumulative run.
+
+Custom-item editor research: ROM `[0x18284,0x1851C)` explicitly passes a limit
+of8 at18432 to19F3C, displays eight indexed glyphs in its17-byte local field,
+and copies10 working bytes to definition-state+9 before setting+8. General
+unidentified custom-name display F244 decodes at most eight IDs into its
+existing64-byte scratch atSP+4; category labels load viaF58C/F59C/F5B8.
+Original forms are category:name and category:name[count]. This establishes
+the actual8-character limit, not safe layout in every priced item state.
+Maximum Japanese names plus category/count/price still need a separate layout
+solution before custom-name insertion/sign-off. Evidence:
+`build/text-next/custom-name-editor.txt` and `writing-picker-readers.txt`.
+
+## Integrated save/reference/town consumers (3,291)
+
+The six staged families documented above are now compiled by
+`tools.build_english`: dungeon_shop, save_notices, reference_lists,
+priest_warning, save_preview and town_root. All34 resources share RomBuild's
+allocation/overlap checks. Root ROM SHA `5e33e4556bcca4deae9759aff4574744b1977e997f8906a464c42ef97de7cd91`.
+All89 cases pass on this combined ROM; receipts are pinned in
+`build/text-next/saved-text-accept-3291.json`, galleries under
+`build/english/*-validation/`, and118 unit tests pass. The43 additional font
+contexts verify each actual menu/save region, including cursor/sprite/name
+reserves. Full cumulative acceptance remains at the archived3,257 milestone.
+
+The128 original skill records select only sword/shield acquisition followups:
+85 have neither bare-hand bit nor shield mask;43 have both, and the nonzero
+shield mask overrides the bare-hand bit atCPU0803BF00..0803BF0A. The acceptance
+check now derives the exact expected explanation per record. This does not
+claim native selection of the retained bare-hand message.
+
+## English inscription input prototype (not yet in root build)
+
+`build/writing-input-prototype/`, ROM `a862c329503a5817c50f7379cbe4e0cbd0743223cd66580e915d1d0e61379736`,
+adds106 English input names/aliases for the27 original Blank-scroll targets
+and50 original spell targets. Original Japanese lookup rows remain byte-exact
+in private copies. Source tables are ROM `[001442C8,00144480)` (54rows and
+sentinel) and `[00144480,001447A8)` (100rows and sentinel). New English names
+reuse reviewed canonical effect/spell names and displayed scroll names; case
+folding applies only toF0-prefixed English glyphs. No native eligibility set or
+return ID changes. Spell matching still returns ID+10.
+
+Original matchers CPU `[08035458,080354D4)` and `[0803EF48,0803EFC4)` expand
+their stack decoding buffers from20 to36bytes and limit to15glyphs/31bytes.
+Literals354B8/3EFA8 select private lookup copies. Owned8-byte code sequences
+354A4/3EF94 replace only candidate comparison; original target loops remain.
+All584 English title/lower/upper/mixed-case, original kana and refusal probes
+pass with input guards and complete callee-saved ABI.
+
+Item editor CPU `[08018284,0801851C)` expands its local frame20→36bytes,
+using `[SP,SP+31)` for up to15glyphs plusNUL and `[SP+32,SP+36)` for the input
+limit. Special item124/151 receives15; ordinary custom names retain8 and
+unchanged definition-state10-byte writes. Special input initialization copies
+15vacant IDs plusNUL through a new private literal182D8; ordinary copying stays
+10bytes. Existing owned EWRAM `[0200CCF4,0200CD04)` remains16bytes. Previous
+display copy starts0200CD08 and retains the existing16-byte maximum strcpy.
+No new RAM/save storage is used. The special name panel alone becomes
+(1,1,28,1),224px; ordinary custom-name panel remains(7,1,15,1),120px.
+The shared keyboard stays(1,5,28,7); no adjacent windows overlap.
+
+Owned helper entry patches: ROM182E8 (limit/displaced initialization),18344
+(special-only geometry),183A4 (bounded conversion/terminator),18432 (limit
+argument),1A2BA (B-delete),354A4/3EF94 (candidate comparison). The shared
+B-delete keeps the original8-slot clearing and NULs at8/9 except when its
+already-passed limit is15, where it clears through14 and writesNUL at15.
+Native kana modifier helpers1A370/1A448/1A520 already honor the input limit.
+The unaligned1A2BA trampoline requires a PC-relative literal displacement4;
+the first prototype's incorrect displacement was caught by the Back test and
+corrected before any main-build integration.
+
+Nine actual Write/Name button cases now pass: complete15-character spell,
+long canonical scroll names, a displayed abbreviated scroll name, mixed case,
+unknown text, empty B cancellation, ordinary8-character naming and15widest
+selectable Japanese glyphs. Full-name Back/replacement, cursor/glyph/final
+pixels, editor/lookup ABI, ordinary10-byte custom-name storage, resulting
+item/spell identities/inscription flags and battery preservation are checked.
+Controlled setup changes item/history/vocation only; editing and matching use
+normal buttons. The existing shared-player/village input regression also
+passes all69 English characters and its original copy/cursor/guard checks.
+This does not settle Japanese category labels in custom-named inventory rows.
+
+## Staged fused-ability loss and talk refusal
+
+Fused ability pointer table ROM `[0x144848,0x1448E8)` has40 pointers, two
+kinds of20 bits. Its owned reader literal is `[0x112C4,0x112C8)`. Original
+CPU080110FC uses a0x148-byte frame: output `[SP,SP+0x100)`, item-name
+scratch `[SP+0x100,SP+0x140)`, kind/result at+140/+144. Message slot3AC
+loads through literal112C0. The prototype copies the original shared table
+and ability pointer table into distinct RomBuild allocations. Original tables,
+frame and selection/removal logic stay intact. Native wrapper112D0 supplies
+sword20/FFFFF or shield16/FFFF masks. Tests control an equipped ordinary
+weapon/shield, one extra bit and the RNG result0, then execute the full
+original scan/removal/flag logic. Four upper shield table labels remain
+copied/reviewed without ordinary reachability claims. Sources and byte checks:
+`build/text-next/fused_loss_text.py`, `fused-loss-review.json`,
+`fused-loss-callers.txt`, `save-and-monster-readers.txt`.
+
+Talk refusal shared slot950 is loaded through the dedicated pointer literal
+ROM `[0x23DA8,0x23DAC)`, already pointing at the individual original table
+slot. Both native blocks23D4E and23DDE obtain actor0 with09ACC and format
+into `[SP+8,SP+0x108)` in the23C14 owner's0x140-byte frame. Formatter
+returns23D68/23DF8; modal15A18 returns24374; owner epilogue returns243BA.
+The staged patch redirects only that pointer literal to one allocated pointer
+and English payload.12 controlled cases enter the original action prologue
+and jump after literal initialization to each block. The original getter,
+formatter, modal and epilogue execute; full field/output/ABI guards, visible
+pixels, inventory/gold and battery checks pass. NPC/gating conditions are
+excluded. Source and disassembly: `build/text-next/cannot_talk_text.py`,
+`cannot-talk-review.json`, `common-message-helpers.txt`.
+
+## Staged trap-step and two-choice stairs menus
+
+Original17854 calls17768 with shared slot18 and two choices, then writes
+command byte+1=20 only for selection0. Literal `[0x1786C,0x17870)` can point
+to a private shared-table copy with only18 changed. Helper17768 creates
+(8,9,14,1):112px width,6px initial cursor inset. Original04,38 control
+positions the second label at52px (legacy coordinate scaling), unchanged
+by English insertion. Stairs1787C selects its two-choice variant for mode12
+or a successful native059F0 gate. Literal `[0x178F8,0x178FC)` directly
+points to source ROM6B590. It creates(8,7,12,2):96px width,90px after
+cursor. Original three-choice prompt at178C0 remains independently owned.
+Six probes invoke full functions using the ordinary A command pointer, with
+recorded dispatch/mode controls. Native command results, ABI, original
+geometry, both cursor choices and repeated reopening pass. Subsequent
+trap/floor execution is explicitly suppressed after the result is checked.
+Evidence: `build/text-next/step-stairs-menu-functions.txt`,
+`choice-menu-function.txt`, and `build/step-stairs-prototype/`.
+
+## Staged pot View labels and native inert controls
+
+Original renderer CPU08018CE8..080190DC reserves0xDC bytes. Its row output
+is `[SP+8,SP+0x48)` (64bytes), temporary item `[SP+0x48,SP+0xC0)`
+(120bytes), original pot pointer at+C0 and signed capacity at+C4. The
+168px pot window begins at(8,24); a six-pixel cursor inset precedes ordinary
+rows. Recovery/Monster pots157/158 use concealed labels directly via18DE0;
+Thief pot161 copies slot20 through18FB8 into the64-byte row field, returning
+18FB0. Empty paths use slot24 via18F74/190E0. Four private literal ranges
+are `[18DE0,18DE4)`, `[18F74,18F78)`, `[18FB8,18FBC)`, `[190E0,190E4)`.
+The two English labels remain in an allocated shared-table copy; no original
+frame, selector or item contents change.
+
+Source empty-label controls07/08 are **inert**, not centering commands in
+this GBA reader. CPU08001DA8 indexes the table atROM1E84 using(code-1)*4;
+entries `[1E9C,1EA4)` for07/08 both point to08002168, the unchanged return.
+The compiler asserts those exact original pointers and retains both bytes.
+The native centering control is14, separately visible in the dispatch code.
+Eleven controlled pot/capacity states enter View through ordinary inventory
+buttons. Three complete opens per case, final pixels, original geometry,
+full renderer/copy ABI/guards and inventory/gold/battery preservation pass.
+All9 copied Thief-pot labels retain the64-byte output guard. Captures were
+visually inspected. Evidence: `build/text-next/pot-view-owner.txt`,
+`reader-control-dispatch.txt`, `noop-controls.json`, and
+`build/pot-view-prototype/pot-view-validation/`.
+
+### Compound numeric aliases
+
+The existing compact-numeric-aliases allocation after ROM00800C60 now owns
+46 entries, including876C–8770 for16–20 and8771–8773 for(1)–(3). Its size
+is computed by the shared allocator; no new original font/RAM/save ownership.
+Original sequences `[000644C8,000644F3)` (blank plus1–20 andNUL) and
+`[00060770,00060779)` (blank plus three counts andNUL) supply checked semantic
+oracles.874F is the original blank and is not aliased;875E is0 and is skipped
+by the ordinal sequence. Inspection of raw glyphs additionally confirms shared
+6C is equipment/curse icons and1CC is four question marks. Evidence:
+`build/text-next/symbol-rows/`, `build/compound-numbers-prototype/`. The latter
+passes two controlled visible rows and72 native lookup/ABI probes; natural
+consumer routing is excluded. Parenthesized glyphs preserve all ink, with13px
+advance. No user font asset or normal letter spacing changes.
+
+### Legacy record menu and travel-confirmation text (staged)
+
+CPU `[08050AA8,08050BC4)` owns the2/3-row record-menu labels, including the
+third Trade items option and its empty-storehouse modal. Original source table
+ROM `[0014D340,0014D354)` holds Records/Scores twice, then Trade items. A
+private20-byte copy is read by literals50AC4/50B1C;50B7C privately owns the
+requirement string. Original72px menu at(8,24),6px cursor inset,2/3 rows.
+
+CPU `[080524F4,08052790)` owns two travel-confirmation variants. Private
+one-pointer copies replace literals5256C (Meadow),52574/5271C (Yes/No),
+5263C (overwrite) and52714 (Travel?). Original source pointers are14D70C,
+14D710,14D714 and14BCE4. Original windows: Meadow/overwrite224×32 at(8,120);
+choices80×16 at(152,88), or Travel?80×16 at(32,72) and choices at(128,72).
+The two choice labels begin6px/38px; cursor stride stays32px.
+
+Original1F invokes CPU1FAAC, reads64 bytes of save header at save offset200
+into its64-byte stack local, and decodes up to8 indexed bytes atlocal+14.
+Its existing20-byte output is EWRAM `[0200CEE8,0200CEFC)`; no new RAM/save
+ownership. The source lookup literal1FB08 already follows the shared English
+name table. Keep1F and centering14 in the overwrite warning and reserve112px
+for eight14px saved-name glyphs, yielding189px first line and142px second.
+
+Evidence: `build/text-next/book-meadow-functions.txt`, `saved-village-getter.txt`,
+`reader-control-dispatch.txt`, `build/book-travel-prototype/book-travel-validation/`.
+All16 controlled complete-owner cases pass native cursor/selection/return,
+two cancellation/reopening cycles, final pixels, ABI/guards, unchanged items
+and battery; three saved-name profiles use recorded overrides after the real
+header read. Ordinary bank input is redirected at the full callee boundary.
+No claim of ordinary script access/unlocking, actual trading, travel or saving.
+The eight resources remain outside3,443 until the current cumulative run finishes.
+
+### Fused-equipment Info descriptions (staged)
+
+ROM `[001447A8,00144848)` is the40-pointer sword/shield description table;
+the adjacent `[00144848,001448E8)` contains the separately owned loss-message
+ability names. CPU `[08017A4C,08017EEE)` selects descriptions when item bit
+00200000 is set and at least one low20 property bit is present. A private
+40-pointer copy replaces only literal ROM00017CA4. For sword property16 with
+property4 also present, literal00017CC8 selects shared offset9FC instead;
+a private shared-table copy changes only that slot. All original tables stay
+intact. No new original-ROM, RAM or save ownership.
+
+The original208-hex-byte frame supplies256-byte header and body buffers at
+SP+8/SP+108. Original window:224px by7 rows at(8,24). The body starts at
+row3, or row4 above12 properties. English uses at most3 rows and216px per
+line, including at most256 encoded bytes with the optional0305 highlight.
+EWRAM0200CDC4 holds the original selected property. CPU189FC cycles it with
+Left/Right;18914 draws property badges as sprites through02B28. Their Japanese
+marks are graphic assets, kept for the explicitly deferred graphics pass.
+
+Evidence: `build/text-next/ability-info-owner.txt`, `ability-selection.txt`,
+`build/ability-info-prototype/ability-info-validation/`. All45 controlled item
+cases pass ordinary inventory Info, selection, closing and two reopens, body
+copy guards, full caller ABI, exact body pixels and unchanged items/gold/save.
+All40 table slots, the special alternate, both20-property layouts and both
+cyan masks are exercised. Placeholder and impossible combinations are stress
+cases; natural synthesis/acquisition is not established by these probes.
+
+### Dungeon cutscene text outside the event catalog (staged)
+
+ROM `[001471D4,00147234)` is a96-byte table: a leading empty source, five
+baker-grave sources, ten forest-relic/old-man sources and eight flame-relic/King
+sources. A private copy owns21 reviewed strings and replaces literals0001BE10,
+0001C198,0001C278 and0001C530. The leading entry and two stored farewell slots
+atrelative40/80 remain unchanged: no reader of those farewells is established
+by these functions. Original table/source bytes remain intact.
+
+CPU owners `[0801BC24,0801BE10)`, `[0801BFBC,0801C278)` and
+`[0801C2E8,0801C530)` select direct ROM strings for15A18. The forest identity
+question at1C164 uses native choice mode1: Yes returns1 and selects source12,
+No/B returns0 and selects13, then both select14. Relic-acquisition lines pass
+through `[0801C958,0801CA3C)` before15A18. These readers retain original frames
+and224px two-row windows; English uses216px,98px name and14px initial reserves.
+
+The reader resets foreground at page clears. Grave/voice inscriptions require
+0306 at each new page, followed by14 centering per translated row. Preserve the
+original number of yellow colour commands, with verified per-page placement;
+moving them all to the beginning fails native colour checks. No new RAM/save
+storage or source ownership beyond these literal replacements/private resources.
+
+Evidence: `build/text-next/dungeon-story-functions.txt`, `relic-message-owner.txt`,
+`build/dungeon-story-prototype/dungeon-story-validation/`. All33 cases pass
+original source selection, complete pages/pixels, player/initial bounds,
+Yes/No/B branches, relic-helper handoff and helper/modal/caller ABI. Controlled
+entry skips scene staging, movement and quest effects. Inventory is held stable
+only across the text block; the ordinary Drink trigger consumes its test herb
+before entry. Gold/battery remain unchanged. This is not native story-progression
+or relic-acquisition acceptance.
+
+### Empty-inventory scroll-reading refusal
+
+CPU `[080175B4,0801775C)` checks actions12/29 for scroll IDs117/128/132/133.
+If EWRAM0200DF28 has no live first item (nonnegative flags), it queues the
+direct source ROM `[0006B550,0006B56D)` through1588C at17634 and changes the
+command byte at+1 to1. Literal ROM00017648 privately owns this source;
+the English allocation changes only that literal. One216px line, no formatter
+or new buffer/frame/RAM/save ownership.
+
+Evidence: `build/text-next/empty-read-function.txt` and
+`build/empty-read-prototype/empty-read-validation/`. Four controlled known scroll
+IDs, native Drop followed by empty carried inventory and ordinary Floor/Read
+inputs reach the complete original check without PC/register redirects.
+Native command cancellation, queue/caller ABI, final pixels, intact floor scroll,
+empty inventory, gold and battery all pass. Natural scroll acquisition is separate.
+
+### Dungeon-entry restrictions (prepared prototype)
+
+ROM `[0014C8E4,0014C8F4)` contains four restriction pointers: maximum items,
+store/discard, sell/discard and level1. Private table/strings replace only
+literal ROM0004BD04 (base),0004BD30 (base+4) and0005222C (base+12).
+The original strings/table remain intact; new allocation uses `RomBuild`.
+CPU `[0804BCC0,0804BD2A)` clears and formats the original128-byte scratch,
+EWRAM `[0202F44C,0202F4CC)`. Its item limit comes from signed16-bit getter41D00;
+zero uses52DB0(flagF2) to select storage versus sale. CPU
+`[08052044,08052304)` invokes the item gate and checks hero+88 for level1
+when destination7 is selected. Original15A34 windows remain224px/two rows;
+English uses216px and at most124/128bytes. No new RAM/save allocation.
+
+Evidence: `build/text-next/travel-gates-functions.txt` and
+`build/travel-gate-prototype/travel-gate-validation/`. Eleven cases cover
+limits1/5/32767 and both store/sell branches in both original placements,
+plus the level gate. Complete128-byte clear/format, guards, native modal
+pixels and helper/modal/caller ABI pass. Controlled item-limit/getter/flag
+results and message-block entry are recorded; actual travel, menu unlocking
+and inventory-capacity rules are excluded. The Drink trigger consumes its
+herb before the block; inventory is stable within it, and gold/battery remain
+unchanged. This prototype is not yet part of the3,514-resource candidate.
+
+### Timed ending dialogue (prepared prototype; credits artwork separate)
+
+ROM `[00153F20,001541D8)` contains58 twelve-byte descriptors: text pointer,
+32-bit flags and32-bit timer. Five groups begin at153F20,153FF8,154094,
+1540C4 and154130. A private copy replaces57 nonempty sources while preserving
+all flags/timers and empty sentinel index43 (`0806DADC,00000300,60`). Only
+literal ROM00055920,000559B8,00055A3C,00055AD8 and00055B7C changes; original
+source/table bytes stay intact. Setup functions557C8,55934,559CC,55A50 and
+55AEC store those pointers in original EWRAM `[02011BB4,02011BB8)`.
+No new RAM/save/source ownership.
+
+Dispatcher CPU `[08054F44,08055098)` reads each descriptor and calls15A50
+with callback0805509D and typewriter1. Flags low byte chooses original224px
+by2-row windows at(8,8) or(8,120); high byte governs group continuation.
+Timer loads original EWRAM `[0200C87C,0200C880)`. Global02003B30=1 makes native
+page/modal waits count down. Callback `[0805509C,080550C4)` maps `@W<byte>@`
+to60×operand frames and `@w<byte>@` to10×operand; reader1DA8 executes each
+wait through59184. Mode commands1330/1331 set the original byte0200C880,
+controlling the prompt marker. All commands retain source order/operands,
+including player7E and initial7F. The scoped compiler wraps216px rows using
+98px player/14px initial reserves; flags, timers and window geometry stay
+unchanged. All timer1 pages retain their native terminal timed waits.
+
+Evidence: `build/text-next/ending-functions.txt`, `ending-dispatch.txt`,
+`ending-renderer.txt`, `ending-callback.txt`, `ending-pagewait.txt` and
+`build/ending-prototype/ending-validation/`. All85 cases pass native setup
+literal loads/stores, complete setup/dispatcher frames, source selection,
+automatic pages without advancing input, exact W/w elapsed frame counts,
+mode outcomes, final pixels and full modal/caller ABI. Controlled selectors,
+auto state and message-block jumps are recorded; actor staging, movement,
+fades, natural ending progression and credits are excluded. Inventory is
+stable after the Drink trigger consumes its herb; gold/battery unchanged.
+This prototype remains outside the3,514-resource candidate until integration.
+
+### Dungeon destination picker (prepared prototype)
+
+CPU `[08052304,080524F0)` owns the seven-label table ROM
+`[0014D71C,0014D738)` through literal00052420 and direct centered heading
+ROM0014D42C through literal000523B8. A private seven-pointer copy and heading
+change only those literals. Original160px heading at(40,24) and144px five-row
+list at(48,56) remain intact. Six cursor pixels leave138px per label; the
+heading uses152px. Strings are read directly, without a new RAM/format buffer.
+
+Original progression byte EWRAM020101F0 and flag getter52DB0 select one of
+eight availability rows in ROM `[0014D3E3,0014D423)`. Label indices2/3 and
+returned selection positions1/2 have explicit native swaps; preserve both.
+The original rows do not emit stored label1 (Mysterious Meadow), so its
+rendering uses a recorded selector override rather than claiming reachability.
+Original cursor/result byte020101A1 and row count020101A0 remain unextended.
+
+Evidence: `build/text-next/travel-gates-functions.txt` and
+`build/dungeon-travel-prototype/dungeon-travel-validation/`. All25 cases pass:
+eight availability rows, five locked fallbacks, the BA/BB alternate, ten
+positive selections and the stored meadow label. Full original owner, cursor
+wrapping, two cancel/reopen cycles, both window closures, final pixels and
+caller ABI/guards execute. Availability/progression results are explicit
+controls; natural unlocking and actual travel remain unverified. Inventory,
+gold and battery are unchanged. Eight prepared text resources remain outside
+3,514 until the next integration.
+
+### Soldier/adventurer tutorial topics and prose (prepared prototype)
+
+Original27-entry outer label/intro pointer tables occupy ROM
+`[0014CF50,0014CFBC)` and `[0014CFBC,0014D028)`. The prepared tutorial-help
+owner copies both and changes only configurations0,3,18,19,24,25, with private
+inner tables and29 translated sources. All21 other configurations retain their
+original pointers. Source descriptor triples `[0014CEFC,0014CF4D)` and
+16-byte menu geometries starting0014D52C remain unchanged. Literal ROM0004F9F0,
+0004FA1C,0005103C,00051088 select the label copy;0004F9F4,0004FA20,00051040,
+0005108C select the intro/prose copy. No new RAM/save or source-byte ownership.
+
+CPU `[0804F8F4,0804FA5A)` dispatches menu configuration through original
+`[08050DD0,08050EE4)` or two-page `[08050FB8,080511C0)`. Renderer
+`[08050EE4,08050FAE)` uses a224px one-row heading at(8,24) and the original
+list at(8,56): selected widths144/160px, three to six rows,6px cursor reserve.
+The soldier paged family18 selects adjacent19 with Right/Left. All13 direct
+explanations use15A18's224px/two-row modal, compiled at216px with native waits.
+Other tutorial configurations may instead use two-byte bank/group references;
+those are not text and are preserved by this owner.
+
+Evidence: `build/text-next/tutorial-readers.txt`, `tutorial-menus.txt`,
+`tutorial-accessors.txt`, `tutorial-sources.json` and
+`build/tutorial-help-prototype/tutorial-help-validation/`. Six cases exercise
+all owned topics and complete prose, both soldier pages, cursor wrap, B and
+Cancel selection, two cancel/reopen cycles, original table loads and full
+script-reader/modal/caller frames. Exact pixels, ABI/guards and unchanged
+inventory/gold/battery pass. Native bank entry is redirected before event-bank
+setup, and script advancement is excluded. Natural NPC/story access and the
+other21 menu configurations remain separate; no whole-tutorial sign-off.
+
+### Expanded tutorial menus and bank explanations (prepared after 3,612)
+
+The staged compiler in `build/text-next/tutorial_all_text.py` expands the private
+outer/inner copies described above to all27 configurations and104 unique text
+sources (75 beyond the first29). Original ROM descriptor triples
+`[0014CEFC,0014CF4D)`, outer tables `[0014CF50,0014D028)` and all original inner
+tables remain unchanged. Only the eight previously owned outer-table literals
+change. Every inner slot is checked against original bytes; nontext selector
+slots are retained exactly. Mode1 explanation entries are two-byte event-bank
+selectors, not strings; translating bytes merely because they decode would
+corrupt the binding.
+
+The three two-column cursor arrays are ROM `[0014E3BC,0014E3FC)` (herbs,
+left/right x0/84), `[0014E4D0,0014E518)` (equipment, x5/120), and
+`[0014E54C,0014E58C)` (staves/pots, x0/96). Original04 text-column commands are
+not the cursor positions. In the unchanged224px list, English starts at x6/90
+for herbs, x11/128 for equipment, x6/102 for staves, and x6/113 for pots. These
+insets preserve the entire cursor reserve. The equipment left/right budgets
+are109/96px. Other single-column windows retain their original geometry.
+
+Native evidence on prototype ROM
+`a5a421a08119fc50697272597e44299b6a43f17b18da176c6c744568bf74cf68`:
+`build/tutorial-all-prototype/` contains27 render/cursor cases, six direct-prose
+cases,20 bank-backed cases and four explicitly selected alternate-header cases.
+All pass exact source/glyph/pixel, original geometry, repeated cancellation and
+caller-ABI checks. The bank cases execute full original loader `0804D6F8`, verify
+actual decoded bytes/fixups in EWRAM `[020241AC,020241AC+decoded_size)`, then
+execute original `0804FA68` selection/getter/modal paths. The original fixture
+bank is restored through the same loader before returning. No bank offsets are
+replaced in RAM. Bank/config selection and alternate intro-pointer+4 are
+explicit controlled overrides; natural NPC reachability is not established.
+Correct binding cohorts: config4/5 bank2; config6/10/13 bank3; config11 bank4;
+config7/12/16 banks5 and6; config15/17/20/21/22/26 bank6; config23 banks5 and6.
+
+Original configurations1/2 contain mode0 entries pointing at selector bytes;
+8/9/14 contain inconsistent labels/cancel positions and mappings. Their original
+behavior/data is preserved, with only rendering/cursor/cancellation established.
+They are not declared unused or fixed, and remain explicit selection/reachability
+gaps. Alternate headings in configurations6/17/20/21 receive separate controlled
+render proofs; normal selection of those headings is also unproved. Evidence:
+`build/text-next/tutorial-bank-dialogue.txt`, `tutorial-accessors.txt`,
+`verify-tutorial-bank.py`, `verify-tutorial-alternate.py`, and the four prototype
+report/gallery folders. The compiler and review remain staged until cumulative
+integration; this is not a new whole-game or whole-tutorial acceptance claim.
+
+### Link-trade UI and failure messages (prepared prototype)
+
+The link compiler owns only six direct string literals and one private five-pointer
+copy. Original ROM error table `[001547BC,001547D0)` is copied and literal
+`00057C50` redirected. Its bounded indices0..4 select source offsets6EBB0,
+6EB94,6EB74,6EB58,6EB38. Original error wrapper6EBD0 is read at57C4C;
+selected-item confirmation6EBF4 at57DB8; cable readiness6EC10 at57DC4;
+repeat-trade6EC60 at57DC8; Trade/Info6ECAC at57FE4; item instruction6ECB8 at58094.
+(All offsets in this paragraph are ROM offsets.) These11 sources receive private
+English; no source ranges or unrelated pointer consumers are overwritten.
+
+Owner `08057C1C..08057C4C` formats an error plus cable advice in128 stack bytes.
+Owner `08057C54..08057DAE` has a200-byte local frame: selected-item scratch
+`[SP+8,SP+48)` is64 bytes, confirmation `[SP+48,SP+C8)` is128 bytes. Native
+messages retain224px/two rows and216px safe lines; the item field reserves162px.
+Owner `08057E08..08058082` retains168px storage list at(8,24),40px/two-row action
+window at(192,56),6px action cursor reserve and8px outer border gap. Trade sets
+one byte in existing EWRAM selection flags `[0200CDE8,0200CEE2)`; page/row/index
+are shorts at0200CEE2/CEE4/CEE6. Existing stored records are250×12 bytes at
+`[0200F008,0200FBC0)`, with count at02002C2A. These are original storage uses,
+not permission to allocate new save/RAM fields.
+
+Prototype `build/link-prototype/`, ROM
+`18ebb4ca375e5c3813768c611b514e68d9ee2a25bd605bd10a57c6da5ac4e46b`,
+passes21 message/choice/maximum-field cases and three picker cases. Native
+formatters, buffer guards, Yes/No/B returns, original menu geometry, two list
+pages, Info, Trade selection flag, repeated cancellation/reopening, exact parent
+restoration and text pixels pass. Storage inputs and entry/message blocks are
+explicitly controlled; link transfer, natural access and post-error storage sort
+remain excluded. Item identities, gold and battery are unchanged. Evidence:
+`build/text-next/save-link-functions.txt`, `link-display-functions.txt` and
+`build/link-prototype/{link-message,link-picker}-validation/`.
+
+### Pre-ending save-cancellation notice (prepared prototype)
+
+ROM source `[0006CF38,0006CF55)` is selected by direct literal00054F1C in owner
+`08054DA4..08054EEE`. Only that literal is patched to private English. Native
+message block `08054E04..08054E40` passes the original source/flags/placement
+argument to15A34, waits for a second input after that modal returns, then closes
+the window. The observed original window is224px/two rows at(8,120); the private
+English is one line within216px. No new RAM/save storage is used.
+
+Prototype `build/ending-notice-prototype/`, ROM
+`9b734797c235823797c29df2272761e432a76bc5f3fc95e1c7d0d106664831b9`,
+passes A and B secondary-wait cases, exact text pixels and modal/caller ABI.
+Full owner frame and original display/waits/window closure execute; save work,
+scene setup and subsequent ending are explicitly skipped in disposable probes.
+Inventory/gold/battery remain unchanged. This is display evidence, not validation
+of an actual save failure or natural ending progression. Sources:
+`build/text-next/save-link-functions.txt` and
+`build/ending-notice-prototype/ending-notice-validation/`.
+
+### Tutorial pickup tips and queued control09 (2026-09-27)
+
+Verified original pickup owner `[ROM 0x24AD8,0x24E70)` copies a120-byte floor
+item into an available inventory slot, removes the floor object and formats
+its ordinary pickup message into192 bytes with a separate64-byte item field.
+Only after successful insertion, the load at08024DAE/DB0 tests EWRAM
+`[0x02003B6C,0x02003B70)` for11. Original item identity dispatch then selects:
+
+| IDs | ROM literal | Original text range (exclusive end in catalog) |
+| --- | --- | --- |
+|203,204|0x24E10|0x1474C4|
+|1,3|0x24E18|0x147264|
+|30,31|0x24E20|0x1472BC|
+|51|0x24E28|0x14743C|
+|118|0x24E30|0x1473F8|
+|169|0x24E38|0x147314|
+|188|0x24E40|0x14734C|
+|190|0x24E6C|0x1473D8|
+
+These eight literal words alone are patch-owned. Source strings and item/mode
+selection instructions remain intact. New text uses the existing RomBuild
+expansion allocator; no new RAM is allocated. Exact original sources, exclusive
+ends and hashes are recorded in the pickup-help catalog. Ordinary pickup
+formats and tutorial NPC explanations are different resource families.
+
+`080158FC..0801591C` appends into the existing1024-byte queue with bounded native
+copies and a forced terminator. Compile-time bounds include the preceding
+192-byte pickup output and suffix reserve. The original queued renderer
+`[ROM0x22D8,0x239E)` treats09 specially:08002316..1C writes1 to its native flag,
+and0800236C..70 detects09 in lookahead. It does **not** pass09 to01DA8's32-pixel
+tab handler. Original09 markers and initial newline behavior are preserved;
+actual rendered line starts are0 and the English limit is216px. The general
+codec name `tab` must not be used to infer queued-message indentation.
+
+Evidence: `build/text-next/pickup-help-carpenter.txt`, `queue-controls.txt`,
+`native-queue.txt`, and `build/pickup-help-prototype/pickup-help-validation/`.
+Prototype ROM024921446259671e9a2827a2d6501062a004af453eebb4b060613c9197d6d597
+passes13 cases: all11 selectors, mode-off and unrelated-item negatives.
+Ordinary Drop plus directional step-away/return invokes real walking pickup;
+controlled floor identities and the mode load are explicit. Mode is restored
+immediately after the original load, before any other owner reads it. Complete
+English glyph/pixel checks, original09 flag writes, message and item guards,
+queue/full-owner ABI, inventory increment, unchanged gold and battery pass.
+The fixture's real mode is0; these do not establish natural tutorial progression.
+
+### Warehouse repair service's direct dialogue (2026-09-27)
+
+The complete original carpenter owner `[ROM0x502BC,0x503F2)` and message helper
+`[ROM0x503F8,0x50438)` select nine direct prose sources, independently of the
+translated warehouse-opening event bank. Literal words502D8,502F0,50334,
+5035C,50360,5036C,503C0,503E0 and503F4 are the sole new patch sites.
+`build/text-next/carpenter-review.json` pins the exact source ranges/hashes in
+`[ROM0x14D058,0x14D33D)`; original text bytes are preserved. English ROM resources
+use RomBuild; no RAM is allocated. The capacity template at14D14A uses the
+original128-byte shared scratch `[EWRAM0202F44C,0202F4CC)`, with a checked32-byte
+following guard. Its English `%d` preserves the value without Japanese field
+padding; byte/width bounds cover255 from the native unsigned-byte load.
+
+Native flag helpers52DB0/511C0/511E0 use `[EWRAM020101AC,020101CC)` for256bits;
+this owner reads flags0x25,0x27,0x26, in that priority. Relevant byte is020101B0.
+The capacity byte at`[02010208,02010209)` is mirrored into the halfword
+`[02002C2A,02002C2C)`. Completion adds10; reaching180 instead writes250 and
+sets flag0x27. Other completed increments clear0x26. Accepting the proposal
+requires funds>999, calls41F64(-1000), then sets0x25. That gold helper clamps
+the actor's native `[actor+0x60,actor+0x64)` to0..99,999,999; the signed-maximum
+probe correctly preserves that clamp. These are observed existing fields, not
+new storage ownership or authorization to repurpose them.
+
+Evidence: `pickup-help-carpenter.txt`, `carpenter-readers.txt`,
+`carpenter-gold.txt`, and `build/carpenter-prototype/carpenter-validation/`.
+Prototype5f88e2095f2cdf2fb44ffbb72607c8ec432106b335cbdf69a8e70dcecd8b7079
+passes28 full-owner cases. A controlled bank-call entry and explicit flags,
+capacity, funds and original layout-helper return values reach all nine sources
+and both modal positions. Entire original function executes after entry:
+Yes/No/B choices, all pages, payment/refusal, construction/completion flags and
+capacity outcomes pass, with exact visible glyph pixels, buffer guards and
+helper/modal/caller ABI. Inventory, stored item records and battery are unchanged.
+The255-capacity and signed-maximum funds probes are synthetic bounds. Natural
+carpenter access, work-completion triggers and save persistence remain separate.
+
+### Fixed-block house-fire scene (staged September27)
+
+ROM offsets`[0x150470,0x152F70)` contain43 original256-byte records;
+indices10,11,20 start with NUL, and the other40 are complete dialogue sources.
+`08052DD8..08052E28` reads start index/count, calculates`base+(index<<8)`
+and runs the original modal`08015A34`, incrementing the index until count is
+zero. The literal is ROM`[0x52E34,0x52E38)` and shift instruction is
+`[0x52DF4,0x52DF6)`(`28 02`, Thumb`lsl r0,r5,#8`). The original16-byte modal
+descriptor is`[0x6CF28,0x6CF38)` and is copied to the original24-byte stack
+frame; no text is copied into a new RAM buffer. Evidence:
+`build/text-next/remaining-special-owners.txt` and`fixed-prose-caller.txt`.
+The scene caller starts`08052E38`; its statically observed text batches end
+at index42. Record29 has an isolated native-reader check but no proven natural
+call in that scene. Empty records and unused padding are not free space.
+
+`build/text-next/fire_scene_text.py` appends a private43×512-byte ROM block
+through`RomBuild`, checks every original source, redirects only the literal
+and changes the owned shift to`68 02`(`lsl r0,r5,#9`). The largest English
+record is389 bytes. Original source records/padding, loop, modal descriptor,
+scene staging and progression are preserved. The selected font and216px budget
+are unchanged. Staged ROM
+`58792daa6d117a68376db613952eac95327df7239b4e3a3873bbb2dad7e72d13`
+passes56 full-dispatcher cases:40 records, maximum English/Japanese player
+names, nine consecutive native batches and zero count; full pages, pixels,
+modal/owner ABI and caller guard checked. Controlled bank entry/index/count is
+recorded; this is not natural fire-scene progression. Inventory/gold/save are
+unchanged. Evidence:`build/fire-scene-prototype/fire-scene-validation/`.
+
+A second43-record byte-identical block at ROM`[0x1552E0,0x157DE0)` has no
+absolute pointer to its base in the supplied ROM. It remains an unassigned
+consumer lead; absence of that pointer does not establish unused status.
+The source-only NUL scan reconciliation is
+`build/text-next/unaccounted-scan-3707.json`; decoder hits are not automatically
+text or free space. Japanese strings at`0x5FDE8/0x5FDF4` and
+`0x6B4A8/0x6B4C0/0x6B4E4` also occur in save-header copying/comparisons
+(`08014F2A..08014F44`, `08014F64..08014F70`), so they must not be blanket
+translated merely because a string scan sees Japanese.
+
+### Travel confirmations omitted from direct-pointer inventory (staged)
+
+ROM`[0x14C7EC,0x14C809)` is the dungeon-entry question;
+`[0x14C809,0x14C84A)` is the centred saved-village overwrite warning.
+The latter contains two native14 centring controls and one1F saved-name
+substitution. Six owned literal words are`[0x4BB2C,0x4BB34)`,
+`[0x4CA24,0x4CA2C)` and`[0x522CC,0x522D4)`. The respective original
+owners are`0804B8AC`, `0804C980` and`08052044`; each selects one of the
+literal pair based on the original item-limit result and calls`08015A34`
+with Yes/No enabled. Evidence:`build/text-next/travel-confirm-owner.txt`,
+`travel-confirm-second.txt`, `travel-gates-functions.txt`.
+
+The staged compiler`build/text-next/travel_confirm_text.py` owns only those
+six literal words and appended English resources. Original prompts, source
+controls, selection sense and all route/save code remain intact. Saved names
+still use the existing20-byte EWRAM`[0x0200CEE8,0x0200CEFC)` scratch;
+its following16-byte guard is checked. Eight Japanese glyphs reserve112px
+inside the original216px safe region. No new RAM/save allocation.
+Prototype ROM`1b58a1108776d04e39258086709efa46f9a87be1df72521ee333963b7d8b02db`
+passes105 cases: three original owner/modal blocks, both applicable display
+placements, Yes/No/B, real saved-name read plus required/widest English,
+widest Japanese, empty and read-failure names. Complete glyphs, centring,
+final pixels, name-scratch guard and reader/modal/caller ABI are checked.
+The controlled setup and skips around each message block are recorded;
+actual dungeon entry, save overwrite and progression are excluded.
+Evidence:`build/travel-confirm-prototype/travel-confirm-validation/`.
+
+### Older town/dungeon destination tables (September 29)
+
+Original ROM `[0x14BE98,0x14BECC)` contains 13 destination pointers. Indices
+1–3 are already owned by the initial castle/home/square insertion. The remaining
+ten slots contain nine unique Japanese strings (Cancel is shared). The new
+`tools/town_routes_text.py` copies the table, verifies and reuses those three
+owned English pointers, and inserts the nine reviewed labels into the copy.
+Only ROM literals `[0x4CC64,0x4CC68)`, `[0x4CD9C,0x4CDA0)` and
+`[0x4CDAC,0x4CDB0)` point to this private copy, at offsets 4, 0 and 36.
+Other readers, original source strings, availability masks and geometry remain
+untouched. `RomBuild` checks every original word and allocation overlap.
+
+CPU `[0x0804CB10,0x0804CC50)` selects the town list using the 48 bytes at
+ROM `[0x14BE33,0x14BE63)`: map byte EWRAM `0x0200FED8`, clamped to 7,
+and a count of five original flag-reader results. CPU
+`[0x0804CC70,0x0804CD9C)` uses four bytes `[0x14BE8A,0x14BE8E)` and
+three flag-reader results for the dungeon list. Their original result-ID tables
+are `[0x14BE74,0x14BE84)` and `[0x14BE8E,0x14BE96)`. The common cursor
+helper `[0x0804CDB8,0x0804CE58)` resets cursor byte `0x020101A1`, polls
+native town input and returns the sentinel row on B. The private English lists
+retain the 12px cursor reserve, 140/76px label regions and existing 8px gaps.
+The dungeon heading uses a conservative 96px region in its 104px window.
+
+All 67 prototype cases pass on ROM
+`843bb7c784b266042163d338a0fa03a106d5bf634f653742a66981e13bd8c9a3`:
+all 48/4 availability cells, ten destination selections, two explicit Cancel
+mask probes, clamped map state and widest English/Japanese player names. Each
+case checks three openings, cursor wrapping, actual returned IDs, cancellation,
+resumed town movement, exact pixels and caller stack/register guards. Positive
+selection IDs are checked before suppressing travel in these controlled probes.
+Natural unlocks and travel outcomes remain separate. A long-held DOWN input
+originally moved the cursor after opening; the corrected test releases each
+short directional pulse and checks the initial cursor before navigation.
+Evidence: `build/text-next/town-destination-menu.txt`,
+`town-destination-owners.txt`, `town-route-cursor.txt` and
+`build/town-routes-prototype/town-routes-validation/`.
+
+### Guard refusal for the current form (September 29)
+
+ROM `[0x14C84A,0x14C88B)` is a two-line refusal with native colour command
+`03 04` and restore `05`. The original map-transition owner
+`[0x0804B8AC,0x0804BC3E)` compares the three bytes at EWRAM
+`[0x02010204,0x02010207)` against ASCII `M.A` at CPU
+`[0x0804B984,0x0804B998)`. On a match, literal
+`[0x4B9AC,0x4B9B0)` supplies the refusal to helper
+`[0x0804BC40,0x0804BC70)` and native modal `0x08015A34`.
+The new owned literal points to the appended English stream; original bytes,
+form predicate, layout and control sequence are preserved. Operand 4 selects
+foreground palette index 12, as checked by the native reader.
+
+Ten prototype cases pass on ROM
+`a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`:
+matching form with A/B dismissal in both native layouts, plus each individual
+byte mismatch. Full original owner frame/epilogue, predicate branches, glyphs,
+colour/pixels and stack/register guards pass. Controlled setup bypasses map
+movement; mismatches skip subsequent travel. Temporary form bytes are restored,
+and items/gold/battery remain unchanged. This does not establish natural
+transformation access. Evidence: `build/text-next/travel-form-gate.txt`,
+`travel-gate-modal.txt`, and `build/form-refusal-prototype/form-refusal-validation/`.
+
+### Empty name-cell initializer (September 29)
+
+Original ROM `[0x648E8,0x648F1)` contains eight `01` bytes and a NUL.
+Shared table slot `+0x004` supplies it to native copies at CPU
+`[0x08009E84,0x08009E8E)`, `[0x080182C4,0x080182CE)` and
+`[0x08058DF8,0x08058E02)`. The first and third walk 221 item records at
+20-byte strides and initialize the name-cell field at record `+9`; the second
+copies it into the name editor. These are encoded empty cells, not Japanese
+prose or eight authored text styles. Source disposition is retained nonlinguistic;
+all original bytes remain untouched. Evidence:
+`build/text-next/name-cell-initializers.txt` and
+`translations/source-dispositions-review.json`. This makes no unused-code claim.
+
+### Event-script references and Japanese placeholders (September 29)
+
+Original ROM `[0x14CD4C,0x14CD68)` holds seven pointers to uncompressed
+script banks. Their starts are `0x43CD5C`, `0x43D474`, `0x43E2DC`, `0x43E868`,
+`0x43EC7C`, `0x43F1C0`, `0x43F710`; the final exclusive bound is `0x43FAAC`.
+Each starts with a u32 count and that many u32 offsets relative to the following
+payload. Counts are 15/33/18/15/15/20/17. Each script root has a four-byte
+trigger header before instructions. All 133 physical script spans decode using
+the original operand-length table, ROM `[0x14CEBC,0x14CEE0)`. There are 207
+physical dialogue instructions. All 27 actual opening calls in each of the
+original Yes/No traces match their script address, group, index and text ID.
+No currently unresolved single-character source is referenced in this family.
+This is bounded static and opening-route evidence, not all-scene reachability.
+
+The other seven pointers, ROM `[0x14CD68,0x14CD84)`, select compressed NPC
+resources beginning at `0x43A420`, `0x43A6A0`, `0x43ADE0`, `0x43B298`,
+`0x43B7B0`, `0x43BC3C`, `0x43C3FC`. Native loader `0804D6F8` decompresses
+these to EWRAM `0x020129AC` and fixes five header-relative pointers in
+`[0x020129AC,0x020129C0)`. They address 32 map-relative offsets, 32 pairs of
+u16 first-actor/count, a u32 script-offset table, script bytes, and eight-byte
+actor records. The actor record's byte4 becomes native actor byte`0x25` through
+`0804DA94`; it is a selector, not necessarily the actor's ordinal.
+
+Native talk selector `0804B33C` reads map byte `0x0200FED8`, actor records at
+`0x02010A78 + 0x40 * actor`, and resource pointer `0x02010144`. Unless the map
+offset is `FFFFFFFF` or selector is `FF`, it writes EWRAM script PC
+`[0x02010138,0x0201013C)` as:
+`script_base + map_relative + offsets[first_actor - 1 + selector]`.
+These are original storage/reads; this research allocates no new RAM.
+
+Interpreter `0804EA80`, specifically `0804EF40..0804EF7E`, consumes an opcode
+before calling the handler in ROM `[0x14CE30,0x14CEBC)`. Opcode8 has five
+operand bytes: actor, group, index, mode, extra. Mode0 displays normal text;
+mode1 displays Yes/No; mode2 dispatches a custom menu and ignores its nominal
+text entry. Opcode6 (`0804F888`) branches by a signed byte relative to the
+opcode on the selected flag result. Opcode16 (`0804FE28`) branches by an
+unsigned byte relative to the opcode on a choice result. Opcode21 terminates;
+opcode20 waits for pending work before advancing. Physical bytes after an END
+are not automatically reachable dialogue or free space.
+
+The decoded NPC root audit finds 22/63/69/74/67/79/85 roots. A conservative
+branch traversal finds only two of the 36 unresolved single-character sources:
+
+- Bank3 group23/index0, `event-bank-3.3ec2`, source `サ`: map11 selectors1/2
+  start at decoded offsets `0x720`/`0x739`, directly with a Yes/No dialogue.
+- Bank4 group6/index1, `event-bank-4.0d25`, source `な`: map5 selector1 starts
+  at decoded `0x516`; original flag`82` selects repeat dialogue at `0x528`.
+  With that flag clear, the existing full boy prose is selected at `0x51B`.
+  Native flag bits begin at EWRAM `0x020101AC`; flag82 uses byte`0x020101BC`,
+  bit2.
+
+The other three physically referenced stubs (bank2 group25/indices1–3) occur
+after an unconditional END at decoded `0x5AE`; the audited root at `0x5AB`
+does not reach them. This alone does not establish unused status across other
+consumers. Bank2 also has an original selector targeting decoded `0x5E2`, past
+the declared script bound `0x5E0`, and another root at `0x5DF` falls outside
+that bound after a zero byte. Both remain explicit unresolved source anomalies;
+no read beyond the declared range is accepted as script evidence.
+
+Six controlled checks on candidate ROM
+`a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`
+execute the full native loader, NPC selector, flag branch (bank4) and dialogue
+handler. They confirm original `な` and `サ` actually render through those
+selected branches; bank4 flag-clear prose and bank3 A/B also pass. Inputs,
+RAM/register controls, source bytes, source windows and screenshots are saved
+under `build/event-stub-research/`. Caller ABI/guard, inventory, gold and battery
+are preserved. NPC/map activation is controlled; ordinary story reachability
+and subsequent script consequences are not established. No placeholder English
+has been inserted pending the user's wording decision.
+
+Research scripts/reports: `build/text-next/audit-script-text-refs.py`,
+`script-text-refs.json`, `audit-npc-text-refs.py`, `npc-text-refs.json`,
+`audit-npc-control-flow.py`, `npc-control-flow.json`, `probe-event-stubs.py`.
+Disassembly: `event-loader.txt`, `actor-event-selector.txt`,
+`actor-event-roots.txt`, `event-branch-owners.txt`,
+`event-branch-owners-small.txt`, `event-opcode-handlers.txt` and
+`event-consumers-full.txt`. No stub is classified unused by this partial audit. The reusable equivalents are
+`tools.research_event_script_refs`, `tools.research_npc_script_refs`,
+`tools.research_npc_control_flow` and `tools.research_event_menu_refs`; their
+reports are under `build/event-script-audit/`. Reproduction order is in
+`EXPLORATION.md`.
+
+The nine direct Thumb calls to getter `08050270` in original code
+`[08000000,0805E000)` are at `0804FA7A`, `0805020A`, `08050BF4`, `08050C18`,
+`08051366`, `080513B4`, `08051466`, `08051490`, `08051568`. Original literal
+references to event-bank global `0200FF38` are loader `4D7C0`, script reader
+`4F96C`, and getter `502B8`. Getter wrappers `08050BC4`/`08050C14` receive
+fixed pairs `(23,1)`, `(29,14)`, `(28,14)`, `(14,18)` or `(8,8)` from owned
+opcode33 dispatch blocks `080509B4`, `080509BE`, `080509C2`, `080509CC`.
+The well reader `080501DC` selects group7 indices5–8; medals `0805132C`
+select group14. None of these valid pairs names a currently unresolved stub.
+This bounded scan is not a proof against dynamically constructed references.
+Evidence: `event-getter-owners.txt`, `event-helper-dispatch-blocks.txt` and
+`event-generic-parents.txt` in `build/text-next/`.
+
+The tutorial wrapper `0804FA68` receives pairs from `08050E82`. Cross-referencing
+original mode2 NPC instructions gives 31 bank/configuration combinations.
+`build/text-next/event-menu-references.json` retains two mismatched combinations:
+config12 in bank4 (map11 roots `0x6B6`/`0x6CA`) and config14 in bank5 (map4 root
+`0x3A4`). The former asks for pot explanations using group2 indices2/5–10, while
+that bank's group2 contains Maggy's single conversation. The latter contains
+out-of-group Gon selectors and a non-selector final pointer. Original native
+address arithmetic can consequently reach unrelated prose or the middle of a
+string. This is an explicit consumer/reachability gap, not authorization to
+reinterpret those bytes as coherent source dialogue. Config12 is correctly
+bound in the separately tested banks5/6. No ordinary access to either mismatched
+combination has been established, and this audit does not change their data.
+
+### Appearance-table end marker and empty assignment (September 29)
+
+The last 24-byte record of ROM `[0x143058,0x143EE0)` is
+`[0x143EC8,0x143EE0)`, alias154. Its name pointer is `08065638`, source
+`[0x65638,0x65645)` (`エンドマーク`, "End marker"). The signed halfword at
+record+8 is1; preceding154 records have0. Original assignment owner
+`08009E68` checks that halfword before adding an alias to its category pool
+(`08009EBA..08009EBE` and `08009EDA..08009EDE`), so the sentinel is not
+assigned as an appearance. Its name has only the sentinel record's absolute
+pointer in the original ROM. The original and private English copies preserve
+the complete sentinel record; `tests/test_item_alias_text.py` checks this.
+
+The original unassigned pool value is999, from literal `08009FDC`, not `FFFF`.
+Three complete native initializer calls on candidate3768 inspect all221 output
+records in existing EWRAM `[0x02003BAC,0x02004CF0)`: alias halfword is at+4,
+20-byte stride. No assignment equals154; each populated appearance category
+uses its own pool or999 (one unassigned record per call). Source assignment
+code/table and native RNG execute unchanged. The controlled calls intentionally
+reset disposable item-identification/name/assignment RAM, preserve caller ABI/SP
+and battery, and do not prove safety for corrupt or externally edited saves.
+Evidence: `build/text-next/probe-alias-sentinel.py`,
+`build/text-next/alias-sentinel/report.json`, `alias-assignment.txt` and
+`name-cell-initializers.txt`. Classification as internal sentinel metadata is
+separate from player-facing translation; the source must remain intact.
+
+### Floor-Remove fragment (prepared prototype)
+
+Original Remove owner `08024918` reads command byte3 and branches when it is
+above49. Literal ROM `[0x24930,0x24934)` loads shared table `08140D68`, then
+slot90; source is ROM `[0x643EC,0x643FD)` (`足元のアイテムに`). Native
+`0802492A` queues that source alone in mode1, then returns through
+`080249CE..080249D6`. There is no formatter or concatenated completion in
+this branch. The Japanese is itself an incomplete phrase.
+
+The staged compiler redirects only that literal to an owned private table and
+appends "To the item at your feet", preserving the fragment without inventing
+a refusal reason. Prototype ROM
+`22839aa308c88ec1e149c49151c6321fe811c79518423c47f197d811688e6521`
+passes two real action-menu Remove invocations with controlled compared values
+50/255. Exact queue bytes, one-line216px budget, native glyph pixels, queue/
+owner ABI and unchanged equipped status pass. Ordinary availability of Remove
+for those floor indices is not claimed. Sources and all other action branches
+stay intact; no new RAM or save allocation. Evidence:
+`build/ground-remove-prototype/ground-remove-validation/` and staged
+`ground_remove_text.py`, `ground-remove-review.json`, `verify-ground-remove.py`
+in `build/text-next/`. This resource is not yet included in the root candidate.
+
+### Already-known monster identity format (September 29)
+
+Original CPU owner `[08029EB8,0802A01C)` has two branches. If the selected
+species definition's byte19 is zero, it loads shared slot910 via literal
+`[00029F00,00029F04)`, calls the ordinary actor-name getter08009ACC and formatter
+08000FB8 at29EF4, then returns through2A00C without calling the message queue.
+The source `[0006059C,000605B6)` is the identity statement `このモンスターは\r%sである`.
+The other branch uses its separately owned slot7E0/literal2A01C and does display
+an already-localized revelation message. This establishes the first branch's
+formatting behavior, not a new on-screen message or ordinary encounter route.
+
+`tools/monster_identity_text.py` prepares a private654-pointer copy,
+translates only slot910 as `This monster is\n{actor}.`, and redirects only
+literal29F00 with expected-source and shared-allocation checks. Original tables,
+source bytes and frame size remain intact. The256-byte output is `[SP,SP+100)`
+at formatter entry; the native actor-name scratch has64bytes. The first prototype
+is `838f42fa1a126ebff1959a1f4a0f618859aa377101c87581617d82148beada70`.
+`tools/verify_monster_identity.py` exercises the full original owner,
+verifies exact formatted bytes and unchanged tail/caller/ABI/field guards, and
+checks that no queue/modal/glyph call occurs and actor/player/items/battery stay
+unchanged. All141 species at level1, the widest name at signed16-bit level32767, and three
+synthetic name-field cases pass (145 total). The level is the signed halfword at
+actor+88, read by09BBE/09BF2; native numeric aliases are verified through the
+original level formatter. The earlier exploratory byte+44 level assumption was
+corrected before integration. The40 existing discovery/revelation checks also
+pass. This source is now integrated in3,770; evidence lives in
+`build/english/monster-identity-validation/report.json`.
+
+### Town table reader leads and reused EWRAM (September 29)
+
+The original town-pointer interval is EWRAM `[020141AC,0201465C)` (300words).
+A literal-load scan of original Thumb space `[08000000,0805E000)` finds nine
+base loads:4BF88,50044,5007A,500CE,50124,50170,501A4,501BA and50A36. The native
+service dispatch table at ROM `[00050024,00050044)` gives eight exact branch
+entries:50044,50054,5008C,50118,50140,501A4,501B4,501BA. Their town-table
+consumers include1D110/1D544/1E75C/1DFAC/1F2D8/1E394/20564;4BF78 passes the
+table to2068C and50A36 to20760. The original1F2D8 selector passes that same
+table on to storage/item subconsumers; it does not establish ownership of every
+unused town slot. Correct listings are in
+`build/text-next/town-dispatch-verified-roots.txt`; the earlier exploratory
+`town-table-dispatch.txt` includes misidentified literal words as entries and
+must not be used as function-boundary evidence.
+
+Four additional literal loads fall inside the *address range*:53DEE→020143E8,
+55EC6→02014268,55EE0→02014328 and55FCE→02014568. Full owners53B34 and55B90
+pass these as 48-byte-record destinations to079C8, rather than dereferencing
+town text pointers. Their listings are `build/text-next/town-range-aliases.txt`.
+This is evidence of EWRAM reuse by another phase, not evidence that town text
+slots239 or others are read there. No source is classified as unused from this
+bounded literal scan, and no RAM region is declared free.
+
+### GBA credit bitmap and complete identified arrival family (2026-09-29)
+
+Addresses below are ROM file offsets unless prefixed by a CPU address. This is
+source discovery and an offline audition, not insertion ownership or a free-space
+claim. Sources and native artifacts are pinned to the configured Japanese ROM.
+
+| Address space / exclusive range | Discovery and evidence | Certainty |
+|---|---|---|
+| ROM `[00585304,0058B269)` | BIOS type-10 compressed GBA scrolling credits, selected by the literal at `[000555DC,000555E0)` | Native decoder output and source reader verified. Padding after the consumed stream is not claimed. |
+| Decoded stream `[00000000,000136BA)` | 79,546 bytes: 32-byte palette, u16 cell count at32, 7,800 one-byte occupancy cells at34, 2,241 4bpp tiles at7,834 | Fully decoded; exact length, occupied-cell count and native output checked. |
+| EWRAM `[020129A8,02026062)` | Original credits decoder destination; the original ending uses this existing RAM | Observed for the isolated credits renderer only; no allocation for larger replacements or other scenes established. |
+| CPU Thumb `[080554FC,080556AA)` | Credit renderer: decompression via `0805B48C` (BIOS SWI11), sparse rows copied into a wrapping 511-slot tile ring | Source loads, uploaded tile bytes, full routine return and caller ABI checked. |
+| VRAM `[0600B800,0600C000)` / `[0600C000,06010000)` | 32×32 BG3 tile map and 4bpp character region; zero reserved, uploaded slots1..511 | Native copies verified. Raw final tile-map contents alone do not establish an entire scrolling sequence. |
+| Palette RAM `[050001E0,05000200)` | Credits/arrival bank15; pixel index0 remains transparent and uses the display backdrop | Native credit comparisons use an explicitly controlled black backdrop. |
+| ROM `[0054E764,0054E784)` / `[0054E784,00555B04)` | Arrival stored palette and224×264 atlas | All selected location/floor rectangles checked against native calls. |
+| ROM `[0013EE00,0013EE58)` | Eleven8-byte signed-halfword rectangles: digits0..9 andF | Verified ordinary1/2/3-digit floor composition. |
+| ROM `[0013EE58,0013EEC0)` | Thirteen8-byte location rectangles, selectors0..12 | All13 controlled selectors verified at floor1; only11/floor1 follows the original natural fixture fields. |
+| ROM `[0013EEC0,0013EEC8)` | Separate8-byte `レベル` (Level) prefix descriptor; not a fourteenth location | `08005B6C` selects it for Well ID12. Floors1 and10 show it;11 suppresses the entire card. |
+
+Credit script order is established by ending root`08054DA4`: five story scenes,
+then original preparation at`08054EA2`, call`080554FC` at`08054EC8`, then final
+artwork through`0805532C`. The credit bitmap is240×2080, with67 visible English
+lines. The older English ASCII block beginning`0006DF04` and descriptor block
+`[001541D8,00154428)` do not supply this bitmap renderer. No blanket unused-source
+disposition is made for those older tables.
+
+The controlled credit probe begins at a fresh-title wait and executes original
+ending setup while bypassing its save and five story scenes. It substitutes the
+native VBlank wait for surrounding scene-update calls and records BG3-only,
+blank-map/tile-zero, backdrop and blend overrides. This is necessary isolation:
+entering without that setup leaves unrelated scene/window work active and does
+not provide a valid credits screenshot. All2,241 unique tile sources match;121
+exact full-screen comparisons cover all67 visible lines. Eight captured
+blank/lead-in/fade frames are excluded. It verifies decoded text-layer rendering,
+not an unmodified ending playthrough or initial/final transition fidelity. Reads
+of write-only I/O scroll/blend registers are bus diagnostics and must not be
+interpreted as reliable register state.
+
+Arrival names occupy24px-high rectangles of64..224px, centred in the240px screen
+at y32. Ordinary floors use a right-aligned three-character `%3d` field at tile
+columns16/18/20 andF at22, y80. Well uses the Level prefix at tile8 and the last
+two number columns; its controller omits every rectangle when floor>10. The
+original fade stops at step1. The18 native cases compare38,400 pixels each using
+an explicit observed stored-to-visible palette mapping, not a new theoretical
+fade model. No town arrival family is established by this atlas.
+
+Evidence: `build/graphics-audition/research/{arrival-functions,ending-root,credits-player,credits-decompress}.txt`,
+`build/credits/{manifest.json,research/report.json}`, and
+`build/arrival-cards/{manifest.json,native/report.json}`. Reproduce with the
+commands in`docs/GRAPHICS_AUDITION.md`. The root English ROM/BPS bytes are unchanged.
+
+### Shiren reference graphics and credits preservation (2026-09-30)
+
+These Shiren addresses are **external source-file offsets and SNES source
+labels**, not Torneko 2 ROM/RAM ranges or free space. The nominated checkout is
+`../Shiren/shiren-revamp-fixes`; it is read-only in this workflow.
+
+| Source space / exclusive range | Evidence | Certainty |
+|---|---|---|
+| Shiren `gfx/fonts/area_title_font.2bpp` file `[0000,9000)` | 36,864-byte SNES 2bpp asset included at source label `AreaTitleFont` / `$DB7000` | Source declaration and file size verified. This is the file envelope, not a claim that every byte is a separate glyph. |
+| SNES source `Data_db6000`, 194 two-byte entries, logical `[$DB6000,$DB6184)` | `data/demos/demos.asm`; each selected word minus `$7000` gives an offset in the bitmap file | All referenced 144-byte chunks bounded; per-title exclusive file spans and hashes recorded in `build/arrival-cards/shiren/shiren-source.json`. |
+| SNES source `[UNREACH_C5CDCE,UNREACH_C5CEFA)` / `[$C5CDCE,$C5CEFA)` | 30 ten-byte area-title records in `code/bank_05.asm`; first byte is original start column, next nine select chunks/spacing | 28 labelled title strips decoded; two spacing-only records excluded. Each chunk is 24×24 pixels (3×3 tiles). Not a Shiren emulator verification. |
+
+The configured crops recover 43 exact bitmap characters. A new period uses the
+dot from the recovered `i`; spacing is newly assigned. The resulting subset
+is a local audition resource, with no GBA/SNES patch, new allocation or native
+Shiren-font execution claim. See `docs/SHIREN_ARRIVAL_FONT.md` for missing
+characters and every current T2 name's measured budget. The separately loaded
+Shiren Kointai floor numbers have not been imported into this Latin subset.
+
+The user approved preserving the original English GBA credits unchanged.
+Acceptance compares the existing development ROM's `[00585304,0058B269)`
+compressed credit bytes with the Japanese base and checks that the viewer's
+approved-original mode preserves the source pixels. No replacement allocation
+is needed for these already-English credits.
+
+### Approved Shiren arrival insertion (2026-09-30)
+
+The user approved inserting all 13 current arrival names and Level, including
+widening Ordeal Mansion. `tools.arrival_art` owns two appended resources and
+six original data literals through `RomBuild`; it changes no instructions,
+RAM/save allocation, palette, number artwork or credits. The exact build is
+`c6cf871bcb20060b91ca226d203bdf78713d89aa8cb1643170286e0b011f96c5`.
+
+| Address space / exclusive range | Ownership / evidence | Certainty |
+|---|---|---|
+| Expanded ROM `[008F8A80,00909100)` | Private 67,200-byte 4bpp atlas, 224×600px. First 33 tile rows copy original `[0054E784,00555B04)` exactly; 42 new rows hold 13 names and Level. | Shared append allocator, expected resource hash, decoded bounds and native uploads verified. No original gaps reused. |
+| Expanded ROM `[00909100,009091C8)` | Private 25×8-byte descriptor table. First 11 entries retain original digits/F; entries11–23 select new name rows33–71; entry24 selects Level at row72. | Original descriptor bytes preserved; every native selection and source span verified. |
+| ROM `[0005B68,0005B6C)` | Atlas literal in CPU Thumb copier `08005AC8`; expected original pointer `0854E784`, new `088F8A80` | Owned redirect; retained original atlas prefix also preserves original rectangle coordinates. |
+| ROM `[0005BFC,0005C00)` | Well Level descriptor literal; expected `0813EEC0`, new table+`C0` | Native Well1/10 rendered;11 suppresses all copying. |
+| ROM `[0005C00,0005C04)` and `[0005C5C,0005C60)` | ASCII-biased digit-table bases; expected `0813EC80`, new table−`180` | Original `ASCII_digit*8` addressing retained; every digit and 1/2/3-digit fields verified. |
+| ROM `[0005C60,0005C64)` | F descriptor literal; expected `0813EE50`, new table+`50` | Original F pixels and placement retained. |
+| ROM `[0005C64,0005C68)` | Name descriptor base; expected `0813EE58`, new table+`58` | All 13 native selectors verified. |
+| VRAM `[0600C020,0600CDA0)` at largest tested composition | 108 uploaded tiles after reserved tile0, inside original character region `[0600C000,06010000)` | Full96KiB VRAM before/after comparison matches only expected tiles/map writes. No new VRAM reservation. |
+
+Ordeal Mansion's private descriptor is `(x=0,y=57,w=17,h=3)` tiles. The
+controller places that136×24px rectangle at screen `(48,32)`. Its130px advance
+is centred at x55 with every ink pixel inside the copied rectangle; no glyph
+rescaling or extra text row. Other name widths remain unchanged. Native
+compositor `08005B6C` still uses its original16-byte stack scratch and the
+existing tile counter at EWRAM `[020015A4,020015A6)`.
+
+Bounded direct Thumb-BL scan of original CPU space `[08000000,0805E000)` finds
+the five copier calls at5BBE/5BDC/5C1E/5C30/5C4E, the compositor call at5CF6,
+and controller call at4D62. Aligned original-ROM word references to the atlas
+base are5B68 and5D80;5D80 remains unchanged and supplies the original blank
+tile. Original Level/digit/F/name base references occur at the five recorded
+descriptor literals above (the digit base has two references). This bounded
+scan is supporting evidence, not a general proof about computed references.
+
+The30 native cases compare1,152,000 visible pixels, exact native tile-map and
+atlas uploads, compositor/controller preserved registers and stack guards,
+original fade/hold/return, and unchanged battery bytes. One current-ROM fresh
+opening route uses no overrides, renders Mysterious Meadow1F, finishes all
+three English tutorial pages and moves normally. Other selectors/floors use
+only temporary fields at`02003B6C`/`02005674`, restored before the original
+caller resumes. Natural late-game entrance/unlock routes remain untested.
+
+Evidence: `build/arrival-cards/inserted/{report,acceptance}.json` and its native
+gallery; input/state hashes are retained in `inserted/fixture/`. The accepted
+delta preserves all earlier text allocations/patches and every unrelated byte
+of the archived3,770-resource ROM. Source ROM/save and original GBA credits are
+unchanged. Reproduction and limitations: `docs/ARRIVAL_INSERTION.md`.
+
+### Approved title and five floating corner logos (2026-09-30)
+
+The user approved all six images for insertion. `tools.title_art` owns six
+private resources and six descriptor pointer redirects through `RomBuild`.
+The resulting ROM is
+`bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
+Ranges below are exclusive; ROM offsets become CPU addresses by adding
+`08000000`. Each resource is `9800` bytes: `200` palette bytes, then `9600`
+tiled 8bpp bytes. All original graphics remain intact.
+
+| Address space / exclusive range | Ownership / evidence | Certainty |
+|---|---|---|
+| Expanded ROM `[009091C8,009129C8)` | Private title record 16 resource | Appended after the arrival descriptors; hash-checked packing and native upload verified. |
+| Expanded ROM `[009129C8,0091C1C8)` | Private family record 13 resource | Same allocator and native checks. |
+| Expanded ROM `[0091C1C8,009259C8)` | Private monsters/slime record 18 resource | Same allocator and native checks. |
+| Expanded ROM `[009259C8,0092F1C8)` | Private monster collage record 19 resource | Same allocator and native checks. |
+| Expanded ROM `[0092F1C8,009389C8)` | Private chest record 20 resource | Same allocator and native checks. |
+| Expanded ROM `[009389C8,009421C8)` | Private village record 21 resource | Same allocator and native checks. |
+| ROM `[0013ED54,0013ED58)` | Record 16 pointer: expected `0842F138`, redirected to `089091C8` | All 20 original descriptor bytes checked; only the pointer changes. |
+| ROM `[0013ED18,0013ED1C)` | Record 13 pointer: expected `08555B04`, redirected to `089129C8` | All 20 descriptor bytes checked. |
+| ROM `[0013ED7C,0013ED80)` | Record 18 pointer: expected `0855F304`, redirected to `0891C1C8` | All 20 descriptor bytes checked. |
+| ROM `[0013ED90,0013ED94)` | Record 19 pointer: expected `08568B04`, redirected to `089259C8` | All 20 descriptor bytes checked. |
+| ROM `[0013EDA4,0013EDA8)` | Record 20 pointer: expected `08572304`, redirected to `0892F1C8` | All 20 descriptor bytes checked. |
+| ROM `[0013EDB8,0013EDBC)` | Record 21 pointer: expected `0857BB04`, redirected to `089389C8` | All 20 descriptor bytes checked. |
+| Original ROM `[0042F138,00438938)` | Original title resource | Retained byte for byte; not free space. |
+| Original ROM `[00555B04,00585304)` | Five contiguous original menu resources | Retained byte for byte; individual starts above, each `9800` bytes. |
+| VRAM `[06000000,06009600)` | Existing 600 background tiles | Native loader `08004240` uploads the entire new resource's pixel portion. No new reservation. |
+| VRAM `[0600B000,0600B500)` | Existing 32-column BG0 map, first 20 rows | 30 visible columns per row checked against native synthesized tile IDs 0–599. The two unused columns per row are not claimed as new capacity. |
+| BG palette `[05000000,05000200)` | Existing title palette | All 256 entries checked after native calibration. |
+| BG palette `[05000000,050001E0)` | Existing menu image palette | 240 entries checked; UI tail `[050001E0,05000200)` is preserved. |
+| IWRAM `[03000A0E,03000A10)` | Native colour/monochrome selector | Observed read by palette loader; nonzero selects monochrome functions. No patch or ownership claim. |
+| IWRAM `[03000C38,03000C3C)` | Signed first calibration-row selector | Native title uses −2; menus use −1 from original descriptor fields. Controlled function probes restore the full snapshot. |
+| IWRAM `[03000C3C,03000C40)` | Second calibration-row selector | Native title/menu observation is 4. Controlled probes cover 0–4; no RAM allocation. |
+| ROM `[0005FB98,0005FCF8)` | Eleven 32-byte first-stage channel lookup rows | Colour function `08003434` clamps selector to −5…5 and indexes relative to `0005FC38`. Monochrome variant `08003490` averages RGB first. |
+| ROM `[0005FCF8,0005FD98)` | Five 32-byte second-stage rows covered by probes | Functions `080034F8` / `08003550`; monochrome variant averages RGB first. Machine clamp allows 0–7, but rows 5–7 are not established as valid display settings by this work. |
+
+The background table is at ROM `0013EC14`, with 20-byte records. An aligned
+word scan finds each of the six original resource base pointers only at its
+record. This is bounded supporting evidence, not proof about computed/interior
+references; retaining every original resource avoids overwriting such consumers.
+Loader palette call `080042D6` and tile-copy call `080042F0` are observed natively;
+loader return is `08004370`. Instructions and all other descriptor fields remain
+unchanged, including the 256/240 palette counts and −2/−1 calibration selectors.
+
+Packing locks every source palette index used outside title rows `[0,136)` or
+the corner rectangles `[164,124,240,160)` (family) / `[164,0,240,36)` (others).
+The corresponding source palette entries are unchanged. Native baseline
+comparisons check all unedited screen pixels, UI VRAM `[06009600,06018000)`,
+OAM `[07000000,07000400)` and the menu palette tail through opening, cancellation
+and reopening. No RAM/save layout or graphics-engine code changes are made.
+
+Evidence: `build/title-insertion/research/palette-and-loader.txt`,
+`assets/title-screen/packed/manifest.json`, and
+`build/title-insertion/{native-report,acceptance,repack}.json`. Five ordinary
+fresh-save background selections and one copied supplied-save route cover 36
+stable snapshots, with 50 startup-transition frames each. The 640 native
+colour-function probes cover the two used gamma selectors, five levels and
+colour/monochrome paths; these are explicitly controlled calls. Natural
+late-game routes and additional logo discovery remain open. Reproduction and
+full scope: `docs/TITLE_INSERTION.md`.

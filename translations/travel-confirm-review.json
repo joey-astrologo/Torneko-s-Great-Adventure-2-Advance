@@ -1,0 +1,52 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Two direct confirmation prompts and six owned reader literals, preserving native Yes/No sense, centring and saved-village substitution. Actual dungeon entry/save overwrite remains separate from controlled message-block verification.",
+  "entries": [
+    {
+      "id": "travel-confirm.enter",
+      "source": {
+        "offset": 1361900,
+        "end_exclusive": 1361929,
+        "raw_hex": "82b182cc835f839383578387839382c993fc82e882dc82b782a9814800",
+        "sha256": "a1a8e827ce7d2ae3708087a2f9d9d50b37b66f24f2fbacc198f9a7d914087803",
+        "japanese": "このダンジョンに入りますか？"
+      },
+      "english": "Enter this dungeon?",
+      "literals": [
+        310060,
+        313892,
+        336588
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "Enter this dungeon?",
+        "revised": "Enter this dungeon?",
+        "reason": "Bilingual reread preserves entering this particular dungeon and explicit confirmation before overwriting the existing village save. Original two centring controls and saved-village substitution are retained; Adventure Log matches established UI terminology.",
+        "review_date": "2026-09-27"
+      }
+    },
+    {
+      "id": "travel-confirm.overwrite",
+      "source": {
+        "offset": 1361929,
+        "end_exclusive": 1361994,
+        "raw_hex": "141f91ba82cc8366815b835e82aa82a082e882dc82b781420d148fe38f9182ab835a815b837582b582dc82b782aa814082e682eb82b582a282c582b782a9814800",
+        "sha256": "2195097be87889ce9eeb32c428f9f053e77c69b49c93925da0354f4137ec3139",
+        "japanese": "{unclassified-control:14}{name-substitution:1f}村のデータがあります。\n{unclassified-control:14}上書きセーブしますが　よろしいですか？"
+      },
+      "english": "{center}Saved village: {village}\n{center}Overwrite its Adventure Log?",
+      "literals": [
+        310064,
+        313896,
+        336592
+      ],
+      "status": "reviewed",
+      "prose_review": {
+        "previous_draft": "{center}Saved village: {village}\n{center}Overwrite its Adventure Log?",
+        "revised": "{center}Saved village: {village}\n{center}Overwrite its Adventure Log?",
+        "reason": "Bilingual reread preserves entering this particular dungeon and explicit confirmation before overwriting the existing village save. Original two centring controls and saved-village substitution are retained; Adventure Log matches established UI terminology.",
+        "review_date": "2026-09-27"
+      }
+    }
+  ]
+}

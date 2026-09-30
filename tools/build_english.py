@@ -9,7 +9,7 @@ import tempfile
 from tools.bps import create_patch
 from tools.build_compact_font import add_font
 from tools.build_dialogue import add_dialogue
-from tools.compact_font import encode
+from tools.compact_font import encode, with_font_snapshot
 from tools.name_entry import add_name_entry
 from tools.menu_text import add_menus
 from tools.service_ui import add_ui
@@ -23,7 +23,8 @@ from tools.rom_build import RomBuild
 OUTPUT = ROOT / 'build/english'
 
 
-def build_rom(include_story=True, include_extra_consumers=True):
+@with_font_snapshot
+def build_rom(include_story=True, include_extra_consumers=True, include_arrival_art=True, include_title_art=True):
     from tools.audit_terminology import validate
     validate()
     build = RomBuild(load_base())
@@ -34,8 +35,12 @@ def build_rom(include_story=True, include_extra_consumers=True):
                 struct.pack('<I', 0x08000000 + label), 'opening-menu')
     dialogue = add_dialogue(build, include_story=include_story)
     menus = add_menus(build)
-    ui = add_ui(build)
-    items = add_items(build)
+    ui = add_ui(build, extra_catalog=ROOT/'translations/options-help-review.json')
+    items = add_items(build, extra_catalog=ROOT/'translations/special-items-review.json', reserve_inscription=include_extra_consumers)
+    scroll_item = {'entries': []}
+    if include_extra_consumers:
+        from tools.scroll_item_text import add_scroll_item
+        scroll_item = add_scroll_item(build, items)
     monsters = add_monsters(build)
     combat = add_combat(build)
     from tools.player_status_text import add_player_status
@@ -53,7 +58,20 @@ def build_rom(include_story=True, include_extra_consumers=True):
     bear_trap = stumble_trap = curse = drain = level_drain = steal_gold = {'entries': []}
     monster_conditions = {'entries': []}
     history = history_menu = records = password = {'entries': []}
+    priest = projectiles = monster_announcements = companion = {'entries': []}
+    recovery = soldiers = spell_info = spell_menu = {'entries': []}
+    item_theft = skill_info = skill_menu = {'entries': []}
+    dungeon_leaves = floor_buffs = fullness = status_effects = {'entries': []}
+    spell_item = spell_messages = discovery_messages = monster_interactions = staff_use = writing = item_loss = player_notices = skill_messages = battle_results = {'entries': []}
     results = {'entries': [], 'formats': [], 'causes': [], 'history_zero_actor': None, 'other_defeat': None}
+    dungeon_shop = save_notices = reference_lists = priest_warning = save_preview = town_root = {'entries': []}
+    writing_input = cannot_talk = step_stairs = pot_view = {'entries': []}
+    fused_loss = {'entries': [], 'abilities': []}
+    book_travel = {'entries': []}
+    ability_info = dungeon_story = empty_read = {'entries': []}
+    travel_gate = ending_text = dungeon_travel = tutorial_help = {'entries': []}
+    link_text = ending_notice = pickup_help = {'entries': []}
+    carpenter = fire_scene = travel_confirm = town_routes = form_refusal = ground_remove = monster_identity = {'entries': []}
     if include_extra_consumers:
         from tools.item_alias_text import add_aliases
         from tools.player_effect_text import add_effects
@@ -133,6 +151,122 @@ def build_rom(include_story=True, include_extra_consumers=True):
         from tools.password_text import add_password
         records = add_records(build)
         password = add_password(build)
+        from tools.priest_text import add_priest
+        from tools.projectile_text import add_projectiles
+        from tools.monster_announcement_text import add_monster_announcements
+        from tools.companion_text import add_companion
+        priest = add_priest(build)
+        projectiles = add_projectiles(build)
+        monster_announcements = add_monster_announcements(build)
+        companion = add_companion(build)
+        from tools.recovery_text import add_recovery
+        from tools.soldier_text import add_soldiers
+        from tools.spell_text import add_spell_info
+        from tools.spell_menu_text import add_spell_menu
+        recovery = add_recovery(build)
+        soldiers = add_soldiers(build)
+        spell_info = add_spell_info(build)
+        spell_menu = add_spell_menu(build, spell_info)
+        from tools.spell_item_text import add_spell_item
+        from tools.spell_message_text import add_spell_messages
+        spell_item = add_spell_item(build, spell_info)
+        spell_messages = add_spell_messages(build, spell_info)
+        from tools.writing_text import add_writing
+        writing = add_writing(build, items, spell_info)
+        from tools.item_theft_text import add_item_theft
+        from tools.skill_text import add_skill_info
+        from tools.skill_menu_text import add_skill_menu
+        item_theft = add_item_theft(build)
+        skill_info = add_skill_info(build, items)
+        from tools.skill_message_text import add_skill_messages
+        skill_messages = add_skill_messages(build, skill_info)
+        from tools.battle_result_text import add_battle_results
+        battle_results = add_battle_results(build)
+        skill_menu = add_skill_menu(build, skill_info)
+        from tools.dungeon_leaf_text import add_dungeon_leaves
+        from tools.floor_buff_text import add_floor_buffs
+        from tools.fullness_text import add_fullness
+        from tools.status_effect_text import add_status_effects
+        dungeon_leaves = add_dungeon_leaves(build)
+        floor_buffs = add_floor_buffs(build, items)
+        fullness = add_fullness(build)
+        status_effects = add_status_effects(build)
+        from tools.item_loss_text import add_item_loss
+        from tools.player_notice_text import add_player_notices
+        item_loss = add_item_loss(build)
+        player_notices = add_player_notices(build)
+        from tools.staff_use_text import add_staff_use
+        staff_use = add_staff_use(build)
+        from tools.monster_interaction_text import add_monster_interactions
+        monster_interactions = add_monster_interactions(build)
+        from tools.discovery_message_text import add_discovery_messages
+        discovery_messages = add_discovery_messages(build)
+        from tools.dungeon_shop_text import add_dungeon_shop
+        from tools.save_notice_text import add_save_notices
+        from tools.reference_list_text import add_reference_lists
+        from tools.priest_warning_text import add_priest_warning
+        from tools.save_preview_text import add_save_preview
+        from tools.town_root_text import add_town_root
+        dungeon_shop = add_dungeon_shop(build)
+        save_notices = add_save_notices(build)
+        reference_lists = add_reference_lists(build)
+        priest_warning = add_priest_warning(build)
+        save_preview = add_save_preview(build)
+        town_root = add_town_root(build)
+        from tools.writing_input import add_input
+        from tools.fused_loss_text import add_fused_loss
+        from tools.cannot_talk_text import add_cannot_talk
+        from tools.step_stairs_text import add_step_stairs
+        from tools.pot_view_text import add_pot_view
+        writing_input=add_input(build)
+        fused_loss=add_fused_loss(build)
+        cannot_talk=add_cannot_talk(build)
+        step_stairs=add_step_stairs(build)
+        pot_view=add_pot_view(build)
+        from tools.book_travel_text import add_book_travel
+        book_travel=add_book_travel(build)
+        from tools.ability_info_text import add_ability_info
+        from tools.dungeon_story_text import add_dungeon_story
+        from tools.empty_read_text import add_empty_read
+        ability_info=add_ability_info(build)
+        dungeon_story=add_dungeon_story(build)
+        empty_read=add_empty_read(build)
+        from tools.travel_gate_text import add_travel_gate
+        travel_gate=add_travel_gate(build)
+        from tools.ending_text import add_ending
+        ending_text=add_ending(build)
+        from tools.dungeon_travel_text import add_dungeon_travel
+        dungeon_travel=add_dungeon_travel(build)
+        from tools.tutorial_help_text import add_tutorial_help
+        tutorial_help=add_tutorial_help(build)
+        from tools.link_text import add_link_text
+        link_text=add_link_text(build)
+        from tools.ending_notice_text import add_ending_notice
+        ending_notice=add_ending_notice(build)
+        from tools.pickup_help_text import add_pickup_help
+        pickup_help=add_pickup_help(build)
+        from tools.carpenter_text import add_carpenter
+        carpenter=add_carpenter(build)
+        from tools.fire_scene_text import add_fire_scene
+        fire_scene=add_fire_scene(build)
+        from tools.travel_confirm_text import add_travel_confirm
+        travel_confirm=add_travel_confirm(build)
+        from tools.town_routes_text import add_town_routes
+        town_routes=add_town_routes(build)
+        from tools.form_refusal_text import add_form_refusal
+        form_refusal=add_form_refusal(build)
+        from tools.ground_remove_text import add_ground_remove
+        ground_remove=add_ground_remove(build)
+        from tools.monster_identity_text import add_monster_identity
+        monster_identity=add_monster_identity(build)
+    arrival_cards = None
+    if include_arrival_art:
+        from tools.arrival_art import add_arrival_art
+        arrival_cards = add_arrival_art(build)
+    title_art = None
+    if include_title_art:
+        from tools.title_art import add_title_art
+        title_art = add_title_art(build)
     data, report = build.finish()
     resource_counts = {
         'dialogue': len(dialogue['entries']), 'menus': len(menus['entries']),
@@ -181,6 +315,62 @@ def build_rom(include_story=True, include_extra_consumers=True):
         'history_menu': len(history_menu['entries']),
         'records': len(records['entries']),
         'password': len(password['entries']),
+        'priest': len(priest['entries']),
+        'projectiles': len(projectiles['entries']),
+        'monster_announcements': len(monster_announcements['entries']),
+        'companion': len(companion['entries']),
+        'recovery': len(recovery['entries']),
+        'soldiers': len(soldiers['entries']),
+        'spell_info': len(spell_info['entries']),
+        'spell_menu': len(spell_menu['entries']),
+        'spell_item': len(spell_item['entries']),
+        'spell_messages': len(spell_messages['entries']),
+        'discovery_messages': len(discovery_messages['entries']),
+        'monster_interactions': len(monster_interactions['entries']),
+        'staff_use': len(staff_use['entries']),
+        'scroll_item': len(scroll_item['entries']),
+        'writing': len(writing['entries']),
+        'item_loss': len(item_loss['entries']),
+        'player_notices': len(player_notices['entries']),
+        'skill_messages': len(skill_messages['entries']),
+        'battle_results': len(battle_results['entries']),
+        'dungeon_shop': len(dungeon_shop['entries']),
+        'save_notices': len(save_notices['entries']),
+        'reference_lists': len(reference_lists['entries']),
+        'priest_warning': len(priest_warning['entries']),
+        'save_preview': len(save_preview['entries']),
+        'town_root': len(town_root['entries']),
+        'writing_input': len(writing_input['entries']),
+        'fused_loss': len(fused_loss['entries'])+len(fused_loss['abilities']),
+        'cannot_talk': len(cannot_talk['entries']),
+        'step_stairs': len(step_stairs['entries']),
+        'pot_view': len(pot_view['entries']),
+        'book_travel': len(book_travel['entries']),
+        'ability_info': len(ability_info['entries']),
+        'dungeon_story': len(dungeon_story['entries']),
+        'empty_read': len(empty_read['entries']),
+        'travel_gate': len(travel_gate['entries']),
+        'ending_text': len(ending_text['entries']),
+        'dungeon_travel': len(dungeon_travel['entries']),
+        'tutorial_help': len(tutorial_help['entries']),
+        'link_text': len(link_text['entries']),
+        'ending_notice': len(ending_notice['entries']),
+        'pickup_help': len(pickup_help['entries']),
+        'carpenter': len(carpenter['entries']),
+        'fire_scene': len(fire_scene['entries']),
+        'travel_confirm': len(travel_confirm['entries']),
+        'town_routes': len(town_routes['entries']),
+        'form_refusal': len(form_refusal['entries']),
+        'ground_remove': len(ground_remove['entries']),
+        'monster_identity': len(monster_identity['entries']),
+
+        'item_theft': len(item_theft['entries']),
+        'skill_info': len(skill_info['entries']),
+        'skill_menu': len(skill_menu['entries']),
+        'dungeon_leaves': len(dungeon_leaves['entries']),
+        'floor_buffs': len(floor_buffs['entries']),
+        'fullness': len(fullness['entries']),
+        'status_effects': len(status_effects['entries']),
         'well_level_labels': len(dialogue['story_consumers'].get('well_level',{}).get('labels',[])),
     }
     report.update(font=font, name_entry=names, dialogue=dialogue, menus=menus, ui=ui, items=items, monsters=monsters, combat=combat, player_status=player_status,
@@ -194,7 +384,19 @@ def build_rom(include_story=True, include_extra_consumers=True):
                   summon_trap=summon_trap, blast_traps=blast_traps, pitfall=pitfall,
                   bear_trap=bear_trap, stumble_trap=stumble_trap, curse=curse, drain=drain, level_drain=level_drain, steal_gold=steal_gold,
                   monster_conditions=monster_conditions, results=results, history=history, history_menu=history_menu, records=records, password=password,
+                  priest=priest, projectiles=projectiles, monster_announcements=monster_announcements, companion=companion,
+                  recovery=recovery, soldiers=soldiers, spell_info=spell_info, spell_menu=spell_menu, spell_item=spell_item, spell_messages=spell_messages,
+                  item_theft=item_theft, skill_info=skill_info, skill_menu=skill_menu,
+                  dungeon_leaves=dungeon_leaves, floor_buffs=floor_buffs, fullness=fullness, status_effects=status_effects, discovery_messages=discovery_messages, monster_interactions=monster_interactions, staff_use=staff_use, scroll_item=scroll_item, writing=writing, item_loss=item_loss, player_notices=player_notices, skill_messages=skill_messages, battle_results=battle_results,
                   reviewed_resource_counts=resource_counts,
+                  dungeon_shop=dungeon_shop, save_notices=save_notices, reference_lists=reference_lists,
+                  priest_warning=priest_warning, save_preview=save_preview, town_root=town_root,
+                  writing_input=writing_input, fused_loss=fused_loss, cannot_talk=cannot_talk, step_stairs=step_stairs, pot_view=pot_view, book_travel=book_travel, ability_info=ability_info, dungeon_story=dungeon_story, empty_read=empty_read,
+                  travel_gate=travel_gate, ending_text=ending_text, dungeon_travel=dungeon_travel, tutorial_help=tutorial_help,
+                  link_text=link_text, ending_notice=ending_notice, pickup_help=pickup_help,
+                  carpenter=carpenter, fire_scene=fire_scene, travel_confirm=travel_confirm, town_routes=town_routes, form_refusal=form_refusal, ground_remove=ground_remove, monster_identity=monster_identity,
+                  arrival_cards=arrival_cards, title_art=title_art,
+                  total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")
     report.update(dialogue['story_consumers'])

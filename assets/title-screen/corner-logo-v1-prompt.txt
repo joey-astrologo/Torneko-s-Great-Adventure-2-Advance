@@ -1,0 +1,16 @@
+Use case: text-localization / logo-brand.
+Asset type: one reusable opaque miniature wooden logo plaque for the corners of five Torneko 2 GBA menu background images.
+Input image 1: approved English Torneko 2 title artwork, the exact lettering and material style reference. Input image 2: original family background showing the approximate corner-logo scale and placement; do not redraw this background.
+
+Create ONLY the compact English logo plaque as a standalone wide 19:9 image, ideally 1520 by 720 pixels. Fill the entire rectangular canvas with weathered wooden planks, with a very narrow dark wood border. Fully opaque all the way to the four edges, no transparency or margin, no surrounding scenery, no mockup or separate background. It will be rendered at exactly 76 by 36 pixels, so prioritize chunky readable letter shapes and extremely economical spacing. Keep wood grain subtle so it does not compete with tiny letters. Do not include ragged cutout corners or empty margins.
+
+Use the same warm golden yellow dimensional letters, orange bevels, dark brown outlines, prominent golden orange 2 and red ADVANCE accent as the approved main title. Retain its personality but adapt the arrangement to a miniature logo. TORNEKO'S should run broadly across the top. Put GREAT and ADVENTURE below as two clear stacked lines, with a large 2 on the right and the small red ADVANCE accent integrated beside the 2. Keep all words within the wooden rectangle. Fill most of the plaque with lettering; avoid thick decorative borders. The lettering must not be cropped.
+
+Exact text, with no other wording:
+TORNEKO'S
+GREAT
+ADVENTURE
+2
+ADVANCE
+
+Do not include Dragon Quest Characters, Mystery Dungeon, Push START, a slime or a landscape: the original miniature corner logo also omits those full-title elements. Do not abbreviate, misspell, repeat or omit any of the five requested text elements. No Japanese lettering, no number 3, no blue Advance accent, no watermark. One finished plaque, not a sheet of alternatives.

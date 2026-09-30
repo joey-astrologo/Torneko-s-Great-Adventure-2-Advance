@@ -1,0 +1,48 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Three formats in native HP helper08013D90, skill-healing helper08040DB8 and warp08012220 only. Other shared consumers retain original pointers; no mechanics, stack or memory layout changes.",
+  "entries": [
+    {
+      "id": "recovery.120",
+      "table_offset": 288,
+      "source": {
+        "offset": 409556,
+        "end_exclusive": 409578,
+        "raw_hex": "257382cd0e0b4e485082aa256489f1959c82b582bd00",
+        "sha256": "2d3a5e9185e26824345c0529b4af09db410d4697bc8827961a38c03f4c04be25",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0b4e}HPが%{unclassified-control:64}回復した"
+      },
+      "english": "{actor}{fit} recovers {amount} HP.",
+      "status": "reviewed",
+      "review": "Preserves the actor and actual recovered HP amount. Independent Japanese-source editorial pass; complete conditional one-line wording, original formatter order and actor/integer bounds."
+    },
+    {
+      "id": "recovery.124",
+      "table_offset": 292,
+      "source": {
+        "offset": 409536,
+        "end_exclusive": 409555,
+        "raw_hex": "8dc591e5485082aa256482c982c882c182bd00",
+        "sha256": "d8d57b6612ee16144e2d041beb9f893152ca8e6c611b5cd69b5f6c6800153c71",
+        "japanese": "最大HPが%{unclassified-control:64}になった"
+      },
+      "english": "Max HP is now {amount}.",
+      "status": "reviewed",
+      "review": "The value is the new maximum, not the amount gained. Independent Japanese-source editorial pass; complete conditional one-line wording, original formatter order and actor/integer bounds."
+    },
+    {
+      "id": "recovery.210",
+      "table_offset": 528,
+      "source": {
+        "offset": 408044,
+        "end_exclusive": 408060,
+        "raw_hex": "257382cd20838f815b837682b582bd00",
+        "sha256": "e378e4979331c76b7ca36d8b35b5d97957af498886f80144bfc96a5c30874d3a",
+        "japanese": "%{unclassified-control:73}は ワープした"
+      },
+      "english": "{actor}{fit} warps.",
+      "status": "reviewed",
+      "review": "Preserves the warp outcome; no destination or distance is invented. Independent Japanese-source editorial pass; complete conditional one-line wording, original formatter order and actor/integer bounds."
+    }
+  ]
+}

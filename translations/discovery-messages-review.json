@@ -1,0 +1,127 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only specified private item identification, monster revelation/transformation and decoy timer readers. Complete identities and original mechanics preserved. Field/frame budgets, actual native branches and colour/scroll checks precede integration.",
+  "entries": [
+    {
+      "id": "discovery.35c",
+      "table_offset": 860,
+      "source": {
+        "offset": 406148,
+        "end_exclusive": 406169,
+        "raw_hex": "257382c92091ab82f082c282a982dc82ea82bd2100",
+        "sha256": "9be429be1197d9770a142681824cb2a8527051015fa563082dbedd9985dc4f10",
+        "japanese": "%{unclassified-control:73}に 足をつかまれた!"
+      },
+      "english": "{actor}{fit} grabbed your feet!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    },
+    {
+      "id": "discovery.7e0",
+      "table_offset": 2016,
+      "source": {
+        "offset": 396776,
+        "end_exclusive": 396811,
+        "raw_hex": "82c882f182c6212082b182cc838283938358835e815b82cd0d257382be82c182bd2100",
+        "sha256": "65d0dcee8001188571f5991396d7684274a91ecfff6ef550b40153628c49c27d",
+        "japanese": "なんと! このモンスターは\n%{unclassified-control:73}だった!"
+      },
+      "english": "This monster was{fit} {actor}!",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    },
+    {
+      "id": "discovery.230",
+      "table_offset": 560,
+      "source": {
+        "offset": 407800,
+        "end_exclusive": 407818,
+        "raw_hex": "257382cd0d257382c995cf89bb82b582bd00",
+        "sha256": "d86135609310d64885df3137cfd06c4054d7de217f7e96f773d68720f9984951",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に変化した"
+      },
+      "english": "{old_actor}{fit} changed into{fit} {actor}.",
+      "fields": [
+        "old_actor",
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    },
+    {
+      "id": "discovery.74",
+      "table_offset": 116,
+      "source": {
+        "offset": 410800,
+        "end_exclusive": 410822,
+        "raw_hex": "82c882f182c62120257382cd0d257382be82c182bd00",
+        "sha256": "4e3d4feced45b6403bd81bfc621e7df93ad25de11622b079b1b26a8abb0a9846",
+        "japanese": "なんと! %{unclassified-control:73}は\n%{unclassified-control:73}だった"
+      },
+      "english": "Oh!{fit} {item} was{fit} {result}!",
+      "fields": [
+        "item",
+        "result"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them. Oh! retains the Japanese surprise interjection while allowing ordinary aliases and names to fit one line."
+    },
+    {
+      "id": "discovery.1ac",
+      "table_offset": 428,
+      "source": {
+        "offset": 408616,
+        "end_exclusive": 408681,
+        "raw_hex": "83898362834c815b212082b182cc8aaa95a882cd20257382cc0d8e9d82c182c482a282e982b782d782c482cc834183438365838082f08eaf95ca82c582ab82bd00",
+        "sha256": "863f22c01eb69e9c9ab6b4cce7f2cb503e122f13e90f0ac2ca30c2e4c1a1ff28",
+        "japanese": "ラッキー! この巻物は %{unclassified-control:73}の\n持っているすべてのアイテムを識別できた"
+      },
+      "english": "Lucky! The scroll identified{fit} {actor}'s{fit} entire inventory.",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    },
+    {
+      "id": "discovery.9c8",
+      "table_offset": 2504,
+      "source": {
+        "offset": 393656,
+        "end_exclusive": 393686,
+        "raw_hex": "257382cc906791e382ed82e882aa0e074e8cb382c982e082c782c182bd00",
+        "sha256": "28d598541f6a950667ae04bca8d40cfb8e6d46ac6e7d0882d35c7e0e8a91caee",
+        "japanese": "%{unclassified-control:73}の身代わりが{fit-next:0e074e}元にもどった"
+      },
+      "english": "{actor}'s{fit} decoy returned to normal.",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    },
+    {
+      "id": "discovery.95c",
+      "table_offset": 2396,
+      "source": {
+        "offset": 394184,
+        "end_exclusive": 394214,
+        "raw_hex": "257382cc906791e382ed82e882aa0e084e8cb382c982e082c782c182bd00",
+        "sha256": "88077e149d63192ded256d6f7bf151d448affc061a090327f8116ce68c761f4c",
+        "japanese": "%{unclassified-control:73}の身代わりが{fit-next:0e084e}元にもどった"
+      },
+      "english": "{actor}'s{fit} decoy returned to normal.",
+      "fields": [
+        "actor"
+      ],
+      "status": "reviewed",
+      "review": "Independent Japanese translation; retain every item/actor identity, surprise or luck and full effect meaning. Conditional breaks only when maximum substitutions require them."
+    }
+  ]
+}

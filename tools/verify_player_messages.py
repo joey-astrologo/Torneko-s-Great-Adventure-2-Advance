@@ -1,5 +1,6 @@
 """Native player-name wrapper mapping, maximum names, queue flags and fallback pointers."""
 import argparse,json,struct
+from pathlib import Path
 import mgba.log
 from tools.rom import ROOT,digest,require,load_base
 from tools.emulator import Session,Debugger,ffi
@@ -25,13 +26,14 @@ def candidate():
     OUT.mkdir(parents=True,exist_ok=True);(OUT/'game.gba').write_bytes(rom)
     (OUT/'build.json').write_text(json.dumps(build,indent=2)+'\n');return rom,build
 
-def run(cumulative=False):
+def run(cumulative=False,source=None):
     global OUT
     import tools.verify_player_status_prototype as status
     mgba.log.silence()
-    if cumulative:
-        OUT=ROOT/'build/english/player-message-validation';rom=(ROOT/'build/english/torneko-2-english.gba').read_bytes()
-        build=json.loads((ROOT/'build/english/build.json').read_text());require(digest(rom)==build['output_sha256'],'Player message ROM differs')
+    if cumulative or source is not None:
+        source=source or ROOT/'build/english'
+        OUT=source/'player-message-validation';rom=(source/'torneko-2-english.gba').read_bytes()
+        build=json.loads((source/'build.json').read_text());require(digest(rom)==build['output_sha256'],'Player message ROM differs')
     else:rom,build=candidate()
     prior=status.OUT
     try:status.OUT=OUT;fixture=status.ready(rom,build)
@@ -115,8 +117,8 @@ def run(cumulative=False):
                                     'output_pointer':config['output'],'player_case':label,'queue_flag':flag,'controlled_overrides':overrides,
                                     'formats':formats,'queue':checks[0].queued,'glyphs':len(checks[0].draws),'inputs':game.inputs})
     report={'passed':True,'rom_sha256':digest(rom),'cases':results,
-            'scope':'Native Life herb Drink reaches the common player-name formatter, then explicit original-source-pointer and queue-flag overrides exercise33 reviewed mappings. Required English, widest English and widest Japanese names; flags0/1; unmapped original Japanese, already-English and existing player-name RAM pointers. Exact source routing, one/two-line decisions,256-byte guards, formatter/queue/wrapper ABI, glyphs, name and battery preservation. Other consumers, ordinary availability/effect progression and arbitrary custom names remain separate.'}
+            'scope':f'Native Life herb Drink reaches the common player-name formatter, then explicit original-source-pointer and queue-flag overrides exercise {len(build["player_messages"]["entries"])} reviewed mappings. Required English, widest English and widest Japanese names; flags0/1; unmapped original Japanese, already-English and existing player-name RAM pointers. Exact source routing, one/two-line decisions,256-byte guards, formatter/queue/wrapper ABI, glyphs, name and battery preservation. Other consumers, ordinary availability/effect progression and arbitrary custom names remain separate.'}
     (OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('Player wrapper:',len(results),'cases passed')
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--cumulative',action='store_true');run(parser.parse_args().cumulative)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--cumulative',action='store_true');parser.add_argument('--source',type=Path);args=parser.parse_args();run(args.cumulative,args.source)

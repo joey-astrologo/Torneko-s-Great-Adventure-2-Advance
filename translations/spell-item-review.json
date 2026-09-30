@@ -1,0 +1,34 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only inscribed item153 name branch F2BE..F2E2. Private kind/format and existing owned spell definitions; ordinary spellbook names, other inscriptions, gameplay data and original shared tables remain separate. Menu width and numeric suffix checks precede integration.",
+  "entries": [
+    {
+      "id": "spell-item.kind",
+      "table_offset": 2124,
+      "source": {
+        "offset": 395688,
+        "end_exclusive": 395693,
+        "raw_hex": "8ef495b600",
+        "sha256": "4edcd42151c8662c63466e1f95036c65ca8a1511c8fddd6a2bd9f9ee202d64b4",
+        "japanese": "呪文"
+      },
+      "english": "Sp.",
+      "status": "reviewed",
+      "review": "T2 category for a spell written in a spellbook. Spell names are the independently reviewed T2 glossary mappings. Display abbreviation of Spell: complete spell names plus the native six-digit price must fit the existing64-byte row buffer. Spell: Lightning Storm produces67bytes; Sp. Lightning Storm produces61bytes, preserving the full spell identity."
+    },
+    {
+      "id": "spell-item.format",
+      "literal_offset": 62184,
+      "source": {
+        "offset": 439352,
+        "end_exclusive": 439361,
+        "raw_hex": "030425733a25730500",
+        "sha256": "1274c009054f42f45aba4284c1cea4cc33b00f7b0614bafdadd9bbf4feba711b",
+        "japanese": "{legacy-position:0304}%{unclassified-control:73}:%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{kind} {spell}",
+      "status": "reviewed",
+      "review": "Preserve category/name order and colour4/restoration. A three-pixel space follows the abbreviated category; no redundant colon after its period. Complete row byte and pixel limits require this display form."
+    }
+  ]
+}

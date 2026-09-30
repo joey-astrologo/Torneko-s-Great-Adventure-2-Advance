@@ -34,6 +34,7 @@ def run(source=ROOT / 'build/english', output=ROOT / 'build'):
         'source_sha256': digest(base), 'rom_sha256': digest(rom),
         'patch_sha256': digest(patch), 'build_ledger_sha256': digest(ledger_bytes),
         'inserted_resources': ledger['total_reviewed_inserted_resources'],
+        'inserted_graphics': ledger.get('total_reviewed_inserted_graphics', 0),
         'patch_apply_matches_rom': True,
         'status': 'development',
         'scope': 'Latest compiled English build; translation and full-game playtesting remain in progress. '

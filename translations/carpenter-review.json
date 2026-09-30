@@ -1,0 +1,159 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "entries": [
+    {
+      "id": "carpenter.working",
+      "literal_offset": 328408,
+      "source": {
+        "offset": 1364056,
+        "end_exclusive": 1364126,
+        "raw_hex": "83478368817591718cc982cd814083418362835682c982dc82a982b982c40d8140835f8393836982cd814096608caf82c582e082b582c482ab82c482ad82be82b982a6814900",
+        "sha256": "49ffafb668e8831a352d8e90e2be0e008f969b781500247da2e6a4fa5788dbef",
+        "japanese": "エド「倉庫は　アッシにまかせて\n　ダンナは　冒険でもしてきてくだせえ！"
+      },
+      "english": "Ed: Leave the warehouse to me, guv'nor! Go have an adventure!",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Leave the warehouse to me, guv'nor! Go have an adventure!",
+        "reason": "Preserves his assurance and request to go adventuring while he repairs the warehouse."
+      }
+    },
+    {
+      "id": "carpenter.finished",
+      "literal_offset": 328432,
+      "source": {
+        "offset": 1364126,
+        "end_exclusive": 1364194,
+        "raw_hex": "83478368817591718cc982aa8aae90ac82b582c4814082d082b382b582d482e882c90d814082a282a28341835a82a982a282bd82c182c48ab482b682c583548341814900",
+        "sha256": "1a98852129074b81b051a3eb37fc281b6b54312c6cd54d76b74832303aaf4a0d",
+        "japanese": "エド「倉庫が完成して　ひさしぶりに\n　いいアセかいたって感じでサア！"
+      },
+      "english": "Ed: Finishing the warehouse gave me a proper workout! First time in ages!",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Finishing the warehouse gave me a proper workout! First time in ages!",
+        "reason": "Preserves completed construction and satisfaction at working up a good sweat for the first time in a while."
+      }
+    },
+    {
+      "id": "carpenter.complete",
+      "literal_offset": 328500,
+      "source": {
+        "offset": 1364194,
+        "end_exclusive": 1364298,
+        "raw_hex": "834783688175835f8393836982cc82a482bf82cc91718cc90d814082b182ea82c58aae915382c9814082c882a882e882e282b582bd82ba81490d83478368817582a282e282a0814082a882e082c182bd82e682e80d814082a982a982e882e282b582bd82cb814200",
+        "sha256": "c5b049b7737108d76698fe5ae51f1163440d9bdb325191f488a54f2a4322dc8a",
+        "japanese": "エド「ダンナのうちの倉庫\n　これで完全に　なおりやしたぜ！\nエド「いやあ　おもったより\n　かかりやしたね。"
+      },
+      "english": "Ed: Your warehouse is completely fixed now, guv'nor!\n\nEd: Phew! That took longer than I thought.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Your warehouse is completely fixed now, guv'nor!\n\nEd: Phew! That took longer than I thought.",
+        "reason": "Preserves complete repair and admission that it took longer than expected; no invented capacity."
+      }
+    },
+    {
+      "id": "carpenter.capacity",
+      "literal_offset": 328540,
+      "source": {
+        "offset": 1364298,
+        "end_exclusive": 1364363,
+        "raw_hex": "834783688175835f83938369814082c582ab82e282b582bd82ba81490d814082b182ea82c58140252d3033648352814093b98bef82aa82a882af82e282b7814200",
+        "sha256": "d64b82567cbbc70e5dd3dff7b2911f2e4a47453eaaf0676e35fa82a8de45bef1",
+        "japanese": "エド「ダンナ　できやしたぜ！\n　これで　%-03{unclassified-control:64}コ　道具がおけやす。"
+      },
+      "english": "Ed: All done, guv'nor!\nYou can now store {count} items.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: All done, guv'nor!\nYou can now store {count} items.",
+        "reason": "Preserves the actual native capacity substitution. English removes Japanese padded-field presentation but uses the original numeric value."
+      }
+    },
+    {
+      "id": "carpenter.more",
+      "literal_offset": 328544,
+      "source": {
+        "offset": 1364363,
+        "end_exclusive": 1364511,
+        "raw_hex": "83478368817582bd82be814082dc82be8aae915382c98f43979d82aa0d814082a882ed82c182bd82ed82af82b682e182a0814082cb82a682f182c582b782e681420d8347836881758dde97bf91e382aa8250824f824f824f8353815b838b836882bd82dc82c182bd82e70d814082dc82bd814083418362835682c990ba82f082a982af82c482a882ad82f182c882b982a6814200",
+        "sha256": "7da878b65f2307e99fbac486f9d4ae062a46f5a22ef429f2922919c8b3bd4ea9",
+        "japanese": "エド「ただ　まだ完全に修理が\n　おわったわけじゃあ　ねえんですよ。\nエド「材料代が１０００ゴールドたまったら\n　また　アッシに声をかけておくんなせえ。"
+      },
+      "english": "Ed: Mind you, the repairs ain't finished yet.\n\nEd: Come see me again when you've saved another 1,000 gold for materials.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Mind you, the repairs ain't finished yet.\n\nEd: Come see me again when you've saved another 1,000 gold for materials.",
+        "reason": "Preserves unfinished repairs, exact1000-gold material cost and request to return when saved; consistent Ed voice from the warehouse-opening scene."
+      }
+    },
+    {
+      "id": "carpenter.insufficient",
+      "literal_offset": 328556,
+      "source": {
+        "offset": 1364747,
+        "end_exclusive": 1364797,
+        "raw_hex": "834783688175835f83938369814082b682e582a482be82f182cd0d814082a282a282c182b182c882b582c582b782ba814900",
+        "sha256": "ac53290f32a1e6eb0fce2dde8179022d95b6c7da942c57973060f342bfe78397",
+        "japanese": "エド「ダンナ　じょうだんは\n　いいっこなしですぜ！"
+      },
+      "english": "Ed: Come on, guv'nor! No foolin'!",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Come on, guv'nor! No foolin'!",
+        "reason": "Preserves his incredulous response to claiming funds the player does not have, without inventing a payment or penalty."
+      }
+    },
+    {
+      "id": "carpenter.offer",
+      "literal_offset": 328640,
+      "source": {
+        "offset": 1364511,
+        "end_exclusive": 1364575,
+        "raw_hex": "83478368817582a081408367838b836c835282cc835f8393836981490d81408250824f824f824f8353815b838b8368814082c582ab82e282b582bd82a9814800",
+        "sha256": "bcbd742c49b6273a7b9331ad5f6e3d0c8bf1457e7c8094f3a7988c901c53a506",
+        "japanese": "エド「あ　トルネコのダンナ！\n　１０００ゴールド　できやしたか？"
+      },
+      "english": "Ed: Ah, Torneko, guv'nor! Have you got that 1,000 gold?",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Ah, Torneko, guv'nor! Have you got that 1,000 gold?",
+        "reason": "Preserves Torneko by name, familiar address,1000 gold and the original yes/no sense."
+      }
+    },
+    {
+      "id": "carpenter.accepted",
+      "literal_offset": 328672,
+      "source": {
+        "offset": 1364575,
+        "end_exclusive": 1364655,
+        "raw_hex": "83478368817582ed82a982e882e282b582bd81490d0d83478368817582bb82ea82b682e182a0814096f191a982c782a882e80d814091718cc982f082c882a882b582c482a882ab82e282b782e6814900",
+        "sha256": "d1f40189e51bb1688d3577f0c6d9df0dbb20036d5444d41aa3ecbc492a115737",
+        "japanese": "エド「わかりやした！\n\nエド「それじゃあ　約束どおり\n　倉庫をなおしておきやすよ！"
+      },
+      "english": "Ed: Right you are!\n\nEd: I'll get that warehouse fixed up, just like I promised!",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: Right you are!\n\nEd: I'll get that warehouse fixed up, just like I promised!",
+        "reason": "Preserves agreement and promise to repair the warehouse; future work is not claimed already complete."
+      }
+    },
+    {
+      "id": "carpenter.declined",
+      "literal_offset": 328692,
+      "source": {
+        "offset": 1364655,
+        "end_exclusive": 1364747,
+        "raw_hex": "83478368817582ed82a982e882e282b582bd8140835f8393836981420d0d83478368817582a88341835682aa82bb82eb82c182bd82e70d814083418362835682c9814090ba82f082a982af82c482a882ad82f182c882b982a6814200",
+        "sha256": "4ef2263f832bef98ee98c69d1d61ecdc73f917774c30950336a602583f074903",
+        "japanese": "エド「わかりやした　ダンナ。\n\nエド「おアシがそろったら\n　アッシに　声をかけておくんなせえ。"
+      },
+      "english": "Ed: All right, guv'nor.\n\nEd: Give me a shout once you've got the money together.",
+      "status": "reviewed",
+      "review": {
+        "previous": "Ed: All right, guv'nor.\n\nEd: Give me a shout once you've got the money together.",
+        "reason": "Preserves accepting the refusal and asking the player to return after raising the money."
+      }
+    }
+  ],
+  "scope": "Nine original502BC warehouse-repair dialogue resources. Original branch flags,1000-gold payment and capacity changes are preserved. Existing shared formatter scratch is bounded to128 bytes; full prose is read directly from allocated ROM."
+}

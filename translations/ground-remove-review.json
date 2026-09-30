@@ -1,0 +1,20 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Only the early floor-index branch of Remove08024918. The original Japanese is an incomplete prepositional fragment, retained as such in English; no refusal reason or gameplay effect invented. Only literal24930 redirected to private shared table; original bytes remain intact.216px queue budget, immutable ROM source, no format substitutions.",
+  "entries": [
+    {
+      "id": "ground-remove.090",
+      "table_offset": 144,
+      "source": {
+        "offset": 410604,
+        "end_exclusive": 410621,
+        "raw_hex": "91ab8cb382cc834183438365838082c900",
+        "sha256": "fa43a201ee6a440c005e2d75b3e2807f1b44a8a69e304a35baf70c98d73d7526",
+        "japanese": "足元のアイテムに"
+      },
+      "english": "To the item at your feet",
+      "status": "reviewed",
+      "review": "Independent bilingual review: 足元のアイテムに is a fragment meaning to/on the item at your feet. Retain incompleteness without inventing cannot remove or another mechanic. Native reader queues this source alone, with no concatenated completion, when command byte3>49."
+    }
+  ]
+}

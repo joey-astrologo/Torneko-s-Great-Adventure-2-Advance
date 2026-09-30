@@ -1,0 +1,20 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Owned item bonus-effect no-new-effect branch. All221 item-name pointers are copied privately; gameplay bytes and original table remain unchanged. Native branch and maximum field checks are separate from acquisition.",
+  "entries": [
+    {
+      "id": "floor-buff.8ec",
+      "table_offset": 2284,
+      "source": {
+        "offset": 394920,
+        "end_exclusive": 394945,
+        "raw_hex": "257382cc93c195ca82c88cf889ca82cd82c882a982c182bd00",
+        "sha256": "7b575ca7224c48939a31953e873d3ee7b593c60d6e618664442824eac80a7222",
+        "japanese": "%{unclassified-control:73}の特別な効果はなかった"
+      },
+      "english": "{item}{fit} had no special effect.",
+      "status": "reviewed",
+      "review": "Independent reading of T2 source: the item produced no special effect. Does not claim its ordinary hunger restoration failed. Native exhausted seven-effect flags select this branch, whose second argument indexes the original item definition name."
+    }
+  ]
+}

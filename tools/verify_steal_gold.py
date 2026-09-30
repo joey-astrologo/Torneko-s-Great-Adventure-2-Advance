@@ -167,13 +167,19 @@ def run(cumulative=False):
             require(len(initial) == len(returns) == 1 and slots == expected and
                     all(c.complete and c.returned for c in checks) and not pending and not formatted,
                     'Gold theft chain incomplete: ' + repr((case, slots, len(returns))))
-            wraps = case in ('maximum-width', 'maximum-bytes', 'player-widest-Japanese') or case.startswith('combined-')
-            require(checks[0].queued['one_line'] == (not wraps), 'Gold theft line choice differs')
+            # The ordinary native fixture can contain a different species after
+            # a route change. Derive the join from actual complete substitutions.
+            from tools.inventory_action_text import CONTROL
+            expanded = checks[0].expected_payload
+            widths = [checks[0].width(part) for part in expanded.split(CONTROL)]
+            require(checks[0].queued['one_line'] == (sum(widths) <= 215),
+                    'Gold theft line choice differs from measured complete fields')
+            wraps = sum(widths) > 215
             require(len(rolls) == (0 if failed else 4), 'Native gold roll count differs')
             require(m.u16[hero + 0x84] == hp and bytes(m[0x0200DF28:0x0200DF28 + 2400]) == inventory
                     and game.snapshot().battery == fixture.battery, 'Gold theft changed HP/items/save')
             results.append({'case': case, 'queue_slots': slots, 'queues': [c.queued for c in checks],
-                            'draws': [c.draws for c in checks], 'formats': formats, 'overrides': overrides,
+                            'draws': [c.draws for c in checks], 'measured_segments': widths, 'formats': formats, 'overrides': overrides,
                             'return': returns[0], 'inputs': game.inputs,
                             'images': {p: digest((game.output / p).read_bytes()) for p in images}})
     report = {'passed': True, 'rom_sha256': digest(rom), 'cases': results,

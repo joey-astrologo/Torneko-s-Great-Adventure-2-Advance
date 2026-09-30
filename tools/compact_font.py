@@ -1,6 +1,10 @@
 """Pack the authored compact English font and measure its native glyph advances."""
 
 import json
+import copy
+from contextlib import contextmanager
+from contextvars import ContextVar
+from functools import wraps
 from pathlib import Path
 import struct
 
@@ -12,11 +16,49 @@ TORNEKO3_ASSET = ROOT / "assets/fonts/torneko3-english.json"
 ASSET = COMPACT_ASSET
 FIRST_CODE = 0xF020
 LAST_CODE = 0xF07E
+_SNAPSHOT = ContextVar('torneko_font_validation_snapshot', default=None)
+
+
+@contextmanager
+def font_snapshot():
+    """Validate immutable font inputs once for one build, then recheck sources.
+
+    Nothing persists between builds. Each caller still receives an independent
+    object, and changes to the ROM or an observed asset abort before export.
+    """
+    original = load_base()
+    snapshot = {'original': original, 'fonts': {}}
+    token = _SNAPSHOT.set(snapshot)
+    try:
+        yield
+        require(load_base() == original, 'Base ROM changed during font snapshot')
+        for path, (raw, _) in snapshot['fonts'].items():
+            require(path.read_bytes() == raw, 'Font asset changed during build: ' + str(path))
+    finally:
+        _SNAPSHOT.reset(token)
+
+
+def with_font_snapshot(function):
+    @wraps(function)
+    def run(*args, **kwargs):
+        with font_snapshot():
+            return function(*args, **kwargs)
+    return run
 
 
 def load_font(path=ASSET):
-    original = load_base()
-    font = json.loads(Path(path).read_text())
+    snapshot = _SNAPSHOT.get()
+    if snapshot is None:
+        return _validate_font(load_base(), Path(path).read_bytes())
+    path = Path(path).resolve()
+    if path not in snapshot['fonts']:
+        raw = path.read_bytes()
+        snapshot['fonts'][path] = raw, _validate_font(snapshot['original'], raw)
+    return copy.deepcopy(snapshot['fonts'][path][1])
+
+
+def _validate_font(original, raw):
+    font = json.loads(raw)
     require(font["schema"] in (1,2), "Unsupported font schema")
     require(font["base_rom_sha256"] == digest(original), "Font asset is for another base ROM")
     require(set(font["glyphs"]) == set(map(chr, range(32, 127))), "Font must cover all printable ASCII")

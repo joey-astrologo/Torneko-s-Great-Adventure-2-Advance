@@ -1,0 +1,90 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Six direct ROM conversations selected by actor ID134 and dungeon floor1 through6 in native0801AAFC. Other floor values and all priest sources remain original in this private copy; ordinary quest progression is separately unverified.",
+  "entries": [
+    {
+      "id": "companion.780",
+      "table_offset": 1920,
+      "source": {
+        "offset": 397548,
+        "end_exclusive": 397644,
+        "raw_hex": "8370839389ae817582be814091e58fe4957682c582b70d0d8370839389ae8175838f835e834e835682cc82b182c682c882c78b4382c982b982b80d814082c782f182c782f1814090e682d6906982f182b682e182c182c482ad82be82b382a200",
+        "sha256": "334808805c9e7fecfa8599fd410e25bdeb3feb0c66c09de2c74d58bdd04e7a54",
+        "japanese": "パン屋「だ　大丈夫です\n\nパン屋「ワタクシのことなど気にせず\n　どんどん　先へ進んじゃってください"
+      },
+      "english": "Baker: I-I'm all right.\n\nBaker: Don't worry about me. Just keep going!",
+      "status": "reviewed",
+      "review": "Keeps the hesitant reassurance and insistence that Torneko advance without worrying about him. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    },
+    {
+      "id": "companion.784",
+      "table_offset": 1924,
+      "source": {
+        "offset": 397488,
+        "end_exclusive": 397545,
+        "raw_hex": "8370839389ae817582b1814082b1814082b18145814581450d814082b182ed82a282c582b7814082b182ed82a282f182c582b782a381602100",
+        "sha256": "98b93889d0b6decf482e99b1adecaa1a7f1f43392f0914c16033e4c8db2ddf47",
+        "japanese": "パン屋「こ　こ　こ・・・\n　こわいです　こわいんですぅ～!"
+      },
+      "english": "Baker: I-I-I'm... I'm scared! I'm so scared!",
+      "status": "reviewed",
+      "review": "Preserves the prolonged frightened stammer rather than smoothing away his panic. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    },
+    {
+      "id": "companion.788",
+      "table_offset": 1928,
+      "source": {
+        "offset": 397408,
+        "end_exclusive": 397487,
+        "raw_hex": "8370839389ae817581458145814582a681480d814082dc814082dc82be94bc95aa82b582a98140978882c482c882a282f182c582b782a981480d8370839389ae817581458145814582c682d982d900",
+        "sha256": "eb035aaedc901713282a6d97d0dd4e64b69b4b14f6dfe3b2015c0ee6b8864599",
+        "japanese": "パン屋「・・・え？\n　ま　まだ半分しか　来てないんですか？\nパン屋「・・・とほほ"
+      },
+      "english": "Baker: ...Huh? W-we're only halfway there?\n\nBaker: ...Oh, dear.",
+      "status": "reviewed",
+      "review": "Halfway is a distance/progress response, with a dejected closing exclamation. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    },
+    {
+      "id": "companion.78c",
+      "table_offset": 1932,
+      "source": {
+        "offset": 397352,
+        "end_exclusive": 397408,
+        "raw_hex": "8370839389ae8175838283938358835e815b82c60d814082b382c182ab814096da82aa82a082c182bf82e182a282dc82b582bd829f816000",
+        "sha256": "82de4ef03062b36df2f9db36e4531eec63c0392e5482a1eb8a72c28201320f0e",
+        "japanese": "パン屋「モンスターと\n　さっき　目があっちゃいましたぁ～"
+      },
+      "english": "Baker: A monster looked me right in the eyes just now!",
+      "status": "reviewed",
+      "review": "Eye contact is the joke; does not invent combat or injury. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    },
+    {
+      "id": "companion.790",
+      "table_offset": 1936,
+      "source": {
+        "offset": 397272,
+        "end_exclusive": 397350,
+        "raw_hex": "8370839389ae817582cd82a481600d0d8370839389ae817582c782a482b582c48e748fa082cc82a895e682cd0d814082b182f182c8899c82c982a082e982f182c582b582e582a482cb82a5816000",
+        "sha256": "38b1c7f50e0607732f30f8be346517e2851e95ef21e358e9fcce284730b92616",
+        "japanese": "パン屋「はう～\n\nパン屋「どうして師匠のお墓は\n　こんな奥にあるんでしょうねぇ～"
+      },
+      "english": "Baker: Ohhh...\n\nBaker: Why is my master's grave so deep in here?",
+      "status": "reviewed",
+      "review": "Preserves the groan, relationship to his master and complaint about the grave's depth. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    },
+    {
+      "id": "companion.794",
+      "table_offset": 1940,
+      "source": {
+        "offset": 397180,
+        "end_exclusive": 397272,
+        "raw_hex": "8370839389ae817581458145814582d681480d0d8370839389ae817582e0814082e082a482bf82e582c182c682c882f182c582b782a981480d814082ed814082ed82a982e882dc82b582bd814282aa82f182ce82e882dc82b7816000",
+        "sha256": "86197dddb239812b3d4e1699785adcd5f484178f74496841e3e3c52226d95f36",
+        "japanese": "パン屋「・・・へ？\n\nパン屋「も　もうちょっとなんですか？\n　わ　わかりました。がんばります～"
+      },
+      "english": "Baker: ...Eh?\n\nBaker: J-just a little further? A-all right. I'll keep going!",
+      "status": "reviewed",
+      "review": "Preserves the surprised question and hesitant determination. Independently translated and compared with the Japanese ROM; speaker remains Baker as in the existing story catalog."
+    }
+  ]
+}
