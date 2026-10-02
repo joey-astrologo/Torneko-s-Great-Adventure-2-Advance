@@ -3,7 +3,7 @@
 Native captures: [text decision gallery](../build/text-decisions/index.html).
 These are controlled probes, with ROM hashes, actual inputs and overrides in
 linked reports. They are not proof of ordinary story access. The current root
-ROM has 3,770 inserted resources. The item-name layout decision is settled:
+ROM has 3,785 inserted resources. The item-name layout decision is settled:
 **every item name stays on one line**. The one-character dialogue needs more
 investigation before asking for a translation preference.
 
@@ -65,9 +65,29 @@ single-line layouts, the selected font at normal spacing and8px border gaps.
 
 ## Remaining gameplay evidence
 
+The October2 [Floor-menu defect](FLOOR_MENU.md) and the subsequently discovered
+empty-inventory caller are fixed. A [disassembly-led follow-up](READER_PATH_AUDIT.md)
+identified seven Japanese expiry messages, now fixed:
+confusion, hallucination, sleep, blindness, dancing, fear and item-recognition
+recovery. They share the computed formatter/queue path at096EC/096F4.
+All20 recovered timer branches now display English. The44 native cases verify
+256-byte output bounds, exact glyphs, maximum saved/transformed names and
+simultaneous expiry. Controlled one-turn timers do not establish ordinary
+status acquisition, and other handlers still need reader-level accounting.
+
+The continued [caller audit](CALLER_COVERAGE_AUDIT.md) found 54 other
+untranslated caller sites; all are now repaired. The continuation added 31,
+including marked Storage-pot actions and ordinary trap discovery after controlled
+setup. Together with the item-placeholder correction, 55 bindings pass 308
+native cases. The continuation has now fixed all 20 outstanding leads and nine
+more caller failures, with 110 native cases and 13 blacksmith exchanges. The copied
+refusal is confirmed English. The 15-reader scan retains 529 unresolved arguments
+as static limits; its resolved direct bindings reveal no further Japanese
+sentence. Discovery, source review and caller repair remain separate work.
+
 A repeatable ordinary-input run on accepted3,768 reaches all three tutorial
 floors,14 pickups and14 English tips without Japanese text glyph leads. Current
-3,770 also passes five automatic walking-pickup cases, including items, gold,
+3,770 previously passed five automatic walking-pickup cases, including items, gold,
 arrow merging, full inventory and the standing option. Those bounded routes do
 not identify the Japanese dungeon messages the user previously reported on a
 local playtest. A specific affected build/save and action would help reproduce

@@ -1,0 +1,104 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Seven native timer-expiry formats. Five already reviewed source messages gain this reader binding; sleep and fear are two newly inserted sources. Saved player and native transformed names retain their identities.",
+  "entries": [
+    {
+      "id": "status-expiry.17c",
+      "table_offset": 380,
+      "source": {
+        "offset": 409012,
+        "end_exclusive": 409031,
+        "raw_hex": "257382cd8dac979082aa82c882a882c182bd00",
+        "sha256": "2be3b49a3a5ab35d142d6f2ffeb641e43f0462d80490451868c1c1e6ede3592e",
+        "japanese": "%{unclassified-control:73}は混乱がなおった"
+      },
+      "english": "{player}'s{fit} confusion ended.",
+      "status": "reviewed",
+      "review": "Reuse the existing reviewed player-message wording. Conditional breaks also account for the native getter returning a transformed monster name."
+    },
+    {
+      "id": "status-expiry.180",
+      "table_offset": 384,
+      "source": {
+        "offset": 408988,
+        "end_exclusive": 409011,
+        "raw_hex": "257382cc82dc82c782ed82b582aa82c882a882c182bd00",
+        "sha256": "6fcb8f8bc051f781ae80b4e32c1f350534af1e0dcb5678f5a37e440fdfdceff3",
+        "japanese": "%{unclassified-control:73}のまどわしがなおった"
+      },
+      "english": "{player}{fit} stopped hallucinating.",
+      "status": "reviewed",
+      "review": "Reuse the existing reviewed player-message wording. Conditional breaks also account for the native getter returning a transformed monster name."
+    },
+    {
+      "id": "status-expiry.184",
+      "table_offset": 388,
+      "source": {
+        "offset": 408968,
+        "end_exclusive": 408986,
+        "raw_hex": "257382cd2096da82f082b382dc82b582bd00",
+        "sha256": "27e6a697cf8edff40ee7b264ae90e328a812203dcd5dd03b4a2c1fca618413b6",
+        "japanese": "%{unclassified-control:73}は 目をさました"
+      },
+      "english": "{player} woke up.",
+      "status": "reviewed",
+      "review": "Independent translation of the pinned Torneko 2 source: waking from sleep."
+    },
+    {
+      "id": "status-expiry.188",
+      "table_offset": 392,
+      "source": {
+        "offset": 408936,
+        "end_exclusive": 408967,
+        "raw_hex": "257382cd200e0d4e96da82aa8ca982a682e982e682a482c982c882c182bd00",
+        "sha256": "1cce5aa9b67ebc8c90678674caf9aba3d686a9586cdb7d59f597737c8d107ed5",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0d4e}目が見えるようになった"
+      },
+      "english": "{player} can see again.",
+      "status": "reviewed",
+      "review": "Reuse the existing reviewed player-message wording. Conditional breaks also account for the native getter returning a transformed monster name."
+    },
+    {
+      "id": "status-expiry.3c0",
+      "table_offset": 960,
+      "source": {
+        "offset": 405460,
+        "end_exclusive": 405488,
+        "raw_hex": "257382cd0d977882e882a982e782c682ab82cd82c882bd82ea82bd00",
+        "sha256": "272d61e6aaaf7422f5beb842cda2e134c8f611d9e826ef2f3151ebdd447c3bc5",
+        "japanese": "%{unclassified-control:73}は\n踊りからときはなたれた"
+      },
+      "english": "{player} stopped dancing.",
+      "status": "reviewed",
+      "review": "Reuse the existing reviewed player-message wording. Conditional breaks also account for the native getter returning a transformed monster name."
+    },
+    {
+      "id": "status-expiry.3e0",
+      "table_offset": 992,
+      "source": {
+        "offset": 405252,
+        "end_exclusive": 405276,
+        "raw_hex": "257382cd0d82a882d182a682a982e782e082c782c182bd00",
+        "sha256": "759312dbd5030ed2f50570f15032c8f1fc4c111ad8895ed0b4069ed302b0db81",
+        "japanese": "%{unclassified-control:73}は\nおびえからもどった"
+      },
+      "english": "{player} is no longer afraid.",
+      "status": "reviewed",
+      "review": "Independent translation of the pinned Torneko 2 source: recovery from fear; preserve the subject."
+    },
+    {
+      "id": "status-expiry.8fc",
+      "table_offset": 2300,
+      "source": {
+        "offset": 394780,
+        "end_exclusive": 394816,
+        "raw_hex": "257382cd834183438365838082aa0e0b4e82ed82a982e982e682a482c982c882c182bd00",
+        "sha256": "1af4ad46011162f34d1ad76271e75579f3de8d8714198665f9b89ad6c4a91042",
+        "japanese": "%{unclassified-control:73}はアイテムが{fit-next:0e0b4e}わかるようになった"
+      },
+      "english": "{player}{fit} can identify items again.",
+      "status": "reviewed",
+      "review": "Reuse the existing reviewed player-message wording. Conditional breaks also account for the native getter returning a transformed monster name."
+    }
+  ]
+}

@@ -1,0 +1,1391 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "54 native-confirmed missed caller bindings plus the recognition-blocked item placeholder discovered during whole-screen acceptance. Per-literal private tables preserve original siblings and the previously translated pot-spill siblings. No global source replacement, gameplay code, window or RAM changes.",
+  "entries": [
+    {
+      "id": "caller-repair-05ff90",
+      "source": {
+        "offset": 393104,
+        "end_exclusive": 393121,
+        "raw_hex": "838f836982f08ca982c282af82bd814900",
+        "sha256": "3931dc10b44eadb03e0193b9b168e09adafa6398c75a5b904ff0f83a4b7f1044",
+        "japanese": "ワナを見つけた！"
+      },
+      "table_offset": 2576,
+      "english": "Found a trap!",
+      "status": "reviewed",
+      "review_source": "translations/queue-notices-long-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-060640",
+      "source": {
+        "offset": 394816,
+        "end_exclusive": 394847,
+        "raw_hex": "82b182cc834183438365838082cc82b182c682cd82ed82a982e782c882a200",
+        "sha256": "df597a2039f2041acd53e6b459af1ac26c79a6731156651a3c6d06d591c8f92f",
+        "japanese": "このアイテムのことはわからない"
+      },
+      "table_offset": 2296,
+      "english": "This item is unknown.",
+      "status": "reviewed",
+      "review_source": "translations/queue-notices-long-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0618cc",
+      "source": {
+        "offset": 399564,
+        "end_exclusive": 399637,
+        "raw_hex": "82b182cc8374838d834182c982cd2089a98be0834183438365838082cd0d82e082a482a082e882dc82b982f10d82d982a982cc8fea8f8a82e02082b382aa82b582dc82b582e582a400",
+        "sha256": "ebf47eacc565308dbae961b4490fc9837e641d6b859a214bcb57832bfb94b75f",
+        "japanese": "このフロアには 黄金アイテムは\nもうありません\nほかの場所も さがしましょう"
+      },
+      "table_offset": 1592,
+      "english": "There are no more golden items on this\nfloor. Search elsewhere.",
+      "status": "reviewed",
+      "review_source": "translations/queue-notices-long-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-061954",
+      "source": {
+        "offset": 399700,
+        "end_exclusive": 399722,
+        "raw_hex": "257382cd2082bf82a982e782aa89ba82aa82c182bd00",
+        "sha256": "8f8d2f5be8a772da2099d6cec03c442f832206723f8ad0c0d73783724cceff08",
+        "japanese": "%{unclassified-control:73}は ちからが下がった"
+      },
+      "table_offset": 1580,
+      "english": "{actor}{fit} loses strength.",
+      "status": "reviewed",
+      "review_source": "translations/status-effects-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0623a0",
+      "source": {
+        "offset": 402336,
+        "end_exclusive": 402369,
+        "raw_hex": "257382cd200e0e4e836f815b8354815b834a815b8ff391d482c982c882c182bd00",
+        "sha256": "78595056ea0c9a79638f5e6bc4e5a977fb2b4246611a6c3fd4be3339ec872482",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0e4e}バーサーカー状態になった"
+      },
+      "table_offset": 1320,
+      "english": "{actor}{fit} went berserk!",
+      "status": "reviewed",
+      "review_source": "translations/player-messages-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062994",
+      "source": {
+        "offset": 403860,
+        "end_exclusive": 403876,
+        "raw_hex": "257382cd2096da82aa82b382a682bd00",
+        "sha256": "fbbdf8f32db5eedccb5affcd436dc022f423908e822e8d7f16f0f43e3d0c9d78",
+        "japanese": "%{unclassified-control:73}は 目がさえた"
+      },
+      "table_offset": 1192,
+      "english": "{actor}{fit} is wide awake.",
+      "status": "reviewed",
+      "review_source": "translations/player-conditions-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062a40",
+      "source": {
+        "offset": 404032,
+        "end_exclusive": 404061,
+        "raw_hex": "257382cd0d834183588367838d83938ff391d482c982c882c182bd2100",
+        "sha256": "637f8e4aa7c92b769d4c1869ee33053a7423c0e8ca11de05e64ddd3e872d07c4",
+        "japanese": "%{unclassified-control:73}は\nアストロン状態になった!"
+      },
+      "table_offset": 1168,
+      "english": "{actor}{fit} turns to iron!",
+      "status": "reviewed",
+      "review_source": "translations/player-effects-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062a60",
+      "source": {
+        "offset": 404064,
+        "end_exclusive": 404097,
+        "raw_hex": "257382cd0d834183588367838d83938ff391d482c982c882c182c482a282e92100",
+        "sha256": "c7f41599abda203b92e47e6c1e5238a85ed9af8ae88f3fc10a738c4e6a86952b",
+        "japanese": "%{unclassified-control:73}は\nアストロン状態になっている!"
+      },
+      "table_offset": 1164,
+      "english": "{actor}{fit} is under Kaclang!",
+      "status": "reviewed",
+      "review_source": "translations/dungeon-leaves-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062e38",
+      "source": {
+        "offset": 405048,
+        "end_exclusive": 405070,
+        "raw_hex": "257382cc96688ce497cd82aa89ba82aa82c182bd2100",
+        "sha256": "16b777078287a2fbdfe2b2e24ffe46fcf4dd0d5d33ba83e481c75ec10c94e529",
+        "japanese": "%{unclassified-control:73}の防御力が下がった!"
+      },
+      "table_offset": 1024,
+      "english": "{actor}{fit} loses defence!",
+      "status": "reviewed",
+      "review_source": "translations/dungeon-leaves-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062f1c",
+      "source": {
+        "offset": 405276,
+        "end_exclusive": 405296,
+        "raw_hex": "257382cd2082a882d182a682cd82b682df82bd00",
+        "sha256": "f52d73cd686d92e4901b5194c888c75b0d43c39ba296c9f0d2626a578fe6ed0c",
+        "japanese": "%{unclassified-control:73}は おびえはじめた"
+      },
+      "table_offset": 988,
+      "english": "{actor}{fit} is frightened.",
+      "status": "reviewed",
+      "review_source": "translations/player-effects-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-062f44",
+      "source": {
+        "offset": 405316,
+        "end_exclusive": 405358,
+        "raw_hex": "81458145814582b582a982b50d838283938358835e815b82cd82a082e782ed82ea82c882a982c182bd00",
+        "sha256": "d7204924c7dd05fe469a6d1e5a1736281dc14097a48658bbadc593c7ff947a87",
+        "japanese": "・・・しかし\nモンスターはあらわれなかった"
+      },
+      "table_offset": 980,
+      "english": "But no monsters appeared.",
+      "status": "reviewed",
+      "review_source": "translations/summon-trap-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063254",
+      "source": {
+        "offset": 406100,
+        "end_exclusive": 406124,
+        "raw_hex": "82b182cc834183438365838082cd8ca982a682c882a22100",
+        "sha256": "cef2fe66257c486b69b0ab548427da9711104fc0d063d30bf1017822caca9d5a",
+        "japanese": "このアイテムは見えない!"
+      },
+      "table_offset": 868,
+      "english": "This item is invisible!",
+      "status": "reviewed",
+      "review_source": "translations/player-messages-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063480",
+      "source": {
+        "offset": 406656,
+        "end_exclusive": 406684,
+        "raw_hex": "257382cd2097cd82aa89ba82aa82e782c882a282c582b782f182be00",
+        "sha256": "85901afe0d95b9c9fc0733b27afe3014e9db862ad35a44359bd17901e0ef2ac0",
+        "japanese": "%{unclassified-control:73}は 力が下がらないですんだ"
+      },
+      "table_offset": 764,
+      "english": "{actor}{fit} lost no strength.",
+      "status": "reviewed",
+      "review_source": "translations/player-conditions-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0634d8",
+      "source": {
+        "offset": 406744,
+        "end_exclusive": 406772,
+        "raw_hex": "82b582a982b520838f836982cd8dec93ae82b582c882a982c182bd00",
+        "sha256": "208ec1dd717829e608bc48e9b61c12364588c131e9eb6839a116f0594a9e1473",
+        "japanese": "しかし ワナは作動しなかった"
+      },
+      "table_offset": 748,
+      "english": "But the trap did not activate.",
+      "status": "reviewed",
+      "review_source": "translations/blast-traps-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0636c0",
+      "source": {
+        "offset": 407232,
+        "end_exclusive": 407250,
+        "raw_hex": "257382cd2092878ad482f08cc482f182be00",
+        "sha256": "96bdd7569a141ac71bf40bfb5c47acd95a32c76bda72a3056dee00dd9e4db8d5",
+        "japanese": "%{unclassified-control:73}は 仲間を呼んだ"
+      },
+      "table_offset": 660,
+      "english": "{actor}{fit} calls for allies!",
+      "status": "reviewed",
+      "review_source": "translations/monster-announcements-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063a84",
+      "source": {
+        "offset": 408196,
+        "end_exclusive": 408224,
+        "raw_hex": "257382cd0e0c4e93ae82ab82aa82b782ce82e282ad82c882c182bd00",
+        "sha256": "cbc0452b6996e7e4dd2b99869463a0690d4fff025765841877a72d881da38107",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0c4e}動きがすばやくなった"
+      },
+      "table_offset": 500,
+      "english": "{actor}{fit} speeds up!",
+      "status": "reviewed",
+      "review_source": "translations/dungeon-leaves-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063aa0",
+      "source": {
+        "offset": 408224,
+        "end_exclusive": 408254,
+        "raw_hex": "257382cd0e0d4e93ae82ab82aa82c682dc82c182c482b582dc82c182bd00",
+        "sha256": "d89ce6d5ed51e5c52c8dac7ac9a4431a68c516d881de9099a6ee036e6b57566e",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0d4e}動きがとまってしまった"
+      },
+      "table_offset": 496,
+      "english": "{actor}{fit} cannot move.",
+      "status": "reviewed",
+      "review_source": "translations/player-conditions-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063ac0",
+      "source": {
+        "offset": 408256,
+        "end_exclusive": 408292,
+        "raw_hex": "257382cd0d926e96ca82c983738362835e838a82c682cd82e882c282a282c482a282e900",
+        "sha256": "7484e8df55c78cfeafcac3bcfe9ef963bee8b60254112f678115694a07903d46",
+        "japanese": "%{unclassified-control:73}は\n地面にピッタリとはりついている"
+      },
+      "table_offset": 492,
+      "english": "{item}{fit} is stuck fast to the ground.",
+      "status": "reviewed",
+      "review_source": "translations/container-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "item"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063b4c",
+      "source": {
+        "offset": 408396,
+        "end_exclusive": 408439,
+        "raw_hex": "257382cd20926e96ca82c982a882bf82c40d8e6782a282e082cc82c982c882e782c882ad82c882c182bd00",
+        "sha256": "23b907061074e1ad89d4cef5506bd441d3b1664fd4a3bfac2ab93791e6a8177d",
+        "japanese": "%{unclassified-control:73}は 地面におちて\n使いものにならなくなった"
+      },
+      "table_offset": 464,
+      "english": "{item} {fit}hit the ground and was ruined.",
+      "status": "reviewed",
+      "review_source": "translations/stumble-trap-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "item"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063b84",
+      "source": {
+        "offset": 408452,
+        "end_exclusive": 408470,
+        "raw_hex": "257382cd0d257382c9939682bd82c182bd00",
+        "sha256": "65e970d26d09dd92f7e08824eeecfd1768db56e7ab57386070aa32ba87309749",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に当たった"
+      },
+      "table_offset": 456,
+      "english": "{item} hit{fit} {actor}.",
+      "status": "reviewed",
+      "review_source": "translations/projectile-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "item",
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063d68",
+      "source": {
+        "offset": 408936,
+        "end_exclusive": 408967,
+        "raw_hex": "257382cd200e0d4e96da82aa8ca982a682e982e682a482c982c882c182bd00",
+        "sha256": "1cce5aa9b67ebc8c90678674caf9aba3d686a9586cdb7d59f597737c8d107ed5",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e0d4e}目が見えるようになった"
+      },
+      "table_offset": 392,
+      "english": "{actor}{fit} can see again.",
+      "status": "reviewed",
+      "review_source": "translations/player-messages-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063de0",
+      "source": {
+        "offset": 409056,
+        "end_exclusive": 409077,
+        "raw_hex": "82df82c282d482b582a982e789f1959c82b582bd00",
+        "sha256": "af5ba8897199b887d66bdc044275502459d7526d9675ba6f99b186782cbb8a61",
+        "japanese": "めつぶしから回復した"
+      },
+      "table_offset": 372,
+      "english": "Your sight returned.",
+      "status": "reviewed",
+      "review_source": "translations/player-messages-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063fd4",
+      "source": {
+        "offset": 409556,
+        "end_exclusive": 409578,
+        "raw_hex": "257382cd0e0b4e485082aa256489f1959c82b582bd00",
+        "sha256": "2d3a5e9185e26824345c0529b4af09db410d4697bc8827961a38c03f4c04be25",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0b4e}HPが%{unclassified-control:64}回復した"
+      },
+      "table_offset": 288,
+      "english": "{actor}{fit} recovers {amount} HP.",
+      "status": "reviewed",
+      "review_source": "translations/recovery-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor",
+        "amount"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-063fec",
+      "source": {
+        "offset": 409580,
+        "end_exclusive": 409604,
+        "raw_hex": "257382cd0e0b4e82cb82de82e782b882c982b782f182be00",
+        "sha256": "97e6f2e5e6f777eafa36985ecb10945d9654b40893055f694345fa12373557a2",
+        "japanese": "%{unclassified-control:73}は{fit-next:0e0b4e}ねむらずにすんだ"
+      },
+      "table_offset": 284,
+      "english": "{actor}{fit} stays awake.",
+      "status": "reviewed",
+      "review_source": "translations/status-effects-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-064074",
+      "source": {
+        "offset": 409716,
+        "end_exclusive": 409738,
+        "raw_hex": "257382cd2082bf82a982e782aa8fe382aa82c182bd00",
+        "sha256": "4ad5825837005bbda18a678454ef9e2467be030985fe7d46423953fe4204a848",
+        "japanese": "%{unclassified-control:73}は ちからが上がった"
+      },
+      "table_offset": 264,
+      "english": "{actor}'s{fit} strength rose.",
+      "status": "reviewed",
+      "review_source": "translations/player-messages-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-06417c",
+      "source": {
+        "offset": 409980,
+        "end_exclusive": 410005,
+        "raw_hex": "257382cd200e094e82cb82de82c182c482b582dc82c182bd00",
+        "sha256": "143f578c7974338aef7abb35df933159a9b1f31eca8a699af482bd00d90c6a65",
+        "japanese": "%{unclassified-control:73}は {fit-next:0e094e}ねむってしまった"
+      },
+      "table_offset": 240,
+      "english": "{actor}{fit} falls asleep.",
+      "status": "reviewed",
+      "review_source": "translations/player-conditions-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-064198",
+      "source": {
+        "offset": 410008,
+        "end_exclusive": 410031,
+        "raw_hex": "257382cd200d838c8378838b82aa89ba82aa82c182bd00",
+        "sha256": "3ca217db3003c2b11b33f32dc5dc775f8c0cab2632114763f5c486aba2585450",
+        "japanese": "%{unclassified-control:73}は \nレベルが下がった"
+      },
+      "table_offset": 236,
+      "english": "{actor}{fit} loses a level.",
+      "status": "reviewed",
+      "review_source": "translations/status-effects-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0641b0",
+      "source": {
+        "offset": 410032,
+        "end_exclusive": 410057,
+        "raw_hex": "257382cd200d96da82aa8ca982a682c882ad82c882c182bd00",
+        "sha256": "caa6ed0954681d020d120eaa7eb04266672445cd38a1183ae0842c33a5cca313",
+        "japanese": "%{unclassified-control:73}は \n目が見えなくなった"
+      },
+      "table_offset": 232,
+      "english": "{actor}{fit} is blinded.",
+      "status": "reviewed",
+      "review_source": "translations/player-status-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0641cc",
+      "source": {
+        "offset": 410060,
+        "end_exclusive": 410093,
+        "raw_hex": "257382cd2090b382b582ad82e082cc82aa0d8ca982a682c882ad82c882c182bd00",
+        "sha256": "136923f09eb7e3d8e29eaa1742252644b95046b33d56cd59fbf889aa8ba87984",
+        "japanese": "%{unclassified-control:73}は 正しくものが\n見えなくなった"
+      },
+      "table_offset": 228,
+      "english": "{actor}{fit} starts hallucinating.",
+      "status": "reviewed",
+      "review_source": "translations/player-status-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-064200",
+      "source": {
+        "offset": 410112,
+        "end_exclusive": 410136,
+        "raw_hex": "257382cd2082bf82a982e782aa256489ba82aa82c182bd00",
+        "sha256": "64836fd1a31cfa1f3de57f4c52a7fade5dd6c9fb5048d9cd9d967309d605e5de",
+        "japanese": "%{unclassified-control:73}は ちからが%{unclassified-control:64}下がった"
+      },
+      "table_offset": 220,
+      "english": "{actor}{fit} loses {amount} strength.",
+      "status": "reviewed",
+      "review_source": "translations/player-conditions-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "actor",
+        "amount"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-064248",
+      "source": {
+        "offset": 410184,
+        "end_exclusive": 410207,
+        "raw_hex": "8dc591e5969e95a0937882aa256482c982c882c182bd00",
+        "sha256": "7d1c2851021a86f35adb0e74505071f839f3095fd3f9fefd16951c603fdc2c3e",
+        "japanese": "最大満腹度が%{unclassified-control:64}になった"
+      },
+      "table_offset": 208,
+      "english": "Max fullness is now {amount}.",
+      "status": "reviewed",
+      "review_source": "translations/fullness-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "amount"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-064318",
+      "source": {
+        "offset": 410392,
+        "end_exclusive": 410422,
+        "raw_hex": "257382c982cd0d834183438365838082f093fc82ea82e782ea82c882a200",
+        "sha256": "fa256c325209a1547fab296757e98a2e6126d13ac5ddbdc53f44c742e74d69b0",
+        "japanese": "%{unclassified-control:73}には\nアイテムを入れられない"
+      },
+      "table_offset": 176,
+      "english": "Can't put items{fit} in {item}.",
+      "status": "reviewed",
+      "review_source": "translations/container-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [
+        "item"
+      ],
+      "width_budget": 216
+    },
+    {
+      "id": "caller-repair-0648ac",
+      "source": {
+        "offset": 411820,
+        "end_exclusive": 411827,
+        "raw_hex": "82c782ea82f000",
+        "sha256": "4c539f9761eddc33d6ff40cd784ab0f15eb24fc937b08671fafc712181ed4995",
+        "japanese": "どれを"
+      },
+      "table_offset": 20,
+      "english": "Which?",
+      "status": "reviewed",
+      "review_source": "translations/selection-prompts-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 40
+    },
+    {
+      "id": "caller-repair-06b5b0",
+      "source": {
+        "offset": 439728,
+        "end_exclusive": 439733,
+        "raw_hex": "8f6f82b700",
+        "sha256": "38f0ed9f8c08c5bab189e1bd4bea92377eaf17b93cadc30d1be74e37470cc126",
+        "japanese": "出す"
+      },
+      "table_offset": null,
+      "english": "Take",
+      "status": "reviewed",
+      "review_source": "translations/menus-review.json",
+      "review": "Preserves reviewed meaning and native argument order. Actor formats support generic identities; conditional wrapping keeps short names on one line. Take is the identical source wording used by the separate marked-container command.",
+      "fields": [],
+      "width_budget": 36
+    },
+    {
+      "id": "caller-repair-unknown-item-placeholder",
+      "source": {
+        "offset": 408440,
+        "end_exclusive": 408449,
+        "raw_hex": "814881488148814800",
+        "sha256": "3d01d7545c71e4465e360baf560fbc2246660ebec90711783f03b952ca1bd0e7",
+        "japanese": "？？？？"
+      },
+      "table_offset": 460,
+      "english": "????",
+      "status": "reviewed",
+      "review_source": "docs/MEMORY_MAP.md#compound-numeric-aliases",
+      "review": "Preserve the four-question-mark recognition-blocked item placeholder, using the approved compact English question-mark glyph. The payload remains nine bytes including NUL, matching the original copy.",
+      "fields": [],
+      "width_budget": 162
+    }
+  ],
+  "bindings": [
+    {
+      "call": 134270012,
+      "consumer": 134221752,
+      "literal_offset": 52376,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 399700,
+      "call_context_offset": 52260,
+      "call_context_hex": "81420fd01b481c4c00190468381cfcf74bff021c07a8211cf4f7bcf9",
+      "native_cases": [
+        "attack-strength-halving"
+      ]
+    },
+    {
+      "call": 134313610,
+      "consumer": 134226584,
+      "literal_offset": 95952,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 411820,
+      "call_context_offset": 95858,
+      "call_context_hex": "05600120032105220123eaf78cf880461348416940460022eaf705fe",
+      "native_cases": [
+        "peep-scroll-target-selector"
+      ]
+    },
+    {
+      "call": 134314652,
+      "consumer": 134226584,
+      "literal_offset": 97000,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 394816,
+      "call_context_offset": 96900,
+      "call_context_hex": "04211c220623e9f785fe154c20601549154a891809680022eaf7fcfb",
+      "native_cases": [
+        "item-info-recognition-blocked"
+      ]
+    },
+    {
+      "call": 134316034,
+      "consumer": 134226584,
+      "literal_offset": 98340,
+      "expected_literal": 134657456,
+      "table_relative": null,
+      "source_offset": 439728,
+      "call_context_offset": 98282,
+      "call_context_hex": "05220123e9f7d3fb0b4c20600621e9f76efc206809490022eaf749f9",
+      "native_cases": [
+        "storage-pot-marked-take-menu"
+      ]
+    },
+    {
+      "call": 134365690,
+      "consumer": 134306328,
+      "literal_offset": 148180,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 393104,
+      "call_context_offset": 147938,
+      "call_context_hex": "401800683f493f4a09881288114309040914009600220023f1f70dfc",
+      "native_cases": [
+        "discover-adjacent-trap"
+      ]
+    },
+    {
+      "call": 134371530,
+      "consumer": 134305932,
+      "literal_offset": 153824,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 406100,
+      "call_context_offset": 153778,
+      "call_context_hex": "872816d1ecf731fc002812d10848d9218900401800680021eff7dfff",
+      "native_cases": [
+        "invisible-hocus-pocus-scroll"
+      ]
+    },
+    {
+      "call": 134375174,
+      "consumer": 134221752,
+      "literal_offset": 157528,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408452,
+      "call_context_offset": 157422,
+      "call_context_hex": "1a48e421490040180468281ce3f7e7f9031c02a8211c3a1cdaf757fc",
+      "native_cases": [
+        "reflected-staff-hit"
+      ]
+    },
+    {
+      "call": 134383250,
+      "consumer": 134305932,
+      "literal_offset": 165536,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 406744,
+      "call_context_offset": 165498,
+      "call_context_hex": "edf707f91e2030f04cfd002c0fd0bb218900681800680021edf7fbf8",
+      "native_cases": [
+        "dancing-trap-disabled-unused"
+      ]
+    },
+    {
+      "call": 134383328,
+      "consumer": 134305932,
+      "literal_offset": 165612,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 406744,
+      "call_context_offset": 165576,
+      "call_context_hex": "edf7e0f81e2030f025fd002d0cd0bb218900701800680021edf7d4f8",
+      "native_cases": [
+        "berserk-trap-disabled-unused"
+      ]
+    },
+    {
+      "call": 134398700,
+      "consumer": 134221752,
+      "literal_offset": 180992,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 407232,
+      "call_context_offset": 180948,
+      "call_context_hex": "75fc0a48a527bf00c0190468301cddf7f3fb021c07a8211cd4f764fe",
+      "native_cases": [
+        "summon-ally-after-grab"
+      ]
+    },
+    {
+      "call": 134399406,
+      "consumer": 134221752,
+      "literal_offset": 181732,
+      "expected_literal": 135532168,
+      "table_relative": 288,
+      "source_offset": 409556,
+      "call_context_offset": 181654,
+      "call_context_hex": "13480468301cddf796fa021c00216b5e40461b1a02a8211cd4f703fd",
+      "native_cases": [
+        "nearby-healing"
+      ]
+    },
+    {
+      "call": 134399580,
+      "consumer": 134305932,
+      "literal_offset": 181868,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405316,
+      "call_context_offset": 181828,
+      "call_context_hex": "06954046e6f7b8fd002807d10648f5218900401800680021e9f716f9",
+      "native_cases": [
+        "summon-blocked-2c5f8"
+      ]
+    },
+    {
+      "call": 134399634,
+      "consumer": 134221752,
+      "literal_offset": 182016,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 407232,
+      "call_context_offset": 181882,
+      "call_context_hex": "21488046a520800040440568201cddf720fa021c07a8291cd4f791fc",
+      "native_cases": [
+        "summon-ally",
+        "summon-blocked-2c670"
+      ]
+    },
+    {
+      "call": 134399728,
+      "consumer": 134305932,
+      "literal_offset": 182016,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405316,
+      "call_context_offset": 181976,
+      "call_context_hex": "012005900695e6f76dfd002806d1f5208000404400680021e9f7ccf8",
+      "native_cases": [
+        "summon-blocked-2c670"
+      ]
+    },
+    {
+      "call": 134399834,
+      "consumer": 134305932,
+      "literal_offset": 182120,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405316,
+      "call_context_offset": 182082,
+      "call_context_hex": "05900695e6f739fd002807d10648f5218900401800680021e9f797f8",
+      "native_cases": [
+        "summon-blocked-2c704"
+      ]
+    },
+    {
+      "call": 134427310,
+      "consumer": 134221752,
+      "literal_offset": 209552,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410184,
+      "call_context_offset": 209558,
+      "call_context_hex": "00001c0a0000201cd0300468081c25f0bcfc021c6846211ccdf783fe",
+      "native_cases": [
+        "eat-giant-bread",
+        "maximum-fullness-player"
+      ]
+    },
+    {
+      "call": 134427442,
+      "consumer": 134221752,
+      "literal_offset": 209720,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 406656,
+      "call_context_offset": 209690,
+      "call_context_hex": "0fd10648bf218900401804680020d6f7d0fb021c6846211ccdf741fe",
+      "native_cases": [
+        "rotten-bread-resisted"
+      ]
+    },
+    {
+      "call": 134427502,
+      "consumer": 134221752,
+      "literal_offset": 209796,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410112,
+      "call_context_offset": 209750,
+      "call_context_hex": "0b48dc3004680020d6f7b5fb021c00216b5ef31a6846211ccdf723fe",
+      "native_cases": [
+        "rotten-bread-effect-0"
+      ]
+    },
+    {
+      "call": 134427560,
+      "consumer": 134221752,
+      "literal_offset": 209856,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410060,
+      "call_context_offset": 209808,
+      "call_context_hex": "0068d7f7dbfd0a48e43004680020d6f795fb021c6846211ccdf706fe",
+      "native_cases": [
+        "rotten-bread-effect-2"
+      ]
+    },
+    {
+      "call": 134427646,
+      "consumer": 134221752,
+      "literal_offset": 209924,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410008,
+      "call_context_offset": 209894,
+      "call_context_hex": "0a2125f0eafb0548ec3004680020d6f76afb021c6846211ccdf7dbfd",
+      "native_cases": [
+        "rotten-bread-effect-5"
+      ]
+    },
+    {
+      "call": 134427764,
+      "consumer": 134221752,
+      "literal_offset": 210044,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 406656,
+      "call_context_offset": 210012,
+      "call_context_hex": "652811d1bf208000404404680020d6f72ffb021c6846211ccdf7a0fd",
+      "native_cases": [
+        "putrid-strength-resisted"
+      ]
+    },
+    {
+      "call": 134427832,
+      "consumer": 134221752,
+      "literal_offset": 210044,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410112,
+      "call_context_offset": 210080,
+      "call_context_hex": "4046dc3004680020d6f710fb021c00202b5efb1a6846211ccdf77efd",
+      "native_cases": [
+        "eat-putrid-bread",
+        "weakening-effect-player"
+      ]
+    },
+    {
+      "call": 134428674,
+      "consumer": 134305932,
+      "literal_offset": 210960,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409056,
+      "call_context_offset": 210922,
+      "call_context_hex": "211c98310878002808d000200870ba214900681800680021e2f743f8",
+      "native_cases": [
+        "eyedrop-blindness-recovery"
+      ]
+    },
+    {
+      "call": 134428754,
+      "consumer": 134221752,
+      "literal_offset": 211032,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410008,
+      "call_context_offset": 211002,
+      "call_context_hex": "4042d8f76ef90548ec3004680020d6f740f9021c6846211ccdf7b1fb",
+      "native_cases": [
+        "level-reduction-player"
+      ]
+    },
+    {
+      "call": 134429276,
+      "consumer": 134221752,
+      "literal_offset": 211560,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409716,
+      "call_context_offset": 211524,
+      "call_context_hex": "2880084884235b00c01804680020d6f73bf8021c6846211ccdf7acfa",
+      "native_cases": [
+        "drink-strength-seed",
+        "strength-recovery-player"
+      ]
+    },
+    {
+      "call": 134429338,
+      "consumer": 134221752,
+      "literal_offset": 211632,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409716,
+      "call_context_offset": 211586,
+      "call_context_hex": "30800a4884214900401804680020d6f71cf8021c6846211ccdf78dfa",
+      "native_cases": [
+        "strength-partial-recovery"
+      ]
+    },
+    {
+      "call": 134430250,
+      "consumer": 134221752,
+      "literal_offset": 212548,
+      "expected_literal": 135532376,
+      "table_relative": 496,
+      "source_offset": 408224,
+      "call_context_offset": 212498,
+      "call_context_hex": "d7f701f9281cd7f704fd3c68281cd5f754fe021c6846211ccdf7c5f8",
+      "native_cases": [
+        "room-paralysis"
+      ]
+    },
+    {
+      "call": 134432978,
+      "consumer": 134305932,
+      "literal_offset": 215280,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409056,
+      "call_context_offset": 215226,
+      "call_context_hex": "98310878002809d0002008700a48ba214900401800680021e0f7dbff",
+      "native_cases": [
+        "map-blindness-recovery"
+      ]
+    },
+    {
+      "call": 134437610,
+      "consumer": 134221752,
+      "literal_offset": 219888,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410008,
+      "call_context_offset": 219858,
+      "call_context_hex": "0a2123f074f80548ec3004680020d3f7f4ff021c6846211ccbf765fa",
+      "native_cases": [
+        "hocus-pocus-level-loss"
+      ]
+    },
+    {
+      "call": 134437938,
+      "consumer": 134221752,
+      "literal_offset": 220220,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410392,
+      "call_context_offset": 220186,
+      "call_context_hex": "d9f761fd007900060016864216db0448b03001686846221ccbf7c1f9",
+      "native_cases": [
+        "full-thief-pot"
+      ]
+    },
+    {
+      "call": 134438312,
+      "consumer": 134221752,
+      "literal_offset": 220604,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408256,
+      "call_context_offset": 220560,
+      "call_context_hex": "40ac4846211cd9f7abf80848f6256d00401901686846221ccbf706f9",
+      "native_cases": [
+        "thief-pot-stuck-item"
+      ]
+    },
+    {
+      "call": 134442018,
+      "consumer": 134306328,
+      "literal_offset": 224308,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 399564,
+      "call_context_offset": 224266,
+      "call_context_hex": "09881288114380239b001a1c114309040914002200920023def7f9fe",
+      "native_cases": [
+        "golden-item-floor-empty"
+      ]
+    },
+    {
+      "call": 134445184,
+      "consumer": 134221752,
+      "literal_offset": 227468,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409580,
+      "call_context_offset": 227432,
+      "call_context_hex": "12d008488e21490040180468281cd2f729f9021c6846211cc9f79afb",
+      "native_cases": [
+        "sleep-resisted-monster",
+        "sleep-resisted-player"
+      ]
+    },
+    {
+      "call": 134445218,
+      "consumer": 134221752,
+      "literal_offset": 227512,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409980,
+      "call_context_offset": 227466,
+      "call_context_hex": "0002680d14080948f0300468281cd2f718f9021c6846211cc9f789fb",
+      "native_cases": [
+        "sleep-effect-monster",
+        "sleep-effect-player"
+      ]
+    },
+    {
+      "call": 134448626,
+      "consumer": 134221752,
+      "literal_offset": 230928,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 399700,
+      "call_context_offset": 230874,
+      "call_context_hex": "81420fd00c480c4940180468281cd1f770fa021c01a8211cc8f7e1fc",
+      "native_cases": [
+        "strength-halving-hit"
+      ]
+    },
+    {
+      "call": 134448986,
+      "consumer": 134221752,
+      "literal_offset": 231276,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408396,
+      "call_context_offset": 231234,
+      "call_context_hex": "5e9900220023d6f7f2fb0748e82149004018016802a85e9ac8f72dfc",
+      "native_cases": [
+        "landing-item-capacity"
+      ]
+    },
+    {
+      "call": 134449060,
+      "consumer": 134221752,
+      "literal_offset": 231364,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408396,
+      "call_context_offset": 231308,
+      "call_context_hex": "211c00220023d6f7cdfb0b48e82149004018016802a8221cc8f708fc",
+      "native_cases": [
+        "landing-no-room"
+      ]
+    },
+    {
+      "call": 134450250,
+      "consumer": 134221752,
+      "literal_offset": 232712,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408396,
+      "call_context_offset": 232498,
+      "call_context_hex": "d6f77df93448e8256d004019016807a8cb26f6006e443268c8f7b5f9",
+      "native_cases": [
+        "pot-spill-item-capacity"
+      ]
+    },
+    {
+      "call": 134451208,
+      "consumer": 134221752,
+      "literal_offset": 233544,
+      "expected_literal": 135532344,
+      "table_relative": 464,
+      "source_offset": 408396,
+      "call_context_offset": 233456,
+      "call_context_hex": "6b44196800220023d5f79aff124801685046104b6b441a68c7f7d6ff",
+      "native_cases": [
+        "scatter-item-capacity"
+      ]
+    },
+    {
+      "call": 134451412,
+      "consumer": 134221752,
+      "literal_offset": 233704,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 402336,
+      "call_context_offset": 233660,
+      "call_context_hex": "19ff0a48a521c90040180568201cd0f7fffc021c6846291cc7f770ff",
+      "native_cases": [
+        "berserk-effect-monster",
+        "berserk-effect-player"
+      ]
+    },
+    {
+      "call": 134451520,
+      "consumer": 134221752,
+      "literal_offset": 233812,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410060,
+      "call_context_offset": 233768,
+      "call_context_hex": "041cd1f70fff0948e4300568201cd0f7c9fc021c6846291cc7f73aff",
+      "native_cases": [
+        "delusion-effect-monster",
+        "delusion-effect-player"
+      ]
+    },
+    {
+      "call": 134451752,
+      "consumer": 134221752,
+      "literal_offset": 234044,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408196,
+      "call_context_offset": 234000,
+      "call_context_hex": "5bff0a48fa21490040180568201cd0f755fc021c6846291cc7f7c6fe",
+      "native_cases": [
+        "speed-effect-monster",
+        "speed-effect-player"
+      ]
+    },
+    {
+      "call": 134452020,
+      "consumer": 134221752,
+      "literal_offset": 234320,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 403860,
+      "call_context_offset": 234268,
+      "call_context_hex": "632111700b499522d20089180c68d0f7cffb021c6846211cc7f740fe",
+      "native_cases": [
+        "wakefulness-effect-monster",
+        "wakefulness-effect-player"
+      ]
+    },
+    {
+      "call": 134452300,
+      "consumer": 134221752,
+      "literal_offset": 234596,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408936,
+      "call_context_offset": 234548,
+      "call_context_hex": "08700b48c421490040180468181cd0f743fb021c01a8211cc7f7b4fd",
+      "native_cases": [
+        "blindness-recovery-effect-monster",
+        "blindness-recovery-effect-player"
+      ]
+    },
+    {
+      "call": 134452514,
+      "consumer": 134221752,
+      "literal_offset": 234808,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 410032,
+      "call_context_offset": 234762,
+      "call_context_hex": "281cd1f740fd0948e8300468281cd0f7d8fa021c6846211cc7f749fd",
+      "native_cases": [
+        "blindness-effect-monster",
+        "blindness-effect-player"
+      ]
+    },
+    {
+      "call": 134452712,
+      "consumer": 134221752,
+      "literal_offset": 235012,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 409716,
+      "call_context_offset": 234960,
+      "call_context_hex": "10800c488421490040180468181cd0f775fa021c6846211cc7f7e6fc",
+      "native_cases": [
+        "strength-increase-effect-monster",
+        "strength-increase-effect-player"
+      ]
+    },
+    {
+      "call": 134452814,
+      "consumer": 134221752,
+      "literal_offset": 235108,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408224,
+      "call_context_offset": 235062,
+      "call_context_hex": "f0fc0a48f821490040180568201cd0f742fa021c6846291cc7f7b3fc",
+      "native_cases": [
+        "paralysis-effect-monster",
+        "paralysis-effect-player"
+      ]
+    },
+    {
+      "call": 134452916,
+      "consumer": 134221752,
+      "literal_offset": 235208,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 404032,
+      "call_context_offset": 235164,
+      "call_context_hex": "a3fc0a489221c90040180568201cd0f70ffa021c6846291cc7f780fc",
+      "native_cases": [
+        "kaclang-effect-monster",
+        "kaclang-effect-player"
+      ]
+    },
+    {
+      "call": 134454436,
+      "consumer": 134221752,
+      "literal_offset": 236716,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405276,
+      "call_context_offset": 236684,
+      "call_context_hex": "10d10748f721890040180468281ccff717ff021c6846211cc7f788f9",
+      "native_cases": [
+        "fear-effect-monster",
+        "fear-effect-player"
+      ]
+    },
+    {
+      "call": 134454682,
+      "consumer": 134221752,
+      "literal_offset": 236976,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408224,
+      "call_context_offset": 236930,
+      "call_context_hex": "50fd0a48f821490040180568201ccff79cfe021c6846291cc7f70df9",
+      "native_cases": [
+        "paralysis-special-effect-monster",
+        "paralysis-special-effect-player"
+      ]
+    },
+    {
+      "call": 134455234,
+      "consumer": 134221752,
+      "literal_offset": 237528,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405048,
+      "call_context_offset": 237482,
+      "call_context_hex": "08700a488021c90040180468281ccff788fd021c6846211cc6f7f9ff",
+      "native_cases": [
+        "defence-reduction-effect-monster",
+        "defence-reduction-effect-player"
+      ]
+    },
+    {
+      "call": 134455304,
+      "consumer": 134221752,
+      "literal_offset": 237596,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 405276,
+      "call_context_offset": 237552,
+      "call_context_hex": "cdfe0a48f721890040180568201ccff765fd021c6846291cc6f7d6ff",
+      "native_cases": [
+        "fear-alternate-effect-monster",
+        "fear-alternate-effect-player"
+      ]
+    },
+    {
+      "call": 134472440,
+      "consumer": 134221752,
+      "literal_offset": 254748,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 404064,
+      "call_context_offset": 254688,
+      "call_context_hex": "00281fd00d480e4940180468381ccbf7edfb021c02a8211cc2f75efe",
+      "native_cases": [
+        "already-kaclang-target"
+      ]
+    },
+    {
+      "call": 134483300,
+      "consumer": 134221752,
+      "literal_offset": 265592,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 404032,
+      "call_context_offset": 265548,
+      "call_context_hex": "4bf90a489221c90040180568201cc8f7b7fe021c6846291cc0f728f9",
+      "native_cases": [
+        "kaclang-alternate-effect-monster",
+        "kaclang-alternate-effect-player"
+      ]
+    },
+    {
+      "call": 134279012,
+      "consumer": 134598484,
+      "literal_offset": 61296,
+      "expected_literal": 135531880,
+      "table_relative": 0,
+      "source_offset": 408440,
+      "call_context_offset": 61260,
+      "call_context_hex": "07480068ab30007800280dd00548e62149004018016802a84df0f6ff",
+      "native_cases": [
+        "item-info-recognition-blocked"
+      ]
+    }
+  ]
+}

@@ -22,16 +22,16 @@ percentage yet. The missed Japanese menu banner exposed a gap in both the
 automated coverage checks and visual review. See the
 [coverage assessment and audit requirements](docs/COVERAGE_AUDIT.md).
 
-The current development build contains **3,770 inserted text resources and
+The current development build contains **3,785 inserted text resources and
 20 English graphics**, including the approved title, all five corner logos and
 13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
 English font and supports seven-character player names, including `Torneko`.
 The original GBA credits are already English and remain unchanged.
 
-Translation, discovery and playtesting continue. **113 known catalog sources
+Translation, discovery and playtesting continue. **111 known catalog sources
 still need investigation or review**; complete text discovery and full-game
 runtime coverage are not yet proven. Insertion counts are not a completion
-percentage. The 113-source backlog also excludes missed display paths for
+percentage. The 111-source backlog also excludes missed display paths for
 already-reviewed text.
 
 The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
@@ -39,6 +39,22 @@ names in all 13 locations; the earlier tests had missed this separate reader.
 The first [independent screen audit](docs/DUNGEON_SCREEN_AUDIT.md) checks 11
 dungeon/town scenarios, including 14 natural tutorial pickups, and fixes spacing
 between gold amounts and their label. Broader gameplay coverage remains open.
+
+The subsequently reported Japanese **Floor** notice is also
+[fixed and checked](docs/FLOOR_MENU.md), including its related status refusals.
+The earlier audit had omitted selecting Floor on an empty tile.
+The [code-path follow-up](docs/READER_PATH_AUDIT.md) also fixes empty Items and
+seven status-expiry messages; all20 recovered timer branches now display English,
+with44 native cases covering names, transformation and simultaneous expiry.
+The broader [caller coverage audit](docs/CALLER_COVERAGE_AUDIT.md) has since
+found and repaired 54 untranslated caller sites, including marked Storage-pot
+actions, trap discovery, blocked Info and food/herb effects. The blocked-item
+placeholder is also fixed; 55 exact bindings pass 308 native cases.
+The continuation reproduced and fixed all 20 outstanding leads and nine additional
+caller failures, including six blacksmith item-name producers. It passes110
+native cases and 13 complete blacksmith exchanges; the earlier 308 caller cases
+also pass on the new ROM. The expanded disassembly scan and 80 item-definition
+loads have matching audit receipts. Whole-game coverage remains unverified.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)
@@ -73,6 +89,8 @@ These latest-build files remain development outputs while localization and
 playtesting are in progress.
 
 [Build requirements, patching and checks](docs/BUILD.md)
+
+[Blank scrolls and all accepted English writing inputs](docs/BLANK_SCROLLS.md)
 
 ## Translate and revise
 

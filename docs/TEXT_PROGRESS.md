@@ -3,7 +3,7 @@
 **Whole-game completion: unknown.** The 96.9% figure below measures review of
 identified catalog sources only. It does not measure the fraction of gameplay
 that displays English. The missed location banner demonstrated an additional
-class of gaps: untranslated readers of already-reviewed sources. The 113-source
+class of gaps: untranslated readers of already-reviewed sources. The 111-source
 backlog is therefore not a complete estimate of remaining work. Existing test
 counts must not be used as evidence that complete screens were audited.
 See [the coverage assessment and independent audit requirements](COVERAGE_AUDIT.md).
@@ -39,12 +39,75 @@ Full cumulative regression, 2,006 item cases, 135 unit tests, 314 WebKit context
 `unit-3768.log`, `accept-3768.log` and `repro-3768.json`.
 Earlier accepted milestones remain archived separately.
 
-The current development candidate has **3,770 inserted text resources plus
+The current development candidate has **3,785 inserted text resources plus
 20 English graphics** (14 arrival graphics, the title and five backgrounds),
 exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
 Its ROM hash is
-`c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`.
-The [independent dungeon/town audit](DUNGEON_SCREEN_AUDIT.md) passes 11 bounded
+`81f8b1aa13f6d67d0d9d83ebe4abaef276887e30d46b60442bffe4082e5275d6`.
+The [reader-path audit](READER_PATH_AUDIT.md) now accounts for all four direct
+callers of the Floor/status modal. It found the empty-inventory caller missed
+by the preceding fix and binds it to “You have no items.” The extended14-case
+native check passes and rejects the preceding ROM's empty-inventory case.
+The seven Japanese expiry messages found by20 automated timer probes are also
+fixed. A private table binds the computed reader to English while preserving
+the other647 selectors and native timer logic. Five sources reuse reviewed
+wording; sleep and fear add two newly reviewed/inserted sources. All44 native
+cases pass:20 timer branches,14 maximum saved-name cases, seven transformed-name
+cases and three simultaneous-expiry cases. Exact formats,256-byte guards,
+registers/stack and glyph bitmaps pass; the old ROM reproduces exactly seven
+Japanese baseline failures. The14-case menu regression and 135 unit tests pass;
+the tested and exported ROMs are byte-identical and BPS application is verified.
+Static bindings and the native expiry gate now run from `build.sh`. No whole-game
+failure count is yet available. Evidence: `build/status-expiry/acceptance.json`.
+
+The continued [caller audit](CALLER_COVERAGE_AUDIT.md) found 54 untranslated
+caller sites, all now repaired, plus a compact-font correction for the
+recognition-blocked item placeholder. **55 exact bindings pass 308 native
+cases**, with whole-screen glyph checks, exact formats/copies, buffer guards,
+ABI, maximum field widths/bytes and colours. Normal-button Which?, blocked
+Info and marked-pot Take each pass three opens; Take transfers both contents.
+The earlier 14 Floor and 44 expiry cases and four pot-explosion sibling cases
+pass on the same ROM. All prior allocations are byte-identical, only the 53
+owned original literals change, and clean ROM/BPS reproduction passes.
+`./validate.sh` passes 147 unit tests plus toolchain/fresh-save acceptance.
+The caller regression now runs from `build.sh`. Evidence:
+`build/caller-repair/receipt.json` and `acceptance/report.json`.
+
+The continuation reproduced and fixed all 20 outstanding Japanese-argument leads,
+then nine additional caller failures: Stone's murmur acquisition, two link
+warnings and six blacksmith item-name producers. The copied refusal and Remi's
+numeric Iron-safe price load are confirmed English controls. All 110 continuation
+cases, 13 complete blacksmith exchanges,308 earlier caller cases, 14 Floor cases,
+44 expiry cases and 17 result/history sibling cases pass on the current ROM.
+`./validate.sh` passes 150 unit tests plus toolchain/fresh-save checks. All 4,014
+prior allocations remain exact;78 original-ROM bytes change inside 26 owned
+literal words. Clean ROM/BPS reproduction passes. Evidence:
+`build/caller-continuation/receipt.json` and `index.html`.
+
+The 15-consumer scan covers 1,294 direct call patterns and finds no remaining
+resolved direct Japanese-string binding. Its 529 unresolved arguments remain
+static-analysis limits, not confirmed untranslated paths. All80 direct item-
+definition loads in the bounded code region are accounted for: 27 owned English
+table loads and 53 numeric-only loads. The catalog now has3,666 sources: 3,527
+reviewed, 111 unresolved and 28 retained/component entries. Source review and
+insertion counts still do not measure whole-game English coverage.
+
+On the preceding `dd21b782…` build,
+the [Floor-menu correction](FLOOR_MENU.md) resolves another user-reported
+first-floor Japanese reader: the empty-Floor notice and related status refusals
+bypassed the already-translated queue path. Thirteen complete menu scenarios
+pass (three ordinary routes, ten controlled cases), with repeated reopening,
+unfiltered glyph checks, original geometry and parent restoration. The same
+audit rejects the old ROM's ten modal cases for Japanese output. Thirty-nine
+root-menu cases, six Step/Stairs choice cases and 135 unit tests also pass.
+The root ROM/BPS pair is updated and independently patch-verified. Existing
+allocations and unrelated bytes remain identical; this fixes readers of
+already-reviewed sources and does not increase the insertion count or establish
+whole-game completion. `build.sh` now includes this menu-state audit.
+
+On the preceding ROM
+`c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`,
+the [independent dungeon/town audit](DUNGEON_SCREEN_AUDIT.md) passed 11 bounded
 scenarios, including all 14 natural tutorial pickups on three floors, earned
 gold/arrow pickups, item use, bank and storage round trips. Two capacity/amount
 cases are explicitly controlled. It fixes `321Gold` to `321 Gold` through one
@@ -54,7 +117,7 @@ remains identical. The previous banner-fix ROM
 is archived in `build/coverage-audit/pre-fix/`. Native glyph/window checks,
 22 item cases, five walking-pickup cases and 135 unit tests pass; historical
 negative controls reject the missing separator and Japanese banner. This is
-bounded current-build evidence, not full cumulative or whole-game acceptance.
+bounded evidence for that recorded build, not full cumulative or whole-game acceptance.
 
 The [dungeon-menu banner correction](LOCATION_BANNER.md) fixes a user-reported
 missed reader: all 13 names in that field were still Japanese. The new whole-menu
@@ -103,16 +166,16 @@ also passes a fresh-game, ordinary-input tutorial pickup regression: three floor
 and 14 pickups, with no Japanese text glyph leads. These checks do not establish
 complete game discovery or natural access to every translated branch.
 
-The current inventory accounts for 3,654 unique sources: 3,512 reviewed,
-113 unresolved (catalog status `untranslated`) and 29 retained/component sources.
+The current inventory accounts for 3,666 unique sources: 3,527 reviewed,
+111 unresolved (catalog status `untranslated`) and 28 retained/component sources.
 The earlier **96.1%** figure divides reviewed English by every catalog source.
-Its remaining 3.9% therefore includes 29 sources that do not need another English
-translation: 22 nonlinguistic entries, four sources replaced by English UI
+Its remaining3.9% included accounted-for sources that do not need another English
+translation. The current breakdown is 21 nonlinguistic entries, four sources replaced by English UI
 components, and three deliberately retained Japanese sources (the optional kana
 input pages and an internal appearance-table sentinel).
 
-Excluding those 29 accounted-for sources, **3,512 of 3,625 sources (96.9%) have
-reviewed English; 113 (3.1%) remain unresolved**. This is a review metric for the
+Excluding those 28 accounted-for sources, **3,527 of 3,638 sources (96.9%) have
+reviewed English; 111 (3.1%) remain unresolved**. This is a review metric for the
 known catalog, not whole-game completion or proof that every reader displays
 English. Some unresolved sources already have English drafts but still need
 reader, context or layout verification. Neither percentage measures engineering
@@ -123,12 +186,12 @@ Remaining work includes custom-name layouts, 36 single-character event stubs,
 legacy system strings and shared-reader audits. The reviewed-source percentage
 does not count these investigation gaps as complete.
 
-The 113 unresolved sources currently divide as follows:
+The 111 unresolved sources currently divide as follows:
 
 | Sources | Family | Remaining work |
 |---:|---|---|
 | 36 | Single-character event placeholders | Two render through controlled native branches; context and ordinary reachability still under investigation. |
-| 56 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
+| 54 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
 | 11 | Custom-name category labels | English is drafted/reviewed; all item names must remain on one line. Long Japanese custom-name layouts still need a solution. |
 | 10 | Town/service table sources | Establish active readers and their actual formatting/layout requirements. |
 
@@ -173,7 +236,7 @@ The 71 additions accepted at 3,514 cover legacy record/travel prompts (8),
 fused-equipment Info descriptions (41), dungeon cutscene prose (21) and the
 empty-inventory Read refusal (1).
 
-The152 additions accepted at3,443 cover English inscription inputs, fused-ability
+The 152 additions accepted at3,443 cover English inscription inputs, fused-ability
 loss messages, talk refusals, Step/Stairs choices and pot-content labels. Eight
 additional compact numeric aliases cover16–20 and(1)–(3), without increasing
 the text resource count. All prototype/staged notes below are historical unless
@@ -291,7 +354,7 @@ current development builds; check the matching report hash).
 
 The accepted2,670 milestone added25 priest resources, five Throw formats,
 24 species-selected monster announcements and six baker companion passages.
-Tests include35 priest text and17 service cases,20 Throw field/colour cases,
+Tests include35 priest text and 17 service cases,20 Throw field/colour cases,
 all45 monster selectors plus72 field-bound cases, and six companion selectors.
 Native encounters, projectile collision outcomes and companion progression
 remain distinct from these controlled checks.
@@ -729,7 +792,7 @@ The2,010-resource cumulative build passed and was archived with its ROM/BPS,
 ledger and acceptance receipt. The next candidate combines Gaibara/selector35
 and Remi70 resources, bringing reviewed insertion to2,115. Its SHA-256 is
 `6c150efdece6cabe9c6f5ba433f4b308d83f4f5081d71bcc5be764ac4b9f0e2e`.
-Full cumulative regression passed, including all72 synthesis/selector and170 Remi cases. The clean rebuild and final89-context/888-measurement WebKit check pass. ROM/BPS/ledger/receipt are archived in `build/accepted/2115/`.
+Full cumulative regression passed, including all72 synthesis/selector and 170 Remi cases. The clean rebuild and final89-context/888-measurement WebKit check pass. ROM/BPS/ledger/receipt are archived in `build/accepted/2115/`.
 
 Remi's60 reviewed service slots and10 separately owned warp-menu names passed
 170 native prototype cases before the final overwrite-warning wording revision:
@@ -1002,7 +1065,7 @@ Together, bear and stumbling prototypes stage seven bindings with16 native cases
 outside the2,255 cumulative build; pot-breaking/contents and ordinary acquisition
 remain separate coverage work.
 
-The separate curse prototype adds two bindings and13 passing native cases. It
+The separate curse prototype adds two bindings and 13 passing native cases. It
 confirms the fallback affects one carried item and uses “An item was cursed!”
 Bear/stumble/curse together stage nine bindings and29 cases for later cumulative
 integration; they are not yet included in the2,255 build or source totals.
@@ -1244,7 +1307,7 @@ Eight dungeon destination-picker resources also pass25 cases at
 geometry, cursor wrapping, positive selections and repeated reopening.
 The stored Meadow label is explicitly a controlled selector case.
 
-Another29 prepared sources cover soldier status topics and13 complete
+Another29 prepared sources cover soldier status topics and 13 complete
 soldier/adventurer explanations. Six full menu cases pass every owned topic,
 both soldier pages, all prose pages and repeated reopening at
 `build/tutorial-help-prototype/tutorial-help-validation/`. The original

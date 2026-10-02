@@ -67,7 +67,8 @@ def rendered_codes(payload, player=None, foreground=None, saved=None):
                 require(saved is not None, 'Missing saved foreground')
                 foreground = saved
         elif code == 0x40:
-            require(payload[cursor:cursor + 2] in (b'A@', b'B@', b'C@'), 'Unexpected rendered command')
+            # w/W are the verified10/20-frame family-voice callback commands.
+            require(payload[cursor:cursor + 2] in (b'A@', b'B@', b'C@', b'w@', b'W@'), 'Unexpected rendered command')
             cursor += 2
         elif 0x21 <= code <= 0x2F or code in (0x5B, 0x5D):
             output.append(code if foreground is None else (code, foreground))

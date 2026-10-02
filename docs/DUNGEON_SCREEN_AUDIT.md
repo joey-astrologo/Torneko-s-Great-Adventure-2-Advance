@@ -81,13 +81,18 @@ definitions and four native inventory items; five walking-pickup regressions;
 unfiltered glyph audit also rejects the archived Japanese location banner,
 without registering that reader as a translated resource first.
 
-Current ROM SHA256:
+ROM SHA256 for this September 30 audit:
 `c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`.
 BPS SHA256:
 `72af3d0f428cd60d483ea684f364ab2b6eef785aa46a24dcb7b9c0a77379a67c`.
 The root ROM/BPS pair is updated and patch application reproduces the ROM.
 Counts stay at 3,770 reviewed text resources and 20 graphics; this is a format
 correction, not another reviewed Japanese source or full cumulative acceptance.
+
+The October 2 [Floor-menu correction](FLOOR_MENU.md) supersedes this exported
+ROM. This earlier11-scenario matrix did not select Floor on an empty tile and
+must not be cited as coverage of that menu state. Its reports retain the
+September30 build identity.
 
 ## Reproduce
 

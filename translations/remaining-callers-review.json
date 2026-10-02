@@ -1,0 +1,704 @@
+{
+  "schema": 1,
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "reviewer": "Same assistant, separate bilingual reread; not independent human review",
+  "entries": [
+    {
+      "id": "remaining-caller.60a2c",
+      "source": {
+        "offset": 395820,
+        "end_exclusive": 395915,
+        "raw_hex": "91e582ab82c88370839382f03182c28e9d82c182c40d82b182cc835f839383578387839382f082e282e882c882a882b582dc82b782a981480d817582a282a282a6817682f082a682e782d482c620926e8fe382c982e082c782e882dc82b700",
+        "sha256": "00aa63f52892b6d355a7f337a1b9e55d771fab079d71b8941d961acee8303636",
+        "japanese": "大きなパンを1つ持って\nこのダンジョンをやりなおしますか？\n「いいえ」をえらぶと 地上にもどります"
+      },
+      "english": "Retry this dungeon with one Big bread?\nChoose No to return to the surface.",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.5ffe8",
+      "source": {
+        "offset": 393192,
+        "end_exclusive": 393238,
+        "raw_hex": "8da182dc82c582cc96608caf82f082b782d782c48fc182b582dc82b70d82e682eb82b582a282c582b782a9814800",
+        "sha256": "6dcf5244685634539414bedc247f19b2fb5d7cefef128ab117dfd2df78b13712",
+        "japanese": "今までの冒険をすべて消します\nよろしいですか？"
+      },
+      "english": "Erase all your adventures so far? Are you sure?",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.5ffd0",
+      "source": {
+        "offset": 393168,
+        "end_exclusive": 393189,
+        "raw_hex": "96608caf82cc8f9182f08fc182b582dc82b582bd00",
+        "sha256": "78cb7ff677c7a3f0c3d4290c9d37b39053986479015f743f7a558de8d9080438",
+        "japanese": "冒険の書を消しました"
+      },
+      "english": "Adventure Log erased.",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.61850",
+      "source": {
+        "offset": 399440,
+        "end_exclusive": 399500,
+        "raw_hex": "8ed788ab82c8838283938358835e815b82cd8ca982a082bd82e782c882a282aa0d8be28d7389ae82cc8be08cc982aa82bb82b182c982a082e982bc00",
+        "sha256": "4c34f0c8c5aade986521ebda382edfeb9a3e93d6a654d4f6f1a02899861626c1",
+        "japanese": "邪悪なモンスターは見あたらないが\n銀行屋の金庫がそこにあるぞ"
+      },
+      "english": "There is no sign of the evil monster, but the banker's safe is there.",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6b184",
+      "source": {
+        "offset": 438660,
+        "end_exclusive": 438707,
+        "raw_hex": "1482b182cc8374838d834182c982cd0d148ed788ab82c8838283938358835e815b82cc8b43947a82aa82b782e92100",
+        "sha256": "e7e4e154f53647da25365c5dff2996cd6dfcb59301d860f091eb2c0cf0b79833",
+        "japanese": "{unclassified-control:14}このフロアには\n{unclassified-control:14}邪悪なモンスターの気配がする!"
+      },
+      "english": "{center}You sense an evil monster\n{center}on this floor!",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6b378",
+      "source": {
+        "offset": 439160,
+        "end_exclusive": 439248,
+        "raw_hex": "14959588f382cc94a082a982e70d1482b582a082ed82b982cc8381838d8366834282aa97ac82ea8f6f82b582bd0d1482dc82ed82e882c982bd82be82e682a40d148ed788ab82c88b43947a82aa8fc182a682c482a282ad00",
+        "sha256": "f0dc90a79cf90c4ae23ab418ee6616925955bdda7fc6860da57f4be2bf0bd201",
+        "japanese": "{unclassified-control:14}封印の箱から\n{unclassified-control:14}しあわせのメロディが流れ出した\n{unclassified-control:14}まわりにただよう\n{unclassified-control:14}邪悪な気配が消えていく"
+      },
+      "english": "{center}A joyful melody flows\n{center}from the Sealing chest.\n\n{center}The evil presence around you\n{center}begins to fade away.",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6b24c",
+      "source": {
+        "offset": 438860,
+        "end_exclusive": 439157,
+        "raw_hex": "148381838d8366834282cc8cfc82b182a482a982e70d14836c836c82cc8b4682e882aa95b782b182a682e90d836c836c8175905f407740976c407740814040574082c740774082a440774082a9407740814040574082c740774082a440774082a94077408375407740835740774082c94057400d81408b4140774082c140774082c440774082ab40774082dc40774082b740774082e640774082a440774082c94077408145405740814540574081454057400d0d0d0d148381838d8366834282cc8cfc82b182a482a982e70d14837c837c838d82cc90ba82aa95b782b182a682e90d0d837c837c838d817583704077408370407740814040774082cd40774082e240774082ad4077408b4140774082c140774082c440774082ab40774082c440774082cb4077402100",
+        "sha256": "640367d4442a2cef85214fd58702438daa9ec93c268b58feb194ab5815d8d1ce",
+        "japanese": "{unclassified-control:14}メロディの向こうから\n{unclassified-control:14}ネネの祈りが聞こえる\nネネ「神@w@様@w@　@W@ど@w@う@w@か@w@　@W@ど@w@う@w@か@w@ブ@w@ジ@w@に@W@\n　帰@w@っ@w@て@w@き@w@ま@w@す@w@よ@w@う@w@に@w@・@W@・@W@・@W@\n\n\n\n{unclassified-control:14}メロディの向こうから\n{unclassified-control:14}ポポロの声が聞こえる\n\nポポロ「パ@w@パ@w@　@w@は@w@や@w@く@w@帰@w@っ@w@て@w@き@w@て@w@ね@w@!"
+      },
+      "english": "{center}Through the melody, you hear\n{center}Tessie's prayer.\n\nTessie: Dear@w@ @w@God@W@, @w@ple@w@a@w@se@W@.@w@.@w@.@w@ @w@please@w@,@W@\nbr@w@ing@w@ @w@him@w@ @w@home@w@ @w@safe@w@ly@w@.@W@.@W@.@W@\n\n{center}Through the melody, you hear\n{center}Tipper's voice.\n\nTipper: Da@w@d@w@,@w@ @w@ple@w@ase@w@ @w@come@w@ @w@home@w@ @w@soon@w@!",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6ae80",
+      "source": {
+        "offset": 437888,
+        "end_exclusive": 437910,
+        "raw_hex": "1495738e768b6382c890ba82aa95b782b182a682e900",
+        "sha256": "00c3e4bc28a4018f56c0d2fa8c24e3332bbad14e22197111dda840d482ef34dc",
+        "japanese": "{unclassified-control:14}不思議な声が聞こえる"
+      },
+      "english": "{center}A mysterious voice speaks.",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6ae6c",
+      "source": {
+        "offset": 437868,
+        "end_exclusive": 437887,
+        "raw_hex": "030614814581458145906c82cc8e7182e62100",
+        "sha256": "d25bcff784bbb5818b1a65aa21fa09f24ccb0e7911ad376dccf97e0ce9d7f391",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}・・・人の子よ!"
+      },
+      "english": "{color:6}{center}...Child of man!",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6b1d4",
+      "source": {
+        "offset": 438740,
+        "end_exclusive": 438860,
+        "raw_hex": "03061482b182cc926e82c981408dc482d188a482f082c682e882e082c782b782bd82df82c90d1482ed82aa82c282d482e282ab82f081408ef382af82c682e982aa82e682a281490d03061482a982c882e782b882e2814082bb82c882bd82cc96608caf82c90d1496f097a782c282c582a082eb82a4814900",
+        "sha256": "7e186b5ec12e79984d336fc5c8fbf3a4732da6cbc06205b53c768468ab4e13b3",
+        "japanese": "{legacy-position:0306}{unclassified-control:14}この地に　再び愛をとりもどすために\n{unclassified-control:14}わがつぶやきを　受けとるがよい！\n{legacy-position:0306}{unclassified-control:14}かならずや　そなたの冒険に\n{unclassified-control:14}役立つであろう！"
+      },
+      "english": "{color:6}{center}To restore love to this land,\n{center}accept my murmur!\n\n{color:6}{center}It will surely aid you\n{center}on your adventure!",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6b1b4",
+      "source": {
+        "offset": 438708,
+        "end_exclusive": 438740,
+        "raw_hex": "147e82cd0d1490ce82cc82c282d482e282ab82f08ee882c993fc82ea82bd2100",
+        "sha256": "2f2e75bef05aa6afc57f41380efca5771a3361b6bbe6f5df728f4c57ccff21e0",
+        "japanese": "{unclassified-control:14}{unclassified-control:7e}は\n{unclassified-control:14}石のつぶやきを手に入れた!"
+      },
+      "english": "{center}{player}\n{center}received the Stone's murmur!",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.63154",
+      "source": {
+        "offset": 405844,
+        "end_exclusive": 405861,
+        "raw_hex": "82a282e782c182b582e182a282dc82b900",
+        "sha256": "0b8ef661638615c97e8394a924031d50b6b59d443896aca749d803ef0a7ac16d",
+        "japanese": "いらっしゃいませ"
+      },
+      "english": "Welcome!",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6c0a8",
+      "source": {
+        "offset": 442536,
+        "end_exclusive": 442564,
+        "raw_hex": "14834a834d82aa82a982a982c182c482a282e982e682a482be814200",
+        "sha256": "964c844d2191916a7d5919ae9ca39d14a185f2fd8221a70f9704bf357d63bfec",
+        "japanese": "{unclassified-control:14}カギがかかっているようだ。"
+      },
+      "english": "{center}It seems to be locked.",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.14bcec",
+      "source": {
+        "offset": 1359084,
+        "end_exclusive": 1359197,
+        "raw_hex": "1482b182b182cc838283938358835e815b82cd82c682c482c282e082c882ad8bad82a281420d0d1482ab82bd82a682bd834183438365838082e082eb82c682e00d1482c882ad82c882e982a982e082b582ea82dc82b982f182aa0d14837a8393836782c993fc82e882dc82b782a9814800",
+        "sha256": "705dc29cbf00eb95db9603e0b4c3a2d6a8ba179a87e77baf818d3bfe83e14979",
+        "japanese": "{unclassified-control:14}ここのモンスターはとてつもなく強い。\n\n{unclassified-control:14}きたえたアイテムもろとも\n{unclassified-control:14}なくなるかもしれませんが\n{unclassified-control:14}ホントに入りますか？"
+      },
+      "english": "{center}The monsters here are extremely strong.\n\n{center}You could perish, losing even\n{center}your upgraded items.\n\n{center}Are you sure you want to enter?",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.14bd5d",
+      "source": {
+        "offset": 1359197,
+        "end_exclusive": 1359262,
+        "raw_hex": "141f91ba82cc8366815b835e82aa82a082e882dc82b781420d148fe38f9182ab835a815b837582b582dc82b782aa814082e682eb82b582a282c582b782a9814800",
+        "sha256": "2195097be87889ce9eeb32c428f9f053e77c69b49c93925da0354f4137ec3139",
+        "japanese": "{unclassified-control:14}{name-substitution:1f}村のデータがあります。\n{unclassified-control:14}上書きセーブしますが　よろしいですか？"
+      },
+      "english": "{center}Saved village: {village}\n{center}Overwrite its Adventure Log?",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.64278",
+      "source": {
+        "offset": 410232,
+        "end_exclusive": 410256,
+        "raw_hex": "82b582a982b52089bd82e08b4e82ab82c882a982c182bd00",
+        "sha256": "71b94a43565f07f34af0fe86babbf4e5ddf41e4ec1aef5a2133042111ce24d13",
+        "japanese": "しかし 何も起きなかった"
+      },
+      "english": "But nothing happened.",
+      "status": "reviewed",
+      "kind": "dialogue",
+      "fields": [],
+      "capacity": null,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.63b84",
+      "source": {
+        "offset": 408452,
+        "end_exclusive": 408470,
+        "raw_hex": "257382cd0d257382c9939682bd82c182bd00",
+        "sha256": "65e970d26d09dd92f7e08824eeecfd1768db56e7ab57386070aa32ba87309749",
+        "japanese": "%{unclassified-control:73}は\n%{unclassified-control:73}に当たった"
+      },
+      "english": "{item} hit{fit} {actor}.",
+      "status": "reviewed",
+      "kind": "format",
+      "fields": [
+        "item",
+        "actor"
+      ],
+      "capacity": 256,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.63b38",
+      "source": {
+        "offset": 408376,
+        "end_exclusive": 408394,
+        "raw_hex": "257382cd20926e96ca82c982a882bf82bd00",
+        "sha256": "e5553e54d4f0343b671bdc31dd7e8cd99c2cba5ab38f53c43dcb10f1e00aba5b",
+        "japanese": "%{unclassified-control:73}は 地面におちた"
+      },
+      "english": "{item}{fit} fell to the ground.",
+      "status": "reviewed",
+      "kind": "format",
+      "fields": [
+        "item"
+      ],
+      "capacity": 256,
+      "new_source": false,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6ed58",
+      "source": {
+        "offset": 453976,
+        "end_exclusive": 454000,
+        "raw_hex": "81752573817682c60d8cf08ab782b582dc82b582bd814200",
+        "sha256": "ea0e10be4b6abc31e95058ddcbce3a299102eaa28f90f9bf6ffa9ec428036962",
+        "japanese": "「%{unclassified-control:73}」と\n交換しました。"
+      },
+      "english": "Traded for\n\"{item}\".",
+      "status": "reviewed",
+      "kind": "format",
+      "fields": [
+        "item"
+      ],
+      "capacity": 128,
+      "new_source": true,
+      "review": "Bilingual source/English reread, preserving full meaning, established Tessie/Tipper/Sealing chest/Stone's murmur terminology, original controls and explicit native caller. Rendering acceptance is separate."
+    },
+    {
+      "id": "remaining-caller.6ecf0",
+      "source": {
+        "offset": 453872,
+        "end_exclusive": 453924,
+        "raw_hex": "1483418343836583808cf08ab782f082b582c482a282dc82b70d1493648cb982f090d882e782c882a282c582ad82be82b382a200",
+        "sha256": "c6da8149b27269aa7f39d428f1bbefc141f3723214393630fea0b4dc0ef2109a",
+        "japanese": "{unclassified-control:14}アイテム交換をしています\n{unclassified-control:14}電源を切らないでください"
+      },
+      "english": "{center}Trading items.\n{center}Do not turn off the power.",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual reread of the original link-status warning. Preserve operation, power-off prohibition and explicit item-loss consequence; original source controls retained."
+    },
+    {
+      "id": "remaining-caller.6ed24",
+      "source": {
+        "offset": 453924,
+        "end_exclusive": 453974,
+        "raw_hex": "1493648cb982f090d882e782c882a282c582ad82be82b382a20d14834183438365838082aa82c882ad82c882e882dc82b700",
+        "sha256": "b5cbaf686d0bfa5763f10277fac5e1c6e6d9212884429017681117dc3caa7a6e",
+        "japanese": "{unclassified-control:14}電源を切らないでください\n{unclassified-control:14}アイテムがなくなります"
+      },
+      "english": "{center}Do not turn off the power.\n{center}Your items will be lost.",
+      "status": "reviewed",
+      "kind": "fixed-pages",
+      "fields": [],
+      "capacity": null,
+      "new_source": true,
+      "review": "Bilingual reread of the original link-status warning. Preserve operation, power-off prohibition and explicit item-loss consequence; original source controls retained."
+    }
+  ],
+  "bindings": [
+    {
+      "call": 134239852,
+      "source_offset": 395820,
+      "literal_offset": 22216,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 2100,
+      "inherit_results": false,
+      "call_context_offset": 22096,
+      "call_context_hex": "1e49401800681e491e4a09881288114309040914012600960122002310f0d4f9"
+    },
+    {
+      "call": 134302590,
+      "source_offset": 393192,
+      "literal_offset": 84908,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 2564,
+      "inherit_results": false,
+      "call_context_offset": 84834,
+      "call_context_hex": "78180068134e318880229200151c294309040914032400940122002300f04bff"
+    },
+    {
+      "call": 134302630,
+      "source_offset": 393168,
+      "literal_offset": 84908,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 2568,
+      "inherit_results": false,
+      "call_context_offset": 84874,
+      "call_context_hex": "00f031fb00f011fe0a4bf8180068318829430904091400940022002300f037ff"
+    },
+    {
+      "call": 134329476,
+      "source_offset": 399440,
+      "literal_offset": 111764,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 1604,
+      "inherit_results": false,
+      "call_context_offset": 111720,
+      "call_context_hex": "0d4a09881288114380239b001a1c1143090409140024009400220023faf7c8fa"
+    },
+    {
+      "call": 134329784,
+      "source_offset": 438660,
+      "literal_offset": 112068,
+      "expected_literal": 135557684,
+      "table_start": 1339956,
+      "table_end_exclusive": 1339976,
+      "table_slot": 0,
+      "inherit_results": false,
+      "call_context_offset": 112028,
+      "call_context_hex": "0a490b4a0988128811438024a400221c114309040914009300220023faf72efa"
+    },
+    {
+      "call": 134330810,
+      "source_offset": 439160,
+      "literal_offset": 113296,
+      "expected_literal": 135557724,
+      "table_start": 1339996,
+      "table_end_exclusive": 1340004,
+      "table_slot": 0,
+      "inherit_results": false,
+      "call_context_offset": 113054,
+      "call_context_hex": "3e4a904631881288114380239b001f1c394309040914002200920023faf72df8"
+    },
+    {
+      "call": 134330852,
+      "source_offset": 438860,
+      "literal_offset": 113296,
+      "expected_literal": 135557724,
+      "table_start": 1339996,
+      "table_end_exclusive": 1340004,
+      "table_slot": 4,
+      "inherit_results": false,
+      "call_context_offset": 113096,
+      "call_context_hex": "0df0c6fe49464868318843461a8811433943090409142f4b00220092faf718f8"
+    },
+    {
+      "call": 134333918,
+      "source_offset": 437888,
+      "literal_offset": 116328,
+      "expected_literal": 135557704,
+      "table_start": 1339976,
+      "table_end_exclusive": 1339996,
+      "table_slot": 0,
+      "inherit_results": false,
+      "call_context_offset": 116162,
+      "call_context_hex": "318843461a88114380229200151c2943090409140024009400220023f9f71bfa"
+    },
+    {
+      "call": 134333946,
+      "source_offset": 437868,
+      "literal_offset": 116328,
+      "expected_literal": 135557704,
+      "table_start": 1339976,
+      "table_end_exclusive": 1339996,
+      "table_slot": 4,
+      "inherit_results": false,
+      "call_context_offset": 116190,
+      "call_context_hex": "f9f71bfa4b465868318843461a881143294309040914009400220023f9f70dfa"
+    },
+    {
+      "call": 134333992,
+      "source_offset": 438740,
+      "literal_offset": 116328,
+      "expected_literal": 135557704,
+      "table_start": 1339976,
+      "table_end_exclusive": 1339996,
+      "table_slot": 8,
+      "inherit_results": false,
+      "call_context_offset": 116236,
+      "call_context_hex": "eff70af94a469068318843461a881143294309040914009400220023f9f7f6f9"
+    },
+    {
+      "call": 134334016,
+      "source_offset": 438708,
+      "literal_offset": 116328,
+      "expected_literal": 135557704,
+      "table_start": 1339976,
+      "table_end_exclusive": 1339996,
+      "table_slot": 12,
+      "inherit_results": false,
+      "call_context_offset": 116260,
+      "call_context_hex": "00220023f9f7f6f950460470381ceff7f7f84a46d168381c0622302300f08af9"
+    },
+    {
+      "call": 134378258,
+      "source_offset": 405844,
+      "literal_offset": 160536,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 904,
+      "inherit_results": false,
+      "call_context_offset": 160502,
+      "call_context_hex": "401800680849084a098812881143f022114309040914009700220023eef781fb"
+    },
+    {
+      "call": 134523882,
+      "source_offset": 442536,
+      "literal_offset": 306184,
+      "expected_literal": 134660264,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 306126,
+      "call_context_hex": "401a0c49884200dd02270b480c49fb000c4a9b180c4a009201940022caf723ff"
+    },
+    {
+      "call": 134527538,
+      "source_offset": 1359084,
+      "literal_offset": 309860,
+      "expected_literal": 135576812,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 309782,
+      "call_context_hex": "161c3143090409144a46d300124a9c18124d0095434601930122231cc9f7ffff"
+    },
+    {
+      "call": 134527566,
+      "source_offset": 1359197,
+      "literal_offset": 309876,
+      "expected_literal": 135576925,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 309810,
+      "call_context_hex": "c9f7ffff012820d10e4839883143090409140095424601920122231cc9f7f1ff"
+    },
+    {
+      "call": 134335744,
+      "source_offset": 410232,
+      "literal_offset": 118076,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 200,
+      "inherit_results": true,
+      "call_context_offset": 117988,
+      "call_context_hex": "0122e5f7d7fa281c01210222e5f796fb1148a10009180968281c0122e5f7cafa"
+    },
+    {
+      "call": 134574320,
+      "source_offset": 410232,
+      "literal_offset": 356788,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 200,
+      "inherit_results": true,
+      "call_context_offset": 356564,
+      "call_context_hex": "504601a90022abf7ddf85046aaf744fd3348a1000918096850460022abf7d2f8"
+    },
+    {
+      "call": 134393684,
+      "source_offset": 408452,
+      "literal_offset": 176056,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 456,
+      "inherit_results": false,
+      "call_context_offset": 175928,
+      "call_context_hex": "2049639c60000019c00040180468301cdef7c0fd031c04a8291c221cd6f730f8"
+    },
+    {
+      "call": 134394108,
+      "source_offset": 408376,
+      "literal_offset": 176412,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 468,
+      "inherit_results": false,
+      "call_context_offset": 176352,
+      "call_context_hex": "12d00e48ea235b00c01801680c4a639c60000019c0008018026804a8d5f75cff"
+    },
+    {
+      "call": 134401406,
+      "source_offset": 408376,
+      "literal_offset": 183728,
+      "expected_literal": 135531880,
+      "table_start": 1314152,
+      "table_end_exclusive": 1316768,
+      "table_slot": 468,
+      "inherit_results": false,
+      "call_context_offset": 183650,
+      "call_context_hex": "579804a900220023e2f7e1f814ac0f48ea21490040180168201c04aad4f71bf9"
+    },
+    {
+      "call": 134579822,
+      "source_offset": 453976,
+      "literal_offset": 362136,
+      "expected_literal": 134671704,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 362066,
+      "call_context_hex": "42f822ac5146009184210191211c01220023b6f764fc0b4902a8221ca8f7a3fc"
+    },
+    {
+      "call": 134578484,
+      "source_offset": 453872,
+      "literal_offset": 360992,
+      "expected_literal": 134671600,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 360728,
+      "call_context_hex": "e0b4b6b032900020339014218a460022349200233593acf7cffa3b48fff70efd"
+    },
+    {
+      "call": 134579740,
+      "source_offset": 453924,
+      "literal_offset": 362124,
+      "expected_literal": 134671652,
+      "table_start": null,
+      "table_end_exclusive": null,
+      "table_slot": null,
+      "inherit_results": false,
+      "call_context_offset": 361984,
+      "call_context_hex": "0120fff70bfb38e00220fff707fb34e0fff7cefa002000f0b5fd1c48fff79afa"
+    }
+  ],
+  "item_definition_literals": [
+    119176,
+    119224,
+    119296,
+    119428,
+    119776,
+    119876,
+    176060,
+    176416
+  ],
+  "scope": "Twenty previously unresolved caller leads plus Stone's murmur acquisition. Includes defensive default result/history selectors; natural reachability is not claimed. Copied identification refusal is an English control, not a new repair. Timed family voices retain all 37 original w/W callback commands in order. Original table siblings, code and save semantics are preserved. Forwarder audit also binds both link transfer/power-off warning callers at08058134 and0805861C. Six blacksmith formatter field producers also bind to the owned English item-definition table; all numeric record fields are preserved.",
+  "item_definition_bindings": [
+    {
+      "literal_offset": 119176,
+      "call_offset": 119164,
+      "call_context_offset": 119140,
+      "call_context_hex": "50008018c000001902686b785800c018c000001903686846e3f71cff11e00000",
+      "role": "blacksmith base item name"
+    },
+    {
+      "literal_offset": 119224,
+      "call_offset": 119202,
+      "call_context_offset": 119178,
+      "call_context_hex": "1408301cf8300168094b2a7850008018c000c01802686846e3f709ff6846391c",
+      "role": "blacksmith base item name"
+    },
+    {
+      "literal_offset": 119296,
+      "call_offset": 119286,
+      "call_context_offset": 119262,
+      "call_context_hex": "50008018c000001902686b785800c018c000001903686846e3f7dffe11e0142c",
+      "role": "blacksmith base item name"
+    },
+    {
+      "literal_offset": 119428,
+      "call_offset": 119324,
+      "call_context_offset": 119300,
+      "call_context_hex": "82235b00f01801681d4b2a7850008018c000c01802686846e3f7ccfe6846391c",
+      "role": "blacksmith base item name"
+    },
+    {
+      "literal_offset": 119776,
+      "call_offset": 119764,
+      "call_context_offset": 119740,
+      "call_context_hex": "50008018c000001902686b785800c018c000001903686846e3f7f0fd0fe00000",
+      "role": "blacksmith base item name"
+    },
+    {
+      "literal_offset": 119876,
+      "call_offset": 119798,
+      "call_context_offset": 119774,
+      "call_context_hex": "00029c1b1408716e174b2a7850008018c000c01802686846e3f7dffd6846391c",
+      "role": "blacksmith base item name"
+    }
+  ]
+}

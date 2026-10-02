@@ -10,7 +10,7 @@ CATALOG = ROOT / 'translations/results-review.json'
 NAMES = ROOT / 'translations/monsters-review.json'
 
 
-def add_results(build):
+def add_results(build, defer_ui_literals=()):
     catalog = json.loads(CATALOG.read_text())
     names = json.loads(NAMES.read_text())
     original = build.original
@@ -76,6 +76,7 @@ def add_results(build):
                     struct.pack('<I', copy + 0x08000000), 'results')
     if ui_entries:
         for literal in (0x1CD3C,0x1CDC4,0x1CE30,0x1CE8C,0x1CF5C) + ((0x570A4,0x571B4) if any(r['table_offset']==0x6D8 for r in ui_entries) else ()):
+            if literal in defer_ui_literals: continue
             build.patch('result-ui-table-'+hex(literal),literal,struct.pack('<I',0x08140D68),
                         struct.pack('<I',copy+0x08000000),'results-ui')
     fallback = catalog['history_zero_actor']

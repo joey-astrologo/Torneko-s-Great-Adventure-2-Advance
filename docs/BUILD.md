@@ -34,6 +34,29 @@ text fields across 13 location labels and three command modes, including
 cancellation and reopening. It rejects unexpected Japanese glyphs on that
 screen, which earlier resource-specific menu checks missed.
 
+The [Floor-menu check](FLOOR_MENU.md) also runs from `build.sh`. It selects
+the empty Floor command and covers item, trap, stairs and related status-refusal
+panels through cancellation and reopening. This closes a separate ordinary
+first-floor path omitted by the earlier root-menu audit.
+
+The [reader-path checks](READER_PATH_AUDIT.md) enumerate all four direct modal
+callers and verify seven repaired timer-expiry bindings. The native expiry gate
+runs44 cases: all20 recovered timer branches, maximum saved/transformed names
+and simultaneous expiries. It rejects unexpected Japanese, clipping, incorrect
+formatting, buffer corruption and ABI changes. These checks run from `build.sh`;
+their scope remains the identified readers and controlled timer states.
+
+The [caller repair gate](CALLER_COVERAGE_AUDIT.md) also runs from `build.sh`.
+It reaches every one of the 55 repaired bindings in 308 native cases, checks
+complete screens, exact format/copy bytes, guards and ABI, and exercises field
+limits and repeated menu use. It rejects incomplete routes. The continuation
+now closes the20 outstanding leads, including the projectile probes, and nine
+additional caller failures. Its separate110-case gate exercises native source/
+field producers, narration callbacks, saved-name limits and choices. The80-load
+item-definition consumer audit also runs from `build.sh`, and the blacksmith
+transaction verifier now rejects unexpected Japanese glyphs. These gates do
+not establish complete caller discovery.
+
 The build starts from the pinned Japanese ROM and retained source assets. It
 adds the selected Torneko 2 compact font and [original-sized early menus](MENU_LAYOUTS.md), English name entry, opening dialogue, resume/menu labels,
 first-dungeon tutorials, first-castle conversations, the first travel menu, and

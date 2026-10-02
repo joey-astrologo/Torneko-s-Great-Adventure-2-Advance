@@ -1,0 +1,84 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Six existing shared notices for the empty-floor, empty-inventory and status-refusal modal readers. No new source coverage; private pointers and one context-specific wording.",
+  "entries": [
+    {
+      "table_offset": 48,
+      "source": {
+        "offset": 411676,
+        "end_exclusive": 411697,
+        "raw_hex": "91ab8cb382c989bd82e082a082e882dc82b982f100",
+        "sha256": "6b9627b3d04841017985b00189a5ea9a5f544c821a9d06a1374bebb0da7bf92b",
+        "japanese": "足元に何もありません"
+      },
+      "english": "There is nothing underfoot.",
+      "status": "reviewed",
+      "review": "Reuse the reviewed complete static notice; independently checked against the narrower 168px Floor/status modal."
+    },
+    {
+      "table_offset": 52,
+      "source": {
+        "offset": 411648,
+        "end_exclusive": 411673,
+        "raw_hex": "834183438365838082f08e9d82c182c482a282dc82b982f100",
+        "sha256": "516c61781d7d7274f2fa741a435d3f87d52cb2bc8e104b31521527cc834316e2",
+        "japanese": "アイテムを持っていません"
+      },
+      "english": "You have no items.",
+      "status": "reviewed",
+      "review": "Existing reviewed empty-inventory sentence reused in its direct 168px modal; disassembly proves the caller bypasses the queue hook."
+    },
+    {
+      "table_offset": 200,
+      "source": {
+        "offset": 410232,
+        "end_exclusive": 410256,
+        "raw_hex": "82b582a982b52089bd82e08b4e82ab82c882a982c182bd00",
+        "sha256": "71b94a43565f07f34af0fe86babbf4e5ddf41e4ec1aef5a2133042111ce24d13",
+        "japanese": "しかし 何も起きなかった"
+      },
+      "english": "But nothing happened.",
+      "status": "reviewed",
+      "review": "Reuse the reviewed complete static notice; independently checked against the narrower 168px Floor/status modal."
+    },
+    {
+      "table_offset": 968,
+      "source": {
+        "offset": 405408,
+        "end_exclusive": 405434,
+        "raw_hex": "977882c182c482a282c42082bb82ea82cd82c582ab82c882a200",
+        "sha256": "b98ad42f242c9dfe8afb2e5cb0fb6758b62706bc2716888daea8ea170ad98569",
+        "japanese": "踊っていて それはできない"
+      },
+      "english": "You can't do that while dancing.",
+      "status": "reviewed",
+      "review": "Reuse the reviewed complete static notice; independently checked against the narrower 168px Floor/status modal."
+    },
+    {
+      "table_offset": 996,
+      "source": {
+        "offset": 405228,
+        "end_exclusive": 405252,
+        "raw_hex": "95cf9067928682c52082bb82ea82cd82c582ab82c882a200",
+        "sha256": "bf390f920d87b365b1094f2aca7eff89223c94fbc641c1fd4e0b70235178bc74",
+        "japanese": "変身中で それはできない"
+      },
+      "english": "Can't do that while transformed.",
+      "status": "reviewed",
+      "review": "Bilingual recheck of original source for the 168px Floor/status modal. Preserve the full condition and refusal. Omit the explicit subject only in the transformed sentence to fit the unchanged one-line panel."
+    },
+    {
+      "table_offset": 1032,
+      "source": {
+        "offset": 404996,
+        "end_exclusive": 405018,
+        "raw_hex": "82a882d182a682c482a282c42082c582ab82c882a200",
+        "sha256": "da2e350f08013c911399792f7965eddceab71b8a906cb9752296bcad67214bc8",
+        "japanese": "おびえていて できない"
+      },
+      "english": "You're too frightened to do that.",
+      "status": "reviewed",
+      "review": "Reuse the reviewed complete static notice; independently checked against the narrower 168px Floor/status modal."
+    }
+  ]
+}

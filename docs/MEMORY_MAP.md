@@ -5183,3 +5183,471 @@ which the existing queue hook remaps before display. In the native Eat case,
 Actual saved player-name bytes at EWRAM `[02003B58,02003B68)` are compared to
 the exact prefix of the displayed use-message; the old earned save's Japanese
 name is not an untranslated English-format defect. No new storage is claimed.
+
+## Floor command and status refusal modals (2026-10-02)
+
+The user-reported first-floor Floor notice was reproduced through ordinary
+B, Down, A after the recorded fresh opening. Original static source ROM
+`[0006481C,00064831)` is selected by shared slot030. The reviewed English
+queue notice already existed, but this reader bypasses the queue hook.
+
+The root owner begins at CPU08016C78. Its empty-floor branch at
+CPU `[08016FA6,08016FB0)` loads the shared table from ROM
+`[00016FB0,00016FB4)`, loads slot030 and calls CPU08017068. The modal owner
+CPU `[08017068,080170C6)` creates `(8,9,21,1)` at screen `(64,72)` with168px
+of one-line text, reads its immutable-ROM argument through08002298, waits for
+input and closes the panel. It holds the source pointer in r4; there is no
+formatted output buffer or new RAM requirement.
+
+The sibling refusal selector CPU `[080170D4,08017150)` uses the table literal
+ROM `[00017154,00017158)`. Selectors0/1/2 represent item/floor, trap and stairs
+eligibility. Its complete source set is slots0C8 (fallback),3E4 (transformed),
+408 (frightened),3C8 (dancing). Native predicates08019E4C/08019E74/08019EA8
+read existing hero bytes+BF/+9C/+9A with different combinations. Status priority
+and all gameplay predicates remain unchanged. These are existing actor-relative
+fields, not new RAM/save ownership.
+
+`tools.floor_notice_text` owns both four-byte literals, each with expected
+original bytes `68 0d 14 08`. It copies the original table prefix ROM
+`[00140D68,00141174)` and changes only the five audited slots. Four reuse owned
+queue-notice English resources. The transformed refusal receives the reviewed
+context variant “Can't do that while transformed.” (162px), because the
+queue's full-subject wording measures183px. Other widths are113/139/162/166px.
+No geometry, original strings, code instructions or save format are changed.
+
+On the recorded build, appended ROM `[009421D4,00942215)` owns the65-byte
+variant, and `[00942218,00942624)` owns the1036-byte private table. Alignment
+bytes are tracked byRomBuild. Allocations occur after the previous last
+resource; every prior allocation and unrelated ROM byte is unchanged.
+Evidence: `build/floor-menu/{floor-conditions,floor-range,floor-owners}.txt`,
+`delta.json`, `native/report.json`, `negative-control/report.json`,
+`acceptance.json` and the screenshot gallery. All ranges here are exclusive.
+
+The unfiltered audit passes13 cases on ROM
+`dd21b782b9a0bfa98722e664036cc29825afb466f3994c442d8059b08c8e0c89`:
+three ordinary routes (empty first-floor tile, native Drop then Floor, native
+walk then Stairs), and ten explicit mode/tile/status probes. Each opens and
+cancels three times;30 modal returns preserve caller registers/stack guards.
+It checks all7,808 observed glyph draws, one-line bounds, unchanged inspected
+tile/inventory/battery and restoration of the parent panels and underlying BG3
+tiles independently of animated sprites. The original blank marker874F in the
+first glyph of a one-row ground-item window has a narrowly scoped audit
+exception matching its native `(8,24)` origin,6px inset and168px width.
+
+The same13-case audit rejects the previousc93c573a… ROM's ten modal cases for
+Japanese output; item/trap/stairs selection branches pass on both ROMs. The
+fallback slot0C8 is source-checked but not reached in these successful routes.
+Further39 root-menu cases, six Step/Stairs choice cases and135 unit tests pass.
+Source ROM/save hashes are preserved. Native class unlocking, trap effects,
+status expiry and full-game coverage are separate. See [Floor menu](FLOOR_MENU.md).
+
+Exploratory observation outside that accepted matrix: queue caller CPU080096F9
+passed generated IWRAM text at03007A40 containing an English player name followed
+by Japanese fear/dance-expiry text after one-turn controlled status values
+elapsed. This occurred while the initial harness accidentally cancelled an
+automatic stairs prompt instead of opening the root menu. It establishes a
+separate observed display gap, not its original-source ownership, buffer extent,
+ordinary acquisition route or insertion. No storage claim follows from that
+scratch pointer. Dedicated retained reproduction remains in
+[Text investigations](TEXT_OPEN_QUESTIONS.md#remaining-gameplay-evidence).
+This historical observation is the fear/dancing subset of the seven-message
+repair recorded below. It is resolved in ROMaa12a37b…; it is not an additional
+unfixed expiry reader.
+
+## Modal caller audit and status expiry follow-up (2026-10-02)
+
+The subsequent static audit finds four Thumb BL sites targeting08017068 across
+the source and compiled ROMs:08016F28/08016F56/08016FAA/08017224. Ghidra confirms
+the first three in owner08016C78 and the fourth in owner080171E0. The fourth
+loads the table literal ROM `[00017238,0001723C)` and slot034, whose original
+text lies in ROM `[00064800,00064819)`. It was missed by the preceding Floor
+fix. Its literal now uses the existing floor-notice private table, whose slot034
+reuses “You have no items.” from the owned queue-notice allocation. Expected
+original literal bytes remain `68 0d 14 08`. Only this literal and the private
+table pointer cell ROM `[0094224C,00942250)` differ fromdd21b782…; all other
+bytes and allocation addresses remain identical. No new RAM/save ownership.
+
+`tools.audit_reader_routes` fails for any unaccounted direct modal call pattern
+or unbound selector, without filtering reviewed sources out of the result.
+It also retains623 provisional shared-table literal-load candidates across
+original ROM `[00000000,0005E000)`. Those candidates include unresolved code/data
+and queue-remapping questions and are explicitly not a bug count. Previous
+exploratory scripts retained broader JSON leads but printed only sources marked
+untranslated; that source-level filter could hide missed readers of reviewed text.
+
+The native turn handler CPU `[08008F4C,08009832)` includes the separate expiry
+loop. ROM `[00009748,0000974C)` still selects the original shared table.
+CPU096D8 loads a selector from the stack list,096DE loads its text pointer,
+096E2 gets the player's name,096EC calls formatter08000FB8, and096F4 queues
+the generated text. The output starts atSP+50; the next scratch region starts
+atSP+150, giving an apparent256-byte region requiring formal bounds for insertion.
+This generated buffer bypasses the player-message wrapper used by other
+consumers. Static notices can still be translated by the queue's copied-text hook.
+
+The disassembled selector construction drives20 automated timer probes through
+native turn entry, with a single controlled actor timer set to1. Seven rendered
+outputs are Japanese: slots17C/180/184/188/3C0/3E0/8FC for actor bytes
+95/96/97/98/9A/9C/AB. All seven include a player-name substitution. Thirteen
+other timer branches display English. Transformation uses a separate direct
+queue call at08008FAC (return08008FB1); its earlier25C scratch selector is cleared
+before the common loop and is not a reached loop case in these probes.
+Two immobilization timers and two speed timers share their respective messages.
+
+Evidence: `build/reader-audit/{menu-siblings,status-expiry-owner}.txt`,
+`routes.json`, `routes-before.json`, `inventory-delta.json`,
+`native/report.json`, `negative-control/report.json`, `status-expiry/report.json`.
+Fourteen menu cases pass, including ordinary consumption of the opening bread
+then empty Items, while the preceding ROM fails that extra case for Japanese.
+At this pre-repair stage the seven expiry failures remained unresolved. Sources, inputs, controlled writes,
+actual queue/glyph observations and battery preservation are retained; normal
+status acquisition and whole-game completeness are not inferred.
+Pre-expiry-repair ROM: `eb04b1a6c4c74e448f8f3fab0f538b0f92f3f2eea3c9a95e115cfa74a8f1a2ea`.
+
+## Computed status-expiry reader repair (2026-10-02)
+
+The seven failures above are now repaired by `tools.status_expiry_text` and
+`translations/status-expiry-review.json`. CPU `[08008F4C,08009832)` retains its
+instructions and timer semantics. The sole new original-ROM patch owns literal
+`[00009748,0000974C)`: expected `68 0d 14 08`, replacement `cc 26 94 08` in this
+build. Load080096C6 now supplies the private654-pointer table at CPU089426CC.
+Only slots17C/180/184/188/3C0/3E0/8FC change; all647 sibling entries and the
+original shared table ROM `[00140D68,001417A0)` are preserved.
+
+`RomBuild` owns these appended ROM resources with exclusive ranges:
+
+| ROM file range | Ownership |
+| --- | --- |
+| `[00942624,00942650)` | Confusion format, with a conditional break after the possessive name. |
+| `[00942650,00942684)` | Hallucination format, with a conditional break after the name. |
+| `[00942684,00942699)` | Newly reviewed sleep-recovery format. |
+| `[0094269C,009426C9)` | Newly reviewed fear-recovery format. |
+| `[009426CC,00943104)` | Private copy of the654-pointer shared table. |
+
+The intervening3-byte alignments are explicit FF padding in the allocation
+ledger. Three formats reuse existing owned English payloads: blindness008B1B78,
+dancing008B1838 and item recognition008B1BFC. Existing allocation addresses and
+payloads are unchanged. Original source records are hash-checked against the
+review catalog; no source gaps or original padding are claimed as free space.
+
+The handler allocates0x3A0 stack bytes (literal ROM000090CC=`60 fc ff ff`).
+Instruction080096C4 sets output to SP+50, and08009786 uses the next scratch at
+SP+150. Thus the verified expiry output is the256-byte stack-relative interval
+`[SP+50,SP+150)` in IWRAM, not new permanent storage. Native checks assert that
+destination, exact expansion,16-byte adjacent guard and formatter/queue/handler
+register/SP preservation. No RAM/save allocation or stack-size change is made.
+
+Getter CPU `[08009ACC,08009C02)` with argument0 returns the saved player glyph
+string at EWRAM `[02003B58,02003B68)` when actor+BF is zero. While transformed it
+instead uses the signed identity halfword at EWRAM `[02003BAA,02003BAC)` and the
+loaded monster definition's base-name pointer. Both branches are disassembled
+and natively observed. Maximum saved name:98px/14 content bytes. Maximum current
+monster base name:114px/44 content bytes, Crack-billed platypunk. Budgets use the
+larger field; the largest complete encoded expiry output is100 bytes including
+NUL, and conditional line segments are bounded by216px. No leveled-name suffix
+is used by this getter's player/transformation branch.
+
+All44 controlled native cases pass, covering20 recovered timer branches,
+maximum English/Japanese saved names, seven widest-transformation cases and
+three simultaneous-seven-expiry cases. The checks see49 exact repaired-message
+queues/1,358 exact glyph draws and1,609 unfiltered glyph draws; the old ROM fails
+exactly seven baseline cases for Japanese, with all20 routes reached. Source
+ROM/save and fixture batteries are unchanged. Normal status acquisition and
+other readers remain separate coverage questions.
+
+Evidence: `build/status-expiry/{player-getter.txt,routes.json,routes-before.json,
+acceptance.json,native/report.json,negative-control/report.json}` and
+`build/reader-audit/status-expiry-owner.txt`. Current ROM:
+`aa12a37b76e49d44f8a336642d334fa8324d92c2d98457200482742ea5b46723`.
+
+## Broader caller-coverage audit (2026-10-02)
+
+`tools.audit_text_callers` scans CPU `[08000000,0805E000)` for direct Thumb call
+patterns to08000FB8/08015848/0801588C/08017068/08002298/080021B4. It retains
+1,025 patterns, constant-flow candidates for650 sites and375 unresolved call
+arguments. It follows both original and compiled literal/table reads without
+filtering by source review status. This is provisional code/data and branch
+analysis, not a reachability proof. Computed indices, indirect calls, other
+readers and763 budget-limited seed traversals remain explicitly unresolved.
+
+The42 native follow-ups confirm23 additional untranslated call sites using18
+source sentences already inserted elsewhere. There are41 Japanese scenarios
+and one English control, not41 distinct defects. No ROM patches, new RAM or
+save ownership are introduced by this audit. The source ROM/save and disposable
+fixture batteries are hash-checked unchanged. See
+[caller coverage audit](CALLER_COVERAGE_AUDIT.md) for all confirmed calls and34 remaining static leads.
+
+Five failures use ordinary menu buttons after recorded item/status setup:
+
+| Address space / exclusive range | Discovery and evidence |
+| --- | --- |
+| CPU `[080175B4,0801775C)` | Dungeon item-target selector. Call `[0801768A,0801768E)` reads original slot014 via ROM literal `[000176D0,000176D4)`. Peep scroll Read reaches the Japanese heading with normal buttons. The translated town/synthesis selector owns a different literal,0001DDE4. |
+| CPU `[08017A4C,08017EEE)` | Item Info. Actor+AB is read at08017A76..08017A80; a nonzero recognition-block timer selects source8F8 through call `[08017A9C,08017AA0)`, before the ordinary item-description branch. Native setup writes only that existing actor byte, then uses Info. |
+| CPU `[08032708,08032E04)` | Eating/consumption dispatcher. Item206 selects08033238;208 selects08033428. Native inventory records use existing120-byte slots beginning EWRAM0200DF28, known type flags at02003BAC+20*ID, and no inscription bit. |
+| CPU `[08033238,080332C6)` | Giant bread handler. Call `[080332AE,080332B2)` formats original source0D0 with the actual new maximum fullness, then queues at080332BA. Normal Eat shows105 in Japanese after English consumption/fullness notices. |
+| CPU `[08033428,080334E0)` | Putrid bread handler. Call `[080334B8,080334BC)` formats original source0DC with player name and strength loss. Normal Eat reproduces the Japanese result. |
+| CPU `[08033A14,08033AAE)` | Strength-seed helper. Normal Drink reaches call `[08033A5C,08033A60)`, using original source108 despite the player-message wrapper's English version of that source. |
+
+CPU `[08037D80,08038434)` is an item-impact dispatcher. Ghidra confirms
+selectors171/175/181 reaching08039420/080390B4/080395B0, respectively. Their
+separate actor-target probes run actual native handlers and message code with
+controlled entry/arguments; ordinary impact/AI routes are not claimed by those
+probes. The blindness recovery in08039420 is distinct from the repaired timer
+loop at080096EC. Both readers use source188, but have different table literals.
+
+The nearest-PUSH discovery heuristic misidentified original literal08017648
+(`50 b5 06 08`, a text pointer) as a function prologue. The full owner080175B4
+and native selector trace resolve it. This is concrete evidence that candidate
+disassembly starts cannot alone establish executable ownership or free space.
+
+Evidence: `build/caller-audit/{static.json,static-negative-control.json,
+followup-owners.txt,dispatchers.txt,native/report.json,summary.json,index.html}`.
+The Ghidra disassembly and actual caller/source/glyph observations are retained
+together. Four caller-tracer unit checks pass. The old Floor/empty-Items ROM is
+flagged by the static negative control; the current bindings classify as
+English. Current ROM remainsaa12a37b…; the23 new findings are an open repair
+backlog, and no whole-game remaining-defect count is established.
+
+### Continued caller audit, 2026-10-02: branches, modal wrappers and uncatalogued literals
+
+This is research on unchanged ROM SHA
+`aa12a37b76e49d44f8a336642d334fa8324d92c2d98457200482742ea5b46723`.
+It grants no new insertion, padding, RAM or save ownership. The preceding
+23-site audit is the first pass; the continuation confirms54 caller sites,
+with31 additions. Full per-caller source/output evidence is in
+`build/caller-audit/summary.json`; review/insertion totals are unchanged.
+
+**Reader discovery (GBA CPU addresses).** Ghidra `extra-readers.txt` and
+`modal-reader.txt` establish `08015A18` and `08015A34` preserving the source in
+r0 when calling `08015A50`. That owner holds it in r7 and forwards it as r1 to
+window reader `08002298` at `08015ADA`. The source is independent of the
+Floor-modal family `08017068`. `0805CF54` copies a terminated byte string from
+r1 to r0; a Japanese source passed here alone is not proof of Japanese output.
+Three controlled level-one cases (`08033410`, `08033864`, `08035AFC`) execute
+that copy and subsequently draw English through existing queue remapping.
+The identification copy at `08033B9C` remains a separate unconfirmed lead.
+
+**Marked Storage-pot menu.** Owner entry `08017F04`, disassembled in
+`container-owners.txt`, draws original source CPU `[0806B5B0,0806B5B5)` using
+literal `[08018024,08018028)` and call `08018002`. It reads the existing marked
+selection count from `08016BA0`; input dispatcher `08016B30` tests key mask300
+(L/R) and updates marks through `08016B1C`. The original menu is40px wide,
+one row at(192,24), with the existing style/cursor behavior. Normal View(42),
+R, Down, R, A after controlled two-item contents draws Japanese Take. This
+source has the same bytes as reviewed action source08064940 but is a separate
+literal/binding outside the catalog pointer list. No geometry or text changes
+were made. The contents records use the previously established item record's
+seven12-byte slots beginning at+18hex; no extra storage is allocated.
+
+**Trap discovery.** In attack/action owner `08023C14`, instruction region
+`[080241B6,080241FE)` checks the adjacent map cell's halfword+0A againstFFFF
+and bit8000. It sets8000 for a newly discovered trap, checks `0801211C`, and
+passes shared-table slotA10 to choice-modal wrapper `08015A18` at080241FA.
+Normal A with a controlled adjacent selector0 and facing2 draws Japanese
+“Found a trap!”; the source is already reviewed elsewhere. This is not the
+standing-trap Floor menu. Existing direction table CPU `[08140B18,08140B58)`
+contains eight signed(x,y) pairs; selector2=(1,0), verified before the controlled
+floor-item scenario. Map associations/flags use the existing28-byte cells from
+`tools.name_entry_playtest.MAP`, not newly allocated RAM.
+
+**Effect branch controls.** `remaining-owners.txt` and `branch-helpers.txt`
+record the actual handler arguments and preconditions. Actor flags at relative
+`[+08,+0C)` include40000000 for the tested strength-loss resistance; current
+strength is the signed halfword `[+76,+78)`, level `[+88,+8A)`, blindness timer
+byte+98, wakefulness byte+A4 and Kaclang byte+9B. `0800ADCC` tests+A4 for the
+sleep-resisted branch. Handler08033A14 has separate full-strength and
+partial-recovery formatter sites33A5C/33A9A. Item recovery sites33802/348D2 are
+separate from the repaired timer reader. The Rotten-bread switch starts at
+080332C8 and selects random outcomes0..5; continuation probes select0,2,5
+and the resistance variant at080332DC, after the native RNG has executed and
+before its comparison. H. Pocus handler080356E8 similarly selects allowed
+outcome4 at080356F8 for level loss. These are explicit controlled random
+branches, not natural item-outcome claims.
+
+**Summons and item capacity.** The native summoner080131BC scans neighboring
+walkable cells; clearing4000 in their existing map flags makes it fail normally.
+No summoner return value is replaced. Native allocator08013F20 scans the128
+120-byte floor-item records at EWRAM `[0202EDA8,020329A8)` for a clear80000000
+occupancy bit. Occupying those bits at controlled handler entry exercises
+allocation failure in landing/spill/scatter functions. The probe records every
+write; it does not claim those synthetic records came from ordinary gameplay.
+Eight-argument handler08038644 uses the existing caller stack; the diagnostic
+supplies additional argument words at entry and restores the original words
+at its verified return before normal execution continues. ABI checks cover
+saved r4-r11 and SP. This is not authorization to reuse any stack/RAM interval
+in the translation build.
+
+**False lead removed.** Options help owner0801A794 reads four rows of eight
+halfword selectors from CPU `[0806B736,0806B776)`, indexed by supported modes
+0..3. None selects the cursed notice08064410. The first scanner ignored known
+CMP outcomes and allowed the loop to run past its eight entries, generating
+that spurious candidate at0801A9B0. The refined tracer invalidates APSR facts
+after unknown flag writers/calls and prunes only comparisons with known
+outcomes. A checked selector enumeration and seven focused tracer tests retain
+this distinction between static leads and reachable branches.
+
+**Additional static leads.** `static-wrappers.json` covers1,171 direct patterns
+to ten consumers, with759 sites having argument candidates and412 unresolved.
+It retains20 unconfirmed Japanese-argument sites, one unresolved copied refusal
+and794 budget-limited traversals. Six additional uncatalogued Japanese modal
+source pointers and link success source0806ED58 are recorded as leads, not
+newly reviewed/inserted text. The existing source-level catalog is not expanded
+merely by a candidate decode. `exchange-success-block.txt` disassembles CPU
+`[08058610,0805867A)`: the success tail formats source0806ED58 at0805866E,
+using source literal `[08058698,0805869C)`, then passes the stack result to
+08057BDC. It has no insertion or native two-device transfer acceptance here.
+
+The original five remaining leads are0801CD00/080570F0 (result/history default
+selectors) and0802AF54/0802B0FC/0802CD7E (projectile/landing branches).
+`projectile-branches.txt` and the retained trials document the attempted
+branches. Two complete handler returns did not reach the expected landing
+callers and are recorded as incomplete, with no language conclusion. The
+Silver-arrow condition selects item80; the inspected first-floor definition
+snapshot has no species selecting80. This does not prove the branch unused in
+all definition states.
+
+Current evidence includes79 scenarios:73 Japanese, four English controls and
+two incomplete routes, representing54 distinct confirmed callers rather than
+73 defects. Eight routes use normal buttons after explicit setup; other cases
+control native entry, arguments/state and sometimes RNG outcomes. Source
+pointers and text readers are never replaced. All batteries and original ROM/
+save hashes remain unchanged. Some handler-only output clears within a frame;
+queue/reader-linked glyph traces establish those messages, not blank captures.
+The gallery has inspected visible panels for the newly demonstrated Storage-pot,
+trap-discovery and invisible-item scenarios. Historical first-pass evidence is
+retained as `first-pass-summary.json` and `first-pass-index.html`.
+
+## Confirmed missed caller bindings (2026-10-02)
+
+The 54 native-confirmed routes in `translations/caller-repairs-review.json`
+own only the 52 enumerated four-byte ROM literals, each `[literal_offset,
+literal_offset+4)`, and appended resources allocated by `RomBuild`. The catalog
+pins each original literal and the 28-byte instruction context ending after
+the consumer call. Ghidra owners are retained under `build/caller-audit/` in
+`remaining-owners.txt`, `followup-owners.txt`, `container-owners.txt`,
+`dispatchers.txt`, and `modal-owners.txt`. Native caller/destination/glyph
+correlation is in `summary.json`, with original inputs and state controls.
+
+Each private table copies ROM `[00140D68,001417A0)` and changes only the slots
+used by that literal's confirmed routes. Identical per-literal slot sets may
+share a copy. All other sibling slots remain byte-identical to the original.
+Relative-table literals `0002C5E4`, `00033E44`, and `00039048` originally point
+to `08140E88`, `08140F58`, and `08140F38` respectively; preserve these offsets.
+Direct literal `[00018024,00018028)` selects the separate marked-pot Take
+source `[0006B5B0,0006B5B5)`, identical in content to the approved Take action.
+Its original window is 40 px, with a 36 px text region; selector Which? uses
+its original 40 px heading. Other repaired messages use the original 216 px
+line budget. No window geometry changes.
+
+Formatted destinations retain their disassembled 256-byte scratch buffers.
+Most start at SP, with offsets +4, +8, or +1C in larger frames; the scatter
+handler uses its existing r10 scratch destination. Native acceptance must
+check destination bytes, a 16-byte guard at destination+256, preserved
+formatter registers/SP, and all visible glyphs. Actor/item substitutions
+are bounded to 63 bytes, with 186/162 px widths; signed decimal formatting
+is budgeted for 11 characters. Conditional breaks preserve one-line output
+when the complete substitutions fit. This introduces no new RAM/save
+ownership and leaves the original shared table and source strings unchanged.
+
+Exact literal ROM offsets:
+
+`0000CC98, 000176D0, 00017AE8, 00018024, 000242D4, 000258E0, 00026758, 000286A0, 000286EC, 0002C300, 0002C5E4, 0002C66C, 0002C700, 0002C768, 00033290, 00033338, 00033384, 000333C0, 00033404, 0003347C, 00033810, 00033858, 00033A68, 00033AB0, 00033E44, 000348F0, 00035AF0, 00035C3C, 00035DBC, 00036C34, 0003788C, 000378B8, 00038610, 0003876C, 000387C4, 00038D08, 00039048, 000390E8, 00039154, 0003923C, 00039350, 00039464, 00039538, 00039604, 00039664, 000396C8, 00039CAC, 00039DB0, 00039FD8, 0003A01C, 0003E31C, 00040D78`.
+
+Follow-up ownership: ROM literal `[00038D08,00038D0C)` is shared with
+the existing item-loss family; its replacement inherits that family's full
+private table before adding slot 1D0. Slot 34C and all prior English siblings
+are preserved. Its patch is deferred to the shared caller-repair builder,
+avoiding overlapping patch ownership.
+
+Recognition-blocked item naming: CPU `0800EF30` tests actor byte +AB and
+selects shared slot 1CC through literal `[0000EF70,0000EF74)`, copying it
+at `0800EF64` to SP+8. Source and replacement both contain nine bytes
+including NUL. The four wide question marks become four compact question
+marks, without changing meaning. This private table owns only slot 1CC;
+Ghidra evidence is `build/caller-repair/item-placeholder-owners.txt`. The
+ordinary Info route records this caller and its displayed item row. No new
+item-name capacity is assumed.
+
+Verified cumulative allocation envelope for caller repairs: ROM offsets
+`[00943104,0095ACD0)`, CPU cartridge `[08943104,0895ACD0)`,
+with exact resource ranges and alignment padding owned only by the shared
+allocator ledger. The build adds 49 allocations, including 37 private
+tables; reused payloads remain in their original allocations. All 3,965
+prior allocations are byte-identical, and the 159 changed original-ROM bytes
+are contained in the 53 enumerated literal words. Evidence:
+`build/caller-repair/repro.json` and `receipt.json`; ROM `c19475eee8cd5c77601a634654b036301d779a59b3bb0adf7cc092b585fc4b7a`.
+
+
+## Caller continuation ownership (2026-10-02)
+
+The twenty remaining static leads execute original message blocks in complete
+native frames in `tools.audit_remaining_callers`; baseline evidence is in
+`build/caller-continuation/baseline` and `baseline-more` (ROM c19475ee...).
+The adjacent Stone's murmur acquisition at CPU0801C640 passes source in r1 to
+0801C958, which forwards it to modal08015A18 at0801CA1A. Its source was also
+Japanese. The copied refusal at08033B9C is already translated by byte matching
+at the queue; retain that source/consumer and use it as an English control.
+
+All ranges below are file offsets, end exclusive. No original string range,
+padding, new RAM or save storage is claimed. `translations/remaining-callers-review.json`
+pins source bytes and32-byte call contexts. Appended resources use RomBuild.
+Private shared copies cover[140D68,1417A0); their only changed slots are834,
+A04/A08,644,388,C8,1C8 or1D4 for the individual literals. Literal056C8,014BAC,
+01B494,027318,02AFB8,02B11C and02CDB0 select these private tables. Result/history
+literals01CD3C/0571B4 inherit the entire existing `results.shared_table`, changing
+only slotC8; their earlier patch owner explicitly delegates those two words.
+The first source table[147234,147248) has translated tutorial/Imp siblings:
+copy current build bytes and change only slot0 for01B5C4. The cutscene table
+[147248,14725C) changes slots0,4,8,C for01C668, preserving unread farewell slot10.
+The melody table[14725C,147264) changes both slots for01BA90.
+Direct pointer words04AC08,04BA64,04BA74 and058698 bind the locked notice,
+strong-monster warning, overwrite prompt and trade-completion format.
+Projectile definition words02AFBC/02B120 select the existing complete English
+`item-definitions` copy (221 records,24 bytes each), preserving effects/IDs.
+
+Native frame ownership: arrow output SP+10..SP+110 is256 bytes; disarmed-item
+name SP+10..SP+50 is64 bytes and output SP+50..SP+150 is256 bytes. Link completion
+output SP+8..SP+88 is128 bytes; item field SP+88..SP+C8 is64 bytes. Native formatter
+checks observe original source selection and output guards. Story/modal streams
+read directly from ROM; two rows,224px native/216px authored budget. Saved-village
+control1F uses the existing20-byte name scratch0200CEE8..0200CEFC and eight cells
+(max112px); it is not a player-name alias. Family callback0801B674 invokes
+08006BB0 and returns0100000A for@w@ or01000014 for@W@; retain all37 commands in
+order, the original callback pointer and10/20-frame pacing semantics.
+
+Controlled probes skip pre/post-dialog world effects (including deletion, link
+transfer and saving). Result/history default0x32 is exercised deliberately;
+its ordinary reachability is not asserted. This is caller/rendering evidence,
+not natural late-game progression acceptance.
+
+Forwarder follow-up: CPU08057B54 takes text in r0, preserves it in r5,
+and forwards to08002298 at08057B84; 08057BDC takes r0 and forwards to
+08015A34 at08057C08. Adding those consumers exposed link-status direct
+literals[058220,058224) and[05868C,058690), selecting ROM06ECF0 and06ED24.
+Both are centered two-row warnings and read directly from ROM. These two
+words are additionally owned by `remaining-callers`; the original full
+link-owner frame/message blocks execute in disposable native probes, while
+the actual transfer and save are skipped.
+
+Blacksmith raw-name producers: original CPU literals0801D188,0801D1B8,
+0801D200,0801D284,0801D3E0 and0801D444 (each four bytes) contain08141B9C,
+the original221-record item-definition table. Six native formatter calls
+0801D17C,0801D1A2,0801D1F6,0801D21C,0801D3D4 and0801D3F6 read record+0
+names, bypassing the translated naming helper. Own these six literal words
+only and bind them to the existing English item-definitions allocation.
+The table's numeric fields are unchanged. Original512-byte stack output
+[SP,SP+200) remains unchanged; no new RAM or save allocation. Ghidra evidence:
+`build/caller-continuation/item-field-owners.txt`; six Japanese baseline cases:
+`build/caller-continuation/item-baseline/report.json`. Recipe IDs are controlled
+inputs; source/field producers and complete original frames execute unchanged.
+The Remi literal0801ECE0 is a non-name control: its constant offset1464 is
+record217*24+0C, the Iron safe price. Its native offer is already English.
+
+Continuation allocation envelope: file offsets[0095ACD0,00960EBC), CPU cartridge
+[0895ACD0,08960EBC),21 allocations with exact resource/padding ownership only
+in the shared ledger. Final ROM81f8b1aa13f6d67d0d9d83ebe4abaef276887e30d46b60442bffe4082e5275d6
+preserves all4,014 earlier allocations. Exactly78 original-ROM bytes change
+inside26 checked four-byte literals. The80-load definition consumer inventory
+is pinned in `config/item-definition-consumers.json`;27 loads use owned English
+copies (two skill loads use their existing48-record subset),53 use only numeric
+record fields. No interior definition-table literal provides an extra name
+consumer in Thumb[08000000,0805E000). Receipt: `build/caller-continuation/receipt.json`.

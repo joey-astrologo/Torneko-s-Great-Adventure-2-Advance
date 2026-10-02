@@ -183,10 +183,10 @@
       "source_sha256": "3d01d7545c71e4465e360baf560fbc2246660ebec90711783f03b952ca1bd0e7",
       "raw_hex": "814881488148814800",
       "japanese": "？？？？",
-      "language_status": "retained-nonlinguistic",
+      "language_status": "reviewed",
       "english": "????",
-      "reason": "Original glyph bitmap inspection identifies icons, numeric values or question marks; no Japanese words. Preserve exact original source codes. Numeric glyph style is covered by the compact aliases.",
-      "evidence": "build/text-next/symbol-rows/report.json and atlas.png; exact original source and font records retained.",
+      "reason": "Four question marks, without Japanese words. The recognition-blocked item-name caller now uses compact English question-mark glyphs, preserving the placeholder meaning and original nine-byte copy length. Other callers are not inferred from this binding.",
+      "evidence": "build/caller-repair/item-placeholder-owners.txt; caller-repair native item-info-recognition-blocked full-screen and exact-copy checks.",
       "reachability": "Source classification only; no unused/unreachable claim."
     },
     {

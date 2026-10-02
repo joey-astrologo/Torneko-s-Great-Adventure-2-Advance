@@ -1,0 +1,943 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scan_end": 385024,
+  "definition_start": 1317788,
+  "definition_records": 221,
+  "definition_stride": 24,
+  "entries": [
+    {
+      "load_offset": 19374,
+      "literal_offset": 19400,
+      "source_pointer": 135535516,
+      "context_end": 19400,
+      "context_hex": "064cfff7a2ff0006000e41000918c9000919087d10bc02bc0847",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 19406,
+      "literal_offset": 19432,
+      "source_pointer": 135535516,
+      "context_end": 19432,
+      "context_hex": "064cfff792ff0006000e41000918c9000919487d10bc02bc0847",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        21
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 35966,
+      "literal_offset": 36268,
+      "source_pointer": 135535516,
+      "context_end": 36086,
+      "context_hex": "4b4968004019c0004018407dc000484a81180b684849401802680c2030560430484420810d203056c10f4018401040440c3060814148e08141498889a081032003432374024362740021e17100222283201c002155f085fd71893948814243d080231b02181c0840002802d1039800283ad01f250d407069",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        21
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 40400,
+      "literal_offset": 40540,
+      "source_pointer": 135535516,
+      "context_end": 40520,
+      "context_hex": "22483018027d086880180078012808d0012809dd022807d1632038f00bfa272802dc28683843286014351836013c002cdeda00f0f1f8012006f01cf8002806d0012006f017f80168114a11400160114800689030007802280dd005f0bfff002802d10620fff75eff05f0deff002802d10320fff757fff0bc",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 40722,
+      "literal_offset": 40928,
+      "source_pointer": 135535516,
+      "context_end": 40842,
+      "context_hex": "334a6946dc25107db84202d108889880023114331832013d002df4da002300252b4a6946107db84202d10d800231013318320135dc2df5dd1e1c0025b5420ada244978004218694610884019088002310135b542f8db3125301c38f04af9041c301c38f046f9640069460a190024135f4000091808881080",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 40754,
+      "literal_offset": 40928,
+      "source_pointer": 135535516,
+      "context_end": 40874,
+      "context_hex": "2b4a6946107db84202d10d800231013318320135dc2df5dd1e1c0025b5420ada244978004218694610884019088002310135b542f8db3125301c38f04af9041c301c38f046f9640069460a190024135f40000918088810800b80013d002debda0e4c231c124a6946dc25107db84202d10888d88002311433",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 40854,
+      "literal_offset": 40928,
+      "source_pointer": 135535516,
+      "context_end": 40928,
+      "context_hex": "124a6946dc25107db84202d10888d880023114331832013d002df4da0120e08047460d2f00dc71e76fb018bc9846a146f0bc01bc0047ac3b0002ffffffbf680d140858301408e7030000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 49418,
+      "literal_offset": 49496,
+      "source_pointer": 135535516,
+      "context_end": 49496,
+      "context_hex": "134a0006000e41000918c90089180820095e042020560c18002c00da0024ff2c00ddff244946642900d1033450469030007802280fd1504676300022805e001908300349496b0223c95e13e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 50734,
+      "literal_offset": 50868,
+      "source_pointer": 135535516,
+      "context_end": 50854,
+      "context_hex": "214a0006000e41000918c90089180820095e042020560c18002c00da0024ff2c00ddff240021705e0019814603f01bfc732801d11e229144381cb4300178880040184000814410484068802292001040002808d00e494868104348604e2032f0fafa14239944391ca1310878002816d0411c082900dd0821",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 54148,
+      "literal_offset": 54544,
+      "source_pointer": 135535516,
+      "context_end": 54268,
+      "context_hex": "624b5e4882465100187da0420cd1574678694044006809180027c85f002803d0484505dc854203dd18330132dc2aeadddd2a01d10424d422112a03d15448048054480580151c93ac20689499002206f0a5fd002820d020689499f7f7abfb0169281c0022002301f0e9fadc2d07d120689499f7f79ffb0169",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 54280,
+      "literal_offset": 54544,
+      "source_pointer": 135535516,
+      "context_end": 54400,
+      "context_hex": "414968004019c0004018007d052801d12df034fda29b002b00d12ae13648999c2178026bc800401a800080180825415f301c88300027c05f0f1c47439798c56de919c1653448c822520080180068814201db979bd865979ce06d451ba79f002f0dd02e48d02149004018016847aa07a82b1cf3f79dfd07a8",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 59122,
+      "literal_offset": 59660,
+      "source_pointer": 135535516,
+      "context_end": 59242,
+      "context_hex": "864a331c6100107db8420cd14e4670691818006809180026885f002803d0504505dc844503dd18320134dc2ceadddd2c00d1d4246868802109010840002816d080277f030597632033f063fd74490022895e88420bda72480068032807d0049b002b04d1d524012604960027059768688026760530400028",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 59872,
+      "literal_offset": 59980,
+      "source_pointer": 135535516,
+      "context_end": 59980,
+      "context_hex": "1a4881466c006419e40004302018006830438021090608433860381c291cf6f783f84c44207d09280dd1386801210840002808d1391c18310022381c603002600c388842fbda142033f0ecfb14307871064968004019c0004018007d0a2800d99de180000249401800688746",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        4,
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 59952,
+      "literal_offset": 59980,
+      "source_pointer": 135535516,
+      "context_end": 59980,
+      "context_hex": "064968004019c0004018007d0a2800d99de180000249401800688746",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 60382,
+      "literal_offset": 60424,
+      "source_pointer": 135535516,
+      "context_end": 60424,
+      "context_hex": "0a4960000019c000043140180068802109060843b861381c1830211cf5f795ff3d771e207877cee00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        4
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 62046,
+      "literal_offset": 62108,
+      "source_pointer": 135535516,
+      "context_end": 62108,
+      "context_hex": "0f4c301cf5f749fc0006000e41000918c9000919087d06280bd0301cf5f73dfc0006000e41000918c9000919087d032807d130688021c9050140021c0be0",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62200,
+      "literal_offset": 62248,
+      "source_pointer": 135535516,
+      "context_end": 62248,
+      "context_hex": "0b4968004019c0004018016801a84df025fe01a84df048fe063869460918043100200870034904488924e40000193fe1",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62280,
+      "literal_offset": 62312,
+      "source_pointer": 135535516,
+      "context_end": 62312,
+      "context_hex": "07486a005119c9000918097d8246141c0a291fd8880003494018006887460000",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62386,
+      "literal_offset": 62404,
+      "source_pointer": 135535516,
+      "context_end": 62404,
+      "context_hex": "044a201c8730c0001218136875e044b40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62434,
+      "literal_offset": 62452,
+      "source_pointer": 135535516,
+      "context_end": 62452,
+      "context_hex": "044b6219d200d218136872e000004cb40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62468,
+      "literal_offset": 62484,
+      "source_pointer": 135535516,
+      "context_end": 62484,
+      "context_hex": "034b6219d200d218136861e04cb40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62504,
+      "literal_offset": 62520,
+      "source_pointer": 135535516,
+      "context_end": 62520,
+      "context_hex": "034a6019c00080183be0000044b40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62560,
+      "literal_offset": 62576,
+      "source_pointer": 135535516,
+      "context_end": 62576,
+      "context_hex": "034b6219d200d218136833e064b40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62590,
+      "literal_offset": 62608,
+      "source_pointer": 135535516,
+      "context_end": 62608,
+      "context_hex": "044b6219d200d218136824e0000070b40608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62666,
+      "literal_offset": 62692,
+      "source_pointer": 135535516,
+      "context_end": 62692,
+      "context_hex": "064a6019c00080180068009040463a1cf1f76dfdc7e0680d1408",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62726,
+      "literal_offset": 62848,
+      "source_pointer": 135535516,
+      "context_end": 62846,
+      "context_hex": "1e4a92466c00012814d91c4f01aa08784000c01900781070087840000130c01900785070023201310133072b02dc08780128ecd85800694609180431002008706019c00051464418207d02281dd0092823d1301c00f095f8fff745fe0949094b227d9200d21812680090404601abf1f720fd7ae00000ac3b",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 62908,
+      "literal_offset": 62940,
+      "source_pointer": 135535516,
+      "context_end": 62940,
+      "context_hex": "07486a005119c9000918097d8246141c03290cd0032905dc022929d03ae00000",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 63756,
+      "literal_offset": 63816,
+      "source_pointer": 135535516,
+      "context_end": 63816,
+      "context_hex": "0e4df5f703f90006000e41000918c9004919087d06280bd0201cf5f7f7f80006000e41000918c9004919087d032807d120688021c905084312e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 63876,
+      "literal_offset": 63928,
+      "source_pointer": 135535516,
+      "context_end": 63928,
+      "context_hex": "0c4df5f7b7f80006000e41000918c9004919087d06280bd0201cf5f7abf80006000e41000918c9004919087d032803d120680ce0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64084,
+      "literal_offset": 64100,
+      "source_pointer": 135535516,
+      "context_end": 64100,
+      "context_hex": "034968004019c0000c3140180668a2e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64104,
+      "literal_offset": 64136,
+      "source_pointer": 135535516,
+      "context_end": 64136,
+      "context_hex": "074968004019c0000c3140180668301c14214cf0f1ff042179564843361890e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64140,
+      "literal_offset": 64176,
+      "source_pointer": 135535516,
+      "context_end": 64176,
+      "context_hex": "08486c006419e4000c3024182668381cfff7f4fd051c206814214cf0dbff684336187ce0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64180,
+      "literal_offset": 64276,
+      "source_pointer": 135535516,
+      "context_end": 64276,
+      "context_hex": "174968004019c0000c31441826683968082008400d1c002807d1301c14214cf0c5ff0421795648433618802080042840002804d0206814214cf0b8ff361800220124291c074b201c90400840002801d01868361804330132132af4dd31e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64284,
+      "literal_offset": 64384,
+      "source_pointer": 135535516,
+      "context_end": 64384,
+      "context_hex": "184968004019c0000c3140180668341c301c14214cf096ff042179564843361839688020800408400d1c002804d0201c14214cf087ff361800220124291c0a48031c5033201c90400840002801d01868361804330132132af4dd092e17dc0a2615e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64408,
+      "literal_offset": 64444,
+      "source_pointer": 135535516,
+      "context_end": 64444,
+      "context_hex": "084968004019c0000c3140180068161c46430548864200dd044e301cf0bc02bc08470000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64568,
+      "literal_offset": 64584,
+      "source_pointer": 135535516,
+      "context_end": 64584,
+      "context_hex": "034968004019c000103140180668a2e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64588,
+      "literal_offset": 64620,
+      "source_pointer": 135535516,
+      "context_end": 64620,
+      "context_hex": "074968004019c000103140180668301c14214cf0fffe042179564843361890e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64624,
+      "literal_offset": 64660,
+      "source_pointer": 135535516,
+      "context_end": 64660,
+      "context_hex": "08486c006419e400103024182668381cfff702fd051c206814214cf0e9fe684336187ce0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64664,
+      "literal_offset": 64760,
+      "source_pointer": 135535516,
+      "context_end": 64760,
+      "context_hex": "174968004019c0001031441826683968082008400d1c002807d1301c14214cf0d3fe0421795648433618802080042840002804d0206814214cf0c6fe361800220124291c074b201c90400840002801d01868361804330132132af4dd31e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64768,
+      "literal_offset": 64868,
+      "source_pointer": 135535516,
+      "context_end": 64868,
+      "context_hex": "184968004019c000103140180668341c301c14214cf0a4fe042179564843361839688020800408400d1c002804d0201c14214cf095fe361800220124291c0a48031c5033201c90400840002801d01868361804330132132af4dd032e17dc042615e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64892,
+      "literal_offset": 64928,
+      "source_pointer": 135535516,
+      "context_end": 64928,
+      "context_hex": "084968004019c000103140180068161c46430548864200dd044e301cf0bc02bc08470000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        16
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 64944,
+      "literal_offset": 64992,
+      "source_pointer": 135535516,
+      "context_end": 64992,
+      "context_hex": "0b4e0c4c2168002916da802000040140002911d0201cf4f797fe0006000e41000918c9008919087d062805d1201c08e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 65020,
+      "literal_offset": 65068,
+      "source_pointer": 135535516,
+      "context_end": 65068,
+      "context_hex": "0b4e0c4c2168002916da802000040140002911d0201cf4f771fe0006000e41000918c9008919087d032805d1201c08e0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 65098,
+      "literal_offset": 65148,
+      "source_pointer": 135535516,
+      "context_end": 65148,
+      "context_hex": "0c4f0c4c2168002917da802000040140002912d0201cf4f74afe0006000e41000918c900c919087db04206d1201c09e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 65428,
+      "literal_offset": 65536,
+      "source_pointer": 135535516,
+      "context_end": 65536,
+      "context_hex": "1a4d201cf4f7aefd0006000e41000918c9004919087d062823d0201cf4f7a2fd0006000e41000918c9004919087d032817d0201cf4f796fd0006000e41000918c9004919087d01280bd0201cf4f78afd0006000e41000918c9004919087d082800d10126301c70bc02bc0847",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 69986,
+      "literal_offset": 70048,
+      "source_pointer": 135535516,
+      "context_end": 70048,
+      "context_hex": "0f4c281cf3f7c7fc0006000e41000918c9000434091909688846c9434246544622409046214028680840002800d18ce000270022012309e0000028df0002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        4
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 71716,
+      "literal_offset": 71792,
+      "source_pointer": 135535516,
+      "context_end": 71792,
+      "context_hex": "124b104fb8465100187da0420ad1474678693018006809180027c85f002801d0854203dd18330132dc2aecdddd2a00d1a922101c08bc9846f0bc02bc08470000e7030000a8290102e6030000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 71930,
+      "literal_offset": 72000,
+      "source_pointer": 135535516,
+      "context_end": 72000,
+      "context_hex": "114c114880465a00207da8420bd140464169b0004018006811180022885e002801d0874203dd18340133dc2bebdddd2b00d1a923181c08bc9846f0bc02bc08470000e7030000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 102028,
+      "literal_offset": 102184,
+      "source_pointer": 135535516,
+      "context_end": 102148,
+      "context_hex": "264a6e00147d329835923693ebf788fe359a369b84420fd11e4841694c46a0004018006831180024085f002804d01c4ca04205dc834203dd18320135dc2de0dddd2d00d1a92517483499081800240460281c514600220123f5f76cfd009484200190504602a901220123f6f71bf8012399460d4c20680021",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 103648,
+      "literal_offset": 104036,
+      "source_pointer": 135535516,
+      "context_end": 103768,
+      "context_hex": "60497800c019c0004018007d8046b800c01980005c49441804203ff043fe1e20002103220723fcf75ff958494246d000801a4118564a06260878108001310232013e002ef8da4046062809d0032807d02168890f0120884328212922fff7d2fd7c2f01d0972f04d1012028212122fff7c9fd002041460829",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 105282,
+      "literal_offset": 105436,
+      "source_pointer": 135535516,
+      "context_end": 105402,
+      "context_hex": "264a0006000e41000918c90089180822885e1e18002e00da00262048864200dd204ef6f796f90027642800d103271d4c484676300023c25eba184046211ce7f71afa484678300021425eba185046211ce7f711fa404643f002fa851e504643f0fef9871e14ac1048416d74200090a8200190424650190290",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 105466,
+      "literal_offset": 105604,
+      "source_pointer": 135535516,
+      "context_end": 105586,
+      "context_hex": "224a0006000e41000918c90089180822885e1e18002e00da00261c48864200dd1c4e0725f6f739f9732801d11e36052519484068802189000840002801d01436052524ac1548816d009674200190a82002904b46d86d0390201c48222b1ce7f7aef900f0f6f80225271c002800d007250b49042008604846",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 119136,
+      "literal_offset": 119176,
+      "source_pointer": 135535516,
+      "context_end": 119176,
+      "context_hex": "094c2a7850008018c000001902686b785800c018c000001903686846e3f71cff11e00000142c0002",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 119186,
+      "literal_offset": 119224,
+      "source_pointer": 135535516,
+      "context_end": 119224,
+      "context_hex": "094b2a7850008018c000c01802686846e3f709ff6846391cfff795ff002804d1f068aae00000",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 119258,
+      "literal_offset": 119296,
+      "source_pointer": 135535516,
+      "context_end": 119296,
+      "context_hex": "094c2a7850008018c000001902686b785800c018c000001903686846e3f7dffe11e0142c0002",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 119308,
+      "literal_offset": 119428,
+      "source_pointer": 135535516,
+      "context_end": 119428,
+      "context_hex": "1d4b2a7850008018c000c01802686846e3f7ccfe6846391cfff73cff0120404280a90860486000228846144882461449894600254846131854462068002813da80a80068a8420fd041464868a8420bd0201c82928393e7f749fc839b19780006000e829a81420dd078340135132de4dd142d0bd1306943e0",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 119736,
+      "literal_offset": 119776,
+      "source_pointer": 135535516,
+      "context_end": 119776,
+      "context_hex": "094c021c50008018c000001902686b785800c018c000001903686846e3f7f0fd0fe00000142c0002",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 119782,
+      "literal_offset": 119876,
+      "source_pointer": 135535516,
+      "context_end": 119876,
+      "context_hex": "174b2a7850008018c000c01802686846e3f7dffd6846391cfff74ffe114a11880023d05e772801dc481c10800020145e201c0a213ff06dfb0004002875d18c214900701801686846221ce3f7c2fd6846391cfff732fe8e235b00f41807e0",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 123650,
+      "literal_offset": 123776,
+      "source_pointer": 135535516,
+      "context_end": 123770,
+      "context_hex": "1f4bd2181268e2f756fe639880461c48504400788045b2db1b4863213af04ffc01a84946fef7bbfe184851460170164b1878082810d8b8225200b8180168134a1878013080008018026801a8e2f733fe01a84946fef7a3fea4235b00f81800684946fef79cfe2bf028fc64b038bc9846a146aa46f0bc01bc",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 123910,
+      "literal_offset": 123980,
+      "source_pointer": 135535516,
+      "context_end": 123980,
+      "context_hex": "114b70008019c000c21812680c33c418236801a8e2f7cdfd01a84146fef759fe0028c4d0094f3868016e206881420edad4214900681800684146fef72efeb6e70000fe821408",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 126140,
+      "literal_offset": 126176,
+      "source_pointer": 135535516,
+      "context_end": 126176,
+      "context_hex": "0848094a85182a6805a8e2f777f905a84946fef703fa002808d194239b00f81800689ee1",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        12
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 128914,
+      "literal_offset": 129032,
+      "source_pointer": 135535516,
+      "context_end": 129032,
+      "context_hex": "1d495800c018c0004018007d092802d102204042024000926846191ce5f7abf9287938716879787106a9002218a802600c388842fbda684622f08dfba01980004844002101604646f92ec7ddf0f7d7fdbb208000504400681e99fdf758fc1fb038bc9846a146aa46f0bc01bc004708f00002e8cd0002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 130056,
+      "literal_offset": 130116,
+      "source_pointer": 135535516,
+      "context_end": 130116,
+      "context_hex": "0e4871008919c9000918087d092801d10120054300210a4c221c2068002811db2560101c311ce4f77bff2771404660710de00000ffff7fffffffbfff",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 133696,
+      "literal_offset": 133764,
+      "source_pointer": 135535516,
+      "context_end": 133764,
+      "context_hex": "104880461a2c2ddc0f4820180278900080188000504400688021c9030840002816d050008018c0004044026868460749e0f7a2fa1ae000002ccd0002ac3b000224171408",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 135978,
+      "literal_offset": 136124,
+      "source_pointer": 135535516,
+      "context_end": 136098,
+      "context_hex": "244c4d9b9800824451460868e3f7dffb0006000e41000918c90009190b6809a8311c2a1cdff733fe1b4d1b4e29883088014380229200141c214309040914009709a801220023f4f752fb00283cd053461868494600f023fe00f043f847200a2137f019fc0849962212018818006829883288114321430904",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "tools.skill_text and tools.skill_menu_text: bounded48-record equipment footer/confirmation copy",
+      "copied_records": 48
+    },
+    {
+      "load_offset": 137196,
+      "literal_offset": 137308,
+      "source_pointer": 135535516,
+      "context_end": 137308,
+      "context_hex": "1b4d46191b480c1802252078484505d1316841a83bf0a8fb012188440134013d002df2da381c2f28e6dd41ac0f49201c3bf06cfb002823d04246012a05dd201c0d4928c928c00978017006480b494018016801a8221cdff7b9fb27e03ab90608ec571408680d1408f46b140830b90608",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "tools.skill_text and tools.skill_menu_text: bounded48-record equipment footer/confirmation copy",
+      "copied_records": 48
+    },
+    {
+      "load_offset": 149286,
+      "literal_offset": 149360,
+      "source_pointer": 135535516,
+      "context_end": 149360,
+      "context_hex": "124ce0f7e6f90006000e41000918c90009190d7d34ac301c211ceaf7d6fb271c062d16d0032d14d0082d12d0012d10d00748c16f04a83a1cdcf72bfc04a80121f1f791f80120c5e00000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 149818,
+      "literal_offset": 149904,
+      "source_pointer": 135535516,
+      "context_end": 149904,
+      "context_hex": "154ce0f7dcf80006000e41000918c90009190e7d002d3dd030ac281c211ceaf7cafa29688020c0040840002817d0802000050143296040ac281c211ceaf7bbfa0648803001686846221cdcf718fb2020e2f719f91ae0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 158358,
+      "literal_offset": 158404,
+      "source_pointer": 135535516,
+      "context_end": 158404,
+      "context_hex": "0b4c301cdef72df80006000e41000918c90009190a686846291cdaf782fa10e00000ac3b0002680d140844040000",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 158652,
+      "literal_offset": 158728,
+      "source_pointer": 135535516,
+      "context_end": 158728,
+      "context_hex": "124cddf79bff0006000e41000918c9000919097d6878052801d1082959d00c48006800284ad10b4801684a1c02600a49031c8a4214dd0949042008604ae00000ca370002cb370002c6370002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 175928,
+      "literal_offset": 176060,
+      "source_pointer": 135535516,
+      "context_end": 176048,
+      "context_hex": "2049639c60000019c00040180468301cdef7c0fd031c04a8291c221cd6f730f804a86499eaf796fc00256495301c96300078002809d1301c98300078002804d1301c9c300078002810d06f990022885e43460024195f6d9d0023ea5e6e9c0025635fe8f78bff311c4231087044ac201cd9f700fe022807d1",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 176364,
+      "literal_offset": 176416,
+      "source_pointer": 135535516,
+      "context_end": 176416,
+      "context_hex": "0c4a639c60000019c0008018026804a8d5f75cff04a86499eaf7c2fb71b038bc9846a146aa46f0bc01bc0047180b1408680d1408",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 206220,
+      "literal_offset": 206248,
+      "source_pointer": 135535516,
+      "context_end": 206248,
+      "context_hex": "064968004019c0004018408910802f1c08e0000028df0002a02c0002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        10
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 206660,
+      "literal_offset": 206716,
+      "source_pointer": 135535516,
+      "context_end": 206716,
+      "context_hex": "0d4869004919c90009180a22885e0a2126f034fa992d11d10420305624280dd1301c04f06dfb002800d146e3f8787979ddf76afc41e30000",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        10
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 210218,
+      "literal_offset": 210256,
+      "source_pointer": 135535516,
+      "context_end": 210256,
+      "context_hex": "094a68004019c000801802686846cdf73efd68460021e2f7a4f987e00000680d1408ec080000",
+      "disposition": "owned-English-definition-copy",
+      "record_fields": [],
+      "evidence": "Existing checked compiler owner and unchanged numeric record bytes",
+      "copied_records": 221
+    },
+    {
+      "load_offset": 218338,
+      "literal_offset": 218368,
+      "source_pointer": 135535516,
+      "context_end": 218368,
+      "context_hex": "074a217a48004018c000043280180068854208d10348034008e0ffff0f00",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        4
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 230000,
+      "literal_offset": 230032,
+      "source_pointer": 135535516,
+      "context_end": 230032,
+      "context_hex": "074960000019c00040180821405e1218281c311c00f064f9cae0000024160002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 230066,
+      "literal_offset": 230096,
+      "source_pointer": 135535516,
+      "context_end": 230096,
+      "context_hex": "074960000019c00040180821405e1218281c311c00f005f9a9e024160002",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 255042,
+      "literal_offset": 255272,
+      "source_pointer": 135535516,
+      "context_end": 255162,
+      "context_hex": "394a0006000e41000918c90089180820095e042020560c18002c00da0024ff2c00ddff249299642900d10334484676300022815e091908312c4a12300023c05e526b400080180025405f4843002800da0f3000110502802080033040002801d0a0252d012248304000280dd0d1f77dfc021c002a08d01379",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        8
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    },
+    {
+      "load_offset": 361462,
+      "literal_offset": 361584,
+      "source_pointer": 135535516,
+      "context_end": 361582,
+      "context_hex": "1e4960000019c0004018007d092802d1022040420340154a1068436004731368316848004018800040190079187213683168480040188000401940795872126851888023db01181c084350803068013038600a4dac46311c0a4a086801300860f9287adc801800780028f6d075e02c2801023428010208f0",
+      "disposition": "numeric-record-fields",
+      "record_fields": [
+        20
+      ],
+      "evidence": "Ghidra raw-item-loads.txt; record-stride24 and numeric field dereference; Remi constant1464=217*24+12"
+    }
+  ]
+}

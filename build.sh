@@ -3,10 +3,16 @@ set -euo pipefail
 cd "$(dirname "$0")"
 .venv/bin/python -m tools.audit_terminology
 .venv/bin/python -m tools.build_english
+.venv/bin/python -m tools.audit_reader_routes
 .venv/bin/python -m tools.verify_title_art
 .venv/bin/python -m tools.accept_title_art
 .venv/bin/python -m tools.verify_location_banner
 .venv/bin/python -m tools.accept_location_banner
+.venv/bin/python -m tools.verify_floor_menu
+.venv/bin/python -m tools.audit_status_expiry
+.venv/bin/python -m tools.verify_caller_repairs
+.venv/bin/python -m tools.audit_remaining_callers --extended
+.venv/bin/python -m tools.audit_item_definition_callers
 .venv/bin/python -m tools.verify_name_entry
 .venv/bin/python -m tools.verify_opening_dialogue
 .venv/bin/python -m tools.verify_arrival_art

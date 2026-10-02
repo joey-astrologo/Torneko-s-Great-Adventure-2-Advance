@@ -2,26 +2,34 @@
 import argparse
 import json
 import struct
+from pathlib import Path
 import mgba.log
 from tools.rom import ROOT, digest, require
 from tools.emulator import Session, Debugger, Snapshot
 from tools.dialogue_checks import TextChecks
 from tools.verify_service_ui import materialize
 from tools.verify_blacksmith import OUT
+from tools.screen_text_audit import ScreenTextAudit
 
 
-def run(cumulative=False):
+def run(cumulative=False, source=None):
     global OUT
     mgba.log.silence()
-    if cumulative:
-        OUT = ROOT / 'build/english/blacksmith-validation'
-        rom = (ROOT / 'build/english/torneko-2-english.gba').read_bytes()
-        build = json.loads((ROOT / 'build/english/build.json').read_text())
+    if cumulative or source:
+        source=source or ROOT/'build/english'
+        OUT = source / 'blacksmith-validation'
+        rom = (source / 'torneko-2-english.gba').read_bytes()
+        build = json.loads((source / 'build.json').read_text())
     else:
         rom = (OUT / 'game.gba').read_bytes()
         build = json.loads((OUT / 'build.json').read_text())
     require(digest(rom) == build['output_sha256'], 'Blacksmith transaction ROM differs')
-    fixture = Snapshot.load(OUT / 'native/entry')
+    from tools import verify_blacksmith
+    prior=verify_blacksmith.OUT
+    try:
+        verify_blacksmith.OUT=OUT
+        fixture=verify_blacksmith.contexts(rom)['entry']
+    finally:verify_blacksmith.OUT=prior
     require(fixture.rom_sha256 == digest(rom), 'Blacksmith entry fixture differs')
     rows = build['blacksmith']['entries']
     resources = {r['offset'] + 0x08000000: r for r in rows if r['layout']['direct_rom_stream']}
@@ -56,8 +64,10 @@ def run(cumulative=False):
             gold_address = m.u32[0x02001624] + 0x60
             gold = m.u32[gold_address]
             check = TextChecks(game, dict(resources))
+            audit = ScreenTextAudit(game)
             pending, rendered_formats, returned, images = {}, [], [], []
             def callback(event):
+                audit.callback(event)
                 a, r = event['address'], event['registers']
                 if a == 0x08000FB8 and r[1] in formats:
                     row = formats[r[1]]
@@ -79,7 +89,7 @@ def run(cumulative=False):
                 check.callback(event)
             ends = (0x0801D180, 0x0801D1A6, 0x0801D1FA, 0x0801D220, 0x0801D3D8, 0x0801D3FA, 0x0801D434, 0x0801D520)
             with Debugger(game, callback, max_events=300000) as debug:
-                for address in set(check.ADDRESSES + (0x08000FB8, 0x0801D542) + ends):
+                for address in set(check.ADDRESSES + audit.ADDRESSES + (0x08000FB8, 0x0801D542) + ends):
                     debug.breakpoint(address)
                 for page in range(110):
                     game.frames(90)
@@ -89,6 +99,8 @@ def run(cumulative=False):
                         break
                     game.press('A', wait=0)
             require(returned and check.active is None and not pending, 'Blacksmith exchange did not finish')
+            require(audit.glyphs and not (audit.unclassified or audit.unreadable or audit.layout_violations),
+                    'Blacksmith exchange contains untranslated, unreadable or overflowing text')
             remaining = [(m.u8[0x020013D0 + m.u8[0x0200DF28 + 120 * i + 8]], m.u8[0x0200DF28 + 120 * i + 4])
                          for i in range(20) if m.u32[0x0200DF28 + 120 * i] & 0x80000000]
             require(len(remaining) == 1 and remaining[0][0] == 1 and remaining[0][1] in (1, 3), 'Blacksmith exchange items/enhancement differ')
@@ -103,6 +115,7 @@ def run(cumulative=False):
             require(game.snapshot().battery == fixture.battery, 'Blacksmith exchange wrote battery')
             results.append({'case': case, 'controlled_overrides': overrides, 'remaining_items': remaining, 'jobs_after': after_jobs,
                             'formats': rendered_formats, 'reads': check.reads, 'glyph_checks': check.glyph_checks,
+                            'screen_audit': audit.report(),
                             'inputs': game.inputs, 'images': {p: digest((game.output / p).read_bytes()) for p in images}})
     report = {'passed': True, 'rom_sha256': digest(rom), 'cases': results,
               'scope': 'Controlled native blacksmith invocation, requested payments2/3, three known inventory items and job counter. Ordinary button presses execute the exchange, native item enhancement, payment removal, counter increment, all ten tip selections and cap120. Exact formats, pages, output/return guards and unchanged gold/battery pass. Ordinary unlocking and acquisition of these inputs remain separate.'}
@@ -113,4 +126,5 @@ def run(cumulative=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cumulative', action='store_true')
-    run(parser.parse_args().cumulative)
+    parser.add_argument('--source', type=Path)
+    args=parser.parse_args();run(args.cumulative,args.source)

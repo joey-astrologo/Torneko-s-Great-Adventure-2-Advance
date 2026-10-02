@@ -109,11 +109,19 @@ class ScreenTextAudit:
             reason = None
             if r[1] in (0x2B, 0x2F, 0x5B, 0x5D) and r[14] == 0x08001E69:
                 reason = 'Native ASCII plus/slash/brackets from the punctuation handler'
+            if self.observer.stack and self.observer.stack[-1]['source'] in (HERO,0x0200CEE8):
+                reader=self.observer.stack[-1]
+                n=len(reader['glyph_positions'])-1
+                raw=bytes.fromhex(reader['raw_hex'])
+                # Only the exact native nested player/saved-village name read;
+                # a Japanese sentence elsewhere in this window is not exempt.
+                if n>=0 and n*2+2<len(raw) and int.from_bytes(raw[n*2:n*2+2],'big')==r[1]:
+                    reason='Exact native player or saved-village name substitution'
             if (r[1] in (0x874F, 0x8750) and self.observer.stack and
-                    context[0:2] == b'\x08\x18' and context[2] == 6 and
-                    context[4:6] == b'\x15\x08' and
+                    context[0:2] in (b'\x08\x18', b'\x40\x18') and context[2] == 6 and
+                    context[4] == 21 and context[5] in (1, 4, 8) and
                     len(self.observer.stack[-1]['glyph_positions']) == 1):
-                reason = 'Original blank/equipped marker at the start of an inventory row'
+                reason = 'Original blank/equipped marker at the start of an inventory, target-selector, pot-content or ground-item row'
             if self.final_queues and not self.observer.stack:
                 queue = self.final_queues[-1]
                 hero = bytes.fromhex(queue['player_hex'])
