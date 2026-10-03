@@ -71,14 +71,22 @@ uses three-pixel spaces. Unknown contexts still block their own insertion.
 
 ## Latest continuation
 
-See [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for the accepted 1,676-resource milestone
-and current 1,848-resource candidate. All 206 identified item names and their
+See [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) for the October 3 continuation:
+ordinary gameplay now completes the Cemetery quest, unlocks the bakery and
+buys Magic bread for 400G. Its item and 1,329G balance survive Save and continue
+and a cold load on ROM `452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`.
+Ten storage-service cases also cover the second capacity-warning caller when
+two selected items exceed one free slot. Controlled setup remains distinguished
+from ordinary quest and purchase inputs.
+
+The earlier [TEXT_PROGRESS.md](TEXT_PROGRESS.md) milestones covered all 206 identified item names and their
 reviewed descriptions, storage child prompts, bank rewards/persistence, controlled
 bakery purchases, 892 additional story passages and controlled holy-flame text
 are covered there. All 154 unidentified appearances and further player-effect/
 item-use messages now pass separate combined-ROM checks. Earlier counts and
 exclusions below describe the original service milestone and are superseded
-where explicitly covered; ordinary bakery unlocking remains open.
+where explicitly covered. Ordinary bakery unlocking and saved purchase are now
+covered by the October 3 route above.
 
 ## Extraction correction
 
@@ -112,7 +120,7 @@ back out. An English save with both items deposited is cold-loaded and both item
 are withdrawn again. Stored item sorting changes their list order; the test
 selects the observed bread row rather than assuming it is first.
 
-The bakery remains unavailable at this story point: the native cutscene places
+The bakery is unavailable at this earlier story point: the native cutscene places
 the baker at the haunted graveyard. Bakery transactions, storage sale/full-capacity
 and filled-pot prompts, warehouse upgrades and later mode behavior remain explicit
 follow-up work. Their root command labels being English does not approve those

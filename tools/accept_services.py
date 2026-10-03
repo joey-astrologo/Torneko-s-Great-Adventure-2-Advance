@@ -9,10 +9,14 @@ def run():
  receipt=accept_menus();build=json.loads((ROOT/'build/english/build.json').read_text());counts={}
  from tools.verify_items import required_case_names
  item_cases=required_case_names(build)
- for name,count in [('dungeon-ui',6),('bank',12),('bank-rewards',21),('bakery',13),('player-status',9),('player-effect',39),('item-use',60),('item-alias',166),('player-condition',45),('inventory-action',44),('pickup',36),('swap',20),('container',54),('town-action',10),('additional-action',12),('child-action',12),('player-message',6*(len(build['player_messages']['entries'])+3)),('blacksmith',57),('items',len(item_cases)),('numeric',72),('storage',3),('storage-services',9),('bank-persistence',3)]:
+ for name,count in [('dungeon-ui',6),('bank',12),('bank-rewards',21),('bakery',13),('player-status',9),('player-effect',39),('item-use',60),('item-alias',166),('player-condition',45),('inventory-action',44),('pickup',36),('swap',20),('container',54),('town-action',10),('additional-action',12),('child-action',12),('player-message',6*(len(build['player_messages']['entries'])+3)),('blacksmith',57),('items',len(item_cases)),('numeric',72),('storage',3),('storage-services',10),('bank-persistence',3)]:
   path=ROOT/f'build/english/{name}-validation/report.json';report=json.loads(path.read_text())
   require(report['passed'] and report['rom_sha256']==build['output_sha256'],'Stale service report: '+name)
   rows=report.get('cases',report.get('probes'));require(len(rows)==count,'Missing cases: '+name);counts[name]=count
+  if name=='storage-services':
+   partial=[r for r in rows if r['case']=='partial-capacity']
+   require(len(partial)==1 and any(f['id']=='storage.full' and f['return']==0x0801F588 for f in partial[0]['formats']),
+           'Partial-capacity storage warning caller was not checked')
   if name=='items':require({r['case'] for r in rows}==item_cases,'Required item/state/name cases missing')
   if name=='item-alias':
    require({r['alias_id'] for r in rows if r['state']=='unknown'}==set(range(154)), 'Appearance sources missing')

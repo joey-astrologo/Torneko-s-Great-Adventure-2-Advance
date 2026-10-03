@@ -1,5 +1,9 @@
 # Continued localization audit — 2026-10-02
 
+This page records the October 2 build. The active October 3 audit and candidate
+are documented in [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md); the hashes and counts
+below remain historical evidence rather than acceptance of that newer candidate.
+
 This records the four requested steps. It does not declare whole-game coverage.
 The original ROM and supplied save are preserved. Research uses disposable
 sessions; each native report records its ROM identity, inputs and state overrides.

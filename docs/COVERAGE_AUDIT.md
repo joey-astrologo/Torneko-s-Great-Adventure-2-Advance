@@ -5,6 +5,17 @@ whole-game completion percentage yet.** The user-reported Japanese location
 banner showed that translated catalog entries, inserted resources and passing
 family tests can coexist with an untranslated ordinary gameplay screen.
 
+The [October 3 caller follow-up](CALLER_FOLLOWUP.md) adds three confirmed repairs:
+the second monster announcement reader, computed shield-reflection damage and
+the empty-ability sword/shield Info fallback. All 98 callers left unresolved by
+the bounded data-flow scan now have investigated dispositions: 89 observed on
+the final ROM, six actor-name copies and three bypassed old calls. Ordinary
+inputs complete the Cemetery Dungeon quest, unlock the bakery and buy Magic
+bread; the purchase and correct balance survive a native save and cold reload.
+Cumulative acceptance passes on the 3,814-resource ROM, with 174 unit tests
+and clean ROM/BPS reproduction. The 813 unfiltered final-ROM sessions are
+separately recorded; earlier counts below describe their recorded builds.
+
 The visual review also missed that text. More passing cases from the same
 selected-resource checks would not resolve this coverage problem.
 

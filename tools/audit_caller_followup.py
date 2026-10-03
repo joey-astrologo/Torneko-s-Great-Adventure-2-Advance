@@ -132,6 +132,8 @@ def run(source, fixture_path, output, select=None, field_profile=None):
                     g.core.cpu.gprs[index] = value
             for off,size,value in spec.get('fields', []):
                 write(actor+off, size, value, 'Disassembled actor-state branch precondition')
+            for at,size,value,reason in spec.get('memory_fields', []):
+                write(at, size, value, reason)
             if spec.get('flags'):
                 write(actor+8, 4, m.u32[actor+8] | spec['flags'], 'Disassembled actor resistance bit')
             if spec.get('adjacent'):
@@ -214,6 +216,10 @@ def run(source, fixture_path, output, select=None, field_profile=None):
                     flow.append(event)
                 if entry and a == 0x08008F4C and not entered:
                     entered.append(event)
+                    for off,size,value in spec.get('entry_fields', []):
+                        write(actor+off, size, value, 'Controlled actor precondition at native handler entry')
+                    for at,size,value,reason in spec.get('entry_memory_fields', []):
+                        write(at, size, value, reason)
                     for i, value in enumerate(spec.get('args', ['actor'])):
                         reg(event, i, argument(value), 'Controlled invocation of verified native handler')
                     for i,value in enumerate(spec.get('stack_args', [])):

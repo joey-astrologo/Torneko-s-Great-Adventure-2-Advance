@@ -7,6 +7,24 @@ from tools.rom_build import RomBuild
 
 
 class DungeonTextOwnership(unittest.TestCase):
+    def test_empty_fused_info_shares_category_copy_without_changing_source(self):
+        from tools.compact_font import font_snapshot
+        from tools.item_text import add_items
+        from tools.extract_items import CATEGORY_DESCRIPTIONS
+        original = load_base(); build = RomBuild(original)
+        with font_snapshot():
+            report = add_items(build)
+        rom, _ = build.finish()
+        first, second = (struct.unpack_from('<I', rom, p)[0] for p in (0x17BF8,0x17E68))
+        self.assertEqual(first, second)
+        self.assertNotEqual(first, CATEGORY_DESCRIPTIONS+0x08000000)
+        self.assertEqual(rom[CATEGORY_DESCRIPTIONS:CATEGORY_DESCRIPTIONS+56],
+                         original[CATEGORY_DESCRIPTIONS:CATEGORY_DESCRIPTIONS+56])
+        for category in (3,6):
+            row = next(r for r in report['entries'] if r['id']==f'item.category.{category}')
+            self.assertEqual(struct.unpack_from('<I',rom,first-0x08000000+category*4)[0],
+                             row['offset']+0x08000000)
+
     def test_shop_and_save_notices_preserve_unowned_shared_slots(self):
         from tools.dungeon_shop_text import add_dungeon_shop,LITERALS as shop
         from tools.save_notice_text import add_save_notices,LITERALS as save
@@ -325,7 +343,7 @@ class DungeonTextOwnership(unittest.TestCase):
     def test_every_nonzero_monster_selector_has_one_private_announcement(self):
         from tools.monster_announcement_text import add_monster_announcements,selectors
         from tools.extract_monsters import RESOURCE
-        rom,report=self.check_private(add_monster_announcements,{0x2AA54:0})
+        rom,report=self.check_private(add_monster_announcements,{0x2AA54:0,0x2AC2C:0})
         original=load_base();selected=selectors(original)
         self.assertEqual({i:row['table_offset'] for row in report['entries'] for i in row['actor_ids']},selected)
         self.assertEqual((len(selected),len(report['entries'])),(45,24))

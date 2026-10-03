@@ -1,0 +1,24 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Native shield-reflection selector0x89 entering damage handler0800CD38 from0800CBC2. Owned computed table literal0800CF50; inherited combat bindings remain English. Complete native attack probe confirms the Japanese source reaches the queue.",
+  "entries": [
+    {
+      "id": "shield-reflection.224",
+      "table_offset": 548,
+      "source": {
+        "offset": 407868,
+        "end_exclusive": 407915,
+        "raw_hex": "8f8282cc8cf889ca82c520257382c90d2564837c83438393836782cc835f8381815b835782f082a082bd82a682bd00",
+        "sha256": "93a4c46962695c66218ebce993d29c906d8eb6329719a8f2e2012b0d5b8442fd",
+        "japanese": "盾の効果で %{unclassified-control:73}に\n%{unclassified-control:64}ポイントのダメージをあたえた"
+      },
+      "english": "{actor}{fit} takes {amount} damage from the shield.",
+      "status": "reviewed",
+      "fields": [
+        "actor",
+        "amount"
+      ],
+      "review": "The Japanese explicitly attributes the named target’s damage amount to the shield. English preserves that cause, target and amount; conditional break preserves a single line whenever it fits. Argument order remains string then decimal. Native reflected damage is nonnegative; verification additionally covers the signed-positive decimal limit."
+    }
+  ]
+}

@@ -61,6 +61,11 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.accept_screen_audit
 .venv/bin/python -m tools.verify_projectiles --source build/english
 .venv/bin/python -m tools.verify_monster_announcements --source build/english
+.venv/bin/python -m tools.verify_monster_announcements --source build/english --reader projectile
+.venv/bin/python -m tools.audit_projectile_readers
+.venv/bin/python -m tools.audit_throw_landing
+.venv/bin/python -m tools.audit_shield_reflection
+.venv/bin/python -m tools.audit_dynamic_text_selectors
 .venv/bin/python -m tools.verify_priest --source build/english
 .venv/bin/python -m tools.verify_priest_services --source build/english
 .venv/bin/python -m tools.verify_companion --source build/english
@@ -113,6 +118,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_pot_view --source build/english
 .venv/bin/python -m tools.verify_book_travel --source build/english
 .venv/bin/python -m tools.verify_ability_info --source build/english
+.venv/bin/python -m tools.audit_empty_ability_info
 .venv/bin/python -m tools.verify_dungeon_story --source build/english
 .venv/bin/python -m tools.verify_empty_read --source build/english
 .venv/bin/python -m tools.verify_travel_gate --source build/english
@@ -256,6 +262,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.review_text_panels --source build/english --folder walking-pickup-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder projectile-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder monster-announcement-validation
+.venv/bin/python -m tools.review_text_panels --source build/english --folder projectile-announcement-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder priest-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder priest-service-validation
 .venv/bin/python -m tools.review_text_panels --source build/english --folder companion-validation

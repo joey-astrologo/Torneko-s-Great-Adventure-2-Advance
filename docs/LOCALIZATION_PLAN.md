@@ -15,9 +15,20 @@ Following the user-reported Japanese menu banner and loss of confidence on
 2026-09-30, prioritize the [independent coverage audit](COVERAGE_AUDIT.md).
 Whole-game completion remains unknown. Source review and resource insertion
 counts cannot substitute for accounting for every visible field and reader.
-The 97 unresolved catalog sources are not the complete remaining-work list.
+The source backlog is not the complete remaining-work list.
 Preserve the distinction between completed family checks and pending whole-screen
 or natural-route audits in every progress report.
+
+October 3 continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the
+new second-reader monster announcements, shield reflection and empty-ability
+Info repairs, the unfiltered display audit and completed ordinary Cemetery
+Dungeon quest. The 3,814-resource ROM passes cumulative acceptance, 174 unit
+tests and clean ROM/BPS reproduction. All 98 callers left unresolved by the
+bounded scan have investigated dispositions (89 current-ROM observations, six
+actor-name copies, three bypassed calls). Ordinary bakery unlocking, purchase,
+native save and cold-load persistence also pass. Continue discovery and later
+ordinary progression within the standing authorization; these bounded checks
+do not establish whole-game coverage.
 
 Continue autonomously toward all player-facing text being translated, reviewed,
 inserted and validated. Batches organize the work internally and do not require

@@ -3,6 +3,7 @@
 This supplies dispatcher context to bounded static analysis. It does not prove
 ordinary gameplay reaches every choice, and unknown paths remain unresolved.
 """
+import argparse
 import json
 from pathlib import Path
 import struct
@@ -15,8 +16,7 @@ from tools.rom import ROOT, digest, load_base, require
 from tools.town_text import RAM, relocate, resource
 
 
-def run():
-    source = ROOT/'build/english'
+def run(source=ROOT/'build/english', output=ROOT/'build/localization-closure/storage-readers.json'):
     original = load_base()
     compiled = (source/'torneko-2-english.gba').read_bytes()
     build = json.loads((source/'build.json').read_text())
@@ -92,7 +92,7 @@ def run():
         engine_sha256=digest((ROOT/'tools/audit_text_callers.py').read_bytes()),
         switch_branches=branches,contexts=contexts,table_reads=list(reads.values()),
         routes=routes,sources=sources,scope=__doc__)
-    output = ROOT/'build/localization-closure/storage-readers.json'
+    output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('Storage unresolved-source candidates:',
           [(r['id'],len(r['table_reads']),len(r['consumer_candidates'])) for r in sources],flush=True)
@@ -100,4 +100,7 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source',type=Path,default=ROOT/'build/english')
+    parser.add_argument('--output',type=Path,default=ROOT/'build/localization-closure/storage-readers.json')
+    args=parser.parse_args();run(args.source,args.output)

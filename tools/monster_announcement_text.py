@@ -1,4 +1,4 @@
-"""Owned species-indexed special-action announcements in CPU0802A998."""
+"""Owned species-indexed ability and projectile/staff announcements."""
 import json,re,struct
 from tools.compact_font import encode,measure
 from tools.extract_monsters import RESOURCE,DEFINITIONS,COUNT
@@ -31,5 +31,7 @@ def add_monster_announcements(build):
         address=build.allocate(row['id'],payload,'monster-announcements');struct.pack_into('<I',table,row['table_offset'],address+0x08000000)
         entries.append(row|{'offset':address,'encoded_hex':payload.hex(),'maximum_line_widths':widths,'maximum_bytes':maximum,'capacity':256,'actor_capacity':64,'actor_ids':[i for i,s in selected.items() if s==row['table_offset']]})
     offset=build.allocate('monster-announcement-private-table',bytes(table),'monster-announcements')
-    build.patch('monster-announcement-table',0x2AA54,struct.pack('<I',START+0x08000000),struct.pack('<I',offset+0x08000000),'monster-announcements')
-    return {'entries':entries,'table_offset':offset,'catalog_sha256':digest(CATALOG.read_bytes()),'selectors':selected,'scope':catalog['scope']}
+    for site in (0x2AA54, 0x2AC2C):
+        build.patch(f'monster-announcement-table-{site:x}',site,struct.pack('<I',START+0x08000000),struct.pack('<I',offset+0x08000000),'monster-announcements')
+    return {'entries':entries,'table_offset':offset,'consumer_literals':[0x2AA54,0x2AC2C],
+            'catalog_sha256':digest(CATALOG.read_bytes()),'selectors':selected,'scope':catalog['scope']}

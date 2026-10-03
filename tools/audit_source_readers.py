@@ -92,14 +92,15 @@ def run(source, output):
     stack_routes, stack_limits, stack_stops = trace(original, compiled, seeds | extra_seeds,
         calls, budget=20000, memory_images=images, stack_model=True, read_observer=observe,
         call_observer=observe_call, paired_stack_adjustments=True)
-    # These four existing entry hooks replay the original eight-byte prologue
+    # These existing entry hooks replay the original eight-byte prologue
     # and replace the incoming town-table pointer. Validate their actual code,
     # then resume constant propagation at their original continuation.
     private_entries, initial = [], {}
     for key, entry in (('blacksmith', 0x1D110), ('gaibara', 0x1D544),
-                       ('remi', 0x1E75C), ('mayor', 0x20564)):
+                       ('remi', 0x1E75C), ('mayor', 0x20564), ('town_actions', 0x1E490)):
         owner = build[key]
-        helper, table = owner['helper_offset'], owner['table_offset']+BASE
+        helper = owner['helper_offset']
+        table = owner['message_table_offset' if key == 'town_actions' else 'table_offset']+BASE
         require(compiled[helper:helper+8] == original[entry:entry+8], 'Private entry prologue differs')
         op, branch_load, bx = struct.unpack_from('<3H', compiled, helper+8)
         require(op & 0xFF00 == 0x4800 and branch_load & 0xF800 == 0x4800,

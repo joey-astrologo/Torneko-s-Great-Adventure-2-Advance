@@ -1,9 +1,14 @@
 # Autonomous text-localization progress
 
-**Whole-game completion: unknown.** The 97.3% figure below measures review of
-identified catalog sources only. It does not measure the fraction of gameplay
+**Whole-game completion: unknown.** The [October 3 caller continuation](CALLER_FOLLOWUP.md)
+has 3,814 inserted text resources and 20 graphics. Its complete cumulative native
+suite, 174 unit tests, font browser checks and clean ROM/BPS reproduction pass.
+The additional unfiltered audit covers 813 sessions across 35 verifier families;
+all 98 bounded-scan callers have investigated dispositions. The current
+source catalog contains 3,552 reviewed, 96 unresolved and 28 retained/component
+records out of 3,676. Historical percentages below measure source review only. It does not measure the fraction of gameplay
 that displays English. The missed location banner demonstrated an additional
-class of gaps: untranslated readers of already-reviewed sources. The 97-source
+class of gaps: untranslated readers of already-reviewed sources. The 96-source
 backlog is therefore not a complete estimate of remaining work. Existing test
 counts must not be used as evidence that complete screens were audited.
 See [the coverage assessment and independent audit requirements](COVERAGE_AUDIT.md).
@@ -28,13 +33,21 @@ All 13 names plus Level are inserted and pass 30 native renderer cases, includin
 the widened Ordeal Mansion. The first entry continues through the English
 tutorial and ordinary movement; other selectors use documented controlled probes.
 
-## Accepted milestone and current candidate
+## Accepted milestone and preceding candidates
 
 The [October 2 continuation](LOCALIZATION_CLOSURE.md) inserts the custom-name
 category family, deepens RAM/stack caller analysis, repairs the two referenced
 event stubs with explicit user approval, and extends ordinary quest/service evidence.
 
-The latest accepted milestone has **3,768 inserted resources**, ROM
+The latest accepted milestone has **3,814 inserted resources and 20 graphics**,
+ROM `452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`.
+The ROM, BPS, ledger and receipts are archived in `build/accepted/3814/`;
+[CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the repairs and validation limits.
+Ordinary gameplay completes Cemetery Dungeon and the bakery quest, continues
+through the missing-King audience, and verifies a saved Magic-bread purchase
+with a cold load on this ROM.
+
+The earlier accepted milestone had **3,768 inserted resources**, ROM
 `a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`.
 Its ROM, BPS, ledger and receipts are preserved in `build/accepted/3768/`.
 Full cumulative regression, 2,006 item cases, 135 unit tests, 314 WebKit contexts /
@@ -43,7 +56,7 @@ Full cumulative regression, 2,006 item cases, 135 unit tests, 314 WebKit context
 `unit-3768.log`, `accept-3768.log` and `repro-3768.json`.
 Earlier accepted milestones remain archived separately.
 
-The current development candidate has **3,813 inserted text resources plus
+The preceding October 2 development candidate had **3,813 inserted text resources plus
 20 English graphics** (14 arrival graphics, the title and five backgrounds),
 exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
 Its ROM hash is

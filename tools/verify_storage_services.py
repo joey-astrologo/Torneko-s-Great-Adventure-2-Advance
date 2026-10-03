@@ -49,7 +49,7 @@ def run():
  with Session(rom,OUT/'cold',initial_save=battery) as g:
   g.frames(600);g.press('START',wait=180);g.press('A',wait=300)
   require(position(g)==(288,224),'Storage save did not resume at blue book');fixture=g.snapshot()
- names=['sell-carried-no','sell-carried-yes','sell-stored-no','sell-stored-yes','empty-carried','full-storage','full-inventory','filled-pot-no','filled-pot-yes']
+ names=['sell-carried-no','sell-carried-yes','sell-stored-no','sell-stored-yes','empty-carried','full-storage','partial-capacity','full-inventory','filled-pot-no','filled-pot-yes']
  for name in names:
   print('Storage service',name,flush=True)
   with Session(rom,OUT/name) as g:
@@ -66,7 +66,7 @@ def run():
     for a in set(c.ADDRESSES+o.ADDRESSES):d.breakpoint(a)
     def press(key):g.press(key,wait=150)
     press('A')
-    if name.startswith('sell-stored') or name in ('full-storage','full-inventory'):
+    if name.startswith('sell-stored') or name in ('full-storage','partial-capacity','full-inventory'):
      press('A');press('R');press('A');require(c.completed('storage.deposited'),'Setup deposit failed');press('A')
      require(len(stored(g))==1,'Setup storage record missing')
     if name.startswith('sell'):
@@ -89,6 +89,17 @@ def run():
      require(c.service_formats[-1]['id']=='storage.full','Storage capacity warning absent')
      require(c.service_formats[-1]['args'][0]==20,'Expected earned 20-slot capacity')
      require(stored(g)==before_stored and items(g)==before,'Full storage altered items')
+    elif name=='partial-capacity':
+     record=bytes(m[0x0200f008:0x0200f014])
+     for i in range(1,19):put(0x0200f008+i*12,record)
+     # Two selected ordinary items exceed the one remaining storage slot.
+     put(0x0200df28+120,bytes(m[0x0200df28:0x0200df28+120]))
+     before_stored=stored(g);before=items(g)
+     press('A');press('START');press('A');g.capture('batch-too-large')
+     require(c.service_formats[-1]['id']=='storage.full' and c.service_formats[-1]['return']==0x0801F588,
+             'Partial-capacity batch did not reach the second warning caller')
+     require(c.service_formats[-1]['args'][0]==20 and stored(g)==before_stored and items(g)==before,
+             'Rejected batch changed storage/inventory or capacity')
     elif name=='full-inventory':
      record=bytes(m[0x0200df28:0x0200dfa0])
      for i in range(1,20):put(0x0200df28+i*120,record)
@@ -110,6 +121,6 @@ def run():
     require(not c.pending and not c.active and not c.stack,'Storage checks left incomplete formatter/reader')
    require(g.snapshot().battery==fixture.battery,'Transaction probe unexpectedly changed save')
    results.append({'case':name,'controlled_overrides':overrides,'inputs':g.inputs,'choices':c.choices,'reads':c.reads,'formats':c.service_formats,'glyph_checks':c.glyph_checks,'numeric_checks':n.samples,'native':o.reads,'before_items':before,'after_items':items(g),'gold_before':gold,'gold_after':balance(g),'stored_after':stored(g)})
- report={'passed':True,'rom_sha256':digest(rom),'source_save_sha256':digest(battery),'cases':results,'scope':'Five ordinary sale/empty-inventory cases; four explicitly controlled full-storage/full-inventory/filled-pot cases. Native game transactions, original 256-byte formatter buffers and shared glyph checks. Source save unchanged.'}
+ report={'passed':True,'rom_sha256':digest(rom),'source_save_sha256':digest(battery),'cases':results,'scope':'Five ordinary sale/empty-inventory cases; five explicitly controlled full-storage/partial-capacity/full-inventory/filled-pot cases. Native game transactions, original 256-byte formatter buffers and shared glyph checks. Source save unchanged.'}
  (OUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print('Storage service cases:',len(results));return report
 if __name__=='__main__':run()

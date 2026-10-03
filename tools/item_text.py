@@ -59,7 +59,9 @@ def add_items(build,extra_catalog=None,reserve_inscription=False):
  require(original[0x1e380:0x1e384]==struct.pack('<I',DEFINITIONS+0x8000000),'Bank reward name consumer changed')
  sites.extend([0x1e380,0x1e44c])
  require(original[0x1e44c:0x1e450]==struct.pack('<I',DEFINITIONS+0x8000000),'Bakery name/price consumer changed')
- for ident,data,base,consumers in [('definitions',definitions,DEFINITIONS,sites),('descriptions',descriptions,DESCRIPTIONS,[0x17e6c,0x17ef0]),('categories',categories,CATEGORY_DESCRIPTIONS,[0x17e68])]:
+ # Fused equipment with no remaining ability bits uses a separate category
+ # fallback at 17BF8; the ordinary category reader uses 17E68.
+ for ident,data,base,consumers in [('definitions',definitions,DEFINITIONS,sites),('descriptions',descriptions,DESCRIPTIONS,[0x17e6c,0x17ef0]),('categories',categories,CATEGORY_DESCRIPTIONS,[0x17bf8,0x17e68])]:
   offset=build.allocate('item-'+ident,bytes(data),'item-text')
   for site in consumers:build.patch(f'item-{ident}-{site:x}',site,struct.pack('<I',base+0x8000000),struct.pack('<I',offset+0x8000000),'item-text')
  # The shared arrow count template contains a Japanese counter. Isolate its one consumer.

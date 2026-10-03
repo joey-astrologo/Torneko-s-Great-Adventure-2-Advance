@@ -233,11 +233,24 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
                     if k >= 1000:
                         regs.pop(k)
             elif v & 0xF800 in (0xC000, 0xC800):
-                assign((v >> 8) & 7, None)
-                if v & 0xF800 == 0xC800:
+                base_register = (v >> 8) & 7
+                base_address = regs.get(base_register)
+                if v & 0xF800 == 0xC800 and v & 255:
+                    # ARM7 LDMIA reads successive words before writeback. If
+                    # the base is in the register list, retain its loaded value.
+                    offset = 0
                     for i in range(8):
                         if v & (1 << i):
-                            assign(i, None)
+                            address = binary(base_address, (offset,)*2, lambda a,b:a+b)
+                            assign(i, read(address))
+                            offset += 4
+                    if not v & (1 << base_register):
+                        assign(base_register, binary(base_address, (offset,)*2, lambda a,b:a+b))
+                else:
+                    assign(base_register, None)
+                    if v & 0xF800 == 0xC800:
+                        stops['empty_ldmia_register_list'] += 1
+                        continue
             elif v & 0xF000 == 0xD000:
                 if v & 0xF00 >= 0xE00:
                     continue

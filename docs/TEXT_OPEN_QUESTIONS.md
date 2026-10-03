@@ -1,9 +1,15 @@
 # Text investigations and layout constraints
 
+Current continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md). The latest
+accepted build has 3,814 resources and includes the second monster announcement
+reader and shield-reflection/empty-ability Info repairs. Cumulative regression,
+174 unit tests and clean reproduction pass; the 3,813 figures below describe
+the preceding development build.
+
 Native captures: [text decision gallery](../build/text-decisions/index.html).
 These are controlled probes, with ROM hashes, actual inputs and overrides in
-linked reports. They are not proof of ordinary story access. The current root
-ROM has 3,813 inserted resources. The item-name layout decision is settled:
+linked reports. They are not proof of ordinary story access. The preceding October 2 root
+ROM had 3,813 inserted resources. The item-name layout decision is settled:
 **every item name stays on one line**. The two referenced one-character dialogue
 records now have approved, inserted contextual repairs in
 [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md).

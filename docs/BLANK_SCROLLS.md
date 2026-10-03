@@ -155,13 +155,11 @@ Existing native emulator reports cover:
 - [77 inscription-row cases](../build/english/scroll-item-validation/report.json)
   and [nine reference-list cases](../build/english/reference-lists-validation/report.json).
 
-At this document's 2026-10-02 check, those reports belong to ROM SHA-256
-`a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`.
-The current compiled ROM and manifest instead have SHA-256
-`c93c573ae1d0d4c643a580c04c8b385bd3d1b5381913763aca2abab078c22ea4`.
-The 56 English scroll inputs agree between the catalog and current compiled
-manifest; the existing native reports are evidence for their recorded build,
-not a fresh runtime pass on this later ROM.
+On 2026-10-03, the complete cumulative suite reran these checks on ROM SHA-256
+`452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`.
+The reports, current compiled ROM and manifest now share that identity.
+The additional unfiltered audit covers all nine editor cases on the same ROM.
+See the [caller follow-up acceptance](../build/caller-audit-next/completion.json).
 
 Natural acquisition, unlocking every effect through ordinary play, all menu
 contexts, turn timing and every post-inscription use are outside those checks.

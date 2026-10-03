@@ -289,6 +289,8 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
     wind = add_wind(build)
     from tools.town_overview_text import add_town_overview
     town_overview = add_town_overview(build)
+    from tools.shield_reflection_text import add_shield_reflection
+    shield_reflection = add_shield_reflection(build)
     data, report = build.finish()
     resource_counts = {
         'dialogue': len(dialogue['entries']), 'menus': len(menus['entries']),
@@ -315,6 +317,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
         'custom_items': len(custom_items['entries']),
         'wind': len(wind['entries']),
         'town_overview': len(town_overview['entries']),
+        'shield_reflection': len(shield_reflection['entries']),
         'blacksmith': len(blacksmith['entries']),
         'gaibara': len(gaibara['entries']),
         'selection_prompt': len(selection_prompt['entries']),
@@ -428,6 +431,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
                   custom_items=custom_items,
                   wind=wind,
                   town_overview=town_overview,
+                  shield_reflection=shield_reflection,
                   total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")

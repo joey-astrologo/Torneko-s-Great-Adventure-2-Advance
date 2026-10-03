@@ -5,6 +5,7 @@ report preserves unknown formats and identifies Japanese format candidates for
 code-path review, without equating intermediate Japanese bytes with a failure.
 """
 from collections import Counter
+import argparse
 import json
 from pathlib import Path
 
@@ -13,12 +14,10 @@ from tools.rom import ROOT, digest, require
 from tools.text_codec import readable, tokenize
 
 
-def run():
-    folder = ROOT/'build/localization-closure'
-    source = ROOT/'build/english'
+def run(source=ROOT/'build/english', folder=ROOT/'build/localization-closure', trace_path=None):
     rom = (source/'torneko-2-english.gba').read_bytes()
     build = json.loads((source/'build.json').read_text())
-    trace_path = folder/'source-readers-deep.json'
+    trace_path = trace_path or folder/'source-readers-deep.json'
     trace = json.loads(trace_path.read_text())
     require(digest(rom) == build['output_sha256'] == trace['rom_sha256'], 'Producer audit ROM differs')
     storage_path = folder/'storage-readers.json'
@@ -87,4 +86,8 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source',type=Path,default=ROOT/'build/english')
+    parser.add_argument('--folder',type=Path,default=ROOT/'build/localization-closure')
+    parser.add_argument('--trace',type=Path)
+    args=parser.parse_args();run(args.source,args.folder,args.trace)

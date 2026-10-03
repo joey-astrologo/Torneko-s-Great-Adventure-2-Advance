@@ -44,6 +44,34 @@ class CallerTraceTests(unittest.TestCase):
         rows, _, _ = trace(original, original, {0}, {BASE+8: BASE+0xFB8})
         self.assertEqual(rows, [])
 
+    def test_ldmia_tracks_paired_tables_and_writeback(self):
+        original = self.sample()
+        # ldmia r0!,{r1,r2}: r1 receives the source; r0 advances by eight.
+        struct.pack_into('<H', original, 2, 0xC806)
+        compiled = bytearray(original)
+        struct.pack_into('<I', compiled, 32, BASE+80)
+        calls = []
+        rows, _, _ = trace(original, compiled, {0}, {BASE+4: BASE+0xFB8},
+            call_observer=lambda pc,target,args,seed,path:calls.append(args))
+        self.assertEqual((rows[0]['original_argument'], rows[0]['compiled_argument']), (BASE+64,BASE+80))
+        self.assertEqual(calls[0][0], (BASE+40,BASE+40))
+
+    def test_ldmia_base_in_list_retains_loaded_value(self):
+        original = self.sample()
+        struct.pack_into('<H', original, 2, 0xC803)  # r0!, {r0,r1}
+        struct.pack_into('<I', original, 36, BASE+80)
+        calls = []
+        rows, _, _ = trace(original, original, {0}, {BASE+4: BASE+0xFB8},
+            call_observer=lambda pc,target,args,seed,path:calls.append(args))
+        self.assertEqual(rows[0]['original_argument'], BASE+80)
+        self.assertEqual(calls[0][0], (BASE+64,BASE+64))
+
+    def test_ldmia_unknown_base_clears_stale_source(self):
+        original = self.sample()
+        struct.pack_into('<HHHH', original, 4, 0xCA02, 0xF000, 0xFFD7, 0x4770)
+        rows, _, _ = trace(original, original, {0}, {BASE+6: BASE+0xFB8})
+        self.assertEqual(rows, [])
+
     def test_known_comparison_excludes_impossible_table_branch(self):
         original = self.sample()
         struct.pack_into('<H', original, 0, 0x4807)

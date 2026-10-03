@@ -5846,3 +5846,93 @@ substitution or new RAM/save storage. Natural activation, five directional edges
 into the separate travel-exit handler, and subsequent travel remain unproven.
 That exit's source bindings are already English (level restriction, entry and
 saved-village confirmation, plus the existing town scratch producer).
+
+### October 3: second announcement reader and computed shield reflection
+
+Verified against pinned original SHA `79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa`.
+Addresses below distinguish cartridge file offsets from CPU addresses; range ends
+are exclusive. See [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) for ROM versions.
+
+- Cartridge `[0002AC2C,0002AC30)` originally contains `68 0D 14 08`
+  (`08140D68`). The full projectile/staff handler at CPU `0802AB84` uses it
+  for formatting at `0802ABDE` and queueing at `0802ABE6`. It now shares the
+  existing private announcement table with literal `[0002AA54,0002AA58)`.
+  The original 28-byte monster definition has a signed announcement halfword
+  at `+20` and a **one-byte** projectile identifier at `+22`; do not combine
+  the unrelated `+23` byte. Four species, 84/85/121/122, select both an
+  announcement and a projectile. The other projectile species use selector zero
+  and skip the announcement. Original action dispatch `0802E0F6` calls this
+  handler from `0802DE80`; it is separate from the ability announcement handler.
+- CPU `0800CD38` saves its incoming selector `r3` at `SP+258` (hex) at `0800CD4C`.
+  Five original direct callers pass `89`, `67`, `0`, `0`, `0`. At `0800CED4`
+  the format is loaded through the saved selector. The zero case is not queued
+  (`0800CEEC`–`0800CEF8`); it is not a displayed untranslated message.
+  `89` selects shared-table byte offset `224`, original source `0806393C`,
+  the shield-reflection damage message. `67` is ordinary damage.
+- Cartridge `[0000CF50,0000CF54)` originally contains `68 0D 14 08`.
+  `tools.shield_reflection_text` redirects only this owned literal to a private
+  copy of the **compiled** shared table, preserving existing ordinary-damage
+  translations. It changes only reflection slot `224` within that copy and
+  leaves the global shared table's reflection entry unchanged.
+- In candidate `b229bbb6…`, the shared allocator owns cartridge
+  `[00961C70,00961CB6)` for the reflection format and
+  `[00961CB8,009626F0)` for the private table. Alignment bytes and surrounding
+  original ranges are not declared free. The exact allocation/patch ledger is
+  `build/caller-audit-next/shield-candidate/build.json`.
+- The full native reflection branch reads existing warrior-effect bit `400`
+  at EWRAM `[020081D4,020081D8)` or shield property bit `10` returned by
+  CPU `0800FF00`. The latter calls native equipped-category lookup `0800FE44`
+  for category 3; a controlled equipped Blade Shield (item 37) reaches reflection
+  with the warrior bit cleared. Actor action byte `+41` is set to 3 in these
+  incoming-melee probes. The turn prelude resets effect flags, so recorded test
+  setup occurs at handler entry. These are verified branch preconditions,
+  **not newly allocated RAM or a claim about ordinary skill acquisition**.
+
+Evidence: `build/caller-audit-next/projectile-parent.txt`,
+`projectile-reader-baseline/report.json`, `projectile-reader-fixed-effects/report.json`,
+`damage-wrappers.txt`, `shield-effect-getter.txt`, `equipped-shield-getter.txt`,
+`shield-baseline-entry/report.json`, `shield-fixed/report.json` and
+`shield-candidate/dynamic-selectors.json`. Full attacks return with the original
+callee-saved registers/stack; native glyph pixels and formatter guards pass.
+
+### Empty-ability equipment Info and conditional queue follow-up (2026-10-03)
+
+ROM `[00017BF8,00017BFC)` is the previously missed category-table literal in
+CPU `[08017BA6,08017BC4)`. Original bytes `183f1408` select the 14-pointer category
+table at ROM `[00143F18,00143F50)`. A sword/shield record with fused bit `00200000`
+and zero low-20 ability bits follows this fallback instead of the nonempty
+ability renderer. Categories 6/3 select attack/defence descriptions respectively.
+The existing item-text owner now patches this literal to its already allocated
+private category table, as it already did for ROM `[00017E68,00017E6C)`.
+The original table and both descriptions remain untouched. No new allocation,
+stack change, item effect or save field is introduced.
+
+On ROM `452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`,
+`tools.audit_empty_ability_info` observes the original copy at CPU `08017BB0`
+into `[SP+8,SP+108)`, checks the 256-byte boundary guard, English glyphs and
+complete Info return at `08017EEC`. Both equipment classes open/cancel three times
+with identical restored inventory pixels and unchanged inventory/battery.
+Controlled item flags and type-known fields are retained in the report; this
+establishes the native branch, not ordinary synthesis/removal history.
+Evidence: `build/caller-audit-next/empty-ability-baseline/report.json` and
+`empty-ability-fixed/report.json`.
+
+The conditional queue at CPU `[08015870,08015886)` forwards its incoming text
+only when EWRAM byte `[0200C890,0200C891)` is zero. Its sole original direct call
+is `080097A0`, after the terrain-damage formatter at `08009798`. That producer
+uses shared byte slot `1C4`, already the English damage fragment, and the
+original 256-byte output `[SP+150,SP+250)`. The native branch tests current-tile
+flags `4000` and `2000` through the established map cell at
+`020229A8 + (x*32+y)*28 + 20`. Two controlled full-turn probes retain the exact
+field changes, execute both queue outcomes and verify HP 20→10, output/guard/ABI,
+unchanged inventory and battery. No PC or text pointer is replaced. Evidence:
+`build/caller-audit-next/info-candidate/terrain-damage-validation/report.json`.
+These bytes are existing branch inputs, not storage reservations.
+
+Six unresolved static copy arguments (`0800CE9C`, `0800CF9A`, `0800D70E`,
+`0802D524`, `080392B8`, `08039984`) take `r1` directly from actor-name getter
+`08009ACC`; byte-checked instruction spans are in the computed-selector report.
+They do not introduce independent sentence selectors. Normal entries `08050BC4`
+and `08050C14` branch to owned village/well helpers, while the original queue
+instruction at `0802585E` is overwritten by the item-use hook. The audit preserves
+these dispositions separately from native branch observations.
