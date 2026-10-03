@@ -43,9 +43,12 @@ retain their historical scope.
 ## Geometry and storage
 
 Item names, including custom names, must occupy **one line** (user clarification,
-2026-09-29). Additional item-name rows are not a layout solution. The known
-Japanese custom-name/price overlap remains an unresolved single-row layout issue;
-the user has not accepted that overlap or a legacy-name limitation.
+2026-09-29). Additional item-name rows are not a layout solution. The 2026-10-02
+clarification makes English custom names, English labels, markers, counts and
+prices the layout acceptance cases. Maximum Japanese custom-name width, including
+price overlap and window-edge spill, is outside this requirement and does not
+block insertion. Preserve saved-name data and buffer bounds. See
+`TEXT_OPEN_QUESTIONS.md` for the current scope and historical Japanese-name probes.
 
 | Region | Original | Current T2 build | Text allowance |
 |---|---|---|---|
@@ -281,3 +284,32 @@ Save preview keeps its original224px, three-row panel. Its third row reserves
 selector/name/stat profiles and two actual cold-load Continue cases pass.
 See `tools.saved_text_budgets` for font-specific audits and the native galleries
 under `build/english/`. Graphics are unchanged.
+
+
+### Custom item-name family, October 2
+
+The English category labels and both custom-name formats are now inserted.
+Thirty native cases verify English custom names on one line in inventory and
+storage, including prices, pot counts, equipment/curse markers and parent
+restoration through repeated action opens. The storage **item** windows are
+168px; its 100px columns are **commands**. No geometry or font changes were
+needed. See [the insertion and limits](LOCALIZATION_CLOSURE.md). Historical
+Japanese custom-name width is outside current acceptance per the user's scope.
+
+
+## Separate town overview labels (2026-10-02)
+
+This computed descriptor reader was absent from the earlier catalog. Nine centred
+labels are now inserted through a private table; the original table and selectors
+remain intact. Five use their original72px single-row panels. Full English names
+require96px for Old man's house/Torneko's house,88px for Synthesis shop and104px
+for Adventurer's Inn. Left/right screen anchoring and8px margins are preserved;
+there is no adjacent text panel in this overview.
+
+All nine native cases pass exact centring/glyph pixels, repeated destruction and
+recreation,31 in-table directions, native A results and18,960 background pixels
+across21 vacated-panel comparisons. The original callback uses controlled existing
+activation, selection, redraw and scoped key-state fields; keys are restored at
+return. No PC/register/source pointer is replaced. Ordinary scene activation and
+travel-exit edges remain separate. See [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md)
+and `build/english/town-overview-validation/report.json`.

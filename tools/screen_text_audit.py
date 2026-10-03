@@ -8,7 +8,8 @@ import re
 
 from tools.audit_menu_layouts import Observer
 from tools.dialogue_checks import TextChecks
-from tools.name_entry import HERO
+from tools.name_entry import HERO, STORED
+from tools.compact_font import encode
 from tools.numeric_font import ALIASES
 from tools.text_codec import readable, tokenize
 
@@ -52,6 +53,8 @@ class ScreenTextAudit:
         self.layout_violations = []
         self.pending = None
         self.phase = 'start'
+        self.preview_name_fields = {}
+        self.formatted_player_fields = {}
 
     def stream(self, pointer, event):
         data = bytes(self.game.core.memory[pointer:pointer + 2048])
@@ -74,15 +77,59 @@ class ScreenTextAudit:
             row = {'frame': event['frame'], 'source': pointer, 'caller': r[14],
                    'phase': self.phase, **self.stream(pointer, event)}
             (self.queues if a == 0x0801588C else self.formats).append(row)
+            if (a == 0x08000FB8 and r[14] in (0x080149B3, 0x08014A13, 0x08014A77)
+                    and r[0] == r[13]+0x14 and r[2] == r[13]+0x114):
+                # This native preview copies the saved village name into its
+                # output instead of invoking the nested name reader. Match the
+                # exact indexed name and native decoded field, never a sentence.
+                table = m.u32[0x08014970]
+                decoded = b''.join(bytes(m[table+i*2:table+i*2+2])
+                                   for i in bytes(m[STORED:STORED+8]) if i != 1)
+                if decoded and bytes(m[r[2]:r[2]+len(decoded)+1]) == decoded+b'\0':
+                    self.preview_name_fields[r[0]] = decoded
+            if a == 0x08000FB8 and r[14] == 0x0802BE19 and r[0] == r[13]+4:
+                # The disassembled gold-theft producer uses the victim name as
+                # its second string field. Verify that field and the complete
+                # expected output before recognizing a copied player name.
+                template = bytes.fromhex(row['raw_hex'])
+                parts = template.split(b'%s')
+                hero = bytes(m[HERO:HERO+16]).split(b'\0')[0]
+                strings = [bytes(m[p:p+256]).split(b'\0')[0] for p in (r[2],r[3],m.u32[r[13]])]
+                if (hero and len(parts) == 4 and strings[1] == hero
+                        and b'%' not in b''.join(parts)):
+                    prefix = parts[0]+strings[0]+parts[1]
+                    tokens, _ = tokenize(prefix+b'\0')
+                    glyph_start = sum(len(t['text']) if t['kind'] == 'text' else t['kind'] == 'glyph' for t in tokens)
+                    expected = prefix+hero+parts[2]+strings[2]+parts[3]
+                    self.formatted_player_fields[r[0]] = dict(raw_hex=expected.hex(),
+                        player_hex=hero.hex(), glyph_start=glyph_start, producer=r[14]-1)
+            if a == 0x08000FB8 and r[14] == 0x08015861:
+                # The common player wrapper supplies one saved-name field.
+                # Verify the field bytes and entire expected output, then exempt
+                # only that field's glyphs; surrounding Japanese remains visible.
+                template = bytes.fromhex(row['raw_hex'])
+                parts = template.split(b'%s')
+                hero = bytes(m[HERO:HERO+16]).split(b'\0')[0]
+                field = bytes(m[r[2]:r[2]+16]).split(b'\0')[0]
+                if hero and field == hero and len(parts) == 2 and b'%' not in b''.join(parts):
+                    tokens, _ = tokenize(parts[0]+b'\0')
+                    start = sum(len(t['text']) if t['kind']=='text' else t['kind']=='glyph' for t in tokens)
+                    self.formatted_player_fields[r[0]] = dict(
+                        raw_hex=(parts[0]+hero+parts[1]).hex(), player_hex=hero.hex(),
+                        glyph_start=start, producer=r[14]-1,
+                        reason='Exact saved player-name field from the native player-message wrapper')
         if a == 0x080158CE:
             # Observe the payload AFTER the localization hook redirects static
             # Japanese pointers and joins combat fragments. Entry arguments alone
             # are not evidence of what the player actually sees.
             raw = self.stream(r[6], event)
             hero = bytes(m[HERO:HERO+16]).split(b'\0')[0]
+            field = self.formatted_player_fields.pop(r[6], None)
+            if field and (field['raw_hex'] != raw.get('raw_hex') or field['player_hex'] != hero.hex()):
+                field = None
             self.final_queues.append({'frame': event['frame'], 'source': r[6],
                 'caller': m.u32[r[13]+12], 'phase': self.phase, **raw,
-                'player_hex': hero.hex(), 'drawn_codes': []})
+                'player_hex': hero.hex(), 'verified_player_field':field, 'drawn_codes': []})
         if a == 0x08024AD8:
             from tools.name_entry_playtest import MAP, position
             x, y = position(self.game)
@@ -117,6 +164,22 @@ class ScreenTextAudit:
                 # a Japanese sentence elsewhere in this window is not exempt.
                 if n>=0 and n*2+2<len(raw) and int.from_bytes(raw[n*2:n*2+2],'big')==r[1]:
                     reason='Exact native player or saved-village name substitution'
+            if self.observer.stack:
+                reader = self.observer.stack[-1]
+                raw = bytes.fromhex(reader['raw_hex'])
+                name = self.preview_name_fields.get(reader['source'])
+                n = len(reader['glyph_positions'])-1
+                if (name and raw.startswith(name) and 0 <= n < len(name)//2
+                        and r[1] == int.from_bytes(name[n*2:n*2+2], 'big')
+                        and context[:2] == b'\x08\x68' and context[4:6] == b'\x1c\x03'):
+                    reason = 'Exact indexed saved-village name copied by the native save-preview formatter'
+                for label, row_index in (('Weapon: ',4), ('Shield: ',5), ('Ring: ',6)):
+                    prefix = encode(label)[:-1]
+                    if (r[1] in (0x874F,0x8750) and n == len(label)
+                            and raw.startswith(prefix+r[1].to_bytes(2,'big')+b'\x03\x07')
+                            and context[:2] == b'\x08\x18' and context[4:6] == b'\x1c\x08'
+                            and context[3] == row_index):
+                        reason = 'Original equipped marker in the native results equipment field'
             if (r[1] in (0x874F, 0x8750) and self.observer.stack and
                     context[0:2] in (b'\x08\x18', b'\x40\x18') and context[2] == 6 and
                     context[4] == 21 and context[5] in (1, 4, 8) and
@@ -129,6 +192,10 @@ class ScreenTextAudit:
                 if (hero and len(hero) % 2 == 0 and bytes.fromhex(queue['raw_hex']).startswith(hero)
                         and n < len(hero)//2 and r[1] == int.from_bytes(hero[n*2:n*2+2], 'big')):
                     reason = 'Exact saved player-name prefix; Japanese name retained from this battery save'
+                field = queue.get('verified_player_field')
+                offset = n-field['glyph_start'] if field else -1
+                if field and 0 <= offset < len(hero)//2 and r[1] == int.from_bytes(hero[offset*2:offset*2+2],'big'):
+                    reason = field.get('reason', 'Exact saved player-name field from the verified native gold-theft formatter')
                 queue['drawn_codes'].append(r[1])
             if not accepted:
                 if reason:

@@ -29,7 +29,9 @@ class StoryFormatters(unittest.TestCase):
         for row in add_commands(build,data,changed)['entries']:
             self.assertNotIn(row['id'],offsets)
             offsets[row['id']]=row['rom_offset']
-        self.assertEqual(len(offsets),907)
+        self.assertEqual(len(offsets),909)
+        self.assertEqual({r['id'] for r in ordinary if r.get('editorial_reconstruction')},
+                         {'event-bank-3.3ec2', 'event-bank-4.0d25'})
         for bank in resources:
             slots=changed[bank['id']];self.assertEqual(len(slots),len(set(slots)))
             restored=bytearray(data[bank['id']])

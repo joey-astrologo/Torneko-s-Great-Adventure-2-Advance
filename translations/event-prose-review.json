@@ -14419,6 +14419,52 @@
       },
       "status": "reviewed",
       "draft_catalog": "translations/sage-story-draft.json"
+    },
+    {
+      "id": "event-bank-3.3ec2",
+      "english": "Saruyama: Shall I explain how to use a Synthesis pot?",
+      "source_hex": "835400",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "japanese": "サ",
+      "status": "reviewed",
+      "prose_review": {
+        "revised": "Saruyama: Shall I explain how to use a Synthesis pot?",
+        "reason": "Reconstruct the question from the original Yes/No branch: Yes explains Synthesis pots; No apologizes. The source contains only the first character of the speaker label.",
+        "context_pending": false,
+        "insertion_approved": true
+      },
+      "editorial_reconstruction": {
+        "approved_by": "user",
+        "approval_date": "2026-10-02",
+        "approval": "Yes fix them please my friend",
+        "source_limit": "The pinned Japanese record is one character, not a recoverable sentence.",
+        "basis": "Reconstruct the question from the original Yes/No branch: Yes explains Synthesis pots; No apologizes. The source contains only the first character of the speaker label.",
+        "evidence": "docs/EVENT_STUB_AUDIT.md",
+        "reachability": "Controlled original NPC selectors and follow-on handlers; ordinary map access remains unproven."
+      }
+    },
+    {
+      "id": "event-bank-4.0d25",
+      "english": "Bratty boy: My dad's so busy, he doesn't even have time for a bath!",
+      "source_hex": "82c800",
+      "source_sha256": "a1d47d46d6f705609b538f2b98aa851d1ac6974b72c78266a2a4a0b74c6d926e",
+      "japanese": "な",
+      "status": "reviewed",
+      "prose_review": {
+        "revised": "Bratty boy: My dad's so busy, he doesn't even have time for a bath!",
+        "reason": "Reuse the first paragraph of the already translated initial speech, event-bank-4.0c68. The repeat source contains only the first character of the speaker label.",
+        "context_pending": false,
+        "insertion_approved": true
+      },
+      "editorial_reconstruction": {
+        "approved_by": "user",
+        "approval_date": "2026-10-02",
+        "approval": "Yes fix them please my friend",
+        "source_limit": "The pinned Japanese record is one character, not a recoverable sentence.",
+        "basis": "Reuse the first paragraph of the already translated initial speech, event-bank-4.0c68. The repeat source contains only the first character of the speaker label.",
+        "evidence": "docs/EVENT_STUB_AUDIT.md",
+        "reachability": "Controlled original NPC selectors and follow-on handlers; ordinary map access remains unproven."
+      }
     }
   ],
   "excluded": [

@@ -1,0 +1,151 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "table_sha256": "a5da1cab8bae6c11dbeaeded0cb837a828c2c0d1766b7d52f2c8c7def5f2c5c4",
+  "scope": "Nine centred labels for the separate computed town overview reader. Private descriptors preserve null entries and original selectors; four labels require wider standalone windows, anchored to the original screen edge. Controlled native activation is distinct from ordinary route access.",
+  "entries": [
+    {
+      "id": "town-overview.1",
+      "index": 1,
+      "source": {
+        "offset": 443544,
+        "end_exclusive": 443550,
+        "raw_hex": "148d4c8fea00",
+        "sha256": "1ca89a42c0a6f399e7261ad6fe6434003c8f0f9614774823f16253a396e2e820",
+        "japanese": "{unclassified-control:14}広場"
+      },
+      "english": "Square",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.2",
+      "index": 2,
+      "source": {
+        "offset": 443532,
+        "end_exclusive": 443542,
+        "raw_hex": "149856906c82cc89c600",
+        "sha256": "1e621be9ad1b3a26dccbafe8451969e3821e309b06077b0bc9ee4f2cb3c60dbc",
+        "japanese": "{unclassified-control:14}老人の家"
+      },
+      "english": "Old man's house",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.3",
+      "index": 3,
+      "source": {
+        "offset": 443516,
+        "end_exclusive": 443530,
+        "raw_hex": "148367838b836c835282cc89c600",
+        "sha256": "a39b14f8e70fd742ad4818722a29929b942773f608597db63197020856d3f6e2",
+        "japanese": "{unclassified-control:14}トルネコの家"
+      },
+      "english": "Torneko's house",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.4",
+      "index": 4,
+      "source": {
+        "offset": 443504,
+        "end_exclusive": 443514,
+        "raw_hex": "148cc382d182bd8ad900",
+        "sha256": "0bc738fbf88cde453453df58eb79324260043883015f2cce1fce7dda0aa4582b",
+        "japanese": "{unclassified-control:14}古びた館"
+      },
+      "english": "Old mansion",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.6",
+      "index": 6,
+      "source": {
+        "offset": 443496,
+        "end_exclusive": 443504,
+        "raw_hex": "148d8790ac89ae00",
+        "sha256": "c2a2125ca86f57ffc1344d99097900b7efdc19323a5d9b0c9b16cabd65b49193",
+        "japanese": "{unclassified-control:14}合成屋"
+      },
+      "english": "Synthesis shop",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.7",
+      "index": 7,
+      "source": {
+        "offset": 443484,
+        "end_exclusive": 443496,
+        "raw_hex": "1496608caf8ed282cc8f6800",
+        "sha256": "2fb865e9ec80374ee340517aec27a3db250f617f9e6384d6a4129e9a7641da02",
+        "japanese": "{unclassified-control:14}冒険者の宿"
+      },
+      "english": "Adventurer's Inn",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.9",
+      "index": 9,
+      "source": {
+        "offset": 443476,
+        "end_exclusive": 443484,
+        "raw_hex": "149682964089ae00",
+        "sha256": "1d2bab1a107b2ca99c2173411ad81ae5badb9c2e9b4ad3837f50604e5c66551e",
+        "japanese": "{unclassified-control:14}魔法屋"
+      },
+      "english": "Magic shop",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.10",
+      "index": 10,
+      "source": {
+        "offset": 443468,
+        "end_exclusive": 443476,
+        "raw_hex": "14926296e889ae00",
+        "sha256": "af9673e3d0071de0470050eab89b2571afed312681420302f220cd636a3f17e9",
+        "japanese": "{unclassified-control:14}鍛冶屋"
+      },
+      "english": "Blacksmith",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    },
+    {
+      "id": "town-overview.11",
+      "index": 11,
+      "source": {
+        "offset": 443460,
+        "end_exclusive": 443466,
+        "raw_hex": "1495e68fea00",
+        "sha256": "5025845e8c5019bae941b0a1fbdfa385e7a34bd8e2b3e4684b55f827a08e031b",
+        "japanese": "{unclassified-control:14}墓場"
+      },
+      "english": "Graveyard",
+      "status": "reviewed",
+      "review": {
+        "reason": "Translate this original fixed location label, retaining home ownership and service identity. Square, Old man's house, Adventurer's Inn and Graveyard reuse the existing destination terminology. The original Torneko label is fixed, not a saved-player field. Preserve complete labels and the native centre command."
+      }
+    }
+  ]
+}

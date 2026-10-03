@@ -171,3 +171,54 @@ incompatible text banks. The JSON retains those failures and their exact offsets
 No source is classified unused from absence of an audited reference alone.
 See the September29 event-script sections in `MEMORY_MAP.md` for native
 confirmation of the two still-Japanese placeholders and the explicit exclusions.
+
+## Continued caller and custom-name audit
+
+After compiling the current English ROM and refreshing the text inventory:
+
+```sh
+.venv/bin/python -m tools.verify_custom_items --source build/english
+.venv/bin/python -m tools.audit_source_readers --output build/localization-closure/source-readers-deep.json
+.venv/bin/python -m tools.audit_storage_readers
+.venv/bin/python -m tools.audit_buffer_producers
+.venv/bin/python -m tools.research_event_stubs
+```
+
+The producer audit consumes the deep reader report and the matching cumulative
+`queue-notice-validation/report.json`, including copied-string cases. Static
+reports retain unresolved arguments, path/budget cutoffs and the distinction
+between a candidate producer and verified final output. The event-stub tool
+uses a controlled native bank/selector/handler driver, with every override
+recorded. It does not establish ordinary map access.
+
+Further ordinary-input screen audits use retained, hash-checked native saves:
+
+```sh
+.venv/bin/python -m tools.replay_quest_audit
+.venv/bin/python -m tools.audit_castle_continuation
+```
+
+The first replays the recorded mansion/castle attempt in
+`build/localization-closure/later-quest-retry/report.json`, then verifies the
+defeat/results/retry branch. The second requires the ordinarily earned native
+castle suspend and its exact input/write provenance in
+`build/localization-closure/castle-earned-suspend/`. It cold-loads that save on
+the English ROM and reaches the flame, lock repair and first storage round trip.
+Neither report claims uninterrupted English completion of the whole castle
+quest. See [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md) for evidence and
+the two incomplete-source editorial decisions.
+
+
+Computed-reader follow-up and regression checks:
+
+```bash
+.venv/bin/python -m tools.verify_wind
+.venv/bin/python -m tools.verify_town_overview
+```
+
+These execute the original owners and computed selectors. Wind controls the
+existing stage/name fields; overview additionally scopes key state to its callback
+to isolate the fixture's concurrent town movement. Both record every override.
+The [continued audit](LOCALIZATION_CLOSURE.md) separates these checks from ordinary
+quest progression and documents the wind and overview sources missed by the
+bounded automatic scan.

@@ -15,6 +15,8 @@ the missed-reader failure, and which complete-screen audits are still pending.
 | Compile the ROM, export a BPS or run checks | [BUILD.md](BUILD.md) |
 | Translate and revise | [LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), [glossary](../translations/glossary.json) |
 | Investigate unresolved text | [TEXT_OPEN_QUESTIONS.md](TEXT_OPEN_QUESTIONS.md) |
+| Review the continued caller/custom-name audit | [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md) |
+| Review incomplete original dialogue | [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md) |
 | Capture gameplay or use Ghidra | [EXPLORATION.md](EXPLORATION.md) |
 | Reproduce the README screenshots | [SCREENSHOTS.md](SCREENSHOTS.md) |
 

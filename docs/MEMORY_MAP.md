@@ -4025,8 +4025,10 @@ unidentified custom-name display F244 decodes at most eight IDs into its
 existing64-byte scratch atSP+4; category labels load viaF58C/F59C/F5B8.
 Original forms are category:name and category:name[count]. This establishes
 the actual8-character limit, not safe layout in every priced item state.
-Maximum Japanese names plus category/count/price still need a separate layout
-solution before custom-name insertion/sign-off. Evidence:
+The original maximum-Japanese-name layout requirement was superseded by the
+2026-10-02 user clarification: custom item-name layout acceptance uses English
+names, labels, counts and prices; Japanese-name width does not block insertion.
+See `TEXT_OPEN_QUESTIONS.md` for current scope. Reader/storage evidence:
 `build/text-next/custom-name-editor.txt` and `writing-picker-readers.txt`.
 
 ## Integrated save/reference/town consumers (3,291)
@@ -5651,3 +5653,196 @@ is pinned in `config/item-definition-consumers.json`;27 loads use owned English
 copies (two skill loads use their existing48-record subset),53 use only numeric
 record fields. No interior definition-table literal provides an extra name
 consumer in Thumb[08000000,0805E000). Receipt: `build/caller-continuation/receipt.json`.
+
+
+## English custom item-name categories and formats (2026-10-02)
+
+Addresses below are ROM file offsets unless prefixed with a CPU address.
+Owner `custom-items`, implemented by `tools/custom_item_text.py`, copies the
+original 14-pointer category table `[00143EE0,00143F18)` into a private appended
+allocation. All original table bytes and strings remain intact. The native
+owner is CPU `0800F244`; its indexed name decoder still accepts eight glyph
+indices and writes through its existing 64-byte scratch. No new RAM/save storage
+is allocated, and name indices, colour state, category/name/count order and
+menu geometry are preserved.
+
+| Original literal interval (exclusive) | Required original word | Replacement role |
+| --- | --- | --- |
+| `[0000F58C,0000F590)` | `08143EE0` | Private 14-category table |
+| `[0000F59C,0000F5A0)` | `08143EE0` | Private 14-category table |
+| `[0000F5B8,0000F5BC)` | `08143EE0` | Private 14-category table |
+| `[0000F588,0000F58C)` | `0806B484` | Counted category/name format |
+| `[0000F598,0000F59C)` | `0806B438` | Plain category/name format |
+| `[0000F5B4,0000F5B8)` | `0806B438` | Plain category/name format |
+
+For ROM `2c88892deb78aa2bd000d8326c1e89d110cf82c34bf3fc51ab72ae8f09be1e65`,
+the 14 English strings occupy separate checked allocations within
+`[00960EBC,00960F6D)`; intervening alignment bytes are allocator padding, not
+additional free space. The private table is `[00960F70,00960FA8)`, counted format
+`[00960FA8,00960FB8)`, and plain format `[00960FB8,00960FC2)`. These offsets are
+build-specific; the shared `RomBuild` ledger is authoritative. Seventeen
+allocations add 16 text resources. All earlier allocations are preserved, and
+only the six listed original literal words change from the preceding build.
+
+Thirty native cases cover six nameable categories with English custom names in
+inventory and storage, prices, counts, equipped/cursed markers, repeated action
+opens/cancels and actual storage deposit/withdrawal under controlled setup.
+Exact native bytes, 64-byte guards, ABI, glyphs, numeric cells and unchanged name
+and battery bytes pass. Storage item rows have 168px windows; its 100px columns
+are command labels. Eight widest English letters occupy one line with ink edges
+88–105px and the tested price column at 121px. Japanese custom-name width is not
+an acceptance requirement. See `docs/LOCALIZATION_CLOSURE.md` and
+`build/localization-closure/candidate/custom-items-validation/report.json`.
+
+### Caller and event follow-on research
+
+`tools.audit_source_readers` models paired original/compiled RAM images only for
+the verified town relocation at EWRAM `[020141AC,0201465C)` and its following
+resource data. This does not grant RAM ownership or apply to unrelated phases
+that reuse the same addresses. Synthetic stack addresses near `10000000` are
+analysis tags, not GBA memory discoveries or allocated buffers. Four checked
+service entry helpers substitute private tables. Observed dispatcher arguments
+are propagated into other native service owners. The initial pass left 54 shared
+and 10 town sources without a resolved reader. Manual follow-up found the wind
+selector below; the final bounded scan leaves 53 shared and 10 town sources.
+None are declared unused or safe to overwrite.
+
+The deeper service pass raises its per-path bound to 4,096 instructions. Its four
+verified private entry contexts finish without path/budget cutoffs; the bank
+and other loops still report cutoffs. Of 529 original unresolved direct-call
+arguments, 102 now bind checked English resources, 307 have producer candidates,
+five are buffer leads followed manually, and 115 retain unresolved data flow.
+These classifications do not assert native reachability or English contents for
+unknown buffers. Evidence: `build/localization-closure/source-readers-deep.json`.
+
+Storage selector CPU `0801F2D8` receives the town table in r0 from the literal
+at ROM `[0005019C,000501A0)` and retains it in r4. Its switch at CPU `0801F35C`
+uses ROM `[0001F364,0001F384)`, eight branch pointers whose full bytes are checked
+against both ROMs. The branches pass the table in r1 to seven action owners,
+and in r0 to `0801E490`. `tools.audit_storage_readers` follows these actual
+argument transfers: 19 contexts, 17 table-read candidates, no read of the ten
+unresolved town sources; three contexts exhaust their step budget. This is
+bounded static evidence, not an assertion that every menu option is available.
+
+The five automatic buffer leads have identifiable producers. CPU `08016294`
+reads the amount editor's SP+`1C` buffer, written as eight two-byte glyphs in
+`[08016250,08016280)` and appended at `08016284`. Literal ROM
+`[000162B8,000162BC)` selects the original numeric table at ROM `00147EB8`;
+the 11 entries are the existing `8196` padding marker and `824F`..`8258` digits.
+Its only two direct callers, `0801E046` and `0801E0F6`, are bank paths. CPU
+`08019490`/`080196DC` consume buffers assembled through the existing concatenator
+`0805CE24` at `0801944E`/`0801969A`, after main/child action formatting.
+CPU `08019DD4` consumes SP+`10`, written at `08019B0E` from private UI-table
+slot `50`. CPU `08019E08` consumes SP+`110`, written by the vocation root format
+at `08019CB6`/`08019CC6`, followed by ground/Option concatenation at
+`08019D48`/`08019D50`. These are existing buffers and code, not new storage
+ownership. Disassembly, native verification families and limits are linked in
+`docs/LOCALIZATION_CLOSURE.md`.
+
+The original event dispatcher table is ROM `[0014CE30,0014CEBC)`; opcode `n`
+uses word `n-1`. Six controlled follow-on cases in `tools.research_event_stubs`
+execute the original bank loader, NPC selector and flag/dialogue/choice/actor
+handlers. The host performs opcode dispatch and skips WAIT before END; this is
+not a full native story route. Both bank-3 map-11 NPC selectors choose the same
+single-character prompt; Yes reaches source `.3ef9` and No `.3ec5`. Bank-4 map-5
+selector 1 reads flag `82`: clear displays `.0c68` and sets the flag, set displays
+`.0d25` and ends. No handler supplies missing text. See `EVENT_STUB_AUDIT.md` for
+the source-faithful evidence and the subsequently approved editorial repairs.
+
+On 2026-10-02 the user approved insertion of those two repairs. The owned decoded
+event-table words are bank 3 `[00000214,00000218)` (group 23/index 0, original
+relative `00000000`) and bank 4 `[00000104,00000108)` (group 6/index 1, original
+relative `000000BD`). Original source intervals are bank 3 `[00003EC2,00003EC5)`
+(`83 54 00`) and bank 4 `[00000D25,00000D28)` (`82 C8 00`). `add_prose` verifies
+these source hashes and original slot values before allocating either stream;
+the shared bank assembly verifies all non-slot bytes and original decoded sizes.
+
+In the 3,813-resource ROM, the new English streams occupy ROM-file ranges
+`[00850844,008508AE)` and `[008508B0,00850936)` (CPU addresses add `08000000`).
+Both allocations belong to `event-prose` in the `RomBuild` ledger. No source
+padding is reused and no RAM/save range is allocated. The original flag-`82`
+byte remains EWRAM `[020101BC,020101BD)`, mask `04`; the first boy conversation
+sets it and the repeat preserves it. This describes existing state, not new
+storage ownership.
+
+Eight native branch cases verify the original bank/NPC selectors, Yes/No/B
+outcomes, flag byte, full reads, glyph bitmaps, visible repair pixels, original
+224px/two-row windows and handler guards. Host dispatch and skipped WAIT remain
+explicit controls; ordinary story access is unproven. All 1,046 native event
+getters pass. `build/event-stub-repair/delta.json` accounts for every prior
+allocation/patch after exact pointer relocation, with only these two new bindings;
+scripts and all other decoded bytes are preserved. See `EVENT_STUB_AUDIT.md`
+for exact English, user approval and editorial provenance.
+
+### Computed final wind warning — confirmed missed reader
+
+Manual follow-up of unresolved CPU call `080051F0` identifies a computed
+shared-table selector. ROM `[0013EDF0,0013EDFA)` is the five-entry u16 table
+`0000,0000,0114,0115,0116` (hex); native stage EWRAM `[02003B38,02003B3C)` indexes it. The
+previous stage is EWRAM `[02003B34,02003B38)`. These are existing wind state,
+not new allocations. For stage4, shared slot `458` supplies source ROM
+`[00062C10,00062C24)` (`%sは風にさらわれた!`) to the player wrapper `08015848`.
+Its existing formatter uses the 256-byte stack output, then the queue. Because
+the resulting string contains a player name, the static copied-notice adapter
+does not translate it. Stages2/3 use already-mapped static notices.
+
+Controlled native probes set only the current/previous wind stage at CPU
+`08005150`, then execute the original animation, selector, player formatter and
+queue through ordinary A input. On the 3,801-resource ROM, stages2/3 have zero
+unclassified glyphs; stage4 draws nine Japanese text glyphs outside the saved
+player name. Evidence: `build/localization-closure/wind-baseline/` and
+`dynamic-owner-followup.txt`. This supersedes the earlier no-resolved-reader
+finding for this source; the automatic scan missed the computed index.
+
+Insertion owner `wind` owns only ROM literal `[00005220,00005224)`,
+expected word `08140D68`. A private copy of original shared table
+`[00140D68,001417A0)` changes only slot458 to an appended English format.
+All original table/string bytes, sibling entries, native logic, frame sizes
+and save layout remain unchanged. “The wind swept {player} away!” measures
+207px including the 98px saved-name bound; maximum output is 57 bytes in the
+existing 256-byte buffer. `RomBuild` assigns format `[00960FC4,00960FF1)` and
+private table `[00960FF4,00961A2C)` in the 3,811-resource ROM. Six native cases
+pass stages2/3, stage4 with four name profiles, exact formatter/queue glyphs,
+guards/ABI and original expulsion outcome. Report: `build/english/wind-validation/report.json`.
+
+### Town overview labels — computed reader follow-up (2026-10-02)
+
+Confirmed original ROM `[0014D4CC,0014D52C)` has twelve eight-byte descriptors:
+four window bytes (x/y/width/rows in tiles) followed by a text pointer. Slots
+0,5,8 are null; nine labels use native centring byte14. Reader CPU08051F86
+selects a descriptor with the byte reached through literal08051FB4, then invokes
+02298. ROM `[00051FB0,00051FB4)` is the single aligned reference to this table.
+The source table and strings remain owned original data, not free space.
+
+The activation chain is 4E7C0's native state1 switch, conditional on02010210=2,
+then callback51B98, callback51C70 and callback51E4C. A disposable native probe
+sets the existing transition bits in EWRAM `[0201020C,02010210)` and the current
+selector/refresh state; it executes the complete native setup and selector with
+no PC/register/source substitutions. It renders Japanese “Square” on the preceding
+3,802-resource English ROM. This proves the controlled path, not ordinary access to this overview.
+Evidence: `build/localization-closure/town-map-controlled/report.json`,
+`town-map-trigger-native.txt`, `town-map-callback.txt`, `dynamic-owner-followup.txt`.
+
+Inserted: private descriptors `[00961B1C,00961B7C)`, nine English strings in
+`[00961A2C,00961B1C)` (individual resources and alignment gaps in the ledger),
+and the checked pointer word at51FB0, through RomBuild. Null descriptors and
+native selectors remain exact. Four labels widen from72px: Old man's house and
+Torneko's house to96px, Synthesis shop to88px, Adventurer's Inn to104px. Each
+keeps its original left/right outer edge (8px screen margin), y and one row.
+
+All nine controlled native cases pass original setup, descriptor selection,
+centering and exact visible glyph pixels, two redraws,31 in-table directional
+inputs and native A destination IDs. Twenty-one transitions check18,960 vacated
+background pixels against independent target-label captures. ABI/stack guards,
+inventory and battery remain unchanged. Report:
+`build/english/town-overview-validation/report.json`.
+
+Existing EWRAM `[020102AA,020102AB)` is the selector; `[02010198,0201019C)` is
+the redraw flag. Scoped native key-state probes use `[0200884C,0200884E)` only
+during the complete51E4C callback and restore the exact original bytes on return.
+This isolates the fixture's still-active town movement context; earlier ordinary
+button experiments opened its unrelated travel picker. No PC/register/text-source
+substitution or new RAM/save storage. Natural activation, five directional edges
+into the separate travel-exit handler, and subsequent travel remain unproven.
+That exit's source bindings are already English (level restriction, entry and
+saved-village confirmation, plus the existing town scratch producer).

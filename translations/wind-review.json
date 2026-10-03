@@ -1,0 +1,22 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "One computed wind-stage player notice. Copy the shared table for its private caller and change only slot458; preserve stage selection, wind effects, other notices, result transition and the original256-byte wrapper.",
+  "entries": [
+    {
+      "id": "wind-expulsion",
+      "table_offset": 1112,
+      "source": {
+        "offset": 404496,
+        "end_exclusive": 404516,
+        "raw_hex": "257382cd959782c982b382e782ed82ea82bd2100",
+        "sha256": "a5e51b200118e961b0ffcf89c4d518fcc9ddd5852fc389463f58531272f13192",
+        "japanese": "%{unclassified-control:73}は風にさらわれた!"
+      },
+      "english": "The wind swept {player} away!",
+      "status": "reviewed",
+      "review": {
+        "reason": "Original computed wind stage 4 selects this player-formatted source. Preserve the involuntary wind expulsion, with all seven saved-name glyphs fitting one line."
+      }
+    }
+  ]
+}

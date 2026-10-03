@@ -283,6 +283,12 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
     caller_repairs = add_caller_repairs(build, item_loss)
     from tools.remaining_caller_text import add_remaining_callers
     remaining_callers = add_remaining_callers(build, results)
+    from tools.custom_item_text import add_custom_items
+    custom_items = add_custom_items(build)
+    from tools.wind_text import add_wind
+    wind = add_wind(build)
+    from tools.town_overview_text import add_town_overview
+    town_overview = add_town_overview(build)
     data, report = build.finish()
     resource_counts = {
         'dialogue': len(dialogue['entries']), 'menus': len(menus['entries']),
@@ -306,6 +312,9 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
         'status_expiry': status_expiry['new_source_count'],
         'caller_repairs': caller_repairs['new_source_count'],
         'remaining_callers': remaining_callers['new_source_count'],
+        'custom_items': len(custom_items['entries']),
+        'wind': len(wind['entries']),
+        'town_overview': len(town_overview['entries']),
         'blacksmith': len(blacksmith['entries']),
         'gaibara': len(gaibara['entries']),
         'selection_prompt': len(selection_prompt['entries']),
@@ -416,6 +425,9 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
                   carpenter=carpenter, fire_scene=fire_scene, travel_confirm=travel_confirm, town_routes=town_routes, form_refusal=form_refusal, ground_remove=ground_remove, monster_identity=monster_identity,
                   arrival_cards=arrival_cards, title_art=title_art, location_banner=location_banner,
                   gold_spacing=gold_spacing, floor_notices=floor_notices, status_expiry=status_expiry, caller_repairs=caller_repairs, remaining_callers=remaining_callers,
+                  custom_items=custom_items,
+                  wind=wind,
+                  town_overview=town_overview,
                   total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")

@@ -1,0 +1,223 @@
+{
+  "base_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "scope": "Fourteen private category labels and two custom-item format shapes. English custom names determine layout acceptance; keep single rows, native colours, category/name/count order, save data and buffer bounds.",
+  "labels": [
+    {
+      "id": "custom-item.category.0",
+      "source": {
+        "offset": 413240,
+        "end_exclusive": 413245,
+        "raw_hex": "8aaa95a800",
+        "sha256": "acdcda25ec973b0eab7d14c8cc3ef0b426ff03d3a61e08d2347aa80bc4cb0324",
+        "japanese": "巻物"
+      },
+      "category": 0,
+      "english": "Scroll",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.1",
+      "source": {
+        "offset": 417612,
+        "end_exclusive": 417617,
+        "raw_hex": "8e7797d600",
+        "sha256": "38734addd2934be179c3d840c34d12fecba2f483a2cdc9a89da7a2ef9e83ce6a",
+        "japanese": "指輪"
+      },
+      "category": 1,
+      "english": "Ring",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.2",
+      "source": {
+        "offset": 417608,
+        "end_exclusive": 417611,
+        "raw_hex": "8ff100",
+        "sha256": "2637df4b1210681f471ad8c8b76982f5ffb06eb7db6a4973daa28d8b336c548c",
+        "japanese": "杖"
+      },
+      "category": 2,
+      "english": "Staff",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.3",
+      "source": {
+        "offset": 417604,
+        "end_exclusive": 417607,
+        "raw_hex": "8f8200",
+        "sha256": "69eb80b460fbba77186427275ef06718a7635aa1be8f3b9c9c6b2e4bb9f3a285",
+        "japanese": "盾"
+      },
+      "category": 3,
+      "english": "Shield",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.4",
+      "source": {
+        "offset": 417596,
+        "end_exclusive": 417601,
+        "raw_hex": "82a88be000",
+        "sha256": "2c67317650608e989f5805bff55dbf1ce790b7bd2488f23ec16172349c61b51e",
+        "japanese": "お金"
+      },
+      "category": 4,
+      "english": "Gold",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.5",
+      "source": {
+        "offset": 412396,
+        "end_exclusive": 412401,
+        "raw_hex": "8370839300",
+        "sha256": "104b344b6a99f26861ef31548f8fc488e7d63c0cacf971f1e504ced95048183c",
+        "japanese": "パン"
+      },
+      "category": 5,
+      "english": "Bread",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.6",
+      "source": {
+        "offset": 417592,
+        "end_exclusive": 417595,
+        "raw_hex": "8c9500",
+        "sha256": "e42afddbb664594b2f36cd7409d5072f0cbf86e58f869c0b1a9109913041b245",
+        "japanese": "剣"
+      },
+      "category": 6,
+      "english": "Weapon",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.7",
+      "source": {
+        "offset": 417588,
+        "end_exclusive": 417591,
+        "raw_hex": "919000",
+        "sha256": "5bf99bde5799b585017bb7b4489c36fe2af8c195950d3845196df182dbc1439e",
+        "japanese": "草"
+      },
+      "category": 7,
+      "english": "Herb",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.8",
+      "source": {
+        "offset": 417584,
+        "end_exclusive": 417587,
+        "raw_hex": "96ee00",
+        "sha256": "8db1b6c72d346a6602a96079fd968e77053487e68e7f07aa6366ac5a0dc46b3a",
+        "japanese": "矢"
+      },
+      "category": 8,
+      "english": "Arrow",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.9",
+      "source": {
+        "offset": 417580,
+        "end_exclusive": 417583,
+        "raw_hex": "9ae200",
+        "sha256": "4768ef3b8f3a3d57709576ebe65c462e4506ab49725d0e2ba7160088ed072137",
+        "japanese": "壺"
+      },
+      "category": 9,
+      "english": "Pot",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.10",
+      "source": {
+        "offset": 417572,
+        "end_exclusive": 417577,
+        "raw_hex": "95f395a800",
+        "sha256": "49e9606102cb3c808d334601d956523f17470b80e3c2d337eba50705a012d424",
+        "japanese": "宝物"
+      },
+      "category": 10,
+      "english": "Treasure",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.11",
+      "source": {
+        "offset": 417568,
+        "end_exclusive": 417571,
+        "raw_hex": "94a000",
+        "sha256": "debb1f8bd456b298e3c73b6cebf1ac13f767da5ceff54b945bf236fd7f37dfd4",
+        "japanese": "箱"
+      },
+      "category": 11,
+      "english": "Box",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.12",
+      "source": {
+        "offset": 412204,
+        "end_exclusive": 412209,
+        "raw_hex": "834a834d00",
+        "sha256": "d0cb56ae7f9ddea32ff899d5b0b53c3f2d22956f403e36c71760052e34caf86a",
+        "japanese": "カギ"
+      },
+      "category": 12,
+      "english": "Key",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.category.13",
+      "source": {
+        "offset": 417560,
+        "end_exclusive": 417565,
+        "raw_hex": "8e8091cc00",
+        "sha256": "ee826387f2338e38d75110c5247685586bb59374c5dcef2c002878570b9f3992",
+        "japanese": "死体"
+      },
+      "category": 13,
+      "english": "Corpse",
+      "status": "reviewed"
+    }
+  ],
+  "entries": [
+    {
+      "id": "custom-item.format.count",
+      "kind": "count",
+      "readers": [
+        62856
+      ],
+      "source": {
+        "offset": 439428,
+        "end_exclusive": 439441,
+        "raw_hex": "030425733a25735b25735d0500",
+        "sha256": "c6fd2faedcff4ad993f2af8b80b9514837c42dd3a984f32bf8cb3c57e6f74054",
+        "japanese": "{legacy-position:0304}%{unclassified-control:73}:%{unclassified-control:73}[%{unclassified-control:73}]{unclassified-control:05}"
+      },
+      "english": "{category}:{name}[{count}]",
+      "status": "reviewed"
+    },
+    {
+      "id": "custom-item.format.plain",
+      "kind": "plain",
+      "readers": [
+        62872,
+        62900
+      ],
+      "source": {
+        "offset": 439352,
+        "end_exclusive": 439361,
+        "raw_hex": "030425733a25730500",
+        "sha256": "1274c009054f42f45aba4284c1cea4cc33b00f7b0614bafdadd9bbf4feba711b",
+        "japanese": "{legacy-position:0304}%{unclassified-control:73}:%{unclassified-control:73}{unclassified-control:05}"
+      },
+      "english": "{category}:{name}",
+      "status": "reviewed"
+    }
+  ]
+}

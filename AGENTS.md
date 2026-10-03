@@ -64,12 +64,21 @@ Its separate reader was missed by earlier command/status checks; follow
 `docs/LOCATION_BANNER.md`. `tools.verify_location_banner` now checks every glyph
 and all five visible text fields, including the banner, in all three command
 modes. Never infer an English screen from checks limited to selected resources.
+The separate town overview and computed final wind warning also use private
+tables; see `docs/LOCALIZATION_CLOSURE.md`. Their gates exercise the original
+computed selectors. Overview activation/key state is explicitly controlled;
+do not describe it as ordinary story access.
 The first action-label table is copied for its owned consumer; never translate
 the shared original table without auditing its other consumers. Current early
 action/main buffers are 256/64 bytes, with checked stack-frame changes. Item
 rows have 162 usable pixels including markers/counts/suffixes in the original
 168-pixel parent window. Item names, including custom names, must stay on one
-line; do not solve width problems with additional item-name rows. Preserve the
+line; do not solve width problems with additional item-name rows. Per the
+2026-10-02 user clarification, custom item-name layout acceptance uses English
+names, labels, markers, counts and prices. Maximum Japanese custom-name width
+(including price overlap and window-edge spill) is not an acceptance blocker or
+a required layout regression check. Preserve saved-name data and buffer bounds;
+see `docs/TEXT_OPEN_QUESTIONS.md`. Preserve the
 8-pixel gaps between outer menu borders;
 text fit and restoration alone do not establish visual acceptance. Keep native
 routes distinct from controlled item/mode probes and explicit exclusions.

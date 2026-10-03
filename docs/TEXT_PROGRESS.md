@@ -1,9 +1,9 @@
 # Autonomous text-localization progress
 
-**Whole-game completion: unknown.** The 96.9% figure below measures review of
+**Whole-game completion: unknown.** The 97.3% figure below measures review of
 identified catalog sources only. It does not measure the fraction of gameplay
 that displays English. The missed location banner demonstrated an additional
-class of gaps: untranslated readers of already-reviewed sources. The 111-source
+class of gaps: untranslated readers of already-reviewed sources. The 97-source
 backlog is therefore not a complete estimate of remaining work. Existing test
 counts must not be used as evidence that complete screens were audited.
 See [the coverage assessment and independent audit requirements](COVERAGE_AUDIT.md).
@@ -30,6 +30,10 @@ tutorial and ordinary movement; other selectors use documented controlled probes
 
 ## Accepted milestone and current candidate
 
+The [October 2 continuation](LOCALIZATION_CLOSURE.md) inserts the custom-name
+category family, deepens RAM/stack caller analysis, repairs the two referenced
+event stubs with explicit user approval, and extends ordinary quest/service evidence.
+
 The latest accepted milestone has **3,768 inserted resources**, ROM
 `a7a05791570d2ced3b6182cc9705e7071f772afc721f71199bd582a4bd1adf28`.
 Its ROM, BPS, ledger and receipts are preserved in `build/accepted/3768/`.
@@ -39,11 +43,17 @@ Full cumulative regression, 2,006 item cases, 135 unit tests, 314 WebKit context
 `unit-3768.log`, `accept-3768.log` and `repro-3768.json`.
 Earlier accepted milestones remain archived separately.
 
-The current development candidate has **3,785 inserted text resources plus
+The current development candidate has **3,813 inserted text resources plus
 20 English graphics** (14 arrival graphics, the title and five backgrounds),
 exported to `build/torneko-2-english.gba` and `build/torneko-2-english.bps`.
 Its ROM hash is
-`81f8b1aa13f6d67d0d9d83ebe4abaef276887e30d46b60442bffe4082e5275d6`.
+`f47b6df310211585406c921d8070e1824a8e1cf76a324cd72c8b8669ad6ef865`.
+The two approved [event repairs](EVENT_STUB_AUDIT.md) pass eight native branch
+cases and all 1,046 event getters. Existing resources differ only by pointer
+relocation; the repair adds no script, geometry or RAM/save changes.
+Current custom-name, caller, event and gameplay evidence is consolidated in
+[LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md). The earlier repair milestones
+below retain their original unit counts and byte-delta receipts.
 The [reader-path audit](READER_PATH_AUDIT.md) now accounts for all four direct
 callers of the Floor/status modal. It found the empty-inventory caller missed
 by the preceding fix and binds it to “You have no items.” The extended14-case
@@ -78,18 +88,23 @@ then nine additional caller failures: Stone's murmur acquisition, two link
 warnings and six blacksmith item-name producers. The copied refusal and Remi's
 numeric Iron-safe price load are confirmed English controls. All 110 continuation
 cases, 13 complete blacksmith exchanges,308 earlier caller cases, 14 Floor cases,
-44 expiry cases and 17 result/history sibling cases pass on the current ROM.
+44 expiry cases and 17 result/history sibling cases passed on that 3,785-resource ROM.
 `./validate.sh` passes 150 unit tests plus toolchain/fresh-save checks. All 4,014
 prior allocations remain exact;78 original-ROM bytes change inside 26 owned
 literal words. Clean ROM/BPS reproduction passes. Evidence:
 `build/caller-continuation/receipt.json` and `index.html`.
 
-The 15-consumer scan covers 1,294 direct call patterns and finds no remaining
-resolved direct Japanese-string binding. Its 529 unresolved arguments remain
-static-analysis limits, not confirmed untranslated paths. All80 direct item-
+The initial 15-consumer scan covers 1,294 direct call patterns and finds no remaining
+resolved direct Japanese-string binding. Its 529 unresolved arguments were
+static-analysis limits, not confirmed untranslated paths. The new RAM/stack
+and storage-dispatch passes bind 115 of those calls to English resources,
+identify 307 producer candidates, follow five buffer producers manually, and
+leave 102 unknown data-flow calls explicit. The computed-reader follow-up then found and fixed the final wind warning and
+nine separate town-overview labels. All80 direct item-
 definition loads in the bounded code region are accounted for: 27 owned English
-table loads and 53 numeric-only loads. The catalog now has3,666 sources: 3,527
-reviewed, 111 unresolved and 28 retained/component entries. Source review and
+table loads and 53 numeric-only loads. The catalog now has 3,676 sources: 3,551
+reviewed (including two approved editorial reconstructions), 97 unresolved and
+28 retained/component entries. Source review and
 insertion counts still do not measure whole-game English coverage.
 
 On the preceding `dd21b782…` build,
@@ -166,41 +181,45 @@ also passes a fresh-game, ordinary-input tutorial pickup regression: three floor
 and 14 pickups, with no Japanese text glyph leads. These checks do not establish
 complete game discovery or natural access to every translated branch.
 
-The current inventory accounts for 3,666 unique sources: 3,527 reviewed,
-111 unresolved (catalog status `untranslated`) and 28 retained/component sources.
+The current inventory accounts for 3,676 unique sources: 3,551 reviewed,
+97 unresolved (catalog status `untranslated`) and 28 retained/component sources.
 The earlier **96.1%** figure divides reviewed English by every catalog source.
 Its remaining3.9% included accounted-for sources that do not need another English
 translation. The current breakdown is 21 nonlinguistic entries, four sources replaced by English UI
 components, and three deliberately retained Japanese sources (the optional kana
 input pages and an internal appearance-table sentinel).
 
-Excluding those 28 accounted-for sources, **3,527 of 3,638 sources (96.9%) have
-reviewed English; 111 (3.1%) remain unresolved**. This is a review metric for the
+Excluding those 28 accounted-for sources, **3,551 of 3,648 sources (97.3%) have
+reviewed English; 97 (2.7%) remain unresolved**. Reviewed includes two approved
+editorial reconstructions. This is a review metric for the
 known catalog, not whole-game completion or proof that every reader displays
 English. Some unresolved sources already have English drafts but still need
 reader, context or layout verification. Neither percentage measures engineering
 time remaining. The ten sources added at 3,768 were newly identified. A separate
 byte/consumer audit classified the eight empty name-cell IDs as nonlinguistic
 data; no Japanese text was removed.
-Remaining work includes custom-name layouts, 36 single-character event stubs,
+Remaining work includes 34 single-character event stubs,
 legacy system strings and shared-reader audits. The reviewed-source percentage
 does not count these investigation gaps as complete.
 
-The 111 unresolved sources currently divide as follows:
+The 97 unresolved sources currently divide as follows:
 
 | Sources | Family | Remaining work |
 |---:|---|---|
-| 36 | Single-character event placeholders | Two render through controlled native branches; context and ordinary reachability still under investigation. |
-| 54 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
-| 11 | Custom-name category labels | English is drafted/reviewed; all item names must remain on one line. Long Japanese custom-name layouts still need a solution. |
+| 34 | Single-character event placeholders | Three appear only after END; 31 lack a reference in the extracted roots. The two referenced records have approved, inserted repairs; ordinary access remains unproven. |
+| 53 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
 | 10 | Town/service table sources | Establish active readers and their actual formatting/layout requirements. |
 
 The [native screenshot gallery](../build/text-decisions/index.html) and
 [investigation notes](TEXT_OPEN_QUESTIONS.md) explain these cases. The user has
 confirmed that **item names cannot take more than one line**. The earlier request
-to choose “Sa/Na” versus an ellipsis was premature; these incomplete dialogue
-entries need context/reachability investigation first. The failing custom-name
-prototype remains separate from the root ROM.
+to choose “Sa/Na” versus an ellipsis was premature; subsequent caller investigation
+supported the two contextual repairs now approved and inserted. The custom-name category
+labels and both formats are now inserted; 30 native English-name cases pass
+in inventory and storage, including prices, counts, markers and reopening.
+See [the current continuation](LOCALIZATION_CLOSURE.md).
+Earlier Japanese-name layout blockers in the historical entries below are
+superseded by the October 2 scope clarification in `TEXT_OPEN_QUESTIONS.md`.
 
 This is a source count, not a percentage of engineering time remaining. Retained
 internal data, reviewed English, native insertion and natural gameplay coverage
@@ -209,9 +228,10 @@ must remain separate.
 The floor-Remove fragment passed two native queue/action checks and all 44
 existing Equip/Remove/Drop regressions in `build/ground-remove-prototype/` before
 integration. New source audits map all 133 ordinary event-script roots and the
-seven NPC resource banks. Six controlled native checks confirm two unresolved
-single-character placeholders really render through their selected branches;
-their context and ordinary reachability remain under investigation. The audit also records two
+seven NPC resource banks. Six historical controlled native checks confirm that
+the two single-character placeholders render through their selected branches;
+their replacements now pass eight English branch cases. Ordinary reachability
+remains unproven. The audit also records two
 mismatched original help-menu bank/configuration combinations. Natural access
 and their proper explanations remain unresolved. Appearance alias154 is proven
 to be an assignment sentinel, with three native initializer checks; that

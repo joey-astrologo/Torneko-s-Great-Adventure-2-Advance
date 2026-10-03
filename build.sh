@@ -9,6 +9,8 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_location_banner
 .venv/bin/python -m tools.accept_location_banner
 .venv/bin/python -m tools.verify_floor_menu
+.venv/bin/python -m tools.verify_wind
+.venv/bin/python -m tools.verify_town_overview
 .venv/bin/python -m tools.audit_status_expiry
 .venv/bin/python -m tools.verify_caller_repairs
 .venv/bin/python -m tools.audit_remaining_callers --extended
@@ -35,6 +37,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_quest_text
 .venv/bin/python -m tools.verify_prose_preflight --cumulative
 .venv/bin/python -m tools.research_event_relocation --cumulative
+.venv/bin/python -m tools.verify_event_repairs --source build/english
 .venv/bin/python -m tools.verify_floor_progress_prototype --cumulative
 .venv/bin/python -m tools.verify_well_level_prototype --cumulative
 .venv/bin/python -m tools.verify_village_prose_prototype --cumulative
@@ -103,6 +106,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_town_root --source build/english
 .venv/bin/python -m tools.verify_writing_lookup --source build/english
 .venv/bin/python -m tools.verify_writing_editor --source build/english
+.venv/bin/python -m tools.verify_custom_items --source build/english
 .venv/bin/python -m tools.verify_fused_loss --source build/english
 .venv/bin/python -m tools.verify_cannot_talk --source build/english
 .venv/bin/python -m tools.verify_step_stairs --source build/english

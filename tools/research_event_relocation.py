@@ -4,6 +4,7 @@ Uses the prose preflight ROM; English candidate strings are only supplied to
 selected table words in disposable RAM. No event scripts or ROM tables change.
 """
 import argparse,json,struct
+from pathlib import Path
 import mgba.log
 from tools.rom import ROOT,digest,require
 from tools.emulator import Session,Snapshot,Debugger,ffi
@@ -26,10 +27,13 @@ def invoke(game,address,args,max_steps=100000):
     require((result[4:12],result[13])==preserved,'Native event function changed preserved registers/SP')
     return result[0]
 
-def run(inserted=False,cumulative=False):
+def run(inserted=False,cumulative=False,source=None):
     global OUT
     mgba.log.silence()
     root=ROOT/('build/english' if cumulative else 'build/event-prose-insertion' if inserted else 'build/prose-preflight')
+    if source is not None:
+        require(cumulative, 'An alternate build directory requires cumulative bindings')
+        root=source
     if cumulative:
         OUT=root/'event-bindings-validation';inserted=True
     elif inserted:OUT=root/'relocation'
@@ -78,4 +82,5 @@ def run(inserted=False,cumulative=False):
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);mode=parser.add_mutually_exclusive_group()
     mode.add_argument('--inserted',action='store_true');mode.add_argument('--cumulative',action='store_true')
-    args=parser.parse_args();run(args.inserted,args.cumulative)
+    parser.add_argument('--source',type=Path)
+    args=parser.parse_args();run(args.inserted,args.cumulative,args.source)

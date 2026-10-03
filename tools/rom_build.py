@@ -3,6 +3,39 @@
 from tools.rom import digest, load_base, require
 
 
+def verify_ledger(original, rom, report):
+    """Independently reconstruct a finished ROM; reject gaps, overlaps and edits."""
+    require(digest(original) == report['source_sha256'] and digest(rom) == report['output_sha256'],
+            'Ledger ROM identity differs')
+    require(len(original) == report['source_bytes'] and len(rom) == report['output_bytes'],
+            'Ledger ROM size differs')
+    expected = bytearray(original + b'\xFF'*(len(rom)-len(original)))
+    ends, ids = [], set()
+    for patch in report['patches']:
+        lo, hi = patch['start'], patch['end_exclusive']
+        before, after = bytes.fromhex(patch['before_hex']), bytes.fromhex(patch['after_hex'])
+        require(0 <= lo < hi <= len(original) and hi-lo == len(before) == len(after)
+                and original[lo:hi] == before, 'Ledger patch source differs')
+        require(patch['id'] not in ids and patch['owner'] and all(hi <= a or lo >= b for a,b in ends),
+                'Ledger patch overlap/identity differs')
+        ends.append((lo, hi));ids.add(patch['id'])
+        expected[lo:hi] = after
+    cursor = len(original)
+    for allocation in report['allocations']:
+        lo, hi = allocation['start'], allocation['end_exclusive']
+        require(cursor <= lo < hi <= len(rom) and lo-cursor == allocation['padding_before']
+                and allocation['alignment'] > 0
+                and allocation['alignment'] & (allocation['alignment'] - 1) == 0
+                and lo % allocation['alignment'] == 0,
+                'Ledger allocation range differs')
+        require(allocation['id'] not in ids and allocation['owner']
+                and digest(rom[lo:hi]) == allocation['sha256'], 'Ledger allocation identity/bytes differ')
+        expected[lo:hi] = rom[lo:hi]
+        ids.add(allocation['id']);cursor = hi
+    require(bytes(expected) == rom, 'ROM has unowned bytes outside ledger')
+    return True
+
+
 class RomBuild:
     def __init__(self, original):
         require(original == load_base(), "Expected the pinned Japanese base")

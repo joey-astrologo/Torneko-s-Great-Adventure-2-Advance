@@ -15,7 +15,7 @@ Following the user-reported Japanese menu banner and loss of confidence on
 2026-09-30, prioritize the [independent coverage audit](COVERAGE_AUDIT.md).
 Whole-game completion remains unknown. Source review and resource insertion
 counts cannot substitute for accounting for every visible field and reader.
-The 113 unresolved catalog sources are not the complete remaining-work list.
+The 97 unresolved catalog sources are not the complete remaining-work list.
 Preserve the distinction between completed family checks and pending whole-screen
 or natural-route audits in every progress report.
 
@@ -24,6 +24,13 @@ inserted and validated. Batches organize the work internally and do not require
 fresh user approval. Ask only when a consequential unresolved decision requires
 the user's insight or investigation. Maintain explicit discovery and validation
 gaps; completing a known catalog is not proof of complete game coverage.
+
+On 2026-10-02 the user explicitly approved contextual repairs for the two
+referenced one-character event records. Both are inserted and natively verified;
+retain their editorial-reconstruction provenance separately from literal source
+translation. Exact wording, caller evidence and remaining limits are in
+[EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md). This approval does not extend to
+inventing dialogue for the other 34 single-character records.
 
 On 2026-09-29 the user reopened ending-credit discovery and requested credits
 and arrival/dungeon-card audition systems following the Torneko 3 workflow.
@@ -177,8 +184,13 @@ that context until it is measured. This applies to prose as well as labels.
 
 User clarification on 2026-09-29: **item names must remain on one line**, including
 custom names. The earlier proposal to add lines for long Japanese custom names
-is rejected. Resolve their widths within a single-row design; this instruction
-does not approve clipping, price overlap, changes to saved names or font shrinking.
+is rejected. User clarification on 2026-10-02 sets custom item-name layout
+acceptance by the widest supported English names with their English category
+labels, markers, counts and prices in each consumer. Maximum Japanese custom-name
+width, including price overlap and window-edge spill, is not a localization
+blocker or a required layout regression check. Preserve saved-name data, buffer
+bounds, single-row behavior and the selected font. See
+`docs/TEXT_OPEN_QUESTIONS.md` for the current scope and historical measurements.
 
 Use the pinned **Torneko 2 Japanese ROM** as the translation source and build
 base. Author English independently. Fan translations may provide technical or

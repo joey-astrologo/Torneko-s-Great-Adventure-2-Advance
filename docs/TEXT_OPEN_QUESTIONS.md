@@ -3,9 +3,10 @@
 Native captures: [text decision gallery](../build/text-decisions/index.html).
 These are controlled probes, with ROM hashes, actual inputs and overrides in
 linked reports. They are not proof of ordinary story access. The current root
-ROM has 3,785 inserted resources. The item-name layout decision is settled:
-**every item name stays on one line**. The one-character dialogue needs more
-investigation before asking for a translation preference.
+ROM has 3,813 inserted resources. The item-name layout decision is settled:
+**every item name stays on one line**. The two referenced one-character dialogue
+records now have approved, inserted contextual repairs in
+[EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md).
 
 ## Original one-character dialogue
 
@@ -23,45 +24,55 @@ it does not prove that ordinary gameplay reaches them or establish missing words
 Saruyama's two following branches are an apology and a Synthesis-pot tutorial;
 the boy's first conversation is about his busy father.
 
-The earlier choice between romanization and an ellipsis was premature and is
-withdrawn pending context/reachability research. In particular, an ellipsis would
-not explain what the Yes/No prompt asks. No replacement has been inserted, and
-no wording has been approved. Thirty-four other one-character records still
-need reader/reachability accounting. A controlled native call is not evidence
-of ordinary story access.
+Six new controlled follow-on cases confirm that Yes opens the Synthesis-pot
+tutorial and No opens the apology; the boy's flagged repeat ends immediately
+after the single character. No handler supplies a missing sentence. The
+[approved repair](EVENT_STUB_AUDIT.md) reconstructs that question and reuses
+the boy's existing first paragraph. Both are inserted following the user's
+2026-10-02 approval. Eight new native cases verify the English reads, Yes/No/B
+outcomes, repeat flag, glyphs, fit and caller guards. Their editorial provenance
+is retained in the catalog and build ledger. Of the other 34 records, three occur only after an unconditional
+END and 31 have no reference in the extracted roots. Ordinary story access and
+other potential readers remain unproven.
 
-## Long Japanese custom item names
+## Custom item-name acceptance scope
 
-Eight wide English letters fit the measured inventory examples with the English
-category labels. An eight-glyph Japanese pot name can cross the price column:
+User clarification on 2026-10-02: **English custom names, category labels, counts
+and prices determine layout acceptance.** Maximum Japanese custom-name width is
+outside that requirement. Both its price overlap and the English prototype's
+window-edge spill with Japanese names are historical diagnostics, not localization
+blockers or required fixes. This supersedes earlier requirements to resolve those
+Japanese-name cases before inserting the English category labels.
 
-| Controlled row | Name right edge | Price starts |
-|---|---:|---:|
-| Existing Japanese category label |151px|121px|
-| English category prototype |169px|121px|
+Item names must still occupy one line, as requested on 2026-09-29. Preserve the
+selected font, saved-name data and buffer bounds. Check the widest supported
+English custom names with the labels, markers, quantities and prices used by each
+consumer. The inventory has 162 usable text pixels in its original 168px parent;
+the storage item lists also use 168px windows. The separate 100px storage
+columns are command labels, not item-name rows. Preserve the 8px gaps between
+menu borders.
 
-The unpriced English-category version also overflows the name region. Its strict
-verifier fails at advance172 in the168px parent; the separate diagnostic capture
-does not weaken that check. The original168px window provides162 usable text
-pixels after the marker reserve. Other item lists, including the100px storage
-columns, need their own full-name checks.
+The 11 previously unresolved category-label sources are now reviewed and
+inserted. The private family contains 14 labels and two format shapes (16 text
+resources). All 30 controlled native cases pass, covering six nameable categories
+in inventory and storage, with and without prices; pot counts; equipped/cursed
+markers; and repeated action opening/cancellation. Eight widest English letters
+stay on one line, with name ink ending at 88–105px and the tested price column
+starting at 121px. Native storage deposit/withdrawal and unchanged saved-name
+bytes are checked. See [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md).
 
-The user explicitly rejected additional item-name lines on 2026-09-29. Keep
-single-row item names and solve any remaining layout problems within that
-constraint. This does not approve clipping, overlapping prices, truncating saved
-names, shrinking the selected font or a Japanese-name compatibility exclusion.
-
-The demonstrated problem concerns long **player-assigned Japanese custom names**,
-including names from Japanese saves; it is not a requirement to wrap ordinary
-English item names. In the existing controlled prototype, all six tested nameable
-categories fit eight wide English letters on one inventory line, both with and
-without prices: visible name edges are 88–105px and the tested price column begins
-at121px. This is bounded inventory evidence, not acceptance for every price,
-quantity, category or the separate100px storage columns.
-
-English category translations remain in a separate prototype and are not counted
-as completed inventory sources. Their eventual insertion still needs verified
-single-line layouts, the selected font at normal spacing and8px border gaps.
+For the historical comparison, the earlier baseline was an English development
+ROM retaining Japanese category labels. A later probe confirmed Japanese-name
+price overlap on the pinned, untouched Japanese ROM in all six tested categories.
+With eight kana and a pot count of 1, name ink ends at 146px while the price starts
+at 121px; a synthetic count of 99 ends at 153px. All 24 cases preserve the original
+ROM, renderer, geometry and source pointers. Controlled inventory/name/price flags
+and ordinary menu inputs are recorded; original ROM/save hashes and the battery
+remain unchanged. The English category prototype's Japanese-name edge reaches
+169px, with an unpriced advance of 172px. These measurements do not impose a
+Japanese-name layout requirement.
+[Original-ROM report](../build/custom-name-parity/original/report.json) ·
+[Original Japanese pot screenshot](../build/custom-name-parity/original/154-count-1-priced-True/inventory.png).
 
 ## Remaining gameplay evidence
 
@@ -81,9 +92,21 @@ including marked Storage-pot actions and ordinary trap discovery after controlle
 setup. Together with the item-placeholder correction, 55 bindings pass 308
 native cases. The continuation has now fixed all 20 outstanding leads and nine
 more caller failures, with 110 native cases and 13 blacksmith exchanges. The copied
-refusal is confirmed English. The 15-reader scan retains 529 unresolved arguments
-as static limits; its resolved direct bindings reveal no further Japanese
-sentence. Discovery, source review and caller repair remain separate work.
+refusal is confirmed English. The deeper [source-reader audit](LOCALIZATION_CLOSURE.md)
+follows town RAM tables, verified entry helpers, stack buffers and their
+producers. Of the earlier 529 unresolved calls, 102 now bind English resources;
+307 have producer candidates, five require manual producer analysis, and 115 retain unknown
+data flow. Disassembly identifies all five remaining buffer producers as the
+bank amount editor, main/child action builders, status row and root commands;
+their native verification families are recorded in the audit. An additional
+eight-branch storage dispatch scan binds 13 more calls to English, leaving
+102 unknown data-flow calls across the combined reports, and finds no
+unresolved-town-source reader.
+The computed-reader follow-up then found and fixed the final wind warning
+and all nine labels in a separate town overview. The latter sources were absent
+from the previous catalog. The remaining 63 unresolved shared/town sources are
+not declared unused from missing bounded references. Final evidence and the
+controlled overview's scope are in [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md).
 
 A repeatable ordinary-input run on accepted3,768 reaches all three tutorial
 floors,14 pickups and14 English tips without Japanese text glyph leads. Current

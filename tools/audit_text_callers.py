@@ -57,7 +57,9 @@ def condition(code, flags):
             not z and n == v, z or n != v)[code]
 
 
-def trace(original, compiled, seeds, calls, budget=12000):
+def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read_observer=None,
+          stack_model=False, initial_registers=None, call_observer=None, paired_stack_adjustments=False,
+          max_path_length=900):
     """Conservative constants, paired across ROMs; unknown operations stop a path.
 
     Unknown conditional branches fork, so impossible paths can survive. Calls clear
@@ -68,26 +70,51 @@ def trace(original, compiled, seeds, calls, budget=12000):
     def half(at):
         return struct.unpack_from('<H', original, at)[0]
     def read(pair, size=4):
-        if pair is None or any(not BASE <= a <= BASE+len(rom)-size
-                               for a, rom in zip(pair, (original, compiled))):
+        if pair is None:
             return None
-        return tuple(int.from_bytes(rom[a-BASE:a-BASE+size], 'little')
-                     for a, rom in zip(pair, (original, compiled)))
+        values = []
+        for side, (address, rom) in enumerate(zip(pair, (original, compiled))):
+            if BASE <= address <= BASE+len(rom)-size:
+                raw = rom[address-BASE:address-BASE+size]
+            else:
+                image = next(((start, images[side]) for start, images in memory_images
+                              if start <= address <= start+len(images[side])-size), None)
+                if image is None:
+                    return None
+                start, payload = image
+                raw = payload[address-start:address-start+size]
+            values.append(int.from_bytes(raw, 'little'))
+        value = tuple(values)
+        if read_observer is not None:
+            read_observer(pc+BASE, pair, size, value, seed+BASE)
+        return value
     def binary(x, y, fn):
         return None if x is None or y is None else tuple(fn(a, b) & 0xFFFFFFFF for a, b in zip(x, y))
     for seed in sorted(seeds):
-        work = [(seed, {}, ())]
+        # Synthetic addresses identify stack-relative arguments only. They are
+        # never dereferenced as real memory or treated as translated strings.
+        initial = {13: (0x10000000, 0x10000000)} if stack_model else {}
+        initial.update((initial_registers or {}).get(seed, {}))
+        work = [(seed, initial, ())]
         seen = set()
         steps = 0
         while work and steps < budget:
             pc, regs, trail = work.pop()
             key = (pc, tuple(sorted(regs.items())))
-            if key in seen or not 0 <= pc < LIMIT or len(trail) >= 900:
+            if key in seen:
+                continue
+            if not 0 <= pc < LIMIT:
+                stops['outside_scan_range'] += 1
+                continue
+            if len(trail) >= max_path_length:
+                stops['path_length_limit'] += 1
                 continue
             seen.add(key)
             steps += 1
             v = half(pc)
-            if original[pc:pc+2] != compiled[pc:pc+2]:
+            patched_stack = (paired_stack_adjustments and stack_model and v & 0xFF00 == 0xB000
+                             and struct.unpack_from('<H', compiled, pc)[0] & 0xFF00 == 0xB000)
+            if original[pc:pc+2] != compiled[pc:pc+2] and not patched_stack:
                 stops['patched_instruction'] += 1
                 continue
             n, d, s = pc+2, v & 7, (v >> 3) & 7
@@ -152,7 +179,11 @@ def trace(original, compiled, seeds, calls, budget=12000):
                     if k >= 1000:
                         regs.pop(k)
             elif v & 0xF800 in (0xA000, 0xA800):
-                assign((v >> 8) & 7, None)
+                if stack_model:
+                    origin = regs.get(13) if v & 0x800 else ((pc+BASE+4) & ~3,)*2
+                    assign((v >> 8) & 7, binary(origin, ((v & 255)*4,)*2, lambda a,b:a+b))
+                else:
+                    assign((v >> 8) & 7, None)
             elif v & 0xF000 == 0x5000:
                 kind = (v >> 9) & 7
                 if kind >= 3:
@@ -181,14 +212,23 @@ def trace(original, compiled, seeds, calls, budget=12000):
             elif v & 0xF800 == 0x2800:
                 assign(999, binary(regs.get((v >> 8) & 7), (v & 255, v & 255), compare_flags))
             elif v & 0xFE00 == 0xB400:
-                pass
+                if stack_model:
+                    size = ((v & 255).bit_count() + bool(v & 0x100))*4
+                    assign(13, binary(regs.get(13), (size,)*2, lambda a,b:a-b))
             elif v & 0xFE00 == 0xBC00:
                 if v & 0x100:
                     continue
                 for i in range(8):
                     if v & (1 << i):
                         assign(i, None)
+                if stack_model:
+                    size = (v & 255).bit_count()*4
+                    assign(13, binary(regs.get(13), (size,)*2, lambda a,b:a+b))
             elif v & 0xFF00 == 0xB000:
+                if stack_model:
+                    ops = (v, struct.unpack_from('<H', compiled, pc)[0] if paired_stack_adjustments else v)
+                    deltas = tuple((op & 127)*4*(-1 if op & 128 else 1) for op in ops)
+                    assign(13, binary(regs.get(13), deltas, lambda a,b:a+b))
                 for k in list(regs):
                     if k >= 1000:
                         regs.pop(k)
@@ -214,13 +254,23 @@ def trace(original, compiled, seeds, calls, budget=12000):
                 if original[pc:pc+4] != compiled[pc:pc+4]:
                     stops['patched_call'] += 1
                     continue
+                if call_observer is not None:
+                    hi = v & 2047
+                    offset = ((hi-2048 if hi & 1024 else hi) << 12) + ((half(pc+2) & 2047) << 1)
+                    call_observer(pc+BASE, pc+BASE+4+offset, [regs.get(i) for i in range(4)], seed+BASE,
+                                  [p+BASE for p in trail]+[pc+BASE])
                 if pc+BASE in calls:
                     target = calls[pc+BASE]
                     arg = regs.get(CONSUMERS[target][1])
                     if arg:
-                        observations.setdefault((pc+BASE, *arg), {'call': pc+BASE, 'consumer': target,
+                        observation = {'call': pc+BASE, 'consumer': target,
                             'original_argument': arg[0], 'compiled_argument': arg[1],
-                            'seed': seed+BASE, 'path': [p+BASE for p in trail]+[pc+BASE]})
+                            'seed': seed+BASE, 'path': [p+BASE for p in trail]+[pc+BASE]}
+                        if stack_model:
+                            observation['register_arguments'] = [regs.get(i) for i in range(4)]
+                            observation['argument_kind'] = ('stack-relative' if all(0x0FFF0000 <= a <= 0x10010000 for a in arg)
+                                                            else 'concrete-address-or-value')
+                        observations.setdefault((pc+BASE, *arg), observation)
                 for i in (0, 1, 2, 3, 12, 999):
                     assign(i, None)
                 n = pc+4

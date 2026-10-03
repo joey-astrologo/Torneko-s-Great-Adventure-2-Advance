@@ -57,6 +57,14 @@ item-definition consumer audit also runs from `build.sh`, and the blacksmith
 transaction verifier now rejects unexpected Japanese glyphs. These gates do
 not establish complete caller discovery.
 
+The [English custom-item gate](LOCALIZATION_CLOSURE.md) runs 30 native cases
+through `tools.verify_custom_items`: six nameable categories, English name
+widths, prices, counts, markers, action restoration and storage round trips.
+Japanese custom-name width is outside this acceptance scope; saved-name bytes
+and buffer bounds remain checked. The caller/event investigations and further
+ordinary gameplay audits have separate reproduction commands in
+[EXPLORATION.md](EXPLORATION.md).
+
 The build starts from the pinned Japanese ROM and retained source assets. It
 adds the selected Torneko 2 compact font and [original-sized early menus](MENU_LAYOUTS.md), English name entry, opening dialogue, resume/menu labels,
 first-dungeon tutorials, first-castle conversations, the first travel menu, and
@@ -224,3 +232,22 @@ workers preserve their complete reports and only stage matching-ROM, fixture,
 verifier/font-hash and capture evidence. The full run still requires the exact
 complete case set and revalidates all cache keys/captures. No concurrent worker
 uses the main verifier's output directory while executing cases.
+
+
+The computed wind and town-overview checks also run from `build.sh`:
+`tools.verify_wind` covers six native wind-stage/name cases;
+`tools.verify_town_overview` covers the nine separate map labels, original
+selector/navigation code, window centring, widening, repeated redraws and vacated
+backgrounds. Their controlled setup and natural-route limits are recorded in
+[LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md). That document also distinguishes
+the completed3,801 full-suite baseline from the final3,811 affected checks and
+byte-identical unchanged-resource proof.
+
+The approved event repairs have a separate 3,813-resource receipt in
+`build/event-stub-repair/receipt.json`. `tools.verify_event_repairs`, now in
+`build.sh`, checks eight original selector/choice/flag branches, English reads,
+glyphs, visible pixels and caller guards. The before/after ledger comparison
+accounts for relocation of existing pointers and exactly two new event texts;
+it does not describe prior allocations as byte-identical at their old addresses.
+See [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md) for editorial provenance and
+controlled-route limits.

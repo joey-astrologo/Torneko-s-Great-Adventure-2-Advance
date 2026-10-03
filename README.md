@@ -22,16 +22,16 @@ percentage yet. The missed Japanese menu banner exposed a gap in both the
 automated coverage checks and visual review. See the
 [coverage assessment and audit requirements](docs/COVERAGE_AUDIT.md).
 
-The current development build contains **3,785 inserted text resources and
+The current development build contains **3,813 inserted text resources and
 20 English graphics**, including the approved title, all five corner logos and
 13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
 English font and supports seven-character player names, including `Torneko`.
 The original GBA credits are already English and remain unchanged.
 
-Translation, discovery and playtesting continue. **111 known catalog sources
+Translation, discovery and playtesting continue. **97 known catalog sources
 still need investigation or review**; complete text discovery and full-game
 runtime coverage are not yet proven. Insertion counts are not a completion
-percentage. The 111-source backlog also excludes missed display paths for
+percentage. The 97-source backlog also excludes missed display paths for
 already-reviewed text.
 
 The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
@@ -55,6 +55,17 @@ caller failures, including six blacksmith item-name producers. It passes110
 native cases and 13 complete blacksmith exchanges; the earlier 308 caller cases
 also pass on the new ROM. The expanded disassembly scan and 80 item-definition
 loads have matching audit receipts. Whole-game coverage remains unverified.
+
+The [continued localization audit](docs/LOCALIZATION_CLOSURE.md) inserts English
+custom-item categories and formats, with 30 native cases covering English names,
+prices, counts, markers and storage round trips. It also follows relocated town
+tables, service dispatch and buffer producers, investigates the single-character
+event records, and adds ordinary quest/storage and defeat/retry screen audits.
+Its computed-reader follow-up fixes the final wind-expulsion message and nine
+previously uncatalogued town-overview labels, with native regression checks.
+The two referenced incomplete original dialogue records now have
+[approved contextual repairs](docs/EVENT_STUB_AUDIT.md), verified through eight
+native branch cases. They remain explicitly documented as editorial reconstructions.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)

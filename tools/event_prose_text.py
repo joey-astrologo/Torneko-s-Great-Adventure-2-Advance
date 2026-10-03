@@ -21,6 +21,11 @@ def add_prose(build, bank_data, changed_by_bank):
         require(row['status']=='reviewed' and row['prose_review'],'Event prose lacks bilingual review')
         bank,entry=sources[row['id']];raw=bank['data'][entry['start']:entry['end_exclusive']]
         require(raw.hex()==row['source_hex'] and digest(raw)==row['source_sha256'],'Event prose source differs')
+        editorial = row.get('editorial_reconstruction')
+        if editorial:
+            require(editorial['approved_by']=='user' and editorial['approval_date']
+                    and row['prose_review']['insertion_approved'] and editorial['basis'],
+                    'Editorial reconstruction lacks explicit approval/provenance')
         require(row['id'] not in STATIC_FORMAT_SOURCES and not re.search(rb'%[-0-9]*l?[dsc]',raw), 'Special formatter requires separate insertion')
         require(not any(command in row['english'] for command in ('@A@','@B@','@C@')), 'Event command requires separate branch validation')
         payload,layout=compile_dialogue(row['english'],entry['tokens'])
@@ -32,6 +37,8 @@ def add_prose(build, bank_data, changed_by_bank):
         result.append({'id':row['id'],'rom_offset':offset,'source_sha256':row['source_sha256'],'encoded_hex':payload.hex(),
                        'layout':layout,'language_status':'reviewed','batch':'event-prose','bank':bank['id'],
                        'slots':[{'group':entry['group'],'index':entry['index'],'slot':slot,'relative':entry['relative'],'replacement':relative}]})
+        if editorial:
+            result[-1]['editorial_reconstruction'] = editorial
     return result,digest(CATALOG.read_bytes())
 
 def add_prototype(build):
