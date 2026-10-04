@@ -1,19 +1,25 @@
 # Graphics discovery queue
 
-Updated 2026-09-30. This records native resource discoveries and work still to
+Current text/graphics counts and build identity are in [the coverage matrix](COVERAGE_AUDIT.md).
+Lead remaining discovery with scene loaders, decompression and atlas consumers,
+then inspect decoded assets and native frames. An ordinary playthrough is not
+required; record controlled or assisted scene entry separately.
+
+Updated 2026-10-03. This records native resource discoveries and work still to
 investigate. Exact ranges and evidence are in [MEMORY_MAP.md](MEMORY_MAP.md).
 Discovering an asset does not authorize overwriting it or establish complete
 graphics coverage.
 
 | Family | Current evidence | Remaining work |
 |---|---|---|
-| Main title artwork/logo | Approved wood-and-gold title inserted; native full-screen, palette and startup-transition checks pass. Original footer exact. | [Inserted gallery and acceptance](TITLE_INSERTION.md). Full-game playtesting remains open. |
+| Main title artwork/logo | Approved wood-and-gold title inserted; native full-screen, palette and startup-transition checks pass. Original footer exact. | [Inserted gallery and acceptance](TITLE_INSERTION.md). Additional scene consumers remain outside these title checks. |
 | Menu/name-entry logo appearance | All five floating-logo backgrounds approved and inserted. Ordinary menu/name/cancel/reopen routes pass; surrounding pixels and 16 UI palette entries remain exact. | [Actual screenshots](../build/title-insertion/index.html). Later logo occurrences remain open. |
-| Town and opening backgrounds | [Opening scene](../build/opening-text/native/opening-1.png) and flashback captures in the recorded route | Decode the actual graphics families; inspect lettering, overlays and animated variants separately. |
-| Dungeon arrival lettering | 13 English Shiren name graphics and Level inserted, including wider Ordeal Mansion; 30 native pixel/upload/return cases pass. Original digits/F retained. | [Native inserted-card gallery](../build/arrival-cards/inserted/index.html). Natural routes beyond the first entry remain open; [insertion evidence](ARRIVAL_INSERTION.md). |
+| Full-screen backgrounds | All 22 records, 19 unique bases and nine foreground records decoded; all 22 native tile/map uploads pass. Existing six title/logo replacements account for the Japanese lettering in this table. | [Decoded layers and native evidence](../build/graphics-discovery/backgrounds/index.html). Other loaders remain separate. |
+| Scrolling town backgrounds | All 28 records / 23 unique bases, 11 flag replacements and 14 door records decoded; 53 selector states / 377 native calls pass. | [Scene assets and selector evidence](../build/graphics-discovery/town/index.html). Controlled selectors establish these assets, not ordinary access to every story state. |
+| Dungeon arrival lettering | 13 English Shiren name graphics and Level inserted, including wider Ordeal Mansion; 30 native pixel/upload/return cases pass. Original digits/F retained. | [Native inserted-card gallery](../build/arrival-cards/inserted/index.html). Later entry/scene integration remains open; use traced callers and assisted access; [insertion evidence](ARRIVAL_INSERTION.md). |
 | Separate town arrival cards | [Frame viewer](../build/arrival-research/index.html): the first scripted castle arrival and return home fade directly into their scenes; no separate card observed on those routes | Trace other town entries and later story states before deciding whether a separate card family exists. |
-| Signs and other baked-in text | No completed asset audit | Inspect decoded scenes and sprite/object layers at native resolution. |
-| Ending credits and surrounding artwork | GBA scrolling bitmap decoded: 67 English lines / 15 sections; all visible lines covered by controlled native text-layer comparisons. User approved keeping this artwork unchanged on September 30. | [Original credits viewer](../build/credits/audition/index.html). Natural ending playback, surrounding artwork and untouched scene transitions remain open. |
+| Signs and static scene objects | All 85 static object instances / 79 distinct images from the scrolling table decoded with native palette lookup. Visual review of these and the scene layers found no additional Japanese lettering. | Independently animated actors and other atlas consumers remain outside this bounded inventory. |
+| Ending credits and surrounding artwork | Original 67-line English roll preserved. A complete controlled ending now runs all five scenes, native save, fades, credits and END artwork through return; all 57 ending sources appear, with 71 reads / 3,338 glyphs and no unexpected Japanese or layout violations. | [Full sequence and native receipt](../build/ending-sequence-guarded/index.html). One bank-call entry override; original fixture name retained. Ordinary ending access and other entry-state combinations remain unproved. |
 
 The user reopened credits/arrival discovery and auditions on 2026-09-29.
 See [GRAPHICS_AUDITION.md](GRAPHICS_AUDITION.md) for reproduction, budgets and
@@ -52,6 +58,28 @@ No graphics insertion ownership is claimed from screenshots.
 
 ## Confirmed resource formats
 
+The October 3 loader audit follows the full-screen table at ROM
+`[0013EC14,0013EDCC)` and the separate scrolling table at
+`[0013E674,0013E914)`. The latter includes flag-controlled replacement rectangles,
+door images and static objects; those are no longer an unexamined graphics family.
+The decoded layers are not complete gameplay screenshots. The ending gallery
+separately records actual composed frames without replacing scene updates,
+display registers or the credit renderer. Its saved Japanese player name is
+intentional user data and is checked by exact substitution, not a blanket glyph
+exception. Source ROM/save files remain unchanged; native ending saving affects
+only the disposable session.
+
+Reproduce these bounded audits:
+
+```bash
+.venv/bin/python -m tools.audit_scene_backgrounds
+.venv/bin/python -m tools.audit_town_graphics
+.venv/bin/python -m tools.audit_ending_sequence --output build/ending-sequence-guarded
+```
+
+Visual-review receipts are stored beside the background/town reports. They
+record visual findings separately from the automated byte/selector checks.
+
 The main title is one 240×160 tiled image: 512 stored palette bytes and 38,400
 8bpp pixel bytes, with a map synthesized by the native loader. The large logo,
 landscape and existing `Push START!` are part of that image. The menu uses a
@@ -63,9 +91,9 @@ The [arrival atlas](../build/arrival-research/first-dungeon/atlas-native-palette
 is 4bpp artwork, 224×264 pixels, containing Japanese area labels and floor
 symbols. Dungeon ID 11 selects its 224×24 **ちょっと不思議の草原** rectangle;
 the compositor adds `1F` separately. It does not use the story font or the
-compact English extension. Its English area-name decision and artwork remain
-pending in this initial discovery pass; the newer audition uses the existing
-reviewed destination name Mysterious Meadow.
+compact English extension. That original atlas is retained. Its selected English replacement, Mysterious
+Meadow, is now approved, inserted and natively verified; see
+[the insertion guide](ARRIVAL_INSERTION.md).
 
 [Native graphics report](../build/graphics-research/report.json) ·
 [Title/background sources](../build/graphics-research/title/report.json) ·

@@ -134,7 +134,13 @@ establish ordinary ending access, untouched scene/window behavior, initial
 lead-in/fade correctness or subsequent ending artwork. Eight blank/lead-in/fade
 captures are explicitly excluded from the full-frame matches. Direct reads of
 write-only GBA scroll/blend registers are recorded diagnostics, not reliable
-register values. Full natural ending playback remains a later test.
+register values. A later [complete ending audit](../build/ending-sequence-guarded/index.html)
+now covers integration after one controlled bank-call entry: native saving,
+five scenes, all 57 ending sources, fades, credits, END artwork and return, with
+caller ABI/stack guard and unfiltered text checks. It does not isolate or replace
+scene updates or display state. Ordinary ending access and other entry states
+remain separate. The original credit-layer report above retains its narrower
+scope; the later route does not change that historical evidence.
 
 The [arrival report](../build/arrival-cards/native/report.json) passes **18 cases**:
 all13 IDs at floor1, ordinary floors10/99/999, and Well levels10/11. Original
@@ -173,7 +179,9 @@ bash tools/verify_graphics_audition.sh
 `config/credits-audition.json` holds the raster transcription. Source ownership,
 reader addresses and limits are recorded in [MEMORY_MAP.md](MEMORY_MAP.md).
 The original discovery/audition stage did not alter the ROM. The subsequent
-approved insertion adds 14 graphics while retaining the 3,770 text-resource count.
+approved arrival insertion added 14 graphics while retaining that milestone's
+3,770 text-resource count. The current build has 20 graphics including the title
+and corner logos; see [the coverage matrix](COVERAGE_AUDIT.md).
 The [combined receipt](../build/graphics-audition/acceptance.json) binds the
 current studios and input files to the native/browser reports. It records
 candidate overflows explicitly and is separate from ROM-release acceptance.

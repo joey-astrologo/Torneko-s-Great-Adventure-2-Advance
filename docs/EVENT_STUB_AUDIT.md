@@ -1,5 +1,11 @@
 # Single-character event source audit — 2026-10-02
 
+The two repairs below remain accepted in the current build; current identity and
+later tutorial caller repairs are in [the coverage matrix](COVERAGE_AUDIT.md).
+The 34 other records remain investigation leads. Trace their code and entry
+conditions; controlled scene access is appropriate and ordinary progression is
+not required before investigating them.
+
 The Japanese ROM contains 36 event records consisting of one character and a
 terminator. These are source anomalies, not full Japanese sentences awaiting
 translation. On 2026-10-02 the user approved contextual repairs for the two

@@ -7,8 +7,12 @@ The copied identification refusal already reaches English through the queue;
 a native control confirms it. Remi's suspected item-name load reads the Iron
 safe price instead, and its offer is already English.
 
-Current ROM: `81f8b1aa13f6d67d0d9d83ebe4abaef276887e30d46b60442bffe4082e5275d6`.
-The root ROM/BPS are updated. The build contains 3,785 text resources and 20 English
+This page records the historical 3,785-resource repair milestone. Current build,
+resolved later scan stages and outstanding investigations are in
+[the coverage matrix](COVERAGE_AUDIT.md) and [October 3 follow-up](CALLER_FOLLOWUP.md).
+
+Historical ROM: `81f8b1aa13f6d67d0d9d83ebe4abaef276887e30d46b60442bffe4082e5275d6`.
+The root ROM/BPS have since advanced. This historical build contains 3,785 text resources and 20 English
 graphics; the catalog contains 3,666 sources (3,527 reviewed, 111 unresolved,
 28 retained/component entries). Catalog counts do not establish whole-game coverage.
 

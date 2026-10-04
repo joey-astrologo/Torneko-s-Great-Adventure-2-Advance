@@ -62,7 +62,7 @@ through `tools.verify_custom_items`: six nameable categories, English name
 widths, prices, counts, markers, action restoration and storage round trips.
 Japanese custom-name width is outside this acceptance scope; saved-name bytes
 and buffer bounds remain checked. The caller/event investigations and further
-ordinary gameplay audits have separate reproduction commands in
+targeted caller/scene audits have separate reproduction commands in
 [EXPLORATION.md](EXPLORATION.md).
 
 The build starts from the pinned Japanese ROM and retained source assets. It
@@ -86,7 +86,7 @@ Outputs:
 - [Native acceptance report](../build/english/name-entry-validation/report.json),
   normal input schedules, screenshots and isolated disposable saves.
 - [Cumulative acceptance receipt](english-services-validation.json), linking the
-  ten gameplay/text reports, four additional menu reports, source verification
+  cumulative per-family native/menu reports, source verification
   and reproducible build.
 - [Typography correction gallery](../build/typography/index.html), matching numbers,
   normal item spacing, three-pixel word spaces and attached bank colons.
@@ -103,8 +103,8 @@ evening/morning, sale proceeds and three village NPCs, including both Ed choices
 The [home-book/banker batch](HOME_BOOKS.md) adds all ten tips, the blue-book
 actions/save flows, the first banker choices and mansion entrance. The
 [mansion quest batch](MANSION_QUEST.md) adds safe recovery, both family questions,
-the next morning and bank opening. Subsequent service work includes 206
-non-placeholder item names, reviewed descriptions, bank rewards, repaired
+the next morning and bank opening. Subsequent service work covers all 221 item definitions, reviewed descriptions,
+154 appearance labels, English custom names and inscriptions, bank rewards, repaired
 storage, bakery purchases, dungeon actor names and the currently checked combat
 and status messages.
 
@@ -119,8 +119,14 @@ separately. See [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage.
 Native checks distinguish controlled renderer/getter/formatter calls and state
 substitutions from ordinary gameplay routes.
 
-Current remaining work and accepted/development build identities are maintained
-in [TEXT_PROGRESS.md](TEXT_PROGRESS.md). A completed known catalog does not
+Current status and remaining work are maintained in
+[the coverage matrix](COVERAGE_AUDIT.md) and [TEXT_PROGRESS.md](TEXT_PROGRESS.md).
+The latest archive is `build/accepted/3814-tutorials/`, with 3,814 text resources,
+20 graphics and 182 passing unit tests. Its [completion receipt](../build/caller-branches/completion.json)
+records successful cumulative native acceptance and the resolved tutorial report-
+generation failure: the final report stage was resumed after correcting its
+20-case expectation to 22. This is not a claim that the initial full command
+exited successfully. A completed known catalog does not
 establish complete game coverage. Approved title/background and arrival graphics
 are now inserted; their validation and remaining natural-route gaps are recorded
 in the corresponding graphics guides.
@@ -251,3 +257,21 @@ accounts for relocation of existing pointers and exactly two new event texts;
 it does not describe prior allocations as byte-identical at their old addresses.
 See [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md) for editorial provenance and
 controlled-route limits.
+
+## Usage-limited release checkpoint (2026-10-03)
+
+[Download the patch checkpoint](../build/releases/2026-10-03-tutorials.zip).
+It contains the BPS, release notes, checksums, original acceptance and subsequent
+research receipt. The fresh compiler output in `build/release-checkpoint-rebuild/`
+is byte-identical to accepted `3814-tutorials`; patch application is independently
+verified. Additional audits and 184 tool tests required no new ROM patch or full
+native-suite rerun. The package remains a development release. Preserve this
+accepted checkpoint while later candidates are investigated and tested.
+
+The subsequent [scene-audit checkpoint](../build/releases/2026-10-03-scene-audit.zip)
+preserves the same accepted BPS with additional evidence: 186 unit tests,
+computed-reader dispositions, both background descriptor families and the complete
+controlled ending. `SCENE_AUDIT.json` pins those reports separately from original
+cumulative acceptance. `build/scene-audit-rebuild/` reproduces the accepted ROM/BPS,
+including independent patch application. This is an audit update, with no new
+translation version or ROM change; both earlier checkpoint and archive remain.

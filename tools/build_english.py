@@ -238,7 +238,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
         from tools.dungeon_travel_text import add_dungeon_travel
         dungeon_travel=add_dungeon_travel(build)
         from tools.tutorial_help_text import add_tutorial_help
-        tutorial_help=add_tutorial_help(build)
+        tutorial_help=add_tutorial_help(build, dialogue if include_story else None)
         from tools.link_text import add_link_text
         link_text=add_link_text(build)
         from tools.ending_notice_text import add_ending_notice

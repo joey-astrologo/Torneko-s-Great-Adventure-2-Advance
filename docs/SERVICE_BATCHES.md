@@ -1,19 +1,22 @@
 # Dungeon UI, banking, items and services
 
-Authorized as four continuous batches after approval of the corrected early
-menu gallery. All English must fit measured pixel and byte budgets; native
+The original four batches below are completed milestones. Current service
+coverage is summarized here and in [the coverage matrix](COVERAGE_AUDIT.md);
+the later matrix supersedes their initial exclusions. They were authorized as
+continuous work after approval of the corrected early menu gallery. All English
+must fit measured pixel and byte budgets; native
 spacing remains part of acceptance. The Torneko 3 terminology/prose rules in
 LOCALIZATION_PLAN.md remain authoritative.
 
-1. Finish the Option submenu, dungeon status labels and further observed item
-   commands. Include child help/prompts and toggle/selection behavior.
-2. Translate bank transaction formats and prompts. Exercise deposit, withdrawal,
+1. Completed the Option submenu, dungeon status labels and further observed item
+   commands, including child help/prompts and toggle/selection behavior.
+2. Translated bank transaction formats and prompts; exercised deposit, withdrawal,
    cancellation, insufficient funds and overflow warnings on disposable saves.
-3. Extract item identities/descriptions and insert a representative reviewed set.
-   Establish complete row budgets with markers, quantities, enhancements,
+3. Extracted item identities/descriptions and inserted a representative reviewed set.
+   Established complete row budgets with markers, quantities, enhancements,
    unidentified names and prices, separately from description wrapping.
-4. Reach and audit the first populated shop/storage services, translate the
-   verified subset and preserve explicit unreachable/untested coverage.
+4. Reached and audited the first populated shop/storage services, translated the
+   verified subset and recorded untested states without inferring unreachability.
 
 Each batch records sources, reviewed wording, ownership, width/byte budgets,
 native captures and checks. Controlled state probes remain distinct from routes
@@ -69,7 +72,17 @@ backgrounds continuous and attached the bank colons to their labels. See
 Option's bounded single-byte spaces remain six pixels; ordinary authored English
 uses three-pixel spaces. Unknown contexts still block their own insertion.
 
-## Latest continuation
+## Current acceptance (2026-10-03)
+
+The current ROM is identified in [the matrix](COVERAGE_AUDIT.md). The cumulative
+[service receipt](english-services-validation.json) requires 2,006 item cases,
+166 alias cases, 12 core bank cases, 21 bank-reward cases, three bank-persistence
+cases, 13 bakery cases, three storage transaction cases and ten storage-service
+cases. English custom names additionally pass 30 cases. Blacksmith, Gaibara, Remi,
+mayor and other service families have their own case lists in that receipt.
+These are bounded families, not complete service/quest coverage.
+
+## Ordinary continuation and earlier cohorts
 
 See [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) for the October 3 continuation:
 ordinary gameplay now completes the Cemetery quest, unlocks the bakery and
@@ -79,10 +92,9 @@ Ten storage-service cases also cover the second capacity-warning caller when
 two selected items exceed one free slot. Controlled setup remains distinguished
 from ordinary quest and purchase inputs.
 
-The earlier [TEXT_PROGRESS.md](TEXT_PROGRESS.md) milestones covered all 206 identified item names and their
-reviewed descriptions, storage child prompts, bank rewards/persistence, controlled
-bakery purchases, 892 additional story passages and controlled holy-flame text
-are covered there. All 154 unidentified appearances and further player-effect/
+Earlier [TEXT_PROGRESS.md](TEXT_PROGRESS.md) milestones covered the first 206
+identified names, reviewed descriptions, storage child prompts, bank rewards/
+persistence, controlled bakery purchases, 892 story passages and holy-flame text. All 154 unidentified appearances and further player-effect/
 item-use messages now pass separate combined-ROM checks. Earlier counts and
 exclusions below describe the original service milestone and are superseded
 where explicitly covered. Ordinary bakery unlocking and saved purchase are now
@@ -101,8 +113,8 @@ natural acquisition and translation completeness.
 The original eight-name cohort has expanded to all 206 non-placeholder identified
 names in `translations/items-review.json`; terminology evidence and provisional
 statuses remain in the glossary. The 154 appearance names have their own reviewed
-catalog and native prototype/cumulative checks. Custom naming, inscriptions and
-special records remain separately scoped.
+catalog and native prototype/cumulative checks. The additional 15 special/reserved definitions, English custom naming and
+inscription input are now integrated, with separate recorded consumer checks.
 
 ## Storage provenance and limits
 
@@ -120,12 +132,13 @@ back out. An English save with both items deposited is cold-loaded and both item
 are withdrawn again. Stored item sorting changes their list order; the test
 selects the observed bread row rather than assuming it is first.
 
-The bakery is unavailable at this earlier story point: the native cutscene places
-the baker at the haunted graveyard. Bakery transactions, storage sale/full-capacity
-and filled-pot prompts, warehouse upgrades and later mode behavior remain explicit
-follow-up work. Their root command labels being English does not approve those
-child flows. Bank gift/reward text and saved bank-transfer persistence also remain
-outside this batch's twelve transaction cases.
+At that early checkpoint the bakery is unavailable and the baker is at the
+haunted graveyard. Later receipts cover bakery transactions and ordinary unlocking,
+storage sale/capacity/filled-pot prompts, bank rewards and saved transfer persistence.
+They are no longer pending merely because the first service batch excluded them.
+Unvisited upgrade/mode states and other consumers remain separate investigation
+work. Trace their callers and use targeted assisted scene checks; an ordinary
+quest replay is not required to inspect or localize those paths.
 
 ## Reproduction
 

@@ -2,7 +2,7 @@
 
 This page records the original compact-font milestone. After comparison with
 Torneko 3, the user preferred this font's readability. It is restored as the
-build default following the [early menu resize](MENU_LAYOUTS.md). The capitals/digits and authored letters remain; the current asset narrows only
+build default following the [early-menu correction with original geometry](MENU_LAYOUTS.md). The capitals/digits and authored letters remain; the current asset narrows only
 the blank word-space advance to three pixels. See [typography corrections](TYPOGRAPHY.md). Open the [side-by-side audition](../build/font-audition/index.html)
 for both fonts and original/resized budgets.
 

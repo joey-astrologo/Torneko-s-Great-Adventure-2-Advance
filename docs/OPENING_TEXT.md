@@ -14,8 +14,9 @@ The editable verified inventory is
 [translations/master.json](../translations/master.json). English fields are
 now populated for the [English opening batch](OPENING_ENGLISH.md). The following
 research describes the initial source-discovery/extraction pass. The accumulated
-catalog now contains 50 sources; current insertion and gameplay acceptance are
-documented in the English batch report.
+catalog at that early stage contained 50 sources. Current insertion and gameplay
+acceptance are documented in [the coverage matrix](COVERAGE_AUDIT.md); the opening
+batch report retains its historical scope.
 
 ## Native route and source provenance
 
@@ -138,18 +139,16 @@ Evidence:
 The supplied original ROM and save are unchanged. No new English insertion or
 original ROM patch is part of this discovery pass.
 
-## Current follow-up work
+## Subsequent work and current investigation
 
-The opening command, relative-table and insertion work is implemented in
-[OPENING_ENGLISH.md](OPENING_ENGLISH.md). Extend naturally reached routes to the
-remaining castle/village NPCs and other gameplay menu/message families. Continue
-classifying the candidate queue, verifying new controls and tracking graphical
-resources in [GRAPHICS_INVENTORY.md](GRAPHICS_INVENTORY.md).
+Opening command/relative-table insertion, castle/home/books/mansion text and
+seven-character English name entry are completed milestones. Their original
+recipes remain in [OPENING_ENGLISH.md](OPENING_ENGLISH.md) and
+[NAME_ENTRY.md](NAME_ENTRY.md), including native save/cold-resume and Japanese-save
+import. Later families include services, records, English inscriptions and custom
+item names; consult [the current matrix](COVERAGE_AUDIT.md) for their exact scope.
 
-The [name-editor component](NAME_ENTRY.md) is now implemented and tested for
-normal English entry, native first-floor saving, cold resume and Japanese-save
-import. Later name contexts and item-specific naming mechanics remain part of
-broader playtesting; the transient display buffer is not permanent name storage.
-
-These are the next parts of the opening-area milestone in
-[LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), not additional approval gates.
+Lead remaining source/caller discovery with disassembly, including computed
+selectors and RAM producers, then execute targeted native scene checks. Assisted
+access in disposable copies is appropriate; an ordinary playthrough does not gate
+research. Graphics discovery continues in [GRAPHICS_INVENTORY.md](GRAPHICS_INVENTORY.md).

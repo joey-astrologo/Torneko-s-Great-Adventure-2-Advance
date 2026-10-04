@@ -155,11 +155,13 @@ Existing native emulator reports cover:
 - [77 inscription-row cases](../build/english/scroll-item-validation/report.json)
   and [nine reference-list cases](../build/english/reference-lists-validation/report.json).
 
-On 2026-10-03, the complete cumulative suite reran these checks on ROM SHA-256
-`452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`.
-The reports, current compiled ROM and manifest now share that identity.
-The additional unfiltered audit covers all nine editor cases on the same ROM.
-See the [caller follow-up acceptance](../build/caller-audit-next/completion.json).
+The cumulative suite reran these family checks on the latest accepted ROM,
+`fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
+See the [current completion receipt](../build/caller-branches/completion.json)
+and [coverage matrix](COVERAGE_AUDIT.md). The additional unfiltered nine-case
+editor audit was recorded on the preceding ROM
+`452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`;
+its [receipt](../build/caller-audit-next/completion.json) remains separate.
 
 Natural acquisition, unlocking every effect through ordinary play, all menu
 contexts, turn timing and every post-inscription use are outside those checks.

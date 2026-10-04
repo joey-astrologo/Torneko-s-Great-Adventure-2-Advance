@@ -22,16 +22,16 @@ percentage yet. The missed Japanese menu banner exposed a gap in both the
 automated coverage checks and visual review. See the
 [coverage assessment and audit requirements](docs/COVERAGE_AUDIT.md).
 
-The current development build contains **3,813 inserted text resources and
+The current development build contains **3,814 inserted text resources and
 20 English graphics**, including the approved title, all five corner logos and
 13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
 English font and supports seven-character player names, including `Torneko`.
 The original GBA credits are already English and remain unchanged.
 
-Translation, discovery and playtesting continue. **97 known catalog sources
+Translation, discovery and playtesting continue. **96 known catalog sources
 still need investigation or review**; complete text discovery and full-game
 runtime coverage are not yet proven. Insertion counts are not a completion
-percentage. The 97-source backlog also excludes missed display paths for
+percentage. The 96-source backlog also excludes missed display paths for
 already-reviewed text.
 
 The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
@@ -66,6 +66,21 @@ previously uncatalogued town-overview labels, with native regression checks.
 The two referenced incomplete original dialogue records now have
 [approved contextual repairs](docs/EVENT_STUB_AUDIT.md), verified through eight
 native branch cases. They remain explicitly documented as editorial reconstructions.
+
+The [caller and branch follow-up](docs/CALLER_FOLLOWUP.md) repairs a second monster
+announcement reader, shield-reflection damage, empty-ability Info and two original
+tutorial selector defects. The latter now show the matching pot and Mimic
+explanations, reusing existing English. Bounded jump-table discovery and broader
+native caller checks lead the remaining work. Controlled scene setup or documented
+invincibility in disposable copies can provide access; ordinary dungeon survival
+does not gate localization research. The [coverage matrix](docs/COVERAGE_AUDIT.md)
+separates current acceptance, historical replays and unresolved code/scene gaps.
+
+Further audits cover both background tables and their static layers, plus the
+complete controlled ending with native saving, all five scenes, credits and END
+artwork. No additional untranslated text or graphical lettering was found in
+those cohorts. The [scene-audit checkpoint](build/releases/2026-10-03-scene-audit.zip)
+contains the unchanged accepted patch with the additional evidence summary.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)

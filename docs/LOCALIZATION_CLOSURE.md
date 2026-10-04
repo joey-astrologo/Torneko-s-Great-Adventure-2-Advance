@@ -1,8 +1,8 @@
 # Continued localization audit — 2026-10-02
 
-This page records the October 2 build. The active October 3 audit and candidate
+This page records the October 2 build. The accepted October 3 continuation and current matrix
 are documented in [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md); the hashes and counts
-below remain historical evidence rather than acceptance of that newer candidate.
+below remain historical evidence rather than acceptance of the newer build.
 
 This records the four requested steps. It does not declare whole-game coverage.
 The original ROM and supplied save are preserved. Research uses disposable
@@ -14,7 +14,7 @@ sessions; each native report records its ROM identity, inputs and state override
 
 ## 1. English custom item names: inserted
 
-The current development build contains **3,813 text resources and 20 graphics**.
+The October 2 development build contained **3,813 text resources and 20 graphics**.
 ROM SHA-256:
 `f47b6df310211585406c921d8070e1824a8e1cf76a324cd72c8b8669ad6ef865`.
 The two approved event repairs are recorded below; the preceding 3,811 ROM/BPS

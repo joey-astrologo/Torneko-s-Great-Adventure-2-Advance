@@ -1,10 +1,15 @@
 # Autonomous text-localization progress
 
 **Whole-game completion: unknown.** The [October 3 caller continuation](CALLER_FOLLOWUP.md)
-has 3,814 inserted text resources and 20 graphics. Its complete cumulative native
-suite, 174 unit tests, font browser checks and clean ROM/BPS reproduction pass.
-The additional unfiltered audit covers 813 sessions across 35 verifier families;
-all 98 bounded-scan callers have investigated dispositions. The current
+has 3,814 inserted text resources and 20 graphics, including the repaired pot and
+early Mimic tutorial callers. Cumulative native acceptance, 182 unit tests,
+315 font-browser contexts / 3,430 measurements and clean ROM/BPS reproduction
+pass. A stale tutorial cohort count in final report generation was corrected;
+the resumed report stage and aggregate acceptance pass. The latest unfiltered
+supplement covers 1,042 sessions across 19 families on the preceding ROM;
+current-ROM tutorial and ordinary-route evidence is recorded separately.
+The earlier 813-session audit gave all 98 bounded-scan callers investigated
+dispositions. The current
 source catalog contains 3,552 reviewed, 96 unresolved and 28 retained/component
 records out of 3,676. Historical percentages below measure source review only. It does not measure the fraction of gameplay
 that displays English. The missed location banner demonstrated an additional
@@ -33,6 +38,30 @@ All 13 names plus Level are inserted and pass 30 native renderer cases, includin
 the widened Ordeal Mansion. The first entry continues through the English
 tutorial and ordinary movement; other selectors use documented controlled probes.
 
+The [release checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip) now includes
+the accepted BPS, notes, original acceptance and subsequent research receipt.
+A fresh build reproduces the ROM/BPS; 184 current unit tests and 189 additional
+unfiltered native sessions / 13,662 glyphs pass. No new ROM patch was required;
+the earlier full-acceptance unit count and report hashes are preserved.
+
+Further continuation passes 186 unit tests and accounts for 41 computed
+table-base losses. Both background tables (22 full-screen and 28 scrolling
+records), their foreground/replacement layers and all 85 static object instances
+are audited without finding additional Japanese lettering. The complete controlled
+ending now passes native saving, all five scenes / 57 dialogue resources, credits,
+END artwork and return: 71 unfiltered reads / 3,338 glyphs with no unexpected
+Japanese or layout findings. [Evidence and limits](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
+
+## Current next work
+
+Use [the coverage matrix](COVERAGE_AUDIT.md) for the ordered backlog: 62 shared/town
+sources and 34 event fragments, plus uncovered scene/graphics and data-flow
+contexts. The four tutorial configurations now have bounded no-entry evidence;
+the 25-guard/expanded-save scan stops have explicit dispositions. See the
+[release follow-up](CALLER_FOLLOWUP.md#release-checkpoint-and-bounded-continuation). Lead with disassembly, then targeted
+native caller/scene probes. Documented invincibility or state setup in disposable
+copies can provide later access; ordinary dungeon survival is not a gate.
+
 ## Accepted milestone and preceding candidates
 
 The [October 2 continuation](LOCALIZATION_CLOSURE.md) inserts the custom-name
@@ -40,10 +69,17 @@ category family, deepens RAM/stack caller analysis, repairs the two referenced
 event stubs with explicit user approval, and extends ordinary quest/service evidence.
 
 The latest accepted milestone has **3,814 inserted resources and 20 graphics**,
-ROM `452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`.
-The ROM, BPS, ledger and receipts are archived in `build/accepted/3814/`;
+ROM `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
+The ROM, BPS, ledger and receipts are archived in `build/accepted/3814-tutorials/`;
 [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the repairs and validation limits.
-Ordinary gameplay completes Cemetery Dungeon and the bakery quest, continues
+The change reuses existing prose and changes 27 ROM bytes without new allocation.
+Ordinary play cold-resumes an earned Mt. Fiery suspend on this ROM, reaches 8F,
+and verifies defeat/results and both retry outcomes. Quest completion remains open.
+
+The preceding 3,814-resource ROM
+`452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`
+remains archived in `build/accepted/3814/`. Its ordinary gameplay evidence
+completes Cemetery Dungeon and the bakery quest, continues
 through the missing-King audience, and verifies a saved Magic-bread purchase
 with a cold load on this ROM.
 
@@ -64,7 +100,7 @@ Its ROM hash is
 The two approved [event repairs](EVENT_STUB_AUDIT.md) pass eight native branch
 cases and all 1,046 event getters. Existing resources differ only by pointer
 relocation; the repair adds no script, geometry or RAM/save changes.
-Current custom-name, caller, event and gameplay evidence is consolidated in
+October 2 custom-name, caller, event and gameplay evidence is consolidated in
 [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md). The earlier repair milestones
 below retain their original unit counts and byte-delta receipts.
 The [reader-path audit](READER_PATH_AUDIT.md) now accounts for all four direct
@@ -115,7 +151,7 @@ identify 307 producer candidates, follow five buffer producers manually, and
 leave 102 unknown data-flow calls explicit. The computed-reader follow-up then found and fixed the final wind warning and
 nine separate town-overview labels. All80 direct item-
 definition loads in the bounded code region are accounted for: 27 owned English
-table loads and 53 numeric-only loads. The catalog now has 3,676 sources: 3,551
+table loads and 53 numeric-only loads. At that stage the catalog had 3,676 sources: 3,551
 reviewed (including two approved editorial reconstructions), 97 unresolved and
 28 retained/component entries. Source review and
 insertion counts still do not measure whole-game English coverage.
@@ -194,16 +230,16 @@ also passes a fresh-game, ordinary-input tutorial pickup regression: three floor
 and 14 pickups, with no Japanese text glyph leads. These checks do not establish
 complete game discovery or natural access to every translated branch.
 
-The current inventory accounts for 3,676 unique sources: 3,551 reviewed,
-97 unresolved (catalog status `untranslated`) and 28 retained/component sources.
+The current inventory accounts for 3,676 unique sources: 3,552 reviewed,
+96 unresolved (catalog status `untranslated`) and 28 retained/component sources.
 The earlier **96.1%** figure divides reviewed English by every catalog source.
 Its remaining3.9% included accounted-for sources that do not need another English
 translation. The current breakdown is 21 nonlinguistic entries, four sources replaced by English UI
 components, and three deliberately retained Japanese sources (the optional kana
 input pages and an internal appearance-table sentinel).
 
-Excluding those 28 accounted-for sources, **3,551 of 3,648 sources (97.3%) have
-reviewed English; 97 (2.7%) remain unresolved**. Reviewed includes two approved
+Excluding those 28 accounted-for sources, **3,552 of 3,648 sources (97.4%) have
+reviewed English; 96 (2.6%) remain unresolved**. Reviewed includes two approved
 editorial reconstructions. This is a review metric for the
 known catalog, not whole-game completion or proof that every reader displays
 English. Some unresolved sources already have English drafts but still need
@@ -215,12 +251,12 @@ Remaining work includes 34 single-character event stubs,
 legacy system strings and shared-reader audits. The reviewed-source percentage
 does not count these investigation gaps as complete.
 
-The 97 unresolved sources currently divide as follows:
+The 96 unresolved sources currently divide as follows:
 
 | Sources | Family | Remaining work |
 |---:|---|---|
 | 34 | Single-character event placeholders | Three appear only after END; 31 lack a reference in the extracted roots. The two referenced records have approved, inserted repairs; ordinary access remains unproven. |
-| 53 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
+| 52 | Shared system/combat/old menu strings | Trace remaining readers, including memory-card-era text and duplicate formats. |
 | 10 | Town/service table sources | Establish active readers and their actual formatting/layout requirements. |
 
 The [native screenshot gallery](../build/text-decisions/index.html) and
@@ -230,7 +266,7 @@ to choose “Sa/Na” versus an ellipsis was premature; subsequent caller invest
 supported the two contextual repairs now approved and inserted. The custom-name category
 labels and both formats are now inserted; 30 native English-name cases pass
 in inventory and storage, including prices, counts, markers and reopening.
-See [the current continuation](LOCALIZATION_CLOSURE.md).
+See [the October 2 repair milestone](LOCALIZATION_CLOSURE.md).
 Earlier Japanese-name layout blockers in the historical entries below are
 superseded by the October 2 scope clarification in `TEXT_OPEN_QUESTIONS.md`.
 
@@ -244,18 +280,29 @@ integration. New source audits map all 133 ordinary event-script roots and the
 seven NPC resource banks. Six historical controlled native checks confirm that
 the two single-character placeholders render through their selected branches;
 their replacements now pass eight English branch cases. Ordinary reachability
-remains unproven. The audit also records two
-mismatched original help-menu bank/configuration combinations. Natural access
-and their proper explanations remain unresolved. Appearance alias154 is proven
+remains unproven. The audit also recorded two
+mismatched original help-menu bank/configuration combinations. The October 3
+branch audit now repairs both with existing pot/Mimic explanations and verifies
+their NPC selectors and native script handlers; ordinary story access remains
+unproven. Appearance alias154 is proven
 to be an assignment sentinel, with three native initializer checks; that
 internal record is now explicitly retained as metadata, adding no insertion.
 These investigations do not establish whole-game completion or increase the accepted insertion count.
 
+## Earlier accepted-family history
+
+The remainder of this document records earlier acceptance and staging. Build
+counts, pending integrations and next steps below describe their original dates;
+use the current matrix and source inventory above for today's status. In particular,
+English custom names, inscriptions, bank/storage/bakery families and approved
+graphics are integrated; Japanese custom-name overflow does not block acceptance.
+
 The 95 additions accepted at 3,707 cover 75 further tutorial resources,
 11 link-trade resources, eight pickup tutorial tips and an ending save notice.
-The five original inconsistent tutorial selection mappings remain explicit
-investigation gaps; their displayed text is translated and mapping behavior
-preserved. Both occurrences of Seal staff in the bank6 dialogue now use Sealing
+At that milestone, five configurations lacked verified topic mappings. The
+subsequent audit repairs configuration 14 and retains configurations 1, 2, 8, 9 as
+render/cursor-only evidence without references in the extracted scripts.
+Both occurrences of Seal staff in the bank6 dialogue now use Sealing
 staff. A natural fresh tutorial run on that ROM completed all three floors,
 14 pickups and 14 English tips, with no Japanese glyph leads; full-game and
 arrival-artwork coverage remain separate.
@@ -505,13 +552,19 @@ and unknown menu families remain separately scoped. See `ITEM_TEXT.md`.
 
 The repaired-storage quest recipe uses ordinary inputs and native saves.
 Bank/storage transaction persistence passes. Bakery availability and later-story
-progression remain separate from their controlled consumer checks. The original
-Japanese sacred-flame quest route was observed; a complete ordinary English
-quest run is not yet accepted.
+progression remain separate from their controlled consumer checks. Both Japanese and later English holy-flame routes are recorded; the ordinary
+English storage and Cemetery/bakery receipts are in CALLER_FOLLOWUP.md. Unvisited
+later scene branches remain open.
 
-## Discovery and remaining coverage
+## Earlier discovery inventory and staging (historical)
 
-Current accounting: **3,400 unique sources**,3,256 reviewed,117 unresolved,
+The following inventories and prototype notes describe their original stages.
+Their pending/next labels are superseded by later acceptance and the current
+matrix. Current accounting is 3,676 sources: 3,552 reviewed, 96 unresolved and
+28 retained/components. Custom naming, inscription input, bank/storage persistence
+and ordinary English holy-flame/Cemetery/bakery routes now have accepted evidence.
+
+At this earlier stage: **3,400 unique sources**,3,256 reviewed,117 unresolved,
 and27 retained/component dispositions. This includes154 original inscription
 lookup rows (deduplicated by source) and40 fused-ability label pointers.
 The inventory joins seven event banks, the300-slot shared town table,654 shared
@@ -709,7 +762,7 @@ Umber herb is an independent brown-family naming choice to distinguish it;
 [Collins](https://www.collinsdictionary.com/us/dictionary/english/umber) supports
 the color family, not an exact Japanese equivalence or official game name.
 
-## Pending equipment/removal/drop integration
+## Earlier equipment/removal/drop prototype (now integrated)
 
 Nine further reviewed sources now pass a separate insertion prototype, using
 owned copies of their shared pointers and the native conditional line break.
@@ -734,7 +787,7 @@ Ordinary automatic walking remains separate from its controlled wrapper proof. T
 are included in inventory accounting and the 1,887-resource candidate; full
 cumulative acceptance remains pending.
 
-## Pending Floor/Swap consumer
+## Earlier Floor/Swap prototype (now integrated)
 
 A separate five-resource Floor/Swap prototype passes20 native cases and742 glyph
 checks. Thirteen messages fit one line and seven use complete two-line fallbacks.
@@ -766,7 +819,7 @@ label's measured budget. These tests control available IDs; native availability
 and action semantics remain separate. Extraction corrected the full original
 pointer table to45 slots, including a separate pending discard label at ID44.
 
-## Next player-message and town-prose work
+## Earlier player-message and town-prose staging
 
 A separate33-resource player-message prototype passes216 cases, with190 one-line
 and26 two-line results across required and maximum English/Japanese names and
@@ -803,7 +856,7 @@ SHA-256: `6acc7d5348aba4b4340034ce16111de15b913b80336c53b8824d12bfd09af20d`.
 Ordinary unlocking, other town services and unowned blacksmith sources1/2/68
 remain separate. These43 resources are included in the accepted2,010-resource archive.
 
-## Next synthesis/selector prototype
+## Earlier synthesis/selector prototype (now integrated)
 
 Gaibara's34 owned text sources and the shared selector's “Which?” heading now
 pass72 native cases:39 prose/format, five root-menu,25 actual synthesis and three
@@ -1319,7 +1372,7 @@ These21 resources are staged outside3,443; movement, quest state and natural
 scene access remain separate. Two stored farewell strings lack established
 readers in these owners and remain unchanged, with no global-unused claim.
 
-## Next private-table text prototypes after3,514
+## Historical private-table prototypes after 3,514
 
 Four dungeon-entry restrictions pass11 native cases in
 `build/travel-gate-prototype/travel-gate-validation/`: maximum items,

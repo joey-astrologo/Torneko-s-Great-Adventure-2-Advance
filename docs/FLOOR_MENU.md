@@ -8,12 +8,13 @@ from a fresh English opening on 2026-10-02. It now displays
 The subsequent [reader-path audit](READER_PATH_AUDIT.md) found and fixed the
 fourth caller of this same modal: empty inventory. The current check has14
 cases. The13-case results and hashes below record the initial Floor correction;
-current build identity and the additional finding are in that follow-up.
+the additional finding is in that follow-up. Current build identity and later
+acceptance are in [the coverage matrix](COVERAGE_AUDIT.md).
 
 The earlier note about a separate Japanese status-expiry message referred to
 fear/dancing recovery through queue return080096F9. Those are slots3E0/3C0 in
 the subsequent seven-message expiry repair, not an eighth outstanding message.
-Both now pass exact native formatting/rendering checks in the current ROM;
+Both repairs remain in cumulative native formatting/rendering checks;
 see [status-expiry evidence](../build/status-expiry/acceptance.json).
 
 [Before screenshot](../build/floor-menu/negative-control/empty-merchant/panel-0.png) ·

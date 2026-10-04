@@ -1,6 +1,7 @@
 """Owned item-loss and pot-result frames, fields and native visible output."""
 import argparse,struct
 from pathlib import Path
+from tools.compact_font import encode
 from tools.emulator import ffi
 from tools.rom import ROOT,require
 from tools.verify_dungeon_leaves import run as check
@@ -26,10 +27,10 @@ BLOCKS={
  'pot-explode':(0x38842,0x38C9E,0x38CEE,None),
 }
 class Loss:
-    breakpoints=tuple({0x08000000+b[0] for b in BLOCKS.values()})+(0x0805CF54,0x08028848)
-    scope='Six independently owned loss readers and two pot announcements. The skill-item reader runs its actual assigned-skill predicate and native item removal. Other cases explicitly preserve their real prologue/epilogue and jump to the owned name/format/queue block, then skip remaining gameplay. The separate skill name-cache copy is skipped and recorded; no new global buffer claim is made. Full256-byte output/64-byte name guards, maximum names, one-line fit, colours, final pixels, caller ABI and battery are checked. Natural battle/skill/pot outcomes and the skipped global cache remain separate.'
+    breakpoints=tuple({0x08000000+b[0] for b in BLOCKS.values()})+(0x0805CF54,0x0803E7B4,0x08028848)
+    scope='Six independently owned loss readers and two pot announcements. The skill-item reader runs its actual assigned-skill predicate and native item removal. Other cases preserve their real prologue/epilogue and jump to the owned name/format/queue block, then skip remaining gameplay. The skill branch now executes its original global name-cache copy, including formatter-field boundary profiles, and checks the complete copied bytes plus surrounding RAM. No new RAM ownership or allocation is claimed. Full256-byte output/64-byte name guards, maximum names, one-line fit, colours, final pixels, caller ABI and battery are checked. Natural battle/skill/pot outcomes remain separate.'
     def setup(self,owner,g,hero,actor,write,overrides):
-        self.owner=owner;self.item=0x0200DF28+120;self.removed=False;m=g.core.memory
+        self.owner=owner;self.item=0x0200DF28+120;self.removed=False;self.cache=None;self.cache_checked=False;m=g.core.memory
         ident=162 if owner=='pot-explode' else 154 if owner=='pot-break' else 1
         item=bytearray(120);struct.pack_into('<I',item,0,0xC8000000);item[4:6]=b'\3\1' if owner.startswith('pot') else b'\0\1';item[8]=bytes(m[0x020013D0:0x020014D0]).index(ident);write(self.item,item)
         at=0x02003BAC+20*ident;write(at,struct.pack('<I',m.u32[at]|0x40000000))
@@ -49,7 +50,28 @@ class Loss:
             if owner.startswith('pot'):write(r[13]+0x644,struct.pack('<I',self.item))
             jump(start,'Controlled rendering entry after original full prologue; natural event conditions/gameplay are outside this preflight.')
         if a==(OWNERS[owner][2]&~1)+0x08000000:jump(epilogue,'Native message completed; retain final pixels and execute original full epilogue, excluding gameplay outcome.')
-        if owner=='skill' and a==0x0805CF54 and r[14]==0x0803E7B5:jump(0x3E7B4,'Skip separate global name-cache write; the owned stack name was produced natively and its message still executes.')
+        if owner=='skill' and a==0x0805CF54 and r[14]==0x0803E7B5:
+            m=g.core.memory
+            require(r[0]==0x0200FD58 and r[1]==r[13]+0x208,'Skill name-cache source/destination differs')
+            # Exercise the real copy with the same valid encoded field extremes
+            # used by the following formatter, rather than skipping this caller.
+            if self.field!='native':
+                raw=encode('W'*27 if self.field=='maximum-width' else 'i'*31 if self.field=='maximum-bytes' else 'Oaken club')
+                if self.field=='coloured':raw=b'\x03\x05'+raw[:-1]+b'\x05\0'
+                write(r[1],raw.ljust(64,b'\0'))
+            data=bytes(m[r[1]:r[1]+64]);end=data.find(b'\0')+1
+            require(0<end<=64,'Skill name-cache input lacks a bounded terminator')
+            self.cache=dict(regs=r,raw=data[:end],before=bytes(m[0x0200FD38:0x0200FDB8]))
+        if owner=='skill' and a==0x0803E7B4 and self.cache:
+            old=self.cache['regs'];raw=self.cache['raw'];expected=bytearray(self.cache['before'])
+            expected[32:32+len(raw)]=raw
+            require(bytes(g.core.memory[0x0200FD38:0x0200FDB8])==expected,
+                    'Skill name-cache copy changed bytes outside its exact string')
+            require(r[4:12]==old[4:12] and r[13]==old[13],'Skill name-cache copy ABI differs')
+            overrides.append(dict(kind='native-skill-name-cache-observation',address=0x0200FD58,
+                source=old[1],raw_hex=raw.hex(),bytes=len(raw),surrounding_bytes_preserved=True,
+                before_hex=self.cache['before'].hex(),after_hex=bytes(expected).hex()))
+            self.cache_checked=True
     def field_address(self,owner,role,index,r,g):
         offset={'skill-item':0x100,'attack':0x21C,'floor':0x100,'warrior':0x178,'skill':0x208,'timer':0x100,'pot-break':0x11C,'pot-explode':0x11C}[owner]
         require(role=='item' and r[index]==r[13]+offset,'Loss item field ownership differs');return r[index]
@@ -58,6 +80,7 @@ class Loss:
         # The subsequent10228 inventory cleanup can move another record into
         # this slot, so verify the actual removal before that cleanup.
         if owner=='skill-item':require(self.removed,'Native skill-item removal was not observed')
+        if owner=='skill':require(self.cache_checked,'Native skill name-cache copy was not checked')
     def verify_draws(self,owner,field,c):require(c.queued['one_line'],'Item loss/breakage maximum should fit one line')
 
 def run(source,only=None):check(source,only,owners=OWNERS,resource_key='item_loss',folder='item-loss-validation',hooks=Loss())

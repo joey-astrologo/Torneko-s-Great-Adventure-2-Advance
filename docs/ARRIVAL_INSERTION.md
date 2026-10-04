@@ -15,12 +15,12 @@ credits are unchanged.
 Arrival-validation ROM SHA-256: `bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
 BPS SHA-256: `c3b97e07cb143c7072b48e450baea605a0b4ed32afc4d4af8a5b2b5ee3a99bbc`.
 All 30 cases were rerun after [title/background insertion](TITLE_INSERTION.md).
-The latest root build additionally includes the [menu-banner fix](LOCATION_BANNER.md),
-which preserves every arrival graphics byte. These native reports retain their
-original validation-ROM hash.
+The latest root build includes subsequent text/caller repairs; its current
+identity and cumulative acceptance are in [the coverage matrix](COVERAGE_AUDIT.md).
+These insertion-specific reports retain their original validation-ROM hash.
 The original arrival-only build is archived in `build/title-insertion/pre-insertion/`.
 The release remains a development build: text discovery and full-game
-playtesting are still in progress. Counts are **3,770 inserted text resources
+playtesting are still in progress. The insertion milestone had **3,770 inserted text resources
 plus 20 English graphics** (14 arrival, one title and five backgrounds); graphics
 do not increase the script-review percentage.
 
@@ -86,13 +86,14 @@ and ordinary movement succeeds afterward. The other cases temporarily set only
 the dungeon selector and/or floor at the original controller entry, restore
 those fields before its caller resumes, and run the real patched renderer.
 
-The remaining risk is **natural late-game progression and scene integration**:
-these checks do not play through each dungeon's unlocking, entrance route or
-later story state. They establish that every identified card renders correctly
+Remaining checks concern **late-game entry and scene integration**: these probes
+do not exercise every unlocking/entrance caller or later story state. Trace those
+callers and use assisted scene access; ordinary dungeon completion is not required.
+Keep ordinary progression evidence distinct from controlled integration checks. They establish that every identified card renders correctly
 through its native controller. Separate town-card families and unrelated title,
 background and ending scenes are outside this change.
 
-## Build and regression evidence
+## Original insertion delta and regression evidence
 
 All previous text allocations, original patches and other ROM bytes are
 identical to the archived text-only 3,770 build. The delta consists of two new
@@ -106,7 +107,8 @@ overflows. The final build reproduces the staged ROM and BPS byte-for-byte;
 the release exporter independently applies the BPS and compares the entire ROM.
 The supplied Japanese ROM/save remain unchanged. Logs are under
 `build/arrival-cards/insertion/`. This is focused acceptance of the graphics
-delta; full cumulative text acceptance remains at the documented 3,768 milestone.
+delta. At that time full cumulative text acceptance was at 3,768; it has since
+advanced to the accepted 3,814 build identified in the current coverage matrix.
 
 ## Reproduction
 

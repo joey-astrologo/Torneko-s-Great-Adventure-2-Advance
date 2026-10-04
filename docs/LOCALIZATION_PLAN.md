@@ -19,16 +19,31 @@ The source backlog is not the complete remaining-work list.
 Preserve the distinction between completed family checks and pending whole-screen
 or natural-route audits in every progress report.
 
-October 3 continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the
+The earlier October 3 pass in [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the
 new second-reader monster announcements, shield reflection and empty-ability
 Info repairs, the unfiltered display audit and completed ordinary Cemetery
 Dungeon quest. The 3,814-resource ROM passes cumulative acceptance, 174 unit
 tests and clean ROM/BPS reproduction. All 98 callers left unresolved by the
-bounded scan have investigated dispositions (89 current-ROM observations, six
+bounded scan have investigated dispositions (89 observations on that preceding ROM, six
 actor-name copies, three bypassed calls). Ordinary bakery unlocking, purchase,
-native save and cold-load persistence also pass. Continue discovery and later
-ordinary progression within the standing authorization; these bounded checks
-do not establish whole-game coverage.
+native save and cold-load persistence also pass. Continue caller and branch discovery within the standing authorization; these
+bounded checks do not establish whole-game coverage.
+
+The subsequent branch audit repairs two original tutorial caller defects: pot
+help selecting unrelated dialogue in bank 4, and early Mimic help reading beyond
+its two-item menu into unrelated selectors. Existing reviewed explanations now
+use the direct-prose consumer. All 27 menus, 22 bank/topic cases and three native
+NPC-script routes pass on ROM
+`fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
+Resource count remains 3,814. Expanded jump-table discovery retains 62 unresolved
+shared/town sources; they are not declared unused. The ordinary route has
+unlocked Mt. Fiery, cold-resumed a native suspend on the repaired ROM and reached
+8F before defeat; quest completion is still open. The linked
+follow-up distinguishes current repair evidence from earlier-ROM audit replays.
+Cumulative native acceptance, 182 unit tests, 315 font-browser contexts and clean
+ROM/BPS reproduction pass. A stale 20-case tutorial expectation in budget-report
+generation was updated to 22; the resumed final report stage also passes.
+The ROM, BPS and receipts are archived in `build/accepted/3814-tutorials/`.
 
 Continue autonomously toward all player-facing text being translated, reviewed,
 inserted and validated. Batches organize the work internally and do not require
@@ -79,7 +94,70 @@ when required for fidelity or safe fit; do not omit mechanics, shrink text or
 compress spacing to force a one-line result. Record maximum expanded widths
 and native evidence for dynamic combat formats.
 
-## Revised next batches: font and menu layout
+## Release checkpoints while investigation continues
+
+The user requested periodic release checkpoints on 2026-10-03 while usage is
+limited. Preserve the last accepted ROM/BPS during research. Compile after a
+coherent fix, run affected checks and the required acceptance, then archive the
+BPS, hashes, receipt and concise release notes. Code/source discovery can continue
+between checkpoints. A byte-identical research rebuild does not need the entire
+native suite rerun or a new translation version number.
+
+The initial [patch checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip)
+contains the accepted tutorial/caller build, release notes and receipt. A clean
+rebuild in `build/release-checkpoint-rebuild/` reproduces that ROM and BPS exactly;
+independent BPS application also passes. It is a development release, not a claim
+that every scene has been audited.
+
+The later [scene-audit checkpoint](../build/releases/2026-10-03-scene-audit.zip)
+contains the same patch plus the new computed-reader, graphics and complete-ending
+evidence. `build/scene-audit-rebuild/` independently reproduces its ROM and BPS.
+No new translation bytes were needed for those completed investigations.
+
+## Current investigation priorities (2026-10-03)
+
+The continued audit now accounts for 41 computed table-base losses and checks
+the full-screen and scrolling background tables, including replacements and
+static objects. No additional untranslated reader or graphical lettering was
+identified in those families. The complete controlled ending passes native save,
+all five scenes and 57 dialogue sources, fades, credits, END artwork and return;
+ordinary ending access remains separate. The tool suite passes 186 tests.
+See [caller and scene evidence](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
+Keep these completed cohorts closed while following other consumers; the 62
+unresolved sources and 34 fragments remain bounded discovery gaps, not confirmed
+visible defects.
+
+The [coverage matrix](COVERAGE_AUDIT.md) is the current status reference. Resolve
+62 shared/town sources and 34 event fragments, then extend uncovered scene/graphics
+and branch contexts. Tutorial configurations 1/2/8/9 now have a bounded no-entry
+disposition across all recovered event roots/NPC payloads and the known page path;
+revisit them when additional entry evidence appears. The 25-guard/expanded-save
+scan stops now have explicit return, name-patch and row-loop dispositions in
+[CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md#release-checkpoint-and-bounded-continuation).
+Other data-flow contexts remain open. These are investigation leads, not a count
+of confirmed untranslated screens. Completed repair cohorts stay closed.
+
+**Disassembly leads discovery; ordinary survival is not a prerequisite.** Trace
+callers, selectors, active-bank dependencies, RAM producers and bounded jump tables.
+Use targeted native probes to test those paths, including their real upstream
+caller where possible, with an unfiltered observer of all visible text.
+
+Use disposable saves, controlled state, direct scene entry or a documented
+invincibility/damage patch when helpful for later access. Record source/build/save
+hashes, original and changed bytes or state, inputs and restored state. No new
+patch implementation is implied by this policy. Preserve normal damage/death
+behavior in probes of those branches; assistance can otherwise suppress them.
+A directly invoked renderer proves only that renderer and its supplied context.
+Native scene checks still establish bank/state selection, dynamic text, clipping,
+panel gaps, transitions and restoration. These can be automated; they do not
+require manually playing through every dungeon.
+
+Maintain ordinary progression receipts as integration/save evidence, separately
+from assisted scene checks. Mt. Fiery completion and unmodified ending access
+remain unproved, but neither blocks code investigation or targeted localization
+acceptance. Do not repeat survival attempts as the next localization task.
+
+## Completed font and menu-layout sequence (historical)
 
 Latest user direction (2026-09-19) supersedes the earlier T3 font selection:
 prefer the **Torneko 2 compact English extension for readability**, and keep
@@ -157,13 +235,12 @@ approach is to test readable T2 labels before abbreviating to avoid the work.
    discovery using the new budget checks. Graphics auditions and broader
    playtesting remain on the roadmap, after this text-layout foundation.
 
-The next implementation work is bank/storage/records discovery and English
-formatter review using the established budgets. The expanded audit is bounded:
-later populated shop/storage routes and nested pot contents still need native
-coverage. Do not perform a blanket window resize or infer whole-game sign-off
+At that milestone the next work was bank/storage/records discovery and English
+formatter review. Those families now have acceptance in the current matrix.
+Unknown consumers and unvisited combinations still need their own native checks. Do not perform a blanket window resize or infer whole-game sign-off
 from the completed early-menu batches.
 
-## Current foundation
+## Initial foundation (historical; later acceptance is above)
 
 - The Japanese ROM identity is pinned in `config/rom.json`. Preserve the supplied
   original ROM and save; experiments and playtests use disposable copies.
@@ -411,14 +488,17 @@ Check staff roles, names, introductory cards, copyright and surrounding ending
 artwork separately. Translate what needs localization. Treat restyling text
 that is already English as a separate design decision.
 
-Torneko 3's [credit text](../../torneko-3-gba/docs/CREDITS_AUDITION.md) was already
-English; Torneko 2's status remains to be established. A text-layer export does
-not establish that every ending graphic is localized or that the full ending
-plays correctly. Inspect the natural ending sequence as part of playtesting.
+Torneko 2's original GBA credits are already English and are preserved by user
+decision. Both their isolated native text layer and a complete controlled ending
+now pass; the latter runs all five scenes, saving, fades, credits, END artwork
+and return. Keep ordinary ending eligibility and alternative entry states
+separate from that integration evidence. See [the graphics inventory](GRAPHICS_INVENTORY.md).
 
-### 9. Playtest continuously and finish with a release pass
+### 9. Validate runtime behavior and finish with a release pass
 
-Maintain a backlog of natural gameplay routes, unresolved defects and evidence.
+Maintain a backlog of code branches, scene contexts, unresolved defects and evidence.
+Prefer targeted native execution after code analysis. Assisted access and automated
+inputs can exercise full scene callers without an ordinary playthrough.
 Include progression, branch outcomes, long names, inventory extremes, message
 history, save/load, dungeon transitions, defeat and endings. Cover available
 save slots, suspend/resume and additional modes where those features exist.
@@ -437,7 +517,7 @@ and document save compatibility, known issues and untested routes. Preserve
 original ROM/save files and keep localization status distinct from full-game
 playtest status.
 
-## First milestone and immediate work
+## Initial milestone (completed; historical acceptance criteria)
 
 The first integrated milestone is **a verified Japanese catalog and repeatable
 English build covering the opening menu, name entry, opening dialogue and first
@@ -476,7 +556,10 @@ Acceptance for that milestone:
 | Opening-area integrated milestone | Planned; next implementation work |
 | Remaining text, graphics, ending and full playtest | Planned |
 
-## Progress after plan creation
+## Progress after plan creation (historical journal)
+
+The dated entries below retain decisions, counts and next steps at those dates.
+They are not the current backlog; use the matrix and current priorities above.
 
 2026-09-13: the [first opening-text discovery pass](OPENING_TEXT.md) is implemented.
 A normal-input route reaches the first dungeon; 30 source strings are verified,

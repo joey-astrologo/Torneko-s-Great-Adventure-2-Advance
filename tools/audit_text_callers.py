@@ -59,7 +59,8 @@ def condition(code, flags):
 
 def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read_observer=None,
           stack_model=False, initial_registers=None, call_observer=None, paired_stack_adjustments=False,
-          max_path_length=900):
+          max_path_length=900, switch_domains=None, switch_observer=None, stop_observer=None,
+          unknown_operand_observer=None):
     """Conservative constants, paired across ROMs; unknown operations stop a path.
 
     Unknown conditional branches fork, so impossible paths can survive. Calls clear
@@ -67,6 +68,16 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
     literal/data reads are followed. Nearest PUSH seeds are explicitly heuristic.
     """
     observations, limits, stops = {}, [], Counter()
+    def stop(reason):
+        stops[reason] += 1
+        if stop_observer is not None:
+            stop_observer(dict(reason=reason, address=pc+BASE, seed=seed+BASE,
+                original_hex=original[pc:pc+4].hex() if 0 <= pc < len(original) else None,
+                compiled_hex=compiled[pc:pc+4].hex() if 0 <= pc < len(compiled) else None,
+                registers={str(k):v for k,v in sorted(regs.items())},
+                path_length=len(trail), tail=[BASE+p for p in trail[-32:]],
+                repeated_addresses=[dict(address=BASE+p,visits=n)
+                                    for p,n in Counter(trail).most_common(8) if n>1]))
     def half(at):
         return struct.unpack_from('<H', original, at)[0]
     def read(pair, size=4):
@@ -89,6 +100,8 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
             read_observer(pc+BASE, pair, size, value, seed+BASE)
         return value
     def binary(x, y, fn):
+        if unknown_operand_observer is not None and (x is None) != (y is None):
+            unknown_operand_observer(pc+BASE, half(pc), x, y, seed+BASE)
         return None if x is None or y is None else tuple(fn(a, b) & 0xFFFFFFFF for a, b in zip(x, y))
     for seed in sorted(seeds):
         # Synthetic addresses identify stack-relative arguments only. They are
@@ -103,19 +116,40 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
             key = (pc, tuple(sorted(regs.items())))
             if key in seen:
                 continue
-            if not 0 <= pc < LIMIT:
-                stops['outside_scan_range'] += 1
+            if not 0 <= pc < min(LIMIT, len(original)-1, len(compiled)-1):
+                stop('outside_scan_range')
                 continue
             if len(trail) >= max_path_length:
-                stops['path_length_limit'] += 1
+                stop('path_length_limit')
                 continue
             seen.add(key)
             steps += 1
             v = half(pc)
+            switch = (switch_domains or {}).get(pc)
+            if switch and regs.get(switch['index_register']) is None:
+                # The unsigned range guard proves the finite in-range domain.
+                # Keep its default branch separately, with the index unknown.
+                for index in range(switch['count']):
+                    branch_regs = dict(regs)
+                    branch_regs[switch['index_register']] = (index, index)
+                    branch_regs[999] = (compare_flags(index, switch['count']-1),)*2
+                    work.append((pc+4, branch_regs, trail+(pc, pc+2)))
+                # CMP replaces prior flags on the default path too. For an
+                # unsigned index above an eight-bit bound, these representatives
+                # cover all possible NZCV results without inventing an index.
+                bound = switch['count']-1
+                for flags in {compare_flags(value, bound) for value in
+                              (switch['count'], 0x80000000, 0x80000000+switch['count'])}:
+                    branch_regs = dict(regs)
+                    branch_regs[999] = (flags, flags)
+                    work.append((switch['default']-BASE, branch_regs, trail+(pc, pc+2)))
+                if switch_observer:
+                    switch_observer(switch, seed+BASE)
+                continue
             patched_stack = (paired_stack_adjustments and stack_model and v & 0xFF00 == 0xB000
                              and struct.unpack_from('<H', compiled, pc)[0] & 0xFF00 == 0xB000)
             if original[pc:pc+2] != compiled[pc:pc+2] and not patched_stack:
-                stops['patched_instruction'] += 1
+                stop('patched_instruction')
                 continue
             n, d, s = pc+2, v & 7, (v >> 3) & 7
             def assign(dst, value):
@@ -160,10 +194,18 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
                 elif kind == 1:
                     assign(999, binary(regs.get(d), regs.get(s), compare_flags))
                 elif kind == 3:
-                    stops['indirect_branch_or_return'] += 1
+                    stop('indirect_branch_or_return')
                     continue
                 if d == 15:
-                    stops['computed_pc'] += 1
+                    switch = (switch_domains or {}).get(pc-12)
+                    target = regs.get(15)
+                    if (switch and kind == 2 and target and target[0] == target[1]
+                            and target[0] in switch['targets']):
+                        n = target[0]-BASE
+                        regs.pop(15, None)
+                        work.append((n, regs, trail+(pc,)))
+                        continue
+                    stop('computed_pc')
                     continue
             elif v & 0xF800 in (0x6800, 0x7800, 0x8800):
                 size = {0x6800: 4, 0x7800: 1, 0x8800: 2}[v & 0xF800]
@@ -249,7 +291,7 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
                 else:
                     assign(base_register, None)
                     if v & 0xF800 == 0xC800:
-                        stops['empty_ldmia_register_list'] += 1
+                        stop('empty_ldmia_register_list')
                         continue
             elif v & 0xF000 == 0xD000:
                 if v & 0xF00 >= 0xE00:
@@ -265,7 +307,7 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
                 n = pc+4+(off-2048 if off & 1024 else off)*2
             elif v & 0xF800 == 0xF000 and half(pc+2) & 0xF800 == 0xF800:
                 if original[pc:pc+4] != compiled[pc:pc+4]:
-                    stops['patched_call'] += 1
+                    stop('patched_call')
                     continue
                 if call_observer is not None:
                     hi = v & 2047
@@ -288,7 +330,7 @@ def trace(original, compiled, seeds, calls, budget=12000, memory_images=(), read
                     assign(i, None)
                 n = pc+4
             else:
-                stops[f'unsupported_opcode_{v:04x}'] += 1
+                stop(f'unsupported_opcode_{v:04x}')
                 continue
             work.append((n, regs, trail+(pc,)))
         if work:

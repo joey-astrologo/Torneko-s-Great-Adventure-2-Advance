@@ -9,8 +9,9 @@ cases, including every one of the 20 recovered timer branches.
 
 The subsequent [broader caller audit](CALLER_COVERAGE_AUDIT.md) confirms 54
 untranslated caller sites, 31 more than its first pass.
-Those separate findings remain open; the fixed modal/timer results below do
-not establish coverage of those other callers.
+All 54 were subsequently repaired, along with the placeholder and continuation
+findings. The current [coverage matrix](COVERAGE_AUDIT.md) and
+[caller follow-up](CALLER_FOLLOWUP.md) supersede the historical scan counts below.
 
 ## Findings
 
@@ -19,7 +20,7 @@ not establish coverage of those other callers.
 | Empty inventory | Was Japanese; now “You have no items.” | Ordinary Eat of the opening bread, then Items; old ROM fails, corrected ROM passes. |
 | Standing on a visible trap and selecting Trap | Step and Stay are English; transformed, frightened and dancing refusals are English. | Controlled trap/status setup followed by normal menu buttons, cancellation and reopening. |
 | Status expiry | All 20 recovered timer branches display English. | 44 native cases cover individual timers, maximum saved names, transformed names and simultaneous expiry. The previous ROM reproduces exactly seven Japanese failures. |
-| Other callers | 54 sites confirmed untranslated; broader coverage incomplete. | [Caller coverage audit](CALLER_COVERAGE_AUDIT.md):79 scenarios,20 other unconfirmed candidates, one copied-source lead and412 unresolved arguments in the expanded ten-consumer scan. |
+| Other callers | The 54 failures and all 20 continuation leads are fixed; whole-game coverage remains unknown. | [Caller coverage audit](CALLER_COVERAGE_AUDIT.md) retains discovery and repair receipts; [current matrix](COVERAGE_AUDIT.md) tracks remaining investigations. |
 
 [Corrected menu gallery](../build/reader-audit/native/index.html) ·
 [Menu acceptance](../build/reader-audit/acceptance.json) ·
@@ -135,9 +136,9 @@ and owned appended resources/padding. All previous allocation addresses and
 payloads are preserved. A fresh build reproduces the tested ROM exactly, and
 independent BPS application reproduces every ROM byte.
 
-Current ROM:
+Historical expiry-repair ROM:
 `aa12a37b76e49d44f8a336642d334fa8324d92c2d98457200482742ea5b46723`.
-Current BPS:
+Matching historical BPS:
 `e346e261be634346c94240d4990296894b392a9b6e9ae93242e5083b01ac3f76`.
 
 ```sh

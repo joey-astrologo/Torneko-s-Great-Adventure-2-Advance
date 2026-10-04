@@ -1,15 +1,17 @@
 # Mansion safe recovery and bank opening
 
 This page records the initial mansion milestone. Its 38-test/7,971-glyph figures
-refer to that font/build; the current [font selection and refreshed acceptance](FONT_AUDITION.md)
-use Torneko 3's Latin font and preserve the same 104 reviewed translations.
+refer to that font/build. The current [selected font](FONT_AUDITION.md) is Torneko
+2's compact English extension; Torneko 3 is a comparison asset. The original 104
+translations remain within the larger [accepted build](COVERAGE_AUDIT.md).
 
 The combined discovery/localization batch adds **25 reviewed English resources**,
 bringing the cumulative build to **104**. It covers the anonymous 6F voice, the
 Imp's challenge, safe recovery, the successful-quest result, the banker's thanks,
 both family questions and their responses, the following morning's blacksmith
 scene, and permission to open the bank. The bank greeting and farewell are also
-translated. Deposit/withdrawal menus and transactions remain a separate batch.
+translated. Deposit/withdrawal menus and transactions were accepted separately
+in later [service batches](SERVICE_BATCHES.md).
 
 [Native preview](../build/english/mansion-preview.png) ·
 [Acceptance receipt](english-mansion-validation.json) ·
@@ -117,17 +119,16 @@ also pins a clean output-directory rebuild with byte-identical ROM and BPS,
 verified BPS application, source audit, review and screenshot identities.
 Original ROM/save files are preserved.
 
-## Coverage and next work
+## Historical coverage and subsequent work
 
-The accumulated catalog has **112 native sources**: 104 reviewed, five still
+This milestone catalog had **112 native sources**: 104 reviewed, five still
 untranslated, two replaced by existing menu/name components, and the intentionally
 retained Japanese keyboard. The known tables still contain 1,250 unique sources.
 The refreshed broad scan has 2,814 candidates: 809 exact table matches and 2,005
 unresolved leads. These are discovery counts, not a whole-game percentage.
 
-Next is the bank's transaction/menu producer and populated inventory services,
-followed by green-book records and save-preview formatting. Combat/item names,
-other result fields, the dungeon-name resource, defeat/retry dialogue, alternate
-safe-room states and later NPC conversations remain outside this acceptance.
-Title/background/arrival artwork, credits and full-game playtesting are still
-pending. No graphical assets are changed by this batch.
+Subsequent families cover bank transactions, inventory, records/save previews,
+combat/item names, results, location banners, retry and many later NPC consumers.
+Title/background/arrival art is inserted and original English credits preserved.
+Those checks remain separate from this initial quest milestone. Current unresolved
+code and scene contexts are in [the coverage matrix](COVERAGE_AUDIT.md).

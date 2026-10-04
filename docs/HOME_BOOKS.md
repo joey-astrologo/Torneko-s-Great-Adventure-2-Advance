@@ -1,8 +1,9 @@
 # Home books and the first banker request
 
 At this milestone the cumulative build inserted **79 reviewed catalog resources**.
-The current build and subsequent quest acceptance are documented in
-[MANSION_QUEST.md](MANSION_QUEST.md); this page preserves the book/banker batch scope.
+Current coverage is in [the matrix](COVERAGE_AUDIT.md); the subsequent initial
+quest milestone is in [MANSION_QUEST.md](MANSION_QUEST.md). This page preserves
+the historical book/banker batch scope.
 This batch adds 16: all ten red-book tips; the blue-book menu while the
 storehouse is broken; empty-inventory and save messages; the castle/square travel
 labels; and the banker's first request, both answers, the old man's appearance,
@@ -44,9 +45,9 @@ alarmed reply. Talking again gives the GBA script's **uncertain location around
 are outside this batch.
 
 The green book was also reached and captured. Its parent menu, initially empty
-scroll-name list and records menu are four newly verified sources. They remain
-Japanese: populated entries, selection behavior and the larger records screens
-need further mapping. This discovery is not counted as completed localization.
+scroll-name list and records menu were four new sources at this stage. Their
+localization, populated-state and record-screen checks were added in later
+reference-list/history/record families; this initial discovery was not acceptance.
 
 ## Language review
 
@@ -104,9 +105,9 @@ records the observed coordinates; no NPC or gameplay state is injected.
 Ghidra acceptance. A separate clean-output rebuild reproduces the ROM and BPS
 byte for byte. Exact identities and report hashes are pinned in the receipt.
 
-## Coverage and next work
+## Historical coverage and subsequent work
 
-The catalog contains **86 naturally verified sources**: 79 reviewed/inserted,
+This milestone catalog contained **86 naturally verified sources**: 79 reviewed/inserted,
 four untranslated green-book sources, two replaced by existing menu/name
 components, and one intentionally retained Japanese keyboard body. The seven
 event tables contain 1,046 sources; the shared town table adds 204 distinct
@@ -117,9 +118,8 @@ The regenerated candidate queue contains 2,835 entries: 827 exact matches in the
 known tables and 2,008 unresolved leads. These counts are not a whole-game
 completion percentage.
 
-Next, follow the mansion's safe-recovery route and inventory/item-message
-families, then revisit the resulting town services. Map the green-book lists and
-records screens separately, including populated states. Repaired-storehouse
-flows, later dialogue, arrival/title graphics, credits and full-game playtesting
-remain open. Ownership, source ranges and expected bytes are recorded in
+Safe recovery, later service/item families, reference lists/records and the
+approved arrival/title graphics now have their own acceptance. Original English
+credits are preserved. Whole-game coverage remains unverified; use the current
+matrix for specific source, caller and scene investigations. Ownership, source ranges and expected bytes are recorded in
 [MEMORY_MAP.md](MEMORY_MAP.md).

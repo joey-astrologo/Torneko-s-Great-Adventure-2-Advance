@@ -1,5 +1,11 @@
 # Torneko 2 memory map
 
+Current build, coverage and investigation priorities: [COVERAGE_AUDIT.md](COVERAGE_AUDIT.md).
+This is a chronological evidence/ownership journal. Dated counts, prototype limits
+and next steps describe those builds; they are not the current backlog. The current
+code-led workflow permits recorded assistance in disposable scene probes, but this
+documentation update establishes no invincibility patch address or new RAM ownership.
+
 Source: the pinned Japanese ROM in `config/rom.json`, SHA-256
 `79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa`.
 Ranges below have exclusive ends. The font and name-entry components own only
@@ -5251,7 +5257,7 @@ automatic stairs prompt instead of opening the root menu. It establishes a
 separate observed display gap, not its original-source ownership, buffer extent,
 ordinary acquisition route or insertion. No storage claim follows from that
 scratch pointer. Dedicated retained reproduction remains in
-[Text investigations](TEXT_OPEN_QUESTIONS.md#remaining-gameplay-evidence).
+[Text investigations](TEXT_OPEN_QUESTIONS.md#current-unresolved-investigations).
 This historical observation is the fear/dancing subset of the seven-message
 repair recorded below. It is resolved in ROMaa12a37b…; it is not an additional
 unfixed expiry reader.
@@ -5936,3 +5942,126 @@ They do not introduce independent sentence selectors. Normal entries `08050BC4`
 and `08050C14` branch to owned village/well helpers, while the original queue
 instruction at `0802585E` is overwritten by the item-use hook. The audit preserves
 these dispositions separately from native branch observations.
+
+### Tutorial selector repairs and skill name-cache observation (October 3 continuation)
+
+The earlier tutorial mismatch notes are now followed by original/current-ROM
+native getter evidence and a repair. ROM configuration records
+`[0014CF20,0014CF23)` and `[0014CF26,0014CF29)` belong to tutorial configurations
+12 and 14, indexed by the dispatcher at CPU `0804F9AA`. Expected bytes are
+`0E0401` and `110401`; replacements are `0E0400` and `050400`. Thus configuration
+12 uses the existing direct-prose handler; configuration 14 additionally selects
+existing two-row menu 5. Shared descriptor/cursor data, including the six-row
+menu 17 used by configuration 22, remains unchanged.
+The original label prefix for configuration 14 is ROM `[0014DEEC,0014DEF4)`;
+configuration 15 starts at `0014DEF4`. Its two pointers are Mimic and Cancel,
+whereas the old six-row descriptor continued into configuration 15's labels.
+
+The existing allocator-owned private tables at ROM `[008F0E70,008F0E90)`
+(`tutorial-help-intro-12`) and `[008F0ED8,008F0EF0)`
+(`tutorial-help-intro-14`) retain their allocation ranges. Slots 1–7 of the
+former now point to reviewed event-bank-5 group 2 indices 2/5/6/7/8/9/10. Slot 1 of
+the latter points to `event-bank-6.3278`, the complete Mimic explanation.
+Unused copied slots in the latter are preserved, but the two-row descriptor
+permits only topic 0 and Cancel. Original tables/scripts and the active event
+bank are not rewritten. All 27 menu configurations and 22 topic/bank contexts
+pass; three controlled native NPC-script routes verify introduction, tutorial
+selection and farewell without changing the active bank. Ordinary story
+activation remains unproven for these specific NPCs.
+
+Original bank 4/configuration 12 getters return Aunt Maggie/Lulu prose or fragments;
+bank 5/configuration 14 returns Gon prose, malformed fragments and an invalid target.
+The English relocation can change which unrelated fragment is selected; it
+does not correct these original selector mistakes. Evidence:
+`build/caller-branches/tutorial-getters/report.json`, the hash-pinned build
+ledger, tutorial-bank and tutorial-script reports. Final repaired ROM SHA-256:
+`fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
+There are 27 changed bytes and no new allocation or saved data.
+
+The original skill-loss owner at CPU `0803E278` formats an equipped name into
+its existing `SP+0x208` scratch and calls `0805CF54` at `0803E7B0`, returning to
+`0803E7B4`. Literal CPU `0803E818` selects EWRAM destination `0200FD58`.
+Four controlled cases now execute this copy rather than skipping it. Before/
+after capture covers EWRAM `[0200FD38,0200FDB8)`; the longest tested copy is
+63 encoded bytes including terminator, and all surrounding captured bytes are
+unchanged. This is observed native write extent, not an allocation claim for
+`0200FD58` or its neighbours. Full ordinary skill acquisition and subsequent
+gameplay side effects remain outside that probe. Evidence:
+`build/caller-branches/native/item-loss-complete/` and the verifier's
+`native-skill-name-cache-observation` records.
+
+Disassembled format calls `0802FA86`, `0803187E` and `08033B68` copy the saved
+player name at EWRAM `02003B58` into the middle of English messages. Outputs are
+respectively `SP+0x54`, `SP` and `SP+0x80`; arguments are respectively the second,
+second and sole `%s` fields. The screen audit now recognizes those exact field
+positions only after caller, argument address, output address, saved bytes and
+complete formatted output agree. This preserves intentional saved names without
+exempting authored Japanese elsewhere in the same message.
+
+## Tutorial entry and save-menu stop dispositions (2026-10-03)
+
+Evidence: `build/caller-branches/tutorial-reachability.json`,
+`save-menu-rows.json`, `switch-stop-dispositions.json` and the pinned Ghidra
+exports `tutorial-dispatch-full.txt`, `save-stop-code.txt`, `save-row-selector.txt`.
+Source ROM identity is unchanged; current compiled ROM is `fc9b6f5e…57a7c` as
+pinned by the reports. This adds analysis evidence, not insertion ownership.
+
+- ROM file `[0014CE4C,0014CE50)` is the only literal Thumb pointer `0804F8F5`
+  found in the original ROM. CPU calls `0804F9EA`/`0804FA14` enter `08050DD0`;
+  `0804FA26` enters the paged owner `08050FB8`. Its page is bounded to 0/1,
+  adding configuration 19 only to the script-selected 18. No instruction-aligned
+  references to configurations 1/2/8/9 were found across 133 event roots and
+  seven complete NPC payloads; unknown entry mechanisms remain unproved.
+- CPU `[08014848,0801484C)` and `[08014864,08014868)` store save-menu selector
+  0/1 at SP+`138`. ROM descriptors `[00147DD4,00147DE4)` contain one row
+  (slot `16B`) or three rows (`16C`/`16D`/`16E`). CPU `[0801486E,080148D4)`
+  loads and draws them. Both independently seeded selectors resolve private
+  English resources. The earlier path-length stops came from losing this count,
+  not 13 newly identified Japanese readers.
+- CPU `[08014BE6,08014BE8)` is the existing owned name-editor limit patch,
+  `mov r2,6` to `mov r2,7`. The 23 distinct indirect-exit PCs in the switch
+  scan all immediately follow `pop {r0}` or `pop {r1}` and branch through that
+  register; classify these as epilogues, not unresolved text dispatches.
+
+The additional row-seed trace's downstream stops remain explicit. These bounded
+findings do not prove whole-function reachability, runtime ABI for every path,
+unused text or new free ROM/RAM/save storage.
+
+## Complete background families and ending integration (2026-10-03)
+
+These discoveries establish bounded resource consumers, not insertion ownership
+or free space. Ranges below are exclusive. Original/compiled identities and exact
+descriptor bytes are in `build/graphics-discovery/{backgrounds,town}/report.json`.
+
+| Address space / range | Meaning and evidence |
+|---|---|
+| ROM `[0013EC14,0013EDCC)` | 22 full-screen records, 20 bytes each: base palette/pixel pointer, optional foreground map and tile pointers, tile byte count, palette count, signed calibration selector. Following bytes begin `AGB-TORU`; they are not another graphics record. Loader CPU `08004240` has native coverage of every record. |
+| ROM resource extents in the background report | Each base contains 512 palette bytes plus 38,400 tiled 8bpp pixels. Nine records (0/2/3/4/5/6/7/8/12) also select a 600-byte byte-index foreground map and bounded 64-byte tiles. All native tile/map uploads match. The six approved title redirects are the only changed record fields. |
+| ROM `[0013E674,0013E914)` | 28 scrolling records, 24 bytes each: pixels pointer; u16 logical width, height, replacement count, zero; three pointers to replacement records, a door record and an object-list header. Literal CPU `08003C5C` selects the table; `08003C0A` compares the selector with 27. |
+| EWRAM `[02001274,02001278)` / `[02001278,0200127C)` / `[0200127C,02001280)` | Existing scrolling descriptor pointer, selected index and replacement flags. Native tile getter `0800361C` consumes these fields. Tests record and restore overrides; no new storage reserved. |
+| ROM replacement extents in the town report | Eleven flag replacements and 14 door descriptors, each 16 bytes: pixels pointer, four u16 tile rectangle coordinates/dimensions, u32 mask. Tile getter takes `r0=x+3`, `r1=y`, rejects out-of-bounds coordinates and selects replacements before the base. Drawable dimensions use logical dimensions shifted right by three; two 228-pixel-high records therefore have 224 drawable pixels. |
+| EWRAM `[020101F0,020101F1)` | Loader state byte: requested scrolling scene 0 selects 27 when this byte is 6. Known from CPU `08003C10..08003C1E`; other scene-entry conditions are not inferred from this byte. |
+| EWRAM `[0201183C,0201183D)`, `[0200FED8,0200FED9)`, `[0200FF19,0200FF1A)` | Existing cutscene/map/door-state inputs to `0800361C`. Scenes 25/26 use the cutscene branch; map IDs 21/23 have separate tests; ordinary maps use the odd/even state branch. The 377-call audit controls map 0 and explicitly records these fields; it does not claim every branch combination. |
+| ROM object-list extents in the town report | Header count/pointer followed by 16-byte static objects: signed x/y; u8 width/height in 16px pieces; u16 first tile, palette, zero; u32 visibility flags. Consumer `080039D0` establishes layout. 85 instances decode to 79 distinct compositions. |
+| ROM literal `[00002C2C,00002C30)` | Sprite piece base `0812B674`; getter `08002B28` selects 128-byte 16×16 4bpp pieces. This is a consumer base, not a claim that all following ROM is sprite storage. Exact accessed ranges are retained per object. |
+| EWRAM lookup beginning `02000B00` | `08003118` reads pointer slot `4*(palette_id>>4)`, then halfword `2*(palette_id&15)`. Actual initialized pointers/resolved IDs are recorded per object; no whole-table extent or new allocation is inferred. |
+| ROM literals `[000031F4,000031F8)` / `[00003228,0000322C)` | Palette bases `0873F17C` / `0805B978`. Getter uses the first for resolved IDs ≤`1CC`, otherwise the second, adding `32*id`; native upper bound is `20C`. Exact 32-byte ROM sources are verified in the object audit. |
+
+Evidence includes the Ghidra exports `town-image-selection.txt`,
+`scroll-tile-getter.txt`, `town-object-assets.txt` and `ending-staging.txt` under
+`build/graphics-discovery/`. Source identity checks, decoded asset review and
+native selectors/uploads are distinct evidence. Static layers contain no newly
+identified Japanese lettering; independently animated actors and other atlases
+are outside this inventory.
+
+The complete ending owner is CPU `[08054DA4,08054EEE)`, with embedded literals
+following its return instruction. Its setup calls are `080557C8`, `08055934`,
+`080559CC`, `08055A50`, `08055AEC`; dispatcher `08054F44` follows each. Credits
+run at `080554FC`, then finale `0805532C`, then return at `08054EEC`. A controlled
+bank-call entry now executes this entire sequence without bypassing saving,
+staging or display updates. The ending battery changes only in the disposable
+session. All 57 ending sources and the ordered scenes/credits/finale/return are
+observed, with the original caller ABI and 32-byte stack guard preserved.
+Evidence: `build/ending-sequence-guarded/{report,screen-text}.json` and sampled
+native frames. This establishes integration for that initial fixture, not
+ordinary endgame eligibility, every input schedule or new RAM/save ownership.

@@ -8,6 +8,11 @@ Follow `docs/LOCALIZATION_PLAN.md` for the agreed translation source,
 terminology/prose rules, coverage reporting and localization work sequence.
 The user authorizes autonomous work through all text localization; no per-batch
 approval is required. Interrupt only for necessary user insight/investigation.
+The user requests periodic release checkpoints while usage is limited. After a
+coherent verified ROM change, build and preserve a BPS/receipt/notes checkpoint;
+keep the previous accepted artifact available during further investigation.
+Do not rerun the full native suite solely for unchanged ROM bytes or research
+report changes; run the checks relevant to those changes.
 The user reopened ending-credit discovery and credits/arrival-card auditions on
 2026-09-29; these may proceed now. On 2026-09-30 the user also requested a title-screen
 audition; follow `docs/TITLE_AUDITION.md`. The user subsequently approved and
@@ -44,6 +49,14 @@ Torneko 3 is a tooling reference. Its encoding, addresses, fonts, expansion,
 translation catalogs and gameplay/save assumptions do not apply until verified
 in Torneko 2. Distinguish controlled emulator probes from native gameplay
 observations and verified insertion from reviewed translation.
+
+Lead localization discovery with disassembly of callers, selectors, computed
+branches and RAM producers. Do not gate later-scene investigation on ordinary
+dungeon survival. Disposable controlled saves/state and documented invincibility
+or damage patches may be used for access; retain exact overrides and keep this
+evidence separate from unmodified gameplay. Exercise the real scene callers and
+rendering/return paths, and disable assistance for damage/death branches under test.
+See docs/COVERAGE_AUDIT.md for the current matrix and ordered backlog.
 
 Run the relevant checks after changes. `./validate.sh` covers toolchain and
 fresh-save acceptance. It does not establish full game or translation coverage.

@@ -43,8 +43,8 @@ Tessie, Tipper, the Joy Chest and Adventure Log retain established project
 terminology. Ed, Mondo and Exploration Log have PS1 fallback evidence labelled
 secondary in the [glossary](../translations/glossary.json). **Ten Tips for
 Adventurers**, **Ed & Mondo Carpentry**, and **the western city** are explicitly
-provisional project renderings. The three books' menus and contents are a
-separate future batch. The banker's identity remains hidden in his initial cries
+provisional project renderings. The three books' menus and contents were
+localized in subsequent book/reference-list/record families. The banker's identity remains hidden in his initial cries
 until Tessie identifies his voice.
 
 The source's apparent `⑮` is actually a heart in this ROM. `{heart}` preserves
@@ -112,21 +112,20 @@ village checkpoint is at `build/home-return/research/village`; the English one
 is at `build/english/home-validation/village`. Snapshot metadata pins ROM,
 emulator, state and battery hashes, preventing cross-build reuse.
 
-## Graphics and next work
+## Historical graphics discovery and subsequent work
 
 The fourth planned step confirmed the first dungeon's separate arrival card
 and identified the title/menu background families. See
 [GRAPHICS_INVENTORY.md](GRAPHICS_INVENTORY.md) and the expanded
 [arrival-frame viewer](../build/arrival-research/index.html). No graphics have
-been localized or selected for an English audition yet.
+been localized at that initial discovery stage.
 
-The next bounded batch can inspect the home books and their save/storehouse
-menus, then trace the banker and mansion entrance. Separately, all five menu
-background variants and the arrival atlas need an artwork/terminology audit
-before title/card auditions. Later village states, most gameplay messages,
-credits and full-game playtesting remain open.
+Subsequent work localized books, banker/mansion, services and many gameplay
+families. The main title, five floating logos and 13 arrival names plus Level
+are approved and inserted; original English credits are preserved. See
+[the current matrix](COVERAGE_AUDIT.md) for remaining caller, source and scene gaps.
 
-The catalog now has 66 verified sources: 63 reviewed and inserted, two replaced
+This historical catalog had 66 verified sources: 63 reviewed and inserted, two replaced
 by existing UI components, and one retained Japanese keyboard resource. That
 is not whole-game completion. The known seven tables contain 1,046 sources;
 49 have native observations. Of 2,701 remaining scan candidates, 687 exactly

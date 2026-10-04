@@ -129,6 +129,7 @@ class ScreenTextAudit:
                    'phase': self.phase, **self.stream(pointer, event)}
             (self.queues if a == 0x0801588C else self.formats).append(row)
             if a == 0x08000FB8:
+                self.formatted_player_fields.pop(r[0], None)
                 self.formatted_village_fields.pop(r[0], None)
                 self.protocol_fields.pop(r[0], None)
             if (a == 0x08000FB8 and r[14] == 0x080579E3 and r[0] == r[13]+28 and
@@ -191,22 +192,34 @@ class ScreenTextAudit:
                                    for i in bytes(m[STORED:STORED+8]) if i != 1)
                 if decoded and bytes(m[r[2]:r[2]+len(decoded)+1]) == decoded+b'\0':
                     self.preview_name_fields[r[0]] = decoded
-            if a == 0x08000FB8 and r[14] == 0x0802BE19 and r[0] == r[13]+4:
-                # The disassembled gold-theft producer uses the victim name as
-                # its second string field. Verify that field and the complete
-                # expected output before recognizing a copied player name.
+            player_producers = {
+                # Return address: (output stack offset, string count, name index).
+                0x0802BE19: (4, 3, 1),    # Gold theft.
+                0x0802FA8B: (0x54, 3, 1), # Staff-charge drain.
+                0x08031883: (0, 2, 1),    # Player pulled by a monster.
+                0x08033B6D: (0x80, 1, 0), # Whole-inventory identification.
+            }
+            producer = player_producers.get(r[14])
+            if a == 0x08000FB8 and producer and r[0] == r[13]+producer[0]:
+                # These disassembled producers copy the saved name into a
+                # specific field. Match the arguments and complete output;
+                # only the name's glyph positions receive an exception.
                 template = bytes.fromhex(row['raw_hex'])
                 parts = template.split(b'%s')
                 hero = bytes(m[HERO:HERO+16]).split(b'\0')[0]
-                strings = [bytes(m[p:p+256]).split(b'\0')[0] for p in (r[2],r[3],m.u32[r[13]])]
-                if (hero and len(parts) == 4 and strings[1] == hero
+                _, count, name_index = producer
+                args = (r[2], r[3], m.u32[r[13]])[:count]
+                strings = [bytes(m[p:p+256]).split(b'\0')[0] for p in args]
+                if (hero and len(hero) % 2 == 0 and len(parts) == count+1
+                        and args[name_index] == HERO and strings[name_index] == hero
                         and b'%' not in b''.join(parts)):
-                    prefix = parts[0]+strings[0]+parts[1]
+                    prefix = b''.join(parts[i]+strings[i] for i in range(name_index))+parts[name_index]
                     tokens, _ = tokenize(prefix+b'\0')
                     glyph_start = sum(len(t['text']) if t['kind'] == 'text' else t['kind'] == 'glyph' for t in tokens)
-                    expected = prefix+hero+parts[2]+strings[2]+parts[3]
+                    expected = b''.join(parts[i]+strings[i] for i in range(count))+parts[-1]
                     self.formatted_player_fields[r[0]] = dict(raw_hex=expected.hex(),
-                        player_hex=hero.hex(), glyph_start=glyph_start, producer=r[14]-1)
+                        player_hex=hero.hex(), glyph_start=glyph_start, producer=r[14]-1,
+                        reason='Exact saved player-name field from a verified native message formatter')
             if a == 0x08000FB8 and r[14] == 0x08015861:
                 # The common player wrapper supplies one saved-name field.
                 # Verify the field bytes and entire expected output, then exempt

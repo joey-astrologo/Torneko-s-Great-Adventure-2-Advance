@@ -1,5 +1,9 @@
 # Dungeon and town screen audit — September 30
 
+This page retains the first bounded screen-audit cohort. Later unfiltered cohorts,
+the current build and remaining gaps are in [the coverage matrix](COVERAGE_AUDIT.md).
+A generated gallery's own report hash determines which build its frames show.
+
 [Native screenshot gallery](../build/coverage-audit/index.html) ·
 [Scenario matrix and receipt](../build/coverage-audit/acceptance.json)
 
@@ -86,7 +90,7 @@ ROM SHA256 for this September 30 audit:
 BPS SHA256:
 `72af3d0f428cd60d483ea684f364ab2b6eef785aa46a24dcb7b9c0a77379a67c`.
 The root ROM/BPS pair is updated and patch application reproduces the ROM.
-Counts stay at 3,770 reviewed text resources and 20 graphics; this is a format
+The historical correction kept 3,770 reviewed text resources and 20 graphics; this is a format
 correction, not another reviewed Japanese source or full cumulative acceptance.
 
 The October 2 [Floor-menu correction](FLOOR_MENU.md) supersedes this exported

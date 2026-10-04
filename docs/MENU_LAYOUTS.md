@@ -11,7 +11,10 @@ font is retained for comparison; it is not needed for these panels.
 [Dynamic name budgets](../build/font-audition/dynamic-budgets.csv) ·
 [Acceptance receipt](english-menu-validation.json)
 
-## What is inserted
+## Initial insertion milestone (historical)
+
+Current family coverage and ROM identity are in [the coverage matrix](COVERAGE_AUDIT.md).
+The counts in this initial menu milestone are retained as development history.
 
 The existing 104 reviewed dialogue/menu resources remain in the cumulative
 build. A separate [reviewed menu catalog](../translations/menus-review.json)
@@ -22,9 +25,9 @@ They do not inflate the earlier extraction catalog's native-source count.
   Skills/Spells rows retain their original selection and colour behavior.
 - Common item/ground actions: Shoot, Equip, Remove, Drop, Swap, Throw, Eat,
   Take and Info. **Info** translates 説明, the item information action.
-- Other action labels and item names remain Japanese. Only the dungeon action
-  builder uses the new copied label table; the other three consumers keep the
-  original table and their original budgets.
+- This first batch changed only the dungeon action builder. Later batches cover
+  additional/contained/town consumers and all 221 item definitions through owned
+  copies; the shared original table must not be globally translated.
 
 ## Location banner follow-up (2026-09-30)
 
@@ -78,14 +81,14 @@ string is 112 bytes. The main builder's stack grows by 64 bytes, providing a
 four-row command string is 58 bytes. No permanent RAM or save-format allocation
 is added. Checked ROM patches and the shared allocator own all modifications.
 
-## Expanded audit and validation
+## Original expanded audit and validation (historical)
 
 The native original bank audit now includes the amount editor: eight digits in
 112 pixels, a 99,999,999 bank cap, 52 pixels before the verb's amount column,
 and a 384-byte existing bank formatting region. Natural entry/cancellation and
 controlled zero/one/maximum balances pass. At maximum, original bank menu ink
-ends at x=166 of 176; amount-entry ink ends at x=105 of 112. Native digits still
-use the original font, independently of either English font.
+ends at x=166 of 176; amount-entry ink ends at x=105 of 112. These original-ROM measurements used original digits. The English build now
+uses matching compact numeric aliases; see [typography](TYPOGRAPHY.md).
 
 Evidence distinguishes normal play from synthetic probes:
 
@@ -117,13 +120,12 @@ both observations. It does not discard a mismatched glyph or missing draw.
 
 ## Remaining coverage
 
-The early families above are accepted; whole-game menu-layout sign-off remains
-open. Populated shop/storage services, repaired storage, nested pot contents,
-other modes' gameplay and complete English item-name formatting need their own
-native routes and reviewed wording. Existing inventories exercise original
-Japanese names only. Bank English transaction text and committed transactions
-are not included. Item-specific action choices beyond the nine translated
-labels remain Japanese, in the original-sized shared panel.
+Whole-game menu-layout sign-off remains open, but the old exclusions are no longer
+the current backlog. Populated services, storage child flows, pot views, bank
+transactions/persistence, all 221 item definitions and 30 English custom-name cases
+have separate acceptance. Additional and contained action consumers are covered
+below. Unknown menu families, unvisited combined states and unresolved tutorial
+mappings remain open; consult [the current matrix](COVERAGE_AUDIT.md).
 
 Seven-character player names remain supported, including `Torneko` (41 px in
 T2's font). The audition separately reserves 98 px for seven widest original
@@ -149,7 +151,7 @@ local; the supplied original ROM and save remain unchanged.
 
 ## September 19 service and typography update
 
-The current build has 25 early-menu resources (18 action IDs plus seven root
+That service milestone had 25 early-menu resources (18 action IDs plus seven root
 formats), 23 Option/status resources, 11 core bank resources and a 17-resource
 item cohort. [Service batches](SERVICE_BATCHES.md) track these separately from
 the earlier acceptance snapshot above. The original early-window geometry is
@@ -165,7 +167,7 @@ synthetic states still does not establish natural acquisition or later-mode
 gameplay. The first eight English names additionally have 52 detailed native
 row/Info checks including price-column separation and parent restoration.
 
-## Additional action consumers (current candidate)
+## Additional action consumers (integrated from the 1,934-resource candidate)
 
 The1,934-resource candidate covers all39 nonempty IDs in the existing private
 IDs0..43 action copy. Their labels remain within36px. A separate contained-item

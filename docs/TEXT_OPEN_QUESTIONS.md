@@ -2,9 +2,15 @@
 
 Current continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md). The latest
 accepted build has 3,814 resources and includes the second monster announcement
-reader and shield-reflection/empty-ability Info repairs. Cumulative regression,
-174 unit tests and clean reproduction pass; the 3,813 figures below describe
-the preceding development build.
+reader, shield-reflection/empty-ability Info repairs and the two tutorial fixes
+below. Cumulative native acceptance, 182 unit tests and clean reproduction pass;
+the preceding 3,813 milestone remains separately documented.
+
+The continued branch audit also repairs pot-help and early Mimic-help selectors
+that returned unrelated dialogue, fragments or an invalid address. Both reuse
+existing reviewed prose; no missing dialogue was invented. Their native script
+and menu evidence is in [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md). These are separate
+from the remaining 34 original one-character records below.
 
 Native captures: [text decision gallery](../build/text-decisions/index.html).
 These are controlled probes, with ROM hashes, actual inputs and overrides in
@@ -80,44 +86,44 @@ Japanese-name layout requirement.
 [Original-ROM report](../build/custom-name-parity/original/report.json) ·
 [Original Japanese pot screenshot](../build/custom-name-parity/original/154-count-1-priced-True/inventory.png).
 
-## Remaining gameplay evidence
+## Current unresolved investigations
 
-The October2 [Floor-menu defect](FLOOR_MENU.md) and the subsequently discovered
-empty-inventory caller are fixed. A [disassembly-led follow-up](READER_PATH_AUDIT.md)
-identified seven Japanese expiry messages, now fixed:
-confusion, hallucination, sleep, blindness, dancing, fear and item-recognition
-recovery. They share the computed formatter/queue path at096EC/096F4.
-All20 recovered timer branches now display English. The44 native cases verify
-256-byte output bounds, exact glyphs, maximum saved/transformed names and
-simultaneous expiry. Controlled one-turn timers do not establish ordinary
-status acquisition, and other handlers still need reader-level accounting.
+The [coverage matrix](COVERAGE_AUDIT.md) owns current counts and evidence scope.
+The Floor/empty-inventory defects, seven expiry messages, 55 earlier caller
+bindings, all 20 continuation leads and nine additional failures are repaired.
+The October 3 announcement, reflection, empty-ability Info and pot/Mimic tutorial
+repairs are also accepted. Those defects are not an outstanding work list.
 
-The continued [caller audit](CALLER_COVERAGE_AUDIT.md) found 54 other
-untranslated caller sites; all are now repaired. The continuation added 31,
-including marked Storage-pot actions and ordinary trap discovery after controlled
-setup. Together with the item-placeholder correction, 55 bindings pass 308
-native cases. The continuation has now fixed all 20 outstanding leads and nine
-more caller failures, with 110 native cases and 13 blacksmith exchanges. The copied
-refusal is confirmed English. The deeper [source-reader audit](LOCALIZATION_CLOSURE.md)
-follows town RAM tables, verified entry helpers, stack buffers and their
-producers. Of the earlier 529 unresolved calls, 102 now bind English resources;
-307 have producer candidates, five require manual producer analysis, and 115 retain unknown
-data flow. Disassembly identifies all five remaining buffer producers as the
-bank amount editor, main/child action builders, status row and root commands;
-their native verification families are recorded in the audit. An additional
-eight-branch storage dispatch scan binds 13 more calls to English, leaving
-102 unknown data-flow calls across the combined reports, and finds no
-unresolved-town-source reader.
-The computed-reader follow-up then found and fixed the final wind warning
-and all nine labels in a separate town overview. The latter sources were absent
-from the previous catalog. The remaining 63 unresolved shared/town sources are
-not declared unused from missing bounded references. Final evidence and the
-controlled overview's scope are in [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md).
+The next code pass classifies all 41 observed table-base losses without finding
+another untranslated reader. Graphics discovery covers both background tables,
+their replacement tiles and static objects. A complete controlled ending now
+passes all five scenes, all 57 sources, native saving, fades, credits and END
+through return. These completed cohorts are detailed in
+[CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
+They do not establish ordinary ending access or eliminate the unresolved source
+inventory below.
 
-A repeatable ordinary-input run on accepted3,768 reaches all three tutorial
-floors,14 pickups and14 English tips without Japanese text glyph leads. Current
-3,770 previously passed five automatic walking-pickup cases, including items, gold,
-arrow merging, full inventory and the standing option. Those bounded routes do
-not identify the Japanese dungeon messages the user previously reported on a
-local playtest. A specific affected build/save and action would help reproduce
-that remaining report; it is not treated as disproven by the automated routes.
+| Investigation | Known evidence | Next step |
+|---|---|---|
+| 62 shared/town sources | 52 shared/system and ten town/service records still lack resolved readers in the bounded scan | Trace computed selectors and RAM producers from verified entries; do not call them unused. |
+| 34 event fragments | Three appear only after unconditional END in extracted scripts; 31 lack references in extracted roots | Investigate other entry points/readers; no authority to invent replacement dialogue. |
+| Tutorial configurations 1, 2, 8, 9 | Menu/cursor evidence; whole-payload/decoded-script scan and paged dispatcher find no known entry. Original malformed mappings retained. | Revisit with new entry evidence; do not claim global unreachability or invent replacement prose. |
+| Static-analysis contexts | Observed 25-guard/expanded-save stops now classified: 23 return locations, owned name-limit patch, and unknown row-count loops. Both row selectors resolve English. | Follow other unknown arguments and downstream contexts; the classified exits are not unexplained failures. [Receipt](../build/caller-branches/switch-stop-dispositions.json). |
+| Later scene and graphics integration | Both background tables and static objects audited; complete controlled ending passes native staging, saving, fades, credits and finale | Follow other atlas consumers, independently animated actors and other entry-state combinations; ordinary ending access remains separate. |
+
+The 96 unresolved catalog sources are these 62 sources plus 34 fragments, not
+96 proven display failures or the complete remaining work. All 98 callers in the
+preceding bounded-call cohort have investigated dispositions; that does not resolve
+every source, branch or unknown reader. Earlier 529/102-call figures were scan stages.
+
+Ordinary Mt. Fiery completion and late-game/ending access remain unproved.
+They are provenance gaps, not prerequisites for localization investigation.
+Disassembly leads discovery; disposable invincibility/state setup may provide
+scene access. Native execution still checks actual selection, dynamic fields,
+rendering and return transitions. Record assistance and preserve unmodified
+behavior for damage/death tests.
+
+The earlier unspecified Japanese dungeon/pickup report remains unmatched to an
+independent scenario beyond the reproduced defects. Existing bounded pickup
+routes do not disprove it. Continue using retained saves, disassembly and
+unfiltered probes before asking the user for more investigation.

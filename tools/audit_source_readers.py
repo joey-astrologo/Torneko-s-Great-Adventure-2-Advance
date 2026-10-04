@@ -34,7 +34,7 @@ def inserted_resources(value):
             yield from inserted_resources(child)
 
 
-def run(source, output):
+def run(source, output, computed_switches=False):
     original = load_base()
     compiled = (source/'torneko-2-english.gba').read_bytes()
     build = json.loads((source/'build.json').read_text())
@@ -43,6 +43,14 @@ def run(source, output):
     town_old = relocate(resource()['data'])
     town_new = relocate(decompress(compiled, build['dialogue']['town_resource']['rom_offset'])[0])
     images = ((RAM, (town_old, town_new)),)
+    from tools.thumb_switches import switches
+    domains = switches(original, compiled, LIMIT) if computed_switches else {}
+    followed = {}
+
+    def switch_observer(domain, seed):
+        followed.setdefault(domain['guard'], set()).add(seed)
+
+    switch_options = dict(switch_domains=domains, switch_observer=switch_observer)
     calls = {c: target for target in CONSUMERS for c in direct_calls(original, target) if c-BASE < LIMIT}
     seeds, literals = set(), []
     for pc in range(0, LIMIT, 2):
@@ -72,12 +80,12 @@ def run(source, output):
                               'family': 'shared' if TABLE <= at < END else 'town-overlay'})
 
     routes, limits, stops = trace(original, compiled, seeds, calls, budget=20000,
-                                  memory_images=images, read_observer=observe)
+                                  memory_images=images, read_observer=observe, **switch_options)
     found = {r['call'] for r in routes}
     extra_seeds = {pc for call in set(calls)-found for pc in range(max(0, call-BASE-64), call-BASE, 2)
                    if struct.unpack_from('<H', original, pc)[0] & 0xF800 in (0x2000, 0x4800)}
     extra, more_limits, more_stops = trace(original, compiled, extra_seeds, calls, budget=2500,
-                                          memory_images=images, read_observer=observe)
+                                          memory_images=images, read_observer=observe, **switch_options)
     routes = list({(r['call'], r['original_argument'], r['compiled_argument']): r for r in routes+extra}.values())
     found = {r['call'] for r in routes}
     unresolved = [{'call': c, 'consumer': calls[c], 'consumer_name': CONSUMERS[calls[c]][0]}
@@ -91,7 +99,7 @@ def run(source, output):
     # identifies producers to investigate, without declaring their contents English.
     stack_routes, stack_limits, stack_stops = trace(original, compiled, seeds | extra_seeds,
         calls, budget=20000, memory_images=images, stack_model=True, read_observer=observe,
-        call_observer=observe_call, paired_stack_adjustments=True)
+        call_observer=observe_call, paired_stack_adjustments=True, **switch_options)
     # These existing entry hooks replay the original eight-byte prologue
     # and replace the incoming town-table pointer. Validate their actual code,
     # then resume constant propagation at their original continuation.
@@ -116,7 +124,7 @@ def run(source, output):
                                 'continuation': target & ~1, 'original_table': RAM, 'compiled_table': table})
     private_routes, private_limits, private_stops = trace(original, compiled, set(initial), calls,
         budget=120000, memory_images=images, read_observer=observe, stack_model=True, initial_registers=initial,
-        call_observer=observe_call, paired_stack_adjustments=True, max_path_length=4096)
+        call_observer=observe_call, paired_stack_adjustments=True, max_path_length=4096, **switch_options)
     stack_routes += private_routes
     # Follow only observed calls passing the verified town-table base. The
     # original dispatcher and storage selector pass this table in r0. This
@@ -140,7 +148,7 @@ def run(source, output):
             extra_rows, extra_limits, extra_stops = trace(original, compiled, {target}, calls,
                 budget=120000, memory_images=images, read_observer=observe, stack_model=True,
                 initial_registers={target: regs}, call_observer=observe_call, paired_stack_adjustments=True,
-                max_path_length=4096)
+                max_path_length=4096, **switch_options)
             stack_routes += extra_rows
             town_contexts.append(dict(call=call['call'], target=call['target'], arguments=call['arguments'],
                                       depth=depth, limits=extra_limits, stops=extra_stops))
@@ -190,6 +198,9 @@ def run(source, output):
               'tool_sha256': digest(Path(__file__).read_bytes()), 'scan_range': [BASE, BASE+LIMIT],
               'engine_sha256': digest((ROOT/'tools/audit_text_callers.py').read_bytes()),
               'service_context_path_limit':4096,
+              'computed_switches': list(domains.values()),
+              'followed_switches': [dict(guard=guard, seeds=sorted(seeds)) for guard,seeds in sorted(followed.items())],
+              'switch_engine_sha256': digest((ROOT/'tools/thumb_switches.py').read_bytes()) if domains else None,
               'sources': sources, 'source_dispositions': dict(Counter(r['disposition'] for r in sources)),
               'literal_candidates': literals, 'table_reads': list(reads.values()),
               'candidate_routes': routes, 'unresolved_calls': unresolved,
@@ -218,5 +229,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, default=ROOT/'build/english')
     parser.add_argument('--output', type=Path, default=ROOT/'build/localization-closure/source-readers.json')
+    parser.add_argument('--computed-switches', action='store_true', help='Follow verified bounded jump-table patterns')
     args = parser.parse_args()
-    run(args.source, args.output)
+    run(args.source, args.output, args.computed_switches)

@@ -1,6 +1,8 @@
 # English opening through mansion recovery and bank opening
 
-The cumulative build translates **104 catalog sources**. The first 46 cover 26 opening event strings,
+This page records the historical **104-source opening/mansion milestone**.
+Current build identity, acceptance and remaining work are in
+[the coverage matrix](COVERAGE_AUDIT.md). That milestone translated 104 sources. The first 46 cover 26 opening event strings,
 shared Yes/No, first-floor help, eight first-dungeon/resume resources, the King's
 first audience, seven subsequent castle NPC strings, and two travel-menu labels. This
 includes both responses to Tipper's invitation, the complete opening flashback,
@@ -17,17 +19,18 @@ English font, seven-letter name editor and Start adventure label remain included
 
 Run `./build.sh`. The development ROM is
 [build/english/torneko-2-english.gba](../build/english/torneko-2-english.gba).
-Original ROM/save files are preserved. Later dialogue, other gameplay menus and
-messages, save-preview formatting, the erase-confirmation flow, high-score
-contents and artwork remain Japanese.
+Original ROM/save files are preserved. Later dialogue, menus/messages, save
+previews, erase confirmations, records and approved artwork now have separate
+insertion/validation families. They are outside this opening report's scope,
+not all still Japanese.
 Two earlier catalog sources are replaced by the
 menu/name components; the Japanese keyboard body is intentionally retained.
 
 [Latest native preview](../build/english/mansion-preview.png) ·
-[Current acceptance receipt](english-menu-validation.json) ·
+[Cumulative acceptance receipt](english-services-validation.json) ·
 [Verified BPS patch](../build/english/torneko-2-english.bps)
 
-The current ROM/BPS hashes, source/assets/tool hashes and all ten native
+The current ROM/BPS hashes, source/assets/tool hashes and the cumulative per-family native
 acceptance reports are pinned in the receipt. A clean output-directory rebuild
 produces identical ROM and BPS bytes. The earlier
 [46-resource](english-opening-validation.json) and
@@ -218,11 +221,12 @@ result and limits. The first dungeon card is separate tile artwork; title and
 menu logos belong to different background resources.
 
 The [home-book/banker follow-up](HOME_BOOKS.md) is also complete for its stated
-scope. Green-book contents and repaired-storehouse flows remain pending.
+scope. Green-book/reference/record and repaired-storage consumers subsequently
+received separate native acceptance; see the current matrix.
 
 The [mansion safe-recovery follow-up](MANSION_QUEST.md) is complete through bank
 opening, including family choices and the next morning's blacksmith scene.
 
-Next: map bank transaction formatting, populated inventories, remaining dungeon
-item/message families, green-book records and later town services. Prepare measured
-graphics auditions after auditing the remaining menu variants and arrival atlas.
+Bank transactions, populated inventory, record menus and the approved graphics
+have since been integrated. Current next work is caller/branch and scene discovery
+as listed in the matrix, using targeted native probes after disassembly.

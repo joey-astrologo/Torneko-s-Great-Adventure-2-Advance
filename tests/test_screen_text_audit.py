@@ -131,6 +131,46 @@ class ScreenAuditProducerTests(unittest.TestCase):
         self.assertEqual([x['code'] for x in audit.exceptions], [0x82A0,0x82A2])
         self.assertEqual([x['code'] for x in audit.unclassified], [0x91BA])
 
+    def test_message_name_fields_require_exact_producer_arguments_and_output(self):
+        from tools.name_entry import HERO
+        for caller, offset, count, name_index in ((0x0802BE19,4,3,1),
+                (0x0802FA8B,0x54,3,1),(0x08031883,0,2,1),(0x08033B6D,0x80,1,0)):
+            for invalid in (None, 'caller', 'source', 'destination', 'output', 'name', 'reuse'):
+                with self.subTest(caller=hex(caller), invalid=invalid):
+                    audit, memory = self.game()
+                    sp, template = 0x03007000, 0x08800000
+                    field = 'あい'.encode('cp932')
+                    memory.put(HERO,field+b'\0')
+                    args = [0x08801000+16*i for i in range(count)]
+                    args[name_index] = HERO if invalid!='source' else 0x02004000
+                    strings = [encode('A')[:-1]]*count
+                    strings[name_index] = field
+                    for ptr, value in zip(args, strings):memory.put(ptr,value+b'\0')
+                    parts = [encode('X ')[:-1]]+[encode(' ')[:-1]]*(count-1)+['村'.encode('cp932')+b'\0']
+                    memory.put(template,b'%s'.join(parts))
+                    if count==3:memory.put(sp,args[2].to_bytes(4,'little'))
+                    destination=sp+offset+(4 if invalid=='destination' else 0)
+                    event=self.event(0x08000FB8,(destination,template,*args[:2]),
+                                     lr=caller+(2 if invalid=='caller' else 0))
+                    audit.callback(event)
+                    if invalid=='reuse':
+                        event['registers'][14]=0x08000001
+                        audit.callback(event)
+                    output=b''.join(parts[i]+strings[i] for i in range(count))+parts[-1]
+                    if invalid=='output':output=output[:-1]+'あ'.encode('cp932')+b'\0'
+                    if invalid=='name':memory.put(HERO,'うえ'.encode('cp932')+b'\0')
+                    memory.put(destination,output)
+                    queue=self.event(0x080158CE)
+                    queue['registers'][6]=destination
+                    audit.callback(queue)
+                    # Queued combat text draws outside the direct-reader stack.
+                    for i in range(0,len(output)-1,2):
+                        code=int.from_bytes(output[i:i+2],'big')
+                        audit.callback(self.event(0x08001BC4,(0x02000000,code)))
+                        audit.callback(self.event(0x08001C6E))
+                    self.assertEqual([x['code'] for x in audit.exceptions], [] if invalid else [0x82A0,0x82A2])
+                    self.assertIn(0x91BA,[x['code'] for x in audit.unclassified])
+
     def test_different_producer_cannot_reuse_name_exception(self):
         for args in (dict(caller=0x0802063F),dict(invalidate=True)):
             audit = self.mayor(**args)

@@ -15,8 +15,8 @@ bottom 24 rows, including `Push START!`, and every background pixel outside its
 
 The title-insertion validation ROM SHA-256 is
 `bd61d3f6f2db7af8119ecc6ee757f7560808d55ddec192c670368523a2708ab3`.
-The latest root build also includes the [menu-banner correction](LOCATION_BANNER.md);
-its single pointer change preserves all these graphics bytes. The gallery and
+The latest root build includes subsequent text/caller repairs; its identity and
+cumulative acceptance are in [the coverage matrix](COVERAGE_AUDIT.md). The gallery and
 reports here retain the title-insertion build identity.
 
 That build contains **3,770 inserted text resources and 20 English graphics**:

@@ -1,9 +1,12 @@
 # Item text and budgets
 
-The current candidate catalog has 206 reviewed identified item names and their
-specific descriptions, plus the two equipment category descriptions and the invisible-item fallback. Native
-validation and the accepted ROM hash are tracked separately in
-`english-services-validation.json`; a catalog entry alone is not acceptance.
+The accepted build covers all **221 item definitions**. The original review
+catalog contains 206 ordinary identified names; the additional 15 special/reserved
+records are now covered too. Two equipment category descriptions and the invisible-
+item fallback are separately accounted for. Current acceptance requires **2,006
+item cases**, plus separate alias/custom-name/action families. See the
+[coverage matrix](COVERAGE_AUDIT.md) and [receipt](english-services-validation.json);
+a catalog entry alone does not establish every consumer.
 
 Names retain the established **80px / 31-byte** base-name reserve, including the
 encoded terminator. Complete inventory rows have 162 usable pixels and a
@@ -30,20 +33,25 @@ identified, equipped, cursed, unidentified, priced, maximum fields, priced with
 maximum fields, and the last combination with equipment or curse markers.
 It additionally checks four naturally carried items and all three name-width
 cases for each description containing the player command. For this catalog that
-is 1,872 cases, including the Ogre shield ability-present branch and the
+is 2,006 cases, including the Ogre shield ability-present branch and the
 Hocus Pocus scroll visibility branch. Price-background overlap, buffer guards, complete names/numbers,
 native pixels, formatter ABI and parent-window restoration are checked.
 Synthetic combinations are stress tests, not proof of natural item acquisition.
-Warrior skill decorations, inscriptions, nested pot contents and later modes
-still need their own combined-state coverage.
+Warrior skills, inscriptions and pot contents have separate native verification
+families in the cumulative receipt. Unvisited combinations and later-mode consumers
+still need targeted investigation; these 2,006 cases alone do not cover them.
 
-Fifteen definition records are separate work: bare hands (ID 0, with native
+The additional 15 definition records are now included: bare hands (ID 0, with native
 colour controls); 13 reserved/source-placeholder definitions (11, 85, 86, 139,
 153, 168, 197–202, 211); and ID 214, whose ordinary display is native currency
 despite its internal Japanese `Fire` label. Reserved wording does not prove
 unreachability. Description slot 221 is an invisible-item fallback, not a 222nd
 item definition; it is now explicitly included in the text inventory. Unidentified
-aliases and direct-name consumers outside the audited paths remain open.
+aliases have a separate 154-label review and 166 native cases. Direct-name consumers
+outside the audited paths remain open. English custom-name layouts pass 30 native
+cases; see [the settled acceptance scope](TEXT_OPEN_QUESTIONS.md#custom-item-name-acceptance-scope).
+Maximum Japanese custom-item-name width is not a regression requirement. The 98px
+player-name reserve above applies to the separate seven-character player field.
 
 The Info selector preserves two special native branches: Ogre shield uses only
 the general shield description when item flag `0x20` is clear; Hocus Pocus scroll

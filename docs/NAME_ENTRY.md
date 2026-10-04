@@ -113,19 +113,20 @@ loads and resumes with its original Japanese names intact. This verifies that
 tested import route. Saves containing new English IDs should remain paired with
 the English build; the Japanese ROM has no glyph mappings for those IDs.
 
-The remaining broader playtest includes later name contexts, renaming services,
-item-specific naming mechanics and other save modes. These are not covered by
-the first-floor acceptance route. No claim of full-game localization or gameplay
+Later name contexts, mayor renaming/persistence, English item naming and inscription
+input now have separate bounded acceptance; see [the coverage matrix](COVERAGE_AUDIT.md).
+Unvisited name consumers and save combinations remain open. These broader families
+are not established by the first-floor route alone. No claim of full-game localization or gameplay
 coverage follows from these tests.
 
 Evidence: [English acceptance receipt](english-name-entry-validation.json) and
 [memory/save findings](MEMORY_MAP.md#native-save-records-and-name-persistence).
 That receipt pins the earlier name-component build; its generated artifact paths
 are subsequently reused by cumulative builds. The
-[current acceptance receipt](english-opening-validation.json) adds the King's
+[historical opening receipt](english-opening-validation.json) adds the King's
 dialogue and home-destination substitutions, including seven widest original
-Japanese glyphs, on the current ROM. Later naming services and other contexts
-remain separate playtest work.
+Japanese glyphs, on that recorded ROM. Current per-family acceptance is linked
+from the coverage matrix; generated paths can hold later matching-build reruns.
 
 ## Reproduce the base-game check
 

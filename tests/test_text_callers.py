@@ -30,6 +30,31 @@ class CallerTraceTests(unittest.TestCase):
         rows, _, _ = trace(original, original, {0}, {BASE+6: BASE+0xFB8})
         self.assertEqual(rows, [])
 
+    def test_unknown_table_index_reports_loss_without_binding(self):
+        original = self.sample()
+        # r0 is a known table base, r2 is unknown: add r1,r0,r2;
+        # ldr r1,[r1]; bl formatter. Reporting must not invent a pointer.
+        struct.pack_into('<HHHHH', original, 2, 0x1881, 0x6809, 0xF000, 0xFFD7, 0x4770)
+        compiled = bytearray(original)
+        struct.pack_into('<I', compiled, 16, BASE+40)
+        losses = []
+        plain = trace(original, compiled, {0}, {BASE+6: BASE+0xFB8})
+        observed = trace(original, compiled, {0}, {BASE+6: BASE+0xFB8},
+            unknown_operand_observer=lambda *args: losses.append(args))
+        self.assertEqual(observed, plain)
+        self.assertEqual(observed[0], [])
+        self.assertIn((BASE+2, 0x1881, (BASE+32, BASE+40), None, BASE), losses)
+
+    def test_known_table_index_does_not_report_unknown_operand(self):
+        original = self.sample()
+        struct.pack_into('<HHHHHH', original, 2, 0x2200, 0x1881, 0x6809,
+                         0xF000, 0xFFD6, 0x4770)
+        losses = []
+        rows, _, _ = trace(original, original, {0}, {BASE+8: BASE+0xFB8},
+            unknown_operand_observer=lambda *args: losses.append(args))
+        self.assertEqual(rows[0]['original_argument'], BASE+64)
+        self.assertNotIn(BASE+4, [r[0] for r in losses])
+
     def test_patched_instruction_requires_new_analysis(self):
         original = self.sample()
         compiled = bytearray(original)
@@ -95,3 +120,35 @@ class CallerTraceTests(unittest.TestCase):
         flags = compare_flags(0x80000000, 1)
         self.assertTrue(condition(2, flags))  # unsigned >=
         self.assertTrue(condition(11, flags))  # signed <, including overflow
+
+
+class TraceStopEvidenceTests(unittest.TestCase):
+    def test_stop_observation_preserves_results_and_paired_patch_bytes(self):
+        original = CallerTraceTests().sample()
+        compiled = bytearray(original)
+        struct.pack_into('<H', compiled, 2, 0x2100)
+        expected = trace(original, compiled, {0}, {BASE+4: BASE+0xFB8})
+        details = []
+        actual = trace(original, compiled, {0}, {BASE+4: BASE+0xFB8},
+                       stop_observer=details.append)
+        self.assertEqual(actual, expected)
+        self.assertEqual(len(details), 1)
+        self.assertEqual((details[0]['reason'], details[0]['address']),
+                         ('patched_instruction', BASE+2))
+        self.assertEqual(details[0]['tail'], [BASE])
+        self.assertNotEqual(details[0]['original_hex'], details[0]['compiled_hex'])
+        self.assertEqual(details[0]['registers']['0'], (BASE+32, BASE+32))
+
+    def test_loop_stop_records_repetition_and_exact_instruction(self):
+        # add r0,1; b back: a known changing value defeats state deduplication.
+        rom = struct.pack('<HH', 0x3001, 0xE7FD)
+        details = []
+        _, limits, stops = trace(rom, rom, {0}, {}, max_path_length=8,
+            initial_registers={0:{0:(0,0)}}, stop_observer=details.append)
+        self.assertFalse(limits)
+        self.assertEqual(stops, {'path_length_limit':1})
+        self.assertEqual(details[0]['address'], BASE)
+        self.assertEqual(details[0]['registers']['0'], (4,4))
+        self.assertEqual(details[0]['path_length'], 8)
+        self.assertEqual(details[0]['repeated_addresses'],
+                         [{'address':BASE,'visits':4},{'address':BASE+2,'visits':4}])

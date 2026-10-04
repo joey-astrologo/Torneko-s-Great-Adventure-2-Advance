@@ -70,8 +70,9 @@ Runs use disposable sessions, retain input schedules and preserve the supplied
 ROM/save. Both opening branches, six ordinary Option routes and 135 unit tests
 also pass.
 
-Counts remain **3,770 text resources and 20 graphics**; these existing names
-are not counted twice. The 113 unresolved catalog sources remain open. This
+This historical correction kept **3,770 text resources and 20 graphics**; existing
+names were not counted twice. Its catalog then had 113 unresolved sources;
+[the current matrix](COVERAGE_AUDIT.md) supersedes that count. This
 fix covers the identified dungeon-menu banner family; other readers and
 whole-game discovery retain their separate validation scope.
 

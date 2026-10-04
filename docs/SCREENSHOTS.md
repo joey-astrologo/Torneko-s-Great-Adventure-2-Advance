@@ -1,5 +1,10 @@
 # README screenshots
 
+These are retained screenshots from the build identified below, not newly captured
+frames from the latest release candidate. See [the coverage matrix](COVERAGE_AUDIT.md)
+for current ROM identity and acceptance. No screenshot refresh was performed by
+the October 3 documentation reconciliation.
+
 The four images in [the project README](../README.md) are unedited 240×160
 mGBA framebuffer captures from one fresh English game. They are stored in
 `docs/images/` so the README works without the ignored `build/` directory.

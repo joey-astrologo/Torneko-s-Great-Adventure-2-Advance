@@ -1,8 +1,9 @@
 # Torneko 2 documentation
 
-Start with [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage, accepted
-milestones and remaining work. Older batch reports retain their original ROM
-hashes and validation scope.
+Start with [COVERAGE_AUDIT.md](COVERAGE_AUDIT.md) for the current build, family
+matrix, evidence types and ordered backlog. [TEXT_PROGRESS.md](TEXT_PROGRESS.md)
+retains accepted milestones and development history. Older batch reports retain
+their original ROM hashes and scope; historical next steps are not current tasks.
 
 [Coverage assessment](COVERAGE_AUDIT.md) explains what those figures establish,
 the missed-reader failure, and which complete-screen audits are still pending.
@@ -15,9 +16,11 @@ the missed-reader failure, and which complete-screen audits are still pending.
 | Compile the ROM, export a BPS or run checks | [BUILD.md](BUILD.md) |
 | Translate and revise | [LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), [glossary](../translations/glossary.json) |
 | Investigate unresolved text | [TEXT_OPEN_QUESTIONS.md](TEXT_OPEN_QUESTIONS.md) |
+| Review the latest caller/tutorial repairs | [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) |
+| Use Blank scrolls and English Write inputs | [BLANK_SCROLLS.md](BLANK_SCROLLS.md) |
 | Review the continued caller/custom-name audit | [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md) |
 | Review incomplete original dialogue | [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md) |
-| Capture gameplay or use Ghidra | [EXPLORATION.md](EXPLORATION.md) |
+| Disassemble callers or run targeted/assisted native probes | [EXPLORATION.md](EXPLORATION.md) |
 | Reproduce the README screenshots | [SCREENSHOTS.md](SCREENSHOTS.md) |
 
 ## Fonts, layout and services
@@ -27,6 +30,8 @@ the missed-reader failure, and which complete-screen audits are still pending.
 - [Menu geometry and action budgets](MENU_LAYOUTS.md).
 - [Dungeon-menu location banner correction and coverage gap](LOCATION_BANNER.md).
 - [Independent dungeon/town screen audit and native gallery](DUNGEON_SCREEN_AUDIT.md).
+- [Floor/Trap correction](FLOOR_MENU.md), [modal/status reader audit](READER_PATH_AUDIT.md)
+  and [earlier caller repair cohort](CALLER_COVERAGE_AUDIT.md).
 - [Numbers, spacing and bank labels](TYPOGRAPHY.md).
 - [Service coverage and constraints](SERVICE_BATCHES.md).
 - [Item names and descriptions](ITEM_TEXT.md).
@@ -40,6 +45,7 @@ the missed-reader failure, and which complete-screen audits are still pending.
 - [Shiren source lettering](SHIREN_ARRIVAL_FONT.md).
 - [Credits and arrival studios](GRAPHICS_AUDITION.md); the original English GBA credits are preserved.
 - [Remaining graphics discovery](GRAPHICS_INVENTORY.md).
+- [Complete controlled ending and scene audit](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
 
 Audition previews and frozen build artwork are distinct. Follow each insertion
 guide's ownership, palette and native-validation requirements when revising art.

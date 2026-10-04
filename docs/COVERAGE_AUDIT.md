@@ -1,120 +1,148 @@
-# Coverage assessment after the missed menu banner
+# Localization coverage matrix
 
-**Whole-game localization coverage is unverified. There is no defensible
-whole-game completion percentage yet.** The user-reported Japanese location
-banner showed that translated catalog entries, inserted resources and passing
-family tests can coexist with an untranslated ordinary gameplay screen.
+Updated 2026-10-03. **Whole-game coverage is unverified; there is no defensible
+whole-game completion percentage.** This is the current coverage reference.
+Family guides and research journals retain their historical builds and counts.
 
-The [October 3 caller follow-up](CALLER_FOLLOWUP.md) adds three confirmed repairs:
-the second monster announcement reader, computed shield-reflection damage and
-the empty-ability sword/shield Info fallback. All 98 callers left unresolved by
-the bounded data-flow scan now have investigated dispositions: 89 observed on
-the final ROM, six actor-name copies and three bypassed old calls. Ordinary
-inputs complete the Cemetery Dungeon quest, unlock the bakery and buy Magic
-bread; the purchase and correct balance survive a native save and cold reload.
-Cumulative acceptance passes on the 3,814-resource ROM, with 174 unit tests
-and clean ROM/BPS reproduction. The 813 unfiltered final-ROM sessions are
-separately recorded; earlier counts below describe their recorded builds.
+## Accepted build and evidence
 
-The visual review also missed that text. More passing cases from the same
-selected-resource checks would not resolve this coverage problem.
-
-On 2026-10-02 the user found another ordinary first-floor failure: selecting
-Floor on an empty tile displayed Japanese. The earlier independent screen
-matrix omitted that selection. The [Floor-menu correction](FLOOR_MENU.md)
-adds this route and related item/trap/stairs/refusal states to `build.sh`;
-its unfiltered audit rejects the old ROM. This repeated miss reinforces that
-unvisited states remain gaps even when the root menu has passed.
-
-The [subsequent code-path audit](READER_PATH_AUDIT.md) enumerates all four direct
-callers of that modal and found an additional empty-inventory reader, now fixed.
-It also confirmed seven Japanese status-expiry messages through20 automated
-timer probes. All seven are now fixed;44 native cases cover all20 branches,
-maximum saved/transformed names and simultaneous expiry. The old ROM still
-fails exactly those seven baseline cases. The shared-reader triage now retains
-already-reviewed sources; an inserted translation is not a disposition for
-every caller of its original source.
-
-The continued [caller audit](CALLER_COVERAGE_AUDIT.md) found 54 untranslated
-caller sites, 31 more than its first pass. Eight scenarios reach failures using
-normal buttons after controlled setup, now including marked Storage-pot actions
-and trap discovery. Other findings use explicit native handler/state probes.
-All 54 are now repaired, plus the recognition-blocked placeholder; 55 bindings
-pass308 native cases. The continuation has now reproduced and fixed all 20
-outstanding leads and nine additional failures;110 controlled cases and 13 full
-blacksmith exchanges pass. The copied refusal is confirmed English. The expanded
-15-reader scan has no remaining resolved direct Japanese binding, while529
-arguments remain beyond its static resolution. Those limits are not a defect count.
-
-## What the existing figures establish
-
-| Evidence | What it establishes | What it does not establish |
+| Measure | Current result | Scope |
 |---|---|---|
-| 3,527 of 3,638 catalog sources reviewed (96.9%) | Review progress within the identified catalog, excluding 28 accounted-for retained/component sources | Percentage of playable text in English, all readers redirected, or all text discovered |
-| 3,785 text resources inserted | English resources present in the compiled build under checked ownership | Every place that displays those concepts actually uses the inserted English |
-| 111 unresolved catalog sources | Known source-level investigation backlog | The complete remaining work; missed consumers of already-reviewed sources are additional gaps |
-| Family test passes | The specified inputs, formats, rendering paths and bounds passed on the recorded ROM | Every visible field in the screen or every state/route in the game was checked |
-| Controlled native probes | Tested selectors and arguments render through the native functions | Ordinary access, unlocking or full playthrough coverage |
-| ROM/BPS reproduction | Deterministic packaging and correct patch application | Language coverage |
+| English ROM SHA-256 | `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c` | Latest accepted development build; archive `build/accepted/3814-tutorials/` |
+| BPS SHA-256 | `0abed5a9b873844c978d1d10db9017d81cd1d3a10cb3f118e32277f73d064550` | Clean reproduction and independent patch reconstruction pass |
+| Inserted resources | 3,814 text; 20 graphics | Compiled resources, not all reachable screens |
+| Known source catalog | 3,676: 3,552 reviewed, 96 unresolved, 28 retained/components | Discovery inventory, not gameplay coverage |
+| Cumulative acceptance | 182 unit tests; native/menu/service checks pass | Exact recorded cases on this ROM |
+| Selected-font browser checks | 315 contexts / 3,430 measurements; no selected-font overflows | Identified regions and substitutions |
 
-## Concrete failure and correction
+[Release checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip) ·
+[Subsequent research receipt](../build/caller-branches/release-followup.json) ·
+[Completion receipt](../build/caller-branches/completion.json) ·
+[Service receipt](english-services-validation.json) ·
+[Menu receipt](english-menu-validation.json) ·
+[Build ledger](../build/english/build.json) ·
+[Detailed caller follow-up](CALLER_FOLLOWUP.md).
 
-`TextChecks` starts validation for registered resource pointers.
-`MenuChecks` can ignore an unrecognized reader when no tracked stream is active.
-`UiChecks` validates known formatting resources. These are useful insertion
-tests, but their selected input lists cannot establish complete screen coverage.
+A subsequent clean compiler run reproduces the accepted ROM/BPS exactly, with
+independent patch application. Research-tool changes pass 184 unit tests and
+189 additional unfiltered native sessions / 13,662 glyphs. These are separate
+from the archived 182-test full acceptance above; no new ROM fix or full native
+suite rerun was needed. The ZIP includes both receipts and release notes.
 
-The dungeon location names were already reviewed and inserted for results and
-history. The separate main-menu reader still used the Japanese table. The
-[banner correction](LOCATION_BANNER.md) fixes that reader and adds a complete
-five-field check, including rejection of unexpected Japanese glyphs. It rejects
-the previous ROM. That stronger check currently covers this menu family; it
-must not be described as a game-wide coverage gate.
+The further caller/scene audit passes **186 unit tests**, classifies 41 computed
+table-base losses and checks both background tables: 22 full-screen records and
+28 scrolling records, including flag/door replacements and all static objects.
+The complete controlled ending now runs its native save, five scenes, credits,
+END artwork and return. All 57 ending sources appear: 71 reads / 3,338 glyphs,
+with no unexpected Japanese or layout findings. These are additional checks of
+the same accepted ROM, not new translations. See [the continuation](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending)
+and [graphics evidence](GRAPHICS_INVENTORY.md).
+The [scene-audit checkpoint ZIP](../build/releases/2026-10-03-scene-audit.zip)
+packages that unchanged BPS and a separate receipt for these additional checks.
 
-## Required independent audit
+The cumulative build completed its native checks, then stopped at a stale
+20-case tutorial expectation in report generation. That expectation was corrected
+to 22; the resumed report/font stage and aggregate acceptance passed. The receipt
+preserves the initial failure and resolved tail; this was not an uninterrupted
+successful `build.sh` invocation. Original ROM and supplied save hashes are unchanged.
 
-1. Inventory complete screens and their states from ordinary gameplay. Record
-   every visible label, header, footer, help panel, message and dynamic field,
-   including text outside the currently selected resource catalogs.
-2. Observe text readers and glyph output without first filtering to known
-   translated pointers. Unaccounted-for readers and Japanese output become
-   explicit failures of that screen's coverage check. Any permitted exception,
-   such as an optional kana keyboard or a player-entered Japanese name, needs
-   a specific context and recorded reason; no blanket Japanese exclusion.
-3. Trace each missed reader to its sources and other consumers. A reviewed
-   translation does not close the issue until the affected display paths use it.
-4. Inspect complete native screenshots and transitions. Reader traces alone
-   miss baked-in artwork and other graphics paths. Keep original image evidence,
-   input schedules, build hashes and the exact ordinary/controlled distinction.
-5. Publish a screen/route matrix with demonstrated English fields, remaining
-   Japanese, unaccounted-for text and unvisited states. Close issues with an
-   independently reproduced before/after failure, not a higher test count.
+Some cumulative receipt fields preserve an earlier family subset: use
+`total_reviewed_inserted_resources` for the overall insertion count, not
+`inserted_reviewed_text_resources`. Inherited opening/service `scope` fields
+also do not summarize later independent quest receipts. Read each evidence
+record's ROM and case scope.
 
-Audit ordinary early-game UI and the previously reported dungeon/pickup text
-first, then town/services, later dungeons/modes and the ending. The user's earlier
-Japanese pickup/message report remains unresolved at the scenario level; existing
-passing pickup probes do not disprove it. Reuse retained saves and routes before
-asking the user for additional investigation.
+## Coverage by family
 
-## Current audit status
+Counts below are bounded acceptance cases, not percentages or necessarily unique
+game states. A passing family test does not establish an unfiltered audit of every
+screen. Independent audit cohorts are identified separately below.
 
-| Area | Independent complete-screen coverage status |
-|---|---|
-| Dungeon root menu and location banner | Five text fields checked across 13 location selectors and three command modes, including reopening. Natural first-floor case; remaining selectors/modes are controlled. Broader gameplay states remain separate. |
-| Floor command and related modals | 14 scenarios cover empty Floor/inventory, a dropped item, stairs, controlled trap/class/status states and repeated cancellation. Four ordinary routes, ten controlled cases; all four direct modal callers statically checked. See [reader-path audit](READER_PATH_AUDIT.md). |
-| Status expiry | All20 recovered timer branches display English after the seven-message repair;44 native cases also cover maximum saved/transformed names and simultaneous expiries. Whole-stream audit plus exact repaired-message bytes, guards, ABI and glyph pixels. Ordinary status acquisition and other handlers remain separate. |
-| Other callers of translated sentences | 54 confirmed failures repaired plus the item placeholder; 55 exact bindings pass 308 cases. The 20 earlier leads and nine additional failures are now fixed and covered by 110 continuation cases;13 blacksmith exchanges also pass. Eight cases use normal buttons after state setup; see [caller audit](CALLER_COVERAGE_AUDIT.md) for controls, source gaps and unresolved candidates. |
-| Inventory, item actions, descriptions and custom naming | Unfiltered audit now covers the naturally carried mansion inventory, Big bread Info/Eat/Drop, walking pickup and controlled inventory-full refusal. Other item states, effects and custom-name constraints remain open. |
-| Options, bank, shops and storage | Ordinary town-root reopening, earned-money bank round trip and repaired-storage deposit/withdrawal/empty acknowledgement audited without resource filters. Thirteen controlled blacksmith exchanges now include all-glyph checks; other service, shop and Option states still need the independent audit. |
-| Story, pickups and combat | Exact fresh tutorial replay reaches 14 pickups on three floors; natural mansion gold/arrow merge and associated combat audited. No unexpected Japanese in these scenarios; the earlier report remains unresolved outside this bounded matrix. Broader routes and readers remain pending. |
-| Later dungeons, classes, records and ending | Controlled and bounded route evidence exists; complete natural-route coverage unverified. |
-| Title, five corner logos, identified arrival cards and credits | Named assets have their own evidence. Additional graphical text discovery and natural late-game/ending coverage remain open. |
+| Area | Established evidence | Remaining limit / next investigation |
+|---|---|---|
+| Dungeon root and location banner | All five visible fields, 13 locations × three modes; repeated opening and original geometry. [Banner](LOCATION_BANNER.md). | Other readers and unvisited states require accounting. |
+| Floor, ground items and traps | 14 modal cases, all four direct callers: empty inventory/Floor, items, stairs, trap/class/status refusals and cancellation. [Reader audit](READER_PATH_AUDIT.md). | Standing on a trap is included; controlled trap/class setup does not establish ordinary encounters. |
+| Status expiry | Seven missed messages repaired; 44 cases cover all 20 timer branches, widest saved/transformed names and simultaneous expiry. | Other handlers and acquisition branches remain separate. |
+| Earlier caller repairs | 55 bindings / 308 cases, then all 20 leads plus nine additional failures / 110 cases and 13 blacksmith exchanges. [Caller audit](CALLER_COVERAGE_AUDIT.md). | These leads are closed; earlier unresolved-call counts describe historical scan stages. |
+| October 3 caller repairs | Second monster announcement reader, shield reflection, empty-ability sword/shield Info, then pot/Mimic tutorials repaired. [Follow-up](CALLER_FOLLOWUP.md). | Reviewed sources do not automatically close their other consumers. |
+| Items, aliases and custom names | 221 definitions / 2,006 item cases; 154 appearance labels / 166 cases; 30 English custom-name cases including prices, markers, pot counts and storage persistence. [Items](ITEM_TEXT.md). | Unvisited consumers and combined states; Japanese maximum custom-name width is outside acceptance. |
+| Item actions, pots and blank scrolls | Owned main/contained/town consumers; 54 container, 11 pot-view, 102 writing, nine editor and 584 writing-lookup cases. [Blank scrolls](BLANK_SCROLLS.md), [menus](MENU_LAYOUTS.md). | Specific consumer/lookup cases, not every inventory combination. |
+| Bank, bakery and storage | 12 core bank, 21 reward, three bank persistence, 13 bakery, ten storage-service and three storage transaction cases. Ordinary holy-flame/storage and Cemetery/bakery routes recorded. [Services](SERVICE_BATCHES.md). | Later states/consumers remain open. Ordinary bakery persistence was recorded on the preceding ROM. |
+| Other services | Native families cover blacksmith, Gaibara, Remi, mayor, priest, carpenter and dungeon shop; exact cases in the service receipt. | Controlled entry/transactions do not establish all unlock branches or scene integration. |
+| Combat, traps, spells and skills | Native formatter/queue/menu families, maximum substitutions and targeted reader repairs pass; skill-loss checks now execute the original name-cache producer. | Unvisited caller branches, compound states and entry assumptions remain discovery work. |
+| Tutorial help | All 27 menus, 22 bank/topic contexts, six direct prose cases, four alternate headers and three controlled NPC-script routes pass. Configurations 12 (pot) and 14 (Mimic) repaired. | Configurations 1, 2, 8 and 9 have no instruction-aligned entry in the scanned scripts or known page path. Original malformed mappings retained; unknown entry paths remain unproved. See the entry audit below. |
+| Story and event stubs | Reviewed banks and controlled getters; two approved one-character reconstructions inserted and verified. [Event audit](EVENT_STUB_AUDIT.md). | 34 other one-character records unresolved; do not invent dialogue or infer global unreachability. |
+| Results, records, saves and link text | 336 result, 664 result-UI, 54 history-UI, nine history-menu, 15 records, four password and 56 save-preview cases; link text/pickers tested. | Actual multiplayer and unvisited combinations excluded. Password kana is intentional protocol data. |
+| Later dungeons, classes and ending | 85 ending-text and 25 dungeon-travel cases plus class/spell/skill families. Complete controlled ending additionally runs all five scenes, saving, credits, finale and return with native staging. | Other entry states and callers, including ordinary ending access, remain unverified. Assisted entry is appropriate; ordinary full-game progression is not a prerequisite. |
+| Title, arrivals and credits | Main title + five floating logos; 13 arrival names + Level; original English credits preserved. All 22 full-screen and 28 scrolling descriptors decoded, including their foregrounds, replacements and 85 static object instances. [Graphics matrix](GRAPHICS_INVENTORY.md). | No additional Japanese lettering found in these families. Independently animated actors, other atlas consumers and other scene integrations remain separate. |
 
-The first [dungeon/town audit](DUNGEON_SCREEN_AUDIT.md) now covers 11 scenarios
-with 7,068 observed glyph draws and explicit exceptions for native symbols and
-the exact player name retained in an imported Japanese save. It found and fixed
-missing spacing in gold pickup text. Historical controls prove that the new
-audit rejects both the old gold output and the missed Japanese banner.
-The [gallery and matrix](../build/coverage-audit/index.html) retain actual frames,
-input schedules and the ordinary/controlled distinction. These results do not
-close the other pending areas or establish a whole-game percentage.
+## Independent display audits and build provenance
+
+The missed banner and empty-Floor message exposed checks filtered to known English
+pointers. Independent audits observe readers and glyph output before that filtering.
+Exceptions must match an exact producer/context (saved names or password protocol,
+for example), never all Japanese.
+
+| Cohort | Build / result | Scope |
+|---|---|---|
+| First dungeon/town audit | Historical 11 scenarios / 7,068 glyph draws; [gallery](../build/coverage-audit/index.html) | Found gold-spacing defect; negative controls reject old banner and gold output. |
+| Broad caller follow-up | Preceding ROM `452394042d5be4c83adb79fa35eaba5ca261514533b2162604032b9561e44304`; 35 families / 813 sessions / 267,527 glyphs | All 98 bounded-scan callers disposed: 89 observed, six actor-name copies, three bypassed old calls. [Receipt](../build/caller-audit-next/completion.json). |
+| Branch-audit supplement | Same preceding ROM; 19 families / 1,042 sessions / 256,870 glyphs | Exact saved-name handling corrected; initial failures and final resolutions retained. [Resolution](../build/caller-branches/native-resolution.json). |
+| Repaired tutorial screens | Current ROM; 22 bank sessions / 51,601 glyphs, 27 menu sessions / 7,431 glyphs, one Mimic-parent session / 562 glyphs | Whole-stream checks include header, border gap and restoration; three script probes additionally execute native selectors/handlers. |
+| Release-checkpoint supplement | Current ROM; 189 sessions / 13,662 glyphs | 67 town/dungeon travel-list, 16 book/travel, 105 travel-confirmation and one native town-save continuation cases; all unfiltered checks pass. [Receipt](../build/caller-branches/release-followup.json). |
+| Complete controlled ending | Current ROM; one complete route / 71 reads / 3,338 glyphs, repeated with caller ABI/stack guard checks | One bank-call entry override; native save, all five scenes, all 57 ending resources, fades, credits, END artwork and return. [Receipt](../build/ending-sequence-guarded/report.json). Saved-name exceptions remain exact. |
+| Ordinary continuation | Eight segments / 13,499 glyphs / 2,147 input/wait actions; individual ROM hashes retained | Mt. Fiery unlock, native suspend/current-ROM cold resume, 8F, defeat and both retry outcomes. [Summary](../build/caller-branches/ordinary/summary.json). Quest completion unproved. |
+
+Cohorts can overlap; do not add them as unique-screen coverage. Preceding-ROM
+audits are not current-ROM replays. Ordinary routes provide integration/save
+evidence; repeated attempts to survive a dungeon are not an acceptance requirement.
+
+## Remaining work, in investigation order
+
+1. **Resolve code and source gaps.** Follow the 62 unresolved shared/town sources
+   (52 shared/system, ten town/service), 34 event fragments and tutorial
+   configurations 1, 2, 8 and 9 only when new entry evidence is found. The
+   [entry audit](../build/caller-branches/tutorial-reachability.json) examines 133
+   event roots plus seven complete NPC payloads: 22 configurations have script
+   candidates and configuration 19 is the bounded second page of 18. One raw
+   configuration-8 byte match lies inside another instruction's operands. The
+   four retained configurations are absent from the decoded entries and known
+   paged path; this is not a proof of global unreachability.
+   The 28 retained/components comprise 21 nonlinguistic, four components and
+   three deliberately retained Japanese records.
+2. **Follow remaining data-flow contexts.** The 25-guard scan and expanded save
+   seed now have [35 distinct stop dispositions](../build/caller-branches/switch-stop-dispositions.json):
+   23 locations are native POP/BX epilogues; the instruction patch is the existing
+   six-to-seven-character name limit; repeated save-row traversal results from an
+   unknown selector/count. Seeding its two native selector values resolves all
+   four English row bindings. Do not repeat these as unexplained failures.
+   Downstream stops from the separate row-seed probe and other unknown arguments
+   remain explicit; these dispositions do not resolve the 62 source records.
+   A further diagnostic observes where unknown indexes discard known table bases:
+   all 41 resulting sites have dispositions (37 relocated consumers, two existing
+   save/curse paths, two sprite-coordinate coincidences). Its 49 seed-budget
+   limits remain recorded, not evidence of 49 defects. No additional untranslated
+   reader was identified in this cohort.
+3. **Probe uncovered scene/branch contexts.** Identify entry conditions through
+   disassembly, then use disposable saves, controlled state or documented
+   invincibility/damage patches to reach later scenes efficiently. Exercise native
+   callers/selectors/renderers; check all visible fields, pixels and transitions.
+   Keep unmodified damage/death cases when those branches are under test.
+   Calling a renderer alone does not prove its scene caller works.
+4. **Trace graphical text and check repairs.** Follow scene loaders, decompression
+   and remaining atlas consumers; both identified background tables, their static
+   layers and the complete controlled ending are now checked. Inspect additional
+   artwork and actual frames. Fix confirmed
+   issues, check related consumers, update this matrix and complete affected
+   regressions and required acceptance before the next release.
+
+The user's earlier unspecified Japanese dungeon/pickup report has no independently
+identified scenario beyond the defects already reproduced. Bounded pickup routes
+do not disprove it; use retained saves, code and unfiltered probes before requesting
+more user investigation.
+
+Disassembly leads discovery. Runtime checks establish which bank/state reaches a
+reader, whether dynamic fields fit, and whether drawing/restoration is correct.
+Record every override, input schedule and ROM/save hash. No invincibility patch
+is required for the completed ending probe; its one entry override and native
+save changes are recorded separately from ordinary progression.

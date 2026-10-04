@@ -1,6 +1,8 @@
 # Toolchain and reproduction
 
-Validated on this Mac on 2026-09-13. The setup adapts Torneko 3's pinned tools;
+Originally validated on this Mac on 2026-09-13; the October 3 accepted build also
+passes the pinned toolchain checks (see [the coverage matrix](COVERAGE_AUDIT.md)).
+No pins changed in the documentation reconciliation. The setup adapts Torneko 3's pinned tools;
 the installed runtime and research helpers belong to this project.
 
 | Tool | Version / source |

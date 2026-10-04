@@ -127,6 +127,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.verify_tutorial_help --source build/english
 .venv/bin/python -m tools.verify_tutorial_menus --source build/english
 .venv/bin/python -m tools.verify_tutorial_banks --source build/english
+.venv/bin/python -m tools.verify_tutorial_script_routes --source build/english
 .venv/bin/python -m tools.verify_tutorial_alternates --source build/english
 .venv/bin/python -m tools.verify_link_messages --source build/english
 .venv/bin/python -m tools.verify_link_picker --source build/english

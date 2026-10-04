@@ -14,7 +14,8 @@ See [corrected menus and validation](MENU_LAYOUTS.md) for the completed four bat
 The offline page compares exact glyph pixels at 1×–4×, accepts editable labels,
 exports PNG previews and lists advance, ink edge and remaining pixels. It has
 additional status, Option, bank and first-cohort item contexts plus four dynamic
-name cases; the generated report records exact current counts. Original
+name cases. Current acceptance covers 315 contexts / 3,430 measurements; see
+[the receipt](english-services-validation.json). Original
 and current contexts are kept separately: old overflows remain visible rather
 than disappearing from the evidence. All selected-font current labels fit.
 Native captures are separate from simulated panels.
@@ -28,7 +29,7 @@ Native captures are separate from simulated panels.
 | Inventory/ground actions (original geometry) | 36 |
 | Complete inventory row while actions are open | 162, including every field |
 | Complete inventory row without actions | 162, including every field |
-| Bank verb before amount column | 52 |
+| Bank label including attached colon | 57 |
 | Options label before toggle column | 65 |
 | Full-width options row | 186 |
 | Initial/resume menu | 88 |
@@ -70,5 +71,6 @@ local assets, not the sibling ROM. The earlier
 
 Unknown later families stay explicit. Passing early menus does not certify the
 whole game. In particular, original Japanese item-name probes do not establish
-English item-name limits, and synthetic mode/state checks do not establish
+English item-name limits; the current 2,006 item and 30 English custom-name cases
+provide separate evidence. Synthetic mode/state checks do not establish
 natural gameplay reachability. See [the coverage limits](MENU_LAYOUTS.md#remaining-coverage).

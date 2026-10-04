@@ -43,6 +43,21 @@ The breakpoint at `08000354` confirms Thumb execution. The subsequent
 [font investigation](FONTS.md) identifies the menu reader and existing Latin
 glyphs through static analysis and native traces.
 
+To follow verified bounded jump tables during caller discovery:
+
+```bash
+.venv/bin/python -m tools.audit_source_readers --computed-switches --output build/caller-branches/source-readers-final.json
+.venv/bin/python -m tools.audit_switch_readers --output build/caller-branches/switch-readers-final.json
+.venv/bin/python -m tools.audit_switch_readers --guard 0x080147F8 --budget 800000 --maximum-path 8192 --output build/caller-branches/save-switch-expanded.json
+.venv/bin/python -m tools.verify_tutorial_script_routes --source build/english
+```
+
+The switch scans retain unknown data flow and budget/path limits; guard seeds
+do not establish ordinary reachability. The script verifier controls bank/map/NPC
+setup, executes native NPC selection and original tutorial opcode handlers, and
+records its host dispatch/WAIT exclusion. See [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md)
+for the two repaired tutorial configurations and their original-ROM evidence.
+
 ## Scripted emulator research
 
 ```bash
@@ -91,46 +106,37 @@ callback errors to the caller. Frame stepping counts the native frame counter;
 startup under the built-in BIOS can cross two frames in one debugger call.
 Requests that cannot end at exactly the requested frame fail explicitly.
 
-## Next research work
+## Current research work
 
-Follow the [localization plan](LOCALIZATION_PLAN.md) for the agreed terminology
-and prose rules, work sequence, coverage criteria and first integrated milestone.
+Follow [the plan](LOCALIZATION_PLAN.md) and [coverage matrix](COVERAGE_AUDIT.md).
+The opening, books, mansion, storage and bakery milestones are already covered
+by their recorded routes; they are not the next discovery tasks.
 
-The [opening-text discovery pass](OPENING_TEXT.md) records a natural route into
-the first dungeon, 30 verified text sources, seven event-bank decodes and the
-separate broad-scan queue. Use its reproduction commands for the source catalog
-and native decoder checks. The [English opening build](OPENING_ENGLISH.md) now
-covers name entry, both opening branches, resume prompts, first-dungeon tutorials,
-the first royal audience, nearby castle NPCs and the first destination menu.
-The [home-return batch](HOME_RETURN.md) adds the first evening/morning, sale
-proceeds and three neighbouring NPCs with both Ed choices. The accumulated
-catalog has 86 native sources and 79 reviewed/inserted resources. Bank one has
-checked insertion and all 214 getters validated in both ROMs. The
-[home-book/banker batch](HOME_BOOKS.md) adds the shared town bank, red-book tips,
-blue-book/save flows and the first mansion entrance. Green-book contents and
-repaired-storehouse flows remain open. Next, follow the mansion safe-recovery
-route and its item/message families; broader coverage remains ongoing.
-The [graphics inventory](GRAPHICS_INVENTORY.md) now identifies the first dungeon
-arrival card and the distinct title/menu background families, without artwork
-changes.
+Start with the unresolved shared/town sources, event fragments, tutorial mappings
+and exact static-analysis stops listed in the matrix. Disassemble verified Thumb
+entries, follow source tables and RAM producers, and compare original/compiled
+callers. A missing bounded reference is not proof of dead code. Capture the active
+bank, selector and upstream state in targeted native probes.
 
-The initial-menu string, reader, pointer and Latin glyph lookup are verified in
-[FONTS.md](FONTS.md). The [compact English extension](COMPACT_FONT.md) adds the
-missing lowercase and symbols, verifies all 95 printable ASCII characters,
-and relocates one menu specimen into checked appended ROM space. Its 16 MiB
-cartridge and unchanged Japanese fallback pass the tested menu route.
+Use assisted access when a later scene needs it: a disposable save/state,
+controlled scene entry or a documented invincibility/damage patch is appropriate.
+Do not make surviving a dungeon a prerequisite for investigating its code. No
+invincibility implementation is supplied by this guide. Establish and record
+any patch's addresses, expected bytes, purpose and limits before applying it to
+a research copy; never alter the supplied ROM/save or silently add research
+assistance to the release build. Turn assistance off for damage/death branches.
 
-Next, map other text readers, window widths, command syntax and string tables
-before translating more content. Reuse `tools.rom_build.RomBuild` for insertion
-ownership, checked source patches and appended allocation; do not allocate
-independent overlapping regions. Record discoveries in `MEMORY_MAP.md` before
-insertion. Later gameplay and other expansion-sensitive paths still need route evidence.
-The name fields and native first-floor save/cold resume are documented in
-[NAME_ENTRY.md](NAME_ENTRY.md).
+Prefer entering the native caller and letting it select and render its resources.
+Direct renderer calls are useful for bounds but leave upstream selection untested.
+Observe all reader/glyph output, inspect full frames and transitions, and retain
+inputs, overrides, build/save hashes and unchanged source hashes. Label ordinary,
+assisted and direct-handler evidence separately. Frame capture and checking can
+be automated; code discovery does not require a full manual playthrough.
 
-For a future patch, `python -m tools.bps source.gba target.gba output.bps`
-checks that applying the patch reproduces every target byte before replacing
-the output. This helper does not build a translation or authorize ROM ranges.
+Reuse `tools.rom_build.RomBuild` for production insertion and record discoveries
+in [MEMORY_MAP.md](MEMORY_MAP.md), with explicit ownership and exclusive ranges.
+Earlier route recipes remain in the family guides for reproduction, not as an
+instruction to redo completed progression.
 
 `Session.press(("A", "B"), hold=3, wait=30)` sends simultaneous buttons and
 records a `keys` array in the input receipt. Single-button records keep `key`.
@@ -222,3 +228,44 @@ to isolate the fixture's concurrent town movement. Both record every override.
 The [continued audit](LOCALIZATION_CLOSURE.md) separates these checks from ordinary
 quest progression and documents the wind and overview sources missed by the
 bounded automatic scan.
+
+## Reproduce tutorial entry and exact scan-stop dispositions
+
+```sh
+.venv/bin/python -m tools.audit_tutorial_reachability
+.venv/bin/python -m tools.audit_switch_readers --output build/caller-branches/all-switch-stop-details.json
+.venv/bin/python -m tools.audit_switch_readers --guard 0x080147F8 --budget 800000 --maximum-path 8192 --output build/caller-branches/save-switch-stop-details.json
+.venv/bin/python -m tools.audit_save_menu_rows
+.venv/bin/python -m tools.audit_switch_stop_dispositions
+```
+
+The tutorial audit requires the hash-checked original `script-text-refs.json`
+produced by the script research above. It scans complete NPC payloads and event
+instruction regions independently of traversal, retaining misaligned byte motifs.
+These are research commands, not additional dependencies of a clean ROM build.
+Stop observations record exact addresses/bytes and loop repetition; they preserve
+the tracer's conservative decisions. Their dispositions concern those scan exits,
+not a proof that all readers or branches have been discovered.
+
+## Computed bases, scene assets and complete ending
+
+```sh
+.venv/bin/python -m tools.audit_computed_table_losses
+.venv/bin/python -m tools.audit_scene_backgrounds
+.venv/bin/python -m tools.audit_town_graphics
+.venv/bin/python -m tools.audit_ending_sequence --output build/ending-sequence-guarded
+```
+
+The computed-base audit consumes `build/caller-branches/source-readers-final.json`
+from the existing source-reader scan and checks allocation ownership for the
+relocated sites. It retains trace budget/path limits. Graphics tools decode the
+complete bounded descriptor tables and execute controlled native loaders/getters;
+visual findings are recorded separately. The town and ending tools cold-prepare
+the earned storage-save fixture through `tools.verify_storage.SAVE`.
+
+The ending probe redirects one bank call into the complete original ending owner.
+Saving, scene staging, movement, fades, dialogue, credits and the final artwork
+then run natively; normal A inputs dismiss waits. Its report requires complete
+stage order, return, preserved caller ABI/stack guard and no unfiltered text-audit
+findings. The disposable ending battery may change; source ROM/save must not.
+This tests integration after controlled entry, not ordinary endgame qualification.

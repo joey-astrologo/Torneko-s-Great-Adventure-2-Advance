@@ -3,7 +3,7 @@ from tools.rom import ROOT,digest,require
 
 def append_contexts(config,build,source=ROOT/'build/english'):
  paths={f:source/(f+'-validation/report.json') for f in ('tutorial-help','tutorial-all-menu','tutorial-bank','tutorial-alternate')}
- for f,count in [('tutorial-help',6),('tutorial-all-menu',27),('tutorial-bank',20),('tutorial-alternate',4)]:
+ for f,count in [('tutorial-help',6),('tutorial-all-menu',27),('tutorial-bank',22),('tutorial-alternate',4)]:
   r=json.loads(paths[f].read_text());require(r['passed'] and r['rom_sha256']==build['output_sha256'] and len(r['cases'])==count,'Tutorial budget evidence stale')
  config['contexts']=[c for c in config['contexts'] if not c['id'].startswith('tutorial-help-current-')];groups={}
  for e in build['tutorial_help']['entries']:
@@ -16,4 +16,4 @@ def append_contexts(config,build,source=ROOT/'build/english'):
      if line not in groups.setdefault(key,[]):groups[key].append(line)
  for (kind,window,start,end),labels in groups.items():
   path=paths['tutorial-help' if kind=='prose' else 'tutorial-all-menu']
-  for i in range(0,len(labels),8):config['contexts'].append({'id':f'tutorial-help-current-{kind}-{window}-{start}-{end}-{i//8}','name':'Tutorial '+kind+' text','stage':'current','window':window,'start':start,'end':end,'rows':len(labels[i:i+8]),'labels':labels[i:i+8],'alternatives':[],'reference':str(path.relative_to(ROOT)),'native_report_sha256':digest(path.read_bytes()),'note':'Original27 configurations; actual cursor tables determine6px or11px left inset and independent right-column regions. All rendering/cursor cases,20 correct-bank cases,6 direct-prose cases and4 alternate-heading probes pass. Five original inconsistent selection mappings remain explicit investigation gaps; no claim of natural NPC access or correction of original behavior.'})
+  for i in range(0,len(labels),8):config['contexts'].append({'id':f'tutorial-help-current-{kind}-{window}-{start}-{end}-{i//8}','name':'Tutorial '+kind+' text','stage':'current','window':window,'start':start,'end':end,'rows':len(labels[i:i+8]),'labels':labels[i:i+8],'alternatives':[],'reference':str(path.relative_to(ROOT)),'native_report_sha256':digest(path.read_bytes()),'note':'All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed.'})

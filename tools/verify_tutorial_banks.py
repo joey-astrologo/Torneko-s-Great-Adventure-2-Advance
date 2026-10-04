@@ -6,7 +6,7 @@ from tools.rom import ROOT,digest,require,load_base
 from tools.opening_text import BANK_RAM,banks
 from tools.event_text import table_entries
 from tools.lz77 import decompress
-COHORTS={4:[2],5:[2],6:[3],7:[5,6],10:[3],11:[4],12:[5,6],13:[3],15:[6],16:[5,6],17:[6],20:[6],21:[6],22:[6],23:[5,6],26:[6]}
+COHORTS={4:[2],5:[2],6:[3],7:[5,6],10:[3],11:[4],12:[4,5,6],13:[3],14:[5],15:[6],16:[5,6],17:[6],20:[6],21:[6],22:[6],23:[5,6],26:[6]}
 from tools.emulator import Session,Debugger,ffi
 from tools.dialogue_checks import TextChecks
 from tools.bakery_playtest import service_ready
@@ -14,15 +14,21 @@ from tools.bakery_playtest import service_ready
 def run(source,only=None):
  out=source/'tutorial-bank-validation';rom=(source/'torneko-2-english.gba').read_bytes();b=json.loads((source/'build.json').read_text());require(digest(rom)==b['output_sha256'],'Stale tutorial-help ROM');mgba.log.silence();fixture=service_ready(rom,out);rows={r['offset']+0x08000000:r for r in b['tutorial_help']['entries']};by_src={r['source']['offset']:r for r in rows.values()};groups={g['index']:g for g in b['tutorial_help']['groups']};results=[];original=load_base();event_rows={r['id']:r for r in b['dialogue']['entries']};rows.update({r['rom_offset']+0x08000000:r|{'kind':'bank-prose'} for r in event_rows.values()});by_id={r['id']:r for r in rows.values()}
  for index,bank_index in [(i,bn) for i,nums in COHORTS.items() for bn in nums]:
+  if only is not None and index!=only:continue
+  repair=next((r for r in b['tutorial_help'].get('repairs',[]) if r['configuration']==index),None)
   group=groups[index];bank=banks()[bank_index];bank_entries={(r['group'],r['index']):r for r in table_entries(bank)};count=group['descriptor'][7];skip=2 if group['menu'] in(8,19,21,22) else 1;selectors=[]
   for pos in range(count-1):
-   pointer=int.from_bytes(bytes.fromhex(group['intro_table_hex'])[4*(pos+skip):4*(pos+skip+1)],'little')-0x08000000;pair=tuple(original[pointer:pointer+2]);entry=bank_entries[pair];require(entry['id'] in event_rows,'Tutorial bank source lacks English');selectors.append({'pair':pair,'id':entry['id'],'source_offset':pointer})
+   if repair:
+    selectors.append(dict(id=repair['prose_ids'][pos],pointer=repair['pointers'][pos],kind='repaired-direct-prose'))
+   else:
+    pointer=int.from_bytes(bytes.fromhex(group['intro_table_hex'])[4*(pos+skip):4*(pos+skip+1)],'little')-0x08000000;pair=tuple(original[pointer:pointer+2]);entry=bank_entries[pair];require(entry['id'] in event_rows,'Tutorial bank source lacks English');selectors.append({'pair':pair,'id':entry['id'],'source_offset':pointer})
   packed=struct.unpack_from('<I',rom,bank['pointer_offset'])[0]-0x08000000;decoded,_=decompress(rom,packed);expected_bank=bytearray(decoded)
   for word in range(4):struct.pack_into('<I',expected_bank,word*4,(struct.unpack_from('<I',decoded,word*4)[0]+BANK_RAM)&0xFFFFFFFF)
   if only is not None and index!=only:continue
   case=f'{index}-bank-{bank_index}';print('Tutorial help:',case,flush=True)
   with Session(rom,out/case) as g:
    g.restore(fixture);m=g.core.memory;c=TextChecks(g,rows);initial=[];returns=[];overrides=[];draws=[];images={};pixels=0;cycle=0;modals=[];modal_returns=[];pending=[];seen_pages=[];current_group=group;loads=[];selections=[];restores=[]
+   parent_checks=[];closed_checks=[];display_before=m.u16[0x04000000]
    original_banks=[]
    for possible in banks():
     packed0=struct.unpack_from('<I',rom,possible['pointer_offset'])[0]-0x08000000;d,_=decompress(rom,packed0);expected0=bytearray(d)
@@ -41,11 +47,14 @@ def run(source,only=None):
     if a==0x0804F8F4:
      old=initial[-1]['registers'];require(r[4:12]==old[4:12] and r[13]==old[13] and bytes(m[r[13]:r[13]+32]).hex()==initial[-1]['guard'],'Tutorial bank loader ABI/guard differs');require(m.u32[0x0200FF38]==BANK_RAM and bytes(m[BANK_RAM:BANK_RAM+len(expected_bank)])==expected_bank,'Tutorial native bank load/fixups differ');loads.append({'event':e,'bank':bank_index,'bytes':len(expected_bank),'sha256':digest(bytes(expected_bank))});reg(e,14,old[14])
     if a==0x0804FA68:
+     require(not repair,'Repaired tutorial still used bank-relative getter')
      selector=selectors[m.u8[0x020101A1]];require(tuple(r[:2])==selector['pair'],'Tutorial bank selection differs');selections.append(e|selector)
     if a==0x0804F8F8:
      reg(e,4,index);jump(e,0x4F9AA,'Select owned menu configuration; original descriptor/outer-table loads execute, event-bank prelude excluded.')
-    if a==0x08015A34:
+    if a==(0x08015A18 if repair else 0x08015A34):
      require(r[0] in rows and rows[r[0]]['kind']=='bank-prose','Tutorial selected an unowned prose source');modals.append(e|{'id':rows[r[0]]['id']});pending.append(e)
+     if repair:
+      selector=selectors[m.u8[0x020101A1]];require(r[0]==selector['pointer'],'Repaired tutorial selected wrong explanation');selections.append(e|selector)
     if a in (0x08001750,0x08001888):draws[:]=[d for d in draws if d['window']!=r[0]]
     if a==0x080021B4 and r[1] in rows:
      row=rows[r[1]];w=r[0]
@@ -66,6 +75,12 @@ def run(source,only=None):
    def capture(tag):
     nonlocal pixels
     g.frames(8);pic=g.capture(tag);images[tag+'.png']=digest((g.output/(tag+'.png')).read_bytes());require(draws,'Tutorial missing visible text')
+    if index==14 and not tag.startswith('body-'):
+     # The complete header frame and eight-pixel gap above the resized list
+     # must survive cursor movement and every close/reopen, including shading.
+     parent_hash=digest(pic.crop((4,20,236,52)).tobytes())
+     require(not parent_checks or parent_hash==parent_checks[0]['sha256'],'Mimic menu damaged its header/frame/gap')
+     parent_checks.append(dict(image=tag+'.png',rectangle=[4,20,236,52],sha256=parent_hash))
     for d in draws:
      glyph,_=c.glyph_record(d['code']);colour=m.u16[0x05000000+2*(16*d['bank']+d['foreground'])];rgb=tuple(((colour>>s)&31)*255//31 for s in (0,5,10))
      if by_id[d['id']]['kind']=='label':require(d['x']>=6,'Tutorial label in cursor reserve')
@@ -87,7 +102,7 @@ def run(source,only=None):
     expected=[by_src[current_group['prose'][0]['source']['offset']]['id']]+[by_src[e['offset']]['id'] for e in current_group['labels']]
     require([r['id'] for r in c.reads[start:]]==expected,'Tutorial native header/labels differ: '+repr(([r['id'] for r in c.reads[start:]],expected,len(initial),len(loads),hex(int(g.core.cpu.gprs[15])),overrides[-4:],dict((hex(a),m.u16[a]) for a in [0x04000200,0x04000208,0x04000004]))))
    with Debugger(g,callback,max_events=600000) as debug:
-    for a in set(c.ADDRESSES)|{0x08050DD0,0x0801DFAC,0x0804F8F4,0x0804FA68,0x0804FAA8,0x0804F8F8,0x0804FA44,0x0804FA52,0x0804FA58,0x08015A34,0x08050E6E,0x080510CE,0x08001750,0x08001888}:debug.breakpoint(a)
+    for a in set(c.ADDRESSES)|{0x08050DD0,0x0801DFAC,0x0804F8F4,0x0804FA68,0x0804FAA8,0x0804F8F8,0x0804FA44,0x0804FA52,0x0804FA58,0x08015A18,0x08015A34,0x08050E6E,0x080510CE,0x08001750,0x08001888}:debug.breakpoint(a)
     for cycle in range(3):
      current_group=group;start=len(c.reads);g.press('A',hold=1,wait=120);check_menu(start);capture('opened-'+str(cycle));g.press('UP',wait=20);require(m.u8[0x020101A1]<count,'Tutorial upward wrap differs');capture('last-'+str(cycle));g.press('DOWN',wait=20);require(m.u8[0x020101A1]==0,'Tutorial downward wrap differs')
      if cycle<2:g.press('B',hold=1,wait=120)
@@ -109,7 +124,10 @@ def run(source,only=None):
        current_group=groups[18];g.press('LEFT',wait=120);capture('previous-menu');current_group=groups[19];g.press('RIGHT',wait=120);capture('next-menu-again')
       move(count-1);g.press('A',hold=1,wait=120)
      require(len(returns)==cycle+1,'Tutorial menu did not exit')
-   require(len(modals)==len(modal_returns) and not c.active and not pending,'Tutorial modal remained active');require(bytes(m[0x0200DF28:0x0200E888])==inventory and m.u32[hero+0x60]==gold and g.snapshot().battery==fixture.battery,'Tutorial browsing changed items/gold/save');results.append({'case':case,'group':index,'inputs':g.inputs,'overrides':overrides,'reads':c.reads,'modals':modals,'modal_returns':modal_returns,'returns':returns,'pages':seen_pages,'native_bank_loads':loads,'fixture_bank_restores':restores,'fixture_bank':original_bank,'selections':selections,'caller_guard_abi_preserved':True,'visible_pixels_checked':pixels,'images':images});(out/'partial.json').write_text(json.dumps(results,indent=2)+'\n')
- report={'passed':True,'rom_sha256':digest(rom),'cases':results,'scope':'Controlled original event-bank loader followed by full tutorial dispatcher/menu. All topics in16 consistent bank-backed configurations, including both relevant pot/trick banks, exact original two-byte selectors and English pointers, complete modal pages, original geometry, cursor selection, Cancel/B and repeated reopen, final pixels and loader/modal/caller ABI. Script prelude/progression and natural NPC access are excluded. Five inconsistent original configurations remain render/cursor-only pending reachability research. Inventory/gold/battery remain unchanged.'};(out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('Tutorial banks:',len(results),'passed')
+     if index==14:
+      require(m.u16[0x04000000]==display_before,'Closed Mimic menu left display layers enabled')
+      closed_checks.append(dict(cycle=cycle,before=display_before,after=m.u16[0x04000000]))
+   require(len(modals)==len(modal_returns) and not c.active and not pending,'Tutorial modal remained active');require(bytes(m[0x0200DF28:0x0200E888])==inventory and m.u32[hero+0x60]==gold and g.snapshot().battery==fixture.battery,'Tutorial browsing changed items/gold/save');results.append({'case':case,'group':index,'inputs':g.inputs,'overrides':overrides,'reads':c.reads,'modals':modals,'modal_returns':modal_returns,'returns':returns,'pages':seen_pages,'native_bank_loads':loads,'fixture_bank_restores':restores,'fixture_bank':original_bank,'selections':selections,'parent_checks':parent_checks,'closed_display_checks':closed_checks,'caller_guard_abi_preserved':True,'visible_pixels_checked':pixels,'images':images});(out/'partial.json').write_text(json.dumps(results,indent=2)+'\n')
+ report={'passed':True,'rom_sha256':digest(rom),'cases':results,'scope':'Controlled original event-bank loader followed by full tutorial dispatcher/menu. All topics in17 configurations across22 bank contexts, including repaired pot help in banks4/5/6 and early Mimic help in bank5. Original two-byte selectors or verified repaired direct English pointers, complete modal pages, original geometry, cursor selection, Cancel/B and repeated reopen, final pixels and loader/modal/caller ABI. Script prelude/progression and natural NPC access are excluded. Four other original configurations remain render/cursor-only without a reference in the extracted scripts. Inventory/gold/battery remain unchanged.'};(out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print('Tutorial banks:',len(results),'passed')
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--source',type=Path,default=ROOT/'build/english');p.add_argument('--only',type=int);a=p.parse_args();run(a.source,a.only)
