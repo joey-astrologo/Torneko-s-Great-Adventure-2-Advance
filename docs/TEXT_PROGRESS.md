@@ -1,13 +1,23 @@
 # Autonomous text-localization progress
 
-**Whole-game completion: unknown.** The [October 3 caller continuation](CALLER_FOLLOWUP.md)
-has 3,814 inserted text resources and 20 graphics, including the repaired pot and
-early Mimic tutorial callers. Cumulative native acceptance, 182 unit tests,
-315 font-browser contexts / 3,430 measurements and clean ROM/BPS reproduction
-pass. A stale tutorial cohort count in final report generation was corrected;
-the resumed report stage and aggregate acceptance pass. The latest unfiltered
-supplement covers 1,042 sessions across 19 families on the preceding ROM;
-current-ROM tutorial and ordinary-route evidence is recorded separately.
+October 4 follow-up: ordinary green-book trading now passes empty refusal, native
+deposits, bread/staff exchange, town return and two received-item cold loads with
+no state overrides. Opcode-handler widths, spell/skill definition domains and
+the bounded result-reason graph are audited; no further ROM bytes changed.
+[Current evidence](CALLER_FOLLOWUP.md#ordinary-green-book-entry-and-selector-domains).
+
+**Whole-game completion: unknown.** The [October 4 caller continuation](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading)
+has 3,814 inserted text resources and 20 graphics. Two bank-2 shopkeeper selectors
+are repaired; four scene routes / 12 service opens and affected blacksmith/Remi
+cases pass. Actual two-core trading, native saves and received-item cold loads
+also pass. The current suite has 187 unit tests, with required toolchain,
+fresh-save and Ghidra acceptance. Candidate/normal build reproduction and
+independent patch application pass. The root ROM/BPS are updated and archived
+in `build/accepted/3814-npc-shops/`.
+
+The preceding tutorial ROM retains the full cumulative acceptance, 182-test
+receipt and 315 font-browser contexts / 3,430 measurements. Those broader
+cohorts are not claimed as full replays of the new ROM.
 The earlier 813-session audit gave all 98 bounded-scan callers investigated
 dispositions. The current
 source catalog contains 3,552 reviewed, 96 unresolved and 28 retained/component
@@ -68,7 +78,7 @@ The [October 2 continuation](LOCALIZATION_CLOSURE.md) inserts the custom-name
 category family, deepens RAM/stack caller analysis, repairs the two referenced
 event stubs with explicit user approval, and extends ordinary quest/service evidence.
 
-The latest accepted milestone has **3,814 inserted resources and 20 graphics**,
+The preceding tutorial milestone has **3,814 inserted resources and 20 graphics**,
 ROM `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
 The ROM, BPS, ledger and receipts are archived in `build/accepted/3814-tutorials/`;
 [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) records the repairs and validation limits.

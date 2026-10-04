@@ -1,10 +1,15 @@
 # Text investigations and layout constraints
 
 Current continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md). The latest
-accepted build has 3,814 resources and includes the second monster announcement
-reader, shield-reflection/empty-ability Info repairs and the two tutorial fixes
-below. Cumulative native acceptance, 182 unit tests and clean reproduction pass;
-the preceding 3,813 milestone remains separately documented.
+accepted build has 3,814 resources and includes the caller/tutorial repairs below
+plus two bank-2 shopkeeper selector repairs. Four scene routes, affected service
+checks, real two-core link trades and cold-save persistence pass on the current
+ROM. Ordinary green-book entry, empty refusal, naturally deposited bread/staff
+exchange and town return also pass without state overrides. All spell/skill
+definition-domain reads and the bounded result-reason producer graph pass; these
+do not remove the unresolved sources/fragments from discovery.
+187 unit tests and required toolchain/fresh-save checks pass. The earlier
+full cumulative acceptance retains its preceding ROM identity.
 
 The continued branch audit also repairs pot-help and early Mimic-help selectors
 that returned unrelated dialogue, fragments or an invalid address. Both reuse
@@ -92,7 +97,10 @@ The [coverage matrix](COVERAGE_AUDIT.md) owns current counts and evidence scope.
 The Floor/empty-inventory defects, seven expiry messages, 55 earlier caller
 bindings, all 20 continuation leads and nine additional failures are repaired.
 The October 3 announcement, reflection, empty-ability Info and pot/Mimic tutorial
-repairs are also accepted. Those defects are not an outstanding work list.
+repairs are also accepted. The October 4 blacksmith/Remi selector repairs and
+actual two-core link trades are detailed in
+[the current continuation](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
+Those defects are not an outstanding work list.
 
 The next code pass classifies all 41 observed table-base losses without finding
 another untranslated reader. Graphics discovery covers both background tables,

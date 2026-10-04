@@ -114,16 +114,28 @@ contains the same patch plus the new computed-reader, graphics and complete-endi
 evidence. `build/scene-audit-rebuild/` independently reproduces its ROM and BPS.
 No new translation bytes were needed for those completed investigations.
 
-## Current investigation priorities (2026-10-03)
+The October 4 [checkpoint](../build/releases/2026-10-04-npc-shops.zip) repairs
+two bank-2 shopkeeper selectors and updates the usual `build/` ROM and BPS.
+All four scene routes, affected service checks and real two-core trades with
+save/cold-load persistence pass on ROM `588dc92c…`; 187 unit tests and required
+acceptance pass. The prior full cumulative suite retains its own ROM identity.
+See [the new evidence](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
+
+## Current investigation priorities (2026-10-04)
 
 The continued audit now accounts for 41 computed table-base losses and checks
 the full-screen and scrolling background tables, including replacements and
 static objects. No additional untranslated reader or graphical lettering was
 identified in those families. The complete controlled ending passes native save,
 all five scenes and 57 dialogue sources, fades, credits, END artwork and return;
-ordinary ending access remains separate. The tool suite passes 186 tests.
+ordinary ending access remains separate. That earlier research suite passed 186 tests; the current suite passes 187.
 See [caller and scene evidence](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
-Keep these completed cohorts closed while following other consumers; the 62
+The two malformed bank-2 NPC selectors are now repaired, and actual two-core
+link exchange/save persistence is verified, including ordinary green-book entry,
+natural bread/staff deposits, empty refusal, exchange and town return. Opcode 33
+width/direct getter selectors, all spell/skill definition domains and the bounded
+result-reason producer graph are now checked. Continue other selector domains
+and scene combinations. Keep completed cohorts closed; the 62
 unresolved sources and 34 fragments remain bounded discovery gaps, not confirmed
 visible defects.
 

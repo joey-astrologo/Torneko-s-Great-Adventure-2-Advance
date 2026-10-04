@@ -1,5 +1,112 @@
 # Torneko 2 memory map
 
+## Result reasons and definition selectors (2026-10-04)
+
+Native setter CPU `08006644` records the first nonzero reason in EWRAM
+`[020037CC,020037CE)` and attacker in `[020037CE,020037D0)`. The reviewed direct
+producer graph contains 58 calls across 12 entries. Its reason union is
+1–22, 24–27 and 32–36; no 28–31. Result/history readers select shared index
+`196h + reason` for reasons below 32, with a separate monster-name case for 21.
+Reason 30 would select source ROM `000615A4` at index `1B4h`, but it has no
+producer in this bounded graph. Initial zero, unknown RAM writers, synthesized
+indirect calls and corrupt/imported values are not a whole-program proof.
+`tools.audit_result_reason_selectors` pins every direct call/context against the
+original and current ROM and checks for literal function-pointer references.
+Evidence: `build/oct04-continuation/result-reason-selectors.json` and the
+`result-reason-*.txt`, `reason-forwarders.txt`, `reason-wrapper-entries.txt` exports.
+
+Native spell loads CPU `080225AE`/`08022860` select target labels from byte 6 of
+all 61 twelve-byte definitions. Skill Info loads `08021774`/`08021786` select
+headers/kinds for all 128 thirty-six-byte definitions. Their exact original and
+English tables produce 250 cases / 378 checked reads. The skill lookup is the
+original eight-byte ROM copy referenced by literal `08021848`; the static model's
+`10000144` address is synthetic and grants no GBA RAM ownership. Upgrade read
+`080350CC` selects `50h/12Ch`; staff read `080353C8` selects `59h/12Dh` (adds D4h
+to 59h). All four bindings resolve to English. Downstream trace limits remain
+explicit in `build/oct04-continuation/definition-selector-domains.json`.
+
+## Ordinary link entry (2026-10-04)
+
+Home map 21's green-book script uses opcode 33 command 23 to call the record
+menu CPU `[08050AA8,08050BC4)`. Flag 4 controls its third row. Selection at
+EWRAM `[020101A1,020101A2)` equals 2 for Trade items; the native menu rejects
+an empty first storage record at `0200F008`. Handler `08050A6C` sets its branch
+result and copies the selection to `[02036428,0203642C)`. The script's opcode
+25 argument 2 calls `08050580`, writing state 5 to `[02010210,02010211)`.
+The town-loop table ROM `[0004A02C,0004A044)` has six entries; state 5 reaches
+CPU `0804A178`, and call `0804A18A` enters complete link owner `08057C54` when
+`02036428 == 2`. After return, normal town initialization resumes.
+
+`tools.verify_link_entry` verifies both empty-storage refusal and this exact
+caller using ordinary buttons from the earned save, including deposits, actual
+bread/staff exchange, native save, town return and cold loads. No state overrides
+are used. Exact received 12-byte storage records and occupied 120-byte carried
+records survive; unoccupied carried slots may contain discarded scratch bytes
+and are not required to retain them across cold load. All addresses above are
+existing native storage, not newly allocated RAM. Evidence: `build/link-entry/report.json`,
+`build/oct04-continuation/{town-loop-arms,link-natural-menu,npc-cases}.txt`.
+
+## NPC handler operand widths (2026-10-04)
+
+The original dispatch at CPU `[0804EF54,0804EF5C)` advances the script pointer
+at EWRAM `[02010138,0201013C)` past the opcode. Opcode 33 then advances it by
+two at CPU `[08050A94,08050A98)`, bytes `02300860`. Its original length-table
+entry at ROM `0014CEDD` is 1. `tools.npc_script_model` uses the handler's actual
+two-operand width; it does not patch the ROM table. All 134 extracted contexts
+have a zero third byte, which the earlier model decoded as a no-op. Correcting
+the width leaves the 721 NPC-traversal, 730 physical NPC and 207 event dialogue
+references unchanged. No source-unreachability claim follows from this.
+
+`tools.audit_npc_handlers` independently calls native handler `080507EC` with
+command 25 in the loaded bank's existing operand span in a disposable session.
+It observes the two-byte advance and preserved caller ABI/battery. All state
+controls are recorded; this establishes neither new RAM ownership nor ordinary
+NPC eligibility. The opcode switch is unchanged in the English ROM; its existing
+formatter hooks are separately owned patches in the report. The direct source
+branches resolve 21 existing English resources, and the tutorial wrapper remains
+a separate bounded entry audit. Evidence: `build/npc-handlers/report.json` and
+`build/oct04-continuation/npc-handlers.txt`, `npc-cases.txt`,
+`npc-selector-writes.txt`, `direct-event-helpers.txt`.
+
+## NPC shop selector ownership (2026-10-04)
+
+Original NPC bank 2 is LZ77 ROM `[0043ADE0,0043B296)`, decoded size 2,072,
+SHA-256 `b040347437cfd8bb31c2252f572409adee50f7e63f19d98848691a807f9e6c00`.
+Its loader pointer is ROM `[0014CD70,0014CD74)`, original bytes `e0ad4308`.
+The native loader `0804D6F8` owns that pointer and the existing decoded allocation;
+replacement data must retain the exact decoded size and all five header offsets.
+
+The malformed roots previously recorded below are the first shopkeeper actors:
+map 26 (Remi), selector byte at decoded `[0794,0795)`, and map 27 (blacksmith),
+selector byte at `[0804,0805)`. Change each selector from 1 to 2 to share its
+map's existing service script. These resolve to
+decoded `0575` (`17 02 15`, Remi) and `05CE` (`17 00 14 15`, blacksmith).
+Other populated story banks independently use the same service opcodes for
+these visible shopkeepers. No dialogue reconstruction is needed.
+
+A controlled bank-2/map-27 entry followed by ordinary movement and A from
+the blacksmith's left reaches actor slot 5 through `0804B610` -> `0804B33C`. It selects
+decoded `05E2`, outside the instruction region `[0318,05E0)`, and reaches an
+unterminated text stream. Front interaction selects the separate service actor
+and works. Evidence: `build/oct04-continuation/gaibara-side/selection.json` and
+`build/oct04-continuation/gaibara-follow.log`. Ordinary story eligibility remains
+separate. Remi's invalid selector is verified statically; ordinary contact with
+her visible sprite has not been established.
+
+Remi's original offset-table index 54, decoded `[01F8,01FC)`, is also read by
+map 10 actor 11/selector 13, where it resolves valid root `056D`. It must remain
+`6a000000`. The ownership check rejected changing that shared word before a
+candidate was built. The blacksmith's index 68 at `[0230,0234)` also remains untouched.
+
+The repair owns only these two actor selector bytes and the one loader pointer.
+Append the replacement compressed resource through `RomBuild`; preserve the
+original compressed bank, all instructions, remaining actor bytes, other bank pointers,
+RAM/save format and existing English allocations. Original bank bytes or padding
+are not free space. The accepted compressed replacement owns ROM
+`[009626F0,0096300F)` (2,335 bytes); its loader pointer becomes `f0269608`.
+Native validation compares all 2,072 decoded bytes after the five existing header
+fixups at EWRAM `020129AC`, and checks 71 selector roots.
+
 Current build, coverage and investigation priorities: [COVERAGE_AUDIT.md](COVERAGE_AUDIT.md).
 This is a chronological evidence/ownership journal. Dated counts, prototype limits
 and next steps describe those builds; they are not the current backlog. The current
@@ -4475,7 +4582,9 @@ Owner `08057E08..08058082` retains168px storage list at(8,24),40px/two-row actio
 window at(192,56),6px action cursor reserve and8px outer border gap. Trade sets
 one byte in existing EWRAM selection flags `[0200CDE8,0200CEE2)`; page/row/index
 are shorts at0200CEE2/CEE4/CEE6. Existing stored records are250×12 bytes at
-`[0200F008,0200FBC0)`, with count at02002C2A. These are original storage uses,
+`[0200F008,0200FBC0)`, with storage capacity at02002C2A (not occupied-item count).
+The October 4 battery-only trade reload retains one occupied record and the
+earned 20-slot capacity. These are original storage uses,
 not permission to allocate new save/RAM fields.
 
 Prototype `build/link-prototype/`, ROM

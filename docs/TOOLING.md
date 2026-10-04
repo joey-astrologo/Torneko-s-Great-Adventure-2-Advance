@@ -5,6 +5,26 @@ passes the pinned toolchain checks (see [the coverage matrix](COVERAGE_AUDIT.md)
 No pins changed in the documentation reconciliation. The setup adapts Torneko 3's pinned tools;
 the installed runtime and research helpers belong to this project.
 
+The October 4 link verifier uses two disposable `Session` cores and the existing
+mGBA 0.10.5 `GBASIOLockstep` driver. `tools/link_bridge.c` supplies cooperative
+host scheduling; `tools/link_emulator.py` builds it against the installed core's
+headers and compile definitions and records all source/binary hashes. Neither
+the emulator library nor toolchain pins are changed. The native debugger's
+`ARMRun` halted-event loop can continue after a lockstep wait; the adapter drains
+due events while checking that wait before executing the next native instruction.
+Without this yield, the probe exchanges words but times out. The passing run
+uses the original serial registers, transfers and interrupts on both cores.
+
+Run `.venv/bin/python -m tools.verify_link_exchange` for complete bidirectional
+trades, repeat/cancel and battery-only cold loads. Attach the link only after
+restoring each initial snapshot and detach before destroying the cores. Raw
+snapshots do not serialize the shared host link state; never restore one while
+the pair is attached. This verifier records controlled inventory/entry separately
+from the subsequent native transfer and saving.
+`tools.verify_link_entry` additionally cold-loads the earned save on both peers
+and uses ordinary buttons for deposits, green-book entry, exchange and town
+return. Its item properties and cold-load checks require no state overrides.
+
 | Tool | Version / source |
 |---|---|
 | Python | Homebrew 3.11.15, native arm64, local `.venv` |

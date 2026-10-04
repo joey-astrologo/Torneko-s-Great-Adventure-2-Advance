@@ -5,9 +5,10 @@ def run():
     import json,struct
     from tools.rom import ROOT,load_base,digest,require
     (ROOT/'build/event-script-audit').mkdir(parents=True,exist_ok=True)
+    from tools.npc_script_model import operand_lengths
     from tools.event_text import table_entries
     from tools.opening_text import banks
-    r=load_base();u32=lambda a:struct.unpack_from('<I',r,a)[0];starts=[u32(0x14CD4C+4*i)-0x8000000 for i in range(7)]+[0x43FAAC];lengths=list(r[0x14CEBC:0x14CEE0]);out=[];allrefs=[]
+    r=load_base();u32=lambda a:struct.unpack_from('<I',r,a)[0];starts=[u32(0x14CD4C+4*i)-0x8000000 for i in range(7)]+[0x43FAAC];lengths=operand_lengths(r);out=[];allrefs=[]
     for bank,b in enumerate(banks()):
      lo,hi=starts[bank:bank+2];count=u32(lo);base=lo+4+4*count;offsets=[u32(lo+4+4*i) for i in range(count)];require(offsets==sorted(offsets) and offsets[0]==0,'Script block offsets differ');roots=[base+v for v in offsets]+[hi];rows={(e['group'],e['index']):e for e in table_entries(b)};scripts=[]
      for n in range(count):
@@ -34,7 +35,7 @@ def run():
       ref=by_address[slot['script']]
       require(ref['bank']==0 and all(ref[k]==slot[k] for k in ('group','index','id')),'Original opening execution differs from static opcode decode')
      opening_matches.append(dict(branch=branch,calls=len(trace['slots']),trace=str(path.relative_to(ROOT)),trace_sha256=digest(path.read_bytes())))
-    report=dict(opening_native_trace_matches=opening_matches,source_rom_sha256=digest(r),scope='Static linear decode of seven original script banks using original operand-size table and per-root offsets. Includes all physical instructions regardless of branches; no natural reachability claim. Separate actor dialogue tables and direct getter callers remain outside this pass.',banks=out,references=allrefs,stub_references={i:[x for x in allrefs if x['id']==i] for i in sorted(stubs)});(ROOT/'build/event-script-audit/script-text-refs.json').write_text(json.dumps(report,indent=2)+'\n')
+    report=dict(opening_native_trace_matches=opening_matches,source_rom_sha256=digest(r),scope='Static linear decode of seven original script banks using per-root offsets and the original operand-size table with native opcode33 correction. Includes all physical instructions regardless of branches; no natural reachability claim. Separate actor dialogue tables and direct getter callers remain outside this pass.',banks=out,references=allrefs,stub_references={i:[x for x in allrefs if x['id']==i] for i in sorted(stubs)});(ROOT/'build/event-script-audit/script-text-refs.json').write_text(json.dumps(report,indent=2)+'\n')
     return report
 
 

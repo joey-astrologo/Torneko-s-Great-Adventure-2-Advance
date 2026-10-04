@@ -82,6 +82,13 @@ artwork. No additional untranslated text or graphical lettering was found in
 those cohorts. The [scene-audit checkpoint](build/releases/2026-10-03-scene-audit.zip)
 contains the unchanged accepted patch with the additional evidence summary.
 
+The October 4 [shopkeeper checkpoint](build/releases/2026-10-04-npc-shops.zip)
+fixes the bank-2 blacksmith’s side conversation and Remi’s matching visible-actor
+selector. Four native room routes and affected service checks pass. Actual
+trades between two emulator cores now pass native saving and cold-load
+persistence. The usual `build/torneko-2-english.gba` and `.bps` are updated;
+[the coverage matrix](docs/COVERAGE_AUDIT.md) records exact current-ROM evidence.
+
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)
 

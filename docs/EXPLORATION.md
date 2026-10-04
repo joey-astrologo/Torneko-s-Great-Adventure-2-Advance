@@ -269,3 +269,44 @@ then run natively; normal A inputs dismiss waits. Its report requires complete
 stage order, return, preserved caller ABI/stack guard and no unfiltered text-audit
 findings. The disposable ending battery may change; source ROM/save must not.
 This tests integration after controlled entry, not ordinary endgame qualification.
+
+## NPC handler and two-core link continuation
+
+```sh
+.venv/bin/python -m tools.verify_npc_shop_routes --source build/english
+.venv/bin/python -m tools.verify_link_exchange --source build/english
+.venv/bin/python -m tools.research_event_script_refs
+.venv/bin/python -m tools.research_npc_script_refs
+.venv/bin/python -m tools.research_npc_control_flow
+.venv/bin/python -m tools.audit_npc_handlers
+.venv/bin/python -m tools.audit_tutorial_reachability
+```
+
+The room verifier uses controlled bank/map eligibility, then ordinary contact
+for blacksmith side/front and Remi front. Remi visible-actor selection is an
+explicit argument override. All routes repeat open/cancel/END three times.
+The link verifier uses the pinned native serial driver with two cores; stored
+items and initial owner entry are controlled, while protocol, saving and cold
+loading run natively. Its compiler/scheduler provenance is in [TOOLING.md](TOOLING.md).
+
+The handler audit corrects opcode 33’s operand width from the native handler,
+checks that width in a disposable native invocation, and follows 21 direct
+text selections behind its switch. Its 134 script contexts all have a zero
+third byte: earlier reference sets remain identical after correcting the model.
+Reports distinguish original source scripts from the two compiled NPC actor
+selector repairs. Neither successful traversal nor absent references proves
+ordinary eligibility or global unreachability.
+
+
+Run the ordinary home-book route and bounded selector-domain follow-ups with:
+
+```sh
+.venv/bin/python -m tools.verify_link_entry --source build/english
+.venv/bin/python -m tools.audit_result_reason_selectors
+.venv/bin/python -m tools.audit_definition_selector_domains
+```
+
+The first cold-loads the earned storage save on two cores and uses buttons for
+empty refusal, deposits, green-book entry, exchange and return. The others pin
+reviewed producer arguments and trace all spell/skill definitions through their
+computed reads; they do not establish global unreachability of catalog sources.

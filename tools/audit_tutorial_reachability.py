@@ -50,7 +50,19 @@ def run(source, output):
         new_at = struct.unpack_from('<I', compiled, slot)[0]-BASE
         data, end = decompress(original, old_at)
         new, _ = decompress(compiled, new_at)
-        require(new == data, 'NPC script payload changed')
+        expected = bytearray(data)
+        if bank == 2 and build.get('npc_shop_scripts'):
+            # Only the two ledger-owned actor selectors may differ. Script
+            # instructions, header/table layout and every other byte stay exact.
+            repairs = build['npc_shop_scripts']['repairs']
+            require([(p['selector_offset'], p['before_hex'], p['after_hex']) for p in repairs]
+                    == [(0x794, '01', '02'), (0x804, '01', '02')],
+                    'Reinspect NPC repair ownership')
+            for repair in repairs:
+                at = repair['selector_offset']
+                require(data[at] == 1, 'NPC selector source differs')
+                expected[at] = 2
+        require(new == expected, 'NPC script payload changed outside owned selectors')
         header = struct.unpack_from('<5I', data)
         matches = candidates(data)
         for match in matches:

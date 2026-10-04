@@ -1,11 +1,17 @@
-# Caller follow-up — October 3, 2026
+# Caller follow-up — October 3–4, 2026
+
+The current checkpoint repairs two bank-2 shopkeeper selectors and validates
+actual two-core link trading. ROM SHA-256 is
+`588dc92ce09104cb80d18fb4929e6e713f86836e65d8c12b135dfb4f4269b7ad`;
+the root ROM/BPS are updated. See [the October 4 evidence](#npc-shop-selectors-and-two-core-link-trading).
+Earlier sections and receipts below describe their recorded builds.
 
 The continued branch audit below repairs two additional tutorial configurations.
 Its ROM is `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`;
 the resource count remains 3,814 because both repairs reuse existing English.
 Cumulative native acceptance and 182 unit tests pass. The ROM/BPS and receipts
 are archived in `build/accepted/3814-tutorials/`.
-[Current acceptance receipt](../build/caller-branches/completion.json) ·
+[Tutorial-build acceptance receipt](../build/caller-branches/completion.json) ·
 [Tutorial screenshots](../build/english/tutorial-bank-validation/index.html).
 The earlier receipts and hashes below remain historical evidence.
 Current cross-family status is in [the coverage matrix](COVERAGE_AUDIT.md).
@@ -426,3 +432,113 @@ the same accepted patch with the new evidence summary. A fresh isolated compile
 and independent patch application reproduce the accepted bytes. No new ROM fix
 was necessary in this continuation, and no redundant full native-suite run is
 claimed. The original tutorial checkpoint and accepted archive are preserved.
+
+## NPC shop selectors and two-core link trading
+
+The October 4 caller audit reproduces a bank-2 blacksmith failure through the
+native town loop: ordinary movement and A from his left select the visible actor's
+script at decoded `05E2`, beyond the instruction region `[0318,05E0)`. The
+interpreter then consumes actor records as instructions and attempts to read an
+unterminated text stream. Talking across the front counter uses another actor
+and works, which explains why service-only tests missed the defect. The scene's
+bank/map eligibility was controlled; this is not an ordinary unlocking claim.
+
+Remi's visible actor has the same selector error, targeting `05DF`. Her normal
+front-counter route works; contact with the visible actor was tested using one
+recorded actor-argument override. The repair changes these two actor selector
+bytes from 1 to 2, sharing each room's existing native service script. All other
+populated story banks use those same services for the shopkeepers. This adds no
+dialogue. An ownership check prevented changing Remi's shared offset-table word,
+which another NPC uses correctly.
+
+`tools.npc_shop_scripts` appends a replacement compressed bank through the shared
+allocator and redirects its one loader pointer. The original compressed bank,
+all script instructions, other actors and every preceding English allocation
+remain unchanged. The resource count stays **3,814 text / 20 graphics**. Exact
+ownership and native selection arithmetic are in [MEMORY_MAP.md](MEMORY_MAP.md#npc-shop-selector-ownership-2026-10-04).
+
+`tools.verify_npc_shop_routes` checks blacksmith side/front and Remi front/visible
+routes, three opens/cancellations/END returns each. All four cases pass complete
+native bank decompression/header fixups, unfiltered text/glyph/layout checks and
+item/gold/battery preservation. The visible Remi override is separate from the
+three routes using ordinary movement after controlled scene entry.
+[Route receipt](../build/npc-shop-candidate/npc-shop-routes/report.json).
+The exploratory `gaibara-*` filenames record the blacksmith; the earlier working
+NPC identification was corrected after native service execution.
+
+`tools.verify_link_exchange` now joins two disposable emulator cores through the
+pinned native mGBA serial driver. Both games execute their complete trade owner,
+menus, receive formatting, saving, repeat and cancellation. Two bidirectional
+trades exchange an Oaken club and Gold sword and then return them: **2,310 serial
+transfers**, matching on both peers. Battery-only cold boots of the first trade's
+results recover both received items. Storage capacity, carried items, gold,
+caller registers and stack guards pass; no unexpected Japanese, unreadable text
+or layout findings occur. Storage capacity at `02002C2A` is preserved, not treated
+as an occupied-item count.
+[Trade receipt](../build/npc-shop-candidate/link-exchange/report.json).
+
+The link bridge supplies host scheduling around mGBA's existing lockstep driver;
+it does not force a successful protocol result or patch the emulator library.
+Controlled stored items and bank-call entry are recorded. The initial report excludes ordinary entry and other item classes; the green-book
+follow-up below covers those specific additional cases. Asymmetric/disconnected
+exchanges remain separate scopes.
+See [TOOLING.md](TOOLING.md) for its pinned implementation and reproduction command.
+
+`./validate.sh` passes **187 unit tests**, toolchain/source identity, fresh-save
+native acceptance and Ghidra import. Current-ROM affected service checks pass
+57 blacksmith text cases, 13 exchanges and 73 Remi text cases. The earlier full
+cumulative suite remains evidence for ROM `fc9b6f5e…`; it is not relabeled as a
+full replay of this ROM. The new NPC and link checks are included in `build.sh`.
+The candidate and normal compiler reproduce identical bytes; ledger reconstruction
+and independent BPS application pass. Source ROM/save hashes remain unchanged.
+[Checkpoint receipt](../build/accepted/3814-npc-shops/completion.json) ·
+[Patch and release notes](../build/releases/2026-10-04-npc-shops.zip).
+
+These repairs close the two malformed NPC selector leads. The 62 unresolved
+shared/town sources and 34 fragments remain a source inventory, not 96 confirmed
+failures.
+
+The subsequent handler audit corrects a research decoder discrepancy: opcode 33
+consumes two operand bytes in its native handler, despite the original size table
+saying one. All 134 extracted contexts have a zero third byte. Native advancement
+passes, and corrected traversal preserves all previous dialogue references.
+Following the handlers' direct selectors additionally checks 21 existing English
+sources. The four retained tutorial configurations still have bounded no-entry
+evidence on the new ROM. See [the fragment audit](EVENT_STUB_AUDIT.md) and
+[handler receipt](../build/npc-handlers/report.json). No new ROM change was needed.
+
+
+### Ordinary green-book entry and selector domains
+
+`tools.verify_link_entry` cold-loads the earned storage save on both peers.
+Ordinary buttons first verify the green book's English empty-storehouse refusal,
+then deposit naturally carried Bread on one peer and Lightning staff on the other.
+The green book's **Trade items** choice reaches the original owner through the
+NPC script and town loop; no entry, item, flag, ROM or register override is used.
+One complete exchange performs **1,200 serial transfers**, saves automatically,
+returns both games to town, and survives battery-only cold loads. Received item
+properties, remaining carried items, capacity and gold are preserved; both
+unfiltered screen audits pass. [Ordinary-route receipt](../build/link-entry/report.json).
+This is an ordinary home-book route, not a title-screen option. Story-bank
+alternatives, disconnected/asymmetric timing and other item combinations remain
+outside this particular receipt.
+
+A stricter cold-load assertion initially compared unused inventory-slot bytes.
+Native loading clears stale data in those unoccupied slots; the live items and
+received records were unchanged. The corrected check compares every occupied
+120-byte carried record and exact received storage records. The initial failure
+log is retained as `build/oct04-continuation/link-entry-inactive-slot-assertion.log`.
+
+The disassembled result-reason producer graph contains **58 direct calls across
+12 functions**. Its argument domains do not include 28–31, so this graph cannot
+select the unresolved legacy ranking string at reason 30. This bounds that
+reader; it does not declare the source globally unused or exclude unknown RAM
+producers. [Producer receipt](../build/oct04-continuation/result-reason-selectors.json).
+
+Both spell consumers and both skill Info loads now have complete definition-domain
+checks: **250 record cases / 378 computed reads**, all selecting inserted English.
+The staff-effect constant D4h is an increment onto 59h, yielding 12Dh; it does not
+select the unresolved source at D4h. All four staff/upgrade branch bindings pass.
+[Definition receipt](../build/oct04-continuation/definition-selector-domains.json).
+These are bounded static traces with downstream limits recorded, separate from
+native gameplay. The 62-source / 34-fragment discovery counts remain unchanged.

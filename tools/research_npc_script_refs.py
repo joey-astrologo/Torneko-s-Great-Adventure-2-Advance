@@ -6,9 +6,10 @@ def run():
     from tools.rom import ROOT,load_base,digest,require
     (ROOT/'build/event-script-audit').mkdir(parents=True,exist_ok=True)
     from tools.lz77 import decompress
+    from tools.npc_script_model import operand_lengths
     from tools.event_text import table_entries
     from tools.opening_text import banks
-    r=load_base();u32=lambda a:struct.unpack_from('<I',r,a)[0];lengths=list(r[0x14CEBC:0x14CEE0]);out=[];refs=[]
+    r=load_base();u32=lambda a:struct.unpack_from('<I',r,a)[0];lengths=operand_lengths(r);out=[];refs=[]
     for bank,b in enumerate(banks()):
      lo=u32(0x14CD68+4*bank)-0x8000000;data,hi=decompress(r,lo);h=struct.unpack_from('<5I',data);rows={(e['group'],e['index']):e for e in table_entries(b)};maps=[];roots={};outside=[]
      for node in range(32):
@@ -39,7 +40,7 @@ def run():
      out.append(dict(bank=bank,rom_start=lo,rom_end_exclusive=hi,decoded_sha256=digest(data),header=h,outside=outside,maps=maps,scripts=scripts));print('NPC bank',bank,'roots',len(roots),'outside',outside,'errors',[(s['start'],s['errors']) for s in scripts if s['errors']],'refs',sum('text_reference' in i for s in scripts for i in s['instructions']))
     stubs={e['id'] for e in json.load(open(ROOT/'build/text-inventory/catalog.json'))['entries'] if e['family']=='event' and e['language_status']=='untranslated'}
     for ident in sorted(stubs):print(ident,[{k:v for k,v in ref.items() if k not in ('consumers',)} for ref in refs if ref['id']==ident])
-    report=dict(source_rom_sha256=digest(r),scope='Static actor-script roots selected by original map offset, actor first/count and relative instruction tables. Native4B33C address arithmetic; operand lengths from14CEBC. Linear physical instruction decode does not establish natural reachability. Branch targets, scripts outside the named bank and direct getter consumers remain separate.',banks=out,references=refs,stub_references={i:[x for x in refs if x['id']==i] for i in sorted(stubs)});(ROOT/'build/event-script-audit/npc-text-refs.json').write_text(json.dumps(report,indent=2)+'\n')
+    report=dict(source_rom_sha256=digest(r),scope='Static actor-script roots selected by original map offset, actor first/count and relative instruction tables. Native4B33C address arithmetic; operand lengths from14CEBC with native opcode33 correction. Linear physical instruction decode does not establish natural reachability. Branch targets, scripts outside the named bank and direct getter consumers remain separate.',banks=out,references=refs,stub_references={i:[x for x in refs if x['id']==i] for i in sorted(stubs)});(ROOT/'build/event-script-audit/npc-text-refs.json').write_text(json.dumps(report,indent=2)+'\n')
     return report
 
 

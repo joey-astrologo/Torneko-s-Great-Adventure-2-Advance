@@ -6,9 +6,10 @@ def run():
     from tools.rom import ROOT,load_base,digest
     (ROOT/'build/event-script-audit').mkdir(parents=True,exist_ok=True)
     from tools.lz77 import decompress
+    from tools.npc_script_model import operand_lengths
     from tools.opening_text import banks
     from tools.event_text import table_entries
-    rom=load_base();src=json.loads((ROOT/'build/event-script-audit/npc-text-refs.json').read_text());lengths=list(rom[0x14CEBC:0x14CEE0]);out=[];allrefs=[]
+    rom=load_base();src=json.loads((ROOT/'build/event-script-audit/npc-text-refs.json').read_text());lengths=operand_lengths(rom);out=[];allrefs=[]
     assert src['source_rom_sha256']==digest(rom), 'NPC reference audit uses another source ROM'
     for bank in src['banks']:
      d,_=decompress(rom,bank['rom_start']);lo,hi=bank['header'][3:5];rows={(r['group'],r['index']):r for r in table_entries(banks()[bank['bank']])};roots=[]
@@ -33,7 +34,7 @@ def run():
        todo.extend(successors);ins.append(row)
       roots.append(dict(start=s['start'],consumers=s['consumers'],instructions=sorted(ins,key=lambda x:x['offset']),errors=errors))
      out.append(dict(bank=bank['bank'],roots=roots,outside=bank['outside']));print('bank',bank['bank'],'roots',len(roots),'errors',[(hex(s['start']),s['errors']) for s in roots if s['errors']])
-    stubs=src['stub_references'];report=dict(source_rom_sha256=digest(rom),scope='Conservative static traversal from original NPC selector roots. Both outcomes for flag opcode6 and choice opcode16; original signed/unsigned relative offsets, END21 stops, WAIT20 advances. Other handlers treated as fallthrough using original lengths; native map activation, malformed bank2 roots and other direct getter consumers remain excluded. No unused-text disposition is established here.',banks=out,references=allrefs,stub_references={k:[r for r in allrefs if r['id']==k] for k in stubs});(ROOT/'build/event-script-audit/npc-control-flow.json').write_text(json.dumps(report,indent=2)+'\n')
+    stubs=src['stub_references'];report=dict(source_rom_sha256=digest(rom),scope='Conservative static traversal from original NPC selector roots. Both outcomes for flag opcode6 and choice opcode16; original signed/unsigned relative offsets, END21 stops, WAIT20 advances. Other handlers treated as fallthrough, with opcode33 width corrected from its native handler; native map activation, malformed bank2 roots and other direct getter consumers remain excluded. No unused-text disposition is established here.',banks=out,references=allrefs,stub_references={k:[r for r in allrefs if r['id']==k] for k in stubs});(ROOT/'build/event-script-audit/npc-control-flow.json').write_text(json.dumps(report,indent=2)+'\n')
     for k,v in report['stub_references'].items():
      if v:print(k,v)
     return report

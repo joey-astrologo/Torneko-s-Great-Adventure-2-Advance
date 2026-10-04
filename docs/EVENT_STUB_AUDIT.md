@@ -23,11 +23,27 @@ traversal follows both outcomes of flag/choice branches and stops at END.
 | Present after an unconditional END in a linear scan | 3 | `event-bank-2.382a`, `.382d`, `.3830`; the bank-2 script at decoded `0x5AB` reaches END at `0x5AE` first. These bytes are not an executable fallthrough. |
 | No reference in these extracted script roots | 31 | Remain source records with unproven reachability. This is not a claim that all possible readers are known or that the records are unused. |
 
-The malformed bank-2 selector at decoded `0x5E2` is outside the declared script
-region ending at `0x5E0`; another root at `0x5DF` runs out of operands. These are
-original-data anomalies. No range is treated as free space or translated by
-guessing a missing script. Direct event getters and tutorial bank/map pairs are
+The malformed bank-2 roots at `0x5E2` and `0x5DF` have now been traced to the
+blacksmith's and Remi's visible shopkeeper actors. The blacksmith's side contact
+reaches actor data as script instructions and then an invalid text stream.
+Both actor selectors now share their map's existing service script; no prose
+was invented. Native room/service evidence is recorded in
+[the October 4 follow-up](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
+The 34 source fragments above are unchanged by this separate caller repair.
+Direct event getters and tutorial bank/map pairs are
 separate from NPC script traversal; see `MEMORY_MAP.md`.
+
+The October 4 handler review corrects opcode 33's operand width: the native
+handler consumes two bytes, while the ROM's size table says one. A controlled
+native invocation confirms the advancement. All 134 extracted contexts contain
+a zero third byte, so the corrected decode produces exactly the same dialogue
+reference sets. The handler's direct selector branches additionally resolve
+21 existing English sources. The nine original direct getter call sites are
+accounted for by those helpers and the separate tutorial helper; none adds a
+reference to the 34 fragments in these contexts. Unknown entry/bank combinations
+remain separate from that bounded result.
+[Handler receipt](../build/npc-handlers/report.json) ·
+[Current-ROM tutorial entry audit](../build/oct04-continuation/tutorial-reachability.json).
 
 ## Confirmed follow-on behavior
 
