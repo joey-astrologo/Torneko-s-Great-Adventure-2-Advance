@@ -1,0 +1,982 @@
+{
+  "schema": 1,
+  "source_rom_sha256": "79986287eef366bba987393de8247141973d5564fa72fe2f3f6dd28684cd18aa",
+  "audited_rom_sha256": "588dc92ce09104cb80d18fb4929e6e713f86836e65d8c12b135dfb4f4269b7ad",
+  "scope": "Source investigation dispositions for the shipped data and recovered caller graphs. Language status is unchanged. Dormant here means no selection in the audited graph, not globally unreachable or safe to delete. Reopen a record when a concrete reader, entry or valid selector outside these domains is found.",
+  "receipts": [
+    {
+      "path": "build/oct07-source-dispositions/town-dispositions.json",
+      "sha256": "98abadbcd54a96ce5e941fc3787818febdd8e73ca6d257b86923d4afb5a97c05",
+      "scope": "Account for town sources against the complete recovered service read graph.\n\nGhidra SSA enumerates reads across branches without path-budget cutoffs. Explicit\nnative-code domains resolve the six computed selections and five stack-alias\nloads. This is a shipped-service graph disposition, not arbitrary RAM safety.\n",
+      "limits": "Native vocation state is 0..2, supported by existing 18 transaction cases; corrupt saves/RAM are excluded. Decompiler epilogues and original instruction spans are retained. Other unknown entry mechanisms remain outside this recovered graph. These dispositions do not translate or delete original dormant bytes."
+    },
+    {
+      "path": "build/oct07-source-dispositions/shared-dispositions.json",
+      "sha256": "610573456b2958f785bf6d9a6671d41e80b9c01cbd3380385490cf3b866c772a",
+      "scope": "Resolve the 52 shared-source candidates against disassembled reader domains.\n\nThis combines complete exported SSA operations, the earlier paired Thumb trace,\nand explicit selector-producer domains. It classifies the recovered graph;\nit does not claim a proof for arbitrary code pointers or corrupt saved state.\n",
+      "limits": "Recovered literal-seeded code graph and valid native data domains; unknown synthesized pointers/entries, arbitrary RAM mutation and corrupt imported saves are excluded. ROM storage is immutable in SSA analysis. No global unreachable proof or ordinary-scene coverage claim. No ROM changes."
+    },
+    {
+      "path": "build/oct07-source-dispositions/event-fragment-dispositions.json",
+      "sha256": "0df9515b370ec55ffdbc857b9ff57b5e996683eded8de1b167dba11e2a7c87f7",
+      "scope": "Give each event fragment a disposition in the current shipped script graph.\n\nRebuild NPC roots from the compiled actor records, follow both branch outcomes,\nand cross-check the event interpreters, direct getters and tutorial contexts.\nNo dialogue is reconstructed for records with no executable reference.\n",
+      "limits": "The graph is bounded by shipped event roots, compiled actor map records and recovered direct/tutorial getter contexts. Arbitrary RAM mutation, corrupt saves and unknown synthesized entry mechanisms are excluded. Original fragment bytes are retained; no whole-game or ordinary-access claim."
+    }
+  ],
+  "entries": [
+    {
+      "id": "event-bank-0.1041",
+      "source_sha256": "c94c00f5860313527543c5245c09565893d07c9f2706c3818deb8f9ddf299298",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-0.12c3",
+      "source_sha256": "aa4f7b3e444b66303312eb890e394bbcc72d22746fbef6975c3453caa6229cd4",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-0.26bd",
+      "source_sha256": "ee80a401146e5f5c21c5cbd1ae1a10f5c4a68b5862870446de120dcb07c008aa",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.0721",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.42d4",
+      "source_sha256": "8262232997e7bd70ebbf10b781960f304afc28cf6a9bf4a8e7120217c6c21a36",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.42d7",
+      "source_sha256": "8262232997e7bd70ebbf10b781960f304afc28cf6a9bf4a8e7120217c6c21a36",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.43bf",
+      "source_sha256": "19f4faffce3adaa3299202e0302a40e9fbe90bb560f0f48265b04365b3eb70c3",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.4982",
+      "source_sha256": "ee80a401146e5f5c21c5cbd1ae1a10f5c4a68b5862870446de120dcb07c008aa",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.513c",
+      "source_sha256": "e366de92472507fc44ecc3bcb4f15edfbc875a8f68cf0e631803b441a01dd91d",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.513f",
+      "source_sha256": "e366de92472507fc44ecc3bcb4f15edfbc875a8f68cf0e631803b441a01dd91d",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.5142",
+      "source_sha256": "ac1118158428709709d685d791310cd6f47fc2065864acc7fb9468ca4f128da4",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.5145",
+      "source_sha256": "9e17ac3a776fbad10971025d2c0f3826222063aa87a0ecdaa00070563e0afdf9",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-1.5148",
+      "source_sha256": "19f4faffce3adaa3299202e0302a40e9fbe90bb560f0f48265b04365b3eb70c3",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-2.37e8",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-2.37eb",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-2.382a",
+      "source_sha256": "8262232997e7bd70ebbf10b781960f304afc28cf6a9bf4a8e7120217c6c21a36",
+      "disposition": "after-unconditional-end",
+      "evidence": "Only encoded selector is after END at decoded NPC bank 2:5AE. No compiled actor root or conservative branch enters it.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-2.382d",
+      "source_sha256": "8262232997e7bd70ebbf10b781960f304afc28cf6a9bf4a8e7120217c6c21a36",
+      "disposition": "after-unconditional-end",
+      "evidence": "Only encoded selector is after END at decoded NPC bank 2:5AE. No compiled actor root or conservative branch enters it.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-2.3830",
+      "source_sha256": "8262232997e7bd70ebbf10b781960f304afc28cf6a9bf4a8e7120217c6c21a36",
+      "disposition": "after-unconditional-end",
+      "evidence": "Only encoded selector is after END at decoded NPC bank 2:5AE. No compiled actor root or conservative branch enters it.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.03b3",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.03b6",
+      "source_sha256": "e7784588296d84a816884c5d6b25624c18ae091dc052f6903b88b8b7fb73f0b8",
+      "disposition": "operand-byte-coincidence",
+      "evidence": "The sole byte candidate begins inside operands of event instruction 43EB62. Neither event interpreter graph enters 43EB65.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.03b9",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.03bc",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.03f9",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-3.1c23",
+      "source_sha256": "b8638fe49ecb02298a33246545f75e3b5ade49d9f21d9be63dc6654754cf6e43",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-4.0d28",
+      "source_sha256": "a1d47d46d6f705609b538f2b98aa851d1ac6974b72c78266a2a4a0b74c6d926e",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.0e5d",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.0e60",
+      "source_sha256": "a67386fa308b6111277971752da857a2c371f4309dbbd9f568019581a265985c",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.131c",
+      "source_sha256": "ee80a401146e5f5c21c5cbd1ae1a10f5c4a68b5862870446de120dcb07c008aa",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.4c55",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.4c58",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-5.5254",
+      "source_sha256": "e82eedf7970dfe00c993cc9e0882dbf93cd7e104bab2ce304ba95eda4bff6454",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-6.21a8",
+      "source_sha256": "3fa0a5cfa5234e8d9528e4151e29dfad3764b8efa116f8231eccd712b1ae24c7",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-6.426d",
+      "source_sha256": "8e2e13999c9a2981f6bb94ebd002006bbf51731d5237a465f466ba471f2c9eaf",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "event-bank-6.4270",
+      "source_sha256": "8e2e13999c9a2981f6bb94ebd002006bbf51731d5237a465f466ba471f2c9eaf",
+      "disposition": "no-selector-in-shipped-script-graph",
+      "evidence": "No encoded dialogue selector in any of the seven NPC instruction spans or seven event spans; no reference in direct getter or tutorial contexts.",
+      "evidence_report": "build/oct07-source-dispositions/event-fragment-dispositions.json"
+    },
+    {
+      "id": "rom.00060344",
+      "indexes": [
+        605
+      ],
+      "source_sha256": "0b55f1e8102ec3d818b5a298d6c61fc4f21862f707f6b5319b79e4a24f1083fa",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00060984",
+      "indexes": [
+        532
+      ],
+      "source_sha256": "3dc6e2ac06c937e0a302418cc69da285854cf1f4bf0327921f863871181c986f",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000611e0",
+      "indexes": [
+        472
+      ],
+      "source_sha256": "d93171ecd87735a51c7402f89d1df23e3451f753de8f93f27688f1b474e59eb4",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000611f4",
+      "indexes": [
+        471
+      ],
+      "source_sha256": "b02f3abf750609c043159e0e217be34e03a366cc462eea25bc531762399493a4",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061248",
+      "indexes": [
+        468
+      ],
+      "source_sha256": "a0795a8d372a29df7666c1f929dd27165fa9a2618ae6966ab50837f556665a37",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061294",
+      "indexes": [
+        464
+      ],
+      "source_sha256": "dde33e23adae62d6efc8594c0965732fc3c58b0cace6a45c260bf4de803f4ea3",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000615a4",
+      "indexes": [
+        436
+      ],
+      "source_sha256": "11230e1c14235d568c28422c9c23a8cb1ed8098ceac617da41316b8070c50c45",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000618a8",
+      "indexes": [
+        399
+      ],
+      "source_sha256": "cca5dd39fa689611d05badc9353439c73152c3191a2d72c60c74bb3501e75906",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061918",
+      "indexes": [
+        397
+      ],
+      "source_sha256": "aea954741949a0992d925129755b4b4786b4626b8e0795f0ecf4c0cc0769493b",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000619b4",
+      "indexes": [
+        389
+      ],
+      "source_sha256": "13e724de3b740d908339e144d0c32f14e595787b4e3c07174d5cfe21e62b76c0",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061cb4",
+      "indexes": [
+        368
+      ],
+      "source_sha256": "8268c44a8324c5ba6f1767d2b89d0d77f9f6245b83af797989e8ac878e20ca97",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061cd0",
+      "indexes": [
+        367
+      ],
+      "source_sha256": "c280a5c5a6a3b23970dbbbe216e998220aef1e89cebd146635d6d17c044440f4",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061d90",
+      "indexes": [
+        357
+      ],
+      "source_sha256": "1c9165b1613f754425bf55c180decf68951af925d4d66995aafb3f108df34b68",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061df0",
+      "indexes": [
+        355
+      ],
+      "source_sha256": "52dec8f27b169d4a1148faebd9ff551dd22e9fe2b4c4c89c8fd5b9a07d67c134",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061e60",
+      "indexes": [
+        354
+      ],
+      "source_sha256": "6e31ab2d35ccf75dc82eac1c737630d78c884e88cdf929b4e37507304be39be4",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061ea0",
+      "indexes": [
+        353
+      ],
+      "source_sha256": "a0e32ef3563f38b49077cb4252c92c003eb5018de42bda7bba1fea924185140e",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061f00",
+      "indexes": [
+        351
+      ],
+      "source_sha256": "3ca2602b95aae22dc4550fbc7aa9a69ab94163bd6270302487341d0aeb3131b3",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061f50",
+      "indexes": [
+        350
+      ],
+      "source_sha256": "7799156e3052140ce5f356d0bdb800f43f5914725cac0850a27938fbd87ae99c",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061f74",
+      "indexes": [
+        349
+      ],
+      "source_sha256": "709e0d81d5e373335f70d4f955cc6865b4fc7a7fa3f06d5d5bb97212eea7bae7",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00061fa4",
+      "indexes": [
+        348
+      ],
+      "source_sha256": "cfbca5a523dcd6868d039437dd9ad6635ba2d5d5f82061a8a6dd1363a97c2ff4",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006201c",
+      "indexes": [
+        346
+      ],
+      "source_sha256": "31e2ca0c855d5f86af2a6a32ecfb5c85ac35de5abc3d663b8a737516aea92153",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006206c",
+      "indexes": [
+        345
+      ],
+      "source_sha256": "b8b9d628267a97dfde9232629bca1326877bc4d3d1753f26ea1dbfb80f354208",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000620a8",
+      "indexes": [
+        343
+      ],
+      "source_sha256": "15fee222b36d2cd66d1b8731dee299df7c33d25f25382611a8f27515f703eadd",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000620f0",
+      "indexes": [
+        341
+      ],
+      "source_sha256": "9320191be21ae639d28db6baf9c17ea396282e180cd41b13c765c70e7719f573",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062140",
+      "indexes": [
+        340
+      ],
+      "source_sha256": "da1fcf941424c7ef46458673e8bbbcfb2f13b28487891c2fbfc3207367f21ab1",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006216c",
+      "indexes": [
+        339
+      ],
+      "source_sha256": "499a040a83cc3ac445839603a7c7f964f716f56841906a8be74269f0f26bc6c9",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062188",
+      "indexes": [
+        338
+      ],
+      "source_sha256": "d1a34958c36404031d3cfd9bb7061fb0ec03c7cbaea3c01e663f8e42490a91ff",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000621c4",
+      "indexes": [
+        337
+      ],
+      "source_sha256": "7e90e505f77f7a67f2136638d79741c9c2ad916888369414d61ae72a8fb98da2",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000621e4",
+      "indexes": [
+        336
+      ],
+      "source_sha256": "73899cd83b3ee12db31e0ea7b14e05ff2280a9d10e1aedb2e81f232c4929e1de",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006223c",
+      "indexes": [
+        335
+      ],
+      "source_sha256": "167c3d0d47541b601dfde6ff909341676235db258eb7e0c905e55d26a113ce2e",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062264",
+      "indexes": [
+        334
+      ],
+      "source_sha256": "a20be5bdf718f6332e69f16d2343c0d785fe60daee6eeeea0e0fdd0c90111fdc",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000622b0",
+      "indexes": [
+        333,
+        359
+      ],
+      "source_sha256": "319d87a1d2a0394dc25b32d43e5998a4104299a95934b76b4612a1351479c0ee",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062324",
+      "indexes": [
+        331
+      ],
+      "source_sha256": "9b6703f6b95721861d2a7cf17c292c5634fb1e5ff85fd8b1187d095aa59283e6",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062b58",
+      "indexes": [
+        282
+      ],
+      "source_sha256": "4ad22f69aaea23e872e2b8544ffc4e85bb99a2abdc2227bfdecbb63effcc8e79",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00062edc",
+      "indexes": [
+        250
+      ],
+      "source_sha256": "94322d8dbcee18bd65928c97a7b1218f2c7159faae8ea0aa86b14df39d30ad5a",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00063140",
+      "indexes": [
+        227
+      ],
+      "source_sha256": "1beaa4d50ec66b1e7f07e4f59a16ba2b14b8c7d30facf6c0c847e38b2a52a8c2",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000632d8",
+      "indexes": [
+        212
+      ],
+      "source_sha256": "bc2491b08ae76089fe110b34c383d69f1daea5eb5903b2258d14eaf6561fabd8",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006355c",
+      "indexes": [
+        181
+      ],
+      "source_sha256": "6e91cd73ee8911c7251bf773f8d627f7e97a802c8b615be123f6a057f6c05366",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00063654",
+      "indexes": [
+        170
+      ],
+      "source_sha256": "9d27431efa0d10b3722046b78cb158b0fdf69367eed1823315b9621f86f65fbb",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00063668",
+      "indexes": [
+        169
+      ],
+      "source_sha256": "9d192467f278a76d6beef44ad5d64d3b5dcaa51d639e4d7eb0f3695a842cf87b",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006367c",
+      "indexes": [
+        168
+      ],
+      "source_sha256": "1f4a2eaa41d7a9391eacd89ba75c1f5425637be53a29e39b353bf6f5810ba356",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000638d8",
+      "indexes": [
+        142
+      ],
+      "source_sha256": "0bceef8017cd3732d863762e23dc17b52cef64629f16eb77b4391eaeebf022fa",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.000638e8",
+      "indexes": [
+        141
+      ],
+      "source_sha256": "946310d4de903950fcd2198c99135ddeece47b132efbc7f868e329417d6b6b72",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006396c",
+      "indexes": [
+        136
+      ],
+      "source_sha256": "b9db55d031c8c4c13fe3b7780fec236f024fc6ddcd7282b28d8beb584a59b952",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064004",
+      "indexes": [
+        69
+      ],
+      "source_sha256": "3a366d08bd64ea9b672e64d7bab067dbe8b06827ef216a867f6deb38d7168ff2",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064218",
+      "indexes": [
+        54
+      ],
+      "source_sha256": "1de61a940bae486bfd5413227b702ea941acbd1ac0b1ba4154290f25179d4d8b",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064360",
+      "indexes": [
+        41
+      ],
+      "source_sha256": "1141282a641f00e9fda4acf6ecfc4995c363c0110f47f9bccda66ee5fe33420b",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064500",
+      "indexes": [
+        26
+      ],
+      "source_sha256": "ab7b09574baf768c3a9b4395fdc0fe556d5586c53e263457a3bc001485677c0b",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064514",
+      "indexes": [
+        25
+      ],
+      "source_sha256": "bef1a631ddbaf74443409cb41a59cc2111e407fa4b775091f1cc9f605c54f588",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064528",
+      "indexes": [
+        24
+      ],
+      "source_sha256": "4b702c9dab23aedbe1ad02d6b8e8124f96ae18250f79416654428fb121953d1a",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.0006453c",
+      "indexes": [
+        23
+      ],
+      "source_sha256": "ffb04db6065b3fc826b77b1c8750d3ae2c43a7e738c483627a020f12afea7c44",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "rom.00064888",
+      "indexes": [
+        7
+      ],
+      "source_sha256": "71020a809ec8da9cc516a5139e58f70daef690aab5534d6bae688527042a70ce",
+      "disposition": "dormant-in-recovered-shared-reader-graph",
+      "evidence": "Exact pointer owners are only the shared table. No selection in recovered SSA loads, including complete bounded computed domains and all earlier tracer load sites. Original bytes retained.",
+      "evidence_report": "build/oct07-source-dispositions/shared-dispositions.json"
+    },
+    {
+      "id": "town-common.1085",
+      "indexes": [
+        1
+      ],
+      "description": "Superseded two-item blacksmith offer",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "2a0942b3e02668b0c24c1f38a91476954be0796462b84ae426e2779fe0582c0c",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.10b7",
+      "indexes": [
+        2
+      ],
+      "description": "Superseded matching-item blacksmith offer",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "06e9d1ea04a0c5631e1ca91916dd001fff38a12ee5ea3aca9a2eeebc317aeacd",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.20e7",
+      "indexes": [
+        35
+      ],
+      "description": "Old synthesis farewell",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "c0a5dbfc6347bbffa1a0bcf39288c8c6368f0b72fe4e9e3946fd191000bd26d4",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.212e",
+      "indexes": [
+        37
+      ],
+      "description": "Old synthesis selection instructions",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "1e314a589787c303df43997fa673fd0490942352a1d623d125079009fa2951c4",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.2ae2",
+      "indexes": [
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299
+      ],
+      "description": "Version-error filler in 86 unused table slots",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "6a0bfc7bb3ab718889dc48740f242cd6f0b2b047942de47f96754e5eed9beed4",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.3e36",
+      "indexes": [
+        180
+      ],
+      "description": "Old storage deposit-choice menu",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "76cd66212f9765724027b7dbad2d3687007bf433fda22cd718c76c4eb749c53c",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.3fb5",
+      "indexes": [
+        185
+      ],
+      "description": "Old storage withdrawal-choice menu",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "101c70bb69e6ba6d87a412ea52c6fdfd1b488e98f42e158735960a20dd4354fd",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.40db",
+      "indexes": [
+        193
+      ],
+      "description": "Old storage save question",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "ca3ecb4fac831937977f67bcb70c5c850644535effb497909019f77feb7079fc",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.410d",
+      "indexes": [
+        195
+      ],
+      "description": "Old storage save confirmation",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "e01c7a6fc444d15f945d0f985eb284c480aff3099c5c2f3436935dce7f3a105b",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    },
+    {
+      "id": "town-common.4122",
+      "indexes": [
+        196
+      ],
+      "description": "Old storage farewell",
+      "disposition": "dormant-in-recovered-service-graph",
+      "evidence": "No read in 20 recovered service functions; complete branch SSA plus explicit computed-selector domains. Exact source pointers occur only in the town table.",
+      "source_sha256": "423a2a383eaa4123c78ba63c96e1de9051ffcb30bcf3ea916b1f8d919fa84c5c",
+      "evidence_report": "build/oct07-source-dispositions/town-dispositions.json"
+    }
+  ]
+}

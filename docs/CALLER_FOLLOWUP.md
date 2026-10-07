@@ -1,10 +1,22 @@
 # Caller follow-up — October 3–4, 2026
 
+October 7 link-error continuation: see [LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md)
+for all five native error selectors, 15 English scenarios / 24 peer returns and
+cold loads, and the original-ROM comparison. Text checks pass; two injected
+post-save fault exits expose an original item-loss bug. It is separate from the
+successful timeout restoration. The user chose to preserve original gameplay
+behavior, so the finding is closed as documented original behavior with no repair
+planned.
+
 The current checkpoint repairs two bank-2 shopkeeper selectors and validates
 actual two-core link trading. ROM SHA-256 is
 `588dc92ce09104cb80d18fb4929e6e713f86836e65d8c12b135dfb4f4269b7ad`;
 the root ROM/BPS are updated. See [the October 4 evidence](#npc-shop-selectors-and-two-core-link-trading).
-Earlier sections and receipts below describe their recorded builds.
+The October 7 source-by-source continuation now gives all 96 formerly
+unresolved records [bounded dispositions](TEXT_SOURCE_DISPOSITIONS.md). It also
+fixes the spell-menu audit’s overwritten first observation. No ROM change was
+needed. Earlier sections and receipts below describe their recorded builds
+and the investigation classifications at those dates.
 
 The continued branch audit below repairs two additional tutorial configurations.
 Its ROM is `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`;
@@ -542,3 +554,130 @@ select the unresolved source at D4h. All four staff/upgrade branch bindings pass
 [Definition receipt](../build/oct04-continuation/definition-selector-domains.json).
 These are bounded static traces with downstream limits recorded, separate from
 native gameplay. The 62-source / 34-fragment discovery counts remain unchanged.
+
+### Soldier, monster and skill selector domains
+
+The October 7 continuation is restricted to text; the user stopped further
+graphics auditing. `tools.audit_actor_skill_selectors` adds **548 static cases /
+356 English shared-table reads** on the unchanged accepted ROM:
+
+- The soldier creation path supplies object type 2 and a random selector 0–6.
+  Both direct calls to the object creator are accounted for; its other call
+  supplies type 1, outside the soldier dialogue branch. All seven message
+  selections resolve to existing English. This adds producer evidence to the
+  earlier nine controlled native display cases, not ordinary soldier placement.
+- All 141 monster definitions pass through both announcement readers. The
+  45 nonzero definitions resolve to 24 English sources in each reader; the
+  other 96 suppress the announcement. The second reader's full record domain
+  deliberately includes species outside normal projectile eligibility.
+- Skill actions use Set, disabled Set and Info codes 0/5/3. Both row-format
+  branches pass for all 128 definitions: mode 6 with a nonzero hunger cost
+  selects shared index `1F0h`; zero cost or any other mode selects `1F3h`.
+
+[Text-domain receipt](../build/oct07-text/actor-skill-selectors.json). Selected
+instruction/record domains are checked against the original and compiled ROM;
+downstream stops and 96 downstream budget limits remain in the report. This is
+not whole-function execution, a global RAM-write proof or a reason to declare
+the unresolved sources unused. No additional untranslated path was found in
+this cohort. The 62 shared/town sources and 34 fragments remain unresolved;
+text is not fully signed off. The root ROM and BPS bytes remain unchanged.
+
+### Event interpreter paths and fragment entry checks
+
+The October 7 continuation distinguishes the setup interpreter (`0804F280`,
+32 roots) from the scene interpreter (`0804EF40`, 101 roots). The setup caller
+selects header type 1 and skips dialogue/choice commands; type 2 starts the
+normal scene owner. Conservative branch traversal retains all 207 previously
+extracted dialogue references, each selecting existing English. Both outcomes
+of 120 flag branches and 21 choice branches pass **282 native handler checks**.
+These use unchanged cartridge operands and recorded disposable flag/choice
+controls; caller ABI and battery preservation pass.
+
+Two original bank-1 branch offsets enter instruction operands. Their extra
+paths add no dialogue, and a native dispatcher check confirms its one-byte
+advance over the resulting unexpected opcode. They are recorded source-script
+anomalies, not confirmed localization defects; ordinary flag eligibility and
+complete scene behavior are separate from these handler checks.
+
+Scanning every byte additionally tests whether fragments were missed because
+of instruction alignment. Besides the three known NPC references after END,
+one event candidate lies inside another instruction's operands and has no
+entry in this graph. No additional fragment caller is found. The 34 fragments
+retain their bounded, unresolved classification.
+[Details](EVENT_STUB_AUDIT.md) ·
+[Reproducible report](../build/oct07-text/event-script-paths/report.json).
+The ROM/BPS bytes remain unchanged; no rebuild or full-suite replay is needed.
+
+### Baker dialogue floor bounds
+
+The recovered baker creation path requires dungeon 1 (Cemetery Dungeon) and
+completion bit 1 clear, then supplies species `86h`. Its dialogue consumer selects
+one of six existing English passages by floor. The progression owner compares
+the next floor against the original threshold 7, runs completion, clears the
+non-player actors and sets the dungeon-loop exit flag. This provides code evidence
+for the six-floor domain in addition to the earlier ordinary quest completion.
+
+`tools.audit_companion_domain` checks **24 native exit-predicate cases**: floors
+1–6, normal +1 and alternate +5 progression, before and after completion.
+All return the expected result and preserve caller ABI/battery. The six private
+English bindings match this domain. This closes the floor-limit question for
+the recovered producer/progression path; arbitrary actor changes, other RAM
+writers and edited saves are outside that claim. No ROM repair was required.
+[Producer and native-predicate receipt](../build/oct07-text/companion-domain/report.json).
+
+### Expanded scan limits and unresolved pointer ownership
+
+`tools.audit_text_limit_followup` revisits all 49 budget-limited literal seeds
+with complementary 40,000-instruction/256-path and 200,000-instruction/900-path
+profiles. Neither finds a new computed text-reader site. The deeper profile's
+25 distinct non-length exits have dispositions: 22 native POP/BX returns, the
+existing item/name patches and one long branch to a shared function epilogue.
+At `0800BE88`, BL targets `0800CC82`, which restores the enclosing function's
+stack/registers and pops its return address. The scanner's assumed fallthrough
+at `0800BE8C` is therefore a literal-pool artifact. This is a research-model
+disposition, not a ROM bug or a change to the general tracing engine.
+
+Both profiles retain their path limits; the deeper one retains five instruction
+budget limits (four main-loop seeds and the second monster-reader seed). They
+are not five new missing translations. The earlier selector-specific checks
+remain separate evidence; these expansions do not establish full function or
+whole-game coverage. [Limit follow-up](../build/oct07-text/limit-followup.json).
+
+`tools.audit_unresolved_text_owners` also checks exact source-start pointers
+for all 62 unresolved shared/town records across the entire original ROM,
+including unaligned occurrences. The 52 shared sources have pointers only in
+the original shared table. The ten town sources have decoded pointers only in
+their 300-word table; the one raw linked-address match belongs to that compressed
+resource. No additional exact-pointer owner is found. Arithmetic/interior
+pointers, other compressed resources and code reachability are explicitly
+outside this census; it does not declare the sources globally unused.
+[Pointer ownership receipt](../build/oct07-text/unresolved-pointer-owners.json).
+
+### Individual source dispositions and audit correction (October 7)
+
+The former 62-source / 34-fragment backlog now has a disposition for every ID
+in [TEXT_SOURCE_DISPOSITIONS.md](TEXT_SOURCE_DISPOSITIONS.md) and the
+hash-pinned `config/text-source-dispositions.json`. Town SSA accounts for 167
+read sites in 20 services. Shared SSA accounts for 688 read sites in 293
+function/block exports, including all 658 prior tracer sites. Explicit native
+selector domains exclude all 62 retained sources in that recovered graph.
+
+The current compiled actor records yield 458 NPC roots / 683 modal reference
+contexts. Combined event, direct-getter and tutorial contexts exclude all 34
+fragments: three after END, one operand coincidence, thirty without selectors.
+Original source bytes remain preserved. These are bounded code/data findings,
+not a global unreachable proof or ordinary scene coverage.
+
+The independent cross-check caught a verification defect: the spell-menu audit
+previously overwrote each seeded read with later loop visits. It now checks the
+first read against the actual spell definition. All 61 records cover their nine
+target labels in both menu and Info; 250 record cases / 378 reads and four
+staff-effect bindings pass. Four older unconstrained-loop observations outside
+that native record domain are retained with explicit rejection reasons.
+
+All **191 unit tests** pass, including new branch-union, unknown-index, immutable
+ROM-alias and mutable-RAM controls. The catalog preserves language counts while
+reporting investigation status separately: zero untranslated records without a
+disposition. No ROM fix was needed; root ROM/BPS and supplied source/save hashes
+remain unchanged. This supersedes the earlier undifferentiated 62/34 backlog,
+not the scope of historical native acceptance receipts.

@@ -58,6 +58,36 @@ setup, executes native NPC selection and original tutorial opcode handlers, and
 records its host dispatch/WAIT exclusion. See [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md)
 for the two repaired tutorial configurations and their original-ROM evidence.
 
+To follow both original event interpreter modes and compare all recovered
+flag/choice branch outcomes with native handlers on the current root ROM:
+
+```bash
+.venv/bin/python -m tools.audit_event_script_paths
+```
+
+The report is `build/oct07-text/event-script-paths/report.json`. It records 133
+roots, 207 English dialogue references, 282 native branch outcomes, original
+operand-entry anomalies and byte-level fragment candidates. Setup and scene
+interpreters have distinct skip/dispatch behavior. These are bounded graph and
+controlled-handler checks, not ordinary story eligibility or full scene playback.
+
+`.venv/bin/python -m tools.audit_companion_domain` follows the baker's creation
+gate and Cemetery exit threshold, then checks 24 native floor-exit predicate
+cases against the six English dialogue bindings. It does not replay the quest
+or claim a global bound on arbitrary actor/floor mutations.
+
+Further text diagnostics:
+
+```bash
+.venv/bin/python -m tools.audit_text_limit_followup
+.venv/bin/python -m tools.audit_unresolved_text_owners
+```
+
+The first expands all 49 limited literal seeds under two complementary budgets
+and classifies non-length stops. The second checks exact source-start pointer
+ownership for the 62 unresolved shared/town sources. Both retain their limits;
+neither proves global unreachability or changes the ROM.
+
 ## Scripted emulator research
 
 ```bash
@@ -304,9 +334,61 @@ Run the ordinary home-book route and bounded selector-domain follow-ups with:
 .venv/bin/python -m tools.verify_link_entry --source build/english
 .venv/bin/python -m tools.audit_result_reason_selectors
 .venv/bin/python -m tools.audit_definition_selector_domains
+.venv/bin/python -m tools.audit_actor_skill_selectors
 ```
 
 The first cold-loads the earned storage save on two cores and uses buttons for
 empty refusal, deposits, green-book entry, exchange and return. The others pin
 reviewed producer arguments and trace all spell/skill definitions through their
 computed reads; they do not establish global unreachability of catalog sources.
+The final command adds soldier creation's bounded selector domain, both monster
+announcement readers (including zero suppression), and skill-menu action/row
+selectors. It is static evidence, not ordinary encounter or placement coverage.
+Further graphics auditing was stopped by the user on 2026-10-07; earlier graphics
+commands above document historical work, not the current work queue.
+
+## Source-disposition data flow (October 7)
+
+```sh
+bash tools/ghidra.sh dataflow build/disassembly/town-flow.tsv 0x0801D110
+.venv/bin/python -m tools.audit_definition_selector_domains
+.venv/bin/python -m tools.audit_town_source_dispositions
+.venv/bin/python -m tools.audit_shared_source_dispositions
+.venv/bin/python -m tools.audit_event_fragment_dispositions
+.venv/bin/python -m tools.text_inventory
+```
+
+The new Ghidra exporter records SSA operations and each node's actual address,
+so immutable ROM literals survive decompiler memory aliases while unknown RAM
+remains unresolved. The shared pass reconciles all older load sites, then binds
+computed selectors to explicit native domains. The event pass rebuilds roots
+from the compiled actor records. These commands consume the earlier source,
+selector and script receipts documented above; they are research checks, not
+new requirements for producing a clean translation build.
+
+[Individual source dispositions](TEXT_SOURCE_DISPOSITIONS.md) close the former
+96-record queue within the audited graphs. `text_inventory` reads the checked-in
+source-hash-pinned dispositions and reports investigation separately from
+language review. No text bytes are removed or silently counted as translated.
+
+## Link-error caller and recovery probes
+
+```sh
+.venv/bin/python -m tools.verify_link_errors --output build/link-errors/verified
+.venv/bin/python -m tools.verify_link_errors --original-baseline --cases hardware-after-save third-system-after-save --output build/link-errors/original
+```
+
+Requires the native `peer-*/traded.sav` outputs of `tools.verify_link_entry`.
+The 15-case English cohort enters through the green book, follows real error
+selectors and cleanup, and cold-loads every peer's resulting battery save.
+Fault latches, sampled participant IDs and received-count mutations are recorded
+separately from ordinary input and native-driver disconnection cases. Source
+ROM/save identities, fixture hashes, actual per-peer schedules, screenshots and
+bridge hashes accompany the reports. No source save is modified.
+
+The current original-game behavior loses offered items on two post-save error
+exits. The report explicitly distinguishes passing text from failed inventory
+recovery; it must not be summarized as an entirely passing link subsystem.
+The user chose to preserve original behavior. The default verifier checks that
+behavior; the optional `--expect-recovery` diagnostic is not a release requirement.
+[Conditions, disassembly and original-ROM comparison](LINK_ERROR_AUDIT.md).

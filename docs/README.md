@@ -17,6 +17,7 @@ the missed-reader failure, and which complete-screen audits are still pending.
 | Translate and revise | [LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), [glossary](../translations/glossary.json) |
 | Investigate unresolved text | [TEXT_OPEN_QUESTIONS.md](TEXT_OPEN_QUESTIONS.md) |
 | Review the latest caller/tutorial repairs | [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) |
+| Review link-error selection and the original item-loss finding | [LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md) |
 | Use Blank scrolls and English Write inputs | [BLANK_SCROLLS.md](BLANK_SCROLLS.md) |
 | Review the continued caller/custom-name audit | [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md) |
 | Review incomplete original dialogue | [EVENT_STUB_AUDIT.md](EVENT_STUB_AUDIT.md) |

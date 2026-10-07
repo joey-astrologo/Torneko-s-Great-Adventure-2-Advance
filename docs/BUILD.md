@@ -121,7 +121,10 @@ substitutions from ordinary gameplay routes.
 
 Current status and remaining work are maintained in
 [the coverage matrix](COVERAGE_AUDIT.md) and [TEXT_PROGRESS.md](TEXT_PROGRESS.md).
-The latest archive is `build/accepted/3814-tutorials/`, with 3,814 text resources,
+The latest accepted ROM archive is `build/accepted/3814-npc-shops/`; the
+[October 7 refresh](../build/releases/2026-10-07-text-audit.zip) recompiles its
+unchanged ROM/BPS and records the subsequent text audit. The preceding full
+cumulative archive is `build/accepted/3814-tutorials/`, with 3,814 text resources,
 20 graphics and 182 passing unit tests. Its [completion receipt](../build/caller-branches/completion.json)
 records successful cumulative native acceptance and the resolved tutorial report-
 generation failure: the final report stage was resumed after correcting its

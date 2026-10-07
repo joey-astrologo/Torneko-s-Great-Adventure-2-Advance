@@ -2,9 +2,13 @@
 
 The two repairs below remain accepted in the current build; current identity and
 later tutorial caller repairs are in [the coverage matrix](COVERAGE_AUDIT.md).
-The 34 other records remain investigation leads. Trace their code and entry
-conditions; controlled scene access is appropriate and ordinary progression is
-not required before investigating them.
+The 34 other records now have [individual no-entry dispositions](TEXT_SOURCE_DISPOSITIONS.md)
+in the shipped script graph. Current actor records yield 458 NPC roots / 683
+modal reference contexts; both event interpreters, direct getters and 93
+bank-relative tutorial topics add no fragment reference. Three selectors are
+after END, one is an operand-byte coincidence, and thirty have no script
+selector. Reopen with new entry evidence; do not carry these as uninvestigated cases.
+The chronological findings below retain their earlier scope.
 
 The Japanese ROM contains 36 event records consisting of one character and a
 terminator. These are source anomalies, not full Japanese sentences awaiting
@@ -44,6 +48,31 @@ reference to the 34 fragments in these contexts. Unknown entry/bank combinations
 remain separate from that bounded result.
 [Handler receipt](../build/npc-handlers/report.json) ·
 [Current-ROM tutorial entry audit](../build/oct04-continuation/tutorial-reachability.json).
+
+The October 7 continuation follows both event interpreters. Header type 1
+selects the setup interpreter at `0804F280` (32 roots); type 2 selects the normal
+scene interpreter (101 roots). Setup skips dialogue and choice commands using
+the original size table. Its recovered scripts contain no opcode 33, so the
+normal handler's two-byte correction does not alter setup decoding. Both flag
+outcomes and both scene-choice outcomes retain exactly the same **207 dialogue
+references**, all inserted English. **282 native branch outcomes** agree with
+the model, with caller registers/SP and disposable battery preserved.
+
+Bank 1 root 2 has two original branches into instruction operands:
+`43D66F -> 43D692` and `43D67D -> 43D68C` (ROM offsets). Their additional
+instruction paths add no dialogue references. The normal interpreter consumes
+the unexpected `28h` byte at `43D694` as a one-byte no-op; an isolated native
+dispatcher check confirms this. These are retained source-script anomalies,
+not newly confirmed missing translations or evidence of ordinary flag eligibility.
+
+A scan at every byte of all seven event-script spans and current NPC instruction
+regions finds only four candidate fragment selectors. Three are the known
+bank-2 bytes after END. The fourth, `event-bank-3.03b6`, starts at `43EB65`,
+inside the operands of the actual instruction at `43EB62`; no path in the
+recovered event graph enters it. This closes that additional entry candidate
+without assigning invented dialogue. Unknown entry mechanisms remain outside
+the bounded result, so the 34-source inventory classification is unchanged.
+[Both-interpreter and native-branch receipt](../build/oct07-text/event-script-paths/report.json).
 
 ## Confirmed follow-on behavior
 
@@ -114,6 +143,6 @@ not established by these checks.
 - [All seven native bank loads and 1,046 getters](../build/event-stub-repair/candidate/event-bindings-validation/report.json)
 - [Release and verification receipt](../build/event-stub-repair/receipt.json)
 
-The other 34 records retain their original bytes and unresolved classification.
-No missing dialogue is invented for them, and this repair does not establish
-whole-game coverage.
+The other 34 records retain their original bytes and the bounded investigation
+dispositions linked above. No missing dialogue is invented. Neither the repairs
+nor these dispositions establish whole-game scene coverage.

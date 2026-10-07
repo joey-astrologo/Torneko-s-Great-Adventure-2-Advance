@@ -28,11 +28,11 @@ The current development build contains **3,814 inserted text resources and
 English font and supports seven-character player names, including `Torneko`.
 The original GBA credits are already English and remain unchanged.
 
-Translation, discovery and playtesting continue. **96 known catalog sources
-still need investigation or review**; complete text discovery and full-game
-runtime coverage are not yet proven. Insertion counts are not a completion
-percentage. The 96-source backlog also excludes missed display paths for
-already-reviewed text.
+Translation, discovery and playtesting continue. **All 96 retained untranslated
+catalog sources now have bounded investigation dispositions**; complete text
+discovery and full-game runtime coverage are not yet proven. Insertion counts
+are not a completion percentage. Source accounting also does not establish every
+display path for already-reviewed text.
 
 The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
 names in all 13 locations; the earlier tests had missed this separate reader.
@@ -88,6 +88,25 @@ selector. Four native room routes and affected service checks pass. Actual
 trades between two emulator cores now pass native saving and cold-load
 persistence. The usual `build/torneko-2-english.gba` and `.bps` are updated;
 [the coverage matrix](docs/COVERAGE_AUDIT.md) records exact current-ROM evidence.
+
+The October 7 continuation is restricted to text. Both event interpreters,
+baker floor bounds, additional selector domains and expanded caller scans add
+verification without changing the accepted ROM/BPS. The former 62-source /
+34-fragment backlog now has [individual dispositions](docs/TEXT_SOURCE_DISPOSITIONS.md):
+all 96 are excluded by the recovered reader/script graphs under stated native
+data bounds. The spell-menu audit’s overwritten observation is also corrected.
+Language counts remain unchanged; zero untranslated catalog records lack an
+investigation disposition. Further graphics auditing is stopped.
+[Current audit evidence and limits](docs/CALLER_FOLLOWUP.md).
+
+The [October 7 release checkpoint](build/releases/2026-10-07-text-audit.zip)
+refreshes the usual root ROM/BPS through a clean compiler run and independent
+patch application; their bytes match the accepted October 4 release.
+The subsequent [link-error caller audit](docs/LINK_ERROR_AUDIT.md) verifies all
+five English errors, cancellation and disconnection recovery. It also reproduces
+an original-game item-loss defect when hardware/extra-system faults occur after
+the intermediate trade save. That gameplay defect is documented separately;
+original behavior is intentionally preserved under the user's instruction.
 
 [Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
 [Open text questions](docs/TEXT_OPEN_QUESTIONS.md)

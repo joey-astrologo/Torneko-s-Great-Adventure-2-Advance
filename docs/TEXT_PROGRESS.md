@@ -1,5 +1,37 @@
 # Autonomous text-localization progress
 
+October 7 release refresh and link-error continuation: root ROM/BPS freshly
+compiled and independently patch-verified, byte-identical to the accepted
+October 4 build. [Checkpoint](../build/releases/2026-10-07-text-audit.zip).
+The [link-error audit](LINK_ERROR_AUDIT.md) follows five error selectors through
+their full native handlers: 15 English scenarios / 24 peer routes and cold loads,
+plus two original-ROM scenarios / four peer routes and cold loads. English text
+checks pass. Two post-save fault exits lose the offered item in both ROMs; this
+is a documented original gameplay bug, not a passing recovery result. No repair
+has been inserted. The user chose to preserve original behavior; the finding is
+closed as documented original behavior and is not outstanding repair work.
+
+October 7: further graphics auditing is stopped. The former 62 shared/town
+sources and 34 fragments now have [individual source dispositions](TEXT_SOURCE_DISPOSITIONS.md).
+All 96 are accounted for in the recovered code/script graphs; none is a
+confirmed active missing translation. Whole-game scene coverage is unverified.
+The spell-menu definition audit also now checks the first seeded read instead
+of overwriting it on later loop visits; all nine target-label types pass.
+A further text-only pass bounds the soldier creation selector and checks both
+monster announcement readers plus skill-menu labels: 548 static cases / 356
+English reads, including 192 zero-announcement cases. No new ROM change was
+needed. [Evidence and limits](CALLER_FOLLOWUP.md#soldier-monster-and-skill-selector-domains).
+Both event interpreters additionally pass bounded traversal of 133 roots and
+282 native branch outcomes, retaining the same 207 English dialogue references.
+The only extra fragment byte candidate is inside another instruction and has
+no graph entry. [Event-path evidence](EVENT_STUB_AUDIT.md).
+The baker's creation/exit path also accounts for its six translated floor
+passages, with 24 native predicate checks. [Floor-bound evidence](CALLER_FOLLOWUP.md#baker-dialogue-floor-bounds).
+Two expanded scans of the 49 limited literal seeds find no new reader; their
+non-length exits are classified. The 62-source exact-pointer census finds only
+known table/resource ownership. These are bounded findings, not global
+unreachability. [Evidence](CALLER_FOLLOWUP.md#expanded-scan-limits-and-unresolved-pointer-ownership).
+
 October 4 follow-up: ordinary green-book trading now passes empty refusal, native
 deposits, bread/staff exchange, town return and two received-item cold loads with
 no state overrides. Opcode-handler widths, spell/skill definition domains and
@@ -20,11 +52,14 @@ receipt and 315 font-browser contexts / 3,430 measurements. Those broader
 cohorts are not claimed as full replays of the new ROM.
 The earlier 813-session audit gave all 98 bounded-scan callers investigated
 dispositions. The current
-source catalog contains 3,552 reviewed, 96 unresolved and 28 retained/component
-records out of 3,676. Historical percentages below measure source review only. It does not measure the fraction of gameplay
+source catalog contains 3,552 reviewed, 96 untranslated with investigated
+dispositions, and 28 retained/component records out of 3,676. It now reports
+language and investigation status separately; zero untranslated records lack
+a disposition in this catalog. Historical percentages below measure source review only. It does not measure the fraction of gameplay
 that displays English. The missed location banner demonstrated an additional
-class of gaps: untranslated readers of already-reviewed sources. The 96-source
-backlog is therefore not a complete estimate of remaining work. Existing test
+class of gaps: untranslated readers of already-reviewed sources. The former 96-source
+backlog was therefore never a complete estimate of remaining work; its bounded
+dispositions do not establish every scene’s behavior. Existing test
 counts must not be used as evidence that complete screens were audited.
 See [the coverage assessment and independent audit requirements](COVERAGE_AUDIT.md).
 
@@ -64,9 +99,10 @@ Japanese or layout findings. [Evidence and limits](CALLER_FOLLOWUP.md#computed-r
 
 ## Current next work
 
-Use [the coverage matrix](COVERAGE_AUDIT.md) for the ordered backlog: 62 shared/town
-sources and 34 event fragments, plus uncovered scene/graphics and data-flow
-contexts. The four tutorial configurations now have bounded no-entry evidence;
+Use [the coverage matrix](COVERAGE_AUDIT.md) for remaining scope. The 62-source /
+34-fragment backlog is now closed within its audited graphs; do not repeatedly
+rescan those records without a new caller or selector lead. Broader text
+validation concerns concrete uncovered scene and data-flow contexts. The four tutorial configurations now have bounded no-entry evidence;
 the 25-guard/expanded-save scan stops have explicit dispositions. See the
 [release follow-up](CALLER_FOLLOWUP.md#release-checkpoint-and-bounded-continuation). Lead with disassembly, then targeted
 native caller/scene probes. Documented invincibility or state setup in disposable
@@ -240,8 +276,10 @@ also passes a fresh-game, ordinary-input tutorial pickup regression: three floor
 and 14 pickups, with no Japanese text glyph leads. These checks do not establish
 complete game discovery or natural access to every translated branch.
 
-The current inventory accounts for 3,676 unique sources: 3,552 reviewed,
-96 unresolved (catalog status `untranslated`) and 28 retained/component sources.
+**Historical source-review accounting before the October 7 dispositions:**
+3,676 unique sources: 3,552 reviewed, 96 unresolved (catalog status
+`untranslated`) and 28 retained/component sources. The language counts remain
+the same; all 96 now have separate investigation dispositions above.
 The earlier **96.1%** figure divides reviewed English by every catalog source.
 Its remaining3.9% included accounted-for sources that do not need another English
 translation. The current breakdown is 21 nonlinguistic entries, four sources replaced by English UI
@@ -261,7 +299,8 @@ Remaining work includes 34 single-character event stubs,
 legacy system strings and shared-reader audits. The reviewed-source percentage
 does not count these investigation gaps as complete.
 
-The 96 unresolved sources currently divide as follows:
+At that earlier stage, the 96-source investigation queue divided as follows
+(all three rows are now superseded by TEXT_SOURCE_DISPOSITIONS.md):
 
 | Sources | Family | Remaining work |
 |---:|---|---|
@@ -570,7 +609,7 @@ later scene branches remain open.
 
 The following inventories and prototype notes describe their original stages.
 Their pending/next labels are superseded by later acceptance and the current
-matrix. Current accounting is 3,676 sources: 3,552 reviewed, 96 unresolved and
+matrix. At this earlier checkpoint, accounting was 3,676 sources: 3,552 reviewed, 96 unresolved and
 28 retained/components. Custom naming, inscription input, bank/storage persistence
 and ordinary English holy-flame/Cemetery/bakery routes now have accepted evidence.
 

@@ -24,11 +24,14 @@ case "$TORNEKO_ACTION" in
     TORNEKO_SCRIPT=VerifyGbaImport.java
     TORNEKO_MARKER=TORNEKO_GBA_IMPORT_OK
     ;;
-  functions|range)
-    [[ $# -ge 2 ]] || { echo 'Usage: tools/ghidra.sh functions|range output.txt addresses...' >&2; exit 2; }
+  functions|range|dataflow)
+    [[ $# -ge 2 ]] || { echo 'Usage: tools/ghidra.sh functions|range|dataflow output.txt addresses...' >&2; exit 2; }
     TORNEKO_OUTPUT="$(.venv/bin/python -c 'from pathlib import Path; import sys; p=Path(sys.argv[1]).resolve(); p.parent.mkdir(parents=True,exist_ok=True); print(p)' "$1")"
     shift
-    if [[ "$TORNEKO_ACTION" == functions ]]; then
+    if [[ "$TORNEKO_ACTION" == dataflow ]]; then
+      TORNEKO_SCRIPT=InspectTextDataflow.java
+      TORNEKO_MARKER=TORNEKO_TEXT_DATAFLOW_OK
+    elif [[ "$TORNEKO_ACTION" == functions ]]; then
       TORNEKO_SCRIPT=InspectThumbFunctions.java
       TORNEKO_MARKER=TORNEKO_THUMB_INSPECTION_OK
     else
@@ -36,7 +39,7 @@ case "$TORNEKO_ACTION" in
       TORNEKO_MARKER=TORNEKO_THUMB_RANGES_OK
     fi
     ;;
-  *) echo 'Usage: tools/ghidra.sh verify|import|functions|range ...' >&2; exit 2 ;;
+  *) echo 'Usage: tools/ghidra.sh verify|import|functions|range|dataflow ...' >&2; exit 2 ;;
 esac
 if [[ "$TORNEKO_ACTION" == import ]]; then
   TORNEKO_PROJECT_DIR="$TORNEKO_ROOT/build/ghidra"
@@ -48,7 +51,7 @@ TORNEKO_LOG="$TORNEKO_ROOT/build/toolchain-validation/ghidra-$TORNEKO_ACTION.log
 TORNEKO_COMMAND=("$TORNEKO_HEADLESS" "$TORNEKO_PROJECT_DIR" Torneko2
   -import "$TORNEKO_ROM" -loader GBALoader -noanalysis
   -scriptPath "$TORNEKO_ROOT/tools/ghidra_scripts" -postScript "$TORNEKO_SCRIPT")
-if [[ "$TORNEKO_ACTION" == functions || "$TORNEKO_ACTION" == range ]]; then
+if [[ "$TORNEKO_ACTION" == functions || "$TORNEKO_ACTION" == range || "$TORNEKO_ACTION" == dataflow ]]; then
   TORNEKO_COMMAND+=("$TORNEKO_OUTPUT" "$@")
 fi
 if [[ "$TORNEKO_ACTION" != import ]]; then TORNEKO_COMMAND+=(-deleteProject); fi

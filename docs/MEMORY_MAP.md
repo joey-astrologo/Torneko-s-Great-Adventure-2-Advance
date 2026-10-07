@@ -1,5 +1,43 @@
 # Torneko 2 memory map
 
+## Soldier and ability-text selector producers (2026-10-07)
+
+Native object creation CPU `[08031CD4,08031E0A)` scans 56 existing 68-byte
+records in EWRAM `[0200D048,0200DF28)`. Type is the word at record +0;
+tile coordinates are bytes +3Eh/+3Fh and the dialogue selector is byte +40h.
+The fifth argument reaches that byte through stack +28h at CPU `08031DB2` /
+`08031DB4`. These are native fields, not new RAM ownership.
+
+Only two direct calls to this creator occur in the bounded ROM code scan:
+`08028BE2` supplies type 1 / selector 0 for species 57h; `08028C2E` supplies
+type 2 / `random(7)` for species 89h when flag 4 is clear. The latter is the
+soldier dialogue path. RNG `080421EC` advances EWRAM `[0200FE7C,0200FE80)`
+with multiplier `5D588B65h`, adds one and returns the unsigned upper 16 bits.
+Wrapper `08042204` takes the signed remainder using `0805CAF8`; its nonnegative
+dividend and divisor 7 bound the result to 0–6. No literal Thumb function-pointer
+reference to the creator was found. This does not exclude synthesized indirect
+calls, other RAM writers or imported/corrupt state.
+
+Reader CPU `08024358` loads shared slot `200h + selector` after the type-2
+facing-object branch. All seven slots resolve to existing English. Object clear
+CPU `[08031CB8,08031CCA)` zeros only each type word; it does not create selectors.
+
+Monster announcement readers `0802A9DE` and `0802ABD0` take signed halfword +14h
+from 141 28-byte definitions, reached through dungeon header +30h at EWRAM
+`020129A8`. Both skip selector zero. Static relocation mirrors the earlier native
+loader verification; all 45 nonzero records select existing English through both
+readers. The remaining 96 definitions skip text in each reader.
+
+Skill action read `08021220` uses `227h + code`, with stack-list codes 0, 5 and
+3. Row-format read `0802156C` uses `1F0h` for mode 6 with nonzero definition
+byte +17h (hunger cost); otherwise it uses `1F3h`, including every non-six mode.
+All 128 definitions pass both row branches. Static synthetic actor address
+`10001000` is analysis input and establishes no GBA memory ownership.
+
+Evidence: `build/oct07-text/actor-skill-selectors.json` and the disassembly exports
+listed there. Exact reads pass; downstream stops remain explicit. No new ROM
+patch or ordinary encounter evidence is claimed.
+
 ## Result reasons and definition selectors (2026-10-04)
 
 Native setter CPU `08006644` records the first nonzero reason in EWRAM
@@ -3322,6 +3360,42 @@ placed in the helper's existing scratch; ordinary immutable ROM names are
 never overwritten. Evidence:
 `build/monster-announcement-prototype/monster-announcement-validation/report.json`.
 
+### Event interpreter branch evidence (October 7)
+
+The text-reader limit follow-up identifies CPU `0800BE88` as a BL used for a
+long branch into the enclosing function's shared epilogue at `0800CC82`.
+The epilogue occupies CPU `[0800CC82,0800CC96)`: restore 680 stack bytes,
+pop/move saved r8–r10, restore r4–r7, then pop the enclosing return address and
+BX. It does not return to `0800BE8C`; that location contains literal data.
+The exact source/compiled code agrees. This explains a bounded scanner stop,
+without granting ownership of the data or changing the ROM/trace engine.
+Evidence: `build/oct07-text/long-branch-epilogue.txt` and `limit-followup.json`.
+
+CPU `0804E7C0` selects event roots from their four-byte headers. Header byte 0
+equal to 1 calls the setup interpreter `0804F280` at `0804E87E`; value 2 starts
+the ordinary scene interpreter. The setup switch occupies ROM
+`[0004F2A0,0004F328)` (opcodes 2–35): only 2, 3, 6, 11, 34 and 35 call
+handlers. Other opcodes skip the operand length in `[0014CEBC,0014CEE0)`.
+END 21 stops; dialogue 8 and choice 16 are skipped. The 32 recovered setup roots
+contain no opcode 33. The 101 scene roots use the normal native handler widths.
+
+Both interpreters share script pointer EWRAM `[02010138,0201013C)`.
+Flag handler `0804F888` tests a bit in `[020101AC,020101CC)` and branches to
+opcode address plus signed operand 4; otherwise it consumes four operands.
+Choice handler `0804FE28` tests `[0201017C,02010180)` against Boolean operand 2
+and branches by unsigned operand 1, otherwise consuming two operands.
+282 native branch outcomes agree with the recovered graph and preserve ABI/save.
+
+Original bank-1 root 2 at ROM `[0043D646,0043D6D2)` has operand-entry edges
+`43D66F -> 43D692` and `43D67D -> 43D68C`. These paths add no dialogue calls
+in the bounded graph. The normal dispatch loop skips the resulting opcode
+`28h` at `43D694` by one byte, confirmed at native `0804EF54..0804EF70`.
+No repair or ordinary flag-eligibility claim follows from this evidence.
+The apparent fragment selector at ROM `0043EB65` is interior to the dialogue
+instruction `[0043EB62,0043EB68)` and has no recovered event entry edge.
+No storage ownership is granted by these observations. Reproduction:
+`tools.audit_event_script_paths`; report `build/oct07-text/event-script-paths/report.json`.
+
 ### Baker companion floor conversations
 
 Within the priest root `[0801AAFC,0801AE18)`, actor byte +91 equal to 86 hex
@@ -3340,6 +3414,19 @@ pointer substitution, and check every page's final glyph pixels/colours,
 caller ABI/guard and unchanged inventory/gold/battery. Natural recruitment and
 quest progression remain separate. Evidence:
 `build/companion-prototype/companion-validation/report.json`.
+
+October 7 producer follow-up: `08028EC4..08028F00` tests dungeon ID 1 at
+EWRAM `[02003B6C,02003B70)` and completion bit 1 in `[0200160C,02001610)`
+via `08041D10`; only the clear-bit branch supplies species `86h` to `08028D34`.
+The 13 halfword exit thresholds occupy ROM `[001417EE,00141808)`; Cemetery's
+entry is 7. Native progression `080058CC` and predicate `080059F0` share this
+table. The completion owner `0801BACC` clears all 55 non-player actor slots,
+and progression sets EWRAM exit byte `020037CA`, checked by the dungeon loop
+at `080054D4`. Twenty-four native predicate cases cover floors 1–6, +1/+5
+progression and both completion-bit states. The recovered route therefore uses
+the six translated floor entries; arbitrary actor/floor writers remain outside
+this bound. Report: `build/oct07-text/companion-domain/report.json`.
+These are existing fields, not new allocation ownership.
 
 ### Recovery and warp formatter follow-up
 
@@ -6174,3 +6261,56 @@ observed, with the original caller ABI and 32-byte stack guard preserved.
 Evidence: `build/ending-sequence-guarded/{report,screen-text}.json` and sampled
 native frames. This establishes integration for that initial fixture, not
 ordinary endgame eligibility, every input schedule or new RAM/save ownership.
+
+### Source-disposition graph and corrected spell audit (2026-10-07)
+
+Evidence: `build/oct07-source-dispositions/{town-dispositions,shared-dispositions,
+event-fragment-dispositions}.json`; full ID list in
+[TEXT_SOURCE_DISPOSITIONS.md](TEXT_SOURCE_DISPOSITIONS.md). The 96 source records
+are excluded in the recovered code/script graph under valid native data domains.
+This does not establish free space, global unreachability or new RAM ownership.
+
+- CPU ROM `[0801D4D8,0801D4FC)`: blacksmith tip quotient is narrowed to signed16,
+  then clamped below0 to0 and above9 to10; town index `12 + clamp`, hence12..22.
+- CPU ROM `[08050054,08050084)`: sole synthesis caller supplies0 or a counter
+  increment/reset in1..12. CPU0801D71E skips the extra read for0; CPU0801D736
+  selects town `38 + argument`, hence39..50. Town slots35/37 are not selected.
+- ROM file `[0006B8F6,0006B90F)`: five five-byte Remi profiles contain only zero
+  and201..205. Zero is skipped. Vocation map `[0006B910,0006B91C)` contains six
+  signed halfwords in0..2. The three native vocations select town164..166,
+  154..156 and157..159. Corrupt vocation fields are outside this bound.
+- Storage input-table local `[SP+14C,SP+150)` in CPU0801F3E0 survives its loop;
+  its five aliased SSA loads have constant slots191/182/181/182/184.
+- CPU080225AE spell-menu target index is `22Fh + record[6]`, as at08022860
+  in Info. All61 records in ROM `[00146DF4,001470D0)` have target kinds0..8.
+  The old audit incorrectly retained a later loop visit for each seeded case;
+  the corrected first-read checks independently agree with each record.
+
+Shared table range remains CPU ROM `[08140D68,081417A0)`; town table remains
+EWRAM `[020141AC,0201465C)` after relocation. No range is made writable or
+reclaimed. All original dormant strings/fragments remain intact in the accepted
+ROM. The new reports record source/build hashes and the precise graph limits.
+
+## Link error recovery — October 7, 2026
+
+[Caller/selector audit and native evidence](LINK_ERROR_AUDIT.md). Ranges are
+exclusive; no new storage ownership or insertion is established by this audit.
+
+| Address space / range | Role | Evidence and certainty |
+|---|---|---|
+| CPU ROM `[08058110,0805869C)` | Link protocol owner, five computed states, errors and completion | Ghidra listings with all five switch targets explicitly seeded; native protocol events. Literal pools are included in this enclosing range. |
+| ROM `[00058254,00058268)` | Five state-dispatch pointers | Targets `08058268`, `080582E4`, `0805834C`, `080584D4`, `08058518`; actual dispatch observed. |
+| EWRAM `[02012848,0201284C)` | Protocol state 0..4 | Five original switch arms and native linked runs. The stack word at protocol-frame `sp+D4` separately records the intermediate save. |
+| EWRAM `[02012838,0201283C)` | Other peer's advertised item count | Compared with received-count register `r9` at `080585A6`; controlled mismatch selects error 4. |
+| EWRAM `[02012859,0201285A)` | Serial-driver fault latch | Read by `08058896` to construct status bit `1000`; controlled latch before/after save selects hardware error 1. Physical fault frequency is not established. |
+| EWRAM `[0200F008,0200FBC0)` | 250 storage records, 12 bytes each | Copied in full by original intermediate-save and rollback loops; cold-load contents checked. |
+| EWRAM `[02011C34,020127EC)` | Original 3,000-byte storage backup for a trade | `08058098` copies storage here before deleting/saving sent records; `080585C2` copies it back before timeout rollback save. This remains owned native scratch, not free RAM. |
+| CPU ROM `[08058098,080580E8)` | Backup, delete offered records, intermediate save | Original loop and save call at `080580DE`; actual native saves in phase-4 and asymmetric failure probes. |
+| CPU ROM `[080585C2,080585EC)` | Restore all storage and save it again | Timeout after intermediate save; native save caller LR `080585ED`, exact item recovery survives cold loads. |
+| CPU ROM `[08058600,08058610)` | Hardware/extra-system error exits | Both bypass the rollback block. Injected post-save faults lose the offered record in original and English ROMs; cold loads reproduce loss. Original behavior intentionally preserved by user instruction; finding closed with no repair planned. |
+
+The extra-system flag is derived by `080588A4..080588B2` from SIOCNT bits 4–5
+(participant ID greater than one), not from a translated message selector.
+The probe changes the sampled register value and lets native decoding proceed;
+it does not claim a real third-core or physical-cable test. Disconnect cases
+detach the mGBA native driver and execute the real 500-iteration deadlines.

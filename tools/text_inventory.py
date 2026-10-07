@@ -211,7 +211,16 @@ def run():
   require(all(row[k]==disposition[k] for k in ('raw_hex','source_sha256','japanese')) and digest(bytes.fromhex(row['raw_hex']))==row['source_sha256'],'Source disposition differs from extracted bytes')
   require(row['language_status'] in ('untranslated',disposition['language_status']),'Source disposition conflicts with existing review')
   row.update(english=disposition['english'],language_status=disposition['language_status'],disposition_reason=disposition['reason'],disposition_evidence=disposition['evidence'],disposition_reachability=disposition['reachability'])
+ investigation=json.loads((ROOT/'config/text-source-dispositions.json').read_text())
+ require(investigation['source_rom_sha256']==digest(rom),'Investigation source ROM differs')
+ require(len({r['id'] for r in investigation['entries']})==len(investigation['entries']),'Duplicate investigation disposition')
+ for disposition in investigation['entries']:
+  row=rows[disposition['id']]
+  require(row['source_sha256']==disposition['source_sha256'],'Investigation source bytes changed')
+  require(row['language_status']=='untranslated','Reconcile newly translated source with its investigation disposition')
+  row.update(investigation_status=disposition['disposition'],investigation_evidence=disposition['evidence'],investigation_report=disposition['evidence_report'],investigation_rom_sha256=investigation['audited_rom_sha256'])
  rows=sorted(rows.values(),key=lambda r:r['id']);OUT.mkdir(parents=True,exist_ok=True)
  report={'source_rom_sha256':digest(rom),'unique_sources':len(rows),'source_families':dict(Counter(r['family'] for r in rows)),'language_status':dict(Counter(r['language_status'] for r in rows)),'native_observed':sum(r['native_observed'] for r in rows),'scope':'Seven event banks, shared town table, 654 shared system/combat/menu pointers, 221 item definitions and descriptions plus the invisible-item fallback, 154 unidentified appearances with an end marker and 14 category-label pointers, both 141-ID actor-name tables, 61 spell definitions and Info descriptions, 128 skill definitions and Info descriptions, five category-indexed item-use sources,40 nonempty original action-label IDs in45 slots, two container-kind labels, nine town-overview descriptor labels, computed wind expulsion and owned menu/UI reviews. Not all game text: other tables/consumers and unclassified scan leads remain to be accounted for. Language review is separate from insertion/native acceptance and does not establish translation of every shared consumer.'}
+ report.update(investigation_status=dict(Counter(r['investigation_status'] for r in rows if 'investigation_status' in r)),untranslated_without_disposition=sum(r['language_status']=='untranslated' and 'investigation_status' not in r for r in rows),investigation_scope=investigation['scope'])
  (OUT/'catalog.json').write_text(json.dumps({'report':report,'entries':rows},ensure_ascii=False,indent=2)+'\n');(OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return report
 if __name__=='__main__':run()

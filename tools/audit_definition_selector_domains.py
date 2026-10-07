@@ -27,20 +27,30 @@ def run():
                   if r['id'].startswith('rom.') and r['language_status'] == 'untranslated'}
     results = []
 
-    def check(case, seed, registers, expected_sites, memory=()):
+    def check(case, seed, registers, expected_sites, memory=(), expected_indexes=None):
         reads = {}
+        later_visits = []
         def observe(pc, addresses, size, values, origin):
             if pc not in expected_sites:
+                return
+            # This seed supplies one definition. Later menu-loop visits can
+            # select a different record; never overwrite the seeded observation.
+            if pc in reads:
+                later_visits.append(pc)
                 return
             require(size == 4 and 0x08000000+START <= addresses[0] < 0x08000000+END,
                     'Computed source left shared table')
             require(values[1] in english and values[0] not in unresolved,
                     'Computed definition selected an unresolved/untranslated source')
             row = english[values[1]]
+            index = (addresses[0]-0x08000000-START)//4
+            if expected_indexes is not None:
+                require(index == expected_indexes[pc],
+                        'Seeded definition selected another record: '+case)
             raw = bytes.fromhex(row['encoded_hex'])
             at = values[1]-0x08000000
             require(compiled[at:at+len(raw)] == raw, 'English selector bytes differ')
-            reads[pc] = dict(pc=pc, original_slot=(addresses[0]-0x08000000-START)//4,
+            reads[pc] = dict(pc=pc, original_slot=index,
                              original_pointer=values[0], compiled_pointer=values[1], id=row['id'])
         _, limits, stops = trace(original, compiled, [seed], {}, budget=300,
             max_path_length=110, stack_model=True, initial_registers={seed: registers},
@@ -48,7 +58,7 @@ def run():
         require(set(reads) == set(expected_sites), 'Definition trace missed a selected read')
         results.append(dict(case=case, seed=seed, initial_registers=registers,
                             reads=list(reads.values()), downstream_limits=limits,
-                            downstream_stops=stops))
+                            downstream_stops=stops, later_visits=later_visits))
 
     info = {r['id']: r for r in build['spell_info']['copies']}
     for definition in spells()['entries']:
@@ -63,7 +73,8 @@ def run():
             require(original[old-0x08000000+6] == compiled[new-0x08000000+6],
                     'Native spell target selector changed')
             check(f'{family}-{ident}', seed,
-                  {0: (old, new), 5: (0x08000000+START, 0x08000000+table)}, sites)
+                  {0: (old, new), 5: (0x08000000+START, 0x08000000+table)}, sites,
+                  expected_indexes={pc:0x22F+definition['target_kind'] for pc in sites})
 
     lookup = struct.unpack_from('<I', original, 0x21848)[0]-0x08000000
     require(compiled[lookup:lookup+8] == original[lookup:lookup+8], 'Skill kind lookup changed')

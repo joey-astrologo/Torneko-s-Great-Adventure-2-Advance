@@ -4,12 +4,37 @@ Agreed workflow and translation policy, recorded on 2026-09-13. This is the
 working plan for localizing the supplied Japanese Torneko 2 Advance ROM using
 the tooling adapted from Torneko 3.
 
-Build the insertion pipeline early, audit graphics alongside text, and playtest
-throughout. Work in small batches that proceed through source verification,
+Build the insertion pipeline early and playtest throughout. Further graphics
+auditing is stopped under the current instruction below. Work in small batches that proceed through source verification,
 translation, language review, insertion and native validation. Discovery and
 coverage audits continue while verified families are being translated.
 
 ## Current standing authorization
+
+The user explicitly confirmed that original gameplay behavior must be preserved,
+including original bugs. Do not introduce gameplay or save-recovery changes as
+part of localization. Document verified original behavior and close those
+findings; translation defects and localization regressions remain in scope.
+
+On 2026-10-07 the user stopped further graphics auditing and asked whether text
+was finished. It is not fully signed off; text investigation remains authorized.
+Prioritize unresolved text callers, selector producers and
+native text paths. Retain the earlier graphics findings as historical evidence;
+do not continue that audit unless the user reopens it. Text is not fully signed
+off for whole-game scene coverage. The former 62 shared/town sources and 34
+event fragments now have [individual source dispositions](TEXT_SOURCE_DISPOSITIONS.md); do not keep
+carrying them forward as an uninvestigated list.
+
+The user's subsequent release refresh and link-error audit are now carried out:
+the root ROM/BPS reproduce the accepted October 4 bytes, and the
+[October 7 checkpoint](../build/releases/2026-10-07-text-audit.zip) records the
+additional research. The [link-error audit](LINK_ERROR_AUDIT.md) follows all five
+selectors through cleanup, owner return and cold loading. It finds an original
+gameplay item-loss bug in two exits after the intermediate save, reproduced in
+both ROMs with controlled faults. The text paths pass. The user chose to preserve
+original behavior, so the item-loss finding is closed as documented original
+behavior, with no gameplay repair planned. Continue text work under the existing
+authorization; no graphics audit is reopened.
 
 Following the user-reported Japanese menu banner and loss of confidence on
 2026-09-30, prioritize the [independent coverage audit](COVERAGE_AUDIT.md).
@@ -121,7 +146,7 @@ save/cold-load persistence pass on ROM `588dc92c…`; 187 unit tests and require
 acceptance pass. The prior full cumulative suite retains its own ROM identity.
 See [the new evidence](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
 
-## Current investigation priorities (2026-10-04)
+## Current investigation priorities (2026-10-07)
 
 The continued audit now accounts for 41 computed table-base losses and checks
 the full-screen and scrolling background tables, including replacements and
@@ -134,20 +159,39 @@ The two malformed bank-2 NPC selectors are now repaired, and actual two-core
 link exchange/save persistence is verified, including ordinary green-book entry,
 natural bread/staff deposits, empty refusal, exchange and town return. Opcode 33
 width/direct getter selectors, all spell/skill definition domains and the bounded
-result-reason producer graph are now checked. Continue other selector domains
-and scene combinations. Keep completed cohorts closed; the 62
-unresolved sources and 34 fragments remain bounded discovery gaps, not confirmed
-visible defects.
+result-reason producer graph are now checked. The October 7 text pass follows
+the soldier creation code and checks both monster announcement readers and
+skill-menu selectors: 548 static cases / 356 English shared-table reads, with
+192 zero-announcement cases. Both event interpreters now have conservative
+traversal of 133 roots, retaining 207 English dialogue references; 282 native
+branch outcomes pass. An extra fragment byte candidate has no entry in that
+graph. [Event-path evidence](EVENT_STUB_AUDIT.md).
+The baker's creation gate and Cemetery exit threshold additionally pass 24
+native predicate cases, bounding the six translated floor passages for that
+producer/progression path. [Evidence](CALLER_FOLLOWUP.md#baker-dialogue-floor-bounds).
+Two complementary expansions of the 49 limited literal seeds find no new reader;
+their non-length exits are classified. The full-ROM exact-pointer census finds
+no additional owner of the 62 shared/town source starts. Arithmetic/interior
+pointers, path limits and other RAM producers remain outside those bounds.
+The subsequent source-by-source pass closes that backlog within the recovered
+reader graph: 20 town service functions / 167 reads; 293 shared function/block
+exports / 688 read sites; and 458 compiled NPC roots plus event/direct/tutorial
+getters. All 96 records have bounded dormant/no-entry dispositions. It also
+fixes a spell-menu audit bug that overwrote the seeded read with later loop
+visits; all 61 definitions now verify their actual nine target labels. No ROM
+change was required. [Individual source dispositions](TEXT_SOURCE_DISPOSITIONS.md).
 
-The [coverage matrix](COVERAGE_AUDIT.md) is the current status reference. Resolve
-62 shared/town sources and 34 event fragments, then extend uncovered scene/graphics
-and branch contexts. Tutorial configurations 1/2/8/9 now have a bounded no-entry
+The [coverage matrix](COVERAGE_AUDIT.md) is the current status reference. The
+96-source cohort has no unclassified record or confirmed active missing
+translation. Reopen a disposition only with new entry/selector evidence. Further
+text investigation concerns concrete uncovered scene/caller combinations. Further graphics auditing is stopped. Tutorial configurations 1/2/8/9 now have a bounded no-entry
 disposition across all recovered event roots/NPC payloads and the known page path;
 revisit them when additional entry evidence appears. The 25-guard/expanded-save
 scan stops now have explicit return, name-patch and row-loop dispositions in
 [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md#release-checkpoint-and-bounded-continuation).
-Other data-flow contexts remain open. These are investigation leads, not a count
-of confirmed untranslated screens. Completed repair cohorts stay closed.
+Scene combinations outside the documented probes remain unverified. That is a
+coverage limit, not another uninvestigated source list. Completed repair and
+source-disposition cohorts stay closed until new evidence appears.
 
 **Disassembly leads discovery; ordinary survival is not a prerequisite.** Trace
 callers, selectors, active-bank dependencies, RAM producers and bounded jump tables.
