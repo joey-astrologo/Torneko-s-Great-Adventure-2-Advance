@@ -1,5 +1,12 @@
 # Cumulative English build
 
+Current readiness: release-candidate testing, with `1.0-rc1` the recommended
+label. The latest checkpoint remains `2026-10-07-text-audit.zip`, and its root
+manifest retains `development` status; no new version/tag is assigned by this
+documentation update. The [coverage matrix](COVERAGE_AUDIT.md) distinguishes
+current-ROM checks, preceding cumulative acceptance and remaining scene/state
+coverage. Original gameplay behavior is intentionally preserved.
+
 Run from the repository root with the documented toolchain installed:
 
 ```bash

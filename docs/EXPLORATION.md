@@ -85,8 +85,10 @@ Further text diagnostics:
 
 The first expands all 49 limited literal seeds under two complementary budgets
 and classifies non-length stops. The second checks exact source-start pointer
-ownership for the 62 unresolved shared/town sources. Both retain their limits;
-neither proves global unreachability or changes the ROM.
+ownership for the former 62-source shared/town cohort. Both retain their limits;
+the later [individual dispositions](TEXT_SOURCE_DISPOSITIONS.md) close that
+investigation within the recovered graphs. Neither diagnostic proves global
+unreachability or changes the ROM.
 
 ## Scripted emulator research
 
@@ -142,11 +144,15 @@ Follow [the plan](LOCALIZATION_PLAN.md) and [coverage matrix](COVERAGE_AUDIT.md)
 The opening, books, mansion, storage and bakery milestones are already covered
 by their recorded routes; they are not the next discovery tasks.
 
-Start with the unresolved shared/town sources, event fragments, tutorial mappings
-and exact static-analysis stops listed in the matrix. Disassemble verified Thumb
-entries, follow source tables and RAM producers, and compare original/compiled
-callers. A missing bounded reference is not proof of dead code. Capture the active
-bank, selector and upstream state in targeted native probes.
+Start with a concrete new text report or uncovered caller/state combination in
+the matrix. The 62 shared/town sources, 34 fragments, known no-entry tutorial
+configurations and link-error cohort have investigated dispositions; reopen them
+only with new evidence. Broader independent playtesting is the next release-
+confidence milestone. For a new lead, disassemble verified Thumb entries, follow
+source tables and RAM producers, and compare original/compiled callers. A missing
+bounded reference is not proof of dead code. Capture the active bank, selector
+and upstream state in targeted native probes. Preserve original gameplay bugs;
+further graphics auditing is stopped.
 
 Use assisted access when a later scene needs it: a disposable save/state,
 controlled scene entry or a documented invincibility/damage patch is appropriate.

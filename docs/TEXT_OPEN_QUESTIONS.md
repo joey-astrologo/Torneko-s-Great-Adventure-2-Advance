@@ -1,5 +1,11 @@
 # Text investigations and layout constraints
 
+Current assessment: ready for release-candidate testing (`1.0-rc1` recommended).
+No confirmed outstanding localization defect remains in the investigated paths.
+Broader independent playtesting and scene/state coverage are still incomplete.
+The closed findings below document evidence and constraints, not pending repair
+requests. Build identity and exact acceptance scopes are in the coverage matrix.
+
 Current continuation: [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md). The latest
 accepted build has 3,814 resources and includes the caller/tutorial repairs below
 plus two bank-2 shopkeeper selector repairs. Four scene routes, affected service
@@ -20,8 +26,9 @@ English dialogue references and 282 native branch outcomes. The additional
 fragment byte candidate has no entry in that graph. See [the event audit](EVENT_STUB_AUDIT.md).
 The baker's six dialogue floors now also have creation/exit producer evidence
 and 24 native predicate checks; that specific domain is accounted for.
-187 unit tests and required toolchain/fresh-save checks pass. The earlier
-full cumulative acceptance retains its preceding ROM identity.
+October 4 release acceptance passed 187 unit tests and required toolchain/
+fresh-save checks. The latest research suite passes 191; the earlier full
+cumulative acceptance retains its preceding ROM identity.
 
 The continued branch audit also repairs pot-help and early Mimic-help selectors
 that returned unrelated dialogue, fragments or an invalid address. Both reuse
@@ -126,7 +133,7 @@ actual two-core link trades are detailed in
 [the current continuation](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
 Those defects are not an outstanding work list.
 
-The next code pass classifies all 41 observed table-base losses without finding
+The completed code pass classifies all 41 observed table-base losses without finding
 another untranslated reader. Graphics discovery covers both background tables,
 their replacement tiles and static objects. A complete controlled ending now
 passes all five scenes, all 57 sources, native saving, fades, credits and END

@@ -71,7 +71,9 @@ markers, counts, enhancements and prices must fit together at normal spacing.
 
 Reports are under `build/english/{dungeon-ui,items,bank,numeric}-validation`.
 A report belongs to its recorded ROM SHA; older receipts do not approve a newer
-ROM. Later shop/storage and other mode layouts still need their own native checks.
+ROM. Later shop/storage layouts have separate bounded checks in
+[SERVICE_BATCHES.md](SERVICE_BATCHES.md); unvisited mode/state combinations remain
+outside the original typography cohort.
 
 The final numeric audit corrected an off-by-one mapping in the item family.
 The engine's original decimal conversion tables at ROM 000648D0 and 0006B423

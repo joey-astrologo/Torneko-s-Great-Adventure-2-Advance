@@ -1,4 +1,4 @@
-# Caller follow-up — October 3–4, 2026
+# Caller follow-up — October 3–7, 2026
 
 October 7 link-error continuation: see [LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md)
 for all five native error selectors, 15 English scenarios / 24 peer returns and
@@ -27,8 +27,10 @@ are archived in `build/accepted/3814-tutorials/`.
 [Tutorial screenshots](../build/english/tutorial-bank-validation/index.html).
 The earlier receipts and hashes below remain historical evidence.
 Current cross-family status is in [the coverage matrix](COVERAGE_AUDIT.md).
-Next work follows unresolved code/source/scene paths, using disposable assisted
-access where helpful. Ordinary Mt. Fiery completion is not a localization gate;
+Next release-confidence work is broader independent playtesting and investigation
+of concrete new text reports or uncovered caller/state combinations. Completed
+source and link-error cohorts stay closed unless new evidence appears. Disposable
+assisted access remains appropriate. Ordinary Mt. Fiery completion is not a localization gate;
 its attempts below are retained integration evidence, not the next work priority.
 
 The earlier pass below followed text producers, computed selectors and final

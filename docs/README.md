@@ -5,6 +5,13 @@ matrix, evidence types and ordered backlog. [TEXT_PROGRESS.md](TEXT_PROGRESS.md)
 retains accepted milestones and development history. Older batch reports retain
 their original ROM hashes and scope; historical next steps are not current tasks.
 
+The current assessment is release-candidate readiness (`1.0-rc1` recommended),
+with broader independent playtesting and scene/state coverage still needed for
+stable 1.0 confidence. No new version/tag is assigned by this documentation.
+The 96-source investigation cohort and link-error text audit are closed within
+their documented bounds. Original gameplay behavior is preserved, including the
+documented link item-loss bug. Further graphics auditing is stopped.
+
 [Coverage assessment](COVERAGE_AUDIT.md) explains what those figures establish,
 the missed-reader failure, and which complete-screen audits are still pending.
 
@@ -45,11 +52,13 @@ the missed-reader failure, and which complete-screen audits are still pending.
 - [Inserted arrival cards](ARRIVAL_INSERTION.md), including Ordeal Mansion and Well suppression.
 - [Shiren source lettering](SHIREN_ARRIVAL_FONT.md).
 - [Credits and arrival studios](GRAPHICS_AUDITION.md); the original English GBA credits are preserved.
-- [Remaining graphics discovery](GRAPHICS_INVENTORY.md).
+- [Preserved graphics discovery evidence and limits](GRAPHICS_INVENTORY.md).
 - [Complete controlled ending and scene audit](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
 
 Audition previews and frozen build artwork are distinct. Follow each insertion
 guide's ownership, palette and native-validation requirements when revising art.
+These are retained references; the current instruction does not reopen graphics
+discovery or artwork changes.
 
 ## Research and earlier milestones
 

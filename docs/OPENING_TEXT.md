@@ -151,4 +151,6 @@ item names; consult [the current matrix](COVERAGE_AUDIT.md) for their exact scop
 Lead remaining source/caller discovery with disassembly, including computed
 selectors and RAM producers, then execute targeted native scene checks. Assisted
 access in disposable copies is appropriate; an ordinary playthrough does not gate
-research. Graphics discovery continues in [GRAPHICS_INVENTORY.md](GRAPHICS_INVENTORY.md).
+research. The former 96-source backlog has [individual dispositions](TEXT_SOURCE_DISPOSITIONS.md).
+Further graphics auditing is stopped; earlier evidence remains in
+[GRAPHICS_INVENTORY.md](GRAPHICS_INVENTORY.md).

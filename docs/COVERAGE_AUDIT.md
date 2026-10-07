@@ -4,6 +4,14 @@ Updated 2026-10-07. **Whole-game coverage is unverified; there is no defensible
 whole-game completion percentage.** This is the current coverage reference.
 Family guides and research journals retain their historical builds and counts.
 
+**Release assessment:** ready for release-candidate testing, with `1.0-rc1` the
+recommended label. There is no confirmed outstanding localization defect in the
+investigated paths. Broader independent playtesting and scene/state coverage
+remain incomplete, so stable 1.0 sign-off is not established. This documentation
+does not assign a version tag; the root manifest still identifies a development
+build. Original gameplay bugs are intentionally preserved, and further graphics
+auditing is stopped.
+
 ## Accepted build and evidence
 
 | Measure | Current result | Scope |
@@ -21,7 +29,9 @@ Family guides and research journals retain their historical builds and counts.
 [Current release checkpoint ZIP](../build/releases/2026-10-07-text-audit.zip) ·
 [Current affected-check receipt](../build/accepted/3814-npc-shops/completion.json) ·
 [Preceding tutorial checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip) ·
-[Subsequent research receipt](../build/caller-branches/release-followup.json) ·
+[October 7 source-disposition receipt](../build/oct07-source-dispositions/completion.json) ·
+[October 7 link-error receipt](../build/link-errors/completion.json) ·
+[Historical release supplement](../build/caller-branches/release-followup.json) ·
 [Preceding cumulative receipt](../build/caller-branches/completion.json) ·
 [Service receipt](english-services-validation.json) ·
 [Menu receipt](english-menu-validation.json) ·
@@ -124,7 +134,13 @@ Cohorts can overlap; do not add them as unique-screen coverage. Preceding-ROM
 audits are not current-ROM replays. Ordinary routes provide integration/save
 evidence; repeated attempts to survive a dungeon are not an acceptance requirement.
 
-## Remaining work, in investigation order
+## Release confidence and remaining coverage
+
+Broader independent playtesting is the next confidence milestone for stable 1.0.
+Collect the ROM hash, reproduction inputs and a nearby save/state for new text
+reports. Investigate them through native callers, active banks and complete
+visible output. The rows above describe bounded coverage limits, not a list of
+confirmed defects or a requirement to repeat every completed family.
 
 The specific link-error cohort is now investigated. Its text checks pass; the
 separate original gameplay/save-recovery defect is closed under the user's
@@ -132,30 +148,27 @@ instruction to preserve original behavior. No gameplay repair is planned.
 Do not recycle “all link errors untested” as the next task. Physical cable tests,
 arbitrary timing faults and power interruption are not implied by emulator cases.
 
-1. **Keep the completed source cohort closed.** The former 62 shared/town
-   sources and 34 fragments now have [individual dispositions](TEXT_SOURCE_DISPOSITIONS.md).
-   Town: 20 services / 167 reads. Shared: 293 exports / 688 sites, including all
-   658 earlier tracer sites. Events: 458 current NPC roots plus both event
-   interpreters and direct/tutorial getter contexts. None selects those retained
-   sources under the stated native-data bounds. Reopen only with new evidence.
-   Tutorial configurations 1/2/8/9 retain their separate bounded no-entry result.
-2. **Keep analysis honest.** A new cross-check fixed the spell-menu audit's
-   overwritten first observation. All 61 records now verify their actual nine
-   target labels in both consumers. Four older loop-trace observations outside
-   the native record domain are explicitly rejected in the receipt. SSA avoids
-   the previous path-budget cutoffs for the exported read graph; unknown
-   synthesized entries and corrupt RAM remain outside its bounds. Original
-   dormant bytes are preserved, and language-review totals have not increased.
-3. **Probe uncovered scene/branch contexts.** Identify entry conditions through
-   disassembly, then use disposable saves, controlled state or documented
-   invincibility/damage patches to reach later scenes efficiently. Exercise native
-   callers/selectors/renderers; check all visible fields, pixels and transitions.
-   Keep unmodified damage/death cases when those branches are under test.
-   Calling a renderer alone does not prove its scene caller works.
-4. **Check text repairs and release them.** Fix confirmed issues, check related
-   consumers, update this matrix and complete affected regressions and required
-   acceptance before the next release. Further graphics auditing was stopped at
-   the user's request on 2026-10-07; prior graphics evidence remains historical.
+Completed investigation cohorts remain closed unless new evidence contradicts
+them. The former 62 shared/town sources and 34 fragments have
+[individual dispositions](TEXT_SOURCE_DISPOSITIONS.md); tutorial configurations
+1/2/8/9 have separate bounded no-entry results. The corrected spell-menu audit
+checks all 61 records against their actual nine target labels. These findings
+retain their graph/domain limits and do not establish global unreachability.
+
+The next work is:
+
+1. **Broader independent release-candidate testing.** Retain actual saves, input
+   routes and ROM hashes, including later scenes and state combinations outside
+   the existing probes. This supplies integration evidence beyond the automated
+   family checks; no unsupported probability or completion percentage is implied.
+2. **Investigate concrete text leads.** Trace scene callers, banks and selectors
+   before adding targeted native checks. Disposable assisted entry is appropriate;
+   ordinary dungeon survival is not a prerequisite. Check complete visible output,
+   dynamic fields and transitions. Preserve original gameplay behavior.
+3. **Release verified localization fixes when needed.** Run affected regressions
+   and required acceptance, update the matrix, and refresh the root ROM/BPS after
+   a coherent fix. Unchanged ROM bytes and documentation updates do not require
+   another full native-suite replay. Further graphics auditing remains stopped.
 
 No additional dungeon/pickup scenario has been identified beyond the repaired
 reports. It is not counted as a confirmed outstanding defect. A new reproducible

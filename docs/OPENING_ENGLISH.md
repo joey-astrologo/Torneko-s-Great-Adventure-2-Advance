@@ -30,9 +30,10 @@ menu/name components; the Japanese keyboard body is intentionally retained.
 [Cumulative acceptance receipt](english-services-validation.json) ·
 [Verified BPS patch](../build/english/torneko-2-english.bps)
 
-The current ROM/BPS hashes, source/assets/tool hashes and the cumulative per-family native
-acceptance reports are pinned in the receipt. A clean output-directory rebuild
-produces identical ROM and BPS bytes. The earlier
+The cumulative receipt pins ROM `fc9b6f5e…`, its source/assets/tool hashes and
+per-family native reports. Its clean rebuild reproduced identical ROM/BPS bytes.
+The [coverage matrix](COVERAGE_AUDIT.md) identifies the newer root checkpoint and
+its affected checks; this receipt is not full acceptance of that newer ROM. The earlier
 [46-resource](english-opening-validation.json) and
 [63-resource](english-home-validation.json) and
 [79-resource](english-books-validation.json) receipts are historical records;
@@ -173,8 +174,9 @@ enemy/terrain mechanics require further playtesting.
 [table inventory](../build/text-extraction/event-tables.json) retains source bytes,
 identities, groups, indices and unresolved controls. The
 [audit](../build/text-extraction/event-table-audit.json) also enumerates the
-shared-town table: 300 pointers and 204 unique sources. It ties 809 of the current
-2,814 scan candidates to exact known-table sources; 2,005 remain unresolved. Newly
+shared-town table: 300 pointers and 204 unique sources. At this historical stage
+it tied 809 of 2,814 scan candidates to exact known-table sources; 2,005 remained
+unresolved. These are early scan counts, not the current source backlog. Newly
 verified sources are removed from the candidate queue when it regenerates.
 There are 112 accumulated native sources: 75 in the event tables and six in
 the shared town table.

@@ -1,23 +1,24 @@
-# Graphics discovery queue
+# Graphics discovery evidence and limits
 
 Current text/graphics counts and build identity are in [the coverage matrix](COVERAGE_AUDIT.md).
-Lead remaining discovery with scene loaders, decompression and atlas consumers,
-then inspect decoded assets and native frames. An ordinary playthrough is not
-required; record controlled or assisted scene entry separately.
+**Further graphics auditing is stopped by the user's October 7 instruction.**
+This page preserves the completed discovery results and unverified limits; it is
+not an active work queue. Approved title/logo/arrival assets remain inserted and
+the original English credits remain unchanged.
 
-Updated 2026-10-03. This records native resource discoveries and work still to
-investigate. Exact ranges and evidence are in [MEMORY_MAP.md](MEMORY_MAP.md).
+Status updated 2026-10-07; the loader/scene evidence below is from October 3.
+Exact ranges and evidence are in [MEMORY_MAP.md](MEMORY_MAP.md).
 Discovering an asset does not authorize overwriting it or establish complete
 graphics coverage.
 
-| Family | Current evidence | Remaining work |
+| Family | Established evidence | Recorded coverage limit / reference |
 |---|---|---|
 | Main title artwork/logo | Approved wood-and-gold title inserted; native full-screen, palette and startup-transition checks pass. Original footer exact. | [Inserted gallery and acceptance](TITLE_INSERTION.md). Additional scene consumers remain outside these title checks. |
 | Menu/name-entry logo appearance | All five floating-logo backgrounds approved and inserted. Ordinary menu/name/cancel/reopen routes pass; surrounding pixels and 16 UI palette entries remain exact. | [Actual screenshots](../build/title-insertion/index.html). Later logo occurrences remain open. |
 | Full-screen backgrounds | All 22 records, 19 unique bases and nine foreground records decoded; all 22 native tile/map uploads pass. Existing six title/logo replacements account for the Japanese lettering in this table. | [Decoded layers and native evidence](../build/graphics-discovery/backgrounds/index.html). Other loaders remain separate. |
 | Scrolling town backgrounds | All 28 records / 23 unique bases, 11 flag replacements and 14 door records decoded; 53 selector states / 377 native calls pass. | [Scene assets and selector evidence](../build/graphics-discovery/town/index.html). Controlled selectors establish these assets, not ordinary access to every story state. |
-| Dungeon arrival lettering | 13 English Shiren name graphics and Level inserted, including wider Ordeal Mansion; 30 native pixel/upload/return cases pass. Original digits/F retained. | [Native inserted-card gallery](../build/arrival-cards/inserted/index.html). Later entry/scene integration remains open; use traced callers and assisted access; [insertion evidence](ARRIVAL_INSERTION.md). |
-| Separate town arrival cards | [Frame viewer](../build/arrival-research/index.html): the first scripted castle arrival and return home fade directly into their scenes; no separate card observed on those routes | Trace other town entries and later story states before deciding whether a separate card family exists. |
+| Dungeon arrival lettering | 13 English Shiren name graphics and Level inserted, including wider Ordeal Mansion; 30 native pixel/upload/return cases pass. Original digits/F retained. | [Native inserted-card gallery](../build/arrival-cards/inserted/index.html). Later entry/scene integration is outside these checks; [insertion evidence](ARRIVAL_INSERTION.md). |
+| Separate town arrival cards | [Frame viewer](../build/arrival-research/index.html): the first scripted castle arrival and return home fade directly into their scenes; no separate card observed on those routes | Other town entries and later story states were not exhaustively checked; existence of a separate card family is unproved. |
 | Signs and static scene objects | All 85 static object instances / 79 distinct images from the scrolling table decoded with native palette lookup. Visual review of these and the scene layers found no additional Japanese lettering. | Independently animated actors and other atlas consumers remain outside this bounded inventory. |
 | Ending credits and surrounding artwork | Original 67-line English roll preserved. A complete controlled ending now runs all five scenes, native save, fades, credits and END artwork through return; all 57 ending sources appear, with 71 reads / 3,338 glyphs and no unexpected Japanese or layout violations. | [Full sequence and native receipt](../build/ending-sequence-guarded/index.html). One bank-call entry override; original fixture name retained. Ordinary ending access and other entry-state combinations remain unproved. |
 
@@ -33,7 +34,7 @@ on September 30, then approved the main title and five floating corner logos
 for insertion. All six resources are now inserted with native palette fitting,
 checked pointer ownership and ordinary menu/name/cancel/reopen validation. See
 [TITLE_INSERTION.md](TITLE_INSERTION.md) for evidence and remaining limits.
-Later auditions should show native-size output and native palette/tile
+If the user reopens graphics work, later auditions should show native-size output and native palette/tile
 constraints, preserve selected artwork/settings, and use one consistent English
 logo treatment across every verified occurrence.
 
@@ -69,7 +70,7 @@ intentional user data and is checked by exact substitution, not a blanket glyph
 exception. Source ROM/save files remain unchanged; native ending saving affects
 only the disposable session.
 
-Reproduce these bounded audits:
+Historical reproduction commands (not instructions to resume the stopped audit):
 
 ```bash
 .venv/bin/python -m tools.audit_scene_backgrounds

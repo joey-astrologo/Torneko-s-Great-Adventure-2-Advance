@@ -1,5 +1,9 @@
 # Title-screen artwork audition
 
+Further graphics auditing is stopped under the user's October 7 instruction.
+The approved main title and all five floating corner logos are already inserted;
+the studio and research below are retained references, not pending approvals.
+
 The user requested this audition on 2026-09-30, reopening title artwork after
 the arrival-card insertion. Open the [standalone studio](../build/title-audition/index.html)
 or [original/proposal comparison](../build/title-audition/title-comparison.png).
@@ -131,7 +135,8 @@ the start-menu panel on every case. The name-entry panel naturally obscures
 some of the original logo; per-case overlap counts are recorded, not treated
 as a new layout defect. The studio offers the unobstructed start-menu view.
 
-Replacing the main title still will not replace these five separate resources.
+Replacing only the main title does not replace these five separate resources;
+the accepted insertion explicitly replaces all six.
 This is the confirmed random-menu family, not proof that every later logo
 occurrence has been found throughout the game.
 

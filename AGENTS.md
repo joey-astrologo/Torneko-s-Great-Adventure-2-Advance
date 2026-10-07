@@ -6,6 +6,11 @@ Ghidra are shared installations. Read `docs/TOOLING.md` before changing pins.
 
 Follow `docs/LOCALIZATION_PLAN.md` for the agreed translation source,
 terminology/prose rules, coverage reporting and localization work sequence.
+Preserve original gameplay behavior, including original bugs. Document verified
+original-behavior findings instead of changing gameplay or save recovery;
+translation defects and localization regressions remain in scope. Further
+graphics auditing is stopped under the user's October 7 instruction. Retain
+the earlier graphics evidence and approved assets; do not reopen that audit.
 The user authorizes autonomous work through all text localization; no per-batch
 approval is required. Interrupt only for necessary user insight/investigation.
 The user requests periodic release checkpoints while usage is limited. After a

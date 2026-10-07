@@ -6,6 +6,10 @@ period in `Mt. Fiery`. The Well uses an English `Level` prefix. Original floor
 digits, `F`, palette, timing and fades are retained. The original English GBA
 credits are unchanged.
 
+Further graphics auditing is stopped under the user's October 7 instruction.
+The evidence and unverified limits below are retained; they are not a new card-
+discovery or late-game graphics-testing task.
+
 - [Actual patched-ROM screenshots: all 30 native cases](../build/arrival-cards/inserted/index.html)
 - [Latest English ROM](../build/torneko-2-english.gba)
 - [Latest BPS patch](../build/torneko-2-english.bps)
@@ -86,10 +90,11 @@ and ordinary movement succeeds afterward. The other cases temporarily set only
 the dungeon selector and/or floor at the original controller entry, restore
 those fields before its caller resumes, and run the real patched renderer.
 
-Remaining checks concern **late-game entry and scene integration**: these probes
-do not exercise every unlocking/entrance caller or later story state. Trace those
-callers and use assisted scene access; ordinary dungeon completion is not required.
-Keep ordinary progression evidence distinct from controlled integration checks. They establish that every identified card renders correctly
+The **late-game entry and scene integration** limit remains: these probes do not
+exercise every unlocking/entrance caller or later story state. Further graphics
+investigation is stopped; this is an evidence limit, not an active task.
+Keep ordinary progression evidence distinct from controlled integration checks.
+The recorded probes establish that every identified card renders correctly
 through its native controller. Separate town-card families and unrelated title,
 background and ending scenes are outside this change.
 

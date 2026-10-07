@@ -17,99 +17,56 @@ from a fresh save. [Capture details and reproduction](docs/SCREENSHOTS.md).
 
 ## Project status
 
-**Whole-game coverage is unverified.** There is no reliable completion
-percentage yet. The missed Japanese menu banner exposed a gap in both the
-automated coverage checks and visual review. See the
-[coverage assessment and audit requirements](docs/COVERAGE_AUDIT.md).
+**Ready for release-candidate testing.** There is no confirmed outstanding
+localization defect in the investigated paths. Whole-game scene/state coverage
+and broader independent playtesting remain incomplete, so a stable 1.0 sign-off
+is not yet supported. The recommended release label is **1.0-rc1**; this assessment
+does not rename the existing checkpoint or change the build manifest's
+`development` status.
 
-The current development build contains **3,814 inserted text resources and
-20 English graphics**, including the approved title, all five corner logos and
-13 dungeon names plus the Level label. It uses the readable Torneko 2 compact
-English font and supports seven-character player names, including `Torneko`.
-The original GBA credits are already English and remain unchanged.
+The build contains **3,814 inserted text resources and 20 English graphics**,
+including the title, five floating corner logos, 13 dungeon arrival names and
+Level. It uses the Torneko 2 compact English font, supports seven-character
+player names and English Blank-scroll inputs, and preserves the original English
+GBA credits. [Blank-scroll instructions and accepted inputs](docs/BLANK_SCROLLS.md).
 
-Translation, discovery and playtesting continue. **All 96 retained untranslated
-catalog sources now have bounded investigation dispositions**; complete text
-discovery and full-game runtime coverage are not yet proven. Insertion counts
-are not a completion percentage. Source accounting also does not establish every
-display path for already-reviewed text.
+The latest local checkpoint is the
+[October 7 text-audit release](build/releases/2026-10-07-text-audit.zip).
+The root `build/torneko-2-english.gba` and `.bps` were freshly compiled and verified
+by independent patch application. They match the accepted October 4 ROM/BPS;
+the subsequent audits added evidence without changing game bytes. The manifest
+beside them records the exact hashes.
 
-The [dungeon-menu location banner](docs/LOCATION_BANNER.md) now uses the English
-names in all 13 locations; the earlier tests had missed this separate reader.
-The first [independent screen audit](docs/DUNGEON_SCREEN_AUDIT.md) checks 11
-dungeon/town scenarios, including 14 natural tutorial pickups, and fixes spacing
-between gold amounts and their label. Broader gameplay coverage remains open.
+Recent work repairs the separate dungeon banner and Floor/empty-Items readers,
+status-expiry messages, missed item/service/combat callers, pot and Mimic tutorial
+selectors, and two shopkeeper conversation selectors. English custom item names
+and their price layouts are also verified. The
+[caller history](docs/CALLER_FOLLOWUP.md) and
+[coverage matrix](docs/COVERAGE_AUDIT.md) identify each repair and its validation.
 
-The subsequently reported Japanese **Floor** notice is also
-[fixed and checked](docs/FLOOR_MENU.md), including its related status refusals.
-The earlier audit had omitted selecting Floor on an empty tile.
-The [code-path follow-up](docs/READER_PATH_AUDIT.md) also fixes empty Items and
-seven status-expiry messages; all20 recovered timer branches now display English,
-with44 native cases covering names, transformation and simultaneous expiry.
-The broader [caller coverage audit](docs/CALLER_COVERAGE_AUDIT.md) has since
-found and repaired 54 untranslated caller sites, including marked Storage-pot
-actions, trap discovery, blocked Info and food/herb effects. The blocked-item
-placeholder is also fixed; 55 exact bindings pass 308 native cases.
-The continuation reproduced and fixed all 20 outstanding leads and nine additional
-caller failures, including six blacksmith item-name producers. It passes110
-native cases and 13 complete blacksmith exchanges; the earlier 308 caller cases
-also pass on the new ROM. The expanded disassembly scan and 80 item-definition
-loads have matching audit receipts. Whole-game coverage remains unverified.
+All **96 retained untranslated catalog sources** now have
+[individual investigation dispositions](docs/TEXT_SOURCE_DISPOSITIONS.md).
+The recovered caller/script graphs do not select them under the documented
+bounds. Their original bytes remain preserved; they are not an outstanding
+translation queue or proof of complete game coverage.
 
-The [continued localization audit](docs/LOCALIZATION_CLOSURE.md) inserts English
-custom-item categories and formats, with 30 native cases covering English names,
-prices, counts, markers and storage round trips. It also follows relocated town
-tables, service dispatch and buffer producers, investigates the single-character
-event records, and adds ordinary quest/storage and defeat/retry screen audits.
-Its computed-reader follow-up fixes the final wind-expulsion message and nine
-previously uncatalogued town-overview labels, with native regression checks.
-The two referenced incomplete original dialogue records now have
-[approved contextual repairs](docs/EVENT_STUB_AUDIT.md), verified through eight
-native branch cases. They remain explicitly documented as editorial reconstructions.
+The latest research suite passes **191 unit tests**. The link-error audit checks
+all five English errors through their callers in **15 scenarios / 24 peer routes
+and cold loads**. Earlier full cumulative and font checks retain their own ROM
+identities; they are not presented as fresh runs of this checkpoint.
 
-The [caller and branch follow-up](docs/CALLER_FOLLOWUP.md) repairs a second monster
-announcement reader, shield-reflection damage, empty-ability Info and two original
-tutorial selector defects. The latter now show the matching pot and Mimic
-explanations, reusing existing English. Bounded jump-table discovery and broader
-native caller checks lead the remaining work. Controlled scene setup or documented
-invincibility in disposable copies can provide access; ordinary dungeon survival
-does not gate localization research. The [coverage matrix](docs/COVERAGE_AUDIT.md)
-separates current acceptance, historical replays and unresolved code/scene gaps.
+**Original gameplay behavior, including original bugs, is preserved.** The
+[link audit](docs/LINK_ERROR_AUDIT.md) reproduces an original item-loss bug in two
+post-save fault branches; that finding is documented and closed without a
+behavior change. Further graphics auditing is stopped.
 
-Further audits cover both background tables and their static layers, plus the
-complete controlled ending with native saving, all five scenes, credits and END
-artwork. No additional untranslated text or graphical lettering was found in
-those cohorts. The [scene-audit checkpoint](build/releases/2026-10-03-scene-audit.zip)
-contains the unchanged accepted patch with the additional evidence summary.
+The next release-confidence step is broader independent playtesting, with
+reproducible text reports investigated through code and targeted native probes.
+Completed investigations stay closed unless new evidence contradicts them.
 
-The October 4 [shopkeeper checkpoint](build/releases/2026-10-04-npc-shops.zip)
-fixes the bank-2 blacksmith’s side conversation and Remi’s matching visible-actor
-selector. Four native room routes and affected service checks pass. Actual
-trades between two emulator cores now pass native saving and cold-load
-persistence. The usual `build/torneko-2-english.gba` and `.bps` are updated;
-[the coverage matrix](docs/COVERAGE_AUDIT.md) records exact current-ROM evidence.
-
-The October 7 continuation is restricted to text. Both event interpreters,
-baker floor bounds, additional selector domains and expanded caller scans add
-verification without changing the accepted ROM/BPS. The former 62-source /
-34-fragment backlog now has [individual dispositions](docs/TEXT_SOURCE_DISPOSITIONS.md):
-all 96 are excluded by the recovered reader/script graphs under stated native
-data bounds. The spell-menu audit’s overwritten observation is also corrected.
-Language counts remain unchanged; zero untranslated catalog records lack an
-investigation disposition. Further graphics auditing is stopped.
-[Current audit evidence and limits](docs/CALLER_FOLLOWUP.md).
-
-The [October 7 release checkpoint](build/releases/2026-10-07-text-audit.zip)
-refreshes the usual root ROM/BPS through a clean compiler run and independent
-patch application; their bytes match the accepted October 4 release.
-The subsequent [link-error caller audit](docs/LINK_ERROR_AUDIT.md) verifies all
-five English errors, cancellation and disconnection recovery. It also reproduces
-an original-game item-loss defect when hardware/extra-system faults occur after
-the intermediate trade save. That gameplay defect is documented separately;
-original behavior is intentionally preserved under the user's instruction.
-
-[Current progress and remaining work](docs/TEXT_PROGRESS.md) ·
-[Open text questions](docs/TEXT_OPEN_QUESTIONS.md)
+[Current coverage and evidence](docs/COVERAGE_AUDIT.md) ·
+[Research history](docs/TEXT_PROGRESS.md) ·
+[Text decisions and remaining limits](docs/TEXT_OPEN_QUESTIONS.md)
 
 ## Setup
 
@@ -176,4 +133,4 @@ before the problem is especially useful for checking a fix.
 Record discoveries in the [memory map](docs/MEMORY_MAP.md) before insertion;
 use the shared allocator and checked patch ownership to prevent collisions.
 
-[Documentation index](docs/README.md) · [Graphics discovery queue](docs/GRAPHICS_INVENTORY.md)
+[Documentation index](docs/README.md) · [Preserved graphics audit](docs/GRAPHICS_INVENTORY.md)

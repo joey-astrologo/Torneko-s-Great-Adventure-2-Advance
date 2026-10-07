@@ -124,8 +124,10 @@ Whole-game menu-layout sign-off remains open, but the old exclusions are no long
 the current backlog. Populated services, storage child flows, pot views, bank
 transactions/persistence, all 221 item definitions and 30 English custom-name cases
 have separate acceptance. Additional and contained action consumers are covered
-below. Unknown menu families, unvisited combined states and unresolved tutorial
-mappings remain open; consult [the current matrix](COVERAGE_AUDIT.md).
+below. Pot/Mimic tutorial selectors are repaired; configurations 1/2/8/9 have
+bounded no-entry dispositions and reopen only with new evidence. Unknown menu
+families and unvisited combined states remain coverage limits; consult
+[the current matrix](COVERAGE_AUDIT.md).
 
 Seven-character player names remain supported, including `Torneko` (41 px in
 T2's font). The audition separately reserves 98 px for seven widest original

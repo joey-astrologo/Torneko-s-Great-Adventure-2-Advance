@@ -72,7 +72,7 @@ backgrounds continuous and attached the bank colons to their labels. See
 Option's bounded single-byte spaces remain six pixels; ordinary authored English
 uses three-pixel spaces. Unknown contexts still block their own insertion.
 
-## Current acceptance (2026-10-03)
+## Service acceptance and current-build scope
 
 The current ROM is identified in [the matrix](COVERAGE_AUDIT.md). The cumulative
 [service receipt](english-services-validation.json) requires 2,006 item cases,
@@ -80,7 +80,12 @@ The current ROM is identified in [the matrix](COVERAGE_AUDIT.md). The cumulative
 cases, 13 bakery cases, three storage transaction cases and ten storage-service
 cases. English custom names additionally pass 30 cases. Blacksmith, Gaibara, Remi,
 mayor and other service families have their own case lists in that receipt.
-These are bounded families, not complete service/quest coverage.
+That cumulative receipt belongs to ROM `fc9b6f5e…`. The current `588dc92c…`
+checkpoint separately verifies the four repaired/neighboring shopkeeper routes,
+57 blacksmith text cases, 13 exchanges and 73 Remi text cases. The later link
+continuation also follows all five errors and their cleanup/return paths; see
+[LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md). These are bounded families, not complete
+service/quest coverage or a full cumulative replay on the newer ROM.
 
 ## Ordinary continuation and earlier cohorts
 

@@ -1,5 +1,13 @@
 # Torneko 2 memory map
 
+This is an address/evidence journal spanning multiple builds. Dated ROM hashes,
+prototype status and unresolved counts retain their original research scope;
+later entries and the [coverage matrix](COVERAGE_AUDIT.md) supersede historical
+next steps. The [source dispositions](TEXT_SOURCE_DISPOSITIONS.md) and
+[link-error audit](LINK_ERROR_AUDIT.md) close their respective investigations.
+Original gameplay behavior is intentionally preserved; further graphics auditing
+is stopped. None of these status decisions grants new ROM/RAM/save ownership.
+
 ## Soldier and ability-text selector producers (2026-10-07)
 
 Native object creation CPU `[08031CD4,08031E0A)` scans 56 existing 68-byte
@@ -5453,7 +5461,7 @@ automatic stairs prompt instead of opening the root menu. It establishes a
 separate observed display gap, not its original-source ownership, buffer extent,
 ordinary acquisition route or insertion. No storage claim follows from that
 scratch pointer. Dedicated retained reproduction remains in
-[Text investigations](TEXT_OPEN_QUESTIONS.md#current-unresolved-investigations).
+[Text investigations](TEXT_OPEN_QUESTIONS.md#current-evidence-and-remaining-limits).
 This historical observation is the fear/dancing subset of the seven-message
 repair recorded below. It is resolved in ROMaa12a37b…; it is not an additional
 unfixed expiry reader.

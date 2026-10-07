@@ -1,6 +1,6 @@
 # Toolchain and reproduction
 
-Originally validated on this Mac on 2026-09-13; the October 3 accepted build also
+Originally validated on this Mac on 2026-09-13; the October 4 accepted build also
 passes the pinned toolchain checks (see [the coverage matrix](COVERAGE_AUDIT.md)).
 No pins changed in the documentation reconciliation. The setup adapts Torneko 3's pinned tools;
 the installed runtime and research helpers belong to this project.
@@ -117,6 +117,11 @@ fixtures, callback failure/detachment, invalid inputs and traced boot timing.
 Ghidra's import/ARM entry check passes, and generic Thumb function/range exports
 were tested at the independently observed startup entry `08000354`.
 armips emits the expected ARM/Thumb instruction bytes.
+
+These paragraphs describe the initial toolchain acceptance. The latest research
+suite has 191 unit tests; their separate scope and current-ROM affected checks
+are recorded in the coverage matrix. No toolchain pins changed in the October 7
+documentation reconciliation.
 
 This establishes research tooling and initial runtime observations. Text
 encoding, fonts, translated insertion, ROM expansion, full gameplay routes and

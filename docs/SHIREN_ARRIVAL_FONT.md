@@ -8,6 +8,8 @@ an outline font. The source typeface has not been identified.
 **Inserted on 2026-09-30 after user approval.** All 13 cards and the English
 Level prefix pass 30 native cases. See [actual screenshots and limits](ARRIVAL_INSERTION.md).
 The source-recovery details below remain unchanged.
+Further graphics auditing is stopped under the user's October 7 instruction;
+these source-recovery and audition recipes are retained references.
 
 - [Original Shiren titles and recovered alphabet](../build/arrival-cards/shiren/index.html)
 - [Torneko 2 arrival studio](../build/arrival-cards/audition/index.html)

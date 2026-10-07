@@ -4,10 +4,13 @@ Agreed workflow and translation policy, recorded on 2026-09-13. This is the
 working plan for localizing the supplied Japanese Torneko 2 Advance ROM using
 the tooling adapted from Torneko 3.
 
-Build the insertion pipeline early and playtest throughout. Further graphics
-auditing is stopped under the current instruction below. Work in small batches that proceed through source verification,
-translation, language review, insertion and native validation. Discovery and
-coverage audits continue while verified families are being translated.
+The insertion pipeline and known repair cohorts are implemented. The current
+build is ready for release-candidate testing; the recommended label is
+`1.0-rc1`, with broader independent playtesting and unverified scene/state
+combinations still separating it from a supported stable 1.0 sign-off. This is
+a readiness assessment, not a new release tag or manifest version. Further
+graphics auditing is stopped. New text findings proceed through source/caller
+verification, language review where needed, checked insertion and native validation.
 
 ## Current standing authorization
 
@@ -60,8 +63,9 @@ its two-item menu into unrelated selectors. Existing reviewed explanations now
 use the direct-prose consumer. All 27 menus, 22 bank/topic cases and three native
 NPC-script routes pass on ROM
 `fc9b6f5ea20643a6aabda35768c55c545dbe94a66766d234704aefa931b57a7c`.
-Resource count remains 3,814. Expanded jump-table discovery retains 62 unresolved
-shared/town sources; they are not declared unused. The ordinary route has
+Resource count remained 3,814. That scan stage retained 62 unresolved shared/town
+sources; the October 7 individual dispositions now close that cohort within the
+recovered graphs. The ordinary route had
 unlocked Mt. Fiery, cold-resumed a native suspend on the repaired ROM and reached
 8F before defeat; quest completion is still open. The linked
 follow-up distinguishes current repair evidence from earlier-ROM audit replays.
@@ -153,7 +157,9 @@ the full-screen and scrolling background tables, including replacements and
 static objects. No additional untranslated reader or graphical lettering was
 identified in those families. The complete controlled ending passes native save,
 all five scenes and 57 dialogue sources, fades, credits, END artwork and return;
-ordinary ending access remains separate. That earlier research suite passed 186 tests; the current suite passes 187.
+ordinary ending access remains separate. That earlier research suite passed 186
+tests; October 4 release acceptance passed 187, and the latest research suite
+passes 191. These are separate receipts, not repeated whole-game acceptance.
 See [caller and scene evidence](CALLER_FOLLOWUP.md#computed-readers-graphics-and-complete-ending).
 The two malformed bank-2 NPC selectors are now repaired, and actual two-core
 link exchange/save persistence is verified, including ordinary green-book entry,
@@ -192,6 +198,14 @@ scan stops now have explicit return, name-patch and row-loop dispositions in
 Scene combinations outside the documented probes remain unverified. That is a
 coverage limit, not another uninvestigated source list. Completed repair and
 source-disposition cohorts stay closed until new evidence appears.
+
+The link-error cohort is also complete: all five English selectors pass in 15
+scenarios / 24 peer routes and cold loads. The original post-save item-loss
+behavior is documented and intentionally preserved. It is not pending text work.
+The next confidence milestone is broader independent playtesting of the release
+candidate. Investigate concrete new reports or uncovered caller/state combinations
+with disassembly and targeted native checks; do not recreate a backlog from
+completed source, tutorial or link-error investigations.
 
 **Disassembly leads discovery; ordinary survival is not a prerequisite.** Trace
 callers, selectors, active-bank dependencies, RAM producers and bounded jump tables.

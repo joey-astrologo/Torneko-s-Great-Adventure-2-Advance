@@ -25,7 +25,8 @@ traversal follows both outcomes of flag/choice branches and stops at END.
 | --- | ---: | --- |
 | Referenced by NPC branch traversal | 2 | Native selectors and full follow-on handlers exercised below; ordinary map access is not established. |
 | Present after an unconditional END in a linear scan | 3 | `event-bank-2.382a`, `.382d`, `.3830`; the bank-2 script at decoded `0x5AB` reaches END at `0x5AE` first. These bytes are not an executable fallthrough. |
-| No reference in these extracted script roots | 31 | Remain source records with unproven reachability. This is not a claim that all possible readers are known or that the records are unused. |
+| Apparent text opcode inside another instruction's operands | 1 | `event-bank-3.03b6`: operand-byte coincidence, with no entry at the apparent opcode. |
+| No selector in the shipped script graph or recovered getters | 30 | Individual October 7 dispositions close these investigations within the stated graph; unknown synthesized entries remain outside its bounds. |
 
 The malformed bank-2 roots at `0x5E2` and `0x5DF` have now been traced to the
 blacksmith's and Remi's visible shopkeeper actors. The blacksmith's side contact

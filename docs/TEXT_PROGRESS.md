@@ -1,5 +1,12 @@
 # Autonomous text-localization progress
 
+Current release assessment: ready for release-candidate testing; recommended
+label `1.0-rc1`. No confirmed outstanding localization defect remains in the
+investigated paths. Broader independent playtesting and unverified scene/state
+combinations remain the confidence gap before stable 1.0. No release tag or
+manifest version is assigned by this assessment. Original gameplay bugs are
+intentionally preserved; further graphics auditing is stopped.
+
 October 7 release refresh and link-error continuation: root ROM/BPS freshly
 compiled and independently patch-verified, byte-identical to the accepted
 October 4 build. [Checkpoint](../build/releases/2026-10-07-text-audit.zip).
@@ -42,10 +49,13 @@ the bounded result-reason graph are audited; no further ROM bytes changed.
 has 3,814 inserted text resources and 20 graphics. Two bank-2 shopkeeper selectors
 are repaired; four scene routes / 12 service opens and affected blacksmith/Remi
 cases pass. Actual two-core trading, native saves and received-item cold loads
-also pass. The current suite has 187 unit tests, with required toolchain,
+also pass. That release acceptance has 187 unit tests, with required toolchain,
 fresh-save and Ghidra acceptance. Candidate/normal build reproduction and
 independent patch application pass. The root ROM/BPS are updated and archived
 in `build/accepted/3814-npc-shops/`.
+
+The latest research suite passes 191 unit tests; the link-error continuation
+above adds native evidence without a ROM change or full native-suite replay.
 
 The preceding tutorial ROM retains the full cumulative acceptance, 182-test
 receipt and 315 font-browser contexts / 3,430 measurements. Those broader
@@ -281,23 +291,24 @@ complete game discovery or natural access to every translated branch.
 `untranslated`) and 28 retained/component sources. The language counts remain
 the same; all 96 now have separate investigation dispositions above.
 The earlier **96.1%** figure divides reviewed English by every catalog source.
-Its remaining3.9% included accounted-for sources that do not need another English
-translation. The current breakdown is 21 nonlinguistic entries, four sources replaced by English UI
+Its remaining 3.9% included accounted-for sources that do not need another English
+translation. Those 28 records comprise 21 nonlinguistic entries, four sources replaced by English UI
 components, and three deliberately retained Japanese sources (the optional kana
 input pages and an internal appearance-table sentinel).
 
 Excluding those 28 accounted-for sources, **3,552 of 3,648 sources (97.4%) have
-reviewed English; 96 (2.6%) remain unresolved**. Reviewed includes two approved
+reviewed English; 96 (2.6%) were unresolved at that stage**. Reviewed includes two approved
 editorial reconstructions. This is a review metric for the
 known catalog, not whole-game completion or proof that every reader displays
-English. Some unresolved sources already have English drafts but still need
-reader, context or layout verification. Neither percentage measures engineering
+English. Some unresolved sources already had English drafts but still needed
+reader, context or layout verification at that stage. The October 7 dispositions
+now account for each record. Neither percentage measures engineering
 time remaining. The ten sources added at 3,768 were newly identified. A separate
 byte/consumer audit classified the eight empty name-cell IDs as nonlinguistic
 data; no Japanese text was removed.
-Remaining work includes 34 single-character event stubs,
-legacy system strings and shared-reader audits. The reviewed-source percentage
-does not count these investigation gaps as complete.
+That stage's remaining work included 34 single-character event stubs, legacy
+system strings and shared-reader audits. Those source investigations are now
+closed within the documented graphs; language-review percentages did not change.
 
 At that earlier stage, the 96-source investigation queue divided as follows
 (all three rows are now superseded by TEXT_SOURCE_DISPOSITIONS.md):

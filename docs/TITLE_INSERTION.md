@@ -6,6 +6,10 @@ floating gold/red lettering with **no wooden backing**. The original title's
 bottom 24 rows, including `Push START!`, and every background pixel outside its
 76×36 corner rectangle remain exact. The original English credits are unchanged.
 
+Further graphics auditing is stopped under the user's October 7 instruction.
+The approved assets and insertion remain in place; the gallery and reproduction
+commands below preserve their validation history.
+
 - [Actual in-game screenshots](../build/title-insertion/index.html)
 - [Latest English ROM](../build/torneko-2-english.gba)
 - [Latest BPS patch](../build/torneko-2-english.bps)

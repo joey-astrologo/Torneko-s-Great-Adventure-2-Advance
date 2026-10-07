@@ -1,8 +1,11 @@
 # Continued localization audit — 2026-10-02
 
-This page records the October 2 build. The accepted October 3 continuation and current matrix
-are documented in [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md); the hashes and counts
-below remain historical evidence rather than acceptance of the newer build.
+This page records the October 2 build. Later continuations are documented in
+[CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md); the [coverage matrix](COVERAGE_AUDIT.md)
+owns current build identity and acceptance. The hashes, counts and unresolved
+scan stages below remain historical evidence. The former 62 shared/town sources
+and 34 fragments now have [individual dispositions](TEXT_SOURCE_DISPOSITIONS.md);
+the old source queue is not current outstanding work.
 
 This records the four requested steps. It does not declare whole-game coverage.
 The original ROM and supplied save are preserved. Research uses disposable
@@ -151,8 +154,8 @@ resources and the previously verified town scratch producer. Exact bindings are
 in [computed-reader-followup.json](../build/localization-closure/computed-reader-followup.json).
 This manual finding layer is separate from the bounded symbolic-execution totals.
 
-The final **53 unresolved shared sources and 10 town sources** still have no
-resolved read in the bounded source analysis. This does not prove them unused.
+At this stage, **53 unresolved shared sources and 10 town sources** had no
+resolved read in the bounded source analysis. This did not prove them unused.
 Computed branches, unmodeled RAM and indirect readers remain explicit limits.
 The earlier 54-source automatic result missed the wind reader; its archived
 report is retained as `source-readers-deep-3801.json`.
@@ -244,5 +247,7 @@ with the catalog, build ledger and source inventory.
 
 The editorial decision is resolved. The remaining 34 single-character event
 records have not been assigned invented dialogue.
-The unresolved source/data-flow counts and untested natural routes above remain
-coverage limits, not passing results or declarations of unused code.
+The source/data-flow counts above describe that earlier scan. The later
+source-disposition audit closes the 34-fragment and 62 shared/town cohorts within
+its recovered graphs. Untested natural routes remain evidence limits; this does
+not prove complete game coverage or global unreachability.

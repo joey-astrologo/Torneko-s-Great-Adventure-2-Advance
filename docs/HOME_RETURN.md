@@ -1,10 +1,11 @@
 # First home return and nearby village batch
 
 This is the historical 63-resource checkpoint. The current cumulative build and
-acceptance are documented in [HOME_BOOKS.md](HOME_BOOKS.md); generated report paths
-may now contain the newer build.
+acceptance are documented in [the coverage matrix](COVERAGE_AUDIT.md); the next
+historical milestone is [HOME_BOOKS.md](HOME_BOOKS.md). Generated report paths
+may now contain a newer build.
 
-The cumulative English build now inserts **63 reviewed text resources**, adding
+At this milestone the cumulative English build inserted **63 reviewed text resources**, adding
 17 in this batch: 15 bank-one strings, Tessie's direct item-sale explanation,
 and the native money-notification template. The shared Yes/No resource is reused.
 The original ROM and save are unchanged.

@@ -1,5 +1,9 @@
 # Credits and arrival-card auditions
 
+Current scope: further graphics auditing is stopped under the user's October 7
+instruction. This page retains the approved artwork decisions, studio workflow
+and historical validation; it does not authorize another audition or audit.
+
 The user reopened this work on 2026-09-29. These studios follow Torneko 3's
 offline comparison, settings and export workflow, using Torneko 2's own sources
 and layouts. The user subsequently approved Shiren arrival insertion on

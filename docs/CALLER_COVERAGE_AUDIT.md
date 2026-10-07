@@ -326,6 +326,9 @@ with a current-ROM run. The current commands are at the top of this document.
 
 That checkpoint's20 direct/format/modal candidates and copied refusal are now
 resolved by the continuation at the top of this document. The old412 unresolved
-arguments belong to the earlier ten-reader scan; the expanded15-reader analysis
-retains529 unresolved arguments as explicit static limits. Diagnostic scan
-success is separate from caller binding, fit and complete-screen acceptance.
+arguments belong to the earlier ten-reader scan; the expanded 15-reader analysis
+then retained 529 unresolved arguments as explicit static limits. Subsequent
+caller and source audits supersede those backlog counts; see
+[CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) and
+[TEXT_SOURCE_DISPOSITIONS.md](TEXT_SOURCE_DISPOSITIONS.md). Diagnostic scan success
+is separate from caller binding, fit and complete-screen acceptance.

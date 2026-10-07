@@ -14,8 +14,10 @@ See [corrected menus and validation](MENU_LAYOUTS.md) for the completed four bat
 The offline page compares exact glyph pixels at 1×–4×, accepts editable labels,
 exports PNG previews and lists advance, ink edge and remaining pixels. It has
 additional status, Option, bank and first-cohort item contexts plus four dynamic
-name cases. Current acceptance covers 315 contexts / 3,430 measurements; see
-[the receipt](english-services-validation.json). Original
+name cases. The preceding cumulative acceptance covers 315 contexts / 3,430
+measurements on ROM `fc9b6f5e…`; see [the receipt](english-services-validation.json).
+The current `588dc92c…` checkpoint changes no font or geometry, but these results
+are not a fresh browser replay for it. Original
 and current contexts are kept separately: old overflows remain visible rather
 than disappearing from the evidence. All selected-font current labels fit.
 Native captures are separate from simulated panels.
