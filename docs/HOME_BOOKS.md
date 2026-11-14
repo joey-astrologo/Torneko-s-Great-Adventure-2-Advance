@@ -4,6 +4,9 @@ At this milestone the cumulative build inserted **79 reviewed catalog resources*
 Current coverage is in [the matrix](COVERAGE_AUDIT.md); the subsequent initial
 quest milestone is in [MANSION_QUEST.md](MANSION_QUEST.md). This page preserves
 the historical book/banker batch scope.
+The later [save-and-quit investigation](SAVE_QUIT_AUDIT.md) explicitly checks
+the reset/startup/menu sequence omitted from this historical acceptance. It
+passes in mGBA; the user's reported Analogue Pocket freeze remains unresolved.
 This batch adds 16: all ten red-book tips; the blue-book menu while the
 storehouse is broken; empty-inventory and save messages; the castle/square travel
 labels; and the banker's first request, both answers, the old man's appearance,

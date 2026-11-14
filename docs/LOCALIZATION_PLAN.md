@@ -12,6 +12,21 @@ a readiness assessment, not a new release tag or manifest version. Further
 graphics auditing is stopped. New text findings proceed through source/caller
 verification, language review where needed, checked insertion and native validation.
 
+On 2026-11-14 the user reported Japanese unknown-monster names and inconsistent
+Magic Dungeon wording, then authorized fixing Issue 1 first. The
+[unknown-actor repair](ACTOR_FALLBACK_FIX.md) binds both missed name readers to
+the existing reviewed Someone resource. Its focused native checks and release
+checkpoint retain their own evidence. The user subsequently requested replacing
+all dialogue uses of Mystery Dungeon with Magic Dungeon. The separate
+[terminology checkpoint](DUNGEON_TERMINOLOGY.md) corrects both inserted passages
+and synchronizes the review/draft copies. The False-priest reader candidate and
+broader screening of reviewed text consumers remain pending.
+
+The user clarified the terminology scope on 2026-11-14: the game's name and
+title/logo branding remain **Mystery Dungeon**. Use **Magic Dungeon** in dialogue
+and other in-game text, with lowercase **magic dungeon** for generic references.
+This wording correction must not rename the game or alter its approved title art.
+
 ## Current standing authorization
 
 The user explicitly confirmed that original gameplay behavior must be preserved,
@@ -151,6 +166,14 @@ acceptance pass. The prior full cumulative suite retains its own ROM identity.
 See [the new evidence](CALLER_FOLLOWUP.md#npc-shop-selectors-and-two-core-link-trading).
 
 ## Current investigation priorities (2026-10-07)
+
+The user reports an Analogue Pocket with EverDrive GBA Pro freezing to a white
+screen with static after house Save and quit, possibly also stair suspension.
+An EverDrive Start Safe comparison is pending. The [targeted audit](SAVE_QUIT_AUDIT.md) confirms
+that both routes should soft-reset to the title and pass in original/current
+English ROMs under mGBA's built-in BIOS, including cold resume and movement.
+The hardware report remains open pending launch-mode/firmware and reproduction evidence;
+no ROM fix or original-game bug classification is justified yet.
 
 The continued audit now accounts for 41 computed table-base losses and checks
 the full-screen and scrolling background tables, including replacements and

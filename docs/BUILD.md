@@ -1,7 +1,7 @@
 # Cumulative English build
 
 Current readiness: release-candidate testing, with `1.0-rc1` the recommended
-label. The latest checkpoint remains `2026-10-07-text-audit.zip`, and its root
+label. The latest checkpoint is `2026-11-14-dungeon-terminology.zip`, and its root
 manifest retains `development` status; no new version/tag is assigned by this
 documentation update. The [coverage matrix](COVERAGE_AUDIT.md) distinguishes
 current-ROM checks, preceding cumulative acceptance and remaining scene/state
@@ -126,9 +126,18 @@ separately. See [TEXT_PROGRESS.md](TEXT_PROGRESS.md) for current coverage.
 Native checks distinguish controlled renderer/getter/formatter calls and state
 substitutions from ordinary gameplay routes.
 
+The [unknown-actor repair](ACTOR_FALLBACK_FIX.md) adds a focused native gate for
+the two missed Someone readers. `tools.verify_actor_fallback` checks the actual
+name selection, combat logs, condition removal and hallucination-trap effect;
+its previous-ROM negative control reproduces Japanese. It runs in `build.sh`.
+
 Current status and remaining work are maintained in
 [the coverage matrix](COVERAGE_AUDIT.md) and [TEXT_PROGRESS.md](TEXT_PROGRESS.md).
-The latest accepted ROM archive is `build/accepted/3814-npc-shops/`; the
+The latest accepted archive is `build/accepted/3814-dungeon-terminology/`.
+Its [focused checks](DUNGEON_TERMINOLOGY.md) cover both corrected dialogue passages,
+event bindings and the unknown-actor regression. The preceding
+`build/accepted/3814-actor-fallback/` remains available, and
+`build/accepted/3814-npc-shops/` is retained; its
 [October 7 refresh](../build/releases/2026-10-07-text-audit.zip) recompiles its
 unchanged ROM/BPS and records the subsequent text audit. The preceding full
 cumulative archive is `build/accepted/3814-tutorials/`, with 3,814 text resources,

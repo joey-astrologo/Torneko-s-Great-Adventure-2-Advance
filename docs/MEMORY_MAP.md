@@ -6322,3 +6322,58 @@ The extra-system flag is derived by `080588A4..080588B2` from SIOCNT bits 4–5
 The probe changes the sampled register value and lets native decoding proceed;
 it does not claim a real third-core or physical-cable test. Disconnect cases
 detach the mGBA native driver and execute the real 500-iteration deadlines.
+
+## Save-and-quit reset — October 7, 2026
+
+[Investigation and limits](SAVE_QUIT_AUDIT.md). Four ordinary-input native routes
+verify the house/stair reset paths in original and current English ROMs. The
+Pocket failure reported by the user remains unresolved. All ranges below are
+exclusive; none grants new insertion or RAM ownership.
+
+| Address space / range | Verified role and evidence |
+|---|---|
+| CPU ROM `[0801FB90,0801FBEC)` | House quit owner. Calls save/display `08015374` with mode 2, fades, calls reset at `0801FBE2`; native reset-entry LR `0801FBE7`. Byte-identical in both ROMs. |
+| CPU ROM `[080054E6,08005520)` | Dungeon suspension exit block. Calls save/display with mode 2 at `0800550A`, then reset at `0800551A`; native LR `0800551F`. Byte-identical. |
+| CPU ROM `[08015348,08015434)` | Native serializer/encoder/writer and save-success/farewell dispatcher, including existing 128-byte message buffer and literal pools. Code is unchanged; translated strings are reached through the separately owned shared table slots. Serialization observed at `08015354` in all four routes. |
+| CPU ROM `[0800140C,08001440)` | Shared reset preparation and literals. Writes palette entry 0, clears native state word `03000A0C`, waits 60 frames through `08007814`, calls `0805B4AC` with r0=`FF`. Byte-identical. |
+| CPU ROM `[0805B4AC,0805B4C8)` | Reset wrapper plus two literal words. Disables IME, clears the BIOS reset flag, sets SP=`03007F00`, invokes SWI 01 at `0805B4BC` and SWI 00 at `0805B4BE`. Both execute before native startup is reached again at `08000354`. Byte-identical. Ghidra's function export incorrectly falls through the nonreturning SWI into the literal pool/next function; this bounded range ends at `0805B4C8`. |
+| I/O `[04000208,04000209)` | IME low byte is cleared by the reset wrapper; native halfword read is zero at both SWIs. Existing hardware register, not allocated RAM. |
+| IWRAM `[03007FFA,03007FFB)` | Existing BIOS soft-reset flag, set to zero for cartridge restart. Native value zero at both SWIs in all four cases; not free RAM. |
+
+Evidence: `build/save-quit/research/quit.txt`, `reset-wrapper.txt`,
+`dungeon-caller.txt`, and `build/save-quit/validation/report.json`. The report
+records expected source bytes, ROM/save/fixture hashes and all input schedules.
+No controlled overrides or production ROM changes were made. Validation uses
+mGBA 0.10.5's built-in BIOS, not an external BIOS or the Pocket core.
+
+## Unknown actor fallback — November 14, 2026
+
+[Repair and native scope](ACTOR_FALLBACK_FIX.md). Original disassembly is retained
+in `build/actor-fallback-research/owners.txt`; the matching repair-ROM evidence
+is `build/actor-fallback-candidate/actor-fallback-validation/report.json`.
+The preceding English ROM is checked separately as a negative control.
+The addresses below describe the Issue 1 checkpoint. The subsequent wording
+correction relocates Someone to ROM `[008C499C,008C49AB)` and the private table
+to `[00963008,00963A40)`; both literal replacements become `08309608`.
+The allocator ledger and repeated native gate verify these current locations;
+ownership and the expected Japanese source bytes are unchanged.
+
+| Address space / exclusive range | Ownership and verified role |
+|---|---|
+| CPU ROM `[08009ACC,08009C10)` | Existing actor-name getter and literals. Unknown returns at `08009B3E` and `08009B6E` read shared slot `414h`. Selector/control instructions remain unchanged. |
+| ROM `[00009B48,00009B4C)`, `[00009B78,00009B7C)` | Owner `actor-fallback` changes only these two table-base words. Both expected source bytes are `680d1408` (`08140D68`); both replacements are `10309608` (`08963010`). The adjacent slot words remain `14040000`. Reader instruction bytes are checked before patching. |
+| ROM `[00140D68,001417A0)` | Original 654-word shared table, preserved. Its word at `[0014117C,00141180)` points to `08062DCC`. Other consumers do not gain permission to use its space. |
+| ROM `[00062DCC,00062DD3)` | Original `何者か\0`, bytes `89bd8ed282a900`, preserved. |
+| ROM `[008C49A0,008C49AF)` | Existing results ID0/Someone allocation, reused without edits. Fifteen encoded bytes, 42px. Dungeon ID0/Torneko remains distinct. |
+| ROM `[00963010,00963A48)` | New 2,616-byte private table through `RomBuild`; only slot `414h` differs from the original table. Owner `actor-fallback`; no new text resource. |
+| EWRAM actor-relative `[+96,+97)`, `[+98,+99)`, `[+BE,+BF)` | Existing byte fields: player hallucination, player blindness, monster invisibility. Verified through the getter and helpers `0800A43C`/`0801211C`. The original trap writes hallucination value 50. These are existing actor fields, not new RAM ownership. |
+
+The species record's existing byte `+13` also selects the unknown-name branch;
+the native see-invisible predicate can bypass invisibility but does not bypass
+hallucination. Ten getter cases plus condition removal, eight complete combat
+cases and the separate real trap handler pass. Scratch guard, ABI, full log
+glyphs/layout and battery preservation are checked. Scene controls and negative
+controls are explicit; ordinary encounter/trap placement is not asserted.
+The separate Japanese False-priest return at `08009BAC` remains a follow-up
+candidate. This fix neither alters that branch nor establishes whole-game text
+coverage.

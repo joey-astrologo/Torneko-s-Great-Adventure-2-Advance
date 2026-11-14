@@ -46,6 +46,7 @@ cd "$(dirname "$0")"
 .venv/bin/python -m tools.extract_monsters
 .venv/bin/python -m tools.verify_monster_resource --cumulative
 .venv/bin/python -m tools.verify_actor_levels --cumulative
+.venv/bin/python -m tools.verify_actor_fallback
 .venv/bin/python -m tools.verify_combat_prototype --cumulative
 .venv/bin/python -m tools.verify_miss_prototype --cumulative
 .venv/bin/python -m tools.verify_queue_notices --copied

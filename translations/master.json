@@ -4100,11 +4100,17 @@
           "window_hex": "087800001c02000000000000c2bb00062c00000065160508"
         }
       ],
-      "english": "Tessie: What?!\n\nTessie: The castle basement has turned into a mystery dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+      "english": "Tessie: What?!\n\nTessie: The castle basement has turned into a magic dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
       "notes": "Independent Japanese-source translation. Preserves speaker turns, colored terms, native player substitution and choice meaning. Awaiting insertion/native English acceptance.",
       "language_status": "reviewed",
       "status": "native-source-verified",
-      "batch": "holy-flame-quest"
+      "batch": "holy-flame-quest",
+      "terminology_revision": {
+        "date": "2026-11-14",
+        "previous_english": "Tessie: What?!\n\nTessie: The castle basement has turned into a mystery dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+        "revised_english": "Tessie: What?!\n\nTessie: The castle basement has turned into a magic dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+        "reason": "User requested Magic Dungeon consistently in dialogue. Follow glossary 不思議のダンジョン; retain lowercase for the generic phenomenon. Source meaning, controls and other wording are unchanged."
+      }
     },
     {
       "id": "event-bank-1.0fe0",

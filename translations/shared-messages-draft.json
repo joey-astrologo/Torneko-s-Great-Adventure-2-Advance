@@ -13365,10 +13365,10 @@
         "sha256": "56cbd080227167f5e7293a01e4fb23c308cb47f71ef0e770b288cbd17d2ba63b",
         "japanese": "兵士「まさか　この火山が本当に\n　不思議のダンジョンになっているとは\n兵士「思いませんでした・・・"
       },
-      "english_draft": "Soldier: I never thought this volcano really had become a mystery dungeon...",
+      "english_draft": "Soldier: I never thought this volcano really had become a magic dungeon...",
       "format_fields": [],
       "static_line_widths": [
-        393
+        381
       ],
       "status": "draft-needs-bilingual-context-and-native-review",
       "notes": "Independent T2 Japanese-source draft; no insertion. Source-order placeholders preserved. Native caller/argument roles, buffer ownership, maximum substitutions, menu geometry and controls remain to be validated. Combat prefers one line when the fully expanded message safely fits; authored draft line length is not native acceptance.",
@@ -13378,6 +13378,12 @@
         "reason": "Dedicated second comparison with T2 Japanese: retain negation, counts, cost/reward direction, controls, class restrictions and the distinction between an action and its outcome. Native layout, argument roles and reachability remain separate.",
         "context_pending": false,
         "insertion_approved": false
+      },
+      "terminology_revision": {
+        "date": "2026-11-14",
+        "previous_english": "Soldier: I never thought this volcano really had become a mystery dungeon...",
+        "revised_english": "Soldier: I never thought this volcano really had become a magic dungeon...",
+        "reason": "User requested Magic Dungeon consistently in dialogue. Follow glossary 不思議のダンジョン; retain lowercase for the generic phenomenon. Source meaning, controls and other wording are unchanged."
       }
     },
     {

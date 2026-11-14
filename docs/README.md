@@ -24,6 +24,8 @@ the missed-reader failure, and which complete-screen audits are still pending.
 | Translate and revise | [LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), [glossary](../translations/glossary.json) |
 | Investigate unresolved text | [TEXT_OPEN_QUESTIONS.md](TEXT_OPEN_QUESTIONS.md) |
 | Review the latest caller/tutorial repairs | [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) |
+| Review the hallucination/invisible-enemy name fix | [ACTOR_FALLBACK_FIX.md](ACTOR_FALLBACK_FIX.md) |
+| Review the Magic Dungeon dialogue correction | [DUNGEON_TERMINOLOGY.md](DUNGEON_TERMINOLOGY.md) |
 | Review link-error selection and the original item-loss finding | [LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md) |
 | Use Blank scrolls and English Write inputs | [BLANK_SCROLLS.md](BLANK_SCROLLS.md) |
 | Review the continued caller/custom-name audit | [LOCALIZATION_CLOSURE.md](LOCALIZATION_CLOSURE.md) |
@@ -44,6 +46,7 @@ the missed-reader failure, and which complete-screen audits are still pending.
 - [Service coverage and constraints](SERVICE_BATCHES.md).
 - [Item names and descriptions](ITEM_TEXT.md).
 - [Seven-character name entry and save compatibility](NAME_ENTRY.md).
+- [Save-and-quit reset checks and unresolved Pocket report](SAVE_QUIT_AUDIT.md).
 
 ## Graphics
 

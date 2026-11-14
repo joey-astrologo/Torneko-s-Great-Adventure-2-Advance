@@ -1,33 +1,53 @@
 # Localization coverage matrix
 
-Updated 2026-10-07. **Whole-game coverage is unverified; there is no defensible
+Updated 2026-11-14. **Whole-game coverage is unverified; there is no defensible
 whole-game completion percentage.** This is the current coverage reference.
 Family guides and research journals retain their historical builds and counts.
 
 **Release assessment:** ready for release-candidate testing, with `1.0-rc1` the
-recommended label. There is no confirmed outstanding localization defect in the
-investigated paths. Broader independent playtesting and scene/state coverage
+recommended label. The November 14 unknown-actor name report and both confirmed
+dungeon-terminology inconsistencies are repaired. A separate
+False-priest name reader is a follow-up candidate. Broader playtesting and scene/state coverage
 remain incomplete, so stable 1.0 sign-off is not established. This documentation
 does not assign a version tag; the root manifest still identifies a development
 build. Original gameplay bugs are intentionally preserved, and further graphics
 auditing is stopped.
 
+**New hardware report:** house Save and quit freezes an Analogue Pocket using an
+EverDrive GBA Pro, with a white screen and static noise; stair suspension is also
+suspected. An EverDrive Start Safe comparison is pending. The targeted
+[save-and-quit audit](SAVE_QUIT_AUDIT.md) passes house/stair reset and cold resume
+in both ROMs under mGBA's built-in BIOS. The Pocket failure remains unresolved;
+these emulator results do not close it or establish its cause.
+
 ## Accepted build and evidence
+
+The latest [November 14 checkpoint](DUNGEON_TERMINOLOGY.md) corrects both Magic
+Dungeon passages, with native rendering, all seven event-bank loads/1,046 getters,
+the unknown-actor regression, 192 unit tests and standard validation passing.
+The earlier [unknown-actor checkpoint](ACTOR_FALLBACK_FIX.md) retains its separate
+preceding-ROM negative controls and English save/cold-load checks.
+The earlier cumulative family receipts below retain their own ROM identities;
+the complete native suite was not repeated for these focused repairs.
 
 | Measure | Current result | Scope |
 |---|---|---|
-| English ROM SHA-256 | `588dc92ce09104cb80d18fb4929e6e713f86836e65d8c12b135dfb4f4269b7ad` | Latest accepted development build; root exports updated; archive `build/accepted/3814-npc-shops/` |
-| BPS SHA-256 | `d019f1851e13176a8960db669198563c4d285f7878fde7297503c56d05361d7b` | Candidate/normal build reproduction, ledger reconstruction and independent patch application pass |
+| English ROM SHA-256 | `d8e2b42cfc345d7c1479facb07630f8018d49bc66f9419557610f300969e188c` | Dialogue terminology correction; archive `build/accepted/3814-dungeon-terminology/`; preceding accepted artifacts retained |
+| BPS SHA-256 | `75c0dc6cc6cd4477a7c18d0cfecd1371bd9fa86d8d10022350bb7d2c9827a11e` | Candidate/clean build reproduction, ledger reconstruction and independent patch application pass |
 | Inserted resources | 3,814 text; 20 graphics | Compiled resources, not all reachable screens |
 | Known source catalog | 3,676: 3,552 reviewed, 96 untranslated with investigated dispositions, 28 retained/components | Zero untranslated records without a disposition; bounded discovery inventory, not gameplay coverage |
-| Latest research checks | 191 unit tests; corrected 250 definition cases / 378 reads; all 96 source dispositions | Research-only changes; no ROM patch or new full native-suite claim |
+| October 7 research checks | 191 unit tests; corrected 250 definition cases / 378 reads; all 96 source dispositions | Historical research-only changes; no ROM patch or new full native-suite claim |
 | Link-error continuation | 15 English scenarios / 24 peer routes and cold loads; two original-ROM scenarios / four peers and cold loads | All five English errors and complete cleanup/return paths verified. Two post-save fault exits reproduce an original item-loss bug; recovery does not pass for those exits. [Evidence](LINK_ERROR_AUDIT.md). |
-| Current affected acceptance | 187 unit tests; four NPC routes / 12 opens, 57 blacksmith text cases, 13 exchanges, 73 Remi text cases, three real link trades and four cold loads | Exact cases on this ROM; toolchain/fresh-save/Ghidra checks pass |
+| Current affected acceptance | Both corrected dialogue passages; 1,046 event getters; 10 actor getters with recovery, 8 combat cases, one trap handler; 192 unit tests | Exact cases on `d8e2b42c…`; catalog/build scan, standard validation, ledger reconstruction and clean ROM/BPS reproduction pass |
+| Preceding Issue 1 acceptance | Actor-name gates, prior-ROM negative controls, English save/cold loads and standard validation | ROM `82e2204f…`; previous accepted archive preserved |
+| October 4 affected acceptance | 187 unit tests; four NPC routes / 12 opens, 57 blacksmith text cases, 13 exchanges, 73 Remi text cases, three real link trades and four cold loads | Prior ROM `588dc92c…`; preserved evidence, not a replay on the current ROM |
 | Preceding cumulative acceptance | 182 unit tests; native/menu/service checks pass | ROM `fc9b6f5e…`, archived separately; full suite not replayed on the new ROM |
-| Selected-font browser checks | 315 contexts / 3,430 measurements; no selected-font overflows | Preceding ROM, identified regions and substitutions; new repair changes no text/font/geometry |
+| Selected-font browser checks | 315 contexts / 3,430 measurements; no selected-font overflows | Preceding ROM, identified regions and substitutions; corrected dialogue separately passes native layout checks |
 
-[Current release checkpoint ZIP](../build/releases/2026-10-07-text-audit.zip) ·
-[Current affected-check receipt](../build/accepted/3814-npc-shops/completion.json) ·
+[Current release checkpoint ZIP](../build/releases/2026-11-14-dungeon-terminology.zip) ·
+[Current affected-check receipt](../build/accepted/3814-dungeon-terminology/completion.json) ·
+[Preceding Issue 1 checkpoint ZIP](../build/releases/2026-11-14-actor-fallback.zip) ·
+[Preceding text-audit checkpoint ZIP](../build/releases/2026-10-07-text-audit.zip) ·
 [Preceding tutorial checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip) ·
 [October 7 source-disposition receipt](../build/oct07-source-dispositions/completion.json) ·
 [October 7 link-error receipt](../build/link-errors/completion.json) ·

@@ -17,8 +17,9 @@ from a fresh save. [Capture details and reproduction](docs/SCREENSHOTS.md).
 
 ## Project status
 
-**Ready for release-candidate testing.** There is no confirmed outstanding
-localization defect in the investigated paths. Whole-game scene/state coverage
+**Ready for release-candidate testing.** The reported Japanese unknown-monster
+names are repaired; two dungeon-terminology inconsistencies remain pending.
+Whole-game scene/state coverage
 and broader independent playtesting remain incomplete, so a stable 1.0 sign-off
 is not yet supported. The recommended release label is **1.0-rc1**; this assessment
 does not rename the existing checkpoint or change the build manifest's
@@ -31,11 +32,12 @@ player names and English Blank-scroll inputs, and preserves the original English
 GBA credits. [Blank-scroll instructions and accepted inputs](docs/BLANK_SCROLLS.md).
 
 The latest local checkpoint is the
-[October 7 text-audit release](build/releases/2026-10-07-text-audit.zip).
+[November 14 terminology correction](build/releases/2026-11-14-dungeon-terminology.zip).
 The root `build/torneko-2-english.gba` and `.bps` were freshly compiled and verified
-by independent patch application. They match the accepted October 4 ROM/BPS;
-the subsequent audits added evidence without changing game bytes. The manifest
-beside them records the exact hashes.
+by independent patch application. [Focused native checks](docs/DUNGEON_TERMINOLOGY.md)
+verify both corrected Magic Dungeon passages and retain the unknown-actor repair.
+The preceding Issue 1 and October 7 checkpoints remain available. The manifest beside the
+current artifacts records their exact hashes.
 
 Recent work repairs the separate dungeon banner and Floor/empty-Items readers,
 status-expiry messages, missed item/service/combat callers, pot and Mimic tutorial
@@ -50,7 +52,7 @@ The recovered caller/script graphs do not select them under the documented
 bounds. Their original bytes remain preserved; they are not an outstanding
 translation queue or proof of complete game coverage.
 
-The latest research suite passes **191 unit tests**. The link-error audit checks
+The current suite passes **192 unit tests**. The earlier link-error audit checks
 all five English errors through their callers in **15 scenarios / 24 peer routes
 and cold loads**. Earlier full cumulative and font checks retain their own ROM
 identities; they are not presented as fresh runs of this checkpoint.

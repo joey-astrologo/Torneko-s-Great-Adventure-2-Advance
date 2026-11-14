@@ -293,6 +293,8 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
     shield_reflection = add_shield_reflection(build)
     from tools.npc_shop_scripts import add_npc_shop_scripts
     npc_shop_scripts = add_npc_shop_scripts(build)
+    from tools.actor_fallback_text import add_actor_fallback
+    actor_fallback = add_actor_fallback(build, results) if results['entries'] else None
     data, report = build.finish()
     resource_counts = {
         'dialogue': len(dialogue['entries']), 'menus': len(menus['entries']),
@@ -435,6 +437,7 @@ def build_rom(include_story=True, include_extra_consumers=True, include_arrival_
                   town_overview=town_overview,
                   shield_reflection=shield_reflection,
                   npc_shop_scripts=npc_shop_scripts,
+                  actor_fallback=actor_fallback,
                   total_reviewed_inserted_graphics=(arrival_cards['english_graphic_count'] if arrival_cards else 0)+(title_art['english_graphic_count'] if title_art else 0),
                   total_reviewed_inserted_resources=sum(resource_counts.values()),
                   scope="Cumulative English text build with original early-menu geometry, matching compact numbers and approved spacing. Includes private unidentified-item appearances, player-only effects and conditional one-line item-use announcements. Resource counts describe insertion, not whole-game coverage. Native acceptance distinguishes ordinary play from controlled rendering and state probes. Remaining combat, story/item/system consumers, custom names, inscriptions, special definitions, later modes and artwork remain open.")

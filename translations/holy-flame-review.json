@@ -13,9 +13,15 @@
     {
       "id": "event-bank-1.0d86",
       "japanese": "ネネ「ええっ！\n\nネネ「お城の地下が不思議のダンジョンに\n　なってしまったんですってぇ！\nネネ「・・・いったいどうなってるのかしら。\n\nネネ「で　王様は？\n　王様は　何かおっしゃってた？",
-      "english": "Tessie: What?!\n\nTessie: The castle basement has turned into a mystery dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+      "english": "Tessie: What?!\n\nTessie: The castle basement has turned into a magic dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
       "source_sha256": "d98fe442b1aa6baadefa431e8edc115df9507ad01d7b165a08dab776605a2795",
-      "raw_hex": "836c836c817582a682a682c181490d0d836c836c817582a88fe982cc926e89ba82aa95738e768b6382cc835f839383578387839382c90d814082c882c182c482b582dc82c182bd82f182c582b782c182c482a581490d836c836c817581458145814582a282c182bd82a282c782a482c882c182c482e982cc82a982b582e781420d0d836c836c817582c5814089a4976c82cd81480d814089a4976c82cd814089bd82a982a882c182b582e182c182c482bd814800"
+      "raw_hex": "836c836c817582a682a682c181490d0d836c836c817582a88fe982cc926e89ba82aa95738e768b6382cc835f839383578387839382c90d814082c882c182c482b582dc82c182bd82f182c582b782c182c482a581490d836c836c817581458145814582a282c182bd82a282c782a482c882c182c482e982cc82a982b582e781420d0d836c836c817582c5814089a4976c82cd81480d814089a4976c82cd814089bd82a982a882c182b582e182c182c482bd814800",
+      "terminology_revision": {
+        "date": "2026-11-14",
+        "previous_english": "Tessie: What?!\n\nTessie: The castle basement has turned into a mystery dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+        "revised_english": "Tessie: What?!\n\nTessie: The castle basement has turned into a magic dungeon?!\n\nTessie: What on earth is going on...?\n\nTessie: And the King? Did he say anything?",
+        "reason": "User requested Magic Dungeon consistently in dialogue. Follow glossary 不思議のダンジョン; retain lowercase for the generic phenomenon. Source meaning, controls and other wording are unchanged."
+      }
     },
     {
       "id": "event-bank-1.0fe0",

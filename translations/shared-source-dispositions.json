@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "scope": "All 654 shared pointer slots accounted for as drafts or explicit dispositions. Aliases are not unique strings. Does not establish all-game extraction, native reachability or completed translation.",
-  "draft_catalog_sha256": "2f41b2df2585fbf8b70dc68affc25e237dd206973d28de94b0e4970948de19b8",
+  "draft_catalog_sha256": "51b891e4437b042c8effe84972af6f9b2a08f5364310e801000d8ae73d717354",
   "entries": [
     {
       "table_offset": 0,

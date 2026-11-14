@@ -46,7 +46,9 @@
       "source_url": "https://gamefaqs.gamespot.com/ps/374986-torneko-the-last-hope/faqs/11107",
       "evidence_quality": "secondary; strategy guide identifies the named dungeon where the chest was found",
       "confidence": "medium-high for this specific dungeon; generic usage translated in context",
-      "identity": "Named dungeon of the previous adventure in the opening flashback. Lowercase 'a magic dungeon' is used for the general phenomenon on the castle route."
+      "identity": "Named dungeon of the previous adventure in the opening flashback. Lowercase 'a magic dungeon' is used for the general phenomenon on the castle route.",
+      "usage": "Use Magic Dungeon in dialogue and other in-game text, with lowercase magic dungeon for generic references. The game's title and title/logo branding remain Mystery Dungeon; do not rename the game.",
+      "usage_confirmed_by_user": "2026-11-14"
     },
     {
       "japanese": "老人",
