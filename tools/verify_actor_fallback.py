@@ -7,7 +7,7 @@ from pathlib import Path
 
 import mgba.log
 
-from tools.actor_fallback_text import READERS, SLOT
+from tools.actor_fallback_text import READERS, SLOT, PRIEST_READER, PRIEST_SLOT
 from tools.audit_dungeon_screens import AuditedSession
 from tools.compact_font import encode
 from tools.dialogue_checks import rendered_codes
@@ -20,6 +20,7 @@ from tools import verify_player_status_prototype as status
 
 BASE = 0x08000000
 GETTER = BASE+0x9ACC
+DESIGNATED_ACTOR = 0x02003BA0
 
 
 def prepare(game, kind, level=1, species=1):
@@ -43,6 +44,8 @@ def prepare(game, kind, level=1, species=1):
     write(actor+0x88, struct.pack('<h', level), 'Controlled native level')
     write(actor+0x94, bytes(0x2C), 'Clear monster name/status aliases')
     write(hero+0x94, bytes(0x2C), 'Clear player name/status aliases')
+    write(DESIGNATED_ACTOR, struct.pack('<I', actor if kind.startswith('false-priest') else 0),
+          'Controlled native False-priest actor designation')
     write(hero+8, struct.pack('<I', m.u32[hero+8] & ~0x10100000),
           'Clear see-invisible and resistance flags')
     write(0x020081D4, struct.pack('<I', m.u32[0x020081D4] & ~0x520000),
@@ -55,7 +58,7 @@ def prepare(game, kind, level=1, species=1):
         write(hero+8, struct.pack('<I', m.u32[hero+8] | 0x100000), 'Native see-invisible flag')
     if 'hallucination' in kind and kind != 'hallucination-trap':
         write(hero+0x96, b'\x32', 'Native player hallucination timer')
-    if kind == 'blind':
+    if kind.endswith('blind'):
         write(hero+0x98, b'\x32', 'Native player blindness timer')
     return hero, actor, writes, write
 
@@ -83,7 +86,7 @@ def getter(game, actor):
             branches.append(e['address'])
     try:
         with Debugger(game, callback, max_events=100) as debug:
-            for a in (0x08009B3E, 0x08009B6E, 0x08000354):
+            for a in (0x08009B3E, 0x08009B6E, 0x08009BAC, 0x08000354):
                 debug.breakpoint(a)
             debug.run_until(lambda _: bool(returned))
         return returned[0] | dict(branches=branches, abi_actor_and_guard_preserved=True)
@@ -137,7 +140,7 @@ def invoke(game, entry, arguments, exit_address, exit_register, writes, audit, s
     return dict(entry=entry, names=names, abi_preserved=True)
 
 
-def run(source, output=None, expect_japanese=False):
+def run(source, output=None, expect_japanese=False, expect_japanese_priest=False):
     mgba.log.silence()
     output = output or source/'actor-fallback-validation'
     rom = (source/'torneko-2-english.gba').read_bytes()
@@ -151,16 +154,26 @@ def run(source, output=None, expect_japanese=False):
     finally:
         status.OUT = prior
     unknown = bytes.fromhex('89bd8ed282a900') if expect_japanese else encode('Someone')
+    priest_japanese = expect_japanese or expect_japanese_priest
+    priest = bytes.fromhex('82c982b9905f958300') if priest_japanese else encode('False priest')
     if not expect_japanese:
         for _, literal, _ in READERS:
             table = struct.unpack_from('<I', rom, literal)[0]-BASE
             pointer = struct.unpack_from('<I', rom, table+SLOT)[0]
             require(pointer == build['actor_fallback']['name_offset']+BASE
                     and rom[pointer-BASE:pointer-BASE+len(unknown)] == unknown, 'Fallback binding differs')
+    if not priest_japanese:
+        table = struct.unpack_from('<I', rom, PRIEST_READER[1])[0]-BASE
+        pointer = struct.unpack_from('<I', rom, table+PRIEST_SLOT)[0]
+        require(pointer == build['actor_fallback']['false_priest']['name_offset']+BASE
+                and rom[pointer-BASE:pointer-BASE+len(priest)] == priest, 'False-priest binding differs')
     cases = []
     specs = [(kind, 1, 1) for kind in ('visible', 'hallucination', 'blind', 'invisible',
         'invisible-hallucination', 'see-invisible', 'see-invisible-hallucination', 'unknown-species')]
     specs += [('visible', 32767, 99), ('hallucination', 32767, 99)]
+    specs += [(kind, 1, 1) for kind in ('false-priest', 'false-priest-hallucination',
+              'false-priest-invisible', 'false-priest-blind', 'false-priest-see-invisible')]
+    specs += [('false-priest', 32767, 99)]
     for kind, level, species in specs:
         with Session(rom, output/f'getter-{kind}-{level}') as game:
             game.restore(fixture)
@@ -168,22 +181,43 @@ def run(source, output=None, expect_japanese=False):
             row = build['monsters']['entries'][species]
             normal = (encode(row['english']+' Lv')[:-1]+str(level).encode()+b'\0'
                       if level > 1 else encode(row['english']))
-            expected = normal if kind in ('visible', 'see-invisible') else unknown
+            designated = kind.startswith('false-priest')
+            expected = (normal if kind in ('visible', 'see-invisible') else priest
+                        if kind in ('false-priest', 'false-priest-see-invisible') else unknown)
             result = getter(game, actor)
             require(result['raw_hex'] == expected.hex(), 'Native getter returned the wrong name: '+kind)
-            branch = [] if expected == normal else [0x08009B3E if kind.startswith('invisible') else 0x08009B6E]
+            branch = ([] if expected == normal else [0x08009BAC] if expected == priest else
+                      [0x08009B3E if 'invisible' in kind and 'see-invisible' not in kind else 0x08009B6E])
             require(result['branches'] == branch, 'Unexpected unknown-name branch: '+kind)
             write(hero+0x96, b'\0', 'Controlled condition removal')
             write(hero+0x98, b'\0', 'Controlled condition removal')
             write(actor+0xBE, b'\0', 'Controlled invisibility removal')
             write(game.core.memory.u32[0x020129D8]+28*species+0x13, b'\0', 'Restore known species')
             restored = getter(game, actor)
-            require(restored['raw_hex'] == normal.hex() and not restored['branches'], 'Normal name did not return')
+            require(restored['raw_hex'] == (priest if designated else normal).hex()
+                    and restored['branches'] == ([0x08009BAC] if designated else []),
+                    'Name after condition removal differs')
+            write(DESIGNATED_ACTOR, bytes(4), 'Remove controlled False-priest designation')
+            ordinary = getter(game, actor)
+            require(ordinary['raw_hex'] == normal.hex() and not ordinary['branches'], 'Normal name did not return')
             require(game.snapshot().battery == fixture.battery, 'Getter wrote battery save')
             cases.append(dict(case=f'{kind}-{level}', overrides=writes, getter=result,
-                              after_condition_removal=restored, inputs=game.inputs))
+                              after_condition_removal=restored, after_designation_removal=ordinary,
+                              inputs=game.inputs))
+    with Session(rom, output/'getter-designated-player') as game:
+        game.restore(fixture)
+        hero, actor, writes, write = prepare(game, 'visible')
+        write(DESIGNATED_ACTOR, struct.pack('<I', hero), 'Player must retain saved-name precedence')
+        player_name, other_name = getter(game, hero), getter(game, actor)
+        require(player_name['raw_hex'] == encode('Torneko').hex() and not player_name['branches']
+                and other_name['raw_hex'] == build['monsters']['entries'][1]['encoded_hex']
+                and not other_name['branches'], 'Designation changed player or unrelated actor name')
+        require(game.snapshot().battery == fixture.battery, 'Player-name check wrote battery save')
+        cases.append(dict(case='designated-player', overrides=writes, getter=player_name,
+                          unrelated_actor=other_name, inputs=game.inputs))
     combat = []
-    for kind in ('visible', 'hallucination', 'invisible', 'blind'):
+    for kind in ('visible', 'hallucination', 'invisible', 'blind',
+                 'false-priest', 'false-priest-hallucination'):
         for direction in ('outgoing', 'incoming'):
             print('Actor fallback:', kind, direction, flush=True)
             with AuditedSession(rom, output/f'{kind}-{direction}') as game:
@@ -198,7 +232,8 @@ def run(source, output=None, expect_japanese=False):
                 write(actor+0x10, struct.pack('<II', (x+1)*32, y*32), 'Matching native render coordinates')
                 audit = ScreenTextAudit(game)
                 game.audit, game.images = audit, []
-                expected = bytes.fromhex(build['monsters']['entries'][1]['encoded_hex']) if kind == 'visible' else unknown
+                expected = (bytes.fromhex(build['monsters']['entries'][1]['encoded_hex'])
+                            if kind == 'visible' else priest if kind == 'false-priest' else unknown)
                 start_queue = len(audit.final_queues)
                 arguments = [hero, actor, 1, 0] if direction == 'outgoing' else [actor, hero, 1, 0]
                 result = invoke(game, 0x0800BCBC, arguments, 0x0800CC94, 1, writes, audit, (0, 1))
@@ -212,7 +247,8 @@ def run(source, output=None, expect_japanese=False):
                                 for i in range(len(q['drawn_codes'])-len(name_codes)+1))
                             for q in queues), 'Expected actor name was queued but not drawn')
                 require(not audit.unreadable and not audit.layout_violations, 'Combat stream/layout finding')
-                require(not audit.unclassified if not expect_japanese or kind == 'visible' else bool(audit.unclassified),
+                japanese_name = (expected == unknown and expect_japanese) or (expected == priest and priest_japanese)
+                require(bool(audit.unclassified) == japanese_name,
                         'Unexpected language result in native glyphs')
                 require(game.snapshot().battery == fixture.battery, 'Combat wrote battery save')
                 game.capture('combat')
@@ -241,15 +277,17 @@ def run(source, output=None, expect_japanese=False):
                     audit=audit.report(), inputs=game.inputs,
                     image_sha256=digest((game.output/'trap.png').read_bytes()))
     require(all(digest(Path(p).read_bytes()) == h for p, h in protected.items()), 'Supplied ROM/save changed')
-    report = dict(passed=True, rom_sha256=digest(rom), negative_control=expect_japanese,
+    report = dict(passed=True, rom_sha256=digest(rom), negative_control=expect_japanese or priest_japanese,
+        japanese_unknown_expected=expect_japanese, japanese_false_priest_expected=priest_japanese,
         fixture_state_sha256=digest(fixture.state), fixture_battery_sha256=digest(fixture.battery),
         protected_files=protected, getters=cases, combat=combat, trap=trap,
-        scope='Controlled native getter/state cases, recovery, and full outgoing/incoming combat owners. '
+        scope='Controlled native getter/state cases, False-priest designation and concealment precedence, '
+              'player-name exclusion, recovery, and full outgoing/incoming combat owners. '
               'A separate real hallucination-trap handler case checks timer50 and the resulting name. Scene access, names, positions, '
               'non-death HP and status fields are controlled and recorded; no function result or text '
               'argument is substituted. Exact names, original return paths, complete glyph/language/layout '
               'audit and source/save preservation. Ordinary trap placement and natural invisible-monster '
-              'acquisition are not claimed; other name aliases remain separate.')
+              'acquisition or ordinary False-priest encounter activation are not claimed; other name aliases remain separate.')
     (output/'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
     print('Actor fallback:', len(cases), 'getter cases and', len(combat), 'combat cases passed')
     return report
@@ -260,5 +298,7 @@ if __name__ == '__main__':
     parser.add_argument('--source', type=Path, default=ROOT/'build/english')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--expect-japanese', action='store_true')
+    parser.add_argument('--expect-japanese-priest', action='store_true',
+                        help='Pre-fix negative control with Someone already translated')
     args = parser.parse_args()
-    run(args.source, args.output, args.expect_japanese)
+    run(args.source, args.output, args.expect_japanese, args.expect_japanese_priest)

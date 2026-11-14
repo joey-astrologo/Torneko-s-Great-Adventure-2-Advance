@@ -76,6 +76,8 @@ still selecting Japanese. Its scene reachability and display require follow-up;
 this repair leaves it unchanged. The two confirmed Mystery Dungeon/Magic Dungeon
 dialogue inconsistencies also remain separate from this Issue 1 fix.
 They are corrected in the subsequent [Issue 2 checkpoint](DUNGEON_TERMINOLOGY.md).
+The False-priest branch is corrected and natively checked in the later
+[name-reader checkpoint](FALSE_PRIEST_FIX.md).
 
 The earlier reader report already retained both unknown-name reads, but its
 unresolved-source summary filtered on language status and family. Someone was

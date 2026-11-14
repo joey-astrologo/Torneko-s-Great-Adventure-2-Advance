@@ -6,8 +6,8 @@ Family guides and research journals retain their historical builds and counts.
 
 **Release assessment:** ready for release-candidate testing, with `1.0-rc1` the
 recommended label. The November 14 unknown-actor name report and both confirmed
-dungeon-terminology inconsistencies are repaired. A separate
-False-priest name reader is a follow-up candidate. Broader playtesting and scene/state coverage
+dungeon-terminology inconsistencies are repaired. The subsequent False-priest
+reader repair also passes native before/after checks. Broader playtesting and scene/state coverage
 remain incomplete, so stable 1.0 sign-off is not established. This documentation
 does not assign a version tag; the root manifest still identifies a development
 build. Original gameplay bugs are intentionally preserved, and further graphics
@@ -22,30 +22,44 @@ these emulator results do not close it or establish its cause.
 
 ## Accepted build and evidence
 
-The latest [November 14 checkpoint](DUNGEON_TERMINOLOGY.md) corrects both Magic
-Dungeon passages, with native rendering, all seven event-bank loads/1,046 getters,
-the unknown-actor regression, 192 unit tests and standard validation passing.
+The latest [November 14 release candidate](RELEASE_VALIDATION.md) passes the full
+328-command build, 192 unit tests, cumulative service/menu acceptance, browser
+font checks and clean ROM/BPS reproduction. Four original/English house/stair
+save/reset/cold-resume routes also pass under mGBA. This is the same ROM as the
+preceding [False-priest checkpoint](FALSE_PRIEST_FIX.md), which corrects the
+name reader: 17 getter cases, 12 complete combat cases and a hallucination trap
+pass, including a preceding-ROM negative control and unchanged paired gameplay
+outcomes. That fix changed six bytes from the terminology checkpoint; this
+release-verification pass adds no ROM changes.
+The preceding [terminology checkpoint](DUNGEON_TERMINOLOGY.md) retains both Magic
+Dungeon passage checks and all seven event-bank loads/1,046 getters.
 The earlier [unknown-actor checkpoint](ACTOR_FALLBACK_FIX.md) retains its separate
 preceding-ROM negative controls and English save/cold-load checks.
-The earlier cumulative family receipts below retain their own ROM identities;
-the complete native suite was not repeated for these focused repairs.
+The initial repairs used focused checks; the full scripted suite has now been
+repeated on the current ROM at the user's release request. Historical research
+and negative-control receipts retain their own ROM identities.
 
 | Measure | Current result | Scope |
 |---|---|---|
-| English ROM SHA-256 | `d8e2b42cfc345d7c1479facb07630f8018d49bc66f9419557610f300969e188c` | Dialogue terminology correction; archive `build/accepted/3814-dungeon-terminology/`; preceding accepted artifacts retained |
-| BPS SHA-256 | `75c0dc6cc6cd4477a7c18d0cfecd1371bd9fa86d8d10022350bb7d2c9827a11e` | Candidate/clean build reproduction, ledger reconstruction and independent patch application pass |
+| English ROM SHA-256 | `9f127400b8e289f6acbb96bc5658663f6ba3a9780e064c642e4579199b5af746` | Full release verification; archive `build/accepted/3814-release-validation/`; preceding accepted artifacts retained |
+| BPS SHA-256 | `d652dc4038663bbfeec5058db7006709c1868abeea3afecd39e8019e4200753f` | Candidate/clean build reproduction, ledger reconstruction and independent patch application pass |
 | Inserted resources | 3,814 text; 20 graphics | Compiled resources, not all reachable screens |
 | Known source catalog | 3,676: 3,552 reviewed, 96 untranslated with investigated dispositions, 28 retained/components | Zero untranslated records without a disposition; bounded discovery inventory, not gameplay coverage |
 | October 7 research checks | 191 unit tests; corrected 250 definition cases / 378 reads; all 96 source dispositions | Historical research-only changes; no ROM patch or new full native-suite claim |
 | Link-error continuation | 15 English scenarios / 24 peer routes and cold loads; two original-ROM scenarios / four peers and cold loads | All five English errors and complete cleanup/return paths verified. Two post-save fault exits reproduce an original item-loss bug; recovery does not pass for those exits. [Evidence](LINK_ERROR_AUDIT.md). |
-| Current affected acceptance | Both corrected dialogue passages; 1,046 event getters; 10 actor getters with recovery, 8 combat cases, one trap handler; 192 unit tests | Exact cases on `d8e2b42c…`; catalog/build scan, standard validation, ledger reconstruction and clean ROM/BPS reproduction pass |
+| Current affected acceptance | 17 actor-name cases, 12 combat cases, one trap handler; preceding-ROM negative control and paired gameplay comparison; 192 unit tests | Exact cases on `9f127400…`; standard validation, ledger reconstruction and clean ROM/BPS reproduction pass |
+| Current full acceptance | All 328 build commands, 192 unit tests, cumulative service/menu acceptance and 2,006 required item cases pass | One successful full run on `9f127400…`; bounded scripted coverage, not complete gameplay coverage |
+| Current save/reset acceptance | Four original/English house/stair routes pass reset and cold resume with movement | mGBA built-in BIOS; Pocket/EverDrive issue remains open |
+| Preceding terminology acceptance | Both corrected dialogue passages; 1,046 event getters; Someone regression; 192 tests | ROM `d8e2b42c…`; native and static reader-audit evidence retains that identity |
 | Preceding Issue 1 acceptance | Actor-name gates, prior-ROM negative controls, English save/cold loads and standard validation | ROM `82e2204f…`; previous accepted archive preserved |
 | October 4 affected acceptance | 187 unit tests; four NPC routes / 12 opens, 57 blacksmith text cases, 13 exchanges, 73 Remi text cases, three real link trades and four cold loads | Prior ROM `588dc92c…`; preserved evidence, not a replay on the current ROM |
-| Preceding cumulative acceptance | 182 unit tests; native/menu/service checks pass | ROM `fc9b6f5e…`, archived separately; full suite not replayed on the new ROM |
-| Selected-font browser checks | 315 contexts / 3,430 measurements; no selected-font overflows | Preceding ROM, identified regions and substitutions; corrected dialogue separately passes native layout checks |
+| Historical cumulative acceptance | 182 unit tests; native/menu/service checks pass | ROM `fc9b6f5e…`, archived separately; superseded by the current full run |
+| Selected-font browser checks | 315 contexts / 3,430 measurements; no selected-font overflows | Fresh WebKit verification of current reports and preview text; identified regions and substitutions |
 
-[Current release checkpoint ZIP](../build/releases/2026-11-14-dungeon-terminology.zip) ·
-[Current affected-check receipt](../build/accepted/3814-dungeon-terminology/completion.json) ·
+[Current release checkpoint ZIP](../build/releases/2026-11-14-release-candidate.zip) ·
+[Full verification receipt](../build/accepted/3814-release-validation/completion.json) ·
+[Focused repair receipt](../build/accepted/3814-false-priest/completion.json) ·
+[Preceding terminology checkpoint ZIP](../build/releases/2026-11-14-dungeon-terminology.zip) ·
 [Preceding Issue 1 checkpoint ZIP](../build/releases/2026-11-14-actor-fallback.zip) ·
 [Preceding text-audit checkpoint ZIP](../build/releases/2026-10-07-text-audit.zip) ·
 [Preceding tutorial checkpoint ZIP](../build/releases/2026-10-03-tutorials.zip) ·

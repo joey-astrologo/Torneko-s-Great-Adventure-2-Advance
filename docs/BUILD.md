@@ -1,7 +1,7 @@
 # Cumulative English build
 
 Current readiness: release-candidate testing, with `1.0-rc1` the recommended
-label. The latest checkpoint is `2026-11-14-dungeon-terminology.zip`, and its root
+label. The latest checkpoint is `2026-11-14-release-candidate.zip`, and its root
 manifest retains `development` status; no new version/tag is assigned by this
 documentation update. The [coverage matrix](COVERAGE_AUDIT.md) distinguishes
 current-ROM checks, preceding cumulative acceptance and remaining scene/state
@@ -129,18 +129,25 @@ substitutions from ordinary gameplay routes.
 The [unknown-actor repair](ACTOR_FALLBACK_FIX.md) adds a focused native gate for
 the two missed Someone readers. `tools.verify_actor_fallback` checks the actual
 name selection, combat logs, condition removal and hallucination-trap effect;
-its previous-ROM negative control reproduces Japanese. It runs in `build.sh`.
+its previous-ROM negative control reproduces Japanese. It now also covers the
+[False-priest reader](FALSE_PRIEST_FIX.md), including designation removal,
+concealment priority and the player-name exclusion. It runs in `build.sh`.
 
 Current status and remaining work are maintained in
 [the coverage matrix](COVERAGE_AUDIT.md) and [TEXT_PROGRESS.md](TEXT_PROGRESS.md).
-The latest accepted archive is `build/accepted/3814-dungeon-terminology/`.
-Its [focused checks](DUNGEON_TERMINOLOGY.md) cover both corrected dialogue passages,
-event bindings and the unknown-actor regression. The preceding
+The latest accepted archive is `build/accepted/3814-release-validation/`.
+Its [full verification pass](RELEASE_VALIDATION.md) completes all 328 build
+commands, 192 unit tests, cumulative acceptance, 315 WebKit contexts and clean
+ROM/BPS reproduction. Four original/English save/reset/cold-resume routes also
+pass under mGBA. The ROM bytes match `build/accepted/3814-false-priest/`, whose
+[focused checks](FALSE_PRIEST_FIX.md) retain the preceding-ROM negative control.
+`build/accepted/3814-dungeon-terminology/` retains the preceding dialogue checks.
+The earlier
 `build/accepted/3814-actor-fallback/` remains available, and
 `build/accepted/3814-npc-shops/` is retained; its
 [October 7 refresh](../build/releases/2026-10-07-text-audit.zip) recompiles its
-unchanged ROM/BPS and records the subsequent text audit. The preceding full
-cumulative archive is `build/accepted/3814-tutorials/`, with 3,814 text resources,
+unchanged ROM/BPS and records the subsequent text audit. The historical full
+cumulative archive `build/accepted/3814-tutorials/` has 3,814 text resources,
 20 graphics and 182 passing unit tests. Its [completion receipt](../build/caller-branches/completion.json)
 records successful cumulative native acceptance and the resolved tutorial report-
 generation failure: the final report stage was resumed after correcting its

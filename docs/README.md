@@ -21,10 +21,12 @@ the missed-reader failure, and which complete-screen audits are still pending.
 |---|---|
 | Install or reproduce the tools | [TOOLING.md](TOOLING.md) |
 | Compile the ROM, export a BPS or run checks | [BUILD.md](BUILD.md) |
+| Review the latest full release verification | [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md) |
 | Translate and revise | [LOCALIZATION_PLAN.md](LOCALIZATION_PLAN.md), [glossary](../translations/glossary.json) |
 | Investigate unresolved text | [TEXT_OPEN_QUESTIONS.md](TEXT_OPEN_QUESTIONS.md) |
 | Review the latest caller/tutorial repairs | [CALLER_FOLLOWUP.md](CALLER_FOLLOWUP.md) |
 | Review the hallucination/invisible-enemy name fix | [ACTOR_FALLBACK_FIX.md](ACTOR_FALLBACK_FIX.md) |
+| Review the False-priest name-reader fix | [FALSE_PRIEST_FIX.md](FALSE_PRIEST_FIX.md) |
 | Review the Magic Dungeon dialogue correction | [DUNGEON_TERMINOLOGY.md](DUNGEON_TERMINOLOGY.md) |
 | Review link-error selection and the original item-loss finding | [LINK_ERROR_AUDIT.md](LINK_ERROR_AUDIT.md) |
 | Use Blank scrolls and English Write inputs | [BLANK_SCROLLS.md](BLANK_SCROLLS.md) |

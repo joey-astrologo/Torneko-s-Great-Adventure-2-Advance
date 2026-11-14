@@ -19,8 +19,14 @@ the existing reviewed Someone resource. Its focused native checks and release
 checkpoint retain their own evidence. The user subsequently requested replacing
 all dialogue uses of Mystery Dungeon with Magic Dungeon. The separate
 [terminology checkpoint](DUNGEON_TERMINOLOGY.md) corrects both inserted passages
-and synchronizes the review/draft copies. The False-priest reader candidate and
-broader screening of reviewed text consumers remain pending.
+and synchronizes the review/draft copies. A subsequent high-confidence static
+audit found the False-priest branch as its sole high-confidence issue. The user
+authorized fixing it; the [reader repair](FALSE_PRIEST_FIX.md) now passes native
+getter/combat checks and a preceding-ROM negative control. The user then requested
+a release build with full scripted verification. The [release pass](RELEASE_VALIDATION.md)
+now completes all 328 build stages, 192 unit tests, cumulative acceptance, browser
+font checks and clean ROM/BPS reproduction on that same fixed ROM. Unresolved
+dynamic paths and broader whole-game coverage remain open.
 
 The user clarified the terminology scope on 2026-11-14: the game's name and
 title/logo branding remain **Mystery Dungeon**. Use **Magic Dungeon** in dialogue

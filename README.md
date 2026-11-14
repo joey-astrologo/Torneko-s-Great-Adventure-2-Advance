@@ -18,7 +18,7 @@ from a fresh save. [Capture details and reproduction](docs/SCREENSHOTS.md).
 ## Project status
 
 **Ready for release-candidate testing.** The reported Japanese unknown-monster
-names are repaired; two dungeon-terminology inconsistencies remain pending.
+names, False-priest reader and both dungeon-terminology inconsistencies are repaired.
 Whole-game scene/state coverage
 and broader independent playtesting remain incomplete, so a stable 1.0 sign-off
 is not yet supported. The recommended release label is **1.0-rc1**; this assessment
@@ -32,12 +32,13 @@ player names and English Blank-scroll inputs, and preserves the original English
 GBA credits. [Blank-scroll instructions and accepted inputs](docs/BLANK_SCROLLS.md).
 
 The latest local checkpoint is the
-[November 14 terminology correction](build/releases/2026-11-14-dungeon-terminology.zip).
-The root `build/torneko-2-english.gba` and `.bps` were freshly compiled and verified
-by independent patch application. [Focused native checks](docs/DUNGEON_TERMINOLOGY.md)
-verify both corrected Magic Dungeon passages and retain the unknown-actor repair.
-The preceding Issue 1 and October 7 checkpoints remain available. The manifest beside the
-current artifacts records their exact hashes.
+[November 14 release candidate](build/releases/2026-11-14-release-candidate.zip).
+The [full verification pass](docs/RELEASE_VALIDATION.md) completes all 328 build
+stages, 192 unit tests, cumulative acceptance and browser font checks on the
+current ROM. A clean rebuild reproduces the ROM and BPS exactly. The earlier
+[focused repair](docs/FALSE_PRIEST_FIX.md) retains its preceding-ROM negative
+controls. Earlier checkpoints remain available, and the matching manifest
+records the exact source, ROM and patch hashes.
 
 Recent work repairs the separate dungeon banner and Floor/empty-Items readers,
 status-expiry messages, missed item/service/combat callers, pot and Mimic tutorial
@@ -52,10 +53,11 @@ The recovered caller/script graphs do not select them under the documented
 bounds. Their original bytes remain preserved; they are not an outstanding
 translation queue or proof of complete game coverage.
 
-The current suite passes **192 unit tests**. The earlier link-error audit checks
-all five English errors through their callers in **15 scenarios / 24 peer routes
-and cold loads**. Earlier full cumulative and font checks retain their own ROM
-identities; they are not presented as fresh runs of this checkpoint.
+The current suite passes **192 unit tests**, all **2,006 required item cases**,
+and **315 browser font contexts / 3,430 measurements**. The full build and
+cumulative acceptance now pass on this checkpoint. The earlier link-error audit
+retains its own ROM identity and checks all five English errors through their
+callers in **15 scenarios / 24 peer routes and cold loads**.
 
 **Original gameplay behavior, including original bugs, is preserved.** The
 [link audit](docs/LINK_ERROR_AUDIT.md) reproduces an original item-loss bug in two

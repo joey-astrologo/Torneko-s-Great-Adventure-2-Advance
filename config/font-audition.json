@@ -2007,7 +2007,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-spell-menu.83c",
       "name": "Spell actions: Set",
       "window": 40,
@@ -2025,7 +2025,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-spell-menu.844",
       "name": "Spell actions: Unset",
       "window": 40,
@@ -2043,7 +2043,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-1",
       "name": "Spell rows 1-8",
       "window": 168,
@@ -2066,7 +2066,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-2",
       "name": "Spell rows 9-16",
       "window": 168,
@@ -2089,7 +2089,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-3",
       "name": "Spell rows 17-24",
       "window": 168,
@@ -2112,7 +2112,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-4",
       "name": "Spell rows 25-32",
       "window": 168,
@@ -2135,7 +2135,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-5",
       "name": "Spell rows 33-40",
       "window": 168,
@@ -2158,7 +2158,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-6",
       "name": "Spell rows 41-48",
       "window": 168,
@@ -2181,7 +2181,7 @@
       "stage": "current",
       "alternatives": [],
       "reference": "build/english/spell-menu-validation/report.json",
-      "native_report_sha256": "02e38623cb9f4bec7f27b579d933ddffca813d01819a4193625070d2b888df2d",
+      "native_report_sha256": "e26ab321f7b8c3cecc7a77d5f4ee5972d740fa530ca70e7889c428a92f4064be",
       "id": "spell-menu-current-list-7",
       "name": "Spell rows 49-50",
       "window": 168,
@@ -2208,7 +2208,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Original48px selector. Six pixels reserved for cursor,42px text; two compact spaces retain the native inset.",
       "capture": "build/english/skill-menu-validation/weapon-learned/categories.png"
     },
@@ -2226,7 +2226,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-set-validation/report.json",
-      "native_report_sha256": "9368aac21bd926844f6cd4a819deaa6ff2f3c4c6bf727847e4145e42eb295dd1",
+      "native_report_sha256": "bdd42d1f8454216d056e94eb6de2e3899c9024dcc0d83b7523d0c90ab5963632",
       "note": "Original34px action region and8px border gap; actual native Set and cancellation are verified.",
       "capture": "build/english/skill-set-validation/set-weapon/actions.png"
     },
@@ -2245,7 +2245,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-action-validation/report.json",
-      "native_report_sha256": "5b0410a0d306e977138ca9751028b153c4b0db9e130ca45545e4e4432ed56ec8",
+      "native_report_sha256": "5a3bf05bc45def78b437491624259346801633f0669de288ac1ed644e356da6b",
       "note": "Original34px action budget. Retained Unset/Use variants are controlled render-only vector probes and are never executed; natural availability is not asserted."
     },
     {
@@ -2268,7 +2268,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2291,7 +2291,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2314,7 +2314,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2337,7 +2337,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2360,7 +2360,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2383,7 +2383,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2406,7 +2406,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2429,7 +2429,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2452,7 +2452,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2475,7 +2475,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2498,7 +2498,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2521,7 +2521,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2540,7 +2540,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-menu-validation/report.json",
-      "native_report_sha256": "0330cb6f79e2d8ebf872cad95122b05f8716c589f9974d5346664d9e07d55091",
+      "native_report_sha256": "c2b02b5a17d1e51e67d6c072e561ca89442b081dad359580ba38e3d7b4733a04",
       "note": "Conservative142px name region after6px inset and14px native-marker reserve. All100 eligible names are verified in native selection;64-byte output. Learned/unlearned states and original pages remain separate in the report."
     },
     {
@@ -2558,7 +2558,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-equipment-validation/report.json",
-      "native_report_sha256": "8a2bb119deaee9221a744465e97ba4ce324f3790cb2198a1ff38c46f577de200",
+      "native_report_sha256": "63e4a7ba0d7f05174b06f566612629d54967b8922d296616b03351d013c28963",
       "note": "Three body rows,12px native inset and148px text. Parenthesized numbers are Hunger costs identified by the heading;256-byte formatting.",
       "capture": "build/english/skill-equipment-validation/three-weapon/preview-0.png"
     },
@@ -2576,7 +2576,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-equipment-validation/report.json",
-      "native_report_sha256": "8a2bb119deaee9221a744465e97ba4ce324f3790cb2198a1ff38c46f577de200",
+      "native_report_sha256": "63e4a7ba0d7f05174b06f566612629d54967b8922d296616b03351d013c28963",
       "note": "The title has156px. Three original unsigned-byte costs bound the sum at765; actual native totals are checked separately."
     },
     {
@@ -2593,7 +2593,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/skill-set-validation/report.json",
-      "native_report_sha256": "9368aac21bd926844f6cd4a819deaa6ff2f3c4c6bf727847e4145e42eb295dd1",
+      "native_report_sha256": "bdd42d1f8454216d056e94eb6de2e3899c9024dcc0d83b7523d0c90ab5963632",
       "note": "Original256-byte output; explicit skill and equipped-item substitutions are retained. The gallery uses native Oaken club while this audition uses the longer Whirlwind sword.",
       "capture": "build/english/skill-set-validation/set-weapon/confirmation.png"
     },
@@ -2617,7 +2617,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2641,7 +2641,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2665,7 +2665,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2689,7 +2689,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2713,7 +2713,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2737,7 +2737,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2761,7 +2761,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2782,7 +2782,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/spell-item-validation/report.json",
-      "native_report_sha256": "8643e7ecd9f2177eef65cc700fc26bc246d4e768ff149f599f1001e88a2a697a",
+      "native_report_sha256": "8d8358cdcf7451fc7e26f458f8b307d17126f0006d9e2648c19327160a7441b6",
       "capture": "build/english/spell-item-validation/43-priced-maximum/inventory.png",
       "note": "110px name region conservatively reserves14px for markers after6px inset and38px for the native price region. Full spell names; Sp. abbreviates the category Spell. Native125cases independently check all61 selectors, ordinary/priced states, maximal six-digit price, markers,64-byte guards and restoration. Maximum base width97px; conservative complete byte bound63. Retained Japanese custom aliases and other inscriptions are separate."
     },
@@ -2806,7 +2806,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/scroll-item-validation/report.json",
-      "native_report_sha256": "3b7ef3c8f74ef4197996b1ca94cc2461ff168d28a47ed4b42a9ac3d0e53e0a1f",
+      "native_report_sha256": "3651ccf583abe8a49a38d1e0df9b95d3875858540d0a294b2c7747445f9ca574",
       "capture": "build/english/scroll-item-validation/149-priced-maximum/inventory.png",
       "note": "110px name region reserves14px for markers after6px inset and38px for price. Blank identifies the inscribed original; the complete reviewed effect replaces Japanese suffix truncation. All37 category0 non-spell selectors have normal/priced pixel and64-byte guard checks, plus maximum-price/marker stress. Maximum base101px; conservative complete byte bound63. Special/reserved states are controlled probes, not ordinary acquisition claims."
     },
@@ -2830,7 +2830,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/scroll-item-validation/report.json",
-      "native_report_sha256": "3b7ef3c8f74ef4197996b1ca94cc2461ff168d28a47ed4b42a9ac3d0e53e0a1f",
+      "native_report_sha256": "3651ccf583abe8a49a38d1e0df9b95d3875858540d0a294b2c7747445f9ca574",
       "capture": "build/english/scroll-item-validation/149-priced-maximum/inventory.png",
       "note": "110px name region reserves14px for markers after6px inset and38px for price. Blank identifies the inscribed original; the complete reviewed effect replaces Japanese suffix truncation. All37 category0 non-spell selectors have normal/priced pixel and64-byte guard checks, plus maximum-price/marker stress. Maximum base101px; conservative complete byte bound63. Special/reserved states are controlled probes, not ordinary acquisition claims."
     },
@@ -2854,7 +2854,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/scroll-item-validation/report.json",
-      "native_report_sha256": "3b7ef3c8f74ef4197996b1ca94cc2461ff168d28a47ed4b42a9ac3d0e53e0a1f",
+      "native_report_sha256": "3651ccf583abe8a49a38d1e0df9b95d3875858540d0a294b2c7747445f9ca574",
       "capture": "build/english/scroll-item-validation/149-priced-maximum/inventory.png",
       "note": "110px name region reserves14px for markers after6px inset and38px for price. Blank identifies the inscribed original; the complete reviewed effect replaces Japanese suffix truncation. All37 category0 non-spell selectors have normal/priced pixel and64-byte guard checks, plus maximum-price/marker stress. Maximum base101px; conservative complete byte bound63. Special/reserved states are controlled probes, not ordinary acquisition claims."
     },
@@ -2878,7 +2878,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/scroll-item-validation/report.json",
-      "native_report_sha256": "3b7ef3c8f74ef4197996b1ca94cc2461ff168d28a47ed4b42a9ac3d0e53e0a1f",
+      "native_report_sha256": "3651ccf583abe8a49a38d1e0df9b95d3875858540d0a294b2c7747445f9ca574",
       "capture": "build/english/scroll-item-validation/149-priced-maximum/inventory.png",
       "note": "110px name region reserves14px for markers after6px inset and38px for price. Blank identifies the inscribed original; the complete reviewed effect replaces Japanese suffix truncation. All37 category0 non-spell selectors have normal/priced pixel and64-byte guard checks, plus maximum-price/marker stress. Maximum base101px; conservative complete byte bound63. Special/reserved states are controlled probes, not ordinary acquisition claims."
     },
@@ -2899,7 +2899,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/scroll-item-validation/report.json",
-      "native_report_sha256": "3b7ef3c8f74ef4197996b1ca94cc2461ff168d28a47ed4b42a9ac3d0e53e0a1f",
+      "native_report_sha256": "3651ccf583abe8a49a38d1e0df9b95d3875858540d0a294b2c7747445f9ca574",
       "capture": "build/english/scroll-item-validation/149-priced-maximum/inventory.png",
       "note": "110px name region reserves14px for markers after6px inset and38px for price. Blank identifies the inscribed original; the complete reviewed effect replaces Japanese suffix truncation. All37 category0 non-spell selectors have normal/priced pixel and64-byte guard checks, plus maximum-price/marker stress. Maximum base101px; conservative complete byte bound63. Special/reserved states are controlled probes, not ordinary acquisition claims."
     },
@@ -2918,7 +2918,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original64px window,6px cursor reserve and58px labels. Native masks1/3/7, cancellation and reopening are verified.",
       "capture": "build/english/reference-lists-validation/categories-7/categories.png"
     },
@@ -2936,7 +2936,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px row region and64-byte row buffer. Actual locked A refusal and all pages are checked.",
       "capture": "build/english/reference-lists-validation/scroll-locked/page-0.png"
     },
@@ -2960,7 +2960,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/scroll-known/page-0.png"
     },
@@ -2984,7 +2984,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/scroll-known/page-1.png"
     },
@@ -3008,7 +3008,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/scroll-known/page-2.png"
     },
@@ -3027,7 +3027,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/scroll-known/page-3.png"
     },
@@ -3051,7 +3051,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-0.png"
     },
@@ -3075,7 +3075,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-1.png"
     },
@@ -3099,7 +3099,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-2.png"
     },
@@ -3123,7 +3123,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-3.png"
     },
@@ -3147,7 +3147,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-4.png"
     },
@@ -3171,7 +3171,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-5.png"
     },
@@ -3195,7 +3195,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-6.png"
     },
@@ -3219,7 +3219,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-7.png"
     },
@@ -3243,7 +3243,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-8.png"
     },
@@ -3267,7 +3267,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-9.png"
     },
@@ -3291,7 +3291,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-10.png"
     },
@@ -3315,7 +3315,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-11.png"
     },
@@ -3335,7 +3335,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/skill-known/page-12.png"
     },
@@ -3359,7 +3359,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-0.png"
     },
@@ -3383,7 +3383,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-1.png"
     },
@@ -3407,7 +3407,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-2.png"
     },
@@ -3431,7 +3431,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-3.png"
     },
@@ -3455,7 +3455,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-4.png"
     },
@@ -3479,7 +3479,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-5.png"
     },
@@ -3497,7 +3497,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/reference-lists-validation/report.json",
-      "native_report_sha256": "920a083b272bd809c58be2f7f41520475fa3b7370c2dfc3c92f7f0354967df4e",
+      "native_report_sha256": "d5ddb89e8620d16683eb0f60d74d8947d20cacfb4e1fef61f178bf90dfaac3e0",
       "note": "Original162px name region and64-byte row output, page indicator remains separate with8px outer-border gap.",
       "capture": "build/english/reference-lists-validation/spell-known/page-6.png"
     },
@@ -3515,7 +3515,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/town-root-validation/report.json",
-      "native_report_sha256": "e1845d757374faa45d93c4063e044dcc7dca35176cb9af08581022804d2481af",
+      "native_report_sha256": "58906204137fed014a061c9c7bd77c6772e21841a03a2b46d82cae3301b8ca0b",
       "note": "34px after6px cursor reserve. Root closes before child. Native empty/populated inventory, Option, cancellation and twice reopening verified.",
       "capture": "build/english/town-root-validation/option/reopened-1.png"
     },
@@ -3532,7 +3532,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "112px reserved for all eight widest stored Japanese village glyphs. Original256-byte output; ordinary editor limits remain separate.",
       "capture": "build/english/save-preview-validation/town-0-wide-Japanese/preview.png"
     },
@@ -3549,7 +3549,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "Positive signed16-bit maximum level/currentHP/maxHP; native formatter argument order and following name field are verified."
     },
     {
@@ -3567,7 +3567,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "20px reserve for existing castle graphic;196px text. Complete dungeon names, maximum floor/attempt retained. Original artwork and geometry unchanged."
     },
     {
@@ -3585,7 +3585,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "20px reserve for existing castle graphic;196px text. Complete dungeon names, maximum floor/attempt retained. Original artwork and geometry unchanged."
     },
     {
@@ -3603,7 +3603,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "20px reserve for existing castle graphic;196px text. Complete dungeon names, maximum floor/attempt retained. Original artwork and geometry unchanged."
     },
     {
@@ -3621,7 +3621,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "20px reserve for existing castle graphic;196px text. Complete dungeon names, maximum floor/attempt retained. Original artwork and geometry unchanged."
     },
     {
@@ -3637,7 +3637,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "20px reserve for existing castle graphic;196px text. Complete dungeon names, maximum floor/attempt retained. Original artwork and geometry unchanged."
     },
     {
@@ -3653,7 +3653,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-preview-validation/report.json",
-      "native_report_sha256": "3f5ea7d33ec6aa15b01afcb75981e468b04cef4644013726b206e0fe9896260c",
+      "native_report_sha256": "32238801eca7b34592eb4ebd15673d17eed8dea636b412e63b3184104a137b92",
       "note": "98px reserved for native seven-character player substitution in Inside {player}'s home. Name is never shortened; native English and Japanese cases pass."
     },
     {
@@ -3670,7 +3670,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-shop-validation/report.json",
-      "native_report_sha256": "0616aa46ca5f7978a9fb6c38e3d3a30b99dcb7dda61bfd20a8a406d0d1cd7340",
+      "native_report_sha256": "7dd9fee127ecd1fbf73c504202161d990f90b4df394f10e0f7afa4e88ff2134f",
       "note": "Original256-byte output, numeric colour and two-row confirmation with original Yes/No. Amount is a rendering bound; transaction outcomes are separate."
     },
     {
@@ -3686,7 +3686,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-shop-validation/report.json",
-      "native_report_sha256": "0616aa46ca5f7978a9fb6c38e3d3a30b99dcb7dda61bfd20a8a406d0d1cd7340",
+      "native_report_sha256": "7dd9fee127ecd1fbf73c504202161d990f90b4df394f10e0f7afa4e88ff2134f",
       "note": "Original256-byte output, numeric colour and two-row confirmation with original Yes/No. Amount is a rendering bound; transaction outcomes are separate."
     },
     {
@@ -3703,7 +3703,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-shop-validation/report.json",
-      "native_report_sha256": "0616aa46ca5f7978a9fb6c38e3d3a30b99dcb7dda61bfd20a8a406d0d1cd7340",
+      "native_report_sha256": "7dd9fee127ecd1fbf73c504202161d990f90b4df394f10e0f7afa4e88ff2134f",
       "note": "Original256-byte output, numeric colour and two-row confirmation with original Yes/No. Amount is a rendering bound; transaction outcomes are separate."
     },
     {
@@ -3719,7 +3719,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-shop-validation/report.json",
-      "native_report_sha256": "0616aa46ca5f7978a9fb6c38e3d3a30b99dcb7dda61bfd20a8a406d0d1cd7340",
+      "native_report_sha256": "7dd9fee127ecd1fbf73c504202161d990f90b4df394f10e0f7afa4e88ff2134f",
       "note": "Original256-byte output, numeric colour and two-row confirmation with original Yes/No. Amount is a rendering bound; transaction outcomes are separate."
     },
     {
@@ -3736,7 +3736,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-shop-validation/report.json",
-      "native_report_sha256": "0616aa46ca5f7978a9fb6c38e3d3a30b99dcb7dda61bfd20a8a406d0d1cd7340",
+      "native_report_sha256": "7dd9fee127ecd1fbf73c504202161d990f90b4df394f10e0f7afa4e88ff2134f",
       "note": "Original256-byte output, numeric colour and two-row confirmation with original Yes/No. Amount is a rendering bound; transaction outcomes are separate."
     },
     {
@@ -3753,7 +3753,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-notices-validation/report.json",
-      "native_report_sha256": "32d4d13c6ebcf059eed3ec1adffcdcae73097e6d2bc69458282056449832e667",
+      "native_report_sha256": "d470acb646149b5e8bd30bdc0a707d250edf0e24000fdec5170202f8b47a0cb8",
       "note": "Original28-tile two-row modal; native wait advances improper-suspension warning to its second page."
     },
     {
@@ -3770,7 +3770,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-notices-validation/report.json",
-      "native_report_sha256": "32d4d13c6ebcf059eed3ec1adffcdcae73097e6d2bc69458282056449832e667",
+      "native_report_sha256": "d470acb646149b5e8bd30bdc0a707d250edf0e24000fdec5170202f8b47a0cb8",
       "note": "Original28-tile two-row modal; native wait advances improper-suspension warning to its second page."
     },
     {
@@ -3787,7 +3787,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/save-notices-validation/report.json",
-      "native_report_sha256": "32d4d13c6ebcf059eed3ec1adffcdcae73097e6d2bc69458282056449832e667",
+      "native_report_sha256": "d470acb646149b5e8bd30bdc0a707d250edf0e24000fdec5170202f8b47a0cb8",
       "note": "Original28-tile two-row modal; native wait advances improper-suspension warning to its second page."
     },
     {
@@ -3810,7 +3810,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3833,7 +3833,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3856,7 +3856,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3879,7 +3879,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3902,7 +3902,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3925,7 +3925,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3948,7 +3948,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3971,7 +3971,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -3994,7 +3994,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4017,7 +4017,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4040,7 +4040,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4063,7 +4063,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4086,7 +4086,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4103,7 +4103,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Each label is a separate one-row input candidate, up to15characters. Full native keyboard/lookup and longest English/Japanese rows are checked. Case folding changes lookup only; font spacing is unchanged."
     },
     {
@@ -4119,7 +4119,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Original8-character custom-name editor. Item-row category/count/price layout remains separate."
     },
     {
@@ -4135,7 +4135,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/writing-editor-validation/report.json",
-      "native_report_sha256": "27e631ab05ac83d88dd22fc6b5c5659037427235db6c892548f7ff16ea19f054",
+      "native_report_sha256": "96f8ecb879ba661484e36519b4af7cf34bd893527dfe5014e9891797bfce36be",
       "note": "Special scroll/spellbook editor only; ordinary names and stored saves keep their original limits."
     },
     {
@@ -4152,7 +4152,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/cannot-talk-validation/report.json",
-      "native_report_sha256": "ef53a7ed7a96d9d8796a20e1f2038490f6261a1e3f4140926cc74031e0df6649",
+      "native_report_sha256": "68f969bb64cc84de43fb46aa41cdedb9f2fc87cbed2ac25904ce02194c3d0af6",
       "note": "Two native refusal blocks, original two-row modal; maximum186px actor substitution and256-byte formatter output."
     },
     {
@@ -4168,7 +4168,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/step-stairs-validation/report.json",
-      "native_report_sha256": "a79081ca1f583d447529c847b1877cd0b249c52e81b25251ec99c5cd3646a4b0",
+      "native_report_sha256": "1f893657f289d14735c27d7c29faccf9c10506deb921ab0991659d060ec43f32",
       "note": "Original two-column prompt:6px cursor reserve, second column starts52px. Native choices and repeated cancellation pass.",
       "capture": "build/english/step-stairs-validation/step-act/opened-2.png"
     },
@@ -4185,7 +4185,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/step-stairs-validation/report.json",
-      "native_report_sha256": "a79081ca1f583d447529c847b1877cd0b249c52e81b25251ec99c5cd3646a4b0",
+      "native_report_sha256": "1f893657f289d14735c27d7c29faccf9c10506deb921ab0991659d060ec43f32",
       "note": "Original second-column position and width; no geometry change."
     },
     {
@@ -4202,7 +4202,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/step-stairs-validation/report.json",
-      "native_report_sha256": "a79081ca1f583d447529c847b1877cd0b249c52e81b25251ec99c5cd3646a4b0",
+      "native_report_sha256": "1f893657f289d14735c27d7c29faccf9c10506deb921ab0991659d060ec43f32",
       "note": "Original96px window,90px after cursor. Native B/Stay/Descend results and repeated reopening pass.",
       "capture": "build/english/step-stairs-validation/stairs-act/opened-2.png"
     },
@@ -4226,7 +4226,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fused-loss-validation/report.json",
-      "native_report_sha256": "5a78dd4aadbb6d87f8742e118fbd7cdfd16f3171d3db7e601586e933e7938862",
+      "native_report_sha256": "ad97f877d0cfb5c81d932d98941e66955c4a044417434b2984d1379d1cfefcc2",
       "note": "Each predicate follows the complete item field. Conditional break keeps the whole message on one line only when the native measured join fits; otherwise two lines. Original64-byte item scratch/256-byte output preserved."
     },
     {
@@ -4249,7 +4249,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fused-loss-validation/report.json",
-      "native_report_sha256": "5a78dd4aadbb6d87f8742e118fbd7cdfd16f3171d3db7e601586e933e7938862",
+      "native_report_sha256": "ad97f877d0cfb5c81d932d98941e66955c4a044417434b2984d1379d1cfefcc2",
       "note": "Each predicate follows the complete item field. Conditional break keeps the whole message on one line only when the native measured join fits; otherwise two lines. Original64-byte item scratch/256-byte output preserved."
     },
     {
@@ -4272,7 +4272,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fused-loss-validation/report.json",
-      "native_report_sha256": "5a78dd4aadbb6d87f8742e118fbd7cdfd16f3171d3db7e601586e933e7938862",
+      "native_report_sha256": "ad97f877d0cfb5c81d932d98941e66955c4a044417434b2984d1379d1cfefcc2",
       "note": "Each predicate follows the complete item field. Conditional break keeps the whole message on one line only when the native measured join fits; otherwise two lines. Original64-byte item scratch/256-byte output preserved."
     },
     {
@@ -4295,7 +4295,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fused-loss-validation/report.json",
-      "native_report_sha256": "5a78dd4aadbb6d87f8742e118fbd7cdfd16f3171d3db7e601586e933e7938862",
+      "native_report_sha256": "ad97f877d0cfb5c81d932d98941e66955c4a044417434b2984d1379d1cfefcc2",
       "note": "Each predicate follows the complete item field. Conditional break keeps the whole message on one line only when the native measured join fits; otherwise two lines. Original64-byte item scratch/256-byte output preserved."
     },
     {
@@ -4318,7 +4318,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fused-loss-validation/report.json",
-      "native_report_sha256": "5a78dd4aadbb6d87f8742e118fbd7cdfd16f3171d3db7e601586e933e7938862",
+      "native_report_sha256": "ad97f877d0cfb5c81d932d98941e66955c4a044417434b2984d1379d1cfefcc2",
       "note": "Each predicate follows the complete item field. Conditional break keeps the whole message on one line only when the native measured join fits; otherwise two lines. Original64-byte item scratch/256-byte output preserved."
     },
     {
@@ -4335,7 +4335,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/pot-view-validation/report.json",
-      "native_report_sha256": "32b28c9fb003da3f9d0b0415e6e0c498d000ccfea54f258f62dc05860ef8592e",
+      "native_report_sha256": "719731ae7ef319a35fdf9767eb2687abcd4c620039d700a073ff512c149acbe0",
       "note": "Original168px pot window;6px cursor inset for concealed slots. Empty label retains the native inert07/08 controls, which do not center the GBA text. Eleven native states and repeated reopening pass.",
       "capture": "build/english/pot-view-validation/161-3/view-2.png"
     },
@@ -4354,7 +4354,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "Original72px window,6px cursor reserve, native2/3 rows. Final selection and repeated cancellation pass."
     },
     {
@@ -4370,7 +4370,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "Original32px cursor stride; first label starts6px."
     },
     {
@@ -4386,7 +4386,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "Original32px cursor stride; second label starts38px."
     },
     {
@@ -4402,7 +4402,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "Centered in the original80px one-row window."
     },
     {
@@ -4421,7 +4421,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "Separate lines in their original two-row modals; no geometry or font change."
     },
     {
@@ -4437,7 +4437,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/book-travel-validation/report.json",
-      "native_report_sha256": "0b20a6d86db118c8058a5b0390215ffe4a4e348b13c3d0ce67d722dbf2220280",
+      "native_report_sha256": "a12e3b6cc05c3d2c0ec3076c2211e5d97c2647f9b7eddbbae7c766054f752204",
       "note": "112px reserved for eight maximum14px saved-name glyphs. Original1F getter/14 centering controls and complete189px native row verified."
     },
     {
@@ -4460,7 +4460,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4483,7 +4483,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4506,7 +4506,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4529,7 +4529,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4552,7 +4552,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4572,7 +4572,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ability-info-validation/report.json",
-      "native_report_sha256": "977a11c0f29de6160c54ee8d21f704f5d360334e3776825b9752f0237afc8ced",
+      "native_report_sha256": "56c11c4e4148dc8c45f3546ba6f6c0b2e4057e2305c2525d2e044722cb03b9e2",
       "note": "Original224px by7-row window. Body starts at row3, or row4 with more than12 property sprites; at most3 text rows, with256-byte output including optional cyan control. Complete native selection, body pixels and reopening verified. Property badges are deferred graphics."
     },
     {
@@ -4595,7 +4595,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4618,7 +4618,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4641,7 +4641,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4664,7 +4664,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4687,7 +4687,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4705,12 +4705,12 @@
         "about chatting!",
         "Old man: I've been investigating all over",
         "this kingdom...",
-        "Old man: I had no idea the Mystery",
-        "Dungeon had spread so far."
+        "Old man: I had no idea the Magic Dungeon",
+        "had spread so far."
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4733,7 +4733,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4756,7 +4756,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4774,7 +4774,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4790,7 +4790,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-story-validation/report.json",
-      "native_report_sha256": "4375006284975fc5d7855c26f55b6cf5b5c73e38208419d706731c98e8acef39",
+      "native_report_sha256": "0bcad56264f60c7c9f201942e44c08f47466908c4e79f63c7ca27a792d7abe36",
       "note": "Original two-row modal,216px safe line budget. Seven widest14px name glyphs and14px initial reserved where used; native pages, centred yellow inscriptions and all identity choices verified. Graphics and story progression remain separately scoped."
     },
     {
@@ -4806,7 +4806,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/empty-read-validation/report.json",
-      "native_report_sha256": "67a8b9fe86309b15be0f48a587b0dc2ca1d6b6f76d5d8d4c7fe480eb17bf60dc",
+      "native_report_sha256": "46e1efddc6766c2dac28df18a0f5f13de15e07d7215e5a77e4380858f3655f06",
       "note": "One-line native refusal for four Floor/Read scroll IDs, original window/font; failed read leaves scroll intact."
     },
     {
@@ -4827,7 +4827,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/travel-gate-validation/report.json",
-      "native_report_sha256": "eb4121db05f9b20fa3c5eb782f365f4830a916936c8a3caab246df493059bc4a",
+      "native_report_sha256": "12d09a39e0d239c63c3eef77ba3b388873cd950e915c4e3cbcee4e134b9d24a5",
       "note": "Original two-row message regions and128-byte scratch. Thirty pixels reserve the signed16-bit getter maximum32767; no gameplay limit is inferred from that stress bound. Full source/formatter/modal native checks pass."
     },
     {
@@ -4843,7 +4843,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/travel-gate-validation/report.json",
-      "native_report_sha256": "eb4121db05f9b20fa3c5eb782f365f4830a916936c8a3caab246df493059bc4a",
+      "native_report_sha256": "12d09a39e0d239c63c3eef77ba3b388873cd950e915c4e3cbcee4e134b9d24a5",
       "note": "Original two-row message regions and128-byte scratch. Thirty pixels reserve the signed16-bit getter maximum32767; no gameplay limit is inferred from that stress bound. Full source/formatter/modal native checks pass."
     },
     {
@@ -4866,7 +4866,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -4886,7 +4886,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -4909,7 +4909,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -4932,7 +4932,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -4955,7 +4955,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -4978,7 +4978,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5001,7 +5001,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5024,7 +5024,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5047,7 +5047,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5070,7 +5070,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5093,7 +5093,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5116,7 +5116,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5139,7 +5139,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5162,7 +5162,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5185,7 +5185,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5208,7 +5208,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5224,7 +5224,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5240,7 +5240,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-validation/report.json",
-      "native_report_sha256": "91394692596e07cc6a0b2bd1283b5e4737c89f2b944261a31cbbfc5e86136cd0",
+      "native_report_sha256": "be277aa123a306bc90e7a9d55e8ab56fffe6134c33155f609ee9ed6387cabc5e",
       "note": "Original two-row224px window; automatic pages and original W/w delays checked at native frame counts. Name reserves98px and initial14px. Actor/credit progression excluded."
     },
     {
@@ -5262,7 +5262,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-travel-validation/report.json",
-      "native_report_sha256": "565dc07db31560c9fc2506059533cd09c2cfdc05aa33b57336890bd5dd1c0995",
+      "native_report_sha256": "2f95aada81766e6f66a335e7ae1c9e9291dbf569c9497d697be9c1f72690330e",
       "note": "Original160px heading and144px five-row list;6px native cursor reserve. All original availability rows, fallbacks, wrapping, selection and twice reopening pass; meadow label uses a separate controlled selector."
     },
     {
@@ -5278,7 +5278,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/dungeon-travel-validation/report.json",
-      "native_report_sha256": "565dc07db31560c9fc2506059533cd09c2cfdc05aa33b57336890bd5dd1c0995",
+      "native_report_sha256": "2f95aada81766e6f66a335e7ae1c9e9291dbf569c9497d697be9c1f72690330e",
       "note": "Original160px heading and144px five-row list;6px native cursor reserve. All original availability rows, fallbacks, wrapping, selection and twice reopening pass; meadow label uses a separate controlled selector."
     },
     {
@@ -5294,7 +5294,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5312,7 +5312,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5335,7 +5335,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5352,7 +5352,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5375,7 +5375,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5397,7 +5397,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5420,7 +5420,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5443,7 +5443,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5466,7 +5466,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5484,7 +5484,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5507,7 +5507,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5530,7 +5530,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5553,7 +5553,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5576,7 +5576,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5599,7 +5599,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5622,7 +5622,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5645,7 +5645,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5668,7 +5668,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5691,7 +5691,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5708,7 +5708,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-help-validation/report.json",
-      "native_report_sha256": "a843e170c5853b460daa6e636716bc988e01e418249d9ffc20dc68df4f65d4e6",
+      "native_report_sha256": "a8b6c7e3574be344b54d76655c5c82bcbc1912394e97a15b672a4bbae477973a",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5727,7 +5727,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5746,7 +5746,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5769,7 +5769,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5792,7 +5792,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5809,7 +5809,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5832,7 +5832,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5851,7 +5851,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5870,7 +5870,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5890,7 +5890,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5911,7 +5911,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/tutorial-all-menu-validation/report.json",
-      "native_report_sha256": "1a844c89bc7720ad82be4417efbfa386a09c3112085fd869588feec16fd489ab",
+      "native_report_sha256": "51e0b556d28b10371705f8cf82eac219fba8b0717bd019bc1f322b21547f4a27",
       "note": "All 27 configurations; actual cursor tables determine 6px or 11px left inset and independent right-column regions. All rendering/cursor cases, 22 bank/topic cases, six direct-prose cases and four alternate-heading probes pass. Pot and early Mimic mappings are repaired; four configurations lack extracted script references and retain menu-only evidence. Ordinary NPC access remains unclaimed."
     },
     {
@@ -5934,7 +5934,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/link-message-validation/report.json",
-      "native_report_sha256": "b503036ff711e8c3205a642757769b8a4697da6620fba17542116c4f8bf6828b",
+      "native_report_sha256": "14013801b2f6f2988ddcf0a8fc52d6178fea2dde0388c40bdad5201e9275414c",
       "note": "Original224px/two-row messages or40px action panel with6px cursor reserve and8px outer border gap. Item confirmation reserves162px; separate128-byte formatter bound checked. Native choices/Info/Trade selection pass; successful cable transfer remains untested."
     },
     {
@@ -5954,7 +5954,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/link-message-validation/report.json",
-      "native_report_sha256": "b503036ff711e8c3205a642757769b8a4697da6620fba17542116c4f8bf6828b",
+      "native_report_sha256": "14013801b2f6f2988ddcf0a8fc52d6178fea2dde0388c40bdad5201e9275414c",
       "note": "Original224px/two-row messages or40px action panel with6px cursor reserve and8px outer border gap. Item confirmation reserves162px; separate128-byte formatter bound checked. Native choices/Info/Trade selection pass; successful cable transfer remains untested."
     },
     {
@@ -5970,7 +5970,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/link-message-validation/report.json",
-      "native_report_sha256": "b503036ff711e8c3205a642757769b8a4697da6620fba17542116c4f8bf6828b",
+      "native_report_sha256": "14013801b2f6f2988ddcf0a8fc52d6178fea2dde0388c40bdad5201e9275414c",
       "note": "Original224px/two-row messages or40px action panel with6px cursor reserve and8px outer border gap. Item confirmation reserves162px; separate128-byte formatter bound checked. Native choices/Info/Trade selection pass; successful cable transfer remains untested."
     },
     {
@@ -5987,7 +5987,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/link-picker-validation/report.json",
-      "native_report_sha256": "8ef81cfc5b7e1168f9b627c0da0ac52ed49c407a46f542cdcbc6ae48e14535e0",
+      "native_report_sha256": "37915c86d142454cf22e46d98f350be13d59103eadc7a3f0a50fc01ffbb6a8b3",
       "note": "Original224px/two-row messages or40px action panel with6px cursor reserve and8px outer border gap. Item confirmation reserves162px; separate128-byte formatter bound checked. Native choices/Info/Trade selection pass; successful cable transfer remains untested."
     },
     {
@@ -6003,7 +6003,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ending-notice-validation/report.json",
-      "native_report_sha256": "75152d59a3d093cf020f985d128c63d0b1870d69353aacb3e94e070d8a52a7f4",
+      "native_report_sha256": "2cc650c3e6dbc54c69e96e0917c469a7e1ee87448cf177111303f3210f482b08",
       "note": "Original224px/two-row modal at(8,120), single-line English. Native modal plus secondary A/B acknowledgement preserved. Saving/ending progression excluded from render proof."
     },
     {
@@ -6026,7 +6026,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/pickup-help-validation/report.json",
-      "native_report_sha256": "ea73054f0c440965ea1b36b1a7c95a0138980efb3b8c6192c6c96d91d094ce3c",
+      "native_report_sha256": "dfa1273a4a7e867233d8b8afb73928dbcc3262939df12557678b45e80cc229ed",
       "note": "Original queued reader consumes09 as a flag, not a tab. Native walking dispatch for all11 item IDs, mode-off and unrelated-item negatives, glyph pixels and original source controls pass.1024-byte queue and192-byte preceding pickup formatter are bounded separately. Controlled identities/mode load; not natural tutorial progression."
     },
     {
@@ -6049,7 +6049,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/pickup-help-validation/report.json",
-      "native_report_sha256": "ea73054f0c440965ea1b36b1a7c95a0138980efb3b8c6192c6c96d91d094ce3c",
+      "native_report_sha256": "dfa1273a4a7e867233d8b8afb73928dbcc3262939df12557678b45e80cc229ed",
       "note": "Original queued reader consumes09 as a flag, not a tab. Native walking dispatch for all11 item IDs, mode-off and unrelated-item negatives, glyph pixels and original source controls pass.1024-byte queue and192-byte preceding pickup formatter are bounded separately. Controlled identities/mode load; not natural tutorial progression."
     },
     {
@@ -6065,7 +6065,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/pickup-help-validation/report.json",
-      "native_report_sha256": "ea73054f0c440965ea1b36b1a7c95a0138980efb3b8c6192c6c96d91d094ce3c",
+      "native_report_sha256": "dfa1273a4a7e867233d8b8afb73928dbcc3262939df12557678b45e80cc229ed",
       "note": "Original queued reader consumes09 as a flag, not a tab. Native walking dispatch for all11 item IDs, mode-off and unrelated-item negatives, glyph pixels and original source controls pass.1024-byte queue and192-byte preceding pickup formatter are bounded separately. Controlled identities/mode load; not natural tutorial progression."
     },
     {
@@ -6088,7 +6088,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/carpenter-validation/report.json",
-      "native_report_sha256": "ef98f8799d2fdd7ec94d28126f5fc8ec9fb1178d98b2c26199a5a2b01b9a0318",
+      "native_report_sha256": "9c71c119c92a1598158432f59a4930249f1f7780cc8010f7126da7c9f5339999",
       "note": "Both original two-row layouts, complete prose pages,Yes/No/B, native1000-gold payment and capacity changes. Numeric field reserves3 compact digits and remains inside original128-byte shared scratch; all28 cases pass. Controlled service entry/state, not natural repair-unlock progression."
     },
     {
@@ -6111,7 +6111,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/carpenter-validation/report.json",
-      "native_report_sha256": "ef98f8799d2fdd7ec94d28126f5fc8ec9fb1178d98b2c26199a5a2b01b9a0318",
+      "native_report_sha256": "9c71c119c92a1598158432f59a4930249f1f7780cc8010f7126da7c9f5339999",
       "note": "Both original two-row layouts, complete prose pages,Yes/No/B, native1000-gold payment and capacity changes. Numeric field reserves3 compact digits and remains inside original128-byte shared scratch; all28 cases pass. Controlled service entry/state, not natural repair-unlock progression."
     },
     {
@@ -6132,7 +6132,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/carpenter-validation/report.json",
-      "native_report_sha256": "ef98f8799d2fdd7ec94d28126f5fc8ec9fb1178d98b2c26199a5a2b01b9a0318",
+      "native_report_sha256": "9c71c119c92a1598158432f59a4930249f1f7780cc8010f7126da7c9f5339999",
       "note": "Both original two-row layouts, complete prose pages,Yes/No/B, native1000-gold payment and capacity changes. Numeric field reserves3 compact digits and remains inside original128-byte shared scratch; all28 cases pass. Controlled service entry/state, not natural repair-unlock progression."
     },
     {
@@ -6148,7 +6148,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/carpenter-validation/report.json",
-      "native_report_sha256": "ef98f8799d2fdd7ec94d28126f5fc8ec9fb1178d98b2c26199a5a2b01b9a0318",
+      "native_report_sha256": "9c71c119c92a1598158432f59a4930249f1f7780cc8010f7126da7c9f5339999",
       "note": "Both original two-row layouts, complete prose pages,Yes/No/B, native1000-gold payment and capacity changes. Numeric field reserves3 compact digits and remains inside original128-byte shared scratch; all28 cases pass. Controlled service entry/state, not natural repair-unlock progression."
     },
     {
@@ -6171,7 +6171,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6194,7 +6194,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6217,7 +6217,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6240,7 +6240,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6263,7 +6263,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6286,7 +6286,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6309,7 +6309,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6332,7 +6332,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6352,7 +6352,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6370,7 +6370,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/fire-scene-validation/report.json",
-      "native_report_sha256": "82e9dcff9c2b1560c827c54192e2e9b8c1c0f241bf9333e1431fcfa881e854ac",
+      "native_report_sha256": "29a42d657ab5e05e969ae00c0a3ff0e3ba67b7cea05c68a0a1ed229f9404eb60",
       "note": "Full original indexed text dispatcher,40 records, all page waits and maximum English/Japanese player names. Original two-row panel; name reserves98px. Private512-byte ROM records, no new RAM; actor staging and natural story trigger remain separate."
     },
     {
@@ -6387,7 +6387,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/travel-confirm-validation/report.json",
-      "native_report_sha256": "006afac39a059a4aa3737d0cb542cedb087225f1bc6b31b61cfa0ba9cf67e851",
+      "native_report_sha256": "3c8b8914b88be0849afaedea42d887d04b8321e25dc0edd66e2631ee1bb86d36",
       "note": "Three original callers, native Yes/No/B and saved-village getter, centred two-row panel,112px reserved for eight legacy Japanese name glyphs.105 controlled native cases; actual travel and save overwrite excluded."
     },
     {
@@ -6403,7 +6403,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/travel-confirm-validation/report.json",
-      "native_report_sha256": "006afac39a059a4aa3737d0cb542cedb087225f1bc6b31b61cfa0ba9cf67e851",
+      "native_report_sha256": "3c8b8914b88be0849afaedea42d887d04b8321e25dc0edd66e2631ee1bb86d36",
       "note": "Three original callers, native Yes/No/B and saved-village getter, centred two-row panel,112px reserved for eight legacy Japanese name glyphs.105 controlled native cases; actual travel and save overwrite excluded."
     },
     {
@@ -6419,7 +6419,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/town-routes-validation/report.json",
-      "native_report_sha256": "88fc5f585ae59dcf71055f768b829043f702ac29448fbf5f99b3b8a2cde9ef9c",
+      "native_report_sha256": "1964c9e9e87eccb21f5808fad2b90514c931a11f90f40c526d64076f9dc5ac7a",
       "note": "Existing town/dungeon panel geometry and12px cursor inset. All48/4 original availability cells, full native cursor wrapping, cancellation/reopening and selector returns. Legacy maximum home names checked separately using the existing English home label.67 cases; natural unlocking and actual travel remain separate."
     },
     {
@@ -6438,7 +6438,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/town-routes-validation/report.json",
-      "native_report_sha256": "88fc5f585ae59dcf71055f768b829043f702ac29448fbf5f99b3b8a2cde9ef9c",
+      "native_report_sha256": "1964c9e9e87eccb21f5808fad2b90514c931a11f90f40c526d64076f9dc5ac7a",
       "note": "Existing town/dungeon panel geometry and12px cursor inset. All48/4 original availability cells, full native cursor wrapping, cancellation/reopening and selector returns. Legacy maximum home names checked separately using the existing English home label.67 cases; natural unlocking and actual travel remain separate."
     },
     {
@@ -6457,7 +6457,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/town-routes-validation/report.json",
-      "native_report_sha256": "88fc5f585ae59dcf71055f768b829043f702ac29448fbf5f99b3b8a2cde9ef9c",
+      "native_report_sha256": "1964c9e9e87eccb21f5808fad2b90514c931a11f90f40c526d64076f9dc5ac7a",
       "note": "Existing town/dungeon panel geometry and12px cursor inset. All48/4 original availability cells, full native cursor wrapping, cancellation/reopening and selector returns. Legacy maximum home names checked separately using the existing English home label.67 cases; natural unlocking and actual travel remain separate."
     },
     {
@@ -6474,7 +6474,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/form-refusal-validation/report.json",
-      "native_report_sha256": "1387ef7d456b5910aff62040f208e25901f4aa9f891860005942d828fd149423",
+      "native_report_sha256": "07390b2b9c1eccee9d285409d1973a5672c875f1eca00d1e350dbf7f07a65527",
       "note": "Original two-row modal, both native layout selectors, original colour4 span/restoration. Matching three-byte form code, each individual mismatch and A/B dismissal checked in10 cases. Natural map/transform progression excluded."
     },
     {
@@ -6490,7 +6490,7 @@
       ],
       "alternatives": [],
       "reference": "build/english/ground-remove-validation/report.json",
-      "native_report_sha256": "dd307248acb980b9e6743d96f27bab8a68fbed2428004d1e4709ab276ca9ecf3",
+      "native_report_sha256": "10b996d532385223e0553ddb39f45d2d0b9f057e6de1381681f7cfc684ce2cba",
       "note": "Original one-line mode1 queue; full Remove owner/branch, min/max floor-selector bytes50/255. Retains original incomplete phrase. Source bytes immutable, original font and spacing preserved."
     }
   ],

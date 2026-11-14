@@ -6377,3 +6377,27 @@ controls are explicit; ordinary encounter/trap placement is not asserted.
 The separate Japanese False-priest return at `08009BAC` remains a follow-up
 candidate. This fix neither alters that branch nor establishes whole-game text
 coverage.
+
+## False priest reader follow-up — November 14, 2026
+
+The subsequent [False-priest repair](FALSE_PRIEST_FIX.md) resolves the candidate
+above. Original disassembly is in `build/actor-fallback-research/owners.txt`;
+current native evidence and the preceding-ROM negative control are in
+`build/false-priest-candidate/`. ROM identity is
+`9f127400b8e289f6acbb96bc5658663f6ba3a9780e064c642e4579199b5af746`.
+
+| Address space / exclusive range | Ownership and verified role |
+|---|---|
+| CPU ROM `[08009B9C,08009BB0)` | Existing designation/player-exclusion branch. Load at `08009BAC` reads slot `10h`; reader bytes `[08009BAA,08009BB0)` remain `0248006925e0`. Conditions and return instructions are unchanged. |
+| ROM `[00009BB4,00009BB8)` | Owner `actor-fallback`; expected source bytes `680d1408`, replacement `08309608`, selecting private table `08963008`. The bounded native-code literal scan finds only load `08009BAA` using this literal. |
+| ROM `[00963008,00963A40)` | Existing private table allocation, size/address unchanged. Slot `[00963018,0096301C)` now contains `e4558c08` (`088C55E4`). Its only differences from the original shared table are slots `10h`/False priest and `414h`/Someone. |
+| ROM `[008C55E4,008C55FD)` | Existing reviewed results ID131/False priest, 25 encoded bytes including terminator, 60px. Reused unchanged; dungeon ID131/Hallucination remains a separate identity. |
+| ROM `[000648B4,000648BD)` | Original `にせ神父` source, bytes `82c982b9905f958300`, preserved. Original shared slot `[00140D78,00140D7C)` also remains unchanged. |
+| EWRAM `[02003BA0,02003BA4)` | Existing designated-actor pointer read through literal `08009BB0`. Controlled native tests designate a real actor or the player, then clear it. This establishes its role in name selection, not ordinary scene activation or new RAM ownership. |
+
+Seventeen native getter cases include concealment/see-invisible priority,
+designation removal, maximum level and player exclusion. Twelve complete combat
+cases plus a hallucination-trap handler pass. The preceding ROM reproduces
+Japanese in the affected logs; paired full actor/player/inventory outcomes are
+identical. All ROM bytes outside the two changed pointer words match that ROM.
+Ordinary False-priest encounter activation remains untested.
